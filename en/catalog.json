@@ -19,9 +19,40 @@
     "nftMarketplace": "NFT Marketplaces",
     "popular": "Popular"
   },
+  "connectExternalPageScreen": {
+    "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
+    "failedTitle": "Connection Failed"
+  },
+  "countryBlockedPage": {
+    "comingSoon": "Coming Soon"
+  },
+  "deFiWalletDeclinedConnectionPage": {
+    "connectionDeclinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
+    "networkDeclinedBody": "You have declined the request to change networks in your wallet."
+  },
+  "defiWalletQrPage": {
+    "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active."
+  },
+  "defiWalletSelectNetworkPage": {
+    "declinedBody": "You have declined the request to change networks in your wallet."
+  },
+  "defiWalletUnavaialbleConnectionPage": {
+    "body": "{{integrationName}} is not installed on this device. Please install the {{integrationName}} app, or connect another wallet.",
+    "title": "Connection unavailable"
+  },
+  "doneVerifyPage": {
+    "titleAllSet": "All set!"
+  },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email received. Processing...",
+    "forwardingEmail": "Forwarding email",
     "stillWaitingLoading": "Still waiting for email..."
+  },
+  "errorPage": {
+    "sessionInfo": "If you have questions, please report this with session ID <b class=\"select-all\">{{sessionId}}</b>."
+  },
+  "externalHardwareWalletInitial": {
+    "invalidCode": "Invalid code. Please try again"
   },
   "externalTransferCallbackPage": {
     "transferRequested": "Transfer requested, please return to {{clientName}}",
@@ -34,10 +65,57 @@
   "handleExternalTransferPage": {
     "loadingLabel": "Validating your transfer..."
   },
+  "mfaError": {
+    "default": "Incorrect code, please try again"
+  },
+  "mfaHint": {
+    "email": "Check your email",
+    "phone": "Check your phone for an SMS message",
+    "sandbox": "Hint: {{hint}}",
+    "totp": "Check your authenticator app"
+  },
+  "mfaTitle": {
+    "default": "Verification code",
+    "email": "Email verification code",
+    "phone": "SMS verification code"
+  },
+  "passwordPage": {
+    "fieldError": "Please enter your {{field}}",
+    "fieldErrorWithIntegration": "Please enter your {{integrationName}} {{field}}"
+  },
+  "previewTransfer": {
+    "transferDeclined": "Transfer declined",
+    "transferDeclinedBody": "You have declined the transfer request in your wallet."
+  },
   "selectHoldingPage": {
-    "loading": "Loading your assets..."
+    "ineligibleAssets": "Ineligible assets",
+    "loading": "Loading your assets...",
+    "otherEligible": "Other eligible assets"
+  },
+  "selectNetworkPage": {
+    "ineligibleNetwork": "Ineligible networks"
   },
   "sessionExpired": {
     "title": "Your session has expired."
+  },
+  "setupEmailPage": {
+    "enterError": "Please enter email"
+  },
+  "transferCanceledPage": {
+    "title": "Transfer canceled",
+    "titlePayment": "Payment canceled"
+  },
+  "transferPreviewErrorPage": {
+    "aboveMaximum": "Above {{integrationName}} maximum",
+    "belowMinimum": "Below {{integrationName}} minimum",
+    "connectDifferent": "Connect a different account",
+    "insufficientFunds": "Insufficient funds"
+  },
+  "verifyAddressAndNetworkErrorPage": {
+    "title": "Uh oh!"
+  },
+  "verifyErrorPage": {
+    "body": "You have declined the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
+    "title": "Verification declined"
   }
 }
