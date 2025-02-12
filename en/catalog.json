@@ -19,6 +19,17 @@
     "nftMarketplace": "NFT Marketplaces",
     "popular": "Popular"
   },
+  "common": {
+    "availableForTransfer": "Available for transfer",
+    "closeCap": "Close",
+    "maxCap": "Max",
+    "notFound": "Not found",
+    "searchCap": "Search",
+    "securedBy": "Secured by",
+    "somethingWentWrong": "Something went wrong...",
+    "successTitle": "Success!",
+    "tryAgain": "Try again"
+  },
   "connectExternalPageScreen": {
     "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
     "failedTitle": "Connection Failed"
@@ -28,13 +39,17 @@
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
-    "networkDeclinedBody": "You have declined the request to change networks in your wallet."
+    "connectionDeclinedTitle": "Connection declined",
+    "networkDeclinedBody": "You have declined the request to change networks in your wallet.",
+    "networkDeclinedTitle": "Network change declined"
   },
   "defiWalletQrPage": {
-    "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active."
+    "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
+    "declinedTitle": "Connection declined"
   },
   "defiWalletSelectNetworkPage": {
-    "declinedBody": "You have declined the request to change networks in your wallet."
+    "declinedBody": "You have declined the request to change networks in your wallet.",
+    "declineTitle": "Network change declined"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} is not installed on this device. Please install the {{integrationName}} app, or connect another wallet.",
@@ -49,7 +64,8 @@
     "stillWaitingLoading": "Still waiting for email..."
   },
   "errorPage": {
-    "sessionInfo": "If you have questions, please report this with session ID <b class=\"select-all\">{{sessionId}}</b>."
+    "sessionInfo": "If you have questions, please report this with session ID <b class=\"select-all\">{{sessionId}}</b>.",
+    "title": "An error has occurred."
   },
   "externalHardwareWalletInitial": {
     "invalidCode": "Invalid code. Please try again"
@@ -58,12 +74,39 @@
     "transferRequested": "Transfer requested, please return to {{clientName}}",
     "updatingTransfer": "Updating transfer status ..."
   },
+  "fields": {
+    "authToken": "authorization token",
+    "challengeCode": "challenge code",
+    "mfaCode": "MFA code",
+    "password": "password",
+    "phone": "phone",
+    "tradePin": "trade pin",
+    "username": "username"
+  },
   "fullScreenSpinner": {
     "linking": "Linking your account...",
     "loading": "Still working..."
   },
   "handleExternalTransferPage": {
     "loadingLabel": "Validating your transfer..."
+  },
+  "ineligibleReason": {
+    "amountBelowMinimumDescription": "The requested transfer amount of {{requestedAmount}} is less than {{integrationName}}’s minimum of {{minimumAmount}} to transfer on the {{network}} network.",
+    "balanceBelowMinimumDescription": "Your {{currentBalance}} balance is less than {{integrationName}}’s {{minimumAmount}} minimum to transfer on the {{network}} network.",
+    "belowMinimum": "Below {{integrationName}}’s minimum",
+    "belowRequestedAmountDescription": "Your {{balance}} balance is less than the {{amount}} required to cover the requested transfer amount + fees.",
+    "gasFeeAssetBalanceNotEnoughDescription": "Your {{balance}} balance is insufficient to cover the estimated {{gasFee}} gas fee on the {{network}} network.",
+    "insufficientBalance": "Insufficient balance",
+    "insufficientBalanceDescription": "Your {{currentBalance}} balance is less than the the minimum for this transfer.",
+    "notEligible": "Not eligible for this transfer",
+    "notEligibleDescription": "{{clientName}} does not accept {{symbol}}, or no {{network}} address was provided for this transfer.",
+    "notSupportedByInstitution": "Currently not supported by {{integrationName}}",
+    "notSupportedForTransferBySource": "Not supported by {{integrationName}}",
+    "symbolDoesNotMatch": "Not supported by {{clientName}}",
+    "symbolDoesNotMatchDescription": "{{clientName}} does not accept {{symbol}}, or no {{symbol}} address was provided for this transfer."
+  },
+  "ipWhiteListPage": {
+    "copyIpTitle": "IP address"
   },
   "mfaError": {
     "default": "Incorrect code, please try again"
@@ -98,7 +141,11 @@
   "sessionExpired": {
     "title": "Your session has expired."
   },
+  "setupAuthAppPage": {
+    "copyCodeTitle": "Manual code"
+  },
   "setupEmailPage": {
+    "emailTitle": "Email",
     "enterError": "Please enter email"
   },
   "transferCanceledPage": {
