@@ -19,20 +19,33 @@
     "nftMarketplace": "NFT Marketplaces",
     "popular": "Popular"
   },
+  "challengePage": {
+    "changeQuestion": "Change the question",
+    "codeHeader": "Enter your verification code",
+    "questionHeader": "Answer your security question",
+    "title": "Verification"
+  },
   "common": {
     "availableForTransfer": "Available for transfer",
     "closeCap": "Close",
+    "codeNotCorrent": "Provided code is not correct.",
+    "failedToLoadTrasferError": "Failed to load information about the transfer",
+    "genericConnectErrorMessage": "Failed to connect to your integration",
     "maxCap": "Max",
     "notFound": "Not found",
     "searchCap": "Search",
     "securedBy": "Secured by",
     "somethingWentWrong": "Something went wrong...",
+    "submitCap": "Submit",
     "successTitle": "Success!",
     "tryAgain": "Try again"
   },
   "connectExternalPageScreen": {
     "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
     "failedTitle": "Connection Failed"
+  },
+  "connectionFailedPage": {
+    "defaultError": "An error has occurred."
   },
   "countryBlockedPage": {
     "comingSoon": "Coming Soon"
@@ -60,11 +73,11 @@
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email received. Processing...",
+    "expiredError": "Approval email has expired. Please go back and try again.",
     "forwardingEmail": "Forwarding email",
     "stillWaitingLoading": "Still waiting for email..."
   },
   "errorPage": {
-    "sessionInfo": "If you have questions, please report this with session ID <b class=\"select-all\">{{sessionId}}</b>.",
     "title": "An error has occurred."
   },
   "externalHardwareWalletInitial": {
@@ -88,7 +101,11 @@
     "loading": "Still working..."
   },
   "handleExternalTransferPage": {
+    "error": "Failed to execute transfer",
     "loadingLabel": "Validating your transfer..."
+  },
+  "handleOauthPage": {
+    "error": "Failed to link your account. {{error}}"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "The requested transfer amount of {{requestedAmount}} is less than {{integrationName}}’s minimum of {{minimumAmount}} to transfer on the {{network}} network.",
@@ -141,6 +158,9 @@
   "sessionExpired": {
     "title": "Your session has expired."
   },
+  "sessionInfo": {
+    "text": "If you have questions, please report this with session ID <b class=\"select-all\">{{sessionId}}</b>."
+  },
   "setupAuthAppPage": {
     "copyCodeTitle": "Manual code"
   },
@@ -152,11 +172,17 @@
     "title": "Transfer canceled",
     "titlePayment": "Payment canceled"
   },
+  "transferErrorPage": {
+    "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
+  },
   "transferPreviewErrorPage": {
     "aboveMaximum": "Above {{integrationName}} maximum",
     "belowMinimum": "Below {{integrationName}} minimum",
+    "connectAnotherAccount": "Please connect another account.",
     "connectDifferent": "Connect a different account",
-    "insufficientFunds": "Insufficient funds"
+    "insufficientBalanceError": "Insufficient balance to fund this transaction.",
+    "insufficientFunds": "Insufficient funds",
+    "unknownError": "An unknown error has occurred. Please click below to begin a new transfer session."
   },
   "verifyAddressAndNetworkErrorPage": {
     "title": "Uh oh!"
@@ -164,5 +190,10 @@
   "verifyErrorPage": {
     "body": "You have declined the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
     "title": "Verification declined"
+  },
+  "wallectConnect": {
+    "noActiveSessionError": "No active WalletConnect session",
+    "transactionHashError": "Could not get transaction hash",
+    "unknownError": "An unknown error occurred. {{error}}"
   }
 }
