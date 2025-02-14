@@ -29,6 +29,7 @@
     "availableForTransfer": "Available for transfer",
     "closeCap": "Close",
     "codeNotCorrent": "Provided code is not correct.",
+    "continueCap": "Continue",
     "failedToLoadTrasferError": "Failed to load information about the transfer",
     "genericConnectErrorMessage": "Failed to connect to your integration",
     "maxCap": "Max",
@@ -44,10 +45,18 @@
     "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
     "failedTitle": "Connection Failed"
   },
+  "connectionDeclinedPage": {
+    "connectAnother": "Connect another account"
+  },
   "connectionFailedPage": {
     "defaultError": "An error has occurred."
   },
+  "connectionUnavailablePage": {
+    "connectAnother": "Connect another wallet",
+    "installApp": "Install mobile app"
+  },
   "countryBlockedPage": {
+    "body": "This feature is not yet supported in your<1></1> country. Please check back soon for a<3></3> streamlined deposit experience.",
     "comingSoon": "Coming Soon"
   },
   "deFiWalletDeclinedConnectionPage": {
@@ -79,6 +88,12 @@
   },
   "errorPage": {
     "title": "An error has occurred."
+  },
+  "exitPage": {
+    "body": "Your progress will be lost.",
+    "continue": "No, continue",
+    "exit": "Yes, exit",
+    "title": "Are you sure you want to exit?"
   },
   "externalHardwareWalletInitial": {
     "invalidCode": "Invalid code. Please try again"
@@ -122,6 +137,19 @@
     "symbolDoesNotMatch": "Not supported by {{clientName}}",
     "symbolDoesNotMatchDescription": "{{clientName}} does not accept {{symbol}}, or no {{symbol}} address was provided for this transfer."
   },
+  "initialScreen": {
+    "accountTitle": "This application will securely link your account",
+    "clientNameAccountTitle": "{{clientName}} will securely link your account",
+    "clientNameWalletTitle": "{{clientName}} will securely connect your wallet",
+    "walletTitle": "This application will securely connect your wallet"
+  },
+  "initialSteps": {
+    "agreement": "By selecting “Continue” you agree to the <1></1><2>End user Terms and Conditions</2>",
+    "credentials": "Your sign-in credentials are never stored",
+    "encryption": "Your data is encrypted at all times",
+    "explicitApproval": "Your explicit approval is always required to initiate a transfer",
+    "thirdParty": "Your assets never touch a third party"
+  },
   "ipWhiteListPage": {
     "copyIpTitle": "IP address"
   },
@@ -139,6 +167,15 @@
     "email": "Email verification code",
     "phone": "SMS verification code"
   },
+  "nonOAuthPermissionsPage": {
+    "allow": "Allow",
+    "movingFunds": "moving funds without your permission",
+    "titleWithClient": "{clientName} <2></2> Permissions",
+    "titleWithoutClient": "This application`s <1></1> Permissions",
+    "transactionRequest": "sending requests for transactions",
+    "viewActivity": "viewing balances, activity, profile data",
+    "wontAllow": "Won’t allow"
+  },
   "passwordPage": {
     "fieldError": "Please enter your {{field}}",
     "fieldErrorWithIntegration": "Please enter your {{integrationName}} {{field}}"
@@ -146,6 +183,10 @@
   "previewTransfer": {
     "transferDeclined": "Transfer declined",
     "transferDeclinedBody": "You have declined the transfer request in your wallet."
+  },
+  "qrCodePassword": {
+    "expired": "QR code expired",
+    "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
   },
   "selectHoldingPage": {
     "ineligibleAssets": "Ineligible assets",
@@ -159,7 +200,7 @@
     "title": "Your session has expired."
   },
   "sessionInfo": {
-    "text": "If you have questions, please report this with session ID <b class=\"select-all\">{{sessionId}}</b>."
+    "text": "If you have questions, please report this with session ID <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
     "copyCodeTitle": "Manual code"
