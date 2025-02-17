@@ -1,4 +1,10 @@
 {
+  "bindFacePage": {
+    "completed": "",
+    "linkText": "If you are unable to scan the QR code, please follow this <2><0>link</0></2>.",
+    "return": "",
+    "title": ""
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -35,6 +41,7 @@
     "closeCap": "",
     "codeNotCorrent": "",
     "continueCap": "",
+    "doneCap": "",
     "failedToLoadTrasferError": "",
     "genericConnectErrorMessage": "",
     "maxCap": "",
@@ -128,8 +135,20 @@
     "invalidCode": "Invalid code. Please try again"
   },
   "externalTransferCallbackPage": {
+    "continue": "",
     "transferRequested": "Transfer requested, please return to {{clientName}}",
     "updatingTransfer": "Updating transfer status ..."
+  },
+  "facePage": {
+    "completedButton": "",
+    "desktopStep1": "",
+    "desktopStep2": "",
+    "mobileStep1": "",
+    "mobileStep2": "Click <1>Open {selectedIntegrationName} app</1> to open your app and complete face verification.",
+    "mobileStep3": "",
+    "openApp": "",
+    "reopenApp": "",
+    "title": ""
   },
   "fields": {
     "authToken": "",
@@ -144,9 +163,25 @@
     "linking": "Linking your account...",
     "loading": "Still working..."
   },
+  "generateKeyPage": {
+    "done": "",
+    "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{clientName}</2>.",
+    "establishedInThisApp": "You have successfully established uninterrupted updates in<1></1><2>this application</2>.",
+    "linkedToInClient": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>{clientName}</5>.",
+    "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>.",
+    "nextStep": "Next we'll create a key for <2>uninterrupted updates</2> so you don't have to log back in",
+    "tempAccess": ""
+  },
   "handleExternalTransferPage": {
+    "detailButton": "",
     "error": "",
-    "loadingLabel": "Validating your transfer..."
+    "loadingLabel": "Validating your transfer...",
+    "networkConfirmations": "",
+    "notInitiatedUntilApproved": "",
+    "recievedDetails": "You will receive <1>{amountStr}</1> in {clientName} ({shortAddress})",
+    "requestRecieved": "",
+    "revolutApproveInfo": "",
+    "transactionComplete": ""
   },
   "handleOauthPage": {
     "error": ""
@@ -190,6 +225,21 @@
     "phone": "Check your phone for an SMS message",
     "sandbox": "Hint: {{hint}}",
     "totp": "Check your authenticator app"
+  },
+  "mfaInstructionsText": {
+    "email": "Enter the one-time code that <2>{selectedIntegrationName}</2> has sent to your email.",
+    "paymentFlow": "Enter your one-time code to confirm it’s really you initiating this payment.",
+    "phone": "Enter the one-time code that <2>{selectedIntegrationName}</2> has sent to your phone.",
+    "totp": "Enter the one-time code provided by the authenticator app you have linked to <1>{selectedIntegrationName}</1>.",
+    "tradingPin": "Please enter the trading PIN code associated with your <2>{selectedIntegrationName}</2> account.",
+    "transferFlow": "Enter your one-time code to confirm it’s really you initiating this transfer.",
+    "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{selectedIntegrationName}</1> account."
+  },
+  "mfaPage": {
+    "enterCode": "Enter your one-time code to confirm it’s<1></1>really you trying to log in.",
+    "enterPin": "",
+    "title": "",
+    "verify": ""
   },
   "mfaTitle": {
     "default": "Verification code",
@@ -237,6 +287,20 @@
   "setupEmailPage": {
     "emailTitle": "",
     "enterError": ""
+  },
+  "termsAndConditionsPage": {
+    "paragraph1": "Mesh Connect, Inc. (the <1>“Company”</1>) is a technology provider that makes a communications tool (the <3>“Tool”</3>) which helps facilitate certain functionality of the third-party service you are using (the <5>“End User Service”</5>). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (<7>“Connected Accounts”</7>) through the End User Service, including sending instructions that you wish to execute.",
+    "paragraph10": "The arbitration will be administered by the American Arbitration Association under its Consumer Arbitration Rules, as amended by these terms. The Consumer Arbitration Rules are available online at <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. The arbitrator will conduct hearings, if any, by teleconference or videoconference, rather than by personal appearances, unless the arbitrator determines upon request by you or by us that an in-person hearing is appropriate. Any in-person appearances will be held at a location which is reasonably convenient to both parties with due consideration of their ability to travel and other pertinent circumstances. If you and the Company are unable to agree on a location, such determination should be made by the AAA or by the arbitrator. The arbitrator’s decision will follow these terms and will be final and binding. The arbitrator will have authority to award temporary, interim or permanent injunctive relief or relief providing for specific performance of these terms, but only to the extent necessary to provide relief warranted by the individual claim before the arbitrator. The award rendered by the arbitrator may be confirmed and enforced in any court having jurisdiction thereof. Notwithstanding any of the foregoing, nothing in these terms will preclude you from bringing issues to the attention of federal, state or local agencies and, if the law allows, they can seek relief against us for you.",
+    "paragraph11": "These terms constitute the complete agreement between you and the Company relating to their subject matter, and supersede all prior representations or agreements, whether oral or written, with respect to such matters. If any term is unenforceable under applicable law, then that term is hereby amended so as to comply with the law, while preserving to the maximum extent possible the intent of the original term. Any term that cannot be so amended will be severed and all remaining terms will remain in effect. You acknowledge and agree that Company’s service providers are intended third-party beneficiaries of these terms. By accepting these terms and conditions or utilizing the Tool, you hereby agree that you are bound by the terms and conditions of this agreement.",
+    "paragraph2": "You acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.",
+    "paragraph3": "You represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).",
+    "paragraph4": "You acknowledge that you have read the Company’s Privacy Policy, which is available at <2>https://meshconnect.com/privacy-policy</2>, and agree that, by using the Tool, you consent to the Company’s use of your Personal Information as defined and set forth in the Privacy Policy.",
+    "paragraph5": "The Tool is made available on an “AS IS” and “AS AVAILABLE” basis, with all faults and without any representation or warranty of any kind. The Company does not make any representations or warranties with respect to the Tool, express or implied, including any warranty of merchantability, fitness for a particular purpose or non-infringement.",
+    "paragraph6": "IN NO EVENT WILL THE COMPANY OR ITS SERVICE PROVIDERS BE LIABLE, WHETHER IN CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, STRICT LIABILITY OR OTHER THEORY, FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES IN CONNECTION WITH THE USE (OR INABILITY TO USE) THE TOOL, END USER SERVICE OR ANY CONNECTED ACCOUNT, INCLUDING ANY INSTRUCTIONS OR MATERIALS TRANSMITTED USING FUNCTIONALITY ENABLED BY THE TOOL. THE FOREGOING LIMITATIONS, EXCLUSIONS AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS OF ITS ESSENTIAL PURPOSE. WITHOUT LIMITING THE FOREGOING, THE COMPANY’S AND ITS SERVICE PROVIDERS’ AGGREGATE LIABILITY IN CONNECTION WITH THE TOOL WILL NOT EXCEED TEN DOLLARS.",
+    "paragraph7": "You will defend, indemnify and hold harmless the Company and its directors, officers, employees, licensors, contractors and representatives from and against any third-party claims, actions, suits, investigations or proceedings, and any losses, liabilities, damages, costs and expenses arising out of or related to your use (or misuse) of the Tool, the End User Service and/or any Connected Account.",
+    "paragraph8": "The Company may change these terms at any time. Your continued use of any functionality enabled by the Tool after any such changes constitutes your acceptance of the updated terms.",
+    "paragraph9": "These terms will be governed by the laws of the State of Delaware, excluding its choice of law principles. Except for disputes that qualify for small claims court, all disputes arising out of or related to these terms or any aspect of the relationship between you and the Company, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory, will be resolved through final and binding arbitration before a neutral arbitrator instead of in a court by a judge or jury and you agree that the Company and you are each waiving the right to trial by a jury. Such disputes include, without limitation, disputes arising out of or relating to interpretation or application of this arbitration provision, including the enforceability, revocability or validity of the arbitration provision or any portion of the arbitration provision. All such matters shall be decided by an arbitrator and not by a court or judge. You agree that any arbitration under these terms will take place on an individual basis; class arbitrations and class actions are not permitted, and you are agreeing to give up the ability to participate in a class action.",
+    "title": "{shortName} End User<2></2>Terms and Conditions"
   },
   "transferCanceledPage": {
     "title": "Transfer canceled",
