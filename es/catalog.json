@@ -2,9 +2,9 @@
   "bindFacePage": {
     "completedButton": "I have completed this on my phone",
     "linkText": "If you are unable to scan the QR code, please follow this <2><0>link</0></2>.",
+    "qrCode": "QR Code",
     "return": "Return to this screen to continue.",
-    "title": "Open Binance APP and scan the QR Code below",
-    "qrCode": "QR Code"
+    "title": "Open Binance APP and scan the QR Code below"
   },
   "catalogList": {
     "badges": {
@@ -135,6 +135,13 @@
   "externalHardwareWalletInitial": {
     "invalidCode": "Invalid code. Please try again"
   },
+  "externalHardwareWalletMainPage": {
+    "mobileBody": "This experience must be completed on a <1>desktop</1> device to connect your hardware wallet.",
+    "mobileTitle": "Open this link on a desktop device"
+  },
+  "externalInitialScreen": {
+    "title": "Enter the one time code <1></1>displayed on your mobile device"
+  },
   "externalTransferCallbackPage": {
     "continue": "Continue to {{clientName}}",
     "transferRequested": "Transfer requested, please return to {{clientName}}",
@@ -202,6 +209,9 @@
     "symbolDoesNotMatch": "Not supported by {{clientName}}",
     "symbolDoesNotMatchDescription": "{{clientName}} does not accept {{symbol}}, or no {{symbol}} address was provided for this transfer."
   },
+  "initialLedgerScreen": {
+    "title": "Power on and unlock your device"
+  },
   "initialScreen": {
     "accountTitle": "This application will securely link your account",
     "clientNameAccountTitle": "{{clientName}} will securely link your account",
@@ -217,6 +227,49 @@
   },
   "ipWhiteListPage": {
     "copyIpTitle": "IP address"
+  },
+  "ledgerBluetooth": {
+    "step1": "Select your device from the <1>Bluetooth</1> window",
+    "step2": "Follow the instructions in the bluetooth window and on your Ledger device to complete the connection"
+  },
+  "ledgerConnection": {
+    "bluetoothConnect": "Connect with Bluetooth",
+    "connectionQuestion": "How would you like to connect your Ledger?",
+    "usbConnect": "Connect with USB"
+  },
+  "ledgerDeviceConnected": {
+    "clientVerifyLabel": "{{clientName}} must verify your wallet",
+    "clientVerifyText": "You’ll be prompted to sign a message in your Ledger device that confirms you own this wallet.",
+    "secureLabel": "Fast, secure and free",
+    "secureText": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet.",
+    "title": "Almost there!"
+  },
+  "ledgerError": {
+    "incorrectAppError": "The wrong application is open on your device. Please open the correct app and try again.",
+    "lockedError": "Your device is locked. Please unlock it and try again.",
+    "noDeviceError": "No device selected. Please select a device and try again.",
+    "notSelectedError": "No application selected. Please select an application and try again.",
+    "rejectError": "User has rejected the operation. Please try again.",
+    "title": "Connection failed",
+    "transportError": "A transport error occurred with your Ledger device.",
+    "transportLockedError": "Transport is locked. Please unlock your device and try again.",
+    "unexpectedError": "An unexpected error occurred.",
+    "unknownError": "An unknown error occurred with your Ledger device."
+  },
+  "ledgerOpenApp": {
+    "title": "Open the {{network}} app in your device"
+  },
+  "ledgerSignError": {
+    "body": "You have declined the request to verify your wallet.",
+    "title": "Verification failed"
+  },
+  "ledgerSignMessage": {
+    "rippleBody": "Note: For XRP, you will see a dummy transaction with minimal values. This is only to verify your wallet and will not cost anything or send any funds.",
+    "title": "Review and sign the message on your device"
+  },
+  "ledgerUSB": {
+    "step1": "Select your device from the <1>USB</1> window",
+    "step2": "Follow the instructions in the USB window and on your Ledger device to complete the connection"
   },
   "mfaError": {
     "default": "Incorrect code, please try again"
@@ -319,8 +372,40 @@
     "insufficientFunds": "Insufficient funds",
     "unknownError": "An unknown error has occurred. Please click below to begin a new transfer session."
   },
+  "trezorContext": {
+    "failedGetBTCError": "Failed to get BTC wallet info",
+    "failedGetETHError": "Failed to get ETH address",
+    "failedSignBTCError": "Failed to sign BTC message",
+    "failedSignETHError": "Failed to sign ETH message",
+    "unknownError": "Unknown error occurred"
+  },
+  "trezorDeviceConnected": {
+    "clientVerifyLabel": "{{clientName}} must verify your wallet",
+    "secureLabel": "Fast, secure and free",
+    "secureText": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet.",
+    "signText": "You’ll be prompted to sign a message in your Trezor device that confirms you own this wallet.",
+    "title": "Almost there!",
+    "verifyingLabel": "Verifying your wallet..."
+  },
+  "trezorError": {
+    "connectionDeclinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
+    "connectionDeclinedTitle": "Connection declined",
+    "signatureDeclinedBody": "You have declined the signature request in your wallet, or a previous request is still active.",
+    "signatureDeclinedTitle": "Signature declined"
+  },
+  "trezorInitial": {
+    "clientVerifyLabel": "{{clientName}} must verify your wallet",
+    "clientVerifyText": "You’ll be securely transferred to your Trezor to sign a message in your device that confirms you own your wallet.",
+    "connectingLabel": "Connecting your wallet...",
+    "secureLabel": "Fast, secure and free",
+    "secureText": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet."
+  },
   "verifyAddressAndNetworkErrorPage": {
     "title": "Uh oh!"
+  },
+  "verifyError": {
+    "body": "Unable to verify your hardware wallet. Please ensure you have selected the correct network and entered the correct wallet address.",
+    "title": "Verification failed"
   },
   "verifyErrorPage": {
     "body": "You have declined the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
@@ -330,5 +415,9 @@
     "noActiveSessionError": "No active WalletConnect session",
     "transactionHashError": "Could not get transaction hash",
     "unknownError": "An unknown error occurred. {{error}}"
+  },
+  "walletDoneScreen": {
+    "continueMessage": "Please continue in your {{clientName}} app.",
+    "successMessage": "You have successfully verified ownership of your {{walletName}} wallet."
   }
 }
