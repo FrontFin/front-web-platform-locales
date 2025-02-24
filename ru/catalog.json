@@ -46,6 +46,7 @@
     "failedToLoadTrasferError": "Failed to load information about the transfer",
     "genericConnectErrorMessage": "Failed to connect to your integration",
     "maxCap": "Max",
+    "mesh": "Mesh",
     "notFound": "Not found",
     "searchCap": "Search",
     "securedBy": "Secured by",
@@ -55,8 +56,12 @@
     "tryAgain": "Try again"
   },
   "connectExternalPageScreen": {
+    "connectedTitle": "Follow the instructions on your desktop to connect your {{selectedIntegrationName}}",
     "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
-    "failedTitle": "Connection Failed"
+    "failedTitle": "Connection Failed",
+    "notConnectedStep1": "1. Open this link on a <1>desktop</1> device",
+    "notConnectedStep2": "2. Enter this code to securely connect your wallet",
+    "notConnectedTitle": "Use a desktop device to connect your {{selectedIntegrationName}}"
   },
   "connectionDeclinedPage": {
     "connectAnother": "Connect another account"
@@ -104,6 +109,10 @@
     "verified": "I’ve verified on my app",
     "verifyLoggedIn": "Verify you are logging in from a new device"
   },
+  "doneExternalVerifyScreen": {
+    "body": "You have successfully verified ownership of your <2>{{selectedIntegrationName}}</2> wallet.",
+    "returnAction": "Return to {{clientName}}"
+  },
   "donePage": {
     "continueToDeposit": "Continue to deposit",
     "continueToPayment": "Continue to payment",
@@ -115,7 +124,11 @@
     "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
   },
   "doneVerifyPage": {
-    "titleAllSet": "All set!"
+    "alreadyVerifiedBody": "Ownership of address {{address}} has already been verified for <4>{{clientName}}</4>.",
+    "continueToTransfer": "Continue to transfer",
+    "returnToClient": "Return to {{clientName}}",
+    "titleAllSet": "All set!",
+    "verifiedBody": "You have successfully verified ownership of address {{address}} for <4>{{clientName}}</4>."
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email received. Processing...",
@@ -131,6 +144,20 @@
     "continue": "No, continue",
     "exit": "Yes, exit",
     "title": "Are you sure you want to exit?"
+  },
+  "externalDirectMobileWallet": {
+    "actionRefusedError": "Action Refused",
+    "actionRefusedRetryText": "Please return to your {{clientName}} app",
+    "actionRefusedText": "You have rejected the action.",
+    "connectionWalletAction": "You have successfully connected your {{integrationName}}.",
+    "continueInApp": "Please continue in your {{clientName}} app.",
+    "defaultAction": "You have successfully completed the action.",
+    "processingError": "Processing Error",
+    "processingText": "Something went wrong.",
+    "sessionNotFoundError": "Session Not Found",
+    "signedMessageAction": "You have successfully verified ownership of your {{integrationName}}.",
+    "transactionAction": "You have successfully initialized the transaction.",
+    "tryAgainText": "Please try again later."
   },
   "externalHardwareWalletInitial": {
     "invalidCode": "Invalid code. Please try again"
@@ -194,6 +221,10 @@
   "handleOauthPage": {
     "error": "Failed to link your account. {{error}}"
   },
+  "hardwareWalletDrawerContent": {
+    "body": "{{clientName}} uses Mesh to facilitate the secure connection with {{selectedIntegrationName}}.",
+    "connectAction": "Connect with {{selectedIntegrationName}}"
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "The requested transfer amount of {{requestedAmount}} is less than {{integrationName}}’s minimum of {{minimumAmount}} to transfer on the {{network}} network.",
     "balanceBelowMinimumDescription": "Your {{currentBalance}} balance is less than {{integrationName}}’s {{minimumAmount}} minimum to transfer on the {{network}} network.",
@@ -224,6 +255,18 @@
     "encryption": "Your data is encrypted at all times",
     "explicitApproval": "Your explicit approval is always required to initiate a transfer",
     "thirdParty": "Your assets never touch a third party"
+  },
+  "initialVerifyPage": {
+    "drawerTitle": "Approve the signature request<1></1> in your wallet",
+    "item1Body": "You’ll be prompted to sign a message in {{selectedIntegrationName}} that confirms you own this wallet.",
+    "item1Title": "{{clientName}} must verify your address",
+    "item2Body": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet.",
+    "item2Title": "Fast, secure and free",
+    "monitoringLabel": "Monitoring for signature...",
+    "resendAction": "Resend signature request",
+    "title": "Almost there!",
+    "verifyAction": "Verify address",
+    "verifyingLabel": "Verifying signature..."
   },
   "ipWhiteListPage": {
     "copyIpTitle": "IP address"
@@ -324,10 +367,35 @@
   "selectHoldingPage": {
     "ineligibleAssets": "Ineligible assets",
     "loading": "Loading your assets...",
-    "otherEligible": "Other eligible assets"
+    "otherEligible": "Other eligible assets",
+    "depositTitle": "Select deposit token",
+    "paymentTitle": "Select payment token",
+    "defaultTitle": "Select token",
+    "notEnoughtTitle": "Not enough {{symbol}}",
+    "notEnoughtBody": "Add more {{symbol}} to your account, then return here to try again.",
+    "noEligibleAssetsTitle": "No assets in this account are eligible for this transfer",
+    "cannotFundTitle": "Cannot fund transaction",
+    "cannotFundBody": "You do not have enough crypto or fiat balance in this account to fund this transaction.",
+    "noAssetsTitle": "No assets detected in the linked account",
+    "spotAccountsBody": "Only spot accounts are currently supported. Assets in other account types, like margin, will not be detected.",
+    "unableTransferError": "Unable to initiate the transfer.",
+    "returnToClientButton": "Return to {{clientName}}",
+    "returnToAppButton": "Return to the application",
+    "topUpButton": "Top Up Balance",
+    "connectAnotherButton": "Connect a different account",
+    "binanceDirectNoAssetsBody1": "Looks like you don’t have any assets in your linked account.",
+    "binanceDirectNoAssetsBody2": "You can add funds to your account or connect a different one to continue with your transfer."
   },
   "selectNetworkPage": {
     "ineligibleNetwork": "Ineligible networks"
+  },
+  "selectNetworkScreen": {
+    "title": "Select network to connect"
+  },
+  "selectWalletScreen": {
+    "ledgerDevice": "Ledger device",
+    "ledgerLiveMobileApp": "Ledger Live mobile app",
+    "title": "How do you want to connect to {{selectedIntegrationName}}?"
   },
   "sessionExpired": {
     "title": "Your session has expired."
@@ -401,6 +469,8 @@
     "secureText": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet."
   },
   "verifyAddressAndNetworkErrorPage": {
+    "body": "{{clientName}} would like you to verify ownership of <3>{{requestedNetworkName}}</3> address <6>{{truncatedRequestedAddress}}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
+    "connectAnotherAction": "Connect another wallet",
     "title": "Uh oh!"
   },
   "verifyError": {
