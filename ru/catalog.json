@@ -46,6 +46,7 @@
     "failedToLoadTrasferError": "",
     "genericConnectErrorMessage": "",
     "maxCap": "",
+    "mesh": "",
     "notFound": "",
     "searchCap": "",
     "securedBy": "Secured by",
@@ -55,8 +56,12 @@
     "tryAgain": ""
   },
   "connectExternalPageScreen": {
+    "connectedTitle": "",
     "failedBody": "",
-    "failedTitle": ""
+    "failedTitle": "",
+    "notConnectedStep1": "1. Open this link on a <1>desktop</1> device",
+    "notConnectedStep2": "",
+    "notConnectedTitle": ""
   },
   "connectionDeclinedPage": {
     "connectAnother": "Connect another account"
@@ -104,6 +109,10 @@
     "verified": "",
     "verifyLoggedIn": ""
   },
+  "doneExternalVerifyScreen": {
+    "body": "You have successfully verified ownership of your <2>{selectedIntegrationName}</2> wallet.",
+    "returnAction": ""
+  },
   "donePage": {
     "continueToDeposit": "",
     "continueToPayment": "",
@@ -115,7 +124,11 @@
     "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
   },
   "doneVerifyPage": {
-    "titleAllSet": ""
+    "alreadyVerifiedBody": "Ownership of address {address} has already been verified for <4>{clientName}</4>.",
+    "continueToTransfer": "",
+    "returnToClient": "",
+    "titleAllSet": "",
+    "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "",
@@ -131,6 +144,20 @@
     "continue": "No, continue",
     "exit": "Yes, exit",
     "title": "Are you sure you want to exit?"
+  },
+  "externalDirectMobileWallet": {
+    "actionRefusedError": "",
+    "actionRefusedRetryText": "",
+    "actionRefusedText": "",
+    "connectionWalletAction": "",
+    "continueInApp": "",
+    "defaultAction": "",
+    "processingError": "",
+    "processingText": "",
+    "sessionNotFoundError": "",
+    "signedMessageAction": "",
+    "transactionAction": "",
+    "tryAgainText": ""
   },
   "externalHardwareWalletInitial": {
     "invalidCode": ""
@@ -194,6 +221,10 @@
   "handleOauthPage": {
     "error": ""
   },
+  "hardwareWalletDrawerContent": {
+    "body": "",
+    "connectAction": ""
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "",
     "balanceBelowMinimumDescription": "",
@@ -224,6 +255,18 @@
     "encryption": "Your data is encrypted at all times",
     "explicitApproval": "Your explicit approval is always required to initiate a transfer",
     "thirdParty": "Your assets never touch a third party"
+  },
+  "initialVerifyPage": {
+    "drawerTitle": "Approve the signature request<1></1> in your wallet",
+    "item1Body": "",
+    "item1Title": "",
+    "item2Body": "",
+    "item2Title": "",
+    "monitoringLabel": "",
+    "resendAction": "",
+    "title": "",
+    "verifyAction": "",
+    "verifyingLabel": ""
   },
   "ipWhiteListPage": {
     "copyIpTitle": ""
@@ -329,6 +372,14 @@
   "selectNetworkPage": {
     "ineligibleNetwork": ""
   },
+  "selectNetworkScreen": {
+    "title": ""
+  },
+  "selectWalletScreen": {
+    "ledgerDevice": "",
+    "ledgerLiveMobileApp": "",
+    "title": ""
+  },
   "sessionExpired": {
     "title": ""
   },
@@ -401,6 +452,8 @@
     "secureText": ""
   },
   "verifyAddressAndNetworkErrorPage": {
+    "body": "{clientName} would like you to verify ownership of <3>{requestedNetworkName}</3> address <6>{truncatedRequestedAddress}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
+    "connectAnotherAction": "",
     "title": ""
   },
   "verifyError": {
