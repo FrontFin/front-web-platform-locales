@@ -11,6 +11,12 @@
     "return": "Return to this screen to continue.",
     "title": "Open Binance APP and scan the QR Code below"
   },
+  "bindMfaList": {
+    "authApp": "Authenticator App",
+    "email": "Email",
+    "enabled": "Enabled",
+    "notEnabled": "Not enabled"
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -343,6 +349,16 @@
     "title": "Verification",
     "verify": "Verify"
   },
+  "mfaSetupPage": {
+    "emailButton": "Set up email verification",
+    "emailSubtitle": "Click the button below to add an email to your <2>{{selectedIntegrationName}}</2> account.",
+    "keyGenerationBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
+    "keyGenerationTitle": "Enable API key generation from your {{selectedIntegrationName}} account",
+    "totpButton": "Set up authenticator app",
+    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
+    "withdrawalBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
+    "withdrawalTitle": "Enable withdrawals from your {{selectedIntegrationName}} account"
+  },
   "mfaTitle": {
     "default": "Verification code",
     "email": "Email verification code",
@@ -365,31 +381,34 @@
     "transferDeclined": "Transfer declined",
     "transferDeclinedBody": "You have declined the transfer request in your wallet."
   },
+  "privacyComponent": {
+    "content": "Your data is private and encrypted at all times."
+  },
   "qrCodePassword": {
     "expired": "QR code expired",
     "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
   },
   "selectHoldingPage": {
+    "binanceDirectNoAssetsBody1": "Looks like you don’t have any assets in your linked account.",
+    "binanceDirectNoAssetsBody2": "You can add funds to your account or connect a different one to continue with your transfer.",
+    "cannotFundBody": "You do not have enough crypto or fiat balance in this account to fund this transaction.",
+    "cannotFundTitle": "Cannot fund transaction",
+    "connectAnotherButton": "Connect a different account",
+    "defaultTitle": "Select token",
+    "depositTitle": "Select deposit token",
     "ineligibleAssets": "Ineligible assets",
     "loading": "Varlıklarınız yükleniyor...",
-    "otherEligible": "Other eligible assets",
-    "depositTitle": "Select deposit token",
-    "paymentTitle": "Select payment token",
-    "defaultTitle": "Select token",
-    "notEnoughtTitle": "Not enough {{symbol}}",
-    "notEnoughtBody": "Add more {{symbol}} to your account, then return here to try again.",
-    "noEligibleAssetsTitle": "No assets in this account are eligible for this transfer",
-    "cannotFundTitle": "Cannot fund transaction",
-    "cannotFundBody": "You do not have enough crypto or fiat balance in this account to fund this transaction.",
     "noAssetsTitle": "No assets detected in the linked account",
-    "spotAccountsBody": "Only spot accounts are currently supported. Assets in other account types, like margin, will not be detected.",
-    "unableTransferError": "Unable to initiate the transfer.",
-    "returnToClientButton": "Return to {{clientName}}",
+    "noEligibleAssetsTitle": "No assets in this account are eligible for this transfer",
+    "notEnoughtBody": "Add more {{symbol}} to your account, then return here to try again.",
+    "notEnoughtTitle": "Not enough {{symbol}}",
+    "otherEligible": "Other eligible assets",
+    "paymentTitle": "Select payment token",
     "returnToAppButton": "Return to the application",
+    "returnToClientButton": "Return to {{clientName}}",
+    "spotAccountsBody": "Only spot accounts are currently supported. Assets in other account types, like margin, will not be detected.",
     "topUpButton": "Top Up Balance",
-    "connectAnotherButton": "Connect a different account",
-    "binanceDirectNoAssetsBody1": "Looks like you don’t have any assets in your linked account.",
-    "binanceDirectNoAssetsBody2": "You can add funds to your account or connect a different one to continue with your transfer."
+    "unableTransferError": "Unable to initiate the transfer."
   },
   "selectNetworkPage": {
     "ineligibleNetwork": "Ineligible networks"
