@@ -122,7 +122,7 @@
     "verifyLoggedIn": "Verify you are logging in from a new device"
   },
   "doneExternalVerifyScreen": {
-    "body": "You have successfully verified ownership of your <2>{{selectedIntegrationName}}</2> wallet.",
+    "body": "You have successfully verified ownership of your <2>{selectedIntegrationName}</2> wallet.",
     "returnAction": "Return to {{clientName}}"
   },
   "donePage": {
@@ -136,11 +136,11 @@
     "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
   },
   "doneVerifyPage": {
-    "alreadyVerifiedBody": "Ownership of address {{address}} has already been verified for <4>{{clientName}}</4>.",
+    "alreadyVerifiedBody": "Ownership of address {address} has already been verified for <4>{clientName}</4>.",
     "continueToTransfer": "Continue to transfer",
     "returnToClient": "Return to {{clientName}}",
     "titleAllSet": "Tamam",
-    "verifiedBody": "You have successfully verified ownership of address {{address}} for <4>{{clientName}}</4>."
+    "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email received. Processing...",
@@ -352,12 +352,12 @@
   },
   "mfaSetupPage": {
     "emailButton": "Set up email verification",
-    "emailSubtitle": "Click the button below to add an email to your <2>{{selectedIntegrationName}}</2> account.",
-    "keyGenerationBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
+    "emailSubtitle": "Click the button below to add an email to your <2>{selectedIntegrationName}</2> account.",
+    "keyGenerationBody": "For your security, <1>{selectedIntegrationName} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
     "keyGenerationTitle": "Enable API key generation from your {{selectedIntegrationName}} account",
     "totpButton": "Set up authenticator app",
-    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
-    "withdrawalBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
+    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{selectedIntegrationName}</2> account.",
+    "withdrawalBody": "For your security, <1>{selectedIntegrationName} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
     "withdrawalTitle": "Enable withdrawals from your {{selectedIntegrationName}} account"
   },
   "mfaTitle": {
@@ -377,6 +377,15 @@
   "passwordPage": {
     "fieldError": "Please enter your {{field}}",
     "fieldErrorWithIntegration": "Please enter your {{integrationName}} {{field}}"
+  },
+  "payPalConnectOAuthPage": {
+    "close": "Close",
+    "title": "Select asset to transfer",
+    "selectNetwork": "Select transfer network",
+    "enterAmount": "Enter transfer amount",
+    "notSupported": "{selectedIntegrationName} does not support transfers for the tokens and/or networks requested.",
+    "selectAnotherAccount": "Select another account",
+    "selectAnotherExchange": "Please select another exchange or wallet to deposit from."
   },
   "previewTransfer": {
     "transferDeclined": "Transfer declined",
@@ -494,7 +503,7 @@
     "secureText": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} would like you to verify ownership of <3>{{requestedNetworkName}}</3> address <6>{{truncatedRequestedAddress}}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
+    "body": "{clientName} would like you to verify ownership of <3>{requestedNetworkName}</3> address <6>{truncatedRequestedAddress}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "Connect another wallet",
     "title": "Uh oh!"
   },
