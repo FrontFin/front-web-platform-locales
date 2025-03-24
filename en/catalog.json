@@ -13,6 +13,16 @@
     "selectCurrency": "Select a currency",
     "selectNetwork": "Select transfer network"
   },
+  "binanceResetPasswordPage": {
+    "securityNote": "Note: for your security, crypto withdrawals are disabled for 24 hours after a password change.",
+    "steps": {
+      "completeProcess": "Complete the process to reset your password.",
+      "enterEmail": "Enter your email or phone number, and click \"Forgot password?\".",
+      "goToBinance": "Select <1>Go to Binance.com</1> and you’ll be taken to a Binance login screen.",
+      "returnToLogin": "Return here to login with your new password."
+    },
+    "title": "Reset password"
+  },
   "bindFacePage": {
     "completedButton": "I have completed this on my phone",
     "linkText": "If you are unable to scan the QR code, please follow this <2><0>link</0></2>.",
@@ -165,7 +175,15 @@
     "emailRecievedLoading": "Email received. Processing...",
     "expiredError": "Approval email has expired. Please go back and try again.",
     "forwardingEmail": "Forwarding email",
-    "stillWaitingLoading": "Still waiting for email..."
+    "sendEmailButton": "I've sent the email",
+    "steps": {
+      "checkInbox": "Check your inbox for an email to confirm you're signing in from a new device.",
+      "doNotClick": "<0>DO NOT</0> click the confirmation button in the email.",
+      "forwardEmail": "Forward the email to this secure inbox which will auto-confirm to match the login request."
+    },
+    "stillWaitingLoading": "Still waiting for email...",
+    "title": "Confirm your identity",
+    "warningTitle": "Read this entire message before continuing."
   },
   "errorPage": {
     "title": "An error has occurred."
@@ -301,7 +319,14 @@
     "verifyingLabel": "Verifying signature..."
   },
   "ipWhiteListPage": {
-    "copyIpTitle": "IP address"
+    "addIp": "Add the IP address below as a Trusted IP",
+    "clickOnEdit": "Click on edit restrictions",
+    "copyIpTitle": "IP address",
+    "description": "<0>Binance</0> requires API users to whitelist IP addresses to ensure the legitimacy of trade and transfer requests.",
+    "findKey": "Find the key used for this connection",
+    "openLink": "Open <2><0>Binance API Management</0></2>",
+    "requirementsTitle": "If you plan to trade or transfer through this connection:",
+    "title": "Before you continue Whitelist this IP address"
   },
   "kycDonePage": {
     "successMessage": "You have successfully verified your identity and enabled crypto transfers in your {{integrationName}} account"
@@ -374,6 +399,11 @@
     "step1": "Select your device from the <1>USB</1> window",
     "step2": "Follow the instructions in the USB window and on your Ledger device to complete the connection"
   },
+  "loginDeviceVerifiedPage": {
+    "loginButton": "Go to Login",
+    "subtitle": "Proceed to login.",
+    "title": "Your device is approved."
+  },
   "mfaError": {
     "default": "Incorrect code, please try again"
   },
@@ -433,6 +463,16 @@
     "firstEnterTotp": "First, let's verify your identity.<1></1>Please, enter the one-time code from the authenticator app you have linked to <3>{{selectedIntegrationName}}</3>.",
     "securityVerification": "Security Verification"
   },
+  "mobileAppLink": {
+    "awaitingConfirmation": "Awaiting confirmation from mobile app",
+    "openAppButton": "Open {{selectedIntegrationName}} App",
+    "sendNewRequest": "Send a new request",
+    "steps": {
+      "authorize": "Click <1>Authorize</1> on the confirmation page.",
+      "openApp": "Click <1>Open {{selectedIntegrationName}} app</1> below.",
+      "return": "Return here to finish linking your account."
+    }
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
     "movingFunds": "moving funds without your permission",
@@ -441,6 +481,12 @@
     "transactionRequest": "sending requests for transactions",
     "viewActivity": "viewing balances, activity, profile data",
     "wontAllow": "Won’t allow"
+  },
+  "oAuthBrokerPage": {
+    "monitoring": "Monitoring for approval...",
+    "reopenButton": "Click here to re-open {{selectedIntegrationName}}",
+    "subtitle": "Log into your account and allow access",
+    "title": "Continue on <1></1> {{selectedIntegrationName}} window"
   },
   "passwordPage": {
     "fieldError": "Please enter your {{field}}",
@@ -508,11 +554,19 @@
     "text": "If you have questions, please report this with session ID <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
-    "copyCodeTitle": "Manual code"
+    "alternativeText": "Alternatively, you can paste this manual code into the authenticator app",
+    "copyCodeTitle": "Manual code",
+    "downloadStep": "Download the <1>Google Authenticator app</1> from Google Play or the App Store",
+    "nextButton": "Next",
+    "qrCodeAlt": "QR Code",
+    "scanStep": "Add {{selectedIntegrationName}} to your authenticator app by <1>scanning the QR code</1>",
+    "title": "Set up Authenticator App"
   },
   "setupEmailPage": {
+    "description": "Enter your email address.<1></1><2>{{selectedIntegrationName}}</2> will use this email to send you confirmation codes when you're performing certain actions in your account.",
     "emailTitle": "Email",
-    "enterError": "Please enter email"
+    "enterError": "Please enter email",
+    "title": "Set up Email"
   },
   "termsAndConditionsPage": {
     "paragraph1": "Mesh Connect, Inc. (the <1>“Company”</1>) is a technology provider that makes a communications tool (the <3>“Tool”</3>) which helps facilitate certain functionality of the third-party service you are using (the <5>“End User Service”</5>). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (<7>“Connected Accounts”</7>) through the End User Service, including sending instructions that you wish to execute.",
