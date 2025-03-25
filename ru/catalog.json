@@ -10,6 +10,7 @@
     "selectNetwork": ""
   },
   "binanceResetPasswordPage": {
+    "goToBinance": "",
     "securityNote": "",
     "steps": {
       "completeProcess": "",
@@ -31,6 +32,12 @@
     "email": "",
     "enabled": "",
     "notEnabled": ""
+  },
+  "browserContent": {
+    "monitoring": "",
+    "openButtom": "",
+    "resend": "",
+    "title": "Approve the connection<1></1> request in your wallet"
   },
   "catalogList": {
     "badges": {
@@ -91,6 +98,12 @@
     "successTitle": "",
     "tryAgain": ""
   },
+  "commonContent": {
+    "description": "",
+    "monitoring": "",
+    "resend": "",
+    "title": "Approve the connection<1></1> request in your wallet"
+  },
   "connectExternalPageScreen": {
     "connectedTitle": "",
     "failedBody": "",
@@ -119,13 +132,22 @@
     "networkDeclinedBody": "",
     "networkDeclinedTitle": ""
   },
+  "deFiWalletDrawerContent": {
+    "actionButton": ""
+  },
   "defiWalletQrPage": {
     "declinedBody": "",
-    "declinedTitle": ""
+    "declinedTitle": "",
+    "description": "Open {selectedIntegrationName} and scan the<3></3>QR code to link",
+    "qrCodeLabel": "",
+    "title": ""
   },
   "defiWalletSelectNetworkPage": {
     "declinedBody": "",
-    "declineTitle": ""
+    "declineTitle": "",
+    "selectNetwork": "",
+    "title": "",
+    "whichNetwork": "Which network in your <1>{selectedIntegrationName}</1> wallet<4></4>would you like to link?"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "",
@@ -158,6 +180,61 @@
     "linkAnother": "",
     "linkedToClient": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>{clientName}</5>.",
     "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
+  },
+  "doneTransferDetails": {
+    "defaultTitle": "",
+    "depositTitle": "",
+    "onrampTitle": "",
+    "paymentTitle": "",
+    "requestToTransferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
+    "requestToTransferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
+    "requestToTransferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
+    "requestToTransferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
+    "requestToTransferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+    "requestToTransferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+    "requestToTransferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
+    "requestToTransferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}.",
+    "steps": {
+      "approvedFromCeFiToClient": "",
+      "approvedFromCeFiToDestination": "",
+      "approvedFromDeFi": "",
+      "conversion": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
+      "deposit": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
+      "purchase": "Purchase of <1> {amount}</1> worth of {symbol} in {selectedIntegrationName}.",
+      "requestToTransferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
+      "requestToTransferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
+      "requestToTransferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
+      "requestToTransferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
+      "requestToTransferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+      "requestToTransferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+      "requestToTransferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
+      "requestToTransferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}.",
+      "transferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
+      "transferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
+      "transferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
+      "transferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
+      "transferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+      "transferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+      "transferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
+      "transferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}."
+    },
+    "transferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
+    "transferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
+    "transferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
+    "transferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
+    "transferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+    "transferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
+    "transferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
+    "transferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}."
+  },
+  "doneTransferPage": {
+    "awaitingApproval": "",
+    "checkDetails": "",
+    "depositAddress": "<0>{amountCrypto} ~ {amountFiat}</0><1></1>will be received in {shortAddress}",
+    "depositClient": "You will receive<1></1><2>{amountCrypto} ~ {amountFiat}</2><3></3>in {clientName} ({shortAddress})",
+    "goToIntegrationToApprove": "Please go to <1>{selectedIntegrationName}</1> to approve this transfer.",
+    "paymentInitiated": "You have initiated a payment of<1></1><2>{amountCrypto}</2><3></3>to {clientName}",
+    "waiting": ""
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Ownership of address {address} has already been verified for <4>{clientName}</4>.",
@@ -467,6 +544,12 @@
       "openApp": "Click <1>Open {selectedIntegrationName} app</1> below.",
       "return": ""
     }
+  },
+  "mobileContent": {
+    "actionButton": "",
+    "monitoring": "",
+    "resend": "",
+    "title": "Approve the connection<1></1>request in your wallet"
   },
   "nonOAuthPermissionsPage": {
     "allow": "",

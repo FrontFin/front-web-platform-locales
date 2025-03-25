@@ -37,6 +37,9 @@
     "enabled": "Enabled",
     "notEnabled": "Not enabled"
   },
+  "browserContent": {
+    "openButtom": "Open {{integrationName}}"
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -97,6 +100,12 @@
     "successTitle": "Success!",
     "tryAgain": "Try again"
   },
+  "commonContent": {
+    "description": "will facilitate the secure connection with {{integrationName}}.",
+    "monitoring": "Monitoring for approval...",
+    "resend": "Resend connection request",
+    "title": "Approve the connection<1></1> request in your wallet"
+  },
   "connectExternalPageScreen": {
     "connectedTitle": "Follow the instructions on your desktop to connect your {{selectedIntegrationName}}",
     "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
@@ -125,13 +134,22 @@
     "networkDeclinedBody": "You have declined the request to change networks in your wallet.",
     "networkDeclinedTitle": "Network change declined"
   },
+  "deFiWalletDrawerContent": {
+    "actionButton": "Connect with {{selectedIntegrationName}}"
+  },
   "defiWalletQrPage": {
     "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
-    "declinedTitle": "Connection declined"
+    "declinedTitle": "Connection declined",
+    "description": "Open {{selectedIntegrationName}} and scan the<3></3>QR code to link",
+    "qrCodeLabel": "QR code can be scanned on your mobile device to establish connection",
+    "title": "Connect with {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
     "declinedBody": "You have declined the request to change networks in your wallet.",
-    "declineTitle": "Network change declined"
+    "declineTitle": "Network change declined",
+    "selectNetwork": "Select network",
+    "title": "Switching networks",
+    "whichNetwork": "Which network in your <1>{{selectedIntegrationName}}</1> wallet<4></4>would you like to link?"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} is not installed on this device. Please install the {{integrationName}} app, or connect another wallet.",
@@ -164,6 +182,46 @@
     "linkAnother": "Link another account",
     "linkedToClient": "You have successfully linked<1></1><2>{{integrationName}}</2> to <5>{{clientName}}</5>.",
     "linkedToThisApp": "You have successfully linked<1></1><2>{{integrationName}}</2> to <5>this application</5>."
+  },
+  "doneTransferDetails": {
+    "defaultTitle": "Transaction complete",
+    "depositTitle": "Deposit complete",
+    "onrampTitle": "Purchase complete",
+    "paymentTitle": "Payment complete",
+    "awaitinApprovalLabel": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
+    "steps": {
+      "approvedFromCeFiToClient": "You approve the transfer from {{selectedIntegrationName}} to {{clientName}}.",
+      "approvedFromCeFiToDestination": "You approve the transfer from {{selectedIntegrationName}} to the destination.",
+      "approvedFromDeFi": "You approved the transfer on {{selectedIntegrationName}}.",
+      "conversion": "Conversion of <1>{{amount}}</1> to <4>{{currency}}</4>.",
+      "deposit": "Deposit of <1>{{amount}}</1> from {{paymentMethod}} to {{selectedIntegrationName}}.",
+      "purchase": "Purchase of <1>{{amount}}</1> worth of {{symbol}} in {{selectedIntegrationName}}.",
+      "requestToTransferPaymentSmartToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentSmartToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}}.",
+      "requestToTransferPaymentToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "requestToTransferSmartToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferSmartToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}}.",
+      "requestToTransferToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}}.",
+      "transferPaymentSmartToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferPaymentSmartToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferPaymentToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}}.",
+      "transferPaymentToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "transferSmartToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferSmartToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}}.",
+      "transferToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}}."
+    }
+  },
+  "doneTransferPage": {
+    "awaitingApproval": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
+    "checkDetails": "See what happened",
+    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>will be received in {{shortAddress}}",
+    "depositClient": "You will receive<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>in {{clientName}} ({{shortAddress}})",
+    "goToIntegrationToApprove": "Please go to <1>{{selectedIntegrationName}}</1> to approve this transfer.",
+    "paymentInitiated": "You have initiated a payment of<1></1><2>{{amountCrypto}}</2><3></3>to {{clientName}}",
+    "waiting": "Transfers are not complete until they have received enough network confirmatPlanInfo PlanInfo ions."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Ownership of address {{address}} has already been verified for <4>{{clientName}}</4>.",
@@ -473,6 +531,9 @@
       "openApp": "Click <1>Open {{selectedIntegrationName}} app</1> below.",
       "return": "Return here to finish linking your account."
     }
+  },
+  "mobileContent": {
+    "actionButton": "Open {{integrationName}}"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
