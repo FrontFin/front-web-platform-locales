@@ -182,6 +182,7 @@
     "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
   },
   "doneTransferDetails": {
+    "awaitinApprovalLabel": "",
     "defaultTitle": "",
     "depositTitle": "",
     "onrampTitle": "",
@@ -566,6 +567,37 @@
     "subtitle": "",
     "title": "Continue on <1></1> {selectedIntegrationName} window"
   },
+  "onRampLoadingScreen": {
+    "approveConversionStep": {
+      "client": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
+      "destination": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to the destination."
+    },
+    "approveTransferStep": {
+      "client": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
+      "destination": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to the destination."
+    },
+    "buyingPowerPurchase": "Purchase of <1>{amount}</1> worth of {symbol} <5>(~ {amountInCrypto})</5> in {selectedIntegrationName}.",
+    "conversionStep": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
+    "depositTitle": "",
+    "description": "",
+    "existingCryptocurrencyBalance": {
+      "approveClient": "",
+      "approveDestination": "",
+      "transfer": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
+      "transferHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName}.",
+      "transferHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address}.",
+      "transferSmartDeposit": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} via a relay contract.",
+      "transferSmartDepositHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName} via a relay contract.",
+      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address} via a relay contract.",
+      "transferSmartDepositWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address} via a relay contract.",
+      "transferWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address}."
+    },
+    "onrampTitle": "",
+    "paymentMethodDepositUsage": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
+    "paymentTitle": "",
+    "transactionTitle": "",
+    "tryAgain": ""
+  },
   "passwordPage": {
     "fieldError": "",
     "fieldErrorWithIntegration": "",
@@ -577,6 +609,12 @@
       "qrCode": ""
     },
     "title": ""
+  },
+  "paymentMethods": {
+    "bankAccount": "",
+    "card": "",
+    "default": "",
+    "digitalWallet": ""
   },
   "payPalConnectOAuthPage": {
     "close": "",
@@ -671,6 +709,25 @@
   "transferCanceledPage": {
     "title": "",
     "titlePayment": ""
+  },
+  "transferDeviceConfirmation": {
+    "awaitingConfirmation": "",
+    "confirmButton": "",
+    "description": "",
+    "desktopSteps": {
+      "confirm": "",
+      "openApp": "",
+      "return": ""
+    },
+    "mobileSteps": {
+      "clickOpen": "Click <1>Open {selectedIntegrationName} app</1> below",
+      "verifyLogin": "",
+      "verifyTransfer": ""
+    },
+    "openApp": "",
+    "sendNewRequest": "",
+    "title": "",
+    "tryAnother": ""
   },
   "transferErrorPage": {
     "defaultError": ""
