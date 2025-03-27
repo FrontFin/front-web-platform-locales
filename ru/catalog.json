@@ -184,11 +184,11 @@
     "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
   },
   "doneTransferDetails": {
+    "awaitinApprovalLabel": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
     "defaultTitle": "Transaction complete",
     "depositTitle": "Deposit complete",
     "onrampTitle": "Purchase complete",
     "paymentTitle": "Payment complete",
-    "awaitinApprovalLabel": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
     "steps": {
       "approvedFromCeFiToClient": "You approve the transfer from {{selectedIntegrationName}} to {{clientName}}.",
       "approvedFromCeFiToDestination": "You approve the transfer from {{selectedIntegrationName}} to the destination.",
@@ -550,6 +550,33 @@
     "subtitle": "Log into your account and allow access",
     "title": "Continue on <1></1> {selectedIntegrationName} window"
   },
+  "onRampLoadingScreen": {
+    "approveTransferStep": {
+      "client": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
+      "destination": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to the destination."
+    },
+    "buyingPowerPurchase": "Purchase of <1>{amount}</1> worth of {symbol} <5>(~ {amountInCrypto})</5> in {selectedIntegrationName}.",
+    "conversionStep": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
+    "depositTitle": "Deposit in progress",
+    "description": "This may take some time...",
+    "existingCryptocurrencyBalance": {
+      "approveClient": "You approve the transfer from {{selectedIntegrationName}} to {{clientName}}.",
+      "approveDestination": "You approve the transfer from {{selectedIntegrationName}} to the destination.",
+      "transfer": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
+      "transferHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName}.",
+      "transferHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address}.",
+      "transferSmartDeposit": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} via a relay contract.",
+      "transferSmartDepositHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName} via a relay contract.",
+      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address} via a relay contract.",
+      "transferSmartDepositWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address} via a relay contract.",
+      "transferWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address}."
+    },
+    "onrampTitle": "Purchase in progress",
+    "paymentMethodDepositUsage": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
+    "paymentTitle": "Payment in progress",
+    "transactionTitle": "Transaction in progress",
+    "tryAgain": "Try again"
+  },
   "passwordPage": {
     "fieldError": "Please enter your {{field}}",
     "fieldErrorWithIntegration": "Please enter your {{integrationName}} {{field}}",
@@ -561,6 +588,12 @@
       "qrCode": "QR Code"
     },
     "title": "Log in"
+  },
+  "paymentMethods": {
+    "bankAccount": "Bank account",
+    "card": "Debit card",
+    "default": "Linked payment method",
+    "digitalWallet": "Digital wallet"
   },
   "payPalConnectOAuthPage": {
     "close": "Close",
@@ -655,6 +688,25 @@
   "transferCanceledPage": {
     "title": "Transfer canceled",
     "titlePayment": "Payment canceled"
+  },
+  "transferDeviceConfirmation": {
+    "awaitingConfirmation": "Awaiting confirmation from mobile app",
+    "confirmButton": "I’ve verified on my app",
+    "description": "Confirm in your {{selectedIntegrationName}} mobile app that it’s really you trying to log in.",
+    "desktopSteps": {
+      "confirm": "Confirm on the prompt to verify it’s you",
+      "openApp": "Open {{selectedIntegrationName}} app on your phone",
+      "return": "Return here to continue"
+    },
+    "mobileSteps": {
+      "clickOpen": "Click <1>Open {selectedIntegrationName} app</1> below",
+      "verifyLogin": "Verify that you are logging in from a new device",
+      "verifyTransfer": "Verify that you are the one requesting the transfer"
+    },
+    "openApp": "Open {{selectedIntegrationName}} app",
+    "sendNewRequest": "Send a new request",
+    "title": "Verification",
+    "tryAnother": "Try another way"
   },
   "transferErrorPage": {
     "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
