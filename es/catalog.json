@@ -7,6 +7,12 @@
     "title": "",
     "token": ""
   },
+  "authCodeInput": {
+    "code": ""
+  },
+  "binanceConnectAmountInput": {
+    "switchFiatCrypto": ""
+  },
   "binanceConnectErrorPage": {
     "description": ""
   },
@@ -19,6 +25,7 @@
     "enterAmount": "",
     "notSupported": "",
     "selectAnotherAccount": "",
+    "selectAnotherExchange": "",
     "selectAsset": "",
     "selectCurrency": "",
     "selectNetwork": "",
@@ -77,7 +84,11 @@
     "noResults": "",
     "paymentTitle": "",
     "prodOnly": "",
+    "search": "",
     "title": ""
+  },
+  "catalogTile": {
+    "select": ""
   },
   "categories": {
     "brokerage": "",
@@ -111,6 +122,7 @@
   },
   "common": {
     "availableForTransfer": "",
+    "cancel": "",
     "closeCap": "",
     "codeNotCorrent": "",
     "continueCap": "",
@@ -155,6 +167,9 @@
     "body": "This feature is not yet supported in your<1></1> country. Please check back soon for a<3></3> streamlined deposit experience.",
     "comingSoon": ""
   },
+  "currencyBox": {
+    "changeCurrency": ""
+  },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "",
     "connectionDeclinedTitle": "",
@@ -174,6 +189,7 @@
   "defiWalletSelectNetworkPage": {
     "declinedBody": "",
     "declineTitle": "",
+    "monitoringApproval": "",
     "selectNetwork": "",
     "title": "",
     "whichNetwork": "Which network in your <1>{selectedIntegrationName}</1> wallet<4></4>would you like to link?"
@@ -273,6 +289,9 @@
     "titleAllSet": "",
     "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
   },
+  "drawer": {
+    "close": ""
+  },
   "emailVerificationPage": {
     "emailRecievedLoading": "",
     "expiredError": "",
@@ -348,6 +367,29 @@
   "fullScreenSpinner": {
     "linking": "",
     "loading": "Still working..."
+  },
+  "fundingMethodFees": {
+    "fee": {
+      "conversion": "",
+      "deposit": "",
+      "purchase": "",
+      "withdrawal": ""
+    },
+    "info": {
+      "conversion": "",
+      "purchase": "",
+      "withdrawal": ""
+    }
+  },
+  "fundingMethodsList": {
+    "buyingPower": "",
+    "cryptocurrencyBalance": "",
+    "noneSelected": "",
+    "paymentMethodDepositUsage": "",
+    "stablecoinConversion": "",
+    "withAdditional_one": "",
+    "withAdditional_many": "",
+    "withAdditional_other": ""
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "",
@@ -630,6 +672,10 @@
     "resend": "",
     "title": "Approve the connection<1></1>request in your wallet"
   },
+  "navHeader": {
+    "close": "",
+    "goBack": ""
+  },
   "nonOAuthPermissionsPage": {
     "allow": "",
     "movingFunds": "",
@@ -728,16 +774,49 @@
     "title": ""
   },
   "previewTransfer": {
+    "allFeesIncluded": "",
+    "amountWithFiat": "",
+    "approveTransferRequest": "Approve the transfer request<1></1>in your wallet",
+    "changeAmount": "",
+    "depositTitle": "",
+    "dustLeft": "",
+    "estimatedGasFee": "",
+    "estimatedGasFeeHint": "",
+    "from": "",
+    "fundingWith": "",
+    "institutionTransferFee": "",
+    "institutionTransferFeeHint": "",
+    "maxAmount": "Your account can fund a maximum of <2>{t('previewTransfer.amountWithFiat', {\r\n                          cryptoAmount: formatCryptocurrency(\r\n                            networkData?.maximumAmount,\r\n                            transferPreview.symbol\r\n                          ),\r\n                          fiatAmount: formatCurrency(\r\n                            networkData?.maximumAmountInFiat,\r\n                            transferPreview.fiatCurrency\r\n                          )\r\n                        })}</2>. Would you like to adjust your transfer to this amount?",
+    "monitoring": "",
+    "network": "",
+    "onrampTitle": "",
+    "payingWith": "",
+    "paymentTitle": "",
+    "proceed": "",
+    "processingFee": "",
+    "processingFeeHint": "",
+    "receive": "",
+    "resendTransferRequest": "",
+    "seconds": "",
+    "symbolBalance": "",
     "to": "",
+    "total": "",
     "transferDeclined": "",
-    "transferDeclinedBody": ""
+    "transferDeclinedBody": "",
+    "transferTitle": "",
+    "youMayReceiveLess": ""
   },
   "privacyComponent": {
     "content": ""
   },
   "qrCodePassword": {
     "expired": "",
+    "generateNew": "",
+    "qrCodeLabel": "",
     "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
+  },
+  "receiveAmountInput": {
+    "onNetwork": ""
   },
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "",
@@ -776,6 +855,9 @@
     "spotAccountsBody": "",
     "topUpButton": "",
     "unableTransferError": ""
+  },
+  "selectItem": {
+    "label": ""
   },
   "selectNetworkPage": {
     "ineligibleNetwork": ""
