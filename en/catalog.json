@@ -1,5 +1,16 @@
 {
+  "addressWhitelistPage": {
+    "addAddress": "Add the following as an approved withdrawal address:",
+    "goToAccount": "Go to your <1>{{selectedIntegrationName}} account</1>",
+    "network": "Network",
+    "preview": "Click below to preview and initiate this transfer again",
+    "title": "Whitelist this destination",
+    "token": "Token"
+  },
   "binanceConnectOAuthPage": {
+    "amountMustBeWithin": "Amount must be within {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
+    "amountMustBeWithinErrorMessage": "Amount must be within USD $21 - $15,000",
+    "buyCrypto": "Buy crypto using Binance Connect",
     "closeButton": "Close",
     "continueTo": "Continue to {{selectedIntegrationName}}",
     "enterAmount": "Enter transfer amount",
@@ -11,7 +22,22 @@
     "selectAnotherExchange": "Please select another exchange or wallet to deposit from.",
     "selectAsset": "Select asset to transfer",
     "selectCurrency": "Select a currency",
-    "selectNetwork": "Select transfer network"
+    "selectNetwork": "Select transfer network",
+    "youPay": "You pay",
+    "youReceive": "You receive"
+  },
+  "binanceMfaPage": {
+    "add2fa": "Please add the necessary Two-Factor Authentication (2FA) methods in Binance",
+    "chooseAnotherAccount": "Choose another account",
+    "description": "You must have both an Email & Authenticator App configured as 2FA methods in your <1>Binance</1> account.",
+    "ensureConfigured": "Ensure that both an Email and Authenticator App are configured for 2FA",
+    "goToSettings": "Click below to go to your <1>Binance</1> security settings",
+    "mayNeedReAuthApp": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>the application</2>.",
+    "mayNeedReAuthClient": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>{{clientName}}</2>.",
+    "openBinance": "Open Binance",
+    "returnToApp": "Return to <1>the application</1> to retry this transfer",
+    "returnToClient": "Return to <1>{{clientName}}</1> to retry this transfer",
+    "title": "Enable withdrawals from your Binance account"
   },
   "binanceResetPasswordPage": {
     "goToBinance": "Go to Binance.com",
@@ -306,6 +332,55 @@
     "linking": "Linking your account...",
     "loading": "Still working..."
   },
+  "fundingOptionUnavailabilityReason": {
+    "buyingPowerUsageNotSupported": "{{integrationName}} does not support using this funding method to purchase {{assetName}}.",
+    "coveredByExistingCryptocurrencyBalance": "You already have enough {{assetName}} balance for this purchase without needing additional funding methods.",
+    "coveredByOtherFundingOptions": "This funding method is not supported for this transaction.",
+    "currencyNotSupported": "Purchasing crypto with a non-USD funding method is not yet supported.",
+    "depositAmountLimitExceeded": "This purchase would surpass {{integrationName}}’s maximum deposit limit in 1 day for this funding method.",
+    "depositCountLimitReached": "This funding method has already reached {{integrationName}}’s maximum number of deposits in 1 day.",
+    "depositsNotSupported": "This funding method is not supported for this transaction.",
+    "instantDepositLimitExceeded": "This funding method’s instant deposit limit is insufficient for this purchase",
+    "instantDepositsNotSupported": "This funding method does not support instant deposits, so it cannot be used for this purchase.",
+    "insufficientBalance": "Insufficient balance to fund this purchase.",
+    "maximumDepositLimitViolated": "Amount is above this funding method’s maximum deposit limit.",
+    "minimumDepositLimitViolated": "Amount is below this funding method’s minimum deposit limit.",
+    "paymentMethodTypeNotSupported": "This funding method is not yet supported.",
+    "unknown": "This funding option is unavailable."
+  },
+  "fundingPage": {
+    "activatePaymentMethod": "Activate payment method on {{selectedIntegrationName}}",
+    "aproximateFiat": "~{{amountInFiat}}",
+    "balanceAmount": "Balance: {{amount}}",
+    "balanceAmountWithConversion": "Balance: ~{{amount}} ({{conversionSymbols}})",
+    "balances": "Balances",
+    "balanceWithAproximateFiat": "Balance: {{amount}} ~ {{amountInFiat}}",
+    "buyingPower": "Buying power",
+    "changeAmount": "Or change the amount to transfer to {{availableAmount}}.",
+    "changePreferredPaymentMethod": "Change the preferred payment method",
+    "changePreferredToken": "Change the preferred token",
+    "cryptoConversion": "Cryptocurrency conversion",
+    "description": "Total: {{amount}} ~ {{amountInFiat}}",
+    "instantCashAvailable": "(Instant cash available: {{amountInFiat}})",
+    "linkedPaymentMethods": "Linked payment method(s)",
+    "noPaymentMethods": "No linked payment methods.",
+    "noTokensAvailableForConversion": "No tokens available for conversion",
+    "save": "Save",
+    "selectFundingMethodAvailablity": "Your selected funding methods have {{selectedAvailableAmount}}. Please select additional funding methods to transfer {{neededAmount}}.",
+    "selectFundingMethods": "Please select funding method(s) to transfer <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectOtherHoldings": "Select from other holdings",
+    "symbolBalance": "{{symbol}} Balance",
+    "title": "Funding methods"
+  },
+  "gasFeeUpdateDrawerContent": {
+    "approvePayment": "Approve payment",
+    "cancel": "Cancel",
+    "description": "Gas fees are higher than the original estimate.",
+    "ifDontComplete": "If you do not complete the payment, your {{token}} balance will remain in your {{selectedIntegrationName}} account.",
+    "newEstimate": "New estimate",
+    "originalEstimate": "Original estimate",
+    "title": "Gas fee update"
+  },
   "generateKeyPage": {
     "done": "",
     "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{{clientName}}</2>.",
@@ -550,6 +625,20 @@
     "subtitle": "Log into your account and allow access",
     "title": "Continue on <1></1> {{selectedIntegrationName}} window"
   },
+  "oauthErrorPage": {
+    "description": "{{selectedIntegrationName}} does not support transfers for the tokens and/or networks requested.",
+    "selectAnotherAccount": "Select another account",
+    "selectAnotherDescription": "Please select another exchange or wallet to deposit from."
+  },
+  "oAuthMessageListener": {
+    "clientUsesMesh": "{{clientName}} uses Mesh to securely connect and facilitate your transfer in {{selectedIntegrationName}}.",
+    "description": "Log into your account and allow access",
+    "monitoring": "Monitoring for approval...",
+    "open": "Open {{selectedIntegrationName}}",
+    "reopen": "Re-open {{selectedIntegrationName}}",
+    "title": "Continue on {{selectedIntegrationName}} window",
+    "willFacilitate": "will facilitate the secure connection with {{selectedIntegrationName}}."
+  },
   "onRampLoadingScreen": {
     "approveTransferStep": {
       "client": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
@@ -595,6 +684,15 @@
     "default": "Linked payment method",
     "digitalWallet": "Digital wallet"
   },
+  "paymentUpdateDrawerContent": {
+    "cancel": "Cancel",
+    "clickToPay": "Click below to top up your {{token}} balance to make this payment.",
+    "description": "Your {{token}} balance after purchases is lower than expected due to changes in {{token}} price and/or gas fees.",
+    "ifDontComplete": "If you do not complete the payment, your {{token}} balance will remain in your {{selectedIntegrationName}} account.",
+    "onYourAccount": "On your account",
+    "title": "Payment update",
+    "topUp": "Top up {{token}} balance"
+  },
   "payPalConnectOAuthPage": {
     "close": "Close",
     "continue": "Continue to {{selectedIntegrationName}}",
@@ -616,6 +714,22 @@
   "qrCodePassword": {
     "expired": "QR code expired",
     "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
+  },
+  "revolutConnectOAuthPage": {
+    "amountMustBeAtLeast": "Amount must be at least $8",
+    "continue": "Continue to {{selectedIntegrationName}}",
+    "enterAmount": "Enter transfer amount",
+    "selectAsset": "Select asset to transfer",
+    "selectNetwork": "Select transfer network"
+  },
+  "robinhoodConnectOAuthPage": {
+    "continue": "Continue to {{selectedIntegrationName}}",
+    "enterAmount": "Enter transfer amount",
+    "selectAsset": "Select asset to transfer",
+    "selectNetwork": "Select transfer network"
+  },
+  "selectCryptoFundingPage": {
+    "title": "Select asset"
   },
   "selectHoldingPage": {
     "binanceDirectNoAssetsBody1": "Looks like you don’t have any assets in your linked account.",
@@ -687,7 +801,9 @@
   },
   "transferCanceledPage": {
     "title": "Transfer canceled",
-    "titlePayment": "Payment canceled"
+    "titlePayment": "Payment canceled",
+    "willRemain": "will remain in your {{integrationName}} account.",
+    "yourBalance": "Your {{token}} balance"
   },
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Awaiting confirmation from mobile app",
@@ -707,6 +823,14 @@
     "sendNewRequest": "Send a new request",
     "title": "Verification",
     "tryAnother": "Try another way"
+  },
+  "transferEmailApprovalConfirmation": {
+    "approve": "Click <1>Approve</1> in the confirmation page.",
+    "approveOrCancel": "Click <1>Approve or Cancel Withdrawal</1> in the email.",
+    "confirmButton": "I’ve approved the withdrawal",
+    "description": "Please check your inbox for an email asking you to confirm a new withdrawal.",
+    "return": "Return here and click below to continue with your transfer.",
+    "title": "Approve withdrawal"
   },
   "transferErrorPage": {
     "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
@@ -747,6 +871,15 @@
     "title": "What will happen",
     "transferAmount": "Transfer of <1>{{cryptoAmount}}</1> from {{integrationName}} to {{clientName}} {{targetAddress}}.",
     "transferAmountSmartDeposit": "Transfer of <1>{{cryptoAmount}}</1> from {{integrationName}} to {{clientName}} {{targetAddress}} via a relay contract."
+  },
+  "transferUpdateDrawerContent": {
+    "approveTransfer": "Approve transfer",
+    "cancel": "Cancel",
+    "description": "Purchased amount is lower than expected due to changes in {{token}} price and/or gas fees.",
+    "ifDontComplete": "If you do not complete the transfer, your {{token}} balance will remain in your {{selectedIntegrationName}} account.",
+    "onYourAccount": "On your account",
+    "title": "Transfer update",
+    "youWillReceive": "You will receive"
   },
   "transferWithdrawalAddressConfirmation": {
     "checkInbox": "Please check your inbox for an email asking you to confirm a new withdrawal address.",

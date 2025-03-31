@@ -1,5 +1,19 @@
 {
+  "addressWhitelistPage": {
+    "addAddress": "",
+    "goToAccount": "Go to your <1>{selectedIntegrationName} account</1>",
+    "network": "",
+    "preview": "",
+    "title": "",
+    "token": ""
+  },
+  "binanceConnectErrorPage": {
+    "description": ""
+  },
   "binanceConnectOAuthPage": {
+    "amountMustBeWithin": "",
+    "amountMustBeWithinErrorMessage": "",
+    "buyCrypto": "",
     "closeButton": "",
     "continueTo": "",
     "enterAmount": "",
@@ -7,7 +21,22 @@
     "selectAnotherAccount": "",
     "selectAsset": "",
     "selectCurrency": "",
-    "selectNetwork": ""
+    "selectNetwork": "",
+    "youPay": "",
+    "youReceive": ""
+  },
+  "binanceMfaPage": {
+    "add2fa": "",
+    "chooseAnotherAccount": "",
+    "description": "You must have both an Email & Authenticator App configured as 2FA methods in your <1>Binance</1> account.",
+    "ensureConfigured": "",
+    "goToSettings": "Click below to go to your <1>Binance</1> security settings",
+    "mayNeedReAuthApp": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>the application</2>.",
+    "mayNeedReAuthClient": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>the application</2>.",
+    "openBinance": "",
+    "returnToApp": "Return to <1>the application</1> to retry this transfer",
+    "returnToClient": "Return to <1>{clientName}</1> to retry this transfer",
+    "title": ""
   },
   "binanceResetPasswordPage": {
     "goToBinance": "",
@@ -320,6 +349,55 @@
     "linking": "",
     "loading": "Still working..."
   },
+  "fundingOptionUnavailabilityReason": {
+    "buyingPowerUsageNotSupported": "",
+    "coveredByExistingCryptocurrencyBalance": "",
+    "coveredByOtherFundingOptions": "",
+    "currencyNotSupported": "",
+    "depositAmountLimitExceeded": "",
+    "depositCountLimitReached": "",
+    "depositsNotSupported": "",
+    "instantDepositLimitExceeded": "",
+    "instantDepositsNotSupported": "",
+    "insufficientBalance": "",
+    "maximumDepositLimitViolated": "",
+    "minimumDepositLimitViolated": "",
+    "paymentMethodTypeNotSupported": "",
+    "unknown": ""
+  },
+  "fundingPage": {
+    "activatePaymentMethod": "",
+    "aproximateFiat": "",
+    "balanceAmount": "",
+    "balanceAmountWithConversion": "",
+    "balances": "",
+    "balanceWithAproximateFiat": "",
+    "buyingPower": "",
+    "changeAmount": "",
+    "changePreferredPaymentMethod": "",
+    "changePreferredToken": "",
+    "cryptoConversion": "",
+    "description": "",
+    "instantCashAvailable": "",
+    "linkedPaymentMethods": "",
+    "noPaymentMethods": "",
+    "noTokensAvailableForConversion": "",
+    "save": "",
+    "selectFundingMethodAvailablity": "",
+    "selectFundingMethods": "Please select funding method(s) to transfer <2>{formatCryptocurrency(\r\n                    transferPreview.amount,\r\n                    transferPreview.symbol\r\n                  )} ~ {formatUsd(transferPreview.amountInFiat)}</2>.",
+    "selectOtherHoldings": "",
+    "symbolBalance": "",
+    "title": ""
+  },
+  "gasFeeUpdateDrawerContent": {
+    "approvePayment": "",
+    "cancel": "",
+    "description": "",
+    "ifDontComplete": "",
+    "newEstimate": "",
+    "originalEstimate": "",
+    "title": ""
+  },
   "generateKeyPage": {
     "done": "",
     "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{clientName}</2>.",
@@ -567,6 +645,20 @@
     "subtitle": "",
     "title": "Continue on <1></1> {selectedIntegrationName} window"
   },
+  "oauthErrorPage": {
+    "description": "",
+    "selectAnotherAccount": "",
+    "selectAnotherDescription": ""
+  },
+  "oAuthMessageListener": {
+    "clientUsesMesh": "",
+    "description": "",
+    "monitoring": "",
+    "open": "",
+    "reopen": "",
+    "title": "",
+    "willFacilitate": ""
+  },
   "onRampLoadingScreen": {
     "approveConversionStep": {
       "client": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
@@ -616,6 +708,15 @@
     "default": "",
     "digitalWallet": ""
   },
+  "paymentUpdateDrawerContent": {
+    "cancel": "",
+    "clickToPay": "",
+    "description": "",
+    "ifDontComplete": "",
+    "onYourAccount": "",
+    "title": "",
+    "topUp": ""
+  },
   "payPalConnectOAuthPage": {
     "close": "",
     "continue": "",
@@ -637,6 +738,22 @@
   "qrCodePassword": {
     "expired": "",
     "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
+  },
+  "revolutConnectOAuthPage": {
+    "amountMustBeAtLeast": "",
+    "continue": "",
+    "enterAmount": "",
+    "selectAsset": "",
+    "selectNetwork": ""
+  },
+  "robinhoodConnectOAuthPage": {
+    "continue": "",
+    "enterAmount": "",
+    "selectAsset": "",
+    "selectNetwork": ""
+  },
+  "selectCryptoFundingPage": {
+    "title": ""
   },
   "selectHoldingPage": {
     "binanceDirectNoAssetsBody1": "",
@@ -708,7 +825,9 @@
   },
   "transferCanceledPage": {
     "title": "",
-    "titlePayment": ""
+    "titlePayment": "",
+    "willRemain": "",
+    "yourBalance": ""
   },
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "",
@@ -728,6 +847,14 @@
     "sendNewRequest": "",
     "title": "",
     "tryAnother": ""
+  },
+  "transferEmailApprovalConfirmation": {
+    "approve": "Click <1>Approve</1> in the confirmation page.",
+    "approveOrCancel": "Click <1>Approve or Cancel Withdrawal</1> in the email.",
+    "confirmButton": "",
+    "description": "",
+    "return": "",
+    "title": ""
   },
   "transferErrorPage": {
     "defaultError": ""
@@ -768,6 +895,15 @@
     "title": "",
     "transferAmount": "Transfer of <1>{cryptoAmount}</1> from {integrationName} to {hideClient ? '' : clientName} {targetAddress}.",
     "transferAmountSmartDeposit": "Transfer of <1>{cryptoAmount}</1> from {integrationName} to {hideClient ? '' : clientName} {targetAddress}via a relay contract."
+  },
+  "transferUpdateDrawerContent": {
+    "approveTransfer": "",
+    "cancel": "",
+    "description": "",
+    "ifDontComplete": "",
+    "onYourAccount": "",
+    "title": "",
+    "youWillReceive": ""
   },
   "transferWithdrawalAddressConfirmation": {
     "checkInbox": "",
