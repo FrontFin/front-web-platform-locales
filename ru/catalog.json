@@ -1,67 +1,73 @@
 {
   "addressWhitelistPage": {
-    "addAddress": "Добавить в качестве одобренного адреса для снятия:",
-    "goToAccount": "Go to your <1>{selectedIntegrationName} account</1>",
+    "addAddress": "Добавить в качестве одобренного адреса для вывода средств:",
+    "goToAccount": "Откройте свой <1>{{selectedIntegrationName}} аккаунт</1>",
     "network": "Сеть",
     "preview": "Нажмите ниже, чтобы просмотреть и начать перевод еще раз",
-    "title": "Белый список этого назначения",
+    "title": "Добавить в белый список этого назначения",
     "token": "Токен"
+  },
+  "authCodeInput": {
+    "code": "6 digit code"
+  },
+  "binanceConnectAmountInput": {
+    "switchFiatCrypto": "Переключить Fiat/Crypto"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
-    "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15 000",
+    "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15000",
     "buyCrypto": "Купить криптовалюту с помощью Binance Connect",
     "closeButton": "Закрыть",
-    "continueTo": "Перейти к {{selectedIntegrationName}}",
+    "continueTo": "Перейти к  {{selectedIntegrationName}}",
     "enterAmount": "Введите сумму перевода",
-    "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для токенов и/или сетей, запрошенных.",
+    "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
     "receiveAmountInput": {
       "networkName": "на {{networkName}}"
     },
     "selectAnotherAccount": "Выберите другой аккаунт",
-    "selectAnotherExchange": "Пожалуйста, выберите другой обмен или кошелек для пополнения.",
+    "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
     "selectAsset": "Выберите актив для перевода",
     "selectCurrency": "Выберите валюту",
-    "selectNetwork": "Выберите сеть передачи",
+    "selectNetwork": "Выберите сеть для перевода",
     "youPay": "Вы платите",
     "youReceive": "Вы получаете"
   },
   "binanceMfaPage": {
     "add2fa": "Пожалуйста, добавьте необходимые двухфакторные методы аутентификации (2FA) в Binance",
     "chooseAnotherAccount": "Выберите другой аккаунт",
-    "description": "Вы должны иметь приложение Email & Authenticator, настроенное как 2FA методы в вашей учетной записи <1>Binance</1>.",
-    "ensureConfigured": "Убедитесь, что приложения электронной почты и аутентификации настроены для 2FA",
+    "description": "Вы должны иметь оба метода 2FA: электронную почту и приложение для аутентификации, настроенные в вашей учетной записи <1>Binance</1>.",
+    "ensureConfigured": "Убедитесь, что электронная почта и приложение для аутентификации настроены для двухфакторной аутентификации",
     "goToSettings": "Нажмите ниже, чтобы перейти к настройкам безопасности <1>Binance</1>",
     "mayNeedReAuthApp": "Обратите внимание: Вам может потребоваться повторная аутентификация в аккаунте Binance для начала этого перевода при возвращении в <2>приложение</2>.",
-    "mayNeedReAuthClient": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>the application</2>.",
-    "openBinance": "Открытое окно",
-    "returnToApp": "Вернитесь к <1>приложению</1>чтобы повторить перевод",
-    "returnToClient": "Return to <1>{clientName}</1> to retry this transfer",
-    "title": "Включите снятия с вашего счета Binance"
+    "mayNeedReAuthClient": "Обратите внимание: Вам может потребоваться повторная аутентификация в аккаунте Binance для начала этого перевода при возвращении в <2>{{clientName}}</2>.",
+    "openBinance": "Открыть Binance",
+    "returnToApp": "Вернитесь к <1>приложению</1>, чтобы повторить перевод",
+    "returnToClient": "Вернитесь к <1>{{clientName}}</1>, чтобы повторить перевод",
+    "title": "Включите вывод средств с вашего счета Binance"
   },
   "binanceResetPasswordPage": {
     "goToBinance": "Перейти на Binance.com",
     "securityNote": "Примечание: для вашей безопасности, вывод средств в криптовалюту отключен в течение 24 часов после изменения пароля.",
     "steps": {
-      "completeProcess": "Завершите процесс сброса пароля.",
+      "completeProcess": "Завершите процесс, чтобы сбросить ваш пароль.",
       "enterEmail": "Введите свой адрес электронной почты или номер телефона и нажмите \"Забыли пароль?\".",
-      "goToBinance": "Select <1>Go to Binance.com</1> and you'll be taken to a Binance login screen.",
+      "goToBinance": "Выберите <1>Перейти на Binance.com</1> и вы будете перенаправлены на экран входа в систему Binance.",
       "returnToLogin": "Вернитесь сюда для входа с новым паролем."
     },
     "title": "Сброс пароля"
   },
   "bindFacePage": {
     "completedButton": "Я завершил это на своем телефоне",
-    "linkText": "Если вы не можете отсканировать QR-код, перейдите по ссылке <2><0></0></2>.",
-    "qrCode": "QR Code",
+    "linkText": "Если вы не можете отсканировать QR-код, перейдите по <2><0>ссылке</0></2>.",
+    "qrCode": "QR код",
     "return": "Вернитесь к этому экрану для продолжения.",
-    "title": "Откройте Binance APP и отсканируйте QR-код ниже"
+    "title": "Откройте приложение Binance и от просканируйте QR-код ниже"
   },
   "bindMfaList": {
-    "authApp": "Приложение для проверки подлинности",
+    "authApp": "Приложение для аутентификации",
     "email": "Почта",
     "enabled": "Включено",
-    "notEnabled": "Не включен"
+    "notEnabled": "Не включено"
   },
   "browserContent": {
     "openButtom": "Открыть {{integrationName}}"
@@ -69,25 +75,29 @@
   "catalogList": {
     "badges": {
       "api": "API",
-      "installed": "Installed",
-      "linked": "Previously linked"
+      "installed": "Установлено",
+      "linked": "Ранее привязано"
     },
-    "noResults": "Sorry, we couldn’t find any results",
-    "paymentTitle": "Select payment account",
+    "noResults": "К сожалению, мы не смогли ничего найти",
+    "paymentTitle": "Выберите платёжный аккаунт",
     "prodOnly": "Production only",
-    "title": "Select account to link"
+    "search": "поиск",
+    "title": "Выберите учетную запись для подключения"
+  },
+  "catalogTile": {
+    "select": "Выберите {{integrationName}}, {{badge}}"
   },
   "categories": {
-    "brokerage": "Brokerages",
-    "deFiWallet": "Wallets",
-    "deFiWalletFull": "Self-custody crypto wallets",
+    "brokerage": "Биржи",
+    "deFiWallet": "Кошельки",
+    "deFiWalletFull": "Кошельки для криптовалют",
     "exchange": "Exchanges",
-    "exchangeFull": "Centralized crypto exchanges",
-    "nftMarketplace": "NFT Marketplaces",
-    "popular": "Popular"
+    "exchangeFull": "Централизованные криптовалютные биржи",
+    "nftMarketplace": "Торговые площадки NFT",
+    "popular": "Популярные"
   },
   "chainSwitch": {
-    "monitoringApproval": "Мониторинг на утверждение...",
+    "monitoringApproval": "Ждем подтверждения...",
     "networkChangeDeclined": "Изменение сети отклонено",
     "networkChangeDeclinedBody": "Вы отклонили запрос на изменение сетей в вашем кошельке",
     "resendNetworkSwitch": "Повторно отправить запрос на переключение сети",
@@ -96,165 +106,173 @@
     "tryAgain": "Попробовать еще раз"
   },
   "challengePage": {
-    "changeQuestion": "Change the question",
-    "codeHeader": "Enter your verification code",
-    "questionHeader": "Answer your security question",
+    "changeQuestion": "Сменить вопрос",
+    "codeHeader": "Введите код подтверждения",
+    "questionHeader": "Ответьте на секретный вопрос",
     "securityQuestionInputTitle": "Секретный вопрос",
-    "title": "Verification",
+    "title": "Верификация",
     "verificationCodeInputTitle": "Проверочный код"
   },
   "chooseAccountPage": {
-    "linkToApp": "Какой из ваших учетных записей вы хотите, чтобы <1></1> привязать к этому приложению",
-    "linkToClient": "Which of your accounts would you like <1></1> to link to {clientName}",
-    "title": "Выберите субсчета"
+    "linkToApp": "Какую из ваших учетных записей вы хотите <1></1> подключить к этому приложению",
+    "linkToClient": "Какую из ваших учетных записей вы хотите <1></1> подключить к {{clientName}}",
+    "title": "Выберите дочерние аккаунты"
   },
   "common": {
-    "availableForTransfer": "Available for transfer",
-    "closeCap": "Close",
-    "codeNotCorrent": "Provided code is not correct.",
+    "availableForTransfer": "Доступно для перевода",
+    "cancel": "Отмена",
+    "closeCap": "Закрыть",
+    "codeNotCorrent": "Предоставленный код неверен.",
     "continueCap": "Продолжить",
     "doneCap": "Готово",
-    "failedToLoadTrasferError": "Failed to load information about the transfer",
-    "genericConnectErrorMessage": "Failed to connect to your integration",
-    "maxCap": "Max",
-    "mesh": "Сетка",
-    "notFound": "Not found",
-    "searchCap": "Search",
-    "securedBy": "Secured by",
-    "somethingWentWrong": "Something went wrong...",
-    "submitCap": "Submit",
-    "successTitle": "Success!",
-    "tryAgain": "Try again"
+    "failedToLoadTrasferError": "Не удалось загрузить информацию о переводе",
+    "genericConnectErrorMessage": "Не удалось подключиться к вашему аккаунту",
+    "maxCap": "Макс",
+    "mesh": "Mesh",
+    "notFound": "Не найдено",
+    "searchCap": "Поиск",
+    "securedBy": "Защищено",
+    "somethingWentWrong": "Что-то пошло не так...",
+    "submitCap": "Отправить",
+    "successTitle": "Успешно!",
+    "tryAgain": "Попробовать снова"
   },
   "commonContent": {
-    "description": "будет способствовать безопасному соединению с {{integrationName}}.",
-    "monitoring": "Мониторинг на утверждение...",
+    "description": "облегчит безопасное соединение с {{integrationName}}.",
+    "monitoring": "Ждём подтверждения...",
     "resend": "Повторно отправить запрос на подключение",
-    "title": "Подтвердите подключение<1></1> запрос в вашем кошельке"
+    "title": "Подтвердите запрос на <1></1> подключение в вашем кошельке"
   },
   "connectExternalPageScreen": {
-    "connectedTitle": "Следуйте инструкциям на рабочем столе, чтобы подключить {{selectedIntegrationName}}",
-    "failedBody": "Unable to establish connection with your {{integrationName}}. Please check your address and networkIds are correct and try again.",
-    "failedTitle": "Connection Failed",
-    "notConnectedStep1": "1. Откройте эту ссылку на устройстве <1>рабочий стол</1>",
+    "connectedTitle": "Следуйте инструкциям на вашем компьютере, чтобы подключить {{selectedIntegrationName}}",
+    "failedBody": "Не удалось установить соединение с {{integrationName}}. Пожалуйста, проверьте правильность адреса и сети и повторите попытку.",
+    "failedTitle": "Не удалось подключиться",
+    "notConnectedStep1": "1. Откройте эту ссылку на <1>компьютере</1>",
     "notConnectedStep2": "2. Введите этот код, чтобы безопасно подключить ваш кошелек",
-    "notConnectedTitle": "Используйте настольное устройство для подключения вашего {{selectedIntegrationName}}"
+    "notConnectedTitle": "Используйте компьютер для подключения вашего {{selectedIntegrationName}}"
   },
   "connectionDeclinedPage": {
     "connectAnother": "Подключить другой аккаунт"
   },
   "connectionFailedPage": {
-    "defaultError": "An error has occurred."
+    "defaultError": "Произошла ошибка."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Подключить другой кошелек",
     "installApp": "Установить мобильное приложение"
   },
   "countryBlockedPage": {
-    "body": "Эта функция пока не поддерживается в вашей стране<1></1>. Пожалуйста, зайдите в ближайшее время на <3></3> для оптимизации депозита.",
-    "comingSoon": "Coming Soon"
+    "body": "Эта функция пока не поддерживается в вашей<1></1> стране. Пожалуйста, зайдите позднее <3></3> для успешного вывода средств.",
+    "comingSoon": "Скоро"
+  },
+  "currencyBox": {
+    "changeCurrency": "Изменить валюту"
   },
   "deFiWalletDeclinedConnectionPage": {
-    "connectionDeclinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
-    "connectionDeclinedTitle": "Connection declined",
-    "networkDeclinedBody": "You have declined the request to change networks in your wallet.",
-    "networkDeclinedTitle": "Network change declined"
+    "connectionDeclinedBody": "Вы отклонили запрос на подключение вашего кошелька, или предыдущий запрос все еще активен.",
+    "connectionDeclinedTitle": "Соединение отклонено",
+    "networkDeclinedBody": "Вы отклонили запрос на изменение сетей в вашем кошельке.",
+    "networkDeclinedTitle": "Смена сети отклонена"
   },
   "deFiWalletDrawerContent": {
-    "actionButton": "Связаться с {{selectedIntegrationName}}"
+    "actionButton": "Подключиться к {{selectedIntegrationName}}"
   },
   "defiWalletQrPage": {
-    "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
-    "declinedTitle": "Connection declined",
-    "description": "Open {selectedIntegrationName} and scan the<3></3>QR code to link",
+    "declinedBody": "Вы отклонили запрос на подключение вашего кошелька, или предыдущий запрос все еще активен.",
+    "declinedTitle": "Соединение отклонено",
+    "description": "Откройте {{selectedIntegrationName}} и отсканируйте <3></3>QR-код, чтобы подключится",
     "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
-    "title": "Связаться с {{selectedIntegrationName}}"
+    "title": "Подключиться {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
     "declinedBody": "You have declined the request to change networks in your wallet.",
     "declineTitle": "Network change declined",
+    "monitoringApproval": "Мониторинг на утверждение...",
     "selectNetwork": "Выберите сеть",
     "title": "Переключение сетей",
-    "whichNetwork": "Which network in your <1>{selectedIntegrationName}</1> wallet<4></4>would you like to link?"
+    "whichNetwork": "Какую сеть в вашем <1>{{selectedIntegrationName}}</1> кошельке<4></4> вы хотите использовать?"
   },
   "defiWalletUnavaialbleConnectionPage": {
-    "body": "{{integrationName}} is not installed on this device. Please install the {{integrationName}} app, or connect another wallet.",
-    "title": "Connection unavailable"
+    "body": "{{integrationName}} не установлен на этом устройстве. Пожалуйста, установите приложение {{integrationName}} или подключите другой кошелек.",
+    "title": "Подключение недоступно"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Ожидание подтверждения от мобильного приложения",
-    "clickOpenApp": "Click <1> Open {selectedIntegrationName} app</1> below",
+    "clickOpenApp": "Нажмите <1> Открыть {{integrationName}} приложение</1> ниже",
     "confirmInApp": "Подтвердите в мобильном приложении {{integrationName}} что вы действительно пытаетесь войти.",
     "confirmPrompt": "Подтвердите запрос для проверки",
     "openApp": "Открыть приложение {{integrationName}}",
     "openAppOnPhone": "Откройте приложение {{integrationName}} на вашем телефоне",
     "returnHere": "Вернитесь сюда, чтобы продолжить",
     "sendNewRequest": "Отправить новый запрос",
-    "title": "Проверка",
+    "title": "Верификация",
     "tryAnotherWay": "Попробуйте другой способ",
-    "verified": "Я проверен в своем приложении",
+    "verified": "Я подтвердил в своем приложении",
     "verifyLoggedIn": "Подтвердите вход с нового устройства"
   },
   "doneExternalVerifyScreen": {
-    "body": "You have successfully verified ownership of your <2>{selectedIntegrationName}</2> wallet.",
+    "body": "Вы успешно подтвердили право владения <2>{{selectedIntegrationName}}</2> кошельком.",
     "returnAction": "Вернуться к {{clientName}}"
   },
   "donePage": {
-    "continueToDeposit": "Продолжить пополнение",
+    "continueToDeposit": "Перейти к пополнению",
     "continueToPayment": "Перейти к оплате",
-    "continueToPurchase": "Продолжить покупку",
-    "continueToTransfer": "Продолжить перевод",
+    "continueToPurchase": "Перейти к покупке",
+    "continueToTransfer": "Перейти к переводу",
     "done": "Готово",
     "linkAnother": "Привязать другой аккаунт",
-    "linkedToClient": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>{clientName}</5>.",
-    "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
+    "linkedToClient": "Вы успешно привязали <1></1><2>{{integrationName}}</2> к <5>{{clientName}}</5>.",
+    "linkedToThisApp": "Вы успешно привязали<1></1><2>{{integrationName}}</2> <5>этому приложению</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
     "defaultTitle": "Транзакция завершена",
-    "depositTitle": "Deposit complete",
+    "depositTitle": "Перевод завершен",
     "onrampTitle": "Покупка завершена",
     "paymentTitle": "Оплата завершена",
     "steps": {
       "approvedFromCeFiToClient": "Вы одобряете перевод с {{selectedIntegrationName}} на {{clientName}}.",
-      "approvedFromCeFiToDestination": "Вы одобряете перевод из {{selectedIntegrationName}} в пункт назначения.",
+      "approvedFromCeFiToDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
       "approvedFromDeFi": "Вы подтвердили перевод на {{selectedIntegrationName}}.",
-      "conversion": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
-      "deposit": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
-      "purchase": "Purchase of <1> {amount}</1> worth of {symbol} in {selectedIntegrationName}.",
-      "requestToTransferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
-      "requestToTransferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
-      "requestToTransferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
-      "requestToTransferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}.",
-      "transferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
-      "transferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
-      "transferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
-      "transferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
-      "transferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "transferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "transferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
-      "transferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}."
+      "conversion": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
+      "deposit": "Пополнение <1>{{amount}}</1> с {{paymentMethod}} на {{selectedIntegrationName}}.",
+      "purchase": "Покупка {{symbol}} стоимостью <1>{{amount}}</1>  в {{selectedIntegrationName}}.",
+      "requestToTransferPaymentSmartToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} через релейный контракт {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentSmartToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} в {{clientName}} через релейный контракт {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}}.",
+      "requestToTransferPaymentToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}}.",
+      "requestToTransferSmartToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} на {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
+      "requestToTransferSmartToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
+      "requestToTransferToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{shortToAddress}}.",
+      "requestToTransferToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}}",
+      "transferPaymentSmartToAddress": "Перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} через релейный контракт {{shortSmartContractsAddress}}.",
+      "transferPaymentSmartToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} через релейный контракт {{shortSmartContractsAddress}}",
+      "transferPaymentToAddress": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}}.",
+      "transferPaymentToClient": "Перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} на {{clientName}}.",
+      "transferSmartToAddress": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{shortToAddress}} по договору реле {{shortSmartContractsAddress}}.",
+      "transferSmartToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
+      "transferToAddress": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{shortToAddress}}.",
+      "transferToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}}."
     }
   },
   "doneTransferPage": {
     "awaitingApproval": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
-    "checkDetails": "Посмотрите, что случилось",
-    "depositAddress": "<0>{amountCrypto} ~ {amountFiat}</0><1></1>will be received in {shortAddress}",
-    "depositClient": "You will receive<1></1><2>{amountCrypto} ~ {amountFiat}</2><3></3>in {clientName} ({shortAddress})",
-    "goToIntegrationToApprove": "Please go to <1>{selectedIntegrationName}</1> to approve this transfer.",
-    "paymentInitiated": "You have initiated a payment of<1></1><2>{amountCrypto}</2><3></3>to {clientName}",
-    "waiting": "Transfers are not complete until they have received enough network confirmations."
+    "checkDetails": "Посмотреть детали",
+    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
+    "depositClient": "Вы получите<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>на {{clientName}} ({{shortAddress}})",
+    "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
+    "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><3></3> для {{clientName}}",
+    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети."
   },
   "doneVerifyPage": {
-    "alreadyVerifiedBody": "Ownership of address {address} has already been verified for <4>{clientName}</4>.",
+    "alreadyVerifiedBody": "Владелец адреса {{address}} уже верифицирован для <4>{{clientName}}</4>.",
     "continueToTransfer": "Продолжить перевод",
     "returnToClient": "Вернуться к {{clientName}}",
     "titleAllSet": "All set!",
-    "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
+    "verifiedBody": "Вы успешно подтвердили право владения адресом {{address}} для <4>{{clientName}}</4>."
+  },
+  "drawer": {
+    "close": "Закрыть модаль соединения"
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email received. Processing...",
@@ -263,7 +281,7 @@
     "sendEmailButton": "Я отправил письмо",
     "steps": {
       "checkInbox": "Проверьте свой почтовый ящик на наличие электронной почты, чтобы подтвердить вход с нового устройства.",
-      "doNotClick": "<0>НЕТ</0> нажмите кнопку подтверждения в письме.",
+      "doNotClick": "<0>НЕ НАЖИМАЙТЕ</0> кнопку подтверждения в письме.",
       "forwardEmail": "Переслать письмо на этот безопасный почтовый ящик, который автоматически подтвердит соответствие запросу входа в систему."
     },
     "stillWaitingLoading": "Still waiting for email...",
@@ -280,16 +298,16 @@
     "title": "Вы уверены, что хотите выйти?"
   },
   "externalDirectMobileWallet": {
-    "actionRefusedError": "Отклонено действие",
+    "actionRefusedError": "Действие отклонено",
     "actionRefusedRetryText": "Пожалуйста, вернитесь в приложение {{clientName}}",
-    "actionRefusedText": "Вы отклонили действие.",
+    "actionRefusedText": "Вы отклонили запрос.",
     "connectionWalletAction": "Вы успешно подключились к {{integrationName}}.",
-    "continueInApp": "Пожалуйста, продолжайте в приложении {{clientName}}.",
+    "continueInApp": "Пожалуйста, продолжите в приложении {{clientName}}.",
     "defaultAction": "Вы успешно выполнили действие.",
     "processingError": "Ошибка обработки",
     "processingText": "Что-то пошло не так.",
     "sessionNotFoundError": "Сессия не найдена",
-    "signedMessageAction": "Вы успешно подтвердили право владения вашей {{integrationName}}.",
+    "signedMessageAction": "Вы успешно подтвердили право владения аккаунтом {{integrationName}}.",
     "transactionAction": "Вы успешно инициализировали транзакцию.",
     "tryAgainText": "Пожалуйста, повторите попытку позже."
   },
@@ -297,27 +315,27 @@
     "invalidCode": "Invalid code. Please try again"
   },
   "externalHardwareWalletMainPage": {
-    "mobileBody": "Этот опыт должен быть завершен на <1>рабочем столе</1> устройстве для подключения вашего аппаратного кошелька.",
-    "mobileTitle": "Открыть эту ссылку на настольном устройстве"
+    "mobileBody": "Этот опыт должен быть завершен на <1>компьютере</1> для подключения вашего аппаратного кошелька.",
+    "mobileTitle": "Открыть эту ссылку на компьютере"
   },
   "externalInitialScreen": {
-    "title": "Введите код одного раза <1></1>отображаемый на вашем мобильном устройстве"
+    "title": "Введите одноразовый код <1></1> с вашего мобильного устройства"
   },
   "externalTransferCallbackPage": {
     "continue": "Перейти к {{clientName}}",
-    "transferRequested": "Transfer requested<1></1>Please return to {deepLink}",
+    "transferRequested": "Перевод запрошен, пожалуйста, вернитесь к {{clientName}}",
     "updatingTransfer": "Updating transfer status ..."
   },
   "facePage": {
-    "completedButton": "Я завершил проверку",
-    "desktopStep1": "Отсканируйте QR-код, чтобы завершить верификацию лицом для подтверждения, что вы действительно пытаетесь войти.",
-    "desktopStep2": "Затем вернитесь сюда, чтобы закончить привязку вашего аккаунта.",
-    "mobileStep1": "Завершите проверку лицом для подтверждения того, что вы действительно пытаетесь войти.",
-    "mobileStep2": "Click <1>Open {selectedIntegrationName} app</1> to open your app and complete face verification.",
-    "mobileStep3": "Вернитесь сюда, чтобы продолжить привязку вашего аккаунта.",
+    "completedButton": "Я завершил верификацию",
+    "desktopStep1": "Отсканируйте QR-код, чтобы завершить верификацию лица для подтверждения, что это действительно  вы пытаетесь войти в свой аккаунт.",
+    "desktopStep2": "Затем вернитесь сюда, чтобы закончить вход в ваш аккаунт.",
+    "mobileStep1": "Завершите проверку лица для подтверждения того, что это действительно вы пытаетесь войти в аккаунт.",
+    "mobileStep2": "Нажмите <1>Откройте приложение {{integrationName}} </1>, чтобы открыть приложение и завершить проверку лица.",
+    "mobileStep3": "Вернитесь сюда, чтобы продолжить вход в ваш аккаунт.",
     "openApp": "Открыть приложение {{integrationName}}",
     "reopenApp": "Переоткрыть приложение {{integrationName}}",
-    "title": "Проверка"
+    "title": "Верификация"
   },
   "fields": {
     "authToken": "authorization token",
@@ -332,21 +350,43 @@
     "linking": "Linking your account...",
     "loading": "Still working..."
   },
+  "fundingMethodFees": {
+    "fee": {
+      "conversion": "Преобразование {{integrationName}} {{conversionFromCurrency}} на {{conversionToCurrency}}",
+      "deposit": "Взнос депозита {{integrationName}}",
+      "purchase": "{{integrationName}} {{fiatSymbol}} to {{cryptocurrencySymbol}} заплатить комиссию",
+      "withdrawal": "Комиссия снятия {{integrationName}}"
+    },
+    "info": {
+      "conversion": "Комиссия, которую {{integrationName}} заберет для преобразования вашего {{conversionFromSymbol}} в {{conversionToSymbol}}.",
+      "purchase": "Комиссия, которую {{integrationName}} будет взимать за облегчение вашей покупки {{symbol}}.",
+      "withdrawal": "Комиссия, которую {{integrationName}} взимает для облегчения перевода из {{symbol}}."
+    }
+  },
+  "fundingMethodsList": {
+    "buyingPower": "Сила покупки",
+    "cryptocurrencyBalance": "Баланс {{symbol}}",
+    "noneSelected": "не выбрано",
+    "paymentMethodDepositUsage": "Связанный метод оплаты",
+    "stablecoinConversion": "Конверсия Стаблека",
+    "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_other": "{{mainOption}} + {{count}} другие"
+  },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}} не поддерживает этот метод обеспечения для покупки {{assetName}}.",
-    "coveredByExistingCryptocurrencyBalance": "У вас уже достаточно баланса {{assetName}} для этой покупки без дополнительных методов обеспечения.",
-    "coveredByOtherFundingOptions": "Этот метод обеспечения не поддерживается для этой транзакции.",
-    "currencyNotSupported": "Покупка криптовалюты с не-долларовым методом обеспечения еще не поддерживается.",
+    "buyingPowerUsageNotSupported": "{{integrationName}} не поддерживает этот метод пополнения для покупки {{assetName}}.",
+    "coveredByExistingCryptocurrencyBalance": "У вас уже достаточно баланса {{assetName}} для этой покупки без дополнительных методов пополнения.",
+    "coveredByOtherFundingOptions": "Этот метод пополнения не поддерживается для этой транзакции.",
+    "currencyNotSupported": "Покупка криптовалюты с не-долларовым методом пополнения еще не поддерживается.",
     "depositAmountLimitExceeded": "This purchase would surpass {{integrationName}}’s maximum deposit limit in 1 day for this funding method.",
     "depositCountLimitReached": "This funding method has already reached {{integrationName}}’s maximum number of deposits in 1 day.",
-    "depositsNotSupported": "Этот метод обеспечения не поддерживается для этой транзакции.",
-    "instantDepositLimitExceeded": "Мгновенный лимит депозита этого метода пополнения недостаточно для этой покупки",
-    "instantDepositsNotSupported": "Этот метод обеспечения не поддерживает мгновенные депозиты, поэтому он не может быть использован для этой покупки.",
-    "insufficientBalance": "Недостаточно средств для пополнения этой покупки.",
-    "maximumDepositLimitViolated": "Сумма превышает максимальный лимит депозита данного метода обеспечения.",
+    "depositsNotSupported": "Этот метод пополнения не поддерживается для этой транзакции.",
+    "instantDepositLimitExceeded": "Мгновенный лимит депозита этого метода пополнения недостаточен для этой покупки",
+    "instantDepositsNotSupported": "Этот метод пополнения не поддерживает мгновенные депозиты, поэтому он не может быть использован для этой покупки.",
+    "insufficientBalance": "Недостаточно средств для исполнения этой покупки.",
+    "maximumDepositLimitViolated": "Сумма превышает максимальный лимит депозита данного метода пополнения.",
     "minimumDepositLimitViolated": "Сумма ниже минимального лимита депозита этого метода.",
-    "paymentMethodTypeNotSupported": "Этот метод обеспечения еще не поддерживается.",
-    "unknown": "Этот вариант обеспечения недоступен."
+    "paymentMethodTypeNotSupported": "Этот метод пополнения еще не поддерживается.",
+    "unknown": "Этот вариант пополнения недоступен."
   },
   "fundingPage": {
     "activatePaymentMethod": "Активировать способ оплаты на {{selectedIntegrationName}}",
@@ -355,14 +395,14 @@
     "balanceAmountWithConversion": "Баланс: ~{{amount}} ({{conversionSymbols}})",
     "balances": "Балансы",
     "balanceWithAproximateFiat": "Баланс: {{amount}} ~ {{amountInFiat}}",
-    "buyingPower": "Покупка энергии",
+    "buyingPower": "Доступные средства",
     "changeAmount": "Или измените сумму перевода на {{availableAmount}}.",
     "changePreferredPaymentMethod": "Изменить предпочтительный способ оплаты",
     "changePreferredToken": "Изменить предпочтительный токен",
     "cryptoConversion": "Конвертация криптовалют",
     "description": "Итого: {{amount}} ~ {{amountInFiat}}",
-    "instantCashAvailable": "(Мгновенные денежные средства: {{amountInFiat}})",
-    "linkedPaymentMethods": "Связанные способы оплаты(ы)",
+    "instantCashAvailable": "(Доступные денежные средства: {{amountInFiat}})",
+    "linkedPaymentMethods": "Связанные способ(ы) оплаты",
     "noPaymentMethods": "Нет привязанных способов оплаты.",
     "noTokensAvailableForConversion": "Нет токенов для конвертации",
     "save": "Сохранить",
@@ -610,6 +650,10 @@
   "mobileContent": {
     "actionButton": "Открыть {{integrationName}}"
   },
+  "navHeader": {
+    "close": "Закрыть окно",
+    "goBack": "Назад"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Разрешить",
     "movingFunds": "перемещение средств без вашего разрешения",
@@ -704,16 +748,49 @@
     "title": "Выберите актив для перевода"
   },
   "previewTransfer": {
+    "allFeesIncluded": "Все сборы включены",
+    "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
+    "approveTransferRequest": "Подтвердите запрос на перевод <1></1>на вашем кошельке",
+    "changeAmount": "Изменить сумму",
+    "depositTitle": "Предварительный просмотр депозита",
+    "dustLeft": "Возможно, у вас осталась пыль {{symbol}}.",
+    "estimatedGasFee": "Предполагаемая газовая плата",
+    "estimatedGasFeeHint": "Предполагаемая комиссия, которая будет выплачена для компенсации сетевых валидаторов за вычислительную мощность, которую они используют для обработки этой транзакции.",
+    "from": "От",
+    "fundingWith": "Финансирование с",
+    "institutionTransferFee": "Комиссия снятия {{selectedIntegrationName}}",
+    "institutionTransferFeeHint": "Комиссия, которую {{selectedIntegrationName}} взимает для облегчения перевода из {{symbol}}.",
+    "maxAmount": "Your account can fund a maximum of <2>{t('previewTransfer.amountWithFiat', {\r\n                          cryptoAmount: formatCryptocurrency(\r\n                            networkData?.maximumAmount,\r\n                            transferPreview.symbol\r\n                          ),\r\n                          fiatAmount: formatCurrency(\r\n                            networkData?.maximumAmountInFiat,\r\n                            transferPreview.fiatCurrency\r\n                          )\r\n                        })}</2>. Would you like to adjust your transfer to this amount?",
+    "monitoring": "Мониторинг на утверждение...",
+    "network": "Сеть",
+    "onrampTitle": "Предпросмотр покупки",
+    "payingWith": "Оплата через",
+    "paymentTitle": "Предпросмотр платежа",
+    "proceed": "Продолжить",
+    "processingFee": "Плата за обработку",
+    "processingFeeHint": "Комиссия за обработку этой транзакции.",
+    "receive": "Получить",
+    "resendTransferRequest": "Переслать запрос на передачу",
+    "seconds": "{{seconds}}сек",
+    "symbolBalance": "Баланс {{symbol}}",
     "to": "Кому",
+    "total": "Итого",
     "transferDeclined": "Transfer declined",
-    "transferDeclinedBody": "You have declined the transfer request in your wallet."
+    "transferDeclinedBody": "You have declined the transfer request in your wallet.",
+    "transferTitle": "Предпросмотр передачи",
+    "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}."
   },
   "privacyComponent": {
     "content": "Ваши данные являются конфиденциальными и зашифрованы в любое время."
   },
   "qrCodePassword": {
     "expired": "QR-код истек",
+    "generateNew": "Создать новый QR-код",
+    "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
     "scanText": "Сканируйте этот код с помощью приложения Binance <1></1>, чтобы мгновенно войти в систему."
+  },
+  "receiveAmountInput": {
+    "onNetwork": "на {{network}}"
   },
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "Сумма должна быть не менее $8",
@@ -752,6 +829,9 @@
     "spotAccountsBody": "В настоящее время поддерживаются только спот учетных записей. Активы других типов учетных записей, например маржа, не будут обнаружены.",
     "topUpButton": "Пополнить баланс",
     "unableTransferError": "Невозможно начать передачу."
+  },
+  "selectItem": {
+    "label": "Выберите {{text}}"
   },
   "selectNetworkPage": {
     "ineligibleNetwork": "Ineligible networks"
