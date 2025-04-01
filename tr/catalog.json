@@ -7,6 +7,12 @@
     "title": "Whitelist this destination",
     "token": "Token"
   },
+  "authCodeInput": {
+    "code": "6 digit code"
+  },
+  "binanceConnectAmountInput": {
+    "switchFiatCrypto": "Switch Fiat/Crypto"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Amount must be within {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Amount must be within USD $21 - $15,000",
@@ -75,7 +81,11 @@
     "noResults": "Sorry, we couldn’t find any results",
     "paymentTitle": "Select payment account",
     "prodOnly": "Production only",
+    "search": "search",
     "title": "Select account to link"
+  },
+  "catalogTile": {
+    "select": "Select {{integrationName}}, {{badge}}"
   },
   "categories": {
     "brokerage": "Brokerages",
@@ -110,6 +120,7 @@
   },
   "common": {
     "availableForTransfer": "Available for transfer",
+    "cancel": "Cancel",
     "closeCap": "Close",
     "codeNotCorrent": "Provided code is not correct.",
     "continueCap": "Continue",
@@ -154,6 +165,9 @@
     "body": "This feature is not yet supported in your<1></1> country. Please check back soon for a<3></3> streamlined deposit experience.",
     "comingSoon": "Coming Soon"
   },
+  "currencyBox": {
+    "changeCurrency": "Change currency"
+  },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
     "connectionDeclinedTitle": "Connection declined",
@@ -173,6 +187,7 @@
   "defiWalletSelectNetworkPage": {
     "declinedBody": "You have declined the request to change networks in your wallet.",
     "declineTitle": "Network change declined",
+    "monitoringApproval": "Monitoring for approval...",
     "selectNetwork": "Select network",
     "title": "Switching networks",
     "whichNetwork": "Which network in your <1>{selectedIntegrationName}</1> wallet<4></4>would you like to link?"
@@ -256,6 +271,9 @@
     "titleAllSet": "Tamam",
     "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
   },
+  "drawer": {
+    "close": "Close the connection modal"
+  },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email received. Processing...",
     "expiredError": "Approval email has expired. Please go back and try again.",
@@ -331,6 +349,28 @@
   "fullScreenSpinner": {
     "linking": "Linking your account...",
     "loading": "Still working..."
+  },
+  "fundingMethodFees": {
+    "fee": {
+      "conversion": "{{integrationName}} {{conversionFromCurrency}} to {{conversionToCurrency}} Conversion Fee",
+      "deposit": "{{integrationName}} Deposit Fee",
+      "purchase": "{{integrationName}} {{fiatSymbol}} to {{cryptocurrencySymbol}} Purchase Fee",
+      "withdrawal": "{{integrationName}} Withdrawal Fee"
+    },
+    "info": {
+      "conversion": "The fee that {{integrationName}} will collect to convert your {{conversionFromSymbol}} into {{conversionToSymbol}}.",
+      "purchase": "The fee that {{integrationName}} will collect for facilitating your purchase of {{symbol}}.",
+      "withdrawal": "The fee that {{integrationName}} will charge to facilitate your transfer out of {{symbol}}."
+    }
+  },
+  "fundingMethodsList": {
+    "buyingPower": "Buying Power",
+    "cryptocurrencyBalance": "{{symbol}} balance",
+    "noneSelected": "none selected",
+    "paymentMethodDepositUsage": "Linked Payment Method",
+    "stablecoinConversion": "Stablecoin conversion",
+    "withAdditional_one": "{{mainOption}} + {{count}} other",
+    "withAdditional_other": "{{mainOption}} + {{count}} others"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{integrationName}} does not support using this funding method to purchase {{assetName}}.",
@@ -610,6 +650,10 @@
   "mobileContent": {
     "actionButton": "Open {{integrationName}}"
   },
+  "navHeader": {
+    "close": "Close the modal",
+    "goBack": "Go backwards"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
     "movingFunds": "moving funds without your permission",
@@ -704,16 +748,49 @@
     "title": "Select asset to transfer"
   },
   "previewTransfer": {
+    "allFeesIncluded": "All fees included",
+    "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
+    "approveTransferRequest": "Approve the transfer request<1></1>in your wallet",
+    "changeAmount": "Change the amount",
+    "depositTitle": "Deposit preview",
+    "dustLeft": "You may have some {{symbol}} dust left over.",
+    "estimatedGasFee": "Estimated Gas Fee",
+    "estimatedGasFeeHint": "The estimated fees that will be paid to compensate network validators for the computing power they use to process this transaction.",
+    "from": "From",
+    "fundingWith": "Funding with",
+    "institutionTransferFee": "{{selectedIntegrationName}} Withdrawal Fee",
+    "institutionTransferFeeHint": "The fee that {{selectedIntegrationName}} will charge to facilitate your transfer out of {{symbol}}.",
+    "maxAmount": "Your account can fund a maximum of <2>{t('previewTransfer.amountWithFiat', {\r\n                          cryptoAmount: formatCryptocurrency(\r\n                            networkData?.maximumAmount,\r\n                            transferPreview.symbol\r\n                          ),\r\n                          fiatAmount: formatCurrency(\r\n                            networkData?.maximumAmountInFiat,\r\n                            transferPreview.fiatCurrency\r\n                          )\r\n                        })}</2>. Would you like to adjust your transfer to this amount?",
+    "monitoring": "Monitoring for approval...",
+    "network": "Network",
+    "onrampTitle": "Purchase preview",
+    "payingWith": "Paying with",
+    "paymentTitle": "Payment preview",
+    "proceed": "Proceed",
+    "processingFee": "Processing Fee",
+    "processingFeeHint": "The fee collected for processing this transaction.",
+    "receive": "Receive",
+    "resendTransferRequest": "Resend transfer request",
+    "seconds": "{{seconds}}s",
+    "symbolBalance": "{{symbol}} balance",
     "to": "To",
+    "total": "Total",
     "transferDeclined": "Transfer declined",
-    "transferDeclinedBody": "You have declined the transfer request in your wallet."
+    "transferDeclinedBody": "You have declined the transfer request in your wallet.",
+    "transferTitle": "Transfer preview",
+    "youMayReceiveLess": "You may receive less due to {{symbol}} price movement."
   },
   "privacyComponent": {
     "content": "Your data is private and encrypted at all times."
   },
   "qrCodePassword": {
     "expired": "QR code expired",
+    "generateNew": "Generate a new QR code",
+    "qrCodeLabel": "QR code can be scanned on your mobile device to establish connection",
     "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
+  },
+  "receiveAmountInput": {
+    "onNetwork": "on {{network}}"
   },
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "Amount must be at least $8",
@@ -752,6 +829,9 @@
     "spotAccountsBody": "Only spot accounts are currently supported. Assets in other account types, like margin, will not be detected.",
     "topUpButton": "Top Up Balance",
     "unableTransferError": "Unable to initiate the transfer."
+  },
+  "selectItem": {
+    "label": "Select {{text}}"
   },
   "selectNetworkPage": {
     "ineligibleNetwork": "Ineligible networks"
