@@ -7,6 +7,12 @@
     "title": "Lista blanca de este destino",
     "token": "Token"
   },
+  "authCodeInput": {
+    "code": "6 digit code"
+  },
+  "binanceConnectAmountInput": {
+    "switchFiatCrypto": "Cambiar Fiat/Crypto"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "La cantidad debe estar dentro de {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "El importe debe estar dentro de USD $21 - $15,000",
@@ -75,7 +81,11 @@
     "noResults": "Sorry, we couldn’t find any results",
     "paymentTitle": "Select payment account",
     "prodOnly": "Production only",
+    "search": "buscar",
     "title": "Select account to link"
+  },
+  "catalogTile": {
+    "select": "Seleccione {{integrationName}}, {{badge}}"
   },
   "categories": {
     "brokerage": "Brokerages",
@@ -110,6 +120,7 @@
   },
   "common": {
     "availableForTransfer": "Disponible para transferencia",
+    "cancel": "Cancelar",
     "closeCap": "Cerrar",
     "codeNotCorrent": "El código proporcionado no es correcto.",
     "continueCap": "Continuar",
@@ -154,6 +165,9 @@
     "body": "Esta función aún no está disponible en tu país<1></1>. Por favor, vuelve pronto para ver una experiencia de depósito en streamlined <3></3>.",
     "comingSoon": "Próximamente"
   },
+  "currencyBox": {
+    "changeCurrency": "Cambiar moneda"
+  },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Has rechazado la solicitud para conectar tu billetera, o una solicitud anterior sigue activa.",
     "connectionDeclinedTitle": "Conexión rechazada",
@@ -173,6 +187,7 @@
   "defiWalletSelectNetworkPage": {
     "declinedBody": "Has rechazado la solicitud para cambiar las redes de tu cartera.",
     "declineTitle": "Cambio de red rechazado",
+    "monitoringApproval": "Monitoreando la aprobación...",
     "selectNetwork": "Seleccionar red",
     "title": "Cambiando redes",
     "whichNetwork": "Which network in your <1>{selectedIntegrationName}</1> wallet<4></4>would you like to link?"
@@ -247,7 +262,7 @@
     "depositClient": "You will receive<1></1><2>{amountCrypto} ~ {amountFiat}</2><3></3>in {clientName} ({shortAddress})",
     "goToIntegrationToApprove": "Please go to <1>{selectedIntegrationName}</1> to approve this transfer.",
     "paymentInitiated": "You have initiated a payment of<1></1><2>{amountCrypto}</2><3></3>to {clientName}",
-    "waiting": "Transfers are not complete until they have received enough network confirmations."
+    "waiting": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Ownership of address {address} has already been verified for <4>{clientName}</4>.",
@@ -255,6 +270,9 @@
     "returnToClient": "Volver a {{clientName}}",
     "titleAllSet": "¡Todo listo!",
     "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
+  },
+  "drawer": {
+    "close": "Cerrar el modal de conexión"
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email recibido. Procesando...",
@@ -331,6 +349,28 @@
   "fullScreenSpinner": {
     "linking": "Vinculando tu cuenta...",
     "loading": "Aún trabajando..."
+  },
+  "fundingMethodFees": {
+    "fee": {
+      "conversion": "{{integrationName}} {{conversionFromCurrency}} a {{conversionToCurrency}} Comisión de Conversión",
+      "deposit": "Tarifa de depósito {{integrationName}}",
+      "purchase": "{{integrationName}} {{fiatSymbol}} a {{cryptocurrencySymbol}} Compra",
+      "withdrawal": "Tarifa de retirada {{integrationName}}"
+    },
+    "info": {
+      "conversion": "La comisión que {{integrationName}} cobrará para convertir tu {{conversionFromSymbol}} en {{conversionToSymbol}}.",
+      "purchase": "La comisión que {{integrationName}} cobrará por facilitar tu compra de {{symbol}}.",
+      "withdrawal": "La comisión que cargará {{integrationName}} para facilitar tu transferencia fuera de {{symbol}}."
+    }
+  },
+  "fundingMethodsList": {
+    "buyingPower": "Potencia de compra",
+    "cryptocurrencyBalance": "Saldo {{symbol}}",
+    "noneSelected": "ninguno seleccionado",
+    "paymentMethodDepositUsage": "Método de pago vinculado",
+    "stablecoinConversion": "Conversión de estables",
+    "withAdditional_one": "{{mainOption}} + {{count}} otro",
+    "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{integrationName}} no soporta el uso de este método de financiación para comprar {{assetName}}.",
@@ -610,6 +650,10 @@
   "mobileContent": {
     "actionButton": "Abrir {{integrationName}}"
   },
+  "navHeader": {
+    "close": "Cerrar la modal",
+    "goBack": "Retroceder"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
     "movingFunds": "mover fondos sin tu permiso",
@@ -704,16 +748,49 @@
     "title": "Seleccionar recurso a transferir"
   },
   "previewTransfer": {
+    "allFeesIncluded": "Todas las comisiones incluidas",
+    "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
+    "approveTransferRequest": "Aprobar la solicitud de transferencia<1></1>en su cartera",
+    "changeAmount": "Cambiar la cantidad",
+    "depositTitle": "Vista previa del depósito",
+    "dustLeft": "Puede que te sobreste algo de polvo {{symbol}}.",
+    "estimatedGasFee": "Tarifa estimada de gas",
+    "estimatedGasFeeHint": "Las comisiones estimadas que se pagarán para compensar a los validadores de red por el poder informático que utilizan para procesar esta transacción.",
+    "from": "De",
+    "fundingWith": "Financiación con",
+    "institutionTransferFee": "Tarifa de retirada {{selectedIntegrationName}}",
+    "institutionTransferFeeHint": "La comisión que cargará {{selectedIntegrationName}} para facilitar tu transferencia fuera de {{symbol}}.",
+    "maxAmount": "Your account can fund a maximum of <2>{t('previewTransfer.amountWithFiat', {\r\n                          cryptoAmount: formatCryptocurrency(\r\n                            networkData?.maximumAmount,\r\n                            transferPreview.symbol\r\n                          ),\r\n                          fiatAmount: formatCurrency(\r\n                            networkData?.maximumAmountInFiat,\r\n                            transferPreview.fiatCurrency\r\n                          )\r\n                        })}</2>. Would you like to adjust your transfer to this amount?",
+    "monitoring": "Monitoreando la aprobación...",
+    "network": "Red",
+    "onrampTitle": "Comprar vista previa",
+    "payingWith": "Pagando con",
+    "paymentTitle": "Vista previa del pago",
+    "proceed": "Continuar",
+    "processingFee": "Cargo de procesamiento",
+    "processingFeeHint": "La cuota recaudada por procesar esta transacción.",
+    "receive": "Recibir",
+    "resendTransferRequest": "Reenviar solicitud de transferencia",
+    "seconds": "{{seconds}}s",
+    "symbolBalance": "Saldo {{symbol}}",
     "to": "A",
+    "total": "Total",
     "transferDeclined": "Transferencia rechazada",
-    "transferDeclinedBody": "Has rechazado la solicitud de transferencia en tu cartera."
+    "transferDeclinedBody": "Has rechazado la solicitud de transferencia en tu cartera.",
+    "transferTitle": "Transferir vista previa",
+    "youMayReceiveLess": "Puedes recibir menos debido al movimiento de precios {{symbol}}."
   },
   "privacyComponent": {
     "content": "Sus datos son privados y cifrados en todo momento."
   },
   "qrCodePassword": {
     "expired": "Código QR caducado",
+    "generateNew": "Generar un nuevo código QR",
+    "qrCodeLabel": "El código QR puede escanearse en tu dispositivo móvil para establecer la conexión",
     "scanText": "Escanea este código con tu aplicación de Binance <1></1> para iniciar sesión al instante."
+  },
+  "receiveAmountInput": {
+    "onNetwork": "en {{network}}"
   },
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "El monto debe ser de al menos $8",
@@ -752,6 +829,9 @@
     "spotAccountsBody": "Solo las cuentas spot son soportadas. No se detectarán activos en otros tipos de cuentas, como el margen.",
     "topUpButton": "Recargar saldo",
     "unableTransferError": "No se puede iniciar la transferencia."
+  },
+  "selectItem": {
+    "label": "Seleccionar {{text}}"
   },
   "selectNetworkPage": {
     "ineligibleNetwork": "Redes no elegibles"
