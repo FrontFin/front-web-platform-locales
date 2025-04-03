@@ -1,7 +1,7 @@
 {
   "addressWhitelistPage": {
     "addAddress": "",
-    "goToAccount": "Go to your <1>{selectedIntegrationName} account</1>",
+    "goToAccount": "Go to your <1>{{selectedIntegrationName}} account</1>",
     "network": "",
     "preview": "",
     "title": "",
@@ -36,10 +36,10 @@
     "ensureConfigured": "",
     "goToSettings": "Click below to go to your <1>Binance</1> security settings",
     "mayNeedReAuthApp": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>the application</2>.",
-    "mayNeedReAuthClient": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>{clientName}</2>.",
+    "mayNeedReAuthClient": "Please note: you may need to re-authenticate into your Binance account to initiate this transfer when you return to <2>{{clientName}}</2>.",
     "openBinance": "",
     "returnToApp": "Return to <1>the application</1> to retry this transfer",
-    "returnToClient": "Return to <1>{clientName}</1> to retry this transfer",
+    "returnToClient": "Return to <1>{{clientName}}</1> to retry this transfer",
     "title": ""
   },
   "binanceResetPasswordPage": {
@@ -110,7 +110,7 @@
   },
   "chooseAccountPage": {
     "linkToApp": "Which of your accounts would you like <1></1> to link to this application",
-    "linkToClient": "Which of your accounts would you like <1></1> to link to {clientName}",
+    "linkToClient": "Which of your accounts would you like <1></1> to link to {{clientName}}",
     "title": ""
   },
   "common": {
@@ -175,7 +175,7 @@
   "defiWalletQrPage": {
     "declinedBody": "",
     "declinedTitle": "",
-    "description": "Open {selectedIntegrationName} and scan the<3></3>QR code to link",
+    "description": "Open {{selectedIntegrationName}} and scan the<3></3>QR code to link",
     "qrCodeLabel": "",
     "title": ""
   },
@@ -185,7 +185,7 @@
     "monitoringApproval": "",
     "selectNetwork": "",
     "title": "",
-    "whichNetwork": "Which network in your <1>{selectedIntegrationName}</1> wallet<4></4>would you like to link?"
+    "whichNetwork": "Which network in your <1>{{selectedIntegrationName}}</1> wallet<4></4>would you like to link?"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "",
@@ -193,7 +193,7 @@
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "",
-    "clickOpenApp": "Click <1> Open {selectedIntegrationName} app</1> below",
+    "clickOpenApp": "Click <1> Open {{selectedIntegrationName}} app</1> below",
     "confirmInApp": "",
     "confirmPrompt": "",
     "openApp": "",
@@ -206,7 +206,7 @@
     "verifyLoggedIn": ""
   },
   "doneExternalVerifyScreen": {
-    "body": "You have successfully verified ownership of your <2>{selectedIntegrationName}</2> wallet.",
+    "body": "You have successfully verified ownership of your <2>{{selectedIntegrationName}}</2> wallet.",
     "returnAction": ""
   },
   "donePage": {
@@ -216,8 +216,8 @@
     "continueToTransfer": "",
     "done": "",
     "linkAnother": "",
-    "linkedToClient": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>{clientName}</5>.",
-    "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>."
+    "linkedToClient": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>{{clientName}}</5>.",
+    "linkedToThisApp": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>this application</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "",
@@ -229,42 +229,42 @@
       "approvedFromCeFiToClient": "",
       "approvedFromCeFiToDestination": "",
       "approvedFromDeFi": "",
-      "conversion": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
-      "deposit": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
-      "purchase": "Purchase of <1>{amount}</1> worth of {symbol} in {selectedIntegrationName}.",
-      "requestToTransferPaymentSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferPaymentSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferPaymentToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
-      "requestToTransferPaymentToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
-      "requestToTransferSmartToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferSmartToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "requestToTransferToAddress": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
-      "requestToTransferToClient": "Request to transfer <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}.",
-      "transferPaymentSmartToAddress": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} via the relay contract {shortSmartContractsAddress}.",
-      "transferPaymentSmartToClient": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} via the relay contract {shortSmartContractsAddress}.",
-      "transferPaymentToAddress": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName}.",
-      "transferPaymentToClient": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName}.",
-      "transferSmartToAddress": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "transferSmartToClient": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress} via the relay contract {shortSmartContractsAddress}.",
-      "transferToAddress": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {shortToAddress}.",
-      "transferToClient": "Transfer of <1>{transferPreviewAmount}</1> from {selectedIntegrationName} to {clientName} {shortToAddress}."
+      "conversion": "Conversion of <1>{{amount}}</1> to <4>{{currency}}</4>.",
+      "deposit": "Deposit of <1>{{amount}}</1> from {{paymentMethod}} to {{selectedIntegrationName}}.",
+      "purchase": "Purchase of <1>{{amount}}</1> worth of {{symbol}} in {{selectedIntegrationName}}.",
+      "requestToTransferPaymentSmartToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentSmartToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}}.",
+      "requestToTransferPaymentToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "requestToTransferSmartToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferSmartToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "requestToTransferToAddress": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}}.",
+      "requestToTransferToClient": "Request to transfer <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}}.",
+      "transferPaymentSmartToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferPaymentSmartToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferPaymentToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}}.",
+      "transferPaymentToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "transferSmartToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferSmartToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
+      "transferToAddress": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{shortToAddress}}.",
+      "transferToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}}."
     }
   },
   "doneTransferPage": {
     "awaitingApproval": "",
     "checkDetails": "",
-    "depositAddress": "<0>{amountCrypto} ~ {amountFiat}</0><1></1>will be received in {shortAddress}",
-    "depositClient": "You will receive<1></1><2>{amountCrypto} ~ {amountFiat}</2><3></3>in {clientName} ({shortAddress})",
-    "goToIntegrationToApprove": "Please go to <1>{selectedIntegrationName}</1> to approve this transfer.",
-    "paymentInitiated": "You have initiated a payment of <1></1><2>{amountCrypto}</2> <4></4>to {clientName}",
+    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>will be received in {{shortAddress}}",
+    "depositClient": "You will receive<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>in {{clientName}} ({{shortAddress}})",
+    "goToIntegrationToApprove": "Please go to <1>{{selectedIntegrationName}}</1> to approve this transfer.",
+    "paymentInitiated": "You have initiated a payment of <1></1><2>{{amountCrypto}}</2> <4></4>to {{clientName}}",
     "waiting": ""
   },
   "doneVerifyPage": {
-    "alreadyVerifiedBody": "Ownership of address {address} has already been verified for <4>{clientName}</4>.",
+    "alreadyVerifiedBody": "Ownership of address {{address}} has already been verified for <4>{{clientName}}</4>.",
     "continueToTransfer": "",
     "returnToClient": "",
     "titleAllSet": "",
-    "verifiedBody": "You have successfully verified ownership of address {address} for <4>{clientName}</4>."
+    "verifiedBody": "You have successfully verified ownership of address {{address}} for <4>{{clientName}}</4>."
   },
   "drawer": {
     "close": ""
@@ -318,7 +318,7 @@
   },
   "externalTransferCallbackPage": {
     "continue": "",
-    "transferRequested": "Transfer requested<1></1>Please return to {deepLink}",
+    "transferRequested": "Transfer requested<1></1>Please return to {{deepLink}}",
     "updatingTransfer": ""
   },
   "facePage": {
@@ -326,7 +326,7 @@
     "desktopStep1": "",
     "desktopStep2": "",
     "mobileStep1": "",
-    "mobileStep2": "Click <1>Open {selectedIntegrationName} app</1> to open your app and complete face verification.",
+    "mobileStep2": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
     "mobileStep3": "",
     "openApp": "",
     "reopenApp": "",
@@ -402,7 +402,7 @@
     "noTokensAvailableForConversion": "",
     "save": "",
     "selectFundingMethodAvailablity": "",
-    "selectFundingMethods": "Please select funding method(s) to transfer <2>{formatCryptocurrency(\r\n                    transferPreview.amount,\r\n                    transferPreview.symbol\r\n                  )} ~ {formatUsd(transferPreview.amountInFiat)}</2>.",
+    "selectFundingMethods": "Please select funding method(s) to transfer <2>{{amount}} ~ {{amountInFiat}}</2>.",
     "selectOtherHoldings": "",
     "symbolBalance": "",
     "title": ""
@@ -418,10 +418,10 @@
   },
   "generateKeyPage": {
     "done": "",
-    "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{clientName}</2>.",
+    "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{{clientName}}</2>.",
     "establishedInThisApp": "You have successfully established uninterrupted updates in<1></1><2>this application</2>.",
-    "linkedToInClient": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>{clientName}</5>.",
-    "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>.",
+    "linkedToInClient": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>{{clientName}}</5>.",
+    "linkedToThisApp": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>this application</5>.",
     "nextStep": "Next we'll create a key for <2>uninterrupted updates</2> so you don't have to log back in",
     "tempAccess": ""
   },
@@ -431,7 +431,7 @@
     "loadingLabel": "",
     "networkConfirmations": "",
     "notInitiatedUntilApproved": "",
-    "recievedDetails": "You will receive <1>{amountStr}</1> in {clientName} ({shortAddress})",
+    "recievedDetails": "You will receive <1>{{amountStr}}</1> in {{clientName}} ({{shortAddress}})",
     "requestRecieved": "",
     "revolutApproveInfo": "",
     "transactionComplete": ""
@@ -517,11 +517,11 @@
     "title": ""
   },
   "kycRobinhoodPage": {
-    "clickContinue": "Click <1>Continue</1> to open {selectedIntegrationName}.",
-    "clickContinueAfterActivated": "After you have activated crypto transfers in {selectedIntegrationName}, click below to <5>Continue</5> with your transfer.",
+    "clickContinue": "Click <1>Continue</1> to open {{selectedIntegrationName}}.",
+    "clickContinueAfterActivated": "After you have activated crypto transfers in {{selectedIntegrationName}}, click below to <5>Continue</5> with your transfer.",
     "completeVerification": "",
     "connectAnother": "",
-    "note": "Please note: you may need to log back into your {selectedIntegrationName} account to initiate this transfer when you return.",
+    "note": "Please note: you may need to log back into your {{selectedIntegrationName}} account to initiate this transfer when you return.",
     "return": "",
     "title": ""
   },
@@ -583,13 +583,13 @@
     "totp": ""
   },
   "mfaInstructionsText": {
-    "email": "Enter the one-time code that <2>{selectedIntegrationName}</2> has sent to your email.",
+    "email": "Enter the one-time code that <2>{{selectedIntegrationName}}</2> has sent to your email.",
     "paymentFlow": "",
-    "phone": "Enter the one-time code that <2>{selectedIntegrationName}</2> has sent to your phone.",
-    "totp": "Enter the one-time code provided by the authenticator app you have linked to <1>{selectedIntegrationName}</1>.",
-    "tradingPin": "Please enter the trading PIN code associated with your <2>{selectedIntegrationName}</2> account.",
+    "phone": "Enter the one-time code that <2>{{selectedIntegrationName}}</2> has sent to your phone.",
+    "totp": "Enter the one-time code provided by the authenticator app you have linked to <1>{{selectedIntegrationName}}</1>.",
+    "tradingPin": "Please enter the trading PIN code associated with your <2>{{selectedIntegrationName}}</2> account.",
     "transferFlow": "",
-    "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{selectedIntegrationName}</1> account."
+    "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{{selectedIntegrationName}}</1> account."
   },
   "mfaPage": {
     "enterCode": "Enter your one-time code to confirm it’s<1></1>really you trying to log in.",
@@ -599,22 +599,22 @@
   },
   "mfaSetupPage": {
     "emailButton": "",
-    "emailSubtitle": "Click the button below to add an email to your <2>{selectedIntegrationName}</2> account.",
-    "keyGenerationBody": "For your security, <1>{selectedIntegrationName} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
+    "emailSubtitle": "Click the button below to add an email to your <2>{{selectedIntegrationName}}</2> account.",
+    "keyGenerationBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
     "keyGenerationTitle": "",
     "totpButton": "",
-    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{selectedIntegrationName}</2> account.",
-    "withdrawalBody": "For your security, <1>{selectedIntegrationName} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
+    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
+    "withdrawalBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
     "withdrawalTitle": ""
   },
   "mfaSuccessPage": {
-    "addAuthApp": "Click the button below to add an authenticator app to your <2>{selectedIntegrationName}</2> account.",
-    "emailTitle": "You've successfully linked your email to your <2>{selectedIntegrationName}</2> account.",
+    "addAuthApp": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
+    "emailTitle": "You've successfully linked your email to your <2>{{selectedIntegrationName}}</2> account.",
     "proceed": "",
     "proceedKey": "",
     "proceedTransfer": "",
     "setUpApp": "",
-    "totpTitle": "You've successfully linked an authenticator app to your <2>{selectedIntegrationName}</2> account."
+    "totpTitle": "You've successfully linked an authenticator app to your <2>{{selectedIntegrationName}}</2> account."
   },
   "mfaTitle": {
     "default": "",
@@ -622,14 +622,14 @@
     "phone": ""
   },
   "mfaVerificationPage": {
-    "checkEmail": "First, let's verify your identity.<1></1>Please, check your email for a one-time verification code sent from <4>{selectedIntegrationName}</4>.",
-    "checkSms": "First, let's verify your identity.<1></1>Please, check your phone for a one-time verification code sent from <4>{selectedIntegrationName}</4> sent by SMS.",
+    "checkEmail": "First, let's verify your identity.<1></1>Please, check your email for a one-time verification code sent from <4>{{selectedIntegrationName}}</4>.",
+    "checkSms": "First, let's verify your identity.<1></1>Please, check your phone for a one-time verification code sent from <4>{{selectedIntegrationName}}</4> sent by SMS.",
     "confirmApp": "",
     "confirmEmail": "",
     "enterCode": "",
-    "enterCodeFromEmail": "Please enter the 6-digit code that <2>{selectedIntegrationName}</2> has sent<4></4>to your email.",
+    "enterCodeFromEmail": "Please enter the 6-digit code that <2>{{selectedIntegrationName}}</2> has sent<4></4>to your email.",
     "enterTotp": "Please enter the 6-digit code from your<1></1>authenticator app",
-    "firstEnterTotp": "First, let's verify your identity.<1></1>Please, enter the one-time code from the authenticator app you have linked to <3>{selectedIntegrationName}</3>.",
+    "firstEnterTotp": "First, let's verify your identity.<1></1>Please, enter the one-time code from the authenticator app you have linked to <3>{{selectedIntegrationName}}</3>.",
     "securityVerification": ""
   },
   "mobileAppLink": {
@@ -637,7 +637,7 @@
     "openAppButton": "",
     "steps": {
       "authorize": "Click <1>Authorize</1> on the confirmation page.",
-      "openApp": "Click <1>Open {selectedIntegrationName} app</1> below.",
+      "openApp": "Click <1>Open {{selectedIntegrationName}} app</1> below.",
       "return": ""
     }
   },
@@ -651,7 +651,7 @@
   "nonOAuthPermissionsPage": {
     "allow": "",
     "movingFunds": "",
-    "titleWithClient": "{clientName} <2></2> Permissions",
+    "titleWithClient": "{{clientName}} <2></2> Permissions",
     "titleWithoutClient": "This application`s <1></1> Permissions",
     "transactionRequest": "",
     "viewActivity": "",
@@ -661,7 +661,7 @@
     "monitoring": "",
     "reopenButton": "",
     "subtitle": "",
-    "title": "Continue on <1></1> {selectedIntegrationName} window"
+    "title": "Continue on <1></1> {{selectedIntegrationName}} window"
   },
   "oauthErrorPage": {
     "description": "",
@@ -679,27 +679,27 @@
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
-      "client": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
-      "destination": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to the destination."
+      "client": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "destination": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to the destination."
     },
-    "buyingPowerPurchase": "Purchase of <1>{amount}</1> worth of {symbol} <5>(~ {amountInCrypto})</5> in {selectedIntegrationName}.",
-    "conversionStep": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
+    "buyingPowerPurchase": "Purchase of <1>{{amount}}</1> worth of {{symbol}} <5>(~ {{amountInCrypto}})</5> in {{selectedIntegrationName}}.",
+    "conversionStep": "Conversion of <1>{{amount}}</1> to <4>{{currency}}</4>.",
     "depositTitle": "",
     "description": "",
     "existingCryptocurrencyBalance": {
       "approveClient": "",
       "approveDestination": "",
-      "transfer": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
-      "transferHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName}.",
-      "transferHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address}.",
-      "transferSmartDeposit": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} via a relay contract.",
-      "transferSmartDepositHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName} via a relay contract.",
-      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address} via a relay contract.",
-      "transferSmartDepositWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address} via a relay contract.",
-      "transferWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address}."
+      "transfer": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "transferHideClient": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}}.",
+      "transferHideClientWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{address}}.",
+      "transferSmartDeposit": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} via a relay contract.",
+      "transferSmartDepositHideClient": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} via a relay contract.",
+      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{address}} via a relay contract.",
+      "transferSmartDepositWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}} via a relay contract.",
+      "transferWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}}."
     },
     "onrampTitle": "",
-    "paymentMethodDepositUsage": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
+    "paymentMethodDepositUsage": "Deposit of <1>{{amount}}</1> from {{paymentMethod}} to {{selectedIntegrationName}}.",
     "paymentTitle": "",
     "transactionTitle": "",
     "tryAgain": ""
@@ -754,7 +754,7 @@
     "fundingWith": "",
     "institutionTransferFee": "",
     "institutionTransferFeeHint": "",
-    "maxAmount": "Your account can fund a maximum of <2>{networkMaxAmount}</2>. Would you like to adjust your transfer to this amount?",
+    "maxAmount": "Your account can fund a maximum of <2>{{networkMaxAmount}}</2>. Would you like to adjust your transfer to this amount?",
     "monitoring": "",
     "network": "",
     "onrampTitle": "",
@@ -842,7 +842,7 @@
     "title": ""
   },
   "sessionInfo": {
-    "text": "If you have questions, please report this with session ID <2>{sessionId}</2>."
+    "text": "If you have questions, please report this with session ID <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
     "alternativeText": "",
@@ -850,11 +850,11 @@
     "downloadStep": "Download the <1>Google Authenticator app</1> from Google Play or the App Store",
     "nextButton": "",
     "qrCodeAlt": "",
-    "scanStep": "Add {selectedIntegrationName} to your authenticator app by <4>scanning the QR code</4>",
+    "scanStep": "Add {{selectedIntegrationName}} to your authenticator app by <4>scanning the QR code</4>",
     "title": ""
   },
   "setupEmailPage": {
-    "description": "Enter your email address.<1></1><2>{selectedIntegrationName}</2> will use this email to send you confirmation codes when you're performing certain actions in your account.",
+    "description": "Enter your email address.<1></1><2>{{selectedIntegrationName}}</2> will use this email to send you confirmation codes when you're performing certain actions in your account.",
     "emailTitle": "",
     "enterError": "",
     "title": ""
@@ -871,7 +871,7 @@
     "paragraph7": "You will defend, indemnify and hold harmless the Company and its directors, officers, employees, licensors, contractors and representatives from and against any third-party claims, actions, suits, investigations or proceedings, and any losses, liabilities, damages, costs and expenses arising out of or related to your use (or misuse) of the Tool, the End User Service and/or any Connected Account.",
     "paragraph8": "The Company may change these terms at any time. Your continued use of any functionality enabled by the Tool after any such changes constitutes your acceptance of the updated terms.",
     "paragraph9": "These terms will be governed by the laws of the State of Delaware, excluding its choice of law principles. Except for disputes that qualify for small claims court, all disputes arising out of or related to these terms or any aspect of the relationship between you and the Company, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory, will be resolved through final and binding arbitration before a neutral arbitrator instead of in a court by a judge or jury and you agree that the Company and you are each waiving the right to trial by a jury. Such disputes include, without limitation, disputes arising out of or relating to interpretation or application of this arbitration provision, including the enforceability, revocability or validity of the arbitration provision or any portion of the arbitration provision. All such matters shall be decided by an arbitrator and not by a court or judge. You agree that any arbitration under these terms will take place on an individual basis; class arbitrations and class actions are not permitted, and you are agreeing to give up the ability to participate in a class action.",
-    "title": "{shortName} End User<2></2>Terms and Conditions"
+    "title": "{{shortName}} End User<2></2>Terms and Conditions"
   },
   "transferCanceledPage": {
     "title": "",
@@ -889,7 +889,7 @@
       "return": ""
     },
     "mobileSteps": {
-      "clickOpen": "Click <1>Open {selectedIntegrationName} app</1> below",
+      "clickOpen": "Click <1>Open {{selectedIntegrationName}} app</1> below",
       "verifyLogin": "",
       "verifyTransfer": ""
     },
@@ -910,7 +910,7 @@
     "defaultError": ""
   },
   "transferFacePage": {
-    "clickOpenApp": "Click <1>Open {selectedIntegrationName} app</1> to open your app and complete face verification.",
+    "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
     "completeMobile": "",
     "confirmCompleted": "",
     "openApp": "",
@@ -939,12 +939,12 @@
     "approveTransferToDestination": "",
     "convertAmount": "",
     "depositAmount": "",
-    "purchaseAmount": "Purchase of <2>{formatCurrency(\r\n                fundingOption.usedAmountTotal?.amountInFiat,\r\n                fundingOption.usedAmountTotal?.fiatSymbol\r\n              )}</2> worth of {fundingOption.usedAmountTotal?.cryptocurrencySymbol} in {integrationName}.",
+    "purchaseAmount": "Purchase of <2>{{formatCurrency(\r\n                fundingOption.usedAmountTotal?.amountInFiat,\r\n                fundingOption.usedAmountTotal?.fiatSymbol\r\n              )}}</2> worth of {{fundingOption.usedAmountTotal?.cryptocurrencySymbol}} in {{integrationName}}.",
     "showLess": "",
     "showMore": "",
     "title": "",
-    "transferAmount": "Transfer of <1>{cryptoAmount}</1> from {integrationName} to {hideClient ? '' : clientName} {targetAddress}.",
-    "transferAmountSmartDeposit": "Transfer of <1>{cryptoAmount}</1> from {integrationName} to {hideClient ? '' : clientName} {targetAddress}via a relay contract."
+    "transferAmount": "Transfer of <1>{{cryptoAmount}}</1> from {{integrationName}} to {{hideClient ? '' : clientName}} {{targetAddress}}.",
+    "transferAmountSmartDeposit": "Transfer of <1>{{cryptoAmount}}</1> from {{integrationName}} to {{hideClient ? '' : clientName}} {{targetAddress}}via a relay contract."
   },
   "transferUpdateDrawerContent": {
     "approveTransfer": "",
@@ -991,7 +991,7 @@
     "secureText": ""
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{clientName} would like you to verify ownership of <3>{requestedNetworkName}</3> address <6>{truncatedRequestedAddress}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
+    "body": "{{clientName}} would like you to verify ownership of <3>{{requestedNetworkName}}</3> address <6>{{truncatedRequestedAddress}}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "",
     "title": ""
   },

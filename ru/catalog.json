@@ -409,7 +409,7 @@
     "noTokensAvailableForConversion": "Нет токенов для конвертации",
     "save": "Сохранить",
     "selectFundingMethodAvailablity": "Выбранные методы пополнения имеют {{selectedAvailableAmount}}. Пожалуйста, выберите дополнительные способы пополнения для перевода {{neededAmount}}.",
-    "selectFundingMethods": "Please select funding method(s) to transfer <2>{formatCryptocurrency(\r\n                    transferPreview.amount,\r\n                    transferPreview.symbol\r\n                  )} ~ {formatUsd(transferPreview.amountInFiat)}</2>.",
+    "selectFundingMethods": "Please select funding method(s) to transfer <2>{{amount}} ~ {{amountInFiat}}</2>.",
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
@@ -425,10 +425,10 @@
   },
   "generateKeyPage": {
     "done": "",
-    "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{clientName}</2>.",
+    "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{{clientName}}</2>.",
     "establishedInThisApp": "You have successfully established uninterrupted updates in<1></1><2>this application</2>.",
-    "linkedToInClient": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>{clientName}</5>.",
-    "linkedToThisApp": "You have successfully linked<1></1><2>{selectedIntegrationName}</2> to <5>this application</5>.",
+    "linkedToInClient": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>{{clientName}}</5>.",
+    "linkedToThisApp": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>this application</5>.",
     "nextStep": "Next we'll create a key for <2>uninterrupted updates</2> so you don't have to log back in",
     "tempAccess": ""
   },
@@ -438,7 +438,7 @@
     "loadingLabel": "",
     "networkConfirmations": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
     "notInitiatedUntilApproved": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
-    "recievedDetails": "You will receive <1>{amountStr}</1> in {clientName} ({shortAddress})",
+    "recievedDetails": "You will receive <1>{{amountStr}}</1> in {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Ваш запрос на перевод {{destination}} был получен {{selectedIntegrationName}}",
     "revolutApproveInfo": "Этот перевод не будет начат, пока не будет утвержден в Revolut app",
     "transactionComplete": "Транзакция завершена"
@@ -524,11 +524,11 @@
     "title": "Ожидает утверждения"
   },
   "kycRobinhoodPage": {
-    "clickContinue": "Click <1>Continue</1> to open {selectedIntegrationName}.",
-    "clickContinueAfterActivated": "After you have activated crypto transfers in {selectedIntegrationName}, click below to <5>Continue</5> with your transfer.",
+    "clickContinue": "Click <1>Continue</1> to open {{selectedIntegrationName}}.",
+    "clickContinueAfterActivated": "After you have activated crypto transfers in {{selectedIntegrationName}}, click below to <5>Continue</5> with your transfer.",
     "completeVerification": "Завершение проверки личности и/или добавление двухфакторной аутентификации.",
     "connectAnother": "Подключить другой аккаунт",
-    "note": "Please note: you may need to log back into your {selectedIntegrationName} account to initiate this transfer when you return.",
+    "note": "Please note: you may need to log back into your {{selectedIntegrationName}} account to initiate this transfer when you return.",
     "return": "Вернитесь сюда для завершения перевода.",
     "title": "Включение переводов в вашем аккаунте"
   },
@@ -590,13 +590,13 @@
     "totp": ""
   },
   "mfaInstructionsText": {
-    "email": "Enter the one-time code that <2>{selectedIntegrationName}</2> has sent to your email.",
+    "email": "Enter the one-time code that <2>{{selectedIntegrationName}}</2> has sent to your email.",
     "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот платеж.",
-    "phone": "Enter the one-time code that <2>{selectedIntegrationName}</2> has sent to your phone.",
-    "totp": "Enter the one-time code provided by the authenticator app you have linked to <1>{selectedIntegrationName}</1>.",
-    "tradingPin": "Please enter the trading PIN code associated with your <2>{selectedIntegrationName}</2> account.",
+    "phone": "Enter the one-time code that <2>{{selectedIntegrationName}}</2> has sent to your phone.",
+    "totp": "Enter the one-time code provided by the authenticator app you have linked to <1>{{selectedIntegrationName}}</1>.",
+    "tradingPin": "Please enter the trading PIN code associated with your <2>{{selectedIntegrationName}}</2> account.",
     "transferFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот перевод.",
-    "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{selectedIntegrationName}</1> account."
+    "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{{selectedIntegrationName}}</1> account."
   },
   "mfaPage": {
     "enterCode": "Enter your one-time code to confirm it’s<1></1>really you trying to log in.",
@@ -606,22 +606,22 @@
   },
   "mfaSetupPage": {
     "emailButton": "Настройка проверки электронной почты",
-    "emailSubtitle": "Click the button below to add an email to your <2>{selectedIntegrationName}</2> account.",
-    "keyGenerationBody": "For your security, <1>{selectedIntegrationName} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
+    "emailSubtitle": "Click the button below to add an email to your <2>{{selectedIntegrationName}}</2> account.",
+    "keyGenerationBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
     "keyGenerationTitle": "",
     "totpButton": "Настроить приложение для аутентификации",
-    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{selectedIntegrationName}</2> account.",
-    "withdrawalBody": "For your security, <1>{selectedIntegrationName} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
+    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
+    "withdrawalBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
     "withdrawalTitle": "Включите снятие средств с вашей учетной записи {{selectedIntegrationName}}"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "Click the button below to add an authenticator app to your <2>{selectedIntegrationName}</2> account.",
-    "emailTitle": "You've successfully linked your email to your <2>{selectedIntegrationName}</2> account.",
+    "addAuthApp": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
+    "emailTitle": "You've successfully linked your email to your <2>{{selectedIntegrationName}}</2> account.",
     "proceed": "Продолжить",
     "proceedKey": "Нажмите ниже, чтобы перейти к генерации ключей",
     "proceedTransfer": "Нажмите ниже, чтобы перейти к переводу",
     "setUpApp": "Настроить приложение для аутентификации",
-    "totpTitle": "You've successfully linked an authenticator app to your <2>{selectedIntegrationName}</2> account."
+    "totpTitle": "You've successfully linked an authenticator app to your <2>{{selectedIntegrationName}}</2> account."
   },
   "mfaTitle": {
     "default": "",
@@ -629,14 +629,14 @@
     "phone": ""
   },
   "mfaVerificationPage": {
-    "checkEmail": "First, let's verify your identity.<1></1>Please, check your email for a one-time verification code sent from <4>{selectedIntegrationName}</4>.",
-    "checkSms": "First, let's verify your identity.<1></1>Please, check your phone for a one-time verification code sent from <4>{selectedIntegrationName}</4> sent by SMS.",
+    "checkEmail": "First, let's verify your identity.<1></1>Please, check your email for a one-time verification code sent from <4>{{selectedIntegrationName}}</4>.",
+    "checkSms": "First, let's verify your identity.<1></1>Please, check your phone for a one-time verification code sent from <4>{{selectedIntegrationName}}</4> sent by SMS.",
     "confirmApp": "Подтвердить приложение аутентификации",
     "confirmEmail": "",
     "enterCode": "Введите проверочный код",
-    "enterCodeFromEmail": "Please enter the 6-digit code that <2>{selectedIntegrationName}</2> has sent<4></4>to your email.",
+    "enterCodeFromEmail": "Please enter the 6-digit code that <2>{{selectedIntegrationName}}</2> has sent<4></4>to your email.",
     "enterTotp": "Пожалуйста, введите 6-значный код из вашего <1></1>приложение для аутентификации",
-    "firstEnterTotp": "First, let's verify your identity.<1></1>Please, enter the one-time code from the authenticator app you have linked to <3>{selectedIntegrationName}</3>.",
+    "firstEnterTotp": "First, let's verify your identity.<1></1>Please, enter the one-time code from the authenticator app you have linked to <3>{{selectedIntegrationName}}</3>.",
     "securityVerification": "Проверка безопасности"
   },
   "mobileAppLink": {
@@ -645,7 +645,7 @@
     "sendNewRequest": "Отправить новый запрос",
     "steps": {
       "authorize": "Click <1>Authorize</1> on the confirmation page.",
-      "openApp": "Click <1>Open {selectedIntegrationName} app</1> below.",
+      "openApp": "Click <1>Open {{selectedIntegrationName}} app</1> below.",
       "return": "Вернитесь сюда, чтобы завершить вход в ваш аккаунт."
     }
   },
@@ -659,7 +659,7 @@
   "nonOAuthPermissionsPage": {
     "allow": "Возможно",
     "movingFunds": "перемещение средств без вашего разрешения",
-    "titleWithClient": "{clientName} <2></2> Permissions",
+    "titleWithClient": "{{clientName}} <2></2> Permissions",
     "titleWithoutClient": "This application`s <1></1> Permissions",
     "transactionRequest": "отправка запросов на транзакции",
     "viewActivity": "просмотр балансов, активности, данных профиля",
@@ -669,7 +669,7 @@
     "monitoring": "",
     "reopenButton": "Нажмите здесь, чтобы снова открыть {{selectedIntegrationName}}",
     "subtitle": "Войдите в свою учетную запись и разрешите доступ",
-    "title": "Continue on <1></1> {selectedIntegrationName} window"
+    "title": "Continue on <1></1> {{selectedIntegrationName}} window"
   },
   "oauthErrorPage": {
     "description": "",
@@ -687,27 +687,27 @@
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
-      "client": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
-      "destination": "You approve the transfer of <1>{amount}</1> from {selectedIntegrationName} to the destination."
+      "client": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "destination": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to the destination."
     },
-    "buyingPowerPurchase": "Purchase of <1>{amount}</1> worth of {symbol} <5>(~ {amountInCrypto})</5> in {selectedIntegrationName}.",
-    "conversionStep": "Conversion of <1>{amount}</1> to <4>{currency}</4>.",
+    "buyingPowerPurchase": "Purchase of <1>{{amount}}</1> worth of {{symbol}} <5>(~ {{amountInCrypto}})</5> in {{selectedIntegrationName}}.",
+    "conversionStep": "Conversion of <1>{{amount}}</1> to <4>{{currency}}</4>.",
     "depositTitle": "Пополнение в процессе",
     "description": "Это может занять некоторое время...",
     "existingCryptocurrencyBalance": {
       "approveClient": "",
       "approveDestination": "",
-      "transfer": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName}.",
-      "transferHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName}.",
-      "transferHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address}.",
-      "transferSmartDeposit": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} via a relay contract.",
-      "transferSmartDepositHideClient": "Transfer of <1>{amount}</1> from {selectedIntegrationName} via a relay contract.",
-      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {address} via a relay contract.",
-      "transferSmartDepositWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address} via a relay contract.",
-      "transferWithAddress": "Transfer of <1>{amount}</1> from {selectedIntegrationName} to {clientName} {address}."
+      "transfer": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
+      "transferHideClient": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}}.",
+      "transferHideClientWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{address}}.",
+      "transferSmartDeposit": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} via a relay contract.",
+      "transferSmartDepositHideClient": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} via a relay contract.",
+      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{address}} via a relay contract.",
+      "transferSmartDepositWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}} via a relay contract.",
+      "transferWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}}."
     },
     "onrampTitle": "",
-    "paymentMethodDepositUsage": "Deposit of <1>{amount}</1> from {paymentMethod} to {selectedIntegrationName}.",
+    "paymentMethodDepositUsage": "Deposit of <1>{{amount}}</1> from {{paymentMethod}} to {{selectedIntegrationName}}.",
     "paymentTitle": "Платеж в процессе",
     "transactionTitle": "Транзакция в процессе",
     "tryAgain": "Попробовать еще раз"
@@ -762,7 +762,7 @@
     "fundingWith": "",
     "institutionTransferFee": "Комиссия снятия {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Комиссия, которую {{selectedIntegrationName}} взимает для облегчения перевода {{symbol}}.",
-    "maxAmount": "Your account can fund a maximum of <2>{networkMaxAmount}</2>. Would you like to adjust your transfer to this amount?",
+    "maxAmount": "Your account can fund a maximum of <2>{{networkMaxAmount}}</2>. Would you like to adjust your transfer to this amount?",
     "monitoring": "",
     "network": "Сеть",
     "onrampTitle": "Предпросмотр покупки",
@@ -850,7 +850,7 @@
     "title": "Your session has expired."
   },
   "sessionInfo": {
-    "text": "If you have questions, please report this with session ID <2>{sessionId}</2>."
+    "text": "If you have questions, please report this with session ID <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
     "alternativeText": "",
@@ -858,11 +858,11 @@
     "downloadStep": "Скачайте <1>Google Authenticator app</1> из Google Play или App Store",
     "nextButton": "",
     "qrCodeAlt": "",
-    "scanStep": "Add {selectedIntegrationName} to your authenticator app by <4>scanning the QR code</4>",
+    "scanStep": "Add {{selectedIntegrationName}} to your authenticator app by <4>scanning the QR code</4>",
     "title": "Настройка приложение для проверки подлинности"
   },
   "setupEmailPage": {
-    "description": "Enter your email address.<1></1><2>{selectedIntegrationName}</2> will use this email to send you confirmation codes when you're performing certain actions in your account.",
+    "description": "Enter your email address.<1></1><2>{{selectedIntegrationName}}</2> will use this email to send you confirmation codes when you're performing certain actions in your account.",
     "emailTitle": "",
     "enterError": "",
     "title": ""
@@ -879,7 +879,7 @@
     "paragraph7": "You will defend, indemnify and hold harmless the Company and its directors, officers, employees, licensors, contractors and representatives from and against any third-party claims, actions, suits, investigations or proceedings, and any losses, liabilities, damages, costs and expenses arising out of or related to your use (or misuse) of the Tool, the End User Service and/or any Connected Account.",
     "paragraph8": "The Company may change these terms at any time. Your continued use of any functionality enabled by the Tool after any such changes constitutes your acceptance of the updated terms.",
     "paragraph9": "These terms will be governed by the laws of the State of Delaware, excluding its choice of law principles. Except for disputes that qualify for small claims court, all disputes arising out of or related to these terms or any aspect of the relationship between you and the Company, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory, will be resolved through final and binding arbitration before a neutral arbitrator instead of in a court by a judge or jury and you agree that the Company and you are each waiving the right to trial by a jury. Such disputes include, without limitation, disputes arising out of or relating to interpretation or application of this arbitration provision, including the enforceability, revocability or validity of the arbitration provision or any portion of the arbitration provision. All such matters shall be decided by an arbitrator and not by a court or judge. You agree that any arbitration under these terms will take place on an individual basis; class arbitrations and class actions are not permitted, and you are agreeing to give up the ability to participate in a class action.",
-    "title": "{shortName} End User<2></2>Terms and Conditions"
+    "title": "{{shortName}} End User<2></2>Terms and Conditions"
   },
   "transferCanceledPage": {
     "title": "",
@@ -897,7 +897,7 @@
       "return": "Вернитесь сюда, чтобы продолжить"
     },
     "mobileSteps": {
-      "clickOpen": "Click <1>Open {selectedIntegrationName} app</1> below",
+      "clickOpen": "Click <1>Open {{selectedIntegrationName}} app</1> below",
       "verifyLogin": "",
       "verifyTransfer": ""
     },
@@ -918,7 +918,7 @@
     "defaultError": ""
   },
   "transferFacePage": {
-    "clickOpenApp": "Click <1>Open {selectedIntegrationName} app</1> to open your app and complete face verification.",
+    "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
     "completeMobile": "Завершите проверку лицом для подтверждения того, что вы действительно пытаетесь перевести средства.",
     "confirmCompleted": "Я завершил проверку",
     "openApp": "Открыть приложение {{selectedIntegrationName}}",
@@ -947,12 +947,12 @@
     "approveTransferToDestination": "",
     "convertAmount": "Конвертация {{fromAmount}} в {{toCurrency}}",
     "depositAmount": "Пополнение {{amount}} с {{paymentMethod}} на {{integrationName}}",
-    "purchaseAmount": "Purchase of <2>{formatCurrency(\r\n                fundingOption.usedAmountTotal?.amountInFiat,\r\n                fundingOption.usedAmountTotal?.fiatSymbol\r\n              )}</2> worth of {fundingOption.usedAmountTotal?.cryptocurrencySymbol} in {integrationName}.",
+    "purchaseAmount": "Purchase of <2>{{formatCurrency(fundingOption.usedAmountTotal?.amountInFiat, fundingOption.usedAmountTotal?.fiatSymbol)}}</2> worth of {{fundingOption.usedAmountTotal?.cryptocurrencySymbol}} in {{integrationName}}.",
     "showLess": "Скрыть",
     "showMore": "Показать еще",
     "title": "Что произойдет",
-    "transferAmount": "Transfer of <1>{cryptoAmount}</1> from {integrationName} to {hideClient ? '' : clientName} {targetAddress}.",
-    "transferAmountSmartDeposit": "Transfer of <1>{cryptoAmount}</1> from {integrationName} to {hideClient ? '' : clientName} {targetAddress}via a relay contract."
+    "transferAmount": "Transfer of <1>{{cryptoAmount}}</1> from {{integrationName}} to {{hideClient ? '' : clientName}} {{targetAddress}}.",
+    "transferAmountSmartDeposit": "Transfer of <1>{{cryptoAmount}}</1> from {{integrationName}} to {{hideClient ? '' : clientName}} {{targetAddress}} via a relay contract."
   },
   "transferUpdateDrawerContent": {
     "approveTransfer": "Подтвердить перевод",
@@ -999,7 +999,7 @@
     "secureText": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{clientName} would like you to verify ownership of <3>{requestedNetworkName}</3> address <6>{truncatedRequestedAddress}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
+    "body": "{{clientName}} would like you to verify ownership of <3>{{requestedNetworkName}}</3> address <6>{{truncatedRequestedAddress}}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "Подключить другой кошелек",
     "title": ""
   },
