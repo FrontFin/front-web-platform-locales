@@ -128,7 +128,7 @@
     "failedToLoadTrasferError": "Не удалось загрузить информацию о переводе",
     "genericConnectErrorMessage": "Не удалось подключиться к вашему аккаунту",
     "maxCap": "Макс",
-    "mesh": "Mesh",
+    "mesh": "Сетка",
     "notFound": "Не найдено",
     "searchCap": "Поиск",
     "securedBy": "Защищено",
@@ -275,21 +275,21 @@
     "close": "Закрыть модальное окно соединения"
   },
   "emailVerificationPage": {
-    "emailRecievedLoading": "",
-    "expiredError": "",
-    "forwardingEmail": "Forwarding email",
+    "emailRecievedLoading": "Письмо получено. Обработка...",
+    "expiredError": "Срок действия письма истек. Пожалуйста, вернитесь назад и повторите попытку.",
+    "forwardingEmail": "Пересылка электронной почты",
     "sendEmailButton": "Я отправил письмо",
     "steps": {
       "checkInbox": "Проверьте свой почтовый ящик на наличие электронной почты, чтобы подтвердить вход с нового устройства.",
       "doNotClick": "<0>НЕ НАЖИМАЙТЕ</0> кнопку подтверждения в письме.",
       "forwardEmail": "Переслать письмо на этот безопасный почтовый ящик, который автоматически подтвердит соответствие запросу входа в систему."
     },
-    "stillWaitingLoading": "",
+    "stillWaitingLoading": "Все еще ожидают письма...",
     "title": "Подтвердите вашу личность",
     "warningTitle": "Прочитайте это сообщение целиком, прежде чем продолжить."
   },
   "errorPage": {
-    "title": ""
+    "title": "Произошла ошибка."
   },
   "exitPage": {
     "body": "Ваш прогресс будет потерян.",
@@ -312,7 +312,7 @@
     "tryAgainText": "Пожалуйста, повторите попытку позже."
   },
   "externalHardwareWalletInitial": {
-    "invalidCode": ""
+    "invalidCode": "Неверный код. Пожалуйста, попробуйте еще раз"
   },
   "externalHardwareWalletMainPage": {
     "mobileBody": "Этот опыт должен быть завершен на <1>компьютере</1> для подключения вашего аппаратного кошелька.",
@@ -324,7 +324,7 @@
   "externalTransferCallbackPage": {
     "continue": "Перейти к {{clientName}}",
     "transferRequested": "Перевод запрошен, пожалуйста, вернитесь к {{clientName}}",
-    "updatingTransfer": ""
+    "updatingTransfer": "Обновление статуса передачи..."
   },
   "facePage": {
     "completedButton": "Я завершил верификацию",
@@ -338,17 +338,17 @@
     "title": "Верификация"
   },
   "fields": {
-    "authToken": "",
-    "challengeCode": "",
-    "mfaCode": "",
-    "password": "",
-    "phone": "",
-    "tradePin": "",
-    "username": ""
+    "authToken": "токен авторизации",
+    "challengeCode": "код вызова",
+    "mfaCode": "Код MFA",
+    "password": "пароль",
+    "phone": "телефон",
+    "tradePin": "маркер для торговли",
+    "username": "имя пользователя"
   },
   "fullScreenSpinner": {
-    "linking": "",
-    "loading": "Still working..."
+    "linking": "Привязка учетной записи...",
+    "loading": "Все еще работает..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -364,23 +364,21 @@
     }
   },
   "fundingMethodsList": {
-    "buyingPower": "",
-    "cryptocurrencyBalance": "",
-    "noneSelected": "",
-    "paymentMethodDepositUsage": "",
-    "stablecoinConversion": "",
-    "withAdditional_one": "",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
-    "withAdditional_other": ""
+    "buyingPower": "Сила покупки",
+    "cryptocurrencyBalance": "Баланс {{symbol}}",
+    "noneSelected": "не выбрано",
+    "paymentMethodDepositUsage": "Связанный метод оплаты",
+    "stablecoinConversion": "Конверсия Стаблека",
+    "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_other": "{{mainOption}} + {{count}} другие"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{integrationName}} не поддерживает этот метод пополнения для покупки {{assetName}}.",
     "coveredByExistingCryptocurrencyBalance": "У вас уже достаточно баланса {{assetName}} для этой покупки без дополнительных методов пополнения.",
     "coveredByOtherFundingOptions": "Этот метод пополнения не поддерживается для этой транзакции.",
     "currencyNotSupported": "Покупка криптовалюты с не-долларовым методом пополнения еще не поддерживается.",
-    "depositAmountLimitExceeded": "",
-    "depositCountLimitReached": "",
+    "depositAmountLimitExceeded": "This purchase would surpass {{integrationName}}’s maximum deposit limit in 1 day for this funding method.",
+    "depositCountLimitReached": "This funding method has already reached {{integrationName}}’s maximum number of deposits in 1 day.",
     "depositsNotSupported": "Этот метод пополнения не поддерживается для этой транзакции.",
     "instantDepositLimitExceeded": "Мгновенный лимит депозита этого метода пополнения недостаточен для этой покупки",
     "instantDepositsNotSupported": "Этот метод пополнения не поддерживает мгновенные депозиты, поэтому он не может быть использован для этой покупки.",
@@ -409,100 +407,100 @@
     "noTokensAvailableForConversion": "Нет токенов для конвертации",
     "save": "Сохранить",
     "selectFundingMethodAvailablity": "Выбранные методы пополнения имеют {{selectedAvailableAmount}}. Пожалуйста, выберите дополнительные способы пополнения для перевода {{neededAmount}}.",
-    "selectFundingMethods": "Please select funding method(s) to transfer <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethods": "Пожалуйста, выберите метод (ы) обеспечения для перевода <2>{{amount}} ~ {{amountInFiat}}</2>.",
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
   },
   "gasFeeUpdateDrawerContent": {
-    "approvePayment": "",
-    "cancel": "",
-    "description": "",
-    "ifDontComplete": "",
-    "newEstimate": "",
-    "originalEstimate": "",
-    "title": ""
+    "approvePayment": "Одобрить платеж",
+    "cancel": "Отмена",
+    "description": "Газовые сборы выше, чем первоначальная оценка.",
+    "ifDontComplete": "Если Вы не завершите платеж, Ваш баланс {{token}} останется на Вашем аккаунте {{selectedIntegrationName}}.",
+    "newEstimate": "Новая оценка",
+    "originalEstimate": "Первоначальная оценка",
+    "title": "Обновление комиссии за газ"
   },
   "generateKeyPage": {
     "done": "",
-    "establishedInClient": "You have successfully established uninterrupted updates in<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "You have successfully established uninterrupted updates in<1></1><2>this application</2>.",
-    "linkedToInClient": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>{{clientName}}</5>.",
-    "linkedToThisApp": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>this application</5>.",
-    "nextStep": "Next we'll create a key for <2>uninterrupted updates</2> so you don't have to log back in",
-    "tempAccess": ""
+    "establishedInClient": "Вы успешно настроили непрерывные обновления в<1></1><2>{{clientName}}</2>.",
+    "establishedInThisApp": "Вы успешно настроили непрерывные обновления в<1></1><2>это приложение</2>.",
+    "linkedToInClient": "Вы успешно привязали <1></1><2>{{selectedIntegrationName}}</2> к <5>{{clientName}}</5>.",
+    "linkedToThisApp": "Вы успешно привязали<1></1><2>{{selectedIntegrationName}}</2> <5>этому приложению</5>.",
+    "nextStep": "Далее мы создадим ключ для <2>бесперебойного обновления</2>, так что вам не нужно заходить в свой аккаунт снова",
+    "tempAccess": "Я хочу только временный доступ"
   },
   "handleExternalTransferPage": {
-    "detailButton": "",
-    "error": "",
-    "loadingLabel": "",
+    "detailButton": "Посмотреть детали",
+    "error": "Не удалось выполнить перевод",
+    "loadingLabel": "Проверка перевода...",
     "networkConfirmations": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
     "notInitiatedUntilApproved": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
-    "recievedDetails": "You will receive <1>{{amountStr}}</1> in {{clientName}} ({{shortAddress}})",
+    "recievedDetails": "Вы получите <1>{{amountStr}}</1> в {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Ваш запрос на перевод {{destination}} был получен {{selectedIntegrationName}}",
     "revolutApproveInfo": "Этот перевод не будет начат, пока не будет утвержден в Revolut app",
     "transactionComplete": "Транзакция завершена"
   },
   "handleOauthPage": {
-    "error": ""
+    "error": "Не удалось привязать ваш аккаунт. {{error}}"
   },
   "hardwareWalletDrawerContent": {
     "body": "{{clientName}} использует Mesh для облегчения безопасного соединения с {{selectedIntegrationName}}.",
     "connectAction": "Связаться с {{selectedIntegrationName}}"
   },
   "ineligibleReason": {
-    "amountBelowMinimumDescription": "",
-    "balanceBelowMinimumDescription": "",
-    "belowMinimum": "",
-    "belowRequestedAmountDescription": "",
-    "gasFeeAssetBalanceNotEnoughDescription": "",
-    "insufficientBalance": "",
-    "insufficientBalanceDescription": "",
-    "notEligible": "",
-    "notEligibleDescription": "",
-    "notSupportedByInstitution": "",
-    "notSupportedForTransferBySource": "",
-    "nyCoinbaseUserRestrictions": "",
-    "symbolDoesNotMatch": "",
-    "symbolDoesNotMatchDescription": ""
+    "amountBelowMinimumDescription": "Сумма запрошенного перевода {{requestedAmount}} меньше минимальной суммы {{integrationName}} {{minimumAmount}} для перевода в сети {{network}}.",
+    "balanceBelowMinimumDescription": "Ваш баланс в {{currentBalance}} меньше минимума {{minimumAmount}} {{integrationName}} для перевода по сети {{network}}.",
+    "belowMinimum": "Below {{integrationName}}’s minimum",
+    "belowRequestedAmountDescription": "Ваш баланс в {{balance}} меньше, чем в {{amount}}, необходимых для покрытия запрашиваемой суммы перевода + комиссии.",
+    "gasFeeAssetBalanceNotEnoughDescription": "Your {{balance}} balance is insufficient to cover the estimated {{gasFee}} gas fee on the {{network}} network.",
+    "insufficientBalance": "Недостаточный баланс",
+    "insufficientBalanceDescription": "Ваш баланс в {{currentBalance}} меньше, чем минимальный для этого перевода.",
+    "notEligible": "Не подходит для этого перевода",
+    "notEligibleDescription": "{{clientName}} не принимает {{symbol}}, или для этого перевода не указан {{network}} адрес.",
+    "notSupportedByInstitution": "В настоящее время не поддерживается {{integrationName}}",
+    "notSupportedForTransferBySource": "Не поддерживается {{integrationName}}",
+    "nyCoinbaseUserRestrictions": "{{clientName}} не принимает {{symbol}} на {{network}} из-за ограничений поддержки в нескольких цепочках NY.",
+    "symbolDoesNotMatch": "Не поддерживается {{clientName}}",
+    "symbolDoesNotMatchDescription": "{{clientName}} не принимает {{symbol}}, или для этого перевода не указан {{symbol}} адрес."
   },
   "initialLedgerScreen": {
     "title": "Включение и разблокировка устройства"
   },
   "initialScreen": {
-    "accountTitle": "",
-    "clientNameAccountTitle": "",
-    "clientNameWalletTitle": "",
-    "walletTitle": ""
+    "accountTitle": "Это приложение безопасно подключит ваш аккаунт",
+    "clientNameAccountTitle": "{{clientName}} безопасно подключит ваш аккаунт",
+    "clientNameWalletTitle": "{{clientName}} безопасно подключит ваш кошелек",
+    "walletTitle": "Это приложение безопасно подключит ваш кошелек"
   },
   "initialSteps": {
-    "agreement": "By selecting “Continue” you agree to the <1></1><2>End user Terms and Conditions</2>",
-    "credentials": "",
-    "encryption": "",
-    "explicitApproval": "",
-    "thirdParty": ""
+    "agreement": "Выбрав \"Продолжить\", вы соглашаетесь с <1></1><2>Пользовательскими условиями пользования</2>",
+    "credentials": "Ваши учетные данные для входа в систему не сохраняются",
+    "encryption": "Ваши данные всегда зашифрованы ",
+    "explicitApproval": "Ваше явное подтверждение всегда требуется для начала перевода",
+    "thirdParty": "Ваши активы никогда не передаются третьим сторонам"
   },
   "initialVerifyPage": {
-    "drawerTitle": "Approve the signature request<1></1> in your wallet",
-    "item1Body": "",
-    "item1Title": "",
-    "item2Body": "",
-    "item2Title": "",
-    "monitoringLabel": "",
-    "resendAction": "",
-    "title": "",
-    "verifyAction": "",
-    "verifyingLabel": ""
+    "drawerTitle": "Подтвердите запрос на подпись<1></1> в вашем кошельке",
+    "item1Body": "Вам будет предложено подписать сообщение в {{selectedIntegrationName}}, которое подтверждает владение кошельком.",
+    "item1Title": "{{clientName}} должен подтвердить ваш адрес",
+    "item2Body": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком.",
+    "item2Title": "Быстро, безопасно и бесплатно",
+    "monitoringLabel": "Ждем подпись...",
+    "resendAction": "Повторно отправить запрос на подпись",
+    "title": "Почти готово!",
+    "verifyAction": "Подтвердить адрес",
+    "verifyingLabel": "Проверка подписи..."
   },
   "ipWhiteListPage": {
-    "addIp": "",
-    "clickOnEdit": "",
-    "copyIpTitle": "",
-    "description": "<0>Binance</0> requires API users to whitelist IP addresses to ensure the legitimacy of trade and transfer requests.",
-    "findKey": "",
-    "openLink": "Open <2><0>Binance API Management</0></2>",
-    "requirementsTitle": "",
-    "title": ""
+    "addIp": "Добавить IP адрес ниже в качестве доверенного",
+    "clickOnEdit": "Щелкните на \"Редактировать ограничения\"",
+    "copyIpTitle": "IP-адрес",
+    "description": "<0>Binance</0> требует, чтобы пользователи API добавляли IP-адреса в белый список, чтобы обеспечить легитимность запросов на торговлю и передачу.",
+    "findKey": "Найдите ключ, используемый для этого подключения",
+    "openLink": "Откройте <2><0>Binance API Management</0></2>",
+    "requirementsTitle": "Если вы планируете торговать или переводить через это соединение:",
+    "title": "Перед тем как продолжить добавьте в белый список этот IP-адрес"
   },
   "kycDonePage": {
     "successMessage": "Вы успешно подтвердили вашу личность и включили криптовалютные переводы в вашей учетной записи {{integrationName}}"
@@ -524,11 +522,11 @@
     "title": "Ожидает утверждения"
   },
   "kycRobinhoodPage": {
-    "clickContinue": "Click <1>Continue</1> to open {{selectedIntegrationName}}.",
-    "clickContinueAfterActivated": "After you have activated crypto transfers in {{selectedIntegrationName}}, click below to <5>Continue</5> with your transfer.",
+    "clickContinue": "Нажмите <1>Продолжить</1>, чтобы открыть {{selectedIntegrationName}}.",
+    "clickContinueAfterActivated": "После активации переводов криптовалют в {{selectedIntegrationName}} нажмите на <5>Продолжить</5> для перевода.",
     "completeVerification": "Завершение проверки личности и/или добавление двухфакторной аутентификации.",
     "connectAnother": "Подключить другой аккаунт",
-    "note": "Please note: you may need to log back into your {{selectedIntegrationName}} account to initiate this transfer when you return.",
+    "note": "Пожалуйста, обратите внимание, что вам может потребоваться вернуться в свою учетную запись {{selectedIntegrationName}} для начала этого перевода.",
     "return": "Вернитесь сюда для завершения перевода.",
     "title": "Включение переводов в вашем аккаунте"
   },
@@ -542,23 +540,23 @@
     "usbConnect": "Подключить через USB"
   },
   "ledgerDeviceConnected": {
-    "clientVerifyLabel": "",
-    "clientVerifyText": "",
-    "secureLabel": "",
-    "secureText": "",
-    "title": ""
+    "clientVerifyLabel": "{{clientName}} должен подтвердить ваш кошелек",
+    "clientVerifyText": "Вам будет предложено подписать сообщение в вашем Ledger устройстве, которое подтверждает  владение кошельком.",
+    "secureLabel": "Быстро, безопасно и бесплатно",
+    "secureText": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком.",
+    "title": "Почти готово!"
   },
   "ledgerError": {
-    "incorrectAppError": "",
-    "lockedError": "",
-    "noDeviceError": "",
-    "notSelectedError": "",
-    "rejectError": "",
-    "title": "",
-    "transportError": "",
-    "transportLockedError": "",
-    "unexpectedError": "",
-    "unknownError": ""
+    "incorrectAppError": "На вашем устройстве открыта неправильная программа. Пожалуйста, откройте правильное приложение и повторите попытку.",
+    "lockedError": "Ваше устройство заблокировано. Пожалуйста, разблокируйте его и повторите попытку.",
+    "noDeviceError": "Устройство не выбрано. Пожалуйста, выберите устройство и повторите попытку.",
+    "notSelectedError": "Не выбрано ни одного приложения. Выберите приложение и повторите попытку.",
+    "rejectError": "Пользователь отклонил операцию. Пожалуйста, попробуйте еще раз.",
+    "title": "Не удалось подключиться",
+    "transportError": "Произошла транспортная ошибка с вашим Ledger устройством.",
+    "transportLockedError": "Транспорт заблокирован. Пожалуйста, разблокируйте устройство и повторите попытку.",
+    "unexpectedError": "Произошла непредвиденная ошибка.",
+    "unknownError": "Произошла неизвестная ошибка с Ledger устройством."
   },
   "ledgerOpenApp": {
     "title": "Откройте приложение {{network}} на вашем устройстве"
@@ -568,7 +566,7 @@
     "title": "Проверка не удалась"
   },
   "ledgerSignMessage": {
-    "rippleBody": "",
+    "rippleBody": "Примечание: Для XRP вы увидите демпми транзакцию с минимальными значениями. Это только для проверки вашего кошелька и не будет стоить ничего или отправлять какие-либо средства.",
     "title": "Просмотрите и подпишите сообщение на вашем устройстве"
   },
   "ledgerUSB": {
@@ -581,62 +579,62 @@
     "title": "Ваше устройство одобрено."
   },
   "mfaError": {
-    "default": ""
+    "default": "Неверный код, попробуйте еще раз"
   },
   "mfaHint": {
-    "email": "",
-    "phone": "",
-    "sandbox": "",
-    "totp": ""
+    "email": "Проверьте свою почту",
+    "phone": "Проверьте ваш телефон на наличие SMS-сообщений",
+    "sandbox": "Подсказка: {{hint}}",
+    "totp": "Проверьте ваше приложение для проверки подлинности"
   },
   "mfaInstructionsText": {
-    "email": "Enter the one-time code that <2>{{selectedIntegrationName}}</2> has sent to your email.",
+    "email": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш email.",
     "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот платеж.",
-    "phone": "Enter the one-time code that <2>{{selectedIntegrationName}}</2> has sent to your phone.",
-    "totp": "Enter the one-time code provided by the authenticator app you have linked to <1>{{selectedIntegrationName}}</1>.",
-    "tradingPin": "Please enter the trading PIN code associated with your <2>{{selectedIntegrationName}}</2> account.",
+    "phone": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш телефон.",
+    "totp": "Введите одноразовый код, предоставленный приложением-аутентификатором, на которое вы ссылались <1>{{selectedIntegrationName}}</1>.",
+    "tradingPin": "Пожалуйста, введите PIN-код, связанный с вашим счетом <2>{{selectedIntegrationName}}</2>.",
     "transferFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот перевод.",
-    "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{{selectedIntegrationName}}</1> account."
+    "twoFactor": "Введите код, предоставленный двухфакторным методом аутентификации, который вы настроили в вашей учетной записи <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
-    "enterCode": "Enter your one-time code to confirm it’s<1></1>really you trying to log in.",
-    "enterPin": "",
-    "title": "",
-    "verify": ""
+    "enterCode": "Введите свой одноразовый код, чтобы подтвердить его<1></1>действительно вы пытаетесь войти.",
+    "enterPin": "Введите ваш торговый PIN-код",
+    "title": "Верификация",
+    "verify": "Подтвердить"
   },
   "mfaSetupPage": {
     "emailButton": "Настройка проверки электронной почты",
-    "emailSubtitle": "Click the button below to add an email to your <2>{{selectedIntegrationName}}</2> account.",
-    "keyGenerationBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to generate keys",
-    "keyGenerationTitle": "",
+    "emailSubtitle": "Нажмите на кнопку ниже, чтобы добавить письмо к вашей <2>{{selectedIntegrationName}}</2> учетной записи.",
+    "keyGenerationBody": "Для вашей безопасности, <1>{{selectedIntegrationName}} </1> требует, чтобы пользователи имели включенные методы MFA для создания ключей",
+    "keyGenerationTitle": "Включите генерацию API ключа от вашей учетной записи {{selectedIntegrationName}}",
     "totpButton": "Настроить приложение для аутентификации",
-    "totpSubtitle": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
-    "withdrawalBody": "For your security, <1>{{selectedIntegrationName}} </1> requires that users have email and authenticator app MFA methods enabled to withdraw assets",
+    "totpSubtitle": "Нажмите на кнопку ниже, чтобы добавить приложение аутентификации к вашей учетной записи <2>{{selectedIntegrationName}}</2>.",
+    "withdrawalBody": "Для вашей безопасности, <1>{{selectedIntegrationName}} </1> требует, чтобы пользователи имели включенные методы MFA для вывода активов",
     "withdrawalTitle": "Включите снятие средств с вашей учетной записи {{selectedIntegrationName}}"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "Click the button below to add an authenticator app to your <2>{{selectedIntegrationName}}</2> account.",
-    "emailTitle": "You've successfully linked your email to your <2>{{selectedIntegrationName}}</2> account.",
+    "addAuthApp": "Нажмите на кнопку ниже, чтобы добавить приложение аутентификации к вашей учетной записи <2>{{selectedIntegrationName}}</2>.",
+    "emailTitle": "Вы успешно привязали свой адрес электронной почты к учетной записи <2>{{selectedIntegrationName}}</2>.",
     "proceed": "Продолжить",
     "proceedKey": "Нажмите ниже, чтобы перейти к генерации ключей",
     "proceedTransfer": "Нажмите ниже, чтобы перейти к переводу",
     "setUpApp": "Настроить приложение для аутентификации",
-    "totpTitle": "You've successfully linked an authenticator app to your <2>{{selectedIntegrationName}}</2> account."
+    "totpTitle": "Вы успешно связали приложение аутентификации с учетной записью <2>{{selectedIntegrationName}}</2>."
   },
   "mfaTitle": {
-    "default": "",
-    "email": "",
-    "phone": ""
+    "default": "Проверочный код",
+    "email": "Код подтверждения email",
+    "phone": "SMS-код подтверждения"
   },
   "mfaVerificationPage": {
-    "checkEmail": "First, let's verify your identity.<1></1>Please, check your email for a one-time verification code sent from <4>{{selectedIntegrationName}}</4>.",
-    "checkSms": "First, let's verify your identity.<1></1>Please, check your phone for a one-time verification code sent from <4>{{selectedIntegrationName}}</4> sent by SMS.",
+    "checkEmail": "Сначала давайте верифицируем вашу личность.<1></1>Пожалуйста, проверьте вашу электронную почту на одноразовый код подтверждения, отправленный из <4>{{selectedIntegrationName}}</4>.",
+    "checkSms": "Сначала давайте верифицируем вашу личность.<1></1>Пожалуйста, проверьте ваш телефон на одноразовый код подтверждения, отправленный с <4>{{selectedIntegrationName}}</4>, отправленный SMS.",
     "confirmApp": "Подтвердить приложение аутентификации",
-    "confirmEmail": "",
+    "confirmEmail": "Подтвердить Email",
     "enterCode": "Введите проверочный код",
-    "enterCodeFromEmail": "Please enter the 6-digit code that <2>{{selectedIntegrationName}}</2> has sent<4></4>to your email.",
+    "enterCodeFromEmail": "Пожалуйста, введите 6-значный код, который <2>{{selectedIntegrationName}}</2> отправил <4></4>на ваш email.",
     "enterTotp": "Пожалуйста, введите 6-значный код из вашего <1></1>приложение для аутентификации",
-    "firstEnterTotp": "First, let's verify your identity.<1></1>Please, enter the one-time code from the authenticator app you have linked to <3>{{selectedIntegrationName}}</3>.",
+    "firstEnterTotp": "Сначала давайте верифицируем вашу личность.<1></1>Пожалуйста, введите одноразовый код из приложения-аутентификатора, к которому вы привязали <3>{{selectedIntegrationName}}</3>.",
     "securityVerification": "Проверка безопасности"
   },
   "mobileAppLink": {
@@ -644,8 +642,8 @@
     "openAppButton": "Открыть {{selectedIntegrationName}} приложение",
     "sendNewRequest": "Отправить новый запрос",
     "steps": {
-      "authorize": "Click <1>Authorize</1> on the confirmation page.",
-      "openApp": "Click <1>Open {{selectedIntegrationName}} app</1> below.",
+      "authorize": "Нажмите <1>Авторизация</1> на странице подтверждения.",
+      "openApp": "Нажмите <1>Открыть {{selectedIntegrationName}} приложение</1> ниже.",
       "return": "Вернитесь сюда, чтобы завершить вход в ваш аккаунт."
     }
   },
@@ -659,27 +657,27 @@
   "nonOAuthPermissionsPage": {
     "allow": "Возможно",
     "movingFunds": "перемещение средств без вашего разрешения",
-    "titleWithClient": "{{clientName}} <2></2> Permissions",
-    "titleWithoutClient": "This application`s <1></1> Permissions",
+    "titleWithClient": "{{clientName}} <2></2> Разрешения",
+    "titleWithoutClient": "Это приложение <1></1> Разрешения",
     "transactionRequest": "отправка запросов на транзакции",
     "viewActivity": "просмотр балансов, активности, данных профиля",
     "wontAllow": "Не возможно"
   },
   "oAuthBrokerPage": {
-    "monitoring": "",
+    "monitoring": "Ждем подтверждения...",
     "reopenButton": "Нажмите здесь, чтобы снова открыть {{selectedIntegrationName}}",
     "subtitle": "Войдите в свою учетную запись и разрешите доступ",
-    "title": "Continue on <1></1> {{selectedIntegrationName}} window"
+    "title": "Продолжить <1></1> {{selectedIntegrationName}}"
   },
   "oauthErrorPage": {
-    "description": "",
+    "description": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
     "selectAnotherAccount": "Выберите другой аккаунт",
-    "selectAnotherDescription": ""
+    "selectAnotherDescription": "Пожалуйста, выберите другой аккаунт или кошелек для перевода."
   },
   "oAuthMessageListener": {
     "clientUsesMesh": "{{clientName}} использует Mesh для безопасного подключения и облегчения перевода через {{selectedIntegrationName}}.",
     "description": "Войдите в свою учетную запись и разрешите доступ",
-    "monitoring": "",
+    "monitoring": "Ждем подтверждения...",
     "open": "Открыть {{selectedIntegrationName}}",
     "reopen": "Переоткрыть {{selectedIntegrationName}}",
     "title": "Продолжите в окне {{selectedIntegrationName}}",
@@ -687,34 +685,34 @@
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
-      "client": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
-      "destination": "You approve the transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to the destination."
+      "client": "Вы одобряете перевод <1>{{amount}}</1> с {{selectedIntegrationName}} на {{clientName}}.",
+      "destination": "Вы одобряете перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в пункт назначения."
     },
-    "buyingPowerPurchase": "Purchase of <1>{{amount}}</1> worth of {{symbol}} <5>(~ {{amountInCrypto}})</5> in {{selectedIntegrationName}}.",
-    "conversionStep": "Conversion of <1>{{amount}}</1> to <4>{{currency}}</4>.",
+    "buyingPowerPurchase": "Покупка <1>{{amount}}</1> стоимостью {{symbol}} <5>(~ {{amountInCrypto}})</5> в {{selectedIntegrationName}}.",
+    "conversionStep": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
     "depositTitle": "Пополнение в процессе",
     "description": "Это может занять некоторое время...",
     "existingCryptocurrencyBalance": {
-      "approveClient": "",
-      "approveDestination": "",
-      "transfer": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}}.",
-      "transferHideClient": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}}.",
-      "transferHideClientWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{address}}.",
-      "transferSmartDeposit": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} via a relay contract.",
-      "transferSmartDepositHideClient": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} via a relay contract.",
-      "transferSmartDepositHideClientWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{address}} via a relay contract.",
-      "transferSmartDepositWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}} via a relay contract.",
-      "transferWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}}."
+      "approveClient": "Вы одобряете перевод с {{selectedIntegrationName}} на {{clientName}}.",
+      "approveDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
+      "transfer": "Перевод <1>{{amount}}</1> с {{selectedIntegrationName}} на {{clientName}}.",
+      "transferHideClient": "Перевод <1>{{amount}}</1> с {{selectedIntegrationName}}.",
+      "transferHideClientWithAddress": "Перевод <1>{{amount}}</1> с {{selectedIntegrationName}} на {{address}}.",
+      "transferSmartDeposit": "Передача <1>{{amount}}</1> из {{selectedIntegrationName}} на {{clientName}} через релейный контракт.",
+      "transferSmartDepositHideClient": "Передача <1>{{amount}}</1> от {{selectedIntegrationName}} через релейный контракт.",
+      "transferSmartDepositHideClientWithAddress": "Передача <1>{{amount}}</1> из {{selectedIntegrationName}} на {{address}} через релейный контракт.",
+      "transferSmartDepositWithAddress": "Перевод <1>{{amount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{address}} по релейному контракту.",
+      "transferWithAddress": "Перевод <1>{{amount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{address}}."
     },
-    "onrampTitle": "",
-    "paymentMethodDepositUsage": "Deposit of <1>{{amount}}</1> from {{paymentMethod}} to {{selectedIntegrationName}}.",
+    "onrampTitle": "Идёт покупка",
+    "paymentMethodDepositUsage": "Пополнение <1>{{amount}}</1> с {{paymentMethod}} на {{selectedIntegrationName}}.",
     "paymentTitle": "Платеж в процессе",
     "transactionTitle": "Транзакция в процессе",
     "tryAgain": "Попробовать еще раз"
   },
   "passwordPage": {
-    "fieldError": "",
-    "fieldErrorWithIntegration": "",
+    "fieldError": "Пожалуйста, введите {{field}}",
+    "fieldErrorWithIntegration": "Пожалуйста, введите ваш {{integrationName}} {{field}}",
     "forgotPassword": "Забыли пароль",
     "tabs": {
       "email": "Почта",
@@ -732,21 +730,21 @@
   },
   "paymentUpdateDrawerContent": {
     "cancel": "Отмена",
-    "clickToPay": "",
-    "description": "",
-    "ifDontComplete": "",
+    "clickToPay": "Click below to top up your {{token}} balance to make this payment.",
+    "description": "Ваш баланс после покупки {{token}} меньше, чем ожидалось в связи с изменениями цены и и газовых сборов {{token}}.",
+    "ifDontComplete": "Если Вы не завершите платеж, Ваш баланс {{token}} останется на Вашем аккаунте {{selectedIntegrationName}}.",
     "onYourAccount": "На вашем аккаунте",
-    "title": "",
-    "topUp": ""
+    "title": "Обновление платежа",
+    "topUp": "Top up {{token}} balance"
   },
   "payPalConnectOAuthPage": {
     "close": "Закрыть",
-    "continue": "",
+    "continue": "Перейти к  {{selectedIntegrationName}}",
     "enterAmount": "Введите сумму перевода",
-    "notSupported": "",
+    "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
     "selectAnotherAccount": "Выберите другой аккаунт",
-    "selectAnotherExchange": "",
-    "selectNetwork": "",
+    "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
+    "selectNetwork": "Выберите сеть для перевода",
     "title": "Выберите актив для перевода"
   },
   "previewTransfer": {
@@ -754,16 +752,16 @@
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
     "approveTransferRequest": "Подтвердите запрос на перевод <1></1>на вашем кошельке",
     "changeAmount": "Изменить сумму",
-    "depositTitle": "",
-    "dustLeft": "",
-    "estimatedGasFee": "",
-    "estimatedGasFeeHint": "",
+    "depositTitle": "Предварительный просмотр депозита",
+    "dustLeft": "Возможно, у вас осталась пыль {{symbol}}.",
+    "estimatedGasFee": "Предполагаемая газовая плата",
+    "estimatedGasFeeHint": "Предполагаемая комиссия, которая будет выплачена для компенсации сетевых валидаторов за вычислительную мощность, которую они используют для обработки этой транзакции.",
     "from": "От",
-    "fundingWith": "",
+    "fundingWith": "Финансирование с",
     "institutionTransferFee": "Комиссия снятия {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Комиссия, которую {{selectedIntegrationName}} взимает для облегчения перевода {{symbol}}.",
-    "maxAmount": "Your account can fund a maximum of <2>{{networkMaxAmount}}</2>. Would you like to adjust your transfer to this amount?",
-    "monitoring": "",
+    "maxAmount": "Ваш счет может пополнять не более <2>{{networkMaxAmount}}</2>. Вы хотите скорректировать Ваш перевод на эту сумму?",
+    "monitoring": "Ждем подтверждения...",
     "network": "Сеть",
     "onrampTitle": "Предпросмотр покупки",
     "payingWith": "Оплата через",
@@ -777,8 +775,8 @@
     "symbolBalance": "Баланс {{symbol}}",
     "to": "Кому",
     "total": "Итого",
-    "transferDeclined": "",
-    "transferDeclinedBody": "",
+    "transferDeclined": "Передача отклонена",
+    "transferDeclinedBody": "Вы отклонили запрос на перевод в вашем кошельке.",
     "transferTitle": "Предпросмотр перевода",
     "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}."
   },
@@ -813,22 +811,22 @@
   "selectHoldingPage": {
     "binanceDirectNoAssetsBody1": "Похоже, у вас нет никаких активов в привязанном аккаунте.",
     "binanceDirectNoAssetsBody2": "Вы можете пополнить свой счет или подключить другой счет, чтобы продолжить перевод.",
-    "cannotFundBody": "",
+    "cannotFundBody": "У вас недостаточно криптовалют или фиатный баланс на этом счете для пополнения этой транзакции.",
     "cannotFundTitle": "Не удается оплатить транзакцию",
     "connectAnotherButton": "Подключить другой аккаунт",
-    "defaultTitle": "",
-    "depositTitle": "",
-    "ineligibleAssets": "",
-    "loading": "",
+    "defaultTitle": "Выбрать токен",
+    "depositTitle": "Выберите токен депозита",
+    "ineligibleAssets": "Неподходящие активы",
+    "loading": "Загрузка ваших активов...",
     "noAssetsTitle": "В привязанном аккаунте не обнаружены активы",
-    "noEligibleAssetsTitle": "",
+    "noEligibleAssetsTitle": "Ни один актив на этом счете не имеет права на этот перевод",
     "notEnoughtBody": "Добавьте еще {{symbol}} в свою учетную запись, затем вернитесь сюда, чтобы попробовать снова.",
     "notEnoughtTitle": "Недостаточно {{symbol}}",
-    "otherEligible": "",
-    "paymentTitle": "",
-    "returnToAppButton": "",
+    "otherEligible": "Другие допустимые активы",
+    "paymentTitle": "Выберите токен платежа",
+    "returnToAppButton": "Вернуться в приложение",
     "returnToClientButton": "Вернуться к {{clientName}}",
-    "spotAccountsBody": "",
+    "spotAccountsBody": "В настоящее время поддерживаются только спот учетных записей. Активы других типов учетных записей, например маржа, не будут обнаружены.",
     "topUpButton": "Пополнить баланс",
     "unableTransferError": "Невозможно начать передачу."
   },
@@ -836,7 +834,7 @@
     "label": "Выберите {{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": ""
+    "ineligibleNetwork": "Неподходящие сети"
   },
   "selectNetworkScreen": {
     "title": "Выберите сеть для подключения"
@@ -847,45 +845,45 @@
     "title": "Как вы хотите подключиться к {{selectedIntegrationName}}?"
   },
   "sessionExpired": {
-    "title": "Your session has expired."
+    "title": "Ваша сессия истекла."
   },
   "sessionInfo": {
-    "text": "If you have questions, please report this with session ID <2>{{sessionId}}</2>."
+    "text": "Если у вас есть вопросы, пожалуйста, сообщите об этом с ID сессии <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
-    "alternativeText": "",
-    "copyCodeTitle": "",
+    "alternativeText": "Кроме того, вы можете вставить этот ручной код в приложение аутентификации",
+    "copyCodeTitle": "Ручной код",
     "downloadStep": "Скачайте <1>Google Authenticator app</1> из Google Play или App Store",
-    "nextButton": "",
-    "qrCodeAlt": "",
+    "nextButton": "Следующий",
+    "qrCodeAlt": "QR код",
     "scanStep": "Add {{selectedIntegrationName}} to your authenticator app by <4>scanning the QR code</4>",
     "title": "Настройка приложение для проверки подлинности"
   },
   "setupEmailPage": {
-    "description": "Enter your email address.<1></1><2>{{selectedIntegrationName}}</2> will use this email to send you confirmation codes when you're performing certain actions in your account.",
-    "emailTitle": "",
-    "enterError": "",
-    "title": ""
+    "description": "Введите ваш адрес электронной почты.<1></1><2>{{selectedIntegrationName}}</2> будет использовать это письмо для отправки кодов подтверждения при выполнении определенных действий в вашей учетной записи.",
+    "emailTitle": "Почта",
+    "enterError": "Пожалуйста, введите email",
+    "title": "Настроить Email"
   },
   "termsAndConditionsPage": {
-    "paragraph1": "Mesh Connect, Inc. (the <1>“Company”</1>) is a technology provider that makes a communications tool (the <3>“Tool”</3>) which helps facilitate certain functionality of the third-party service you are using (the <5>“End User Service”</5>). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (<7>“Connected Accounts”</7>) through the End User Service, including sending instructions that you wish to execute.",
-    "paragraph10": "The arbitration will be administered by the American Arbitration Association under its Consumer Arbitration Rules, as amended by these terms. The Consumer Arbitration Rules are available online at <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. The arbitrator will conduct hearings, if any, by teleconference or videoconference, rather than by personal appearances, unless the arbitrator determines upon request by you or by us that an in-person hearing is appropriate. Any in-person appearances will be held at a location which is reasonably convenient to both parties with due consideration of their ability to travel and other pertinent circumstances. If you and the Company are unable to agree on a location, such determination should be made by the AAA or by the arbitrator. The arbitrator’s decision will follow these terms and will be final and binding. The arbitrator will have authority to award temporary, interim or permanent injunctive relief or relief providing for specific performance of these terms, but only to the extent necessary to provide relief warranted by the individual claim before the arbitrator. The award rendered by the arbitrator may be confirmed and enforced in any court having jurisdiction thereof. Notwithstanding any of the foregoing, nothing in these terms will preclude you from bringing issues to the attention of federal, state or local agencies and, if the law allows, they can seek relief against us for you.",
-    "paragraph11": "These terms constitute the complete agreement between you and the Company relating to their subject matter, and supersede all prior representations or agreements, whether oral or written, with respect to such matters. If any term is unenforceable under applicable law, then that term is hereby amended so as to comply with the law, while preserving to the maximum extent possible the intent of the original term. Any term that cannot be so amended will be severed and all remaining terms will remain in effect. You acknowledge and agree that Company’s service providers are intended third-party beneficiaries of these terms. By accepting these terms and conditions or utilizing the Tool, you hereby agree that you are bound by the terms and conditions of this agreement.",
-    "paragraph2": "You acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.",
-    "paragraph3": "You represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).",
-    "paragraph4": "You acknowledge that you have read the Company’s Privacy Policy, which is available at <2>https://meshconnect.com/privacy-policy</2>, and agree that, by using the Tool, you consent to the Company’s use of your Personal Information as defined and set forth in the Privacy Policy.",
-    "paragraph5": "The Tool is made available on an “AS IS” and “AS AVAILABLE” basis, with all faults and without any representation or warranty of any kind. The Company does not make any representations or warranties with respect to the Tool, express or implied, including any warranty of merchantability, fitness for a particular purpose or non-infringement.",
-    "paragraph6": "IN NO EVENT WILL THE COMPANY OR ITS SERVICE PROVIDERS BE LIABLE, WHETHER IN CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, STRICT LIABILITY OR OTHER THEORY, FOR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES IN CONNECTION WITH THE USE (OR INABILITY TO USE) THE TOOL, END USER SERVICE OR ANY CONNECTED ACCOUNT, INCLUDING ANY INSTRUCTIONS OR MATERIALS TRANSMITTED USING FUNCTIONALITY ENABLED BY THE TOOL. THE FOREGOING LIMITATIONS, EXCLUSIONS AND DISCLAIMERS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, EVEN IF ANY REMEDY FAILS OF ITS ESSENTIAL PURPOSE. WITHOUT LIMITING THE FOREGOING, THE COMPANY’S AND ITS SERVICE PROVIDERS’ AGGREGATE LIABILITY IN CONNECTION WITH THE TOOL WILL NOT EXCEED TEN DOLLARS.",
-    "paragraph7": "You will defend, indemnify and hold harmless the Company and its directors, officers, employees, licensors, contractors and representatives from and against any third-party claims, actions, suits, investigations or proceedings, and any losses, liabilities, damages, costs and expenses arising out of or related to your use (or misuse) of the Tool, the End User Service and/or any Connected Account.",
-    "paragraph8": "The Company may change these terms at any time. Your continued use of any functionality enabled by the Tool after any such changes constitutes your acceptance of the updated terms.",
-    "paragraph9": "These terms will be governed by the laws of the State of Delaware, excluding its choice of law principles. Except for disputes that qualify for small claims court, all disputes arising out of or related to these terms or any aspect of the relationship between you and the Company, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory, will be resolved through final and binding arbitration before a neutral arbitrator instead of in a court by a judge or jury and you agree that the Company and you are each waiving the right to trial by a jury. Such disputes include, without limitation, disputes arising out of or relating to interpretation or application of this arbitration provision, including the enforceability, revocability or validity of the arbitration provision or any portion of the arbitration provision. All such matters shall be decided by an arbitrator and not by a court or judge. You agree that any arbitration under these terms will take place on an individual basis; class arbitrations and class actions are not permitted, and you are agreeing to give up the ability to participate in a class action.",
-    "title": "{{shortName}} End User<2></2>Terms and Conditions"
+    "paragraph1": "Mesh Connect, Inc. (the <1>“Company”</1>) - это технологический поставщик, который делает инструмент коммуникации (<3>“Инструмент”</3>), который помогает упростить определенные возможности сторонних служб, которые вы используете (<5>“Служба конечного пользователя”</5>). Такая функциональность предназначена для того, чтобы вы могли общаться со своими сторонними аккаунтами и кошельками (<7>“Подключенные аккаунты”</7>) через Службу конечного пользователя, включая отправку инструкций, которые вы хотите выполнить.",
+    "paragraph10": "Арбитраж будет управляться Американской Арбитражной ассоциацией в соответствии с Регламентом Арбитража Потребителей с изменениями, внесенными этими условиями. Арбитражные правила клиентов доступны в режиме онлайн по адресу <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Арбитр будет проводить слушания, если таковые имеются, по телеканалам или видеоконференциям, а не по личным представлениям. если арбитр не принимает решения по запросу Вас или нас, что слушание на личном уровне является оправданным. Любые индивидуальные выходы будут содержаться в месте, удобном для обеих сторон с должным учетом их способности совершать поездки и других соответствующих обстоятельств. Если Вы и Компания не в состоянии договориться о местонахождении, такое определение должно быть принято AAA или арбитражным. Решение арбитражного суда будет выполнено в соответствии с этими условиями и будет окончательным и обязательным. Арбитраж будет иметь право выносить решение о временном, временном или постоянном судебном запрете или защите, предусматривающем конкретные сроки выполнения этих условий. Однако только в той мере, в какой это необходимо для защиты от претензий, гарантированных индивидуальным требованием, перед арбитражем. Решение, вынесенное арбитром может быть подтверждено и приведено в исполнение в любом судебном органе, который обладает его юрисдикцией. Несмотря на вышесказанное, ничто в этих терминах не помешает Вам довести вопросы до сведения федерации, Государственные или местные органы власти и, если это позволяет, они могут обратиться за помощью к нам за помощью.",
+    "paragraph11": "Настоящие условия составляют полное соглашение между вами и Компанией, касающееся их предметного вопроса, и отменяет все предыдущие представления или соглашения, будь то устные или письменные, в отношении таких вопросов. Если какое-либо из терминов не может быть приведено в исполнение в соответствии с применимым законодательством, то в этот срок вносится поправка в соответствии с законом, при сохранении в максимально возможной степени намерения первоначального термина. Любой термин, который не может быть изменен, будет выделен и все оставшиеся термины останутся в силе. Вы признаете и соглашаетесь с тем, что поставщики услуг Компании предназначены для третьих лиц бенефициарами этих условий. Принимая эти условия или используя инструмент, вы соглашаетесь с условиями данного соглашения.",
+    "paragraph2": "Вы признаете и соглашаетесь с тем, что определенная функциональность службы конечного пользователя основана на Инструменте; что вы используете такую функциональность в вашей инструкции; что ни компания, ни ее поставщики услуг не предоставляют доступных брокерских услуг и не занимаются обработкой платежей; и что ни Компания, ни ее поставщики услуг не несут никакой ответственности за Службу конечного пользователя или любую связанную с ней учетную запись, или терминов, политики, действий или бездействия их поставщиков.",
+    "paragraph3": "Вы заявляете и гарантируете, что у вас есть все права и согласия, необходимые для подключения к каждой подключенной учетной записи и доступа к ней с помощью такой функциональности, включая право на предоставление Компании и ее сервис-провайдерам учетных данных для входа в ваш аккаунт, адреса кошельков и/или любая ваша учетная запись или персональная информация для каждой подключенной учетной записи. Настоящим Вы разрешаете Компании и ее поставщикам услуг передавать инструкции, а также информацию, данные и другие материалы между Службой конечного пользователя и каждым подключенным аккаунтом, и вы признаете и соглашаетесь с тем, что Компания и ее поставщики услуг не несут никакой ответственности за выполнение таких инструкций, или для любых таких материалов (включая их точность, своевременность или полноту информации).",
+    "paragraph4": "Вы признаете, что прочитали Политику конфиденциальности Компании, которая доступна по адресу <2>https://meshconnect. om/privacy-policy</2>и соглашайтесь с тем, что с помощью инструмента вы соглашаетесь на использование вашей персональной информации в соответствии с Политикой конфиденциальности.",
+    "paragraph5": "Инструмент доступен на основе “AS IS” и “AS AVAILABLE” со всеми неисправностями и без какого-либо представления или гарантии. Компания не делает никаких заявлений или гарантий в отношении инструмента, явно выраженного или подразумеваемого, включая любую гарантию товарного знака, пригодность для конкретной цели или без нарушений.",
+    "paragraph6": "НИ ПРЕДОСТАВЛЯЕТСЯ КОМПАНИИ ИЛИ ЕЕ ПРЕДОСТАВЛЯЮЩИЕ ПРЕДОСТАВЛЯЕМЫЕ НЕСООТВЕТСТВИЯ, КОНТРАКТЫ ГАРАНТИЙ, СЕРТИФИКАЦИЯ (ВКЛЮЧАЯ НЕОБХОДИМОСТЬ), ОТВЕТСТВЕННОСТЬ ПО ПРОДУКТУ, ОТВЕТСТВЕННОСТИ ЗА ЛЮБЫЕ НЕОБХОДИМЫ, ИНЦИДЕНТАЛЬНЫЕ СПЕЦИАЛЬНЫЕ ИЛИ КОНТРОЛЬНЫЕ УБЫТКИ В СВЯЗИ С ИСПОЛЬЗОВАНИЕМ (ИЛИ НЕВОЗМОЖНОСТЬ) ИСПОЛЬЗОВАНИЯ, СОДЕРЖАНИЕ СЕРВИСОВ ИЛИ ЛЮБЫЙ ПОДДЕРЖКИ, ВКЛЮЧАЯ ЛЮБЫЕ ИНСТРУКЦИИ ИЛИ МАТЕРИАЛЫ, ПЕРЕДАВАЕМЫЕ С ИСПОЛЬЗОВАНИЕМ ФУНКЦИЯЛЬНОСТИ ВКЛЮЧЕНЫ ПО ТОВАРО. НАРУШЕНИЕ ОГРАНИЧЕНИЙ, ИСКЛЮЧЕНИЙ И ОБЯЗАТЕЛЬСТВ ОТНОСИТЕЛЬНО К ОПЫТУ ОПЫТА ПРИМЕНЯЮЩЕГО ЗАКОНОДАТЕЛЬСТВА, ДАЖЕ ЕСЛИ ЛЮБЫЕ ОШИБКИ ЕГО ЕСПОЛЬЗОВАНИЯ ОСУЩЕСТВЛЕНИЯ. БЕЗ ОГРАНИЧЕНИЯ ОБЯЗАТЕЛЬСТВ, СОГЛАШЕНИЯ КОМПАНИИ И ЕГО СОГЛАШЕНИЯ ПРОВИДЕТЕЛЬНОСТИ УСЛУГИ В СВЯЗИ С ТОВАРОЙ НЕ ВЫРАЖЕНЫ ДОЛЖНОСТИ.",
+    "paragraph7": "Вы будете защищать Компанию и ее директоров, должностных лиц, сотрудников Компании и ее директоров, а также обеспечивать безвредную защиту. лицензиары, подрядчики и представители третьих сторон от любых исков, исков, исков, исков третьих сторон и против них; расследование или судебное разбирательство, а также любые убытки, ответственность, ущерб, расходы и расходы, возникающие или связанные с вашим использованием (или неправильным использованием) Инструмента, Сервиса конечного пользователя и/или любого подключенного Аккаунта.",
+    "paragraph8": "Компания может изменять данные условия в любое время. Ваше дальнейшее использование любой функциональности, предоставленной Инструментом после любых таких изменений, означает ваше согласие с обновленными условиями.",
+    "paragraph9": "Эти условия будут регулироваться законами штата Делавэр, исключая его выбор правовых принципов. За исключением споров, которые подпадают под юрисдикцию судов по небольшим претензиям, все споры, вытекающие из этих условий или связанные с любыми аспектами отношений между вами и Компанией, основаны ли на контрактах, торгах, статуте, мошенничестве, неправильное представление или любая другая правовая теория, может быть решено путем окончательного и обязательного арбитражного разбирательства в нейтральном арбитраже вместо судьи или жюри и вы соглашаетесь с тем, что Компания и вы отказываетесь от права на судебное разбирательство судом присяги. Такие споры включают споры, возникающие или связанные с толкованием или применением данного арбитражного положения, включая принудительную реализацию, отзыв или действительность арбитражного положения или любой части арбитражного положения. Все такие вопросы решаются арбитражным, а не судом или судьей. Вы соглашаетесь, что любой арбитраж в соответствии с данными условиями будет проходить на индивидуальной основе; арбитраж класса и классовые иски не допускаются, и вы соглашаетесь отказаться от возможности участвовать в классовом иске.",
+    "title": "{{shortName}} Конечный пользователь<2></2>Условия"
   },
   "transferCanceledPage": {
-    "title": "",
-    "titlePayment": "",
-    "willRemain": "",
-    "yourBalance": ""
+    "title": "Передача отменена",
+    "titlePayment": "Платёж отменен",
+    "willRemain": "будет оставаться в вашей учетной записи {{integrationName}}.",
+    "yourBalance": "Ваш баланс {{token}}"
   },
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Ожидание подтверждения от мобильного приложения",
@@ -897,9 +895,9 @@
       "return": "Вернитесь сюда, чтобы продолжить"
     },
     "mobileSteps": {
-      "clickOpen": "Click <1>Open {{selectedIntegrationName}} app</1> below",
-      "verifyLogin": "",
-      "verifyTransfer": ""
+      "clickOpen": "Нажмите <1>Открыть {{selectedIntegrationName}} приложение</1> ниже",
+      "verifyLogin": "Проверьте, что вы входите с нового устройства",
+      "verifyTransfer": "Проверьте, что вы запрашиваете перевод"
     },
     "openApp": "Открыть приложение {{selectedIntegrationName}}",
     "sendNewRequest": "Отправить новый запрос",
@@ -915,10 +913,10 @@
     "title": "Подтвердить вывод средств"
   },
   "transferErrorPage": {
-    "defaultError": ""
+    "defaultError": "Произошла неизвестная ошибка. Нажмите ниже, чтобы начать новый сеанс перевода."
   },
   "transferFacePage": {
-    "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
+    "clickOpenApp": "Нажмите <1>Откройте приложение {{selectedIntegrationName}} </1>, чтобы открыть приложение и завершить верификацию лица.",
     "completeMobile": "Завершите проверку лицом для подтверждения того, что вы действительно пытаетесь перевести средства.",
     "confirmCompleted": "Я завершил проверку",
     "openApp": "Открыть приложение {{selectedIntegrationName}}",
@@ -933,18 +931,18 @@
     "verify": "Подтвердить"
   },
   "transferPreviewErrorPage": {
-    "aboveMaximum": "",
-    "belowMinimum": "",
-    "connectAnotherAccount": "",
-    "connectDifferent": "",
-    "insufficientBalanceError": "",
-    "insufficientFunds": "",
-    "unknownError": ""
+    "aboveMaximum": "Максимальный размер выше {{integrationName}}",
+    "belowMinimum": "Минимум ниже {{integrationName}}",
+    "connectAnotherAccount": "Пожалуйста, подключите другую учетную запись.",
+    "connectDifferent": "Подключить другой аккаунт",
+    "insufficientBalanceError": "Недостаточно средств для пополнения этой транзакции.",
+    "insufficientFunds": "Недостаточно средств",
+    "unknownError": "Произошла неизвестная ошибка. Нажмите ниже, чтобы начать новый сеанс перевода."
   },
   "transferSteps": {
     "approveTransfer": "Вы одобряете перевод с {{integrationName}} на {{clientName}}",
     "approveTransferDeFi": "Вам будет предложено одобрить перевод на {{integrationName}}",
-    "approveTransferToDestination": "",
+    "approveTransferToDestination": "Вы подтверждаете перевод из {{integrationName}} в пункт назначения",
     "convertAmount": "Конвертация {{fromAmount}} в {{toCurrency}}",
     "depositAmount": "Пополнение {{amount}} с {{paymentMethod}} на {{integrationName}}",
     "purchaseAmount": "Purchase of <2>{{formatCurrency(fundingOption.usedAmountTotal?.amountInFiat, fundingOption.usedAmountTotal?.fiatSymbol)}}</2> worth of {{fundingOption.usedAmountTotal?.cryptocurrencySymbol}} in {{integrationName}}.",
@@ -957,7 +955,7 @@
   "transferUpdateDrawerContent": {
     "approveTransfer": "Подтвердить перевод",
     "cancel": "Отмена",
-    "description": "",
+    "description": "Purchased amount is lower than expected due to changes in {{token}} price and/or gas fees.",
     "ifDontComplete": "Если Вы не завершите перевод, Ваш баланс {{token}} останется в Вашем аккаунте {{selectedIntegrationName}}.",
     "onYourAccount": "На вашем аккаунте",
     "title": "Перевод обновлён",
@@ -979,7 +977,7 @@
   },
   "trezorDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} должен подтвердить ваш кошелек",
-    "secureLabel": "",
+    "secureLabel": "Быстро, безопасно и бесплатно",
     "secureText": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком.",
     "signText": "Вам будет предложено подписать сообщение на вашем Trezor устройстве, которое подтверждает ваш кошелек.",
     "title": "Почти готово!",
@@ -993,27 +991,28 @@
   },
   "trezorInitial": {
     "clientVerifyLabel": "{{clientName}} должен подтвердить ваш кошелек",
-    "clientVerifyText": "",
+    "clientVerifyText": "Вы будете безопасно переданы в ваш Trezor, чтобы подписать сообщение на вашем устройстве, которое подтверждает ваш кошелек.",
     "connectingLabel": "Подключение вашего кошелька...",
-    "secureLabel": "",
+    "secureLabel": "Быстро, безопасно и бесплатно",
     "secureText": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} would like you to verify ownership of <3>{{requestedNetworkName}}</3> address <6>{{truncatedRequestedAddress}}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
+    "body": "{{clientName}} хочет проверить право собственности на <3>{{requestedNetworkName}}</3> адрес <6>{{truncatedRequestedAddress}}</6>. Этот адрес не связан с подключенным кошельком. Пожалуйста, подключите другой кошелек.",
     "connectAnotherAction": "Подключить другой кошелек",
-    "title": ""
+    "title": "Uh oh!"
   },
   "verifyError": {
     "body": "Не удалось проверить ваш аппаратный кошелек. Пожалуйста, убедитесь, что вы выбрали правильную сеть и ввели правильный адрес кошелька.",
     "title": "Проверка не удалась"
   },
   "verifyErrorPage": {
-    "body": "",
-    "title": ""
+    "body": "Вы отклонили запрос на подпись в вашем кошельке, или предыдущий запрос по-прежнему активен. {{clientName}} не может подтвердить собственность вашего кошелька без подписи.",
+    "title": "Проверка отклонена"
   },
   "wallectConnect": {
-    "noActiveSessionError": "",
-    "unknownError": ""
+    "noActiveSessionError": "Нет активных сеансов WalletConnect",
+    "transactionHashError": "Не удалось получить хэш транзакции",
+    "unknownError": "Произошла неизвестная ошибка. {{error}}"
   },
   "walletDoneScreen": {
     "continueMessage": "Пожалуйста, продолжаите в приложении {{clientName}}.",
