@@ -377,8 +377,8 @@
     "coveredByExistingCryptocurrencyBalance": "У вас уже достаточно баланса {{assetName}} для этой покупки без дополнительных методов пополнения.",
     "coveredByOtherFundingOptions": "Этот метод пополнения не поддерживается для этой транзакции.",
     "currencyNotSupported": "Покупка криптовалюты с не-долларовым методом пополнения еще не поддерживается.",
-    "depositAmountLimitExceeded": "This purchase would surpass {{integrationName}}’s maximum deposit limit in 1 day for this funding method.",
-    "depositCountLimitReached": "This funding method has already reached {{integrationName}}’s maximum number of deposits in 1 day.",
+    "depositAmountLimitExceeded": "Эта покупка превысит суточный лимит на пополнение через {{integrationName}} для данного метода пополнения.",
+    "depositCountLimitReached": "Для этого метода пополнения уже достигнут максимальный суточный лимит количества пополнений в {{integrationName}}.",
     "depositsNotSupported": "Этот метод пополнения не поддерживается для этой транзакции.",
     "instantDepositLimitExceeded": "Мгновенный лимит депозита этого метода пополнения недостаточен для этой покупки",
     "instantDepositsNotSupported": "Этот метод пополнения не поддерживает мгновенные депозиты, поэтому он не может быть использован для этой покупки.",
@@ -451,9 +451,9 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Сумма запрошенного перевода {{requestedAmount}} меньше минимальной суммы {{integrationName}} {{minimumAmount}} для перевода в сети {{network}}.",
     "balanceBelowMinimumDescription": "Ваш баланс в {{currentBalance}} меньше минимума {{minimumAmount}} {{integrationName}} для перевода по сети {{network}}.",
-    "belowMinimum": "Below {{integrationName}}’s minimum",
+    "belowMinimum": "Ниже минимального лимита {{integrationName}}",
     "belowRequestedAmountDescription": "Ваш баланс в {{balance}} меньше, чем в {{amount}}, необходимых для покрытия запрашиваемой суммы перевода + комиссии.",
-    "gasFeeAssetBalanceNotEnoughDescription": "Your {{balance}} balance is insufficient to cover the estimated {{gasFee}} gas fee on the {{network}} network.",
+    "gasFeeAssetBalanceNotEnoughDescription": "Ваш баланс {{balance}} не достаточен, чтобы покрыть комиссию за газ {{gasFee}} в сети {{network}}.",
     "insufficientBalance": "Недостаточный баланс",
     "insufficientBalanceDescription": "Ваш баланс в {{currentBalance}} меньше, чем минимальный для этого перевода.",
     "notEligible": "Не подходит для этого перевода",
@@ -730,12 +730,12 @@
   },
   "paymentUpdateDrawerContent": {
     "cancel": "Отмена",
-    "clickToPay": "Click below to top up your {{token}} balance to make this payment.",
+    "clickToPay": "Нажмите ниже, чтобы пополнить баланс {{token}} для выполнения этого платежа.",
     "description": "Ваш баланс после покупки {{token}} меньше, чем ожидалось в связи с изменениями цены и комиссии за газ {{token}}.",
     "ifDontComplete": "Если Вы не завершите платеж, Ваш баланс {{token}} останется на Вашем аккаунте {{selectedIntegrationName}}.",
     "onYourAccount": "На вашем аккаунте",
     "title": "Обновление платежа",
-    "topUp": "Top up {{token}} balance"
+    "topUp": "Пополнить баланс {{token}}"
   },
   "payPalConnectOAuthPage": {
     "close": "Закрыть",
@@ -955,7 +955,7 @@
   "transferUpdateDrawerContent": {
     "approveTransfer": "Подтвердить перевод",
     "cancel": "Отмена",
-    "description": "Purchased amount is lower than expected due to changes in {{token}} price and/or gas fees.",
+    "description": "Сумма покупки оказалась ниже ожидаемой из-за изменений цены {{token}} и/или комиссии за газ.",
     "ifDontComplete": "Если Вы не завершите перевод, Ваш баланс {{token}} останется на Вашем аккаунте {{selectedIntegrationName}}.",
     "onYourAccount": "На вашем аккаунте",
     "title": "Перевод обновлён",
