@@ -67,10 +67,14 @@
     "authApp": "Aplicación Autenticador",
     "email": "E-mail",
     "enabled": "Activado",
+    "error": "",
     "notEnabled": "No activado"
   },
   "browserContent": {
     "openButtom": "Abrir {{integrationName}}"
+  },
+  "catalogCell": {
+    "select": ""
   },
   "catalogList": {
     "badges": {
@@ -135,6 +139,7 @@
     "somethingWentWrong": "Algo salió mal...",
     "submitCap": "Enviar",
     "successTitle": "¡Éxito!",
+    "termsOfUse": "By continuing you accept the <2>terms of use</2>.",
     "tryAgain": "Inténtalo de nuevo"
   },
   "commonContent": {
@@ -339,12 +344,22 @@
     "title": "Verificación"
   },
   "fields": {
+    "apiKey": "",
+    "apiSecret": "",
     "authToken": "token de autorización",
     "challengeCode": "código de desafío",
+    "clientId": "",
+    "clientSecret": "",
+    "email": "",
+    "emailOrUsername": "",
     "mfaCode": "Código MFA",
+    "passphrase": "",
     "password": "contraseña",
     "phone": "teléfono",
+    "privateKey": "",
+    "secretKey": "",
     "tradePin": "pin de comercio",
+    "userId": "",
     "username": "nombre de usuario"
   },
   "fullScreenSpinner": {
@@ -662,7 +677,8 @@
   },
   "navHeader": {
     "close": "Cerrar la modal",
-    "goBack": "Retroceder"
+    "goBack": "Retroceder",
+    "title": ""
   },
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
@@ -926,7 +942,14 @@
     "defaultError": "Se ha producido un error desconocido. Por favor, haga clic a continuación para iniciar una nueva sesión de transferencia."
   },
   "transferErrors": {
-    "failedToPreview": ""
+    "failedToExecute": "",
+    "failedToPreview": "",
+    "mfaEmailFailed": "",
+    "mfaFaceFailed": "",
+    "mfaFailed": "",
+    "mfaPhoneFailed": "",
+    "mfaTotpFailed": "",
+    "mfaTradingPinFailed": ""
   },
   "transferFacePage": {
     "clickOpenApp": "Haz clic en <1>Abrir {{selectedIntegrationName}} app</1> para abrir tu aplicación y completar la verificación de caras.",
@@ -1028,8 +1051,8 @@
     "unknownError": "Se ha producido un error desconocido. {{error}}"
   },
   "walletDoneScreen": {
-    "continueMessage": "Por favor, continúa en tu aplicación {{clientName}}.",
     "completePaymentMessage": "Regresa a tu experiencia de pago para completar tu compra en {{clientName}}.",
+    "continueMessage": "Por favor, continúa en tu aplicación {{clientName}}.",
     "successMessage": "Has verificado con éxito la propiedad de tu billetera {{walletName}}."
   },
   "withdrawalLockedErrorPage": {

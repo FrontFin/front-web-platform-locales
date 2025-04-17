@@ -67,10 +67,14 @@
     "authApp": "Приложение для аутентификации",
     "email": "Почта",
     "enabled": "Включено",
+    "error": "",
     "notEnabled": "Не включено"
   },
   "browserContent": {
     "openButtom": "Открыть {{integrationName}}"
+  },
+  "catalogCell": {
+    "select": ""
   },
   "catalogList": {
     "badges": {
@@ -135,6 +139,7 @@
     "somethingWentWrong": "Что-то пошло не так...",
     "submitCap": "Отправить",
     "successTitle": "Успешно!",
+    "termsOfUse": "By continuing you accept the <2>terms of use</2>.",
     "tryAgain": "Попробовать снова"
   },
   "commonContent": {
@@ -339,12 +344,22 @@
     "title": "Верификация"
   },
   "fields": {
+    "apiKey": "",
+    "apiSecret": "",
     "authToken": "токен авторизации",
     "challengeCode": "код вызова",
+    "clientId": "",
+    "clientSecret": "",
+    "email": "",
+    "emailOrUsername": "",
     "mfaCode": "Код MFA",
+    "passphrase": "",
     "password": "пароль",
     "phone": "телефон",
+    "privateKey": "",
+    "secretKey": "",
     "tradePin": "маркер для торговли",
+    "userId": "",
     "username": "имя пользователя"
   },
   "fullScreenSpinner": {
@@ -663,7 +678,8 @@
   },
   "navHeader": {
     "close": "Закрыть окно",
-    "goBack": "Назад"
+    "goBack": "Назад",
+    "title": ""
   },
   "nonOAuthPermissionsPage": {
     "allow": "Разрешено",
@@ -927,7 +943,14 @@
     "defaultError": "Произошла неизвестная ошибка. Нажмите ниже, чтобы начать новый сеанс перевода."
   },
   "transferErrors": {
-    "failedToPreview": ""
+    "failedToExecute": "",
+    "failedToPreview": "",
+    "mfaEmailFailed": "",
+    "mfaFaceFailed": "",
+    "mfaFailed": "",
+    "mfaPhoneFailed": "",
+    "mfaTotpFailed": "",
+    "mfaTradingPinFailed": ""
   },
   "transferFacePage": {
     "clickOpenApp": "Нажмите <1>Откройте приложение {{selectedIntegrationName}} </1>, чтобы открыть приложение и завершить верификацию лица.",
@@ -1029,8 +1052,8 @@
     "unknownError": "Произошла неизвестная ошибка. {{error}}"
   },
   "walletDoneScreen": {
-    "continueMessage": "Пожалуйста, продолжите в приложении {{clientName}}.",
     "completePaymentMessage": "Вернитесь к оформлению заказа, чтобы завершить покупку в {{clientName}}.",
+    "continueMessage": "Пожалуйста, продолжите в приложении {{clientName}}.",
     "successMessage": "Вы успешно подтвердили право собственности на ваш кошелек {{walletName}}."
   },
   "withdrawalLockedErrorPage": {

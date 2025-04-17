@@ -67,10 +67,14 @@
     "authApp": "Authenticator App",
     "email": "Email",
     "enabled": "Enabled",
+    "error": "Failed to bind MFA",
     "notEnabled": "Not enabled"
   },
   "browserContent": {
     "openButtom": "Open {{integrationName}}"
+  },
+  "catalogCell": {
+    "select": "Select {{integrationName}}, {{badge}}"
   },
   "catalogList": {
     "badges": {
@@ -85,9 +89,6 @@
     "title": "Select account to link"
   },
   "catalogTile": {
-    "select": "Select {{integrationName}}, {{badge}}"
-  },
-  "catalogCell": {
     "select": "Select {{integrationName}}, {{badge}}"
   },
   "categories": {
@@ -135,10 +136,10 @@
     "notFound": "Not found",
     "searchCap": "Search",
     "securedBy": "Secured by",
-    "termsOfUse": "By continuing you accept the <2>terms of use</2>",
     "somethingWentWrong": "Something went wrong...",
     "submitCap": "Submit",
     "successTitle": "Success!",
+    "termsOfUse": "By continuing you accept the\u00a0<2>terms of use</2>",
     "tryAgain": "Try again"
   },
   "commonContent": {
@@ -343,13 +344,23 @@
     "title": "Verification"
   },
   "fields": {
-    "authToken": "authorization token",
-    "challengeCode": "challenge code",
+    "apiKey": "API key",
+    "apiSecret": "API secret",
+    "authToken": "Authorization token",
+    "challengeCode": "Challenge code",
+    "clientId": "Client Id",
+    "clientSecret": "Client Secret",
+    "email": "Email",
+    "emailOrUsername": "Email or username",
     "mfaCode": "MFA code",
-    "password": "password",
-    "phone": "phone",
-    "tradePin": "trade pin",
-    "username": "username"
+    "passphrase": "Passphrase",
+    "password": "Password",
+    "phone": "Phone number",
+    "privateKey": "Private key",
+    "secretKey": "Secret key",
+    "tradePin": "Trade pin",
+    "userId": "User ID",
+    "username": "Username"
   },
   "fullScreenSpinner": {
     "linking": "Linking your account...",
@@ -930,7 +941,14 @@
     "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
   },
   "transferErrors": {
-    "failedToPreview": "Failed to preview a transfer"
+    "failedToExecute": "Failed to execute a transfer",
+    "failedToPreview": "Failed to preview a transfer",
+    "mfaEmailFailed": "Wrong code from the email, please enter the code again",
+    "mfaFaceFailed": "Verification failed, please try again",
+    "mfaFailed": "Wrong code, please enter the code again",
+    "mfaPhoneFailed": "Wrong sms code, please enter the code again",
+    "mfaTotpFailed": "Wrong TOTP code, please enter the code again",
+    "mfaTradingPinFailed": "MFA trading pin failed, please enter the code again"
   },
   "transferFacePage": {
     "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
@@ -1032,8 +1050,8 @@
     "unknownError": "An unknown error occurred. {{error}}"
   },
   "walletDoneScreen": {
-    "continueMessage": "Please continue in your {{clientName}} app.",
     "completePaymentMessage": "Return to your checkout experience to complete your {{clientName}} purchase.",
+    "continueMessage": "Please continue in your {{clientName}} app.",
     "successMessage": "You have successfully verified ownership of your {{walletName}} wallet."
   },
   "withdrawalLockedErrorPage": {

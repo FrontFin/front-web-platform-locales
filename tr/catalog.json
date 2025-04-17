@@ -67,10 +67,14 @@
     "authApp": "Authenticator App",
     "email": "Email",
     "enabled": "Enabled",
+    "error": "",
     "notEnabled": "Not enabled"
   },
   "browserContent": {
     "openButtom": "Open {{integrationName}}"
+  },
+  "catalogCell": {
+    "select": ""
   },
   "catalogList": {
     "badges": {
@@ -135,6 +139,7 @@
     "somethingWentWrong": "Something went wrong...",
     "submitCap": "Submit",
     "successTitle": "Success!",
+    "termsOfUse": "By continuing you accept the <2>terms of use</2>.",
     "tryAgain": "Try again"
   },
   "commonContent": {
@@ -339,12 +344,22 @@
     "title": "Verification"
   },
   "fields": {
+    "apiKey": "",
+    "apiSecret": "",
     "authToken": "authorization token",
     "challengeCode": "challenge code",
+    "clientId": "",
+    "clientSecret": "",
+    "email": "",
+    "emailOrUsername": "",
     "mfaCode": "MFA code",
+    "passphrase": "",
     "password": "password",
     "phone": "phone",
+    "privateKey": "",
+    "secretKey": "",
     "tradePin": "trade pin",
+    "userId": "",
     "username": "username"
   },
   "fullScreenSpinner": {
@@ -661,7 +676,8 @@
   },
   "navHeader": {
     "close": "Close the modal",
-    "goBack": "Go backwards"
+    "goBack": "Go backwards",
+    "title": ""
   },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
@@ -925,7 +941,14 @@
     "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
   },
   "transferErrors": {
-    "failedToPreview": ""
+    "failedToExecute": "",
+    "failedToPreview": "",
+    "mfaEmailFailed": "",
+    "mfaFaceFailed": "",
+    "mfaFailed": "",
+    "mfaPhoneFailed": "",
+    "mfaTotpFailed": "",
+    "mfaTradingPinFailed": ""
   },
   "transferFacePage": {
     "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
@@ -1027,8 +1050,8 @@
     "unknownError": "An unknown error occurred. {{error}}"
   },
   "walletDoneScreen": {
-    "continueMessage": "Please continue in your {{clientName}} app.",
     "completePaymentMessage": "Return to your checkout experience to complete your {{clientName}} purchase.",
+    "continueMessage": "Please continue in your {{clientName}} app.",
     "successMessage": "You have successfully verified ownership of your {{walletName}} wallet."
   },
   "withdrawalLockedErrorPage": {
