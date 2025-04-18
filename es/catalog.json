@@ -67,14 +67,14 @@
     "authApp": "Aplicación Autenticador",
     "email": "E-mail",
     "enabled": "Activado",
-    "error": "",
+    "error": "Failed to bind MFA",
     "notEnabled": "No activado"
   },
   "browserContent": {
     "openButtom": "Abrir {{integrationName}}"
   },
   "catalogCell": {
-    "select": ""
+    "select": "Seleccione {{integrationName}}, {{badge}}"
   },
   "catalogList": {
     "badges": {
@@ -139,7 +139,7 @@
     "somethingWentWrong": "Algo salió mal...",
     "submitCap": "Enviar",
     "successTitle": "¡Éxito!",
-    "termsOfUse": "By continuing you accept the <2>terms of use</2>.",
+    "termsOfUse": "By continuing you accept the <2>terms of use</2>",
     "tryAgain": "Inténtalo de nuevo"
   },
   "commonContent": {
@@ -308,7 +308,7 @@
     "actionRefusedText": "Usted ha rechazado la acción.",
     "connectionWalletAction": "Has conectado con éxito tu {{integrationName}}.",
     "continueInApp": "Por favor, continúa en tu aplicación {{clientName}}.",
-    "continuePaymentInApp": "Regresa a tu experiencia de pago para continuar con tu compra en {{clientName}}.",
+    "continuePaymentInApp": "Return to your checkout experience to continue your {{clientName}} purchase.",
     "defaultAction": "Has completado la acción con éxito.",
     "processingError": "Error de procesamiento",
     "processingText": "Algo salió mal.",
@@ -344,23 +344,23 @@
     "title": "Verificación"
   },
   "fields": {
-    "apiKey": "",
-    "apiSecret": "",
-    "authToken": "token de autorización",
-    "challengeCode": "código de desafío",
-    "clientId": "",
-    "clientSecret": "",
-    "email": "",
-    "emailOrUsername": "",
+    "apiKey": "API key",
+    "apiSecret": "API secret",
+    "authToken": "Authorization token",
+    "challengeCode": "Challenge code",
+    "clientId": "Client Id",
+    "clientSecret": "Client Secret",
+    "email": "E-mail",
+    "emailOrUsername": "Email or username",
     "mfaCode": "Código MFA",
-    "passphrase": "",
-    "password": "contraseña",
-    "phone": "teléfono",
-    "privateKey": "",
-    "secretKey": "",
-    "tradePin": "pin de comercio",
-    "userId": "",
-    "username": "nombre de usuario"
+    "passphrase": "Passphrase",
+    "password": "Password",
+    "phone": "Phone number",
+    "privateKey": "Private key",
+    "secretKey": "Secret key",
+    "tradePin": "Trade pin",
+    "userId": "User ID",
+    "username": "Username"
   },
   "fullScreenSpinner": {
     "linking": "Vinculando tu cuenta...",
@@ -386,7 +386,6 @@
     "paymentMethodDepositUsage": "Método de pago vinculado",
     "stablecoinConversion": "Conversión de estables",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -447,13 +446,13 @@
     "tempAccess": "Sólo quiero acceso temporal"
   },
   "getBrokerAccessTokenErrors": {
-    "add2FA": "",
-    "identityVerificationRequired": "",
-    "invalidCredentials": "",
-    "maximumApiKeyLimitExceeded": "",
-    "unsupportedCountryErrorMessage": "",
-    "wrongEmailCode": "",
-    "wrongTotpCode": ""
+    "add2FA": "Please connect 2FA application. And retry again.",
+    "identityVerificationRequired": "You need to complete identity verification in order to use the API key feature. Please complete identity verification to continue.",
+    "invalidCredentials": "Invalid credentials provided.",
+    "maximumApiKeyLimitExceeded": "Maximum allowed API key limitation reached. Please delete an unused key to continue.",
+    "unsupportedCountryErrorMessage": "We currently don’t support your account",
+    "wrongEmailCode": "Incorrect email code, please try again",
+    "wrongTotpCode": "Incorrect authentication code, please try again"
   },
   "handleExternalTransferPage": {
     "detailButton": "Ver lo que sucedió",
@@ -678,7 +677,7 @@
   "navHeader": {
     "close": "Cerrar la modal",
     "goBack": "Retroceder",
-    "title": ""
+    "title": "Pay with crypto"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
@@ -813,7 +812,7 @@
     "expired": "Código QR caducado",
     "generateNew": "Generar un nuevo código QR",
     "qrCodeLabel": "El código QR puede escanearse en tu dispositivo móvil para establecer la conexión",
-    "scanText": "Escanea este código con tu aplicación de {{appName}} <1></1> para iniciar sesión al instante."
+    "scanText": "Scan this code with your {{appName}} app <1></1> to log in instantly."
   },
   "receiveAmountInput": {
     "onNetwork": "en {{network}}"
@@ -907,19 +906,19 @@
   },
   "transferAmountPage": {
     "buttonTitle": {
-      "deposit": "",
-      "onramp": "",
-      "transfer": ""
+      "deposit": "Preview deposit",
+      "onramp": "Preview purchase",
+      "transfer": "Preview transfer"
     },
     "errorMessage": {
-      "insufficientFunds": "",
-      "minimumAmount": "",
-      "zeroAmount": ""
+      "insufficientFunds": "Insufficient funds to cover transfer and gas fees. Maximum transfer amount is {{maxAmount}}.",
+      "minimumAmount": "Minimum transfer amount is {{minAmount}}.",
+      "zeroAmount": "Please enter a non-zero amount"
     },
     "title": {
-      "deposit": "",
-      "onramp": "",
-      "transfer": ""
+      "deposit": "Enter deposit amount",
+      "onramp": "Enter purchase amount",
+      "transfer": "Introduzca el monto de la transferencia"
     }
   },
   "transferCanceledPage": {
@@ -959,14 +958,14 @@
     "defaultError": "Se ha producido un error desconocido. Por favor, haga clic a continuación para iniciar una nueva sesión de transferencia."
   },
   "transferErrors": {
-    "failedToExecute": "",
-    "failedToPreview": "",
-    "mfaEmailFailed": "",
-    "mfaFaceFailed": "",
-    "mfaFailed": "",
-    "mfaPhoneFailed": "",
-    "mfaTotpFailed": "",
-    "mfaTradingPinFailed": ""
+    "failedToExecute": "Failed to execute a transfer",
+    "failedToPreview": "Failed to preview a transfer",
+    "mfaEmailFailed": "Wrong code from the email, please enter the code again",
+    "mfaFaceFailed": "Verification failed, please try again",
+    "mfaFailed": "Wrong code, please enter the code again",
+    "mfaPhoneFailed": "Wrong sms code, please enter the code again",
+    "mfaTotpFailed": "Wrong TOTP code, please enter the code again",
+    "mfaTradingPinFailed": "MFA trading pin failed, please enter the code again"
   },
   "transferFacePage": {
     "clickOpenApp": "Haz clic en <1>Abrir {{selectedIntegrationName}} app</1> para abrir tu aplicación y completar la verificación de caras.",
@@ -1068,7 +1067,7 @@
     "unknownError": "Se ha producido un error desconocido. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Regresa a tu experiencia de pago para completar tu compra en {{clientName}}.",
+    "completePaymentMessage": "Return to your checkout experience to complete your {{clientName}} purchase.",
     "continueMessage": "Por favor, continúa en tu aplicación {{clientName}}.",
     "successMessage": "Has verificado con éxito la propiedad de tu billetera {{walletName}}."
   },
