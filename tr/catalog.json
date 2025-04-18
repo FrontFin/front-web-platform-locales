@@ -140,11 +140,11 @@
     "submitCap": "Gönder",
     "successTitle": "Başarılı!",
     "termsOfUse": "Devam ederek <2>kullanım şartlarını</2> kabul ediyorsunuz",
-    "tryAgain": "Tekrar deneyin"
+    "tryAgain": "Tekrar Dene"
   },
   "commonContent": {
     "description": "{{integrationName}} ile güvenli bağlantıyı sağlamak için kolaylık sağlar.",
-    "monitoring": "Onay bekleniyor...",
+    "monitoring": "Onay için izleme...",
     "resend": "Bağlantı isteğini yeniden gönder",
     "title": "Cüzdanınızda bağlantı isteğini<1></1> onaylayın"
   },
@@ -183,16 +183,16 @@
     "actionButton": "{{selectedIntegrationName}} ile bağlan"
   },
   "defiWalletQrPage": {
-    "declinedBody": "Cüzdanınızla bağlantı istek reddettiğiniz veya önceki bir istek hala aktif durumda.",
+    "declinedBody": "Cüzdanını bağlama isteğini reddettiniz veya önceki bir istek hala aktif.",
     "declinedTitle": "Bağlantı reddedildi",
     "description": "{{selectedIntegrationName}}'ı açın ve bağlantı kurmak için <3></3>QR kodunu tarayın",
     "qrCodeLabel": "Bağlantı kurmak için mobil cihazınızdan QR kodu tarayabilirsiniz",
-    "title": "{{selectedIntegrationName}} ile bağlan"
+    "title": "{{selectedIntegrationName}} ile Bağlan"
   },
   "defiWalletSelectNetworkPage": {
-    "declinedBody": "Cüzdanınızdaki ağ değiştirme isteğini reddettiniz.",
+    "declinedBody": "Cüzdanınızdaki ağ değişikliği isteğini reddettiniz.",
     "declineTitle": "Ağ değişikliği reddedildi",
-    "monitoringApproval": "Onay bekleniyor...",
+    "monitoringApproval": "Onay için izleme...",
     "selectNetwork": "Ağ seçin",
     "title": "Ağları değiştiriliyor",
     "whichNetwork": "<1>{{selectedIntegrationName}}</1> cüzdanınızdaki hangi ağı bağlamak istersiniz?"
@@ -261,7 +261,7 @@
     }
   },
   "doneTransferPage": {
-    "awaitingApproval": "Bu transfer, {{selectedIntegrationName}}'de onaylanana kadar başlatılmayacaktır.",
+    "awaitingApproval": "Bu transfer {{selectedIntegrationName}}'de onaylanmadıkça başlatılmayacaktır.",
     "checkDetails": "Ne olduğunu görmek",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>{{shortAddress}} adresinde alınacak.",
     "depositClient": "{{clientName}} ({{shortAddress}}) için<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>alacaksınız.",
@@ -271,8 +271,8 @@
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "{{address}} adresinin sahipliği <4>{{clientName}}</4> için zaten doğrulandı.",
-    "continueToTransfer": "Transfer etmeye devam et",
-    "returnToClient": "{{clientName}} dön",
+    "continueToTransfer": "Transfer işlemine devam et",
+    "returnToClient": "{{clientName}}'e dön",
     "titleAllSet": "Her şey hazır!",
     "verifiedBody": "{{address}} adresinin sahipliğini <4>{{clientName}}</4> için başarıyla doğruladınız."
   },
@@ -395,7 +395,7 @@
     "currencyNotSupported": "USD dışındaki bir fonlama yöntemiyle kripto para satın alma şu an desteklenmiyor.",
     "depositAmountLimitExceeded": "Bu satın alma, {{integrationName}}'in , bu fonlama yöntemi için 1 günlük maksimum para yatırma limitini aşacaktır.",
     "depositCountLimitReached": "Bu fonlama yöntemi, {{integrationName}}'in günlük maksimum para yatırma sayısına ulaştı.",
-    "depositsNotSupported": "Bu işlem için bu fonlama yöntemi desteklenmiyor.",
+    "depositsNotSupported": "Bu işlem için bu finansman yöntemi desteklenmemektedir.",
     "instantDepositLimitExceeded": "Bu fonlama yönteminin anlık para yatırma limiti bu satın alma için yeterli değil.",
     "instantDepositsNotSupported": "Bu fonlama yöntemi anlık para yatırma işlemlerini desteklemiyor, bu yüzden bu satın alma için kullanılamaz.",
     "insufficientBalance": "Bu satın alma için yetersiz bakiye.",
@@ -455,11 +455,11 @@
     "wrongTotpCode": "Yanlış kimlik doğrulama kodu, lütfen tekrar deneyin"
   },
   "handleExternalTransferPage": {
-    "detailButton": "Ne olduğunu görmek",
+    "detailButton": "Ne olduğunu görün",
     "error": "Transferi gerçekleştiremediniz",
     "loadingLabel": "Transferiniz doğrulanıyor...",
-    "networkConfirmations": "Aktarımlar, gerekli ağ onaylarını alana kadar tamamlanmaz.",
-    "notInitiatedUntilApproved": "Bu transfer, {{selectedIntegrationName}}'de onaylanana kadar başlatılmayacaktır.",
+    "networkConfirmations": "Ağ onayları yeterli hale gelene kadar transferler tamamlanmaz.",
+    "notInitiatedUntilApproved": "Bu transfer {{selectedIntegrationName}}'de onaylanmadıkça başlatılmayacaktır.",
     "recievedDetails": "{{clientName}} ({{shortAddress}}) içinde <1>{{amountStr}}</1> alacaksınız",
     "requestRecieved": "{{destination}} adresine transfer için yaptığınız talep {{selectedIntegrationName}} tarafından alındı",
     "revolutApproveInfo": "Bu işlem, Revolut uygulamasında onaylanana kadar başlatılmayacaktır",
@@ -470,7 +470,7 @@
   },
   "hardwareWalletDrawerContent": {
     "body": "{{clientName}}, {{selectedIntegrationName}} ile güvenli bağlanmayı kolaylaştırmak için Mesh kullanır.",
-    "connectAction": "{{selectedIntegrationName}} ile bağlan"
+    "connectAction": "{{selectedIntegrationName}} ile Bağlan"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "İstenen transfer miktarı olan {{requestedAmount}}, {{integrationName}} tarafından {{network}} ağı üzerinde transfer edilen minimum {{minimumAmount}} miktarından daha azdır.",
@@ -541,7 +541,7 @@
     "verifiedButton": "Kimliğimi {{integrationName}} ile doğruladım"
   },
   "kycPendingPage": {
-    "connectAnother": "Başka bir hesap bağlayın",
+    "connectAnother": "Başka bir hesap bağla",
     "description": "Kimlik doğrulama <1>1 - 3 iş günü.</1> sürebilir. Doğrulama tamamlandığında ve hesabınızda transferler etkinleştirildiğinde, bu işlemi tamamlamak için buraya geri dönebilirsiniz.",
     "title": "Onay bekleniyor"
   },
@@ -549,7 +549,7 @@
     "clickContinue": "<1>Devam Et</1>'i tıklayın ve {{selectedIntegrationName}} açın.",
     "clickContinueAfterActivated": "{{selectedIntegrationName}} içinde kripto transferlerini etkinleştirdikten sonra, transferinize <5>Devam Et</5>mek için aşağıya tıklayın.",
     "completeVerification": "Kimlik doğrulamanızı tamamlayın ve/veya iki faktörlü doğrulama yöntemi ekleyin.",
-    "connectAnother": "Başka bir hesap bağlayın",
+    "connectAnother": "Başka bir hesap bağla",
     "note": "Lütfen dikkat: geri döndüğünüzde bu transferi başlatmak için {{selectedIntegrationName}} hesabınıza yeniden giriş yapmanız gerekebilir.",
     "return": "Transferi tamamlamak için buraya geri dönün.",
     "title": "Hesabınızda transferleri etkinleştirin"
@@ -567,8 +567,8 @@
     "clientVerifyLabel": "{{clientName}} cüzdanınızı doğrulamalıdır",
     "clientVerifyText": "Bu cüzdana sahip olduğunuzu doğrulayan bir mesajı Ledger cihazınızda imzalamanız istenir.",
     "secureLabel": "Hızlı, güvenli ve ücretsiz",
-    "secureText": "İmza, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma izni vermez.",
-    "title": "Neredeyse oradayız!"
+    "secureText": "İmza atmak, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma izni vermez.",
+    "title": "Neredeyse tamam!"
   },
   "ledgerError": {
     "incorrectAppError": "Cihazınızda yanlış bir uygulama açık. Devam etmek için doğru uygulamayı açın ve yeniden deneyin.",
@@ -637,12 +637,12 @@
     "withdrawalTitle": "{{selectedIntegrationName}} hesabınızdan çekimleri etkinleştirin"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "<2>{{selectedIntegrationName}}</2> hesabınıza bir kimlik doğrulayıcı uygulama eklemek için aşağıdaki butona tıklayın.",
+    "addAuthApp": "<2>{{selectedIntegrationName}}</2> hesabınıza bir doğrulayıcı uygulaması eklemek için aşağıdaki butona tıklayın.",
     "emailTitle": "<2>{{selectedIntegrationName}}</2> hesabınıza başarıyla e-posta bağladınız.",
     "proceed": "Devam et",
     "proceedKey": "Anahtar üretimine devam etmek için aşağıya tıklayın",
     "proceedTransfer": "Transfer için devam etmek üzere aşağıya tıklayın",
-    "setUpApp": "Kimlik doğrulayıcı uygulama ayarla",
+    "setUpApp": "Doğrulayıcı uygulaması kur",
     "totpTitle": "<2>{{selectedIntegrationName}}</2> hesabınıza bir kimlik doğrulayıcı uygulama bağladınız."
   },
   "mfaTitle": {
@@ -672,7 +672,7 @@
     }
   },
   "mobileContent": {
-    "actionButton": "{{integrationName}}'ı Aç"
+    "actionButton": "{{integrationName}}'i Aç"
   },
   "navHeader": {
     "close": "Modali kapat",
@@ -689,20 +689,20 @@
     "wontAllow": "İzin verilmeyecek"
   },
   "oAuthBrokerPage": {
-    "monitoring": "Onay bekleniyor...",
+    "monitoring": "Onay için izleme...",
     "reopenButton": "{{selectedIntegrationName}}'i yeniden açmak için buraya tıklayın",
     "subtitle": "Hesabınıza giriş yapın ve erişime izin verin",
     "title": "<1></1> {{selectedIntegrationName}} penceresinde devam edin"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
+    "description": "{{selectedIntegrationName}}, istenen belirteçler ve/veya ağlar için transferleri desteklememektedir.",
     "selectAnotherAccount": "Başka bir hesap seçin",
-    "selectAnotherDescription": "Para yatırmak için lütfen başka bir borsa veya cüzdan seçin."
+    "selectAnotherDescription": "Aktarım yapmak için başka bir borsa veya cüzdan seçin."
   },
   "oAuthMessageListener": {
     "clientUsesMesh": "{{clientName}} transferinizi {{selectedIntegrationName}} içinde güvenli bir şekilde bağlamak ve kolaylaştırmak için Mesh'i kullanır.",
     "description": "Hesabınıza giriş yapın ve erişime izin verin",
-    "monitoring": "Onay bekleniyor...",
+    "monitoring": "Onay için izleme...",
     "open": "{{selectedIntegrationName}}'i Açın",
     "reopen": "{{selectedIntegrationName}}'i Yeniden Aç",
     "title": "{{selectedIntegrationName}} penceresinde devam edin",
@@ -714,12 +714,12 @@
       "destination": "{{selectedIntegrationName}}'den hedefe <1>{{amount}}</1> transferini onaylıyorsunuz."
     },
     "buyingPowerPurchase": "{{selectedIntegrationName}}'de <1>{{amount}}</1> değerinde {{symbol}} <5>(~ {{amountInCrypto}})</5> satın alımı.",
-    "conversionStep": "<1>{{amount}}</1>'yi <4>{{currency}}</4>'ye dönüştürme.",
+    "conversionStep": "<1>{{amount}}</1>'un <4>{{currency}}</4>'a dönüştürülmesi.",
     "depositTitle": "Para yatırma işlemi devam ediyor",
     "description": "Bu biraz zaman alabilir...",
     "existingCryptocurrencyBalance": {
-      "approveClient": "{{selectedIntegrationName}}'den {{clientName}}'e transferi onayladınız.",
-      "approveDestination": "{{selectedIntegrationName}}'den hedefe yapılan transferi onayladınız.",
+      "approveClient": "{{selectedIntegrationName}}'den {{clientName}}'e transferi onaylıyorsunuz.",
+      "approveDestination": "{{selectedIntegrationName}}'den varış yerine transferi onaylıyorsunuz.",
       "transfer": "{{selectedIntegrationName}}'den {{clientName}}'e <1>{{amount}}</1> transferi.",
       "transferHideClient": "{{selectedIntegrationName}}'den <1>{{amount}}</1> transferi.",
       "transferHideClientWithAddress": "{{selectedIntegrationName}}'den {{address}}'e <1>{{amount}}</1> transferi.",
@@ -730,10 +730,10 @@
       "transferWithAddress": "{{selectedIntegrationName}}'den {{clientName}} {{address}}'e <1>{{amount}}</1> transferi."
     },
     "onrampTitle": "Satın alma işlemi devam ediyor",
-    "paymentMethodDepositUsage": "{{paymentMethod}}'den {{selectedIntegrationName}}'e <1>{{amount}}</1> yatırma.",
+    "paymentMethodDepositUsage": "<1>{{amount}}</1>'un {{paymentMethod}}'den {{selectedIntegrationName}}'e yatırılması.",
     "paymentTitle": "Ödeme işlemi devam ediyor",
     "transactionTitle": "İşlem devam ediyor",
-    "tryAgain": "Tekrar deneyin"
+    "tryAgain": "Tekrar Dene"
   },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} bilgilerinizi giriniz",
@@ -743,7 +743,7 @@
       "email": "E-posta",
       "mobileApp": "Mobil uygulama",
       "phone": "Telefon",
-      "qrCode": "QR Kodu"
+      "qrCode": "QR Kod"
     },
     "title": "Giriş yap"
   },
@@ -757,18 +757,18 @@
     "cancel": "İptal",
     "clickToPay": "Bu ödemeyi gerçekleştirmek için {{token}} bakiyenizi artırmak için aşağıya tıklayın.",
     "description": "{{token}} alımı sonrasında bakiyeniz, {{token}} ücret ve/veya gaz ücretleri değişikliklerinden dolayı beklenenden daha düşük.",
-    "ifDontComplete": "Ödemeyi tamamlamazsanız, {{token}} bakiyeniz {{selectedIntegrationName}} hesabınızda kalacaktır.",
+    "ifDontComplete": "Ödemeyi tamamlamazsanız, {{token}} bakiyeniz, {{selectedIntegrationName}} hesabınızda kalacaktır.",
     "onYourAccount": "Hesabınızda",
     "title": "Ödeme güncellemesi",
     "topUp": "{{token}} bakiyesini artır"
   },
   "payPalConnectOAuthPage": {
     "close": "Kapat",
-    "continue": "{{selectedIntegrationName}}'e devam et",
+    "continue": "{{selectedIntegrationName}} ile Devam Et",
     "enterAmount": "Transfer miktarını girin",
-    "notSupported": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
+    "notSupported": "{{selectedIntegrationName}}, istenen belirteçler ve/veya ağlar için transferleri desteklememektedir.",
     "selectAnotherAccount": "Başka bir hesap seçin",
-    "selectAnotherExchange": "Para yatırmak için lütfen başka bir borsa veya cüzdan seçin.",
+    "selectAnotherExchange": "Başka bir borsa veya cüzdan seçin.",
     "selectNetwork": "Transfer ağını seçin",
     "title": "Transfer edilecek varlığı seçin"
   },
@@ -786,12 +786,12 @@
     "institutionTransferFee": "{{selectedIntegrationName}} Çekim Ücreti",
     "institutionTransferFeeHint": "{{selectedIntegrationName}} {{symbol}} transferinizi kolaylaştırmak için alacağı ücrettir.",
     "maxAmount": "Hesabınız en fazla <2>{{networkMaxAmount}}</2> finanse edebilir. Transferinizi bu miktara uyarlamak ister misiniz?",
-    "monitoring": "Onay bekleniyor...",
+    "monitoring": "Onay için izleme...",
     "network": "Ağ",
     "onrampTitle": "Satın alma ön izlemesi",
     "payingWith": "İle ödeme yapmak",
     "paymentTitle": "Ödeme ön izlemesi",
-    "proceed": "Devam et",
+    "proceed": "Devam Et",
     "processingFee": "İşlem Ücreti",
     "processingFeeHint": "Bu işlemi işlemek için alınan ücret.",
     "receive": "Almak",
@@ -811,7 +811,7 @@
   "qrCodePassword": {
     "expired": "QR kodu süresi doldu",
     "generateNew": "Yeni bir QR kodu oluştur",
-    "qrCodeLabel": "Bağlantı kurmak için mobil cihazınızdan QR kodu tarayabilirsiniz",
+    "qrCodeLabel": "QR kodu, bağlantı kurmak için mobil cihazınızda taranabilir",
     "scanText": "{{appName}} uygulamanızla bu kodu <1></1> tarayın ve anında giriş yapın."
   },
   "receiveAmountInput": {
@@ -819,13 +819,13 @@
   },
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "Miktar en az 8$ olmalı",
-    "continue": "{{selectedIntegrationName}}'e devam et",
+    "continue": "{{selectedIntegrationName}} ile Devam Et",
     "enterAmount": "Transfer miktarını girin",
     "selectAsset": "Transfer edilecek varlığı seçin",
     "selectNetwork": "Transfer ağını seçin"
   },
   "robinhoodConnectOAuthPage": {
-    "continue": "{{selectedIntegrationName}}'e devam et",
+    "continue": "{{selectedIntegrationName}} ile Devam Et",
     "enterAmount": "Transfer miktarını girin",
     "selectAsset": "Transfer edilecek varlığı seçin",
     "selectNetwork": "Transfer ağını seçin"
@@ -850,7 +850,7 @@
     "otherEligible": "Diğer uygun varlıklar",
     "paymentTitle": "Ödeme tokeni seçiniz",
     "returnToAppButton": "Uygulamaya geri dön",
-    "returnToClientButton": "{{clientName}} dön",
+    "returnToClientButton": "{{clientName}}'e dön",
     "spotAccountsBody": "Şu anda yalnızca spot hesaplar desteklenmektedir. Kredi hesapları gibi diğer hesap türlerindeki varlıklar tespit edilemeyecektir.",
     "topUpButton": "Bakiye Yükle",
     "unableTransferError": "Transfer başlatılamıyor."
@@ -880,7 +880,7 @@
     "copyCodeTitle": "Manuel kod",
     "downloadStep": "Google Play veya App Store'dan <1>Google Authenticator uygulamasını</1> indirin",
     "nextButton": "İleri",
-    "qrCodeAlt": "QR Kodu",
+    "qrCodeAlt": "QR Kod",
     "scanStep": "Doğrulayıcı uygulamanıza {{selectedIntegrationName}} ekleyin <1>QR kodunu tarayarak</1>",
     "title": "Doğrulayıcı Uygulamasını Ayarla"
   },
@@ -932,9 +932,9 @@
     "confirmButton": "Uygulamamda doğruladım",
     "description": "Gerçekten siz olduğunuzu doğrulamak için giriş yapmakta olduğunuzu <2></2>onaylayın.",
     "desktopSteps": {
-      "confirm": "Sizin olduğunuzu doğrulamak için uyarıyı onaylayın",
+      "confirm": "Sizi doğrulamak için istemi onaylayın",
       "openApp": "{{selectedIntegrationName}} uygulamasını telefonunuzda açın",
-      "return": "Devam etmek için buraya dön"
+      "return": "Devam etmek için buraya dönün"
     },
     "mobileSteps": {
       "clickOpen": "Aşağıdaki <1>{{selectedIntegrationName}} uygulamasını aç</1> butonuna tıklayın",
@@ -944,7 +944,7 @@
     "openApp": "{{selectedIntegrationName}} uygulamasını aç",
     "sendNewRequest": "Yeni bir istek gönder",
     "title": "Doğrulama",
-    "tryAnother": "Başka bir yöntem deneyin"
+    "tryAnother": "Başka bir yol dene"
   },
   "transferEmailApprovalConfirmation": {
     "approve": "Onay sayfasında <1>Onayla</1>ya tıklayın.",
@@ -973,8 +973,8 @@
     "confirmCompleted": "Doğrulamayı tamamladım",
     "openApp": "{{selectedIntegrationName}} uygulamasını aç",
     "reopenApp": "{{selectedIntegrationName}} uygulamasını tekrar açın",
-    "return": "Hesabınızı bağlantılamayı bitirmek için buraya geri dönün.",
-    "returnContinue": "Hesabınızı bağlantılamaya devam etmek için buraya geri dönün.",
+    "return": "Ardından, hesabınızı bağlamak için buraya dönün.",
+    "returnContinue": "Hesabınızı bağlamaya devam etmek için buraya dönün.",
     "scanQR": "Para transferi yapmak istediğinizi doğrulamak için yüz doğrulamayı tamamlayarak QR kodu tarayın.",
     "title": "Doğrulama"
   },
@@ -986,7 +986,7 @@
     "aboveMaximum": "{{integrationName}} maksimumunun üstünde",
     "belowMinimum": "{{integrationName}} minumumunun altında",
     "connectAnotherAccount": "Başka bir hesap bağlayın.",
-    "connectDifferent": "Farklı bir hesap bağlayın",
+    "connectDifferent": "Farklı bir hesap bağla",
     "insufficientBalanceError": "Bu işlemi finanse etmek için yetersiz bakiye.",
     "insufficientFunds": "Yetersiz bakiye",
     "unknownError": "Bilinmeyen bir hata oluştu. Yeni bir transfer oturumu başlatmak için aşağıya tıklayın."
@@ -1030,13 +1030,13 @@
   "trezorDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} cüzdanınızı doğrulamalıdır",
     "secureLabel": "Hızlı, güvenli ve ücretsiz",
-    "secureText": "İmza, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma izni vermez.",
+    "secureText": "İmza atmak, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma izni vermez.",
     "signText": "Trezor cihazınızda bu cüzdana sahip olduğunuzu onaylayan bir mesajı imzalamanız istenecek.",
-    "title": "Neredeyse oradayız!",
+    "title": "Neredeyse tamam!",
     "verifyingLabel": "Cüzdanınız doğrulanıyor..."
   },
   "trezorError": {
-    "connectionDeclinedBody": "Cüzdanınızla bağlantı istek reddettiğiniz veya önceki bir istek hala aktif durumda.",
+    "connectionDeclinedBody": "Cüzdanını bağlama isteğini reddettiniz veya önceki bir istek hala aktif.",
     "connectionDeclinedTitle": "Bağlantı reddedildi",
     "signatureDeclinedBody": "Cüzdanınızda imza talebini reddettiniz veya önceki bir talep hâlâ aktif.",
     "signatureDeclinedTitle": "İmza reddedildi"
@@ -1046,11 +1046,11 @@
     "clientVerifyText": "Cüzdanınıza sahip olduğunuzu onaylayan bir mesajı imzalamak için güvenli bir şekilde Trezor'a aktarılacaksınız.",
     "connectingLabel": "Cüzdanınız bağlanıyor...",
     "secureLabel": "Hızlı, güvenli ve ücretsiz",
-    "secureText": "İmza, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma izni vermez."
+    "secureText": "İmza atmak, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma izni vermez."
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}, <3>{{requestedNetworkName}}</3> adresi olan <6>{{truncatedRequestedAddress}}</6> mülkiyetini doğrulamanızı istiyor. Bu adres bağlı cüzdanla ilişkili değil. Lütfen başka bir cüzdan bağlayın.",
-    "connectAnotherAction": "Başka bir cüzdan bağlayın",
+    "connectAnotherAction": "Başka bir cüzdan bağla",
     "title": "Ups!"
   },
   "verifyError": {
