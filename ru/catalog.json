@@ -67,14 +67,14 @@
     "authApp": "Приложение для аутентификации",
     "email": "Почта",
     "enabled": "Включено",
-    "error": "",
+    "error": "Не удалось привязать MFA",
     "notEnabled": "Не включено"
   },
   "browserContent": {
     "openButtom": "Открыть {{integrationName}}"
   },
   "catalogCell": {
-    "select": ""
+    "select": "Выберите {{integrationName}}, {{badge}}"
   },
   "catalogList": {
     "badges": {
@@ -139,7 +139,7 @@
     "somethingWentWrong": "Что-то пошло не так...",
     "submitCap": "Отправить",
     "successTitle": "Успешно!",
-    "termsOfUse": "By continuing you accept the <2>terms of use</2>.",
+    "termsOfUse": "Продолжая, вы принимаете <2>условия использования</2>",
     "tryAgain": "Попробовать снова"
   },
   "commonContent": {
@@ -308,7 +308,7 @@
     "actionRefusedText": "Вы отклонили запрос.",
     "connectionWalletAction": "Вы успешно подключились к {{integrationName}}.",
     "continueInApp": "Пожалуйста, продолжите в приложении {{clientName}}.",
-    "continuePaymentInApp": "Вернитесь к оформлению заказа, чтобы продолжить покупку в {{clientName}}.",
+    "continuePaymentInApp": "Вернитесь к странице оплаты, чтобы продолжить покупку в {{clientName}}.",
     "defaultAction": "Вы успешно выполнили действие.",
     "processingError": "Ошибка обработки",
     "processingText": "Что-то пошло не так.",
@@ -344,23 +344,23 @@
     "title": "Верификация"
   },
   "fields": {
-    "apiKey": "",
-    "apiSecret": "",
-    "authToken": "токен авторизации",
-    "challengeCode": "код вызова",
-    "clientId": "",
-    "clientSecret": "",
-    "email": "",
-    "emailOrUsername": "",
+    "apiKey": "Ключ API",
+    "apiSecret": "Секретный ключ API",
+    "authToken": "Токен авторизации",
+    "challengeCode": "Код верификации",
+    "clientId": "Идентификатор клиента",
+    "clientSecret": "Клиентский секрет",
+    "email": "Почта",
+    "emailOrUsername": "Электронная почта или имя пользователя",
     "mfaCode": "Код MFA",
-    "passphrase": "",
-    "password": "пароль",
-    "phone": "телефон",
-    "privateKey": "",
-    "secretKey": "",
-    "tradePin": "маркер для торговли",
-    "userId": "",
-    "username": "имя пользователя"
+    "passphrase": "Кодовая фраза",
+    "password": "Пароль",
+    "phone": "Номер телефона",
+    "privateKey": "Личный ключ",
+    "secretKey": "Секретный ключ",
+    "tradePin": "Торговый пин",
+    "userId": "Идентификатор пользователя",
+    "username": "Имя пользователя"
   },
   "fullScreenSpinner": {
     "linking": "Привязка учетной записи...",
@@ -386,8 +386,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -448,13 +446,13 @@
     "tempAccess": "Я хочу только временный доступ"
   },
   "getBrokerAccessTokenErrors": {
-    "add2FA": "",
-    "identityVerificationRequired": "",
-    "invalidCredentials": "",
-    "maximumApiKeyLimitExceeded": "",
-    "unsupportedCountryErrorMessage": "",
-    "wrongEmailCode": "",
-    "wrongTotpCode": ""
+    "add2FA": "Пожалуйста, подключите приложение для двухфакторной аутентификации и повторите попытку.",
+    "identityVerificationRequired": "Для использования функции ключа API требуется подтверждение личности. Пожалуйста, завершите подтверждение личности, чтобы продолжить.",
+    "invalidCredentials": "Предоставленные учетные данные неверны.",
+    "maximumApiKeyLimitExceeded": "Достигнуто максимальное разрешенное количество ключей API. Пожалуйста, удалите неиспользуемый ключ, чтобы продолжить.",
+    "unsupportedCountryErrorMessage": "В данный момент мы не поддерживаем ваш аккаунт",
+    "wrongEmailCode": "Неверный код электронной почты, попробуйте еще раз",
+    "wrongTotpCode": "Неверный код аутентификации, попробуйте еще раз"
   },
   "handleExternalTransferPage": {
     "detailButton": "Посмотреть детали",
@@ -679,7 +677,7 @@
   "navHeader": {
     "close": "Закрыть окно",
     "goBack": "Назад",
-    "title": ""
+    "title": "Оплатить криптовалютой"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Разрешено",
@@ -814,7 +812,7 @@
     "expired": "QR-код истек",
     "generateNew": "Создать новый QR-код",
     "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
-    "scanText": "Сканируйте этот код с помощью приложения {{appName}} <1></1>, чтобы мгновенно войти в систему."
+    "scanText": "Сканируйте этот код с помощью вашего приложения {{appName}} <1></1>, чтобы мгновенно войти в систему."
   },
   "receiveAmountInput": {
     "onNetwork": "на {{network}}"
@@ -908,19 +906,19 @@
   },
   "transferAmountPage": {
     "buttonTitle": {
-      "deposit": "",
-      "onramp": "",
-      "transfer": ""
+      "deposit": "Просмотр депозита",
+      "onramp": "Предварительный просмотр покупки",
+      "transfer": "Предварительный просмотр перевода"
     },
     "errorMessage": {
-      "insufficientFunds": "",
-      "minimumAmount": "",
-      "zeroAmount": ""
+      "insufficientFunds": "Недостаточно средств для покрытия комиссии за перевод и газа. Максимальная сумма перевода: {{maxAmount}}.",
+      "minimumAmount": "Минимальная сумма перевода - {{minAmount}}.",
+      "zeroAmount": "Пожалуйста, введите ненулевую сумму"
     },
     "title": {
-      "deposit": "",
-      "onramp": "",
-      "transfer": ""
+      "deposit": "Введите сумму пополнения",
+      "onramp": "Введите сумму покупки",
+      "transfer": "Введите сумму перевода"
     }
   },
   "transferCanceledPage": {
@@ -960,14 +958,14 @@
     "defaultError": "Произошла неизвестная ошибка. Нажмите ниже, чтобы начать новый сеанс перевода."
   },
   "transferErrors": {
-    "failedToExecute": "",
-    "failedToPreview": "",
-    "mfaEmailFailed": "",
-    "mfaFaceFailed": "",
-    "mfaFailed": "",
-    "mfaPhoneFailed": "",
-    "mfaTotpFailed": "",
-    "mfaTradingPinFailed": ""
+    "failedToExecute": "Не удалось выполнить перевод",
+    "failedToPreview": "Не удалось выполнить предварительный просмотр перевода",
+    "mfaEmailFailed": "Неправильный код из электронной почты, пожалуйста, введите код еще раз",
+    "mfaFaceFailed": "Проверка не удалась, пожалуйста, попробуйте ещё раз",
+    "mfaFailed": "Неправильный код, пожалуйста, введите код еще раз",
+    "mfaPhoneFailed": "Неправильный код СМС, пожалуйста, введите код снова",
+    "mfaTotpFailed": "Неправильный код, пожалуйста, введите код еще раз",
+    "mfaTradingPinFailed": "Не проверить торговый пин, пожалуйста, введите код еще раз"
   },
   "transferFacePage": {
     "clickOpenApp": "Нажмите <1>Откройте приложение {{selectedIntegrationName}} </1>, чтобы открыть приложение и завершить верификацию лица.",
@@ -1069,7 +1067,7 @@
     "unknownError": "Произошла неизвестная ошибка. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Вернитесь к оформлению заказа, чтобы завершить покупку в {{clientName}}.",
+    "completePaymentMessage": "Вернитесь к странице оплаты, чтобы продолжить покупку {{clientName}}.",
     "continueMessage": "Пожалуйста, продолжите в приложении {{clientName}}.",
     "successMessage": "Вы успешно подтвердили право собственности на ваш кошелек {{walletName}}."
   },
