@@ -67,14 +67,14 @@
     "authApp": "Authenticator App",
     "email": "Email",
     "enabled": "Enabled",
-    "error": "",
+    "error": "Failed to bind MFA",
     "notEnabled": "Not enabled"
   },
   "browserContent": {
     "openButtom": "Open {{integrationName}}"
   },
   "catalogCell": {
-    "select": ""
+    "select": "Select {{integrationName}}, {{badge}}"
   },
   "catalogList": {
     "badges": {
@@ -123,7 +123,7 @@
     "title": "Choose subaccounts"
   },
   "common": {
-    "availableForTransfer": "Available for transfer",
+    "availableForTransfer": "Available",
     "cancel": "Cancel",
     "closeCap": "Close",
     "codeNotCorrent": "Provided code is not correct.",
@@ -139,7 +139,7 @@
     "somethingWentWrong": "Something went wrong...",
     "submitCap": "Submit",
     "successTitle": "Success!",
-    "termsOfUse": "By continuing you accept the <2>terms of use</2>.",
+    "termsOfUse": "By continuing you accept the <2>terms of use</2>",
     "tryAgain": "Try again"
   },
   "commonContent": {
@@ -203,7 +203,7 @@
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Awaiting confirmation from mobile app",
-    "clickOpenApp": "Click <1> Open {{selectedIntegrationName}} app</1> below",
+    "clickOpenApp": "Click <1> Open {{integrationName}} app</1> below",
     "confirmInApp": "Confirm in your {{integrationName}} mobile app that it’s really you trying to log in.",
     "confirmPrompt": "Confirm on the prompt to verify it’s you",
     "openApp": "Open {{integrationName}} app",
@@ -344,23 +344,23 @@
     "title": "Verification"
   },
   "fields": {
-    "apiKey": "",
-    "apiSecret": "",
-    "authToken": "authorization token",
-    "challengeCode": "challenge code",
-    "clientId": "",
-    "clientSecret": "",
-    "email": "",
-    "emailOrUsername": "",
+    "apiKey": "API key",
+    "apiSecret": "API secret",
+    "authToken": "Authorization token",
+    "challengeCode": "Challenge code",
+    "clientId": "Client Id",
+    "clientSecret": "Client Secret",
+    "email": "Email",
+    "emailOrUsername": "Email or username",
     "mfaCode": "MFA code",
-    "passphrase": "",
-    "password": "password",
-    "phone": "phone",
-    "privateKey": "",
-    "secretKey": "",
-    "tradePin": "trade pin",
-    "userId": "",
-    "username": "username"
+    "passphrase": "Passphrase",
+    "password": "Password",
+    "phone": "Phone number",
+    "privateKey": "Private key",
+    "secretKey": "Secret key",
+    "tradePin": "Trade pin",
+    "userId": "User ID",
+    "username": "Username"
   },
   "fullScreenSpinner": {
     "linking": "Linking your account...",
@@ -446,13 +446,13 @@
     "tempAccess": "I only want temporary access"
   },
   "getBrokerAccessTokenErrors": {
-    "add2FA": "",
-    "identityVerificationRequired": "",
-    "invalidCredentials": "",
-    "maximumApiKeyLimitExceeded": "",
-    "unsupportedCountryErrorMessage": "",
-    "wrongEmailCode": "",
-    "wrongTotpCode": ""
+    "add2FA": "Please connect 2FA application. And retry again.",
+    "identityVerificationRequired": "You need to complete identity verification in order to use the API key feature. Please complete identity verification to continue.",
+    "invalidCredentials": "Invalid credentials provided.",
+    "maximumApiKeyLimitExceeded": "Maximum allowed API key limitation reached. Please delete an unused key to continue.",
+    "unsupportedCountryErrorMessage": "We currently don’t support your account",
+    "wrongEmailCode": "Incorrect email code, please try again",
+    "wrongTotpCode": "Incorrect authentication code, please try again"
   },
   "handleExternalTransferPage": {
     "detailButton": "See what happened",
@@ -677,7 +677,7 @@
   "navHeader": {
     "close": "Close the modal",
     "goBack": "Go backwards",
-    "title": ""
+    "title": "Pay with crypto"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
@@ -906,19 +906,19 @@
   },
   "transferAmountPage": {
     "buttonTitle": {
-      "deposit": "",
-      "onramp": "",
-      "transfer": ""
+      "deposit": "Preview deposit",
+      "onramp": "Preview purchase",
+      "transfer": "Preview transfer"
     },
     "errorMessage": {
-      "insufficientFunds": "",
-      "minimumAmount": "",
-      "zeroAmount": ""
+      "insufficientFunds": "Insufficient funds to cover transfer and gas fees. Maximum transfer amount is {{maxAmount}}.",
+      "minimumAmount": "Minimum transfer amount is {{minAmount}}.",
+      "zeroAmount": "Please enter a non-zero amount"
     },
     "title": {
-      "deposit": "",
-      "onramp": "",
-      "transfer": ""
+      "deposit": "Enter deposit amount",
+      "onramp": "Enter purchase amount",
+      "transfer": "Enter transfer amount"
     }
   },
   "transferCanceledPage": {
@@ -958,14 +958,14 @@
     "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
   },
   "transferErrors": {
-    "failedToExecute": "",
-    "failedToPreview": "",
-    "mfaEmailFailed": "",
-    "mfaFaceFailed": "",
-    "mfaFailed": "",
-    "mfaPhoneFailed": "",
-    "mfaTotpFailed": "",
-    "mfaTradingPinFailed": ""
+    "failedToExecute": "Failed to execute a transfer",
+    "failedToPreview": "Failed to preview a transfer",
+    "mfaEmailFailed": "Wrong code from the email, please enter the code again",
+    "mfaFaceFailed": "Verification failed, please try again",
+    "mfaFailed": "Wrong code, please enter the code again",
+    "mfaPhoneFailed": "Wrong sms code, please enter the code again",
+    "mfaTotpFailed": "Wrong TOTP code, please enter the code again",
+    "mfaTradingPinFailed": "MFA trading pin failed, please enter the code again"
   },
   "transferFacePage": {
     "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
