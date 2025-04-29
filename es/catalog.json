@@ -281,40 +281,40 @@
   },
   "emailVerificationPage": {
     "emailRecievedLoading": "Email recibido. Procesando...",
-    "expiredError": "El correo electrónico de aprobación ha caducado. Por favor, vuelve atrás e inténtalo de nuevo.",
+    "expiredError": "El correo electrónico de aprobación ha caducado. Por favor, regresa e inténtalo de nuevo.",
     "forwardingEmail": "Reenviando email",
     "sendEmailButton": "He enviado el correo electrónico",
     "steps": {
-      "checkInbox": "Revisa tu bandeja de entrada para confirmar que inicias sesión desde un nuevo dispositivo.",
-      "doNotClick": "<0>NOT</0> haz clic en el botón de confirmación en el correo electrónico.",
-      "forwardEmail": "Reenviar el correo electrónico a esta bandeja de entrada segura que se confirmará automáticamente para que coincida con la solicitud de acceso."
+      "checkInbox": "Revisa tu bandeja de entrada para confirmar que inicias sesión desde un dispositivo nuevo.",
+      "doNotClick": "<0>NO</0> haga clic en el botón de confirmación en el correo electrónico.",
+      "forwardEmail": "Reenvía el correo electrónico a esta bandeja de entrada segura que confirmará automáticamente para que coincida con la solicitud de acceso."
     },
-    "stillWaitingLoading": "Esperando por email...",
+    "stillWaitingLoading": "Esperando por el correo electrónico...",
     "title": "Confirma tu identidad",
-    "warningTitle": "Lea todo este mensaje antes de continuar."
+    "warningTitle": "Lee todo el mensaje antes de continuar."
   },
   "errorMessages": {
     "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
     "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
     "balanceNotEnough": "Saldo insuficiente.",
     "default": "Ha ocurrido un error.",
-    "emptyWalletBalance": "El saldo del monedero de origen está vacío.",
-    "failedToGetFundingOptions": "No se pudo obtener las opciones de financiamiento",
-    "failedToSaveFundingOptions": "No se pudo guardar las opciones de financiamiento",
-    "feeAssetBalanceNotEnough": "Fondos insuficientes para las tarifas de transferencia.",
+    "emptyWalletBalance": "El saldo de tu cartera de origen está vacío.",
+    "failedToGetFundingOptions": "No se pudo obtener las opciones de fondeo",
+    "failedToSaveFundingOptions": "No se pudo guardar las opciones de fondeo",
+    "feeAssetBalanceNotEnough": "Fondos insuficientes para los costos de transferencia.",
     "fromAccountNotSupported": "La cuenta actualmente no admite retiros de criptomonedas.",
-    "integrationNotAvailable": "La integración no está disponible actualmente.",
-    "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación KYC antes de habilitar transferencias de criptomonedas.",
+    "integrationNotAvailable": "La integración no está disponible.",
+    "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación de identidad personal antes de habilitar transferencias de criptomonedas.",
     "locked": "Su cuenta está bloqueada",
     "networkDisabled": "La red está actualmente deshabilitada y no se puede usar.",
     "previewExpired": "La vista previa ha expirado.",
     "symbolNotSupported": "El símbolo no es compatible con la integración.",
-    "symbolNotSupportedBySource": "El símbolo para transferir no es compatible con la billetera de origen en la red solicitada.",
+    "symbolNotSupportedBySource": "El símbolo para transferir no es compatible con la cartera de origen en la red solicitada.",
     "symbolNotSupportedByTarget": "No se pudo encontrar la dirección de depósito para la moneda solicitada.",
     "toAccountNotSupported": "La cuenta de destino no admite actualmente depósitos de criptomonedas.",
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
-    "transferAlreadyRequested": "La transferencia ya está solicitada.",
-    "withdrawalLocked": "Por su seguridad, los retiros están deshabilitados por 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtelo más tarde."
+    "transferAlreadyRequested": "La transferencia ya fue solicitada.",
+    "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde."
   },
   "errorPage": {
     "title": "Ha ocurrido un error."
@@ -392,37 +392,37 @@
   "fundingMethodFees": {
     "fee": {
       "conversion": "{{integrationName}} {{conversionFromCurrency}} a {{conversionToCurrency}} Comisión de Conversión",
-      "deposit": "Tarifa de depósito {{integrationName}}",
-      "purchase": "{{integrationName}} {{fiatSymbol}} a {{cryptocurrencySymbol}} Compra",
-      "withdrawal": "Tarifa de retirada {{integrationName}}"
+      "deposit": "Comisión de depósito {{integrationName}}",
+      "purchase": "{{integrationName}} {{fiatSymbol}} a {{cryptocurrencySymbol}} Comisión de Compra",
+      "withdrawal": "Comisión por retiro desde {{integrationName}}"
     },
     "info": {
       "conversion": "La comisión que {{integrationName}} cobrará para convertir tu {{conversionFromSymbol}} en {{conversionToSymbol}}.",
       "purchase": "La comisión que {{integrationName}} cobrará por facilitar tu compra de {{symbol}}.",
-      "withdrawal": "La comisión que cargará {{integrationName}} para facilitar tu transferencia fuera de {{symbol}}."
+      "withdrawal": "La comisión que {{integrationName}} cobrará para facilitar tu transferencia de {{symbol}}."
     }
   },
   "fundingMethodsList": {
-    "buyingPower": "Potencia de compra",
-    "cryptocurrencyBalance": "Saldo {{symbol}}",
-    "noneSelected": "ninguno seleccionado",
-    "paymentMethodDepositUsage": "Método de pago vinculado",
-    "stablecoinConversion": "Conversión de estables",
+    "buyingPower": "Capacidad de compra",
+    "cryptocurrencyBalance": "Saldo en {{symbol}}",
+    "noneSelected": "no se ha seleccionado",
+    "paymentMethodDepositUsage": "Forma de pago vinculada",
+    "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}} no soporta el uso de este método de financiación para comprar {{assetName}}.",
-    "coveredByExistingCryptocurrencyBalance": "Ya tienes suficiente saldo {{assetName}} para esta compra sin necesidad de métodos de financiación adicionales.",
-    "coveredByOtherFundingOptions": "Este método de financiación no está soportado para esta transacción.",
-    "currencyNotSupported": "Aún no se admite la compra de criptomonedas con un método de financiación que no sea USD.",
-    "depositAmountLimitExceeded": "Esta compra superaría el límite máximo de depósito de {{integrationName}}en 1 día para este método de fondos.",
-    "depositCountLimitReached": "Este método de financiación ya ha alcanzado el número máximo de depósitos de {{integrationName}}en 1 día.",
-    "depositsNotSupported": "Este método de financiación no está soportado para esta transacción.",
-    "instantDepositLimitExceeded": "El límite de depósitos instantáneos de este método de financiación es insuficiente para esta compra",
-    "instantDepositsNotSupported": "Este método de financiación no soporta depósitos instantáneos, por lo que no puede ser utilizado para esta compra.",
-    "insufficientBalance": "Saldo insuficiente para financiar esta compra.",
-    "maximumDepositLimitViolated": "La cantidad está por encima del límite máximo de depósito de este método de financiación.",
+    "buyingPowerUsageNotSupported": "{{integrationName}} no soporta el uso de esta forma de pago para comprar {{assetName}}.",
+    "coveredByExistingCryptocurrencyBalance": "Tienes suficiente saldo en {{assetName}} para esta compra sin necesidad de utilizar otras formas de pago adicionales.",
+    "coveredByOtherFundingOptions": "No está disponible la forma de pago para esta transacción.",
+    "currencyNotSupported": "Aún no se admite la compra de criptomonedas con una forma de pago que no sea basado en USD.",
+    "depositAmountLimitExceeded": "La compra superaría tu límite máximo de depósito de {{integrationName}} para el día de hoy con esta forma de pago.",
+    "depositCountLimitReached": "Esta forma de pago ya ha alcanzado el número máximo de depósito de {{integrationName}} el día de hoy.",
+    "depositsNotSupported": "Esta forma de pago no está habilitada para esta transacción.",
+    "instantDepositLimitExceeded": "El límite de depósitos instantáneos para esta forma de pago es insuficiente para la compra",
+    "instantDepositsNotSupported": "Esa forma de pago no soporta depósitos instantáneos, por lo que no puede ser utilizada para esta compra.",
+    "insufficientBalance": "Saldo insuficiente para realizar esta compra.",
+    "maximumDepositLimitViolated": "La cantidad está por encima del límite máximo de depósito de ésta forma de pago.",
     "minimumDepositLimitViolated": "La cantidad está por debajo del límite mínimo de depósito de este método de financiación.",
     "paymentMethodTypeNotSupported": "Este método de financiación aún no está soportado.",
     "unknown": "Esta opción de financiación no está disponible."
