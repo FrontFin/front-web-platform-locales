@@ -393,7 +393,7 @@
   },
   "fundingMethodFees": {
     "fee": {
-      "conversion": "{{integrationName}} {{conversionFromCurrency}} a {{conversionToCurrency}} Comisión de Conversión",
+      "conversion": "Comisión de Conversión de {{integrationName}} {{conversionFromCurrency}} a {{conversionToCurrency}} ",
       "deposit": "Comisión de depósito {{integrationName}}",
       "purchase": "{{integrationName}} {{fiatSymbol}} a {{cryptocurrencySymbol}} Comisión de Compra",
       "withdrawal": "Comisión por retiro desde {{integrationName}}"
@@ -442,7 +442,7 @@
     "changePreferredToken": "Cambiar el token preferido",
     "cryptoConversion": "Cambio de criptomonedas",
     "description": "Total: {{amount}} ~ {{amountInFiat}}",
-    "instantCashAvailable": "(Dinero instantáneo disponible: {{amountInFiat}})",
+    "instantCashAvailable": "(Dinero inmediato disponible: {{amountInFiat}})",
     "linkedPaymentMethods": "Formas de pago vinculadas",
     "noPaymentMethods": "No hay formas de pago vinculadas.",
     "noTokensAvailableForConversion": "No hay tokens disponibles para la conversión",
@@ -456,25 +456,25 @@
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Aprobar el pago",
     "cancel": "Cancelar",
-    "description": "Las tasas de gas son superiores a las estimaciones originales.",
-    "ifDontComplete": "Si no completas el pago, el saldo de {{token}} permanecerá en tu cuenta de {{selectedIntegrationName}}.",
+    "description": "Las comisiones de la red son superiores a las estimaciones originales.",
+    "ifDontComplete": "Si no completas el pago, tu saldo en {{token}} permanecerá en tu cuenta de {{selectedIntegrationName}}.",
     "newEstimate": "Nueva estimación",
     "originalEstimate": "Estimación original",
-    "title": "Actualizar cuota de gas"
+    "title": "Actualización de la comisión de red"
   },
   "generateKeyPage": {
     "establishedInClient": "Has establecido con éxito actualizaciones ininterrumpidas en<1></1><2>{{clientName}}</2>.",
     "establishedInThisApp": "Ha establecido con éxito actualizaciones ininterrumpidas en<1></1><2>esta aplicación</2>.",
     "linkedToInClient": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>{{clientName}}</5>.",
     "linkedToThisApp": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>esta aplicación</5>.",
-    "nextStep": "A continuación crearemos una clave para <2>actualizaciones ininterrumpidas</2> para que no tenga que volver a iniciar sesión",
+    "nextStep": "A continuación crearemos una llave para <2>actualizaciones ininterrumpidas</2> para que no tenga que volver a iniciar sesión",
     "tempAccess": "Sólo quiero acceso temporal"
   },
   "getBrokerAccessTokenErrors": {
     "add2FA": "Por favor, conecta la aplicación para 2FA. E intenta de nuevo.",
-    "identityVerificationRequired": "Necesitas completar la verificación de identidad para usar la función de clave API. Por favor, completa la verificación de identidad para continuar.",
-    "invalidCredentials": "Credenciales inválidas proporcionadas.",
-    "maximumApiKeyLimitExceeded": "Se alcanzó la limitación máxima permitida para la clave API. Por favor, elimina una clave no utilizada para continuar.",
+    "identityVerificationRequired": "Necesitas completar la verificación de identidad para usar la función de llaves de API. Por favor, completa la verificación de identidad para continuar.",
+    "invalidCredentials": "Las credenciales proporcionadas son inválidas.",
+    "maximumApiKeyLimitExceeded": "Se alcanzó la limitación máxima permitida para la llave del API. Por favor, elimina una llave no utilizada para continuar.",
     "unsupportedCountryErrorMessage": "Actualmente no soportamos tu cuenta",
     "wrongEmailCode": "Código de correo electrónico incorrecto, por favor intenta de nuevo",
     "wrongTotpCode": "Código de autenticación incorrecto, por favor intenta de nuevo"
@@ -483,8 +483,8 @@
     "detailButton": "Ver lo que sucedió",
     "error": "Error al ejecutar la transferencia",
     "loadingLabel": "Validando tu transferencia...",
-    "networkConfirmations": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red.",
-    "notInitiatedUntilApproved": "Esta transferencia no se iniciará hasta que sea aprobada en {{selectedIntegrationName}}.",
+    "networkConfirmations": "Las transferencias no se completan hasta que se hayan recibido las suficientes confirmaciones de red.",
+    "notInitiatedUntilApproved": "La transferencia no se iniciará hasta que sea aprobada en {{selectedIntegrationName}}.",
     "recievedDetails": "Recibirás <1>{{amountStr}}</1> en {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Tu solicitud de transferencia a {{destination}} ha sido recibida por {{selectedIntegrationName}}",
     "revolutApproveInfo": "Esta transferencia no se iniciará hasta que sea aprobada en la aplicación Revolut",
