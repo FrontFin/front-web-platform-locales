@@ -599,8 +599,8 @@
     "clientVerifyLabel": "{{clientName}} debe verificar su cartera",
     "clientVerifyText": "Se te pedirá que firmes un mensaje en tu dispositivo Ledger que confirma que eres dueño de esta cartera.",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu monedero.",
-    "title": "¡Casi está ahí!"
+    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con cartera.",
+    "title": "¡Ya casi!"
   },
   "ledgerError": {
     "incorrectAppError": "La aplicación incorrecta está abierta en tu dispositivo. Por favor, abre la aplicación correcta e inténtalo de nuevo.",
@@ -609,20 +609,20 @@
     "notSelectedError": "Ninguna aplicación seleccionada. Por favor, seleccione una aplicación e inténtelo de nuevo.",
     "rejectError": "El usuario ha rechazado la operación. Por favor, inténtelo de nuevo.",
     "title": "Conexión fallida",
-    "transportError": "Se ha producido un error de transporte con su dispositivo Ledger.",
-    "transportLockedError": "El transporte está bloqueado. Por favor, desbloquea tu dispositivo e inténtalo de nuevo.",
+    "transportError": "Se ha producido un error de conexión con su dispositivo Ledger.",
+    "transportLockedError": "La conexión está bloqueado. Por favor, desbloquea tu dispositivo e inténtalo de nuevo.",
     "unexpectedError": "Se ha producido un error inesperado.",
     "unknownError": "Se ha producido un error desconocido con su dispositivo Ledger."
   },
   "ledgerOpenApp": {
-    "title": "Abre la aplicación {{network}} en tu dispositivo"
+    "title": "Abre la aplicación de {{network}} en tu dispositivo"
   },
   "ledgerSignError": {
     "body": "Has rechazado la solicitud para verificar tu cartera.",
     "title": "Error de verificación"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Nota: Para XRP, verá una transacción tonta con valores mínimos. Esto es sólo para verificar su cartera y no costará nada ni enviará fondos.",
+    "rippleBody": "Nota: Para XRP, verá una transacción de prueba con valores mínimos. Esto es sólo para verificar su cartera y no se cobrará nada ni se enviarán fondos.",
     "title": "Revisar y firmar el mensaje en tu dispositivo"
   },
   "ledgerUSB": {
@@ -630,7 +630,7 @@
     "step2": "Siga las instrucciones en la ventana USB y en su dispositivo Ledger para completar la conexión"
   },
   "loginDeviceVerifiedPage": {
-    "loginButton": "Ir a Login",
+    "loginButton": "Ir al inicio de sesión",
     "subtitle": "Proceder a iniciar sesión.",
     "title": "Tu dispositivo está aprobado."
   },
@@ -639,21 +639,21 @@
   },
   "mfaHint": {
     "email": "Revisa tu email",
-    "phone": "Revisa tu teléfono para un mensaje SMS",
+    "phone": "Busca en tu teléfono un mensaje SMS",
     "sandbox": "Pista: {{hint}}",
-    "totp": "Compruebe su aplicación de autenticación"
+    "totp": "Revise su aplicación de autenticación"
   },
   "mfaInstructionsText": {
-    "email": "Introduce el código único que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
-    "paymentFlow": "Introduce tu código de una sola vez para confirmar que realmente inicias este pago.",
-    "phone": "Introduce el código único que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
-    "totp": "Introduzca el código de una sola vez proporcionado por la aplicación de autenticador que ha vinculado a <1>{{selectedIntegrationName}}</1>.",
+    "email": "Introduzca el código que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
+    "paymentFlow": "Introduce tu código para confirmar tu identidad.",
+    "phone": "Introduce el código que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
+    "totp": "Introduzca el código proporcionado por la aplicación del autenticador que ha vinculado a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Introduce el código PIN asociado a tu cuenta <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Introduce tu código de una sola vez para confirmar que realmente inicias esta transferencia.",
+    "transferFlow": "Introduce tu código para confirmar tu identidad.",
     "twoFactor": "Introduzca el código proporcionado por el método de autenticación de dos factores que ha configurado en su cuenta <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
-    "enterCode": "Introduce tu código de una sola vez para confirmarlo<1></1>realmente intentas iniciar sesión.",
+    "enterCode": "Introduce tu código para confirmar tu identidad al iniciar sesión.",
     "enterPin": "Introduce tu PIN de trading",
     "title": "Verificación",
     "verify": "Verificar"
@@ -1062,31 +1062,31 @@
   "trezorDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} debe verificar su cartera",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "El firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu monedero.",
+    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con cartera.",
     "signText": "Se te pedirá que firmes un mensaje en tu dispositivo Trezor que confirma que eres propietario de esta cartera.",
-    "title": "¡Casi está ahí!",
+    "title": "¡Ya casi!",
     "verifyingLabel": "Verificando tu cartera..."
   },
   "trezorError": {
-    "connectionDeclinedBody": "Has rechazado la solicitud para conectar tu billetera, o una solicitud anterior sigue activa.",
+    "connectionDeclinedBody": "Has rechazado la solicitud para conectar tu cartera, o una solicitud anterior sigue activa.",
     "connectionDeclinedTitle": "Conexión rechazada",
-    "signatureDeclinedBody": "Has rechazado la solicitud de firma en tu billetera, o una solicitud anterior sigue activa.",
+    "signatureDeclinedBody": "Has rechazado la solicitud de firma en tu cartera, o una solicitud anterior sigue activa.",
     "signatureDeclinedTitle": "Firma rechazada"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}} debe verificar su cartera",
+    "clientVerifyLabel": "{{clientName}} debe verificar tu cartera",
     "clientVerifyText": "Serás transferido de forma segura a tu Trezor para firmar un mensaje en tu dispositivo que te confirme que eres dueño de tu cartera.",
     "connectingLabel": "Conectando tu cartera...",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu monedero."
+    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu cartera."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} le gustaría que verifiques la propiedad de la dirección <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Esa dirección no está asociada con la billetera conectada. Por favor, conecta otra billetera.",
+    "body": "{{clientName}} necesita que verifiques la propiedad de la dirección en <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Esa dirección no está asociada con la billetera conectada. Por favor, conecta otra billetera.",
     "connectAnotherAction": "Conectar otra cartera",
     "title": "Uh oh!"
   },
   "verifyError": {
-    "body": "No se puede verificar su cartera de hardware. Por favor, asegúrese de que ha seleccionado la red correcta e ingresó la dirección correcta del monedero.",
+    "body": "No se puede verificar su cartera de hardware. Por favor, asegúrese de que ha seleccionado la red correcta e ingresó la dirección correcta.",
     "title": "Error de verificación"
   },
   "verifyErrorPage": {
@@ -1094,17 +1094,17 @@
     "title": "Verificación rechazada"
   },
   "wallectConnect": {
-    "noActiveSessionError": "Ninguna sesión activa WalletConnect",
+    "noActiveSessionError": "Ninguna sesión activa de WalletConnect",
     "transactionHashError": "No se pudo obtener el hash de la transacción",
     "unknownError": "Se ha producido un error desconocido. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Regresa a tu experiencia de pago para completar tu compra con {{clientName}}.",
-    "continueMessage": "Por favor, continúa en tu aplicación {{clientName}}.",
-    "successMessage": "Has verificado con éxito la propiedad de tu billetera {{walletName}}."
+    "completePaymentMessage": "Regresa a tu proceso de pago para completar tu compra con {{clientName}}.",
+    "continueMessage": "Por favor, continúa en tu aplicación de {{clientName}}.",
+    "successMessage": "Has verificado con éxito la propiedad de tu cartera {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
     "another": "Transferir desde otra cuenta",
-    "title": "Las retiradas están desactivadas tempranamente"
+    "title": "Los retiros están deshabilitados temporalmente"
   }
 }
