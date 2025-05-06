@@ -15,17 +15,19 @@ jobs:
     env:
       BASE_BRANCH: master
       PR_BRANCH: update-translations
+      REPOSITORY: FrontFin/front-web-platform
     steps:
       - uses: actions/create-github-app-token@v2
         id: app
         with:
           app-id: ${{ vars.APP_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          repositories: ${{ env.REPOSITORY }}
 
       - uses: actions/checkout@v4
         id: checkout
         with:
-          repository: 'FrontFin/front-web-platform'
+          repository: ${{ env.REPOSITORY }}
           token: ${{ steps.app.outputs.token }}
           submodules: true
           ref: ${{ env.BASE_BRANCH }}
