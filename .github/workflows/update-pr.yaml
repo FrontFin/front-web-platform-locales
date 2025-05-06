@@ -28,6 +28,7 @@ jobs:
           repository: 'FrontFin/front-web-platform'
           token: ${{ steps.app.outputs.token }}
           submodules: true
+          ref: ${{ env.BASE_BRANCH }}
 
       - name: Setup git config
         uses: qoomon/actions--setup-git@v1
