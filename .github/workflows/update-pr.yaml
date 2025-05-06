@@ -1,0 +1,62 @@
+name: Update PR in front-web-platform
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  automatic-pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      BASE_BRANCH: master
+      PR_BRANCH: update-translations
+    steps:
+      - uses: actions/create-github-app-token@v2
+        id: app
+        with:
+          app-id: ${{ vars.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - uses: actions/checkout@v4
+        id: checkout
+        with:
+          repository: 'FrontFin/front-web-platform'
+          token: ${{ steps.app.outputs.token }}
+          submodules: true
+
+      - name: Setup git config
+        uses: qoomon/actions--setup-git@v1
+        with:
+          user: GitHub Actions <noreply@github.com>
+
+      - name: Cloning repo and get latest version
+        run: |
+          git checkout -b "${{ env.PR_BRANCH }}"
+          git submodule update --init --recursive
+          git add .
+          git commit -m "Update translations"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ steps.app.outputs.token }}
+          branch: '${{ env.PR_BRANCH }}'
+          force: true
+
+      - name: Create pull request
+        id: create-pr
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.app.outputs.token }}
+          branch: '${{ env.PR_BRANCH }}'
+          base: ${{ env.BASE_BRANCH }}
+          title: 'Automatic PR: Update translations'
+          body: >
+            This automatically created Pull Request includes the latest changes for the translations.
+          team-reviewers: '@FrontFin/frontend'
