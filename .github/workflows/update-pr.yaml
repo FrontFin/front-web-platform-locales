@@ -16,6 +16,7 @@ jobs:
       BASE_BRANCH: master
       PR_BRANCH: update-translations
       REPOSITORY: front-web-platform
+      REPOSITORY_FULL: FrontFin/front-web-platform
     steps:
       - uses: actions/create-github-app-token@v2
         id: app
@@ -27,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
         id: checkout
         with:
-          repository: ${{ env.REPOSITORY }}
+          repository: ${{ env.REPOSITORY_FULL }}
           token: ${{ steps.app.outputs.token }}
           submodules: true
           ref: ${{ env.BASE_BRANCH }}
