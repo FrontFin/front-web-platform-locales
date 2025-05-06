@@ -48,13 +48,7 @@ jobs:
           cd ../../../
           git add .
           git commit -m "Update translations"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ steps.app.outputs.token }}
-          branch: '${{ env.PR_BRANCH }}'
-          force: true
+          git push origin "${{ env.PR_BRANCH }}" --force
 
       - name: Create pull request
         id: create-pr
