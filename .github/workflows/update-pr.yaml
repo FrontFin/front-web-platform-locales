@@ -40,8 +40,8 @@ jobs:
 
       - name: Get latest version of translations
         run: |
-          git branch -D "${{ env.PR_BRANCH }}" &>/dev/null
-          git branch -D "remotes/origin/${{ env.PR_BRANCH }}" &>/dev/null
+          git branch -D "${{ env.PR_BRANCH }}" 2>/dev/null || true
+          git branch -D "remotes/origin/${{ env.PR_BRANCH }}" 2>/dev/null || true
           git checkout -b "${{ env.PR_BRANCH }}"
           cd ./packages/localization/locales
           git checkout main
