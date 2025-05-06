@@ -38,13 +38,12 @@ jobs:
         with:
           user: GitHub Actions <noreply@github.com>
 
-      - name: Cloning repo and get latest version
+      - name: Get latest version of translations
         run: |
+          git branch -D "${{ env.PR_BRANCH }}"
           git checkout -b "${{ env.PR_BRANCH }}"
-          git submodule update --init --recursive
           cd ./packages/localization/locales
           git checkout main
-          git pull
           cd ../../../
           git add .
           git commit -m "Update translations"
