@@ -86,7 +86,8 @@
     "paymentTitle": "Выберите платёжный аккаунт",
     "prodOnly": "Только продакшен",
     "search": "поиск",
-    "title": "Выберите учетную запись для подключения"
+    "title": "Выберите учетную запись для подключения",
+    "title40": "Подключить биржу или электронный кошелек"
   },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
@@ -146,7 +147,8 @@
     "description": "облегчит безопасное соединение с {{integrationName}}.",
     "monitoring": "Ждём подтверждения...",
     "resend": "Повторно отправить запрос на подключение",
-    "title": "Подтвердите запрос на <1></1> подключение в вашем кошельке"
+    "title": "Подтвердите запрос на <1></1> подключение в вашем кошельке",
+    "title40": "Подтвердите запрос на подключение в вашем<1></1> приложении {{walletName}}."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Следуйте инструкциям на вашем компьютере, чтобы подключить {{selectedIntegrationName}}",
@@ -314,7 +316,12 @@
     "toAccountNotSupported": "На данный момент учетная запись не поддерживает депозиты криптовалюты.",
     "tooManyRequests": "Пожалуйста, повторите попытку позже.",
     "transferAlreadyRequested": "Перевод уже запрошен.",
-    "withdrawalLocked": "Для вашей безопасности вывод средств отключён на 24 часа после изменения настроек аккаунта. Пожалуйста, попробуйте позже."
+    "withdrawalLocked": "Для вашей безопасности вывод средств отключён на 24 часа после изменения настроек аккаунта. Пожалуйста, попробуйте позже.",
+    "twoFaRequired": "Для продолжения требуется двухфакторная аутентификация.",
+    "passKeyNotSupported": "Ключ доступа в данный момент не поддерживается, пожалуйста, отключите его, чтобы продолжить.",
+    "satoshiTestRequired": "Coinbase API не поддерживает переводы свыше 1000 евро из-за ограничений правила путешествий. Пожалуйста, попробуйте снова с меньшей суммой.",
+    "coinbaseUnavailable": "Произошла ошибка на Coinbase. Проверьте свой аккаунт, чтобы узнать, проведён ли перевод.",
+    "binanceTravelRuleRestriction": "Binance не поддерживает переводы на адрес получателя из-за ограничений правила путешествий."
   },
   "errorPage": {
     "title": "Произошла ошибка."
@@ -504,12 +511,12 @@
     "insufficientBalance": "Недостаточный баланс",
     "insufficientBalanceDescription": "Ваш баланс в {{currentBalance}} меньше, чем минимальный для этого перевода.",
     "notEligible": "Не подходит для этого перевода",
-    "notEligibleDescription": "{{clientName}} не принимает {{symbol}}, или для этого перевода не указан {{network}} адрес.",
+    "notEligibleDescription": "{{symbol}} не принят для этого перевода.",
     "notSupportedByInstitution": "В настоящее время не поддерживается {{integrationName}}",
     "notSupportedForTransferBySource": "Не поддерживается {{integrationName}}",
-    "nyCoinbaseUserRestrictions": "{{clientName}} не принимает {{symbol}} на {{network}} из-за ограничений поддержки в нескольких цепочках NY.",
+    "nyCoinbaseUserRestrictions": "{{symbol}} на {{network}} не принят для этого перевода из-за ограничений поддержки многоцепочной сети в Нью-Йорке.",
     "symbolDoesNotMatch": "Не поддерживается {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{clientName}} не принимает {{symbol}}, или для этого перевода не указан {{symbol}} адрес."
+    "symbolDoesNotMatchDescription": "{{symbol}} не принят для этого перевода."
   },
   "initialLedgerScreen": {
     "title": "Включите  и разблокируйте устройство"
@@ -519,6 +526,13 @@
     "clientNameAccountTitle": "{{clientName}} безопасно подключит ваш аккаунт",
     "clientNameWalletTitle": "{{clientName}} безопасно подключит ваш кошелек",
     "walletTitle": "Это приложение безопасно подключит ваш кошелек"
+  },
+  "deFiWalletInitialPage": {
+    "title": "Подключить ваш электронный кошелек",
+    "subtitle": "Нажмите ниже, чтобы открыть {{walletName}}. Затем одобрите запрос на подключение, чтобы просмотреть ваш платеж.",
+    "continue": "Перейти к {{walletName}}",
+    "previewTitle": "Подключить аккаунт",
+    "previewButton": "Подключить"
   },
   "initialSteps": {
     "agreement": "Выбрав \"Продолжить\", вы соглашаетесь с <1></1><2>Пользовательскими условиями пользования</2>",

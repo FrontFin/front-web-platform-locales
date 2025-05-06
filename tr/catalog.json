@@ -86,7 +86,8 @@
     "paymentTitle": "Ödeme hesabını seçin",
     "prodOnly": "Sadece üretim",
     "search": "arama",
-    "title": "Bağlantı yapmak için hesabınızı seçin"
+    "title": "Bağlantı yapmak için hesabınızı seçin",
+    "title40": "Borsa veya cüzdanı bağlayın"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
@@ -146,7 +147,8 @@
     "description": "{{integrationName}} ile güvenli bağlantıyı sağlamak için kolaylık sağlar.",
     "monitoring": "Onay için izleme...",
     "resend": "Bağlantı isteğini yeniden gönder",
-    "title": "Cüzdanınızda bağlantı isteğini<1></1> onaylayın"
+    "title": "Cüzdanınızda bağlantı isteğini<1></1> onaylayın",
+    "title40": "Bağlantı isteğini, {{walletName}} uygulamanızda onaylayın."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Masasüstünüzdeki talimatları izleyerek {{selectedIntegrationName}}'i bağlayın",
@@ -314,7 +316,12 @@
     "toAccountNotSupported": "Hedef hesap şu anda kripto para yatırımlarını desteklemiyor.",
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",
-    "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin."
+    "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
+    "twoFaRequired": "Devam etmek için iki faktörlü kimlik doğrulama gereklidir.",
+    "passKeyNotSupported": "Şu anda anahtar desteklenmemektedir, lütfen devre dışı bırakın.",
+    "satoshiTestRequired": "Coinbase API'si, seyahat kuralı kısıtlamaları nedeniyle 1000 Euro'dan fazla transferi desteklememektedir. Lütfen daha düşük bir miktarla yeniden deneyin.",
+    "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
+    "binanceTravelRuleRestriction": "Binance, seyahat kuralı kısıtlamaları nedeniyle hedef adrese transferleri desteklememektedir."
   },
   "errorPage": {
     "title": "Bir hata oluştu."
@@ -504,12 +511,12 @@
     "insufficientBalance": "Yetersiz bakiye",
     "insufficientBalanceDescription": "Bu transfer için minimumdan daha az {{currentBalance}} bakiyeniz var.",
     "notEligible": "Bu transfer için uygun değil",
-    "notEligibleDescription": "{{clientName}}, {{symbol}} kabul etmez veya bu transfer için {{network}} adresi sağlanmamıştır.",
+    "notEligibleDescription": "{{symbol}} bu transfer için kabul edilmedi.",
     "notSupportedByInstitution": "Şu anda {{integrationName}} tarafından desteklenmiyor",
     "notSupportedForTransferBySource": "{{integrationName}} tarafından desteklenmiyor",
-    "nyCoinbaseUserRestrictions": "NY çoklu zincir desteği kısıtlamaları nedeniyle, {{clientName}} {{network}} üzerinde {{symbol}} kabul etmez.",
+    "nyCoinbaseUserRestrictions": "NY multi-zincir destek sınırlamaları nedeniyle {{network}} üzerindeki {{symbol}} bu transfer için kabul edilmedi.",
     "symbolDoesNotMatch": "{{clientName}} tarafından desteklenmiyor",
-    "symbolDoesNotMatchDescription": "{{clientName}}, {{symbol}} kabul etmez veya bu transfer için {{symbol}} adresi sağlanmamıştır."
+    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi."
   },
   "initialLedgerScreen": {
     "title": "Cihazınızı açın ve kilidini açın"
@@ -519,6 +526,13 @@
     "clientNameAccountTitle": "{{clientName}} hesabınıza güvenli bir şekilde bağlanacaktır",
     "clientNameWalletTitle": "{{clientName}} cüzdanınıza güvenli bir şekilde bağlanacaktır",
     "walletTitle": "Bu uygulama cüzdanınıza güvenli bir şekilde bağlanacaktır"
+  },
+  "deFiWalletInitialPage": {
+    "title": "Cüzdanınızı bağlayın",
+    "subtitle": "{{walletName}}'i açmak için aşağıya tıklayın. Ardından ödeme önizlemesi yapmak için bağlantı isteğini onaylayın.",
+    "continue": "{{walletName}}'e devam edin",
+    "previewTitle": "Hesabı bağlayın",
+    "previewButton": "Bağla"
   },
   "initialSteps": {
     "agreement": "“Devam Et”i seçerek, <1></1><2>Sonuç Kullanıcı Şartları ve Koşulları</2> kabul etmiş olursunuz",
