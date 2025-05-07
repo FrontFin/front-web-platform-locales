@@ -67,14 +67,10 @@
     "authApp": "Authenticator App",
     "email": "Email",
     "enabled": "Enabled",
-    "error": "Failed to bind MFA",
     "notEnabled": "Not enabled"
   },
   "browserContent": {
     "openButtom": "Open {{integrationName}}"
-  },
-  "catalogCell": {
-    "select": "Select {{integrationName}}, {{badge}}"
   },
   "catalogList": {
     "badges": {
@@ -86,8 +82,7 @@
     "paymentTitle": "Select payment account",
     "prodOnly": "Production only",
     "search": "search",
-    "title": "Select account to link",
-    "title40": "Connect exchange or wallet"
+    "title": "Select account to link"
   },
   "catalogTile": {
     "select": "Select {{integrationName}}, {{badge}}"
@@ -124,7 +119,7 @@
     "title": "Choose subaccounts"
   },
   "common": {
-    "availableForTransfer": "Available",
+    "availableForTransfer": "Available for transfer",
     "cancel": "Cancel",
     "closeCap": "Close",
     "codeNotCorrent": "Provided code is not correct.",
@@ -140,15 +135,13 @@
     "somethingWentWrong": "Something went wrong...",
     "submitCap": "Submit",
     "successTitle": "Success!",
-    "termsOfUse": "By continuing you accept the\u00a0<2>terms of use</2>",
     "tryAgain": "Try again"
   },
   "commonContent": {
     "description": "will facilitate the secure connection with {{integrationName}}.",
     "monitoring": "Monitoring for approval...",
     "resend": "Resend connection request",
-    "title": "Approve the connection<1></1> request in your wallet",
-    "title40": "Approve the connection request in your<1></1> {{walletName}} app."
+    "title": "Approve the connection<1></1> request in your wallet"
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Follow the instructions on your desktop to connect your {{selectedIntegrationName}}",
@@ -183,13 +176,6 @@
   },
   "deFiWalletDrawerContent": {
     "actionButton": "Connect with {{selectedIntegrationName}}"
-  },
-  "deFiWalletInitialPage": {
-    "continue": "Continue to {{walletName}}",
-    "previewButton": "Connect",
-    "previewTitle": "Connect account",
-    "subtitle": "Click below to open {{walletName}}. Then approve the connection request to preview your payment.",
-    "title": "Connect your wallet"
   },
   "defiWalletQrPage": {
     "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
@@ -302,34 +288,6 @@
     "title": "Confirm your identity",
     "warningTitle": "Read this entire message before continuing."
   },
-  "errorMessages": {
-    "amountBelowMinimum": "Requested amount is below the minimum allowable transfer amount on this network.",
-    "amountExceedsMaximum": "Requested amount exceeds the maximum allowable transfer amount on this network.",
-    "balanceNotEnough": "Not enough balance.",
-    "binanceTravelRuleRestriction": "Binance does not support transfers to destination address due to travel rule restrictions.",
-    "coinbaseUnavailable": "Coinbase had an error. Go check your CB account to see if the transfer went through.",
-    "default": "An error has occurred.",
-    "emptyWalletBalance": "Source wallet balance is empty.",
-    "failedToGetFundingOptions": "Failed to get funding options",
-    "failedToSaveFundingOptions": "Failed to save funding options",
-    "feeAssetBalanceNotEnough": "Insufficient funds for transfer fees.",
-    "fromAccountNotSupported": "Account does not currently support crypto withdrawals.",
-    "integrationNotAvailable": "The integration is not currently available.",
-    "kycRequired": "Unable to intiate transfer. Integration requires accounts to complete KYC verifiation before enabling crypto transfers.",
-    "locked": "Your account is locked",
-    "networkDisabled": "Network is currently disabled and cannot be used.",
-    "passKeyNotSupported": "Passkey is not currently supported, please disable to continue.",
-    "previewExpired": "The preview has expired.",
-    "satoshiTestRequired": "Coinbase API does not support transfers over 1000 Euros due to travel rule restrictions. Please try again with a lower amount.",
-    "symbolNotSupported": "Symbol is not supported by the integration.",
-    "symbolNotSupportedBySource": "Symbol to transfer not supported by the source wallet over the requested network.",
-    "symbolNotSupportedByTarget": "Could not find deposit address for the requested coin.",
-    "toAccountNotSupported": "Destination account does not currently support crypto deposits.",
-    "tooManyRequests": "Please try again later.",
-    "transferAlreadyRequested": "The transfer is already requested.",
-    "twoFaFailed": "Two factor validation failed. Please try again.",
-    "withdrawalLocked": "For your security, withdrawals are disabled for 24hrs after a change to account settings. Please try again later."
-  },
   "errorPage": {
     "title": "An error has occurred."
   },
@@ -381,23 +339,13 @@
     "title": "Verification"
   },
   "fields": {
-    "apiKey": "API key",
-    "apiSecret": "API secret",
-    "authToken": "Authorization token",
-    "challengeCode": "Challenge code",
-    "clientId": "Client Id",
-    "clientSecret": "Client Secret",
-    "email": "Email",
-    "emailOrUsername": "Email or username",
+    "authToken": "authorization token",
+    "challengeCode": "challenge code",
     "mfaCode": "MFA code",
-    "passphrase": "Passphrase",
-    "password": "Password",
-    "phone": "Phone number",
-    "privateKey": "Private key",
-    "secretKey": "Secret key",
-    "tradePin": "Trade pin",
-    "userId": "User ID",
-    "username": "Username"
+    "password": "password",
+    "phone": "phone",
+    "tradePin": "trade pin",
+    "username": "username"
   },
   "fullScreenSpinner": {
     "linking": "Linking your account...",
@@ -482,20 +430,11 @@
     "nextStep": "Next we'll create a key for <2>uninterrupted updates</2> so you don't have to log back in",
     "tempAccess": "I only want temporary access"
   },
-  "getBrokerAccessTokenErrors": {
-    "add2FA": "Please connect 2FA application. And retry again.",
-    "identityVerificationRequired": "You need to complete identity verification in order to use the API key feature. Please complete identity verification to continue.",
-    "invalidCredentials": "Invalid login credentials. Please try again.",
-    "maximumApiKeyLimitExceeded": "Maximum allowed API key limitation reached. Please delete an unused key to continue.",
-    "unsupportedCountryErrorMessage": "We currently don’t support your account",
-    "wrongEmailCode": "Incorrect email code, please try again",
-    "wrongTotpCode": "Incorrect authentication code, please try again"
-  },
   "handleExternalTransferPage": {
     "detailButton": "See what happened",
     "error": "Failed to execute transfer",
     "loadingLabel": "Validating your transfer...",
-    "networkConfirmations": "Transfers are not complete until they have received enough network confirmations.",
+    "networkConfirmations": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
     "notInitiatedUntilApproved": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
     "recievedDetails": "You will receive <1>{{amountStr}}</1> in {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Your request to transfer to {{destination}} was received by {{selectedIntegrationName}}",
@@ -518,12 +457,12 @@
     "insufficientBalance": "Insufficient balance",
     "insufficientBalanceDescription": "Your {{currentBalance}} balance is less than the the minimum for this transfer.",
     "notEligible": "Not eligible for this transfer",
-    "notEligibleDescription": "{{symbol}} not accepted for this transfer.",
+    "notEligibleDescription": "{{clientName}} does not accept {{symbol}}, or no {{network}} address was provided for this transfer.",
     "notSupportedByInstitution": "Currently not supported by {{integrationName}}",
     "notSupportedForTransferBySource": "Not supported by {{integrationName}}",
-    "nyCoinbaseUserRestrictions": "{{symbol}} on {{network}} not accepted for this transfer due to NY multi-chain support restrictions.",
+    "nyCoinbaseUserRestrictions": "{{clientName}} does not accept {{symbol}} on {{network}} due to NY multi-chain support restrictions.",
     "symbolDoesNotMatch": "Not supported by {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} not accepted for this transfer."
+    "symbolDoesNotMatchDescription": "{{clientName}} does not accept {{symbol}}, or no {{symbol}} address was provided for this transfer."
   },
   "initialLedgerScreen": {
     "title": "Power on and unlock your device"
@@ -713,8 +652,7 @@
   },
   "navHeader": {
     "close": "Close the modal",
-    "goBack": "Go backwards",
-    "title": "Pay with crypto"
+    "goBack": "Go backwards"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
@@ -849,7 +787,7 @@
     "expired": "QR code expired",
     "generateNew": "Generate a new QR code",
     "qrCodeLabel": "QR code can be scanned on your mobile device to establish connection",
-    "scanText": "Scan this code with your {{appName}} app <1></1> to log in instantly."
+    "scanText": "Scan this code with your Binance app <1></1> to log in instantly."
   },
   "receiveAmountInput": {
     "onNetwork": "on {{network}}"
@@ -941,23 +879,6 @@
     "paragraph9": "These terms will be governed by the laws of the State of Delaware, excluding its choice of law principles. Except for disputes that qualify for small claims court, all disputes arising out of or related to these terms or any aspect of the relationship between you and the Company, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory, will be resolved through final and binding arbitration before a neutral arbitrator instead of in a court by a judge or jury and you agree that the Company and you are each waiving the right to trial by a jury. Such disputes include, without limitation, disputes arising out of or relating to interpretation or application of this arbitration provision, including the enforceability, revocability or validity of the arbitration provision or any portion of the arbitration provision. All such matters shall be decided by an arbitrator and not by a court or judge. You agree that any arbitration under these terms will take place on an individual basis; class arbitrations and class actions are not permitted, and you are agreeing to give up the ability to participate in a class action.",
     "title": "{{shortName}} End User<2></2>Terms and Conditions"
   },
-  "transferAmountPage": {
-    "buttonTitle": {
-      "deposit": "Preview deposit",
-      "onramp": "Preview purchase",
-      "transfer": "Preview transfer"
-    },
-    "errorMessage": {
-      "insufficientFunds": "Insufficient funds to cover transfer and gas fees. Maximum transfer amount is {{maxAmount}}.",
-      "minimumAmount": "Minimum transfer amount is {{minAmount}}.",
-      "zeroAmount": "Please enter a non-zero amount"
-    },
-    "title": {
-      "deposit": "Enter deposit amount",
-      "onramp": "Enter purchase amount",
-      "transfer": "Enter transfer amount"
-    }
-  },
   "transferCanceledPage": {
     "title": "Transfer canceled",
     "titlePayment": "Payment canceled",
@@ -993,16 +914,6 @@
   },
   "transferErrorPage": {
     "defaultError": "An unknown error has occurred. Please click below to begin a new transfer session."
-  },
-  "transferErrors": {
-    "failedToExecute": "Failed to execute a transfer",
-    "failedToPreview": "Failed to preview a transfer",
-    "mfaEmailFailed": "Wrong code from the email, please enter the code again",
-    "mfaFaceFailed": "Verification failed, please try again",
-    "mfaFailed": "Wrong code, please enter the code again",
-    "mfaPhoneFailed": "Wrong sms code, please enter the code again",
-    "mfaTotpFailed": "Wrong TOTP code, please enter the code again",
-    "mfaTradingPinFailed": "MFA trading pin failed, please enter the code again"
   },
   "transferFacePage": {
     "clickOpenApp": "Click <1>Open {{selectedIntegrationName}} app</1> to open your app and complete face verification.",
@@ -1104,8 +1015,8 @@
     "unknownError": "An unknown error occurred. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Return to your checkout experience to complete your {{clientName}} purchase.",
     "continueMessage": "Please continue in your {{clientName}} app.",
+    "completePaymentMessage": "Return to your checkout experience to complete your {{clientName}} purchase.",
     "successMessage": "You have successfully verified ownership of your {{walletName}} wallet."
   },
   "withdrawalLockedErrorPage": {

@@ -184,6 +184,13 @@
   "deFiWalletDrawerContent": {
     "actionButton": "{{selectedIntegrationName}} ile bağlan"
   },
+  "deFiWalletInitialPage": {
+    "continue": "{{walletName}}'e devam edin",
+    "previewButton": "Bağla",
+    "previewTitle": "Hesabı bağlayın",
+    "subtitle": "{{walletName}}'i açmak için aşağıya tıklayın. Ardından ödeme önizlemesi yapmak için bağlantı isteğini onaylayın.",
+    "title": "Cüzdanınızı bağlayın"
+  },
   "defiWalletQrPage": {
     "declinedBody": "Cüzdanını bağlama isteğini reddettiniz veya önceki bir istek hala aktif.",
     "declinedTitle": "Bağlantı reddedildi",
@@ -299,6 +306,8 @@
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
     "amountExceedsMaximum": "Talep edilen miktar, bu ağdaki maksimum transfer limitini aşmaktadır.",
     "balanceNotEnough": "Yeterli bakiye yok.",
+    "binanceTravelRuleRestriction": "Binance, seyahat kuralı kısıtlamaları nedeniyle hedef adrese transferleri desteklememektedir.",
+    "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
     "default": "Bir hata oluştu.",
     "emptyWalletBalance": "Kaynak cüzdan bakiyesi boş.",
     "failedToGetFundingOptions": "Finansman seçeneklerini alma başarısız oldu",
@@ -309,19 +318,17 @@
     "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektirir.",
     "locked": "Hesabınız kilitlendi.",
     "networkDisabled": "Ağ şu anda devre dışı ve kullanılamaz durumda.",
+    "passKeyNotSupported": "Şu anda anahtar desteklenmemektedir, lütfen devre dışı bırakın.",
     "previewExpired": "Ön izleme süresi doldu.",
+    "satoshiTestRequired": "Coinbase API'si, seyahat kuralı kısıtlamaları nedeniyle 1000 Euro'dan fazla transferi desteklememektedir. Lütfen daha düşük bir miktarla yeniden deneyin.",
     "symbolNotSupported": "Sembol, entegrasyon tarafından desteklenmiyor.",
     "symbolNotSupportedBySource": "Transfer edilecek sembol, kaynak cüzdan tarafından istenen ağ üzerinde desteklenmiyor.",
     "symbolNotSupportedByTarget": "İstenen para için depozit adresi bulunamadı.",
     "toAccountNotSupported": "Hedef hesap şu anda kripto para yatırımlarını desteklemiyor.",
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",
-    "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
     "twoFaFailed": "İki faktörlü doğrulama başarısız oldu. Lütfen tekrar deneyin.",
-    "passKeyNotSupported": "Şu anda anahtar desteklenmemektedir, lütfen devre dışı bırakın.",
-    "satoshiTestRequired": "Coinbase API'si, seyahat kuralı kısıtlamaları nedeniyle 1000 Euro'dan fazla transferi desteklememektedir. Lütfen daha düşük bir miktarla yeniden deneyin.",
-    "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
-    "binanceTravelRuleRestriction": "Binance, seyahat kuralı kısıtlamaları nedeniyle hedef adrese transferleri desteklememektedir."
+    "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin."
   },
   "errorPage": {
     "title": "Bir hata oluştu."
@@ -526,13 +533,6 @@
     "clientNameAccountTitle": "{{clientName}} hesabınıza güvenli bir şekilde bağlanacaktır",
     "clientNameWalletTitle": "{{clientName}} cüzdanınıza güvenli bir şekilde bağlanacaktır",
     "walletTitle": "Bu uygulama cüzdanınıza güvenli bir şekilde bağlanacaktır"
-  },
-  "deFiWalletInitialPage": {
-    "title": "Cüzdanınızı bağlayın",
-    "subtitle": "{{walletName}}'i açmak için aşağıya tıklayın. Ardından ödeme önizlemesi yapmak için bağlantı isteğini onaylayın.",
-    "continue": "{{walletName}}'e devam edin",
-    "previewTitle": "Hesabı bağlayın",
-    "previewButton": "Bağla"
   },
   "initialSteps": {
     "agreement": "“Devam Et”i seçerek, <1></1><2>Sonuç Kullanıcı Şartları ve Koşulları</2> kabul etmiş olursunuz",
