@@ -40,25 +40,26 @@ jobs:
 
       - name: Get latest version of translations
         run: |
-          git branch -D "${{ env.PR_BRANCH }}" 2>/dev/null || true
-          git branch -D "remotes/origin/${{ env.PR_BRANCH }}" 2>/dev/null || true
-          git checkout -b "${{ env.PR_BRANCH }}"
+          # git branch -D "${{ env.PR_BRANCH }}" 2>/dev/null || true
+          # git branch -D "remotes/origin/${{ env.PR_BRANCH }}" 2>/dev/null || true
+          # git checkout -b "${{ env.PR_BRANCH }}"
           cd ./packages/localization/locales
           git checkout main
           cd ../../../
           git add .
-          git commit -m "Update translations"
-          git push origin "${{ env.PR_BRANCH }}" --force
+          # git commit -m "Update translations"
+          # git push origin "${{ env.PR_BRANCH }}" --force
 
-      # - name: Create pull request
-      #   id: create-pr
-      #   continue-on-error: true
-      #   uses: peter-evans/create-pull-request@v7
-      #   with:
-      #     token: ${{ steps.app.outputs.token }}
-      #     branch: '${{ env.PR_BRANCH }}'
-      #     base: ${{ env.BASE_BRANCH }}
-      #     title: 'Automatic PR: Update translations'
-      #     body: >
-      #       This automatically created Pull Request includes the latest changes for the translations.
-      #     team-reviewers: '@FrontFin/frontend'
+      - name: Create pull request
+        id: create-pr
+        continue-on-error: true
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.app.outputs.token }}
+          branch: '${{ env.PR_BRANCH }}'
+          base: ${{ env.BASE_BRANCH }}
+          title: 'Automatic PR: Update translations'
+          body: >
+            This automatically created Pull Request includes the latest changes for the translations.
+          team-reviewers: '@FrontFin/frontend'
+          commit-message: 'Update translations'
