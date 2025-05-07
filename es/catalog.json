@@ -184,6 +184,13 @@
   "deFiWalletDrawerContent": {
     "actionButton": "Conectar con {{selectedIntegrationName}}"
   },
+  "deFiWalletInitialPage": {
+    "continue": "Continúa en {{walletName}}",
+    "previewButton": "Conectar",
+    "previewTitle": "Conectar cuenta",
+    "subtitle": "Haz clic abajo para abrir {{walletName}}. Luego aprueba la solicitud de conexión para mostrar tu pago.",
+    "title": "Conectar tu wallet"
+  },
   "defiWalletQrPage": {
     "declinedBody": "Has rechazado la solicitud para conectar tu cartera, o la solicitud anterior sigue activa.",
     "declinedTitle": "Conexión rechazada",
@@ -299,6 +306,8 @@
     "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
     "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
     "balanceNotEnough": "Saldo insuficiente.",
+    "binanceTravelRuleRestriction": "Binance no admite transferencias a la dirección de destino debido a restricciones de la regla de viaje.",
+    "coinbaseUnavailable": "Coinbase tuvo un error. Vaya a verificar su cuenta de CB para ver si la transferencia se realizó.",
     "default": "Ha ocurrido un error.",
     "emptyWalletBalance": "El saldo de tu cartera de origen está vacío.",
     "failedToGetFundingOptions": "No se pudo obtener las opciones de fondeo",
@@ -309,19 +318,17 @@
     "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación de identidad personal antes de habilitar transferencias de criptomonedas.",
     "locked": "Su cuenta está bloqueada",
     "networkDisabled": "La red está actualmente deshabilitada y no se puede usar.",
+    "passKeyNotSupported": "La clave de acceso no es compatible actualmente, por favor desactívelo para continuar.",
     "previewExpired": "La vista previa ha expirado.",
+    "satoshiTestRequired": "La API de Coinbase no admite transferencias superiores a 1000 euros debido a restricciones de la regla de viaje. Intente nuevamente con un monto menor.",
     "symbolNotSupported": "El símbolo no es compatible con la integración.",
     "symbolNotSupportedBySource": "El símbolo para transferir no es compatible con la cartera de origen en la red solicitada.",
     "symbolNotSupportedByTarget": "No se pudo encontrar la dirección de depósito para la moneda solicitada.",
     "toAccountNotSupported": "La cuenta de destino no admite actualmente depósitos de criptomonedas.",
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
     "transferAlreadyRequested": "La transferencia ya fue solicitada.",
-    "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde.",
     "twoFaFailed": "La validación de dos factores falló. Por favor, inténtalo de nuevo.",
-    "passKeyNotSupported": "La clave de acceso no es compatible actualmente, por favor desactívelo para continuar.",
-    "satoshiTestRequired": "La API de Coinbase no admite transferencias superiores a 1000 euros debido a restricciones de la regla de viaje. Intente nuevamente con un monto menor.",
-    "coinbaseUnavailable": "Coinbase tuvo un error. Vaya a verificar su cuenta de CB para ver si la transferencia se realizó.",
-    "binanceTravelRuleRestriction": "Binance no admite transferencias a la dirección de destino debido a restricciones de la regla de viaje."
+    "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde."
   },
   "errorPage": {
     "title": "Ha ocurrido un error."
@@ -526,13 +533,6 @@
     "clientNameAccountTitle": "{{clientName}} enlazará su cuenta de forma segura",
     "clientNameWalletTitle": "{{clientName}} se conectará su cartera de forma segura",
     "walletTitle": "Esta aplicación se conectará de forma segura a su cartera"
-  },
-  "deFiWalletInitialPage": {
-    "title": "Conectar tu wallet",
-    "subtitle": "Haz clic abajo para abrir {{walletName}}. Luego aprueba la solicitud de conexión para mostrar tu pago.",
-    "continue": "Continúa en {{walletName}}",
-    "previewTitle": "Conectar cuenta",
-    "previewButton": "Conectar"
   },
   "initialSteps": {
     "agreement": "Al seleccionar \"Continuar\" usted acepta los <1></1><2>Términos y Condiciones</2>",
