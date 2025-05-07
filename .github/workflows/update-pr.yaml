@@ -50,15 +50,15 @@ jobs:
           git commit -m "Update translations"
           git push origin "${{ env.PR_BRANCH }}" --force
 
-      - name: Create pull request
-        id: create-pr
-        continue-on-error: true
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ steps.app.outputs.token }}
-          branch: '${{ env.PR_BRANCH }}'
-          base: ${{ env.BASE_BRANCH }}
-          title: 'Automatic PR: Update translations'
-          body: >
-            This automatically created Pull Request includes the latest changes for the translations.
-          team-reviewers: '@FrontFin/frontend'
+      # - name: Create pull request
+      #   id: create-pr
+      #   continue-on-error: true
+      #   uses: peter-evans/create-pull-request@v7
+      #   with:
+      #     token: ${{ steps.app.outputs.token }}
+      #     branch: '${{ env.PR_BRANCH }}'
+      #     base: ${{ env.BASE_BRANCH }}
+      #     title: 'Automatic PR: Update translations'
+      #     body: >
+      #       This automatically created Pull Request includes the latest changes for the translations.
+      #     team-reviewers: '@FrontFin/frontend'
