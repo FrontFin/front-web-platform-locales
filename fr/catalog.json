@@ -4,17 +4,17 @@
     "goToAccount": "Accédez à votre compte <1>{{selectedIntegrationName}}</1>",
     "network": "Réseau",
     "preview": "Cliquez ci-dessous pour afficher l’aperçu et effectuer à nouveau le transfert",
-    "title": "Liste blanche ce destinataire",
+    "title": "Autoriser cette destination",
     "token": "Jeton"
   },
   "authCodeInput": {
-    "code": "Code à 6 chiffres"
+    "code": "Veuillez saisir votre code de vérification à 6 chiffres"
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Afficher en : fiat / crypto"
   },
   "binanceConnectOAuthPage": {
-    "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
+    "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} {{selectedFiat}} - et {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Le montant doit être compris entre 21 USD et 15 000 USD",
     "buyCrypto": "Acheter des crypto-monnaies via Binance Connect",
     "closeButton": "Fermer",
@@ -35,24 +35,24 @@
   "binanceMfaPage": {
     "add2fa": "Veuillez ajouter les méthodes d'authentification à deux facteurs (2FA) nécessaires dans Binance",
     "chooseAnotherAccount": "Veuillez choisir un autre compte",
-    "description": "Vous devez configurer à la fois un e-mail et une application d'authentification comme méthodes 2FA dans votre compte <1>Binance</1>.",
-    "ensureConfigured": "Assurez-vous qu'un e-mail et une application d'authentification sont configurés pour la 2FA",
-    "goToSettings": "Cliquez ci-dessous pour accéder à vos paramètres de sécurité <1>Binance</1>",
-    "mayNeedReAuthApp": "Veuillez noter : vous devrez peut-être ré-authentifier votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>l'application</2>.",
-    "mayNeedReAuthClient": "Veuillez noter : vous devrez peut-être ré-authentifier votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>{{clientName}}</2>.",
+    "description": "Pour sécuriser votre compte <1>Binance</1>, vous devez configurer à la fois votre adresse e-mail et une application d’authentification comme méthodes 2FA.",
+    "ensureConfigured": "Assurez-vous que l’adresse e-mail et l’application d’authentification sont toutes les deux configurées pour 2FA",
+    "goToSettings": "Cliquez ci-dessous pour accéder à vos paramètres de sécurité sur <1>Binance</1>",
+    "mayNeedReAuthApp": "Veuillez noter : vous devrez peut-être vous ré-authentifier sur votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>l'application</2>.",
+    "mayNeedReAuthClient": "Veuillez noter : vous devrez peut-être vous ré-authentifier sur votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>{{clientName}}</2>.",
     "openBinance": "Ouvrir Binance",
-    "returnToApp": "Retournez à <1>l'application</1> pour réessayer ce transfert",
-    "returnToClient": "Retournez à <1>{{clientName}}</1> pour réessayer ce transfert",
-    "title": "Activer les retraits de votre compte Binance"
+    "returnToApp": "Retournez dans <1>l'application</1> pour réessayer à nouveau ce transfert",
+    "returnToClient": "Retournez dans <1>{{clientName}}</1> pour réessayer à nouveau ce transfert",
+    "title": "Autorisez les retraits depuis votre compte Binance"
   },
   "binanceResetPasswordPage": {
     "goToBinance": "Allez sur Binance.com",
-    "securityNote": "Remarque : pour votre sécurité, les retraits en crypto sont désactivés pendant 24 heures après un changement de mot de passe.",
+    "securityNote": "À savoir : pour des raisons de sécurité, les retraits en crypto sont désactivés pendant 24 heures après un changement de mot de passe.",
     "steps": {
-      "completeProcess": "Compléter le processus pour réinitialiser votre mot de passe.",
-      "enterEmail": "Entrez votre e-mail ou votre numéro de téléphone, et cliquez sur \"Mot de passe oublié ?\".",
-      "goToBinance": "Sélectionnez <1>Allez sur Binance.com</1> et vous serez dirigé vers un écran de connexion Binance.",
-      "returnToLogin": "Revenez ici pour vous connecter avec votre nouveau mot de passe."
+      "completeProcess": "Complétez le processus pour réinitialiser votre mot de passe.",
+      "enterEmail": "Saisissez votre adresse e-mail ou votre numéro de téléphone, puis cliquez sur « Mot de passe oublié ? ».",
+      "goToBinance": "Sélectionnez <1>Allez sur Binance.com</1> pour être redirigé vers l’écran de connexion Binance.",
+      "returnToLogin": "Revenez ici pour vous reconnecter avec votre nouveau mot de passe."
     },
     "title": "Réinitialiser le mot de passe"
   },
@@ -60,14 +60,14 @@
     "completedButton": "Je l'ai complété sur mon téléphone",
     "linkText": "Si vous ne pouvez pas scanner le code QR, veuillez suivre ce <2><0>lien</0></2>.",
     "qrCode": "Code QR",
-    "return": "Revenez à cet écran pour continuer.",
+    "return": "Retournez à cet écran pour continuer.",
     "title": "Ouvrez l'application Binance et scannez le code QR ci-dessous"
   },
   "bindMfaList": {
     "authApp": "Application d'authentification",
-    "email": "Email",
+    "email": "Adresse e-mail",
     "enabled": "Activé",
-    "error": "Échec de la liaison MFA",
+    "error": "La liaison MFA a échoué",
     "notEnabled": "Non activé"
   },
   "browserContent": {
@@ -83,11 +83,11 @@
       "linked": "Précédemment lié"
     },
     "noResults": "Désolé, nous n'avons trouvé aucun résultat",
-    "paymentTitle": "Sélectionnez le compte de paiement",
-    "prodOnly": "Production uniquement",
+    "paymentTitle": "Veuillez sélectionner un compte de paiement",
+    "prodOnly": "Disponible uniquement en production",
     "search": "recherche",
-    "title": "Sélectionnez un compte à lier",
-    "title40": "Connecter une plateforme ou un portefeuille"
+    "title": "Veuillez sélectionner un compte à lier",
+    "title40": "Connecter une plateforme d’échange ou un portefeuille"
   },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
@@ -95,16 +95,16 @@
   "categories": {
     "brokerage": "Courtiers",
     "deFiWallet": "Portefeuilles",
-    "deFiWalletFull": "Portefeuilles crypto auto-gérés",
-    "exchange": "Bourses d'échange",
-    "exchangeFull": "Bourses de crypto centralisées",
+    "deFiWalletFull": "Portefeuille en autogarde",
+    "exchange": "Plateformes d'échange",
+    "exchangeFull": "Plateformes d’échange centralisées",
     "nftMarketplace": "Marchés NFT",
     "popular": "Populaire"
   },
   "chainSwitch": {
-    "monitoringApproval": "Surveillance de l'approbation...",
+    "monitoringApproval": "En attente d’approbation...",
     "networkChangeDeclined": "Changement de réseau refusé",
-    "networkChangeDeclinedBody": "Vous avez refusé la demande de changement de réseaux dans votre portefeuille",
+    "networkChangeDeclinedBody": "Vous avez refusé la demande de changement de réseau dans votre portefeuille",
     "resendNetworkSwitch": "Renvoyer la demande de changement de réseau",
     "stayOnNetwork": "Rester sur {{networkName}}",
     "switchingNetwork": "Changement de réseau en cours",
@@ -112,71 +112,71 @@
   },
   "challengePage": {
     "changeQuestion": "Changer la question",
-    "codeHeader": "Entrez votre code de vérification",
+    "codeHeader": "Veuillez entrer votre code de vérification",
     "questionHeader": "Répondez à votre question de sécurité",
     "securityQuestionInputTitle": "Question de sécurité",
     "title": "Vérification",
     "verificationCodeInputTitle": "Code de vérification"
   },
   "chooseAccountPage": {
-    "linkToApp": "Quelle est la de vos comptes que vous souhaitez<1></1> lier à cette application",
-    "linkToClient": "Quelle est la de vos comptes que vous souhaitez<1></1> lier à {{clientName}}",
-    "title": "Choisissez les sous-comptes"
+    "linkToApp": "Lequel de vos comptes souhaitez-vous que <1></1> lie à cette application ",
+    "linkToClient": "Lequel de vos comptes souhaitez-vous que <1></1> lie à {{clientName}}",
+    "title": "Sélectionnez les sous-comptes"
   },
   "common": {
     "availableForTransfer": "Disponible",
     "cancel": "Annuler",
     "closeCap": "Fermer",
-    "codeNotCorrent": "Le code fourni n'est pas correct.",
+    "codeNotCorrent": "Le code que vous avez saisi est incorrect.",
     "continueCap": "Continuer",
     "doneCap": "Terminé",
     "failedToLoadTrasferError": "Échec du chargement des informations sur le transfert",
-    "genericConnectErrorMessage": "Échec de la connexion à votre intégration",
+    "genericConnectErrorMessage": "La connexion à votre intégration a échoué",
     "maxCap": "Max",
     "mesh": "Mesh",
     "notFound": "Non trouvé",
-    "searchCap": "Recherche",
+    "searchCap": "Rechercher",
     "securedBy": "Sécurisé par",
-    "somethingWentWrong": "Quelque chose s'est mal passé...",
+    "somethingWentWrong": "Une erreur est survenue...",
     "submitCap": "Soumettre",
-    "successTitle": "Succès!",
+    "successTitle": "Action complétée avec succès !",
     "termsOfUse": "En continuant, vous acceptez les <2>conditions d'utilisation</2>",
     "tryAgain": "Réessayez"
   },
   "commonContent": {
     "description": "facilitera la connexion sécurisée avec {{integrationName}}.",
-    "monitoring": "Surveillance pour approbation...",
+    "monitoring": "En cours d’approbation...",
     "resend": "Renvoyer la demande de connexion",
     "title": "Approuvez la demande de connexion<1></1> dans votre portefeuille",
     "title40": "Approuvez la demande de connexion dans votre<1></1> application {{walletName}}."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Suivez les instructions sur votre ordinateur pour connecter votre {{selectedIntegrationName}}",
-    "failedBody": "Impossible d'établir la connexion avec votre {{integrationName}}. Veuillez vérifier que vos adresse et networkIds sont corrects et réessayer.",
+    "failedBody": "Impossible d'établir la connexion avec votre {{integrationName}}. Veuillez vérifier que votre adresse networklds sont corrects et réessayer.",
     "failedTitle": "Connexion échouée",
-    "notConnectedStep1": "1. Ouvrez ce lien sur un appareil <1>ordinateur</1>",
+    "notConnectedStep1": "1. Ouvrez ce lien sur un <1>appareil</1> de bureau",
     "notConnectedStep2": "2. Entrez ce code pour connecter votre portefeuille en toute sécurité",
     "notConnectedTitle": "Utilisez un appareil de bureau pour connecter votre {{selectedIntegrationName}}"
   },
   "connectionDeclinedPage": {
-    "connectAnother": "Connectez un autre compte"
+    "connectAnother": "Connecter un autre compte"
   },
   "connectionFailedPage": {
     "defaultError": "Une erreur est survenue."
   },
   "connectionUnavailablePage": {
-    "connectAnother": "Connectez un autre portefeuille",
-    "installApp": "Installer l'application mobile"
+    "connectAnother": "Connecter un autre portefeuille",
+    "installApp": "Télécharger l'application mobile"
   },
   "countryBlockedPage": {
-    "body": "Cette fonctionnalité n'est pas encore prise en charge dans votre<1></1> pays. Veuillez revenir bientôt pour une<3></3> expérience de dépôt simplifiée.",
-    "comingSoon": "À venir bientôt"
+    "body": "Cette fonctionnalité n’est pas encore disponible dans votre <1></1> pays. Revenez bientôt pour une <3></3> expérience de dépôt optimisée.",
+    "comingSoon": "Bientôt disponible"
   },
   "currencyBox": {
     "changeCurrency": "Changer de devise"
   },
   "deFiWalletDeclinedConnectionPage": {
-    "connectionDeclinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours active.",
+    "connectionDeclinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours en cours.",
     "connectionDeclinedTitle": "Connexion refusée",
     "networkDeclinedBody": "Vous avez refusé la demande de changement de réseaux dans votre portefeuille.",
     "networkDeclinedTitle": "Changement de réseau refusé"
@@ -185,44 +185,44 @@
     "actionButton": "Connecter avec {{selectedIntegrationName}}"
   },
   "deFiWalletInitialPage": {
-    "continue": "Continuez vers {{walletName}}",
+    "continue": "Continuez sur {{walletName}}",
     "previewButton": "Connecter",
-    "previewTitle": "Connectez le compte",
+    "previewTitle": "Connecter le compte",
     "subtitle": "Cliquez ci-dessous pour ouvrir {{walletName}}. Ensuite, approuvez la demande de connexion pour prévisualiser votre paiement.",
     "title": "Connecter votre portefeuille"
   },
   "defiWalletQrPage": {
     "declinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours en cours.",
     "declinedTitle": "Connexion refusée",
-    "description": "Ouvrez {{selectedIntegrationName}} et scannez le<3></3>code QR pour lier",
+    "description": "Ouvrez {{selectedIntegrationName}} et scannez le<3></3>code QR pour lier votre compte",
     "qrCodeLabel": "Le code QR peut être scanné sur votre appareil mobile pour établir la connexion",
     "title": "Connectez-vous avec {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
     "declinedBody": "Vous avez refusé la demande de changement de réseau dans votre portefeuille.",
     "declineTitle": "Changement de réseau refusé",
-    "monitoringApproval": "Surveillance pour approbation...",
+    "monitoringApproval": "En cours d’approbation...",
     "selectNetwork": "Sélectionnez le réseau",
     "title": "Changement de réseau",
-    "whichNetwork": "Quel réseau dans votre portefeuille <1>{{selectedIntegrationName}}</1><4></4>souhaitez-vous lier?"
+    "whichNetwork": "Quel réseau dans votre portefeuille <1>{{selectedIntegrationName}}</1><4></4>souhaitez-vous lier ?"
   },
   "defiWalletUnavaialbleConnectionPage": {
-    "body": "{{integrationName}} n'est pas installé sur cet appareil. Veuillez installer l'application {{integrationName}} ou connecter un autre portefeuille.",
+    "body": "{{integrationName}} n'est pas installé sur cet appareil. Veuillez télécharger l'application {{integrationName}} ou connecter un autre portefeuille.",
     "title": "Connexion indisponible"
   },
   "deviceConfirmationScreenPage": {
-    "awaitingConfirmation": "En attente de confirmation depuis l'application mobile",
+    "awaitingConfirmation": "En attente de votre confirmation dans l’application mobile",
     "clickOpenApp": "Cliquez sur <1>Ouvrir l'application {{integrationName}}</1> ci-dessous",
-    "confirmInApp": "Confirmez dans votre application mobile {{integrationName}} que vous essayez réellement de vous connecter.",
-    "confirmPrompt": "Confirmez sur l'invite pour vérifier que c'est vous",
+    "confirmInApp": "Confirmez dans votre application mobile {{integrationName}} que cette tentative de connexion vient bien de vous.",
+    "confirmPrompt": "Confirmez la demande pour vérifier qu’il s’agit bien de vous",
     "openApp": "Ouvrir l'application {{integrationName}}",
-    "openAppOnPhone": "Ouvrez l'application {{integrationName}} sur votre téléphone",
+    "openAppOnPhone": "Veuillez ouvrir l'application {{integrationName}} sur votre téléphone",
     "returnHere": "Revenez ici pour continuer",
     "sendNewRequest": "Envoyer une nouvelle demande",
     "title": "Vérification",
     "tryAnotherWay": "Essayer une autre méthode",
     "verified": "J'ai vérifié sur mon application",
-    "verifyLoggedIn": "Vérifiez que vous vous connectez à partir d'un nouvel appareil"
+    "verifyLoggedIn": "Vérifiez que vous vous connectez depuis un nouvel appareil"
   },
   "doneExternalVerifyScreen": {
     "body": "Vous avez vérifié avec succès votre propriété du portefeuille <2>{{selectedIntegrationName}}</2>.",
@@ -235,44 +235,44 @@
     "continueToTransfer": "Continuer vers le transfert",
     "done": "Terminé",
     "linkAnother": "Lier un autre compte",
-    "linkedToClient": "Vous avez réussi à lier<1></1><2>{{integrationName}}</2> à <5>{{clientName}}</5>.",
+    "linkedToClient": "Vous avez lié avec succès <1></1><2>{{integrationName}}</2> à <5>{{clientName}}</5>.",
     "linkedToThisApp": "Vous avez réussi à lier<1></1><2>{{integrationName}}</2> à <5>cette application</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Ce transfert ne sera pas initié tant qu'il n'aura pas été approuvé dans {{selectedIntegrationName}}.",
     "defaultTitle": "Transaction terminée",
-    "depositTitle": "Dépôt terminé",
+    "depositTitle": "Dépôt effectué",
     "onrampTitle": "Achat terminé",
     "paymentTitle": "Paiement effectué",
     "steps": {
-      "approvedFromCeFiToClient": "Vous approuvez le transfert de {{selectedIntegrationName}} à {{clientName}}.",
+      "approvedFromCeFiToClient": "Vous approuvez le transfert de {{selectedIntegrationName}} vers {{clientName}}.",
       "approvedFromCeFiToDestination": "Vous approuvez le transfert de {{selectedIntegrationName}} vers la destination.",
       "approvedFromDeFi": "Vous avez approuvé le transfert sur {{selectedIntegrationName}}.",
-      "conversion": "Conversion de <1>{{amount}}</1> à <4>{{currency}}</4>.",
-      "deposit": "Dépôt de <1>{{amount}}</1> de {{paymentMethod}} à {{selectedIntegrationName}}.",
+      "conversion": "Conversion de <1>{{amount}}</1> en <4>{{currency}}</4>.",
+      "deposit": "Dépôt de <1>{{amount}}</1> depuis {{paymentMethod}} vers {{selectedIntegrationName}}.",
       "purchase": "Achat de <1>{{amount}}</1> d'une valeur de {{symbol}} dans {{selectedIntegrationName}}.",
-      "requestToTransferPaymentSmartToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} via le contrat relais {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentSmartToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}} via le contrat relais {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentSmartToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}}, via le contrat relais {{shortSmartContractsAddress}}.",
+      "requestToTransferPaymentSmartToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}}, via le contrat relais {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}}.",
-      "requestToTransferPaymentToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}}.",
-      "requestToTransferSmartToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
-      "requestToTransferSmartToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}} {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
-      "requestToTransferToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{shortToAddress}}.",
-      "requestToTransferToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}} {{shortToAddress}}.",
+      "requestToTransferPaymentToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}}.",
+      "requestToTransferSmartToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{shortToAddress}}, via le contrat relais {{shortSmartContractsAddress}}.",
+      "requestToTransferSmartToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
+      "requestToTransferToAddress": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{shortToAddress}}.",
+      "requestToTransferToClient": "Demande de transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} {{shortToAddress}}.",
       "transferPaymentSmartToAddress": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} via le contrat relais {{shortSmartContractsAddress}}.",
-      "transferPaymentSmartToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}} via le contrat relais {{shortSmartContractsAddress}}.",
+      "transferPaymentSmartToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} via le contrat relais {{shortSmartContractsAddress}}.",
       "transferPaymentToAddress": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}}.",
-      "transferPaymentToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}}.",
-      "transferSmartToAddress": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
-      "transferSmartToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}} {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
-      "transferToAddress": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{shortToAddress}}.",
-      "transferToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} à {{clientName}} {{shortToAddress}}."
+      "transferPaymentToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}}.",
+      "transferSmartToAddress": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{shortToAddress}}, via le contrat relais {{shortSmartContractsAddress}}.",
+      "transferSmartToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
+      "transferToAddress": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{shortToAddress}}.",
+      "transferToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} {{shortToAddress}}."
     }
   },
   "doneTransferPage": {
-    "awaitingApproval": "Ce transfert ne sera pas initié tant qu'il ne sera pas approuvé dans {{selectedIntegrationName}}.",
+    "awaitingApproval": "Ce transfert ne sera pas initié tant qu'il n'aura pas été approuvé dans {{selectedIntegrationName}}.",
     "checkDetails": "Voir ce qui s'est passé",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>sera reçu à {{shortAddress}}",
+    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>seront reçu à {{shortAddress}}",
     "depositClient": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>dans {{clientName}} ({{shortAddress}})",
     "goToIntegrationToApprove": "Veuillez aller sur <1>{{selectedIntegrationName}}</1> pour approuver ce transfert.",
     "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3>à {{clientName}}",
@@ -551,7 +551,8 @@
     "resendAction": "Renvoyer la demande de signature",
     "title": "Presque là!",
     "verifyAction": "Vérifier l'adresse",
-    "verifyingLabel": "Vérification de la signature..."
+    "verifyingLabel": "Vérification de la signature...",
+    "content40": "Confirmez que vous possédez ce portefeuille"
   },
   "ipWhiteListPage": {
     "addIp": "Ajoutez l'adresse IP ci-dessous en tant qu'adresse IP de confiance",
