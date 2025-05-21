@@ -35,7 +35,7 @@
   "binanceMfaPage": {
     "add2fa": "Bitte füge die erforderlichen Zwei-Faktor-Authentifizierungsmethoden (2FA) in Binance hinzu",
     "chooseAnotherAccount": "Wähle ein anderes Konto",
-    "description": "Du musst sowohl eine E-Mail- als auch eine Authenticator-App als 2FA-Methoden in Ihrem <1>Binance</1>-Konto eingerichtet haben.",
+    "description": "Du musst sowohl eine E-Mail- als auch eine Authentifizierungs-App als 2FA-Methode in Deinem <1>Binance</1>-Konto eingerichtet haben.",
     "ensureConfigured": "Stelle sicher, dass sowohl eine E-Mail- als auch eine Authentifizierungs-App für 2FA konfiguriert sind",
     "goToSettings": "Klicke unten, um zu Deinen <1>Binance</1>-Sicherheitseinstellungen zu gelangen",
     "mayNeedReAuthApp": "Bitte beachte: Möglicherweise musst Du Dich erneut bei Deinem Binance-Konto authentifizieren, um diese Überweisung zu starten, wenn Du zu <2>der Anwendung</2> zurückkehrst.",
@@ -50,7 +50,7 @@
     "securityNote": "Hinweis: Aus Sicherheitsgründen sind Krypto-Abhebungen für 24 Stunden nach einer Passwortänderung deaktiviert.",
     "steps": {
       "completeProcess": "Schließe den Prozess ab, um Dein Passwort zurückzusetzen.",
-      "enterEmail": "Geben Deine E-Mail-Adresse oder Telefonnummer ein und klicke auf \"Passwort vergessen?\".",
+      "enterEmail": "Gib Deine E-Mail-Adresse oder Telefonnummer ein und klicke auf \"Passwort vergessen?\".",
       "goToBinance": "Wähle <1>Gehe zu Binance.com</1> und Du wirst zu einer Binance-Anmeldeseite weitergeleitet.",
       "returnToLogin": "Kehre hierher zurück, um Dich mit Deinem neuen Passwort anzumelden."
     },
@@ -64,7 +64,7 @@
     "title": "Öffne die Binance-App und scanne den nachstehenden QR-Code"
   },
   "bindMfaList": {
-    "authApp": "Authenticator-App",
+    "authApp": "Authentifizierungs-App",
     "email": "E-Mail",
     "enabled": "Aktiviert",
     "error": "MFA kann nicht verbunden werden",
@@ -225,7 +225,7 @@
     "verifyLoggedIn": "Verifiziere, dass Du Dich von einem neuen Gerät aus anmelden möchtest"
   },
   "doneExternalVerifyScreen": {
-    "body": "Du hast erfolgreich nachgewiesen, dass Du Eigentümer Deiner <2>{{selectedIntegrationName}}</2>-Wallet bist.",
+    "body": "Du hast erfolgreich nachgewiesen, dass Du Besitzer Deiner <2>{{selectedIntegrationName}}</2>-Wallet bist.",
     "returnAction": "Zurück zu {{clientName}}"
   },
   "donePage": {
@@ -240,7 +240,7 @@
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Diese Überweisung wird nicht getätigt, bis sie in {{selectedIntegrationName}} genehmigt wird.",
-    "defaultTitle": "Transaktion abgeschlossen",
+    "defaultTitle": "Überweisung abgeschlossen",
     "depositTitle": "Einzahlung abgeschlossen",
     "onrampTitle": "Kauf abgeschlossen",
     "paymentTitle": "Zahlung abgeschlossen",
@@ -272,7 +272,7 @@
   "doneTransferPage": {
     "awaitingApproval": "Diese Überweisung wird erst getätigt, wenn sie in {{selectedIntegrationName}} genehmigt wird.",
     "checkDetails": "Sieh, was passiert ist",
-    "checkDetails40": "",
+    "checkDetails40": "Transaktionsdetails anzeigen",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>wird an {{shortAddress}} empfangen",
     "depositClient": "Du erhälst<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>in {{clientName}} ({{shortAddress}})",
     "goBackToShift4": "← Zurück zu Shift4",
@@ -335,6 +335,9 @@
   "errorPage": {
     "title": "Ein Fehler ist aufgetreten."
   },
+  "errorHeadlines": {
+    "twoFaFailed": "Ungültiger 2FA-Code"
+  },
   "exitPage": {
     "body": "Dein Fortschritt wird verloren gehen.",
     "continue": "Nein, weiter",
@@ -353,7 +356,7 @@
     "processingText": "Etwas ist schiefgelaufen.",
     "sessionNotFoundError": "Sitzung nicht gefunden",
     "signedMessageAction": "Du hast erfolgreich den Besitz Deiner {{integrationName}} verifiziert.",
-    "transactionAction": "Du hast die Transaktion erfolgreich gestartet.",
+    "transactionAction": "Du hast die Überweisung erfolgreich gestartet.",
     "tryAgainText": "Bitte versuche es später erneut."
   },
   "externalHardwareWalletInitial": {
@@ -374,10 +377,10 @@
   "facePage": {
     "completedButton": "Ich habe die Verifizierung abgeschlossen",
     "desktopStep1": "Scanne den QR-Code, um die Gesichtsverifizierung abzuschließen und Deine Identität zu bestätigen.",
-    "desktopStep2": "Kehre dann hierher zurück, um das Verknüpfen Ihres Kontos abzuschließen.",
+    "desktopStep2": "Kehre dann hierher zurück, um das Verknüpfen Deines Kontos abzuschließen.",
     "mobileStep1": "Schließe die Gesichtsverifizierung ab, um sicherzustellen, dass es wirklich Du bist, der sich anmelden möchte.",
     "mobileStep2": "Klicke auf <1>Open {{integrationName}}-App</1>, um Ihre App zu öffnen und die Gesichtsverifizierung abzuschließen.",
-    "mobileStep3": "Kehre hierher zurück, um das Verknüpfen Ihres Kontos fortzusetzen.",
+    "mobileStep3": "Kehre hierher zurück, um das Verknüpfen Deines Kontos fortzusetzen.",
     "openApp": "Öffne {{integrationName}}-App",
     "reopenApp": "{{integrationName}}-App erneut öffnen",
     "title": "Verifizierung"
@@ -548,7 +551,7 @@
     "drawerTitle": "Bestätige die Unterschriftsanfrage<1></1> in Deiner Wallet",
     "item1Body": "Du wirst aufgefordert, eine Nachricht in {{selectedIntegrationName}} zu unterschreiben, die bestätigt, dass Du diese Wallet besitzt.",
     "item1Title": "{{clientName}} muss Deine Adresse verifizieren",
-    "item2Body": "Das Unterschreiben gibt {{clientName}} in keiner Weise die Erlaubnis, Transaktionen mit Deiner Wallet durchzuführen.",
+    "item2Body": "Das Unterschreiben gibt {{clientName}} in keiner Weise die Erlaubnis, Überweisungen mit Deiner Wallet durchzuführen.",
     "item2Title": "Schnell, sicher und kostenlos",
     "monitoringLabel": "Warten auf Unterschrift...",
     "resendAction": "Unterschriftanfrage erneut senden",
@@ -607,7 +610,7 @@
     "clientVerifyLabel": "{{clientName}} muss Deine Wallet verifizieren",
     "clientVerifyText": "Du wirst aufgefordert, eine Nachricht auf Deinem Ledger-Gerät zu unterschreiben, die bestätigt, dass Du diese Brieftasche besitzt.",
     "secureLabel": "Schnell, sicher und kostenlos",
-    "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Transaktionen mit Deiner Wallet durchzuführen.",
+    "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Überweisungen mit Deiner Wallet durchzuführen.",
     "title": "Fast geschafft!"
   },
   "ledgerError": {
@@ -673,12 +676,12 @@
     "keyGenerationTitle": "API-Schlüsselerzeugung aus Deinem {{selectedIntegrationName}}-Konto aktivieren",
     "totpButton": "Authentifizierungs-App einrichten",
     "totpSubtitle": "Klicke auf den Button unten, um eine Authentifizierungs-App zu Deinem <2>{{selectedIntegrationName}}</2>-Konto hinzuzufügen.",
-    "withdrawalBody": "Zu Ihrer Sicherheit erfordert <1>{{selectedIntegrationName}} </1>, dass Benutzer E-Mail- und Authenticator-App-MFA-Methoden aktiviert haben, um Vermögenswerte abzuheben.",
-    "withdrawalTitle": "Aktivieren Sie Abhebungen von Ihrem {{selectedIntegrationName}} Konto"
+    "withdrawalBody": "Zu Deiner Sicherheit erfordert <1>{{selectedIntegrationName}} </1>, dass Benutzer E-Mail- und Authentifizierungs-App-MFA-Methoden aktiviert haben, um Vermögenswerte abzuheben.",
+    "withdrawalTitle": "Aktiviere Abhebungen von Deinem {{selectedIntegrationName}}-Konto"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "Klicken Sie auf die Schaltfläche unten, um eine Authentifikator-App zu Ihrem <2>{{selectedIntegrationName}}</2> Konto hinzuzufügen.",
-    "emailTitle": "Sie haben Ihre E-Mail erfolgreich mit Ihrem <2>{{selectedIntegrationName}}</2> Konto verknüpft.",
+    "addAuthApp": "Klicke auf den Button unten, um eine Authentifizierungs-App zu Deinem <2>{{selectedIntegrationName}}</2>-Konto hinzuzufügen.",
+    "emailTitle": "Du hast Deine E-Mail erfolgreich mit Deinem <2>{{selectedIntegrationName}}</2>-Konto verknüpft.",
     "proceed": "Fortfahren",
     "proceedKey": "Klicke unten, um mit der Schlüsselerstellung fortzufahren.",
     "proceedTransfer": "Klicke unten, um mit der Überweisung fortzufahren.",
@@ -691,104 +694,104 @@
     "phone": "SMS-Bestätigungscode"
   },
   "mfaVerificationPage": {
-    "checkEmail": "Zuerst müssen wir Ihre Identität überprüfen.<1></1>Bitte überprüfen Sie Ihren E-Mail-Posteingang auf einen einmaligen Bestätigungscode, der von <4>{{selectedIntegrationName}}</4> gesendet wurde.",
-    "checkSms": "Zuerst müssen wir Ihre Identität überprüfen.<1></1>Bitte überprüfen Sie Ihr Telefon auf einen einmaligen Bestätigungscode, der per SMS von <4>{{selectedIntegrationName}}</4> gesendet wurde.",
+    "checkEmail": "Zuerst müssen wir Deine Identität überprüfen.<1></1>Bitte überprüfe Deinen E-Mail-Posteingang auf einen einmaligen Bestätigungscode, der von <4>{{selectedIntegrationName}}</4> gesendet wurde.",
+    "checkSms": "Zuerst müssen wir Deine Identität überprüfen.<1></1>Bitte überprüfe Dein Telefon auf einen einmaligen Bestätigungscode, der per SMS von <4>{{selectedIntegrationName}}</4> gesendet wurde.",
     "confirmApp": "Authentifizierungs-App bestätigen",
     "confirmEmail": "E-Mail bestätigen",
     "enterCode": "Bitte Bestätigungscode eingeben",
-    "enterCodeFromEmail": "Bitte geben Sie den 6-stelligen Code ein, den <2>{{selectedIntegrationName}}</2> Ihnen zugeschickt hat<4></4>an Ihre E-Mail.",
-    "enterTotp": "Bitte geben Sie den 6-stelligen Code aus Ihrer<1></1>Authenticator-App ein",
-    "firstEnterTotp": "Zuerst müssen wir Ihre Identität überprüfen.<1></1>Bitte geben Sie den einmaligen Code aus der Authenticator-App ein, die Sie mit <3>{{selectedIntegrationName}}</3> verknüpft haben.",
+    "enterCodeFromEmail": "Bitte gib den 6-stelligen Code ein, den Dir <2>{{selectedIntegrationName}}</2> an Deine E-Mail<4></4>zugeschickt hat.",
+    "enterTotp": "Bitte gib den 6-stelligen Code aus Deiner<1></1>Authentifizierungs-App ein",
+    "firstEnterTotp": "Zuerst müssen wir Deine Identität überprüfen.<1></1>Bitte gib den Einmalcode aus der Authentifizierungs-App ein, die Du mit <3>{{selectedIntegrationName}}</3> verknüpft hast.",
     "securityVerification": "Sicherheitsüberprüfung"
   },
   "mobileAppLink": {
     "awaitingConfirmation": "Warten auf Bestätigung durch die mobile App",
-    "openAppButton": "Öffnen {{selectedIntegrationName}} App",
+    "openAppButton": "Öffne {{selectedIntegrationName}}-App",
     "sendNewRequest": "Neue Anfrage senden",
     "steps": {
-      "authorize": "Klicken Sie auf der Bestätigungsseite auf <1>Autorisieren</1>.",
-      "openApp": "Klicken Sie unten auf <1>Öffnen {{selectedIntegrationName}} app</1>.",
-      "return": "Kehren Sie hierher zurück, um die Verknüpfung Ihres Accounts abzuschließen."
+      "authorize": "Klicke auf der Bestätigungsseite auf <1>Autorisieren</1>.",
+      "openApp": "Klicke unten auf <1>Öffne {{selectedIntegrationName}}-App</1>.",
+      "return": "Kehre hierher zurück, um die Verknüpfung Deines Accounts abzuschließen."
     }
   },
   "mobileContent": {
     "actionButton": "Öffne {{integrationName}}"
   },
   "navHeader": {
-    "close": "Schließen Sie das Modal",
+    "close": "Schließe das Fenster",
     "goBack": "Zurückgehen",
     "title": "Mit Krypto bezahlen"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Erlauben",
-    "movingFunds": "Verschieben von Geldern ohne Ihre Erlaubnis",
+    "movingFunds": "Verschieben von Geldern ohne Deine Erlaubnis",
     "titleWithClient": "{{clientName}} <2></2> Berechtigungen",
     "titleWithoutClient": "Berechtigungen dieser Anwendung <1></1>",
-    "transactionRequest": "Anfragen für Transaktionen senden",
+    "transactionRequest": "Anfragen für Überweisungen senden",
     "viewActivity": "Anzeigen von Guthaben, Aktivität, Profildaten",
-    "wontAllow": "Wird nicht erlaubt"
+    "wontAllow": "Nicht zulassen"
   },
   "oAuthBrokerPage": {
     "monitoring": "Warten auf Genehmigung ...",
-    "reopenButton": "Klicken Sie hier, um {{selectedIntegrationName}} erneut zu öffnen",
-    "subtitle": "Melden Sie sich in Ihrem Konto an und erlauben Sie den Zugriff",
-    "title": "Fahren Sie im <1></1> {{selectedIntegrationName}} Fenster fort"
+    "reopenButton": "Klicke hier, um {{selectedIntegrationName}} erneut zu öffnen",
+    "subtitle": "Melde Dich in Deinem Konto an und erlaube den Zugriff",
+    "title": "Fahre im <1></1> {{selectedIntegrationName}}-Fenster fort"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}} unterstützt keine Überweisungen für die angeforderten Token und/oder Netzwerke.",
+    "description": "{{selectedIntegrationName}} unterstützt keine Überweisungen für die Tokens und/oder angeforderten Netzwerke.",
     "selectAnotherAccount": "Wähle ein anderes Konto aus",
-    "selectAnotherDescription": "Bitte wählen Sie eine andere Börse oder Wallet, um eine Einzahlung vorzunehmen."
+    "selectAnotherDescription": "Bitte wähle eine andere Börse oder Wallet für die Einzahlung."
   },
   "oauthInitialPage": {
     "continue": "Weiter zu {{integrationName}}",
-    "description": "Klicken Sie unten, um {{integrationName}} zu öffnen, und melden Sie sich in Ihrem Konto an, um Ihre Zahlungsvorschau zu sehen.",
-    "title": "Melden Sie sich in Ihrem Konto an"
+    "description": "Klicke unten, um {{integrationName}} zu öffnen, und melde Dich in Deinem Konto an, um Deine Zahlungsvorschau zu sehen.",
+    "title": "Melde Dich in Deinem Konto an"
   },
   "oAuthMessageListener": {
-    "clientUsesMesh": "{{clientName}} verwendet Mesh, um Ihre Übertragung in {{selectedIntegrationName}} sicher zu verbinden und zu erleichtern.",
-    "description": "Melden Sie sich in Ihrem Konto an und gestatten Sie den Zugriff",
+    "clientUsesMesh": "{{clientName}} verwendet Mesh, um Deine Überweisung in {{selectedIntegrationName}} sicher zu verbinden und zu erleichtern.",
+    "description": "Melde Dich in Deinem Konto an und erlaube den Zugriff",
     "monitoring": "Warten auf Genehmigung ...",
-    "open": "Öffnen {{selectedIntegrationName}}",
-    "reopen": "Erneut öffnen {{selectedIntegrationName}}",
-    "title": "Fahren Sie im {{selectedIntegrationName}} Fenster fort",
+    "open": "Öffne {{selectedIntegrationName}}",
+    "reopen": "Öffne {{selectedIntegrationName}} erneut",
+    "title": "Fahre im {{selectedIntegrationName}}-Fenster fort",
     "willFacilitate": "wird die sichere Verbindung mit {{selectedIntegrationName}} erleichtern."
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
-      "client": "Sie genehmigen die Übertragung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}}.",
-      "destination": "Sie genehmigen die Übertragung von <1>{{amount}}</1> von {{selectedIntegrationName}} und dem Ziel."
+      "client": "Du genehmigst die Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}}.",
+      "destination": "Du genehmigst die Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zum Ziel."
     },
     "buyingPowerPurchase": "Kauf von <1>{{amount}}</1> im Wert von {{symbol}} <5>(~ {{amountInCrypto}})</5> in {{selectedIntegrationName}}.",
     "conversionStep": "Umrechnung von <1>{{amount}}</1> zu <4>{{currency}}</4>.",
-    "depositTitle": "Einzahlung läuft",
-    "description": "Dies kann einige Zeit dauern...",
+    "depositTitle": "Einzahlung in Bearbeitung",
+    "description": "Dies kann einige Zeit dauern ...",
     "existingCryptocurrencyBalance": {
-      "approveClient": "Sie genehmigen den Übertrag von {{selectedIntegrationName}} zu {{clientName}}.",
-      "approveDestination": "Sie genehmigen den Übertrag von {{selectedIntegrationName}} zum Ziel.",
-      "transfer": "Übertragung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}}.",
+      "approveClient": "Du genehmigst die Überweisung von {{selectedIntegrationName}} zu {{clientName}}.",
+      "approveDestination": "Du genehmigst die Überweisung von {{selectedIntegrationName}} zum Ziel.",
+      "transfer": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}}.",
       "transferHideClient": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}}.",
-      "transferHideClientWithAddress": "Übertragung von <1>{{amount}}</1> von {{selectedIntegrationName}} an {{address}}.",
+      "transferHideClientWithAddress": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} an {{address}}.",
       "transferSmartDeposit": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}} über einen Relay-Vertrag.",
       "transferSmartDepositHideClient": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} über einen Relay-Vertrag.",
       "transferSmartDepositHideClientWithAddress": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} an {{address}} über einen Relay-Vertrag.",
-      "transferSmartDepositWithAddress": "Übertragung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}} {{address}} über einen Relay-Vertrag.",
-      "transferWithAddress": "Übertragung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}} {{address}}."
+      "transferSmartDepositWithAddress": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}} {{address}} über einen Relay-Vertrag.",
+      "transferWithAddress": "Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zu {{clientName}} {{address}}."
     },
-    "onrampTitle": "Kauf läuft",
+    "onrampTitle": "Kauf in Bearbeitung",
     "paymentMethodDepositUsage": "Einzahlung von <1>{{amount}}</1> von {{paymentMethod}} zu {{selectedIntegrationName}}.",
-    "paymentTitle": "Zahlung wird verarbeitet",
-    "transactionTitle": "Transaktion in Bearbeitung",
+    "paymentTitle": "Zahlung in Bearbeitung",
+    "transactionTitle": "Überweisung in Bearbeitung",
     "tryAgain": "Erneut versuchen"
   },
   "passwordPage": {
-    "fieldError": "Bitte geben Sie Ihr {{field}} ein",
-    "fieldErrorWithIntegration": "Bitte geben Sie Ihr {{integrationName}} {{field}} ein",
+    "fieldError": "Bitte gib Dein {{field}} ein",
+    "fieldErrorWithIntegration": "Bitte gib Dein {{integrationName}} {{field}} ein",
     "forgotPassword": "Passwort vergessen",
     "tabs": {
-      "email": "Email",
+      "email": "E-Mail",
       "mobileApp": "Mobile App",
       "phone": "Telefon",
-      "qrCode": "QR Code"
+      "qrCode": "QR-Code"
     },
     "title": "Anmelden"
   },
@@ -796,68 +799,68 @@
     "bankAccount": "Bankkonto",
     "card": "Debitkarte",
     "default": "Verknüpfte Zahlungsmethode",
-    "digitalWallet": "Digitale Brieftasche"
+    "digitalWallet": "Digitale Wallet"
   },
   "paymentUpdateDrawerContent": {
     "cancel": "Abbrechen",
-    "clickToPay": "Klicken Sie unten, um Ihr {{token}} Gut haben aufzuladen, um diese Zahlung vorzunehmen.",
-    "description": "Ihr {{token}} Guthaben nach den Einkäufen ist niedriger als erwartet aufgrund von Änderungen des {{token}} Preises und/oder Transaktionsgebühren.",
-    "ifDontComplete": "Wenn Sie die Zahlung nicht abschließen, bleibt Ihr {{token}} Guthaben in Ihrem {{selectedIntegrationName}} Konto.",
-    "onYourAccount": "Auf Ihrem Konto",
+    "clickToPay": "Klicke unten, um Dein {{token}}-Guthaben aufzuladen, um diese Zahlung vorzunehmen.",
+    "description": "Dein {{token}}-Guthaben nach Einkäufen ist niedriger als erwartet aufgrund von Änderungen des {{token}}-Preises und/oder Gasgebühren.",
+    "ifDontComplete": "Wenn Du die Zahlung nicht abschließt, bleibt Dein {{token}}-Guthaben in Deinem {{selectedIntegrationName}}-Konto.",
+    "onYourAccount": "Auf Deinem Konto",
     "title": "Zahlungsaktualisierung",
-    "topUp": "{{token}} Guthaben aufladen"
+    "topUp": "{{token}}-Guthaben aufladen"
   },
   "payPalConnectOAuthPage": {
     "close": "Schließen",
     "continue": "Weiter zu {{selectedIntegrationName}}",
-    "enterAmount": "Übertragsbetrag eingeben",
-    "notSupported": "{{selectedIntegrationName}} unterstützt keine Überweisungen für die angeforderten Token und/oder Netzwerke.",
-    "selectAnotherAccount": "Wählen Sie ein anderes Konto aus",
-    "selectAnotherExchange": "Bitte wählen Sie eine andere Börse oder Wallet, um eine Einzahlung vorzunehmen.",
-    "selectNetwork": "Übertragsnetzwerk wählen",
+    "enterAmount": "Überweisungsbetrag eingeben",
+    "notSupported": "{{selectedIntegrationName}} unterstützt keine Überweisungen für die Tokens und/oder angeforderten Netzwerke.",
+    "selectAnotherAccount": "Wähle ein anderes Konto aus",
+    "selectAnotherExchange": "Bitte wähle eine andere Börse oder Wallet, für die Einzahlung.",
+    "selectNetwork": "Überweisungsnetzwerk wählen",
     "title": "Zu übertragendes Asset auswählen"
   },
   "previewTransfer": {
-    "allFeesIncluded": "Alle Gebühren enthalten",
+    "allFeesIncluded": "Alle Gebühren eingeschlossen",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
-    "approveTransferRequest": "Genehmigen Sie die Übertragungsanfrage<1></1>in Ihrer Brieftasche",
+    "approveTransferRequest": "Genehmige die Überweisungsanfrage<1></1>in Deiner Wallet",
     "changeAmount": "Betrag ändern",
     "depositTitle": "Einzahlungsvorschau",
-    "dustLeft": "Möglicherweise bleibt Ihnen ein kleiner Betrag an {{symbol}} übrig.",
+    "dustLeft": "Möglicherweise bleibt Dir ein kleiner Betrag an {{symbol}} übrig.",
     "estimatedGasFee": "Geschätzte Gasgebühr",
-    "estimatedGasFeeHint": "Die geschätzten Gebühren, die gezahlt werden, um Netzwerkanbieter für die Rechenleistung zu entschädigen, die sie verwenden, um diese Transaktion zu bearbeiten.",
+    "estimatedGasFeeHint": "Die geschätzten Gebühren, die gezahlt werden, um Netzwerkvalidierer für die Rechenleistung zu entschädigen, die sie verwenden, um diese Überweisung zu bearbeiten.",
     "from": "Von",
     "fundingWith": "Finanzierung mit",
     "institutionTransferFee": "{{selectedIntegrationName}} Abhebungsgebühr",
-    "institutionTransferFeeHint": "Die Gebühr, die {{selectedIntegrationName}} für Ihre Übertragung aus {{symbol}} erhebt.",
-    "maxAmount": "Ihr Konto kann maximal <2>{{networkMaxAmount}}</2> finanzieren. Möchten Sie Ihre Übertragung auf diesen Betrag anpassen?",
+    "institutionTransferFeeHint": "Die Gebühr, die {{selectedIntegrationName}} für Deine Überweisung aus {{symbol}} erhebt.",
+    "maxAmount": "Dein Konto kann maximal <2>{{networkMaxAmount}}</2> finanzieren. Möchtest Du Deine Überweisung auf diesen Betrag anpassen?",
     "monitoring": "Warten auf Genehmigung ...",
     "network": "Netzwerk",
-    "onrampTitle": "Kaufsübersicht",
+    "onrampTitle": "Kaufvorschau",
     "payingWith": "Bezahlen mit",
     "paymentTitle": "Zahlungsvorschau",
     "proceed": "Weiter",
     "processingFee": "Bearbeitungsgebühr",
-    "processingFeeHint": "Die für die Abwicklung dieser Transaktion erhobene Gebühr.",
+    "processingFeeHint": "Die für die Abwicklung dieser Überweisung erhobene Gebühr.",
     "receive": "Erhalten",
-    "resendTransferRequest": "Übertragungsanforderung erneut senden",
+    "resendTransferRequest": "Überweisungsanfrage erneut senden",
     "seconds": "{{seconds}}s",
     "symbolBalance": "{{symbol}} Guthaben",
     "to": "An",
     "total": "Gesamt",
-    "transferDeclined": "Übertragung abgelehnt",
-    "transferDeclinedBody": "Sie haben die Übertragungsanfrage in Ihrer Brieftasche abgelehnt.",
-    "transferTitle": "Übertragungsvorschau",
-    "youMayReceiveLess": "Es kann sein, dass Sie weniger erhalten aufgrund von Preisschwankungen von {{symbol}}."
+    "transferDeclined": "Überweisung abgelehnt",
+    "transferDeclinedBody": "Du hast die Überweisungsanfrage in Deiner Wallet abgelehnt.",
+    "transferTitle": "Überweisungsvorschau",
+    "youMayReceiveLess": "Es kann sein, dass Du aufgrund von Preisschwankungen von {{symbol}} weniger erhälst."
   },
   "privacyComponent": {
-    "content": "Ihre Daten sind jederzeit privat und verschlüsselt."
+    "content": "Deine Daten sind jederzeit privat und verschlüsselt."
   },
   "qrCodePassword": {
     "expired": "QR-Code abgelaufen",
-    "generateNew": "Erstellen Sie einen neuen QR-Code",
-    "qrCodeLabel": "Der QR-Code kann auf Ihrem mobilen Gerät gescannt werden, um eine Verbindung herzustellen",
-    "scanText": "Scannen Sie diesen Code mit Ihrer {{appName}}-App <1></1> um sich sofort einzuloggen."
+    "generateNew": "Erstelle einen neuen QR-Code",
+    "qrCodeLabel": "Der QR-Code kann auf Deinem mobilen Gerät gescannt werden, um eine Verbindung herzustellen",
+    "scanText": "Scanne diesen Code mit Deiner {{appName}}-App <1></1> um Dich sofort einzuloggen."
   },
   "receiveAmountInput": {
     "onNetwork": "auf {{network}}"
@@ -865,32 +868,32 @@
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "Betrag muss mindestens 8 $ betragen",
     "continue": "Weiter zu {{selectedIntegrationName}}",
-    "enterAmount": "Übertragsbetrag eingeben",
+    "enterAmount": "Überweisungsbetrag eingeben",
     "selectAsset": "Zu übertragendes Asset auswählen",
-    "selectNetwork": "Übertragsnetzwerk wählen"
+    "selectNetwork": "Überweisungsnetzwerk wählen"
   },
   "robinhoodConnectOAuthPage": {
     "continue": "Weiter zu {{selectedIntegrationName}}",
-    "enterAmount": "Übertragsbetrag eingeben",
+    "enterAmount": "Überweisungsbetrag eingeben",
     "selectAsset": "Zu übertragendes Asset auswählen",
-    "selectNetwork": "Übertragsnetzwerk wählen"
+    "selectNetwork": "Überweisungsnetzwerk wählen"
   },
   "selectCryptoFundingPage": {
     "title": "Asset auswählen"
   },
   "selectHoldingPage": {
-    "binanceDirectNoAssetsBody1": "Es sieht so aus, als hätten Sie keine Assets in Ihrem verbundenen Konto.",
-    "binanceDirectNoAssetsBody2": "Sie können Ihrem Konto Geld hinzufügen oder ein anderes Konto verbinden, um mit der Übertragung fortzufahren.",
-    "cannotFundBody": "Sie haben in diesem Konto nicht genügend Krypto- oder Fiat-Guthaben, um diese Transaktion zu finanzieren.",
-    "cannotFundTitle": "Transaktion nicht finanzierbar",
+    "binanceDirectNoAssetsBody1": "Es sieht so aus, als hättest Du keine Assets in Deinem verbundenen Konto.",
+    "binanceDirectNoAssetsBody2": "Du kannst Deinem Konto Geld hinzufügen oder ein anderes Konto verbinden, um mit der Überweisung fortzufahren.",
+    "cannotFundBody": "Du hast in diesem Konto nicht genügend Krypto- oder Fiat-Guthaben, um diese Überweisung zu finanzieren.",
+    "cannotFundTitle": "Überweisung nicht finanzierbar",
     "connectAnotherButton": "Verbinden Sie ein anderes Konto",
     "defaultTitle": "Token auswählen",
     "depositTitle": "Einzahlungstoken auswählen",
     "ineligibleAssets": "Nicht berechtigte Assets",
-    "loading": "Ihre Assets werden geladen...",
+    "loading": "Ihre Assets werden geladen ...",
     "noAssetsTitle": "Keine Assets im verbundenen Konto erkannt",
     "noEligibleAssetsTitle": "Keine Assets in diesem Konto sind für diese Überweisung berechtigt",
-    "notEnoughtBody": "Fügen Sie mehr {{symbol}} zu Ihrem Konto hinzu, und kehren Sie dann hierher zurück, um es erneut zu versuchen.",
+    "notEnoughtBody": "Füge mehr {{symbol}} zu Deinem Konto hinzu, und kehre dann hierher zurück, um es erneut zu versuchen.",
     "notEnoughtTitle": "Nicht genug {{symbol}}",
     "otherEligible": "Andere berechtigte Assets",
     "paymentTitle": "Zahlungstoken auswählen",
@@ -898,7 +901,7 @@
     "returnToClientButton": "Zurück zu {{clientName}}",
     "spotAccountsBody": "Derzeit werden nur Spot-Konten unterstützt. Assets in anderen Kontotypen, wie Margin, werden nicht erkannt.",
     "topUpButton": "Guthaben aufladen",
-    "unableTransferError": "Die Übertragung kann nicht eingeleitet werden."
+    "unableTransferError": "Die Überweisung kann nicht gestartet werden."
   },
   "selectItem": {
     "label": "{{text}} auswählen"
@@ -911,116 +914,116 @@
   },
   "selectWalletScreen": {
     "ledgerDevice": "Ledger-Gerät",
-    "ledgerLiveMobileApp": "Ledger Live Mobil-App",
-    "title": "Wie möchten Sie sich mit {{selectedIntegrationName}} verbinden?"
+    "ledgerLiveMobileApp": "Ledger Live-Mobil-App",
+    "title": "Wie möchtest Du Dich mit {{selectedIntegrationName}} verbinden?"
   },
   "sessionExpired": {
-    "title": "Ihre Sitzung ist abgelaufen."
+    "title": "Deine Sitzung ist abgelaufen."
   },
   "sessionInfo": {
-    "text": "Wenn Sie Fragen haben, melden Sie dies bitte mit der Sitzungs-ID <2>{{sessionId}}</2>."
+    "text": "Wenn Du Fragen hast, melde dies bitte mit der Session-ID <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
-    "alternativeText": "Alternativ können Sie diesen Code manuell in die Authentifikations-App einfügen.",
+    "alternativeText": "Alternativ kannst Du diesen Code manuell in die Authentifizierungs-App einfügen.",
     "copyCodeTitle": "Manueller Code",
-    "downloadStep": "Laden Sie die <1>Google Authenticator App</1> aus dem Google Play oder dem App Store herunter",
+    "downloadStep": "Lade die <1>Google Authenticator App</1> aus dem Google Play oder dem App Store herunter",
     "nextButton": "Weiter",
-    "qrCodeAlt": "QR Code",
-    "scanStep": "Fügen Sie {{selectedIntegrationName}} zu Ihrer Authentifikations-App hinzu, indem Sie den <1>QR-Code scannen</1>",
-    "title": "Authenticator-App einrichten"
+    "qrCodeAlt": "QR-Code",
+    "scanStep": "Füge {{selectedIntegrationName}} zu Deiner Authentifizierungs-App hinzu, indem Du den <1>QR-Code scannst</1>",
+    "title": "Authentifizierungs-App einrichten"
   },
   "setupEmailPage": {
-    "description": "Geben Sie Ihre E-Mail-Adresse ein.<1></1><2>{{selectedIntegrationName}}</2> wird diese E-Mail verwenden, um Ihnen Bestätigungscodes zu schicken, wenn Sie bestimmte Aktionen in Ihrem Konto durchführen.",
-    "emailTitle": "Email",
+    "description": "Gib Deine E-Mail-Adresse ein.<1></1><2>{{selectedIntegrationName}}</2> wird diese E-Mail verwenden, um Dir Bestätigungscodes zu schicken, wenn Du bestimmte Aktionen in Deinem Konto durchführst.",
+    "emailTitle": "E-Mail",
     "enterError": "Bitte E-Mail eingeben",
     "title": "E-Mail einrichten"
   },
   "termsAndConditionsPage": {
     "paragraph1": "Mesh Connect, Inc. (die <1>„Firma“</1>) ist ein Technologieanbieter, der ein Kommunikationstool (das <3>„Tool“</3>) zur Verfügung stellt, welches bestimmte Funktionen des Drittanbieter-Dienstes, den Sie verwenden (den <5>„Endbenutzerdienst“</5>), erleichtert. Diese Funktionalität soll es Ihnen ermöglichen, über den Endbenutzerdienst mit Ihren Drittanbieter-Konten und -Wallets (<7>„Verbundene Konten“</7>) zu kommunizieren, einschließlich der Übermittlung von Anweisungen, die Sie ausführen möchten.",
-    "paragraph10": "Das Schiedsverfahren wird von der American Arbitration Association gemäß ihren geänderten Verbraucherschiedsregeln durchgeführt. Die Verbraucherschiedsregeln sind online unter <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2> verfügbar. Der Schiedsrichter wird Anhörungen, sofern vorhanden, per Telefon- oder Videokonferenz durchführen, anstatt durch persönliche Anwesenheit, es sei denn, er entscheidet auf Antrag von Ihnen oder uns, dass eine persönliche Anhörung angemessen ist. Persönliche Auftritte finden an einem Ort statt, der beiden Parteien mit Rücksicht auf ihre Reisefähigkeit und andere relevante Umstände angemessen ist. Wenn Sie und das Unternehmen sich nicht auf einen Standort einigen können, sollte diese Bestimmung von der AAA oder dem Schiedsrichter getroffen werden. Die Entscheidung des Schiedsrichters wird diesen Bedingungen folgen und endgültig und verbindlich sein. Der Schiedsrichter hat die Befugnis, vorübergehende, vorläufige oder dauerhafte gerichtliche Anordnungen oder eine Entlastung zu gewähren, die eine spezifische Durchsetzung dieser Bestimmungen vorsieht, jedoch nur insoweit, als dies notwendig ist, um eine Entlastung zu gewähren, die durch die individuelle Forderung vor dem Schiedsrichter gerechtfertigt ist. Das vom Schiedsrichter ergangene Urteil kann in jedem zuständigen Gericht bestätigt und durchgesetzt werden. Ungeachtet des Vorstehenden wird nichts in diesen Bedingungen Sie daran hindern, Probleme den Bundes-, Landes- oder lokalen Behörden zur Kenntnis zu bringen, und, wenn das Gesetz es erlaubt, können sie ein Entgelt gegen uns für Sie einholen.",
+    "paragraph10": "Das Schiedsverfahren wird von der American Arbitration Association gemäß ihren geänderten Verbraucherschiedsregeln durchgeführt. Die Verbraucherschiedsregeln sind online unter <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2> verfügbar. Der Schiedsrichter wird Anhörungen, sofern vorhanden, per Telefon- oder Videokonferenz durchführen, anstatt durch persönliche Anwesenheit, es sei denn, er entscheidet auf Antrag von Ihnen oder uns, dass eine persönliche Anhörung angemessen ist. Persönliche Auftritte finden an einem Ort statt, der beiden Parteien mit Rücksicht auf ihre Reisefähigkeit und andere relevante Umstände angemessen ist. Wenn Sie und das Unternehmen sich nicht auf einen Standort einigen können, sollte diese Bestimmung von der AAA oder dem Schiedsrichter getroffen werden. Die Entscheidung des Schiedsrichters wird diesen Bedingungen folgen und endgültig und verbindlich sein. Der Schiedsrichter hat die Befugnis, vorübergehende, vorläufige oder dauerhafte gerichtliche Anordnungen oder eine Entlastung zu gewähren, die eine spezifische Durchsetzung dieser Bestimmungen vorsieht, jedoch nur insoweit, als dies notwendig ist, um eine Entlastung zu gewähren, die durch die individuelle Forderung vor dem Schiedsrichter gerechtfertigt ist. Das vom Schiedsrichter ergangene Urteil kann in jedem zuständigen Gericht bestätigt und durchgesetzt werden. Ungeachtet des Vorstehenden wird nichts in diesen Bedingungen Sie daran hindern, Probleme den Bundes-, Landes- oder lokalen Behörden zur Kenntnis zu bringen, und, wenn das Gesetz es erlaubt, können sie für Sie gegen uns vorgehen.",
     "paragraph11": "Diese Bedingungen stellen die vollständige Vereinbarung zwischen Ihnen und dem Unternehmen in Bezug auf ihre Bestandsaufnahme dar und ersetzen alle früheren Darstellungen oder Vereinbarungen, ob mündlich oder schriftlich, in Bezug auf solche Angelegenheiten. Wenn eine Bedingung gemäß geltendem Recht nicht durchsetzbar ist, wird diese Bedingung hiermit geändert, um dem Gesetz zu entsprechen, wobei die Absicht der ursprünglichen Bedingung im größtmöglichen Umfang gewahrt bleibt. Jede Bedingung, die nicht so geändert werden kann, wird abgetrennt und alle verbleibenden Bedingungen bleiben in Kraft. Sie erkennen an und stimmen zu, dass die Dienstanbieter des Unternehmens beabsichtigte Drittbegünstigte dieser Bedingungen sind. Durch die Annahme dieser Bedingungen oder die Nutzung des Tools stimmen Sie hiermit zu, dass Sie an die Bedingungen dieses Vertrags gebunden sind.",
-    "paragraph2": "Sie erkennen an und stimmen zu, dass bestimmte Funktionalitäten des Endbenutzerdienstes auf dem Tool basieren; dass die Nutzung dieser Funktionalitäten auf Ihre Anweisung erfolgt; dass weder das Unternehmen noch seine Dienstleister Brokerdienste bereitstellen oder sich in der Zahlungsabwicklung engagieren; und dass weder das Unternehmen noch seine Dienstleister irgendeine Verantwortung oder Haftung für den Endbenutzerdienst oder ein verbundenes Konto oder die Bedingungen, Richtlinien, Handlungen oder Unterlassungen ihrer Anbieter haben.",
+    "paragraph2": "Sie erkennen an und stimmen zu, dass bestimmte Funktionalitäten des Endbenutzerdienstes auf dem Tool basieren; dass die Nutzung dieser Funktionalitäten auf Ihre Anweisung erfolgt; dass weder das Unternehmen noch seine Dienstleister Brokerdienste bereitstellen oder sich an der Zahlungsabwicklung beteiligen; und dass weder das Unternehmen noch seine Dienstleister irgendeine Verantwortung oder Haftung für den Endbenutzerdienst oder ein verbundenes Konto oder die Bedingungen, Richtlinien, Handlungen oder Unterlassungen ihrer Anbieter haben.",
     "paragraph3": "Sie erklären und garantieren, dass Sie alle Rechte und Einwilligungen besitzen, um sich mit jedem verbundenen Konto über solche Funktionen zu verbinden und darauf zuzugreifen, einschließlich des Rechtes, dem Unternehmen und seinen Dienstleistungsanbietern Ihre Kontozugangsdaten, Wallet-Adressen und/oder Informationen über Ihr Konto oder Ihre persönlichen Daten für jedes verbundene Konto bereitzustellen. Hiermit berechtigen Sie das Unternehmen und seine Dienstleister, Anweisungen sowie Informationen, Daten und andere Materialien zwischen dem Endbenutzerdienst und jedem verbundenen Konto zu übertragen, und Sie erkennen an und stimmen zu, dass das Unternehmen und seine Dienstleister keine Verantwortung oder Haftung für die Durchführung solcher Anweisungen oder für die Bereitstellung solcher Materialien (einschließlich ihrer Genauigkeit, Aktualität oder Vollständigkeit) haben.",
     "paragraph4": "Sie erkennen an, dass Sie die Datenschutzrichtlinie des Unternehmens gelesen haben, die unter <2>https://meshconnect.com/privacy-policy</2> verfügbar ist, und stimmen zu, dass Sie durch die Nutzung des Tools der Verwendung Ihrer persönlichen Informationen durch das Unternehmen wie in der Datenschutzrichtlinie beschrieben zustimmen.",
-    "paragraph5": "Das Tool wird wie gesehen und wie verfügbar bereitgestellt, mit allen Mängeln und ohne jegliche Zusicherung oder Gewährleistung irgendeiner Art. Das Unternehmen macht keine Zusicherungen oder Garantien in Bezug auf das Tool, weder ausdrücklich noch stillschweigend, einschließlich jeglicher Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck oder Nichtverletzung von Rechten.",
-    "paragraph6": "UNTER KEINEN UMSTÄNDEN HAFTEN DAS UNTERNEHMEN ODER SEINE DIENSTLEISTER VERTRAGLICH, AUS GARANTIE, DELIKT (EINSCHLIESSLICH FAHRLÄSSIGKEIT), PRODUKTHAFTUNG, STRIKTER HAFTUNG ODER EINER ANDEREN THEORIE FÜR INDIREKTE, BEILÄUFIGE, SPEZIELLE ODER FOLGESCHÄDEN IN VERBINDUNG MIT DER NUTZUNG (ODER NICHTNUTZUNG) DES TOOLS, DES ENDBENUTZERSERVICES ODER EINES VERBUNDENEN KONTOS, EINSCHLIESSLICH JEGLICHER ANWEISUNGEN ODER MATERIALIEN, DIE DURCH FUNKTIONALITÄTEN ÜBERMITTELT WERDEN, DIE DURCH DAS TOOL ERMÖGLICHT WERDEN. DIE VORGENANNTEN BESCHRÄNKUNGEN, AUSSCHLÜSSE UND HAFTUNGSAUSSCHLÜSSE GELTEN IN DEM UMFANG, DER MAXIMAL DURCH ANWENDBARES RECHT ERLAUBT IST, AUCH WENN EIN RECHTSMITTEL SEINEN WESENTLICHEN ZWECK VERFEHLT. OHNE EINE BESCHRÄNKUNG DES VORANGEGANGENEN DARZUSTELLEN, ÜBERSCHREITET DIE KUMULIERTE HAFTUNG DES UNTERNEHMENS UND SEINER DIENSTLEISTER IN VERBINDUNG MIT DEM TOOL ZEHN DOLLAR NICHT.",
-    "paragraph7": "Sie werden das Unternehmen und seine Direktoren, Beamten, Angestellten, Lizenzgeber, Auftragnehmer und Vertreter von und gegenüber jeglichen Ansprüchen, Klagen, Anzügen, Untersuchungen oder Verfahren von Dritten verteidigen, entschädigen und schadlos halten, sowie jegliche Verluste, Verbindlichkeiten, Schäden, Kosten und Ausgaben, die aus Ihrer Nutzung (oder missbräuchlicher Nutzung) des Tools, des Endbenutzerdienstes und/oder irgendeiner verbundenen Kontoeinheit resultieren oder damit zusammenhängen.",
-    "paragraph8": "Das Unternehmen kann diese Bedingungen jederzeit ändern. Ihre fortgesetzte Nutzung jeglicher Funktionalitäten, die durch das Tool bereitgestellt werden, nach solchen Änderungen stellt Ihre Akzeptanz der aktualisierten Bestimmungen dar.",
-    "paragraph9": "Diese Bedingungen unterliegen den Gesetzen des Staats Delaware mit Ausnahme seiner kollisionsrechtlichen Vorschriften. Mit Ausnahme von Streitigkeiten, die für ein Amtsgericht geeignet sind, werden alle Streitigkeiten, die sich aus oder im Zusammenhang mit diesen Bedingungen oder irgendeinem Aspekt der Beziehung zwischen Ihnen und dem Unternehmen ergeben, sei es aus Vertrag, unerlaubter Handlung, Gesetz, Betrug, Falschdarstellung oder einer anderen rechtlichen Theorie, durch ein endgültiges und verbindliches Schiedsverfahren vor einem neutralen Schiedsrichter entschieden, anstatt durch ein Gericht von einem Richter oder einer Jury. Sie stimmen zu, dass das Unternehmen und Sie auf das Recht auf eine Geschworenenverhandlung verzichten. Solche Streitigkeiten umfassen unter anderem Streitigkeiten über die Auslegung oder Anwendung dieser Schiedsklausel, einschließlich ihrer Durchsetzbarkeit, Widerrufbarkeit oder Gültigkeit oder eines Teils der Schiedsklausel. Alle diese Angelegenheiten werden durch einen Schiedsrichter und nicht durch ein Gericht oder einen Richter entschieden. Sie stimmen zu, dass ein Schiedsverfahren gemäß diesen Bedingungen auf individueller Basis stattfindet; Gruppen-Sammelschiedsverfahren und Sammelklagen sind nicht erlaubt, und Sie erklären sich damit einverstanden, auf die Möglichkeit der Teilnahme an einer Sammelklage zu verzichten.",
+    "paragraph5": "Das Tool wird \"wie es ist\" und \"wie verfügbar\" bereitgestellt, mit allen Mängeln und ohne jegliche Zusicherung oder Gewährleistung irgendeiner Art. Das Unternehmen macht keine Zusicherungen oder Garantien in Bezug auf das Tool, weder ausdrücklich noch stillschweigend, einschließlich jeglicher Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck oder Nichtverletzung von Rechten.",
+    "paragraph6": "UNTER KEINEN UMSTÄNDEN HAFTEN DAS UNTERNEHMEN ODER SEINE DIENSTLEISTER VERTRAGLICH, AUS GARANTIE, DELIKT (EINSCHLIESSLICH FAHRLÄSSIGKEIT), PRODUKTHAFTUNG, STRIKTER HAFTUNG ODER EINER ANDERER THEORIE FÜR INDIREKTE, BEILÄUFIGE, SPEZIELLE ODER FOLGESCHÄDEN IN VERBINDUNG MIT DER NUTZUNG (ODER NICHTNUTZUNG) DES TOOLS, DES ENDBENUTZERSERVICES ODER EINES VERBUNDENEN KONTOS, EINSCHLIESSLICH JEGLICHER ANWEISUNGEN ODER MATERIALIEN, DIE DURCH FUNKTIONALITÄTEN ÜBERMITTELT WERDEN, DIE DURCH DAS TOOL ERMÖGLICHT WERDEN. DIE VORGENANNTEN BESCHRÄNKUNGEN, AUSSCHLÜSSE UND HAFTUNGSAUSSCHLÜSSE GELTEN IN DEM UMFANG, DER MAXIMAL DURCH ANWENDBARES RECHT ERLAUBT IST, AUCH WENN EIN RECHTSMITTEL SEINEN WESENTLICHEN ZWECK VERFEHLT. OHNE EINE BESCHRÄNKUNG DES VORANGEGANGENEN DARZUSTELLEN, ÜBERSCHREITET DIE KUMULIERTE HAFTUNG DES UNTERNEHMENS UND SEINER DIENSTLEISTER IN VERBINDUNG MIT DEM TOOL ZEHN DOLLAR NICHT.",
+    "paragraph7": "Sie werden das Unternehmen und seine Direktoren, Beamten, Angestellten, Lizenzgeber, Auftragnehmer und Vertreter von und gegenüber jeglichen Ansprüchen, Klagen, Anzügen, Untersuchungen oder Verfahren von Dritten verteidigen, entschädigen und schadlos halten, sowie jegliche Verluste, Verbindlichkeiten, Schäden, Kosten und Ausgaben, die aus Ihrer Nutzung (oder missbräuchlicher Nutzung) des Tools, des Endbenutzerdienstes und/oder irgendeines verbundenen Kontos resultieren oder damit zusammenhängen.",
+    "paragraph8": "Das Unternehmen kann diese Bedingungen jederzeit ändern. Ihre fortgesetzte Nutzung jeglicher Funktionalitäten, die durch das Tool nach solchen Änderungen bereitgestellt werden, stellt Ihre Akzeptanz der aktualisierten Bestimmungen dar.",
+    "paragraph9": "Diese Bedingungen unterliegen den Gesetzen des Staates Delaware mit Ausnahme seiner kollisionsrechtlichen Vorschriften. Mit Ausnahme von Streitigkeiten, die für ein Amtsgericht geeignet sind, werden alle Streitigkeiten, die sich aus oder im Zusammenhang mit diesen Bedingungen oder irgendeinem Aspekt der Beziehung zwischen Ihnen und dem Unternehmen ergeben, sei es aus Vertrag, unerlaubter Handlung, Gesetz, Betrug, Falschdarstellung oder einer anderen rechtlichen Theorie, durch ein endgültiges und verbindliches Schiedsverfahren vor einem neutralen Schiedsrichter entschieden, anstatt durch ein Gericht von einem Richter oder einer Jury. Sie stimmen zu, dass das Unternehmen und Sie auf das Recht auf eine Geschworenenverhandlung verzichten. Solche Streitigkeiten umfassen unter anderem Streitigkeiten über die Auslegung oder Anwendung dieser Schiedsklausel, einschließlich ihrer Durchsetzbarkeit, Widerrufbarkeit oder Gültigkeit oder eines Teils der Schiedsklausel. Alle diese Angelegenheiten werden durch einen Schiedsrichter und nicht durch ein Gericht oder einen Richter entschieden. Sie stimmen zu, dass ein Schiedsverfahren gemäß diesen Bedingungen auf individueller Basis stattfindet; Gruppen-Sammelschiedsverfahren und Sammelklagen sind nicht erlaubt, und Sie erklären sich damit einverstanden, auf die Möglichkeit der Teilnahme an einer Sammelklage zu verzichten.",
     "title": "{{shortName}} Endnutzer<2></2>Nutzungsbedingungen"
   },
   "transferAmountPage": {
     "buttonTitle": {
-      "deposit": "Anzahlungsvorschau",
+      "deposit": "Einzahlungsvorschau",
       "onramp": "Kaufvorschau",
       "transfer": "Überweisungsvorschau"
     },
     "errorMessage": {
       "insufficientFunds": "Nicht genügend Mittel, um die Überweisungs- und Gasgebühren zu decken. Der maximale Überweisungsbetrag beträgt {{maxAmount}}.",
       "minimumAmount": "Der Mindestüberweisungsbetrag beträgt {{minAmount}}.",
-      "zeroAmount": "Bitte geben Sie einen von Null verschiedenen Betrag ein"
+      "zeroAmount": "Bitte gib einen Betrag ein, der nicht Null ist"
     },
     "title": {
       "deposit": "Einzahlungsbetrag eingeben",
       "onramp": "Kaufbetrag eingeben",
-      "transfer": "Übertragsbetrag eingeben"
+      "transfer": "Überweisungsbetrag eingeben"
     }
   },
   "transferCanceledPage": {
-    "title": "Überweisung storniert",
-    "titlePayment": "Zahlung storniert",
-    "willRemain": "wird in Ihrem {{integrationName}} Konto verbleiben.",
-    "yourBalance": "Ihr {{token}}-Kontostand"
+    "title": "Überweisung abgebrochen",
+    "titlePayment": "Zahlung abgebrochen",
+    "willRemain": "wird in Deinem {{integrationName}}-Konto verbleiben.",
+    "yourBalance": "Dein {{token}}-Kontostand"
   },
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Warten auf Bestätigung durch die mobile App",
     "confirmButton": "Ich habe in der App überprüft",
-    "description": "Bestätigen Sie in Ihrer {{selectedIntegrationName}}-App, dass Sie es wirklich sind, der sich anmelden möchte.",
+    "description": "Bestätige in Deiner {{selectedIntegrationName}}-App, dass es wirklich Du bist, der sich anmelden möchte.",
     "desktopSteps": {
-      "confirm": "Bestätigen Sie die Eingabeaufforderung, um Ihre Identität zu bestätigen",
-      "openApp": "Öffnen Sie die {{selectedIntegrationName}}-App auf Ihrem Telefon",
-      "return": "Kehren Sie hierher zurück, um fortzufahren"
+      "confirm": "Bestätige die Eingabeaufforderung, um Deine Identität zu bestätigen",
+      "openApp": "Öffne die {{selectedIntegrationName}}-App auf Deinem Telefon",
+      "return": "Kehre hierher zurück, um fortzufahren"
     },
     "mobileSteps": {
-      "clickOpen": "Klicken Sie unten auf <1>Öffnen {{selectedIntegrationName}}-App</1>",
-      "verifyLogin": "Überprüfen Sie, dass Sie sich von einem neuen Gerät einloggen",
-      "verifyTransfer": "Bestätigen Sie, dass Sie es sind, der die Überweisung anfordert"
+      "clickOpen": "Klicke unten auf <1>Öffne {{selectedIntegrationName}}-App</1>",
+      "verifyLogin": "Überprüfe, dass Du Dich von einem neuen Gerät einloggst",
+      "verifyTransfer": "Bestätige, dass Du es bist, der die Überweisung anfordert"
     },
-    "openApp": "Öffnen {{selectedIntegrationName}}-App",
+    "openApp": "Öffne {{selectedIntegrationName}}-App",
     "sendNewRequest": "Neue Anfrage senden",
     "title": "Verifizierung",
     "tryAnother": "Andere Möglichkeit ausprobieren"
   },
   "transferEmailApprovalConfirmation": {
-    "approve": "Klicken Sie auf <1>Genehmigen</1> auf der Bestätigungsseite.",
-    "approveOrCancel": "Klicken Sie im E-Mail auf <1>Zulassen oder Auszahlung stornieren</1>.",
+    "approve": "Klicke auf <1>Genehmigen</1> auf der Bestätigungsseite.",
+    "approveOrCancel": "Klicke in der E-Mail auf <1>Auszahlung zulassen oder abbrechen</1>.",
     "confirmButton": "Ich habe die Auszahlung genehmigt",
-    "description": "Bitte überprüfen Sie Ihren Posteingang auf eine E-Mail mit der Aufforderung, eine neue Auszahlung zu bestätigen.",
-    "return": "Kehren Sie hierher zurück und klicken Sie unten, um mit Ihrer Überweisung fortzufahren.",
+    "description": "Bitte überprüfe Deinen Posteingang auf eine E-Mail mit der Aufforderung, eine neue Auszahlung zu bestätigen.",
+    "return": "Kehre hierher zurück und klicke unten, um mit Deiner Überweisung fortzufahren.",
     "title": "Auszahlung genehmigen"
   },
   "transferErrorPage": {
-    "defaultError": "Ein unbekannter Fehler ist aufgetreten. Bitte klicken Sie unten, um eine neue Transfersitzung zu starten."
+    "defaultError": "Ein unbekannter Fehler ist aufgetreten. Bitte klicke unten, um eine neue Transfersitzung zu starten."
   },
   "transferErrors": {
-    "failedToExecute": "Übertragung konnte nicht ausgeführt werden",
-    "failedToPreview": "Vorschau der Übertragung fehlgeschlagen",
-    "mfaEmailFailed": "Falscher Code aus der E-Mail, bitte geben Sie den Code erneut ein",
+    "failedToExecute": "Überweisung konnte nicht ausgeführt werden",
+    "failedToPreview": "Vorschau der Überweisung fehlgeschlagen",
+    "mfaEmailFailed": "Falscher Code aus der E-Mail, bitte gib den Code erneut ein",
     "mfaFaceFailed": "Verifizierung fehlgeschlagen, bitte erneut versuchen",
     "mfaFailed": "Falscher Code, bitte noch einmal eingeben",
     "mfaPhoneFailed": "Falscher SMS-Code, bitte noch einmal eingeben",
     "mfaTotpFailed": "Falscher TOTP-Code, bitte noch einmal eingeben",
-    "mfaTradingPinFailed": "MFA-Handelspin fehlgeschlagen, bitte Code erneut eingeben"
+    "mfaTradingPinFailed": "MFA-Handel-PIN fehlgeschlagen, bitte Code erneut eingeben"
   },
   "transferFacePage": {
-    "clickOpenApp": "Klicken Sie <1>Öffnen {{selectedIntegrationName}}-App</1>, um Ihre App zu öffnen und die Gesichtserkennung abzuschließen.",
-    "completeMobile": "Vervollständigen Sie die Gesichtserkennung, um zu bestätigen, dass Sie tatsächlich versuchen, Gelder zu überweisen.",
+    "clickOpenApp": "Klicke <1>Öffne {{selectedIntegrationName}}-App</1>, um Deine App zu öffnen und die Gesichtsverifizierung abzuschließen.",
+    "completeMobile": "Vervollständige die Gesichtsverifizierung, um zu bestätigen, dass es wirklich Du bist, der versucht, Gelder zu überweisen.",
     "confirmCompleted": "Ich habe die Verifizierung abgeschlossen",
-    "openApp": "Öffne {{selectedIntegrationName}} App",
-    "reopenApp": "Öffnen Sie die {{selectedIntegrationName}}-App erneut",
-    "return": "Kehren Sie dann hierher zurück, um die Kontoverbindung abzuschließen.",
-    "returnContinue": "Kehren Sie hierher zurück, um die Kontoverknüpfung fortzusetzen.",
-    "scanQR": "Scannen Sie den QR-Code, um die Gesichtserkennung abzuschließen und zu bestätigen, dass Sie tatsächlich versuchen, Gelder zu überweisen.",
+    "openApp": "Öffne {{selectedIntegrationName}}-App",
+    "reopenApp": "{{selectedIntegrationName}}-App erneut öffnen",
+    "return": "Kehre dann hierher zurück, um das Verbinden Deines Kontos abzuschließen.",
+    "returnContinue": "Kehre hierher zurück, um das Verbinden Deines Kontos fortzusetzen.",
+    "scanQR": "Scanne den QR-Code, um die Gesichtsverifizierung abzuschließen und zu bestätigen, dass es wirklich Du bist, der versucht, Gelder zu überweisen.",
     "title": "Verifizierung"
   },
   "transferMfaPage": {
@@ -1030,39 +1033,39 @@
   "transferPreviewErrorPage": {
     "aboveMaximum": "Über dem {{integrationName}}-Maximum",
     "belowMinimum": "Unter dem {{integrationName}}-Minimum",
-    "connectAnotherAccount": "Bitte verbinden Sie ein anderes Konto.",
-    "connectDifferent": "Anderen Account verbinden",
-    "insufficientBalanceError": "Unzureichender Kontostand zur Finanzierung dieser Transaktion.",
+    "connectAnotherAccount": "Bitte verbinde ein anderes Konto.",
+    "connectDifferent": "Anderes Konto verbinden",
+    "insufficientBalanceError": "Unzureichender Kontostand zur Finanzierung dieser Überweisung.",
     "insufficientFunds": "Unzureichende Mittel",
-    "unknownError": "Ein unbekannter Fehler ist aufgetreten. Bitte klicken Sie unten, um eine neue Übertragungssitzung zu beginnen."
+    "unknownError": "Ein unbekannter Fehler ist aufgetreten. Bitte klicke unten, um eine neue Transfersitzung zu beginnen."
   },
   "transferSteps": {
-    "approveTransfer": "Sie genehmigen die Überweisung von {{integrationName}} zu {{clientName}}",
-    "approveTransferDeFi": "Sie werden aufgefordert, die Überweisung auf {{integrationName}} zu genehmigen",
-    "approveTransferToDestination": "Sie genehmigen die Überweisung von {{integrationName}} an das Ziel",
-    "convertAmount": "Umwandlung von {{fromAmount}} in {{toCurrency}}",
+    "approveTransfer": "Du genehmigst die Überweisung von {{integrationName}} zu {{clientName}}",
+    "approveTransferDeFi": "Du wirst aufgefordert, die Überweisung auf {{integrationName}} zu genehmigen",
+    "approveTransferToDestination": "Du genehmigst die Überweisung von {{integrationName}} an das Ziel",
+    "convertAmount": "Umrechnung von {{fromAmount}} in {{toCurrency}}",
     "depositAmount": "Einzahlung von {{amount}} von {{paymentMethod}} zu {{integrationName}}",
     "purchaseAmount": "Kauf von <2>{{amount}}</2> im Wert von {{cryptocurrencySymbol}} in {{integrationName}}.",
     "showLess": "Weniger anzeigen",
     "showMore": "Mehr anzeigen",
     "title": "Was passieren wird",
-    "transferAmount": "Übertragung von <1>{{cryptoAmount}}</1> von {{integrationName}} nach {{clientName}} {{targetAddress}}.",
-    "transferAmountSmartDeposit": "Übertragung von <1>{{cryptoAmount}}</1> von {{integrationName}} nach {{clientName}} {{targetAddress}} über einen Relay-Vertrag."
+    "transferAmount": "Überweisung von <1>{{cryptoAmount}}</1> von {{integrationName}} nach {{clientName}} {{targetAddress}}.",
+    "transferAmountSmartDeposit": "Überweisung von <1>{{cryptoAmount}}</1> von {{integrationName}} nach {{clientName}} {{targetAddress}} über einen Relay-Vertrag."
   },
   "transferUpdateDrawerContent": {
     "approveTransfer": "Überweisung genehmigen",
     "cancel": "Abbrechen",
     "description": "Der gekaufte Betrag ist aufgrund von Änderungen im {{token}}-Preis und/oder den Gasgebühren niedriger als erwartet.",
-    "ifDontComplete": "Wenn Sie die Übertragung nicht abschließen, bleibt Ihr {{token}}-Saldo in Ihrem {{selectedIntegrationName}}-Konto.",
-    "onYourAccount": "Auf deinem Account",
+    "ifDontComplete": "Wenn Du die Überweisung nicht abschließt, bleibt Dein {{token}}-Saldo in Deinem {{selectedIntegrationName}}-Konto.",
+    "onYourAccount": "Auf Deinem Konto",
     "title": "Überweisung aktualisieren",
-    "youWillReceive": "Sie erhalten"
+    "youWillReceive": "Du erhälst"
   },
   "transferWithdrawalAddressConfirmation": {
-    "checkInbox": "Bitte überprüfen Sie Ihren Posteingang auf eine E-Mail mit der Aufforderung, eine neue Auszahlungsadresse zu bestätigen.",
-    "clickConfirm": "Klicken Sie in der E-Mail auf <1>Adresse bestätigen</1>.",
+    "checkInbox": "Bitte überprüfe Deinen Posteingang auf eine E-Mail mit der Aufforderung, eine neue Auszahlungsadresse zu bestätigen.",
+    "clickConfirm": "Klicke in der E-Mail auf <1>Adresse bestätigen</1>.",
     "confirmedButton": "Ich habe die Adresse bestätigt",
-    "return": "Kehren Sie hierher zurück und klicken Sie unten, um die Übertragung abzuschließen.",
+    "return": "Kehre hierher zurück und klicke unten, um die Überweisung abzuschließen.",
     "title": "Auszahlungsadresse bestätigen"
   },
   "trezorContext": {
@@ -1073,37 +1076,37 @@
     "unknownError": "Ein unbekannter Fehler ist aufgetreten"
   },
   "trezorDeviceConnected": {
-    "clientVerifyLabel": "{{clientName}} muss Ihr Wallet verifizieren",
+    "clientVerifyLabel": "{{clientName}} muss Deine Wallet verifizieren",
     "secureLabel": "Schnell, sicher und kostenlos",
-    "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Transaktionen mit Ihrem Wallet durchzuführen.",
-    "signText": "Sie werden aufgefordert, auf Ihrem Trezor-Gerät eine Nachricht zu unterzeichnen, die bestätigt, dass Sie dieses Wallet besitzen.",
+    "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Überweisungen mit Deiner Wallet durchzuführen.",
+    "signText": "Du wirst aufgefordert, auf Deinem Trezor-Gerät eine Nachricht zu unterzeichnen, die bestätigt, dass Du diese Wallet besitzt.",
     "title": "Fast geschafft!",
-    "verifyingLabel": "Ihr Wallet wird verifiziert..."
+    "verifyingLabel": "Verifiziere Deine Wallet ..."
   },
   "trezorError": {
-    "connectionDeclinedBody": "Sie haben die Anfrage zur Verbindung Ihrer Wallet abgelehnt oder eine vorherige Anfrage ist noch aktiv.",
+    "connectionDeclinedBody": "Du hast die Anfrage zur Verbindung Deiner Wallet abgelehnt oder eine vorherige Anfrage ist noch aktiv.",
     "connectionDeclinedTitle": "Verbindung abgelehnt",
-    "signatureDeclinedBody": "Sie haben die Signaturanfrage in Ihrem Wallet abgelehnt, oder eine frühere Anfrage ist noch aktiv.",
+    "signatureDeclinedBody": "Du hast die Signaturanfrage in Deiner Wallet abgelehnt, oder eine vorherige Anfrage ist noch aktiv.",
     "signatureDeclinedTitle": "Signatur abgelehnt"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}} muss Ihr Wallet verifizieren",
-    "clientVerifyText": "Sie werden sicher zu Ihrem Trezor weitergeleitet, um auf Ihrem Gerät eine Nachricht zu signieren, die bestätigt, dass Sie Eigentümer Ihres Wallets sind.",
-    "connectingLabel": "Ihr Wallet wird verbunden...",
+    "clientVerifyLabel": "{{clientName}} muss Deine Wallet verifizieren",
+    "clientVerifyText": "Du wirst sicher zu Deinem Trezor weitergeleitet, um auf Deinem Gerät eine Nachricht zu unterzeichnen, die bestätigt, dass Du diese Wallet besitzt.",
+    "connectingLabel": "Verbinde Deine Wallet ...",
     "secureLabel": "Schnell, sicher und kostenlos",
-    "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Transaktionen mit Ihrem Wallet durchzuführen."
+    "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Überweisungen mit Deiner Wallet durchzuführen."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} möchte, dass Sie das Eigentum an der Adresse <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6> bestätigen. Diese Adresse ist nicht mit dem verbundenen Wallet assoziiert. Bitte verbinden Sie ein anderes Wallet.",
-    "connectAnotherAction": "Anderes Wallet verbinden",
+    "body": "{{clientName}} möchte, dass Du den Besitz der Adresse <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6> bestätigst. Diese Adresse ist nicht mit dem verbundenen Wallet assoziiert. Bitte verbinde eine andere Wallet.",
+    "connectAnotherAction": "Andere Wallet verbinden",
     "title": "Oh oh!"
   },
   "verifyError": {
-    "body": "Ihre Hardware-Wallet konnte nicht verifiziert werden. Bitte stellen Sie sicher, dass Sie das richtige Netzwerk ausgewählt und die richtige Wallet-Adresse eingegeben haben.",
+    "body": "Deine Hardware-Wallet konnte nicht verifiziert werden. Bitte stelle sicher, dass Du das richtige Netzwerk ausgewählt und die richtige Wallet-Adresse eingegeben hast.",
     "title": "Verifizierung fehlgeschlagen"
   },
   "verifyErrorPage": {
-    "body": "Sie haben die Signaturanfrage in Ihrem Wallet abgelehnt, oder eine frühere Anfrage ist noch aktiv. {{clientName}} kann das Eigentum an Ihrem Wallet ohne Signatur nicht bestätigen.",
+    "body": "Du hast die Signaturanfrage in Deiner Wallet abgelehnt, oder eine frühere Anfrage ist noch aktiv. {{clientName}} kann den Besitz an Deiner Wallet ohne Signatur nicht bestätigen.",
     "title": "Verifizierung abgelehnt"
   },
   "wallectConnect": {
@@ -1112,12 +1115,12 @@
     "unknownError": "Ein unbekannter Fehler ist aufgetreten. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Kehren Sie zu Ihrem Zahlungsprozess zurück, um Ihren {{clientName}}-Einkauf abzuschließen.",
-    "continueMessage": "Bitte im {{clientName}} App weitermachen.",
-    "successMessage": "Sie haben erfolgreich das Eigentum an Ihrem {{walletName}} Wallet bestätigt."
+    "completePaymentMessage": "Kehre zu Deinem Zahlungsprozess zurück, um Deinen {{clientName}}-Einkauf abzuschließen.",
+    "continueMessage": "Bitte in der {{clientName}}-App fortfahren.",
+    "successMessage": "Du hast erfolgreich den Besitz an Deiner {{walletName}}-Wallet bestätigt."
   },
   "withdrawalLockedErrorPage": {
-    "another": "Übertragung von einem anderen Konto",
+    "another": "Überweisung von einem anderen Konto",
     "title": "Abhebungen sind vorübergehend deaktiviert"
   }
 }

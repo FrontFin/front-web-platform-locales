@@ -95,7 +95,7 @@
   "categories": {
     "brokerage": "仲介業者",
     "deFiWallet": "ウォレット",
-    "deFiWalletFull": "セルフカストディ暗号ウォレット",
+    "deFiWalletFull": "自己管理型ウォレット",
     "exchange": "取引所",
     "exchangeFull": "中央集権型暗号取引所",
     "nftMarketplace": "NFTマーケットプレイス",
@@ -104,7 +104,7 @@
   "chainSwitch": {
     "monitoringApproval": "承認待ちです...",
     "networkChangeDeclined": "ネットワーク変更が拒否されました",
-    "networkChangeDeclinedBody": "あなたのウォレットでネットワーク変更のリクエストを拒否しました",
+    "networkChangeDeclinedBody": "ネットワーク変更のリクエストをウォレットで拒否しました",
     "resendNetworkSwitch": "ネットワーク切り替え要求を再送信",
     "stayOnNetwork": "{{networkName}}に留まる",
     "switchingNetwork": "ネットワークを切り替え中",
@@ -119,7 +119,7 @@
     "verificationCodeInputTitle": "確認コード"
   },
   "chooseAccountPage": {
-    "linkToApp": "どのアカウントを<1></1>このアプリにリンクしますか",
+    "linkToApp": "どのアカウントを<1></1>でこのアプリにリンクしますか？",
     "linkToClient": "どのアカウントを<1></1>{{clientName}}にリンクしますか",
     "title": "サブアカウントを選択"
   },
@@ -131,16 +131,16 @@
     "continueCap": "続行",
     "doneCap": "完了",
     "failedToLoadTrasferError": "転送情報の読み込みに失敗しました",
-    "genericConnectErrorMessage": "あなたの統合に接続できませんでした",
+    "genericConnectErrorMessage": "連携先に接続できませんでした",
     "maxCap": "最大",
-    "mesh": "メッシュ",
+    "mesh": "Mesh",
     "notFound": "見つかりません",
     "searchCap": "検索",
     "securedBy": "保護されています",
     "somethingWentWrong": "何かがうまくいきませんでした...",
     "submitCap": "送信",
     "successTitle": "成功しました！",
-    "termsOfUse": "続行すると<2>利用規約</2>に同意したことになります",
+    "termsOfUse": "続行すると<2>terms of use</2>に同意したことになります",
     "tryAgain": "もう一度お試しください"
   },
   "commonContent": {
@@ -148,14 +148,14 @@
     "monitoring": "承認を監視中...",
     "resend": "接続要求を再送信",
     "title": "ウォレットで接続<1></1>要求を承認",
-    "title40": "{{walletName}}アプリで接続要求を承認してください。"
+    "title40": "<1>{{walletName}}</1>アプリで接続要求を承認してください。"
   },
   "connectExternalPageScreen": {
     "connectedTitle": "デスクトップの指示に従って{{selectedIntegrationName}}を接続してください。",
     "failedBody": "{{integrationName}}との接続を確立できません。アドレスとネットワークIDが正しいか確認し、再度お試しください。",
-    "failedTitle": "接続失敗",
-    "notConnectedStep1": "1. <1>デスクトップ</1>デバイスでこのリンクを開いてください。",
-    "notConnectedStep2": "2. ウォレットを安全に接続するためにこのコードを入力してください。",
+    "failedTitle": "接続に失敗しました",
+    "notConnectedStep1": "1. <1>desktop</1>デバイスでこちらのリンクを開いてください",
+    "notConnectedStep2": "2. ウォレットを安全に接続するためにこのコードを入力してください",
     "notConnectedTitle": "デスクトップデバイスを使用して{{selectedIntegrationName}}を接続してください。"
   },
   "connectionDeclinedPage": {
@@ -169,7 +169,7 @@
     "installApp": "モバイルアプリをインストール"
   },
   "countryBlockedPage": {
-    "body": "この機能はまだお住まいの地域ではサポートされていません。より円滑な入金体験を得るために、しばらくしてから再度ご確認ください。",
+    "body": "この機能はまだお住まいの<1></1>地域ではサポートされていません。<3></3>より円滑な入金体験を得るために、しばらくしてから再度ご確認ください。",
     "comingSoon": "近日公開"
   },
   "currencyBox": {
@@ -192,7 +192,7 @@
     "title": "ウォレットを接続"
   },
   "defiWalletQrPage": {
-    "declinedBody": "あなたはウォレットを接続するリクエストを拒否したか、または以前のリクエストがまだアクティブです。",
+    "declinedBody": "ウォレットの接続リクエストを拒否したか、以前のリクエストがまだアクティブです。",
     "declinedTitle": "接続が拒否されました",
     "description": "{{selectedIntegrationName}}を開いて<3></3>QRコードをスキャンしてください。",
     "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
@@ -204,7 +204,7 @@
     "monitoringApproval": "承認を監視中...",
     "selectNetwork": "ネットワークを選択",
     "title": "ネットワークの切り替え",
-    "whichNetwork": "<1>{{selectedIntegrationName}}</1>ウォレットのどのネットワークをリンクしますか？"
+    "whichNetwork": "<1>{{selectedIntegrationName}}</1>のウォレット<4></4>で、どのネットワークをリンクしますか？"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "このデバイスに{{integrationName}}がインストールされていません。{{integrationName}}アプリをインストールするか、別のウォレットを接続してください。",
@@ -272,17 +272,17 @@
   "doneTransferPage": {
     "awaitingApproval": "この転送は{{selectedIntegrationName}}で承認されるまで開始されません。",
     "checkDetails": "何が起こったか確認",
-    "checkDetails40": "",
+    "checkDetails40": "取引の詳細を表示",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>が{{shortAddress}}に受け取られます",
     "depositClient": "<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2>を{{clientName}} ({{shortAddress}})で受け取ります",
     "goBackToShift4": "← Shift4に戻る",
     "goToIntegrationToApprove": "この転送を承認するために<1>{{selectedIntegrationName}}</1>に行ってください。",
     "paymentInitiated": "<1></1><2>{{amountCrypto}}</2>を{{clientName}}に送金するための支払いを開始しました。",
-    "waiting": "ネットワークの確認が十分に行われるまで、転送は完了しません。"
+    "waiting": "ネットワークの確認が十分に行われるまで、振込みは完了しません。"
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "アドレス{{address}}の所有権はすでに<4>{{clientName}}</4>で確認されています。",
-    "continueToTransfer": "転送を続行する",
+    "continueToTransfer": "振込を続ける",
     "returnToClient": "{{clientName}}に戻る",
     "titleAllSet": "すべて完了しました！",
     "verifiedBody": "あなたは<4>{{clientName}}</4>のために住所{{address}}の所有権を確認しました。"
@@ -297,11 +297,11 @@
     "sendEmailButton": "メールを送信しました",
     "steps": {
       "checkInbox": "新しいデバイスからのサインインを確認するためのメールを受信トレイで確認してください。",
-      "doNotClick": "<0>クリックしないでください</0> メール内の確認ボタンを。",
+      "doNotClick": "メール内の確認ボタンを<0>DO NOT</0> 。",
       "forwardEmail": "メールをこの安全な受信ボックスに転送すると、ログイン要求が自動的に確認されます。"
     },
-    "stillWaitingLoading": "メールを待っています...",
-    "title": "本人確認をしてください",
+    "stillWaitingLoading": "まだメールをお待ちしています...",
+    "title": "まだメールをお待ちしています...",
     "warningTitle": "続行する前にこのメッセージを全てお読みください。"
   },
   "errorMessages": {
@@ -334,6 +334,9 @@
   },
   "errorPage": {
     "title": "エラーが発生しました。"
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "無効な2FAコード"
   },
   "exitPage": {
     "body": "進行状況が失われます。",
@@ -389,7 +392,7 @@
     "challengeCode": "チャレンジコード",
     "clientId": "クライアントID",
     "clientSecret": "クライアントシークレット",
-    "email": "メール",
+    "email": "Eメール",
     "emailOrUsername": "メールアドレスまたはユーザー名",
     "mfaCode": "MFAコード",
     "passphrase": "パスフレーズ",
