@@ -41,7 +41,7 @@
     "mayNeedReAuthApp": "ご注意ください：<2>the application</2>に戻った際に、この転送を開始するためにBinanceアカウントへの再認証が必要になる場合があります。",
     "mayNeedReAuthClient": "ご注意ください：<2>{{clientName}}</2>に戻った際に、この転送を開始するためにBinanceアカウントへの再認証が必要になる場合があります。",
     "openBinance": "Binanceを開く",
-    "returnToApp": "この転送を再試行するために、<1>the application</1>に戻ってください",
+    "returnToApp": "この送金を再試行するには、<1>the application</1>に戻ってください",
     "returnToClient": "この転送を再試行するために、<1>{{clientName}}</1>に戻ってください",
     "title": "Binanceアカウントの出金を有効化"
   },
@@ -87,7 +87,7 @@
     "prodOnly": "本番のみ",
     "search": "検索",
     "title": "リンクするアカウントを選択",
-    "title40": "取引所やウォレットを接続"
+    "title40": "アカウントを選択してください"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}}を選択"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "何かがうまくいきませんでした...",
     "submitCap": "送信",
     "successTitle": "成功しました！",
-    "termsOfUse": "続行すると<2>terms of use</2>に同意したことになります",
+    "termsOfUse": "続行することで、 <1>terms of use</1>に同意したものとみなされます",
     "tryAgain": "もう一度お試しください"
   },
   "commonContent": {
@@ -211,18 +211,18 @@
     "title": "接続が利用できません"
   },
   "deviceConfirmationScreenPage": {
-    "awaitingConfirmation": "モバイルアプリからの確認待ち",
+    "awaitingConfirmation": "モバイルアプリでの承認を待っています",
     "clickOpenApp": "下記の<1>{{integrationName}}アプリを開く</1>をクリックしてください。",
-    "confirmInApp": "{{integrationName}}モバイルアプリでログインを試みていることを確認してください。",
-    "confirmPrompt": "確認のために促されたらあなたであることを認証してください",
+    "confirmInApp": "ご本人によるログインであることを確認するため、{{integrationName}}のモバイルアプリで承認を行ってください。",
+    "confirmPrompt": "ご本人確認のため、表示されたプロンプトで承認を行ってください",
     "openApp": "{{integrationName}}アプリを開く",
-    "openAppOnPhone": "電話で{{integrationName}}アプリを開く",
-    "returnHere": "続行するためにここに戻ってください",
+    "openAppOnPhone": "スマートフォンで{{integrationName}}アプリを開く",
+    "returnHere": "続行するには、こちらの画面にお戻りください。",
     "sendNewRequest": "新しいリクエストを送信",
     "title": "確認",
     "tryAnotherWay": "別の方法を試す",
     "verified": "アプリで確認を完了しました",
-    "verifyLoggedIn": "新しいデバイスからログインしていることを確認してください。"
+    "verifyLoggedIn": "新しい端末からのログインであることを確認してください"
   },
   "doneExternalVerifyScreen": {
     "body": "<2>{{selectedIntegrationName}}</2>ウォレットの所有権が正常に確認されました。",
@@ -230,51 +230,51 @@
   },
   "donePage": {
     "continueToDeposit": "入金を続行",
-    "continueToPayment": "支払いを続ける",
-    "continueToPurchase": "購入を続ける",
-    "continueToTransfer": "送金を続ける",
+    "continueToPayment": "お支払いに進む",
+    "continueToPurchase": "購入に進む",
+    "continueToTransfer": "送金に進む",
     "done": "完了",
     "linkAnother": "別のアカウントをリンク",
-    "linkedToClient": "<2>{{integrationName}}</2>を<5>{{clientName}}</5>に正常にリンクしました。",
-    "linkedToThisApp": "<2>{{integrationName}}</2>を<5>このアプリ</5>に正常にリンクしました。"
+    "linkedToClient": "<1></1><2>{{integrationName}}</2>が<5>{{clientName}}</5>に正常に連携されました。",
+    "linkedToThisApp": "<1></1><2>{{integrationName}}</2>が<5>本アプリ</5>に正常に連携されました。"
   },
   "doneTransferDetails": {
-    "awaitinApprovalLabel": "この転送は{{selectedIntegrationName}}で承認されるまで開始されません。",
-    "defaultTitle": "トランザクションが完了しました。",
-    "depositTitle": "入金が完了しました。",
-    "onrampTitle": "購入完了",
-    "paymentTitle": "支払い完了",
+    "awaitinApprovalLabel": "この送金は、{{selectedIntegrationName}}で承認されるまで開始されません。",
+    "defaultTitle": "取引完了しました",
+    "depositTitle": "入金完了しました",
+    "onrampTitle": "購入完了しました",
+    "paymentTitle": "支払い完了しました",
     "steps": {
       "approvedFromCeFiToClient": "{{selectedIntegrationName}}から{{clientName}}への送金を承認しました。",
       "approvedFromCeFiToDestination": "{{selectedIntegrationName}}からの送金を承認しました。",
       "approvedFromDeFi": "{{selectedIntegrationName}}で送金を承認しました。",
-      "conversion": "<1>{{amount}}</1>を<4>{{currency}}</4>に変換。",
+      "conversion": "<1>{{amount}}</1>を<4>{{currency}}</4>に換算します。",
       "deposit": "<1>{{amount}}</1>を{{paymentMethod}}から{{selectedIntegrationName}}に入金。",
       "purchase": "{{selectedIntegrationName}}で{{symbol}}の<1>{{amount}}</1>相当を購入。",
       "requestToTransferPaymentSmartToAddress": "リレイ契約{{shortSmartContractsAddress}}を通じて{{selectedIntegrationName}}から<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferPaymentSmartToClient": "{{selectedIntegrationName}}から{{clientName}}にリレイ契約{{shortSmartContractsAddress}}を介して<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferPaymentToAddress": "{{selectedIntegrationName}}から<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferPaymentToClient": "{{selectedIntegrationName}}から{{clientName}}に<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferSmartToAddress": "リレイ契約{{shortSmartContractsAddress}}を介して{{selectedIntegrationName}}から{{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferSmartToClient": "リレイ契約{{shortSmartContractsAddress}}を介して{{selectedIntegrationName}}から{{clientName}} {{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferToAddress": "{{selectedIntegrationName}}から{{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "requestToTransferToClient": "{{selectedIntegrationName}}から{{clientName}} {{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送するリクエスト。",
-      "transferPaymentSmartToAddress": "リレイ契約{{shortSmartContractsAddress}}を通じて{{selectedIntegrationName}}から<1>{{transferPreviewAmount}}</1>を転送。",
-      "transferPaymentSmartToClient": "リレイ契約{{shortSmartContractsAddress}}を介して{{selectedIntegrationName}}から{{clientName}}に<1>{{transferPreviewAmount}}</1>を転送。",
-      "transferPaymentToAddress": "{{selectedIntegrationName}}から<1>{{transferPreviewAmount}}</1>を転送。",
-      "transferPaymentToClient": "{{selectedIntegrationName}}から{{clientName}}に<1>{{transferPreviewAmount}}</1>を転送。",
-      "transferSmartToAddress": "リレイ契약{{shortSmartContractsAddress}}を通じて{{selectedIntegrationName}}から{{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送。",
-      "transferSmartToClient": "{{selectedIntegrationName}}から{{clientName}} {{shortToAddress}}に<1>{{transferPreviewAmount}}</1>をリ레イ契約{{shortSmartContractsAddress}}を介して転送。",
+      "requestToTransferPaymentSmartToClient": "{{selectedIntegrationName}}から{{clientName}}へ、中継コントラクト{{shortSmartContractsAddress}}を経由して<1>{{transferPreviewAmount}}</1>を送金するリクエスト。",
+      "requestToTransferPaymentToAddress": "<1>{{transferPreviewAmount}}</1>を{{selectedIntegrationName}}から送金するリクエストです。",
+      "requestToTransferPaymentToClient": "<1>{{transferPreviewAmount}}</1>を{{selectedIntegrationName}}から{{clientName}}へ送金するリクエストです。",
+      "requestToTransferSmartToAddress": "<1>{{transferPreviewAmount}}</1>を{{selectedIntegrationName}}から{{shortToAddress}}へ、中継コントラクト{{shortSmartContractsAddress}}を経由して送金するリクエストです。",
+      "requestToTransferSmartToClient": "<1>{{transferPreviewAmount}}</1>を{{selectedIntegrationName}}から{{clientName}}{{shortToAddress}}へ、中継コントラクト{{shortSmartContractsAddress}}を経由して送金するリクエストです。",
+      "requestToTransferToAddress": "<1>{{transferPreviewAmount}}</1>を{{selectedIntegrationName}}から{{shortToAddress}}へ送金するリクエストです。",
+      "requestToTransferToClient": "<1>{{transferPreviewAmount}}</1>を{{selectedIntegrationName}}から{{clientName}}{{shortToAddress}}へ送金するリクエストです。",
+      "transferPaymentSmartToAddress": "中継契約{{shortSmartContractsAddress}}を経由して、{{selectedIntegrationName}}からの<1>{{transferPreviewAmount}}</1>の送金。",
+      "transferPaymentSmartToClient": "中継コントラクト{{shortSmartContractsAddress}}を経由して、{{selectedIntegrationName}}から{{clientName}}への<1>{{transferPreviewAmount}}</1>の送金。",
+      "transferPaymentToAddress": "{{selectedIntegrationName}}からの<1>{{transferPreviewAmount}}</1>の送金。",
+      "transferPaymentToClient": "{{selectedIntegrationName}}から{{clientName}}への<1>{{transferPreviewAmount}}</1>の送金。",
+      "transferSmartToAddress": "中継コントラクト{{shortSmartContractsAddress}}を経由して、{{selectedIntegrationName}}から{{shortToAddress}}への<1>{{transferPreviewAmount}}</1>の送金。",
+      "transferSmartToClient": "中継コントラクト{{shortSmartContractsAddress}}を経由して、{{selectedIntegrationName}}から{{clientName}}（{{shortToAddress}}）への<1>{{transferPreviewAmount}}</1>の送金。",
       "transferToAddress": "{{selectedIntegrationName}}から{{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送。",
-      "transferToClient": "{{selectedIntegrationName}}から{{clientName}} {{shortToAddress}}に<1>{{transferPreviewAmount}}</1>を転送。"
+      "transferToClient": "{{selectedIntegrationName}}から{{clientName}}（{{shortToAddress}}）への<1>{{transferPreviewAmount}}</1>の送金。"
     }
   },
   "doneTransferPage": {
-    "awaitingApproval": "この転送は{{selectedIntegrationName}}で承認されるまで開始されません。",
-    "checkDetails": "何が起こったか確認",
+    "awaitingApproval": "この送金は、{{selectedIntegrationName}}で承認されるまで開始されません。",
+    "checkDetails": "状況をご確認ください",
     "checkDetails40": "取引の詳細を表示",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>が{{shortAddress}}に受け取られます",
-    "depositClient": "<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2>を{{clientName}} ({{shortAddress}})で受け取ります",
+    "depositClient": "<1></1><>{{amountCrypto}} ~ {{amountFiat}}</>を{{clientName}} ({{shortAddress}})で受け取ります",
     "goBackToShift4": "← Shift4に戻る",
     "goToIntegrationToApprove": "この転送を承認するために<1>{{selectedIntegrationName}}</1>に行ってください。",
     "paymentInitiated": "<1></1><2>{{amountCrypto}}</2>を{{clientName}}に送金するための支払いを開始しました。",
@@ -304,39 +304,39 @@
     "title": "まだメールをお待ちしています...",
     "warningTitle": "続行する前にこのメッセージを全てお読みください。"
   },
+  "errorHeadlines": {
+    "twoFaFailed": "無効な2FAコード"
+  },
   "errorMessages": {
     "amountBelowMinimum": "要求された金額は、このネットワークでの最小許容振り込み額を下回っています。",
     "amountExceedsMaximum": "要求された金額は、このネットワークでの最大許容振り込み額を超えています。",
     "balanceNotEnough": "残高が不足しています。",
-    "binanceTravelRuleRestriction": "旅行規則の制限により、Binanceは宛先アドレスへの転送をサポートしていません。",
-    "coinbaseUnavailable": "Coinbaseでエラーが発生しました。CBアカウントを確認して、転送が行われたかどうかを確認してください。",
+    "binanceTravelRuleRestriction": "トラベルルールの制限により、Binanceは宛先アドレスへの送金をサポートしていません。",
+    "coinbaseUnavailable": "Coinbaseでエラーが発生しました。お手数ですが、ご自身のCBアカウントをご確認のうえ、送金が完了しているかご確認ください。",
     "default": "エラーが発生しました。",
     "emptyWalletBalance": "元のウォレットの残高が空です。",
     "failedToGetFundingOptions": "資金調達オプションの取得に失敗しました",
     "failedToSaveFundingOptions": "資金調達オプションの保存に失敗しました",
-    "feeAssetBalanceNotEnough": "振り込み手数料のための資金が不足しています。",
-    "fromAccountNotSupported": "アカウントは現在、暗号資産の引き出しをサポートしていません。",
-    "integrationNotAvailable": "統合は現在利用できません。",
-    "kycRequired": "振り込みの開始ができません。暗号資産の振り込みを有効にする前に、統合にはアカウントのKYC認証が必要です。",
-    "locked": "あなたのアカウントはロックされています",
-    "networkDisabled": "ネットワークは現在無効であり、使用できません。",
-    "passKeyNotSupported": "パスキーが現在サポートされていません。続行するには無効にしてください。",
+    "feeAssetBalanceNotEnough": "送金手数料が不足しています。",
+    "fromAccountNotSupported": "このアカウントでは現在、暗号資産の出金に対応していません。",
+    "integrationNotAvailable": "現在、この連携機能はご利用いただけません。",
+    "kycRequired": "送金を開始できません。この連携機能では、暗号資産の送金を有効にする前に、アカウントの本人確認(KYC)手続きが必要です。",
+    "locked": "お客様のアカウントはロックされています",
+    "networkDisabled": "現在、このネットワークは無効になっており、ご利用いただけません。",
+    "passKeyNotSupported": "現在、パスキーには対応していません。続行するには無効にしてください。",
     "previewExpired": "プレビューは失効しました。",
-    "satoshiTestRequired": "取引ルールの制限により、Coinbase APIは1000ユーロ以上の転送をサポートしていません。より低額で再度お試しください。",
+    "satoshiTestRequired": "CoinbaseのAPIは旅行規則の制限により、1000ユーロを超える送金をサポートしていません。お手数ですが、より少ない金額で再度お試しください。",
     "symbolNotSupported": "統合ではこのシンボルをサポートしていません。",
-    "symbolNotSupportedBySource": "要求されたネットワーク上で、元のウォレットは転送用のシンボルをサポートしていません。",
-    "symbolNotSupportedByTarget": "要求されたコインの入金アドレスを見つけることができませんでした。",
-    "toAccountNotSupported": "宛先アカウントは現在、暗号資産の入金をサポートしていません。",
-    "tooManyRequests": "後ほど再試行してください。",
-    "transferAlreadyRequested": "振り込みはすでに要求されています。",
-    "twoFaFailed": "二要素認証の確認に失敗しました。もう一度お試しください。",
-    "withdrawalLocked": "アカウント設定の変更後、安全のため24時間は引き出しが無効になります。後でもう一度お試しください。"
+    "symbolNotSupportedBySource": "送金元のウォレットでは、要求されたネットワーク上でこのシンボルの送金はサポートされていません。",
+    "symbolNotSupportedByTarget": "ご指定のコインの入金アドレスが見つかりませんでした。",
+    "toAccountNotSupported": "宛先アカウントでは現在、暗号資産の入金がサポートされていません。",
+    "tooManyRequests": "後でもう一度お試しください。",
+    "transferAlreadyRequested": "送金はすでに申請されています。",
+    "twoFaFailed": "二要素認証に失敗しました。もう一度お試しください。",
+    "withdrawalLocked": "セキュリティ保護のため、アカウント設定の変更後24時間は出金が無効になります。後ほど再度お試しください。"
   },
   "errorPage": {
     "title": "エラーが発生しました。"
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "無効な2FAコード"
   },
   "exitPage": {
     "body": "進行状況が失われます。",
@@ -347,40 +347,40 @@
   "externalDirectMobileWallet": {
     "actionRefusedError": "アクションが拒否されました",
     "actionRefusedRetryText": "{{clientName}}アプリに戻ってください",
-    "actionRefusedText": "あなたはアクションを拒否しました。",
+    "actionRefusedText": "操作が拒否されました。",
     "connectionWalletAction": "{{integrationName}}との接続に成功しました。",
     "continueInApp": "{{clientName}}アプリで続けてください。",
     "continuePaymentInApp": "{{clientName}}での購入を続行するには、チェックアウト画面に戻ってください。",
-    "defaultAction": "あなたはアクションを正常に完了しました。",
+    "defaultAction": "操作が正常に完了しました。",
     "processingError": "処理エラー",
     "processingText": "問題が発生しました。",
     "sessionNotFoundError": "セッションが見つかりません",
     "signedMessageAction": "{{integrationName}}を正常に所有確認しました。",
-    "transactionAction": "トランザクションを正常に初期化しました。",
+    "transactionAction": "取引の初期化に成功しました。",
     "tryAgainText": "後でもう一度試してください。"
   },
   "externalHardwareWalletInitial": {
-    "invalidCode": "無効なコード。もう一度入力してください"
+    "invalidCode": "無効なコードです。もう一度お試しください"
   },
   "externalHardwareWalletMainPage": {
-    "mobileBody": "この体験はハードウェアウォレットを接続するために<1>デスクトップ</1>デバイスで完了する必要があります。",
-    "mobileTitle": "このリンクをデスクトップデバイスで開きます"
+    "mobileBody": "ハードウェアウォレットを接続するには、<1>desktop</1>デバイスで操作を完了する必要があります。",
+    "mobileTitle": "このリンクはデスクトップコンピューターで開いてください"
   },
   "externalInitialScreen": {
-    "title": "モバイルデバイスに表示されているワンタイムコードを入力"
+    "title": "モバイルデバイスに表示された<1></1>ワンタイムコードを入力してください"
   },
   "externalTransferCallbackPage": {
     "continue": "{{clientName}} に進む",
-    "transferRequested": "転送が要求されました。{{clientName}} に戻ってください",
-    "updatingTransfer": "転送ステータスの更新中..."
+    "transferRequested": "送金がリクエストされました。{{clientName}}に戻ってください",
+    "updatingTransfer": "送金状況を更新しています…"
   },
   "facePage": {
-    "completedButton": "私は確認を完了しました",
-    "desktopStep1": "QRコードをスキャンしてフェイス認証を完了し、本当にあなたがログインしようとしていることを確認してください。",
-    "desktopStep2": "その後、ここに戻り、アカウントのリンクを完了します。",
-    "mobileStep1": "フェイス認証を完了して、本当にあなたがログインしようとしていることを確認してください。",
-    "mobileStep2": "アプリを開き、フェイス認証を完了するために<1>{{integrationName}}アプリを開く</1>をクリックしてください。",
-    "mobileStep3": "アカウントのリンクを続行するためにここに戻ってください。",
+    "completedButton": "本人確認が完了しました",
+    "desktopStep1": "QRコードをスキャンして顔認証を完了し、ご本人様がログインを試みていることを確認してください。",
+    "desktopStep2": "その後、こちらに戻ってアカウントの連携を完了してください。",
+    "mobileStep1": "ご本人様がログインを試みていることを確認するため、顔認証を完了してください。",
+    "mobileStep2": "<1>{{integrationName}}アプリを開く</1>をクリックしてアプリを起動し、顔認証を完了してください。",
+    "mobileStep3": "こちらに戻ってアカウントの連携を続けてください。",
     "openApp": "{{integrationName}}アプリを開く",
     "reopenApp": "{{integrationName}}アプリを再度開く",
     "title": "確認"
@@ -405,33 +405,33 @@
     "username": "ユーザー名"
   },
   "fullScreenSpinner": {
-    "linking": "あなたのアカウントをリンクしています...",
+    "linking": "アカウントを連携しています…",
     "loading": "まだ作業中です..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "読み込み中..."
   },
   "fundingMethodFees": {
     "fee": {
-      "conversion": "{{integrationName}} {{conversionFromCurrency}} を{{conversionToCurrency}} に変換手数料",
+      "conversion": "{{integrationName}}での{{conversionFromCurrency}}から{{conversionToCurrency}}への換算手数料",
       "deposit": "{{integrationName}} の入金手数料",
       "purchase": "{{integrationName}} {{fiatSymbol}} から{{cryptocurrencySymbol}} の購入手数料",
       "withdrawal": "{{integrationName}} の出金手数料"
     },
     "info": {
-      "conversion": "{{conversionFromSymbol}} を{{conversionToSymbol}} に変換する手数料は{{integrationName}} が収集します。",
+      "conversion": "{{integrationName}}が{{conversionFromSymbol}}を{{conversionToSymbol}}に換算する際に徴収する手数料です。",
       "purchase": "{{integrationName}} は {{symbol}} の購入を簡素化するための手数料を請求します。",
-      "withdrawal": "{{symbol}} をお客様の口座から出金するための手数料は{{integrationName}} が請求します。"
+      "withdrawal": "{{integrationName}}が{{symbol}}の送金を仲介する際に徴収する手数料です。"
     }
   },
   "fundingMethodsList": {
     "buyingPower": "購買力",
     "cryptocurrencyBalance": "{{symbol}}残高",
-    "noneSelected": "選択されているものはありません",
-    "paymentMethodDepositUsage": "リンクされた支払方法",
+    "noneSelected": "選択されていません",
+    "paymentMethodDepositUsage": "リンク済みのお支払い方法",
     "stablecoinConversion": "ステーブルコインの変換",
     "withAdditional_one": "{{mainOption}} + {{count}} その他",
-    "withAdditional_other": "{{mainOption}} + {{count}} の他のもの"
+    "withAdditional_other": "{{mainOption}} + {{count}} 他の件"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{assetName}}を購入するためにこの資金調達方法を使用することは{{integrationName}} によりサポートされていません。",
@@ -487,20 +487,20 @@
     "establishedInThisApp": "<1></1><2>このアプリケーション</2>内で中断のない更新を正常に確立しました。",
     "linkedToInClient": "<1></1><2>{{selectedIntegrationName}}</2>を<5>{{clientName}}</5>に正常にリンクしました。",
     "linkedToThisApp": "<1></1><2>{{selectedIntegrationName}}</2>を<5>このアプリケーション</5>に正常にリンクしました。",
-    "nextStep": "次に、<2>中断のない更新</2>のためのキーを生成します。これにより再度ログインする必要がありません。",
-    "tempAccess": "一時的なアクセスのみを希望します"
+    "nextStep": "次に、ログインを繰り返さずに、<2>uninterrupted updates</2> のためのキーを作成します。",
+    "tempAccess": "一時的なアクセスのみ希望します"
   },
   "getBrokerAccessTokenErrors": {
-    "add2FA": "2FAアプリケーションを接続してください。そしてもう一度試してください。",
-    "identityVerificationRequired": "APIキー機能を使用するには、身元確認を完了する必要があります。続行するには、身元確認を完了してください。",
-    "invalidCredentials": "無効なログイン資格情報です。もう一度試してください。",
+    "add2FA": "2段階認証アプリを接続してから、もう一度お試しください。",
+    "identityVerificationRequired": "APIキー機能を利用するには、本人確認を完了する必要があります。続行するには、本人確認を完了してください。",
+    "invalidCredentials": "ログイン情報が正しくありません。もう一度お試しください。",
     "maximumApiKeyLimitExceeded": "最大許可APIキーの制限を超えました。続行するには、未使用のキーを削除してください。",
     "unsupportedCountryErrorMessage": "現在、お客様のアカウントはサポートされていません。",
     "wrongEmailCode": "不正なメールコードです。もう一度試してください。",
     "wrongTotpCode": "不正な認証コードです。もう一度試してください。"
   },
   "handleExternalTransferPage": {
-    "detailButton": "何が起こったかを見る",
+    "detailButton": "何が起こったのかを確認してください",
     "error": "転送を実行できませんでした",
     "loadingLabel": "あなたの転送を検証しています...",
     "networkConfirmations": "十分なネットワーク確認が得られるまで送金は完了しません。",
@@ -566,7 +566,7 @@
     "addIp": "以下のIPアドレスを信頼されたIPとして追加します",
     "clickOnEdit": "制限を編集をクリックしてください",
     "copyIpTitle": "IPアドレス",
-    "description": "<0>Binance</0>は、APIユーザーが取引とトランスファーリクエストの正当性を確保するためにIPアドレスをホワイトリストに登録することを要求します。",
+    "description": "<0>Binance</0>では、取引および送金リクエストの正当性を確保するために、APIユーザーにIPアドレスのホワイトリスト登録を求めています。",
     "findKey": "この接続に使用されるキーを見つけます",
     "openLink": "<2><0>Binance API管理</0></2>を開く",
     "requirementsTitle": "この接続を通じて取引またはトランスファーを行う予定の場合：",
@@ -581,7 +581,7 @@
       "completeVerification": "本人確認を完了させ、アカウントからの転送を有効にしてください",
       "navigateCrypto": "暗号タブに移動して、転送したい資産を開き、「送信」をクリックしてください",
       "openAccount": "{{integrationName}}アカウントを開いてください",
-      "returnToScreen": "この画面に戻ります"
+      "returnToScreen": "この画面に戻る"
     },
     "title": "{{integrationName}}のアカウントで転送を有効にする",
     "verifiedButton": "{{integrationName}}で本人確認をしました"
@@ -726,10 +726,10 @@
     "title": "暗号資産で支払う"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "以下のネットワークはすべて安全で、支払いに対応しています。 私たちはあなたのために最も低い手数料のネットワークを自動選択しました。",
+    "estimatedGasFeeLabel": "推定ガス手数料:",
+    "lowestFeeLabel": "最低手数料",
+    "title": "ネットワークを選択"
   },
   "nonOAuthPermissionsPage": {
     "allow": "許可する",
@@ -793,9 +793,9 @@
     "tryAgain": "もう一度お試しください"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "商人：{{clientName}}",
+    "title": "注文の概要",
+    "totalLabel": "合計"
   },
   "passwordPage": {
     "fieldError": "{{field}}を入力してください。",
@@ -835,13 +835,13 @@
     "title": "転送する資産を選択"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "アカウント",
+    "includeFeesMessage": "手数料として{{amount}}を含む",
+    "networkLabel": "ネットワーク",
+    "paymentTitle": "{{clientName}}への支払い",
+    "paymentTotalLabel": "総支払い額",
+    "payWithLabel": "支払い方法",
+    "payWithLabelWithName": "{{integrationName}}で支払う"
   },
   "previewTransfer": {
     "allFeesIncluded": "全ての手数料が含まれています",
