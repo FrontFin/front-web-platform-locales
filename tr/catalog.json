@@ -87,7 +87,7 @@
     "prodOnly": "Sadece üretim",
     "search": "arama",
     "title": "Bağlantı yapmak için hesabınızı seçin",
-    "title40": "Choose your account"
+    "title40": "Borsa veya cüzdanı bağlayın"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "Bir şeyler ters gitti...",
     "submitCap": "Gönder",
     "successTitle": "Başarılı!",
-    "termsOfUse": "By continuing you accept the <1>terms of use</1>",
+    "termsOfUse": "Devam ederek <2>kullanım şartlarını</2> kabul ediyorsunuz",
     "tryAgain": "Tekrar Dene"
   },
   "commonContent": {
@@ -274,7 +274,7 @@
     "checkDetails": "Ne olduğunu görmek",
     "checkDetails40": "İşlem ayrıntılarını görüntüle",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>{{shortAddress}} adresinde alınacak.",
-    "depositClient": "You will receive<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "{{clientName}} ({{shortAddress}}) için<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>alacaksınız.",
     "goBackToShift4": "← Shift4'e geri dön",
     "goToIntegrationToApprove": "Lütfen bu transferi onaylamak için <1>{{selectedIntegrationName}}</1> adresine gidin.",
     "paymentInitiated": "{{clientName}}'e<1></1><2>{{amountCrypto}}</2><3></3> ödeme başlattınız.",
@@ -407,6 +407,9 @@
   "fullScreenSpinner": {
     "linking": "Hesabınız bağlantılanıyor...",
     "loading": "Hâlâ çalışıyor..."
+  },
+  "fundingLoadingOverlay": {
+    "loading": "Loading..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -722,6 +725,12 @@
     "goBack": "Geri git",
     "title": "Kripto ile öde"
   },
+  "networkSelectionDrawer": {
+    "description": "Aşağıdaki ağlar bu ödeme için güvenli ve uyumlu seçeneklerdir. Sizin için en düşük ücretli ağı otomatik olarak seçtik.",
+    "estimatedGasFeeLabel": "Est. gas fee:",
+    "lowestFeeLabel": "En düşük ücret",
+    "title": "Ağ seçin"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "İzin Ver",
     "movingFunds": "izin olmadan fonlarınızı taşımak",
@@ -783,6 +792,11 @@
     "transactionTitle": "İşlem devam ediyor",
     "tryAgain": "Tekrar Dene"
   },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Satıcı: {{clientName}}",
+    "title": "Sipariş özeti",
+    "totalLabel": "Toplam"
+  },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} bilgilerinizi giriniz",
     "fieldErrorWithIntegration": "Lütfen {{integrationName}} {{field}} bilgilerinizi giriniz",
@@ -819,6 +833,15 @@
     "selectAnotherExchange": "Başka bir borsa veya cüzdan seçin.",
     "selectNetwork": "Transfer ağını seçin",
     "title": "Transfer edilecek varlığı seçin"
+  },
+  "previewPageUI": {
+    "accountLabel": "Account",
+    "includeFeesMessage": "Ücretler dahil {{amount}}",
+    "networkLabel": "Ağ test",
+    "paymentTitle": "Pay {{clientName}}",
+    "paymentTotalLabel": "Pay total",
+    "payWithLabel": "Pay with",
+    "payWithLabelWithName": "Pay with {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Tüm ücretler dahil",
