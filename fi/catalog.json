@@ -304,6 +304,9 @@
     "title": "Vahvista henkilöllisyytesi",
     "warningTitle": "Lue tämä koko viesti ennen jatkamista."
   },
+  "errorHeadlines": {
+    "twoFaFailed": "Virheellinen 2FA-koodi"
+  },
   "errorMessages": {
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
     "amountExceedsMaximum": "Pyydetty summa ylittää verkon suurimman siirtosumman.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Tapahtui virhe."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Virheellinen 2FA-koodi"
   },
   "exitPage": {
     "body": "Edistyksesi menetetään.",
@@ -409,7 +409,7 @@
     "loading": "Työskentely jatkuu..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Ladataan..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -726,10 +726,10 @@
     "title": "Maksaminen kryptolla"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja. Olemme valinneet automaattisesti sinulle alhaisimman kustannusverkoston.",
+    "estimatedGasFeeLabel": "Arvioitu kaasukulu:",
+    "lowestFeeLabel": "Alhaisin maksu",
+    "title": "Valitse verkko"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Salli",
@@ -793,9 +793,9 @@
     "tryAgain": "Yritä uudelleen"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Kauppias: {{clientName}}",
+    "title": "Tilausyhteenveto",
+    "totalLabel": "Yhteensä"
   },
   "passwordPage": {
     "fieldError": "Ole hyvä ja syötä {{field}}",
@@ -835,13 +835,13 @@
     "title": "Valitse siirrettävä omaisuus"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Tili",
+    "includeFeesMessage": "Sisältää {{amount}} maksuina",
+    "networkLabel": "Verkko",
+    "paymentTitle": "Maksa {{clientName}}",
+    "paymentTotalLabel": "Maksa yhteensä",
+    "payWithLabel": "Maksa käyttäen",
+    "payWithLabelWithName": "Maksa käyttäen {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Kaikki maksut sisältyvät",

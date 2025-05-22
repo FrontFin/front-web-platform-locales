@@ -87,7 +87,7 @@
     "prodOnly": "仅限生产环境",
     "search": "搜索",
     "title": "选择要关联的账户",
-    "title40": "连接交易所或钱包"
+    "title40": "连接你的账户"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "出了点问题...",
     "submitCap": "提交",
     "successTitle": "成功！",
-    "termsOfUse": "继续操作即表示您接受<2>使用条款</2>",
+    "termsOfUse": "继续操作即表示您接受<1>使用条款</1>",
     "tryAgain": "再试一次"
   },
   "commonContent": {
@@ -262,7 +262,7 @@
       "transferPaymentSmartToAddress": "通过中继合约{{shortSmartContractsAddress}}从{{selectedIntegrationName}}转出<1>{{transferPreviewAmount}}</1>。",
       "transferPaymentSmartToClient": "通过中继合约{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转账至{{clientName}}。",
       "transferPaymentToAddress": "从{{selectedIntegrationName}}转出的数额为<1>{{transferPreviewAmount}}</1>的交易。",
-      "transferPaymentToClient": "从{{selectedIntegrationName}}转账<1>{{transferPreviewAmount}}</1>到{{clientName}}。",
+      "transferPaymentToClient": "从{{selectedIntegrationName}}转账<1>{{transferPreviewAmount}}</1>到{{clientName}。",
       "transferSmartToAddress": "通过中继合同{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转移到{{shortToAddress}}。",
       "transferSmartToClient": "通过中继合同{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转移到{{clientName}} {{shortToAddress}}。",
       "transferToAddress": "将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转移到{{shortToAddress}}。",
@@ -270,73 +270,73 @@
     }
   },
   "doneTransferPage": {
-    "awaitingApproval": "此转账将在{{selectedIntegrationName}}中获得批准后才会开始。",
-    "checkDetails": "查看发生了什么",
+    "awaitingApproval": "此交易在{{selectedIntegrationName}}中获得批准后才会开始。",
+    "checkDetails": "查看原因",
     "checkDetails40": "查看交易详情",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>将被接收在{{shortAddress}}",
-    "depositClient": "您将收到<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>在{{clientName}}（{{shortAddress}}）",
+    "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
+    "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
     "goBackToShift4": "← 返回Shift4",
-    "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>以批准此转移。",
-    "paymentInitiated": "您已发起<1></1><2>{{amountCrypto}}</2><3></3>支付到{{clientName}}",
-    "waiting": "在收到足够的网络确认之前，转账不会完成。"
+    "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
+    "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><3></3>的支付至{{clientName}}",
+    "waiting": "在收到足够的网络认证之前，转账不会完成。"
   },
   "doneVerifyPage": {
-    "alreadyVerifiedBody": "地址{{address}}的所有权已验证完成，适用于<4>{{clientName}}</4>。",
+    "alreadyVerifiedBody": "<4>{{clientName}}</4>对于{{address}}地址的所有权已验证完成。",
     "continueToTransfer": "继续转账",
     "returnToClient": "返回至{{clientName}}",
     "titleAllSet": "一切准备就绪！",
-    "verifiedBody": "您已成功验证<4>{{clientName}}</4>地址{{address}}的所有权。"
+    "verifiedBody": "您已成功验证<4>{{clientName}}</4>对{{address}}地址的所有权。"
   },
   "drawer": {
     "close": "关闭连接窗口"
   },
   "emailVerificationPage": {
-    "emailRecievedLoading": "已收到电子邮件。处理中...",
-    "expiredError": "审批电子邮件已过期。请返回并重试。",
+    "emailRecievedLoading": "已收到电子邮件。正在处理……",
+    "expiredError": "审批电子邮件已过期。请返回重试。",
     "forwardingEmail": "邮件转发中",
     "sendEmailButton": "我已发送邮件",
     "steps": {
-      "checkInbox": "检查您的收件箱以确认您正在从新设备登录的电子邮件。",
-      "doNotClick": "<0>不要</0>点击电子邮件中的确认按钮。",
-      "forwardEmail": "将邮件转发到该安全收件箱，它将自动确认以匹配登录请求。"
+      "checkInbox": "我们已发送一封电子邮件至您的收件箱，请打开以确认您正从新设备登录。",
+      "doNotClick": "<0>请勿</0>点击电子邮件中的确认键。",
+      "forwardEmail": "请将邮件转发到该安全收件箱，它将自动确认以匹配登录请求。"
     },
     "stillWaitingLoading": "仍在等待电子邮件...",
     "title": "确认您的身份",
-    "warningTitle": "在继续之前请完整阅读此信息。"
+    "warningTitle": "在继续之前，请完整阅读此信息。"
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "无效的双重认证"
   },
   "errorMessages": {
-    "amountBelowMinimum": "请求的金额低于此网络的最低可转账金额。",
-    "amountExceedsMaximum": "请求的金额超过此网络的最大可允许转账金额。",
+    "amountBelowMinimum": "转账金额小于此网络的最低转账值。",
+    "amountExceedsMaximum": "转账金额超过此网络的最高转账限制。",
     "balanceNotEnough": "余额不足。",
-    "binanceTravelRuleRestriction": "由于旅行规则限制，Binance不支持转账到目的地址。",
-    "coinbaseUnavailable": "Coinbase发生错误。请检查您的账号以查看转账是否已完成。",
+    "binanceTravelRuleRestriction": "因旅行规则限制，Binance无法支持到此地址的转账。",
+    "coinbaseUnavailable": "Coinbase发生错误。请检查您的CB账号以查看转账是否成功。",
     "default": "发生了一个错误。",
     "emptyWalletBalance": "源钱包余额为空。",
-    "failedToGetFundingOptions": "获取资金选择失败",
-    "failedToSaveFundingOptions": "保存资金选项失败",
+    "failedToGetFundingOptions": "获取资金选项未成功",
+    "failedToSaveFundingOptions": "保存资金选项未成功",
     "feeAssetBalanceNotEnough": "资金不足以支付转账费用。",
-    "fromAccountNotSupported": "帐户当前不支持加密货币提款。",
+    "fromAccountNotSupported": "此帐户目前不支持加密货币提现。",
     "integrationNotAvailable": "该集成当前不可用。",
-    "kycRequired": "无法启动转账。集成要求帐户在启用加密货币转账之前完成 KYC 验证。",
+    "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
     "locked": "您的帐户已被锁定",
-    "networkDisabled": "网络当前已禁用，无法使用。",
-    "passKeyNotSupported": "当前不支持密钥通行，请禁用以继续。",
+    "networkDisabled": "网络当前已被禁用，无法使用。",
+    "passKeyNotSupported": "目前不支持密钥通行，请禁用您的密钥以继续。",
     "previewExpired": "预览已过期。",
-    "satoshiTestRequired": "由于旅行规则限制，Coinbase API不支持超过1000欧元的转账。请尝试较小的金额。",
-    "symbolNotSupported": "该符号不被集成支持。",
-    "symbolNotSupportedBySource": "源钱包在请求的网络上不支持要转移的符号。",
-    "symbolNotSupportedByTarget": "无法找到请求币种的存款地址。",
-    "toAccountNotSupported": "目的账户当前不支持加密货币存款。",
+    "satoshiTestRequired": "由于旅行规则限制，Coinbase API不支持超过1000欧元的转账。请输入较小金额再次尝试。",
+    "symbolNotSupported": "集成不支持此符号。",
+    "symbolNotSupportedBySource": "源钱包不支持您在所要求的网络上转移的符号。",
+    "symbolNotSupportedByTarget": "无法找到所要求币种的存款地址。",
+    "toAccountNotSupported": "目标账户目前不支持加密货币入金。",
     "tooManyRequests": "请稍后再试。",
-    "transferAlreadyRequested": "转账已请求。",
-    "twoFaFailed": "双因素验证失败。请再试一次。",
+    "transferAlreadyRequested": "已提交转账请求。",
+    "twoFaFailed": "双重验证失败。请重试。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后，提款将在24小时内禁用。请稍后再试。"
   },
   "errorPage": {
     "title": "发生了一个错误。"
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "无效的两步验证码"
   },
   "exitPage": {
     "body": "您的进度将丢失。",
@@ -409,7 +409,7 @@
     "loading": "仍在处理中..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "加载中..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -726,10 +726,10 @@
     "title": "使用加密货币支付"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "以下网络均为安全的兼容选项。我们已为您自动选择了最便宜手续费的网络。",
+    "estimatedGasFeeLabel": "估计燃气费用：",
+    "lowestFeeLabel": "最低手续费",
+    "title": "选择网络"
   },
   "nonOAuthPermissionsPage": {
     "allow": "允许",
@@ -793,9 +793,9 @@
     "tryAgain": "再试一次"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "商户：{{clientName}}",
+    "title": "订单摘要",
+    "totalLabel": "总计"
   },
   "passwordPage": {
     "fieldError": "请输入您的{{field}}",
@@ -835,13 +835,13 @@
     "title": "选择要转账的资产"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "账户",
+    "includeFeesMessage": "包含 {{amount}} 手续费",
+    "networkLabel": "网络",
+    "paymentTitle": "支付 {{clientName}}",
+    "paymentTotalLabel": "支付总额",
+    "payWithLabel": "使用...支付",
+    "payWithLabelWithName": "使用 {{integrationName}} 支付"
   },
   "previewTransfer": {
     "allFeesIncluded": "所有费用已包括",

@@ -140,7 +140,7 @@
     "somethingWentWrong": "Что-то пошло не так...",
     "submitCap": "Отправить",
     "successTitle": "Успешно!",
-    "termsOfUse": "Продолжая, вы принимаете <2>условия использования</2>",
+    "termsOfUse": "Продолжая, вы принимаете <1>условия использования</1>",
     "tryAgain": "Попробовать снова"
   },
   "commonContent": {
@@ -274,7 +274,7 @@
     "checkDetails": "Посмотреть детали",
     "checkDetails40": "Просмотреть детали транзакции",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
-    "depositClient": "Вы получите<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>на {{clientName}} ({{shortAddress}})",
+    "depositClient": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> на {{clientName}} ({{shortAddress}})",
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
     "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><3></3> для {{clientName}}",
@@ -303,6 +303,9 @@
     "stillWaitingLoading": "Все еще ожидают письма...",
     "title": "Подтвердите вашу личность",
     "warningTitle": "Прочитайте это сообщение целиком, прежде чем продолжить."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Неправильный код 2FA"
   },
   "errorMessages": {
     "amountBelowMinimum": "Запрашиваемая сумма ниже минимально допустимой для перевода в этой сети.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Произошла ошибка."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Неправильный код 2FA"
   },
   "exitPage": {
     "body": "Ваш прогресс будет потерян.",
@@ -409,7 +409,7 @@
     "loading": "Все еще работает..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Загрузка..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -431,8 +431,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -728,10 +726,10 @@
     "title": "Оплатить криптовалютой"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Ниже указаны все безопасные и совместимые сети для этого платежа. Мы автоматически выбрали сеть с самой низкой комиссией для вас.",
+    "estimatedGasFeeLabel": "Оценочная комиссия за газ:",
+    "lowestFeeLabel": "Самая низкая комиссия",
+    "title": "Выберите сеть"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Разрешено",
@@ -795,9 +793,9 @@
     "tryAgain": "Попробовать еще раз"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Продавец: {{clientName}}",
+    "title": "Итог заказа",
+    "totalLabel": "Итого"
   },
   "passwordPage": {
     "fieldError": "Пожалуйста, введите {{field}}",
@@ -837,13 +835,13 @@
     "title": "Выберите актив для перевода"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Аккаунт",
+    "includeFeesMessage": "Включает {{amount}} в виде сборов",
+    "networkLabel": "Сеть",
+    "paymentTitle": "Оплата {{clientName}}",
+    "paymentTotalLabel": "Общая сумма к оплате",
+    "payWithLabel": "Оплатить с помощью",
+    "payWithLabelWithName": "Оплатить через {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Все сборы включены",
