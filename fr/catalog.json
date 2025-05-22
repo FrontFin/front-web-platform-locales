@@ -87,7 +87,7 @@
     "prodOnly": "Disponible uniquement en production",
     "search": "recherche",
     "title": "Veuillez sélectionner un compte à lier",
-    "title40": "Choose your account"
+    "title40": "Connecter une plateforme d’échange ou un portefeuille"
   },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "Une erreur est survenue...",
     "submitCap": "Soumettre",
     "successTitle": "Action complétée avec succès !",
-    "termsOfUse": "By continuing you accept the <1>terms of use</1>",
+    "termsOfUse": "En continuant, vous acceptez les <2>conditions d'utilisation</2>",
     "tryAgain": "Réessayez"
   },
   "commonContent": {
@@ -274,7 +274,7 @@
     "checkDetails": "Voir ce qui s'est passé",
     "checkDetails40": "Voir les détails de la transaction",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>seront reçu à {{shortAddress}}",
-    "depositClient": "You will receive<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> dans {{clientName}} ({{shortAddress}})",
     "goBackToShift4": "← Retourner à Shift4",
     "goToIntegrationToApprove": "Veuillez aller sur <1>{{selectedIntegrationName}}</1> pour approuver ce transfert.",
     "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3>à {{clientName}}",
@@ -407,6 +407,9 @@
   "fullScreenSpinner": {
     "linking": "Liaison de votre compte...",
     "loading": "Toujours en cours..."
+  },
+  "fundingLoadingOverlay": {
+    "loading": "Loading..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -722,6 +725,12 @@
     "goBack": "Revenir en arrière",
     "title": "Payer avec de la crypto"
   },
+  "networkSelectionDrawer": {
+    "description": "Les réseaux ci-dessous sont tous des options sécurisées et compatibles pour ce paiement. Nous avons sélectionné automatiquement le réseau avec les frais les plus bas pour vous.",
+    "estimatedGasFeeLabel": "Est. gas fee:",
+    "lowestFeeLabel": "Frais les plus bas",
+    "title": "Sélectionnez le réseau"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Autoriser",
     "movingFunds": "déplacement de fonds sans votre permission",
@@ -783,6 +792,11 @@
     "transactionTitle": "Transaction en cours",
     "tryAgain": "Réessayez"
   },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Marchand : {{clientName}}",
+    "title": "Résumé de la commande",
+    "totalLabel": "Total"
+  },
   "passwordPage": {
     "fieldError": "Veuillez entrer votre {{field}}",
     "fieldErrorWithIntegration": "Veuillez entrer votre {{integrationName}} {{field}}.",
@@ -819,6 +833,15 @@
     "selectAnotherExchange": "Veuillez sélectionner un autre échange ou portefeuille pour déposer.",
     "selectNetwork": "Sélectionner le réseau de transfert",
     "title": "Sélectionner l'actif à transférer"
+  },
+  "previewPageUI": {
+    "accountLabel": "Account",
+    "includeFeesMessage": "Inclut {{amount}} en frais",
+    "networkLabel": "Réseau",
+    "paymentTitle": "Pay {{clientName}}",
+    "paymentTotalLabel": "Pay total",
+    "payWithLabel": "Pay with",
+    "payWithLabelWithName": "Pay with {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Tous frais inclus",
