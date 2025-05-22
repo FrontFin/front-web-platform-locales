@@ -304,6 +304,9 @@
     "title": "Potwierdź swoją tożsamość",
     "warningTitle": "Przeczytaj tę wiadomość w całości przed kontynuowaniem."
   },
+  "errorHeadlines": {
+    "twoFaFailed": "Nieprawidłowy kod 2FA"
+  },
   "errorMessages": {
     "amountBelowMinimum": "Żądana kwota jest poniżej minimalnej dopuszczalnej kwoty transferu w tej sieci.",
     "amountExceedsMaximum": "Żądana kwota przekracza maksymalną dopuszczalną kwotę transferu w tej sieci.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Wystąpił błąd."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Nieprawidłowy kod 2FA"
   },
   "exitPage": {
     "body": "Twój postęp zostanie utracony.",
@@ -409,7 +409,7 @@
     "loading": "Nadal trwa praca..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Ładowanie..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -431,8 +431,6 @@
     "paymentMethodDepositUsage": "Połączona metoda płatności",
     "stablecoinConversion": "Konwersja stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} inne",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne"
   },
   "fundingOptionUnavailabilityReason": {
@@ -728,10 +726,10 @@
     "title": "Zapłać kryptowalutą"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Sieci poniżej są wszystkie zabezpieczone, kompatybilne opcje dla tej płatności. Automatycznie wybraliśmy dla Ciebie sieć z najniższą opłatą.",
+    "estimatedGasFeeLabel": "Szacunkowa opłata za gaz:",
+    "lowestFeeLabel": "Najniższa opłata",
+    "title": "Wybierz sieć"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Zezwól",
@@ -795,9 +793,9 @@
     "tryAgain": "Spróbuj ponownie"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Kupiec: {{clientName}}",
+    "title": "Podsumowanie zamówienia",
+    "totalLabel": "Całkowity"
   },
   "passwordPage": {
     "fieldError": "Wprowadź swój {{field}}",
@@ -837,13 +835,13 @@
     "title": "Wybierz aktywo do transferu"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Konto",
+    "includeFeesMessage": "Zawiera {{amount}} w opłatach",
+    "networkLabel": "Sieć",
+    "paymentTitle": "Zapłać {{clientName}}",
+    "paymentTotalLabel": "Zapłać całość",
+    "payWithLabel": "Zapłać z",
+    "payWithLabelWithName": "Zapłać z {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Wszystkie opłaty wliczone",
