@@ -304,6 +304,9 @@
     "title": "Xác nhận danh tính của bạn",
     "warningTitle": "Đọc toàn bộ thông báo này trước khi tiếp tục."
   },
+  "errorHeadlines": {
+    "twoFaFailed": "Mã 2FA không hợp lệ"
+  },
   "errorMessages": {
     "amountBelowMinimum": "Số tiền yêu cầu dưới mức tối thiểu cho phép trên mạng này.",
     "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức cho phép tối đa trên mạng này.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Đã xảy ra lỗi."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Mã 2FA không hợp lệ"
   },
   "exitPage": {
     "body": "Tiến trình của bạn sẽ bị mất.",
@@ -409,7 +409,7 @@
     "loading": "Vẫn đang làm việc..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Đang tải..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -726,10 +726,10 @@
     "title": "Thanh toán bằng tiền điện tử"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Các mạng dưới đây đều là những tùy chọn an toàn, tương thích cho khoản thanh toán này. Chúng tôi đã tự động chọn mạng có phí thấp nhất cho bạn.",
+    "estimatedGasFeeLabel": "Phí gas ước tính:",
+    "lowestFeeLabel": "Phí thấp nhất",
+    "title": "Chọn mạng"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Cho phép",
@@ -793,9 +793,9 @@
     "tryAgain": "Thử lại"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Người bán: {{clientName}}",
+    "title": "Tóm tắt đơn hàng",
+    "totalLabel": "Tổng cộng"
   },
   "passwordPage": {
     "fieldError": "Vui lòng nhập {{field}} của bạn",
@@ -835,13 +835,13 @@
     "title": "Chọn tài sản để chuyển khoản"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Tài khoản",
+    "includeFeesMessage": "Bao gồm {{amount}} trong các khoản phí",
+    "networkLabel": "Mạng lưới",
+    "paymentTitle": "Thanh toán {{clientName}}",
+    "paymentTotalLabel": "Tổng thanh toán",
+    "payWithLabel": "Thanh toán bằng",
+    "payWithLabelWithName": "Thanh toán bằng {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Bao gồm tất cả các khoản phí",
