@@ -304,6 +304,9 @@
     "title": "Kimliğinizi onaylayın",
     "warningTitle": "Devam etmeden önce bu mesajın tamamını okuyun."
   },
+  "errorHeadlines": {
+    "twoFaFailed": "Geçersiz 2FA Kodu"
+  },
   "errorMessages": {
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
     "amountExceedsMaximum": "Talep edilen miktar, bu ağdaki maksimum transfer limitini aşmaktadır.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Bir hata oluştu."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Geçersiz 2FA Kodu"
   },
   "exitPage": {
     "body": "İlerlemeniz kaybolacak.",
@@ -409,7 +409,7 @@
     "loading": "Hâlâ çalışıyor..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Yükleniyor..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -726,10 +726,10 @@
     "title": "Kripto ile öde"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Aşağıdaki ağlar bu ödeme için güvenli ve uyumlu seçeneklerdir. Sizin için en düşük ücretli ağı otomatik olarak seçtik.",
+    "estimatedGasFeeLabel": "Tahmini gaz ücreti:",
+    "lowestFeeLabel": "En düşük ücret",
+    "title": "Ağ seçin"
   },
   "nonOAuthPermissionsPage": {
     "allow": "İzin Ver",
@@ -793,9 +793,9 @@
     "tryAgain": "Tekrar Dene"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Satıcı: {{clientName}}",
+    "title": "Sipariş özeti",
+    "totalLabel": "Toplam"
   },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} bilgilerinizi giriniz",
@@ -835,13 +835,13 @@
     "title": "Transfer edilecek varlığı seçin"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Hesap",
+    "includeFeesMessage": "Ücretler dahil {{amount}}",
+    "networkLabel": "Ağ test",
+    "paymentTitle": "{{clientName}} için ödeme yapın",
+    "paymentTotalLabel": "Toplamı ödeyin",
+    "payWithLabel": "Ödeme yöntemi",
+    "payWithLabelWithName": "{{integrationName}} ile ödeme yapın"
   },
   "previewTransfer": {
     "allFeesIncluded": "Tüm ücretler dahil",
