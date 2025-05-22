@@ -408,6 +408,9 @@
     "linking": "アカウントを連携しています…",
     "loading": "まだ作業中です..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Loading..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "{{integrationName}}での{{conversionFromCurrency}}から{{conversionToCurrency}}への換算手数料",
@@ -418,17 +421,17 @@
     "info": {
       "conversion": "{{integrationName}}が{{conversionFromSymbol}}を{{conversionToSymbol}}に換算する際に徴収する手数料です。",
       "purchase": "{{integrationName}} は {{symbol}} の購入を簡素化するための手数料を請求します。",
-      "withdrawal": "{{symbol}} をお客様の口座から出金するための手数料は{{integrationName}} が請求します。"
+      "withdrawal": "{{integrationName}}が{{symbol}}の送金を仲介する際に徴収する手数料です。"
     }
   },
   "fundingMethodsList": {
     "buyingPower": "購買力",
     "cryptocurrencyBalance": "{{symbol}}残高",
-    "noneSelected": "選択されているものはありません",
-    "paymentMethodDepositUsage": "リンクされた支払方法",
+    "noneSelected": "選択されていません",
+    "paymentMethodDepositUsage": "リンク済みのお支払い方法",
     "stablecoinConversion": "ステーブルコインの変換",
     "withAdditional_one": "{{mainOption}} + {{count}} その他",
-    "withAdditional_other": "{{mainOption}} + {{count}} の他のもの"
+    "withAdditional_other": "{{mainOption}} + {{count}} 他の件"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{assetName}}を購入するためにこの資金調達方法を使用することは{{integrationName}} によりサポートされていません。",
@@ -484,20 +487,20 @@
     "establishedInThisApp": "<1></1><2>このアプリケーション</2>内で中断のない更新を正常に確立しました。",
     "linkedToInClient": "<1></1><2>{{selectedIntegrationName}}</2>を<5>{{clientName}}</5>に正常にリンクしました。",
     "linkedToThisApp": "<1></1><2>{{selectedIntegrationName}}</2>を<5>このアプリケーション</5>に正常にリンクしました。",
-    "nextStep": "次に、<2>中断のない更新</2>のためのキーを生成します。これにより再度ログインする必要がありません。",
-    "tempAccess": "一時的なアクセスのみを希望します"
+    "nextStep": "次に、ログインを繰り返さずに、<2>uninterrupted updates</2> のためのキーを作成します。",
+    "tempAccess": "一時的なアクセスのみ希望します"
   },
   "getBrokerAccessTokenErrors": {
-    "add2FA": "2FAアプリケーションを接続してください。そしてもう一度試してください。",
-    "identityVerificationRequired": "APIキー機能を使用するには、身元確認を完了する必要があります。続行するには、身元確認を完了してください。",
-    "invalidCredentials": "無効なログイン資格情報です。もう一度試してください。",
+    "add2FA": "2段階認証アプリを接続してから、もう一度お試しください。",
+    "identityVerificationRequired": "APIキー機能を利用するには、本人確認を完了する必要があります。続行するには、本人確認を完了してください。",
+    "invalidCredentials": "ログイン情報が正しくありません。もう一度お試しください。",
     "maximumApiKeyLimitExceeded": "最大許可APIキーの制限を超えました。続行するには、未使用のキーを削除してください。",
     "unsupportedCountryErrorMessage": "現在、お客様のアカウントはサポートされていません。",
     "wrongEmailCode": "不正なメールコードです。もう一度試してください。",
     "wrongTotpCode": "不正な認証コードです。もう一度試してください。"
   },
   "handleExternalTransferPage": {
-    "detailButton": "何が起こったかを見る",
+    "detailButton": "何が起こったのかを確認してください",
     "error": "転送を実行できませんでした",
     "loadingLabel": "あなたの転送を検証しています...",
     "networkConfirmations": "十分なネットワーク確認が得られるまで送金は完了しません。",
@@ -563,7 +566,7 @@
     "addIp": "以下のIPアドレスを信頼されたIPとして追加します",
     "clickOnEdit": "制限を編集をクリックしてください",
     "copyIpTitle": "IPアドレス",
-    "description": "<0>Binance</0>は、APIユーザーが取引とトランスファーリクエストの正当性を確保するためにIPアドレスをホワイトリストに登録することを要求します。",
+    "description": "<0>Binance</0>では、取引および送金リクエストの正当性を確保するために、APIユーザーにIPアドレスのホワイトリスト登録を求めています。",
     "findKey": "この接続に使用されるキーを見つけます",
     "openLink": "<2><0>Binance API管理</0></2>を開く",
     "requirementsTitle": "この接続を通じて取引またはトランスファーを行う予定の場合：",
@@ -578,7 +581,7 @@
       "completeVerification": "本人確認を完了させ、アカウントからの転送を有効にしてください",
       "navigateCrypto": "暗号タブに移動して、転送したい資産を開き、「送信」をクリックしてください",
       "openAccount": "{{integrationName}}アカウントを開いてください",
-      "returnToScreen": "この画面に戻ります"
+      "returnToScreen": "この画面に戻る"
     },
     "title": "{{integrationName}}のアカウントで転送を有効にする",
     "verifiedButton": "{{integrationName}}で本人確認をしました"
@@ -722,6 +725,12 @@
     "goBack": "戻る",
     "title": "暗号資産で支払う"
   },
+  "networkSelectionDrawer": {
+    "description": "以下のネットワークはすべて安全で、支払いに対応しています。 私たちはあなたのために最も低い手数料のネットワークを自動選択しました。",
+    "estimatedGasFeeLabel": "Est. gas fee:",
+    "lowestFeeLabel": "最低手数料",
+    "title": "ネットワークを選択"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "許可する",
     "movingFunds": "あなたの許可なしに資金を移動",
@@ -783,6 +792,11 @@
     "transactionTitle": "取引中",
     "tryAgain": "もう一度お試しください"
   },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "商人：{{clientName}}",
+    "title": "注文の概要",
+    "totalLabel": "合計"
+  },
   "passwordPage": {
     "fieldError": "{{field}}を入力してください。",
     "fieldErrorWithIntegration": "{{integrationName}} {{field}}を入力してください。",
@@ -819,6 +833,15 @@
     "selectAnotherExchange": "別の取引所またはウォレットからの入金を選択してください。",
     "selectNetwork": "転送ネットワークを選択",
     "title": "転送する資産を選択"
+  },
+  "previewPageUI": {
+    "accountLabel": "Account",
+    "includeFeesMessage": "手数料として{{amount}}を含む",
+    "networkLabel": "ネットワーク",
+    "paymentTitle": "Pay {{clientName}}",
+    "paymentTotalLabel": "Pay total",
+    "payWithLabel": "Pay with",
+    "payWithLabelWithName": "Pay with {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "全ての手数料が含まれています",
