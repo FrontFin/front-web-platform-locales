@@ -87,7 +87,7 @@
     "prodOnly": "Somente produção",
     "search": "procurar",
     "title": "Selecione conta para vincular",
-    "title40": "Choose your account"
+    "title40": "Conectar exchange ou carteira"
   },
   "catalogTile": {
     "select": "Selecione {{integrationName}}, {{badge}}"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "Algo deu errado...",
     "submitCap": "Enviar",
     "successTitle": "Sucesso!",
-    "termsOfUse": "By continuing you accept the <1>terms of use</1>",
+    "termsOfUse": "Ao continuar você aceita os <2>termos de uso</2>",
     "tryAgain": "Tente novamente"
   },
   "commonContent": {
@@ -274,7 +274,7 @@
     "checkDetails": "Veja o que aconteceu",
     "checkDetails40": "Ver detalhes da transação",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>será recebido em {{shortAddress}}",
-    "depositClient": "You will receive<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "Você receberá<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>em {{clientName}} ({{shortAddress}})",
     "goBackToShift4": "← Volte para Shift4",
     "goToIntegrationToApprove": "Por favor, vá para <1>{{selectedIntegrationName}}</1> para aprovar esta transferência.",
     "paymentInitiated": "Você iniciou um pagamento de<1></1><2>{{amountCrypto}}</2><3></3>para {{clientName}}",
@@ -407,6 +407,9 @@
   "fullScreenSpinner": {
     "linking": "Vinculando sua conta...",
     "loading": "Ainda trabalhando..."
+  },
+  "fundingLoadingOverlay": {
+    "loading": "Loading..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -722,6 +725,12 @@
     "goBack": "Voltar",
     "title": "Pagar com cripto"
   },
+  "networkSelectionDrawer": {
+    "description": "As redes abaixo são todas opções seguras e compatíveis para este pagamento. Selecionamos automaticamente a rede com a menor taxa para você.",
+    "estimatedGasFeeLabel": "Est. gas fee:",
+    "lowestFeeLabel": "Menor taxa",
+    "title": "Selecionar rede"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
     "movingFunds": "movendo fundos sem sua permissão",
@@ -783,6 +792,11 @@
     "transactionTitle": "Transação em progresso",
     "tryAgain": "Tente novamente"
   },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Comerciante: {{clientName}}",
+    "title": "Resumo do pedido",
+    "totalLabel": "Total"
+  },
   "passwordPage": {
     "fieldError": "Por favor, insira seu {{field}}",
     "fieldErrorWithIntegration": "Por favor, insira seu {{integrationName}} {{field}}",
@@ -819,6 +833,15 @@
     "selectAnotherExchange": "Por favor, selecione outro câmbio ou carteira para depósito.",
     "selectNetwork": "Selecione a rede de transferência",
     "title": "Selecione o ativo a ser transferido"
+  },
+  "previewPageUI": {
+    "accountLabel": "Account",
+    "includeFeesMessage": "Inclui {{amount}} em taxas",
+    "networkLabel": "Rede",
+    "paymentTitle": "Pay {{clientName}}",
+    "paymentTotalLabel": "Pay total",
+    "payWithLabel": "Pay with",
+    "payWithLabelWithName": "Pay with {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Todas as taxas incluídas",
