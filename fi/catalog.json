@@ -87,7 +87,7 @@
     "prodOnly": "Vain tuotanto",
     "search": "haku",
     "title": "Valitse tili linkitystä varten",
-    "title40": "Choose your account"
+    "title40": "Yhdistä pörssi tai lompakko"
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "Jotain meni pieleen...",
     "submitCap": "Lähetä",
     "successTitle": "Onnistui!",
-    "termsOfUse": "By continuing you accept the <1>terms of use</1>",
+    "termsOfUse": "Jatkamalla hyväksyt <2>käyttöehdot</2>",
     "tryAgain": "Yritä uudelleen"
   },
   "commonContent": {
@@ -274,7 +274,7 @@
     "checkDetails": "Näe mitä tapahtui",
     "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>saapuu osoitteeseen {{shortAddress}}",
-    "depositClient": "You will receive<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "Saat<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tilille {{clientName}} ({{shortAddress}})",
     "goBackToShift4": "← Palaa Shift4:ään",
     "goToIntegrationToApprove": "Ole hyvä ja mene kohteeseen <1>{{selectedIntegrationName}}</1> hyväksyäksesi tämän siirron.",
     "paymentInitiated": "Olet aloittanut maksun<1></1><2>{{amountCrypto}}</2><3></3>kohteeseen {{clientName}}",
@@ -407,6 +407,9 @@
   "fullScreenSpinner": {
     "linking": "Linkitetään tiliäsi...",
     "loading": "Työskentely jatkuu..."
+  },
+  "fundingLoadingOverlay": {
+    "loading": "Loading..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -722,6 +725,12 @@
     "goBack": "Palaa taaksepäin",
     "title": "Maksaminen kryptolla"
   },
+  "networkSelectionDrawer": {
+    "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja. Olemme valinneet automaattisesti sinulle alhaisimman kustannusverkoston.",
+    "estimatedGasFeeLabel": "Est. gas fee:",
+    "lowestFeeLabel": "Alhaisin maksu",
+    "title": "Valitse verkko"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Salli",
     "movingFunds": "varojen siirtäminen ilman lupaasi",
@@ -783,6 +792,11 @@
     "transactionTitle": "Tapahtuma työn alla",
     "tryAgain": "Yritä uudelleen"
   },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Kauppias: {{clientName}}",
+    "title": "Tilausyhteenveto",
+    "totalLabel": "Yhteensä"
+  },
   "passwordPage": {
     "fieldError": "Ole hyvä ja syötä {{field}}",
     "fieldErrorWithIntegration": "Ole hyvä ja syötä {{integrationName}} {{field}}",
@@ -819,6 +833,15 @@
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko tallettamiseen.",
     "selectNetwork": "Valitse siirtoverkko",
     "title": "Valitse siirrettävä omaisuus"
+  },
+  "previewPageUI": {
+    "accountLabel": "Account",
+    "includeFeesMessage": "Sisältää {{amount}} maksuina",
+    "networkLabel": "Verkko",
+    "paymentTitle": "Pay {{clientName}}",
+    "paymentTotalLabel": "Pay total",
+    "payWithLabel": "Pay with",
+    "payWithLabelWithName": "Pay with {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Kaikki maksut sisältyvät",
