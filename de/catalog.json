@@ -87,7 +87,7 @@
     "prodOnly": "Nur Produktion",
     "search": "Suche",
     "title": "Konto zum Verknüpfen auswählen",
-    "title40": "Börse oder Wallet verbinden"
+    "title40": "Wähle Dein Konto"
   },
   "catalogTile": {
     "select": "Wähle {{integrationName}}, {{badge}}"
@@ -140,7 +140,7 @@
     "somethingWentWrong": "Etwas ist schief gelaufen...",
     "submitCap": "Absenden",
     "successTitle": "Erfolgreich!",
-    "termsOfUse": "Indem Du fortfährst, akzeptierst Du die <2>Nutzungsbedingungen</2>",
+    "termsOfUse": "Indem Du fortfährst, akzeptierst Du die <1>Nutzungsbedingungen</1>",
     "tryAgain": "Erneut versuchen"
   },
   "commonContent": {
@@ -274,7 +274,7 @@
     "checkDetails": "Sieh, was passiert ist",
     "checkDetails40": "Transaktionsdetails anzeigen",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>wird an {{shortAddress}} empfangen",
-    "depositClient": "Du erhälst<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "Du wirst<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}}) erhalten",
     "goBackToShift4": "← Zurück zu Shift4",
     "goToIntegrationToApprove": "Bitte gehe zu <1>{{selectedIntegrationName}}</1>, um diese Überweisung zu genehmigen.",
     "paymentInitiated": "Du hast eine Zahlung von<1></1><2>{{amountCrypto}}</2><3></3>an {{clientName}} eingeleitet",
@@ -303,6 +303,9 @@
     "stillWaitingLoading": "Warte immer noch auf E-Mail...",
     "title": "Bestätige Deine Identität",
     "warningTitle": "Lies diese Nachricht vollständig durch, bevor Du fortfährst."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Ungültiger 2FA-Code"
   },
   "errorMessages": {
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Ein Fehler ist aufgetreten."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Ungültiger 2FA-Code"
   },
   "exitPage": {
     "body": "Dein Fortschritt wird verloren gehen.",
@@ -409,7 +409,7 @@
     "loading": "Arbeitet noch..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Laden..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -726,10 +726,10 @@
     "title": "Mit Krypto bezahlen"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Sie automatisch ausgewählt.",
+    "estimatedGasFeeLabel": "Geschätzte Gasgebühr:",
+    "lowestFeeLabel": "Niedrigste Gebühr",
+    "title": "Netzwerk auswählen"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Erlauben",
@@ -793,9 +793,9 @@
     "tryAgain": "Erneut versuchen"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Händler: {{clientName}}",
+    "title": "Bestellübersicht",
+    "totalLabel": "Gesamt"
   },
   "passwordPage": {
     "fieldError": "Bitte gib Dein {{field}} ein",
@@ -835,13 +835,13 @@
     "title": "Zu übertragendes Asset auswählen"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Konto",
+    "includeFeesMessage": "Beinhaltet {{amount}} an Gebühren",
+    "networkLabel": "Netzwerk",
+    "paymentTitle": "Bezahle {{clientName}}",
+    "paymentTotalLabel": "Gesamtbetrag bezahlen",
+    "payWithLabel": "Bezahlen mit",
+    "payWithLabelWithName": "Bezahlen mit {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Alle Gebühren eingeschlossen",
