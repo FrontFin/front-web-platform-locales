@@ -304,6 +304,9 @@
     "title": "Confirma tu identidad",
     "warningTitle": "Lee todo el mensaje antes de continuar."
   },
+  "errorHeadlines": {
+    "twoFaFailed": "Código 2FA no válido"
+  },
   "errorMessages": {
     "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
     "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
@@ -334,9 +337,6 @@
   },
   "errorPage": {
     "title": "Ha ocurrido un error."
-  },
-  "errorHeadlines": {
-    "twoFaFailed": "Código 2FA no válido"
   },
   "exitPage": {
     "body": "Vas a perder tu progreso.",
@@ -409,7 +409,7 @@
     "loading": "Espere por favor..."
   },
   "fundingLoadingOverlay": {
-    "loading": ""
+    "loading": "Cargando..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -431,7 +431,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -727,10 +726,10 @@
     "title": "Pagar con cripto"
   },
   "networkSelectionDrawer": {
-    "description": "",
-    "estimatedGasFeeLabel": "",
-    "lowestFeeLabel": "",
-    "title": ""
+    "description": "Las redes a continuación son todas opciones seguras y compatibles para este pago. Hemos seleccionado automáticamente la red de menor tarifa para ti.",
+    "estimatedGasFeeLabel": "Est. tarifa de gas:",
+    "lowestFeeLabel": "Menor tarifa",
+    "title": "Selecciona una red"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
@@ -794,9 +793,9 @@
     "tryAgain": "Inténtalo de nuevo"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "",
-    "title": "",
-    "totalLabel": ""
+    "merchantInfoName": "Comerciante: {{clientName}}",
+    "title": "Resumen del pedido",
+    "totalLabel": "Total"
   },
   "passwordPage": {
     "fieldError": "Por favor, captura tu {{field}}",
@@ -836,13 +835,13 @@
     "title": "Seleccionar recurso a transferir"
   },
   "previewPageUI": {
-    "accountLabel": "",
-    "includeFeesMessage": "",
-    "networkLabel": "",
-    "paymentTitle": "",
-    "paymentTotalLabel": "",
-    "payWithLabel": "",
-    "payWithLabelWithName": ""
+    "accountLabel": "Cuenta",
+    "includeFeesMessage": "Incluye {{amount}} en tarifas",
+    "networkLabel": "Red",
+    "paymentTitle": "Pagar a {{clientName}}",
+    "paymentTotalLabel": "Pagar total",
+    "payWithLabel": "Pagar con",
+    "payWithLabelWithName": "Pagar con {{integrationName}}"
   },
   "previewTransfer": {
     "allFeesIncluded": "Todas las comisiones incluidas",
