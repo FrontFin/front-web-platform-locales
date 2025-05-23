@@ -337,7 +337,7 @@
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提款。请稍后再试。"
   },
   "errorPage": {
-    "title": "产生了一个错误。"
+    "title": "出现错误。"
   },
   "exitPage": {
     "body": "您的进度将被丢失。",
@@ -401,54 +401,54 @@
     "phone": "电话号码",
     "privateKey": "私钥",
     "secretKey": "密钥",
-    "tradePin": "交易 PIN",
+    "tradePin": "交易密码",
     "userId": "用户 ID",
     "username": "用户名"
   },
   "fullScreenSpinner": {
-    "linking": "正在链接您的账户...",
-    "loading": "仍在处理中..."
+    "linking": "正在关联您的账户...",
+    "loading": "处理中..."
   },
   "fundingLoadingOverlay": {
     "loading": "加载中..."
   },
   "fundingMethodFees": {
     "fee": {
-      "conversion": "{{integrationName}}从{{conversionFromCurrency}}转换为{{conversionToCurrency}}的转换费",
-      "deposit": "{{integrationName}}存款手续费",
-      "purchase": "{{integrationName}}从{{fiatSymbol}}到{{cryptocurrencySymbol}}的购买费",
-      "withdrawal": "{{integrationName}}提款手续费"
+      "conversion": "{{integrationName}}从{{conversionFromCurrency}}兑换为{{conversionToCurrency}}的手续费",
+      "deposit": "{{integrationName}}充值手续费",
+      "purchase": "从{{integrationName}}{{fiatSymbol}}换购为{{cryptocurrencySymbol}}手续费",
+      "withdrawal": "{{integrationName}}提现手续费"
     },
     "info": {
-      "conversion": "{{integrationName}}将收取费用以将您的{{conversionFromSymbol}}转换为{{conversionToSymbol}}。",
-      "purchase": "{{integrationName}}将为您购买{{symbol}}提供便利而收取费用。",
-      "withdrawal": "{{integrationName}}将收取费用以便利您将{{symbol}}转出。"
+      "conversion": "{{integrationName}}将收取您将{{conversionFromSymbol}}换购为{{conversionToSymbol}}的手续费。",
+      "purchase": "{{integrationName}}收取协助购买{{symbol}}的手续费。",
+      "withdrawal": "{{integrationName}}将收取从{{symbol}}协助转帐手续费。"
     }
   },
   "fundingMethodsList": {
     "buyingPower": "购买力",
     "cryptocurrencyBalance": "{{symbol}}余额",
     "noneSelected": "未选择",
-    "paymentMethodDepositUsage": "已链接支付方式",
-    "stablecoinConversion": "稳定币转换",
+    "paymentMethodDepositUsage": "已关联支付方式",
+    "stablecoinConversion": "稳定币兑换",
     "withAdditional_one": "{{mainOption}} + {{count}} 其他",
-    "withAdditional_other": "{{mainOption}} + {{count}} 个其他"
+    "withAdditional_other": "{{mainOption}} + {{count}} 其他"
   },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}}不支持使用此融资方式购买{{assetName}}。",
-    "coveredByExistingCryptocurrencyBalance": "您已有足够的{{assetName}}余额用于此次购买，无需额外资金方式。",
-    "coveredByOtherFundingOptions": "此资金融资方式不支持此交易。",
-    "currencyNotSupported": "不支持通过非美元资助方式购买加密货币。",
-    "depositAmountLimitExceeded": "此购买将超过{{integrationName}}在1天内关于此融资方式的最大存款限额。",
-    "depositCountLimitReached": "此资方式已达到{{integrationName}}在1天内的最大存款次数。",
-    "depositsNotSupported": "此交易不支持该资助方法。",
-    "instantDepositLimitExceeded": "此资金融资方式的即时存款限额不足以支持此次购买。",
-    "instantDepositsNotSupported": "此融资方式不支持即时存款，因此无法用于此次购买。",
-    "insufficientBalance": "余额不足以资助此次购买。",
-    "maximumDepositLimitViolated": "金额超出了该资方式的最大存款限额。",
-    "minimumDepositLimitViolated": "金额低于此资方式的最低存款限额。",
-    "paymentMethodTypeNotSupported": "此资融资选择尚未支持。",
-    "unknown": "此资金选项不可用。"
+    "buyingPowerUsageNotSupported": "{{integrationName}}不支持使用该充值方式购买{{assetName}}。",
+    "coveredByExistingCryptocurrencyBalance": "您的{{assetName}}余额足以支付该交易，无需额外充值。",
+    "coveredByOtherFundingOptions": "该充值不支持本次交易。",
+    "currencyNotSupported": "暂不支持非美元充值方式购买加密货币。",
+    "depositAmountLimitExceeded": "该交易将超出{{integrationName}}最高今日充值限额。",
+    "depositCountLimitReached": "该充值方式已达到{{integrationName}}今日最高充值次数。",
+    "depositsNotSupported": "此交易不支持该充值方式。",
+    "instantDepositLimitExceeded": "该即时充值方式余额不足， 无法完成此次交易。",
+    "instantDepositsNotSupported": "该充值方式不支持即时充值，无法用于此次交易。",
+    "insufficientBalance": "余额不足，无法完成该交易。",
+    "maximumDepositLimitViolated": "金额超出该充值方式最高限额。",
+    "minimumDepositLimitViolated": "金额低于该充值方式的最低充值限额。",
+    "paymentMethodTypeNotSupported": "尚不支持该充值方式。",
+    "unknown": "该充值方式暂不可用。"
   },
   "fundingPage": {
     "activatePaymentMethod": "在{{selectedIntegrationName}}上激活付款方式",
@@ -458,11 +458,11 @@
     "balances": "余额",
     "balanceWithAproximateFiat": "余额: {{amount}} ~ {{amountInFiat}}",
     "buyingPower": "购买力",
-    "changeAmount": "或者将转移金额更改为{{availableAmount}}。",
+    "changeAmount": "或将转账金额更改为{{availableAmount}}。",
     "changePreferredPaymentMethod": "更改首选支付方式",
     "changePreferredToken": "更改首选代币",
-    "cryptoConversion": "加密货币转换",
-    "description": "总计: {{amount}} ~ {{amountInFiat}}",
+    "cryptoConversion": "加密货币转兑换",
+    "description": "总金额: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(可用即时现金: {{amountInFiat}})",
     "linkedPaymentMethods": "已关联的支付方式",
     "noPaymentMethods": "没有关联的支付方式。",
@@ -522,7 +522,7 @@
     "amountBelowMinimumDescription": "请求的转账金额{{requestedAmount}}低于{{integrationName}}的{{minimumAmount}}的网络最低限额。",
     "balanceBelowMinimumDescription": "您的{{currentBalance}}余额低于{{integrationName}}的{{minimumAmount}}网络最低转账限额。",
     "belowMinimum": "低于{{integrationName}}的最低限额",
-    "belowRequestedAmountDescription": "您的{{balance}}余额少于支付请求转账金额+费用所需的{{amount}}。",
+    "belowRequestedAmountDescription": "您的{{balance}}余额低于本次转账及手续费{{amount}}。",
     "gasFeeAssetBalanceNotEnoughDescription": "您的{{balance}}余额不足以支付{{network}}网络的估算{{gasFee}}燃气费。",
     "insufficientBalance": "余额不足",
     "insufficientBalanceDescription": "您的{{currentBalance}}余额低于本次转账的最低限额。",
