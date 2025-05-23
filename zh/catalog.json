@@ -519,62 +519,62 @@
     "connectAction": "连接到{{selectedIntegrationName}}"
   },
   "ineligibleReason": {
-    "amountBelowMinimumDescription": "请求的转账金额{{requestedAmount}}低于{{integrationName}}的{{minimumAmount}}的网络最低限额。",
-    "balanceBelowMinimumDescription": "您的{{currentBalance}}余额低于{{integrationName}}的{{minimumAmount}}网络最低转账限额。",
+    "amountBelowMinimumDescription": "该转账金额{{requestedAmount}}低于{{integrationName}}的网络最低转账要求金额{{minimumAmount}}。",
+    "balanceBelowMinimumDescription": "您的余额{{currentBalance}}低于{{integrationName}}网络最低转账限额{{minimumAmount}}。",
     "belowMinimum": "低于{{integrationName}}的最低限额",
     "belowRequestedAmountDescription": "您的{{balance}}余额低于本次转账及手续费{{amount}}。",
-    "gasFeeAssetBalanceNotEnoughDescription": "您的{{balance}}余额不足以支付{{network}}网络的估算{{gasFee}}燃气费。",
+    "gasFeeAssetBalanceNotEnoughDescription": "您的{{balance}}余额不足以支付{{network}}网络预估{{gasFee}燃料费。",
     "insufficientBalance": "余额不足",
-    "insufficientBalanceDescription": "您的{{currentBalance}}余额低于本次转账的最低限额。",
-    "notEligible": "不符合此次转账资格",
-    "notEligibleDescription": "{{symbol}}不接受此转账。",
+    "insufficientBalanceDescription": "您的{{currentBalance}}余额低于该转账的最低限额。",
+    "notEligible": "无权完成本次转账",
+    "notEligibleDescription": "{{symbol}}无法接受此转账。",
     "notSupportedByInstitution": "目前不支持{{integrationName}}",
     "notSupportedForTransferBySource": "不支持{{integrationName}}",
-    "nyCoinbaseUserRestrictions": "由于纽约多链支持限制，{{network}}上的{{symbol}}不接受此转账。",
+    "nyCoinbaseUserRestrictions": "受纽约州多链支持限制影响，无法在{{network}}上接受此{{symbol}}转账。",
     "symbolDoesNotMatch": "{{clientName}}不支持",
     "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。"
   },
   "initialLedgerScreen": {
-    "title": "开启并解锁您的设备"
+    "title": "请开启并解锁您的设备"
   },
   "initialScreen": {
-    "accountTitle": "此应用将安全链接您的账户",
-    "clientNameAccountTitle": "{{clientName}}将安全链接您的账户",
-    "clientNameWalletTitle": "{{clientName}}将安全连接您的钱包",
+    "accountTitle": "此应用将安全地关联您的账户",
+    "clientNameAccountTitle": "{{clientName}}将安全关联您的账户",
+    "clientNameWalletTitle": "{{clientName}}将安全关联您的钱包",
     "walletTitle": "此应用将安全连接您的钱包"
   },
   "initialSteps": {
     "agreement": "选择“继续”即表示您同意<1></1><2>最终用户条款和条件</2>",
-    "credentials": "您的登录凭证永不存储",
-    "encryption": "您的数据始终加密",
-    "explicitApproval": "发起转账时始终需要您的明确批准",
-    "thirdParty": "您的资产永久不会触及第三方"
+    "credentials": "绝不存储您的登录认证信息",
+    "encryption": "您的数据将始终加密",
+    "explicitApproval": "发起转账时始终需要您的明确授权",
+    "thirdParty": "您的资产绝不经过第三方"
   },
   "initialVerifyPage": {
-    "content40": "确认您拥有此钱包",
-    "drawerTitle": "在您的钱包中批准签名请求<1></1>",
-    "item1Body": "您将被要求在{{selectedIntegrationName}}中签署一条确认您拥有此钱包的消息。",
+    "content40": "请确认您是此钱包持有者",
+    "drawerTitle": "请在钱包中批准<1></1>签名请求",
+    "item1Body": "随后会要求您在{{selectedIntegrationName}}中签署验证消息，以确认钱包所有权。",
     "item1Title": "{{clientName}} 必须验证您的地址",
-    "item2Body": "签署并不会以任何方式给予 {{clientName}} 许可进行您的钱包中的任何交易。",
+    "item2Body": "此次签名不会以任何方式授权 {{clientName}} 操作您钱包中的任何交易。",
     "item2Title": "快速、安全且免费",
-    "monitoringLabel": "监控签名中...",
+    "monitoringLabel": "签名监控中......",
     "resendAction": "重新发送签名请求",
-    "title": "离成功只差一步！",
+    "title": "即将完成！",
     "verifyAction": "验证地址",
-    "verifyingLabel": "验证签名中..."
+    "verifyingLabel": "签名验证中......"
   },
   "ipWhiteListPage": {
-    "addIp": "将以下IP地址添加为受信任IP",
-    "clickOnEdit": "点击编辑限制",
+    "addIp": "将以下IP地址加至信任IP列表",
+    "clickOnEdit": "点击修改限制规则",
     "copyIpTitle": "IP地址",
-    "description": "<0>Binance</0> 要求 API 用户白名单 IP 地址，以确保交易和转账请求的合法性。",
-    "findKey": "查找用于此连接的密钥",
-    "openLink": "打开 <2><0>Binance API 管理</0></2>",
-    "requirementsTitle": "如果您计划通过此连接进行交易或转账：",
-    "title": "在继续前，将此 IP 地址加入白名单"
+    "description": "根据<0>币安</0>安全规范， API 用户必须将 IP 地址加入白名单，以确保交易和转账请求的合法性。",
+    "findKey": "查找此连接所使用的密钥",
+    "openLink": "打开 <2><0>币安API 管理</0></2>",
+    "requirementsTitle": "若需通过此连接进行交易或转账：",
+    "title": "将此 IP 地址加入白名单前，请注意"
   },
   "kycDonePage": {
-    "successMessage": "您已成功验证了身份，并启用了您的 {{integrationName}} 账户中的加密货币转账"
+    "successMessage": "您已成功完成身份验证，并已启用了您 {{integrationName}} 账户中的加密货币转账功能"
   },
   "kycInitialPage": {
     "description": "为了您的安全，{{integrationName}} 要求您在可以转账加密货币前验证身份。",
