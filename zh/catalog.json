@@ -704,8 +704,8 @@
     "confirmEmail": "确认电子邮件",
     "enterCode": "请输入验证码",
     "enterCodeFromEmail": "请输入 <2>{{selectedIntegrationName}}</2> 发送到您邮箱的 6 位代码。",
-    "enterTotp": "请输入您的<1></1>身份验证应用中的 6 位代码",
-    "firstEnterTotp": "首先，让我们验证您的身份。<1></1>请输入您连接到 <3>{{selectedIntegrationName}}</3> 的身份验证应用中的一次性代码。",
+    "enterTotp": "请输入您<1></1>身份验证器应用中的 6 位数验证码",
+    "firstEnterTotp": "首先，请完成身份验证。<1></1>请输入您关联 <3>{{selectedIntegrationName}}</3> 的身份验证器中收到的一次性验证码。",
     "securityVerification": "安全验证"
   },
   "mobileAppLink": {
@@ -722,35 +722,35 @@
     "actionButton": "打开{{integrationName}}"
   },
   "navHeader": {
-    "close": "关闭模态框",
+    "close": "关闭对话框",
     "goBack": "返回上一步",
     "title": "使用加密货币支付"
   },
   "networkSelectionDrawer": {
-    "description": "以下网络均为安全的兼容选项。我们已为您自动选择了最便宜手续费的网络。",
+    "description": "以下网络均为安全且兼容的支付方式。我们已为您自动选择手续费最低的网络。",
     "estimatedGasFeeLabel": "预估燃料费：",
     "lowestFeeLabel": "最低手续费",
     "title": "选择网络"
   },
   "nonOAuthPermissionsPage": {
     "allow": "允许",
-    "movingFunds": "未经您许可移动资金",
+    "movingFunds": "未经您许可转移资金",
     "titleWithClient": "{{clientName}} <2></2>权限",
     "titleWithoutClient": "此应用程序的<1></1>权限",
-    "transactionRequest": "发送交易请求",
-    "viewActivity": "查看余额、活动、个人资料数据",
+    "transactionRequest": "提交交易请求",
+    "viewActivity": "查看余额、交易记录和账户资料数据",
     "wontAllow": "不允许"
   },
   "oAuthBrokerPage": {
-    "monitoring": "正在等待批准...",
+    "monitoring": "审批状态检测中……",
     "reopenButton": "点击此处重新打开{{selectedIntegrationName}}",
     "subtitle": "登录您的账户并允许访问",
-    "title": "继续<1></1>{{selectedIntegrationName}}窗口"
+    "title": "请在<1></1>{{selectedIntegrationName}}窗口继续操作"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}} 不支持对所请求的代币和/或网络的转账。",
+    "description": "{{selectedIntegrationName}} 暂不支持你选择的代币和/或网络的转账。",
     "selectAnotherAccount": "选择另一个账户",
-    "selectAnotherDescription": "请选择另一个可以进行存款的交易所或钱包。"
+    "selectAnotherDescription": "请选择其他交易所或钱包以充值。"
   },
   "oauthInitialPage": {
     "continue": "继续前往{{integrationName}}",
@@ -758,44 +758,44 @@
     "title": "登录您的账户"
   },
   "oAuthMessageListener": {
-    "clientUsesMesh": "{{clientName}}使用Mesh安全连接并便于您在{{selectedIntegrationName}}中的转账。",
+    "clientUsesMesh": "{{clientName}}使用Mesh安全协议关联并优化您在{{selectedIntegrationName}}中的资产转移。",
     "description": "登录您的账户并允许访问",
-    "monitoring": "正在等待批准...",
+    "monitoring": "正在等待批准......",
     "open": "打开{{selectedIntegrationName}}",
     "reopen": "重新打开{{selectedIntegrationName}}",
-    "title": "继续{{selectedIntegrationName}}窗口",
-    "willFacilitate": "将便于与{{selectedIntegrationName}}的安全连接。"
+    "title": "前往{{selectedIntegrationName}}页面继续",
+    "willFacilitate": "将优化完成与{{selectedIntegrationName}}的安全连接。"
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
       "client": "您批准了从{{selectedIntegrationName}}到{{clientName}}的<1>{{amount}}</1>转账。",
-      "destination": "您批准了从{{selectedIntegrationName}}到目的地的<1>{{amount}}</1>转账。"
+      "destination": "您批准了从{{selectedIntegrationName}}到目标账户<1>{{amount}}</1>的转账。"
     },
     "buyingPowerPurchase": "在{{selectedIntegrationName}}中购买价值<1>{{amount}}</1>的{{symbol}} <5>(~ {{amountInCrypto}})</5>。",
-    "conversionStep": "将<1>{{amount}}</1>转换为<4>{{currency}}</4>。",
-    "depositTitle": "存款进行中",
-    "description": "这可能需要一些时间...",
+    "conversionStep": "将<1>{{amount}}</1>兑换为<4>{{currency}}</4>。",
+    "depositTitle": "充值中",
+    "description": "请耐心等待......",
     "existingCryptocurrencyBalance": {
-      "approveClient": "您批准从{{selectedIntegrationName}}转账到{{clientName}}。",
-      "approveDestination": "您批准从{{selectedIntegrationName}}转账到目标地址。",
-      "transfer": "从{{selectedIntegrationName}}到{{clientName}}的<1>{{amount}}</1>转账。",
+      "approveClient": "您已批准从{{selectedIntegrationName}}到{{clientName}}转账。",
+      "approveDestination": "您批准从{{selectedIntegrationName}}转账到目标账户。",
+      "transfer": "从{{selectedIntegrationName}}转账 <1>{{amount}}</1> 至{{clientName}}。",
       "transferHideClient": "从{{selectedIntegrationName}}的<1>{{amount}}</1>转账。",
-      "transferHideClientWithAddress": "从{{selectedIntegrationName}}到{{address}}的<1>{{amount}}</1>转账。",
-      "transferSmartDeposit": "通过中继合约从{{selectedIntegrationName}}到{{clientName}}的<1>{{amount}}</1>转账。",
-      "transferSmartDepositHideClient": "通过中继合约从{{selectedIntegrationName}}的<1>{{amount}}</1>转账。",
-      "transferSmartDepositHideClientWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{address}}的<1>{{amount}}</1>转账。",
+      "transferHideClientWithAddress": "从{{selectedIntegrationName}}转账<1>{{amount}}</1>至{{address}}。",
+      "transferSmartDeposit": "通过中继合约从{{selectedIntegrationName}}转账<1>{{amount}}</1>至{{clientName}}。",
+      "transferSmartDepositHideClient": "通过中继合约从{{selectedIntegrationName}}转出<1>{{amount}}</1>。",
+      "transferSmartDepositHideClientWithAddress": "通过中继合约从{{selectedIntegrationName}}转出<1>{{amount}}</1>至{{address}} 。",
       "transferSmartDepositWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。",
       "transferWithAddress": "从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。"
     },
-    "onrampTitle": "购买进行中",
+    "onrampTitle": "购买中",
     "paymentMethodDepositUsage": "从{{paymentMethod}}存入<1>{{amount}}</1>到{{selectedIntegrationName}}。",
-    "paymentTitle": "付款进行中",
-    "transactionTitle": "交易进行中",
+    "paymentTitle": "付款中",
+    "transactionTitle": "交易中",
     "tryAgain": "再试一次"
   },
   "orderSummaryDrawer": {
     "merchantInfoName": "商户：{{clientName}}",
-    "title": "订单摘要",
+    "title": "订单详情",
     "totalLabel": "总计"
   },
   "passwordPage": {
@@ -822,12 +822,12 @@
     "description": "购买后您的{{token}}余额低于预期，原因是{{token}}价格或手续费的变动。",
     "ifDontComplete": "如果您未完成支付，您的{{token}}余额将留在您的{{selectedIntegrationName}}帐户中。",
     "onYourAccount": "在您的账户上",
-    "title": "支付更新",
+    "title": "支付状态更新",
     "topUp": "充值{{token}}余额"
   },
   "payPalConnectOAuthPage": {
     "close": "关闭",
-    "continue": "继续到{{selectedIntegrationName}}",
+    "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "notSupported": "{{selectedIntegrationName}} 不支持对所请求的代币和/或网络的转账。",
     "selectAnotherAccount": "选择另一个账户",
@@ -875,29 +875,29 @@
     "transferDeclined": "转账被拒绝",
     "transferDeclinedBody": "您已经在钱包中拒绝了转账请求。",
     "transferTitle": "转账预览",
-    "youMayReceiveLess": "由于{{symbol}}价格波动，您可能收到的金额会更少。"
+    "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
   "privacyComponent": {
-    "content": "您的数据始终是私密且加密的。"
+    "content": "您的数据全程加密，隐私绝对安全。"
   },
   "qrCodePassword": {
-    "expired": "QR码已过期",
-    "generateNew": "生成新的QR码",
-    "qrCodeLabel": "二维码可以在您的移动设备上进行扫描以建立连接",
-    "scanText": "使用您的 {{appName}} 应用<1></1>扫描此代码以立即登录。"
+    "expired": "二维码已过期",
+    "generateNew": "生成新的二维码",
+    "qrCodeLabel": "使用您的移动设备扫描二维码以建立连接",
+    "scanText": "使用您的 {{appName}} 应用<1></1>扫描此二维码登录。"
   },
   "receiveAmountInput": {
     "onNetwork": "在{{network}}上"
   },
   "revolutConnectOAuthPage": {
-    "amountMustBeAtLeast": "金额必须至少为$8",
-    "continue": "继续到{{selectedIntegrationName}}",
+    "amountMustBeAtLeast": "金额不能低于$8",
+    "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "selectAsset": "选择要转账的资产",
     "selectNetwork": "选择转账网络"
   },
   "robinhoodConnectOAuthPage": {
-    "continue": "继续到{{selectedIntegrationName}}",
+    "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "selectAsset": "选择要转账的资产",
     "selectNetwork": "选择转账网络"
