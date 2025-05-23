@@ -650,11 +650,11 @@
     "title": "デバイスが承認されました。"
   },
   "mfaError": {
-    "default": "コードが正しくありません。もう一度お試しください。"
+    "default": "コードが正しくありません。もう一度お試しください"
   },
   "mfaHint": {
     "email": "メールを確認してください",
-    "phone": "SMSメッセージが届いているか、携帯電話を確認してください。",
+    "phone": "SMSメッセージが届いているか、携帯電話を確認してください",
     "sandbox": "ヒント: {{hint}}",
     "totp": "認証アプリを確認してください"
   },
@@ -665,29 +665,29 @@
     "totp": "<1>{{selectedIntegrationName}}</1>に連携している認証アプリから発行されたワンタイムコードを入力してください。",
     "tradingPin": "<2>{{selectedIntegrationName}}</2>アカウントに関連付けられた取引PINコードを入力してください。",
     "transferFlow": "あなたが本当にこの転送を開始していることを確認するためにワンタイムコードを入力してください。",
-    "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証方法により提供されたコードを入力してください。"
+    "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
-    "enterCode": "あなたが本当にログインを試みていることを確認するワンタイムコードを入力してください。",
+    "enterCode": "ログインしようとしているのが本当にご本人であることを確認するために、<1></1>ワンタイムコードを入力してください。",
     "enterPin": "取引PINコードを入力してください",
     "title": "確認",
-    "verify": "確認"
+    "verify": "確認する"
   },
   "mfaSetupPage": {
-    "emailButton": "メール認証を設定",
-    "emailSubtitle": "ボタンをクリックして、<2>{{selectedIntegrationName}}</2>アカウントにメールを追加してください。",
-    "keyGenerationBody": "セキュリティのために、<1>{{selectedIntegrationName}}</1>は鍵の生成にはメールとオーセンティケータアプリのMFAを有効にすることをユーザーに要求します",
+    "emailButton": "メール認証を設定する",
+    "emailSubtitle": "ボタンをクリックして、<2>{{selectedIntegrationName}}</2>アカウントにメールアドレスを追加してください。",
+    "keyGenerationBody": "お客様の安全のため、<1>{{selectedIntegrationName}}</1>では、キーを生成する際にメールおよび認証アプリによる多要素認証（MFA）の有効化が必須となっています",
     "keyGenerationTitle": "{{selectedIntegrationName}}アカウントでAPIキーの生成を有効化",
-    "totpButton": "オーセンティケータアプリを設定",
-    "totpSubtitle": "ボタンをクリックして、<2>{{selectedIntegrationName}}</2>アカウントにオーセンティケータアプリを追加してください。",
-    "withdrawalBody": "セキュリティのために、<1>{{selectedIntegrationName}}</1>は資産の引き出しにおいてメールとオーセンティケータアプリのMFAを有効にすることをユーザーに要求します",
-    "withdrawalTitle": "{{selectedIntegrationName}}アカウントからの引き出しを有効にする"
+    "totpButton": "認証アプリを設定する",
+    "totpSubtitle": "以下のボタンをクリックして、<2>{{selectedIntegrationName}}</2>アカウントに認証アプリを追加してください。",
+    "withdrawalBody": "お客様の安全のため、<1>{{selectedIntegrationName}}</1>では、資産を出金する際にメールおよび認証アプリによる多要素認証「MFA」の有効化が必須となっています",
+    "withdrawalTitle": "{{selectedIntegrationName}}アカウントからの出金を有効にしてください"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "下のボタンをクリックして認証アプリを<2>{{selectedIntegrationName}}</2>アカウントに追加してください。",
-    "emailTitle": "メールを<2>{{selectedIntegrationName}}</2>アカウントに正常にリンクしました。",
+    "addAuthApp": "以下のボタンをクリックして、<2>{{selectedIntegrationName}}</2>アカウントに認証アプリを追加してください。",
+    "emailTitle": "お客様のメールは、<2>{{selectedIntegrationName}}</2>アカウントに正常に連携されました。",
     "proceed": "進む",
-    "proceedKey": "キー生成に進むには下をクリック",
+    "proceedKey": "以下をクリックして、キー生成に進んでください",
     "proceedTransfer": "以下をクリックして振込に進む",
     "setUpApp": "認証アプリを設定する",
     "totpTitle": "認証アプリを<2>{{selectedIntegrationName}}</2>アカウントに正常にリンクしました。"
@@ -709,13 +709,13 @@
     "securityVerification": "セキュリティ検証"
   },
   "mobileAppLink": {
-    "awaitingConfirmation": "モバイルアプリからの確認待ち",
+    "awaitingConfirmation": "モバイルアプリでの承認を待っています",
     "openAppButton": "{{selectedIntegrationName}}アプリを開く",
     "sendNewRequest": "新しいリクエストを送信する",
     "steps": {
-      "authorize": "確認ページで<1>認証する</1>をクリックしてください。",
+      "authorize": "確認ページで<1>Authorize</1>をクリックしてください。",
       "openApp": "以下の<1>{{selectedIntegrationName}}アプリを開く</1>をクリックしてください。",
-      "return": "アカウントのリンクを完了するためにここに戻ってください。"
+      "return": "アカウントの連携を完了するには、こちらに戻ってください。"
     }
   },
   "mobileContent": {
@@ -727,18 +727,18 @@
     "title": "暗号資産で支払う"
   },
   "networkSelectionDrawer": {
-    "description": "以下のネットワークはすべて安全で、支払いに対応しています。 私たちはあなたのために最も低い手数料のネットワークを自動選択しました。",
-    "estimatedGasFeeLabel": "推定ガス手数料:",
-    "lowestFeeLabel": "最低手数料",
+    "description": "以下のネットワークは、すべてこの支払いに対応しており、安全にご利用いただけます。最も手数料が低いネットワークを自動で選択しています。",
+    "estimatedGasFeeLabel": "概算ガス代：",
+    "lowestFeeLabel": "最安手数料",
     "title": "ネットワークを選択"
   },
   "nonOAuthPermissionsPage": {
     "allow": "許可する",
-    "movingFunds": "あなたの許可なしに資金を移動",
+    "movingFunds": "お客様の許可なく資金が移動されました。",
     "titleWithClient": "{{clientName}} <2></2> 権限",
-    "titleWithoutClient": "このアプリケーションの<1></1>権限",
-    "transactionRequest": "取引要求の送信",
-    "viewActivity": "残高、活動、プロフィールデータの表示",
+    "titleWithoutClient": "このアプリの<1></1>権限",
+    "transactionRequest": "取引要求の送信しています",
+    "viewActivity": "残高、取引履歴、プロフィール情報",
     "wontAllow": "許可しない"
   },
   "oAuthBrokerPage": {
