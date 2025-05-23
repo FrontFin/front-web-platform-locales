@@ -47,7 +47,7 @@
   },
   "binanceResetPasswordPage": {
     "goToBinance": "前往Binance.com",
-    "securityNote": "注意：为保证您的安全，密码更改后24小时内不可提现加密货币。",
+    "securityNote": "注意：为保证您的安全，密码重置后24小时内不可提现加密货币。",
     "steps": {
       "completeProcess": "完成密码重置流程。",
       "enterEmail": "输入您的电子邮件或电话号码，并点击“忘记密码？”。",
@@ -577,33 +577,33 @@
     "successMessage": "您已成功完成身份验证，并已启用了您 {{integrationName}} 账户中的加密货币转账功能"
   },
   "kycInitialPage": {
-    "description": "为了您的安全，{{integrationName}} 要求您在可以转账加密货币前验证身份。",
+    "description": "为了您的安全保障，{{integrationName}} 要求您在转账加密货币前验证身份。",
     "steps": {
-      "completeVerification": "完成流程以验证您的身份并开启您账户中的转账",
-      "navigateCrypto": "进入加密货币标签，打开您想转账的资产，然后点击“发送”",
+      "completeVerification": "请完成身份验证步骤，并将开通您账户的转账功能",
+      "navigateCrypto": "前往加密货币栏目，选择想要转出的资产并点击“发送”",
       "openAccount": "打开您的 {{integrationName}} 账户",
       "returnToScreen": "返回此界面"
     },
-    "title": "在您的 {{integrationName}} 账户中启用转账",
-    "verifiedButton": "我已通过 {{integrationName}} 验证了我的身份"
+    "title": "在您的 {{integrationName}} 账户中启用转账功能",
+    "verifiedButton": "我已通过 {{integrationName}} 完成身份验证"
   },
   "kycPendingPage": {
-    "connectAnother": "连接另一个账户",
-    "description": "身份验证可能需要 <1>1 - 3 个工作日。</1>一旦验证完成，并在您的账户中启用了转账，您可以返回这里完成该交易。",
-    "title": "审批待定"
+    "connectAnother": "关联另一个账户",
+    "description": "身份验证可能需要 <1>1 - 3 个工作日。</1>验证完成并在您的账户中启用转账功能后，您可返回此处完成该交易。",
+    "title": "审批中"
   },
   "kycRobinhoodPage": {
     "clickContinue": "点击 <1>继续</1> 打开 {{selectedIntegrationName}}。",
-    "clickContinueAfterActivated": "激活 {{selectedIntegrationName}} 中的加密货币转账后，请点击下方<5>继续</5>来继续您的转账。",
-    "completeVerification": "完成身份验证和/或添加双因素认证方法。",
-    "connectAnother": "连接另一个账户",
-    "note": "请注意：当您返回时，可能需要重新登录 <1>{{selectedIntegrationName}}</1> 账户以启动此转账。",
+    "clickContinueAfterActivated": "激活 {{selectedIntegrationName}} 中的加密货币转账功能后，请点击下方<5>继续</5>来完成您的转账。",
+    "completeVerification": "完成身份验证及/或添加双重认证方式。",
+    "connectAnother": "关联另一个账户",
+    "note": "请注意：当您返回时，可能需要重新登录 {{selectedIntegrationName}}账户以开启此转账。",
     "return": "返回此处以完成转账。",
-    "title": "在您的账户中启用转账"
+    "title": "在您的账户中启用转账功能"
   },
   "ledgerBluetooth": {
     "step1": "从 <1>Bluetooth</1> 窗口中选择您的设备",
-    "step2": "按蓝牙窗口中的说明操作并在 Ledger 设备上完成连接"
+    "step2": "按蓝牙窗口中的说明操作并在 Ledger 设备上完成关联"
   },
   "ledgerConnection": {
     "bluetoothConnect": "通过蓝牙连接",
@@ -612,20 +612,20 @@
   },
   "ledgerDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} 必须验证您的钱包",
-    "clientVerifyText": "系统会提示您在 Ledger 设备上签署消息，以确认您拥有此钱包。",
+    "clientVerifyText": "系统将提示您在 Ledger 设备上签署验证消息，以确认您拥有该钱包所有权。",
     "secureLabel": "快速、安全且免费",
-    "secureText": "签署并不能授予{{clientName}}以任何方式执行您的钱包交易的权限。",
-    "title": "马上就好！"
+    "secureText": "此次签名不会以任何方式授予{{clientName}}操作您的钱包进行任何交易的权限。",
+    "title": "即将完成！"
   },
   "ledgerError": {
-    "incorrectAppError": "设备上打开了错误的应用程序。请打开正确的应用，并重试。",
-    "lockedError": "您的设备已锁定。请解锁，并重试。",
-    "noDeviceError": "未选择设备。请选择一个设备，并重试。",
-    "notSelectedError": "未选择应用程序。请选择应用程序，并重试。",
-    "rejectError": "用户已拒绝操作。请重试。",
+    "incorrectAppError": "您设备上当前打开的是错误的应用程序，请启动正确的应用后重试。",
+    "lockedError": "您的设备已锁定。请解锁并重试。",
+    "noDeviceError": "未选择设备。请选择设备后重试。",
+    "notSelectedError": "未选择应用程序。请选择应用程序并重试。",
+    "rejectError": "用户已拒绝此操作，请重试。",
     "title": "连接失败",
     "transportError": "您的 Ledger 设备发生了传输错误。",
-    "transportLockedError": "传输被锁定。请解锁设备，并重试。",
+    "transportLockedError": "传输处于锁定状态，请解锁后重试。",
     "unexpectedError": "发生了意外错误。",
     "unknownError": "您的 Ledger 设备发生了未知错误。"
   },
@@ -637,7 +637,7 @@
     "title": "验证失败"
   },
   "ledgerSignMessage": {
-    "rippleBody": "注意：对于 XRP，您会看到一个带有最小值的虚拟交易。这只是为了验证您的钱包，无需花费或发送任何资金。",
+    "rippleBody": "注意：对于 XRP，您将看到一个带有最小值的虚拟交易。此交易仅用于验证钱包所有权，不会产生任何费用或实际资金转账。",
     "title": "在您的设备上查看并签署消息"
   },
   "ledgerUSB": {
@@ -647,7 +647,7 @@
   "loginDeviceVerifiedPage": {
     "loginButton": "前往登录",
     "subtitle": "继续登录。",
-    "title": "您的设备已获得批准。"
+    "title": "您的设备已通过验证。"
   },
   "mfaError": {
     "default": "验证码错误，请重试"
@@ -709,13 +709,13 @@
     "securityVerification": "安全验证"
   },
   "mobileAppLink": {
-    "awaitingConfirmation": "正在等待来自移动应用程序的确认",
+    "awaitingConfirmation": "等待移动端应用确认",
     "openAppButton": "打开{{selectedIntegrationName}}应用",
     "sendNewRequest": "发送新请求",
     "steps": {
-      "authorize": "在确认页面上点击<1>授权</1>。",
-      "openApp": "在下面点击<1>打开{{selectedIntegrationName}}应用</1>。",
-      "return": "返回此处以完成账户链接。"
+      "authorize": "在确认页面点击<1>授权</1>。",
+      "openApp": "在下方点击<1>打开{{selectedIntegrationName}}应用</1>。",
+      "return": "返回此处以完成账户关联。"
     }
   },
   "mobileContent": {
@@ -723,12 +723,12 @@
   },
   "navHeader": {
     "close": "关闭模态框",
-    "goBack": "返回",
+    "goBack": "返回上一步",
     "title": "使用加密货币支付"
   },
   "networkSelectionDrawer": {
     "description": "以下网络均为安全的兼容选项。我们已为您自动选择了最便宜手续费的网络。",
-    "estimatedGasFeeLabel": "估计燃气费用：",
+    "estimatedGasFeeLabel": "预估燃料费：",
     "lowestFeeLabel": "最低手续费",
     "title": "选择网络"
   },
