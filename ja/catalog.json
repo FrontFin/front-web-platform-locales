@@ -800,12 +800,12 @@
   },
   "passwordPage": {
     "fieldError": "{{field}}を入力してください",
-    "fieldErrorWithIntegration": "{{integrationName}} {{field}}を入力してください。",
+    "fieldErrorWithIntegration": "{{integrationName}}の{{field}}を入力してください",
     "forgotPassword": "パスワードをお忘れですか",
     "tabs": {
       "email": "メール",
       "mobileApp": "モバイルアプリ",
-      "phone": "電話",
+      "phone": "お電話",
       "qrCode": "QRコード"
     },
     "title": "ログイン"
@@ -813,119 +813,119 @@
   "paymentMethods": {
     "bankAccount": "銀行口座",
     "card": "デビットカード",
-    "default": "リンクされた支払い方法",
+    "default": "リンク済みのお支払い方法",
     "digitalWallet": "デジタルウォレット"
   },
   "paymentUpdateDrawerContent": {
     "cancel": "キャンセル",
-    "clickToPay": "この支払いを行うために{{token}}の残高を上げるには、以下をクリック",
-    "description": "購入後の{{token}}残高が、{{token}}の価格変動やガス代のために予想より少なくなります。",
-    "ifDontComplete": "支払いを完了しないと、{{selectedIntegrationName}}アカウントに{{token}}残高が残ります。",
-    "onYourAccount": "あなたのアカウントで",
-    "title": "支払い更新",
-    "topUp": "{{token}}残高の補充"
+    "clickToPay": "この支払いを行うには、以下をクリックして{{token}}残高をチャージしてください。",
+    "description": "購入後の{{token}}残高が予想より少ないのは、{{token}}の価格変動またはガス代の影響によるものです。",
+    "ifDontComplete": "支払いを完了しない場合、{{token}}残高は{{selectedIntegrationName}}アカウントに残ります。",
+    "onYourAccount": "ご自身のアカウント上",
+    "title": "支払い情報の更新",
+    "topUp": "{{token}}残高をチャージする\n\n"
   },
   "payPalConnectOAuthPage": {
     "close": "閉じる",
-    "continue": "{{selectedIntegrationName}}へ続行",
-    "enterAmount": "転送額を入力",
-    "notSupported": "{{selectedIntegrationName}}は要求されたトークンやネットワークへの転送をサポートしていません。",
+    "continue": "{{selectedIntegrationName}}へ進む",
+    "enterAmount": "送金金額を入力してください",
+    "notSupported": "{{selectedIntegrationName}}は指定されたトークンまたはネットワークでの送金に対応していません。",
     "selectAnotherAccount": "別のアカウントを選択してください",
-    "selectAnotherExchange": "別の取引所またはウォレットからの入金を選択してください。",
-    "selectNetwork": "転送ネットワークを選択",
-    "title": "転送する資産を選択"
+    "selectAnotherExchange": "他の取引所またはウォレットを選択して入金してください。",
+    "selectNetwork": "送金ネットワークを選択",
+    "title": "送金する資産を選択"
   },
   "previewPageUI": {
     "accountLabel": "アカウント",
-    "includeFeesMessage": "手数料として{{amount}}を含む",
+    "includeFeesMessage": "手数料{{amount}}を含みます",
     "networkLabel": "ネットワーク",
-    "paymentTitle": "{{clientName}}への支払い",
-    "paymentTotalLabel": "総支払い額",
+    "paymentTitle": "{{clientName}} に支払う",
+    "paymentTotalLabel": "合計を支払う",
     "payWithLabel": "支払い方法",
     "payWithLabelWithName": "{{integrationName}}で支払う"
   },
   "previewTransfer": {
-    "allFeesIncluded": "全ての手数料が含まれています",
+    "allFeesIncluded": "手数料すべて込み",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
-    "approveTransferRequest": "ウォレットで転送リクエストを承認してください。<1></1>",
+    "approveTransferRequest": "送金リクエストを承認してください<1></1>ウォレットで",
     "changeAmount": "金額を変更する",
-    "depositTitle": "入金プレビュー",
-    "dustLeft": "一部の{{symbol}}の粉が残っているかもしれません。",
-    "estimatedGasFee": "推定ガス料金",
-    "estimatedGasFeeHint": "このトランザクションを処理するために使用される計算力に対して、ネットワークバリデーターに補償するために支払われる推定料金。",
-    "from": "から",
-    "fundingWith": "で資金提供",
-    "institutionTransferFee": "{{selectedIntegrationName}}引き出し手数料",
-    "institutionTransferFeeHint": "あなたの{{symbol}}を{{selectedIntegrationName}}から引き出すために請求される手数料。",
-    "maxAmount": "あなたのアカウントは最大<2>{{networkMaxAmount}}</2>をファンドできます。この金額に送金を調整しますか？",
-    "monitoring": "承認を監視中...",
+    "depositTitle": "入金のプレビュー",
+    "dustLeft": "{{symbol}}の端数が残る場合があります。",
+    "estimatedGasFee": "推定ガス代",
+    "estimatedGasFeeHint": "この取引を処理するために必要な、ネットワークバリデーターへの報酬として支払われる推定手数料です。",
+    "from": "差出人",
+    "fundingWith": "資金元",
+    "institutionTransferFee": "{{selectedIntegrationName}} 出金手数料",
+    "institutionTransferFeeHint": "{{selectedIntegrationName}} が{{symbol}}の送金に対して請求する手数料です。",
+    "maxAmount": "アカウントの送金上限額は <2>{{networkMaxAmount}}</2> です。\nこの上限額に送金額を調整しますか？",
+    "monitoring": "承認を待機中…",
     "network": "ネットワーク",
-    "onrampTitle": "購入プレビュー",
-    "payingWith": "で支払う",
-    "paymentTitle": "支払いプレビュー",
-    "proceed": "続行する",
+    "onrampTitle": "購入のプレビュー",
+    "payingWith": "支払い方法",
+    "paymentTitle": "支払いのプレビュー",
+    "proceed": "続行",
     "processingFee": "処理手数料",
-    "processingFeeHint": "このトランザクションを処理するために収集された手数料。",
-    "receive": "受け取る",
-    "resendTransferRequest": "転送リクエストを再送信",
+    "processingFeeHint": "この取引を実行する際に必要な手数料です。",
+    "receive": "受取",
+    "resendTransferRequest": "送金リクエストを再送する",
     "seconds": "{{seconds}}秒",
-    "symbolBalance": "{{symbol}}残高",
-    "to": "宛先",
+    "symbolBalance": "{{symbol}} 残高",
+    "to": "送金先",
     "total": "合計",
-    "transferDeclined": "転送が拒否されました。",
-    "transferDeclinedBody": "ウォレットでの転送リクエストを拒否しました。",
-    "transferTitle": "転送プレビュー",
-    "youMayReceiveLess": "{{symbol}}の価格変動により、受け取り額が減る可能性があります。"
+    "transferDeclined": "送金が拒否されました",
+    "transferDeclinedBody": "ウォレットで送金リクエストを拒否しました。",
+    "transferTitle": "送金プレビュー",
+    "youMayReceiveLess": "{{symbol}}の価格変動により、受取額が少なくなる可能性があります。"
   },
   "privacyComponent": {
-    "content": "お客様のデータは常にプライベートかつ暗号化されています。"
+    "content": "お客様のデータは常に暗号化され、安全に保護されています。"
   },
   "qrCodePassword": {
     "expired": "QRコードの有効期限が切れました",
-    "generateNew": "新しいQRコードを生成",
-    "qrCodeLabel": "QRコードは、接続を確立するためにモバイルデバイスでスキャンできます",
-    "scanText": "瞬時にログインするには、{{appName}}アプリでこのコードをスキャンしてください<1></1>。"
+    "generateNew": "新しいQRコードを生成する",
+    "qrCodeLabel": "モバイル端末でQRコードをスキャンして接続を確立します",
+    "scanText": "このコードを {{appName}} アプリでスキャン <1></1> すると、すぐにログインできます。"
   },
   "receiveAmountInput": {
-    "onNetwork": "{{network}}で"
+    "onNetwork": "{{network}} 上で"
   },
   "revolutConnectOAuthPage": {
-    "amountMustBeAtLeast": "金額は最低$8でなければなりません",
-    "continue": "{{selectedIntegrationName}}へ続行",
-    "enterAmount": "転送額を入力",
-    "selectAsset": "転送する資産を選択",
-    "selectNetwork": "転送ネットワークを選択"
+    "amountMustBeAtLeast": "金額は最低でも$8以上である必要があります",
+    "continue": "{{selectedIntegrationName}} へ進む",
+    "enterAmount": "送金金額を入力",
+    "selectAsset": "送金する資産を選択",
+    "selectNetwork": "送金ネットワークを選択"
   },
   "robinhoodConnectOAuthPage": {
-    "continue": "{{selectedIntegrationName}}へ続行",
-    "enterAmount": "転送額を入力",
-    "selectAsset": "転送する資産を選択",
-    "selectNetwork": "転送ネットワークを選択"
+    "continue": "{{selectedIntegrationName}} へ進む",
+    "enterAmount": "送金金額を入力",
+    "selectAsset": "送金する資産を選択",
+    "selectNetwork": "送金ネットワークを選択"
   },
   "selectCryptoFundingPage": {
     "title": "資産を選択"
   },
   "selectHoldingPage": {
-    "binanceDirectNoAssetsBody1": "リンクされたアカウントに資産はありません。",
-    "binanceDirectNoAssetsBody2": "アカウントに資金を追加するか、別のアカウントを接続して送金を続行できます。",
-    "cannotFundBody": "このアカウントの暗号通貨または法定通貨の残高が不足して、このトランザクションを資金調達することができません。",
-    "cannotFundTitle": "トランザクションの資金調達ができません",
-    "connectAnotherButton": "別のアカウントを接続",
+    "binanceDirectNoAssetsBody1": "連携済みアカウントに資産が存在しないようです。",
+    "binanceDirectNoAssetsBody2": "送金を続けるには、資金を追加するか、別のアカウントを接続してください。",
+    "cannotFundBody": "このアカウントの暗号資産または法定通貨の残高が不足しています。",
+    "cannotFundTitle": "取引に必要な資金が不足しています",
+    "connectAnotherButton": "別のアカウントを接続する",
     "defaultTitle": "トークンを選択",
-    "depositTitle": "入金用トークンを選択",
-    "ineligibleAssets": "対象外の資産",
-    "loading": "資産を読み込み中...",
-    "noAssetsTitle": "リンクされたアカウントに資産がありません",
-    "noEligibleAssetsTitle": "このアカウントの資産はこの送金に適格ではありません",
-    "notEnoughtBody": "アカウントにさらに{{symbol}}を追加し、ここに戻ってもう一度試してください。",
-    "notEnoughtTitle": "{{symbol}}が不足しています",
-    "otherEligible": "他の適格な資産",
-    "paymentTitle": "支払い用トークンを選択",
-    "returnToAppButton": "アプリケーションに戻る",
+    "depositTitle": "入金用のトークンを選択",
+    "ineligibleAssets": "送金対象外の資産",
+    "loading": "資産を読み込み中。。。",
+    "noAssetsTitle": "連携アカウントに資産が検出されませんでした",
+    "noEligibleAssetsTitle": "このアカウントの資産は送金対象外です",
+    "notEnoughtBody": "{{symbol}}をアカウントに追加してから、再度お試しください。",
+    "notEnoughtTitle": "{{symbol}}の残高が不足しています",
+    "otherEligible": "その他の送金可能な資産",
+    "paymentTitle": "支払いに使用するトークンを選択",
+    "returnToAppButton": "アプリに戻る",
     "returnToClientButton": "{{clientName}}に戻る",
-    "spotAccountsBody": "現在サポートされているのは現物アカウントのみです。マージンなど他のアカウントタイプの資産は検出されません。",
+    "spotAccountsBody": "現在、スポットアカウントのみ対応しています。マージンなどその他のアカウントの資産は検出されません。",
     "topUpButton": "残高をチャージ",
-    "unableTransferError": "送金を開始できません。"
+    "unableTransferError": "送金を開始できませんでした。"
   },
   "selectItem": {
     "label": "{{text}}を選択"
