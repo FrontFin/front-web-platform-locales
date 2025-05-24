@@ -451,17 +451,17 @@
     "unknown": "この資金調達オプションはご利用いただけません。"
   },
   "fundingPage": {
-    "activatePaymentMethod": "{{selectedIntegrationName}} で支払方法をアクティブ化する",
+    "activatePaymentMethod": "{{selectedIntegrationName}}で支払い方法を有効化",
     "aproximateFiat": "~{{amountInFiat}}",
     "balanceAmount": "残高: {{amount}}",
     "balanceAmountWithConversion": "残高: ~{{amount}} ({{conversionSymbols}})",
     "balances": "残高",
     "balanceWithAproximateFiat": "残高: {{amount}} ~ {{amountInFiat}}",
-    "buyingPower": "購買力",
+    "buyingPower": "購入可能額",
     "changeAmount": "もしくは、送金額を{{availableAmount}}に変更してください。",
     "changePreferredPaymentMethod": "希望の支払い方法を変更する",
     "changePreferredToken": "ご希望のトークンを変更してください",
-    "cryptoConversion": "暗号通貨の変換",
+    "cryptoConversion": "暗号資産の換算",
     "description": "合計: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "（利用可能な即時現金：{{amountInFiat}}）",
     "linkedPaymentMethods": "リンクされた支払方法",
@@ -477,15 +477,15 @@
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "支払いを承認する",
     "cancel": "キャンセル",
-    "description": "ガス料金が元の見積もりよりも高くなっています。",
-    "ifDontComplete": "支払いを完了しない場合、{{token}} 残高は {{selectedIntegrationName}} のアカウントに残ります。",
+    "description": "ガス代が当初の見積もりより高くなっています。",
+    "ifDontComplete": "支払いを完了しない場合、{{token}}の残高は{{selectedIntegrationName}}アカウントにそのまま残ります。",
     "newEstimate": "新しい見積もり",
-    "originalEstimate": "元の見積もり",
-    "title": "ガス料金の更新"
+    "originalEstimate": "当初の見積もり",
+    "title": "ガス代の更新"
   },
   "generateKeyPage": {
-    "establishedInClient": "<1></1><2>{{clientName}}</2>で中断のない更新を正常に確立しました。",
-    "establishedInThisApp": "<1></1><2>このアプリケーション</2>内で中断のない更新を正常に確立しました。",
+    "establishedInClient": "<1></1><2>{{clientName}}</2>との継続的な更新が正常に確立されました。",
+    "establishedInThisApp": "<1></1><2>this application</2>との継続的な更新が正常に確立されました。",
     "linkedToInClient": "<1></1><2>{{selectedIntegrationName}}</2>を<5>{{clientName}}</5>に正常に連携しました。",
     "linkedToThisApp": "<1></1><2>{{selectedIntegrationName}}</2>を<5>本アプリ</5>に正常に連携しました。",
     "nextStep": "次に、ログインを繰り返さずに、<2>uninterrupted updates</2> のためのキーを作成します。",
@@ -554,9 +554,9 @@
     "content40": "このウォレットの所有を確認してください",
     "drawerTitle": "ウォレットで署名リクエストを承認してください<1></1>",
     "item1Body": "{{selectedIntegrationName}}で、このウォレットの所有を証明するメッセージへの署名を求められます。",
-    "item1Title": "{{clientName}}はあなたのアドレスを確認する必要があります",
-    "item2Body": "サインすることで、ウォレットでの操作を行う許可が{{clientName}}に与えられることはありません。",
-    "item2Title": "迅速、安全、無料",
+    "item1Title": "{{clientName}}で住所確認が必要です",
+    "item2Body": "署名しても、{{clientName}}がお客様のウォレットで取引を行う許可を得ることは一切ありません。",
+    "item2Title": "高速、安全、無料",
     "monitoringLabel": "署名の監視中...",
     "resendAction": "署名リクエストを再送信する",
     "title": "もう少しです！",
@@ -598,12 +598,12 @@
     "completeVerification": "本人確認を完了し、または二段階認証を追加してください。",
     "connectAnother": "別のアカウントを連携する",
     "note": "ご注意：この送金を開始する際に、再度{{selectedIntegrationName}}のアカウントにログインが必要になる場合があります。",
-    "return": "トランスファーを完了するためにここに戻ります。",
-    "title": "アカウントで転送を有効にする"
+    "return": "送金を完了するにはこちらの画面に戻ってください。",
+    "title": "アカウントで送金機能を有効にしてください"
   },
   "ledgerBluetooth": {
-    "step1": "<1>Bluetooth</1>ウィンドウからデバイスを選択します",
-    "step2": "接続を完了するためにBluetoothウィンドウとLedgerデバイスの指示に従ってください"
+    "step1": "<1>Bluetooth</1>ウィンドウからデバイスを選択してください",
+    "step2": "BluetoothウィンドウとLedgerデバイスの指示に従って接続を完了してください"
   },
   "ledgerConnection": {
     "bluetoothConnect": "Bluetoothで接続",
@@ -613,7 +613,7 @@
   "ledgerDeviceConnected": {
     "clientVerifyLabel": "{{clientName}}はあなたのウォレットを確認する必要があります",
     "clientVerifyText": "このウォレットがあなたの所有物であることを確認するメッセージにLedgerデバイスでサインするよう求められます。",
-    "secureLabel": "速くて、安全で、無料",
+    "secureLabel": "高速、安全、無料",
     "secureText": "署名は決して{{clientName}}にウォレットでの取引を行う許可を与えるものではありません。",
     "title": "もう少し！"
   },
