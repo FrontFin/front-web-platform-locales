@@ -1103,48 +1103,48 @@
     "clientVerifyLabel": "{{clientName}}はお客様のウォレットの認証が必要です",
     "secureLabel": "高速、安全、無料",
     "secureText": "署名しても、{{clientName}}がお客様のウォレットで取引を行う権限が与えられることは一切ありません。",
-    "signText": "このウォレットを所有していることを確認するメッセージの署名をTrezorデバイスで求められます。",
-    "title": "もう少し！",
-    "verifyingLabel": "ウォレットを確認中..."
+    "signText": "Trezorデバイスでウォレット所有を確認するメッセージの署名を求められます",
+    "title": "もう少しで完了です！",
+    "verifyingLabel": "ウォレットを検証しています。。。"
   },
   "trezorError": {
-    "connectionDeclinedBody": "あなたはウォレットを接続するリクエストを拒否したか、または以前のリクエストがまだアクティブです。",
+    "connectionDeclinedBody": "ウォレット接続のリクエストを拒否したか、前回のリクエストがまだ処理中です。",
     "connectionDeclinedTitle": "接続が拒否されました",
-    "signatureDeclinedBody": "あなたはあなたのウォレットで署名要求を拒否しました、または以前の要求がまだアクティブです。",
+    "signatureDeclinedBody": "ウォレットでの署名リクエストを拒否したか、前回のリクエストがまだ処理中です。",
     "signatureDeclinedTitle": "署名が拒否されました"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}}はあなたのウォレットを確認する必要があります",
-    "clientVerifyText": "ウォレット所有権を確認するために、メッセージに署名するためにあなたのTrezorに安全に転送されます。",
-    "connectingLabel": "ウォレットを接続中...",
-    "secureLabel": "迅速、安全、無料",
-    "secureText": "署名を付けることで{{clientName}}はあなたのウォレットを使って取引を行う権限を一切得ません。"
+    "clientVerifyLabel": "{{clientName}}はお客様のウォレットを認証する必要があります",
+    "clientVerifyText": "お客様のウォレット所有を確認するためのメッセージ署名のため、Trezorデバイスへ安全に移動します。",
+    "connectingLabel": "ウォレットを接続中です。。。",
+    "secureLabel": "高速、安全、無料",
+    "secureText": "署名は、{{clientName}}に対してお客様のウォレットで取引を行う権限を与えるものではありません。"
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}}は、接続されたウォレットとは関連付けられていない<3>{{requestedNetworkName}}</3>アドレス<6>{{truncatedRequestedAddress}}</6>の所有権の確認をお願いしています。他のウォレットを接続してください。",
+    "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
     "connectAnotherAction": "別のウォレットを接続する",
-    "title": "おっと！"
+    "title": "あれ？"
   },
   "verifyError": {
-    "body": "ハードウェアウォレットの確認に失敗しました。正しいネットワークを選択し、正しいウォレットアドレスを入力したことを確認してください。",
-    "title": "検証に失敗しました"
+    "body": "ハードウェアウォレットの確認ができません。正しいネットワークを選択し、正しいウォレットアドレスを入力しているかご確認ください。",
+    "title": "検証失敗されました"
   },
   "verifyErrorPage": {
-    "body": "あなたはウォレットで署名要求を拒否しました、または以前の要求がまだアクティブです。署名なしでは{{clientName}}がウォレットの所有権を確認できません。",
+    "body": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。署名がないため、{{clientName}}はウォレットの所有権を確認できません。",
     "title": "確認が拒否されました"
   },
   "wallectConnect": {
-    "noActiveSessionError": "アクティブなWalletConnectセッションがありません",
+    "noActiveSessionError": "有効なWalletConnectセッションはありません",
     "transactionHashError": "トランザクションハッシュを取得できませんでした",
     "unknownError": "不明なエラーが発生しました。{{error}}"
   },
   "walletDoneScreen": {
     "completePaymentMessage": "{{clientName}}での購入を完了するには、チェックアウト画面に戻ってください。",
-    "continueMessage": "{{clientName}}アプリで続行してください。",
-    "successMessage": "{{walletName}}ウォレットの所有権を正常に確認しました。"
+    "continueMessage": "{{clientName}}アプリで操作を続けてください。",
+    "successMessage": "{{walletName}}ウォレットの所有権が正常に確認されました。"
   },
   "withdrawalLockedErrorPage": {
-    "another": "別のアカウントからの振替",
-    "title": "出金は一時的に無効になっています"
+    "another": "別のアカウントから送金する",
+    "title": "現在、出金機能は一時的に無効になっています"
   }
 }
