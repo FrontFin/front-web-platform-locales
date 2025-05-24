@@ -980,117 +980,117 @@
     "buttonTitle": {
       "deposit": "入金プレビュー",
       "onramp": "購入をプレビュー",
-      "transfer": "振替をプレビュー"
+      "transfer": "送金内容の確認"
     },
     "errorMessage": {
-      "insufficientFunds": "振り込みおよび手数料をカバーするための資金が不足しています。最大振り込み額は{{maxAmount}}です。",
-      "minimumAmount": "最小振り込み金額は{{minAmount}}です。",
+      "insufficientFunds": "残高が不足しています「ガス代を含む」。最大送金額は {{maxAmount}} です。",
+      "minimumAmount": "最小送金額は {{minAmount}} です。",
       "zeroAmount": "ゼロ以外の金額を入力してください"
     },
     "title": {
       "deposit": "入金額を入力",
       "onramp": "購入金額を入力",
-      "transfer": "送金額を入力してください"
+      "transfer": "送金額を入力"
     }
   },
   "transferCanceledPage": {
-    "title": "転送がキャンセルされました",
-    "titlePayment": "支払いがキャンセルされました",
+    "title": "送金がキャンセルされました",
+    "titlePayment": "お支払いがキャンセルされました",
     "willRemain": "は{{integrationName}}アカウントに残ります。",
-    "yourBalance": "あなたの{{token}}残高"
+    "yourBalance": "お客様の {{token}} 残高"
   },
   "transferDeviceConfirmation": {
-    "awaitingConfirmation": "モバイルアプリからの確認待ち",
+    "awaitingConfirmation": "モバイルアプリでの確認をお待ちしています",
     "confirmButton": "アプリで認証しました",
-    "description": "{{selectedIntegrationName}}モバイルアプリでログインしているのが本当にあなたか確認してください。",
+    "description": "{{selectedIntegrationName}} モバイルアプリでログインがご本人か確認してください",
     "desktopSteps": {
-      "confirm": "確認のためにプロンプトで確認",
-      "openApp": "携帯電話で{{selectedIntegrationName}}アプリを開きます",
-      "return": "続行するにはここに戻る"
+      "confirm": "ご本人確認のため、プロンプトで承認してください",
+      "openApp": "スマートフォンで {{selectedIntegrationName}} アプリを開いてください",
+      "return": "続行するにはこちらに戻ってください"
     },
     "mobileSteps": {
-      "clickOpen": "以下の<1> {{selectedIntegrationName}}アプリを開く</1>をクリック",
-      "verifyLogin": "新しいデバイスからログインしていることを確認してください",
-      "verifyTransfer": "あなたが転送を要求していることを確認してください"
+      "clickOpen": "以下の <1>{{selectedIntegrationName}} アプリを開く</1> をクリックしてください",
+      "verifyLogin": "新しいデバイスからのログインであることを確認してください",
+      "verifyTransfer": "送金リクエストがご本人によるものであることを確認してください"
     },
     "openApp": "{{selectedIntegrationName}}アプリを開く",
-    "sendNewRequest": "新しいリクエストを送信する",
+    "sendNewRequest": "新しいリクエストを送信",
     "title": "確認",
     "tryAnother": "別の方法を試す"
   },
   "transferEmailApprovalConfirmation": {
-    "approve": "確認ページで<1>承認</1>をクリックしてください。",
-    "approveOrCancel": "メール内で<1>承認または取り消し</1>をクリックしてください。",
+    "approve": "確認画面で <1>Approve</1>  をクリックしてください",
+    "approveOrCancel": "メールで  <1>Approve or Cancel Withdrawal</1>  をクリックしてください",
     "confirmButton": "出金を承認しました",
-    "description": "新しい出金を確認するようお願いするメールを受け取るため、受信箱をご確認ください。",
-    "return": "ここに戻り、転送を続行するために以下をクリックして下さい。",
-    "title": "出金を承認する"
+    "description": "新しい出金確認のメールを受信トレイでご確認ください",
+    "return": "こちらに戻り、以下をクリックして送金を続行してください。",
+    "title": "出金を承認"
   },
   "transferErrorPage": {
-    "defaultError": "不明なエラーが発生しました。新しい転送セッションを開始するために、下をクリックしてください。"
+    "defaultError": "不明なエラーが発生しました。以下のボタンをクリックして新しい送金セッションを開始してください "
   },
   "transferErrors": {
-    "failedToExecute": "振替の実行に失敗しました",
-    "failedToPreview": "振替のプレビューに失敗しました",
-    "mfaEmailFailed": "メールからのコードが間違っています。もう一度入力してください。",
-    "mfaFaceFailed": "認証に失敗しました。もう一度試してください。",
-    "mfaFailed": "間違ったコードです。コードをもう一度入力してください。",
-    "mfaPhoneFailed": "間違ったSMSコードです。コードを再入力してください。",
-    "mfaTotpFailed": "間違ったTOTPコードです。コードを再入力してください。",
-    "mfaTradingPinFailed": "MFAトレードピンが失敗しました。コードをもう一度入力してください。"
+    "failedToExecute": "送金の実行に失敗しました",
+    "failedToPreview": "送金のプレビューに失敗しました",
+    "mfaEmailFailed": "メールコードが間違っています。もう一度入力してください",
+    "mfaFaceFailed": "本人確認に失敗しました。もう一度お試しください",
+    "mfaFailed": "コードが間違っています。もう一度入力してください",
+    "mfaPhoneFailed": "SMSコードが間違っています。もう一度入力してください",
+    "mfaTotpFailed": "TOTPコードが間違っています。もう一度入力してください",
+    "mfaTradingPinFailed": "取引用PINが正しくありません。もう一度入力してください\n"
   },
   "transferFacePage": {
-    "clickOpenApp": "<1>{{selectedIntegrationName}}アプリを開く</1>をクリックし、アプリを開いて顔認証を完了してください。",
-    "completeMobile": "資金を転送しようとしているのが本当にあなただと確認するために顔認証を完了してください。",
-    "confirmCompleted": "認証を完了しました",
+    "clickOpenApp": "<1>{{selectedIntegrationName}} アプリを開く</1> をクリックしてアプリを起動し、顔認証を完了してください",
+    "completeMobile": "資金を送金しようとしているのがご本人であることを確認するために、顔認証を完了してください。",
+    "confirmCompleted": "本人確認が完了しました",
     "openApp": "{{selectedIntegrationName}}アプリを開く",
-    "reopenApp": "{{selectedIntegrationName}}アプリを再オープンする",
-    "return": "その後、ここに戻って、アカウントのリンクを完了してください。",
-    "returnContinue": "アカウントのリンクを続行するためにここに戻ってください。",
-    "scanQR": "QRコードをスキャンして、資金を転送しようとしているのが本当にあなただと確認するために顔認証を完了してください。",
+    "reopenApp": "{{selectedIntegrationName}} アプリを再度開く",
+    "return": "アカウントの連携を完了するには、こちらに戻ってください",
+    "returnContinue": "アカウントの連携を続けるには、こちらに戻ってください",
+    "scanQR": "資金を送金しようとしているのがご本人であることを確認するために、QRコードをスキャンして顔認証を完了してください。",
     "title": "確認"
   },
   "transferMfaPage": {
     "title": "確認",
-    "verify": "確認"
+    "verify": "確認する"
   },
   "transferPreviewErrorPage": {
-    "aboveMaximum": "{{integrationName}}の最大を超えています",
-    "belowMinimum": "{{integrationName}}の最小より低いです",
+    "aboveMaximum": "{{integrationName}}の以上限を超えています",
+    "belowMinimum": "{{integrationName}}の以下限を下回っています",
     "connectAnotherAccount": "別のアカウントを接続してください。",
     "connectDifferent": "別のアカウントを接続する",
-    "insufficientBalanceError": "この取引を資金提供するのに十分な残高がありません。",
+    "insufficientBalanceError": "この取引を実行するには残高が不足しています。",
     "insufficientFunds": "残高不足",
-    "unknownError": "不明なエラーが発生しました。以下をクリックして、新しい転送セッションを開始してください。"
+    "unknownError": "不明なエラーが発生しました。新しい送金セッションを開始するには、以下のボタンをクリックしてください。"
   },
   "transferSteps": {
     "approveTransfer": "{{integrationName}}から{{clientName}}へ転送を承認します",
-    "approveTransferDeFi": "{{integrationName}}で転送を承認するよう求められます",
-    "approveTransferToDestination": "{{integrationName}}から宛先への転送を承認します",
-    "convertAmount": "{{fromAmount}}を{{toCurrency}}に変換",
-    "depositAmount": "{{amount}}を{{paymentMethod}}から{{integrationName}}に入金",
-    "purchaseAmount": "<2>{{amount}}</2>の{{cryptocurrencySymbol}}を{{integrationName}}で購入。",
-    "showLess": "表示を少なくする",
-    "showMore": "もっと表示する",
+    "approveTransferDeFi": "{{integrationName}}で送金を承認するよう求められます。",
+    "approveTransferToDestination": "{{integrationName}}から送金先への送金を承認してください。",
+    "convertAmount": "{{fromAmount}}を{{toCurrency}}に換算",
+    "depositAmount": "{{paymentMethod}}から{{integrationName}}への{{amount}}の入金",
+    "purchaseAmount": "<2>{{amount}}</2>分の{{cryptocurrencySymbol}}を{{integrationName}}で購入",
+    "showLess": "簡略表示",
+    "showMore": "詳細表示",
     "title": "何が起こるか",
-    "transferAmount": "{{integrationName}}から{{clientName}} {{targetAddress}}への<1>{{cryptoAmount}}</1>の転送。",
-    "transferAmountSmartDeposit": "{{integrationName}}から{{clientName}} {{targetAddress}}への<1>{{cryptoAmount}}</1>のリレーコントラクトによる転送。"
+    "transferAmount": "<1>{{cryptoAmount}}</1>を{{integrationName}}から{{clientName}}の{{targetAddress}}へ送金",
+    "transferAmountSmartDeposit": "リレイコントラクトを介して、{{integrationName}}から{{clientName}}の{{targetAddress}}へ<1>{{cryptoAmount}}</1>を送金します。"
   },
   "transferUpdateDrawerContent": {
-    "approveTransfer": "転送を承認する",
+    "approveTransfer": "送金を承認する",
     "cancel": "キャンセル",
-    "description": "{{token}}の価格やガス料金の変動によって、購入金額が予想より低くなっています。",
-    "ifDontComplete": "転送を完了しない場合、{{selectedIntegrationName}}アカウントに{{token}}の残高が残ります。",
-    "onYourAccount": "アカウントで",
-    "title": "転送の更新",
-    "youWillReceive": "あなたの受け取るものは"
+    "description": "{{token}}の価格変動および／またはガス料金の変動により、購入金額が予想より低くなっています。",
+    "ifDontComplete": "送金を完了しない場合、{{token}}の残高は{{selectedIntegrationName}}アカウントに保持されます。",
+    "onYourAccount": "お客様のアカウントにて",
+    "title": "送金状況の更新",
+    "youWillReceive": "受け取る金額"
   },
   "transferWithdrawalAddressConfirmation": {
-    "checkInbox": "新しい引き出しアドレスを確認するようお願いするメールを受け取いることをご確認ください。",
-    "clickConfirm": "メール内で<1>アドレスを確認</1>をクリック。",
+    "checkInbox": "新しい出金先アドレスの確認依頼メールが届いているか、受信トレイをご確認ください。",
+    "clickConfirm": "メール内の <1>Confirm address</1>をクリックしてください。",
     "confirmedButton": "アドレスを確認しました",
-    "return": "ここに戻って、転送を完了するために以下をクリックしてください。",
-    "title": "引き出しのアドレスを確認"
+    "return": "ここに戻り、以下のボタンをクリックして送金を完了してください。",
+    "title": "出金先アドレスを確認する"
   },
   "trezorContext": {
     "failedGetBTCError": "BTCウォレット情報の取得に失敗しました",
@@ -1100,9 +1100,9 @@
     "unknownError": "不明なエラーが発生しました"
   },
   "trezorDeviceConnected": {
-    "clientVerifyLabel": "{{clientName}}はあなたのウォレットを確認する必要があります",
-    "secureLabel": "速くて、安全で、無料",
-    "secureText": "署名は決して{{clientName}}にウォレットでの取引を行う許可を与えるものではありません。",
+    "clientVerifyLabel": "{{clientName}}はお客様のウォレットの認証が必要です",
+    "secureLabel": "高速、安全、無料",
+    "secureText": "署名しても、{{clientName}}がお客様のウォレットで取引を行う権限が与えられることは一切ありません。",
     "signText": "このウォレットを所有していることを確認するメッセージの署名をTrezorデバイスで求められます。",
     "title": "もう少し！",
     "verifyingLabel": "ウォレットを確認中..."
