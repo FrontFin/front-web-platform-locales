@@ -611,21 +611,21 @@
     "usbConnect": "USBで接続"
   },
   "ledgerDeviceConnected": {
-    "clientVerifyLabel": "{{clientName}}はあなたのウォレットを確認する必要があります",
-    "clientVerifyText": "このウォレットがあなたの所有物であることを確認するメッセージにLedgerデバイスでサインするよう求められます。",
+    "clientVerifyLabel": "{{clientName}}はお客様のウォレットの確認が必要です",
+    "clientVerifyText": "このウォレットの所有者であることを確認するために、Ledgerデバイスでメッセージへの署名を求められます。",
     "secureLabel": "高速、安全、無料",
-    "secureText": "署名は決して{{clientName}}にウォレットでの取引を行う許可を与えるものではありません。",
+    "secureText": "署名しても、{{clientName}}がお客様のウォレットで取引を行う許可を得ることは一切ありません。",
     "title": "もう少し！"
   },
   "ledgerError": {
-    "incorrectAppError": "デバイスで間違ったアプリケーションが開いています。正しいアプリを開いて再試行してください。",
+    "incorrectAppError": "デバイスで誤ったアプリが開かれています。正しいアプリを開いて再試行してください。",
     "lockedError": "デバイスがロックされています。デバイスを解除して再試行してください。",
     "noDeviceError": "デバイスが選択されていません。デバイスを選択して再試行してください。",
-    "notSelectedError": "アプリケーションが選択されていません。アプリケーションを選択して再試行してください。",
-    "rejectError": "ユーザーが操作を拒否しました。再試行してください。",
+    "notSelectedError": "アプリが選択されていません。アプリを選択して再試行してください。",
+    "rejectError": "ユーザーが操作を拒否しました。再度お試しください。",
     "title": "接続に失敗しました",
-    "transportError": "Ledgerデバイスでトランスポートエラーが発生しました。",
-    "transportLockedError": "トランスポートがロックされています。デバイスを解除して再試行してください。",
+    "transportError": "Ledgerデバイスとの通信エラーが発生しました。",
+    "transportLockedError": "通信がロックされています。デバイスのロックを解除してから再試行してください。",
     "unexpectedError": "予期しないエラーが発生しました。",
     "unknownError": "Ledgerデバイスで未知のエラーが発生しました。"
   },
@@ -637,11 +637,11 @@
     "title": "確認に失敗しました"
   },
   "ledgerSignMessage": {
-    "rippleBody": "注記: XRPの場合、最小値で疑似トランザクションが表示されます。これはウォレットを確認するためだけであり、何も費用はかかりませんし、資金も送信されません。",
-    "title": "デバイスでメッセージを確認し、サインしてください"
+    "rippleBody": "注：XRPの場合、最小限の値を含むダミートランザクションが表示されます。これはウォレットの確認のみを目的としており、費用はかからず資金の送信も行われません。",
+    "title": "デバイス上でメッセージを確認し、署名してください"
   },
   "ledgerUSB": {
-    "step1": "<1>USB</1>ウィンドウからデバイスを選択します",
+    "step1": "<1>USB</1>ウィンドウからデバイスを選択してください",
     "step2": "USBウィンドウとLedgerデバイスの指示に従って、接続を完了してください"
   },
   "loginDeviceVerifiedPage": {
@@ -663,8 +663,8 @@
     "paymentFlow": "この支払いを開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
     "phone": "<2>{{selectedIntegrationName}}</2>から携帯電話に送信されたワンタイムコードを入力してください。",
     "totp": "<1>{{selectedIntegrationName}}</1>に連携している認証アプリから発行されたワンタイムコードを入力してください。",
-    "tradingPin": "<2>{{selectedIntegrationName}}</2>アカウントに関連付けられた取引PINコードを入力してください。",
-    "transferFlow": "あなたが本当にこの転送を開始していることを確認するためにワンタイムコードを入力してください。",
+    "tradingPin": "<2>{{selectedIntegrationName}}</2>アカウントに関連付けられている取引用PINコードを入力してください。",
+    "transferFlow": "この送金を開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
     "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
@@ -688,9 +688,9 @@
     "emailTitle": "お客様のメールは、<2>{{selectedIntegrationName}}</2>アカウントに正常に連携されました。",
     "proceed": "進む",
     "proceedKey": "以下をクリックして、キー生成に進んでください",
-    "proceedTransfer": "以下をクリックして振込に進む",
+    "proceedTransfer": "以下をクリックして送金に進んでください",
     "setUpApp": "認証アプリを設定する",
-    "totpTitle": "認証アプリを<2>{{selectedIntegrationName}}</2>アカウントに正常にリンクしました。"
+    "totpTitle": "<2>{{selectedIntegrationName}}</2>アカウントに認証アプリの連携が正常に完了しました。"
   },
   "mfaTitle": {
     "default": "認証コード",
@@ -698,18 +698,18 @@
     "phone": "SMS確認コード"
   },
   "mfaVerificationPage": {
-    "checkEmail": "最初にあなたの身元を確認しましょう。メールを確認し、<4>{{selectedIntegrationName}}</4>から送信されたワンタイム認証コードをご確認ください。",
-    "checkSms": "まず、あなたの身元を確認しましょう。電話を確認し、<4>{{selectedIntegrationName}}</4>からSMSで送信されたワンタイム認証コードをご確認ください。",
+    "checkEmail": "まずはご本人確認を行います。<1></1><4>{{selectedIntegrationName}}</4>から送信されたメールにて、ワンタイムコードをご確認ください。",
+    "checkSms": "まずはご本人確認を行います。<1></1><4>{{selectedIntegrationName}}</4>からSMSで届いたワンタイムコードをご確認ください。",
     "confirmApp": "認証アプリを確認",
     "confirmEmail": "メールを確認する",
     "enterCode": "確認コードを入力してください",
-    "enterCodeFromEmail": "<2>{{selectedIntegrationName}}</2>が送信した6桁のコードをメールでご確認ください。",
-    "enterTotp": "認証アプリの6桁のコードを入力してください。",
-    "firstEnterTotp": "まず、あなたの身元を確認しましょう。<3>{{selectedIntegrationName}}</3>にリンクされた認証アプリのワンタイムコードを入力してください。",
+    "enterCodeFromEmail": "<2>{{selectedIntegrationName}}</2>からメールで送信された<4></4>6桁のコードを入力してください。",
+    "enterTotp": "認証アプリに表示された<1></1>6桁のコードを入力してください",
+    "firstEnterTotp": "まずはご本人確認を行います。<1></1><3>{{selectedIntegrationName}}</3>に連携された認証アプリのワンタイムコードを入力してください。",
     "securityVerification": "セキュリティ検証"
   },
   "mobileAppLink": {
-    "awaitingConfirmation": "モバイルアプリでの承認を待っています",
+    "awaitingConfirmation": "モバイルアプリでの確認をお待ちしています",
     "openAppButton": "{{selectedIntegrationName}}アプリを開く",
     "sendNewRequest": "新しいリクエストを送信する",
     "steps": {
@@ -742,64 +742,64 @@
     "wontAllow": "許可しない"
   },
   "oAuthBrokerPage": {
-    "monitoring": "承認を監視中...",
-    "reopenButton": "{{selectedIntegrationName}}を再度開くにはここをクリック",
-    "subtitle": "アカウントにログインし、アクセスを許可してください。",
-    "title": "<1></1> {{selectedIntegrationName}}ウィンドウで続行"
+    "monitoring": "承認を監視中です…",
+    "reopenButton": "{{selectedIntegrationName}}を再度開くにはこちらをクリックしてください",
+    "subtitle": "アカウントにログインし、アクセス許可を行ってください",
+    "title": "<1></1>{{selectedIntegrationName}}ウィンドウで続行してください"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}}は要求されたトークンやネットワークへの転送をサポートしていません。",
-    "selectAnotherAccount": "別のアカウントを選択してください。",
-    "selectAnotherDescription": "別の取引所またはウォレットからの入金を選択してください。"
+    "description": "{{selectedIntegrationName}}では、ご指定のトークンまたはネットワークでの送金はサポートされていません。",
+    "selectAnotherAccount": "別のアカウントを選択してください",
+    "selectAnotherDescription": "入金元として、別の取引所またはウォレットを選択してください。"
   },
   "oauthInitialPage": {
-    "continue": "{{integrationName}} に進む",
-    "description": "下記をクリックして {{integrationName}} を開き、アカウントにログインして支払いをプレビューしてください。",
+    "continue": "{{integrationName}}へ進む",
+    "description": "以下をクリックして{{integrationName}}を開き、アカウントにログインして支払い内容を確認してください。",
     "title": "アカウントにログイン"
   },
   "oAuthMessageListener": {
-    "clientUsesMesh": "{{clientName}}はMeshを使用して{{selectedIntegrationName}}で安全な接続を行い、送金をサポートします。",
-    "description": "アカウントにログインしてアクセスを許可してください",
-    "monitoring": "承認を監視中...",
+    "clientUsesMesh": "{{clientName}}はMeshを利用し、{{selectedIntegrationName}}との安全な接続および送金をサポートしています。",
+    "description": "アカウントにログインし、アクセス許可をしてください",
+    "monitoring": "承認を監視中です…",
     "open": "{{selectedIntegrationName}}を開く",
     "reopen": "{{selectedIntegrationName}}を再度開く",
-    "title": "{{selectedIntegrationName}}ウィンドウで続行",
-    "willFacilitate": "{{selectedIntegrationName}}との安全な接続を促進します。"
+    "title": "{{selectedIntegrationName}}ウィンドウで続行してください",
+    "willFacilitate": "{{selectedIntegrationName}}との安全な接続をサポートします。"
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
-      "client": "<1>{{amount}}</1>を{{selectedIntegrationName}}から{{clientName}}に送金することを承認します。",
-      "destination": "<1>{{amount}}</1>を{{selectedIntegrationName}}から送金先に送金することを承認します。"
+      "client": "{{selectedIntegrationName}}から{{clientName}}への<1>{{amount}}</1>の送金を承認します。",
+      "destination": "{{selectedIntegrationName}}から宛先への<1>{{amount}}</1>の送金を承認します。"
     },
-    "buyingPowerPurchase": "{{selectedIntegrationName}}で<1>{{amount}}</1>相当の{{symbol}} <5>(~ {{amountInCrypto}})</5>を購入。",
-    "conversionStep": "<1>{{amount}}</1>から<4>{{currency}}</4>への変換。",
-    "depositTitle": "入金中",
-    "description": "これは時間がかかる場合があります...",
+    "buyingPowerPurchase": "{{selectedIntegrationName}}で{{symbol}}約<1>{{amount}}</1>分<5>(~ {{amountInCrypto}})</5> を購入します。",
+    "conversionStep": "<1>{{amount}}</1>を<4>{{currency}}</4>に換算します。",
+    "depositTitle": "入金処理中です",
+    "description": "しばらくお待ちください…",
     "existingCryptocurrencyBalance": {
-      "approveClient": "{{selectedIntegrationName}}から{{clientName}}への転送を承認しています。",
-      "approveDestination": "{{selectedIntegrationName}}からの転送を承認しています。",
-      "transfer": "<1>{{amount}}</1>を{{selectedIntegrationName}}から{{clientName}}に送金。",
-      "transferHideClient": "<1>{{amount}}</1>を{{selectedIntegrationName}}から送金。",
-      "transferHideClientWithAddress": "<1>{{amount}}</1>を{{selectedIntegrationName}}から{{address}}に送金。",
-      "transferSmartDeposit": "リレー契約を介して<1>{{amount}}</1>を{{selectedIntegrationName}}から{{clientName}}に送金。",
-      "transferSmartDepositHideClient": "リレー契約を通じて<1>{{amount}}</1>を{{selectedIntegrationName}}から送金。",
-      "transferSmartDepositHideClientWithAddress": "リレー契約を介して<1>{{amount}}</1>を{{selectedIntegrationName}}から{{address}}に送金。",
-      "transferSmartDepositWithAddress": "リレー契約を通じて<1>{{amount}}</1>を{{selectedIntegrationName}}から{{clientName}} {{address}}に送金。",
-      "transferWithAddress": "<1>{{amount}}</1>を{{selectedIntegrationName}}から{{clientName}} {{address}}に送金。"
+      "approveClient": "{{selectedIntegrationName}}から{{clientName}}への送金を承認しました。",
+      "approveDestination": "{{selectedIntegrationName}}から送金先への送金を承認しました。",
+      "transfer": "{{selectedIntegrationName}}から{{clientName}}への<1>{{amount}}</1>の送金。",
+      "transferHideClient": "{{selectedIntegrationName}}からの<1>{{amount}}</1>の送金。",
+      "transferHideClientWithAddress": "{{selectedIntegrationName}}から{{address}}への<1>{{amount}}</1>の送金。",
+      "transferSmartDeposit": "{{selectedIntegrationName}}から{{clientName}}への<1>{{amount}}</1>の送金リレーコントラクト経由。",
+      "transferSmartDepositHideClient": "{{selectedIntegrationName}}からの<1>{{amount}}</1>の送金 リレーコントラクト経由。",
+      "transferSmartDepositHideClientWithAddress": "{{selectedIntegrationName}}から{{address}}への<1>{{amount}}</1>の送金リレーコントラクト経由。",
+      "transferSmartDepositWithAddress": "{{selectedIntegrationName}}から{{clientName}}（{{address}}）への<1>{{amount}}</1>の送金リレーコントラクト経由。",
+      "transferWithAddress": "{{selectedIntegrationName}}から{{clientName}}（{{address}}）への<1>{{amount}}</1>の送金。"
     },
-    "onrampTitle": "購入中",
-    "paymentMethodDepositUsage": "<1>{{amount}}</1>の{{paymentMethod}}から{{selectedIntegrationName}}への入金。",
-    "paymentTitle": "支払い中",
-    "transactionTitle": "取引中",
+    "onrampTitle": "購入処理中",
+    "paymentMethodDepositUsage": "{{paymentMethod}}から{{selectedIntegrationName}}への<1>{{amount}}</1>の入金。",
+    "paymentTitle": "支払い処理中",
+    "transactionTitle": "取引処理中",
     "tryAgain": "もう一度お試しください"
   },
   "orderSummaryDrawer": {
-    "merchantInfoName": "商人：{{clientName}}",
-    "title": "注文の概要",
+    "merchantInfoName": "マーチャント: {{clientName}}",
+    "title": "注文概要",
     "totalLabel": "合計"
   },
   "passwordPage": {
-    "fieldError": "{{field}}を入力してください。",
+    "fieldError": "{{field}}を入力してください",
     "fieldErrorWithIntegration": "{{integrationName}} {{field}}を入力してください。",
     "forgotPassword": "パスワードをお忘れですか",
     "tabs": {
