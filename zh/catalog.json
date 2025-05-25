@@ -925,13 +925,13 @@
     "returnToClientButton": "返回{{clientName}}",
     "spotAccountsBody": "当前仅支持现货账户。其他账户类型（例如保证金账户）中的资产将不会被检测到。",
     "topUpButton": "充值余额",
-    "unableTransferError": "无法启动转账。"
+    "unableTransferError": "无法发起转账。"
   },
   "selectItem": {
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "无法连接的网络"
+    "ineligibleNetwork": "无法使用的网络"
   },
   "selectNetworkScreen": {
     "title": "选择要连接的网络"
@@ -1002,7 +1002,7 @@
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "正在等待来自移动应用程序的确认",
     "confirmButton": "我已在应用中验证",
-    "description": "在您的 {{selectedIntegrationName}} 移动应用中确认确实是您尝试登录。",
+    "description": "在您的 {{selectedIntegrationName}} 移动应用中确认是本人在尝试登录。",
     "desktopSteps": {
       "confirm": "在提示中确认以验证是您本人",
       "openApp": "在手机上打开 {{selectedIntegrationName}} 应用程序",
@@ -1010,8 +1010,8 @@
     },
     "mobileSteps": {
       "clickOpen": "点击下方<1>打开 {{selectedIntegrationName}} 应用程序</1>",
-      "verifyLogin": "验证您是从新设备登录的",
-      "verifyTransfer": "验证是您本人在请求转账"
+      "verifyLogin": "验证您正在从新设备登录",
+      "verifyTransfer": "验证是您本人在发起转账"
     },
     "openApp": "打开 {{selectedIntegrationName}} 应用程序",
     "sendNewRequest": "发送新请求",
@@ -1020,19 +1020,19 @@
   },
   "transferEmailApprovalConfirmation": {
     "approve": "点击确认页中的<1>批准</1>。",
-    "approveOrCancel": "在邮件中点击<1>批准或取消取款</1>。",
-    "confirmButton": "我已批准取款",
-    "description": "请检查您的收件箱，查找请求您确认新取款的电子邮件。",
+    "approveOrCancel": "在邮件中点击<1>批准或取消提现</1>。",
+    "confirmButton": "我已批准提现",
+    "description": "我们已发送邮件给您以确认提现，请检查您的收件箱。",
     "return": "返回此处并点击下方以继续您的转账。",
-    "title": "批准取款"
+    "title": "批准提现"
   },
   "transferErrorPage": {
-    "defaultError": "发生未知错误。请点击下方开始新的转账会话。"
+    "defaultError": "发生未知错误。请点击下方开始新的转账流程。"
   },
   "transferErrors": {
-    "failedToExecute": "无法执行转账",
-    "failedToPreview": "无法预览转账",
-    "mfaEmailFailed": "电子邮件的代码错误，请重新输入代码",
+    "failedToExecute": "执行转账失败",
+    "failedToPreview": "预览转账失败",
+    "mfaEmailFailed": "电子邮件验证代码错误，请重新输入",
     "mfaFaceFailed": "验证失败，请重试",
     "mfaFailed": "代码错误，请重新输入代码",
     "mfaPhoneFailed": "短信代码错误，请重新输入代码",
@@ -1041,13 +1041,13 @@
   },
   "transferFacePage": {
     "clickOpenApp": "点击<1>打开 {{selectedIntegrationName}} 应用程序</1>以打开应用并完成面部验证。",
-    "completeMobile": "完成面部验证以确认确实是您正在尝试转移资金。",
+    "completeMobile": "完成面部验证以确认确实是您本人正在转移资金。",
     "confirmCompleted": "我已完成验证",
-    "openApp": "打开{{selectedIntegrationName}}应用",
+    "openApp": "打开{{selectedIntegrationName}}应用程序",
     "reopenApp": "重新打开{{selectedIntegrationName}}应用程序",
-    "return": "然后返回此处完成账户链接。",
+    "return": "返回此处完成账户链接。",
     "returnContinue": "返回此处继续链接您的账户。",
-    "scanQR": "扫描QR码完成面部验证以确认确实是您正在尝试转移资金。",
+    "scanQR": "扫描二维码完成面部验证以确认是您本人正在转移资金。",
     "title": "验证"
   },
   "transferMfaPage": {
@@ -1055,20 +1055,20 @@
     "verify": "验证"
   },
   "transferPreviewErrorPage": {
-    "aboveMaximum": "超过{{integrationName}}最大值",
+    "aboveMaximum": "高于{{integrationName}}最高限额",
     "belowMinimum": "低于 {{integrationName}} 最低限额",
     "connectAnotherAccount": "请连接另一个账户。",
-    "connectDifferent": "连接不同的账户",
-    "insufficientBalanceError": "余额不足，无法资助此交易。",
-    "insufficientFunds": "资金不足",
-    "unknownError": "发生未知错误。请点击下面开始新的转账会话。"
+    "connectDifferent": "连接其他账户",
+    "insufficientBalanceError": "余额不足，无法完成此交易。",
+    "insufficientFunds": "余额不足",
+    "unknownError": "发生未知错误。请点击下面开始新的转账流程。"
   },
   "transferSteps": {
     "approveTransfer": "您批准从 {{integrationName}} 到 {{clientName}} 的转账",
-    "approveTransferDeFi": "系统会提示您在 {{integrationName}} 上批准转账",
+    "approveTransferDeFi": "系统将会提示您在 {{integrationName}} 上批准转账",
     "approveTransferToDestination": "您批准从 {{integrationName}} 到目的地的转账",
-    "convertAmount": "将 {{fromAmount}} 转换为 {{toCurrency}}",
-    "depositAmount": "从 {{paymentMethod}} 到 {{integrationName}} 的存款 {{amount}}",
+    "convertAmount": "将 {{fromAmount}} 兑换为 {{toCurrency}}",
+    "depositAmount": "从 {{paymentMethod}} 充值{{amount}} 至 {{integrationName}}",
     "purchaseAmount": "在 {{integrationName}}中购买价值 <2>{{amount}}</2> 的 {{cryptocurrencySymbol}} 。",
     "showLess": "显示更少",
     "showMore": "显示更多",
@@ -1141,10 +1141,10 @@
   "walletDoneScreen": {
     "completePaymentMessage": "返回您的结账体验以完成您的 {{clientName}} 购买。",
     "continueMessage": "请继续在您的{{clientName}}应用中操作。",
-    "successMessage": "您已成功验证您拥有的 {{walletName}} 钱包。"
+    "successMessage": "您已成功验证对 {{walletName}} 钱包的所有权。"
   },
   "withdrawalLockedErrorPage": {
     "another": "从其他账户转账",
-    "title": "提款暂时禁用"
+    "title": "暂时无法使用提款功能"
   }
 }
