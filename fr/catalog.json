@@ -442,11 +442,11 @@
     "depositAmountLimitExceeded": "Cet achat dépasserait la limite de dépôt maximale sur 1 jour imposée par {{integrationName}} pour cette méthode de financement.",
     "depositCountLimitReached": "Cette méthode de financement a déjà atteint le nombre maximal de dépôts autorisés en 1 jour par {{integrationName}}.",
     "depositsNotSupported": "Cette méthode de financement n'est pas prise en charge pour cette transaction.",
-    "instantDepositLimitExceeded": "La limite de dépôt instantané de cette méthode de financement est insuffisante pour cet achat",
+    "instantDepositLimitExceeded": "La limite de dépôt instantané associée à cette méthode de financement est insuffisante pour effectuer cet achat",
     "instantDepositsNotSupported": "Cette méthode de financement ne supporte pas les dépôts instantanés, elle ne peut donc pas être utilisée pour cet achat.",
     "insufficientBalance": "Solde insuffisant pour financer cet achat.",
     "maximumDepositLimitViolated": "Le montant dépasse la limite maximale de dépôt pour cette méthode de financement.",
-    "minimumDepositLimitViolated": "Le montant est en dessous de la limite de dépôt minimum de cette méthode de financement.",
+    "minimumDepositLimitViolated": "Le montant est inférieur à la limite de dépôt minimale pour cette méthode de financement.",
     "paymentMethodTypeNotSupported": "Cette méthode de financement n'est pas encore supportée.",
     "unknown": "Cette option de financement est indisponible."
   },
@@ -637,7 +637,7 @@
     "title": "Échec de la vérification"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Remarque : Pour XRP, vous verrez une transaction fictive avec des valeurs minimales. Cela sert uniquement à vérifier votre portefeuille et ne coûtera rien ni n'enverra de fonds.",
+    "rippleBody": "Remarque : pour XRP, une transaction fictive avec des montants minimaux sera affichée. Elle sert uniquement à vérifier votre portefeuille, ne vous coûtera rien et n’impliquera aucun transfert de fonds.",
     "title": "Examinez et signez le message sur votre appareil"
   },
   "ledgerUSB": {
@@ -831,7 +831,7 @@
     "enterAmount": "Entrer le montant du transfert",
     "notSupported": "{{selectedIntegrationName}} ne supporte pas les transferts pour les jetons et/ou les réseaux demandés.",
     "selectAnotherAccount": "Sélectionnez un autre compte",
-    "selectAnotherExchange": "Veuillez sélectionner un autre échange ou portefeuille pour déposer.",
+    "selectAnotherExchange": "Veuillez sélectionner un autre échange ou portefeuille pour effectuer un dépôt.",
     "selectNetwork": "Sélectionner le réseau de transfert",
     "title": "Sélectionner l'actif à transférer"
   },
@@ -850,15 +850,15 @@
     "approveTransferRequest": "Approuvez la demande de transfert<1></1>dans votre portefeuille",
     "changeAmount": "Changer le montant",
     "depositTitle": "Aperçu du dépôt",
-    "dustLeft": "Il peut vous rester un peu de poussière de {{symbol}}.",
+    "dustLeft": "Il se peut qu’il vous reste un peu de poussière de {{symbol}}.",
     "estimatedGasFee": "Frais de gaz estimés",
-    "estimatedGasFeeHint": "Les frais estimés qui seront payés pour compenser les validateurs de réseau pour la puissance de calcul qu'ils utilisent pour traiter cette transaction.",
+    "estimatedGasFeeHint": "Frais estimés payés pour compenser les validateurs du réseau pour la puissance de calcul utilisée lors du traitement de cette transaction.",
     "from": "De",
     "fundingWith": "Approvisionnement avec",
     "institutionTransferFee": "Frais de retrait de {{selectedIntegrationName}}",
-    "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert hors de {{symbol}}.",
-    "maxAmount": "Votre compte peut approvisionner un maximum de <2>{{networkMaxAmount}}</2>. Voulez-vous ajuster votre transfert à ce montant ?",
-    "monitoring": "Surveillance pour approbation...",
+    "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert depuis {{symbol}}.",
+    "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant ?",
+    "monitoring": "En attente d’approbation...",
     "network": "Réseau",
     "onrampTitle": "Aperçu de l'achat",
     "payingWith": "Paiement par",
@@ -875,7 +875,7 @@
     "transferDeclined": "Transfert refusé",
     "transferDeclinedBody": "Vous avez refusé la demande de transfert dans votre portefeuille.",
     "transferTitle": "Aperçu du transfert",
-    "youMayReceiveLess": "Vous pouvez recevoir moins en raison de la fluctuation du prix de {{symbol}}."
+    "youMayReceiveLess": "Vous pourriez recevoir un montant inférieur en raison de la fluctuation du prix du {{symbol}}."
   },
   "privacyComponent": {
     "content": "Vos données sont privées et cryptées à tout moment."
@@ -907,8 +907,8 @@
   },
   "selectHoldingPage": {
     "binanceDirectNoAssetsBody1": "Il semble que vous n'ayez aucun actif sur votre compte lié.",
-    "binanceDirectNoAssetsBody2": "Vous pouvez ajouter des fonds à votre compte ou en connecter un autre pour poursuivre votre transfert.",
-    "cannotFundBody": "Vous n'avez pas suffisamment de solde en crypto-monnaie ou en fiat dans ce compte pour financer cette transaction.",
+    "binanceDirectNoAssetsBody2": "Vous pouvez ajouter des fonds à votre compte ou connecter un autre compte pour poursuivre votre transfert.",
+    "cannotFundBody": "Vous ne disposez pas d’un solde suffisant en crypto-monnaie ou en fiat sur ce compte pour financer cette transaction.",
     "cannotFundTitle": "Impossible de financer la transaction",
     "connectAnotherButton": "Connecter un autre compte",
     "defaultTitle": "Sélectionner un jeton",
@@ -954,7 +954,7 @@
     "nextButton": "Suivant",
     "qrCodeAlt": "Code QR",
     "scanStep": "Ajoutez {{selectedIntegrationName}} à votre application d'authentification en <1>scannant le code QR</1>",
-    "title": "Configurer l'application Authenticator"
+    "title": "Configurer l’application d’authentification"
   },
   "setupEmailPage": {
     "description": "<1></1><2>{{selectedIntegrationName}}</2> utilisera cette adresse pour vous envoyer des codes de confirmation lorsque vous effectuez certaines actions sur votre compte.",
