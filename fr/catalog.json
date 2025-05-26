@@ -87,7 +87,7 @@
     "prodOnly": "Disponible uniquement en production",
     "search": "recherche",
     "title": "Veuillez sélectionner un compte à lier",
-    "title40": "Connecter une plateforme d’échange ou un portefeuille"
+    "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter"
   },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
@@ -299,7 +299,7 @@
     "steps": {
       "checkInbox": "Vérifiez votre boîte de réception pour un e-mail confirmant que vous vous connectez à partir d'un nouvel appareil.",
       "doNotClick": "<0>NE</0> cliquez pas sur le bouton de confirmation dans l'e-mail.",
-      "forwardEmail": "Transférez l'email vers cette boîte de réception sécurisée qui auto-confirmera la requête de connexion."
+      "forwardEmail": "Transférez l’e-mail vers cette boîte de réception sécurisée, qui confirmera automatiquement la demande de connexion."
     },
     "stillWaitingLoading": "Toujours en attente de l'e-mail...",
     "title": "Confirmez votre identité",
@@ -310,10 +310,10 @@
   },
   "errorMessages": {
     "amountBelowMinimum": "Le montant demandé est inférieur au montant minimum de transfert autorisé sur ce réseau.",
-    "amountExceedsMaximum": "Le montant demandé dépasse le montant maximum de transfert autorisé sur ce réseau.",
+    "amountExceedsMaximum": "Le montant demandé dépasse le montant maximum autorisé pour un transfert sur ce réseau.",
     "balanceNotEnough": "Solde insuffisant.",
     "binanceTravelRuleRestriction": "Binance ne prend pas en charge les transferts vers l'adresse de destination en raison des restrictions de la règle de voyage.",
-    "coinbaseUnavailable": "Coinbase a rencontré une erreur. Vérifiez votre compte CB pour voir si le transfert a été effectué.",
+    "coinbaseUnavailable": "Coinbase a rencontré une erreur. Veuillez vérifier votre compte Coinbase pour confirmer si le transfert a bien été effectué.",
     "default": "Une erreur est survenue.",
     "emptyWalletBalance": "Le solde du portefeuille Source est vide.",
     "failedToGetFundingOptions": "Échec de l'obtention des options de financement",
@@ -321,20 +321,20 @@
     "feeAssetBalanceNotEnough": "Fonds insuffisants pour les frais de transfert.",
     "fromAccountNotSupported": "Le compte ne prend actuellement pas en charge les retraits de crypto-monnaie.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
-    "kycRequired": "Impossible de lancer le transfert. L'intégration nécessite que les comptes complètent une vérification KYC avant de permettre les transferts crypto.",
+    "kycRequired": "Impossible de lancer le transfert. Cette intégration nécessite que les comptes aient complété une vérification KYC avant d'autoriser les transferts de crypto-monnaies.",
     "locked": "Votre compte est verrouillé",
     "networkDisabled": "Le réseau est actuellement désactivé et ne peut pas être utilisé.",
     "passKeyNotSupported": "La clé d'accès n'est actuellement pas prise en charge, veuillez la désactiver pour continuer.",
     "previewExpired": "L'aperçu a expiré.",
     "satoshiTestRequired": "L'API Coinbase ne prend pas en charge les transferts de plus de 1000 euros en raison des restrictions de la règle de voyage. Veuillez réessayer avec un montant inférieur.",
     "symbolNotSupported": "Le symbole n'est pas pris en charge par l'intégration.",
-    "symbolNotSupportedBySource": "Le symbole à transférer n'est pas pris en charge par le portefeuille source sur le réseau demandé.",
-    "symbolNotSupportedByTarget": "Impossible de trouver l'adresse de dépôt pour la pièce demandée.",
+    "symbolNotSupportedBySource": "Le symbole à transférer n’est pas pris en charge par le portefeuille source sur le réseau sélectionné.",
+    "symbolNotSupportedByTarget": "Impossible de trouver l’adresse de dépôt pour la crypto-monnaie demandée.",
     "toAccountNotSupported": "Le compte de destination ne prend actuellement pas en charge les dépôts de crypto-monnaie.",
     "tooManyRequests": "Veuillez réessayer plus tard.",
     "transferAlreadyRequested": "Le transfert est déjà demandé.",
     "twoFaFailed": "La validation en deux étapes a échoué. Veuillez réessayer.",
-    "withdrawalLocked": "Pour votre sécurité, les retraits sont désactivés pendant 24 heures après un changement de paramètres de compte. Veuillez réessayer plus tard."
+    "withdrawalLocked": "Pour votre sécurité, les retraits sont temporairement désactivés pendant 24 heures après toute modification des paramètres du compte. Veuillez réessayer plus tard."
   },
   "errorPage": {
     "title": "Une erreur est survenue."
@@ -351,7 +351,7 @@
     "actionRefusedText": "Vous avez rejeté l'action.",
     "connectionWalletAction": "Vous avez connecté votre {{integrationName}} avec succès.",
     "continueInApp": "Veuillez continuer dans votre application {{clientName}}.",
-    "continuePaymentInApp": "Revenez à votre expérience de caisse pour continuer votre achat {{clientName}}.",
+    "continuePaymentInApp": "Retournez à votre processus de paiement pour finaliser votre achat sur {{clientName}}.",
     "defaultAction": "Vous avez complété l'action avec succès.",
     "processingError": "Erreur de traitement",
     "processingText": "Une erreur s’est produite.",
@@ -391,7 +391,7 @@
     "apiSecret": "Secret API",
     "authToken": "Jeton d'autorisation",
     "challengeCode": "Code de défi",
-    "clientId": "ID client",
+    "clientId": "Identifiant client",
     "clientSecret": "Secret client",
     "email": "E-mail",
     "emailOrUsername": "E-mail ou nom d'utilisateur",
@@ -420,7 +420,7 @@
       "withdrawal": "Frais de retrait {{integrationName}}"
     },
     "info": {
-      "conversion": "Les frais que {{integrationName}} percevra pour convertir votre {{conversionFromSymbol}} en {{conversionToSymbol}}.",
+      "conversion": "Frais prélevé par {{integrationName}} pour convertir votre {{conversionFromSymbol}} en {{conversionToSymbol}}.",
       "purchase": "Les frais que {{integrationName}} percevra pour faciliter votre achat de {{symbol}}.",
       "withdrawal": "Les frais que {{integrationName}} facturera pour faciliter votre transfert de {{symbol}}."
     }
@@ -430,23 +430,23 @@
     "cryptocurrencyBalance": "Solde de {{symbol}}",
     "noneSelected": "aucune sélectionnée",
     "paymentMethodDepositUsage": "Méthode de paiement liée",
-    "stablecoinConversion": "Conversion en stablecoin",
+    "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{integrationName}} ne supporte pas l'utilisation de cette méthode de financement pour acheter {{assetName}}.",
-    "coveredByExistingCryptocurrencyBalance": "Vous avez déjà assez de solde {{assetName}} pour cet achat sans avoir besoin de méthodes de financement supplémentaires.",
+    "coveredByExistingCryptocurrencyBalance": "Vous disposez déjà d’un solde suffisant en {{assetName}} pour effectuer cet achat, sans avoir besoin de méthodes de financement supplémentaires.",
     "coveredByOtherFundingOptions": "Cette méthode de financement n'est pas supportée pour cette transaction.",
-    "currencyNotSupported": "Achat de crypto avec une méthode de financement non-USD pas encore supporté.",
-    "depositAmountLimitExceeded": "Cet achat dépasserait la limite de dépôt maximum de {{integrationName}} en 1 jour pour cette méthode de financement.",
-    "depositCountLimitReached": "Cette méthode de financement a déjà atteint le nombre maximum de dépôts de {{integrationName}} en 1 jour.",
+    "currencyNotSupported": "L’achat de cryptomonnaie avec une méthode de financement autre que l’USD n’est pas encore pris en charge.",
+    "depositAmountLimitExceeded": "Cet achat dépasserait la limite de dépôt maximale sur 1 jour imposée par {{integrationName}} pour cette méthode de financement.",
+    "depositCountLimitReached": "Cette méthode de financement a déjà atteint le nombre maximal de dépôts autorisés en 1 jour par {{integrationName}}.",
     "depositsNotSupported": "Cette méthode de financement n'est pas prise en charge pour cette transaction.",
-    "instantDepositLimitExceeded": "La limite de dépôt instantané de cette méthode de financement est insuffisante pour cet achat",
+    "instantDepositLimitExceeded": "La limite de dépôt instantané associée à cette méthode de financement est insuffisante pour effectuer cet achat",
     "instantDepositsNotSupported": "Cette méthode de financement ne supporte pas les dépôts instantanés, elle ne peut donc pas être utilisée pour cet achat.",
     "insufficientBalance": "Solde insuffisant pour financer cet achat.",
-    "maximumDepositLimitViolated": "Le montant dépasse la limite de dépôt maximum de cette méthode de financement.",
-    "minimumDepositLimitViolated": "Le montant est en dessous de la limite de dépôt minimum de cette méthode de financement.",
+    "maximumDepositLimitViolated": "Le montant dépasse la limite maximale de dépôt pour cette méthode de financement.",
+    "minimumDepositLimitViolated": "Le montant est inférieur à la limite de dépôt minimale pour cette méthode de financement.",
     "paymentMethodTypeNotSupported": "Cette méthode de financement n'est pas encore supportée.",
     "unknown": "Cette option de financement est indisponible."
   },
@@ -637,7 +637,7 @@
     "title": "Échec de la vérification"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Remarque : Pour XRP, vous verrez une transaction fictive avec des valeurs minimales. Cela sert uniquement à vérifier votre portefeuille et ne coûtera rien ni n'enverra de fonds.",
+    "rippleBody": "Remarque : pour XRP, une transaction fictive avec des montants minimaux sera affichée. Elle sert uniquement à vérifier votre portefeuille, ne vous coûtera rien et n’impliquera aucun transfert de fonds.",
     "title": "Examinez et signez le message sur votre appareil"
   },
   "ledgerUSB": {
@@ -659,13 +659,13 @@
     "totp": "Vérifiez votre application d'authentification"
   },
   "mfaInstructionsText": {
-    "email": "Entrez le code unique que <2>{{selectedIntegrationName}}</2> a envoyé à votre \ne-mail.",
+    "email": "Entrez le code unique que <2>{{selectedIntegrationName}}</2> a envoyé à votre e-mail.",
     "paymentFlow": "Saisissez votre code unique pour confirmer que c'est bien vous qui initiez ce paiement.",
-    "phone": "Entrez le code unique que <2>{{selectedIntegrationName}}</2> a envoyé à votre téléphone.",
-    "totp": "Entrez le code unique fourni par l'application d'authentification que vous avez liée à <1>{{selectedIntegrationName}}</1>.",
+    "phone": "Entrez le code unique que <2>{{selectedIntegrationName}}</2> vous a envoyé sur votre téléphone.",
+    "totp": "Entrez le code unique fourni par l’application d’authentification liée à <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Veuillez entrer le code PIN de trading associé à votre compte <2>{{selectedIntegrationName}}</2>.",
     "transferFlow": "Saisissez votre code unique pour confirmer que c'est bien vous qui initiez ce transfert.",
-    "twoFactor": "Entrez le code fourni par la méthode d'authentification à deux facteurs que vous avez configurée dans votre compte <1>{{selectedIntegrationName}}</1>."
+    "twoFactor": "Entrez le code fourni par la méthode d’authentification à deux facteurs que vous avez configurée sur votre compte <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
     "enterCode": "Saisissez votre code unique pour confirmer que c'est<1></1>bien vous qui essayez de vous connecter.",
@@ -674,38 +674,38 @@
     "verify": "Vérifier"
   },
   "mfaSetupPage": {
-    "emailButton": "Configurer la vérification par email",
-    "emailSubtitle": "Cliquez sur le bouton ci-dessous pour ajouter un email à votre compte <2>{{selectedIntegrationName}}</2>.",
-    "keyGenerationBody": "Pour votre sécurité, <1>{{selectedIntegrationName}} </1> exige que les utilisateurs aient activé les méthodes d'authentification MFA par email et application pour générer des clés.",
+    "emailButton": "Configurer la vérification par e-mail",
+    "emailSubtitle": "Cliquez sur le bouton ci-dessous pour ajouter une adresse e-mail à votre compte <2>{{selectedIntegrationName}}</2>.",
+    "keyGenerationBody": "Pour votre sécurité, <1>{{selectedIntegrationName}}</1> exige que les utilisateurs aient activé l’authentification MFA par e-mail et via une application afin de pouvoir générer des clés",
     "keyGenerationTitle": "Activez la génération de clé API depuis votre compte {{selectedIntegrationName}}",
     "totpButton": "Configurer l'application d'authentification",
     "totpSubtitle": "Cliquez sur le bouton ci-dessous pour ajouter une application d'authentification à votre compte <2>{{selectedIntegrationName}}</2>.",
-    "withdrawalBody": "Pour votre sécurité, <1>{{selectedIntegrationName}} </1> exige que les utilisateurs aient activé les méthodes d'authentification MFA par email et application pour retirer des actifs.",
+    "withdrawalBody": "Pour votre sécurité, <1>{{selectedIntegrationName}}</1> exige que les utilisateurs aient activé l’authentification MFA par e-mail et via une application pour pouvoir retirer des actifs",
     "withdrawalTitle": "Activez les retraits depuis votre compte {{selectedIntegrationName}}"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "Cliquez sur le bouton ci-dessous pour ajouter une application d'authentification à votre compte <2>{{selectedIntegrationName}}</2>.",
-    "emailTitle": "Vous avez lié avec succès votre email à votre compte <2>{{selectedIntegrationName}}</2>.",
+    "addAuthApp": "Cliquez sur le bouton ci-dessous pour ajouter une application d’authentification à votre compte <2>{{selectedIntegrationName}}</2>.",
+    "emailTitle": "Vous avez lié avec succès votre adresse e-mail à votre compte <2>{{selectedIntegrationName}}</2>.",
     "proceed": "Procéder",
-    "proceedKey": "Cliquez ci-dessous pour procéder à la génération de clé",
+    "proceedKey": "Cliquez ci-dessous pour générer la clé",
     "proceedTransfer": "Cliquez ci-dessous pour procéder au transfert",
     "setUpApp": "Configurer l'application d'authentification",
     "totpTitle": "Vous avez lié avec succès une application d'authentification à votre compte <2>{{selectedIntegrationName}}</2>."
   },
   "mfaTitle": {
     "default": "Code de vérification",
-    "email": "Code de vérification par email",
+    "email": "Code de vérification par e-mail",
     "phone": "Code de vérification par SMS"
   },
   "mfaVerificationPage": {
-    "checkEmail": "Tout d'abord, vérifions votre identité.<1></1>Veuillez vérifier votre email pour un code de vérification unique envoyé par <4>{{selectedIntegrationName}}</4>.",
-    "checkSms": "Tout d'abord, vérifions votre identité.<1></1>Veuillez vérifier votre téléphone pour un code de vérification unique envoyé par <4>{{selectedIntegrationName}}</4> par SMS.",
+    "checkEmail": "Tout d'abord, nous allons vérifier votre identité.<1></1>Veuillez vérifier votre email pour un code de vérification unique envoyé par <4>{{selectedIntegrationName}}</4>.",
+    "checkSms": "Tout d'abord, nous allons vérifions votre identité.<1></1>Veuillez vérifier votre téléphone pour un code de vérification unique envoyé par <4>{{selectedIntegrationName}}</4> par SMS.",
     "confirmApp": "Confirmer l'application d'authentification",
-    "confirmEmail": "Confirmer l'email",
+    "confirmEmail": "Confirmer votre e-mail",
     "enterCode": "Veuillez entrer le code de vérification",
     "enterCodeFromEmail": "Veuillez entrer le code à 6 chiffres que <2>{{selectedIntegrationName}}</2> a envoyé<4></4>à votre email.",
     "enterTotp": "Veuillez entrer le code à 6 chiffres de votre<1></1>application d'authentification",
-    "firstEnterTotp": "Tout d'abord, vérifions votre identité.<1></1>Veuillez entrer le code unique de l'application d'authentification que vous avez liée à <3>{{selectedIntegrationName}}</3>.",
+    "firstEnterTotp": "Tout d'abord, nous allons vérifier votre identité.<1></1>Veuillez entrer le code unique de l'application d'authentification que vous avez liée à <3>{{selectedIntegrationName}}</3>.",
     "securityVerification": "Vérification de sécurité"
   },
   "mobileAppLink": {
@@ -715,16 +715,16 @@
     "steps": {
       "authorize": "Cliquez sur <1>Autoriser</1> sur la page de confirmation.",
       "openApp": "Cliquez sur <1>Ouvrir l'application {{selectedIntegrationName}}</1> ci-dessous.",
-      "return": "Revenez ici pour terminer le lien de votre compte."
+      "return": "Revenez ici pour terminer la liaison de votre compte."
     }
   },
   "mobileContent": {
     "actionButton": "Ouvrir {{integrationName}}"
   },
   "navHeader": {
-    "close": "Fermer le modal",
+    "close": "Fermer la fenêtre",
     "goBack": "Revenir en arrière",
-    "title": "Payer avec de la crypto"
+    "title": "Payer en crypto-monnaie"
   },
   "networkSelectionDrawer": {
     "description": "Les réseaux ci-dessous sont tous des options sécurisées et compatibles pour ce paiement. Nous avons sélectionné automatiquement le réseau avec les frais les plus bas pour vous.",
@@ -742,7 +742,7 @@
     "wontAllow": "Ne pas autoriser"
   },
   "oAuthBrokerPage": {
-    "monitoring": "Surveillance pour approbation...",
+    "monitoring": "En attente d’approbation...",
     "reopenButton": "Cliquez ici pour rouvrir {{selectedIntegrationName}}",
     "subtitle": "Connectez-vous à votre compte et autorisez l'accès",
     "title": "Continuer sur la fenêtre {{selectedIntegrationName}}<1></1>"
@@ -769,7 +769,7 @@
   "onRampLoadingScreen": {
     "approveTransferStep": {
       "client": "Vous approuvez le transfert de <1>{{amount}}</1> de {{selectedIntegrationName}} vers {{clientName}}.",
-      "destination": "Vous approuvez le transfert de <1>{{amount}}</1> de {{selectedIntegrationName}} vers la destination."
+      "destination": "Vous approuvez le transfert de <1>{{amount}}</1> depuis {{selectedIntegrationName}} vers la destination."
     },
     "buyingPowerPurchase": "Achat de <1>{{amount}}</1> en valeur de {{symbol}} <5>(~ {{amountInCrypto}})</5> dans {{selectedIntegrationName}}.",
     "conversionStep": "Conversion de <1>{{amount}}</1> en <4>{{currency}}</4>.",
@@ -831,7 +831,7 @@
     "enterAmount": "Entrer le montant du transfert",
     "notSupported": "{{selectedIntegrationName}} ne supporte pas les transferts pour les jetons et/ou les réseaux demandés.",
     "selectAnotherAccount": "Sélectionnez un autre compte",
-    "selectAnotherExchange": "Veuillez sélectionner un autre échange ou portefeuille pour déposer.",
+    "selectAnotherExchange": "Veuillez sélectionner un autre échange ou portefeuille pour effectuer un dépôt.",
     "selectNetwork": "Sélectionner le réseau de transfert",
     "title": "Sélectionner l'actif à transférer"
   },
@@ -850,15 +850,15 @@
     "approveTransferRequest": "Approuvez la demande de transfert<1></1>dans votre portefeuille",
     "changeAmount": "Changer le montant",
     "depositTitle": "Aperçu du dépôt",
-    "dustLeft": "Il peut vous rester un peu de poussière de {{symbol}}.",
+    "dustLeft": "Il se peut qu’il vous reste un peu de poussière de {{symbol}}.",
     "estimatedGasFee": "Frais de gaz estimés",
-    "estimatedGasFeeHint": "Les frais estimés qui seront payés pour compenser les validateurs de réseau pour la puissance de calcul qu'ils utilisent pour traiter cette transaction.",
+    "estimatedGasFeeHint": "Frais estimés payés pour compenser les validateurs du réseau pour la puissance de calcul utilisée lors du traitement de cette transaction.",
     "from": "De",
     "fundingWith": "Approvisionnement avec",
     "institutionTransferFee": "Frais de retrait de {{selectedIntegrationName}}",
-    "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert hors de {{symbol}}.",
-    "maxAmount": "Votre compte peut approvisionner un maximum de <2>{{networkMaxAmount}}</2>. Voulez-vous ajuster votre transfert à ce montant ?",
-    "monitoring": "Surveillance pour approbation...",
+    "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert depuis {{symbol}}.",
+    "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant ?",
+    "monitoring": "En attente d’approbation...",
     "network": "Réseau",
     "onrampTitle": "Aperçu de l'achat",
     "payingWith": "Paiement par",
@@ -875,7 +875,7 @@
     "transferDeclined": "Transfert refusé",
     "transferDeclinedBody": "Vous avez refusé la demande de transfert dans votre portefeuille.",
     "transferTitle": "Aperçu du transfert",
-    "youMayReceiveLess": "Vous pouvez recevoir moins en raison de la fluctuation du prix de {{symbol}}."
+    "youMayReceiveLess": "Vous pourriez recevoir un montant inférieur en raison de la fluctuation du prix du {{symbol}}."
   },
   "privacyComponent": {
     "content": "Vos données sont privées et cryptées à tout moment."
@@ -907,8 +907,8 @@
   },
   "selectHoldingPage": {
     "binanceDirectNoAssetsBody1": "Il semble que vous n'ayez aucun actif sur votre compte lié.",
-    "binanceDirectNoAssetsBody2": "Vous pouvez ajouter des fonds à votre compte ou en connecter un autre pour poursuivre votre transfert.",
-    "cannotFundBody": "Vous n'avez pas suffisamment de solde en crypto-monnaie ou en fiat dans ce compte pour financer cette transaction.",
+    "binanceDirectNoAssetsBody2": "Vous pouvez ajouter des fonds à votre compte ou connecter un autre compte pour poursuivre votre transfert.",
+    "cannotFundBody": "Vous ne disposez pas d’un solde suffisant en crypto-monnaie ou en fiat sur ce compte pour financer cette transaction.",
     "cannotFundTitle": "Impossible de financer la transaction",
     "connectAnotherButton": "Connecter un autre compte",
     "defaultTitle": "Sélectionner un jeton",
@@ -954,27 +954,27 @@
     "nextButton": "Suivant",
     "qrCodeAlt": "Code QR",
     "scanStep": "Ajoutez {{selectedIntegrationName}} à votre application d'authentification en <1>scannant le code QR</1>",
-    "title": "Configurer l'application Authenticator"
+    "title": "Configurer l’application d’authentification"
   },
   "setupEmailPage": {
-    "description": "Entrez votre adresse email.<1></1><2>{{selectedIntegrationName}}</2> utilisera cet email pour vous envoyer des codes de confirmation lorsque vous effectuez certaines actions sur votre compte.",
+    "description": "<1></1><2>{{selectedIntegrationName}}</2> utilisera cette adresse pour vous envoyer des codes de confirmation lorsque vous effectuez certaines actions sur votre compte.",
     "emailTitle": "E-mail",
     "enterError": "Veuillez entrer votre e-mail",
     "title": "Configurer l'e-mail"
   },
   "termsAndConditionsPage": {
-    "paragraph1": "Mesh Connect, Inc. (la <1>“Entreprise”</1>) est un fournisseur de technologie qui propose un outil de communication (l'<3>“Outil”</3>) facilitant certaines fonctionnalités du service tiers que vous utilisez (le <5>“Service Utilisateur Final”</5>). Cette fonctionnalité est destinée à vous permettre de communiquer avec vos comptes et portefeuilles de tiers (<7>“Comptes Connectés”</7>) via le Service Utilisateur Final, y compris l'envoi d'instructions que vous souhaitez exécuter.",
-    "paragraph10": "L'arbitrage sera administré par l'American Arbitration Association selon ses règles d'arbitrage des consommateurs, modifiées par ces termes. Les règles d'arbitrage des consommateurs sont disponibles en ligne à <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. L'arbitre mènera des audiences, le cas échéant, par téléconférence ou vidéoconférence, plutôt qu'en présence personnelle, sauf si l'arbitre décide sur demande de vous ou de nous qu'une audience en personne est appropriée. Toute rencontre en personne sera tenue dans un lieu raisonnablement pratique pour les deux parties, en tenant compte de leur capacité à se déplacer et de circonstances pertinentes. Si vous et l'Entreprise ne pouvez pas vous entendre sur un lieu, cette détermination devrait être faite par l'AAA ou par l'arbitre. La décision de l'arbitre suivra ces termes et sera définitive et obligatoire. L'arbitre aura le pouvoir d'accorder un secours temporaire, provisoire ou permanent ou un secours prévoyant l'exécution spécifique de ces termes, mais seulement dans la mesure nécessaire pour fournir un secours garanti par la réclamation individuelle devant l'arbitre. La sentence rendue par l'arbitre peut être confirmée et appliquée dans tout tribunal compétent. Nonobstant ce qui précède, rien dans ces termes ne vous empêchera de porter des questions à l'attention des agences fédérales, étatiques ou locales et, si la loi le permet, elles pourront chercher un secours contre nous pour vous.",
-    "paragraph11": "Ces termes constituent l'intégralité de l'accord entre vous et l'Entreprise concernant leur objet, et remplacent toutes les représentations ou accords antérieurs, verbaux ou écrits, relatifs à ces questions. Si un terme est inapplicable en vertu de la loi applicable, ce terme est par les présentes modifié pour se conformer à la loi, tout en préservant autant que possible l'intention du terme original. Tout terme qui ne peut être ainsi modifié sera séparé et tous les termes restants resteront en vigueur. Vous reconnaissez et acceptez que les fournisseurs de services de l'Entreprise sont des tiers bénéficiaires de ces termes. En acceptant ces termes et conditions ou en utilisant l'Outil, vous acceptez d'être lié par les termes et conditions de cet accord.",
-    "paragraph2": "Vous reconnaissez et acceptez que certaines fonctionnalités du Service Utilisateur Final sont basées sur l'Outil; que votre utilisation de telles fonctionnalités est à votre demande; que ni l'Entreprise ni ses fournisseurs de services ne mettent à disposition des services de courtage ou ne s'engagent dans le traitement des paiements; et que ni l'Entreprise ni ses fournisseurs de services n'ont de responsabilité ou d'obligation pour le Service Utilisateur Final ou tout Compte Connecté, ni pour les conditions, politiques, actes ou omissions de leurs fournisseurs.",
-    "paragraph3": "Vous déclarez et garantissez que vous avez tous les droits et consentements nécessaires pour vous connecter et accéder à chaque Compte Connecté par le biais de telles fonctionnalités, y compris le droit de fournir à l'Entreprise et à ses fournisseurs de services vos identifiants de connexion, adresses de portefeuilles et/ou toute information de votre compte ou vos informations personnelles pour chaque Compte Connecté. Vous autorisez par la présente l'Entreprise et ses fournisseurs de services à transmettre des instructions ainsi que des informations, données et autres matériaux entre le Service Utilisateur Final et chaque Compte Connecté, et vous reconnaissez et acceptez que l'Entreprise et ses fournisseurs de services n'ont aucune responsabilité pour l'exécution de ces instructions, ni pour ces matériaux (y compris leur exactitude, opportune ou complète).",
-    "paragraph4": "Vous reconnaissez avoir lu la politique de confidentialité de l'Entreprise, disponible à <2>https://meshconnect.com/privacy-policy</2>, et acceptez que, en utilisant l'Outil, vous consentez à l'utilisation par l'Entreprise de vos informations personnelles telles que définies et définies dans la politique de confidentialité.",
-    "paragraph5": "L'Outil est mis à disposition sur une base “TEL QUEL” et “TEL QUE DISPONIBLE”, avec tous les défauts et sans aucune représentation ou garantie d'aucune sorte. L'Entreprise ne fait aucune déclaration ou garantie concernant l'Outil, expresse ou implicite, y compris toute garantie de qualité marchande, d'adéquation à un usage particulier ou de non-contrefaçon.",
-    "paragraph6": "EN AUCUN CAS, L'ENTREPRISE OU SES FOURNISSEURS DE SERVICES NE SERONT RESPONSABLES, QUE CE SOIT EN CONTRAT, GARANTIE, DOMMAGE, Y COMPRIS NÉGLIGENCE, RESPONSABILITÉ DU PRODUIT, RESPONSABILITÉ STRICTE OU AUTRE THÉORIE, POUR TOUS DOMMAGES INDIRECTS, ACCESSOIRES, PARTICULIERS OU CONSÉCUTIFS LIÉS À L'UTILISATION (OU IMPOSSIBILITÉ D'UTILISATION) DE L'OUTIL, DU SERVICE UTILISATEUR FINAL OU DE TOUT COMPTE CONNECTÉ, Y COMPRIS TOUTES INSTRUCTIONS OU MATÉRIAUX TRANSMIS À L'AIDE DE FONCTIONNALITÉS ACTIVÉES PAR L'OUTIL. LES LIMITATIONS, EXCLUSIONS ET AVERTISSEMENTS PRÉCÉDENTS S'APPLIQUERONT DANS LA MESURE MAXIMALE PERMISE PAR LA LOI APPLICABLE, MÊME SI UN RECOURS N'ATTEINT PAS SON OBJECTIF ESSENTIEL. SANS LIMITER CE QUI PRÉCÈDE, LA RESPONSABILITÉ CUMULÉE DE L'ENTREPRISE ET DE SES FOURNISSEURS DE SERVICES CONCERNANT L'OUTIL NE DÉPASSERA PAS DIX DOLLARS.",
-    "paragraph7": "Vous défendrez, indemniserez et tiendrez indemne l'Entreprise et ses administrateurs, dirigeants, employés, concédants, entrepreneurs et représentants de toute réclamation, action, poursuite, enquête ou procédure de tiers, ainsi que de toute perte, responsabilité, dommage, coût et frais découlant ou liés à votre utilisation (ou mauvaise utilisation) de l'Outil, du Service Utilisateur Final et/ou de tout Compte Connecté.",
-    "paragraph8": "L'Entreprise peut modifier ces termes à tout moment. Votre utilisation continue de toute fonctionnalité activée par l'Outil après de telles modifications constitue votre acceptation des termes mis à jour.",
-    "paragraph9": "Ces termes seront régis par les lois de l'État du Delaware, à l'exclusion de ses principes de choix de la loi. Sauf pour les différends qui répondent aux critères de la cour des petites créances, tous les différends découlant de ou liés à ces termes ou à tout aspect de la relation entre vous et l'Entreprise, qu'ils soient basés sur un contrat, un délit, une loi, une fraude, une fausse déclaration ou toute autre théorie juridique, seront résolus par un arbitrage final et contraignant devant un arbitre neutre au lieu de devant un tribunal par un juge ou un jury, et vous acceptez que l'Entreprise et vous-même renoncez chacun au droit à un procès par jury. Ces différends incluent, sans limitation, les différends découlant de ou se rapportant à l'interprétation ou à l'application de cette disposition d'arbitrage, y compris l'applicabilité, la révocabilité ou la validité de la disposition d'arbitrage ou de toute partie de la disposition d'arbitrage. Toutes ces questions doivent être décidées par un arbitre et non par un tribunal ou un juge. Vous acceptez que tout arbitrage en vertu de ces termes se déroulera sur une base individuelle; les arbitrages de groupe et les actions collectives ne sont pas autorisés, et vous acceptez de renoncer à la capacité de participer à une action collective.",
-    "title": "{{shortName}} Conditions Générales d'Utilisation de l'Utilisateur Final<2></2>"
+    "paragraph1": "Mesh Connect, Inc. (l’<1>« Entreprise »</1>) est un fournisseur de technologie qui met à disposition un outil de communication (l’<3>« Outil »</3>) facilitant certaines fonctionnalités d’un service tiers que vous utilisez (le <5>« Service Utilisateur Final »</5>).\nCet Outil a pour objectif de vous permettre de communiquer avec vos comptes et portefeuilles tiers (<7>« Comptes Connectés »</7>) via le Service Utilisateur Final, notamment en transmettant des instructions que vous souhaitez exécuter.",
+    "paragraph10": "L'arbitrage sera administré par l'American Arbitration Association selon ses règles d'arbitrage des consommateurs, modifiées par ces termes. Les règles d'arbitrage des consommateurs sont disponibles en ligne à <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. L'arbitre mènera des audiences, le cas échéant, par téléconférence ou vidéoconférence, plutôt qu'en présence personnelle, sauf si l'arbitre décide sur demande de vous ou de nous qu'une audience en personne est appropriée. Toute rencontre en personne sera tenue dans un lieu raisonnablement pratique pour les deux parties, en tenant compte de leur capacité à se déplacer et de circonstances pertinentes. Si vous et l'Entreprise ne pouvez pas vous entendre sur un lieu, cette détermination devrait être faite par l'AAA ou par l'arbitre. La décision de l’arbitre devra être conforme aux présentes conditions, et elle sera définitive et contraignante. L’arbitre aura le pouvoir d’accorder toute mesure de redressement temporaire, provisoire ou permanent, y compris l’exécution spécifique des présentes conditions, mais uniquement dans la mesure nécessaire pour accorder la réparation justifiée par la réclamation individuelle présentée devant lui. La sentence arbitrale pourra être homologuée et exécutée devant tout tribunal compétent.\nNonobstant ce qui précède, aucune disposition des présentes conditions ne vous empêche de soumettre une plainte à une autorité fédérale, étatique ou locale, laquelle pourra, si la loi le permet, engager une action en votre nom contre nous.",
+    "paragraph11": "Ces conditions constituent l’intégralité de l’accord entre vous et l’Entreprise concernant leur objet, et remplacent toutes déclarations ou accords antérieurs, oraux ou écrits, relatifs à ces sujets. Si une disposition est jugée inapplicable en vertu de la législation applicable, elle sera modifiée dans la mesure nécessaire pour se conformer à la loi tout en préservant, autant que possible, l’intention initiale. Toute disposition qui ne peut être modifiée de cette manière sera réputée dissociable, et les dispositions restantes resteront pleinement en vigueur. Vous reconnaissez et acceptez que les prestataires de services de l’Entreprise sont des tiers bénéficiaires de ces conditions. En acceptant ces conditions ou en utilisant l’Outil, vous acceptez d’être lié par les termes du présent accord.",
+    "paragraph2": "Vous reconnaissez et acceptez que certaines fonctionnalités du Service Utilisateur Final reposent sur l’Outil ; que l’utilisation de ces fonctionnalités se fait à votre demande ; que ni l’Entreprise ni ses prestataires de services ne fournissent de services de courtage ni ne participent au traitement des paiements ; et que ni l’Entreprise ni ses prestataires de services n’assument de responsabilité ou d’obligation à l’égard du Service Utilisateur Final, de tout Compte Connecté, ou des conditions, politiques, actes ou omissions de leurs fournisseurs respectifs.",
+    "paragraph3": "Vous déclarez et garantissez que vous disposez de tous les droits et consentements nécessaires pour vous connecter à chaque Compte Connecté et y accéder via ces fonctionnalités, y compris le droit de fournir à l’Entreprise et à ses prestataires de services vos identifiants de connexion, adresses de portefeuilles et/ou toute information de compte ou donnée personnelle relative à chaque Compte Connecté. Par la présente, vous autorisez l’Entreprise et ses prestataires de services à transmettre des instructions, ainsi que des informations, données et autres contenus, entre le Service Utilisateur Final et chaque Compte Connecté. Vous reconnaissez et acceptez que l’Entreprise et ses prestataires de services n’assument aucune responsabilité quant à l’exécution de ces instructions ni quant à ces contenus (y compris leur exactitude, leur actualité ou leur exhaustivité).",
+    "paragraph4": "Vous reconnaissez avoir lu la politique de confidentialité de l’Entreprise, disponible à l’adresse suivante : <2>https://meshconnect.com/privacy-policy</2>, et acceptez qu’en utilisant l’Outil, vous consentez à l’utilisation de vos informations personnelles par l’Entreprise, conformément aux modalités définies dans ladite politique de confidentialité.",
+    "paragraph5": "L’Outil est mis à disposition sur une base « TEL QUEL » et « TEL QUE DISPONIBLE », avec tous ses défauts et sans aucune garantie ni déclaration de quelque nature que ce soit.\nL’Entreprise ne formule aucune garantie, expresse ou implicite, concernant l’Outil, y compris, sans s’y limiter, les garanties de qualité marchande, d’adéquation à un usage particulier ou de non-contrefaçon.",
+    "paragraph6": "EN AUCUN CAS, L’ENTREPRISE OU SES FOURNISSEURS DE SERVICES NE POURRONT ÊTRE TENUS RESPONSABLES, QUE CE SOIT AU TITRE D’UN CONTRAT, D’UNE GARANTIE, D’UN DÉLIT (Y COMPRIS LA NÉGLIGENCE), DE LA RESPONSABILITÉ DU FAIT DES PRODUITS, DE LA RESPONSABILITÉ OBJECTIVE OU DE TOUTE AUTRE THÉORIE JURIDIQUE, DE DOMMAGES INDIRECTS, ACCESSOIRES, SPÉCIAUX OU CONSÉCUTIFS RÉSULTANT DE L’UTILISATION OU DE L’IMPOSSIBILITÉ D’UTILISER L’OUTIL, LE SERVICE UTILISATEUR FINAL OU TOUT COMPTE CONNECTÉ — Y COMPRIS TOUTES INSTRUCTIONS OU CONTENUS TRANSMIS VIA DES FONCTIONNALITÉS ACTIVÉES PAR L’OUTIL.\nLES LIMITATIONS, EXCLUSIONS ET AVERTISSEMENTS CI-DESSUS S’APPLIQUENT DANS TOUTE LA MESURE PERMISE PAR LA LOI APPLICABLE, MÊME SI UN RECOURS N’ATTEINT PAS SON OBJECTIF ESSENTIEL.\nSANS LIMITER CE QUI PRÉCÈDE, LA RESPONSABILITÉ CUMULÉE DE L’ENTREPRISE ET DE SES FOURNISSEURS AU TITRE DE L’OUTIL NE DÉPASSERA EN AUCUN CAS DIX DOLLARS.",
+    "paragraph7": "Vous vous engagez à défendre, indemniser et dégager de toute responsabilité l’Entreprise, ainsi que ses administrateurs, dirigeants, employés, concédants, sous-traitants et représentants, à l’égard de toute réclamation, action, poursuite, enquête ou procédure émanant d’un tiers — ainsi que de toute perte, responsabilité, dommage, coût ou dépense — découlant de votre utilisation (ou mauvaise utilisation) de l’Outil, du Service Utilisateur Final et/ou de tout Compte Connecté.",
+    "paragraph8": "L’Entreprise peut modifier ces conditions à tout moment. Le fait de continuer à utiliser toute fonctionnalité activée par l’Outil après de telles modifications constitue votre acceptation des conditions mises à jour.",
+    "paragraph9": "Ces conditions sont régies par les lois de l’État du Delaware, à l’exclusion de ses règles de conflit de lois. Sauf en cas de litiges relevant d’un tribunal des petites créances, tout différend découlant de ces conditions ou lié à celles-ci — ou à tout aspect de la relation entre vous et l’Entreprise — qu’il soit fondé sur un contrat, un délit, une loi, une fraude, une fausse déclaration ou toute autre théorie juridique, sera résolu par un arbitrage définitif et contraignant devant un arbitre neutre, et non devant un tribunal, un juge ou un jury.\nVous acceptez que vous et l’Entreprise renonciez chacun expressément au droit à un procès devant jury. Ces différends incluent, sans s’y limiter, ceux relatifs à l’interprétation ou à l’application de la présente clause d’arbitrage, y compris son applicabilité, sa révocabilité ou sa validité, en tout ou en partie. Toutes ces questions seront tranchées par l’arbitre, et non par un tribunal ou un juge. Vous acceptez que tout arbitrage en vertu de ces conditions se déroule sur une base individuelle : les arbitrages collectifs et les recours collectifs sont interdits, et vous renoncez à toute possibilité d’y participer.",
+    "title": "Conditions générales d’utilisation de {{shortName}} pour l’utilisateur final <2></2>"
   },
   "transferAmountPage": {
     "buttonTitle": {
@@ -989,7 +989,7 @@
     },
     "title": {
       "deposit": "Entrez le montant du dépôt",
-      "onramp": "Entrez le montant de l'achat",
+      "onramp": "Saisissez le montant de l’achat",
       "transfer": "Entrer le montant du transfert"
     }
   },
@@ -1000,18 +1000,18 @@
     "yourBalance": "Votre solde {{token}}"
   },
   "transferDeviceConfirmation": {
-    "awaitingConfirmation": "En attente de confirmation de l'application mobile",
-    "confirmButton": "J'ai vérifié sur mon app",
+    "awaitingConfirmation": "En attente de confirmation dans l’application mobile",
+    "confirmButton": "J’ai validé dans mon application",
     "description": "Confirmez dans votre application mobile {{selectedIntegrationName}} que c'est bien vous qui essayez de vous connecter.",
     "desktopSteps": {
-      "confirm": "Confirmez l'invite pour vérifier que c'est bien vous",
+      "confirm": "Confirmez dans l’invite pour vérifier que c’est bien vous",
       "openApp": "Ouvrez l'application {{selectedIntegrationName}} sur votre téléphone",
       "return": "Revenez ici pour continuer"
     },
     "mobileSteps": {
       "clickOpen": "Cliquez sur <1>Ouvrir l'application {{selectedIntegrationName}}</1> ci-dessous",
       "verifyLogin": "Vérifiez que vous vous connectez depuis un nouvel appareil",
-      "verifyTransfer": "Vérifiez que vous êtes celui qui demande le transfert"
+      "verifyTransfer": "Vérifiez que vous êtes bien à l’origine de la demande de transfert"
     },
     "openApp": "Ouvrir l'application {{selectedIntegrationName}}",
     "sendNewRequest": "Envoyer une nouvelle demande",
@@ -1020,14 +1020,14 @@
   },
   "transferEmailApprovalConfirmation": {
     "approve": "Cliquez sur <1>Approuver</1> dans la page de confirmation.",
-    "approveOrCancel": "Cliquez sur <1>Approuver ou Annuler le Retrait</1> dans l'email.",
+    "approveOrCancel": "Cliquez sur <1>Approuver ou Annuler le Retrait</1> dans l'e-mail.",
     "confirmButton": "J'ai approuvé le retrait",
-    "description": "Veuillez vérifier votre boîte de réception pour un email vous demandant de confirmer un nouveau retrait.",
+    "description": "Veuillez vérifier votre boîte de réception pour un e-mail vous demandant de confirmer un nouveau retrait.",
     "return": "Revenez ici et cliquez ci-dessous pour continuer votre transfert.",
     "title": "Approuver le retrait"
   },
   "transferErrorPage": {
-    "defaultError": "Une erreur inconnue s'est produite. Veuillez cliquer ci-dessous pour débuter une nouvelle session de transfert."
+    "defaultError": "Une erreur inconnue s'est produite. Veuillez cliquer ci-dessous pour démarrer une nouvelle session de transfert."
   },
   "transferErrors": {
     "failedToExecute": "Échec de l'exécution d'un transfert",
@@ -1040,14 +1040,14 @@
     "mfaTradingPinFailed": "Échec du code PIN de transaction MFA, veuillez entrer le code à nouveau"
   },
   "transferFacePage": {
-    "clickOpenApp": "Cliquez sur <1>Ouvrir l'application {{selectedIntegrationName}}</1> pour ouvrir votre application et effectuer la vérification faciale.",
-    "completeMobile": "Complétez la vérification faciale pour confirmer que c'est bien vous qui essayez de transférer des fonds.",
+    "clickOpenApp": "Cliquez sur <1>Ouvrir l’application {{selectedIntegrationName}}</1> pour lancer votre application et terminer la vérification faciale.",
+    "completeMobile": "Complétez la vérification faciale pour confirmer que vous êtes bien à l’origine de la demande de transfert de fonds.",
     "confirmCompleted": "J'ai terminé la vérification",
     "openApp": "Ouvrir l'application {{selectedIntegrationName}}",
     "reopenApp": "Rouvrez l'application {{selectedIntegrationName}}",
     "return": "Revenez ici pour terminer le lien de votre compte.",
     "returnContinue": "Revenez ici pour continuer à lier votre compte.",
-    "scanQR": "Scannez le code QR pour compléter la vérification faciale et confirmer que c'est bien vous qui essayez de transférer des fonds.",
+    "scanQR": "Scannez le code QR pour effectuer la vérification faciale et confirmer que vous êtes bien à l’origine de la demande de transfert de fonds.",
     "title": "Vérification"
   },
   "transferMfaPage": {
@@ -1086,9 +1086,9 @@
     "youWillReceive": "Vous recevrez"
   },
   "transferWithdrawalAddressConfirmation": {
-    "checkInbox": "Veuillez vérifier votre boîte de réception pour un e-mail vous demandant de confirmer une nouvelle adresse de retrait.",
+    "checkInbox": "Veuillez vérifier votre boîte de réception pour un e-mail vous invitant à confirmer une nouvelle adresse de retrait.",
     "clickConfirm": "Cliquez sur <1>Confirmer l'adresse</1> dans l'e-mail.",
-    "confirmedButton": "J'ai confirmé l'adresse",
+    "confirmedButton": " J'ai confirmé l'adresse",
     "return": "Revenez ici et cliquez ci-dessous pour compléter le transfert.",
     "title": "Confirmer l'adresse de retrait"
   },
@@ -1103,7 +1103,7 @@
     "clientVerifyLabel": "{{clientName}} doit vérifier votre portefeuille",
     "secureLabel": "Rapide, sécurisé et gratuit",
     "secureText": "La signature n'autorise en aucun cas {{clientName}} à effectuer des transactions avec votre portefeuille.",
-    "signText": "Il vous sera demandé de signer un message sur votre appareil Trezor confirmant que vous possédez ce portefeuille.",
+    "signText": "Il vous sera demandé de signer un message sur votre appareil Trezor afin de confirmer que vous êtes bien le propriétaire de ce portefeuille.",
     "title": "Bientôt terminé !",
     "verifyingLabel": "Vérification de votre portefeuille..."
   },
@@ -1130,12 +1130,12 @@
     "title": "Échec de la vérification"
   },
   "verifyErrorPage": {
-    "body": "Vous avez refusé la demande de signature dans votre portefeuille, ou une demande précédente est toujours active. {{clientName}} ne peut pas vérifier la propriété de votre portefeuille sans signature.",
+    "body": "Vous avez refusé la demande de signature dans votre portefeuille, ou une demande précédente est toujours active. {{clientName}} ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
     "title": "Vérification refusée"
   },
   "wallectConnect": {
     "noActiveSessionError": "Pas de session WalletConnect active",
-    "transactionHashError": "Impossible d'obtenir la transaction hash",
+    "transactionHashError": "Impossible d’obtenir le hachage de la transaction",
     "unknownError": "Une erreur inconnue est survenue. {{error}}"
   },
   "walletDoneScreen": {
