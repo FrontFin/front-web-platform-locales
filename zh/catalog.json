@@ -47,7 +47,7 @@
   },
   "binanceResetPasswordPage": {
     "goToBinance": "前往Binance.com",
-    "securityNote": "注意：为保证您的安全，密码更改后24小时内不可提现加密货币。",
+    "securityNote": "注意：为保证您的安全，密码重置后24小时内不可提现加密货币。",
     "steps": {
       "completeProcess": "完成密码重置流程。",
       "enterEmail": "输入您的电子邮件或电话号码，并点击“忘记密码？”。",
@@ -144,7 +144,7 @@
     "tryAgain": "再试一次"
   },
   "commonContent": {
-    "connecting": "",
+    "connecting": "正在连接......",
     "description": "将建立与{{integrationName}}的安全连接。",
     "monitoring": "等待批准中...",
     "resend": "重新发送关联请求",
@@ -263,7 +263,7 @@
       "transferPaymentSmartToAddress": "通过中继合约{{shortSmartContractsAddress}}从{{selectedIntegrationName}}转出<1>{{transferPreviewAmount}}</1>。",
       "transferPaymentSmartToClient": "通过中继合约{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转账至{{clientName}}。",
       "transferPaymentToAddress": "从{{selectedIntegrationName}}转出的数额为<1>{{transferPreviewAmount}}</1>的交易。",
-      "transferPaymentToClient": "从{{selectedIntegrationName}}转账<1>{{transferPreviewAmount}}</1>到{{clientName}}。",
+      "transferPaymentToClient": "从{{selectedIntegrationName}}转账<1>{{transferPreviewAmount}}</1>到{{clientName}。",
       "transferSmartToAddress": "通过中继合同{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转移到{{shortToAddress}}。",
       "transferSmartToClient": "通过中继合同{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转移到{{clientName}} {{shortToAddress}}。",
       "transferToAddress": "将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转移到{{shortToAddress}}。",
@@ -276,7 +276,7 @@
     "checkDetails40": "查看交易详情",
     "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
     "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
-    "goBackToShift4": "← 返回Shift4",
+    "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><3></3>的支付至{{clientName}}",
     "waiting": "在收到足够的网络认证之前，转账不会完成。"
@@ -334,121 +334,121 @@
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
     "twoFaFailed": "双重验证失败。请重试。",
-    "withdrawalLocked": "出于安全考虑，更改帐户设置后，提款将在24小时内禁用。请稍后再试。"
+    "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提款。请稍后再试。"
   },
   "errorPage": {
-    "title": "发生了一个错误。"
+    "title": "出现错误。"
   },
   "exitPage": {
-    "body": "您的进度将丢失。",
+    "body": "您的进度将被丢失。",
     "continue": "不，继续",
-    "exit": "是的，退出",
+    "exit": "正确，退出",
     "title": "您确定要退出吗？"
   },
   "externalDirectMobileWallet": {
-    "actionRefusedError": "操作被拒绝",
+    "actionRefusedError": "操作被驳回",
     "actionRefusedRetryText": "请返回您的{{clientName}}应用",
-    "actionRefusedText": "您已拒绝操作。",
+    "actionRefusedText": "您已拒绝该操作。",
     "connectionWalletAction": "您已成功连接您的{{integrationName}}。",
-    "continueInApp": "请继续在您的{{clientName}}应用中。",
-    "continuePaymentInApp": "返回到您的结账体验以继续您的 {{clientName}} 购买。",
+    "continueInApp": "请在您的{{clientName}}应用中继续。",
+    "continuePaymentInApp": "返回结账页面以继续您的 {{clientName}} 购买。",
     "defaultAction": "您已成功完成该操作。",
     "processingError": "处理错误",
-    "processingText": "出了些问题。",
+    "processingText": "出了点问题。",
     "sessionNotFoundError": "未找到会话",
-    "signedMessageAction": "您已成功验证您{{integrationName}}的所有权。",
-    "transactionAction": "您已成功初始化事务。",
+    "signedMessageAction": "您已成功验证对{{integrationName}}的所有权。",
+    "transactionAction": "您已成功发起此交易。",
     "tryAgainText": "请稍后重试。"
   },
   "externalHardwareWalletInitial": {
-    "invalidCode": "无效代码。请再试一次"
+    "invalidCode": "无效代码。请重试"
   },
   "externalHardwareWalletMainPage": {
-    "mobileBody": "此体验必须在<1>桌面</1>设备上完成以连接您的硬件钱包。",
+    "mobileBody": "为连接到您的硬钱包，您须在<1>桌面</1>设备上完成此操作。",
     "mobileTitle": "在桌面设备上打开此链接"
   },
   "externalInitialScreen": {
-    "title": "输入显示在您移动设备上的一次性代码<1></1>"
+    "title": "输入您移动设备上显示的一次性代码<1></1>"
   },
   "externalTransferCallbackPage": {
     "continue": "继续{{clientName}}",
-    "transferRequested": "已请求转账，请返回到{{clientName}}",
+    "transferRequested": "已发起转账，请返回至{{clientName}}",
     "updatingTransfer": "更新转账状态..."
   },
   "facePage": {
     "completedButton": "我已完成验证",
-    "desktopStep1": "扫描二维码完成面部验证，以确认真正是您尝试登录。",
-    "desktopStep2": "然后返回此处以完成账户链接。",
-    "mobileStep1": "完成面部验证以确认是您本人尝试登录。",
-    "mobileStep2": "点击<1>打开{{integrationName}}应用</1>以打开您的应用并完成面部验证。",
-    "mobileStep3": "返回此处继续链接您的账户。",
+    "desktopStep1": "扫描二维码完成面部验证，以确认是您本人正在登录。",
+    "desktopStep2": "返回此处以继续完成账户关联。",
+    "mobileStep1": "完成面部验证以确认是您本人正在登录。",
+    "mobileStep2": "点击<1>打开{{integrationName}}应用</1>以打开您的应用程序并完成面部验证。",
+    "mobileStep3": "返回此处继续关联您的账户。",
     "openApp": "打开{{integrationName}}应用",
     "reopenApp": "重新打开{{integrationName}}应用",
     "title": "验证"
   },
   "fields": {
     "apiKey": "API 密钥",
-    "apiSecret": "API 密钥",
+    "apiSecret": "API 密码",
     "authToken": "授权令牌",
-    "challengeCode": "验证代码",
-    "clientId": "客户端ID",
-    "clientSecret": "客户端密钥",
+    "challengeCode": "验证码",
+    "clientId": "客户ID",
+    "clientSecret": "客户端密码",
     "email": "电子邮件",
     "emailOrUsername": "电子邮件或用户名",
-    "mfaCode": "MFA代码",
+    "mfaCode": "MFA认证码",
     "passphrase": "密码短语",
     "password": "密码",
     "phone": "电话号码",
     "privateKey": "私钥",
     "secretKey": "密钥",
-    "tradePin": "交易 PIN",
+    "tradePin": "交易密码",
     "userId": "用户 ID",
     "username": "用户名"
   },
   "fullScreenSpinner": {
-    "linking": "正在链接您的账户...",
-    "loading": "仍在处理中..."
+    "linking": "正在关联您的账户...",
+    "loading": "处理中..."
   },
   "fundingLoadingOverlay": {
     "loading": "加载中..."
   },
   "fundingMethodFees": {
     "fee": {
-      "conversion": "{{integrationName}}从{{conversionFromCurrency}}转换为{{conversionToCurrency}}的转换费",
-      "deposit": "{{integrationName}}存款手续费",
-      "purchase": "{{integrationName}}从{{fiatSymbol}}到{{cryptocurrencySymbol}}的购买费",
-      "withdrawal": "{{integrationName}}提款手续费"
+      "conversion": "{{integrationName}}从{{conversionFromCurrency}}兑换为{{conversionToCurrency}}的手续费",
+      "deposit": "{{integrationName}}充值手续费",
+      "purchase": "从{{integrationName}}{{fiatSymbol}}换购为{{cryptocurrencySymbol}}手续费",
+      "withdrawal": "{{integrationName}}提现手续费"
     },
     "info": {
-      "conversion": "{{integrationName}}将收取费用以将您的{{conversionFromSymbol}}转换为{{conversionToSymbol}}。",
-      "purchase": "{{integrationName}}将为您购买{{symbol}}提供便利而收取费用。",
-      "withdrawal": "{{integrationName}}将收取费用以便利您将{{symbol}}转出。"
+      "conversion": "{{integrationName}}将收取您将{{conversionFromSymbol}}换购为{{conversionToSymbol}}的手续费。",
+      "purchase": "{{integrationName}}收取协助购买{{symbol}}的手续费。",
+      "withdrawal": "{{integrationName}}将收取从{{symbol}}协助转帐手续费。"
     }
   },
   "fundingMethodsList": {
     "buyingPower": "购买力",
     "cryptocurrencyBalance": "{{symbol}}余额",
     "noneSelected": "未选择",
-    "paymentMethodDepositUsage": "已链接支付方式",
-    "stablecoinConversion": "稳定币转换",
+    "paymentMethodDepositUsage": "已关联支付方式",
+    "stablecoinConversion": "稳定币兑换",
     "withAdditional_one": "{{mainOption}} + {{count}} 其他",
-    "withAdditional_other": "{{mainOption}} + {{count}} 个其他"
+    "withAdditional_other": "{{mainOption}} + {{count}} 其他"
   },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}}不支持使用此融资方式购买{{assetName}}。",
-    "coveredByExistingCryptocurrencyBalance": "您已有足够的{{assetName}}余额用于此次购买，无需额外资金方式。",
-    "coveredByOtherFundingOptions": "此资金融资方式不支持此交易。",
-    "currencyNotSupported": "不支持通过非美元资助方式购买加密货币。",
-    "depositAmountLimitExceeded": "此购买将超过{{integrationName}}在1天内关于此融资方式的最大存款限额。",
-    "depositCountLimitReached": "此资方式已达到{{integrationName}}在1天内的最大存款次数。",
-    "depositsNotSupported": "此交易不支持该资助方法。",
-    "instantDepositLimitExceeded": "此资金融资方式的即时存款限额不足以支持此次购买。",
-    "instantDepositsNotSupported": "此融资方式不支持即时存款，因此无法用于此次购买。",
-    "insufficientBalance": "余额不足以资助此次购买。",
-    "maximumDepositLimitViolated": "金额超出了该资方式的最大存款限额。",
-    "minimumDepositLimitViolated": "金额低于此资方式的最低存款限额。",
-    "paymentMethodTypeNotSupported": "此资融资选择尚未支持。",
-    "unknown": "此资金选项不可用。"
+    "buyingPowerUsageNotSupported": "{{integrationName}}不支持使用该充值方式购买{{assetName}}。",
+    "coveredByExistingCryptocurrencyBalance": "您的{{assetName}}余额足以支付该交易，无需额外充值。",
+    "coveredByOtherFundingOptions": "该充值不支持本次交易。",
+    "currencyNotSupported": "暂不支持非美元充值方式购买加密货币。",
+    "depositAmountLimitExceeded": "该交易将超出{{integrationName}}最高今日充值限额。",
+    "depositCountLimitReached": "该充值方式已达到{{integrationName}}今日最高充值次数。",
+    "depositsNotSupported": "此交易不支持该充值方式。",
+    "instantDepositLimitExceeded": "该即时充值方式余额不足， 无法完成此次交易。",
+    "instantDepositsNotSupported": "该充值方式不支持即时充值，无法用于此次交易。",
+    "insufficientBalance": "余额不足，无法完成该交易。",
+    "maximumDepositLimitViolated": "金额超出该充值方式最高限额。",
+    "minimumDepositLimitViolated": "金额低于该充值方式的最低充值限额。",
+    "paymentMethodTypeNotSupported": "尚不支持该充值方式。",
+    "unknown": "该充值方式暂不可用。"
   },
   "fundingPage": {
     "activatePaymentMethod": "在{{selectedIntegrationName}}上激活付款方式",
@@ -458,58 +458,58 @@
     "balances": "余额",
     "balanceWithAproximateFiat": "余额: {{amount}} ~ {{amountInFiat}}",
     "buyingPower": "购买力",
-    "changeAmount": "或者将转移金额更改为{{availableAmount}}。",
+    "changeAmount": "或将转账金额更改为{{availableAmount}}。",
     "changePreferredPaymentMethod": "更改首选支付方式",
     "changePreferredToken": "更改首选代币",
-    "cryptoConversion": "加密货币转换",
-    "description": "总计: {{amount}} ~ {{amountInFiat}}",
+    "cryptoConversion": "加密货币转兑换",
+    "description": "总金额: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(可用即时现金: {{amountInFiat}})",
-    "linkedPaymentMethods": "链接的支付方式",
-    "noPaymentMethods": "没有链接的支付方式。",
+    "linkedPaymentMethods": "已关联的支付方式",
+    "noPaymentMethods": "没有关联的支付方式。",
     "noTokensAvailableForConversion": "没有可用于转换的代币",
     "save": "保存",
-    "selectFundingMethodAvailablity": "您选择的资助方式有{{selectedAvailableAmount}}。 请选择其他资助方式转账{{neededAmount}}。",
+    "selectFundingMethodAvailablity": "您选择的付款方式额度为{{selectedAvailableAmount}}。 请选择其他付款方式转账{{neededAmount}}。",
     "selectFundingMethods": "请选择付款方式以转账<2>{{amount}} ~ {{amountInFiat}}</2>。",
     "selectOtherHoldings": "从其他资产中选择",
     "symbolBalance": "{{symbol}}余额",
-    "title": "资金方式"
+    "title": "付款方式"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "批准付款",
     "cancel": "取消",
-    "description": "燃气费高于原始估算。",
+    "description": "燃气费高于原估算值。",
     "ifDontComplete": "如果您未完成付款，您的{{token}}余额将保留在您的{{selectedIntegrationName}}账户中。",
-    "newEstimate": "新估算",
-    "originalEstimate": "原始估算",
-    "title": "燃气费更新"
+    "newEstimate": "新估算值",
+    "originalEstimate": "原估算值",
+    "title": "更新燃料费"
   },
   "generateKeyPage": {
-    "establishedInClient": "您已经成功在<1></1><2>{{clientName}}</2>中建立了不间断更新。",
-    "establishedInThisApp": "您已经成功在<1></1><2>此应用程序</2>中建立了不间断更新。",
-    "linkedToInClient": "您已经成功将<1></1><2>{{selectedIntegrationName}}</2>连接到<5>{{clientName}}</5>。",
-    "linkedToThisApp": "您已经成功将<1></1><2>{{selectedIntegrationName}}</2>连接到<5>此应用程序</5>。",
-    "nextStep": "接下来，我们将为<2>不间断更新</2>创建密钥，这样您就无需重新登录",
-    "tempAccess": "我只想要临时访问"
+    "establishedInClient": "您已成功在<1></1><2>{{clientName}}</2>无中断完成更新。",
+    "establishedInThisApp": "您已成功在<1></1><2>此应用程序</2>中无中断完成更新。",
+    "linkedToInClient": "您已成功将<1></1><2>{{selectedIntegrationName}}</2>关联至<5>{{clientName}}</5>。",
+    "linkedToThisApp": "您已成功将<1></1><2>{{selectedIntegrationName}}</2>关联至<5>此应用程序</5>。",
+    "nextStep": "接下来，我们将为<2>无中断更新</2>创建密钥，这样您就无需重新登录",
+    "tempAccess": "我只需要临时访问"
   },
   "getBrokerAccessTokenErrors": {
-    "add2FA": "请连接 2FA 应用程序并重试。",
+    "add2FA": "请连接双重验证程序并重试。",
     "identityVerificationRequired": "您需完成身份验证以使用 API 密钥功能。请完成身份验证以继续。",
-    "invalidCredentials": "登录凭证无效。请再试一次。",
-    "maximumApiKeyLimitExceeded": "已达到最大允许的 API 密钥限制。请删除未使用的密钥以继续。",
+    "invalidCredentials": "登录凭证无效。请重试。",
+    "maximumApiKeyLimitExceeded": "API 密钥限制已达到最大允许个数。请删除任一未使用的密钥以继续。",
     "unsupportedCountryErrorMessage": "我们目前不支持您的帐户",
     "wrongEmailCode": "电子邮件代码错误，请重试",
     "wrongTotpCode": "身份验证代码错误，请重试"
   },
   "handleExternalTransferPage": {
     "detailButton": "查看发生了什么",
-    "error": "无法执行转账",
+    "error": "转账执行失败",
     "loadingLabel": "正在验证您的转账...",
-    "networkConfirmations": "转账在获得足够的网络确认之前不会完成。",
-    "notInitiatedUntilApproved": "此转账将在{{selectedIntegrationName}}中获得批准后才会开始。",
+    "networkConfirmations": "转账在获得足够网络确认之前不会完成。",
+    "notInitiatedUntilApproved": "此转账须在{{selectedIntegrationName}}中获得批准后才会开始。",
     "recievedDetails": "您将在{{clientName}} ({{shortAddress}})中收到<1>{{amountStr}}</1>",
-    "requestRecieved": "您转账到{{destination}}的请求已由{{selectedIntegrationName}}收到",
-    "revolutApproveInfo": "此转账将在Revolut应用中批准后才会发起",
-    "transactionComplete": "交易完成"
+    "requestRecieved": "{{selectedIntegrationName}}已收到您向{{destination}}的转账申请",
+    "revolutApproveInfo": "此转账在Revolut应用中被批准后才会发起",
+    "transactionComplete": "转账完成"
   },
   "handleOauthPage": {
     "error": "无法链接您的账户。{{error}}"
@@ -519,91 +519,91 @@
     "connectAction": "连接到{{selectedIntegrationName}}"
   },
   "ineligibleReason": {
-    "amountBelowMinimumDescription": "请求的转账金额{{requestedAmount}}低于{{integrationName}}的{{minimumAmount}}的网络最低限额。",
-    "balanceBelowMinimumDescription": "您的{{currentBalance}}余额低于{{integrationName}}的{{minimumAmount}}网络最低转账限额。",
+    "amountBelowMinimumDescription": "该转账金额{{requestedAmount}}低于{{integrationName}}的网络最低转账要求金额{{minimumAmount}}。",
+    "balanceBelowMinimumDescription": "您的余额{{currentBalance}}低于{{integrationName}}网络最低转账限额{{minimumAmount}}。",
     "belowMinimum": "低于{{integrationName}}的最低限额",
-    "belowRequestedAmountDescription": "您的{{balance}}余额少于支付请求转账金额+费用所需的{{amount}}。",
-    "gasFeeAssetBalanceNotEnoughDescription": "您的{{balance}}余额不足以支付{{network}}网络的估算{{gasFee}}燃气费。",
+    "belowRequestedAmountDescription": "您的{{balance}}余额低于本次转账及手续费{{amount}}。",
+    "gasFeeAssetBalanceNotEnoughDescription": "您的{{balance}}余额不足以支付{{network}}网络预估{{gasFee}燃料费。",
     "insufficientBalance": "余额不足",
-    "insufficientBalanceDescription": "您的{{currentBalance}}余额低于本次转账的最低限额。",
-    "notEligible": "不符合此次转账资格",
-    "notEligibleDescription": "{{symbol}}不接受此转账。",
+    "insufficientBalanceDescription": "您的{{currentBalance}}余额低于该转账的最低限额。",
+    "notEligible": "无权完成本次转账",
+    "notEligibleDescription": "{{symbol}}无法接受此转账。",
     "notSupportedByInstitution": "目前不支持{{integrationName}}",
     "notSupportedForTransferBySource": "不支持{{integrationName}}",
-    "nyCoinbaseUserRestrictions": "由于纽约多链支持限制，{{network}}上的{{symbol}}不接受此转账。",
+    "nyCoinbaseUserRestrictions": "受纽约州多链支持限制影响，无法在{{network}}上接受此{{symbol}}转账。",
     "symbolDoesNotMatch": "{{clientName}}不支持",
     "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。"
   },
   "initialLedgerScreen": {
-    "title": "开启并解锁您的设备"
+    "title": "请开启并解锁您的设备"
   },
   "initialScreen": {
-    "accountTitle": "此应用将安全链接您的账户",
-    "clientNameAccountTitle": "{{clientName}}将安全链接您的账户",
-    "clientNameWalletTitle": "{{clientName}}将安全连接您的钱包",
+    "accountTitle": "此应用将安全地关联您的账户",
+    "clientNameAccountTitle": "{{clientName}}将安全关联您的账户",
+    "clientNameWalletTitle": "{{clientName}}将安全关联您的钱包",
     "walletTitle": "此应用将安全连接您的钱包"
   },
   "initialSteps": {
     "agreement": "选择“继续”即表示您同意<1></1><2>最终用户条款和条件</2>",
-    "credentials": "您的登录凭证永不存储",
-    "encryption": "您的数据始终加密",
-    "explicitApproval": "发起转账时始终需要您的明确批准",
-    "thirdParty": "您的资产永久不会触及第三方"
+    "credentials": "绝不存储您的登录认证信息",
+    "encryption": "您的数据将始终加密",
+    "explicitApproval": "发起转账时始终需要您的明确授权",
+    "thirdParty": "您的资产绝不经过第三方"
   },
   "initialVerifyPage": {
-    "content40": "确认您拥有此钱包",
-    "drawerTitle": "在您的钱包中批准签名请求<1></1>",
-    "item1Body": "您将被要求在{{selectedIntegrationName}}中签署一条确认您拥有此钱包的消息。",
+    "content40": "请确认您是此钱包持有者",
+    "drawerTitle": "请在钱包中批准<1></1>签名请求",
+    "item1Body": "随后会要求您在{{selectedIntegrationName}}中签署验证消息，以确认钱包所有权。",
     "item1Title": "{{clientName}} 必须验证您的地址",
-    "item2Body": "签署并不会以任何方式给予 {{clientName}} 许可进行您的钱包中的任何交易。",
+    "item2Body": "此次签名不会以任何方式授权 {{clientName}} 操作您钱包中的任何交易。",
     "item2Title": "快速、安全且免费",
-    "monitoringLabel": "监控签名中...",
+    "monitoringLabel": "签名监控中......",
     "resendAction": "重新发送签名请求",
-    "title": "离成功只差一步！",
+    "title": "即将完成！",
     "verifyAction": "验证地址",
-    "verifyingLabel": "验证签名中..."
+    "verifyingLabel": "签名验证中......"
   },
   "ipWhiteListPage": {
-    "addIp": "将以下IP地址添加为受信任IP",
-    "clickOnEdit": "点击编辑限制",
+    "addIp": "将以下IP地址加至信任IP列表",
+    "clickOnEdit": "点击修改限制规则",
     "copyIpTitle": "IP地址",
-    "description": "<0>Binance</0> 要求 API 用户白名单 IP 地址，以确保交易和转账请求的合法性。",
-    "findKey": "查找用于此连接的密钥",
-    "openLink": "打开 <2><0>Binance API 管理</0></2>",
-    "requirementsTitle": "如果您计划通过此连接进行交易或转账：",
-    "title": "在继续前，将此 IP 地址加入白名单"
+    "description": "根据<0>币安</0>安全规范， API 用户必须将 IP 地址加入白名单，以确保交易和转账请求的合法性。",
+    "findKey": "查找此连接所使用的密钥",
+    "openLink": "打开 <2><0>币安API 管理</0></2>",
+    "requirementsTitle": "若需通过此连接进行交易或转账：",
+    "title": "将此 IP 地址加入白名单前，请注意"
   },
   "kycDonePage": {
-    "successMessage": "您已成功验证了身份，并启用了您的 {{integrationName}} 账户中的加密货币转账"
+    "successMessage": "您已成功完成身份验证，并已启用了您 {{integrationName}} 账户中的加密货币转账功能"
   },
   "kycInitialPage": {
-    "description": "为了您的安全，{{integrationName}} 要求您在可以转账加密货币前验证身份。",
+    "description": "为了您的安全保障，{{integrationName}} 要求您在转账加密货币前验证身份。",
     "steps": {
-      "completeVerification": "完成流程以验证您的身份并开启您账户中的转账",
-      "navigateCrypto": "进入加密货币标签，打开您想转账的资产，然后点击“发送”",
+      "completeVerification": "请完成身份验证步骤，并将开通您账户的转账功能",
+      "navigateCrypto": "前往加密货币栏目，选择想要转出的资产并点击“发送”",
       "openAccount": "打开您的 {{integrationName}} 账户",
       "returnToScreen": "返回此界面"
     },
-    "title": "在您的 {{integrationName}} 账户中启用转账",
-    "verifiedButton": "我已通过 {{integrationName}} 验证了我的身份"
+    "title": "在您的 {{integrationName}} 账户中启用转账功能",
+    "verifiedButton": "我已通过 {{integrationName}} 完成身份验证"
   },
   "kycPendingPage": {
-    "connectAnother": "连接另一个账户",
-    "description": "身份验证可能需要 <1>1 - 3 个工作日。</1>一旦验证完成，并在您的账户中启用了转账，您可以返回这里完成该交易。",
-    "title": "审批待定"
+    "connectAnother": "关联另一个账户",
+    "description": "身份验证可能需要 <1>1 - 3 个工作日。</1>验证完成并在您的账户中启用转账功能后，您可返回此处完成该交易。",
+    "title": "审批中"
   },
   "kycRobinhoodPage": {
     "clickContinue": "点击 <1>继续</1> 打开 {{selectedIntegrationName}}。",
-    "clickContinueAfterActivated": "激活 {{selectedIntegrationName}} 中的加密货币转账后，请点击下方<5>继续</5>来继续您的转账。",
-    "completeVerification": "完成身份验证和/或添加双因素认证方法。",
-    "connectAnother": "连接另一个账户",
-    "note": "请注意：当您返回时，可能需要重新登录 <1>{{selectedIntegrationName}}</1> 账户以启动此转账。",
+    "clickContinueAfterActivated": "激活 {{selectedIntegrationName}} 中的加密货币转账功能后，请点击下方<5>继续</5>来完成您的转账。",
+    "completeVerification": "完成身份验证及/或添加双重认证方式。",
+    "connectAnother": "关联另一个账户",
+    "note": "请注意：当您返回时，可能需要重新登录 {{selectedIntegrationName}}账户以开启此转账。",
     "return": "返回此处以完成转账。",
-    "title": "在您的账户中启用转账"
+    "title": "在您的账户中启用转账功能"
   },
   "ledgerBluetooth": {
     "step1": "从 <1>Bluetooth</1> 窗口中选择您的设备",
-    "step2": "按蓝牙窗口中的说明操作并在 Ledger 设备上完成连接"
+    "step2": "按蓝牙窗口中的说明操作并在 Ledger 设备上完成关联"
   },
   "ledgerConnection": {
     "bluetoothConnect": "通过蓝牙连接",
@@ -612,20 +612,20 @@
   },
   "ledgerDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} 必须验证您的钱包",
-    "clientVerifyText": "系统会提示您在 Ledger 设备上签署消息，以确认您拥有此钱包。",
+    "clientVerifyText": "系统将提示您在 Ledger 设备上签署验证消息，以确认您拥有该钱包所有权。",
     "secureLabel": "快速、安全且免费",
-    "secureText": "签署并不能授予{{clientName}}以任何方式执行您的钱包交易的权限。",
-    "title": "马上就好！"
+    "secureText": "此次签名不会以任何方式授予{{clientName}}操作您的钱包进行任何交易的权限。",
+    "title": "即将完成！"
   },
   "ledgerError": {
-    "incorrectAppError": "设备上打开了错误的应用程序。请打开正确的应用，并重试。",
-    "lockedError": "您的设备已锁定。请解锁，并重试。",
-    "noDeviceError": "未选择设备。请选择一个设备，并重试。",
-    "notSelectedError": "未选择应用程序。请选择应用程序，并重试。",
-    "rejectError": "用户已拒绝操作。请重试。",
+    "incorrectAppError": "您设备上当前打开的是错误的应用程序，请启动正确的应用后重试。",
+    "lockedError": "您的设备已锁定。请解锁并重试。",
+    "noDeviceError": "未选择设备。请选择设备后重试。",
+    "notSelectedError": "未选择应用程序。请选择应用程序并重试。",
+    "rejectError": "用户已拒绝此操作，请重试。",
     "title": "连接失败",
     "transportError": "您的 Ledger 设备发生了传输错误。",
-    "transportLockedError": "传输被锁定。请解锁设备，并重试。",
+    "transportLockedError": "传输处于锁定状态，请解锁后重试。",
     "unexpectedError": "发生了意外错误。",
     "unknownError": "您的 Ledger 设备发生了未知错误。"
   },
@@ -637,17 +637,17 @@
     "title": "验证失败"
   },
   "ledgerSignMessage": {
-    "rippleBody": "注意：对于 XRP，您会看到一个带有最小值的虚拟交易。这只是为了验证您的钱包，无需花费或发送任何资金。",
-    "title": "在您的设备上查看并签署消息"
+    "rippleBody": "注意：对于 XRP，您将看到一个带有最小值的虚拟交易。此交易仅用于验证钱包所有权，不会产生任何费用或实际资金转账。",
+    "title": "请在您的设备上核对并签署消息"
   },
   "ledgerUSB": {
     "step1": "从 <1>USB</1> 窗口中选择您的设备",
-    "step2": "根据 USB 窗口和您的 Ledger 设备上的说明操作，以完成连接"
+    "step2": "根据 USB 窗口和您的 Ledger 设备上的指示以完成连接"
   },
   "loginDeviceVerifiedPage": {
     "loginButton": "前往登录",
     "subtitle": "继续登录。",
-    "title": "您的设备已获得批准。"
+    "title": "您的设备已通过验证。"
   },
   "mfaError": {
     "default": "验证码错误，请重试"
@@ -656,40 +656,40 @@
     "email": "检查您的电子邮件",
     "phone": "检查您的手机上的短信消息",
     "sandbox": "提示：{{hint}}",
-    "totp": "检查您的身份验证应用"
+    "totp": "请查看您的验证器"
   },
   "mfaInstructionsText": {
-    "email": "输入 <2>{{selectedIntegrationName}}</2> 发送到您邮箱的一次性代码。",
-    "paymentFlow": "输入您的一次性代码以确认确实是您发起此次付款。",
-    "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性代码。",
-    "totp": "输入由您连接到 <1>{{selectedIntegrationName}}</1> 的身份验证应用提供的一次性代码。",
-    "tradingPin": "请输入与您的 <2>{{selectedIntegrationName}}</2> 账户关联的交易 PIN 代码。",
+    "email": "输入 <2>{{selectedIntegrationName}}</2> 已发送至您邮箱的一次性验证码。",
+    "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
+    "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性验证码。",
+    "totp": "请输入由您绑定 <1>{{selectedIntegrationName}}</1> 相关身份验证器提供的一次性验证码。",
+    "tradingPin": "请输入与您的 <2>{{selectedIntegrationName}}</2> 账户绑定的交易 PIN 码。",
     "transferFlow": "输入您的一次性代码以确认确实是您发起此次转账。",
     "twoFactor": "输入您在 <1>{{selectedIntegrationName}}</1> 账户中配置的双因素认证方法提供的代码。"
   },
   "mfaPage": {
     "enterCode": "输入您的一次性代码以确认确实是您尝试登录。",
-    "enterPin": "输入您的交易 PIN",
+    "enterPin": "请输入您的交易 PIN码",
     "title": "验证",
-    "verify": "验证"
+    "verify": "验证 "
   },
   "mfaSetupPage": {
     "emailButton": "设置电子邮件验证",
-    "emailSubtitle": "点击下面的按钮以将电子邮件添加到您的 <2>{{selectedIntegrationName}}</2> 账户。",
-    "keyGenerationBody": "为了您的安全，<1>{{selectedIntegrationName}} </1> 要求用户启用电子邮件和身份验证应用的 MFA 方法来生成密钥",
-    "keyGenerationTitle": "在您的 {{selectedIntegrationName}} 账户中启用 API 密钥生成",
-    "totpButton": "设置身份验证应用",
-    "totpSubtitle": "点击下面的按钮以将身份验证应用添加到您的 <2>{{selectedIntegrationName}}</2> 账户。",
-    "withdrawalBody": "为了您的安全，<1>{{selectedIntegrationName}} </1> 要求用户启用电子邮件和身份验证应用的 MFA 方法来提取资产",
-    "withdrawalTitle": "在您的 {{selectedIntegrationName}} 账户中启用提取"
+    "emailSubtitle": "点击下方按钮将电子邮件添加到您的 <2>{{selectedIntegrationName}}</2> 账户。",
+    "keyGenerationBody": "为确保安全，<1>{{selectedIntegrationName}} </1> 要求用户启用电子邮件和身份验证应用的 MFA 认证方法来生成密钥",
+    "keyGenerationTitle": "在您的 {{selectedIntegrationName}} 账户中启用 API 密钥生成功能",
+    "totpButton": "设置身份验证器应用程序",
+    "totpSubtitle": "点下方按钮将身份验证应用添加到您的 <2>{{selectedIntegrationName}}</2> 账户。",
+    "withdrawalBody": "为确保安全，<1>{{selectedIntegrationName}} </1> 要求用户启用电子邮件和身份验证应用的 MFA 多重验证来进行提现",
+    "withdrawalTitle": "在您的 {{selectedIntegrationName}} 账户中启用提现功能"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "点击下面的按钮将认证应用程序添加到您的<2>{{selectedIntegrationName}}</2>帐户。",
+    "addAuthApp": "点击下方按钮将验证器应用程序添加到您的<2>{{selectedIntegrationName}}</2>帐户。",
     "emailTitle": "您已成功将电子邮件与您的 <2>{{selectedIntegrationName}}</2> 账户关联。",
     "proceed": "继续",
-    "proceedKey": "点击下面以继续生成密钥",
+    "proceedKey": "点击下方以继续生成密钥",
     "proceedTransfer": "点击下面以继续转账",
-    "setUpApp": "设置认证应用程序",
+    "setUpApp": "设置验证器应用",
     "totpTitle": "您已成功将身份验证应用关联到您的 <2>{{selectedIntegrationName}}</2> 账户。"
   },
   "mfaTitle": {
@@ -698,59 +698,59 @@
     "phone": "短信验证码"
   },
   "mfaVerificationPage": {
-    "checkEmail": "首先，让我们验证您的身份。<1></1>请检查您的电子邮件，查找 <4>{{selectedIntegrationName}}</4> 发送的一次性验证码。",
-    "checkSms": "首先，让我们验证您的身份。<1></1>请检查您的手机，查找 <4>{{selectedIntegrationName}}</4> 发送的短信验证码。",
-    "confirmApp": "确认身份验证应用",
+    "checkEmail": "首先，请完成身份验证，<1></1>请查收您的电子邮件获取由<4>{{selectedIntegrationName}}</4> 发送的一次性验证码。",
+    "checkSms": "首先，请完成身份验证。<1></1>请查看您的手机获取由<4>{{selectedIntegrationName}}</4> 发送的一次性短信验证码。",
+    "confirmApp": "确认身份验证器应用",
     "confirmEmail": "确认电子邮件",
     "enterCode": "请输入验证码",
     "enterCodeFromEmail": "请输入 <2>{{selectedIntegrationName}}</2> 发送到您邮箱的 6 位代码。",
-    "enterTotp": "请输入您的<1></1>身份验证应用中的 6 位代码",
-    "firstEnterTotp": "首先，让我们验证您的身份。<1></1>请输入您连接到 <3>{{selectedIntegrationName}}</3> 的身份验证应用中的一次性代码。",
+    "enterTotp": "请输入您<1></1>身份验证器应用中的 6 位数验证码",
+    "firstEnterTotp": "首先，请完成身份验证。<1></1>请输入您关联 <3>{{selectedIntegrationName}}</3> 的身份验证器中收到的一次性验证码。",
     "securityVerification": "安全验证"
   },
   "mobileAppLink": {
-    "awaitingConfirmation": "正在等待来自移动应用程序的确认",
+    "awaitingConfirmation": "等待移动端应用确认",
     "openAppButton": "打开{{selectedIntegrationName}}应用",
     "sendNewRequest": "发送新请求",
     "steps": {
-      "authorize": "在确认页面上点击<1>授权</1>。",
-      "openApp": "在下面点击<1>打开{{selectedIntegrationName}}应用</1>。",
-      "return": "返回此处以完成账户链接。"
+      "authorize": "在确认页面点击<1>授权</1>。",
+      "openApp": "在下方点击<1>打开{{selectedIntegrationName}}应用</1>。",
+      "return": "返回此处以完成账户关联。"
     }
   },
   "mobileContent": {
     "actionButton": "打开{{integrationName}}"
   },
   "navHeader": {
-    "close": "关闭模态框",
-    "goBack": "返回",
+    "close": "关闭对话框",
+    "goBack": "返回上一步",
     "title": "使用加密货币支付"
   },
   "networkSelectionDrawer": {
-    "description": "以下网络均为安全的兼容选项。我们已为您自动选择了最便宜手续费的网络。",
-    "estimatedGasFeeLabel": "估计燃气费用：",
+    "description": "以下网络均为安全且兼容的支付方式。我们已为您自动选择手续费最低的网络。",
+    "estimatedGasFeeLabel": "预估燃料费：",
     "lowestFeeLabel": "最低手续费",
     "title": "选择网络"
   },
   "nonOAuthPermissionsPage": {
     "allow": "允许",
-    "movingFunds": "未经您许可移动资金",
+    "movingFunds": "未经您许可转移资金",
     "titleWithClient": "{{clientName}} <2></2>权限",
     "titleWithoutClient": "此应用程序的<1></1>权限",
-    "transactionRequest": "发送交易请求",
-    "viewActivity": "查看余额、活动、个人资料数据",
+    "transactionRequest": "提交交易请求",
+    "viewActivity": "查看余额、交易记录和账户资料数据",
     "wontAllow": "不允许"
   },
   "oAuthBrokerPage": {
-    "monitoring": "正在等待批准...",
+    "monitoring": "审批状态检测中……",
     "reopenButton": "点击此处重新打开{{selectedIntegrationName}}",
     "subtitle": "登录您的账户并允许访问",
-    "title": "继续<1></1>{{selectedIntegrationName}}窗口"
+    "title": "请在<1></1>{{selectedIntegrationName}}窗口继续操作"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}} 不支持对所请求的代币和/或网络的转账。",
+    "description": "{{selectedIntegrationName}} 暂不支持你选择的代币和/或网络的转账。",
     "selectAnotherAccount": "选择另一个账户",
-    "selectAnotherDescription": "请选择另一个可以进行存款的交易所或钱包。"
+    "selectAnotherDescription": "请选择其他交易所或钱包以充值。"
   },
   "oauthInitialPage": {
     "continue": "继续前往{{integrationName}}",
@@ -758,44 +758,44 @@
     "title": "登录您的账户"
   },
   "oAuthMessageListener": {
-    "clientUsesMesh": "{{clientName}}使用Mesh安全连接并便于您在{{selectedIntegrationName}}中的转账。",
+    "clientUsesMesh": "{{clientName}}使用Mesh安全协议关联并优化您在{{selectedIntegrationName}}中的资产转移。",
     "description": "登录您的账户并允许访问",
-    "monitoring": "正在等待批准...",
+    "monitoring": "正在等待批准......",
     "open": "打开{{selectedIntegrationName}}",
     "reopen": "重新打开{{selectedIntegrationName}}",
-    "title": "继续{{selectedIntegrationName}}窗口",
-    "willFacilitate": "将便于与{{selectedIntegrationName}}的安全连接。"
+    "title": "前往{{selectedIntegrationName}}页面继续",
+    "willFacilitate": "将优化完成与{{selectedIntegrationName}}的安全连接。"
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
       "client": "您批准了从{{selectedIntegrationName}}到{{clientName}}的<1>{{amount}}</1>转账。",
-      "destination": "您批准了从{{selectedIntegrationName}}到目的地的<1>{{amount}}</1>转账。"
+      "destination": "您批准了从{{selectedIntegrationName}}到目标账户<1>{{amount}}</1>的转账。"
     },
     "buyingPowerPurchase": "在{{selectedIntegrationName}}中购买价值<1>{{amount}}</1>的{{symbol}} <5>(~ {{amountInCrypto}})</5>。",
-    "conversionStep": "将<1>{{amount}}</1>转换为<4>{{currency}}</4>。",
-    "depositTitle": "存款进行中",
-    "description": "这可能需要一些时间...",
+    "conversionStep": "将<1>{{amount}}</1>兑换为<4>{{currency}}</4>。",
+    "depositTitle": "充值中",
+    "description": "请耐心等待......",
     "existingCryptocurrencyBalance": {
-      "approveClient": "您批准从{{selectedIntegrationName}}转账到{{clientName}}。",
-      "approveDestination": "您批准从{{selectedIntegrationName}}转账到目标地址。",
-      "transfer": "从{{selectedIntegrationName}}到{{clientName}}的<1>{{amount}}</1>转账。",
+      "approveClient": "您已批准从{{selectedIntegrationName}}到{{clientName}}转账。",
+      "approveDestination": "您批准从{{selectedIntegrationName}}转账到目标账户。",
+      "transfer": "从{{selectedIntegrationName}}转账 <1>{{amount}}</1> 至{{clientName}}。",
       "transferHideClient": "从{{selectedIntegrationName}}的<1>{{amount}}</1>转账。",
-      "transferHideClientWithAddress": "从{{selectedIntegrationName}}到{{address}}的<1>{{amount}}</1>转账。",
-      "transferSmartDeposit": "通过中继合约从{{selectedIntegrationName}}到{{clientName}}的<1>{{amount}}</1>转账。",
-      "transferSmartDepositHideClient": "通过中继合约从{{selectedIntegrationName}}的<1>{{amount}}</1>转账。",
-      "transferSmartDepositHideClientWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{address}}的<1>{{amount}}</1>转账。",
+      "transferHideClientWithAddress": "从{{selectedIntegrationName}}转账<1>{{amount}}</1>至{{address}}。",
+      "transferSmartDeposit": "通过中继合约从{{selectedIntegrationName}}转账<1>{{amount}}</1>至{{clientName}}。",
+      "transferSmartDepositHideClient": "通过中继合约从{{selectedIntegrationName}}转出<1>{{amount}}</1>。",
+      "transferSmartDepositHideClientWithAddress": "通过中继合约从{{selectedIntegrationName}}转出<1>{{amount}}</1>至{{address}} 。",
       "transferSmartDepositWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。",
       "transferWithAddress": "从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。"
     },
-    "onrampTitle": "购买进行中",
+    "onrampTitle": "购买中",
     "paymentMethodDepositUsage": "从{{paymentMethod}}存入<1>{{amount}}</1>到{{selectedIntegrationName}}。",
-    "paymentTitle": "付款进行中",
-    "transactionTitle": "交易进行中",
+    "paymentTitle": "付款中",
+    "transactionTitle": "交易中",
     "tryAgain": "再试一次"
   },
   "orderSummaryDrawer": {
     "merchantInfoName": "商户：{{clientName}}",
-    "title": "订单摘要",
+    "title": "订单详情",
     "totalLabel": "总计"
   },
   "passwordPage": {
@@ -819,19 +819,19 @@
   "paymentUpdateDrawerContent": {
     "cancel": "取消",
     "clickToPay": "点击下方进行充值以补足{{token}}余额。",
-    "description": "购买后您的{{token}}余额低于预期，原因是{{token}}价格或手续费的变动。",
-    "ifDontComplete": "如果您未完成支付，您的{{token}}余额将留在您的{{selectedIntegrationName}}帐户中。",
+    "description": "购买后您的{{token}}余额低于预期，原因是{{token}}价格及/或燃料费的变动。",
+    "ifDontComplete": "如果您未完成支付，您的{{token}}余额将保留在您的{{selectedIntegrationName}}帐户中。",
     "onYourAccount": "在您的账户上",
-    "title": "支付更新",
+    "title": "支付状态更新",
     "topUp": "充值{{token}}余额"
   },
   "payPalConnectOAuthPage": {
     "close": "关闭",
-    "continue": "继续到{{selectedIntegrationName}}",
+    "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
-    "notSupported": "{{selectedIntegrationName}} 不支持对所请求的代币和/或网络的转账。",
+    "notSupported": "{{selectedIntegrationName}} 不支持所请求的代币或网络的转账。",
     "selectAnotherAccount": "选择另一个账户",
-    "selectAnotherExchange": "请选择另一个可以进行存款的交易所或钱包。",
+    "selectAnotherExchange": "请选择另一个可以进行充值的交易所或钱包。",
     "selectNetwork": "选择转账网络",
     "title": "选择要转账的资产"
   },
@@ -845,59 +845,59 @@
     "payWithLabelWithName": "使用 {{integrationName}} 支付"
   },
   "previewTransfer": {
-    "allFeesIncluded": "所有费用已包括",
+    "allFeesIncluded": "所有费用已包含在内",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
     "approveTransferRequest": "在您的钱包中批准转账请求<1></1>",
     "changeAmount": "更改金额",
     "depositTitle": "存款预览",
     "dustLeft": "您可能会有一些多余的{{symbol}}。",
-    "estimatedGasFee": "估算的Gas费",
-    "estimatedGasFeeHint": "估算的用来补偿网络验证者处理这笔交易的计算能力的费用。",
-    "from": "发件人",
-    "fundingWith": "使用",
-    "institutionTransferFee": "{{selectedIntegrationName}}提款费",
-    "institutionTransferFeeHint": "{{selectedIntegrationName}}为促进您从{{symbol}}中转账所收取的费用。",
-    "maxAmount": "您的帐户最多可以支持<2>{{networkMaxAmount}}</2>。您想调整您的转帐到此金额吗？",
-    "monitoring": "正在等待批准...",
+    "estimatedGasFee": "燃料费估计",
+    "estimatedGasFeeHint": "网络验证者处理交易的算力费用补偿估值。",
+    "from": "发起者",
+    "fundingWith": "充值选项",
+    "institutionTransferFee": "{{selectedIntegrationName}}提现费",
+    "institutionTransferFeeHint": "为支持您从 {{symbol}}中发起的转账，{{selectedIntegrationName}} 将收取的费用。",
+    "maxAmount": "您的帐户最多可以存入<2>{{networkMaxAmount}}</2>。是否调整为此最大值？",
+    "monitoring": "正在等待批准……",
     "network": "网络",
     "onrampTitle": "购买预览",
-    "payingWith": "支付",
+    "payingWith": "支付方式",
     "paymentTitle": "支付预览",
     "proceed": "继续",
-    "processingFee": "处理费",
-    "processingFeeHint": "为处理这笔交易收取的费用。",
-    "receive": "接收",
-    "resendTransferRequest": "重新发送转账请求",
+    "processingFee": "手续费",
+    "processingFeeHint": "为处理此交易所收取的手续费。",
+    "receive": "收款",
+    "resendTransferRequest": "再次发送转账请求",
     "seconds": "{{seconds}}秒",
     "symbolBalance": "{{symbol}}余额",
-    "to": "收件人",
+    "to": "收款方",
     "total": "总计",
     "transferDeclined": "转账被拒绝",
-    "transferDeclinedBody": "您已经在钱包中拒绝了转账请求。",
+    "transferDeclinedBody": "您已经在钱包中拒绝该转账请求。",
     "transferTitle": "转账预览",
-    "youMayReceiveLess": "由于{{symbol}}价格波动，您可能收到的金额会更少。"
+    "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
   "privacyComponent": {
-    "content": "您的数据始终是私密且加密的。"
+    "content": "您的数据全程加密，隐私绝对安全。"
   },
   "qrCodePassword": {
-    "expired": "QR码已过期",
-    "generateNew": "生成新的QR码",
-    "qrCodeLabel": "二维码可以在您的移动设备上进行扫描以建立连接",
-    "scanText": "使用您的 {{appName}} 应用<1></1>扫描此代码以立即登录。"
+    "expired": "二维码已过期",
+    "generateNew": "生成新的二维码",
+    "qrCodeLabel": "使用您的移动设备扫描二维码以建立连接",
+    "scanText": "使用您的 {{appName}} 应用<1></1>扫描此二维码登录。"
   },
   "receiveAmountInput": {
     "onNetwork": "在{{network}}上"
   },
   "revolutConnectOAuthPage": {
-    "amountMustBeAtLeast": "金额必须至少为$8",
-    "continue": "继续到{{selectedIntegrationName}}",
+    "amountMustBeAtLeast": "金额不能低于$8",
+    "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "selectAsset": "选择要转账的资产",
     "selectNetwork": "选择转账网络"
   },
   "robinhoodConnectOAuthPage": {
-    "continue": "继续到{{selectedIntegrationName}}",
+    "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "selectAsset": "选择要转账的资产",
     "selectNetwork": "选择转账网络"
@@ -906,32 +906,32 @@
     "title": "选择资产"
   },
   "selectHoldingPage": {
-    "binanceDirectNoAssetsBody1": "看起来您的关联账户中没有任何资产。",
-    "binanceDirectNoAssetsBody2": "您可以为您的帐户增加资金或连接一个不同的帐户以继续进行转账。",
-    "cannotFundBody": "在此账户中您没有足够的加密货币或法定货币余额来进行此交易。",
-    "cannotFundTitle": "无法资助交易",
-    "connectAnotherButton": "连接不同的账户",
+    "binanceDirectNoAssetsBody1": "您的关联账户中似乎没有任何资产。",
+    "binanceDirectNoAssetsBody2": "您可以充值至您的帐户，或选择另一个帐户继续转账。",
+    "cannotFundBody": "您的账户中加密货币或法定货币余额不足，无法进行此交易。",
+    "cannotFundTitle": "资金无法支持交易",
+    "connectAnotherButton": "选择另一个账户",
     "defaultTitle": "选择代币",
-    "depositTitle": "选择存款代币",
+    "depositTitle": "选择充值代币",
     "ineligibleAssets": "无法使用的资产",
-    "loading": "正在加载您的资产...",
-    "noAssetsTitle": "未在关联账户中检测到资产",
-    "noEligibleAssetsTitle": "此账户中的资产不符合该转账的条件",
-    "notEnoughtBody": "向您的账户添加更多{{symbol}}，然后返回此处重试。",
-    "notEnoughtTitle": "不足的{{symbol}}",
+    "loading": "正在加载您的资产……",
+    "noAssetsTitle": "关联账户中未检测出资产",
+    "noEligibleAssetsTitle": "此账户中资产不符合该转账要求",
+    "notEnoughtBody": "请向您的账户充值更多{{symbol}}，然后返回此处重试。",
+    "notEnoughtTitle": "{{symbol}}不足",
     "otherEligible": "其他合格资产",
     "paymentTitle": "选择支付代币",
     "returnToAppButton": "返回应用",
     "returnToClientButton": "返回{{clientName}}",
-    "spotAccountsBody": "目前仅支持现货账户。其他账户类型如保证金账户中的资产将不会被检测到。",
+    "spotAccountsBody": "当前仅支持现货账户。其他账户类型（例如保证金账户）中的资产将不会被检测到。",
     "topUpButton": "充值余额",
-    "unableTransferError": "无法启动转账。"
+    "unableTransferError": "无法发起转账。"
   },
   "selectItem": {
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "无法连接的网络"
+    "ineligibleNetwork": "无法使用的网络"
   },
   "selectNetworkScreen": {
     "title": "选择要连接的网络"
@@ -950,20 +950,20 @@
   "setupAuthAppPage": {
     "alternativeText": "或者，您可以将此手动代码粘贴到验证应用程序中",
     "copyCodeTitle": "手动代码",
-    "downloadStep": "从Google Play或App Store下载<1>Google Authenticator app</1>",
+    "downloadStep": "从Google Play或App Store下载<1>Google Authenticator 应用</1>",
     "nextButton": "下一步",
     "qrCodeAlt": "二维码",
-    "scanStep": "通过<1>扫描QR码</1>将{{selectedIntegrationName}}添加到您的验证器应用中",
-    "title": "设置验证器应用"
+    "scanStep": "通过<1>扫描二维码</1>将{{selectedIntegrationName}}添加到您的验证应用中",
+    "title": "设置验证应用"
   },
   "setupEmailPage": {
-    "description": "输入您的电子邮件地址。<1></1><2>{{selectedIntegrationName}}</2> 将使用此电子邮件在您执行账户中的某些操作时向您发送确认码。",
-    "emailTitle": "电子邮件",
-    "enterError": "请输入电子邮件",
-    "title": "设置电子邮件"
+    "description": "输入您的电子邮件地址。<1></1><2>{{selectedIntegrationName}}</2> 将在您执行某些操作时向此地址发送确认码。",
+    "emailTitle": "电子邮箱",
+    "enterError": "请输入电子邮箱",
+    "title": "设置电子邮箱"
   },
   "termsAndConditionsPage": {
-    "paragraph1": "Mesh Connect, Inc.（以下简称“公司”）是一个技术提供商，它创建了一款通讯工具（以下简称“工具”），帮助促进您使用的第三方服务的某些功能（以下简称“终端用户服务”）。这些功能旨在通过终端用户服务，使您能够与您的第三方账户和钱包（“连接账户”）进行沟通，包括发送您希望执行的指令。",
+    "paragraph1": "Mesh Connect, Inc.（以下简称<1>“该公司”</1>）是一个技术提供商，该公司创建了一款通讯工具（以下简称<3>“工具”</3>），协助您使用的第三方服务的某些功能（以下简称<5>“终端用户服务”</5>）。这些功能旨在通过终端用户服务，使您能够与您的第三方账户和钱包（<7>“连接账户”</7>）交互，包括发送您希望执行的指令。",
     "paragraph10": "仲裁将由美国仲裁协会根据修改后的《消费者仲裁规则》进行管理，这些规则可在<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>查看。除非您或我们提出要求，并且仲裁员认为当面听证是适当的，否则仲裁员将通过电话或视讯会议进行听证，而不是亲自出席。任何亲自出席都会安排在对双方合理方便的地点，并充分考虑到出行的能力和其他相关情况。如果您与公司无法就地点达成协议，则应由AAA或仲裁员作出决定。仲裁员的裁决将遵循这些条款，具有最终约束力。仲裁员有权授予临时、临时性或永久性的禁令或特定执行这些条款的救济，但仅限于仲裁员面前的单项索赔所保障的范围。仲裁员的裁决可以在具有管辖权的任何法院得到确认和执行。尽管有上述限制，您仍可将问题向联邦、州或地方机构反映，并在法律允许的情况下，他们可为您对我们寻求救济。",
     "paragraph11": "这些条款构成您和公司之间关于其主题的完整协议，取代所有此前的相关口头或书面陈述或协议。如果任何条款在适用法律下不可执行，则该条款应在尽可能不改变原条款意图的前提下进行修订。如无法进行此类修订，该条款将被分割，其余条款继续有效。您确认并同意公司的服务提供商为这些条款的预期第三方受益人。接受这些条款与条件或使用工具，即表示您同意受本协约条款与条件的约束。",
     "paragraph2": "您确认并同意终端用户服务的某些功能基于工具；您对这些功能使用的实施是基于您的指令；公司及其服务提供商不提供经纪服务或从事付款处理；公司及其服务提供商对终端用户服务或连接账户以及其提供商的条款、政策、行为或不作为不承担任何责任。",
@@ -1002,7 +1002,7 @@
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "正在等待来自移动应用程序的确认",
     "confirmButton": "我已在应用中验证",
-    "description": "在您的 {{selectedIntegrationName}} 移动应用中确认确实是您尝试登录。",
+    "description": "在您的 {{selectedIntegrationName}} 移动应用中确认是本人在尝试登录。",
     "desktopSteps": {
       "confirm": "在提示中确认以验证是您本人",
       "openApp": "在手机上打开 {{selectedIntegrationName}} 应用程序",
@@ -1010,8 +1010,8 @@
     },
     "mobileSteps": {
       "clickOpen": "点击下方<1>打开 {{selectedIntegrationName}} 应用程序</1>",
-      "verifyLogin": "验证您是从新设备登录的",
-      "verifyTransfer": "验证是您本人在请求转账"
+      "verifyLogin": "验证您正在从新设备登录",
+      "verifyTransfer": "验证是您本人在发起转账"
     },
     "openApp": "打开 {{selectedIntegrationName}} 应用程序",
     "sendNewRequest": "发送新请求",
@@ -1020,19 +1020,19 @@
   },
   "transferEmailApprovalConfirmation": {
     "approve": "点击确认页中的<1>批准</1>。",
-    "approveOrCancel": "在邮件中点击<1>批准或取消取款</1>。",
-    "confirmButton": "我已批准取款",
-    "description": "请检查您的收件箱，查找请求您确认新取款的电子邮件。",
+    "approveOrCancel": "在邮件中点击<1>批准或取消提现</1>。",
+    "confirmButton": "我已批准提现",
+    "description": "我们已发送邮件给您以确认提现，请检查您的收件箱。",
     "return": "返回此处并点击下方以继续您的转账。",
-    "title": "批准取款"
+    "title": "批准提现"
   },
   "transferErrorPage": {
-    "defaultError": "发生未知错误。请点击下方开始新的转账会话。"
+    "defaultError": "发生未知错误。请点击下方开始新的转账流程。"
   },
   "transferErrors": {
-    "failedToExecute": "无法执行转账",
-    "failedToPreview": "无法预览转账",
-    "mfaEmailFailed": "电子邮件的代码错误，请重新输入代码",
+    "failedToExecute": "执行转账失败",
+    "failedToPreview": "预览转账失败",
+    "mfaEmailFailed": "电子邮件验证代码错误，请重新输入",
     "mfaFaceFailed": "验证失败，请重试",
     "mfaFailed": "代码错误，请重新输入代码",
     "mfaPhoneFailed": "短信代码错误，请重新输入代码",
@@ -1041,13 +1041,13 @@
   },
   "transferFacePage": {
     "clickOpenApp": "点击<1>打开 {{selectedIntegrationName}} 应用程序</1>以打开应用并完成面部验证。",
-    "completeMobile": "完成面部验证以确认确实是您正在尝试转移资金。",
+    "completeMobile": "完成面部验证以确认确实是您本人正在转移资金。",
     "confirmCompleted": "我已完成验证",
-    "openApp": "打开{{selectedIntegrationName}}应用",
+    "openApp": "打开{{selectedIntegrationName}}应用程序",
     "reopenApp": "重新打开{{selectedIntegrationName}}应用程序",
-    "return": "然后返回此处完成账户链接。",
+    "return": "返回此处完成账户链接。",
     "returnContinue": "返回此处继续链接您的账户。",
-    "scanQR": "扫描QR码完成面部验证以确认确实是您正在尝试转移资金。",
+    "scanQR": "扫描二维码完成面部验证以确认是您本人正在转移资金。",
     "title": "验证"
   },
   "transferMfaPage": {
@@ -1055,20 +1055,20 @@
     "verify": "验证"
   },
   "transferPreviewErrorPage": {
-    "aboveMaximum": "超过{{integrationName}}最大值",
+    "aboveMaximum": "高于{{integrationName}}最高限额",
     "belowMinimum": "低于 {{integrationName}} 最低限额",
     "connectAnotherAccount": "请连接另一个账户。",
-    "connectDifferent": "连接不同的账户",
-    "insufficientBalanceError": "余额不足，无法资助此交易。",
-    "insufficientFunds": "资金不足",
-    "unknownError": "发生未知错误。请点击下面开始新的转账会话。"
+    "connectDifferent": "连接其他账户",
+    "insufficientBalanceError": "余额不足，无法完成此交易。",
+    "insufficientFunds": "余额不足",
+    "unknownError": "发生未知错误。请点击下面开始新的转账流程。"
   },
   "transferSteps": {
     "approveTransfer": "您批准从 {{integrationName}} 到 {{clientName}} 的转账",
-    "approveTransferDeFi": "系统会提示您在 {{integrationName}} 上批准转账",
+    "approveTransferDeFi": "系统将会提示您在 {{integrationName}} 上批准转账",
     "approveTransferToDestination": "您批准从 {{integrationName}} 到目的地的转账",
-    "convertAmount": "将 {{fromAmount}} 转换为 {{toCurrency}}",
-    "depositAmount": "从 {{paymentMethod}} 到 {{integrationName}} 的存款 {{amount}}",
+    "convertAmount": "将 {{fromAmount}} 兑换为 {{toCurrency}}",
+    "depositAmount": "从 {{paymentMethod}} 充值{{amount}} 至 {{integrationName}}",
     "purchaseAmount": "在 {{integrationName}}中购买价值 <2>{{amount}}</2> 的 {{cryptocurrencySymbol}} 。",
     "showLess": "显示更少",
     "showMore": "显示更多",
@@ -1141,10 +1141,10 @@
   "walletDoneScreen": {
     "completePaymentMessage": "返回您的结账体验以完成您的 {{clientName}} 购买。",
     "continueMessage": "请继续在您的{{clientName}}应用中操作。",
-    "successMessage": "您已成功验证您拥有的 {{walletName}} 钱包。"
+    "successMessage": "您已成功验证对 {{walletName}} 钱包的所有权。"
   },
   "withdrawalLockedErrorPage": {
     "another": "从其他账户转账",
-    "title": "提款暂时禁用"
+    "title": "暂时无法使用提款功能"
   }
 }
