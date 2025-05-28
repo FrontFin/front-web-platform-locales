@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "6 haneli kod"
   },
+  "accessDeniedPage": {
+    "title": "Erişim reddedildi",
+    "body": "Maalesef, ülkenizden gelen etkinlik şu anda izin verilmiyor."
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Fiat/Kripto Değiştir"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "Başka bir hesap bağlayın"
   },
   "connectionFailedPage": {
-    "defaultError": "Bir hata oluştu."
+    "defaultError": "Bir hata oluştu.",
+    "directMobileFlowError": "Oturum süresi doldu. Lütfen Tao ödeme sayfanıza dönün ve tekrar deneyin."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Başka bir cüzdan bağlayın",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Shift4'e geri dön",
     "goToIntegrationToApprove": "Lütfen bu transferi onaylamak için <1>{{selectedIntegrationName}}</1> adresine gidin.",
     "paymentInitiated": "{{clientName}}'e<1></1><2>{{amountCrypto}}</2><3></3> ödeme başlattınız.",
-    "waiting": "Aktarımlar, gerekli ağ onaylarını alana kadar tamamlanmaz."
+    "waiting": "Aktarımlar, gerekli ağ onaylarını alana kadar tamamlanmaz.",
+    "directMobileTitle": "Ödeme başlatıldı",
+    "directMobileBody": "Ödemenizi tamamlamak için Tao ödeme sayfanıza geri dönün."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "{{address}} adresinin sahipliği <4>{{clientName}}</4> için zaten doğrulandı.",
@@ -775,6 +782,8 @@
     "conversionStep": "<1>{{amount}}</1>'un <4>{{currency}}</4>'a dönüştürülmesi.",
     "depositTitle": "Para yatırma işlemi devam ediyor",
     "description": "Bu biraz zaman alabilir...",
+    "processing": "Ödeme İşleniyor",
+    "mayTakeFewSeconds": "Bu birkaç saniye sürebilir",
     "existingCryptocurrencyBalance": {
       "approveClient": "{{selectedIntegrationName}}'den {{clientName}}'e transferi onaylıyorsunuz.",
       "approveDestination": "{{selectedIntegrationName}}'den varış yerine transferi onaylıyorsunuz.",
@@ -929,7 +938,9 @@
     "returnToClientButton": "{{clientName}}'e dön",
     "spotAccountsBody": "Şu anda yalnızca spot hesaplar desteklenmektedir. Kredi hesapları gibi diğer hesap türlerindeki varlıklar tespit edilemeyecektir.",
     "topUpButton": "Bakiye Yükle",
-    "unableTransferError": "Transfer başlatılamıyor."
+    "unableTransferError": "Transfer başlatılamıyor.",
+    "topUpUSDCInstruction": "Phantom cüzdanınızda USDC bakiyenizi arttırın.",
+    "tryAgainFromTaoInstruction": "Tao ödeme sayfanızdan tekrar deneyin."
   },
   "selectItem": {
     "label": "Seç {{text}}"

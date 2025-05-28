@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "Код из 6 цифр"
   },
+  "accessDeniedPage": {
+    "title": "Доступ запрещён",
+    "body": "К сожалению, активность из вашей страны в настоящий момент недоступна."
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Переключить Валюта/Крипто"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "Подключить другой аккаунт"
   },
   "connectionFailedPage": {
-    "defaultError": "Произошла ошибка."
+    "defaultError": "Произошла ошибка.",
+    "directMobileFlowError": "Сессия истекла. Пожалуйста, вернитесь на страницу оформления заказа Tao и попробуйте снова."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Подключить другой кошелек",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
     "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><3></3> для {{clientName}}",
-    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети."
+    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети.",
+    "directMobileTitle": "Платеж инициирован",
+    "directMobileBody": "Вернитесь на страницу оформления заказа Tao, чтобы завершить оплату."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Владелец адреса {{address}} уже верифицирован для <4>{{clientName}}</4>.",
@@ -775,6 +782,8 @@
     "conversionStep": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
     "depositTitle": "Идет пополнение",
     "description": "Это может занять некоторое время...",
+    "processing": "Обработка вашего платежа",
+    "mayTakeFewSeconds": "Это может занять несколько секунд",
     "existingCryptocurrencyBalance": {
       "approveClient": "Вы одобряете перевод с {{selectedIntegrationName}} на {{clientName}}.",
       "approveDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
@@ -929,7 +938,9 @@
     "returnToClientButton": "Вернуться к {{clientName}}",
     "spotAccountsBody": "В настоящее время поддерживаются только спот-счета. Активы на других типах счетов, например на маржинальных, не будут отображены.",
     "topUpButton": "Пополнить баланс",
-    "unableTransferError": "Невозможно начать перевод."
+    "unableTransferError": "Невозможно начать перевод.",
+    "topUpUSDCInstruction": "Пополните баланс USDC в вашем электронном кошельке Phantom.",
+    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа Tao."
   },
   "selectItem": {
     "label": "Выбор {{text}}"

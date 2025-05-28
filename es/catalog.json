@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "código de 6 dígitos"
   },
+  "accessDeniedPage": {
+    "title": "Acceso denegado",
+    "body": "Desafortunadamente, la actividad desde tu país actualmente no está permitida."
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Cambiar Fiat/Cripto"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "Conectar otra cuenta"
   },
   "connectionFailedPage": {
-    "defaultError": "Ha ocurrido un error."
+    "defaultError": "Ha ocurrido un error.",
+    "directMobileFlowError": "Sesión expirada. Por favor, vuelva a su página de pago de Tao e inténtelo de nuevo."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Conectar otra cartera",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Regresar a Shift4",
     "goToIntegrationToApprove": "Por favor, ve a <1>{{selectedIntegrationName}}</1> para aprobar esta transferencia.",
     "paymentInitiated": "Has iniciado un pago de <1></1><2>{{amountCrypto}}</2> <3></3> a {{clientName}}",
-    "waiting": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red."
+    "waiting": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red.",
+    "directMobileTitle": "Pago iniciado",
+    "directMobileBody": "Regrese a su página de pago de Tao para finalizar su pago."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "La propiedad de la dirección {{address}} ya ha sido verificada por <4>{{clientName}}</4>.",
@@ -775,6 +782,8 @@
     "conversionStep": "Conversión de <1>{{amount}}</1> a <4>{{currency}}</4>.",
     "depositTitle": "Depósito en curso",
     "description": "Esto puede tardar un poco...",
+    "processing": "Procesando pago",
+    "mayTakeFewSeconds": "Esto puede tardar unos segundos",
     "existingCryptocurrencyBalance": {
       "approveClient": "Apruebas la transferencia de {{selectedIntegrationName}} a {{clientName}}.",
       "approveDestination": "Apruebas la transferencia de {{selectedIntegrationName}} al destino.",
@@ -929,7 +938,9 @@
     "returnToClientButton": "Regresar a {{clientName}}",
     "spotAccountsBody": "Solo las cuentas spot son soportadas. No se detectarán activos en otros apartados.",
     "topUpButton": "Recargar saldo",
-    "unableTransferError": "No se puede iniciar la transferencia."
+    "unableTransferError": "No se puede iniciar la transferencia.",
+    "topUpUSDCInstruction": "Recargue su saldo de USDC en su wallet de Phantom.",
+    "tryAgainFromTaoInstruction": "Inténtelo de nuevo desde su página de pago de Tao."
   },
   "selectItem": {
     "label": "Selecciona {{text}}"

@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "6-numeroinen koodi"
   },
+  "accessDeniedPage": {
+    "title": "Pääsy estetty",
+    "body": "Valitettavasti toimintaa maastasi ei tällä hetkellä sallita."
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "Yhdistä toinen tili"
   },
   "connectionFailedPage": {
-    "defaultError": "Tapahtui virhe."
+    "defaultError": "Tapahtui virhe.",
+    "directMobileFlowError": "Istunto vanheni. Palaa Tao-kassasivullesi ja yritä uudelleen."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Yhdistä toinen lompakko",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Palaa Shift4:ään",
     "goToIntegrationToApprove": "Ole hyvä ja mene kohteeseen <1>{{selectedIntegrationName}}</1> hyväksyäksesi tämän siirron.",
     "paymentInitiated": "Olet aloittanut maksun<1></1><2>{{amountCrypto}}</2><3></3>kohteeseen {{clientName}}",
-    "waiting": "Siirrot eivät ole täydellisiä, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia."
+    "waiting": "Siirrot eivät ole täydellisiä, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia.",
+    "directMobileTitle": "Maksu aloitettu",
+    "directMobileBody": "Palaa Tao-kassasivullesi viimeistelläksesi maksusi."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Osoitteen {{address}} omistajuus on jo vahvistettu kohteelle <4>{{clientName}}</4>.",
@@ -775,6 +782,8 @@
     "conversionStep": "Muunnetaan <1>{{amount}}</1> valuuttaan <4>{{currency}}</4>.",
     "depositTitle": "Talletus käynnissä",
     "description": "Tämä voi kestää jonkin aikaa...",
+    "processing": "Maksun käsittelyssä",
+    "mayTakeFewSeconds": "Tämä saattaa kestää muutaman sekunnin",
     "existingCryptocurrencyBalance": {
       "approveClient": "Hyväksyt siirron {{selectedIntegrationName}}:sta {{clientName}}:iin.",
       "approveDestination": "Hyväksyt siirron {{selectedIntegrationName}}:sta kohteeseen.",
@@ -929,7 +938,9 @@
     "returnToClientButton": "Palaa {{clientName}}:iin",
     "spotAccountsBody": "Tällä hetkellä tukena on vain spot-tilit. Muita tilin tyyppejä, kuten marginaalitilejä, ei havaita.",
     "topUpButton": "Lisää saldoa",
-    "unableTransferError": "Siirtoa ei ole mahdollista aloittaa."
+    "unableTransferError": "Siirtoa ei ole mahdollista aloittaa.",
+    "topUpUSDCInstruction": "Lisää USDC-saldoasi Phantom-lompakossasi.",
+    "tryAgainFromTaoInstruction": "Yritä uudelleen Tao-kassasivultasi."
   },
   "selectItem": {
     "label": "Valitse {{text}}"

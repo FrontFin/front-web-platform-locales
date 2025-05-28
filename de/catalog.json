@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "6-stelliger Code"
   },
+  "accessDeniedPage": {
+    "title": "Zugriff verweigert",
+    "body": "Leider ist Aktivitäten aus Ihrem Land derzeit nicht erlaubt."
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Fiat/Krypto wechseln"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "Ein weiteres Konto verbinden"
   },
   "connectionFailedPage": {
-    "defaultError": "Ein Fehler ist aufgetreten."
+    "defaultError": "Ein Fehler ist aufgetreten.",
+    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehren Sie zu Ihrer Tao-Kassenseite zurück und versuchen Sie es erneut."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Eine weitere Wallet verbinden",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Zurück zu Shift4",
     "goToIntegrationToApprove": "Bitte gehe zu <1>{{selectedIntegrationName}}</1>, um diese Überweisung zu genehmigen.",
     "paymentInitiated": "Du hast eine Zahlung von<1></1><2>{{amountCrypto}}</2><3></3>an {{clientName}} eingeleitet",
-    "waiting": "Überweisungen sind nicht abgeschlossen, bis sie genügend Netzwerkbestätigungen erhalten haben."
+    "waiting": "Überweisungen sind nicht abgeschlossen, bis sie genügend Netzwerkbestätigungen erhalten haben.",
+    "directMobileTitle": "Zahlung initiiert",
+    "directMobileBody": "Kehren Sie zu Ihrer Tao-Kassenseite zurück, um Ihre Zahlung abzuschließen."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Das Eigentum der Adresse {{address}} wurde bereits für <4>{{clientName}}</4> überprüft.",
@@ -775,6 +782,8 @@
     "conversionStep": "Umrechnung von <1>{{amount}}</1> zu <4>{{currency}}</4>.",
     "depositTitle": "Einzahlung in Bearbeitung",
     "description": "Dies kann einige Zeit dauern ...",
+    "processing": "Bearbeitung der Zahlung",
+    "mayTakeFewSeconds": "Dies kann einige Sekunden dauern",
     "existingCryptocurrencyBalance": {
       "approveClient": "Du genehmigst die Überweisung von {{selectedIntegrationName}} zu {{clientName}}.",
       "approveDestination": "Du genehmigst die Überweisung von {{selectedIntegrationName}} zum Ziel.",
@@ -929,7 +938,9 @@
     "returnToClientButton": "Zurück zu {{clientName}}",
     "spotAccountsBody": "Derzeit werden nur Spot-Konten unterstützt. Assets in anderen Kontotypen, wie Margin, werden nicht erkannt.",
     "topUpButton": "Guthaben aufladen",
-    "unableTransferError": "Die Überweisung kann nicht gestartet werden."
+    "unableTransferError": "Die Überweisung kann nicht gestartet werden.",
+    "topUpUSDCInstruction": "Laden Sie Ihr USDC-Guthaben in Ihrem Phantom-Wallet auf.",
+    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer Tao-Kassenseite."
   },
   "selectItem": {
     "label": "{{text}} auswählen"

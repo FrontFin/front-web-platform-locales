@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "Veuillez saisir votre code de vérification à 6 chiffres"
   },
+  "accessDeniedPage": {
+    "title": "Accès refusé",
+    "body": "Malheureusement, l'activité de votre pays n'est actuellement pas autorisée."
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Afficher en : fiat / crypto"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "Connecter un autre compte"
   },
   "connectionFailedPage": {
-    "defaultError": "Une erreur est survenue."
+    "defaultError": "Une erreur est survenue.",
+    "directMobileFlowError": "Session expirée. Veuillez retourner sur votre page de paiement Tao et réessayer."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Connecter un autre portefeuille",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Retourner à Shift4",
     "goToIntegrationToApprove": "Veuillez aller sur <1>{{selectedIntegrationName}}</1> pour approuver ce transfert.",
     "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3>à {{clientName}}",
-    "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau."
+    "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau.",
+    "directMobileTitle": "Paiement initié",
+    "directMobileBody": "Retournez sur votre page de paiement Tao pour finaliser votre paiement."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "La propriété de l'adresse {{address}} a déjà été vérifiée pour <4>{{clientName}}</4>.",
@@ -312,7 +319,7 @@
     "amountBelowMinimum": "Le montant demandé est inférieur au montant minimum de transfert autorisé sur ce réseau.",
     "amountExceedsMaximum": "Le montant demandé dépasse le montant maximum autorisé pour un transfert sur ce réseau.",
     "balanceNotEnough": "Solde insuffisant.",
-    "binanceTravelRuleRestriction": "Binance ne prend pas en charge les transferts vers l'adresse de destination en raison des restrictions de la règle de voyage.",
+    "binanceTravelRuleRestriction": "Binance ne prend pas en charge les transferts vers l’adresse de destination en raison des restrictions imposées par la Travel Rule.",
     "coinbaseUnavailable": "Coinbase a rencontré une erreur. Veuillez vérifier votre compte Coinbase pour confirmer si le transfert a bien été effectué.",
     "default": "Une erreur est survenue.",
     "emptyWalletBalance": "Le solde du portefeuille Source est vide.",
@@ -326,7 +333,7 @@
     "networkDisabled": "Le réseau est actuellement désactivé et ne peut pas être utilisé.",
     "passKeyNotSupported": "La clé d'accès n'est actuellement pas prise en charge, veuillez la désactiver pour continuer.",
     "previewExpired": "L'aperçu a expiré.",
-    "satoshiTestRequired": "L'API Coinbase ne prend pas en charge les transferts de plus de 1000 euros en raison des restrictions de la règle de voyage. Veuillez réessayer avec un montant inférieur.",
+    "satoshiTestRequired": "L’API de Coinbase ne prend pas en charge les transferts supérieurs à 1000  euros en raison des restrictions imposées par la Travel Rule. Veuillez réessayer avec un montant inférieur.",
     "symbolNotSupported": "Le symbole n'est pas pris en charge par l'intégration.",
     "symbolNotSupportedBySource": "Le symbole à transférer n’est pas pris en charge par le portefeuille source sur le réseau sélectionné.",
     "symbolNotSupportedByTarget": "Impossible de trouver l’adresse de dépôt pour la crypto-monnaie demandée.",
@@ -775,6 +782,8 @@
     "conversionStep": "Conversion de <1>{{amount}}</1> en <4>{{currency}}</4>.",
     "depositTitle": "Dépôt en cours",
     "description": "Cela peut prendre un certain temps...",
+    "processing": "Paiement en cours de traitement",
+    "mayTakeFewSeconds": "Cela peut prendre quelques secondes",
     "existingCryptocurrencyBalance": {
       "approveClient": "Vous approuvez le transfert de {{selectedIntegrationName}} à {{clientName}}.",
       "approveDestination": "Vous approuvez le transfert de {{selectedIntegrationName}} à la destination.",
@@ -929,7 +938,9 @@
     "returnToClientButton": "Retour à {{clientName}}",
     "spotAccountsBody": "Seuls les comptes de type spot sont actuellement pris en charge. Les actifs dans d'autres types de comptes, tels que les comptes sur marge, ne seront pas détectés.",
     "topUpButton": "Recharger le solde",
-    "unableTransferError": "Impossible d'initier le transfert."
+    "unableTransferError": "Impossible d'initier le transfert.",
+    "topUpUSDCInstruction": "Rechargez votre solde USDC dans votre portefeuille Phantom.",
+    "tryAgainFromTaoInstruction": "Essayez de nouveau depuis votre page de paiement Tao."
   },
   "selectItem": {
     "label": "Sélectionner {{text}}"

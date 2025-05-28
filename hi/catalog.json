@@ -10,6 +10,10 @@
   "authCodeInput": {
     "code": "6 अंक कोड"
   },
+  "accessDeniedPage": {
+    "title": "प्रवेश अस्वीकृत",
+    "body": "दुर्भाग्य से, आपके देश से गतिविधि वर्तमान में अनुमति नहीं है।"
+  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "फिएट/क्रिप्टो स्विच करें"
   },
@@ -163,7 +167,8 @@
     "connectAnother": "एक अन्य खाता कनेक्ट करें"
   },
   "connectionFailedPage": {
-    "defaultError": "एक त्रुटि उत्पन्न हुई है।"
+    "defaultError": "एक त्रुटि उत्पन्न हुई है।",
+    "directMobileFlowError": "सत्र समाप्त हो गया है। कृपया अपने ताओ चेकआउट पृष्ठ पर वापस जाएं और पुनः प्रयास करें।"
   },
   "connectionUnavailablePage": {
     "connectAnother": "एक अन्य वॉलेट कनेक्ट करें",
@@ -279,7 +284,9 @@
     "goBackToShift4": "← Shift4 पर वापस जाएँ",
     "goToIntegrationToApprove": "कृपया इस स्थानांतरण को स्वीकृत करने के लिए <1>{{selectedIntegrationName}}</1> पर जाएं।",
     "paymentInitiated": "आपने {{clientName}} को<1></1><2>{{amountCrypto}}</2><3></3> का भुगतान आरंभ किया है",
-    "waiting": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।"
+    "waiting": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।",
+    "directMobileTitle": "भुगतान प्रारंभ हो गया है",
+    "directMobileBody": "अपने भुगतान को अंतिम रूप देने के लिए अपने ताओ चेकआउट पृष्ठ पर वापस जाएं।"
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "पता {{address}} का स्वामित्व पहले ही <4>{{clientName}}</4> के लिए सत्यापित किया जा चुका है।",
@@ -775,6 +782,8 @@
     "conversionStep": "<1>{{amount}}</1> को <4>{{currency}}</4> में रूपांतरित करना।",
     "depositTitle": "जमा प्रगति पर है",
     "description": "इसमें कुछ समय लग सकता है...",
+    "processing": "भुगतान संसाधित किया जा रहा है",
+    "mayTakeFewSeconds": "इसमें कुछ सेकंड लग सकते हैं",
     "existingCryptocurrencyBalance": {
       "approveClient": "आप {{selectedIntegrationName}} से {{clientName}} में स्थानांतरण को स्वीकृत करते हैं।",
       "approveDestination": "आप {{selectedIntegrationName}} से गंतव्य के लिए स्थानांतरण को स्वीकृत करते हैं।",
@@ -929,7 +938,9 @@
     "returnToClientButton": "{{clientName}} पर लौटें",
     "spotAccountsBody": "वर्तमान में केवल स्पॉट खाते समर्थित हैं। मार्जिन जैसे अन्य खाते प्रकार में संपत्तियां दिखाई नहीं देंगी।",
     "topUpButton": "बैलेंस टॉप अप करें",
-    "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।"
+    "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।",
+    "topUpUSDCInstruction": "अपने फैंटम वालेट में यूएसडीसी बैलेंस को पुनः पूरित करें।",
+    "tryAgainFromTaoInstruction": "अपने ताओ चेकआउट पृष्ठ से पुनः प्रयास करें।"
   },
   "selectItem": {
     "label": "{{text}} चुनें"
