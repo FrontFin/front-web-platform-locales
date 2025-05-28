@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Valitettavasti toimintaa maastasi ei tällä hetkellä sallita.",
+    "title": "Pääsy estetty"
+  },
   "addressWhitelistPage": {
     "addAddress": "Lisää seuraava hyväksyttynä nostososoitteena:",
     "goToAccount": "Mene <1>{{selectedIntegrationName}} tiliisi</1>",
@@ -9,10 +13,6 @@
   },
   "authCodeInput": {
     "code": "6-numeroinen koodi"
-  },
-  "accessDeniedPage": {
-    "title": "Pääsy estetty",
-    "body": "Valitettavasti toimintaa maastasi ei tällä hetkellä sallita."
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta"
@@ -281,12 +281,12 @@
     "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>saapuu osoitteeseen {{shortAddress}}",
     "depositClient": "Saat<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tilille {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Palaa Tao-kassasivullesi viimeistelläksesi maksusi.",
+    "directMobileTitle": "Maksu aloitettu",
     "goBackToShift4": "← Palaa Shift4:ään",
     "goToIntegrationToApprove": "Ole hyvä ja mene kohteeseen <1>{{selectedIntegrationName}}</1> hyväksyäksesi tämän siirron.",
     "paymentInitiated": "Olet aloittanut maksun<1></1><2>{{amountCrypto}}</2><3></3>kohteeseen {{clientName}}",
-    "waiting": "Siirrot eivät ole täydellisiä, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia.",
-    "directMobileTitle": "Maksu aloitettu",
-    "directMobileBody": "Palaa Tao-kassasivullesi viimeistelläksesi maksusi."
+    "waiting": "Siirrot eivät ole täydellisiä, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Osoitteen {{address}} omistajuus on jo vahvistettu kohteelle <4>{{clientName}}</4>.",
@@ -471,12 +471,14 @@
     "cryptoConversion": "Kryptovaluutan muunto",
     "description": "Yhteensä: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Välittömästi käytettävissä oleva raha: {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "Linkitetyt Maksutavat",
     "noPaymentMethods": "Ei linkitettyjä maksutapoja.",
     "noTokensAvailableForConversion": "Ei muuntamiseen sopivia tokeneita saatavilla",
     "save": "Tallenna",
     "selectFundingMethodAvailablity": "Valituilla rahoitusmenetelmilläsi on {{selectedAvailableAmount}}. Valitse lisärahoitusmenetelmät siirtääksesi {{neededAmount}}.",
     "selectFundingMethods": "Valitse rahoitusmenetelmät siirtääksesi <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "Valitse muista varoista",
     "symbolBalance": "{{symbol}} Saldo",
     "title": "Rahoitusmenetelmät"
@@ -782,8 +784,6 @@
     "conversionStep": "Muunnetaan <1>{{amount}}</1> valuuttaan <4>{{currency}}</4>.",
     "depositTitle": "Talletus käynnissä",
     "description": "Tämä voi kestää jonkin aikaa...",
-    "processing": "Maksun käsittelyssä",
-    "mayTakeFewSeconds": "Tämä saattaa kestää muutaman sekunnin",
     "existingCryptocurrencyBalance": {
       "approveClient": "Hyväksyt siirron {{selectedIntegrationName}}:sta {{clientName}}:iin.",
       "approveDestination": "Hyväksyt siirron {{selectedIntegrationName}}:sta kohteeseen.",
@@ -796,9 +796,11 @@
       "transferSmartDepositWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}:sta {{clientName}} {{address}}:lle välittäjäsopimuksen kautta.",
       "transferWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}:sta {{clientName}} {{address}}:lle."
     },
+    "mayTakeFewSeconds": "Tämä saattaa kestää muutaman sekunnin",
     "onrampTitle": "Osto työn alla",
     "paymentMethodDepositUsage": "Talletus <1>{{amount}}</1> − {{paymentMethod}} → {{selectedIntegrationName}}.",
     "paymentTitle": "Maksu työn alla",
+    "processing": "Maksun käsittelyssä",
     "transactionTitle": "Tapahtuma työn alla",
     "tryAgain": "Yritä uudelleen"
   },
@@ -870,6 +872,7 @@
     "fundingWith": "Rahoittaa",
     "institutionTransferFee": "{{selectedIntegrationName}} -nostomaksu",
     "institutionTransferFeeHint": "Maksu, jonka {{selectedIntegrationName}} veloittaa helpottaakseen {{symbol}}:n siirtämistä.",
+    "insufficientFunds": "",
     "maxAmount": "Tilisi voi rahoittaa enintään <2>{{networkMaxAmount}}</2>. Haluatko säätää siirtoasi tähän summaan?",
     "monitoring": "Hyväksyntä seurannassa...",
     "network": "Verkko",
@@ -938,9 +941,9 @@
     "returnToClientButton": "Palaa {{clientName}}:iin",
     "spotAccountsBody": "Tällä hetkellä tukena on vain spot-tilit. Muita tilin tyyppejä, kuten marginaalitilejä, ei havaita.",
     "topUpButton": "Lisää saldoa",
-    "unableTransferError": "Siirtoa ei ole mahdollista aloittaa.",
     "topUpUSDCInstruction": "Lisää USDC-saldoasi Phantom-lompakossasi.",
-    "tryAgainFromTaoInstruction": "Yritä uudelleen Tao-kassasivultasi."
+    "tryAgainFromTaoInstruction": "Yritä uudelleen Tao-kassasivultasi.",
+    "unableTransferError": "Siirtoa ei ole mahdollista aloittaa."
   },
   "selectItem": {
     "label": "Valitse {{text}}"

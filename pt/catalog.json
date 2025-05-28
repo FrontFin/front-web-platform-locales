@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Infelizmente, a atividade do seu país não é permitida no momento.",
+    "title": "Acesso negado"
+  },
   "addressWhitelistPage": {
     "addAddress": "Adicione o seguinte como um endereço de retirada aprovado:",
     "goToAccount": "Acesse sua conta <1>{{selectedIntegrationName}}</1>",
@@ -9,10 +13,6 @@
   },
   "authCodeInput": {
     "code": "Código de 6 dígitos"
-  },
-  "accessDeniedPage": {
-    "title": "Acesso negado",
-    "body": "Infelizmente, a atividade do seu país não é permitida no momento."
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Alternar Fiat/Cripto"
@@ -281,12 +281,12 @@
     "checkDetails40": "Ver detalhes da transação",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>será recebido em {{shortAddress}}",
     "depositClient": "Você receberá<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>em {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Retorne à sua página de checkout Tao para finalizar seu pagamento.",
+    "directMobileTitle": "Pagamento iniciado",
     "goBackToShift4": "← Volte para Shift4",
     "goToIntegrationToApprove": "Por favor, vá para <1>{{selectedIntegrationName}}</1> para aprovar esta transferência.",
     "paymentInitiated": "Você iniciou um pagamento de<1></1><2>{{amountCrypto}}</2><3></3>para {{clientName}}",
-    "waiting": "As transferências não são concluídas até receberem confirmações suficientes da rede.",
-    "directMobileTitle": "Pagamento iniciado",
-    "directMobileBody": "Retorne à sua página de checkout Tao para finalizar seu pagamento."
+    "waiting": "As transferências não são concluídas até receberem confirmações suficientes da rede."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "A propriedade do endereço {{address}} já foi verificada para <4>{{clientName}}</4>.",
@@ -439,6 +439,7 @@
     "paymentMethodDepositUsage": "Método de Pagamento Vinculado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -471,12 +472,14 @@
     "cryptoConversion": "Conversão de criptomoeda",
     "description": "Total: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Dinheiro instantâneo disponível: {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "Método(s) de pagamento vinculado(s)",
     "noPaymentMethods": "Sem métodos de pagamento vinculados.",
     "noTokensAvailableForConversion": "Sem tokens disponíveis para conversão",
     "save": "Salvar",
     "selectFundingMethodAvailablity": "Os métodos de financiamento selecionados têm {{selectedAvailableAmount}}. Por favor, selecione métodos de financiamento adicionais para transferir {{neededAmount}}.",
     "selectFundingMethods": "Por favor, selecione métodos de financiamento para transferir <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "Selecionar de outras posses",
     "symbolBalance": "Saldo de {{symbol}}",
     "title": "Métodos de financiamento"
@@ -782,8 +785,6 @@
     "conversionStep": "Conversão de <1>{{amount}}</1> para <4>{{currency}}</4>.",
     "depositTitle": "Depósito em progresso",
     "description": "Isso pode levar algum tempo...",
-    "processing": "Processando pagamento",
-    "mayTakeFewSeconds": "Isso pode levar alguns segundos",
     "existingCryptocurrencyBalance": {
       "approveClient": "Você aprova a transferência de {{selectedIntegrationName}} para {{clientName}}.",
       "approveDestination": "Você aprova a transferência de {{selectedIntegrationName}} para o destino.",
@@ -796,9 +797,11 @@
       "transferSmartDepositWithAddress": "Transferência de <1>{{amount}}</1> de {{selectedIntegrationName}} para {{clientName}} {{address}} via um contrato de passagem.",
       "transferWithAddress": "Transferência de <1>{{amount}}</1> de {{selectedIntegrationName}} para {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Isso pode levar alguns segundos",
     "onrampTitle": "Compra em progresso",
     "paymentMethodDepositUsage": "Depósito de <1>{{amount}}</1> de {{paymentMethod}} para {{selectedIntegrationName}}.",
     "paymentTitle": "Pagamento em progresso",
+    "processing": "Processando pagamento",
     "transactionTitle": "Transação em progresso",
     "tryAgain": "Tente novamente"
   },
@@ -870,6 +873,7 @@
     "fundingWith": "Financiando com",
     "institutionTransferFee": "Taxa de Retirada de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "A taxa que {{selectedIntegrationName}} cobrará para facilitar sua transferência de {{symbol}}.",
+    "insufficientFunds": "",
     "maxAmount": "Sua conta pode financiar um máximo de <2>{{networkMaxAmount}}</2>. Você gostaria de ajustar sua transferência para este valor?",
     "monitoring": "Monitorando para aprovação...",
     "network": "Rede",
@@ -938,9 +942,9 @@
     "returnToClientButton": "Retornar para {{clientName}}",
     "spotAccountsBody": "Apenas contas spot são suportadas atualmente. Os ativos em outros tipos de contas, como margem, não serão detectados.",
     "topUpButton": "Recarregar saldo",
-    "unableTransferError": "Não é possível iniciar a transferência.",
     "topUpUSDCInstruction": "Recarregue seu saldo USDC na sua carteira Phantom.",
-    "tryAgainFromTaoInstruction": "Tente novamente a partir da sua página de checkout Tao."
+    "tryAgainFromTaoInstruction": "Tente novamente a partir da sua página de checkout Tao.",
+    "unableTransferError": "Não é possível iniciar a transferência."
   },
   "selectItem": {
     "label": "Selecionar {{text}}"

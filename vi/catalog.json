@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Rất tiếc, hoạt động từ quốc gia của bạn hiện không được phép.",
+    "title": "Truy cập bị từ chối"
+  },
   "addressWhitelistPage": {
     "addAddress": "Thêm địa chỉ sau đây làm địa chỉ rút tiền đã được phê duyệt:",
     "goToAccount": "Đi đến tài khoản {{selectedIntegrationName}} của bạn",
@@ -9,10 +13,6 @@
   },
   "authCodeInput": {
     "code": "Mã 6 chữ số"
-  },
-  "accessDeniedPage": {
-    "title": "Truy cập bị từ chối",
-    "body": "Rất tiếc, hoạt động từ quốc gia của bạn hiện không được phép."
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Chuyển đổi Tiền pháp định/Mã hoá"
@@ -281,12 +281,12 @@
     "checkDetails40": "Xem chi tiết giao dịch",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>sẽ được nhận tại {{shortAddress}}",
     "depositClient": "Bạn sẽ nhận<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tại {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Quay lại trang thanh toán Tao của bạn để hoàn tất thanh toán.",
+    "directMobileTitle": "Thanh toán đã được bắt đầu",
     "goBackToShift4": "← Quay lại Shift4",
     "goToIntegrationToApprove": "Vui lòng truy cập <1>{{selectedIntegrationName}}</1> để phê duyệt giao dịch này.",
     "paymentInitiated": "Bạn đã khởi tạo một khoản thanh toán<1></1><2>{{amountCrypto}}</2><3></3>đến {{clientName}}",
-    "waiting": "Các giao dịch không hoàn tất cho đến khi chúng nhận đủ số xác nhận từ mạng lưới.",
-    "directMobileTitle": "Thanh toán đã được bắt đầu",
-    "directMobileBody": "Quay lại trang thanh toán Tao của bạn để hoàn tất thanh toán."
+    "waiting": "Các giao dịch không hoàn tất cho đến khi chúng nhận đủ số xác nhận từ mạng lưới."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Quyền sở hữu địa chỉ {{address}} đã được xác minh cho <4>{{clientName}}</4>.",
@@ -471,12 +471,14 @@
     "cryptoConversion": "Chuyển đổi tiền mã hóa",
     "description": "Tổng cộng: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Tiền mặt hiện tại có sẵn: {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "Phương thức thanh toán liên kết",
     "noPaymentMethods": "Không có phương thức thanh toán liên kết.",
     "noTokensAvailableForConversion": "Không có token nào khả dụng để chuyển đổi",
     "save": "Lưu",
     "selectFundingMethodAvailablity": "Các phương thức tài trợ đã chọn của bạn có {{selectedAvailableAmount}}. Vui lòng chọn thêm các phương thức tài trợ để chuyển {{neededAmount}}.",
     "selectFundingMethods": "Vui lòng chọn phương thức tài trợ để chuyển <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "Chọn từ các khoản nắm giữ khác",
     "symbolBalance": "Số dư {{symbol}}",
     "title": "Phương pháp tài trợ"
@@ -782,8 +784,6 @@
     "conversionStep": "Chuyển đổi <1>{{amount}}</1> thành <4>{{currency}}</4>.",
     "depositTitle": "Nạp tiền đang tiến hành",
     "description": "Có thể mất một chút thời gian...",
-    "processing": "Đang xử lý thanh toán",
-    "mayTakeFewSeconds": "Điều này có thể mất vài giây",
     "existingCryptocurrencyBalance": {
       "approveClient": "Bạn phê duyệt việc chuyển từ {{selectedIntegrationName}} đến {{clientName}}.",
       "approveDestination": "Bạn phê duyệt việc chuyển từ {{selectedIntegrationName}} đến điểm đến.",
@@ -796,9 +796,11 @@
       "transferSmartDepositWithAddress": "Chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}} thông qua hợp đồng chuyển tiếp.",
       "transferWithAddress": "Chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Điều này có thể mất vài giây",
     "onrampTitle": "Mua đang tiến hành",
     "paymentMethodDepositUsage": "Nạp tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
     "paymentTitle": "Thanh toán đang tiến hành",
+    "processing": "Đang xử lý thanh toán",
     "transactionTitle": "Giao dịch đang tiến hành",
     "tryAgain": "Thử lại"
   },
@@ -870,6 +872,7 @@
     "fundingWith": "Tài trợ với",
     "institutionTransferFee": "Phí Rút Tiền {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Phí mà {{selectedIntegrationName}} sẽ tính để hỗ trợ chuyển khoản của bạn khỏi {{symbol}}.",
+    "insufficientFunds": "",
     "maxAmount": "Tài khoản của bạn có thể nạp tối đa <2>{{networkMaxAmount}}</2>. Bạn có muốn điều chỉnh chuyển khoản của mình đến số tiền này không?",
     "monitoring": "Đang giám sát để phê duyệt...",
     "network": "Mạng lưới",
@@ -938,9 +941,9 @@
     "returnToClientButton": "Quay lại {{clientName}}",
     "spotAccountsBody": "Chỉ hỗ trợ tài khoản spot. Tài sản trong các loại tài khoản khác, chẳng hạn như ký quỹ, sẽ không được phát hiện.",
     "topUpButton": "Nạp tiền",
-    "unableTransferError": "Không thể bắt đầu chuyển tiền.",
     "topUpUSDCInstruction": "Nạp thêm số dư USDC vào ví Phantom của bạn.",
-    "tryAgainFromTaoInstruction": "Hãy thử lại từ trang thanh toán Tao của bạn."
+    "tryAgainFromTaoInstruction": "Hãy thử lại từ trang thanh toán Tao của bạn.",
+    "unableTransferError": "Không thể bắt đầu chuyển tiền."
   },
   "selectItem": {
     "label": "Chọn {{text}}"

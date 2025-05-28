@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "很遗憾，您所在国家的活动暂时不被允许。",
+    "title": "拒绝访问"
+  },
   "addressWhitelistPage": {
     "addAddress": "将以下地址添加至已批准的提现地址：",
     "goToAccount": "前往您的<1>{{selectedIntegrationName}}</1>账户",
@@ -9,10 +13,6 @@
   },
   "authCodeInput": {
     "code": "6位数代码"
-  },
-  "accessDeniedPage": {
-    "title": "拒绝访问",
-    "body": "很遗憾，您所在国家的活动暂时不被允许。"
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "切换法币/加密货币"
@@ -281,12 +281,12 @@
     "checkDetails40": "查看交易详情",
     "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
     "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
+    "directMobileBody": "返回您的Tao结账页面以完成支付。",
+    "directMobileTitle": "支付已启动",
     "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><3></3>的支付至{{clientName}}",
-    "waiting": "在收到足够的网络认证之前，转账不会完成。",
-    "directMobileTitle": "支付已启动",
-    "directMobileBody": "返回您的Tao结账页面以完成支付。"
+    "waiting": "在收到足够的网络认证之前，转账不会完成。"
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "<4>{{clientName}}</4>对于{{address}}地址的所有权已验证完成。",
@@ -471,12 +471,14 @@
     "cryptoConversion": "加密货币转兑换",
     "description": "总金额: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(可用即时现金: {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "已关联的支付方式",
     "noPaymentMethods": "没有关联的支付方式。",
     "noTokensAvailableForConversion": "没有可用于转换的代币",
     "save": "保存",
     "selectFundingMethodAvailablity": "您选择的付款方式额度为{{selectedAvailableAmount}}。 请选择其他付款方式转账{{neededAmount}}。",
     "selectFundingMethods": "请选择付款方式以转账<2>{{amount}} ~ {{amountInFiat}}</2>。",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "从其他资产中选择",
     "symbolBalance": "{{symbol}}余额",
     "title": "付款方式"
@@ -782,8 +784,6 @@
     "conversionStep": "将<1>{{amount}}</1>兑换为<4>{{currency}}</4>。",
     "depositTitle": "充值中",
     "description": "请耐心等待......",
-    "processing": "正在处理付款",
-    "mayTakeFewSeconds": "这可能需要几秒钟",
     "existingCryptocurrencyBalance": {
       "approveClient": "您已批准从{{selectedIntegrationName}}到{{clientName}}转账。",
       "approveDestination": "您批准从{{selectedIntegrationName}}转账到目标账户。",
@@ -796,9 +796,11 @@
       "transferSmartDepositWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。",
       "transferWithAddress": "从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。"
     },
+    "mayTakeFewSeconds": "这可能需要几秒钟",
     "onrampTitle": "购买中",
     "paymentMethodDepositUsage": "从{{paymentMethod}}存入<1>{{amount}}</1>到{{selectedIntegrationName}}。",
     "paymentTitle": "付款中",
+    "processing": "正在处理付款",
     "transactionTitle": "交易中",
     "tryAgain": "再试一次"
   },
@@ -870,6 +872,7 @@
     "fundingWith": "充值选项",
     "institutionTransferFee": "{{selectedIntegrationName}}提现费",
     "institutionTransferFeeHint": "为支持您从 {{symbol}}中发起的转账，{{selectedIntegrationName}} 将收取的费用。",
+    "insufficientFunds": "",
     "maxAmount": "您的帐户最多可以存入<2>{{networkMaxAmount}}</2>。是否调整为此最大值？",
     "monitoring": "正在等待批准……",
     "network": "网络",
@@ -938,9 +941,9 @@
     "returnToClientButton": "返回{{clientName}}",
     "spotAccountsBody": "当前仅支持现货账户。其他账户类型（例如保证金账户）中的资产将不会被检测到。",
     "topUpButton": "充值余额",
-    "unableTransferError": "无法发起转账。",
     "topUpUSDCInstruction": "在您的Phantom钱包中充值USDC余额。",
-    "tryAgainFromTaoInstruction": "请从您的Tao结账页面重试。"
+    "tryAgainFromTaoInstruction": "请从您的Tao结账页面重试。",
+    "unableTransferError": "无法发起转账。"
   },
   "selectItem": {
     "label": "选择{{text}}"

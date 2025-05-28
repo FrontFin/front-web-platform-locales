@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "दुर्भाग्य से, आपके देश से गतिविधि वर्तमान में अनुमति नहीं है।",
+    "title": "प्रवेश अस्वीकृत"
+  },
   "addressWhitelistPage": {
     "addAddress": "निम्नलिखित को एक स्वीकृत निकासी पते के रूप में जोड़ें:",
     "goToAccount": "अपने <1>{{selectedIntegrationName}} खाता</1> पर जाएं",
@@ -9,10 +13,6 @@
   },
   "authCodeInput": {
     "code": "6 अंक कोड"
-  },
-  "accessDeniedPage": {
-    "title": "प्रवेश अस्वीकृत",
-    "body": "दुर्भाग्य से, आपके देश से गतिविधि वर्तमान में अनुमति नहीं है।"
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "फिएट/क्रिप्टो स्विच करें"
@@ -281,12 +281,12 @@
     "checkDetails40": "लेनदेन विवरण देखें",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1> {{shortAddress}} में प्राप्त होगा",
     "depositClient": "आप प्राप्त करेंगे<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> {{clientName}} ({{shortAddress}}) में",
+    "directMobileBody": "अपने भुगतान को अंतिम रूप देने के लिए अपने ताओ चेकआउट पृष्ठ पर वापस जाएं।",
+    "directMobileTitle": "भुगतान प्रारंभ हो गया है",
     "goBackToShift4": "← Shift4 पर वापस जाएँ",
     "goToIntegrationToApprove": "कृपया इस स्थानांतरण को स्वीकृत करने के लिए <1>{{selectedIntegrationName}}</1> पर जाएं।",
     "paymentInitiated": "आपने {{clientName}} को<1></1><2>{{amountCrypto}}</2><3></3> का भुगतान आरंभ किया है",
-    "waiting": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।",
-    "directMobileTitle": "भुगतान प्रारंभ हो गया है",
-    "directMobileBody": "अपने भुगतान को अंतिम रूप देने के लिए अपने ताओ चेकआउट पृष्ठ पर वापस जाएं।"
+    "waiting": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।"
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "पता {{address}} का स्वामित्व पहले ही <4>{{clientName}}</4> के लिए सत्यापित किया जा चुका है।",
@@ -471,12 +471,14 @@
     "cryptoConversion": "क्रिप्टो मुद्रा रूपांतरण",
     "description": "कुल: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(तत्काल नकद उपलब्ध: {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "लिंक की गई भुगतान विधि(एं)",
     "noPaymentMethods": "कोई लिंक की गई भुगतान विधियाँ नहीं है।",
     "noTokensAvailableForConversion": "रूपांतरण के लिए कोई टोकन उपलब्ध नहीं है",
     "save": "सहेजें",
     "selectFundingMethodAvailablity": "आपके द्वारा चुनी गई फंडिंग विधियों में {{selectedAvailableAmount}} है। कृपया {{neededAmount}} को स्थानांतरित करने के लिए अतिरिक्त फंडिंग विधियाँ चुनें।",
     "selectFundingMethods": "कृपया स्थानांतरित करने के लिए फंडिंग विधियाँ चुनें <2>{{amount}} ~ {{amountInFiat}}</2>।",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "अन्य होल्डिंग्स से चुनें",
     "symbolBalance": "{{symbol}} शेष",
     "title": "फंडिंग विधियाँ"
@@ -782,8 +784,6 @@
     "conversionStep": "<1>{{amount}}</1> को <4>{{currency}}</4> में रूपांतरित करना।",
     "depositTitle": "जमा प्रगति पर है",
     "description": "इसमें कुछ समय लग सकता है...",
-    "processing": "भुगतान संसाधित किया जा रहा है",
-    "mayTakeFewSeconds": "इसमें कुछ सेकंड लग सकते हैं",
     "existingCryptocurrencyBalance": {
       "approveClient": "आप {{selectedIntegrationName}} से {{clientName}} में स्थानांतरण को स्वीकृत करते हैं।",
       "approveDestination": "आप {{selectedIntegrationName}} से गंतव्य के लिए स्थानांतरण को स्वीकृत करते हैं।",
@@ -796,9 +796,11 @@
       "transferSmartDepositWithAddress": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{clientName}} {{address}} रिले कॉन्ट्रैक्ट द्वारा।",
       "transferWithAddress": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{clientName}} {{address}}।"
     },
+    "mayTakeFewSeconds": "इसमें कुछ सेकंड लग सकते हैं",
     "onrampTitle": "खरीदारी प्रगति में है",
     "paymentMethodDepositUsage": "कार्यप्रणाली विधि {{paymentMethod}} से {{selectedIntegrationName}} में <1>{{amount}}</1> का जमा।",
     "paymentTitle": "भुगतान प्रगति में है",
+    "processing": "भुगतान संसाधित किया जा रहा है",
     "transactionTitle": "लेन-देन प्रगति में है",
     "tryAgain": "फिर से प्रयास करें"
   },
@@ -870,6 +872,7 @@
     "fundingWith": "साथ वित्तपोषण",
     "institutionTransferFee": "{{selectedIntegrationName}} निकासी शुल्क",
     "institutionTransferFeeHint": "फीस जो {{selectedIntegrationName}} आपके {{symbol}} से बाहर स्थानांतरण को सुविधाजनक बनाने के लिए वसूल करेगा।",
+    "insufficientFunds": "",
     "maxAmount": "आपका खाता अधिकतम <2>{{networkMaxAmount}}</2> तक वित्त पोषण कर सकता है। आप अपना स्थानांतरण इस राशि पर समायोजित करना चाहेंगे?",
     "monitoring": "मंजूरी के लिए निगरानी कर रहे हैं...",
     "network": "नेटवर्क",
@@ -938,9 +941,9 @@
     "returnToClientButton": "{{clientName}} पर लौटें",
     "spotAccountsBody": "वर्तमान में केवल स्पॉट खाते समर्थित हैं। मार्जिन जैसे अन्य खाते प्रकार में संपत्तियां दिखाई नहीं देंगी।",
     "topUpButton": "बैलेंस टॉप अप करें",
-    "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।",
     "topUpUSDCInstruction": "अपने फैंटम वालेट में यूएसडीसी बैलेंस को पुनः पूरित करें।",
-    "tryAgainFromTaoInstruction": "अपने ताओ चेकआउट पृष्ठ से पुनः प्रयास करें।"
+    "tryAgainFromTaoInstruction": "अपने ताओ चेकआउट पृष्ठ से पुनः प्रयास करें।",
+    "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।"
   },
   "selectItem": {
     "label": "{{text}} चुनें"

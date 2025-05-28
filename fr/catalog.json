@@ -1,6 +1,10 @@
 {
+  "accessDeniedPage": {
+    "body": "Malheureusement, l'activité de votre pays n'est actuellement pas autorisée.",
+    "title": "Accès refusé"
+  },
   "addressWhitelistPage": {
-    "addAddress": "Veuillez ajouter l’adresse suivante en tant qu’adresse approuvée pour les retraits :",
+    "addAddress": "Veuillez ajouter l’adresse suivante en tant qu’adresse approuvée pour les retraits\u00a0:",
     "goToAccount": "Accédez à votre compte <1>{{selectedIntegrationName}}</1>",
     "network": "Réseau",
     "preview": "Cliquez ci-dessous pour afficher l’aperçu et effectuer à nouveau le transfert",
@@ -10,16 +14,12 @@
   "authCodeInput": {
     "code": "Veuillez saisir votre code de vérification à 6 chiffres"
   },
-  "accessDeniedPage": {
-    "title": "Accès refusé",
-    "body": "Malheureusement, l'activité de votre pays n'est actuellement pas autorisée."
-  },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Afficher en : fiat / crypto"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} {{selectedFiat}} - et {{maxFiat}} {{selectedFiat}}",
-    "amountMustBeWithinErrorMessage": "Le montant doit être compris entre 21 USD et 15 000 USD",
+    "amountMustBeWithinErrorMessage": "Le montant doit être compris entre 21\u00a0USD et 15\u00a0000\u00a0USD",
     "buyCrypto": "Acheter des crypto-monnaies via Binance Connect",
     "closeButton": "Fermer",
     "continueTo": "Continuer sur {{selectedIntegrationName}}",
@@ -42,7 +42,7 @@
     "description": "Pour sécuriser votre compte <1>Binance</1>, vous devez configurer à la fois votre adresse e-mail et une application d’authentification comme méthodes 2FA.",
     "ensureConfigured": "Assurez-vous que l’adresse e-mail et l’application d’authentification sont toutes les deux configurées pour 2FA",
     "goToSettings": "Cliquez ci-dessous pour accéder à vos paramètres de sécurité sur <1>Binance</1>",
-    "mayNeedReAuthApp": "Veuillez noter : vous devrez peut-être vous ré-authentifier sur votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>l'application</2>.",
+    "mayNeedReAuthApp": "Veuillez noter\u00a0: vous devrez peut-être vous ré-authentifier sur votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>l'application</2>.",
     "mayNeedReAuthClient": "Veuillez noter : vous devrez peut-être vous ré-authentifier sur votre compte Binance pour initier ce transfert lorsque vous retournerez à <2>{{clientName}}</2>.",
     "openBinance": "Ouvrir Binance",
     "returnToApp": "Retournez dans <1>l'application</1> pour réessayer à nouveau ce transfert",
@@ -51,10 +51,10 @@
   },
   "binanceResetPasswordPage": {
     "goToBinance": "Allez sur Binance.com",
-    "securityNote": "À savoir : pour des raisons de sécurité, les retraits en crypto sont désactivés pendant 24 heures après un changement de mot de passe.",
+    "securityNote": "À savoir\u00a0: pour des raisons de sécurité, les retraits en crypto sont désactivés pendant 24\u00a0heures après un changement de mot de passe.",
     "steps": {
       "completeProcess": "Complétez le processus pour réinitialiser votre mot de passe.",
-      "enterEmail": "Saisissez votre adresse e-mail ou votre numéro de téléphone, puis cliquez sur « Mot de passe oublié ? ».",
+      "enterEmail": "Saisissez votre adresse e-mail ou votre numéro de téléphone, puis cliquez sur «\u00a0Mot de passe oublié\u00a0?\u00a0».",
       "goToBinance": "Sélectionnez <1>Allez sur Binance.com</1> pour être redirigé vers l’écran de connexion Binance.",
       "returnToLogin": "Revenez ici pour vous reconnecter avec votre nouveau mot de passe."
     },
@@ -123,7 +123,7 @@
     "verificationCodeInputTitle": "Code de vérification"
   },
   "chooseAccountPage": {
-    "linkToApp": "Lequel de vos comptes souhaitez-vous que <1></1> lie à cette application ",
+    "linkToApp": "Lequel de vos comptes souhaitez-vous que <1></1> lie à cette application\u00a0",
     "linkToClient": "Lequel de vos comptes souhaitez-vous que <1></1> lie à {{clientName}}",
     "title": "Sélectionnez les sous-comptes"
   },
@@ -210,7 +210,7 @@
     "monitoringApproval": "En cours d’approbation...",
     "selectNetwork": "Sélectionnez le réseau",
     "title": "Changement de réseau",
-    "whichNetwork": "Quel réseau dans votre portefeuille <1>{{selectedIntegrationName}}</1><4></4>souhaitez-vous lier ?"
+    "whichNetwork": "Quel réseau dans votre portefeuille <1>{{selectedIntegrationName}}</1><4></4>souhaitez-vous lier\u00a0?"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} n'est pas installé sur cet appareil. Veuillez télécharger l'application {{integrationName}} ou connecter un autre portefeuille.",
@@ -281,12 +281,12 @@
     "checkDetails40": "Voir les détails de la transaction",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>seront reçu à {{shortAddress}}",
     "depositClient": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> dans {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Retournez sur votre page de paiement Tao pour finaliser votre paiement.",
+    "directMobileTitle": "Paiement initié",
     "goBackToShift4": "← Retourner à Shift4",
     "goToIntegrationToApprove": "Veuillez aller sur <1>{{selectedIntegrationName}}</1> pour approuver ce transfert.",
     "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3>à {{clientName}}",
-    "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau.",
-    "directMobileTitle": "Paiement initié",
-    "directMobileBody": "Retournez sur votre page de paiement Tao pour finaliser votre paiement."
+    "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "La propriété de l'adresse {{address}} a déjà été vérifiée pour <4>{{clientName}}</4>.",
@@ -333,7 +333,7 @@
     "networkDisabled": "Le réseau est actuellement désactivé et ne peut pas être utilisé.",
     "passKeyNotSupported": "La clé d'accès n'est actuellement pas prise en charge, veuillez la désactiver pour continuer.",
     "previewExpired": "L'aperçu a expiré.",
-    "satoshiTestRequired": "L’API de Coinbase ne prend pas en charge les transferts supérieurs à 1000  euros en raison des restrictions imposées par la Travel Rule. Veuillez réessayer avec un montant inférieur.",
+    "satoshiTestRequired": "L’API de Coinbase ne prend pas en charge les transferts supérieurs à 1000\u202f euros en raison des restrictions imposées par la Travel Rule. Veuillez réessayer avec un montant inférieur.",
     "symbolNotSupported": "Le symbole n'est pas pris en charge par l'intégration.",
     "symbolNotSupportedBySource": "Le symbole à transférer n’est pas pris en charge par le portefeuille source sur le réseau sélectionné.",
     "symbolNotSupportedByTarget": "Impossible de trouver l’adresse de dépôt pour la crypto-monnaie demandée.",
@@ -439,6 +439,7 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -471,12 +472,14 @@
     "cryptoConversion": "Conversion de crypto-monnaies",
     "description": "Total : {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Argent liquide instantané disponible : {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "Méthode(s) de paiement liée(s)",
     "noPaymentMethods": "Aucune méthode de paiement liée.",
     "noTokensAvailableForConversion": "Aucun jeton disponible pour la conversion",
     "save": "Sauvegarder",
     "selectFundingMethodAvailablity": "Vos méthodes de financement sélectionnées ont {{selectedAvailableAmount}}. Veuillez sélectionner des méthodes de financement supplémentaires pour transférer {{neededAmount}}.",
     "selectFundingMethods": "Veuillez sélectionner les méthode(s) de financement pour transférer <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "Sélectionner parmi les autres avoirs",
     "symbolBalance": "Solde {{symbol}}",
     "title": "Méthodes de financement"
@@ -782,8 +785,6 @@
     "conversionStep": "Conversion de <1>{{amount}}</1> en <4>{{currency}}</4>.",
     "depositTitle": "Dépôt en cours",
     "description": "Cela peut prendre un certain temps...",
-    "processing": "Paiement en cours de traitement",
-    "mayTakeFewSeconds": "Cela peut prendre quelques secondes",
     "existingCryptocurrencyBalance": {
       "approveClient": "Vous approuvez le transfert de {{selectedIntegrationName}} à {{clientName}}.",
       "approveDestination": "Vous approuvez le transfert de {{selectedIntegrationName}} à la destination.",
@@ -796,9 +797,11 @@
       "transferSmartDepositWithAddress": "Transfert de <1>{{amount}}</1> de {{selectedIntegrationName}} vers {{clientName}} {{address}} via un contrat relais.",
       "transferWithAddress": "Transfert de <1>{{amount}}</1> de {{selectedIntegrationName}} vers {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Cela peut prendre quelques secondes",
     "onrampTitle": "Achat en cours",
     "paymentMethodDepositUsage": "Dépôt de <1>{{amount}}</1> de {{paymentMethod}} à {{selectedIntegrationName}}.",
     "paymentTitle": "Paiement en cours",
+    "processing": "Paiement en cours de traitement",
     "transactionTitle": "Transaction en cours",
     "tryAgain": "Réessayez"
   },
@@ -870,7 +873,8 @@
     "fundingWith": "Approvisionnement avec",
     "institutionTransferFee": "Frais de retrait de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert depuis {{symbol}}.",
-    "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant ?",
+    "insufficientFunds": "",
+    "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant\u202f?",
     "monitoring": "En attente d’approbation...",
     "network": "Réseau",
     "onrampTitle": "Aperçu de l'achat",
@@ -938,9 +942,9 @@
     "returnToClientButton": "Retour à {{clientName}}",
     "spotAccountsBody": "Seuls les comptes de type spot sont actuellement pris en charge. Les actifs dans d'autres types de comptes, tels que les comptes sur marge, ne seront pas détectés.",
     "topUpButton": "Recharger le solde",
-    "unableTransferError": "Impossible d'initier le transfert.",
     "topUpUSDCInstruction": "Rechargez votre solde USDC dans votre portefeuille Phantom.",
-    "tryAgainFromTaoInstruction": "Essayez de nouveau depuis votre page de paiement Tao."
+    "tryAgainFromTaoInstruction": "Essayez de nouveau depuis votre page de paiement Tao.",
+    "unableTransferError": "Impossible d'initier le transfert."
   },
   "selectItem": {
     "label": "Sélectionner {{text}}"
@@ -978,10 +982,10 @@
     "title": "Configurer l'e-mail"
   },
   "termsAndConditionsPage": {
-    "paragraph1": "Mesh Connect, Inc. (l’<1>« Entreprise »</1>) est un fournisseur de technologie qui met à disposition un outil de communication (l’<3>« Outil »</3>) facilitant certaines fonctionnalités d’un service tiers que vous utilisez (le <5>« Service Utilisateur Final »</5>).\nCet Outil a pour objectif de vous permettre de communiquer avec vos comptes et portefeuilles tiers (<7>« Comptes Connectés »</7>) via le Service Utilisateur Final, notamment en transmettant des instructions que vous souhaitez exécuter.",
+    "paragraph1": "Mesh Connect, Inc. (l’<1>«\u202fEntreprise\u202f»</1>) est un fournisseur de technologie qui met à disposition un outil de communication (l’<3>«\u202fOutil\u202f»</3>) facilitant certaines fonctionnalités d’un service tiers que vous utilisez (le <5>«\u202fService Utilisateur Final\u202f»</5>).\nCet Outil a pour objectif de vous permettre de communiquer avec vos comptes et portefeuilles tiers (<7>«\u202fComptes Connectés\u202f»</7>) via le Service Utilisateur Final, notamment en transmettant des instructions que vous souhaitez exécuter.",
     "paragraph10": "L'arbitrage sera administré par l'American Arbitration Association selon ses règles d'arbitrage des consommateurs, modifiées par ces termes. Les règles d'arbitrage des consommateurs sont disponibles en ligne à <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. L'arbitre mènera des audiences, le cas échéant, par téléconférence ou vidéoconférence, plutôt qu'en présence personnelle, sauf si l'arbitre décide sur demande de vous ou de nous qu'une audience en personne est appropriée. Toute rencontre en personne sera tenue dans un lieu raisonnablement pratique pour les deux parties, en tenant compte de leur capacité à se déplacer et de circonstances pertinentes. Si vous et l'Entreprise ne pouvez pas vous entendre sur un lieu, cette détermination devrait être faite par l'AAA ou par l'arbitre. La décision de l’arbitre devra être conforme aux présentes conditions, et elle sera définitive et contraignante. L’arbitre aura le pouvoir d’accorder toute mesure de redressement temporaire, provisoire ou permanent, y compris l’exécution spécifique des présentes conditions, mais uniquement dans la mesure nécessaire pour accorder la réparation justifiée par la réclamation individuelle présentée devant lui. La sentence arbitrale pourra être homologuée et exécutée devant tout tribunal compétent.\nNonobstant ce qui précède, aucune disposition des présentes conditions ne vous empêche de soumettre une plainte à une autorité fédérale, étatique ou locale, laquelle pourra, si la loi le permet, engager une action en votre nom contre nous.",
     "paragraph11": "Ces conditions constituent l’intégralité de l’accord entre vous et l’Entreprise concernant leur objet, et remplacent toutes déclarations ou accords antérieurs, oraux ou écrits, relatifs à ces sujets. Si une disposition est jugée inapplicable en vertu de la législation applicable, elle sera modifiée dans la mesure nécessaire pour se conformer à la loi tout en préservant, autant que possible, l’intention initiale. Toute disposition qui ne peut être modifiée de cette manière sera réputée dissociable, et les dispositions restantes resteront pleinement en vigueur. Vous reconnaissez et acceptez que les prestataires de services de l’Entreprise sont des tiers bénéficiaires de ces conditions. En acceptant ces conditions ou en utilisant l’Outil, vous acceptez d’être lié par les termes du présent accord.",
-    "paragraph2": "Vous reconnaissez et acceptez que certaines fonctionnalités du Service Utilisateur Final reposent sur l’Outil ; que l’utilisation de ces fonctionnalités se fait à votre demande ; que ni l’Entreprise ni ses prestataires de services ne fournissent de services de courtage ni ne participent au traitement des paiements ; et que ni l’Entreprise ni ses prestataires de services n’assument de responsabilité ou d’obligation à l’égard du Service Utilisateur Final, de tout Compte Connecté, ou des conditions, politiques, actes ou omissions de leurs fournisseurs respectifs.",
+    "paragraph2": "Vous reconnaissez et acceptez que certaines fonctionnalités du Service Utilisateur Final reposent sur l’Outil\u202f; que l’utilisation de ces fonctionnalités se fait à votre demande\u202f; que ni l’Entreprise ni ses prestataires de services ne fournissent de services de courtage ni ne participent au traitement des paiements\u202f; et que ni l’Entreprise ni ses prestataires de services n’assument de responsabilité ou d’obligation à l’égard du Service Utilisateur Final, de tout Compte Connecté, ou des conditions, politiques, actes ou omissions de leurs fournisseurs respectifs.",
     "paragraph3": "Vous déclarez et garantissez que vous disposez de tous les droits et consentements nécessaires pour vous connecter à chaque Compte Connecté et y accéder via ces fonctionnalités, y compris le droit de fournir à l’Entreprise et à ses prestataires de services vos identifiants de connexion, adresses de portefeuilles et/ou toute information de compte ou donnée personnelle relative à chaque Compte Connecté. Par la présente, vous autorisez l’Entreprise et ses prestataires de services à transmettre des instructions, ainsi que des informations, données et autres contenus, entre le Service Utilisateur Final et chaque Compte Connecté. Vous reconnaissez et acceptez que l’Entreprise et ses prestataires de services n’assument aucune responsabilité quant à l’exécution de ces instructions ni quant à ces contenus (y compris leur exactitude, leur actualité ou leur exhaustivité).",
     "paragraph4": "Vous reconnaissez avoir lu la politique de confidentialité de l’Entreprise, disponible à l’adresse suivante : <2>https://meshconnect.com/privacy-policy</2>, et acceptez qu’en utilisant l’Outil, vous consentez à l’utilisation de vos informations personnelles par l’Entreprise, conformément aux modalités définies dans ladite politique de confidentialité.",
     "paragraph5": "L’Outil est mis à disposition sur une base « TEL QUEL » et « TEL QUE DISPONIBLE », avec tous ses défauts et sans aucune garantie ni déclaration de quelque nature que ce soit.\nL’Entreprise ne formule aucune garantie, expresse ou implicite, concernant l’Outil, y compris, sans s’y limiter, les garanties de qualité marchande, d’adéquation à un usage particulier ou de non-contrefaçon.",

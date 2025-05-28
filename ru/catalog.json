@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "К сожалению, активность из вашей страны в настоящий момент недоступна.",
+    "title": "Доступ запрещён"
+  },
   "addressWhitelistPage": {
     "addAddress": "Добавить в качестве одобренного адреса для вывода средств:",
     "goToAccount": "Откройте свой <1>{{selectedIntegrationName}} аккаунт</1>",
@@ -9,10 +13,6 @@
   },
   "authCodeInput": {
     "code": "Код из 6 цифр"
-  },
-  "accessDeniedPage": {
-    "title": "Доступ запрещён",
-    "body": "К сожалению, активность из вашей страны в настоящий момент недоступна."
   },
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Переключить Валюта/Крипто"
@@ -281,12 +281,12 @@
     "checkDetails40": "Просмотреть детали транзакции",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
     "depositClient": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> на {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Вернитесь на страницу оформления заказа Tao, чтобы завершить оплату.",
+    "directMobileTitle": "Платеж инициирован",
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
     "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><3></3> для {{clientName}}",
-    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети.",
-    "directMobileTitle": "Платеж инициирован",
-    "directMobileBody": "Вернитесь на страницу оформления заказа Tao, чтобы завершить оплату."
+    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Владелец адреса {{address}} уже верифицирован для <4>{{clientName}}</4>.",
@@ -439,6 +439,8 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -471,12 +473,14 @@
     "cryptoConversion": "Конвертация криптовалют",
     "description": "Итого: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Доступные денежные средства: {{amountInFiat}})",
+    "insufficientFunds": "",
     "linkedPaymentMethods": "Связанные способ(ы) оплаты",
     "noPaymentMethods": "Нет привязанных способов оплаты.",
     "noTokensAvailableForConversion": "Нет токенов для конвертации",
     "save": "Сохранить",
     "selectFundingMethodAvailablity": "Выбранные методы обеспечения имеют {{selectedAvailableAmount}}. Пожалуйста, выберите дополнительные способы обеспечения для перевода {{neededAmount}}.",
     "selectFundingMethods": "Пожалуйста, выберите метод (ы) обеспечения для перевода <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "",
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
@@ -782,8 +786,6 @@
     "conversionStep": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
     "depositTitle": "Идет пополнение",
     "description": "Это может занять некоторое время...",
-    "processing": "Обработка вашего платежа",
-    "mayTakeFewSeconds": "Это может занять несколько секунд",
     "existingCryptocurrencyBalance": {
       "approveClient": "Вы одобряете перевод с {{selectedIntegrationName}} на {{clientName}}.",
       "approveDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
@@ -796,9 +798,11 @@
       "transferSmartDepositWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} {{address}} через релейный контракт.",
       "transferWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Это может занять несколько секунд",
     "onrampTitle": "Идёт покупка",
     "paymentMethodDepositUsage": "Пополнение <1>{{amount}}</1> с {{paymentMethod}} на {{selectedIntegrationName}}.",
     "paymentTitle": "Идет обработка платежа",
+    "processing": "Обработка вашего платежа",
     "transactionTitle": "Идет обработка транзакции",
     "tryAgain": "Попробовать еще раз"
   },
@@ -870,6 +874,7 @@
     "fundingWith": "Пополнение с",
     "institutionTransferFee": "Комиссия вывода средств из {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Комиссия, которую {{selectedIntegrationName}} взимает для облегчения перевода из {{symbol}}.",
+    "insufficientFunds": "",
     "maxAmount": "Ваш счет может пополнять не более <2>{{networkMaxAmount}}</2>. Вы хотите скорректировать Ваш перевод на эту сумму?",
     "monitoring": "Ждем подтверждения...",
     "network": "Сеть",
@@ -938,9 +943,9 @@
     "returnToClientButton": "Вернуться к {{clientName}}",
     "spotAccountsBody": "В настоящее время поддерживаются только спот-счета. Активы на других типах счетов, например на маржинальных, не будут отображены.",
     "topUpButton": "Пополнить баланс",
-    "unableTransferError": "Невозможно начать перевод.",
     "topUpUSDCInstruction": "Пополните баланс USDC в вашем электронном кошельке Phantom.",
-    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа Tao."
+    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа Tao.",
+    "unableTransferError": "Невозможно начать перевод."
   },
   "selectItem": {
     "label": "Выбор {{text}}"
