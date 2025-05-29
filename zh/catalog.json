@@ -1,7 +1,7 @@
 {
   "accessDeniedPage": {
-    "body": "很遗憾，您所在国家的活动暂时不被允许。",
-    "title": "拒绝访问"
+    "body": "很遗憾，您所在国家的暂时在禁止地区。",
+    "title": "访问被拒绝"
   },
   "addressWhitelistPage": {
     "addAddress": "将以下地址添加至已批准的提现地址：",
@@ -282,7 +282,7 @@
     "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
     "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
     "directMobileBody": "返回 TAO 结账页面以完成您的付款。",
-    "directMobileTitle": "支付已启动",
+    "directMobileTitle": "支付已发起",
     "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><3></3>的支付至{{clientName}}",
@@ -478,7 +478,7 @@
     "save": "保存",
     "selectFundingMethodAvailablity": "您选择的付款方式额度为{{selectedAvailableAmount}}。 请选择其他付款方式转账{{neededAmount}}。",
     "selectFundingMethods": "请选择付款方式以转账<2>{{amount}} ~ {{amountInFiat}}</2>。",
-    "selectFundingMethodsTitle": "未选择资金来源",
+    "selectFundingMethodsTitle": "未选择充值方式",
     "selectOtherHoldings": "从其他资产中选择",
     "symbolBalance": "{{symbol}}余额",
     "title": "付款方式"
@@ -763,7 +763,7 @@
   },
   "oauthExternalPage": {
     "connected": {
-      "title": "您已连接到{{selectedIntegrationName}}",
+      "title": "您已与{{selectedIntegrationName}}连接",
       "subtitle": "返回至{{clientName}}继续",
       "action": "返回{{clientName}}"
     },
@@ -778,13 +778,13 @@
     "error": {
       "connection": {
         "title": "无法连接到{{selectedIntegrationName}}",
-        "subtitle": "看起来您没有完成登录或批准访问权限。要继续，请重新打开{{selectedIntegrationName}}并完成登录。",
+        "subtitle": "您似乎未完成登录流程或未批准访问权限。要继续，请重新打开{{selectedIntegrationName}}并完成登录。",
         "action": "重新打开{{selectedIntegrationName}}"
       }
     },
     "redirecting": {
-      "title": "重定向到 {{selectedIntegrationName}}",
-      "subtitle": "您将被重定向到浏览器，以使用{{selectedIntegrationName}}安全登录。完成后，您将自动返回此处。",
+      "title": "跳转至 {{selectedIntegrationName}}",
+      "subtitle": "您将被跳转至浏览器以使用{{selectedIntegrationName}}安全登录。完成后，您将自动返回本页。",
       "action": "继续前往{{selectedIntegrationName}}"
     }
   },
@@ -823,11 +823,11 @@
       "transferSmartDepositWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。",
       "transferWithAddress": "从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。"
     },
-    "mayTakeFewSeconds": "这可能需要几秒钟",
+    "mayTakeFewSeconds": "这可能需要一会儿",
     "onrampTitle": "购买中",
     "paymentMethodDepositUsage": "从{{paymentMethod}}存入<1>{{amount}}</1>到{{selectedIntegrationName}}。",
     "paymentTitle": "付款中",
-    "processing": "正在处理付款",
+    "processing": "处理付款中",
     "transactionTitle": "交易中",
     "tryAgain": "再试一次"
   },
@@ -875,9 +875,9 @@
   },
   "previewPageUI": {
     "accountLabel": "账户",
-    "buildingPreviewPayment": "构建您的付款预览...",
+    "buildingPreviewPayment": "正在生成您的付款预览……",
     "confirmTransaction": "在您的 {{selectedIntegrationName}} 应用中确认此交易。",
-    "fewSeconds": "这可能需要几秒钟",
+    "fewSeconds": "这可能需要一会儿",
     "includeFeesMessage": "包含 {{amount}} 手续费",
     "networkLabel": "网络",
     "paymentTitle": "支付 {{clientName}}",
@@ -896,7 +896,7 @@
     "estimatedGasFee": "燃料费估计",
     "estimatedGasFeeHint": "网络验证者处理交易的算力费用补偿估值。",
     "from": "发起者",
-    "fundingWith": "充值选项",
+    "fundingWith": "充值方式",
     "institutionTransferFee": "{{selectedIntegrationName}}提现费",
     "institutionTransferFeeHint": "为支持您从 {{symbol}}中发起的转账，{{selectedIntegrationName}} 将收取的费用。",
     "insufficientFunds": "余额不足",
@@ -968,7 +968,7 @@
     "returnToClientButton": "返回{{clientName}}",
     "spotAccountsBody": "当前仅支持现货账户。其他账户类型（例如保证金账户）中的资产将不会被检测到。",
     "topUpButton": "充值余额",
-    "topUpUSDCInstruction": "在您的Phantom钱包中充值USDC余额。",
+    "topUpUSDCInstruction": "充值USDC至您的在您的Phantom钱包。",
     "tryAgainFromTaoInstruction": "从 TAO 结账页面重试。",
     "unableTransferError": "无法发起转账。"
   },
@@ -1009,7 +1009,7 @@
   },
   "termsAndConditionsPage": {
     "paragraph1": "Mesh Connect, Inc.（以下简称<1>“该公司”</1>）是一个技术提供商，该公司创建了一款通讯工具（以下简称<3>“工具”</3>），协助您使用的第三方服务的某些功能（以下简称<5>“终端用户服务”</5>）。这些功能旨在通过终端用户服务，使您能够与您的第三方账户和钱包（<7>“连接账户”</7>）交互，包括发送您希望执行的指令。",
-    "paragraph10": "仲裁将由美国仲裁协会根据修改后的《消费者仲裁规则》进行管理，这些规则可在<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>查看。除非您或我们提出要求，并且仲裁员认为当面听证是适当的，否则仲裁员将通过电话或视讯会议进行听证，而不是亲自出席。任何亲自出席都会安排在对双方合理方便的地点，并充分考虑到出行的能力和其他相关情况。如果您与公司无法就地点达成协议，则应由AAA或仲裁员作出决定。仲裁员的裁决将遵循这些条款，具有最终约束力。仲裁员有权授予临时、临时性或永久性的禁令或特定执行这些条款的救济，但仅限于仲裁员面前的单项索赔所保障的范围。仲裁员的裁决可以在具有管辖权的任何法院得到确认和执行。尽管有上述限制，您仍可将问题向联邦、州或地方机构反映，并在法律允许的情况下，他们可为您对我们寻求救济。",
+    "paragraph10": "仲裁将由美国仲裁协会根据修改后的《消费者仲裁规则》进行管理，这些规则可在<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>查看。通常仲裁员将通过电话或视讯会议进行听证，除非您或我们认为需要亲自出席并经过仲裁员批准，经过双方许可，且您或我们要求并并且仲裁员认为当面听证是适当的，否则。任何亲自出席都会安排在对双方合理方便的地点，并充分考虑到出行的能力和其他相关情况。如果您与公司无法就地点达成协议，则应由AAA或仲裁员作出决定。仲裁员的裁决将遵循这些条款，具有最终约束力。仲裁员有权授予临时、临时性或永久性的禁令或特定执行这些条款的救济，但仅限于仲裁员面前的单项索赔所保障的范围。仲裁员的裁决可以在具有管辖权的任何法院得到确认和执行。尽管有上述限制，您仍可将问题向联邦、州或地方机构反映，并在法律允许的情况下，他们可为您对我们寻求救济。",
     "paragraph11": "这些条款构成您和公司之间关于其主题的完整协议，取代所有此前的相关口头或书面陈述或协议。如果任何条款在适用法律下不可执行，则该条款应在尽可能不改变原条款意图的前提下进行修订。如无法进行此类修订，该条款将被分割，其余条款继续有效。您确认并同意公司的服务提供商为这些条款的预期第三方受益人。接受这些条款与条件或使用工具，即表示您同意受本协约条款与条件的约束。",
     "paragraph2": "您确认并同意终端用户服务的某些功能基于工具；您对这些功能使用的实施是基于您的指令；公司及其服务提供商不提供经纪服务或从事付款处理；公司及其服务提供商对终端用户服务或连接账户以及其提供商的条款、政策、行为或不作为不承担任何责任。",
     "paragraph3": "您声明并保证您拥有连接并访问每个连接账户所需的所有权利和同意，包括向公司及其服务提供商提供您的账户登录凭证、钱包地址及/或任何与各个连接账户相关的账户或个人信息的权利。在此，您授权公司及其服务提供商在终端用户服务和每个连接账户之间传送指令以及信息、数据和其他材料，并且您确认并同意公司及其服务提供商对任何此类指令的执行或任何此类材料（包括其准确性、及时性或完整性）不承担任何责任。",
