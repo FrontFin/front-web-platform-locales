@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Bir hata oluştu.",
-    "directMobileFlowError": "Oturum süresi doldu. Lütfen Tao ödeme sayfanıza dönün ve tekrar deneyin."
+    "directMobileFlowError": "Oturum sona erdi. Lütfen TAO ödeme sayfanıza geri dönüp tekrar deneyin."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Başka bir cüzdan bağlayın",
@@ -281,7 +281,7 @@
     "checkDetails40": "İşlem ayrıntılarını görüntüle",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>{{shortAddress}} adresinde alınacak.",
     "depositClient": "{{clientName}} ({{shortAddress}}) için<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>alacaksınız.",
-    "directMobileBody": "Ödemenizi tamamlamak için Tao ödeme sayfanıza geri dönün.",
+    "directMobileBody": "Ödemenizi tamamlamak için TAO ödeme sayfanıza geri dönün.",
     "directMobileTitle": "Ödeme başlatıldı",
     "goBackToShift4": "← Shift4'e geri dön",
     "goToIntegrationToApprove": "Lütfen bu transferi onaylamak için <1>{{selectedIntegrationName}}</1> adresine gidin.",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "Başka bir hesap seçin",
     "selectAnotherDescription": "Aktarım yapmak için başka bir borsa veya cüzdan seçin."
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "{{selectedIntegrationName}} ile bağlantınız kuruldu",
+      "subtitle": "Devam etmek için {{clientName}}'e dönün",
+      "action": "{{clientName}} dön"
+    },
+    "checking": {
+      "message": "Varlıklarınız kontrol ediliyor..."
+    },
+    "awaitingConnection": {
+      "title": "Bağlantı bekleniyor",
+      "subtitle": "Lütfen tarayıcınızda oturum açmayı tamamlayın ve erişimi onaylayın.",
+      "action": "{{selectedIntegrationName}}'i Yeniden Aç"
+    },
+    "error": {
+      "connection": {
+        "title": "{{selectedIntegrationName}} ile bağlantı kurulamadı",
+        "subtitle": "Görünüşe göre oturum açmayı veya erişim iznini tamamlamadınız. Devam etmek için lütfen {{selectedIntegrationName}}'i yeniden açın ve oturum açmayı tamamlayın.",
+        "action": "{{selectedIntegrationName}}'i Yeniden Aç"
+      }
+    },
+    "redirecting": {
+      "title": "{{selectedIntegrationName}}'e yönlendirilmektesiniz",
+      "subtitle": "{{selectedIntegrationName}} ile güvenli bir şekilde giriş yapmanız için tarayıcınıza yönlendirileceksiniz. İşiniz bittiğinde, buraya otomatik olarak döneceksiniz.",
+      "action": "{{selectedIntegrationName}}'e devam et"
+    }
+  },
   "oauthInitialPage": {
     "continue": "{{integrationName}}'e Devam Et",
     "description": "{{integrationName}}'i açmak için aşağıya tıklayın ve ödemenizi görmek için hesabınıza giriş yapın.",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "Şu anda yalnızca spot hesaplar desteklenmektedir. Kredi hesapları gibi diğer hesap türlerindeki varlıklar tespit edilemeyecektir.",
     "topUpButton": "Bakiye Yükle",
     "topUpUSDCInstruction": "Phantom cüzdanınızda USDC bakiyenizi arttırın.",
-    "tryAgainFromTaoInstruction": "Tao ödeme sayfanızdan tekrar deneyin.",
+    "tryAgainFromTaoInstruction": "TAO ödeme sayfanızdan tekrar deneyin.",
     "unableTransferError": "Transfer başlatılamıyor."
   },
   "selectItem": {

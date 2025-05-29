@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Ein Fehler ist aufgetreten.",
-    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehren Sie zu Ihrer Tao-Kassenseite zurück und versuchen Sie es erneut."
+    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehren Sie zu Ihrer TAO-Kassenseite zurück und versuchen Sie es erneut."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Eine weitere Wallet verbinden",
@@ -281,7 +281,7 @@
     "checkDetails40": "Transaktionsdetails anzeigen",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>wird an {{shortAddress}} empfangen",
     "depositClient": "Du wirst<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}}) erhalten",
-    "directMobileBody": "Kehren Sie zu Ihrer Tao-Kassenseite zurück, um Ihre Zahlung abzuschließen.",
+    "directMobileBody": "Kehren Sie zu Ihrer TAO-Kassenseite zurück, um Ihre Zahlung abzuschließen.",
     "directMobileTitle": "Zahlung initiiert",
     "goBackToShift4": "← Zurück zu Shift4",
     "goToIntegrationToApprove": "Bitte gehe zu <1>{{selectedIntegrationName}}</1>, um diese Überweisung zu genehmigen.",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "Wähle ein anderes Konto aus",
     "selectAnotherDescription": "Bitte wähle eine andere Börse oder Wallet für die Einzahlung."
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Sie sind mit {{selectedIntegrationName}} verbunden",
+      "subtitle": "Zurück zu {{clientName}}, um fortzufahren",
+      "action": "Zurück zu {{clientName}}"
+    },
+    "checking": {
+      "message": "Ihre Assets werden überprüft..."
+    },
+    "awaitingConnection": {
+      "title": "Warte auf Verbindung",
+      "subtitle": "Bitte melden Sie sich in Ihrem Browser an und genehmigen Sie den Zugriff.",
+      "action": "Öffne {{selectedIntegrationName}} erneut"
+    },
+    "error": {
+      "connection": {
+        "title": "Konnte keine Verbindung zu {{selectedIntegrationName}} herstellen",
+        "subtitle": "Es scheint, dass Sie die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen haben. Bitte öffnen Sie {{selectedIntegrationName}} erneut und beenden Sie die Anmeldung.",
+        "action": "Öffne {{selectedIntegrationName}} erneut"
+      }
+    },
+    "redirecting": {
+      "title": "Umleitung zu {{selectedIntegrationName}}",
+      "subtitle": "Sie werden zu Ihrem Browser weitergeleitet, um sich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Sie fertig sind, kehren Sie automatisch hierher zurück.",
+      "action": "Weiter zu {{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Weiter zu {{integrationName}}",
     "description": "Klicke unten, um {{integrationName}} zu öffnen, und melde Dich in Deinem Konto an, um Deine Zahlungsvorschau zu sehen.",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "Derzeit werden nur Spot-Konten unterstützt. Assets in anderen Kontotypen, wie Margin, werden nicht erkannt.",
     "topUpButton": "Guthaben aufladen",
     "topUpUSDCInstruction": "Laden Sie Ihr USDC-Guthaben in Ihrem Phantom-Wallet auf.",
-    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer Tao-Kassenseite.",
+    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer TAO-Kassenseite.",
     "unableTransferError": "Die Überweisung kann nicht gestartet werden."
   },
   "selectItem": {

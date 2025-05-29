@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "एक त्रुटि उत्पन्न हुई है।",
-    "directMobileFlowError": "सत्र समाप्त हो गया है। कृपया अपने ताओ चेकआउट पृष्ठ पर वापस जाएं और पुनः प्रयास करें।"
+    "directMobileFlowError": "सत्र समाप्त हो गया। कृपया अपने TAO चेकआउट पृष्ठ पर लौटें और फिर से प्रयास करें।"
   },
   "connectionUnavailablePage": {
     "connectAnother": "एक अन्य वॉलेट कनेक्ट करें",
@@ -281,7 +281,7 @@
     "checkDetails40": "लेनदेन विवरण देखें",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1> {{shortAddress}} में प्राप्त होगा",
     "depositClient": "आप प्राप्त करेंगे<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> {{clientName}} ({{shortAddress}}) में",
-    "directMobileBody": "अपने भुगतान को अंतिम रूप देने के लिए अपने ताओ चेकआउट पृष्ठ पर वापस जाएं।",
+    "directMobileBody": "अपना भुगतान पूरा करने के लिए अपने TAO चेकआउट पृष्ठ पर वापस लौटें।",
     "directMobileTitle": "भुगतान प्रारंभ हो गया है",
     "goBackToShift4": "← Shift4 पर वापस जाएँ",
     "goToIntegrationToApprove": "कृपया इस स्थानांतरण को स्वीकृत करने के लिए <1>{{selectedIntegrationName}}</1> पर जाएं।",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "दूसरे खाते का चयन करें",
     "selectAnotherDescription": "जमा करने के लिए कृपया अन्य एक्सचेंज या वॉलेट का चयन करें।"
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "आप {{selectedIntegrationName}} से जुड़ गए हैं",
+      "subtitle": "जारी रखने के लिए {{clientName}} पर वापस जाएं",
+      "action": "{{clientName}} पर लौटें"
+    },
+    "checking": {
+      "message": "आपकी संपत्तियाँ जाँची जा रही हैं..."
+    },
+    "awaitingConnection": {
+      "title": "कनेक्शन की प्रतीक्षा कर रहे हैं",
+      "subtitle": "कृपया अपने ब्राउज़र में लॉगिन समाप्त करें और पहुँच की मंजूरी दें।",
+      "action": "{{selectedIntegrationName}} को फिर से खोलें"
+    },
+    "error": {
+      "connection": {
+        "title": "{{selectedIntegrationName}} से कनेक्ट नहीं हो सका",
+        "subtitle": "ऐसा लगता है कि आपने लॉग इन या एक्सेस की स्वीकृति को पूरा नहीं किया है। जारी रखने के लिए, कृपया {{selectedIntegrationName}} को फिर से खोलें और साइन-इन पूरा करें।",
+        "action": "{{selectedIntegrationName}} को फिर से खोलें"
+      }
+    },
+    "redirecting": {
+      "title": "{{selectedIntegrationName}} पर पुनःनिर्देशित कर रहे हैं",
+      "subtitle": "आपको अपने ब्राउज़र पर पुनःनिर्देशित किया जाएगा ताकि {{selectedIntegrationName}} के साथ सुरक्षित रूप से लॉग इन कर सकें। जब आपका काम पूरा हो जाएगा, तो आप स्वचालित रूप से यहाँ लौट आएंगे।",
+      "action": "{{selectedIntegrationName}} पर जारी रखें"
+    }
+  },
   "oauthInitialPage": {
     "continue": "{{integrationName}} पर जारी रखें",
     "description": "{{integrationName}} खोलने के लिए नीचे क्लिक करें, और भुगतान का पूर्वावलोकन करने के लिए अपने खाते में लॉग इन करें।",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "वर्तमान में केवल स्पॉट खाते समर्थित हैं। मार्जिन जैसे अन्य खाते प्रकार में संपत्तियां दिखाई नहीं देंगी।",
     "topUpButton": "बैलेंस टॉप अप करें",
     "topUpUSDCInstruction": "अपने फैंटम वालेट में यूएसडीसी बैलेंस को पुनः पूरित करें।",
-    "tryAgainFromTaoInstruction": "अपने ताओ चेकआउट पृष्ठ से पुनः प्रयास करें।",
+    "tryAgainFromTaoInstruction": "कृपया अपने TAO चेकआउट पृष्ठ से पुनः प्रयास करें।",
     "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।"
   },
   "selectItem": {

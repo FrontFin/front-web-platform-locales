@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Um erro ocorreu.",
-    "directMobileFlowError": "Sessão expirada. Por favor, retorne à sua página de checkout Tao e tente novamente."
+    "directMobileFlowError": "Sessão expirada. Por favor, volte para a sua página de checkout TAO e tente novamente."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Conectar outra carteira",
@@ -281,7 +281,7 @@
     "checkDetails40": "Ver detalhes da transação",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>será recebido em {{shortAddress}}",
     "depositClient": "Você receberá<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>em {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Retorne à sua página de checkout Tao para finalizar seu pagamento.",
+    "directMobileBody": "Volte para a sua página de checkout TAO para finalizar o seu pagamento.",
     "directMobileTitle": "Pagamento iniciado",
     "goBackToShift4": "← Volte para Shift4",
     "goToIntegrationToApprove": "Por favor, vá para <1>{{selectedIntegrationName}}</1> para aprovar esta transferência.",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "Selecione outra conta",
     "selectAnotherDescription": "Selecione outro câmbio ou carteira para depositar."
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Você está conectado com {{selectedIntegrationName}}",
+      "subtitle": "Retorne para {{clientName}} para continuar",
+      "action": "Retorne a {{clientName}}"
+    },
+    "checking": {
+      "message": "Verificando seus ativos..."
+    },
+    "awaitingConnection": {
+      "title": "Aguardando conexão",
+      "subtitle": "Por favor, conclua o login e aprove o acesso no seu navegador.",
+      "action": "Reabrir {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Não foi possível conectar ao {{selectedIntegrationName}}",
+        "subtitle": "Parece que você não terminou de fazer login ou aprovar acesso. Para continuar, reabra {{selectedIntegrationName}} e conclua a autenticação.",
+        "action": "Reabrir {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Redirecionando para {{selectedIntegrationName}}",
+      "subtitle": "Você será redirecionado para seu navegador para fazer login com segurança no {{selectedIntegrationName}}. Quando concluir, você retornará aqui automaticamente.",
+      "action": "Continue para {{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Continuar para {{integrationName}}",
     "description": "Clique abaixo para abrir {{integrationName}} e faça login na sua conta para visualizar o pagamento.",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "Apenas contas spot são suportadas atualmente. Os ativos em outros tipos de contas, como margem, não serão detectados.",
     "topUpButton": "Recarregar saldo",
     "topUpUSDCInstruction": "Recarregue seu saldo USDC na sua carteira Phantom.",
-    "tryAgainFromTaoInstruction": "Tente novamente a partir da sua página de checkout Tao.",
+    "tryAgainFromTaoInstruction": "Tente novamente a partir da sua página de checkout TAO.",
     "unableTransferError": "Não é possível iniciar a transferência."
   },
   "selectItem": {

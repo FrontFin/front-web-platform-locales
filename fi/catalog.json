@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Tapahtui virhe.",
-    "directMobileFlowError": "Istunto vanheni. Palaa Tao-kassasivullesi ja yritä uudelleen."
+    "directMobileFlowError": "Istunto on vanhentunut. Palaa TAO-laskusivullesi ja yritä uudelleen."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Yhdistä toinen lompakko",
@@ -281,7 +281,7 @@
     "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>saapuu osoitteeseen {{shortAddress}}",
     "depositClient": "Saat<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tilille {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Palaa Tao-kassasivullesi viimeistelläksesi maksusi.",
+    "directMobileBody": "Palaa TAO-laskusivullesi viimeistelläksesi maksusi.",
     "directMobileTitle": "Maksu aloitettu",
     "goBackToShift4": "← Palaa Shift4:ään",
     "goToIntegrationToApprove": "Ole hyvä ja mene kohteeseen <1>{{selectedIntegrationName}}</1> hyväksyäksesi tämän siirron.",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherDescription": "Valitse toinen pörssi tai lompakko siirron tallettamiseen."
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Olet yhteydessä {{selectedIntegrationName}} kanssa",
+      "subtitle": "Palaa takaisin {{clientName}} jatkaaksesi",
+      "action": "Palaa takaisin {{clientName}}"
+    },
+    "checking": {
+      "message": "Tarkistetaan omaisuuttasi..."
+    },
+    "awaitingConnection": {
+      "title": "Odotetaan yhteyttä",
+      "subtitle": "Ole hyvä ja viimeistele kirjautuminen ja hyväksy pääsy selaimessasi.",
+      "action": "Avaa uudelleen {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Yhteyttä {{selectedIntegrationName}} ei voitu muodostaa",
+        "subtitle": "Näyttää siltä, ettet ole suorittanut kirjautumista tai käyttöoikeuden hyväksymistä loppuun. Jatkaaksesi, avaa {{selectedIntegrationName}} uudelleen ja suorita kirjautuminen loppuun.",
+        "action": "Avaa uudelleen {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Ohjataan kohteeseen {{selectedIntegrationName}}",
+      "subtitle": "Sinut ohjataan selaimeesi kirjautumaan turvallisesti palveluun {{selectedIntegrationName}}. Kun olet valmis, palaat tänne automaattisesti.",
+      "action": "Jatka {{selectedIntegrationName}}:iin"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Jatka siirtymällä {{integrationName}}:iin",
     "description": "Napsauta alla avataksesi {{integrationName}} ja kirjaudu tilillesi maksun esikatselua varten.",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "Tällä hetkellä tukena on vain spot-tilit. Muita tilin tyyppejä, kuten marginaalitilejä, ei havaita.",
     "topUpButton": "Lisää saldoa",
     "topUpUSDCInstruction": "Lisää USDC-saldoasi Phantom-lompakossasi.",
-    "tryAgainFromTaoInstruction": "Yritä uudelleen Tao-kassasivultasi.",
+    "tryAgainFromTaoInstruction": "Yritä uudelleen TAO-laskusivultasi.",
     "unableTransferError": "Siirtoa ei ole mahdollista aloittaa."
   },
   "selectItem": {

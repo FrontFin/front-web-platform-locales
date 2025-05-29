@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Произошла ошибка.",
-    "directMobileFlowError": "Сессия истекла. Пожалуйста, вернитесь на страницу оформления заказа Tao и попробуйте снова."
+    "directMobileFlowError": "Время сеанса истекло. Пожалуйста, вернитесь на страницу оформления заказа TAO и попробуйте снова."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Подключить другой кошелек",
@@ -281,7 +281,7 @@
     "checkDetails40": "Просмотреть детали транзакции",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
     "depositClient": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> на {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Вернитесь на страницу оформления заказа Tao, чтобы завершить оплату.",
+    "directMobileBody": "Вернитесь на страницу оформления заказа TAO, чтобы завершить оплату.",
     "directMobileTitle": "Платеж инициирован",
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherDescription": "Пожалуйста, выберите другой аккаунт или кошелек для перевода."
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Вы подключены к {{selectedIntegrationName}}",
+      "subtitle": "Вернуться к {{clientName}}, чтобы продолжить",
+      "action": "Вернуться к {{clientName}}"
+    },
+    "checking": {
+      "message": "Проверка ваших активов..."
+    },
+    "awaitingConnection": {
+      "title": "Ожидание подключения",
+      "subtitle": "Пожалуйста, завершите вход в систему и подтвердите доступ в вашем браузере.",
+      "action": "Переоткрыть {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Не удалось подключиться к {{selectedIntegrationName}}",
+        "subtitle": "Кажется, вы не завершили вход в систему или подтверждение доступа. Чтобы продолжить, пожалуйста, снова откройте {{selectedIntegrationName}} и завершите вход.",
+        "action": "Переоткрыть {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Перенаправление к {{selectedIntegrationName}}",
+      "subtitle": "Вы будете перенаправлены в ваш браузер для безопасного входа с {{selectedIntegrationName}}. Как только вы закончите, вы вернётесь сюда автоматически.",
+      "action": "Перейти к  {{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Перейти к {{integrationName}}",
     "description": "Нажмите, чтобы открыть {{integrationName}}, и войдите в свою учетную запись, чтобы совершить платеж.",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "В настоящее время поддерживаются только спот-счета. Активы на других типах счетов, например на маржинальных, не будут отображены.",
     "topUpButton": "Пополнить баланс",
     "topUpUSDCInstruction": "Пополните баланс USDC в вашем электронном кошельке Phantom.",
-    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа Tao.",
+    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа TAO.",
     "unableTransferError": "Невозможно начать перевод."
   },
   "selectItem": {

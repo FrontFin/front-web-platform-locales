@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "发生了一个错误。",
-    "directMobileFlowError": "会话已过期。请返回您的Tao结账页面并重试。"
+    "directMobileFlowError": "会话已过期。请返回 TAO 结账页面并重试。"
   },
   "connectionUnavailablePage": {
     "connectAnother": "连接另一个钱包",
@@ -281,7 +281,7 @@
     "checkDetails40": "查看交易详情",
     "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
     "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
-    "directMobileBody": "返回您的Tao结账页面以完成支付。",
+    "directMobileBody": "返回 TAO 结账页面以完成您的付款。",
     "directMobileTitle": "支付已启动",
     "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
@@ -761,6 +761,33 @@
     "selectAnotherAccount": "选择另一个账户",
     "selectAnotherDescription": "请选择其他交易所或钱包以充值。"
   },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "您已连接到{{selectedIntegrationName}}",
+      "subtitle": "返回至{{clientName}}继续",
+      "action": "返回{{clientName}}"
+    },
+    "checking": {
+      "message": "正在检查您的资产……"
+    },
+    "awaitingConnection": {
+      "title": "等待连接",
+      "subtitle": "请在浏览器中完成登录并批准访问。",
+      "action": "重新打开{{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "无法连接到{{selectedIntegrationName}}",
+        "subtitle": "看起来您没有完成登录或批准访问权限。要继续，请重新打开{{selectedIntegrationName}}并完成登录。",
+        "action": "重新打开{{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "重定向到 {{selectedIntegrationName}}",
+      "subtitle": "您将被重定向到浏览器，以使用{{selectedIntegrationName}}安全登录。完成后，您将自动返回此处。",
+      "action": "继续前往{{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "继续前往{{integrationName}}",
     "description": "点击下方打开{{integrationName}}，登录账户并预览支付。",
@@ -942,7 +969,7 @@
     "spotAccountsBody": "当前仅支持现货账户。其他账户类型（例如保证金账户）中的资产将不会被检测到。",
     "topUpButton": "充值余额",
     "topUpUSDCInstruction": "在您的Phantom钱包中充值USDC余额。",
-    "tryAgainFromTaoInstruction": "请从您的Tao结账页面重试。",
+    "tryAgainFromTaoInstruction": "从 TAO 结账页面重试。",
     "unableTransferError": "无法发起转账。"
   },
   "selectItem": {
