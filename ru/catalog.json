@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "К сожалению, активность из вашей страны в настоящий момент недоступна.",
+    "title": "Доступ запрещён"
+  },
   "addressWhitelistPage": {
     "addAddress": "Добавить в качестве одобренного адреса для вывода средств:",
     "goToAccount": "Откройте свой <1>{{selectedIntegrationName}} аккаунт</1>",
@@ -140,10 +144,11 @@
     "somethingWentWrong": "Что-то пошло не так...",
     "submitCap": "Отправить",
     "successTitle": "Успешно!",
-    "termsOfUse": "Продолжая, вы принимаете <2>условия использования</2>",
+    "termsOfUse": "Продолжая, вы принимаете <1>условия использования</1>",
     "tryAgain": "Попробовать снова"
   },
   "commonContent": {
+    "connecting": "Подключение...",
     "description": "облегчит безопасное соединение с {{integrationName}}.",
     "monitoring": "Ждём подтверждения...",
     "resend": "Повторно отправить запрос на подключение",
@@ -162,7 +167,8 @@
     "connectAnother": "Подключить другой аккаунт"
   },
   "connectionFailedPage": {
-    "defaultError": "Произошла ошибка."
+    "defaultError": "Произошла ошибка.",
+    "directMobileFlowError": "Время сеанса истекло. Пожалуйста, вернитесь на страницу оформления заказа TAO и попробуйте снова."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Подключить другой кошелек",
@@ -272,8 +278,11 @@
   "doneTransferPage": {
     "awaitingApproval": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
     "checkDetails": "Посмотреть детали",
+    "checkDetails40": "Просмотреть детали транзакции",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
-    "depositClient": "Вы получите<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>на {{clientName}} ({{shortAddress}})",
+    "depositClient": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> на {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Вернитесь на страницу оформления заказа TAO, чтобы завершить оплату.",
+    "directMobileTitle": "Платеж инициирован",
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
     "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><3></3> для {{clientName}}",
@@ -302,6 +311,9 @@
     "stillWaitingLoading": "Все еще ожидают письма...",
     "title": "Подтвердите вашу личность",
     "warningTitle": "Прочитайте это сообщение целиком, прежде чем продолжить."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Неправильный код 2FA"
   },
   "errorMessages": {
     "amountBelowMinimum": "Запрашиваемая сумма ниже минимально допустимой для перевода в этой сети.",
@@ -404,6 +416,9 @@
     "linking": "Привязка учетной записи...",
     "loading": "Все еще работает..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Загрузка..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "Преобразование {{integrationName}} {{conversionFromCurrency}} на {{conversionToCurrency}}",
@@ -456,12 +471,14 @@
     "cryptoConversion": "Конвертация криптовалют",
     "description": "Итого: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Доступные денежные средства: {{amountInFiat}})",
+    "insufficientFunds": "Недостаточно средств",
     "linkedPaymentMethods": "Связанные способ(ы) оплаты",
     "noPaymentMethods": "Нет привязанных способов оплаты.",
     "noTokensAvailableForConversion": "Нет токенов для конвертации",
     "save": "Сохранить",
     "selectFundingMethodAvailablity": "Выбранные методы обеспечения имеют {{selectedAvailableAmount}}. Пожалуйста, выберите дополнительные способы обеспечения для перевода {{neededAmount}}.",
     "selectFundingMethods": "Пожалуйста, выберите метод (ы) обеспечения для перевода <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "Способ финансирования не выбран",
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
@@ -718,6 +735,12 @@
     "goBack": "Назад",
     "title": "Оплатить криптовалютой"
   },
+  "networkSelectionDrawer": {
+    "description": "Ниже указаны все безопасные и совместимые сети для этого платежа. Мы автоматически выбрали сеть с самой низкой комиссией для вас.",
+    "estimatedGasFeeLabel": "Оценочная комиссия за газ:",
+    "lowestFeeLabel": "Самая низкая комиссия",
+    "title": "Выберите сеть"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Разрешено",
     "movingFunds": "перемещение средств без вашего разрешения",
@@ -737,6 +760,33 @@
     "description": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherDescription": "Пожалуйста, выберите другой аккаунт или кошелек для перевода."
+  },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Вы подключены к {{selectedIntegrationName}}",
+      "subtitle": "Вернуться к {{clientName}}, чтобы продолжить",
+      "action": "Вернуться к {{clientName}}"
+    },
+    "checking": {
+      "message": "Проверка ваших активов..."
+    },
+    "awaitingConnection": {
+      "title": "Ожидание подключения",
+      "subtitle": "Пожалуйста, завершите вход в систему и подтвердите доступ в вашем браузере.",
+      "action": "Переоткрыть {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Не удалось подключиться к {{selectedIntegrationName}}",
+        "subtitle": "Кажется, вы не завершили вход в систему или подтверждение доступа. Чтобы продолжить, пожалуйста, снова откройте {{selectedIntegrationName}} и завершите вход.",
+        "action": "Переоткрыть {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Перенаправление к {{selectedIntegrationName}}",
+      "subtitle": "Вы будете перенаправлены в ваш браузер для безопасного входа с {{selectedIntegrationName}}. Как только вы закончите, вы вернётесь сюда автоматически.",
+      "action": "Перейти к  {{selectedIntegrationName}}"
+    }
   },
   "oauthInitialPage": {
     "continue": "Перейти к {{integrationName}}",
@@ -773,11 +823,18 @@
       "transferSmartDepositWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} {{address}} через релейный контракт.",
       "transferWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Это может занять несколько секунд",
     "onrampTitle": "Идёт покупка",
     "paymentMethodDepositUsage": "Пополнение <1>{{amount}}</1> с {{paymentMethod}} на {{selectedIntegrationName}}.",
     "paymentTitle": "Идет обработка платежа",
+    "processing": "Обработка вашего платежа",
     "transactionTitle": "Идет обработка транзакции",
     "tryAgain": "Попробовать еще раз"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Продавец: {{clientName}}",
+    "title": "Итог заказа",
+    "totalLabel": "Итого"
   },
   "passwordPage": {
     "fieldError": "Пожалуйста, введите {{field}}",
@@ -816,6 +873,19 @@
     "selectNetwork": "Выберите сеть для перевода",
     "title": "Выберите актив для перевода"
   },
+  "previewPageUI": {
+    "accountLabel": "Аккаунт",
+    "buildingPreviewPayment": "Создание предварительного просмотра вашего платежа...",
+    "confirmTransaction": "Подтвердите эту транзакцию в приложении {{selectedIntegrationName}}.",
+    "fewSeconds": "Это может занять несколько секунд",
+    "includeFeesMessage": "Включает {{amount}} в виде сборов",
+    "networkLabel": "Сеть",
+    "paymentTitle": "Оплата {{clientName}}",
+    "paymentTotalLabel": "Общая сумма к оплате",
+    "payWithLabel": "Оплатить с помощью",
+    "payWithLabelWithName": "Оплатить через {{integrationName}}",
+    "processingPayment": "Обработка вашего платежа"
+  },
   "previewTransfer": {
     "allFeesIncluded": "Все сборы включены",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -829,6 +899,7 @@
     "fundingWith": "Пополнение с",
     "institutionTransferFee": "Комиссия вывода средств из {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Комиссия, которую {{selectedIntegrationName}} взимает для облегчения перевода из {{symbol}}.",
+    "insufficientFunds": "Недостаточно средств",
     "maxAmount": "Ваш счет может пополнять не более <2>{{networkMaxAmount}}</2>. Вы хотите скорректировать Ваш перевод на эту сумму?",
     "monitoring": "Ждем подтверждения...",
     "network": "Сеть",
@@ -897,6 +968,8 @@
     "returnToClientButton": "Вернуться к {{clientName}}",
     "spotAccountsBody": "В настоящее время поддерживаются только спот-счета. Активы на других типах счетов, например на маржинальных, не будут отображены.",
     "topUpButton": "Пополнить баланс",
+    "topUpUSDCInstruction": "Пополните баланс USDC в вашем электронном кошельке Phantom.",
+    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа TAO.",
     "unableTransferError": "Невозможно начать перевод."
   },
   "selectItem": {

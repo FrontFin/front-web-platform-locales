@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Unfortunately, activity from your country is currently not allowed.",
+    "title": "Access denied"
+  },
   "addressWhitelistPage": {
     "addAddress": "Add the following as an approved withdrawal address:",
     "goToAccount": "Go to your <1>{{selectedIntegrationName}} account</1>",
@@ -87,7 +91,7 @@
     "prodOnly": "Production only",
     "search": "search",
     "title": "Select account to link",
-    "title40": "Connect exchange or wallet"
+    "title40": "Choose your account"
   },
   "catalogTile": {
     "select": "Select {{integrationName}}, {{badge}}"
@@ -140,10 +144,11 @@
     "somethingWentWrong": "Something went wrong...",
     "submitCap": "Submit",
     "successTitle": "Success!",
-    "termsOfUse": "By continuing you accept the\u00a0<2>terms of use</2>",
+    "termsOfUse": "By continuing you accept the <1>terms of use</1>",
     "tryAgain": "Try again"
   },
   "commonContent": {
+    "connecting": "Connecting...",
     "description": "will facilitate the secure connection with {{integrationName}}.",
     "monitoring": "Monitoring for approval...",
     "resend": "Resend connection request",
@@ -162,7 +167,8 @@
     "connectAnother": "Connect another account"
   },
   "connectionFailedPage": {
-    "defaultError": "An error has occurred."
+    "defaultError": "An error has occurred.",
+    "directMobileFlowError": "Session expired. Please return to your TAO checkout page and try again."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Connect another wallet",
@@ -272,8 +278,11 @@
   "doneTransferPage": {
     "awaitingApproval": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
     "checkDetails": "See what happened",
+    "checkDetails40": "View transaction details",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>will be received in {{shortAddress}}",
-    "depositClient": "You will receive<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "You will receive<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Return to your TAO checkout page to finalize your payment.",
+    "directMobileTitle": "Payment initiated",
     "goBackToShift4": "← Go back to Shift4",
     "goToIntegrationToApprove": "Please go to <1>{{selectedIntegrationName}}</1> to approve this transfer.",
     "paymentInitiated": "You have initiated a payment of<1></1><2>{{amountCrypto}}</2><3></3>to {{clientName}}",
@@ -303,8 +312,6 @@
     "title": "Confirm your identity",
     "warningTitle": "Read this entire message before continuing."
   },
-<<<<<<< Updated upstream
-=======
   "errorHeadlines": {
     "amountBelowMinimum": "Amount Too Low",
     "amountExceedsMaximum": "Amount Too High",
@@ -357,7 +364,6 @@
     "paymentMethodNotAvailable": "Payment Method Unavailable",
     "timeInForceNotSupported": "Time In Force Not Supported"
   },
->>>>>>> Stashed changes
   "errorMessages": {
     "amountBelowMinimum": "Requested amount is below the minimum allowable transfer amount on this network.",
     "amountExceedsMaximum": "Requested amount exceeds the maximum allowable transfer amount on this network.",
@@ -462,6 +468,9 @@
     "linking": "Linking your account...",
     "loading": "Still working..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Loading..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "{{integrationName}} {{conversionFromCurrency}} to {{conversionToCurrency}} Conversion Fee",
@@ -514,12 +523,14 @@
     "cryptoConversion": "Cryptocurrency conversion",
     "description": "Total: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Instant cash available: {{amountInFiat}})",
+    "insufficientFunds": "Insufficient Funds",
     "linkedPaymentMethods": "Linked payment method(s)",
     "noPaymentMethods": "No linked payment methods.",
     "noTokensAvailableForConversion": "No tokens available for conversion",
     "save": "Save",
     "selectFundingMethodAvailablity": "Your selected funding methods have {{selectedAvailableAmount}}. Please select additional funding methods to transfer {{neededAmount}}.",
     "selectFundingMethods": "Please select funding method(s) to transfer <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "No funding method selected",
     "selectOtherHoldings": "Select from other holdings",
     "symbolBalance": "{{symbol}} Balance",
     "title": "Funding methods"
@@ -776,6 +787,12 @@
     "goBack": "Go backwards",
     "title": "Pay with crypto"
   },
+  "networkSelectionDrawer": {
+    "description": "The networks below are all secure, compatible options for this payment. We’ve auto-selected the lowest fee network for you.",
+    "estimatedGasFeeLabel": "Est. gas fee:",
+    "lowestFeeLabel": "Lowest fee",
+    "title": "Select network"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Allow",
     "movingFunds": "moving funds without your permission",
@@ -795,6 +812,33 @@
     "description": "{{selectedIntegrationName}} does not support transfers for the tokens and/or networks requested.",
     "selectAnotherAccount": "Select another account",
     "selectAnotherDescription": "Please select another exchange or wallet to deposit from."
+  },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "You’re connected with {{selectedIntegrationName}}",
+      "subtitle": "Return to {{clientName}} to continue",
+      "action": "Return to {{clientName}}"
+    },
+    "checking": {
+      "message": "Checking your assets..."
+    },
+    "awaitingConnection": {
+      "title": "Awaiting for connection",
+      "subtitle": "Please finish logging in and approving access in your browser.",
+      "action": "Re-open {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Couldn’t connect to {{selectedIntegrationName}}",
+        "subtitle": "It looks like you didn’t finish logging in or approving access. To continue, please re-open {{selectedIntegrationName}} and complete sign-in.",
+        "action": "Re-open {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Redirecting to {{selectedIntegrationName}}",
+      "subtitle": "You’ll be redirected to your browser to log in securely with {{selectedIntegrationName}}. Once you’re done, you’ll return here automatically.",
+      "action": "Continue to {{selectedIntegrationName}}"
+    }
   },
   "oauthInitialPage": {
     "continue": "Continue to {{integrationName}}",
@@ -831,11 +875,18 @@
       "transferSmartDepositWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}} via a relay contract.",
       "transferWithAddress": "Transfer of <1>{{amount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "This may take a few seconds",
     "onrampTitle": "Purchase in progress",
     "paymentMethodDepositUsage": "Deposit of <1>{{amount}}</1> from {{paymentMethod}} to {{selectedIntegrationName}}.",
     "paymentTitle": "Payment in progress",
+    "processing": "Processing payment",
     "transactionTitle": "Transaction in progress",
     "tryAgain": "Try again"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Merchant: {{clientName}}",
+    "title": "Order summary",
+    "totalLabel": "Total"
   },
   "passwordPage": {
     "fieldError": "Please enter your {{field}}",
@@ -874,6 +925,19 @@
     "selectNetwork": "Select transfer network",
     "title": "Select asset to transfer"
   },
+  "previewPageUI": {
+    "accountLabel": "Account",
+    "buildingPreviewPayment": "Building your payment preview...",
+    "confirmTransaction": "Confirm this transaction in your {{selectedIntegrationName}} app.",
+    "fewSeconds": "This may take few seconds",
+    "includeFeesMessage": "Includes {{amount}} in fees",
+    "networkLabel": "Network",
+    "paymentTitle": "Pay {{clientName}}",
+    "paymentTotalLabel": "Pay total",
+    "payWithLabel": "Pay with",
+    "payWithLabelWithName": "Pay with {{integrationName}}",
+    "processingPayment": "Processing your payment"
+  },
   "previewTransfer": {
     "allFeesIncluded": "All fees included",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -887,6 +951,7 @@
     "fundingWith": "Funding with",
     "institutionTransferFee": "{{selectedIntegrationName}} Withdrawal Fee",
     "institutionTransferFeeHint": "The fee that {{selectedIntegrationName}} will charge to facilitate your transfer out of {{symbol}}.",
+    "insufficientFunds": "Insufficient Funds",
     "maxAmount": "Your account can fund a maximum of <2>{{networkMaxAmount}}</2>. Would you like to adjust your transfer to this amount?",
     "monitoring": "Monitoring for approval...",
     "network": "Network",
@@ -955,6 +1020,8 @@
     "returnToClientButton": "Return to {{clientName}}",
     "spotAccountsBody": "Only spot accounts are currently supported. Assets in other account types, like margin, will not be detected.",
     "topUpButton": "Top Up Balance",
+    "topUpUSDCInstruction": "Top up your USDC balance in your Phantom wallet.",
+    "tryAgainFromTaoInstruction": "Try again from your TAO checkout page.",
     "unableTransferError": "Unable to initiate the transfer."
   },
   "selectItem": {

@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Maalesef, ülkenizden gelen etkinlik şu anda izin verilmiyor.",
+    "title": "Erişim reddedildi"
+  },
   "addressWhitelistPage": {
     "addAddress": "Aşağıdaki onaylı para çekme adresini ekle:",
     "goToAccount": "<1>{{selectedIntegrationName}} hesabınıza gidin</1>",
@@ -144,6 +148,7 @@
     "tryAgain": "Tekrar Dene"
   },
   "commonContent": {
+    "connecting": "Bağlanıyor...",
     "description": "{{integrationName}} ile güvenli bağlantıyı sağlamak için kolaylık sağlar.",
     "monitoring": "Onay için izleme...",
     "resend": "Bağlantı isteğini yeniden gönder",
@@ -162,7 +167,8 @@
     "connectAnother": "Başka bir hesap bağlayın"
   },
   "connectionFailedPage": {
-    "defaultError": "Bir hata oluştu."
+    "defaultError": "Bir hata oluştu.",
+    "directMobileFlowError": "Oturum sona erdi. Lütfen TAO ödeme sayfanıza geri dönüp tekrar deneyin."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Başka bir cüzdan bağlayın",
@@ -272,8 +278,11 @@
   "doneTransferPage": {
     "awaitingApproval": "Bu transfer {{selectedIntegrationName}}'de onaylanmadıkça başlatılmayacaktır.",
     "checkDetails": "Ne olduğunu görmek",
+    "checkDetails40": "İşlem ayrıntılarını görüntüle",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>{{shortAddress}} adresinde alınacak.",
     "depositClient": "{{clientName}} ({{shortAddress}}) için<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>alacaksınız.",
+    "directMobileBody": "Ödemenizi tamamlamak için TAO ödeme sayfanıza geri dönün.",
+    "directMobileTitle": "Ödeme başlatıldı",
     "goBackToShift4": "← Shift4'e geri dön",
     "goToIntegrationToApprove": "Lütfen bu transferi onaylamak için <1>{{selectedIntegrationName}}</1> adresine gidin.",
     "paymentInitiated": "{{clientName}}'e<1></1><2>{{amountCrypto}}</2><3></3> ödeme başlattınız.",
@@ -302,6 +311,9 @@
     "stillWaitingLoading": "Emaili beklemeye devam ediliyor...",
     "title": "Kimliğinizi onaylayın",
     "warningTitle": "Devam etmeden önce bu mesajın tamamını okuyun."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Geçersiz 2FA Kodu"
   },
   "errorMessages": {
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
@@ -404,6 +416,9 @@
     "linking": "Hesabınız bağlantılanıyor...",
     "loading": "Hâlâ çalışıyor..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Yükleniyor..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "{{integrationName}} {{conversionFromCurrency}}'den {{conversionToCurrency}}'ye Çevrim Ücreti",
@@ -456,12 +471,14 @@
     "cryptoConversion": "Kripto para birimi dönüştürme",
     "description": "Toplam: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Anında nakit mevcut: {{amountInFiat}})",
+    "insufficientFunds": "Yetersiz Bakiye",
     "linkedPaymentMethods": "Bağlantılı ödeme yöntemi/leri",
     "noPaymentMethods": "Bağlı bir ödeme yöntemi yok.",
     "noTokensAvailableForConversion": "Dönüştürme için mevcut token yok",
     "save": "Kaydet",
     "selectFundingMethodAvailablity": "Seçilen finansman yöntemlerinizde {{selectedAvailableAmount}} var. {{neededAmount}} transfer etmek için ek finansman yöntemleri seçin.",
     "selectFundingMethods": "Lütfen <2>{{amount}} ~ {{amountInFiat}}</2> transfer etmek için finansman yöntemi/leri seçin.",
+    "selectFundingMethodsTitle": "Fonlama yöntemi seçilmedi",
     "selectOtherHoldings": "Diğer varlıklardan seçin",
     "symbolBalance": "{{symbol}} Bakiyesi",
     "title": "Finansman yöntemleri"
@@ -718,6 +735,12 @@
     "goBack": "Geri git",
     "title": "Kripto ile öde"
   },
+  "networkSelectionDrawer": {
+    "description": "Aşağıdaki ağlar bu ödeme için güvenli ve uyumlu seçeneklerdir. Sizin için en düşük ücretli ağı otomatik olarak seçtik.",
+    "estimatedGasFeeLabel": "Tahmini gaz ücreti:",
+    "lowestFeeLabel": "En düşük ücret",
+    "title": "Ağ seçin"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "İzin Ver",
     "movingFunds": "izin olmadan fonlarınızı taşımak",
@@ -737,6 +760,33 @@
     "description": "{{selectedIntegrationName}}, istenen belirteçler ve/veya ağlar için transferleri desteklememektedir.",
     "selectAnotherAccount": "Başka bir hesap seçin",
     "selectAnotherDescription": "Aktarım yapmak için başka bir borsa veya cüzdan seçin."
+  },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "{{selectedIntegrationName}} ile bağlantınız kuruldu",
+      "subtitle": "Devam etmek için {{clientName}}'e dönün",
+      "action": "{{clientName}} dön"
+    },
+    "checking": {
+      "message": "Varlıklarınız kontrol ediliyor..."
+    },
+    "awaitingConnection": {
+      "title": "Bağlantı bekleniyor",
+      "subtitle": "Lütfen tarayıcınızda oturum açmayı tamamlayın ve erişimi onaylayın.",
+      "action": "{{selectedIntegrationName}}'i Yeniden Aç"
+    },
+    "error": {
+      "connection": {
+        "title": "{{selectedIntegrationName}} ile bağlantı kurulamadı",
+        "subtitle": "Görünüşe göre oturum açmayı veya erişim iznini tamamlamadınız. Devam etmek için lütfen {{selectedIntegrationName}}'i yeniden açın ve oturum açmayı tamamlayın.",
+        "action": "{{selectedIntegrationName}}'i Yeniden Aç"
+      }
+    },
+    "redirecting": {
+      "title": "{{selectedIntegrationName}}'e yönlendirilmektesiniz",
+      "subtitle": "{{selectedIntegrationName}} ile güvenli bir şekilde giriş yapmanız için tarayıcınıza yönlendirileceksiniz. İşiniz bittiğinde, buraya otomatik olarak döneceksiniz.",
+      "action": "{{selectedIntegrationName}}'e devam et"
+    }
   },
   "oauthInitialPage": {
     "continue": "{{integrationName}}'e Devam Et",
@@ -773,11 +823,18 @@
       "transferSmartDepositWithAddress": "{{selectedIntegrationName}}'den {{clientName}} {{address}}'e bir aktarma sözleşmesiyle <1>{{amount}}</1> transferi.",
       "transferWithAddress": "{{selectedIntegrationName}}'den {{clientName}} {{address}}'e <1>{{amount}}</1> transferi."
     },
+    "mayTakeFewSeconds": "Bu birkaç saniye sürebilir",
     "onrampTitle": "Satın alma işlemi devam ediyor",
     "paymentMethodDepositUsage": "<1>{{amount}}</1>'un {{paymentMethod}}'den {{selectedIntegrationName}}'e yatırılması.",
     "paymentTitle": "Ödeme işlemi devam ediyor",
+    "processing": "Ödeme İşleniyor",
     "transactionTitle": "İşlem devam ediyor",
     "tryAgain": "Tekrar Dene"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Satıcı: {{clientName}}",
+    "title": "Sipariş özeti",
+    "totalLabel": "Toplam"
   },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} bilgilerinizi giriniz",
@@ -816,6 +873,19 @@
     "selectNetwork": "Transfer ağını seçin",
     "title": "Transfer edilecek varlığı seçin"
   },
+  "previewPageUI": {
+    "accountLabel": "Hesap",
+    "buildingPreviewPayment": "Ödeme önizlemenizi oluşturuyor...",
+    "confirmTransaction": "Bu işlemi {{selectedIntegrationName}} uygulamanızda onaylayınız.",
+    "fewSeconds": "Bu biraz zaman alabilir",
+    "includeFeesMessage": "Ücretler dahil {{amount}}",
+    "networkLabel": "Ağ test",
+    "paymentTitle": "{{clientName}} için ödeme yapın",
+    "paymentTotalLabel": "Toplamı ödeyin",
+    "payWithLabel": "Ödeme yöntemi",
+    "payWithLabelWithName": "{{integrationName}} ile ödeme yapın",
+    "processingPayment": "Ödemeniz işleniyor"
+  },
   "previewTransfer": {
     "allFeesIncluded": "Tüm ücretler dahil",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -829,6 +899,7 @@
     "fundingWith": "Finanse eden",
     "institutionTransferFee": "{{selectedIntegrationName}} Çekim Ücreti",
     "institutionTransferFeeHint": "{{selectedIntegrationName}} {{symbol}} transferinizi kolaylaştırmak için alacağı ücrettir.",
+    "insufficientFunds": "Yetersiz Bakiye",
     "maxAmount": "Hesabınız en fazla <2>{{networkMaxAmount}}</2> finanse edebilir. Transferinizi bu miktara uyarlamak ister misiniz?",
     "monitoring": "Onay için izleme...",
     "network": "Ağ",
@@ -897,6 +968,8 @@
     "returnToClientButton": "{{clientName}}'e dön",
     "spotAccountsBody": "Şu anda yalnızca spot hesaplar desteklenmektedir. Kredi hesapları gibi diğer hesap türlerindeki varlıklar tespit edilemeyecektir.",
     "topUpButton": "Bakiye Yükle",
+    "topUpUSDCInstruction": "Phantom cüzdanınızda USDC bakiyenizi arttırın.",
+    "tryAgainFromTaoInstruction": "TAO ödeme sayfanızdan tekrar deneyin.",
     "unableTransferError": "Transfer başlatılamıyor."
   },
   "selectItem": {

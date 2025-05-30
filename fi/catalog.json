@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Valitettavasti toimintaa maastasi ei tällä hetkellä sallita.",
+    "title": "Pääsy estetty"
+  },
   "addressWhitelistPage": {
     "addAddress": "Lisää seuraava hyväksyttynä nostososoitteena:",
     "goToAccount": "Mene <1>{{selectedIntegrationName}} tiliisi</1>",
@@ -144,6 +148,7 @@
     "tryAgain": "Yritä uudelleen"
   },
   "commonContent": {
+    "connecting": "Yhdistetään...",
     "description": "vastaamaan turvallisen yhteyden muodostamisesta {{integrationName}}:n kanssa",
     "monitoring": "Hyväksyntä seurannassa...",
     "resend": "Lähetä yhteyspyyntö uudelleen",
@@ -162,7 +167,8 @@
     "connectAnother": "Yhdistä toinen tili"
   },
   "connectionFailedPage": {
-    "defaultError": "Tapahtui virhe."
+    "defaultError": "Tapahtui virhe.",
+    "directMobileFlowError": "Istunto on vanhentunut. Palaa TAO-laskusivullesi ja yritä uudelleen."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Yhdistä toinen lompakko",
@@ -272,8 +278,11 @@
   "doneTransferPage": {
     "awaitingApproval": "Tätä siirtoa ei aloiteta ennen kuin se hyväksytään {{selectedIntegrationName}}:ssa.",
     "checkDetails": "Näe mitä tapahtui",
+    "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>saapuu osoitteeseen {{shortAddress}}",
     "depositClient": "Saat<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tilille {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Palaa TAO-laskusivullesi viimeistelläksesi maksusi.",
+    "directMobileTitle": "Maksu aloitettu",
     "goBackToShift4": "← Palaa Shift4:ään",
     "goToIntegrationToApprove": "Ole hyvä ja mene kohteeseen <1>{{selectedIntegrationName}}</1> hyväksyäksesi tämän siirron.",
     "paymentInitiated": "Olet aloittanut maksun<1></1><2>{{amountCrypto}}</2><3></3>kohteeseen {{clientName}}",
@@ -302,6 +311,9 @@
     "stillWaitingLoading": "Odota edelleen sähköpostia...",
     "title": "Vahvista henkilöllisyytesi",
     "warningTitle": "Lue tämä koko viesti ennen jatkamista."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Virheellinen 2FA-koodi"
   },
   "errorMessages": {
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
@@ -404,6 +416,9 @@
     "linking": "Linkitetään tiliäsi...",
     "loading": "Työskentely jatkuu..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Ladataan..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "{{integrationName}} {{conversionFromCurrency}} {{conversionToCurrency}} Muuntomaksu",
@@ -456,12 +471,14 @@
     "cryptoConversion": "Kryptovaluutan muunto",
     "description": "Yhteensä: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Välittömästi käytettävissä oleva raha: {{amountInFiat}})",
+    "insufficientFunds": "Riittämättömät varat",
     "linkedPaymentMethods": "Linkitetyt Maksutavat",
     "noPaymentMethods": "Ei linkitettyjä maksutapoja.",
     "noTokensAvailableForConversion": "Ei muuntamiseen sopivia tokeneita saatavilla",
     "save": "Tallenna",
     "selectFundingMethodAvailablity": "Valituilla rahoitusmenetelmilläsi on {{selectedAvailableAmount}}. Valitse lisärahoitusmenetelmät siirtääksesi {{neededAmount}}.",
     "selectFundingMethods": "Valitse rahoitusmenetelmät siirtääksesi <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "Rahoitusmenetelmää ei valittu",
     "selectOtherHoldings": "Valitse muista varoista",
     "symbolBalance": "{{symbol}} Saldo",
     "title": "Rahoitusmenetelmät"
@@ -718,6 +735,12 @@
     "goBack": "Palaa taaksepäin",
     "title": "Maksaminen kryptolla"
   },
+  "networkSelectionDrawer": {
+    "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja. Olemme valinneet automaattisesti sinulle alhaisimman kustannusverkoston.",
+    "estimatedGasFeeLabel": "Arvioitu kaasukulu:",
+    "lowestFeeLabel": "Alhaisin maksu",
+    "title": "Valitse verkko"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Salli",
     "movingFunds": "varojen siirtäminen ilman lupaasi",
@@ -737,6 +760,33 @@
     "description": "{{selectedIntegrationName}} ei tue pyydettyjen tokenien ja/tai verkkojen siirtoja.",
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherDescription": "Valitse toinen pörssi tai lompakko siirron tallettamiseen."
+  },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Olet yhteydessä {{selectedIntegrationName}} kanssa",
+      "subtitle": "Palaa takaisin {{clientName}} jatkaaksesi",
+      "action": "Palaa takaisin {{clientName}}"
+    },
+    "checking": {
+      "message": "Tarkistetaan omaisuuttasi..."
+    },
+    "awaitingConnection": {
+      "title": "Odotetaan yhteyttä",
+      "subtitle": "Ole hyvä ja viimeistele kirjautuminen ja hyväksy pääsy selaimessasi.",
+      "action": "Avaa uudelleen {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Yhteyttä {{selectedIntegrationName}} ei voitu muodostaa",
+        "subtitle": "Näyttää siltä, ettet ole suorittanut kirjautumista tai käyttöoikeuden hyväksymistä loppuun. Jatkaaksesi, avaa {{selectedIntegrationName}} uudelleen ja suorita kirjautuminen loppuun.",
+        "action": "Avaa uudelleen {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Ohjataan kohteeseen {{selectedIntegrationName}}",
+      "subtitle": "Sinut ohjataan selaimeesi kirjautumaan turvallisesti palveluun {{selectedIntegrationName}}. Kun olet valmis, palaat tänne automaattisesti.",
+      "action": "Jatka {{selectedIntegrationName}}:iin"
+    }
   },
   "oauthInitialPage": {
     "continue": "Jatka siirtymällä {{integrationName}}:iin",
@@ -773,11 +823,18 @@
       "transferSmartDepositWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}:sta {{clientName}} {{address}}:lle välittäjäsopimuksen kautta.",
       "transferWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}:sta {{clientName}} {{address}}:lle."
     },
+    "mayTakeFewSeconds": "Tämä saattaa kestää muutaman sekunnin",
     "onrampTitle": "Osto työn alla",
     "paymentMethodDepositUsage": "Talletus <1>{{amount}}</1> − {{paymentMethod}} → {{selectedIntegrationName}}.",
     "paymentTitle": "Maksu työn alla",
+    "processing": "Maksun käsittelyssä",
     "transactionTitle": "Tapahtuma työn alla",
     "tryAgain": "Yritä uudelleen"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Kauppias: {{clientName}}",
+    "title": "Tilausyhteenveto",
+    "totalLabel": "Yhteensä"
   },
   "passwordPage": {
     "fieldError": "Ole hyvä ja syötä {{field}}",
@@ -816,6 +873,19 @@
     "selectNetwork": "Valitse siirtoverkko",
     "title": "Valitse siirrettävä omaisuus"
   },
+  "previewPageUI": {
+    "accountLabel": "Tili",
+    "buildingPreviewPayment": "Rakennetaan maksun esikatselua...",
+    "confirmTransaction": "Vahvista tämä tapahtuma {{selectedIntegrationName}} sovelluksessa.",
+    "fewSeconds": "Tämä voi kestää muutaman sekunnin",
+    "includeFeesMessage": "Sisältää {{amount}} maksuina",
+    "networkLabel": "Verkko",
+    "paymentTitle": "Maksa {{clientName}}",
+    "paymentTotalLabel": "Maksa yhteensä",
+    "payWithLabel": "Maksa käyttäen",
+    "payWithLabelWithName": "Maksa käyttäen {{integrationName}}",
+    "processingPayment": "Maksuasi käsitellään"
+  },
   "previewTransfer": {
     "allFeesIncluded": "Kaikki maksut sisältyvät",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -829,6 +899,7 @@
     "fundingWith": "Rahoittaa",
     "institutionTransferFee": "{{selectedIntegrationName}} -nostomaksu",
     "institutionTransferFeeHint": "Maksu, jonka {{selectedIntegrationName}} veloittaa helpottaakseen {{symbol}}:n siirtämistä.",
+    "insufficientFunds": "Riittämättömät varat",
     "maxAmount": "Tilisi voi rahoittaa enintään <2>{{networkMaxAmount}}</2>. Haluatko säätää siirtoasi tähän summaan?",
     "monitoring": "Hyväksyntä seurannassa...",
     "network": "Verkko",
@@ -897,6 +968,8 @@
     "returnToClientButton": "Palaa {{clientName}}:iin",
     "spotAccountsBody": "Tällä hetkellä tukena on vain spot-tilit. Muita tilin tyyppejä, kuten marginaalitilejä, ei havaita.",
     "topUpButton": "Lisää saldoa",
+    "topUpUSDCInstruction": "Lisää USDC-saldoasi Phantom-lompakossasi.",
+    "tryAgainFromTaoInstruction": "Yritä uudelleen TAO-laskusivultasi.",
     "unableTransferError": "Siirtoa ei ole mahdollista aloittaa."
   },
   "selectItem": {

@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Rất tiếc, hoạt động từ quốc gia của bạn hiện không được phép.",
+    "title": "Truy cập bị từ chối"
+  },
   "addressWhitelistPage": {
     "addAddress": "Thêm địa chỉ sau đây làm địa chỉ rút tiền đã được phê duyệt:",
     "goToAccount": "Đi đến tài khoản {{selectedIntegrationName}} của bạn",
@@ -144,6 +148,7 @@
     "tryAgain": "Thử lại"
   },
   "commonContent": {
+    "connecting": "Đang kết nối...",
     "description": "sẽ tạo điều kiện cho kết nối an toàn với {{integrationName}}.",
     "monitoring": "Đang giám sát để phê duyệt...",
     "resend": "Gửi lại yêu cầu kết nối",
@@ -162,7 +167,8 @@
     "connectAnother": "Kết nối tài khoản khác"
   },
   "connectionFailedPage": {
-    "defaultError": "Đã xảy ra lỗi."
+    "defaultError": "Đã xảy ra lỗi.",
+    "directMobileFlowError": "Phiên làm việc đã hết hạn. Vui lòng quay trở lại trang thanh toán TAO của bạn và thử lại."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Kết nối ví khác",
@@ -272,8 +278,11 @@
   "doneTransferPage": {
     "awaitingApproval": "Giao dịch này sẽ không được bắt đầu cho đến khi nó được phê duyệt trong {{selectedIntegrationName}}.",
     "checkDetails": "Xem điều gì đã xảy ra",
+    "checkDetails40": "Xem chi tiết giao dịch",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>sẽ được nhận tại {{shortAddress}}",
     "depositClient": "Bạn sẽ nhận<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tại {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Quay lại trang thanh toán TAO của bạn để hoàn tất thanh toán.",
+    "directMobileTitle": "Thanh toán đã được bắt đầu",
     "goBackToShift4": "← Quay lại Shift4",
     "goToIntegrationToApprove": "Vui lòng truy cập <1>{{selectedIntegrationName}}</1> để phê duyệt giao dịch này.",
     "paymentInitiated": "Bạn đã khởi tạo một khoản thanh toán<1></1><2>{{amountCrypto}}</2><3></3>đến {{clientName}}",
@@ -302,6 +311,9 @@
     "stillWaitingLoading": "Vẫn đang chờ nhận email...",
     "title": "Xác nhận danh tính của bạn",
     "warningTitle": "Đọc toàn bộ thông báo này trước khi tiếp tục."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Mã 2FA không hợp lệ"
   },
   "errorMessages": {
     "amountBelowMinimum": "Số tiền yêu cầu dưới mức tối thiểu cho phép trên mạng này.",
@@ -404,6 +416,9 @@
     "linking": "Đang liên kết tài khoản của bạn...",
     "loading": "Vẫn đang làm việc..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Đang tải..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "{{integrationName}} {{conversionFromCurrency}} sang {{conversionToCurrency}} Phí chuyển đổi",
@@ -456,12 +471,14 @@
     "cryptoConversion": "Chuyển đổi tiền mã hóa",
     "description": "Tổng cộng: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Tiền mặt hiện tại có sẵn: {{amountInFiat}})",
+    "insufficientFunds": "Không đủ tiền",
     "linkedPaymentMethods": "Phương thức thanh toán liên kết",
     "noPaymentMethods": "Không có phương thức thanh toán liên kết.",
     "noTokensAvailableForConversion": "Không có token nào khả dụng để chuyển đổi",
     "save": "Lưu",
     "selectFundingMethodAvailablity": "Các phương thức tài trợ đã chọn của bạn có {{selectedAvailableAmount}}. Vui lòng chọn thêm các phương thức tài trợ để chuyển {{neededAmount}}.",
     "selectFundingMethods": "Vui lòng chọn phương thức tài trợ để chuyển <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "Chưa chọn phương thức tài trợ",
     "selectOtherHoldings": "Chọn từ các khoản nắm giữ khác",
     "symbolBalance": "Số dư {{symbol}}",
     "title": "Phương pháp tài trợ"
@@ -718,6 +735,12 @@
     "goBack": "Quay lại",
     "title": "Thanh toán bằng tiền điện tử"
   },
+  "networkSelectionDrawer": {
+    "description": "Các mạng dưới đây đều là những tùy chọn an toàn, tương thích cho khoản thanh toán này. Chúng tôi đã tự động chọn mạng có phí thấp nhất cho bạn.",
+    "estimatedGasFeeLabel": "Phí gas ước tính:",
+    "lowestFeeLabel": "Phí thấp nhất",
+    "title": "Chọn mạng"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Cho phép",
     "movingFunds": "chuyển tiền mà không có sự cho phép của bạn",
@@ -737,6 +760,33 @@
     "description": "{{selectedIntegrationName}} không hỗ trợ chuyển khoản cho các mã thông báo và/hoặc mạng yêu cầu.",
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherDescription": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền."
+  },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Bạn đã kết nối với {{selectedIntegrationName}}",
+      "subtitle": "Quay lại {{clientName}} để tiếp tục",
+      "action": "Quay lại {{clientName}}"
+    },
+    "checking": {
+      "message": "Đang kiểm tra tài sản của bạn..."
+    },
+    "awaitingConnection": {
+      "title": "Đang chờ kết nối",
+      "subtitle": "Vui lòng hoàn tất đăng nhập và chấp thuận quyền truy cập trong trình duyệt của bạn.",
+      "action": "Mở lại {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Không thể kết nối tới {{selectedIntegrationName}}",
+        "subtitle": "Có vẻ như bạn chưa hoàn tất việc đăng nhập hoặc cấp quyền truy cập. Để tiếp tục, vui lòng mở lại {{selectedIntegrationName}} và hoàn tất đăng nhập.",
+        "action": "Mở lại {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Chuyển hướng đến {{selectedIntegrationName}}",
+      "subtitle": "Bạn sẽ được chuyển hướng đến trình duyệt của mình để đăng nhập an toàn với {{selectedIntegrationName}}. Sau khi hoàn tất, bạn sẽ tự động quay lại đây.",
+      "action": "Tiếp tục đến {{selectedIntegrationName}}"
+    }
   },
   "oauthInitialPage": {
     "continue": "Tiếp tục đến {{integrationName}}",
@@ -773,11 +823,18 @@
       "transferSmartDepositWithAddress": "Chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}} thông qua hợp đồng chuyển tiếp.",
       "transferWithAddress": "Chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Điều này có thể mất vài giây",
     "onrampTitle": "Mua đang tiến hành",
     "paymentMethodDepositUsage": "Nạp tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
     "paymentTitle": "Thanh toán đang tiến hành",
+    "processing": "Đang xử lý thanh toán",
     "transactionTitle": "Giao dịch đang tiến hành",
     "tryAgain": "Thử lại"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Người bán: {{clientName}}",
+    "title": "Tóm tắt đơn hàng",
+    "totalLabel": "Tổng cộng"
   },
   "passwordPage": {
     "fieldError": "Vui lòng nhập {{field}} của bạn",
@@ -816,6 +873,19 @@
     "selectNetwork": "Chọn mạng lưới chuyển khoản",
     "title": "Chọn tài sản để chuyển khoản"
   },
+  "previewPageUI": {
+    "accountLabel": "Tài khoản",
+    "buildingPreviewPayment": "Xây dựng bản xem trước thanh toán của bạn...",
+    "confirmTransaction": "Xác nhận giao dịch này trong ứng dụng {{selectedIntegrationName}} của bạn.",
+    "fewSeconds": "Điều này có thể mất vài giây",
+    "includeFeesMessage": "Bao gồm {{amount}} trong các khoản phí",
+    "networkLabel": "Mạng lưới",
+    "paymentTitle": "Thanh toán {{clientName}}",
+    "paymentTotalLabel": "Tổng thanh toán",
+    "payWithLabel": "Thanh toán bằng",
+    "payWithLabelWithName": "Thanh toán bằng {{integrationName}}",
+    "processingPayment": "Đang xử lý thanh toán của bạn"
+  },
   "previewTransfer": {
     "allFeesIncluded": "Bao gồm tất cả các khoản phí",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -829,6 +899,7 @@
     "fundingWith": "Tài trợ với",
     "institutionTransferFee": "Phí Rút Tiền {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Phí mà {{selectedIntegrationName}} sẽ tính để hỗ trợ chuyển khoản của bạn khỏi {{symbol}}.",
+    "insufficientFunds": "Không đủ tiền",
     "maxAmount": "Tài khoản của bạn có thể nạp tối đa <2>{{networkMaxAmount}}</2>. Bạn có muốn điều chỉnh chuyển khoản của mình đến số tiền này không?",
     "monitoring": "Đang giám sát để phê duyệt...",
     "network": "Mạng lưới",
@@ -897,6 +968,8 @@
     "returnToClientButton": "Quay lại {{clientName}}",
     "spotAccountsBody": "Chỉ hỗ trợ tài khoản spot. Tài sản trong các loại tài khoản khác, chẳng hạn như ký quỹ, sẽ không được phát hiện.",
     "topUpButton": "Nạp tiền",
+    "topUpUSDCInstruction": "Nạp thêm số dư USDC vào ví Phantom của bạn.",
+    "tryAgainFromTaoInstruction": "Thử lại từ trang thanh toán TAO của bạn.",
     "unableTransferError": "Không thể bắt đầu chuyển tiền."
   },
   "selectItem": {

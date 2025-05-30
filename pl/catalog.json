@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Niestety, aktywność z Twojego kraju jest obecnie niedozwolona.",
+    "title": "Dostęp zabroniony"
+  },
   "addressWhitelistPage": {
     "addAddress": "Dodaj następujący jako zatwierdzony adres wypłaty:",
     "goToAccount": "Przejdź do swojego <1>{{selectedIntegrationName}} konta</1>",
@@ -144,6 +148,7 @@
     "tryAgain": "Spróbuj ponownie"
   },
   "commonContent": {
+    "connecting": "Łączenie...",
     "description": "ułatwi bezpieczne połączenie z {{integrationName}}.",
     "monitoring": "Monitorowanie dla zatwierdzenia...",
     "resend": "Wyślij ponownie żądanie połączenia",
@@ -162,7 +167,8 @@
     "connectAnother": "Połącz inne konto"
   },
   "connectionFailedPage": {
-    "defaultError": "Wystąpił błąd."
+    "defaultError": "Wystąpił błąd.",
+    "directMobileFlowError": "Sesja wygasła. Proszę wrócić na swoją stronę kasy TAO i spróbować ponownie."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Połącz inny portfel",
@@ -272,8 +278,11 @@
   "doneTransferPage": {
     "awaitingApproval": "Transfer nie zostanie rozpoczęty, dopóki nie zostanie zatwierdzony w {{selectedIntegrationName}}.",
     "checkDetails": "Zobacz, co się stało",
+    "checkDetails40": "Zobacz szczegóły transakcji",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>zostanie otrzymane przez {{shortAddress}}",
     "depositClient": "Otrzymasz<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>w {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Wróć na swoją stronę kasy TAO, aby sfinalizować płatność.",
+    "directMobileTitle": "Płatność rozpoczęta",
     "goBackToShift4": "← Powrót do Shift4",
     "goToIntegrationToApprove": "Przejdź do <1>{{selectedIntegrationName}}</1>, aby zatwierdzić ten transfer.",
     "paymentInitiated": "Zainicjowałeś płatność<1></1><2>{{amountCrypto}}</2><3></3>do {{clientName}}",
@@ -302,6 +311,9 @@
     "stillWaitingLoading": "Ciągle oczekuje na e-mail...",
     "title": "Potwierdź swoją tożsamość",
     "warningTitle": "Przeczytaj tę wiadomość w całości przed kontynuowaniem."
+  },
+  "errorHeadlines": {
+    "twoFaFailed": "Nieprawidłowy kod 2FA"
   },
   "errorMessages": {
     "amountBelowMinimum": "Żądana kwota jest poniżej minimalnej dopuszczalnej kwoty transferu w tej sieci.",
@@ -404,6 +416,9 @@
     "linking": "Podłączanie Twojego konta...",
     "loading": "Nadal trwa praca..."
   },
+  "fundingLoadingOverlay": {
+    "loading": "Ładowanie..."
+  },
   "fundingMethodFees": {
     "fee": {
       "conversion": "Opłata za konwersję {{integrationName}} z {{conversionFromCurrency}} na {{conversionToCurrency}}",
@@ -456,12 +471,14 @@
     "cryptoConversion": "Konwersja kryptowalut",
     "description": "Razem: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Dostępna gotówka: {{amountInFiat}})",
+    "insufficientFunds": "Niewystarczające środki",
     "linkedPaymentMethods": "Połączone metody płatności",
     "noPaymentMethods": "Brak połączonych metod płatności.",
     "noTokensAvailableForConversion": "Brak dostępnych tokenów do konwersji",
     "save": "Zapisz",
     "selectFundingMethodAvailablity": "Wybrane metody finansowania mają {{selectedAvailableAmount}}. Proszę wybrać dodatkowe metody finansowania, aby przelać {{neededAmount}}.",
     "selectFundingMethods": "Proszę wybrać metodę finansowania, aby przelać <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "Nie wybrano metody finansowania",
     "selectOtherHoldings": "Wybierz z innych zasobów",
     "symbolBalance": "Saldo {{symbol}}",
     "title": "Metody finansowania"
@@ -718,6 +735,12 @@
     "goBack": "Cofnij",
     "title": "Zapłać kryptowalutą"
   },
+  "networkSelectionDrawer": {
+    "description": "Sieci poniżej są wszystkie zabezpieczone, kompatybilne opcje dla tej płatności. Automatycznie wybraliśmy dla Ciebie sieć z najniższą opłatą.",
+    "estimatedGasFeeLabel": "Szacunkowa opłata za gaz:",
+    "lowestFeeLabel": "Najniższa opłata",
+    "title": "Wybierz sieć"
+  },
   "nonOAuthPermissionsPage": {
     "allow": "Zezwól",
     "movingFunds": "przenoszenie funduszy bez Twojej zgody",
@@ -737,6 +760,33 @@
     "description": "{{selectedIntegrationName}} nie obsługuje transferów dla żądanych tokenów i/lub sieci.",
     "selectAnotherAccount": "Wybierz inne konto",
     "selectAnotherDescription": "Proszę wybrać inny kantor lub portfel, z którego chcesz wpłacić środki."
+  },
+  "oauthExternalPage": {
+    "connected": {
+      "title": "Jesteś podłączony do {{selectedIntegrationName}}",
+      "subtitle": "Wróć do {{clientName}}, aby kontynuować",
+      "action": "Wróć do {{clientName}}"
+    },
+    "checking": {
+      "message": "Sprawdzanie twoich zasobów..."
+    },
+    "awaitingConnection": {
+      "title": "Oczekiwanie na połączenie",
+      "subtitle": "Proszę zakończyć logowanie i zatwierdzić dostęp w przeglądarce.",
+      "action": "Ponownie otwórz {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "title": "Nie udało się połączyć z {{selectedIntegrationName}}",
+        "subtitle": "Wygląda na to, że nie dokończyłeś logowania lub zatwierdzenia dostępu. Aby kontynuować, ponownie otwórz {{selectedIntegrationName}} i zakończ logowanie.",
+        "action": "Ponownie otwórz {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "title": "Przekierowanie do {{selectedIntegrationName}}",
+      "subtitle": "Zostaniesz przekierowany na przeglądarkę, aby bezpiecznie zalogować się za pomocą {{selectedIntegrationName}}. Po zakończeniu zostaniesz automatycznie przekierowany z powrotem tutaj.",
+      "action": "Kontynuuj do {{selectedIntegrationName}}"
+    }
   },
   "oauthInitialPage": {
     "continue": "Kontynuuj do {{integrationName}}",
@@ -773,11 +823,18 @@
       "transferSmartDepositWithAddress": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{address}} poprzez kontrakt pośredniczący.",
       "transferWithAddress": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Potrwa to kilka sekund",
     "onrampTitle": "Zakup w toku",
     "paymentMethodDepositUsage": "Wpłata <1>{{amount}}</1> z {{paymentMethod}} do {{selectedIntegrationName}}.",
     "paymentTitle": "Płatność w toku",
+    "processing": "<strong>Przetwarzanie płatności</strong>",
     "transactionTitle": "Transakcja w toku",
     "tryAgain": "Spróbuj ponownie"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Kupiec: {{clientName}}",
+    "title": "Podsumowanie zamówienia",
+    "totalLabel": "Całkowity"
   },
   "passwordPage": {
     "fieldError": "Wprowadź swój {{field}}",
@@ -816,6 +873,19 @@
     "selectNetwork": "Wybierz sieć transferu",
     "title": "Wybierz aktywo do transferu"
   },
+  "previewPageUI": {
+    "accountLabel": "Konto",
+    "buildingPreviewPayment": "Tworzenie podglądu płatności...",
+    "confirmTransaction": "Potwierdź tę transakcję w aplikacji {{selectedIntegrationName}}.",
+    "fewSeconds": "To może potrwać kilka sekund",
+    "includeFeesMessage": "Zawiera {{amount}} w opłatach",
+    "networkLabel": "Sieć",
+    "paymentTitle": "Zapłać {{clientName}}",
+    "paymentTotalLabel": "Zapłać całość",
+    "payWithLabel": "Zapłać z",
+    "payWithLabelWithName": "Zapłać z {{integrationName}}",
+    "processingPayment": "Przetwarzanie płatności"
+  },
   "previewTransfer": {
     "allFeesIncluded": "Wszystkie opłaty wliczone",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -829,6 +899,7 @@
     "fundingWith": "Finansowanie",
     "institutionTransferFee": "Opłata za wypłatę {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Opłata, którą {{selectedIntegrationName}} pobierze, aby ułatwić transfer poza {{symbol}}.",
+    "insufficientFunds": "Niewystarczające środki",
     "maxAmount": "Twoje konto może finansować maksymalnie <2>{{networkMaxAmount}}</2>. Czy chcesz dostosować swój transfer do tej kwoty?",
     "monitoring": "Monitorowanie dla zatwierdzenia...",
     "network": "Sieć",
@@ -897,6 +968,8 @@
     "returnToClientButton": "Wróć do {{clientName}}",
     "spotAccountsBody": "W tej chwili obsługiwane są tylko konta spot. Aktywa na innych rodzajach kont, takich jak konta z marżą, nie zostaną wykryte.",
     "topUpButton": "Doładuj saldo",
+    "topUpUSDCInstruction": "Doładuj saldo USDC w portfelu Phantom.",
+    "tryAgainFromTaoInstruction": "Spróbuj ponownie na swojej stronie kasy TAO.",
     "unableTransferError": "Nie można zainicjować transferu."
   },
   "selectItem": {
