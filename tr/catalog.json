@@ -323,20 +323,20 @@
     "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
     "default": "Bir hata oluştu.",
     "emptyWalletBalance": "Kaynak cüzdan bakiyesi boş.",
-    "failedToGetFundingOptions": "Finansman seçeneklerini alma başarısız oldu",
-    "failedToSaveFundingOptions": "Finansman seçeneklerini kaydetme başarısız oldu",
-    "feeAssetBalanceNotEnough": "Transfer ücretleri için yeterli bakiye yok.",
+    "failedToGetFundingOptions": "Ödeme seçeneklerini alma başarısız oldu",
+    "failedToSaveFundingOptions": "Ödeme seçeneklerini kaydetme başarısız oldu",
+    "feeAssetBalanceNotEnough": "Transfer ücretleri için yetersiz bakiye.",
     "fromAccountNotSupported": "Hesap şu anda kripto çekimlerini desteklemiyor.",
     "integrationNotAvailable": "Entegrasyon şu anda mevcut değil.",
-    "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektirir.",
+    "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektiriyor.",
     "locked": "Hesabınız kilitlendi.",
     "networkDisabled": "Ağ şu anda devre dışı ve kullanılamaz durumda.",
-    "passKeyNotSupported": "Şu anda anahtar desteklenmemektedir, lütfen devre dışı bırakın.",
-    "previewExpired": "Ön izleme süresi doldu.",
-    "satoshiTestRequired": "Coinbase API'si, seyahat kuralı kısıtlamaları nedeniyle 1000 Euro'dan fazla transferi desteklememektedir. Lütfen daha düşük bir miktarla yeniden deneyin.",
+    "passKeyNotSupported": "Parola anahtarı şu anda desteklenmiyor, devam etmek için lütfen devre dışı bırakın.",
+    "previewExpired": "Önizleme süresi doldu.",
+    "satoshiTestRequired": "Coinbase API, seyahat kuralı kısıtlamaları nedeniyle 1000 Euro üzeri transferleri desteklemez. Lütfen daha düşük bir tutarla tekrar deneyin.",
     "symbolNotSupported": "Sembol, entegrasyon tarafından desteklenmiyor.",
     "symbolNotSupportedBySource": "Transfer edilecek sembol, kaynak cüzdan tarafından istenen ağ üzerinde desteklenmiyor.",
-    "symbolNotSupportedByTarget": "İstenen para için depozit adresi bulunamadı.",
+    "symbolNotSupportedByTarget": "İstenen coin için para yatırma adresi bulunamadı.",
     "toAccountNotSupported": "Hedef hesap şu anda kripto para yatırımlarını desteklemiyor.",
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",
@@ -358,12 +358,12 @@
     "actionRefusedText": "İşlemi reddettiniz.",
     "connectionWalletAction": "{{integrationName}} başarılı bir şekilde bağlandı.",
     "continueInApp": "Lütfen {{clientName}} uygulamanızda devam edin.",
-    "continuePaymentInApp": "{{clientName}} satın almanızı tamamlamak için kasanıza geri dönün.",
+    "continuePaymentInApp": "{{clientName}} satın alma işleminize devam etmek için ödeme ekranına geri dönün.",
     "defaultAction": "İşlemi başarıyla tamamladınız.",
     "processingError": "İşlem Hatası",
-    "processingText": "Bir şey yanlış gitti.",
-    "sessionNotFoundError": "Oturum Bulunamadı",
-    "signedMessageAction": "{{integrationName}}'inize sahipliği başarıyla doğruladınız.",
+    "processingText": "Bir şeyler ters gitti.",
+    "sessionNotFoundError": "Oturum bulunamadı",
+    "signedMessageAction": "{{integrationName}}'inizin sahipliğini başarıyla doğruladınız.",
     "transactionAction": "İşlemi başarıyla başlattınız.",
     "tryAgainText": "Lütfen daha sonra tekrar deneyin."
   },
@@ -371,20 +371,20 @@
     "invalidCode": "Geçersiz kod. Lütfen tekrar deneyin."
   },
   "externalHardwareWalletMainPage": {
-    "mobileBody": "Donanım cüzdanınızı bağlamak için deneyimi <1>masaüstü</1> cihazda tamamlamanız gerekir.",
+    "mobileBody": "Donanım cüzdanınızı bağlamak için bu işlemi bir <1>masaüstü</1> cihazda tamamlamalısınız.",
     "mobileTitle": "Bu bağlantıyı bir masaüstü cihazda açın"
   },
   "externalInitialScreen": {
     "title": "Mobil cihazınızdaki tek kullanımlık kodu <1></1> girin."
   },
   "externalTransferCallbackPage": {
-    "continue": "{{clientName}} ile devam edin",
+    "continue": "{{clientName}}'e devam edin",
     "transferRequested": "Transfer talep edildi, lütfen {{clientName}}'e geri dönün",
     "updatingTransfer": "Transfer durumu güncelleniyor..."
   },
   "facePage": {
     "completedButton": "Doğrulamayı tamamladım",
-    "desktopStep1": "Hesabınıza giriş yapmak istediğinizi doğrulamak için yüz doğrulamasını tamamlamak amacıyla QR kodunu tarayın.",
+    "desktopStep1": "Gerçekten sizin giriş yaptığınızı doğrulamak için QR kodunu tarayarak yüz doğrulamasını tamamlayın.",
     "desktopStep2": "Hesabınızı bağlamayı bitirmek için buraya geri dönün.",
     "mobileStep1": "Giriş yapmaya çalışan kişinin gerçekten siz olduğunu onaylamak için yüz doğrulamasını tamamlayın.",
     "mobileStep2": "Uygulamanızı açmak için <1>{{integrationName}} uygulamasını açın</1> tıklayın ve yüz doğrulamasını tamamlayın.",
@@ -478,22 +478,22 @@
     "save": "Kaydet",
     "selectFundingMethodAvailablity": "Seçilen ödeme yöntemlerinizde {{selectedAvailableAmount}} var. {{neededAmount}} transfer etmek için ek ödeme yöntemleri seçin.",
     "selectFundingMethods": "Lütfen <2>{{amount}} ~ {{amountInFiat}}</2> transfer etmek için ödeme yöntemi/leri seçin.",
-    "selectFundingMethodsTitle": "Fonlama yöntemi seçilmedi",
-    "selectOtherHoldings": "Diğer varlıklardan seçin",
+    "selectFundingMethodsTitle": "Ödeme yöntemi seçilmedi",
+    "selectOtherHoldings": "Diğer varlıklarınızdan seçim yapın",
     "symbolBalance": "{{symbol}} Bakiyesi",
-    "title": "Finansman yöntemleri"
+    "title": "Ödeme yöntemleri"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Ödemeyi onayla",
     "cancel": "İptal",
-    "description": "Gaz ücretleri orijinal tahminden daha yüksek.",
-    "ifDontComplete": "Ödemeyi tamamlamazsanız, {{token}} bakiyeniz {{selectedIntegrationName}} hesabınızda kalacaktır.",
+    "description": "Gas ücretleri, ilk tahminden daha yüksek.",
+    "ifDontComplete": "Eğer ödemeyi tamamlamazsanız, {{token}} bakiyeniz {{selectedIntegrationName}} hesabınızda kalacak.",
     "newEstimate": "Yeni tahmin",
     "originalEstimate": "Orijinal tahmin",
-    "title": "Gaz ücreti güncellemesi"
+    "title": "Gas ücreti güncellemesi"
   },
   "generateKeyPage": {
-    "establishedInClient": "<1></1><2>{{clientName}}</2> içinde kesintisiz güncellemeleri başarıyla ayarladınız.",
+    "establishedInClient": "<1></1><2>{{clientName}}</2> üzerinde kesintisiz güncellemeleri başarıyla ayarladınız.",
     "establishedInThisApp": "<1></1><2>bu uygulama</2> içinde kesintisiz güncellemeleri başarıyla ayarladınız.",
     "linkedToInClient": "<1></1><2>{{selectedIntegrationName}}</2> öğesini <5>{{clientName}}</5> öğesine başarıyla bağladınız.",
     "linkedToThisApp": "<1></1><2>{{selectedIntegrationName}}</2> öğesini <5>bu uygulama</5> öğesine başarıyla bağladınız.",
@@ -576,37 +576,37 @@
     "addIp": "Aşağıdaki IP adresini Güvenilir IP olarak ekleyin",
     "clickOnEdit": "Kısıtlamaları düzenlemek için tıklayın",
     "copyIpTitle": "IP adresi",
-    "description": "<0>Binance</0>, ticaret ve transfer taleplerinin meşruiyetini sağlamak için API kullanıcılarının IP adreslerini beyaz listeye almalarını gerektirir.",
+    "description": "<0>Binance</0>, API kullanıcılarının ticaret ve transfer isteklerinin güvenilirliğini sağlamak için IP adreslerini beyaz listeye almalarını zorunlu kılar.",
     "findKey": "Bu bağlantı için kullanılan anahtarı bulun",
-    "openLink": "<2><0>Binance API Yönetimi</0></2> aç",
+    "openLink": "<2><0>Binance API Yönetimini</0></2> aç",
     "requirementsTitle": "Bu bağlantı üzerinden ticaret veya transfer yapmayı planlıyorsanız:",
-    "title": "Beyaz listeye bu IP adresini eklemek için devam etmeden önce"
+    "title": "Devam etmeden önce bu IP adresini beyaz listeye ekleyin"
   },
   "kycDonePage": {
     "successMessage": "Kimliğinizi başarıyla doğruladınız ve {{integrationName}} hesabınızda kripto transferlerini etkinleştirdiniz"
   },
   "kycInitialPage": {
-    "description": "Güvenliğiniz için, {{integrationName}}, kripto transferi yapmadan önce kimliğinizi doğrulamanızı ister.",
+    "description": "Güvenliğiniz için, {{integrationName}} kripto transferi gerçekleştirmeden önce kimliğinizi doğrulamanızı ister.",
     "steps": {
-      "completeVerification": "Kimliğinizi doğrulamak ve hesabınızdan transferleri etkinleştirmek için süreci tamamlayın",
-      "navigateCrypto": "Crypto sekmesine gidin, transfer etmek istediğiniz varlığı açın ve \"Gönder\"e tıklayın",
+      "completeVerification": "Kimliğinizi doğrulamak ve hesabınızdan transferleri etkinleştirmek için işlemi tamamlayın",
+      "navigateCrypto": "Kripto sekmesine gidin, aktarmak istediğiniz varlığı açın ve \"Gönder\"e tıklayın",
       "openAccount": "{{integrationName}} hesabınızı açın",
-      "returnToScreen": "Bu ekrana geri dön"
+      "returnToScreen": "Devam etmek için bu ekrana geri dönün"
     },
     "title": "{{integrationName}} hesabınızda transferleri etkinleştirin",
     "verifiedButton": "Kimliğimi {{integrationName}} ile doğruladım"
   },
   "kycPendingPage": {
     "connectAnother": "Başka bir hesap bağla",
-    "description": "Kimlik doğrulama <1>1 - 3 iş günü.</1> sürebilir. Doğrulama tamamlandığında ve hesabınızda transferler etkinleştirildiğinde, bu işlemi tamamlamak için buraya geri dönebilirsiniz.",
+    "description": "Kimlik doğrulama <1>1 - 3 iş günü</1> sürebilir. Doğrulama tamamlandıktan ve hesabınızdaki para transferleri etkinleştirildikten sonra bu işlemi tamamlamak için buraya dönebilirsiniz.",
     "title": "Onay bekleniyor"
   },
   "kycRobinhoodPage": {
-    "clickContinue": "<1>Devam Et</1>'i tıklayın ve {{selectedIntegrationName}} açın.",
-    "clickContinueAfterActivated": "{{selectedIntegrationName}} içinde kripto transferlerini etkinleştirdikten sonra, transferinize <5>Devam Et</5>mek için aşağıya tıklayın.",
-    "completeVerification": "Kimlik doğrulamanızı tamamlayın ve/veya iki faktörlü doğrulama yöntemi ekleyin.",
+    "clickContinue": "{{selectedIntegrationName}} açmak için <1>Devam Et</1>'i tıklayın.",
+    "clickContinueAfterActivated": "{{selectedIntegrationName}}'de kripto transferlerini etkinleştirdikten sonra aşağıdaki <5>Devam Et</5> seçeneğine tıklayarak işlemi sürdürün.",
+    "completeVerification": "Kimlik doğrulamanızı tamamlayın ve/veya iki faktörlü doğrulama yöntemini ekleyin.",
     "connectAnother": "Başka bir hesap bağla",
-    "note": "Lütfen dikkat: geri döndüğünüzde bu transferi başlatmak için {{selectedIntegrationName}} hesabınıza yeniden giriş yapmanız gerekebilir.",
+    "note": "Lütfen dikkat: Bu transferi başlatmak için döndüğünüzde {{selectedIntegrationName}} hesabınıza tekrar giriş yapmanız gerekebilir.",
     "return": "Transferi tamamlamak için buraya geri dönün.",
     "title": "Hesabınızda transferleri etkinleştirin"
   },
@@ -639,10 +639,10 @@
     "unknownError": "Ledger cihazınızla bilinmeyen bir hata oluştu."
   },
   "ledgerOpenApp": {
-    "title": "Cihazınızdaki {{network}} uygulamasını açın"
+    "title": "Cihazınızda {{network}} uygulamasını açın"
   },
   "ledgerSignError": {
-    "body": "Cüzdanınızın doğrulandığını talebi reddettiniz.",
+    "body": "Cüzdanınızı doğrulama isteğini reddettiniz.",
     "title": "Doğrulama başarısız oldu"
   },
   "ledgerSignMessage": {
@@ -655,7 +655,7 @@
   },
   "loginDeviceVerifiedPage": {
     "loginButton": "Girişe git",
-    "subtitle": "Girişe devam edin.",
+    "subtitle": "Oturum açmaya devam et.",
     "title": "Cihazınız onaylandı."
   },
   "mfaError": {
@@ -668,17 +668,17 @@
     "totp": "Kimlik doğrulayıcı uygulamanızı kontrol edin"
   },
   "mfaInstructionsText": {
-    "email": "<2>{{selectedIntegrationName}}</2> tarafından e-posta adresinize gönderilen tek seferlik kodu girin.",
+    "email": "<2>{{selectedIntegrationName}}</2> tarafından e-postanıza gönderilen tek seferlik kodu girin.",
     "paymentFlow": "Bu ödemeyi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
-    "phone": "Telefonunuza <2>{{selectedIntegrationName}}</2> tarafından gönderilen tek seferlik kodu girin.",
-    "totp": "<1>{{selectedIntegrationName}}</1> ile bağlantı sağlamak için kullandığınız kimlik doğrulayıcı uygulamanızdan gelen tek seferlik kodu girin.",
-    "tradingPin": "Lütfen <2>{{selectedIntegrationName}}</2> hesabınızla ilişkili ticaret PIN kodunu giriniz.",
-    "transferFlow": "Bu transferi başlatanın gerçekten siz olduğunu onaylamak için tek seferlik kodunuzu girin.",
-    "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu giriniz."
+    "phone": "<2>{{selectedIntegrationName}}</2> tarafından telefonunuza gönderilen tek seferlik kodu girin.",
+    "totp": "<1>{{selectedIntegrationName}}</1> ile bağladığınız doğrulayıcı uygulamanın sağladığı tek seferlik kodu girin.",
+    "tradingPin": "Lütfen <2>{{selectedIntegrationName}}</2> hesabınızla ilişkili işlem PIN kodunu giriniz.",
+    "transferFlow": "Bu transferi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
+    "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu girin."
   },
   "mfaPage": {
     "enterCode": "Giriş yapan kişinin gerçekten siz olduğunuzu<1></1>onaylamak için tek seferlik kodunuzu girin.",
-    "enterPin": "Ticaret PIN'inizi girin",
+    "enterPin": "İşlem PIN'inizi girin",
     "title": "Doğrulama",
     "verify": "Doğrula"
   },
@@ -689,16 +689,16 @@
     "keyGenerationTitle": "{{selectedIntegrationName}} hesabınızdan API anahtarı üretimini etkinleştirin",
     "totpButton": "Kimlik doğrulayıcı uygulama ayarla",
     "totpSubtitle": "<2>{{selectedIntegrationName}}</2> hesabınıza bir kimlik doğrulayıcı uygulama eklemek için aşağıdaki butona tıklayın.",
-    "withdrawalBody": "Güvenliğiniz için, <1>{{selectedIntegrationName}} </1> varlıkların çekilmesi için kullanıcıların e-posta ve kimlik doğrulayıcı uygulama MFA yöntemlerini etkinleştirmiş olmalarını gerektirir",
-    "withdrawalTitle": "{{selectedIntegrationName}} hesabınızdan çekimleri etkinleştirin"
+    "withdrawalBody": "Güvenliğiniz için, <1>{{selectedIntegrationName}} </1> kullanıcıların varlıkları çekmeleri için e-posta ve kimlik doğrulayıcı uygulama MFA yöntemlerini etkinleştirmiş olmalarını gerektirir",
+    "withdrawalTitle": "<1>{{selectedIntegrationName}}</1> hesabınızdan çekim işlemlerini etkinleştirin"
   },
   "mfaSuccessPage": {
     "addAuthApp": "<2>{{selectedIntegrationName}}</2> hesabınıza bir doğrulayıcı uygulaması eklemek için aşağıdaki butona tıklayın.",
-    "emailTitle": "<2>{{selectedIntegrationName}}</2> hesabınıza başarıyla e-posta bağladınız.",
+    "emailTitle": "E-postanızı <2>{{selectedIntegrationName}}</2> hesabınıza başarıyla bağladınız.",
     "proceed": "Devam et",
-    "proceedKey": "Anahtar üretimine devam etmek için aşağıya tıklayın",
-    "proceedTransfer": "Transfer için devam etmek üzere aşağıya tıklayın",
-    "setUpApp": "Doğrulayıcı uygulaması kur",
+    "proceedKey": "Anahtar oluşturmak için aşağıya tıklayın",
+    "proceedTransfer": "Transfer işlemine devam etmek için aşağıya tıklayın",
+    "setUpApp": "Kimlik doğrulayıcı uygulama ayarla",
     "totpTitle": "<2>{{selectedIntegrationName}}</2> hesabınıza bir kimlik doğrulayıcı uygulama bağladınız."
   },
   "mfaTitle": {
@@ -707,8 +707,8 @@
     "phone": "SMS doğrulama kodu"
   },
   "mfaVerificationPage": {
-    "checkEmail": "İlk olarak kimliğinizi doğrulayalım.<1></1>Lütfen, <4>{{selectedIntegrationName}}</4>'den gönderilen tek seferlik doğrulama kodu için e-posta kutunuzu kontrol edin.",
-    "checkSms": "İlk olarak kimliğinizi doğrulayalım.<1></1>Lütfen, <4>{{selectedIntegrationName}}</4>'den gönderilen tek seferlik doğrulama kodu için telefonunuzu kontrol edin.",
+    "checkEmail": "İlk olarak kimliğinizi doğrulayalım.<1></1>Lütfen, <4>{{selectedIntegrationName}}</4> tarafından gönderilen tek seferlik doğrulama kodu için e-posta kutunuzu kontrol edin.",
+    "checkSms": "İlk olarak kimliğinizi doğrulayalım.<1></1>Lütfen, <4>{{selectedIntegrationName}}</4> tarafından SMS ile gönderilen tek seferlik doğrulama kodu için telefonunuzu kontrol edin.",
     "confirmApp": "Kimlik Doğrulama Uygulamasını Onaylayın",
     "confirmEmail": "E-postayı Onayla",
     "enterCode": "Lütfen doğrulama kodunu girin",
@@ -797,10 +797,10 @@
     "clientUsesMesh": "{{clientName}} transferinizi {{selectedIntegrationName}} içinde güvenli bir şekilde bağlamak ve kolaylaştırmak için Mesh'i kullanır.",
     "description": "Hesabınıza giriş yapın ve erişime izin verin",
     "monitoring": "Onay için izleme...",
-    "open": "{{selectedIntegrationName}}'i Açın",
-    "reopen": "{{selectedIntegrationName}}'i Yeniden Aç",
+    "open": "{{selectedIntegrationName}}'i aç",
+    "reopen": "{{selectedIntegrationName}}'i yeniden aç",
     "title": "{{selectedIntegrationName}} penceresinde devam edin",
-    "willFacilitate": "{{selectedIntegrationName}} ile güvenli bağlantıya aracılık edecektir."
+    "willFacilitate": "{{selectedIntegrationName}} ile güvenli bağlantıyı sağlayacaktır."
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
