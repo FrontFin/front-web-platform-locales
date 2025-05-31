@@ -8,7 +8,7 @@
     "goToAccount": "Przejdź do swojego <1>{{selectedIntegrationName}} konta</1>",
     "network": "Sieć",
     "preview": "Kliknij poniżej, aby przejrzeć i ponownie rozpocząć tę transakcję",
-    "title": "Dodaj ten cel do białej listy",
+    "title": "Dodaj ten adres do białej listy",
     "token": "Token"
   },
   "authCodeInput": {
@@ -23,8 +23,8 @@
     "buyCrypto": "Kup kryptowaluty przy użyciu Binance Connect",
     "closeButton": "Zamknij",
     "continueTo": "Kontynuuj do {{selectedIntegrationName}}",
-    "enterAmount": "Wprowadź kwotę przelewu",
-    "notSupported": "{{selectedIntegrationName}} nie obsługuje transferów dla żądanych tokenów i/lub sieci.",
+    "enterAmount": "Wprowadź kwotę transferu",
+    "notSupported": "{{selectedIntegrationName}} nie obsługuje przelewów dla wybranych tokenów i/lub sieci.",
     "receiveAmountInput": {
       "networkName": "na {{networkName}}"
     },
@@ -91,7 +91,7 @@
     "prodOnly": "Tylko produkcja",
     "search": "szukaj",
     "title": "Wybierz konto do połączenia",
-    "title40": "Połącz giełdę lub portfel"
+    "title40": "Wybierz swoje konto"
   },
   "catalogTile": {
     "select": "Wybierz {{integrationName}}, {{badge}}"
@@ -99,15 +99,15 @@
   "categories": {
     "brokerage": "Pośrednicy",
     "deFiWallet": "Portfele",
-    "deFiWalletFull": "Portfele samoopieki kryptograficznej",
+    "deFiWalletFull": "Portfele kryptowalutowe typu self-custody",
     "exchange": "Wymienniki",
     "exchangeFull": "Scentralizowane wymienniki kryptograficzne",
     "nftMarketplace": "Rynki NFT",
     "popular": "Popularny"
   },
   "chainSwitch": {
-    "monitoringApproval": "Monitorowanie zatwierdzenia...",
-    "networkChangeDeclined": "Odmowa zmiany sieci",
+    "monitoringApproval": "Oczekiwanie na zatwierdzenie...",
+    "networkChangeDeclined": "Zmiana sieci została odrzucona",
     "networkChangeDeclinedBody": "Odmowa żądania zmiany sieci w twoim portfelu",
     "resendNetworkSwitch": "Wyślij ponownie żądanie przełączenia sieci",
     "stayOnNetwork": "Pozostań na {{networkName}}",
@@ -142,8 +142,8 @@
     "searchCap": "Szukaj",
     "securedBy": "Zabezpieczone przez",
     "somethingWentWrong": "Coś poszło nie tak...",
-    "submitCap": "Prześlij",
-    "successTitle": "Sukces!",
+    "submitCap": "Wyślij",
+    "successTitle": "Formularz został wysłany!",
     "termsOfUse": "Kontynuując, akceptujesz <2>warunki użytkowania</2>",
     "tryAgain": "Spróbuj ponownie"
   },
@@ -347,7 +347,7 @@
     "title": "Wystąpił błąd."
   },
   "exitPage": {
-    "body": "Twój postęp zostanie utracony.",
+    "body": "Twoje postępy zostaną utracone.",
     "continue": "Nie, kontynuuj",
     "exit": "Tak, wyjdź",
     "title": "Czy na pewno chcesz wyjść?"
@@ -505,9 +505,9 @@
     "identityVerificationRequired": "Aby skorzystać z funkcji klucza API, musisz ukończyć weryfikację tożsamości. Proszę ukończyć weryfikację tożsamości, aby kontynuować.",
     "invalidCredentials": "Nieprawidłowe dane logowania. Spróbuj ponownie.",
     "maximumApiKeyLimitExceeded": "Osiągnięto maksymalną dozwoloną ilość kluczy API. Proszę usunąć nieużywany klucz, aby kontynuować.",
-    "unsupportedCountryErrorMessage": "Aktualnie nie obsługujemy twojego konta",
-    "wrongEmailCode": "Niewłaściwy kod e-mail, proszę spróbować ponownie",
-    "wrongTotpCode": "Niewłaściwy kod uwierzytelniający, proszę spróbować ponownie"
+    "unsupportedCountryErrorMessage": "Obecnie nie obsługujemy twojego konta",
+    "wrongEmailCode": "Nieprawidłowy kod e-mail, proszę spróbować ponownie",
+    "wrongTotpCode": "Nieprawidłowy kod uwierzytelniający, proszę spróbować ponownie"
   },
   "handleExternalTransferPage": {
     "detailButton": "Zobacz, co się stało",
@@ -627,7 +627,7 @@
     "title": "Prawie gotowe!"
   },
   "ledgerError": {
-    "incorrectAppError": "Na twoim urządzeniu jest otwarta zła aplikacja. Włącz właściwą aplikację i spróbuj ponownie.",
+    "incorrectAppError": "Na twoim urządzeniu jest otwarta niewłaściwa aplikacja. Otwórz właściwą aplikację i spróbuj ponownie.",
     "lockedError": "Twoje urządzenie jest zablokowane. Odblokuj je i spróbuj ponownie.",
     "noDeviceError": "Nie wybrano urządzenia. Wybierz urządzenie i spróbuj ponownie.",
     "notSelectedError": "Nie wybrano żadnej aplikacji. Wybierz aplikację i spróbuj ponownie.",
@@ -642,7 +642,7 @@
     "title": "Otwórz aplikację {{network}} na swoim urządzeniu"
   },
   "ledgerSignError": {
-    "body": "Odmówiłeś prośby o weryfikację swojego portfela.",
+    "body": "Odrzuciłeś prośbę o weryfikację swojego portfela.",
     "title": "Weryfikacja nie powiodła się"
   },
   "ledgerSignMessage": {
@@ -662,8 +662,8 @@
     "default": "Niepoprawny kod, spróbuj ponownie"
   },
   "mfaHint": {
-    "email": "Sprawdź swoją pocztę",
-    "phone": "Sprawdź swój telefon pod kątem wiadomości SMS",
+    "email": "Sprawdź swoją pocztę e-mail",
+    "phone": "Sprawdź swój telefon, aby odebrać wiadomość SMS",
     "sandbox": "Wskazówka: {{hint}}",
     "totp": "Sprawdź aplikację uwierzytelniającą"
   },
@@ -703,14 +703,14 @@
   },
   "mfaTitle": {
     "default": "Kod weryfikacyjny",
-    "email": "Kod weryfikacyjny email",
+    "email": "Kod weryfikacyjny e-mail",
     "phone": "Kod weryfikacyjny SMS"
   },
   "mfaVerificationPage": {
     "checkEmail": "Najpierw zweryfikujmy Twoją tożsamość.<1></1>Sprawdź, proszę, swój email, aby znaleźć jednorazowy kod weryfikacyjny wysłany przez <4>{{selectedIntegrationName}}</4>.",
     "checkSms": "Najpierw zweryfikujmy Twoją tożsamość.<1></1>Sprawdź, proszę, swój telefon, aby znaleźć jednorazowy kod weryfikacyjny wysłany SMS-em przez <4>{{selectedIntegrationName}}</4>.",
     "confirmApp": "Potwierdź aplikację uwierzytelniającą",
-    "confirmEmail": "Potwierdź email",
+    "confirmEmail": "Potwierdź e-mail",
     "enterCode": "Proszę podaj kod weryfikacyjny",
     "enterCodeFromEmail": "Proszę wprowadź 6-cyfrowy kod, który <2>{{selectedIntegrationName}}</2> wysłał<4></4>na Twój email.",
     "enterTotp": "Proszę wprowadź 6-cyfrowy kod z Twojej<1></1>aplikacji uwierzytelniającej",
@@ -841,7 +841,7 @@
     "fieldErrorWithIntegration": "Wprowadź swój {{integrationName}} {{field}}",
     "forgotPassword": "Zapomniałeś hasła",
     "tabs": {
-      "email": "Email",
+      "email": "E-mail",
       "mobileApp": "Aplikacja mobilna",
       "phone": "Telefon",
       "qrCode": "Kod QR"
@@ -891,7 +891,7 @@
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
     "approveTransferRequest": "Zatwierdź żądanie transferu<1></1>w swoim portfelu",
     "changeAmount": "Zmień kwotę",
-    "depositTitle": "Podgląd depozytu",
+    "depositTitle": "Podgląd wpłaty",
     "dustLeft": "Może pozostać trochę {{symbol}} kurzu.",
     "estimatedGasFee": "Szacowana opłata za gaz",
     "estimatedGasFeeHint": "Szacowane opłaty, które będą wypłacane w celu zrekompensowania walidatorom sieci za moc obliczeniową używaną do przetwarzania tej transakcji.",
@@ -1003,7 +1003,7 @@
   },
   "setupEmailPage": {
     "description": "Wprowadź swój adres e-mail.<1></1><2>{{selectedIntegrationName}}</2> użyje tego e-maila, aby wysyłać ci kody potwierdzające, gdy wykonujesz określone czynności na swoim koncie.",
-    "emailTitle": "Email",
+    "emailTitle": "E-mail",
     "enterError": "Proszę wprowadzić adres e-mail",
     "title": "Skonfiguruj e-mail"
   },
@@ -1025,7 +1025,7 @@
     "buttonTitle": {
       "deposit": "Podgląd depozytu",
       "onramp": "Podgląd zakupu",
-      "transfer": "Podgląd przelewu"
+      "transfer": "Podgląd transferu"
     },
     "errorMessage": {
       "insufficientFunds": "Niewystarczające środki na pokrycie opłat za przeniesienie i gaz. Maksymalna kwota transferu to {{maxAmount}}.",
@@ -1035,14 +1035,14 @@
     "title": {
       "deposit": "Wprowadź kwotę depozytu",
       "onramp": "Wprowadź kwotę zakupu",
-      "transfer": "Wpisz kwotę przelewu"
+      "transfer": "Wprowadź kwotę transferu"
     }
   },
   "transferCanceledPage": {
     "title": "Transfer anulowany",
     "titlePayment": "Płatność anulowana",
     "willRemain": "pozostanie na twoim koncie {{integrationName}}.",
-    "yourBalance": "Twój saldo {{token}}"
+    "yourBalance": "Twoje saldo {{token}}"
   },
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Oczekiwanie na potwierdzenie z aplikacji mobilnej",
@@ -1086,7 +1086,7 @@
   },
   "transferFacePage": {
     "clickOpenApp": "Kliknij <1>Otwórz aplikację {{selectedIntegrationName}}</1> aby otworzyć swoją aplikację i zakończyć weryfikację twarzy.",
-    "completeMobile": "Zakończ weryfikację twarzy, aby potwierdzić, że to naprawdę Ty próbujesz dokonać przelewu środków.",
+    "completeMobile": "Zakończ weryfikację twarzy, aby potwierdzić, że to naprawdę Ty próbujesz dokonać transferu środków.",
     "confirmCompleted": "Zakończyłem weryfikację",
     "openApp": "Otwórz aplikację {{selectedIntegrationName}}",
     "reopenApp": "Ponownie otwórz aplikację {{selectedIntegrationName}}",
@@ -1118,8 +1118,8 @@
     "showLess": "Pokaż mniej",
     "showMore": "Pokaż więcej",
     "title": "Co się stanie",
-    "transferAmount": "Przelew <1>{{cryptoAmount}}</1> z {{integrationName}} do {{clientName}} {{targetAddress}}.",
-    "transferAmountSmartDeposit": "Przelew <1>{{cryptoAmount}}</1> z {{integrationName}} do {{clientName}} {{targetAddress}} poprzez kontrakt pośredniczący."
+    "transferAmount": "Transfer <1>{{cryptoAmount}}</1> z {{integrationName}} do {{clientName}} {{targetAddress}}.",
+    "transferAmountSmartDeposit": "Transfer <1>{{cryptoAmount}}</1> z {{integrationName}} do {{clientName}} {{targetAddress}} poprzez kontrakt pośredniczący."
   },
   "transferUpdateDrawerContent": {
     "approveTransfer": "Zatwierdź transfer",
@@ -1162,7 +1162,7 @@
     "clientVerifyLabel": "{{clientName}} musi potwierdzić twój portfel",
     "clientVerifyText": "Zostaniesz bezpiecznie przeniesiony na swój Trezor, aby podpisać wiadomość na urządzeniu, co potwierdzi, że jesteś właścicielem swojego portfela.",
     "connectingLabel": "Łączenie twojego portfela...",
-    "secureLabel": "Szybko, bezpiecznie i za darmo",
+    "secureLabel": "Szybko, bezpiecznie i bezpłatnie",
     "secureText": "Podpisanie w żaden sposób nie daje {{clientName}} pozwolenia na wykonywanie jakichkolwiek transakcji z twoim portfelem."
   },
   "verifyAddressAndNetworkErrorPage": {
@@ -1184,12 +1184,12 @@
     "unknownError": "Wystąpił nieznany błąd. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Powróć do procesu realizacji zakupu, aby dokończyć zakup {{clientName}}.",
+    "completePaymentMessage": "Wróć do procesu realizacji zakupu, aby dokończyć zakup {{clientName}}.",
     "continueMessage": "Proszę, kontynuuj w swojej aplikacji {{clientName}}.",
     "successMessage": "Pomyślnie zweryfikowano własność twojego portfela {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
-    "another": "Przelew z innego konta",
+    "another": "Transfer z innego konta",
     "title": "Wypłaty są tymczasowo wyłączone"
   }
 }
