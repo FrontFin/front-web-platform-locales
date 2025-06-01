@@ -336,10 +336,10 @@
     "satoshiTestRequired": "API Coinbase nie wspiera transferów powyżej 1000 euro z powodu ograniczeń zasad podróży. Proszę spróbować ponownie z niższą kwotą.",
     "symbolNotSupported": "Symbol nie jest obsługiwany przez integrację.",
     "symbolNotSupportedBySource": "Symbol do transferu nie jest obsługiwany przez źródłowy portfel w żądanej sieci.",
-    "symbolNotSupportedByTarget": "Nie udało się znaleźć adresu depozytu dla żądanej monety.",
+    "symbolNotSupportedByTarget": "Nie udało się znaleźć adresu do wpłaty dla wybranej kryptowaluty.",
     "toAccountNotSupported": "Konto docelowe nie obsługuje obecnie depozytów w kryptowalutach.",
     "tooManyRequests": "Proszę spróbować ponownie później.",
-    "transferAlreadyRequested": "Transfer został już zlecony.",
+    "transferAlreadyRequested": "Transfer już jest zlecony.",
     "twoFaFailed": "Dwukrotna walidacja nie powiodła się. Spróbuj ponownie.",
     "withdrawalLocked": "Dla twojego bezpieczeństwa, wypłaty są zablokowane na 24 godziny po zmianie ustawień konta. Proszę spróbować ponownie później."
   },
@@ -384,9 +384,9 @@
   },
   "facePage": {
     "completedButton": "Zakończyłem weryfikację",
-    "desktopStep1": "Zeskanuj kod QR, aby zakończyć weryfikację twarzy i potwierdzić, że to Ty próbujesz się zalogować.",
+    "desktopStep1": "Zeskanuj kod QR, aby zakończyć weryfikację twarzy i potwierdzić, że to naprawdę Ty próbujesz się zalogować.",
     "desktopStep2": "Następnie wróć tutaj, aby zakończyć łączenie swojego konta.",
-    "mobileStep1": "Zakończ weryfikację twarzy, aby potwierdzić, że to Ty próbujesz się zalogować.",
+    "mobileStep1": "Zakończ weryfikację twarzy, aby potwierdzić, że to naprawdę Ty próbujesz się zalogować.",
     "mobileStep2": "Kliknij <1>Otwórz aplikację {{integrationName}}</1>, aby otworzyć swoją aplikację i zakończyć weryfikację twarzy.",
     "mobileStep3": "Wróć tutaj, aby kontynuować łączenie swojego konta.",
     "openApp": "Otwórz aplikację {{integrationName}}",
@@ -616,7 +616,7 @@
   },
   "ledgerConnection": {
     "bluetoothConnect": "Połącz przez Bluetooth",
-    "connectionQuestion": "Jak chcesz połączyć się z Ledger?",
+    "connectionQuestion": "Jak chcesz połączyć się ze swoim urządzeniem Ledger?",
     "usbConnect": "Połącz przez USB"
   },
   "ledgerDeviceConnected": {
@@ -827,7 +827,7 @@
     "onrampTitle": "Zakup w toku",
     "paymentMethodDepositUsage": "Wpłata <1>{{amount}}</1> z {{paymentMethod}} do {{selectedIntegrationName}}.",
     "paymentTitle": "Płatność w toku",
-    "processing": "<strong>Przetwarzanie płatności</strong>",
+    "processing": "Przetwarzanie płatności",
     "transactionTitle": "Transakcja w toku",
     "tryAgain": "Spróbuj ponownie"
   },
@@ -921,7 +921,7 @@
     "youMayReceiveLess": "Możesz otrzymać mniej z powodu zmiany ceny {{symbol}}."
   },
   "privacyComponent": {
-    "content": "Twoje dane są w pełni prywatne i zaszyfrowane."
+    "content": "Twoje dane są zawsze prywatne i zaszyfrowane."
   },
   "qrCodePassword": {
     "expired": "Kod QR wygasł",
@@ -968,7 +968,7 @@
     "returnToClientButton": "Wróć do {{clientName}}",
     "spotAccountsBody": "W tej chwili obsługiwane są tylko konta spot. Aktywa na innych rodzajach kont, takich jak konta z marżą, nie zostaną wykryte.",
     "topUpButton": "Doładuj saldo",
-    "topUpUSDCInstruction": "Doładuj saldo USDC w portfelu Phantom.",
+    "topUpUSDCInstruction": "Doładuj saldo USDC w swoim portfelu Phantom.",
     "tryAgainFromTaoInstruction": "Spróbuj ponownie na swojej stronie kasy TAO.",
     "unableTransferError": "Nie można zainicjować transferu."
   },
@@ -1059,9 +1059,9 @@
       "verifyTransfer": "Zweryfikuj, czy to Ty zgłaszasz prośbę o transfer"
     },
     "openApp": "Otwórz aplikację {{selectedIntegrationName}}",
-    "sendNewRequest": "Wyślij nowe żądanie",
+    "sendNewRequest": "Wyślij nową prośbę",
     "title": "Weryfikacja",
-    "tryAnother": "Wypróbuj inną metodę"
+    "tryAnother": "Wypróbuj inny sposób"
   },
   "transferEmailApprovalConfirmation": {
     "approve": "Kliknij <1>Zatwierdź</1> na stronie potwierdzenia.",
@@ -1110,10 +1110,10 @@
   },
   "transferSteps": {
     "approveTransfer": "Potwierdzasz transfer z {{integrationName}} do {{clientName}}",
-    "approveTransferDeFi": "Poproszony będziesz o zatwierdzenie transferu w {{integrationName}}",
+    "approveTransferDeFi": "Zostaniesz poproszony o zatwierdzenie transferu w {{integrationName}}",
     "approveTransferToDestination": "Potwierdzasz transfer z {{integrationName}} do miejsca docelowego",
     "convertAmount": "Konwersja {{fromAmount}} na {{toCurrency}}",
-    "depositAmount": "Depozyt {{amount}} z {{paymentMethod}} do {{integrationName}}",
+    "depositAmount": "Wpłata {{amount}} z {{paymentMethod}} do {{integrationName}}",
     "purchaseAmount": "Zakup <2>{{amount}}</2> {{cryptocurrencySymbol}} w {{integrationName}}.",
     "showLess": "Pokaż mniej",
     "showMore": "Pokaż więcej",
@@ -1185,7 +1185,7 @@
   },
   "walletDoneScreen": {
     "completePaymentMessage": "Wróć do procesu realizacji zakupu, aby dokończyć zakup {{clientName}}.",
-    "continueMessage": "Proszę, kontynuuj w swojej aplikacji {{clientName}}.",
+    "continueMessage": "Proszę kontynuować w aplikacji {{clientName}}.",
     "successMessage": "Pomyślnie zweryfikowano własność twojego portfela {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
