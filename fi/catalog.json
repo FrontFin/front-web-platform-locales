@@ -1,13 +1,13 @@
 {
   "accessDeniedPage": {
-    "body": "Valitettavasti toimintaa maastasi ei tällä hetkellä sallita.",
+    "body": "Valitettavasti toiminta maastasi ei ole tällä hetkellä sallittua.",
     "title": "Pääsy estetty"
   },
   "addressWhitelistPage": {
-    "addAddress": "Lisää seuraava hyväksyttynä nostososoitteena:",
-    "goToAccount": "Mene <1>{{selectedIntegrationName}} tiliisi</1>",
+    "addAddress": "Lisää seuraava hyväksytyksi nosto-osoitteeksi:",
+    "goToAccount": "Mene <1>{{selectedIntegrationName}} tilillesi</1>",
     "network": "Verkko",
-    "preview": "Napsauta alla olevaa esikatsellaksesi ja aloittaaksesi siirto uudelleen",
+    "preview": "Napauta alta esikatseluun ja tämän siirron uudelleen aloitukseen",
     "title": "Lisää tämä kohde sallittujen listalle",
     "token": "Token"
   },
@@ -22,11 +22,11 @@
     "amountMustBeWithinErrorMessage": "Määrän on oltava välillä 21 USD - 15 000 USD",
     "buyCrypto": "Osta kryptovaluuttaa Binance Connectilla",
     "closeButton": "Sulje",
-    "continueTo": "Jatka {{selectedIntegrationName}}:iin",
+    "continueTo": "Jatka {{selectedIntegrationName}} iin",
     "enterAmount": "Syötä siirron määrä",
     "notSupported": "{{selectedIntegrationName}} ei tue siirtoja pyydetyille tokeneille ja/tai verkoille.",
     "receiveAmountInput": {
-      "networkName": "verkossa {{networkName}}"
+      "networkName": "{{networkName}} verkossa"
     },
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko talletukseen.",
@@ -37,13 +37,13 @@
     "youReceive": "Sinä vastaanotat"
   },
   "binanceMfaPage": {
-    "add2fa": "Lisää vaaditut kaksivaiheisen varmennuksen (2FA) menetelmät Binanceen",
+    "add2fa": "Lisää vaaditut kaksivaiheisen tunnistautumisen (2FA) menetelmät Binanceen",
     "chooseAnotherAccount": "Valitse toinen tili",
-    "description": "Sinulla on oltava sekä sähköposti että todennussovellus määriteltyinä 2FA-menetelminä <1>Binance</1>-tililläsi.",
-    "ensureConfigured": "Varmista, että sekä sähköposti että todennussovellus ovat määriteltyinä 2FA:lle",
-    "goToSettings": "Napsauta alla olevaa mennäksesi <1>Binancen</1> tietoturva-asetuksiin",
-    "mayNeedReAuthApp": "Huomautus: Saatat joutua todennukseen Binance-tililläsi uudelleen aloittaaksesi siirron, kun palaat <2>sovellukseen</2>.",
-    "mayNeedReAuthClient": "Huomautus: Saatat joutua todennukseen Binance-tililläsi uudelleen aloittaaksesi siirron, kun palaat <2>{{clientName}}</2>.",
+    "description": "Sinulla on oltava sekä sähköposti että tunnistautumissovellus määriteltyinä 2FA-menetelminä <1>Binance</1>-tililläsi.",
+    "ensureConfigured": "Varmista, että sekä sähköposti että tunnistautumissovellus ovat määriteltyinä 2FA:lle",
+    "goToSettings": "Siirry <1>Binancen</1> tietoturva-asetuksiin napauttamalla alta",
+    "mayNeedReAuthApp": "Huomautus: Saatat joutua tunnistautumaan uudelleen Binance-tilillesi aloittaaksesi tämän siirron, kun palaat <2>sovellukseen</2>.",
+    "mayNeedReAuthClient": "Huomautus: Saatat joutua tunnistautumaan uudelleen Binance-tilillesi aloittaaksesi tämän siirron, kun palaat <2>{{clientName}}</2>.",
     "openBinance": "Avaa Binance",
     "returnToApp": "Palaa <1>sovellukseen</1> yrittääksesi tätä siirtoa uudelleen",
     "returnToClient": "Palaa <1>{{clientName}}</1> yrittääksesi tätä siirtoa uudelleen",
@@ -53,9 +53,9 @@
     "goToBinance": "Siirry Binance.com-sivustolle",
     "securityNote": "Huomio: Turvallisuussyistä kryptonostot on poistettu käytöstä 24 tunnin ajaksi salasanan vaihdon jälkeen.",
     "steps": {
-      "completeProcess": "Suorita prosessi loppuun salasanasi palauttamiseksi.",
-      "enterEmail": "Syötä sähköpostisi tai puhelinnumerosi ja napsauta \"Unohditko salasanasi?\".",
-      "goToBinance": "Valitse <1>Siirry Binance.com-sivustolle</1> ja sinut ohjataan Binance kirjautumisnäyttöön.",
+      "completeProcess": "Viimeistele palautusprosessi salasanasi palauttamiseksi.",
+      "enterEmail": "Syötä sähköpostisi tai puhelinnumerosi ja napauta \"Unohditko salasanasi?\".",
+      "goToBinance": "Valitse <1>Siirry Binance.com-sivustolle</1> ja sinut ohjataan Binancen sisäänkirjautumissivulle.",
       "returnToLogin": "Palaa tänne kirjautuaksesi sisään uudella salasanallasi."
     },
     "title": "Palauta salasana"
@@ -68,10 +68,10 @@
     "title": "Avaa Binance-sovellus ja skannaa alla oleva QR-koodi"
   },
   "bindMfaList": {
-    "authApp": "Todennussovellus",
+    "authApp": "Tunnistautumissovellus",
     "email": "Sähköposti",
     "enabled": "Käytössä",
-    "error": "MFA:n sidonta epäonnistui",
+    "error": "MFA:n liittäminen epäonnistui",
     "notEnabled": "Ei käytössä"
   },
   "browserContent": {
@@ -90,8 +90,8 @@
     "paymentTitle": "Valitse maksutili",
     "prodOnly": "Vain tuotanto",
     "search": "haku",
-    "title": "Valitse tili linkitystä varten",
-    "title40": "Yhdistä pörssi tai lompakko"
+    "title": "Valitse linkitettävä tili",
+    "title40": "Valitse tilisi"
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
@@ -99,23 +99,23 @@
   "categories": {
     "brokerage": "Välittäjät",
     "deFiWallet": "Lompakot",
-    "deFiWalletFull": "Omaisuuden hallintaan liittyvät kryptovaluuttalompakot",
+    "deFiWalletFull": "Itsehallinnoitavat kryptolompakot",
     "exchange": "Pörssit",
     "exchangeFull": "Keskitetyt kryptovaluuttapörssit",
     "nftMarketplace": "NFT-markkinapaikat",
     "popular": "Suosittu"
   },
   "chainSwitch": {
-    "monitoringApproval": "Hyväksynnän valvonta...",
+    "monitoringApproval": "Hyväksynnän seuranta...",
     "networkChangeDeclined": "Verkon vaihto evättiin",
     "networkChangeDeclinedBody": "Olet kieltäytynyt pyynnöstä vaihtaa verkkoja lompakossasi",
-    "resendNetworkSwitch": "Lähetä verkon vaihdon pyyntö uudelleen",
-    "stayOnNetwork": "Pysy verkossa {{networkName}}",
+    "resendNetworkSwitch": "Lähetä verkon vaihtopyyntö uudelleen",
+    "stayOnNetwork": "Pysy {{networkName}} verkossa",
     "switchingNetwork": "Verkon vaihtaminen",
     "tryAgain": "Yritä uudelleen"
   },
   "challengePage": {
-    "changeQuestion": "Vaihda kysymys",
+    "changeQuestion": "Vaihda kysymystä",
     "codeHeader": "Syötä vahvistuskoodisi",
     "questionHeader": "Vastaa turvakysymykseesi",
     "securityQuestionInputTitle": "Turvakysymys",
@@ -140,7 +140,7 @@
     "mesh": "Mesh",
     "notFound": "Ei löydetty",
     "searchCap": "Haku",
-    "securedBy": "Suojaajana",
+    "securedBy": "Suojattu",
     "somethingWentWrong": "Jotain meni pieleen...",
     "submitCap": "Lähetä",
     "successTitle": "Onnistui!",
@@ -149,41 +149,41 @@
   },
   "commonContent": {
     "connecting": "Yhdistetään...",
-    "description": "vastaamaan turvallisen yhteyden muodostamisesta {{integrationName}}:n kanssa",
+    "description": "mahdollistaa turvallisen yhteyden muodostamisen {{integrationName}}:n kanssa.",
     "monitoring": "Hyväksyntä seurannassa...",
     "resend": "Lähetä yhteyspyyntö uudelleen",
     "title": "Hyväksy yhteyspyyntö<1></1> lompakossasi",
     "title40": "Hyväksy yhteyspyyntö <1></1> {{walletName}} sovelluksessasi."
   },
   "connectExternalPageScreen": {
-    "connectedTitle": "Noudata työpöydän ohjeita liittääksesi {{selectedIntegrationName}}",
+    "connectedTitle": "Seuraa ohjeita tietokoneellasi liittääksesi {{selectedIntegrationName}}iin",
     "failedBody": "Yhteyttä {{integrationName}}:n kanssa ei saatu muodostettua. Tarkista, että osoite ja verkko-id ovat oikein ja yritä uudelleen.",
     "failedTitle": "Yhteys epäonnistui",
-    "notConnectedStep1": "1. Avaa tämä linkki <1>työpöytä</1>-laitteella",
-    "notConnectedStep2": "2. Syötä tämä koodi yhdistääksesi lompakkosi turvallisesti",
-    "notConnectedTitle": "Käytä työpöytälaitetta yhdistääksesi {{selectedIntegrationName}}"
+    "notConnectedStep1": "1. Avaa tämä linkki <1>tietokoneella</1>",
+    "notConnectedStep2": "2. Syötä tämä koodi luodaksesi turvallisen yhteyden lompakkoosi",
+    "notConnectedTitle": "Käytä tietokonetta yhdistääksesi {{selectedIntegrationName}}iin"
   },
   "connectionDeclinedPage": {
     "connectAnother": "Yhdistä toinen tili"
   },
   "connectionFailedPage": {
     "defaultError": "Tapahtui virhe.",
-    "directMobileFlowError": "Istunto on vanhentunut. Palaa TAO-laskusivullesi ja yritä uudelleen."
+    "directMobileFlowError": "Istunto on vanhentunut. Palaa TAO-kassasivullesi ja yritä uudelleen."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Yhdistä toinen lompakko",
     "installApp": "Asenna mobiilisovellus"
   },
   "countryBlockedPage": {
-    "body": "Tätä ominaisuutta ei vielä tueta maassasi. Palaa pian katsomaan parannellun talletuskokemuksen tarjontaamme.",
+    "body": "Tätä ominaisuutta ei tueta vielä maassasi. Palaa pian takaisin tutustumaan parannettuun talletuskokemukseen.",
     "comingSoon": "Tulossa pian"
   },
   "currencyBox": {
-    "changeCurrency": "Vaihda valuuttaa"
+    "changeCurrency": "Vaihda valuutta"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Olet hylännyt pyynnön liittää lompakkosi, tai aiempi pyyntö on yhä aktiivinen.",
-    "connectionDeclinedTitle": "Yhteys hylätty",
+    "connectionDeclinedTitle": "Yhdistäminen hylätty",
     "networkDeclinedBody": "Olet hylännyt pyynnön vaihtaa verkkoja lompakossasi.",
     "networkDeclinedTitle": "Verkon muutos hylätty"
   },
@@ -191,17 +191,17 @@
     "actionButton": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
   "deFiWalletInitialPage": {
-    "continue": "Jatka siirtymällä {{walletName}}:iin",
+    "continue": "Jatka siirtymällä {{walletName}}iin",
     "previewButton": "Yhdistä",
     "previewTitle": "Yhdistä tili",
-    "subtitle": "Napsauta alla avataksesi {{walletName}}. Hyväksy sitten yhteyspyyntö nähdäksesi maksusi esikatselun.",
+    "subtitle": "Napauta alta avataksesi {{walletName}}n. Hyväksy sitten yhteyspyyntö esikatsellaksesi maksusi.",
     "title": "Yhdistä lompakkosi"
   },
   "defiWalletQrPage": {
     "declinedBody": "Olet hylännyt pyynnön yhdistää lompakkoosi tai aiempi pyyntö on yhä aktiivinen.",
     "declinedTitle": "Yhteys hylätty",
     "description": "Avaa {{selectedIntegrationName}} ja skannaa<3></3>QR-koodi yhdistääksesi",
-    "qrCodeLabel": "QR-koodi voidaan skannata mobiililaitteellasi yhteyden muodostamiseksi",
+    "qrCodeLabel": "Voit skannata QR-koodin mobiililaitteellasi yhteyden muodostamiseksi",
     "title": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
   "defiWalletSelectNetworkPage": {
@@ -209,18 +209,18 @@
     "declineTitle": "Verkon muutos hylätty",
     "monitoringApproval": "Hyväksyntä seurannassa...",
     "selectNetwork": "Valitse verkko",
-    "title": "Vaihtaa verkkoja",
+    "title": "Verkkojen vaihto",
     "whichNetwork": "Minkä verkon lompakossasi <1>{{selectedIntegrationName}}</1> <4></4>haluaisit liittää?"
   },
   "defiWalletUnavaialbleConnectionPage": {
-    "body": "{{integrationName}} ei ole asennettu tälle laitteelle. Asenna {{integrationName}} -sovellus, tai liitä toinen lompakko.",
+    "body": "{{integrationName}}sta ei ole asennettu tälle laitteelle. Asenna {{integrationName}} -sovellus, tai liitä toinen lompakko.",
     "title": "Yhteys ei ole saatavilla"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Odotetaan vahvistusta mobiilisovelluksesta",
-    "clickOpenApp": "Napsauta <1> Avaa {{integrationName}} sovellus</1> alla",
-    "confirmInApp": "Vahvista {{integrationName}} mobiilisovelluksessa, että sinä todella yrität kirjautua sisään.",
-    "confirmPrompt": "Vahvista kehotteessa, että se olet sinä",
+    "clickOpenApp": "Napauta <1> Avaa {{integrationName}} sovellus</1> alla",
+    "confirmInApp": "Vahvista {{integrationName}} mobiilisovelluksessa, että olet kirjautumassa sisään.",
+    "confirmPrompt": "Vahvista kehotteessa, että kyseessä olet sinä",
     "openApp": "Avaa {{integrationName}} sovellus",
     "openAppOnPhone": "Avaa {{integrationName}} sovellus puhelimellasi",
     "returnHere": "Palaa tänne jatkaaksesi",
@@ -228,27 +228,27 @@
     "title": "Varmistus",
     "tryAnotherWay": "Kokeile toista tapaa",
     "verified": "Olen vahvistanut sovelluksessani",
-    "verifyLoggedIn": "Varmista, että kirjaudut sisään uudelta laitteelta"
+    "verifyLoggedIn": "Varmista, että olet kirjautumassa sisään uudelta laitteelta"
   },
   "doneExternalVerifyScreen": {
-    "body": "Olet onnistuneesti varmistanut omistuksesi <2>{{selectedIntegrationName}}</2> lompakossa.",
+    "body": "Olet varmistanut onnistuneesti omistuksesi <2>{{selectedIntegrationName}}</2> lompakossa.",
     "returnAction": "Palaa takaisin {{clientName}}"
   },
   "donePage": {
     "continueToDeposit": "Jatka talletukseen",
-    "continueToPayment": "Jatka maksuun",
-    "continueToPurchase": "Jatka ostoon",
+    "continueToPayment": "Jatka maksamaan",
+    "continueToPurchase": "Jatka ostamaan",
     "continueToTransfer": "Jatka siirtoon",
     "done": "Valmis",
     "linkAnother": "Liitä toinen tili",
-    "linkedToClient": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}</2> <5>{{clientName}}</5>:n.",
-    "linkedToThisApp": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}</2> <5>tähän sovellukseen</5>."
+    "linkedToClient": "Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}</2> <5>{{clientName}}</5>:n.",
+    "linkedToThisApp": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}n</2> <5>tähän sovellukseen</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Tätä siirtoa ei aloiteta ennen kuin se on hyväksytty {{selectedIntegrationName}}:ssä.",
     "defaultTitle": "Tapahtuma valmis",
     "depositTitle": "Talletus valmis",
-    "onrampTitle": "Oston valmistuminen",
+    "onrampTitle": "Osto valmis",
     "paymentTitle": "Maksu suoritettu",
     "steps": {
       "approvedFromCeFiToClient": "Hyväksyt siirron {{selectedIntegrationName}}:stä {{clientName}}:iin.",
@@ -808,7 +808,7 @@
       "destination": "Hyväksyt siirron <1>{{amount}}</1> {{selectedIntegrationName}}:stä määränpäähän."
     },
     "buyingPowerPurchase": "Osto <1>{{amount}}</1> arvosta {{symbol}} <5>(~ {{amountInCrypto}})</5> {{selectedIntegrationName}}.",
-    "conversionStep": "Muunnetaan <1>{{amount}}</1> valuuttaan <4>{{currency}}</4>.",
+    "conversionStep": "Muunnetaan <1>{{amount}}</1> valuuttaan <3>{{currency}}</3>.",
     "depositTitle": "Talletus käynnissä",
     "description": "Tämä voi kestää jonkin aikaa...",
     "existingCryptocurrencyBalance": {

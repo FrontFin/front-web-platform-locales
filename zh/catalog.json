@@ -1,7 +1,7 @@
 {
   "accessDeniedPage": {
-    "body": "很遗憾，您所在国家的活动暂时不被允许。",
-    "title": "拒绝访问"
+    "body": "很遗憾，您所在国家的暂时在禁止地区。",
+    "title": "访问被拒绝"
   },
   "addressWhitelistPage": {
     "addAddress": "将以下地址添加至已批准的提现地址：",
@@ -282,7 +282,7 @@
     "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
     "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
     "directMobileBody": "返回 TAO 结账页面以完成您的付款。",
-    "directMobileTitle": "支付已启动",
+    "directMobileTitle": "支付已发起",
     "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><3></3>的支付至{{clientName}}",
@@ -478,7 +478,7 @@
     "save": "保存",
     "selectFundingMethodAvailablity": "您选择的付款方式额度为{{selectedAvailableAmount}}。 请选择其他付款方式转账{{neededAmount}}。",
     "selectFundingMethods": "请选择付款方式以转账<2>{{amount}} ~ {{amountInFiat}}</2>。",
-    "selectFundingMethodsTitle": "未选择资金来源",
+    "selectFundingMethodsTitle": "未选择充值方式",
     "selectOtherHoldings": "从其他资产中选择",
     "symbolBalance": "{{symbol}}余额",
     "title": "付款方式"
@@ -763,7 +763,7 @@
   },
   "oauthExternalPage": {
     "connected": {
-      "title": "您已连接到{{selectedIntegrationName}}",
+      "title": "您已与{{selectedIntegrationName}}连接",
       "subtitle": "返回至{{clientName}}继续",
       "action": "返回{{clientName}}"
     },
@@ -778,13 +778,13 @@
     "error": {
       "connection": {
         "title": "无法连接到{{selectedIntegrationName}}",
-        "subtitle": "看起来您没有完成登录或批准访问权限。要继续，请重新打开{{selectedIntegrationName}}并完成登录。",
+        "subtitle": "您似乎未完成登录流程或未批准访问权限。要继续，请重新打开{{selectedIntegrationName}}并完成登录。",
         "action": "重新打开{{selectedIntegrationName}}"
       }
     },
     "redirecting": {
-      "title": "重定向到 {{selectedIntegrationName}}",
-      "subtitle": "您将被重定向到浏览器，以使用{{selectedIntegrationName}}安全登录。完成后，您将自动返回此处。",
+      "title": "跳转至 {{selectedIntegrationName}}",
+      "subtitle": "您将被跳转至浏览器以使用{{selectedIntegrationName}}安全登录。完成后，您将自动返回本页。",
       "action": "继续前往{{selectedIntegrationName}}"
     }
   },
@@ -808,7 +808,7 @@
       "destination": "您批准了从{{selectedIntegrationName}}到目标账户<1>{{amount}}</1>的转账。"
     },
     "buyingPowerPurchase": "在{{selectedIntegrationName}}中购买价值<1>{{amount}}</1>的{{symbol}} <5>(~ {{amountInCrypto}})</5>。",
-    "conversionStep": "将<1>{{amount}}</1>兑换为<4>{{currency}}</4>。",
+    "conversionStep": "将<1>{{amount}}</1>兑换为<3>{{currency}}</3>。",
     "depositTitle": "充值中",
     "description": "请耐心等待......",
     "existingCryptocurrencyBalance": {
@@ -823,11 +823,11 @@
       "transferSmartDepositWithAddress": "通过中继合约从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。",
       "transferWithAddress": "从{{selectedIntegrationName}}到{{clientName}} {{address}}的<1>{{amount}}</1>转账。"
     },
-    "mayTakeFewSeconds": "这可能需要几秒钟",
+    "mayTakeFewSeconds": "这可能需要一会儿",
     "onrampTitle": "购买中",
     "paymentMethodDepositUsage": "从{{paymentMethod}}存入<1>{{amount}}</1>到{{selectedIntegrationName}}。",
     "paymentTitle": "付款中",
-    "processing": "正在处理付款",
+    "processing": "处理付款中",
     "transactionTitle": "交易中",
     "tryAgain": "再试一次"
   },
@@ -875,9 +875,9 @@
   },
   "previewPageUI": {
     "accountLabel": "账户",
-    "buildingPreviewPayment": "构建您的付款预览...",
+    "buildingPreviewPayment": "正在生成您的付款预览……",
     "confirmTransaction": "在您的 {{selectedIntegrationName}} 应用中确认此交易。",
-    "fewSeconds": "这可能需要几秒钟",
+    "fewSeconds": "这可能需要一会儿",
     "includeFeesMessage": "包含 {{amount}} 手续费",
     "networkLabel": "网络",
     "paymentTitle": "支付 {{clientName}}",
@@ -896,7 +896,7 @@
     "estimatedGasFee": "燃料费估计",
     "estimatedGasFeeHint": "网络验证者处理交易的算力费用补偿估值。",
     "from": "发起者",
-    "fundingWith": "充值选项",
+    "fundingWith": "充值方式",
     "institutionTransferFee": "{{selectedIntegrationName}}提现费",
     "institutionTransferFeeHint": "为支持您从 {{symbol}}中发起的转账，{{selectedIntegrationName}} 将收取的费用。",
     "insufficientFunds": "余额不足",
@@ -968,7 +968,7 @@
     "returnToClientButton": "返回{{clientName}}",
     "spotAccountsBody": "当前仅支持现货账户。其他账户类型（例如保证金账户）中的资产将不会被检测到。",
     "topUpButton": "充值余额",
-    "topUpUSDCInstruction": "在您的Phantom钱包中充值USDC余额。",
+    "topUpUSDCInstruction": "充值USDC至您的在您的Phantom钱包。",
     "tryAgainFromTaoInstruction": "从 TAO 结账页面重试。",
     "unableTransferError": "无法发起转账。"
   },
@@ -1009,26 +1009,26 @@
   },
   "termsAndConditionsPage": {
     "paragraph1": "Mesh Connect, Inc.（以下简称<1>“该公司”</1>）是一个技术提供商，该公司创建了一款通讯工具（以下简称<3>“工具”</3>），协助您使用的第三方服务的某些功能（以下简称<5>“终端用户服务”</5>）。这些功能旨在通过终端用户服务，使您能够与您的第三方账户和钱包（<7>“连接账户”</7>）交互，包括发送您希望执行的指令。",
-    "paragraph10": "仲裁将由美国仲裁协会根据修改后的《消费者仲裁规则》进行管理，这些规则可在<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>查看。除非您或我们提出要求，并且仲裁员认为当面听证是适当的，否则仲裁员将通过电话或视讯会议进行听证，而不是亲自出席。任何亲自出席都会安排在对双方合理方便的地点，并充分考虑到出行的能力和其他相关情况。如果您与公司无法就地点达成协议，则应由AAA或仲裁员作出决定。仲裁员的裁决将遵循这些条款，具有最终约束力。仲裁员有权授予临时、临时性或永久性的禁令或特定执行这些条款的救济，但仅限于仲裁员面前的单项索赔所保障的范围。仲裁员的裁决可以在具有管辖权的任何法院得到确认和执行。尽管有上述限制，您仍可将问题向联邦、州或地方机构反映，并在法律允许的情况下，他们可为您对我们寻求救济。",
-    "paragraph11": "这些条款构成您和公司之间关于其主题的完整协议，取代所有此前的相关口头或书面陈述或协议。如果任何条款在适用法律下不可执行，则该条款应在尽可能不改变原条款意图的前提下进行修订。如无法进行此类修订，该条款将被分割，其余条款继续有效。您确认并同意公司的服务提供商为这些条款的预期第三方受益人。接受这些条款与条件或使用工具，即表示您同意受本协约条款与条件的约束。",
-    "paragraph2": "您确认并同意终端用户服务的某些功能基于工具；您对这些功能使用的实施是基于您的指令；公司及其服务提供商不提供经纪服务或从事付款处理；公司及其服务提供商对终端用户服务或连接账户以及其提供商的条款、政策、行为或不作为不承担任何责任。",
-    "paragraph3": "您声明并保证您拥有连接并访问每个连接账户所需的所有权利和同意，包括向公司及其服务提供商提供您的账户登录凭证、钱包地址及/或任何与各个连接账户相关的账户或个人信息的权利。在此，您授权公司及其服务提供商在终端用户服务和每个连接账户之间传送指令以及信息、数据和其他材料，并且您确认并同意公司及其服务提供商对任何此类指令的执行或任何此类材料（包括其准确性、及时性或完整性）不承担任何责任。",
+    "paragraph10": "仲裁将由美国仲裁协会根据修改后的《消费者仲裁规则》进行管理，这些规则可在<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>查看。通常仲裁员通过电话或视讯会议进行听证，若您或我们认为有必要亲自出席，须经过仲裁员批准，待其认定当面听证适当，则可安排当面听证。任何当面听证都会被安排在对双方合理的地点，并充分考虑到出行的能力和其他相关情况。如果您与公司无法就地点达成协议，则应由AAA或仲裁员作出决定。仲裁员的裁决将遵循这些条款，作为有约束力的最终裁定。仲裁员有权授予临时、短期或永久性的禁令或授予执行某项特殊条款的救济，但仅限于仲裁员受理的个别索赔所需的救济。仲裁员的裁决可以在具有管辖权的任何法院得到确认和执行。尽管有上述规定，这些条款中的任何规定均不妨碍您提请联邦、州或地方机构注意相关问题，如果法律允许，这些机构可以为您寻求对我们的救济。",
+    "paragraph11": "这些条款构成您和本公司之间关于其主题的完整协议，并取代所有此前的相关口头或书面陈述或协议。如果任何条款在适用法律下不可执行，则该条款应在尽可能不改变原条款意图的前提下进行修订。如无法进行此类修订，该条款将被分割，其余条款继续有效。您确认并同意公司的服务提供商为这些条款的预期第三方受益人。若您接受这些条款与条件或使用工具，即表示您同意受本协约条款与条件的约束。",
+    "paragraph2": "您知晓并同意终端用户服务的某些功能基于本工具；您对这些功能使用的实施是基于您的意愿；公司及其服务提供商均不提供经纪服务或介入付款流程；公司及其服务提供商对终端用户服务或连接账户以及其提供商的条款、政策、行为或不作为不承担任何责任。",
+    "paragraph3": "您声明并保证您拥有连接并访问每个连接账户所需的所有权利和许可，包括向公司及其服务提供商提供您的账户登录凭证、钱包地址及/或任何与各个连接账户相关的账户或个人信息的权利。在此，您授权公司及其服务提供商在终端用户服务和每个连接账户之间传送指令以及信息、数据和其他材料，您知晓并同意公司及其服务提供商对任何此类指令的执行或任何此类材料（包括其准确性、及时性或完整性）不承担任何责任。",
     "paragraph4": "您确认您已阅读公司的《隐私政策》，可在<2>https://meshconnect.com/privacy-policy</2>查看，并同意使用该工具即表示您同意公司根据《隐私政策》中定义和规定的方式使用您的个人信息。",
-    "paragraph5": "该工具以“按现状”和“按可用性”提供，含所有瑕疵且不作任何陈述或保证。公司对工具不作任何明示或暗示的陈述或保证，包括任何有关适销性、特定用途适用性或非侵权的保证。",
-    "paragraph6": "在任何情况下， 公司及其服务提供商均不承担契约、保证、侵权（包括过失），产品责任，严格责任或其他理论下任何与使用（或无法使用）工具、终端用户服务或任何连接账户相关的间接、附带、特殊或后果性损害， 包括使用工具启用功能传递的任何指令或材料。上述限制、排除和免责声明在适用法律允许的最大范围内适用，即使任何救济未能达到其基本目的。除此， 公司及其服务提供商在工具上的总体责任不超过十美元。",
-    "paragraph7": "您将为公司及其董事、管理人员、员工、被许可方、承包商和代表辩护、赔偿并使其免受任何第三方索赔、诉讼、调查或程序的损害，以及因您使用（或误用）工具、终端用户服务和/或任何连接账户而引起的任何损失、责任、损害、成本及费用。",
-    "paragraph8": "公司可随时更改这些条款。您继续使用工具启用的任何功能即表示您接受更新的条款。",
-    "paragraph9": "这些条款将由特拉华州法律管辖，不包括其法律选择原则。除符合小额索偿法院条件的争议外，所有因这些条款或您与公司之间关系的任何方面所引起的争议，无论基于合同、侵权、法定、欺诈、失实陈述或任何其他法律理论，都将由中立仲裁员通过最终且具有约束力的仲裁解决，而不是在法院由法官或陪审团解决， 您同意与公司双方都放弃陪审团审判的权利。此类争议包括但不限于对仲裁条款解释或适用的争议，包括仲裁条款的可执行性、可撤销性或有效性问题。所有此类事项将由仲裁员而非法院解决。您同意根据这些条款进行的任何仲裁应以个人为基础进行，不允许集体仲裁和集体诉讼， 您同意放弃参与集体诉讼的能力。",
+    "paragraph5": "该工具以“按现状”和“按可用性”提供，含所有瑕疵且不作任何陈述或保证。公司对工具不作任何明示或暗示的陈述或保证，包括任何有关适销性、特定用途适用性或非侵权保证。",
+    "paragraph6": "任何情况下，对于与使用（或无法使用）本工具、最终用户服务或任何连接帐户相关的任何间接、附带、特殊或后果性损害，包括使用本工具启用的功能传输的任何指令或材料，无论是合同、保证、侵权（包括疏忽）、产品责任、严格责任还是其他理论，公司或其服务提供商均不承担任何责任。上述限制、排除和免责声明在适用法律允许的最大范围内适用，即使有救济均未能达到其基本目的。在不限制前述规定的前提下，公司及其服务提供商与工具相关的责任总额不超过十美元。",
+    "paragraph7": "对于因您使用（或误用）工具、最终用户服务和/或任何连接帐户而引起的或与之相关的任何第三方索赔、诉讼、起诉、调查或程序，以及任何损失、责任、损害、成本和费用，您将为公司及其董事、高级职员、员工、许可人、承包商和代表辩护，对其进行赔偿并使其免受损害。",
+    "paragraph8": "公司可随时更改这些条款。若您继续使用工具的任何功能，即表示您接受更新的条款。",
+    "paragraph9": "上述条款将由特拉华州法律管辖，不包括其法律选择原则。除符合小额索赔法庭受理条件的争议外，所有因这些条款或您与公司之间关系的任何方面所引起的争议，无论是基于合同、侵权、法定、欺诈、失实陈述或任何其他法律理论，都将由中立仲裁员给出的最终且具有约束力的仲裁解决，而不是在法院由法官或陪审团解决， 您同意与公司双方都放弃陪审团审判的权利。此类争议包括但不限于对仲裁条款解释或适用的争议，包括仲裁条款的可执行性、可撤销性或有效性问题。所有此类事项将由仲裁员而非法院解决。您同意根据这些条款进行的任何仲裁应以个人为基础进行，不允许集体仲裁和集体诉讼， 您同意放弃参与集体诉讼的权利。",
     "title": "{{shortName}} 终端用户<2></2>条款与条件"
   },
   "transferAmountPage": {
     "buttonTitle": {
-      "deposit": "预览存款",
+      "deposit": "预览充值",
       "onramp": "预览购买",
       "transfer": "预览转账"
     },
     "errorMessage": {
-      "insufficientFunds": "资金不足以支付转账和手续费。最大转账金额为 {{maxAmount}}。",
+      "insufficientFunds": "余额不足以支付转账和手续费。最大转账金额为 {{maxAmount}}。",
       "minimumAmount": "最小转账金额为 {{minAmount}}。",
       "zeroAmount": "请输入非零金额"
     },
@@ -1045,7 +1045,7 @@
     "yourBalance": "您的 {{token}} 余额"
   },
   "transferDeviceConfirmation": {
-    "awaitingConfirmation": "正在等待来自移动应用程序的确认",
+    "awaitingConfirmation": "正在等待移动应用程序的确认",
     "confirmButton": "我已在应用中验证",
     "description": "在您的 {{selectedIntegrationName}} 移动应用中确认是本人在尝试登录。",
     "desktopSteps": {
@@ -1124,17 +1124,17 @@
   "transferUpdateDrawerContent": {
     "approveTransfer": "批准转账",
     "cancel": "取消",
-    "description": "由于 {{token}} 价格和/或手续费的变动，购买金额低于预期。",
+    "description": "由于 {{token}} 价格和/或燃料费的变动，购买金额低于预期。",
     "ifDontComplete": "如果您未完成转账，您的 {{token}} 余额将保留在您的 {{selectedIntegrationName}} 帐户中。",
     "onYourAccount": "在您的账户上",
     "title": "转账更新",
     "youWillReceive": "您将收到"
   },
   "transferWithdrawalAddressConfirmation": {
-    "checkInbox": "请检查您的收件箱以查收要求您确认新提款地址的电子邮件。",
-    "clickConfirm": "在电子邮件中单击<1>确认地址</1>。",
+    "checkInbox": "请检查您的收件箱以查收电子邮件，确认新提款地址。",
+    "clickConfirm": "在电子邮件中点击<1>确认地址</1>。",
     "confirmedButton": "我已确认地址",
-    "return": "返回此处，然后单击下面以完成转账。",
+    "return": "返回此处，点击下方以完成转账。",
     "title": "确认提款地址"
   },
   "trezorContext": {
@@ -1147,31 +1147,31 @@
   "trezorDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} 必须验证您的钱包",
     "secureLabel": "快速、安全且免费",
-    "secureText": "签署并不能授予{{clientName}}以任何方式执行您的钱包交易的权限。",
+    "secureText": "此次签名不会以任何方式授予{{clientName}}操作您的钱包执行交易的权限。",
     "signText": "您将被提示在您的 Trezor 设备中签署一条确认您拥有此钱包的消息。",
     "title": "马上就好！",
     "verifyingLabel": "正在验证您的钱包..."
   },
   "trezorError": {
-    "connectionDeclinedBody": "您已拒绝连接您的钱包，请求，或者之前的请求仍在进行中。",
+    "connectionDeclinedBody": "您已拒绝连接您钱包的请求，或者已有一条现有请求仍在进行中。",
     "connectionDeclinedTitle": "连接被拒绝",
-    "signatureDeclinedBody": "您已拒绝在您的钱包中签署请求，或先前的请求仍处于活动状态。",
+    "signatureDeclinedBody": "您已拒绝您钱包中的签署请求，或先前的请求仍有效。",
     "signatureDeclinedTitle": "签名被拒绝"
   },
   "trezorInitial": {
     "clientVerifyLabel": "{{clientName}} 必须验证您的钱包",
-    "clientVerifyText": "您将被安全转移到您的 Trezor 以签署一条确认您拥有钱包的消息。",
+    "clientVerifyText": "您将被安全转移到您的 Trezor 以签署一条确认您对您的钱包的所有权的信息。",
     "connectingLabel": "连接您的钱包...",
     "secureLabel": "快速、安全且免费",
-    "secureText": "签署并不能授予{{clientName}}以任何方式执行您的钱包交易的权限。"
+    "secureText": "此次签名并不能以任何形式授予{{clientName}}执行您的钱包交易的权限。"
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} 希望您验证 <3>{{requestedNetworkName}}</3> 地址 <6>{{truncatedRequestedAddress}}</6> 的所有权。该地址与已连接的钱包不相关。请连接另一个钱包。",
+    "body": "{{clientName}} 希望您验证对 <3>{{requestedNetworkName}}</3> 地址 <6>{{truncatedRequestedAddress}}</6> 的所有权。该地址与已连接的钱包并无关联。请连接另一个钱包。",
     "connectAnotherAction": "连接另一个钱包",
     "title": "哎呀！"
   },
   "verifyError": {
-    "body": "无法验证您的硬件钱包。请确保您选择了正确的网络并输入了正确的钱包地址。",
+    "body": "无法验证您的硬件钱包。请确保您选择正确的网络并输入正确的钱包地址。",
     "title": "验证失败"
   },
   "verifyErrorPage": {
@@ -1179,12 +1179,12 @@
     "title": "验证被拒绝"
   },
   "wallectConnect": {
-    "noActiveSessionError": "没有活动的 WalletConnect 会话",
+    "noActiveSessionError": "暂无活动状态中的WalletConnect会话",
     "transactionHashError": "无法获取交易哈希",
     "unknownError": "发生未知错误。{{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "返回您的结账体验以完成您的 {{clientName}} 购买。",
+    "completePaymentMessage": "返回您的结账页面以完成 {{clientName}} 的购买。",
     "continueMessage": "请继续在您的{{clientName}}应用中操作。",
     "successMessage": "您已成功验证对 {{walletName}} 钱包的所有权。"
   },
