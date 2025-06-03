@@ -428,7 +428,7 @@
   },
   "externalTransferCallbackPage": {
     "continue": "Jatka {{clientName}}",
-    "transferRequested": "Siirto pyydetty, palaa {{clientName}}",
+    "transferRequested": "Siirto pyydetty, palaa {{clientName}}lle",
     "updatingTransfer": "Päivitetään siirron tilaa..."
   },
   "facePage": {
@@ -553,19 +553,19 @@
     "add2FA": "Yhdistä 2FA-sovellus ja yritä uudelleen.",
     "identityVerificationRequired": "Sinun tulee olla suorittanut henkilöllisyyden varmistaminen käyttääksesi API-avainominaisuutta. Suorita henkilöllisyyden varmentaminen jatkaaksesi.",
     "invalidCredentials": "Virheelliset kirjautumistiedot. Ole hyvä ja yritä uudelleen.",
-    "maximumApiKeyLimitExceeded": "Suurin sallittu API-avaimen raja on saavutettu. Poista käyttämätön avain jatkaaksesi.",
-    "unsupportedCountryErrorMessage": "Emme tällä hetkellä tue tiliäsi",
+    "maximumApiKeyLimitExceeded": "Suurin sallittu API-avaimien määrä on saavutettu. Poista käyttämätön avain jatkaaksesi.",
+    "unsupportedCountryErrorMessage": "Emme tue tiliäsi tällä hetkellä",
     "wrongEmailCode": "Virheellinen sähköpostikoodi, yritä uudelleen",
     "wrongTotpCode": "Virheellinen todennuskoodi, yritä uudelleen"
   },
   "handleExternalTransferPage": {
     "detailButton": "Katso mitä tapahtui",
-    "error": "Siirron toteuttaminen epäonnistui",
-    "loadingLabel": "Tarkistetaan siirtoasi...",
+    "error": "Siirron suorittaminen epäonnistui",
+    "loadingLabel": "Vahvistetaan siirtoasi...",
     "networkConfirmations": "Siirrot eivät ole valmiita, ennen kuin ne ovat saaneet riittävästi verkon vahvistuksia.",
     "notInitiatedUntilApproved": "Tätä siirtoa ei aloiteta ennen kuin se hyväksytään {{selectedIntegrationName}}:ssa.",
     "recievedDetails": "Saat <1>{{amountStr}}</1> tilille {{clientName}} ({{shortAddress}})",
-    "requestRecieved": "Pyyntösi siirtää kohteeseen {{destination}} on vastaanotettu {{selectedIntegrationName}}:n toimesta",
+    "requestRecieved": "Siirtopyyntösi kohteeseen {{destination}} on vastaanotettu {{selectedIntegrationName}}:n toimesta",
     "revolutApproveInfo": "Tätä siirtoa ei aloiteta ennen kuin se on hyväksytty Revolut-sovelluksessa",
     "transactionComplete": "Tapahtuma valmis"
   },
@@ -577,20 +577,20 @@
     "connectAction": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
   "ineligibleReason": {
-    "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} siirtää verkossa {{network}} {{integrationName}}.",
-    "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n {{minimumAmount}} siirtää verkossa {{network}}.",
+    "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
+    "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n {{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
     "belowMinimum": "Alle {{integrationName}}:n vähimmäismäärän",
-    "belowRequestedAmountDescription": "Saldosi {{balance}} on pienempi kuin {{amount}}, joka vaaditaan kattaa pyydetty siirtomäärä + palkkiot.",
-    "gasFeeAssetBalanceNotEnoughDescription": "Saldosi {{balance}} ei riitä kattamaan {{gasFee}} kaasumaksua verkossa {{network}}.",
+    "belowRequestedAmountDescription": "Saldosi {{balance}} on pienempi kuin {{amount}}, joka vaaditaan kattamaan pyydetty siirtomäärä + palkkiot.",
+    "gasFeeAssetBalanceNotEnoughDescription": "Saldosi {{balance}} ei riitä kattamaan arvioutua gas-maksua {{gasFee}} verkossa {{network}}.",
     "insufficientBalance": "Riittämätön saldo",
     "insufficientBalanceDescription": "Nykyinen saldosi {{currentBalance}} on pienempi kuin tämän siirron vähimmäismäärä.",
     "notEligible": "Ei oikeutettu tähän siirtoon",
-    "notEligibleDescription": "{{symbol}} ei hyväksytä tähän siirtoon.",
-    "notSupportedByInstitution": "Ei tuettu tällä hetkellä {{integrationName}} toimesta",
+    "notEligibleDescription": "{{symbol}} ei ole hyväksytty tähän siirtoon.",
+    "notSupportedByInstitution": "{{integrationName}} ei tue tällä hetkellä",
     "notSupportedForTransferBySource": "{{integrationName}} ei tue",
     "nyCoinbaseUserRestrictions": "{{symbol}} {{network}}:ssä ei hyväksytä tähän siirtoon NY:n moniketjutuen rajoitusten vuoksi.",
     "symbolDoesNotMatch": "{{clientName}} ei tue",
-    "symbolDoesNotMatchDescription": "{{symbol}} ei ole hyväksytty tähän siirtoon."
+    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon."
   },
   "initialLedgerScreen": {
     "title": "Käynnistä ja avaa laitteesi"
@@ -598,65 +598,65 @@
   "initialScreen": {
     "accountTitle": "Tämä sovellus yhdistää tilisi turvallisesti",
     "clientNameAccountTitle": "{{clientName}} yhdistää tilisi turvallisesti",
-    "clientNameWalletTitle": "{{clientName}} yhdistää ⚬ kryptolompakkosi turvallisesti",
-    "walletTitle": "Tämä sovellus yhdistää ⚬ kryptolompakkosi turvallisesti"
+    "clientNameWalletTitle": "{{clientName}} yhdistää kryptolompakkosi turvallisesti",
+    "walletTitle": "Tämä sovellus yhdistää kryptolompakkosi turvallisesti"
   },
   "initialSteps": {
-    "agreement": "Valitsemalla ”Jatka” hyväksyt <1></1><2>päätekäyttäjien ehdot ja säännöt</2>",
+    "agreement": "Valitsemalla ”Jatka” hyväksyt <1></1><2>Loppukäyttäjän käyttöehdot</2>",
     "credentials": "Sisäänkirjautumistietojasi ei koskaan tallenneta",
     "encryption": "Tietosi ovat aina salattuja",
-    "explicitApproval": "Konseptin aloittamiseen vaaditaan aina nimenomainen hyväksyntäsi",
+    "explicitApproval": "Siirron aloittaminen vaatii aina nimenomaisen hyväksyntäsi",
     "thirdParty": "Omaisuutesi eivät koskaan kosketa kolmansia osapuolia"
   },
   "initialVerifyPage": {
     "content40": "Vahvista, että omistat tämän lompakon",
-    "drawerTitle": "Hyväksy allekirjoituspyyntö<1></1> ⚬ kryptolompakossasi",
-    "item1Body": "Pyydetään allekirjoittamaan viesti {{selectedIntegrationName}}:ssä, joka vahvistaa, että omistat tämän ⚬ kryptolompakon.",
+    "drawerTitle": "Hyväksy allekirjoituspyyntö<1></1> kryptolompakossasi",
+    "item1Body": "Sinua pyydetään allekirjoittamaan viesti {{selectedIntegrationName}}: ssä, joka vahvistaa, että omistat tämän kryptolompakon.",
     "item1Title": "{{clientName}}:n täytyy vahvistaa osoitteesi",
     "item2Body": "Allekirjoittaminen ei missään nimessä anna {{clientName}}:lle lupaa suorittaa mitään tapahtumia kryptolompakollasi.",
     "item2Title": "Nopea, turvallinen ja ilmainen",
-    "monitoringLabel": "Alla olevan ip-osoitteen lisääminen luotetuksi ip:ksi",
-    "resendAction": "Virheen lähettäminen allekirjoituspyyntöön",
-    "title": "Lähetä allekirjoituspyyntö uudelleen",
+    "monitoringLabel": "Seuraa allekirjoitusta...",
+    "resendAction": "Lähetä allekirjoituspyyntö uudelleen",
+    "title": "Melkein valmis!",
     "verifyAction": "Vahvista osoite",
     "verifyingLabel": "Allekirjoituksen tarkistaminen..."
   },
   "ipWhiteListPage": {
     "addIp": "Lisää alla oleva IP-osoite Luotetuiksi IP-osoitteiksi",
-    "clickOnEdit": "Napsauta muokkaa rajoituksia",
+    "clickOnEdit": "Klikkaa muokkaa rajoituksia",
     "copyIpTitle": "IP-osoite",
-    "description": "<0>Binance</0> vaatii API-käyttäjiä listaamaan IP-osoitteet hyväksyttyihin IP:ihin varmistaakseen kauppa- ja siirtopyyntöjen laillisuuden.",
-    "findKey": "Löydä tälle yhteydelle käytetty avain",
-    "openLink": "Avaa <2><0>Binance API Management</0></2>",
-    "requirementsTitle": "Jos aiot käydä kauppaa tai siirtää tämän yhteyden kautta:",
-    "title": "Ennen kuin jatkat, lista tämä IP-osoite hyväksyttyihin"
+    "description": "<0>Binance</0> vaatii API-käyttäjiä lisäämään IP-osoitteet hyväksyttyihin osoitteisiin varmistaakseen kauppa- ja siirtopyyntöjen laillisuuden.",
+    "findKey": "Löydä tämän yhteyden käytettämä avain",
+    "openLink": "</0>Avaa <2><0>Binancen API Hallinta</0></2>",
+    "requirementsTitle": "Jos aiot käydä kauppaa tai tehdä siirtoja tämän yhteyden kautta:",
+    "title": "Ennen kuin jatkat, lisää tämä IP-osoite hyväksyttyihin osoitteisiin"
   },
   "kycDonePage": {
-    "successMessage": "Olet onnistuneesti vahvistanut henkilöllisyytesi ja mahdollistanut kryptosiirrot {{integrationName}}-tililläsi"
+    "successMessage": "Olet onnistuneesti vahvistanut henkilöllisyytesi ja ottanut käyttöön kryptosiirrot {{integrationName}}-tililläsi"
   },
   "kycInitialPage": {
-    "description": "Turvallisuutesi vuoksi {{integrationName}} vaatii henkilöllisyytesi vahvistamisen ennen krypton siirtoa.",
+    "description": "Turvallisuussyistä {{integrationName}} vaatii, että vahvistat henkilöllisyytesi ennen kuin voit tehdä kryptosiirtoja.",
     "steps": {
-      "completeVerification": "Suorita prosessi loppuun varmistaaksesi henkilöllisyytesi ja mahdollistaa tililtäsi siirrot",
-      "navigateCrypto": "Siirry Kryptovälilehteen, avaa siirrettävä varsi ja napsauta \"Lähetä\"",
+      "completeVerification": "Suorita henkilöllisyyden vahvistus loppuun, jotta voit siirtää varoja tililtäsi",
+      "navigateCrypto": "Siirry Krypto-välilehdelle, valitse siirrettävä omaisuus ja klikkaa \"Lähetä\"",
       "openAccount": "Avaa {{integrationName}} tilisi",
-      "returnToScreen": "Palaa tälle näytölle"
+      "returnToScreen": "Palaa tälle sivulle"
     },
-    "title": "Mahdollista siirrot {{integrationName}} tililläsi",
+    "title": "Ota käyttöön siirrot {{integrationName}} tililläsi",
     "verifiedButton": "Olen vahvistanut henkilöllisyyteni {{integrationName}} kanssa"
   },
   "kycPendingPage": {
     "connectAnother": "Yhdistä toinen tili",
-    "description": "Henkilöllisyyden vahvistaminen voi kestää <1>1 - 3 arkipäivää.</1> Kun vahvistus on valmis ja siirrot on mahdollistettu tililläsi, voit palata tänne suorittamaan tämän siirron.",
-    "title": "Hyväksyntä odottaa"
+    "description": "Henkilöllisyyden vahvistus voi kestää <1>1 - 3 arkipäivää.</1> Kun vahvistus on valmis ja siirrot on otettu käyttöön tililläsi, voit palata tänne viimeistelemään siirron.",
+    "title": "Odottaa hyväksyntää"
   },
   "kycRobinhoodPage": {
-    "clickContinue": "Napsauta <1>Jatka</1> avataksesi {{selectedIntegrationName}}.",
-    "clickContinueAfterActivated": "Kun olet aktivoinut salausrahansiirrot sovelluksessa {{selectedIntegrationName}}, napsauta alapuolelta siirtyäksesi <5>Jatka</5> siirtoosi.",
-    "completeVerification": "Viimeistele henkilöllisyyden vahvistus ja/tai lisää kaksivaiheinen todennusmenetelmä.",
+    "clickContinue": "Klikkaa <1>Jatka</1> avataksesi {{selectedIntegrationName}}.",
+    "clickContinueAfterActivated": "Kun olet aktivoinut kryptosiirrot sovelluksessa {{selectedIntegrationName}}, klikkaa alapuolelta <5>Jatka</5> jatkaaksesi siirtoasi.",
+    "completeVerification": "Viimeistele henkilöllisyyden vahvistus ja/tai lisää kaksivaiheinen tunnistautumismenetelmä.",
     "connectAnother": "Yhdistä toinen tili",
-    "note": "Huomaa: saatat joutua kirjautumaan uudelleen {{selectedIntegrationName}}-tilillesi aloittaaksesi tämän siirron, kun palaat.",
-    "return": "Palaa tänne suorittaaksesi siirron loppuun.",
+    "note": "Huomaa: Kun palaat, saatat joutua kirjautumaan uudelleen {{selectedIntegrationName}}-tilillesi aloittaaksesi tämän siirron.",
+    "return": "Palaa tänne suorittamaan siirto loppuun.",
     "title": "Ota siirrot käyttöön tililläsi"
   },
   "ledgerBluetooth": {
