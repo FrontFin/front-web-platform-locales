@@ -1,6 +1,6 @@
 {
   "accessDeniedPage": {
-    "body": "К сожалению, активность из вашей страны в настоящий момент недоступна.",
+    "body": "К сожалению, доступ из вашей страны в настоящий момент запрещён.",
     "title": "Доступ запрещён"
   },
   "addressWhitelistPage": {
@@ -319,9 +319,9 @@
     "binanceTravelRuleRestriction": "Ограничение правила поездок",
     "coinbaseUnavailable": "Coinbase недоступен",
     "emptyWalletBalance": "Пустой электронный кошелек",
-    "failedToGetFundingOptions": "Ошибка вариантов финансирования",
+    "failedToGetFundingOptions": "Ошибка способов пополнения",
     "failedToSaveFundingOptions": "Не удалось сохранить",
-    "feeAssetBalanceNotEnough": "Недостаточный баланс для комиссии",
+    "feeAssetBalanceNotEnough": "Недостаточный баланс для оплаты комиссии",
     "fromAccountNotSupported": "Вывод не поддерживается",
     "integrationNotAvailable": "Интеграция недоступна",
     "kycRequired": "Требуется KYC",
@@ -330,7 +330,7 @@
     "passKeyNotSupported": "Код доступа не поддерживается",
     "previewExpired": "Срок действия превью истек",
     "satoshiTestRequired": "Превышен лимит суммы",
-    "symbolNotSupported": "Символ не поддерживается",
+    "symbolNotSupported": "Токен не поддерживается",
     "symbolNotSupportedBySource": "Источник не поддерживается",
     "symbolNotSupportedByTarget": "Назначение не поддерживается",
     "toAccountNotSupported": "Депозит не поддерживается",
@@ -527,7 +527,7 @@
     "save": "Сохранить",
     "selectFundingMethodAvailablity": "Выбранные методы обеспечения имеют {{selectedAvailableAmount}}. Пожалуйста, выберите дополнительные способы обеспечения для перевода {{neededAmount}}.",
     "selectFundingMethods": "Пожалуйста, выберите метод (ы) обеспечения для перевода <2>{{amount}} ~ {{amountInFiat}}</2>.",
-    "selectFundingMethodsTitle": "Способ финансирования не выбран",
+    "selectFundingMethodsTitle": "Способ пополнения не выбран",
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
@@ -822,19 +822,19 @@
     "awaitingConnection": {
       "title": "Ожидание подключения",
       "subtitle": "Пожалуйста, завершите вход в систему и подтвердите доступ в вашем браузере.",
-      "action": "Переоткрыть {{selectedIntegrationName}}"
+      "action": "Открыть {{selectedIntegrationName}} снова"
     },
     "error": {
       "connection": {
         "title": "Не удалось подключиться к {{selectedIntegrationName}}",
         "subtitle": "Кажется, вы не завершили вход в систему или подтверждение доступа. Чтобы продолжить, пожалуйста, снова откройте {{selectedIntegrationName}} и завершите вход.",
-        "action": "Переоткрыть {{selectedIntegrationName}}"
+        "action": "Открыть {{selectedIntegrationName}} снова"
       }
     },
     "redirecting": {
       "title": "Перенаправление к {{selectedIntegrationName}}",
-      "subtitle": "Вы будете перенаправлены в ваш браузер для безопасного входа с {{selectedIntegrationName}}. Как только вы закончите, вы вернётесь сюда автоматически.",
-      "action": "Перейти к  {{selectedIntegrationName}}"
+      "subtitle": "Вы будете перенаправлены в ваш браузер для безопасного входа в {{selectedIntegrationName}}. Как только вы закончите, вы вернётесь сюда автоматически.",
+      "action": "Перейти к {{selectedIntegrationName}}"
     }
   },
   "oauthInitialPage": {
