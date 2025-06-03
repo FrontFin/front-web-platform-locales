@@ -384,7 +384,7 @@
     "previewExpired": "Esikatselu on vanhentunut.",
     "satoshiTestRequired": "Coinbase API ei tue yli 1000 euron siirtoja matkustusrajoitusten vuoksi. Yritä uudelleen pienemmällä summalla.",
     "symbolNotSupported": "Integraatio ei tue symbolia.",
-    "symbolNotSupportedBySource": "Lähdelompakko ei tue siirrettävää symbolia pyydetyssä verkossa.",
+    "symbolNotSupportedBySource": "Lähdelompakko ei tue siirrettävää valuuttaa pyydetyssä verkossa.",
     "symbolNotSupportedByTarget": "Talletusosoitetta pyydetylle kolikolle ei löydy.",
     "toAccountNotSupported": "Kohdetili ei tällä hetkellä hyväksy kryptotalletuksia.",
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
@@ -463,7 +463,7 @@
   },
   "fullScreenSpinner": {
     "linking": "Linkitetään tiliäsi...",
-    "loading": "Työskentely jatkuu..."
+    "loading": "Työstetään edelleen..."
   },
   "fundingLoadingOverlay": {
     "loading": "Ladataan..."
@@ -472,28 +472,28 @@
     "fee": {
       "conversion": "{{integrationName}} {{conversionFromCurrency}} {{conversionToCurrency}} Muuntomaksu",
       "deposit": "{{integrationName}} Talletusmaksu",
-      "purchase": "{{integrationName}} {{fiatSymbol}} {{cryptocurrencySymbol}} Osto",
+      "purchase": "{{integrationName}} {{fiatSymbol}} {{cryptocurrencySymbol}} Ostomaksu",
       "withdrawal": "{{integrationName}} Nostomaksu"
     },
     "info": {
-      "conversion": "Maksu, jonka {{integrationName}} perii muuntaakseen {{conversionFromSymbol}} -valuutan {{conversionToSymbol}} -valuuttaan.",
-      "purchase": "Maksu, jonka {{integrationName}} perii helpottaakseen {{symbol}} ostoasi.",
-      "withdrawal": "Maksu, jonka {{integrationName}} perii helpottaakseen siirtoasi pois {{symbol}}."
+      "conversion": "Maksu, jonka {{integrationName}} perii {{conversionFromSymbol}} -valuutan muuntamisesta {{conversionToSymbol}} -valuuttaan.",
+      "purchase": "Maksu, jonka {{integrationName}} perii {{symbol}} ostosi välittämisestä.",
+      "withdrawal": "Maksu, jonka {{integrationName}} perii mahdollistaakseen siirtosi pois {{symbol}}:sta."
     }
   },
   "fundingMethodsList": {
-    "buyingPower": "Osto",
+    "buyingPower": "Ostovoima",
     "cryptocurrencyBalance": "{{symbol}} saldo",
-    "noneSelected": "ei valittuna",
+    "noneSelected": "ei mitään valittuna",
     "paymentMethodDepositUsage": "Linkitetty Maksutapa",
     "stablecoinConversion": "Stablecoin-muunto",
     "withAdditional_one": "{{mainOption}} + {{count}} muu",
-    "withAdditional_other": "{{mainOption}} + {{count}} muuta"
+    "withAdditional_other": "{{mainOption}} + {{count}} muut"
   },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}} ei tue tämän rahoitusmenetelmän käyttöä {{assetName}} ostamiseen.",
-    "coveredByExistingCryptocurrencyBalance": "Sinulla on jo tarpeeksi {{assetName}} saldo tätä ostoa varten ilman lisärahoitusmenetelmiä.",
-    "coveredByOtherFundingOptions": "Tätä rahoitusmenetelmää ei tueta tässä siirrossa.",
+    "buyingPowerUsageNotSupported": "{{integrationName}} ei tue tämän maksutavan käyttöä {{assetName}} ostamiseen.",
+    "coveredByExistingCryptocurrencyBalance": "Sinulla on jo riittävästi {{assetName}} saldoa tähän ostoon, joten lisämaksutapoja ei tarvita.",
+    "coveredByOtherFundingOptions": "Tätä maksutapaa ei tueta tässä siirrossa.",
     "currencyNotSupported": "Krypton ostaminen muulla kuin USD-pohjaisella rahoitusmenetelmällä ei ole vielä tuettu.",
     "depositAmountLimitExceeded": "Tämä ostos ylittäisi {{integrationName}}:n enimmäistalletusrajan tässä rahoitusmenetelmässä 1 päivän kuluessa.",
     "depositCountLimitReached": "Tämä rahoitusmenetelmä on jo saavuttanut {{integrationName}}:n enimmäismäärän talletuksia 1 päivässä.",
