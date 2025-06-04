@@ -280,12 +280,12 @@
     "checkDetails": "See what happened",
     "checkDetails40": "View transaction details",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>will be received in {{shortAddress}}",
-    "depositClient": "You will receive<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}})",
+    "depositClient": "You will receive <2>{{amountCrypto}} ~ {{amountFiat}}</2> in {{clientName}} ({{shortAddress}})",
     "directMobileBody": "Return to your TAO checkout page to finalize your payment.",
     "directMobileTitle": "Payment initiated",
     "goBackToShift4": "← Go back to Shift4",
     "goToIntegrationToApprove": "Please go to <1>{{selectedIntegrationName}}</1> to approve this transfer.",
-    "paymentInitiated": "You have initiated a payment of<1></1><2>{{amountCrypto}}</2><3></3>to {{clientName}}",
+    "paymentInitiated": "You have initiated a payment of <1></1><2>{{amountCrypto}}</2> <4></4>to {{clientName}}",
     "waiting": "Transfers are not complete until they have received enough network confirmations."
   },
   "doneVerifyPage": {
@@ -313,56 +313,56 @@
     "warningTitle": "Read this entire message before continuing."
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "Account Type Not Supported",
     "amountBelowMinimum": "Amount Too Low",
     "amountExceedsMaximum": "Amount Too High",
+    "badRequest": "Invalid Request",
     "balanceNotEnough": "Insufficient Balance",
     "binanceTravelRuleRestriction": "Travel Rule Restriction",
     "coinbaseUnavailable": "Coinbase Unavailable",
+    "configurationMismatch": "Configuration Error",
     "emptyWalletBalance": "Empty Wallet",
+    "expiredSmartDeposit": "Smart Deposit Expired",
     "failedToGetFundingOptions": "Funding Options Error",
     "failedToSaveFundingOptions": "Save Failed",
     "feeAssetBalanceNotEnough": "Insufficient Fee Balance",
+    "forbiddenByIntegration": "Access Forbidden",
     "fromAccountNotSupported": "Withdrawal Not Supported",
+    "integrationError": "Integration Error",
     "integrationNotAvailable": "Integration Unavailable",
+    "invalidField": "Invalid Information",
+    "invalidFromIntegrationToken": "Invalid Source Token",
+    "invalidIntegrationToken": "Invalid Token",
+    "invalidToIntegrationToken": "Invalid Destination Token",
     "kycRequired": "KYC Required",
     "locked": "Account Locked",
+    "missingField": "Missing Information",
     "networkDisabled": "Network Disabled",
+    "networkUnsupported": "Network Not Supported",
+    "noAvailableSmartContract": "Smart Contract Unavailable",
+    "notAuthorizedFromIntegrationToken": "Source Not Authorized",
+    "notAuthorizedToIntegrationToken": "Destination Not Authorized",
+    "notFound": "Not Found",
+    "notSupported": "Not Supported",
+    "orderTypeNotSupported": "Order Type Not Supported",
     "passKeyNotSupported": "Passkey Not Supported",
+    "paymentMethodNotAvailable": "Payment Method Unavailable",
+    "permissionDenied": "Access Denied",
     "previewExpired": "Preview Expired",
+    "refusedByIntegration": "Transfer Refused",
     "satoshiTestRequired": "Amount Limit Exceeded",
+    "serverFailure": "Server Error",
     "symbolNotSupported": "Symbol Not Supported",
     "symbolNotSupportedBySource": "Source Not Supported",
     "symbolNotSupportedByTarget": "Destination Not Supported",
+    "symbolNotSupportedForTrading": "Trading Not Supported",
+    "timeInForceNotSupported": "Time In Force Not Supported",
     "toAccountNotSupported": "Deposit Not Supported",
     "tooManyRequests": "Too Many Requests",
     "transferAlreadyRequested": "Transfer Already Requested",
     "twoFaFailed": "Invalid 2FA Code",
-    "withdrawalLocked": "Withdrawals Locked",
-    "badRequest": "Invalid Request",
-    "serverFailure": "Server Error",
-    "permissionDenied": "Access Denied",
-    "notFound": "Not Found",
-    "missingField": "Missing Information",
-    "invalidField": "Invalid Information",
-    "notSupported": "Not Supported",
-    "integrationError": "Integration Error",
-    "invalidIntegrationToken": "Invalid Token",
     "unauthorizedToken": "Unauthorized Token",
-    "forbiddenByIntegration": "Access Forbidden",
-    "networkUnsupported": "Network Not Supported",
-    "invalidFromIntegrationToken": "Invalid Source Token",
-    "invalidToIntegrationToken": "Invalid Destination Token",
-    "notAuthorizedFromIntegrationToken": "Source Not Authorized",
-    "notAuthorizedToIntegrationToken": "Destination Not Authorized",
-    "configurationMismatch": "Configuration Error",
-    "refusedByIntegration": "Transfer Refused",
-    "noAvailableSmartContract": "Smart Contract Unavailable",
-    "expiredSmartDeposit": "Smart Deposit Expired",
-    "symbolNotSupportedForTrading": "Trading Not Supported",
-    "orderTypeNotSupported": "Order Type Not Supported",
-    "accountTypeNotSupported": "Account Type Not Supported",
-    "paymentMethodNotAvailable": "Payment Method Unavailable",
-    "timeInForceNotSupported": "Time In Force Not Supported"
+    "withdrawalLocked": "Withdrawals Locked"
   },
   "errorMessages": {
     "amountBelowMinimum": "Requested amount is below the minimum allowable transfer amount on this network.",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "Please select another exchange or wallet to deposit from."
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "You’re connected with {{selectedIntegrationName}}",
-      "subtitle": "Return to {{clientName}} to continue",
-      "action": "Return to {{clientName}}"
+    "awaitingConnection": {
+      "action": "Re-open {{selectedIntegrationName}}",
+      "subtitle": "Please finish logging in and approving access in your browser.",
+      "title": "Awaiting for connection"
     },
     "checking": {
       "message": "Checking your assets..."
     },
-    "awaitingConnection": {
-      "title": "Awaiting for connection",
-      "subtitle": "Please finish logging in and approving access in your browser.",
-      "action": "Re-open {{selectedIntegrationName}}"
+    "connected": {
+      "action": "Return to {{clientName}}",
+      "subtitle": "Return to {{clientName}} to continue",
+      "title": "You’re connected with {{selectedIntegrationName}}"
     },
     "error": {
       "connection": {
-        "title": "Couldn’t connect to {{selectedIntegrationName}}",
+        "action": "Re-open {{selectedIntegrationName}}",
         "subtitle": "It looks like you didn’t finish logging in or approving access. To continue, please re-open {{selectedIntegrationName}} and complete sign-in.",
-        "action": "Re-open {{selectedIntegrationName}}"
+        "title": "Couldn’t connect to {{selectedIntegrationName}}"
       }
     },
     "redirecting": {
-      "title": "Redirecting to {{selectedIntegrationName}}",
+      "action": "Continue to {{selectedIntegrationName}}",
       "subtitle": "You’ll be redirected to your browser to log in securely with {{selectedIntegrationName}}. Once you’re done, you’ll return here automatically.",
-      "action": "Continue to {{selectedIntegrationName}}"
+      "title": "Redirecting to {{selectedIntegrationName}}"
     }
   },
   "oauthInitialPage": {

@@ -313,56 +313,56 @@
     "warningTitle": "Lisez ce message en entier avant de continuer."
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "Type de compte non pris en charge",
     "amountBelowMinimum": "Montant trop bas",
     "amountExceedsMaximum": "Montant trop élevé",
+    "badRequest": "Requête invalide",
     "balanceNotEnough": "Solde insuffisant",
     "binanceTravelRuleRestriction": "Restriction de la règle de voyage",
     "coinbaseUnavailable": "Coinbase indisponible",
+    "configurationMismatch": "Erreur de configuration",
     "emptyWalletBalance": "Portefeuille vide",
+    "expiredSmartDeposit": "Dépôt intelligent expiré",
     "failedToGetFundingOptions": "Erreur d'options de financement",
     "failedToSaveFundingOptions": "Échec de l'enregistrement",
     "feeAssetBalanceNotEnough": "Solde de frais insuffisant",
+    "forbiddenByIntegration": "Accès interdit",
     "fromAccountNotSupported": "Retrait non pris en charge",
+    "integrationError": "Erreur d'intégration",
     "integrationNotAvailable": "Intégration indisponible",
+    "invalidField": "Informations invalides",
+    "invalidFromIntegrationToken": "Jeton source invalide",
+    "invalidIntegrationToken": "Jeton invalide",
+    "invalidToIntegrationToken": "Jeton de destination invalide",
     "kycRequired": "KYC requis",
     "locked": "Compte verrouillé",
+    "missingField": "Informations manquantes",
     "networkDisabled": "Réseau désactivé",
+    "networkUnsupported": "Réseau non pris en charge",
+    "noAvailableSmartContract": "Contrat intelligent indisponible",
+    "notAuthorizedFromIntegrationToken": "Source non autorisée",
+    "notAuthorizedToIntegrationToken": "Destination non autorisée",
+    "notFound": "Non trouvé",
+    "notSupported": "Non pris en charge",
+    "orderTypeNotSupported": "Type d'ordre non pris en charge",
     "passKeyNotSupported": "Clé de sécurité non prise en charge",
+    "paymentMethodNotAvailable": "Méthode de paiement indisponible",
+    "permissionDenied": "Accès refusé",
     "previewExpired": "Aperçu expiré",
+    "refusedByIntegration": "Transfert refusé",
     "satoshiTestRequired": "Limite de montant dépassée",
+    "serverFailure": "Erreur du serveur",
     "symbolNotSupported": "Symbole non pris en charge",
     "symbolNotSupportedBySource": "Source non prise en charge",
     "symbolNotSupportedByTarget": "Destination non prise en charge",
+    "symbolNotSupportedForTrading": "Trading non pris en charge",
+    "timeInForceNotSupported": "Modalité temporelle non prise en charge",
     "toAccountNotSupported": "Dépôt non pris en charge",
     "tooManyRequests": "Trop de demandes",
     "transferAlreadyRequested": "Transfert déjà demandé",
     "twoFaFailed": "Code 2FA invalide",
-    "withdrawalLocked": "Retraits verrouillés",
-    "badRequest": "Requête invalide",
-    "serverFailure": "Erreur du serveur",
-    "permissionDenied": "Accès refusé",
-    "notFound": "Non trouvé",
-    "missingField": "Informations manquantes",
-    "invalidField": "Informations invalides",
-    "notSupported": "Non pris en charge",
-    "integrationError": "Erreur d'intégration",
-    "invalidIntegrationToken": "Jeton invalide",
     "unauthorizedToken": "Jeton non autorisé",
-    "forbiddenByIntegration": "Accès interdit",
-    "networkUnsupported": "Réseau non pris en charge",
-    "invalidFromIntegrationToken": "Jeton source invalide",
-    "invalidToIntegrationToken": "Jeton de destination invalide",
-    "notAuthorizedFromIntegrationToken": "Source non autorisée",
-    "notAuthorizedToIntegrationToken": "Destination non autorisée",
-    "configurationMismatch": "Erreur de configuration",
-    "refusedByIntegration": "Transfert refusé",
-    "noAvailableSmartContract": "Contrat intelligent indisponible",
-    "expiredSmartDeposit": "Dépôt intelligent expiré",
-    "symbolNotSupportedForTrading": "Trading non pris en charge",
-    "orderTypeNotSupported": "Type d'ordre non pris en charge",
-    "accountTypeNotSupported": "Type de compte non pris en charge",
-    "paymentMethodNotAvailable": "Méthode de paiement indisponible",
-    "timeInForceNotSupported": "Modalité temporelle non prise en charge"
+    "withdrawalLocked": "Retraits verrouillés"
   },
   "errorMessages": {
     "amountBelowMinimum": "Le montant demandé est inférieur au montant minimum de transfert autorisé sur ce réseau.",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "Veuillez sélectionner un autre échange ou portefeuille pour le dépôt."
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "Vous êtes connecté avec {{selectedIntegrationName}}",
-      "subtitle": "Retour à {{clientName}} pour continuer",
-      "action": "Retourner à {{clientName}}"
+    "awaitingConnection": {
+      "action": "Rouvrir {{selectedIntegrationName}}",
+      "subtitle": "Veuillez terminer la connexion et approuver l'accès dans votre navigateur.",
+      "title": "En attente de connexion"
     },
     "checking": {
       "message": "Vérification de vos actifs..."
     },
-    "awaitingConnection": {
-      "title": "En attente de connexion",
-      "subtitle": "Veuillez terminer la connexion et approuver l'accès dans votre navigateur.",
-      "action": "Rouvrir {{selectedIntegrationName}}"
+    "connected": {
+      "action": "Retourner à {{clientName}}",
+      "subtitle": "Retour à {{clientName}} pour continuer",
+      "title": "Vous êtes connecté avec {{selectedIntegrationName}}"
     },
     "error": {
       "connection": {
-        "title": "Impossible de se connecter à {{selectedIntegrationName}}",
+        "action": "Rouvrir {{selectedIntegrationName}}",
         "subtitle": "Il semble que vous n'ayez pas terminé de vous connecter ou d'approuver l'accès. Pour continuer, veuillez rouvrir {{selectedIntegrationName}} et terminer la connexion.",
-        "action": "Rouvrir {{selectedIntegrationName}}"
+        "title": "Impossible de se connecter à {{selectedIntegrationName}}"
       }
     },
     "redirecting": {
-      "title": "Redirection vers {{selectedIntegrationName}}",
+      "action": "Continuer sur {{selectedIntegrationName}}",
       "subtitle": "Vous serez redirigé vers votre navigateur pour vous connecter en toute sécurité avec {{selectedIntegrationName}}. Une fois terminé, vous reviendrez ici automatiquement.",
-      "action": "Continuer sur {{selectedIntegrationName}}"
+      "title": "Redirection vers {{selectedIntegrationName}}"
     }
   },
   "oauthInitialPage": {

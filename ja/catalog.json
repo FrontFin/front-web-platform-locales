@@ -313,56 +313,56 @@
     "warningTitle": "続行する前にこのメッセージを全てお読みください。"
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "アカウントタイプはサポートされていません",
     "amountBelowMinimum": "金額が少なすぎます",
     "amountExceedsMaximum": "金額が多すぎます",
+    "badRequest": "無効なリクエスト",
     "balanceNotEnough": "残高不足",
     "binanceTravelRuleRestriction": "移転ルールの制限",
     "coinbaseUnavailable": "Coinbaseが利用できません",
+    "configurationMismatch": "設定エラー",
     "emptyWalletBalance": "空のウォレット",
+    "expiredSmartDeposit": "スマート預金が期限切れ",
     "failedToGetFundingOptions": "資金オプションエラー",
     "failedToSaveFundingOptions": "保存に失敗しました",
     "feeAssetBalanceNotEnough": "手数料の残高が不足しています",
+    "forbiddenByIntegration": "アクセス禁止",
     "fromAccountNotSupported": "引き出しはサポートされていません",
+    "integrationError": "統合エラー",
     "integrationNotAvailable": "統合が利用できない",
+    "invalidField": "無効な情報",
+    "invalidFromIntegrationToken": "無効な送信元トークン",
+    "invalidIntegrationToken": "無効なトークン",
+    "invalidToIntegrationToken": "無効な宛先トークン",
     "kycRequired": "KYC が必要です",
     "locked": "アカウントがロックされました",
+    "missingField": "情報不足",
     "networkDisabled": "ネットワークが無効です",
+    "networkUnsupported": "ネットワークがサポートされていません",
+    "noAvailableSmartContract": "スマートコントラクトが利用できません",
+    "notAuthorizedFromIntegrationToken": "送信元が許可されていない",
+    "notAuthorizedToIntegrationToken": "宛先が許可されていない",
+    "notFound": "見つかりません",
+    "notSupported": "サポートされていません",
+    "orderTypeNotSupported": "注文タイプはサポートされていません",
     "passKeyNotSupported": "パスキーはサポートされていません",
+    "paymentMethodNotAvailable": "支払い方法が利用できません",
+    "permissionDenied": "アクセス拒否",
     "previewExpired": "プレビューの期限が切れています",
+    "refusedByIntegration": "統合により拒否されました",
     "satoshiTestRequired": "金額の制限を超えました",
+    "serverFailure": "サーバーエラー",
     "symbolNotSupported": "シンボルはサポートされていません",
     "symbolNotSupportedBySource": "ソースはサポートされていません",
     "symbolNotSupportedByTarget": "目的地はサポートされていません",
+    "symbolNotSupportedForTrading": "取引はサポートされていません",
+    "timeInForceNotSupported": "有効期間はサポートされていません",
     "toAccountNotSupported": "預金はサポートされていません",
     "tooManyRequests": "リクエストが多すぎます",
     "transferAlreadyRequested": "送金はすでに申請されています。",
     "twoFaFailed": "無効な2FAコード",
-    "withdrawalLocked": "引き出しがロックされています",
-    "badRequest": "無効なリクエスト",
-    "serverFailure": "サーバーエラー",
-    "permissionDenied": "アクセス拒否",
-    "notFound": "見つかりません",
-    "missingField": "情報不足",
-    "invalidField": "無効な情報",
-    "notSupported": "サポートされていません",
-    "integrationError": "統合エラー",
-    "invalidIntegrationToken": "無効なトークン",
     "unauthorizedToken": "許可されていないトークン",
-    "forbiddenByIntegration": "アクセス禁止",
-    "networkUnsupported": "ネットワークがサポートされていません",
-    "invalidFromIntegrationToken": "無効な送信元トークン",
-    "invalidToIntegrationToken": "無効な宛先トークン",
-    "notAuthorizedFromIntegrationToken": "送信元が許可されていない",
-    "notAuthorizedToIntegrationToken": "宛先が許可されていない",
-    "configurationMismatch": "設定エラー",
-    "refusedByIntegration": "統合により拒否されました",
-    "noAvailableSmartContract": "スマートコントラクトが利用できません",
-    "expiredSmartDeposit": "スマート預金が期限切れ",
-    "symbolNotSupportedForTrading": "取引はサポートされていません",
-    "orderTypeNotSupported": "注文タイプはサポートされていません",
-    "accountTypeNotSupported": "アカウントタイプはサポートされていません",
-    "paymentMethodNotAvailable": "支払い方法が利用できません",
-    "timeInForceNotSupported": "有効期間はサポートされていません"
+    "withdrawalLocked": "引き出しがロックされています"
   },
   "errorMessages": {
     "amountBelowMinimum": "要求された金額は、このネットワークでの最小許容振り込み額を下回っています。",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "入金元として、別の取引所またはウォレットを選択してください。"
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "{{selectedIntegrationName}}と接続しました",
-      "subtitle": "{{clientName}}に戻って続行",
-      "action": "{{clientName}}に戻る"
+    "awaitingConnection": {
+      "action": "{{selectedIntegrationName}}を再度開く",
+      "subtitle": "ブラウザでログインとアクセス承認を完了してください。",
+      "title": "接続待機中"
     },
     "checking": {
       "message": "資産を確認中。。。"
     },
-    "awaitingConnection": {
-      "title": "接続待機中",
-      "subtitle": "ブラウザでログインとアクセス承認を完了してください。",
-      "action": "{{selectedIntegrationName}}を再度開く"
+    "connected": {
+      "action": "{{clientName}}に戻る",
+      "subtitle": "{{clientName}}に戻って続行",
+      "title": "{{selectedIntegrationName}}と接続しました"
     },
     "error": {
       "connection": {
-        "title": "{{selectedIntegrationName}} へ接続できませんでした",
+        "action": "{{selectedIntegrationName}}を再度開く",
         "subtitle": "ログインまたはアクセス承認を完了していないようです。続行するには、{{selectedIntegrationName}}を再度開き、ログインを完了してください。",
-        "action": "{{selectedIntegrationName}}を再度開く"
+        "title": "{{selectedIntegrationName}} へ接続できませんでした"
       }
     },
     "redirecting": {
-      "title": "{{selectedIntegrationName}} へのリダイレクト",
+      "action": "{{selectedIntegrationName}}へ進む",
       "subtitle": "{{selectedIntegrationName}} で安全にログインするために、ブラウザにリダイレクトされます。完了後、ここに自動的に戻ります。",
-      "action": "{{selectedIntegrationName}}へ進む"
+      "title": "{{selectedIntegrationName}} へのリダイレクト"
     }
   },
   "oauthInitialPage": {

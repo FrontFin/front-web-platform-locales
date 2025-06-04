@@ -313,56 +313,56 @@
     "warningTitle": "Devam etmeden önce bu mesajın tamamını okuyun."
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "Hesap türü desteklenmiyor",
     "amountBelowMinimum": "Tutar çok düşük",
     "amountExceedsMaximum": "Tutar çok yüksek",
+    "badRequest": "Geçersiz istek",
     "balanceNotEnough": "Yetersiz bakiye",
     "binanceTravelRuleRestriction": "Seyahat kuralı kısıtlaması",
     "coinbaseUnavailable": "Coinbase kullanılamıyor",
+    "configurationMismatch": "Yapılandırma hatası",
     "emptyWalletBalance": "Boş cüzdan",
+    "expiredSmartDeposit": "Akıllı para yatırma süresi doldu",
     "failedToGetFundingOptions": "Fonlama seçenekleri hatası",
     "failedToSaveFundingOptions": "Kaydetme başarısız",
     "feeAssetBalanceNotEnough": "Ücret bakiyesi yetersiz",
+    "forbiddenByIntegration": "Erişim yasaklandı",
     "fromAccountNotSupported": "Çekim desteklenmiyor",
+    "integrationError": "Entegrasyon hatası",
     "integrationNotAvailable": "Entegrasyon kullanılamıyor",
+    "invalidField": "Geçersiz bilgi",
+    "invalidFromIntegrationToken": "Geçersiz kaynak tokeni",
+    "invalidIntegrationToken": "Geçersiz token",
+    "invalidToIntegrationToken": "Geçersiz hedef tokeni",
     "kycRequired": "Kimlik doğrulaması gerekli",
     "locked": "Hesap kilitli",
+    "missingField": "Bilgi eksikliği",
     "networkDisabled": "Ağ devre dışı",
+    "networkUnsupported": "Ağ desteklenmiyor",
+    "noAvailableSmartContract": "Akıllı sözleşme kullanılamıyor",
+    "notAuthorizedFromIntegrationToken": "Kaynak yetkilendirilmedi",
+    "notAuthorizedToIntegrationToken": "Hedef yetkilendirilmedi",
+    "notFound": "Bulunamadı",
+    "notSupported": "Desteklenmiyor",
+    "orderTypeNotSupported": "Emir türü desteklenmiyor",
     "passKeyNotSupported": "Geçiş anahtarı desteklenmiyor",
+    "paymentMethodNotAvailable": "Ödeme yöntemi kullanılamıyor",
+    "permissionDenied": "Erişim reddedildi",
     "previewExpired": "Ön izleme süresi doldu",
+    "refusedByIntegration": "Transfer reddedildi",
     "satoshiTestRequired": "Tutar limiti aşıldı",
+    "serverFailure": "Sunucu hatası",
     "symbolNotSupported": "Sembol desteklenmiyor",
     "symbolNotSupportedBySource": "Kaynak desteklenmiyor",
     "symbolNotSupportedByTarget": "Hedef Desteklenmiyor",
+    "symbolNotSupportedForTrading": "Alım satım desteklenmiyor",
+    "timeInForceNotSupported": "Geçerlilik süresi desteklenmiyor",
     "toAccountNotSupported": "Para yatırma desteklenmiyor",
     "tooManyRequests": "Çok fazla istek",
     "transferAlreadyRequested": "Transfer zaten talep edildi",
     "twoFaFailed": "Geçersiz 2FA kodu",
-    "withdrawalLocked": "Çekim kilitli",
-    "badRequest": "Geçersiz istek",
-    "serverFailure": "Sunucu hatası",
-    "permissionDenied": "Erişim reddedildi",
-    "notFound": "Bulunamadı",
-    "missingField": "Bilgi eksikliği",
-    "invalidField": "Geçersiz bilgi",
-    "notSupported": "Desteklenmiyor",
-    "integrationError": "Entegrasyon hatası",
-    "invalidIntegrationToken": "Geçersiz token",
     "unauthorizedToken": "Yetkisiz token",
-    "forbiddenByIntegration": "Erişim yasaklandı",
-    "networkUnsupported": "Ağ desteklenmiyor",
-    "invalidFromIntegrationToken": "Geçersiz kaynak tokeni",
-    "invalidToIntegrationToken": "Geçersiz hedef tokeni",
-    "notAuthorizedFromIntegrationToken": "Kaynak yetkilendirilmedi",
-    "notAuthorizedToIntegrationToken": "Hedef yetkilendirilmedi",
-    "configurationMismatch": "Yapılandırma hatası",
-    "refusedByIntegration": "Transfer reddedildi",
-    "noAvailableSmartContract": "Akıllı sözleşme kullanılamıyor",
-    "expiredSmartDeposit": "Akıllı para yatırma süresi doldu",
-    "symbolNotSupportedForTrading": "Alım satım desteklenmiyor",
-    "orderTypeNotSupported": "Emir türü desteklenmiyor",
-    "accountTypeNotSupported": "Hesap türü desteklenmiyor",
-    "paymentMethodNotAvailable": "Ödeme yöntemi kullanılamıyor",
-    "timeInForceNotSupported": "Geçerlilik süresi desteklenmiyor"
+    "withdrawalLocked": "Çekim kilitli"
   },
   "errorMessages": {
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "Lütfen para yatırmak için başka bir borsa veya cüzdan seçin."
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "{{selectedIntegrationName}} ile bağlantınız kuruldu",
-      "subtitle": "Devam etmek için {{clientName}}'e dönün",
-      "action": "{{clientName}} dön"
+    "awaitingConnection": {
+      "action": "{{selectedIntegrationName}}'i yeniden aç",
+      "subtitle": "Lütfen tarayıcınızda oturum açmayı tamamlayın ve erişimi onaylayın.",
+      "title": "Bağlantı bekleniyor"
     },
     "checking": {
       "message": "Varlıklarınız kontrol ediliyor..."
     },
-    "awaitingConnection": {
-      "title": "Bağlantı bekleniyor",
-      "subtitle": "Lütfen tarayıcınızda oturum açmayı tamamlayın ve erişimi onaylayın.",
-      "action": "{{selectedIntegrationName}}'i yeniden aç"
+    "connected": {
+      "action": "{{clientName}} dön",
+      "subtitle": "Devam etmek için {{clientName}}'e dönün",
+      "title": "{{selectedIntegrationName}} ile bağlantınız kuruldu"
     },
     "error": {
       "connection": {
-        "title": "{{selectedIntegrationName}}'e bağlanılamadı",
+        "action": "{{selectedIntegrationName}}'i yeniden aç",
         "subtitle": "Görünüşe göre giriş yapmayı veya erişim izni vermeyi bitirmediniz. Devam etmek için {{selectedIntegrationName}} uygulamasını tekrar açın ve oturum açmayı tamamlayın.",
-        "action": "{{selectedIntegrationName}}'i yeniden aç"
+        "title": "{{selectedIntegrationName}}'e bağlanılamadı"
       }
     },
     "redirecting": {
-      "title": "{{selectedIntegrationName}}'e yönlendiriliyorsunuz",
+      "action": "{{selectedIntegrationName}}'e devam edin",
       "subtitle": "{{selectedIntegrationName}} ile güvenli bir şekilde giriş yapmanız için tarayıcınıza yönlendirileceksiniz. İşiniz bittiğinde, buraya otomatik olarak döneceksiniz.",
-      "action": "{{selectedIntegrationName}}'e devam edin"
+      "title": "{{selectedIntegrationName}}'e yönlendiriliyorsunuz"
     }
   },
   "oauthInitialPage": {

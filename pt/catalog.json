@@ -313,56 +313,56 @@
     "warningTitle": "Leia esta mensagem inteira antes de continuar."
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "Tipo de Conta Não Suportado",
     "amountBelowMinimum": "Montante Muito Baixo",
     "amountExceedsMaximum": "Montante Muito Alto",
+    "badRequest": "Solicitação Inválida",
     "balanceNotEnough": "Fundos Insuficientes",
     "binanceTravelRuleRestriction": "Restrição de Regra de Viagem",
     "coinbaseUnavailable": "Coinbase Indisponível",
+    "configurationMismatch": "Erro de Configuração",
     "emptyWalletBalance": "Carteira Vazia",
+    "expiredSmartDeposit": "Depósito Inteligente Expirado",
     "failedToGetFundingOptions": "Erro em Opções de Financiamento",
     "failedToSaveFundingOptions": "Falha ao Salvar",
     "feeAssetBalanceNotEnough": "Saldo da Taxa Insuficiente",
+    "forbiddenByIntegration": "Acesso Proibido",
     "fromAccountNotSupported": "Retirada Não Suportada",
+    "integrationError": "Erro de Integração",
     "integrationNotAvailable": "Integração Indisponível",
+    "invalidField": "Informação Inválida",
+    "invalidFromIntegrationToken": "Token de Origem Inválido",
+    "invalidIntegrationToken": "Token Inválido",
+    "invalidToIntegrationToken": "Token de Destino Inválido",
     "kycRequired": "KYC Necessário",
     "locked": "Conta Bloqueada",
+    "missingField": "Informação Ausente",
     "networkDisabled": "Rede Desativada",
+    "networkUnsupported": "Rede Não Suportada",
+    "noAvailableSmartContract": "Contrato Inteligente Indisponível",
+    "notAuthorizedFromIntegrationToken": "Fonte Não Autorizada",
+    "notAuthorizedToIntegrationToken": "Destino Não Autorizado",
+    "notFound": "Não Encontrado",
+    "notSupported": "Não Suportado",
+    "orderTypeNotSupported": "Tipo de Ordem Não Suportado",
     "passKeyNotSupported": "Chave de Acesso Não Suportada",
+    "paymentMethodNotAvailable": "Método de Pagamento Indisponível",
+    "permissionDenied": "Acesso Negado",
     "previewExpired": "Pré-visualização Expirada",
+    "refusedByIntegration": "Transferência Recusada",
     "satoshiTestRequired": "Limite de Montante Excedido",
+    "serverFailure": "Erro no Servidor",
     "symbolNotSupported": "Símbolo Não Suportado",
     "symbolNotSupportedBySource": "Fonte Não Suportada",
     "symbolNotSupportedByTarget": "Destino Não Suportado",
+    "symbolNotSupportedForTrading": "Negociação Não Suportada",
+    "timeInForceNotSupported": "Tempo em Força Não Suportado",
     "toAccountNotSupported": "Depósito Não Suportado",
     "tooManyRequests": "Muitas Solicitações",
     "transferAlreadyRequested": "Transferência Já Solicitada",
     "twoFaFailed": "Código 2FA inválido",
-    "withdrawalLocked": "Saques Bloqueados",
-    "badRequest": "Solicitação Inválida",
-    "serverFailure": "Erro no Servidor",
-    "permissionDenied": "Acesso Negado",
-    "notFound": "Não Encontrado",
-    "missingField": "Informação Ausente",
-    "invalidField": "Informação Inválida",
-    "notSupported": "Não Suportado",
-    "integrationError": "Erro de Integração",
-    "invalidIntegrationToken": "Token Inválido",
     "unauthorizedToken": "Token Não Autorizado",
-    "forbiddenByIntegration": "Acesso Proibido",
-    "networkUnsupported": "Rede Não Suportada",
-    "invalidFromIntegrationToken": "Token de Origem Inválido",
-    "invalidToIntegrationToken": "Token de Destino Inválido",
-    "notAuthorizedFromIntegrationToken": "Fonte Não Autorizada",
-    "notAuthorizedToIntegrationToken": "Destino Não Autorizado",
-    "configurationMismatch": "Erro de Configuração",
-    "refusedByIntegration": "Transferência Recusada",
-    "noAvailableSmartContract": "Contrato Inteligente Indisponível",
-    "expiredSmartDeposit": "Depósito Inteligente Expirado",
-    "symbolNotSupportedForTrading": "Negociação Não Suportada",
-    "orderTypeNotSupported": "Tipo de Ordem Não Suportado",
-    "accountTypeNotSupported": "Tipo de Conta Não Suportado",
-    "paymentMethodNotAvailable": "Método de Pagamento Indisponível",
-    "timeInForceNotSupported": "Tempo em Força Não Suportado"
+    "withdrawalLocked": "Saques Bloqueados"
   },
   "errorMessages": {
     "amountBelowMinimum": "A quantidade solicitada está abaixo da quantidade mínima permitida para transferência nesta rede.",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "Selecione outro câmbio ou carteira para depositar."
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "Você está conectado com {{selectedIntegrationName}}",
-      "subtitle": "Retorne para {{clientName}} para continuar",
-      "action": "Retorne a {{clientName}}"
+    "awaitingConnection": {
+      "action": "Reabrir {{selectedIntegrationName}}",
+      "subtitle": "Por favor, conclua o login e aprove o acesso no seu navegador.",
+      "title": "Aguardando conexão"
     },
     "checking": {
       "message": "Verificando seus ativos..."
     },
-    "awaitingConnection": {
-      "title": "Aguardando conexão",
-      "subtitle": "Por favor, conclua o login e aprove o acesso no seu navegador.",
-      "action": "Reabrir {{selectedIntegrationName}}"
+    "connected": {
+      "action": "Retorne a {{clientName}}",
+      "subtitle": "Retorne para {{clientName}} para continuar",
+      "title": "Você está conectado com {{selectedIntegrationName}}"
     },
     "error": {
       "connection": {
-        "title": "Não foi possível conectar ao {{selectedIntegrationName}}",
+        "action": "Reabrir {{selectedIntegrationName}}",
         "subtitle": "Parece que você não terminou de fazer login ou aprovar acesso. Para continuar, reabra {{selectedIntegrationName}} e conclua a autenticação.",
-        "action": "Reabrir {{selectedIntegrationName}}"
+        "title": "Não foi possível conectar ao {{selectedIntegrationName}}"
       }
     },
     "redirecting": {
-      "title": "Redirecionando para {{selectedIntegrationName}}",
+      "action": "Continue para {{selectedIntegrationName}}",
       "subtitle": "Você será redirecionado para seu navegador para fazer login com segurança no {{selectedIntegrationName}}. Quando concluir, você retornará aqui automaticamente.",
-      "action": "Continue para {{selectedIntegrationName}}"
+      "title": "Redirecionando para {{selectedIntegrationName}}"
     }
   },
   "oauthInitialPage": {
