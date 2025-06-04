@@ -661,7 +661,7 @@
   },
   "ledgerBluetooth": {
     "step1": "Valitse laitteesi <1>Bluetooth</1>-ikkunasta",
-    "step2": "Noudata ohjeita Bluetooth-ikkunassa ja Ledger-laitteellasi yhdistämisen loppuunsaattamiseksi"
+    "step2": "Noudata ohjeita Bluetooth-ikkunassa ja Ledger-laitteellasi yhteyden viimeistelemiseksi"
   },
   "ledgerConnection": {
     "bluetoothConnect": "Yhdistä Bluetoothilla",
@@ -669,8 +669,8 @@
     "usbConnect": "Yhdistä USB:llä"
   },
   "ledgerDeviceConnected": {
-    "clientVerifyLabel": "{{clientName}} täytyy vahvistaa lompakkosi",
-    "clientVerifyText": "Sinua kehotetaan allekirjoittamaan viesti Ledger-laitteessasi, joka vahvistaa, että omistat tämän lompakon.",
+    "clientVerifyLabel": "{{clientName}}:n täytyy vahvistaa lompakkosi",
+    "clientVerifyText": "Sinua pyydetään allekirjoittamaan viesti Ledger-laitteessasi, jolla vahvistat tämän lompakon omistusoikeuden.",
     "secureLabel": "Nopea, turvallinen ja ilmainen",
     "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa mitään tapahtumia lompakollasi.",
     "title": "Melkein valmis!"
@@ -682,25 +682,25 @@
     "notSelectedError": "Ei valittua sovellusta. Valitse sovellus ja yritä uudelleen.",
     "rejectError": "Käyttäjä on hylännyt toiminnon. Yritä uudelleen.",
     "title": "Yhteys epäonnistui",
-    "transportError": "Ledger-laitteesi yhteydessä tapahtui kuljetusvirhe.",
+    "transportError": "Ledger-laitteellasi tapahtui kuljetusvirhe.",
     "transportLockedError": "Kuljetus on lukittu. Avaa laitteesi ja yritä uudelleen.",
     "unexpectedError": "Tapahtui odottamaton virhe.",
-    "unknownError": "Tapahtui tuntematon virhe Ledger-laitteesi kanssa."
+    "unknownError": "Ledger-laitteellasi tapahtui tuntematon virhe."
   },
   "ledgerOpenApp": {
     "title": "Avaa {{network}} sovellus laitteessasi"
   },
   "ledgerSignError": {
-    "body": "Olet kieltäytynyt vahvistamasta lompakkosi.",
+    "body": "Olet kieltäytynyt pyynnöstä vahvistaa lompakkosi.",
     "title": "Varmennus epäonnistui"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Huomautus: XRP:lle näet testitapahtuman, jossa on minimaaliset arvot. Tämä on vain varmistaaksesi lompakkosi eikä maksa mitään tai lähetä varoja.",
+    "rippleBody": "Huomautus: Näet XRP:lle testitapahtuman minimiarvoilla. Tällä vain varmistetaan lompakkosi. Tapahtuma ei maksa sinulle mitään tai lähetä varoja.",
     "title": "Tarkista ja allekirjoita viesti laitteellasi"
   },
   "ledgerUSB": {
     "step1": "Valitse laitteesi <1>USB</1> ikkunasta",
-    "step2": "Noudata USB-ikkunan ohjeita ja Ledger-laitteesi ohjeita yhteyden viimeistelemiseksi"
+    "step2": "Noudata USB-ikkunan ja Ledger-laitteesi ohjeita yhteyden viimeistelemiseksi"
   },
   "loginDeviceVerifiedPage": {
     "loginButton": "Siirry kirjautumiseen",
@@ -712,34 +712,34 @@
   },
   "mfaHint": {
     "email": "Tarkista sähköpostisi",
-    "phone": "Tarkista puhelimesi tekstiviesti",
+    "phone": "Tarkista tekstiviesti puhelimestasi",
     "sandbox": "Vinkki: {{hint}}",
     "totp": "Tarkista todennussovelluksesi"
   },
   "mfaInstructionsText": {
     "email": "Syötä kertakäyttökoodi, jonka <2>{{selectedIntegrationName}}</2> on lähettänyt sähköpostiisi.",
-    "paymentFlow": "Syötä kertakäyttökoodi varmistaaksesi, että olet todella sinä aloittamassa tätä maksua.",
+    "paymentFlow": "Syötä kertakäyttökoodi varmistaaksesi, että olet todella aloittamassa tätä maksua.",
     "phone": "Syötä kertakäyttökoodi, jonka <2>{{selectedIntegrationName}}</2> on lähettänyt puhelimeesi.",
-    "totp": "Syötä yksityinen koodi, jonka todennussovellus, jonka olet liittänyt <1>{{selectedIntegrationName}}</1>, on antanut.",
-    "tradingPin": "Syötä <2>{{selectedIntegrationName}}</2> -tiliisi liittyvä kaupankäynti PIN-koodi.",
-    "transferFlow": "Syötä kertakäyttökoodi varmistaaksesi, että olet todella sinä aloittamassa tätä siirtoa.",
-    "twoFactor": "Syötä koodi, jonka kahden tekijän todennustapa, jonka olet määrittänyt <1>{{selectedIntegrationName}}</1> -tililläsi, on antanut."
+    "totp": "Syötä kertakäyttökoodi, jonka <1>{{selectedIntegrationName}}</1>:iin liitetty todennussovellus on antanut.",
+    "tradingPin": "Syötä <2>{{selectedIntegrationName}}</2> -tiliisi liittetty kaupankäynnin PIN-koodi.",
+    "transferFlow": "Syötä kertakäyttökoodi varmistaaksesi, että olet todella aloittamassa tätä siirtoa.",
+    "twoFactor": "Syötä koodi, jonka <1>{{selectedIntegrationName}}</1> -tilillesi määritelty kaksivaiheinen tunnistautumistapa on antanut."
   },
   "mfaPage": {
-    "enterCode": "Syötä kertakäyttökoodi varmistaaksesi, että<1></1>olet todella yrittämässä kirjautua sisään.",
-    "enterPin": "Syötä kaupankäynti PIN-koodisi",
+    "enterCode": "Syötä kertakäyttökoodi varmistaaksesi, että<1></1>olet todella kirjatumassa sisään.",
+    "enterPin": "Syötä kaupankäynnin PIN-koodisi",
     "title": "Varmistus",
     "verify": "Vahvista"
   },
   "mfaSetupPage": {
     "emailButton": "Ota käyttöön sähköpostivarmistus",
-    "emailSubtitle": "Paina alla olevaa painiketta lisätäksesi sähköpostin <2>{{selectedIntegrationName}}</2> -tilillesi.",
-    "keyGenerationBody": "Turvallisuutesi vuoksi, <1>{{selectedIntegrationName}} </1> vaatii, että käyttäjillä on käytössä sähköposti ja todennussovelluksen MFA-menetelmät avainten luomiselle",
+    "emailSubtitle": "Klikkaa alla olevaa painiketta lisätäksesi sähköpostin <2>{{selectedIntegrationName}}</2> -tiliisi.",
+    "keyGenerationBody": "Turvallisuutesi vuoksi, <1>{{selectedIntegrationName}} </1> edellyttää, että käyttäjillä on sekä sähköposti- että todennussovelluspohjaiset MFA-menetelmät käytössä avainten luomista varten",
     "keyGenerationTitle": "Ota käyttöön API-avaimen luominen {{selectedIntegrationName}} -tililtäsi",
     "totpButton": "Asenna todennustussovellus",
-    "totpSubtitle": "Paina alla olevaa painiketta lisätäksesi todennussovelluksen <2>{{selectedIntegrationName}}</2> -tilillesi.",
-    "withdrawalBody": "Turvallisuutesi vuoksi, <1>{{selectedIntegrationName}} </1> vaatii, että käyttäjillä on käytössä sähköposti ja todennussovelluksen MFA-menetelmät varojen nostamiseen",
-    "withdrawalTitle": "Ota käyttöön nostoja {{selectedIntegrationName}} -tililtäsi"
+    "totpSubtitle": "Klikkaa alla olevaa painiketta lisätäksesi todennussovelluksen <2>{{selectedIntegrationName}}</2> -tilillesi.",
+    "withdrawalBody": "Turvallisuutesi vuoksi, <1>{{selectedIntegrationName}} </1> edellyttää, että käyttäjillä on sekä sähköposti- että todennussovelluspohjaiset MFA-menetelmät käytössä varojen nostamista varten",
+    "withdrawalTitle": "Ota käyttöön nostot {{selectedIntegrationName}} -tililtäsi"
   },
   "mfaSuccessPage": {
     "addAuthApp": "Napsauta alla olevaa painiketta lisätäksesi autentikointisovellus {{selectedIntegrationName}}:n tiliisi.",
