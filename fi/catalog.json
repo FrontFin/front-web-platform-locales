@@ -736,19 +736,19 @@
     "emailSubtitle": "Klikkaa alla olevaa painiketta lisätäksesi sähköpostin <2>{{selectedIntegrationName}}</2> -tiliisi.",
     "keyGenerationBody": "Turvallisuutesi vuoksi, <1>{{selectedIntegrationName}} </1> edellyttää, että käyttäjillä on sekä sähköposti- että todennussovelluspohjaiset MFA-menetelmät käytössä avainten luomista varten",
     "keyGenerationTitle": "Ota käyttöön API-avaimen luominen {{selectedIntegrationName}} -tililtäsi",
-    "totpButton": "Asenna todennustussovellus",
+    "totpButton": "Määritä todennussovellus",
     "totpSubtitle": "Klikkaa alla olevaa painiketta lisätäksesi todennussovelluksen <2>{{selectedIntegrationName}}</2> -tilillesi.",
     "withdrawalBody": "Turvallisuutesi vuoksi, <1>{{selectedIntegrationName}} </1> edellyttää, että käyttäjillä on sekä sähköposti- että todennussovelluspohjaiset MFA-menetelmät käytössä varojen nostamista varten",
     "withdrawalTitle": "Ota käyttöön nostot {{selectedIntegrationName}} -tililtäsi"
   },
   "mfaSuccessPage": {
-    "addAuthApp": "Napsauta alla olevaa painiketta lisätäksesi autentikointisovellus {{selectedIntegrationName}}:n tiliisi.",
-    "emailTitle": "Olet onnistuneesti liittänyt sähköpostisi <2>{{selectedIntegrationName}}</2> -tiliisi.",
-    "proceed": "Jatkaa",
-    "proceedKey": "Paina alla jatkaaksesi avainten luomiseen",
-    "proceedTransfer": "Paina alla edetäksesi siirtoon",
-    "setUpApp": "Määritä autentikointisovellus",
-    "totpTitle": "Olet onnistuneesti liittänyt todennussovelluksen <2>{{selectedIntegrationName}}</2> -tilillesi."
+    "addAuthApp": "Klikkaa alla olevaa painiketta lisätäksesi todennussovelluksen <2>{{selectedIntegrationName}}</2> -tiliisi.",
+    "emailTitle": "Olet liittänyt onnistuneesti sähköpostisi <2>{{selectedIntegrationName}}</2> -tiliisi.",
+    "proceed": "Jatka",
+    "proceedKey": "Klikkaa alta jatkaaksesi avainten luomiseen",
+    "proceedTransfer": "Klikkaa alta jatkaaksesi siirtoon",
+    "setUpApp": "Määritä todennussovellus",
+    "totpTitle": "Olet liittänyt onnistuneesti todennussovelluksen <2>{{selectedIntegrationName}}</2> -tilillesi."
   },
   "mfaTitle": {
     "default": "Varmistuskoodi",
@@ -756,14 +756,14 @@
     "phone": "Tekstiviestivarmistuskoodi"
   },
   "mfaVerificationPage": {
-    "checkEmail": "Ensin, vahvistetaan henkilöllisyytesi.<1></1> Tarkista, ole hyvä, sähköpostisi kertakäyttöisen varmistuskoodin varalta, joka on lähetetty <4>{{selectedIntegrationName}}</4> kautta.",
-    "checkSms": "Ensin, vahvistetaan henkilöllisyytesi.<1></1> Tarkista, ole hyvä, puhelimesi kertakäyttöisen varmistuskoodin varalta, joka on lähetetty <4>{{selectedIntegrationName}}</4> kautta tekstiviestillä.",
+    "checkEmail": "Vahvistetaan ensin henkilöllisyytesi.<1></1> Ole hyvä ja tarkista kertakäyttöinen varmistuskoodi <4>{{selectedIntegrationName}}</4>:n lähettämästä sähköpostista.",
+    "checkSms": "Vahvistetaan ensin henkilöllisyytesi.<1></1> Ole hyvä ja tarkista kertakäyttöinen varmistuskoodi <4>{{selectedIntegrationName}}</4>:n lähettämästä SMS-viestistä.",
     "confirmApp": "Vahvista todennussovellus",
     "confirmEmail": "Vahvista sähköposti",
     "enterCode": "Syötä varmistuskoodi",
-    "enterCodeFromEmail": "Syötä <2>{{selectedIntegrationName}}</2> sinulle lähettämä 6-numeroinen koodi<4></4>sähköpostiisi.",
+    "enterCodeFromEmail": "Syötä <2>{{selectedIntegrationName}}:n</2> sinulle sähköpostiin lähettämä 6-numeroinen koodi.",
     "enterTotp": "Syötä <1></1>6-numeroinen koodi todennussovelluksestasi",
-    "firstEnterTotp": "Ensin, vahvistetaan henkilöllisyytesi.<1></1>Syötä kertakäyttökoodi todennussovelluksesta, jonka olet liittänyt <3>{{selectedIntegrationName}}</3>.",
+    "firstEnterTotp": "Vahvistetaan ensin henkilöllisyytesi.<1></1> Ole hyvä ja syötä kertakäyttökoodi todennussovelluksesta, jonka olet liittänyt <3>{{selectedIntegrationName}}:iin</3>.",
     "securityVerification": "Turvallisuusvarmistus"
   },
   "mobileAppLink": {
@@ -771,8 +771,8 @@
     "openAppButton": "Avaa {{selectedIntegrationName}} sovellus",
     "sendNewRequest": "Lähetä uusi pyyntö",
     "steps": {
-      "authorize": "Paina <1>Valtuuttaa</1> vahvistussivulla.",
-      "openApp": "Paina alla <1>Avaa {{selectedIntegrationName}} sovellus</1>.",
+      "authorize": "Klikkaa <1>Valtuuta</1> vahvistussivulla.",
+      "openApp": "Klikkaa alta <1>Avaa {{selectedIntegrationName}} sovellus</1>.",
       "return": "Palaa tänne viimeistelläksesi tilisi linkityksen."
     }
   },
@@ -780,54 +780,54 @@
     "actionButton": "Avaa {{integrationName}}"
   },
   "navHeader": {
-    "close": "Sulje moduli",
+    "close": "Sulje ikkuna",
     "goBack": "Palaa taaksepäin",
-    "title": "Maksaminen kryptolla"
+    "title": "Maksa kryptolla"
   },
   "networkSelectionDrawer": {
-    "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja. Olemme valinneet automaattisesti sinulle alhaisimman kustannusverkoston.",
-    "estimatedGasFeeLabel": "Arvioitu kaasukulu:",
+    "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja tälle maksulle. Olemme valinneet sinulle automaattisesti halvimman verkon.",
+    "estimatedGasFeeLabel": "Arvioitu gas-maksu:",
     "lowestFeeLabel": "Alhaisin maksu",
     "title": "Valitse verkko"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Salli",
     "movingFunds": "varojen siirtäminen ilman lupaasi",
-    "titleWithClient": "{{clientName}} <2></2> Oikeudet",
-    "titleWithoutClient": "Sovellukselle <1></1> Oikeudet",
+    "titleWithClient": "{{clientName}} <2></2> Käyttöoikeudet",
+    "titleWithoutClient": "Tämän sovelluksen <1></1> käyttöoikeudet",
     "transactionRequest": "lähetetään pyyntöjä tapahtumille",
-    "viewActivity": "saldojen, aktiivisuuden ja profiilitietojen tarkastelu",
+    "viewActivity": "saldojen, tapahtumien ja profiilitietojen tarkastelu",
     "wontAllow": "Ei sallita"
   },
   "oAuthBrokerPage": {
     "monitoring": "Hyväksyntä seurannassa...",
-    "reopenButton": "Paina tästä avatakseen uudelleen {{selectedIntegrationName}}",
-    "subtitle": "Kirjaudu tilille ja salli pääsy",
-    "title": "Jatkaa <1></1> {{selectedIntegrationName}} ikkunassa"
+    "reopenButton": "Klikkaa tästä avataksesi uudelleen {{selectedIntegrationName}}",
+    "subtitle": "Kirjaudu tilillesi ja salli pääsy",
+    "title": "Jatka <1></1> {{selectedIntegrationName}} ikkunassa"
   },
   "oauthErrorPage": {
     "description": "{{selectedIntegrationName}} ei tue pyydettyjen tokenien ja/tai verkkojen siirtoja.",
     "selectAnotherAccount": "Valitse toinen tili",
-    "selectAnotherDescription": "Valitse toinen pörssi tai lompakko siirron tallettamiseen."
+    "selectAnotherDescription": "Valitse toinen pörssi tai lompakko talletusta varten."
   },
   "oauthExternalPage": {
     "connected": {
-      "title": "Olet yhteydessä {{selectedIntegrationName}} kanssa",
+      "title": "Olet yhdistetty {{selectedIntegrationName}}:iin",
       "subtitle": "Palaa takaisin {{clientName}} jatkaaksesi",
       "action": "Palaa takaisin {{clientName}}"
     },
     "checking": {
-      "message": "Tarkistetaan omaisuuttasi..."
+      "message": "Tarkistetaan omistuksiasi..."
     },
     "awaitingConnection": {
       "title": "Odotetaan yhteyttä",
-      "subtitle": "Ole hyvä ja viimeistele kirjautuminen ja hyväksy pääsy selaimessasi.",
+      "subtitle": "Ole hyvä ja viimeistele kirjautuminen ja salli pääsy selaimessasi.",
       "action": "Avaa uudelleen {{selectedIntegrationName}}"
     },
     "error": {
       "connection": {
         "title": "Yhteyttä {{selectedIntegrationName}} ei voitu muodostaa",
-        "subtitle": "Näyttää siltä, ettet ole suorittanut kirjautumista tai käyttöoikeuden hyväksymistä loppuun. Jatkaaksesi, avaa {{selectedIntegrationName}} uudelleen ja suorita kirjautuminen loppuun.",
+        "subtitle": "Näyttää siltä, ettet ole suorittanut kirjautumista tai pääsyn sallimista loppuun. Ole hyvä ja avaa {{selectedIntegrationName}} uudelleen ja viimeistele kirjautuminen.",
         "action": "Avaa uudelleen {{selectedIntegrationName}}"
       }
     },
