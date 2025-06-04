@@ -1,6 +1,6 @@
 {
   "accessDeniedPage": {
-    "body": "Malheureusement, l'activité de votre pays n'est actuellement pas autorisée.",
+    "body": "Malheureusement, l’activité dans votre pays n’est actuellement pas autorisée.",
     "title": "Accès refusé"
   },
   "addressWhitelistPage": {
@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Une erreur est survenue.",
-    "directMobileFlowError": "Session expirée. Veuillez retourner à votre page de paiement TAO et réessayer."
+    "directMobileFlowError": "Session expirée. Veuillez retourner sur votre page de paiement TAO et réessayer."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Connecter un autre portefeuille",
@@ -281,11 +281,11 @@
     "checkDetails40": "Voir les détails de la transaction",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>seront reçu à {{shortAddress}}",
     "depositClient": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> dans {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Retournez à votre page de paiement TAO pour finaliser votre paiement.",
+    "directMobileBody": "Retournez sur votre page de paiement TAO pour finaliser votre paiement.",
     "directMobileTitle": "Paiement initié",
     "goBackToShift4": "← Retourner à Shift4",
     "goToIntegrationToApprove": "Veuillez aller sur <1>{{selectedIntegrationName}}</1> pour approuver ce transfert.",
-    "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3>à {{clientName}}",
+    "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3> à {{clientName}}",
     "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau."
   },
   "doneVerifyPage": {
@@ -318,14 +318,14 @@
     "amountExceedsMaximum": "Montant trop élevé",
     "badRequest": "Requête invalide",
     "balanceNotEnough": "Solde insuffisant",
-    "binanceTravelRuleRestriction": "Restriction de la règle de voyage",
+    "binanceTravelRuleRestriction": "Restriction imposée par la Travel Rule",
     "coinbaseUnavailable": "Coinbase indisponible",
     "configurationMismatch": "Erreur de configuration",
     "emptyWalletBalance": "Portefeuille vide",
     "expiredSmartDeposit": "Dépôt intelligent expiré",
     "failedToGetFundingOptions": "Erreur d'options de financement",
     "failedToSaveFundingOptions": "Échec de l'enregistrement",
-    "feeAssetBalanceNotEnough": "Solde de frais insuffisant",
+    "feeAssetBalanceNotEnough": "Solde insuffisant pour couvrir les frais",
     "forbiddenByIntegration": "Accès interdit",
     "fromAccountNotSupported": "Retrait non pris en charge",
     "integrationError": "Erreur d'intégration",
@@ -356,9 +356,9 @@
     "symbolNotSupportedBySource": "Source non prise en charge",
     "symbolNotSupportedByTarget": "Destination non prise en charge",
     "symbolNotSupportedForTrading": "Trading non pris en charge",
-    "timeInForceNotSupported": "Modalité temporelle non prise en charge",
+    "timeInForceNotSupported": "Paramètre « Time in Force » non pris en charge",
     "toAccountNotSupported": "Dépôt non pris en charge",
-    "tooManyRequests": "Trop de demandes",
+    "tooManyRequests": "Trop de requêtes",
     "transferAlreadyRequested": "Transfert déjà demandé",
     "twoFaFailed": "Code 2FA invalide",
     "unauthorizedToken": "Jeton non autorisé",
@@ -813,7 +813,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Rouvrir {{selectedIntegrationName}}",
-      "subtitle": "Veuillez terminer la connexion et approuver l'accès dans votre navigateur.",
+      "subtitle": "Veuillez finaliser la connexion et approuver l’accès dans votre navigateur.",
       "title": "En attente de connexion"
     },
     "checking": {
@@ -827,13 +827,13 @@
     "error": {
       "connection": {
         "action": "Rouvrir {{selectedIntegrationName}}",
-        "subtitle": "Il semble que vous n'ayez pas terminé de vous connecter ou d'approuver l'accès. Pour continuer, veuillez rouvrir {{selectedIntegrationName}} et terminer la connexion.",
+        "subtitle": "Il semble que vous n’ayez pas terminé la connexion ou approuvé l’accès. Pour continuer, veuillez rouvrir {{selectedIntegrationName}} et finaliser la connexion.",
         "title": "Impossible de se connecter à {{selectedIntegrationName}}"
       }
     },
     "redirecting": {
       "action": "Continuer sur {{selectedIntegrationName}}",
-      "subtitle": "Vous serez redirigé vers votre navigateur pour vous connecter en toute sécurité avec {{selectedIntegrationName}}. Une fois terminé, vous reviendrez ici automatiquement.",
+      "subtitle": "Vous serez redirigé vers votre navigateur pour vous connecter en toute sécurité avec {{selectedIntegrationName}}. Une fois la connexion terminée, vous reviendrez ici automatiquement.",
       "title": "Redirection vers {{selectedIntegrationName}}"
     }
   },
@@ -1017,7 +1017,7 @@
     "returnToClientButton": "Retour à {{clientName}}",
     "spotAccountsBody": "Seuls les comptes de type spot sont actuellement pris en charge. Les actifs dans d'autres types de comptes, tels que les comptes sur marge, ne seront pas détectés.",
     "topUpButton": "Recharger le solde",
-    "topUpUSDCInstruction": "Rechargez votre solde USDC dans votre portefeuille Phantom.",
+    "topUpUSDCInstruction": "Rechargez votre solde en USDC dans votre portefeuille Phantom.",
     "tryAgainFromTaoInstruction": "Réessayez depuis votre page de paiement TAO.",
     "unableTransferError": "Impossible d'initier le transfert."
   },
