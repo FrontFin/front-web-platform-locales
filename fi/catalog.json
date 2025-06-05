@@ -1210,32 +1210,32 @@
   "trezorInitial": {
     "clientVerifyLabel": "{{clientName}}:n täytyy vahvistaa lompakkosi",
     "clientVerifyText": "Sinut ohjataan turvallisesti Trezor-laitteeseesi allekirjoittamaan viesti, joka vahvistaa lompakkosi omistusoikeutesi.",
-    "connectingLabel": "Yhdistetään walletiasi...",
+    "connectingLabel": "Yhdistetään lompakkoasi...",
     "secureLabel": "Nopea, turvallinen ja ilmainen",
-    "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa tapahtumia lompakollasi."
+    "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa mitään tapahtumia lompakollasi."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} haluaa, että vahvistat omistuksesi <3>{{requestedNetworkName}}</3> -osoitteesta <6>{{truncatedRequestedAddress}}</6>. Tämä osoite ei ole liitetty yhdistettyyn walletiin. Liitä toinen wallet.",
+    "body": "{{clientName}} haluaa, että vahvistat <3>{{requestedNetworkName}}</3> -osoitteen omistusoikeuden <6>{{truncatedRequestedAddress}}</6>. Tätä osoitetta ei ole liitetty yhdistettyyn lompakkoon. Ole hyvä ja liitä toinen lompakko.",
     "connectAnotherAction": "Yhdistä toinen lompakko",
     "title": "Oho!"
   },
   "verifyError": {
-    "body": "Lompakkosi todentaminen ei onnistunut. Varmista, että olet valinnut oikean verkon ja antanut oikean wallet-osoitteen.",
+    "body": "Laitelompakkosi todentaminen epäonnistui. Varmista, että olet valinnut oikean verkon ja antanut oikean lompakko-osoitteen.",
     "title": "Varmennus epäonnistui"
   },
   "verifyErrorPage": {
-    "body": "Olet kieltänyt allekirjoituspyynnön walletissasi, tai aikaisempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusta ilman allekirjoitusta.",
-    "title": "Vahvistus evätty"
+    "body": "Olet hylännyt allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
+    "title": "Vahvistus hylätty"
   },
   "wallectConnect": {
     "noActiveSessionError": "Ei aktiivista WalletConnect-istuntoa",
-    "transactionHashError": "Ei voitu saada tapahtuman hash",
+    "transactionHashError": "Tapahtuman hash-arvon hakeminen epäonnistui",
     "unknownError": "Tapahtui tuntematon virhe. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Palaa takaisin kassasovellukseesi suorittaaksesi {{clientName}}-ostoksesi loppuun.",
+    "completePaymentMessage": "Palaa takaisin kassalle viimeistelläksesi {{clientName}}-ostoksesi.",
     "continueMessage": "Jatka {{clientName}} -sovelluksessa.",
-    "successMessage": "Olet onnistuneesti vahvistanut {{walletName}} walletisi omistuksen."
+    "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden."
   },
   "withdrawalLockedErrorPage": {
     "another": "Siirto toiselta tililtä",
