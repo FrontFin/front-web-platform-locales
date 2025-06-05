@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "एक त्रुटि उत्पन्न हुई है।",
-    "directMobileFlowError": "सत्र समाप्त हो गया है। कृपया अपने ताओ चेकआउट पृष्ठ पर वापस जाएं और पुनः प्रयास करें।"
+    "directMobileFlowError": "सत्र समाप्त हो गया। कृपया अपने TAO चेकआउट पृष्ठ पर लौटें और फिर से प्रयास करें।"
   },
   "connectionUnavailablePage": {
     "connectAnother": "एक अन्य वॉलेट कनेक्ट करें",
@@ -281,7 +281,7 @@
     "checkDetails40": "लेनदेन विवरण देखें",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1> {{shortAddress}} में प्राप्त होगा",
     "depositClient": "आप प्राप्त करेंगे<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> {{clientName}} ({{shortAddress}}) में",
-    "directMobileBody": "अपने भुगतान को अंतिम रूप देने के लिए अपने ताओ चेकआउट पृष्ठ पर वापस जाएं।",
+    "directMobileBody": "अपना भुगतान पूरा करने के लिए अपने TAO चेकआउट पृष्ठ पर वापस लौटें।",
     "directMobileTitle": "भुगतान प्रारंभ हो गया है",
     "goBackToShift4": "← Shift4 पर वापस जाएँ",
     "goToIntegrationToApprove": "कृपया इस स्थानांतरण को स्वीकृत करने के लिए <1>{{selectedIntegrationName}}</1> पर जाएं।",
@@ -313,7 +313,56 @@
     "warningTitle": "जारी रखने से पहले यह पूरा संदेश पढ़ें।"
   },
   "errorHeadlines": {
-    "twoFaFailed": "अमान्य 2FA कोड"
+    "accountTypeNotSupported": "खाता प्रकार समर्थित नहीं है",
+    "amountBelowMinimum": "राशि बहुत कम है",
+    "amountExceedsMaximum": "राशि बहुत अधिक है",
+    "badRequest": "अवैध अनुरोध",
+    "balanceNotEnough": "अपर्याप्त धनराशि",
+    "binanceTravelRuleRestriction": "यात्रा नियम प्रतिबंध",
+    "coinbaseUnavailable": "कॉइनबेस उपलब्ध नहीं है",
+    "configurationMismatch": "विन्यास त्रुटि",
+    "emptyWalletBalance": "खाली वॉलेट",
+    "expiredSmartDeposit": "स्मार्ट जमा समाप्त हुआ",
+    "failedToGetFundingOptions": "फंडिंग विकल्प त्रुटि",
+    "failedToSaveFundingOptions": "सेव असफल हुआ",
+    "feeAssetBalanceNotEnough": "अपर्याप्त शुल्क शेष",
+    "forbiddenByIntegration": "पहुंच निषिद्ध",
+    "fromAccountNotSupported": "निकासी समर्थित नहीं है",
+    "integrationError": "एकीकरण त्रुटि",
+    "integrationNotAvailable": "एकीकरण उपलब्ध नहीं है",
+    "invalidField": "अमान्य जानकारी",
+    "invalidFromIntegrationToken": "अमान्य स्रोत टोकन",
+    "invalidIntegrationToken": "अमान्य टोकन",
+    "invalidToIntegrationToken": "अमान्य गंतव्य टोकन",
+    "kycRequired": "केवाईसी आवश्यक",
+    "locked": "खाता लॉक किया गया है",
+    "missingField": "जानकारी गायब है",
+    "networkDisabled": "नेटवर्क अक्षम",
+    "networkUnsupported": "नेटवर्क समर्थित नहीं है",
+    "noAvailableSmartContract": "स्मार्ट अनुबंध उपलब्ध नहीं है",
+    "notAuthorizedFromIntegrationToken": "स्रोत अधिकृत नहीं है",
+    "notAuthorizedToIntegrationToken": "गंतव्य अधिकृत नहीं है",
+    "notFound": "नहीं मिला",
+    "notSupported": "समर्थित नहीं है",
+    "orderTypeNotSupported": "ऑर्डर प्रकार समर्थित नहीं है",
+    "passKeyNotSupported": "पासकी समर्थित नहीं",
+    "paymentMethodNotAvailable": "भुगतान विधि उपलब्ध नहीं है",
+    "permissionDenied": "पहुंच अस्वीकृत",
+    "previewExpired": "पूर्वावलोकन समाप्त",
+    "refusedByIntegration": "हस्तांतरण अस्वीकृत",
+    "satoshiTestRequired": "राशि सीमा पार की",
+    "serverFailure": "सर्वर त्रुटि",
+    "symbolNotSupported": "प्रतीक समर्थित नहीं है",
+    "symbolNotSupportedBySource": "स्रोत समर्थित नहीं है",
+    "symbolNotSupportedByTarget": "गंतव्य समर्थित नहीं है",
+    "symbolNotSupportedForTrading": "ट्रेडिंग समर्थित नहीं है",
+    "timeInForceNotSupported": "टाइम इन फोर्स समर्थित नहीं है",
+    "toAccountNotSupported": "जमा समर्थित नहीं है",
+    "tooManyRequests": "बहुत अधिक अनुरोध",
+    "transferAlreadyRequested": "स्थानांतरण पहले ही अनुरोध किया जा चुका है",
+    "twoFaFailed": "अमान्य 2FA कोड",
+    "unauthorizedToken": "अनधिकृत टोकन",
+    "withdrawalLocked": "निकासी लॉक की गई है"
   },
   "errorMessages": {
     "amountBelowMinimum": "अनुरोधित राशि इस नेटवर्क पर न्यूनतम अनुमत हस्तांतरण राशि से कम है।",
@@ -761,6 +810,33 @@
     "selectAnotherAccount": "दूसरे खाते का चयन करें",
     "selectAnotherDescription": "जमा करने के लिए कृपया अन्य एक्सचेंज या वॉलेट का चयन करें।"
   },
+  "oauthExternalPage": {
+    "awaitingConnection": {
+      "action": "{{selectedIntegrationName}} को फिर से खोलें",
+      "subtitle": "कृपया अपने ब्राउज़र में लॉगिन समाप्त करें और पहुँच की मंजूरी दें।",
+      "title": "कनेक्शन की प्रतीक्षा कर रहे हैं"
+    },
+    "checking": {
+      "message": "आपकी संपत्तियाँ जाँची जा रही हैं..."
+    },
+    "connected": {
+      "action": "{{clientName}} पर लौटें",
+      "subtitle": "जारी रखने के लिए {{clientName}} पर वापस जाएं",
+      "title": "आप {{selectedIntegrationName}} से जुड़ गए हैं"
+    },
+    "error": {
+      "connection": {
+        "action": "{{selectedIntegrationName}} को फिर से खोलें",
+        "subtitle": "ऐसा लगता है कि आपने लॉग इन या एक्सेस की स्वीकृति को पूरा नहीं किया है। जारी रखने के लिए, कृपया {{selectedIntegrationName}} को फिर से खोलें और साइन-इन पूरा करें।",
+        "title": "{{selectedIntegrationName}} से कनेक्ट नहीं हो सका"
+      }
+    },
+    "redirecting": {
+      "action": "{{selectedIntegrationName}} पर जारी रखें",
+      "subtitle": "आपको अपने ब्राउज़र पर पुनःनिर्देशित किया जाएगा ताकि {{selectedIntegrationName}} के साथ सुरक्षित रूप से लॉग इन कर सकें। जब आपका काम पूरा हो जाएगा, तो आप स्वचालित रूप से यहाँ लौट आएंगे।",
+      "title": "{{selectedIntegrationName}} पर पुनःनिर्देशित कर रहे हैं"
+    }
+  },
   "oauthInitialPage": {
     "continue": "{{integrationName}} पर जारी रखें",
     "description": "{{integrationName}} खोलने के लिए नीचे क्लिक करें, और भुगतान का पूर्वावलोकन करने के लिए अपने खाते में लॉग इन करें।",
@@ -781,7 +857,7 @@
       "destination": "आप {{selectedIntegrationName}} से गंतव्य तक <1>{{amount}}</1> के स्थानांतरण को मंजूरी देते हैं।"
     },
     "buyingPowerPurchase": "<1>{{amount}}</1> मूल्य का {{symbol}} की खरीद <5>(~ {{amountInCrypto}})</5> में {{selectedIntegrationName}}।",
-    "conversionStep": "<1>{{amount}}</1> को <4>{{currency}}</4> में रूपांतरित करना।",
+    "conversionStep": "<1>{{amount}}</1> को <3>{{currency}}</3> में रूपांतरित किया जा रहा है।",
     "depositTitle": "जमा प्रगति पर है",
     "description": "इसमें कुछ समय लग सकता है...",
     "existingCryptocurrencyBalance": {
@@ -942,7 +1018,7 @@
     "spotAccountsBody": "वर्तमान में केवल स्पॉट खाते समर्थित हैं। मार्जिन जैसे अन्य खाते प्रकार में संपत्तियां दिखाई नहीं देंगी।",
     "topUpButton": "बैलेंस टॉप अप करें",
     "topUpUSDCInstruction": "अपने फैंटम वालेट में यूएसडीसी बैलेंस को पुनः पूरित करें।",
-    "tryAgainFromTaoInstruction": "अपने ताओ चेकआउट पृष्ठ से पुनः प्रयास करें।",
+    "tryAgainFromTaoInstruction": "कृपया अपने TAO चेकआउट पृष्ठ से पुनः प्रयास करें।",
     "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।"
   },
   "selectItem": {

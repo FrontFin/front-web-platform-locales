@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Đã xảy ra lỗi.",
-    "directMobileFlowError": "Phiên đã hết hạn. Vui lòng quay lại trang thanh toán Tao của bạn và thử lại."
+    "directMobileFlowError": "Phiên làm việc đã hết hạn. Vui lòng quay trở lại trang thanh toán TAO của bạn và thử lại."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Kết nối ví khác",
@@ -281,7 +281,7 @@
     "checkDetails40": "Xem chi tiết giao dịch",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>sẽ được nhận tại {{shortAddress}}",
     "depositClient": "Bạn sẽ nhận<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tại {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Quay lại trang thanh toán Tao của bạn để hoàn tất thanh toán.",
+    "directMobileBody": "Quay lại trang thanh toán TAO của bạn để hoàn tất thanh toán.",
     "directMobileTitle": "Thanh toán đã được bắt đầu",
     "goBackToShift4": "← Quay lại Shift4",
     "goToIntegrationToApprove": "Vui lòng truy cập <1>{{selectedIntegrationName}}</1> để phê duyệt giao dịch này.",
@@ -313,7 +313,56 @@
     "warningTitle": "Đọc toàn bộ thông báo này trước khi tiếp tục."
   },
   "errorHeadlines": {
-    "twoFaFailed": "Mã 2FA không hợp lệ"
+    "accountTypeNotSupported": "Loại tài khoản không được hỗ trợ",
+    "amountBelowMinimum": "Số tiền quá thấp",
+    "amountExceedsMaximum": "Số tiền quá cao",
+    "badRequest": "Yêu cầu không hợp lệ",
+    "balanceNotEnough": "Không đủ tiền",
+    "binanceTravelRuleRestriction": "Hạn chế Quy định Du lịch",
+    "coinbaseUnavailable": "Coinbase Không có sẵn",
+    "configurationMismatch": "Lỗi cấu hình",
+    "emptyWalletBalance": "Ví rỗng",
+    "expiredSmartDeposit": "Tiền gửi thông minh đã hết hạn",
+    "failedToGetFundingOptions": "Lỗi Tùy Chọn Tài Trợ",
+    "failedToSaveFundingOptions": "Lưu thất bại",
+    "feeAssetBalanceNotEnough": "Số dư phí không đủ",
+    "forbiddenByIntegration": "Truy cập bị cấm",
+    "fromAccountNotSupported": "Rút tiền không được hỗ trợ",
+    "integrationError": "Lỗi tích hợp",
+    "integrationNotAvailable": "Tích hợp không có sẵn",
+    "invalidField": "Thông tin không hợp lệ",
+    "invalidFromIntegrationToken": "Mã thông báo nguồn không hợp lệ",
+    "invalidIntegrationToken": "Mã thông báo không hợp lệ",
+    "invalidToIntegrationToken": "Mã thông báo đích không hợp lệ",
+    "kycRequired": "Cần KYC",
+    "locked": "Tài khoản bị khóa",
+    "missingField": "Thiếu thông tin",
+    "networkDisabled": "Mạng bị tắt",
+    "networkUnsupported": "Mạng không hỗ trợ",
+    "noAvailableSmartContract": "Hợp đồng thông minh không có sẵn",
+    "notAuthorizedFromIntegrationToken": "Nguồn không được ủy quyền",
+    "notAuthorizedToIntegrationToken": "Đích đến không được ủy quyền",
+    "notFound": "Không tìm thấy",
+    "notSupported": "Không được hỗ trợ",
+    "orderTypeNotSupported": "Loại đơn hàng không được hỗ trợ",
+    "passKeyNotSupported": "Chìa khóa không được hỗ trợ",
+    "paymentMethodNotAvailable": "Phương thức thanh toán không có sẵn",
+    "permissionDenied": "Truy cập bị từ chối",
+    "previewExpired": "Bản xem trước đã hết hạn",
+    "refusedByIntegration": "Chuyển khoản bị từ chối",
+    "satoshiTestRequired": "Vượt quá giới hạn số tiền",
+    "serverFailure": "Lỗi máy chủ",
+    "symbolNotSupported": "Ký hiệu không được hỗ trợ",
+    "symbolNotSupportedBySource": "Nguồn không được hỗ trợ",
+    "symbolNotSupportedByTarget": "Điểm đến không được hỗ trợ",
+    "symbolNotSupportedForTrading": "Giao dịch không được hỗ trợ",
+    "timeInForceNotSupported": "Thời gian hiệu lực không được hỗ trợ",
+    "toAccountNotSupported": "Nạp tiền không được hỗ trợ",
+    "tooManyRequests": "Quá nhiều yêu cầu",
+    "transferAlreadyRequested": "Chuyển tiền đã được yêu cầu",
+    "twoFaFailed": "Mã 2FA không hợp lệ",
+    "unauthorizedToken": "Mã thông báo không được phép",
+    "withdrawalLocked": "Rút tiền bị khóa"
   },
   "errorMessages": {
     "amountBelowMinimum": "Số tiền yêu cầu dưới mức tối thiểu cho phép trên mạng này.",
@@ -761,6 +810,33 @@
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherDescription": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền."
   },
+  "oauthExternalPage": {
+    "awaitingConnection": {
+      "action": "Mở lại {{selectedIntegrationName}}",
+      "subtitle": "Vui lòng hoàn tất đăng nhập và chấp thuận quyền truy cập trong trình duyệt của bạn.",
+      "title": "Đang chờ kết nối"
+    },
+    "checking": {
+      "message": "Đang kiểm tra tài sản của bạn..."
+    },
+    "connected": {
+      "action": "Quay lại {{clientName}}",
+      "subtitle": "Quay lại {{clientName}} để tiếp tục",
+      "title": "Bạn đã kết nối với {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "action": "Mở lại {{selectedIntegrationName}}",
+        "subtitle": "Có vẻ như bạn chưa hoàn tất việc đăng nhập hoặc cấp quyền truy cập. Để tiếp tục, vui lòng mở lại {{selectedIntegrationName}} và hoàn tất đăng nhập.",
+        "title": "Không thể kết nối tới {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "action": "Tiếp tục đến {{selectedIntegrationName}}",
+      "subtitle": "Bạn sẽ được chuyển hướng đến trình duyệt của mình để đăng nhập an toàn với {{selectedIntegrationName}}. Sau khi hoàn tất, bạn sẽ tự động quay lại đây.",
+      "title": "Chuyển hướng đến {{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Tiếp tục đến {{integrationName}}",
     "description": "Nhấp vào phía dưới để mở {{integrationName}}, và đăng nhập vào tài khoản của bạn để xem trước khoản thanh toán.",
@@ -781,7 +857,7 @@
       "destination": "Bạn chấp thuận chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến địa chỉ đích."
     },
     "buyingPowerPurchase": "Mua <1>{{amount}}</1> trị giá {{symbol}} <5>(~ {{amountInCrypto}})</5> trên {{selectedIntegrationName}}.",
-    "conversionStep": "Chuyển đổi <1>{{amount}}</1> thành <4>{{currency}}</4>.",
+    "conversionStep": "Chuyển đổi <1>{{amount}}</1> sang <3>{{currency}}</3>.",
     "depositTitle": "Nạp tiền đang tiến hành",
     "description": "Có thể mất một chút thời gian...",
     "existingCryptocurrencyBalance": {
@@ -942,7 +1018,7 @@
     "spotAccountsBody": "Chỉ hỗ trợ tài khoản spot. Tài sản trong các loại tài khoản khác, chẳng hạn như ký quỹ, sẽ không được phát hiện.",
     "topUpButton": "Nạp tiền",
     "topUpUSDCInstruction": "Nạp thêm số dư USDC vào ví Phantom của bạn.",
-    "tryAgainFromTaoInstruction": "Hãy thử lại từ trang thanh toán Tao của bạn.",
+    "tryAgainFromTaoInstruction": "Thử lại từ trang thanh toán TAO của bạn.",
     "unableTransferError": "Không thể bắt đầu chuyển tiền."
   },
   "selectItem": {

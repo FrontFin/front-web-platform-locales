@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Ein Fehler ist aufgetreten.",
-    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehren Sie zu Ihrer Tao-Kassenseite zurück und versuchen Sie es erneut."
+    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehren Sie zu Ihrer TAO-Kassenseite zurück und versuchen Sie es erneut."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Eine weitere Wallet verbinden",
@@ -281,7 +281,7 @@
     "checkDetails40": "Transaktionsdetails anzeigen",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>wird an {{shortAddress}} empfangen",
     "depositClient": "Du wirst<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}}) erhalten",
-    "directMobileBody": "Kehren Sie zu Ihrer Tao-Kassenseite zurück, um Ihre Zahlung abzuschließen.",
+    "directMobileBody": "Kehren Sie zu Ihrer TAO-Kassenseite zurück, um Ihre Zahlung abzuschließen.",
     "directMobileTitle": "Zahlung initiiert",
     "goBackToShift4": "← Zurück zu Shift4",
     "goToIntegrationToApprove": "Bitte gehe zu <1>{{selectedIntegrationName}}</1>, um diese Überweisung zu genehmigen.",
@@ -313,7 +313,56 @@
     "warningTitle": "Lies diese Nachricht vollständig durch, bevor Du fortfährst."
   },
   "errorHeadlines": {
-    "twoFaFailed": "Ungültiger 2FA-Code"
+    "accountTypeNotSupported": "Kontotyp nicht unterstützt",
+    "amountBelowMinimum": "Betrag zu niedrig",
+    "amountExceedsMaximum": "Betrag zu hoch",
+    "badRequest": "Ungültige Anfrage",
+    "balanceNotEnough": "Unzureichendes Guthaben",
+    "binanceTravelRuleRestriction": "Reisebeschränkung Regel",
+    "coinbaseUnavailable": "Coinbase nicht verfügbar",
+    "configurationMismatch": "Konfigurationsfehler",
+    "emptyWalletBalance": "Leerer Wallet",
+    "expiredSmartDeposit": "Smart-Einzahlung abgelaufen",
+    "failedToGetFundingOptions": "Fehler bei den Finanzierungsmöglichkeiten",
+    "failedToSaveFundingOptions": "Speichern fehlgeschlagen",
+    "feeAssetBalanceNotEnough": "Unzureichendes Gebührenguthaben",
+    "forbiddenByIntegration": "Zugang verboten",
+    "fromAccountNotSupported": "Abhebung nicht unterstützt",
+    "integrationError": "Integrationsfehler",
+    "integrationNotAvailable": "Integration nicht verfügbar",
+    "invalidField": "Ungültige Informationen",
+    "invalidFromIntegrationToken": "Ungültiges Quell-Token",
+    "invalidIntegrationToken": "Ungültiges Token",
+    "invalidToIntegrationToken": "Ungültiges Ziel-Token",
+    "kycRequired": "KYC erforderlich",
+    "locked": "Konto gesperrt",
+    "missingField": "Fehlende Informationen",
+    "networkDisabled": "Netzwerk deaktiviert",
+    "networkUnsupported": "Netzwerk nicht unterstützt",
+    "noAvailableSmartContract": "Smart Contract nicht verfügbar",
+    "notAuthorizedFromIntegrationToken": "Quelle nicht autorisiert",
+    "notAuthorizedToIntegrationToken": "Ziel nicht autorisiert",
+    "notFound": "Nicht gefunden",
+    "notSupported": "Nicht unterstützt",
+    "orderTypeNotSupported": "Bestelltyp nicht unterstützt",
+    "passKeyNotSupported": "Passkey nicht unterstützt",
+    "paymentMethodNotAvailable": "Zahlungsmethode nicht verfügbar",
+    "permissionDenied": "Zugriff verweigert",
+    "previewExpired": "Vorschau abgelaufen",
+    "refusedByIntegration": "Überweisung abgelehnt",
+    "satoshiTestRequired": "Betragsgrenze überschritten",
+    "serverFailure": "Serverfehler",
+    "symbolNotSupported": "Symbol nicht unterstützt",
+    "symbolNotSupportedBySource": "Quelle nicht unterstützt",
+    "symbolNotSupportedByTarget": "Ziel nicht unterstützt",
+    "symbolNotSupportedForTrading": "Handel nicht unterstützt",
+    "timeInForceNotSupported": "Gültigkeitsdauer nicht unterstützt",
+    "toAccountNotSupported": "Einzahlung nicht unterstützt",
+    "tooManyRequests": "Zu viele Anfragen",
+    "transferAlreadyRequested": "Transfer bereits angefordert",
+    "twoFaFailed": "Ungültiger 2FA-Code",
+    "unauthorizedToken": "Unbefugtes Token",
+    "withdrawalLocked": "Abhebungen gesperrt"
   },
   "errorMessages": {
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
@@ -761,6 +810,33 @@
     "selectAnotherAccount": "Wähle ein anderes Konto aus",
     "selectAnotherDescription": "Bitte wähle eine andere Börse oder Wallet für die Einzahlung."
   },
+  "oauthExternalPage": {
+    "awaitingConnection": {
+      "action": "Öffne {{selectedIntegrationName}} erneut",
+      "subtitle": "Bitte melden Sie sich in Ihrem Browser an und genehmigen Sie den Zugriff.",
+      "title": "Warte auf Verbindung"
+    },
+    "checking": {
+      "message": "Ihre Assets werden überprüft..."
+    },
+    "connected": {
+      "action": "Zurück zu {{clientName}}",
+      "subtitle": "Zurück zu {{clientName}}, um fortzufahren",
+      "title": "Sie sind mit {{selectedIntegrationName}} verbunden"
+    },
+    "error": {
+      "connection": {
+        "action": "Öffne {{selectedIntegrationName}} erneut",
+        "subtitle": "Es scheint, dass Sie die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen haben. Bitte öffnen Sie {{selectedIntegrationName}} erneut und beenden Sie die Anmeldung.",
+        "title": "Konnte keine Verbindung zu {{selectedIntegrationName}} herstellen"
+      }
+    },
+    "redirecting": {
+      "action": "Weiter zu {{selectedIntegrationName}}",
+      "subtitle": "Sie werden zu Ihrem Browser weitergeleitet, um sich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Sie fertig sind, kehren Sie automatisch hierher zurück.",
+      "title": "Umleitung zu {{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Weiter zu {{integrationName}}",
     "description": "Klicke unten, um {{integrationName}} zu öffnen, und melde Dich in Deinem Konto an, um Deine Zahlungsvorschau zu sehen.",
@@ -781,7 +857,7 @@
       "destination": "Du genehmigst die Überweisung von <1>{{amount}}</1> von {{selectedIntegrationName}} zum Ziel."
     },
     "buyingPowerPurchase": "Kauf von <1>{{amount}}</1> im Wert von {{symbol}} <5>(~ {{amountInCrypto}})</5> in {{selectedIntegrationName}}.",
-    "conversionStep": "Umrechnung von <1>{{amount}}</1> zu <4>{{currency}}</4>.",
+    "conversionStep": "Umrechnung von <1>{{amount}}</1> zu <3>{{currency}}</3>.",
     "depositTitle": "Einzahlung in Bearbeitung",
     "description": "Dies kann einige Zeit dauern ...",
     "existingCryptocurrencyBalance": {
@@ -942,7 +1018,7 @@
     "spotAccountsBody": "Derzeit werden nur Spot-Konten unterstützt. Assets in anderen Kontotypen, wie Margin, werden nicht erkannt.",
     "topUpButton": "Guthaben aufladen",
     "topUpUSDCInstruction": "Laden Sie Ihr USDC-Guthaben in Ihrem Phantom-Wallet auf.",
-    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer Tao-Kassenseite.",
+    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer TAO-Kassenseite.",
     "unableTransferError": "Die Überweisung kann nicht gestartet werden."
   },
   "selectItem": {

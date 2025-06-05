@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "エラーが発生しました。",
-    "directMobileFlowError": "セッションが期限切れです。Taoチェックアウトページに戻ってもう一度お試しください。"
+    "directMobileFlowError": "セッションの有効期限が切れました。TAOのチェックアウトページに戻って、再試行してください。"
   },
   "connectionUnavailablePage": {
     "connectAnother": "別のウォレットを接続",
@@ -281,7 +281,7 @@
     "checkDetails40": "取引の詳細を表示",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>が{{shortAddress}}に受け取られます",
     "depositClient": "<1></1><>{{amountCrypto}} ~ {{amountFiat}}</>を{{clientName}} ({{shortAddress}})で受け取ります",
-    "directMobileBody": "支払いを完了するには、Taoチェックアウトページに戻ってください。",
+    "directMobileBody": "お支払いを完了するために、TAOのチェックアウトページに戻ってください。",
     "directMobileTitle": "支払いを開始しました",
     "goBackToShift4": "← Shift4に戻る",
     "goToIntegrationToApprove": "この転送を承認するために<1>{{selectedIntegrationName}}</1>に行ってください。",
@@ -313,7 +313,56 @@
     "warningTitle": "続行する前にこのメッセージを全てお読みください。"
   },
   "errorHeadlines": {
-    "twoFaFailed": "無効な2FAコード"
+    "accountTypeNotSupported": "アカウントタイプはサポートされていません",
+    "amountBelowMinimum": "金額が少なすぎます",
+    "amountExceedsMaximum": "金額が多すぎます",
+    "badRequest": "無効なリクエスト",
+    "balanceNotEnough": "残高不足",
+    "binanceTravelRuleRestriction": "移転ルールの制限",
+    "coinbaseUnavailable": "Coinbaseが利用できません",
+    "configurationMismatch": "設定エラー",
+    "emptyWalletBalance": "空のウォレット",
+    "expiredSmartDeposit": "スマート預金が期限切れ",
+    "failedToGetFundingOptions": "資金オプションエラー",
+    "failedToSaveFundingOptions": "保存に失敗しました",
+    "feeAssetBalanceNotEnough": "手数料の残高が不足しています",
+    "forbiddenByIntegration": "アクセス禁止",
+    "fromAccountNotSupported": "引き出しはサポートされていません",
+    "integrationError": "統合エラー",
+    "integrationNotAvailable": "統合が利用できない",
+    "invalidField": "無効な情報",
+    "invalidFromIntegrationToken": "無効な送信元トークン",
+    "invalidIntegrationToken": "無効なトークン",
+    "invalidToIntegrationToken": "無効な宛先トークン",
+    "kycRequired": "KYC が必要です",
+    "locked": "アカウントがロックされました",
+    "missingField": "情報不足",
+    "networkDisabled": "ネットワークが無効です",
+    "networkUnsupported": "ネットワークがサポートされていません",
+    "noAvailableSmartContract": "スマートコントラクトが利用できません",
+    "notAuthorizedFromIntegrationToken": "送信元が許可されていない",
+    "notAuthorizedToIntegrationToken": "宛先が許可されていない",
+    "notFound": "見つかりません",
+    "notSupported": "サポートされていません",
+    "orderTypeNotSupported": "注文タイプはサポートされていません",
+    "passKeyNotSupported": "パスキーはサポートされていません",
+    "paymentMethodNotAvailable": "支払い方法が利用できません",
+    "permissionDenied": "アクセス拒否",
+    "previewExpired": "プレビューの期限が切れています",
+    "refusedByIntegration": "統合により拒否されました",
+    "satoshiTestRequired": "金額の制限を超えました",
+    "serverFailure": "サーバーエラー",
+    "symbolNotSupported": "シンボルはサポートされていません",
+    "symbolNotSupportedBySource": "ソースはサポートされていません",
+    "symbolNotSupportedByTarget": "目的地はサポートされていません",
+    "symbolNotSupportedForTrading": "取引はサポートされていません",
+    "timeInForceNotSupported": "有効期間はサポートされていません",
+    "toAccountNotSupported": "預金はサポートされていません",
+    "tooManyRequests": "リクエストが多すぎます",
+    "transferAlreadyRequested": "送金はすでに申請されています。",
+    "twoFaFailed": "無効な2FAコード",
+    "unauthorizedToken": "許可されていないトークン",
+    "withdrawalLocked": "引き出しがロックされています"
   },
   "errorMessages": {
     "amountBelowMinimum": "要求された金額は、このネットワークでの最小許容振り込み額を下回っています。",
@@ -761,6 +810,33 @@
     "selectAnotherAccount": "別のアカウントを選択してください",
     "selectAnotherDescription": "入金元として、別の取引所またはウォレットを選択してください。"
   },
+  "oauthExternalPage": {
+    "awaitingConnection": {
+      "action": "{{selectedIntegrationName}}を再度開く",
+      "subtitle": "ブラウザでログインとアクセス承認を完了してください。",
+      "title": "接続待機中"
+    },
+    "checking": {
+      "message": "資産を確認中。。。"
+    },
+    "connected": {
+      "action": "{{clientName}}に戻る",
+      "subtitle": "{{clientName}}に戻って続行",
+      "title": "{{selectedIntegrationName}}と接続しました"
+    },
+    "error": {
+      "connection": {
+        "action": "{{selectedIntegrationName}}を再度開く",
+        "subtitle": "ログインまたはアクセス承認を完了していないようです。続行するには、{{selectedIntegrationName}}を再度開き、ログインを完了してください。",
+        "title": "{{selectedIntegrationName}} へ接続できませんでした"
+      }
+    },
+    "redirecting": {
+      "action": "{{selectedIntegrationName}}へ進む",
+      "subtitle": "{{selectedIntegrationName}} で安全にログインするために、ブラウザにリダイレクトされます。完了後、ここに自動的に戻ります。",
+      "title": "{{selectedIntegrationName}} へのリダイレクト"
+    }
+  },
   "oauthInitialPage": {
     "continue": "{{integrationName}}へ進む",
     "description": "以下をクリックして{{integrationName}}を開き、アカウントにログインして支払い内容を確認してください。",
@@ -781,7 +857,7 @@
       "destination": "{{selectedIntegrationName}}から宛先への<1>{{amount}}</1>の送金を承認します。"
     },
     "buyingPowerPurchase": "{{selectedIntegrationName}}で{{symbol}}約<1>{{amount}}</1>分<5>(~ {{amountInCrypto}})</5> を購入します。",
-    "conversionStep": "<1>{{amount}}</1>を<4>{{currency}}</4>に換算します。",
+    "conversionStep": "<1>{{amount}}</1>を<3>{{currency}}</3>に換算します。",
     "depositTitle": "入金処理中です",
     "description": "しばらくお待ちください。。。",
     "existingCryptocurrencyBalance": {
@@ -942,7 +1018,7 @@
     "spotAccountsBody": "現在、スポットアカウントのみ対応しています。マージンなどその他のアカウントの資産は検出されません。",
     "topUpButton": "残高をチャージ",
     "topUpUSDCInstruction": "Phantom ウォレットでUSDC残高を追加してください。",
-    "tryAgainFromTaoInstruction": "Taoチェックアウトページからもう一度お試しください。",
+    "tryAgainFromTaoInstruction": "TAOのチェックアウトページからもう一度お試しください。",
     "unableTransferError": "送金を開始できませんでした。"
   },
   "selectItem": {

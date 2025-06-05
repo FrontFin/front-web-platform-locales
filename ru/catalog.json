@@ -1,6 +1,6 @@
 {
   "accessDeniedPage": {
-    "body": "К сожалению, активность из вашей страны в настоящий момент недоступна.",
+    "body": "К сожалению, доступ из вашей страны в настоящий момент запрещён.",
     "title": "Доступ запрещён"
   },
   "addressWhitelistPage": {
@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Произошла ошибка.",
-    "directMobileFlowError": "Сессия истекла. Пожалуйста, вернитесь на страницу оформления заказа Tao и попробуйте снова."
+    "directMobileFlowError": "Время сеанса истекло. Пожалуйста, вернитесь на страницу оформления заказа TAO и попробуйте снова."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Подключить другой кошелек",
@@ -280,12 +280,12 @@
     "checkDetails": "Посмотреть детали",
     "checkDetails40": "Просмотреть детали транзакции",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
-    "depositClient": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> на {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Вернитесь на страницу оформления заказа Tao, чтобы завершить оплату.",
+    "depositClient": "Вы получите <2>{{amountCrypto}} ~ {{amountFiat}}</2> на {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Вернитесь на страницу оформления заказа TAO, чтобы завершить оплату.",
     "directMobileTitle": "Платеж инициирован",
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
-    "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><3></3> для {{clientName}}",
+    "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><4></4> для {{clientName}}",
     "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети."
   },
   "doneVerifyPage": {
@@ -313,7 +313,56 @@
     "warningTitle": "Прочитайте это сообщение целиком, прежде чем продолжить."
   },
   "errorHeadlines": {
-    "twoFaFailed": "Неправильный код 2FA"
+    "accountTypeNotSupported": "Тип аккаунта не поддерживается",
+    "amountBelowMinimum": "Сумма слишком мала",
+    "amountExceedsMaximum": "Сумма слишком велика",
+    "badRequest": "Некорректный запрос",
+    "balanceNotEnough": "Недостаточный баланс",
+    "binanceTravelRuleRestriction": "Ограничение правила поездок",
+    "coinbaseUnavailable": "Coinbase недоступен",
+    "configurationMismatch": "Ошибка конфигурации",
+    "emptyWalletBalance": "Пустой электронный кошелек",
+    "expiredSmartDeposit": "Срок действия смарт-депозита истек",
+    "failedToGetFundingOptions": "Ошибка способов пополнения",
+    "failedToSaveFundingOptions": "Не удалось сохранить",
+    "feeAssetBalanceNotEnough": "Недостаточный баланс для оплаты комиссии",
+    "forbiddenByIntegration": "Доступ запрещен",
+    "fromAccountNotSupported": "Вывод не поддерживается",
+    "integrationError": "Ошибка интеграции",
+    "integrationNotAvailable": "Интеграция недоступна",
+    "invalidField": "Недействительная информация",
+    "invalidFromIntegrationToken": "Недействительный исходный токен",
+    "invalidIntegrationToken": "Недействительный токен",
+    "invalidToIntegrationToken": "Недействительный конечный токен",
+    "kycRequired": "Требуется KYC",
+    "locked": "Аккаунт заблокирован",
+    "missingField": "Отсутствует информация",
+    "networkDisabled": "Сеть отключена",
+    "networkUnsupported": "Сеть не поддерживается",
+    "noAvailableSmartContract": "Смарт-контракт недоступен",
+    "notAuthorizedFromIntegrationToken": "Источник не авторизован",
+    "notAuthorizedToIntegrationToken": "Назначение не авторизовано",
+    "notFound": "Не найдено",
+    "notSupported": "Не поддерживается",
+    "orderTypeNotSupported": "Тип ордера не поддерживается",
+    "passKeyNotSupported": "Код доступа не поддерживается",
+    "paymentMethodNotAvailable": "Метод оплаты недоступен",
+    "permissionDenied": "Доступ запрещен",
+    "previewExpired": "Срок действия превью истек",
+    "refusedByIntegration": "Перевод отклонена",
+    "satoshiTestRequired": "Превышен лимит суммы",
+    "serverFailure": "Ошибка сервера",
+    "symbolNotSupported": "Токен не поддерживается",
+    "symbolNotSupportedBySource": "Источник не поддерживается",
+    "symbolNotSupportedByTarget": "Назначение не поддерживается",
+    "symbolNotSupportedForTrading": "Торговля не поддерживается",
+    "timeInForceNotSupported": "Время исполнения не поддерживается",
+    "toAccountNotSupported": "Депозит не поддерживается",
+    "tooManyRequests": "Слишком много запросов",
+    "transferAlreadyRequested": "Перевод уже запрошен",
+    "twoFaFailed": "Неправильный код 2FA",
+    "unauthorizedToken": "Несанкционированный токен",
+    "withdrawalLocked": "Выводы заблокированы"
   },
   "errorMessages": {
     "amountBelowMinimum": "Запрашиваемая сумма ниже минимально допустимой для перевода в этой сети.",
@@ -478,7 +527,7 @@
     "save": "Сохранить",
     "selectFundingMethodAvailablity": "Выбранные методы обеспечения имеют {{selectedAvailableAmount}}. Пожалуйста, выберите дополнительные способы обеспечения для перевода {{neededAmount}}.",
     "selectFundingMethods": "Пожалуйста, выберите метод (ы) обеспечения для перевода <2>{{amount}} ~ {{amountInFiat}}</2>.",
-    "selectFundingMethodsTitle": "Способ финансирования не выбран",
+    "selectFundingMethodsTitle": "Способ пополнения не выбран",
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
@@ -761,6 +810,33 @@
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherDescription": "Пожалуйста, выберите другой аккаунт или кошелек для перевода."
   },
+  "oauthExternalPage": {
+    "awaitingConnection": {
+      "action": "Открыть {{selectedIntegrationName}} снова",
+      "subtitle": "Пожалуйста, завершите вход в систему и подтвердите доступ в вашем браузере.",
+      "title": "Ожидание подключения"
+    },
+    "checking": {
+      "message": "Проверка ваших активов..."
+    },
+    "connected": {
+      "action": "Вернуться к {{clientName}}",
+      "subtitle": "Вернуться к {{clientName}}, чтобы продолжить",
+      "title": "Вы подключены к {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "action": "Открыть {{selectedIntegrationName}} снова",
+        "subtitle": "Кажется, вы не завершили вход в систему или подтверждение доступа. Чтобы продолжить, пожалуйста, снова откройте {{selectedIntegrationName}} и завершите вход.",
+        "title": "Не удалось подключиться к {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "action": "Перейти к {{selectedIntegrationName}}",
+      "subtitle": "Вы будете перенаправлены в ваш браузер для безопасного входа в {{selectedIntegrationName}}. Как только вы закончите, вы вернётесь сюда автоматически.",
+      "title": "Перенаправление к {{selectedIntegrationName}}"
+    }
+  },
   "oauthInitialPage": {
     "continue": "Перейти к {{integrationName}}",
     "description": "Нажмите, чтобы открыть {{integrationName}}, и войдите в свою учетную запись, чтобы совершить платеж.",
@@ -781,7 +857,7 @@
       "destination": "Вы одобряете перевод <1>{{amount}}</1> из {{selectedIntegrationName}}."
     },
     "buyingPowerPurchase": "Покупка <1>{{amount}}</1> стоимостью {{symbol}} <5>(~ {{amountInCrypto}})</5> в {{selectedIntegrationName}}.",
-    "conversionStep": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
+    "conversionStep": "Конвертирование <1>{{amount}}</1> в <3>{{currency}}</3>.",
     "depositTitle": "Идет пополнение",
     "description": "Это может занять некоторое время...",
     "existingCryptocurrencyBalance": {
@@ -942,7 +1018,7 @@
     "spotAccountsBody": "В настоящее время поддерживаются только спот-счета. Активы на других типах счетов, например на маржинальных, не будут отображены.",
     "topUpButton": "Пополнить баланс",
     "topUpUSDCInstruction": "Пополните баланс USDC в вашем электронном кошельке Phantom.",
-    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа Tao.",
+    "tryAgainFromTaoInstruction": "Попробуйте снова с вашей страницы оформления заказа TAO.",
     "unableTransferError": "Невозможно начать перевод."
   },
   "selectItem": {
