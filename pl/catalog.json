@@ -220,7 +220,7 @@
     "awaitingConfirmation": "Oczekiwanie na potwierdzenie z aplikacji mobilnej",
     "clickOpenApp": "Kliknij <1> Otwórz aplikację {{integrationName}}</1> poniżej",
     "confirmInApp": "Potwierdź w swojej mobilnej aplikacji {{integrationName}}, że to rzeczywiście ty próbujesz się zalogować.",
-    "confirmPrompt": "Potwierdź w komunikacie, że to Ty",
+    "confirmPrompt": "Potwierdź swoją tożsamość w wyświetlonym komunikacie",
     "openApp": "Otwórz aplikację {{integrationName}}",
     "openAppOnPhone": "Otwórz aplikację {{integrationName}} na swoim telefonie",
     "returnHere": "Wróć tutaj, aby kontynuować",
@@ -358,12 +358,12 @@
     "symbolNotSupportedForTrading": "Handel nieobsługiwany",
     "timeInForceNotSupported": "Reguła 'Time in Force' nieobsługiwana",
     "toAccountNotSupported": "Depozyt nieobsługiwany",
-    "tooManyRequests": "Za dużo żądań",
+    "tooManyRequests": "Przekroczono limit żądań",
     "transferAlreadyRequested": "Transfer został już zlecony",
     "twoFaFailed": "Nieprawidłowy kod 2FA",
     "unauthorizedToken": "Nieautoryzowany token",
     "withdrawalLocked": "Wypłaty zablokowane",
-    "coinbaseTravelRuleRestriction": "Ograniczenie reguły podróży"
+    "coinbaseTravelRuleRestriction": "Ograniczenia wynikające z przepisów Travel Rule"
   },
   "errorMessages": {
     "amountBelowMinimum": "Żądana kwota jest poniżej minimalnej dopuszczalnej kwoty transferu w tej sieci.",
@@ -372,7 +372,7 @@
     "binanceTravelRuleRestriction": "Binance nie obsługuje przelewów na adres docelowy ze względu na ograniczenia wynikające z przepisów dotyczących podróży (travel rule).",
     "coinbaseUnavailable": "Wystąpił błąd Coinbase. Sprawdź swoje konto CB, aby sprawdzić, czy transfer został zrealizowany.",
     "default": "Wystąpił błąd.",
-    "emptyWalletBalance": "Saldo źródłowego portfela jest puste.",
+    "emptyWalletBalance": "Brak środków na portfelu źródłowym.",
     "failedToGetFundingOptions": "Nie udało się pobrać metod płatności",
     "failedToSaveFundingOptions": "Nie udało się zapisać metod płatności",
     "feeAssetBalanceNotEnough": "Niewystarczające środki na opłaty transferowe.",
@@ -423,10 +423,10 @@
   },
   "externalHardwareWalletMainPage": {
     "mobileBody": "To doświadczenie musi zostać ukończone na urządzeniu stacjonarnym, aby połączyć Twój portfel sprzętowy.",
-    "mobileTitle": "Otwórz ten link na urządzeniu stacjonarnym"
+    "mobileTitle": "Otwórz ten link na komputerze"
   },
   "externalInitialScreen": {
-    "title": "Wprowadź jednorazowy kod wyświetlany na urządzeniu mobilnym<1></1>"
+    "title": "Wprowadź jednorazowy kod <1></1>wyświetlony na twoim urządzeniu mobilnym"
   },
   "externalTransferCallbackPage": {
     "continue": "Kontynuuj do {{clientName}}",
@@ -519,7 +519,7 @@
     "changeAmount": "Albo zmień kwotę do przelania na {{availableAmount}}.",
     "changePreferredPaymentMethod": "Zmień preferowaną metodę płatności",
     "changePreferredToken": "Zmień preferowany token",
-    "cryptoConversion": "Konwersja kryptowalut",
+    "cryptoConversion": "Przeliczanie kryptowalut",
     "description": "Razem: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Dostępna gotówka: {{amountInFiat}})",
     "insufficientFunds": "Niewystarczające środki",
@@ -555,16 +555,16 @@
     "add2FA": "Proszę połączyć aplikację 2FA i ponowić próbę.",
     "identityVerificationRequired": "Aby skorzystać z funkcji klucza API, musisz ukończyć weryfikację tożsamości. Proszę ukończyć weryfikację tożsamości, aby kontynuować.",
     "invalidCredentials": "Nieprawidłowe dane logowania. Spróbuj ponownie.",
-    "maximumApiKeyLimitExceeded": "Osiągnięto maksymalną dozwoloną ilość kluczy API. Proszę usunąć nieużywane klucze, aby kontynuować.",
+    "maximumApiKeyLimitExceeded": "Osiągnięto maksymalną dozwoloną liczbę kluczy API. Proszę usunąć nieużywane klucze, aby kontynuować.",
     "unsupportedCountryErrorMessage": "Obecnie nie obsługujemy twojego konta",
     "wrongEmailCode": "Nieprawidłowy kod e-mail, proszę spróbować ponownie",
     "wrongTotpCode": "Nieprawidłowy kod uwierzytelniający, proszę spróbować ponownie"
   },
   "handleExternalTransferPage": {
-    "detailButton": "Zobacz, co się stało",
+    "detailButton": "Zobacz szczegóły",
     "error": "Nie udało się wykonać transferu",
     "loadingLabel": "Weryfikacja transferu...",
-    "networkConfirmations": "Transfery nie są zakończone, dopóki nie otrzymają wystarczającej liczby potwierdzeń sieciowych.",
+    "networkConfirmations": "Transfery nie są zakończone, dopóki nie otrzymają wystarczającej liczby potwierdzeń w sieci.",
     "notInitiatedUntilApproved": "Transfer nie zostanie rozpoczęty, dopóki nie zostanie zatwierdzony w {{selectedIntegrationName}}.",
     "recievedDetails": "Otrzymasz <1>{{amountStr}}</1> w {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Twoje żądanie transferu do {{destination}} zostało odebrane przez {{selectedIntegrationName}}",
@@ -624,7 +624,7 @@
     "verifyingLabel": "Weryfikowanie podpisu..."
   },
   "ipWhiteListPage": {
-    "addIp": "Dodaj poniższy adres IP jako Zaufany IP",
+    "addIp": "Dodaj poniższy adres IP do listy zaufanych adresów IP",
     "clickOnEdit": "Kliknij edytuj ograniczenia",
     "copyIpTitle": "Adres IP",
     "description": "<0>Binance</0> wymaga, aby użytkownicy API dodawali adresy IP do białej listy w celu zapewnienia legalności żądań handlowych i transferowych.",
@@ -685,7 +685,7 @@
     "rejectError": "Użytkownik odrzucił operację. Spróbuj ponownie.",
     "title": "Połączenie nie powiodło się",
     "transportError": "Wystąpił błąd transportu na twoim urządzeniu Ledger.",
-    "transportLockedError": "Połączenie jest zablokowane. Odblokuj urządzenie i spróbuj ponownie.",
+    "transportLockedError": "Połączenie jest zablokowane. Odblokuj swoje urządzenie i spróbuj ponownie.",
     "unexpectedError": "Wystąpił nieoczekiwany błąd.",
     "unknownError": "Wystąpił nieznany błąd na twoim urządzeniu Ledger."
   },
@@ -698,10 +698,10 @@
   },
   "ledgerSignMessage": {
     "rippleBody": "Uwaga: dla XRP zobaczysz przykładową transakcję o minimalnej wartości. Służy ona tylko do weryfikacji Twojego portfela i nie wiąże się z żadnymi kosztami ani przesłaniem środków.",
-    "title": "Przejrzyj i podpisz wiadomość na swoim urządzeniu"
+    "title": "Sprawdź i podpisz wiadomość na swoim urządzeniu"
   },
   "ledgerUSB": {
-    "step1": "Wybierz swoje urządzenie z okna <1>USB</1>",
+    "step1": "Wybierz swoje urządzenie w oknie <1>USB</1>",
     "step2": "Postępuj zgodnie z instrukcjami w oknie USB i na urządzeniu Ledger, aby zakończyć połączenie"
   },
   "loginDeviceVerifiedPage": {
@@ -725,7 +725,7 @@
     "totp": "Wprowadź jednorazowy kod dostarczony przez aplikację uwierzytelniającą, którą połączyłeś z <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Podaj kod PIN związany z kontem <2>{{selectedIntegrationName}}</2>.",
     "transferFlow": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty inicjujesz ten transfer.",
-    "twoFactor": "Podaj kod dostarczony przez metodę uwierzytelniania dwuskładnikowego, którą skonfigurowałeś na koncie <1>{{selectedIntegrationName}}</1>."
+    "twoFactor": "Podaj kod wygenerowany przez metodę uwierzytelniania dwuskładnikowego, którą skonfigurowałeś na koncie <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
     "enterCode": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty próbujesz się zalogować.<1></1>",
@@ -908,7 +908,7 @@
   },
   "paymentUpdateDrawerContent": {
     "cancel": "Anuluj",
-    "clickToPay": "Kliknij poniżej, aby doładować swoje saldo {{token}}, aby wykonać tę płatność.",
+    "clickToPay": "Kliknij poniżej, aby doładować swoje saldo {{token}}, w celu wykonania tej płatności.",
     "description": "Twój stan konta {{token}} po zakupach jest niższy niż oczekiwano z powodu zmian w cenie {{token}} i/lub opłat za gaz.",
     "ifDontComplete": "Jeśli nie ukończysz płatności, saldo {{token}} pozostanie na Twoim koncie {{selectedIntegrationName}}.",
     "onYourAccount": "Na Twoim koncie",
@@ -961,10 +961,10 @@
     "proceed": "Dalej",
     "processingFee": "Opłata za przetwarzanie",
     "processingFeeHint": "Opłata pobrana za przetworzenie tej transakcji.",
-    "receive": "Otrzymaj",
+    "receive": "Otrzymasz",
     "resendTransferRequest": "Wyślij ponownie prośbę o transfer",
-    "seconds": "{{seconds}}s",
-    "symbolBalance": "Bilans {{symbol}}",
+    "seconds": "{{seconds}}y",
+    "symbolBalance": "Saldo {{symbol}}",
     "to": "Do",
     "total": "Łącznie",
     "transferDeclined": "Transfer odrzucony",
@@ -1042,7 +1042,7 @@
     "title": "Twoja sesja wygasła."
   },
   "sessionInfo": {
-    "text": "Jeśli masz pytania, zgłoś to z identyfikatorem sesji <2>{{sessionId}}</2>."
+    "text": "Jeśli masz pytania, zgłoś to, podając identyfikator sesji <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
     "alternativeText": "Alternatywnie możesz wkleić ten kod ręcznie do aplikacji uwierzytelniającej",
@@ -1108,7 +1108,7 @@
     "mobileSteps": {
       "clickOpen": "Kliknij poniżej <1>Otwórz aplikację {{selectedIntegrationName}}</1>",
       "verifyLogin": "Zweryfikuj, czy to Ty logujesz się z nowego urządzenia",
-      "verifyTransfer": "Zweryfikuj, czy to Ty zgłaszasz prośbę o transfer"
+      "verifyTransfer": "Upewnij się, że to ty prosisz o wykonanie transferu"
     },
     "openApp": "Otwórz aplikację {{selectedIntegrationName}}",
     "sendNewRequest": "Wyślij nową prośbę",
@@ -1117,9 +1117,9 @@
   },
   "transferEmailApprovalConfirmation": {
     "approve": "Kliknij <1>Zatwierdź</1> na stronie potwierdzenia.",
-    "approveOrCancel": "Kliknij <1>Zatwierdź lub Anuluj wypłatę</1> w emailu.",
+    "approveOrCancel": "Kliknij <1>Zatwierdź lub Anuluj Wypłatę</1> w wiadomości e-mail.",
     "confirmButton": "Zatwierdziłem wypłatę",
-    "description": "Sprawdź swoją skrzynkę odbiorczą, czy nie ma e-maila z prośbą o potwierdzenie nowej wypłaty.",
+    "description": "Sprawdź swoją skrzynkę odbiorczą - otrzymałeś e-mail z prośbą o potwierdzenie nowej wypłaty.",
     "return": "Wróć tutaj i kliknij poniżej, aby kontynuować transfer.",
     "title": "Zatwierdź wypłatę"
   },
@@ -1164,7 +1164,7 @@
     "approveTransfer": "Potwierdzasz transfer z {{integrationName}} do {{clientName}}",
     "approveTransferDeFi": "Zostaniesz poproszony o zatwierdzenie transferu w {{integrationName}}",
     "approveTransferToDestination": "Potwierdzasz transfer z {{integrationName}} do miejsca docelowego",
-    "convertAmount": "Konwersja {{fromAmount}} na {{toCurrency}}",
+    "convertAmount": "Przeliczanie {{fromAmount}} na {{toCurrency}}",
     "depositAmount": "Wpłata {{amount}} z {{paymentMethod}} do {{integrationName}}",
     "purchaseAmount": "Zakup <2>{{amount}}</2> {{cryptocurrencySymbol}} w {{integrationName}}.",
     "showLess": "Pokaż mniej",
@@ -1183,7 +1183,7 @@
     "youWillReceive": "Otrzymasz"
   },
   "transferWithdrawalAddressConfirmation": {
-    "checkInbox": "Sprawdź swoją skrzynkę odbiorczą, czy nie ma e-maila z prośbą o potwierdzenie nowego adresu do wypłaty.",
+    "checkInbox": "Sprawdź swoją skrzynkę odbiorczą - otrzymałeś e-mail z prośbą o potwierdzenie nowego adresu wypłaty.",
     "clickConfirm": "Kliknij <1>Potwierdź adres</1> w e-mailu.",
     "confirmedButton": " Potwierdziłem adres",
     "return": "Wróć tutaj i kliknij poniżej, aby zakończyć transfer.",
@@ -1200,7 +1200,7 @@
     "clientVerifyLabel": "{{clientName}} musi zweryfikować twój portfel",
     "secureLabel": "Szybko, bezpiecznie i bezpłatnie",
     "secureText": "Podpisanie nie daje w żaden sposób {{clientName}} uprawnień do realizacji jakichkolwiek transakcji z twoim portfelem.",
-    "signText": "Będziesz poproszony o podpisanie wiadomości na swoim urządzeniu Trezor, która potwierdzi, że jesteś właścicielem tego portfela.",
+    "signText": "Zostaniesz poproszony o podpisanie wiadomości na urządzeniu Trezor, które potwierdzi, że jesteś właścicielem tego portfela.",
     "title": "Prawie gotowe!",
     "verifyingLabel": "Weryfikacja twojego portfela..."
   },
@@ -1232,7 +1232,7 @@
   },
   "wallectConnect": {
     "noActiveSessionError": "Brak aktywnej sesji WalletConnect",
-    "transactionHashError": "Nie udało się uzyskać hasha transakcji",
+    "transactionHashError": "Nie udało się pobrać hasha transakcji",
     "unknownError": "Wystąpił nieznany błąd. {{error}}"
   },
   "walletDoneScreen": {
