@@ -1096,16 +1096,16 @@
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Odotetaan vahvistusta mobiilisovelluksesta",
     "confirmButton": "Olen varmentanut sovelluksessani",
-    "description": "Vahvista {{selectedIntegrationName}} mobiilisovelluksessa, että olet sinä, joka yrittää kirjautua sisään.",
+    "description": "Vahvista {{selectedIntegrationName}} mobiilisovelluksessa, että olet kirjautumassa sisään.",
     "desktopSteps": {
       "confirm": "Vahvista pyyntö varmistaaksesi henkilöllisyytesi",
       "openApp": "Avaa {{selectedIntegrationName}} sovellus puhelimellasi",
       "return": "Palaa tänne jatkaaksesi"
     },
     "mobileSteps": {
-      "clickOpen": "Klikkaa <1>Avaa {{selectedIntegrationName}} sovellus</1> alla",
-      "verifyLogin": "Varmista, että kirjaudut sisään uudesta laitteesta",
-      "verifyTransfer": "Varmista, että sinä olet henkilö, joka yrittää siirtää varoja"
+      "clickOpen": "Klikkaa alta <1>Avaa {{selectedIntegrationName}} sovellus</1>",
+      "verifyLogin": "Varmista, että olet kirjautumassa sisään uudelta laitteelta",
+      "verifyTransfer": "Varmista, että varojen siirtopyyntö on sinun tekemäsi"
     },
     "openApp": "Avaa {{selectedIntegrationName}} sovellus",
     "sendNewRequest": "Lähetä uusi pyyntö",
@@ -1116,32 +1116,32 @@
     "approve": "Klikkaa <1>Hyväksy</1> vahvistussivulla.",
     "approveOrCancel": "Klikkaa <1>Hyväksy tai peruuta nostopyyntö</1> sähköpostissa.",
     "confirmButton": "Olen hyväksynyt nostopyynnön",
-    "description": "Tarkista postilaatikkosi sähköpostille, jossa pyydetään vahvistamaan uusi nosto.",
-    "return": "Palaa tänne ja klikkaa alla olevaa jatkaaksesi siirtoa.",
+    "description": "Tarkista sähköpostistasi viesti, jossa pyydetään vahvistamaan uusi nosto.",
+    "return": "Palaa tänne ja klikkaa alta jatkaaksesi siirtoa.",
     "title": "Hyväksy nosto"
   },
   "transferErrorPage": {
-    "defaultError": "Tapahtui tuntematon virhe. Klikkaa alla olevaa linkkiä aloittaaksesi uuden siirtosession."
+    "defaultError": "Tapahtui tuntematon virhe. Klikkaa alta aloittaaksesi uuden siirron."
   },
   "transferErrors": {
     "failedToExecute": "Siirron suoritus epäonnistui",
-    "failedToPreview": "Ei voitu esikatsella siirtoa",
+    "failedToPreview": "Siirron esikatselu epäonnistui",
     "mfaEmailFailed": "Virheellinen koodi sähköpostista, anna koodi uudelleen",
-    "mfaFaceFailed": "Todennus epäonnistui, yritä uudelleen",
-    "mfaFailed": "Virheellinen koodi, anna koodi uudelleen",
-    "mfaPhoneFailed": "Virheellinen sms-koodi, anna koodi uudelleen",
-    "mfaTotpFailed": "Virheellinen TOTP-koodi, anna koodi uudelleen",
-    "mfaTradingPinFailed": "MFA-kauppapin-koe epäonnistui, anna koodi uudelleen"
+    "mfaFaceFailed": "Varmistus epäonnistui, yritä uudelleen",
+    "mfaFailed": "Väärä koodi, anna koodi uudelleen",
+    "mfaPhoneFailed": "Väärä sms-koodi, anna koodi uudelleen",
+    "mfaTotpFailed": "Väärä TOTP-koodi, anna koodi uudelleen",
+    "mfaTradingPinFailed": "Väärä MFA kaupankäynnin PIN-koodi, anna koodi uudelleen"
   },
   "transferFacePage": {
     "clickOpenApp": "Klikkaa <1>Avaa {{selectedIntegrationName}} sovellus</1> avataksesi sovelluksesi ja viimeistelläksesi kasvotunnistuksen.",
-    "completeMobile": "Suorita kasvotunnistus vahvistaaksesi, että todella yrität siirtää varoja.",
+    "completeMobile": "Suorita kasvotunnistus vahvistaaksesi, että olet siirtämässä varoja.",
     "confirmCompleted": "Olen suorittanut varmennuksen",
     "openApp": "Avaa {{selectedIntegrationName}} -sovellus",
-    "reopenApp": "Avaa uudelleen {{selectedIntegrationName}} sovellus",
+    "reopenApp": "Avaa {{selectedIntegrationName}} sovellus uudelleen",
     "return": "Palaa sitten tänne viimeistelläksesi tilisi yhdistämisen.",
     "returnContinue": "Palaa tänne jatkaaksesi tilisi yhdistämistä.",
-    "scanQR": "Skannaa QR-koodi suorittaaksesi kasvotunnistus ja vahvistaaksesi, että todella yrität siirtää varoja.",
+    "scanQR": "Skannaa QR-koodi suorittaaksesi kasvotunnistus ja vahvistaaksesi, että olet siirtämässä varoja.",
     "title": "Varmistus"
   },
   "transferMfaPage": {
@@ -1149,13 +1149,13 @@
     "verify": "Varmenna"
   },
   "transferPreviewErrorPage": {
-    "aboveMaximum": "Yli {{integrationName}} enimmäis",
-    "belowMinimum": "Alle {{integrationName}} minimum",
+    "aboveMaximum": "Yli {{integrationName}}:n sallitun enimmäismäärän",
+    "belowMinimum": "Alle {{integrationName}}:n sallitun minimimmäärän",
     "connectAnotherAccount": "Ole hyvä ja yhdistä toinen tili.",
-    "connectDifferent": "Yhdistä toinen tili",
+    "connectDifferent": "Yhdistä muu tili",
     "insufficientBalanceError": "Riittämätön saldo tähän tapahtumaan.",
     "insufficientFunds": "Riittämättömät varat",
-    "unknownError": "Tapahtui tuntematon virhe. Napsauta alla aloittaaksesi uuden siirtosession."
+    "unknownError": "Tapahtui tuntematon virhe. Klikkaa alta aloittaaksesi uuden siirron."
   },
   "transferSteps": {
     "approveTransfer": "Hyväksyt siirron {{integrationName}}:stä {{clientName}}",
