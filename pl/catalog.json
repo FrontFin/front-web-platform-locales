@@ -4,7 +4,7 @@
     "title": "Dostęp zabroniony"
   },
   "addressWhitelistPage": {
-    "addAddress": "Dodaj następujący jako zatwierdzony adres wypłaty:",
+    "addAddress": "Dodaj następujący adres do listy zatwierdzonych adresów wypłat:",
     "goToAccount": "Przejdź do swojego <1>{{selectedIntegrationName}} konta</1>",
     "network": "Sieć",
     "preview": "Kliknij poniżej, aby przejrzeć i ponownie rozpocząć tę transakcję",
@@ -19,10 +19,10 @@
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Kwota musi mieścić się w przedziale {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
-    "amountMustBeWithinErrorMessage": "Kwota musi mieścić się w przedziale USD $21 - $15,000",
-    "buyCrypto": "Kup kryptowaluty przy użyciu Binance Connect",
+    "amountMustBeWithinErrorMessage": "Kwota musi mieścić się w przedziale od 21 do 15.000 USD",
+    "buyCrypto": "Kup kryptowaluty za pomocą Binance Connect",
     "closeButton": "Zamknij",
-    "continueTo": "Kontynuuj do {{selectedIntegrationName}}",
+    "continueTo": "Przejdź do {{selectedIntegrationName}}",
     "enterAmount": "Wprowadź kwotę transferu",
     "notSupported": "{{selectedIntegrationName}} nie obsługuje przelewów dla wybranych tokenów i/lub sieci.",
     "receiveAmountInput": {
@@ -30,20 +30,20 @@
     },
     "selectAnotherAccount": "Wybierz inne konto",
     "selectAnotherExchange": "Wybierz inną giełdę lub portfel do wpłaty.",
-    "selectAsset": "Wybierz zasób do transferu",
+    "selectAsset": "Wybierz aktywo do transferu",
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz"
   },
   "binanceMfaPage": {
-    "add2fa": "Proszę dodaj niezbędne metody uwierzytelniania dwuskładnikowego (2FA) w Binance",
+    "add2fa": "Proszę dodać wymagane metody uwierzytelniania dwuskładnikowego (2FA) w Binance",
     "chooseAnotherAccount": "Wybierz inne konto",
-    "description": "Musisz mieć zarówno adres e-mail, jak i aplikację uwierzytelniającą skonfigurowane jako metody 2FA w swoim <1>Binance</1> koncie.",
+    "description": "Musisz mieć skonfigurowane zarówno e-mail, jak i aplikację uwierzytelniającą jako metody uwierzytelnienia dwuskładnikowego (2FA) na swoim koncie <1>Binance</1>.",
     "ensureConfigured": "Upewnij się, że zarówno e-mail, jak i aplikacja uwierzytelniająca są skonfigurowane do 2FA",
-    "goToSettings": "Kliknij poniżej, aby przejść do swoich ustawień bezpieczeństwa <1>Binance</1>",
-    "mayNeedReAuthApp": "Proszę zapamiętać: może być konieczna ponowna autoryzacja na koncie Binance, aby rozpocząć ten transfer po powrocie do <2>aplikacji</2>.",
-    "mayNeedReAuthClient": "Proszę zapamiętać: może być konieczna ponowna autoryzacja na koncie Binance, aby rozpocząć ten transfer po powrocie do <2>{{clientName}}</2>.",
+    "goToSettings": "Kliknij poniżej, aby przejść do swoich ustawień bezpieczeństwa w <1>Binance</1>",
+    "mayNeedReAuthApp": "Uwaga: po powrocie do <2>aplikacji</2> może być konieczne ponowne uwierzytelnienie na koncie Binance, aby zainicjować ten transfer.",
+    "mayNeedReAuthClient": "Uwaga: po powrocie do <2>{{clientName}}</2> może być konieczne ponowne uwierzytelnienie na koncie Binance, aby zainicjować ten transfer.",
     "openBinance": "Otwórz Binance",
     "returnToApp": "Wróć do <1>aplikacji</1>, aby ponowić tę transakcję",
     "returnToClient": "Wróć do <1>{{clientName}}</1>, aby ponowić tę transakcję",
@@ -51,18 +51,18 @@
   },
   "binanceResetPasswordPage": {
     "goToBinance": "Przejdź do Binance.com",
-    "securityNote": "Uwaga: ze względów bezpieczeństwa, wypłaty kryptowalut są wyłączone na 24 godziny po zmianie hasła.",
+    "securityNote": "Uwaga: wypłaty kryptowalut są wyłączone na 24 godziny po zmianie hasła.",
     "steps": {
       "completeProcess": "Zakończ proces resetowania hasła.",
-      "enterEmail": "Wpisz swój email lub numer telefonu i kliknij \"Zapomniałeś hasła?\".",
-      "goToBinance": "Wybierz <1>Przejdź do Binance.com</1> a zostaniesz przekierowany na ekran logowania do Binance.",
+      "enterEmail": "Wpisz swój e-mail lub numer telefonu i kliknij \"Zapomniałeś hasła?\".",
+      "goToBinance": "Wybierz <1>Przejdź do Binance.com</1> aby zostać przekierowanym do strony logowania w Binance.",
       "returnToLogin": "Wróć tutaj, aby zalogować się przy użyciu nowego hasła."
     },
     "title": "Zresetuj hasło"
   },
   "bindFacePage": {
-    "completedButton": "Ukończyłem to na moim telefonie",
-    "linkText": "Jeśli nie możesz zeskanować kodu QR, skorzystaj z tego <2><0>linka</0></2>.",
+    "completedButton": "Ukończone na telefonie",
+    "linkText": "Jeśli nie możesz zeskanować kodu QR, skorzystaj z tego <2><0>linku</0></2>.",
     "qrCode": "Kod QR",
     "return": "Wróć do tego ekranu, aby kontynuować.",
     "title": "Otwórz aplikację Binance i zeskanuj poniższy kod QR"
@@ -71,7 +71,7 @@
     "authApp": "Aplikacja uwierzytelniająca",
     "email": "E-mail",
     "enabled": "Włączono",
-    "error": "Nie udało się powiązać MFA",
+    "error": "Nie udało się powiązać wieloskładnikowego uwierzytelniania (MFA)",
     "notEnabled": "Nie włączono"
   },
   "browserContent": {
@@ -87,7 +87,7 @@
       "linked": "Wcześniej powiązany"
     },
     "noResults": "Przykro nam, nie znaleźliśmy żadnych wyników",
-    "paymentTitle": "Wybierz konto płatności",
+    "paymentTitle": "Wybierz konto do płatności",
     "prodOnly": "Tylko produkcja",
     "search": "szukaj",
     "title": "Wybierz konto do połączenia",
@@ -108,8 +108,8 @@
   "chainSwitch": {
     "monitoringApproval": "Oczekiwanie na zatwierdzenie...",
     "networkChangeDeclined": "Zmiana sieci została odrzucona",
-    "networkChangeDeclinedBody": "Odmowa żądania zmiany sieci w twoim portfelu",
-    "resendNetworkSwitch": "Wyślij ponownie żądanie przełączenia sieci",
+    "networkChangeDeclinedBody": "Odrzuciłeś prośbę o zmianę sieci w portfelu",
+    "resendNetworkSwitch": "Wyślij ponownie prośbę o zmianę sieci",
     "stayOnNetwork": "Pozostań na {{networkName}}",
     "switchingNetwork": "Zmienianie sieci",
     "tryAgain": "Spróbuj ponownie"
@@ -123,7 +123,7 @@
     "verificationCodeInputTitle": "Kod weryfikacyjny"
   },
   "chooseAccountPage": {
-    "linkToApp": "Które z twoich kont chciałbyś, aby <1></1> połączyć z tą aplikacją",
+    "linkToApp": "Które z Twoich kont chcesz <1></1> powiązać z tą aplikacją",
     "linkToClient": "Które z twoich kont chciałbyś, aby <1></1> połączyć z {{clientName}}",
     "title": "Wybierz subkonta"
   },
@@ -144,7 +144,7 @@
     "somethingWentWrong": "Coś poszło nie tak...",
     "submitCap": "Wyślij",
     "successTitle": "Formularz został wysłany!",
-    "termsOfUse": "Kontynuując, akceptujesz <2>warunki użytkowania</2>",
+    "termsOfUse": "Kontynuując, akceptujesz <1>warunki użytkowania</1>",
     "tryAgain": "Spróbuj ponownie"
   },
   "commonContent": {
@@ -153,10 +153,10 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
-    "title40": "Zatwierdź prośbę o połączenie w twojej<1></1> aplikacji {{walletName}}."
+    "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
-    "connectedTitle": "Postępuj zgodnie z instrukcjami na komputerze, aby połączyć swoje {{selectedIntegrationName}}",
+    "connectedTitle": "Postępuj zgodnie z instrukcjami na komputerze, aby połączyć {{selectedIntegrationName}}",
     "failedBody": "Nie można nawiązać połączenia z {{integrationName}}. Sprawdź poprawność adresu i identyfikatory sieci, a następnie spróbuj ponownie.",
     "failedTitle": "Połączenie nieudane",
     "notConnectedStep1": "1. Otwórz ten link na urządzeniu <1>stacjonarnym</1>",
@@ -823,7 +823,7 @@
     },
     "connected": {
       "action": "Wróć do {{clientName}}",
-      "backup": "You have successfully connected your account.",
+      "backup": "Pomyślnie połączono swoje konto.",
       "subtitle": "Wróć do {{clientName}}, aby kontynuować",
       "title": "Jesteś połączony z {{selectedIntegrationName}}"
     },
