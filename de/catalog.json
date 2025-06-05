@@ -313,56 +313,56 @@
     "warningTitle": "Lies diese Nachricht vollständig durch, bevor Du fortfährst."
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "Kontotyp nicht unterstützt",
     "amountBelowMinimum": "Betrag zu niedrig",
     "amountExceedsMaximum": "Betrag zu hoch",
+    "badRequest": "Ungültige Anfrage",
     "balanceNotEnough": "Unzureichendes Guthaben",
     "binanceTravelRuleRestriction": "Reisebeschränkung Regel",
     "coinbaseUnavailable": "Coinbase nicht verfügbar",
+    "configurationMismatch": "Konfigurationsfehler",
     "emptyWalletBalance": "Leerer Wallet",
+    "expiredSmartDeposit": "Smart-Einzahlung abgelaufen",
     "failedToGetFundingOptions": "Fehler bei den Finanzierungsmöglichkeiten",
     "failedToSaveFundingOptions": "Speichern fehlgeschlagen",
     "feeAssetBalanceNotEnough": "Unzureichendes Gebührenguthaben",
+    "forbiddenByIntegration": "Zugang verboten",
     "fromAccountNotSupported": "Abhebung nicht unterstützt",
+    "integrationError": "Integrationsfehler",
     "integrationNotAvailable": "Integration nicht verfügbar",
+    "invalidField": "Ungültige Informationen",
+    "invalidFromIntegrationToken": "Ungültiges Quell-Token",
+    "invalidIntegrationToken": "Ungültiges Token",
+    "invalidToIntegrationToken": "Ungültiges Ziel-Token",
     "kycRequired": "KYC erforderlich",
     "locked": "Konto gesperrt",
+    "missingField": "Fehlende Informationen",
     "networkDisabled": "Netzwerk deaktiviert",
+    "networkUnsupported": "Netzwerk nicht unterstützt",
+    "noAvailableSmartContract": "Smart Contract nicht verfügbar",
+    "notAuthorizedFromIntegrationToken": "Quelle nicht autorisiert",
+    "notAuthorizedToIntegrationToken": "Ziel nicht autorisiert",
+    "notFound": "Nicht gefunden",
+    "notSupported": "Nicht unterstützt",
+    "orderTypeNotSupported": "Bestelltyp nicht unterstützt",
     "passKeyNotSupported": "Passkey nicht unterstützt",
+    "paymentMethodNotAvailable": "Zahlungsmethode nicht verfügbar",
+    "permissionDenied": "Zugriff verweigert",
     "previewExpired": "Vorschau abgelaufen",
+    "refusedByIntegration": "Überweisung abgelehnt",
     "satoshiTestRequired": "Betragsgrenze überschritten",
+    "serverFailure": "Serverfehler",
     "symbolNotSupported": "Symbol nicht unterstützt",
     "symbolNotSupportedBySource": "Quelle nicht unterstützt",
     "symbolNotSupportedByTarget": "Ziel nicht unterstützt",
+    "symbolNotSupportedForTrading": "Handel nicht unterstützt",
+    "timeInForceNotSupported": "Gültigkeitsdauer nicht unterstützt",
     "toAccountNotSupported": "Einzahlung nicht unterstützt",
     "tooManyRequests": "Zu viele Anfragen",
     "transferAlreadyRequested": "Transfer bereits angefordert",
     "twoFaFailed": "Ungültiger 2FA-Code",
-    "withdrawalLocked": "Abhebungen gesperrt",
-    "badRequest": "Ungültige Anfrage",
-    "serverFailure": "Serverfehler",
-    "permissionDenied": "Zugriff verweigert",
-    "notFound": "Nicht gefunden",
-    "missingField": "Fehlende Informationen",
-    "invalidField": "Ungültige Informationen",
-    "notSupported": "Nicht unterstützt",
-    "integrationError": "Integrationsfehler",
-    "invalidIntegrationToken": "Ungültiges Token",
     "unauthorizedToken": "Unbefugtes Token",
-    "forbiddenByIntegration": "Zugang verboten",
-    "networkUnsupported": "Netzwerk nicht unterstützt",
-    "invalidFromIntegrationToken": "Ungültiges Quell-Token",
-    "invalidToIntegrationToken": "Ungültiges Ziel-Token",
-    "notAuthorizedFromIntegrationToken": "Quelle nicht autorisiert",
-    "notAuthorizedToIntegrationToken": "Ziel nicht autorisiert",
-    "configurationMismatch": "Konfigurationsfehler",
-    "refusedByIntegration": "Überweisung abgelehnt",
-    "noAvailableSmartContract": "Smart Contract nicht verfügbar",
-    "expiredSmartDeposit": "Smart-Einzahlung abgelaufen",
-    "symbolNotSupportedForTrading": "Handel nicht unterstützt",
-    "orderTypeNotSupported": "Bestelltyp nicht unterstützt",
-    "accountTypeNotSupported": "Kontotyp nicht unterstützt",
-    "paymentMethodNotAvailable": "Zahlungsmethode nicht verfügbar",
-    "timeInForceNotSupported": "Gültigkeitsdauer nicht unterstützt"
+    "withdrawalLocked": "Abhebungen gesperrt"
   },
   "errorMessages": {
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "Bitte wähle eine andere Börse oder Wallet für die Einzahlung."
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "Sie sind mit {{selectedIntegrationName}} verbunden",
-      "subtitle": "Zurück zu {{clientName}}, um fortzufahren",
-      "action": "Zurück zu {{clientName}}"
+    "awaitingConnection": {
+      "action": "Öffne {{selectedIntegrationName}} erneut",
+      "subtitle": "Bitte melden Sie sich in Ihrem Browser an und genehmigen Sie den Zugriff.",
+      "title": "Warte auf Verbindung"
     },
     "checking": {
       "message": "Ihre Assets werden überprüft..."
     },
-    "awaitingConnection": {
-      "title": "Warte auf Verbindung",
-      "subtitle": "Bitte melden Sie sich in Ihrem Browser an und genehmigen Sie den Zugriff.",
-      "action": "Öffne {{selectedIntegrationName}} erneut"
+    "connected": {
+      "action": "Zurück zu {{clientName}}",
+      "subtitle": "Zurück zu {{clientName}}, um fortzufahren",
+      "title": "Sie sind mit {{selectedIntegrationName}} verbunden"
     },
     "error": {
       "connection": {
-        "title": "Konnte keine Verbindung zu {{selectedIntegrationName}} herstellen",
+        "action": "Öffne {{selectedIntegrationName}} erneut",
         "subtitle": "Es scheint, dass Sie die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen haben. Bitte öffnen Sie {{selectedIntegrationName}} erneut und beenden Sie die Anmeldung.",
-        "action": "Öffne {{selectedIntegrationName}} erneut"
+        "title": "Konnte keine Verbindung zu {{selectedIntegrationName}} herstellen"
       }
     },
     "redirecting": {
-      "title": "Umleitung zu {{selectedIntegrationName}}",
+      "action": "Weiter zu {{selectedIntegrationName}}",
       "subtitle": "Sie werden zu Ihrem Browser weitergeleitet, um sich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Sie fertig sind, kehren Sie automatisch hierher zurück.",
-      "action": "Weiter zu {{selectedIntegrationName}}"
+      "title": "Umleitung zu {{selectedIntegrationName}}"
     }
   },
   "oauthInitialPage": {

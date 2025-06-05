@@ -280,12 +280,12 @@
     "checkDetails": "查看原因",
     "checkDetails40": "查看交易详情",
     "depositAddress": "{{shortAddress}}此地址将接收<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
-    "depositClient": "您{{clientName}}({{shortAddress}}）将收到<1>{{amountCrypto}} ~{{amountFiat}}</1>",
+    "depositClient": "您{{clientName}}({{shortAddress}}）将收到<2>{{amountCrypto}} ~{{amountFiat}}</2>",
     "directMobileBody": "返回 TAO 结账页面以完成您的付款。",
     "directMobileTitle": "支付已发起",
     "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
-    "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><3></3>的支付至{{clientName}}",
+    "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><4></4>的支付至{{clientName}}",
     "waiting": "在收到足够的网络认证之前，转账不会完成。"
   },
   "doneVerifyPage": {
@@ -313,56 +313,56 @@
     "warningTitle": "在继续之前，请完整阅读此信息。"
   },
   "errorHeadlines": {
+    "accountTypeNotSupported": "不支持该账户类型",
     "amountBelowMinimum": "金额过低",
     "amountExceedsMaximum": "金额过高",
+    "badRequest": "请求无效",
     "balanceNotEnough": "余额不足",
     "binanceTravelRuleRestriction": "旅行规则限制",
     "coinbaseUnavailable": "Coinbase服务不可用",
+    "configurationMismatch": "配置异常",
     "emptyWalletBalance": "清空钱包",
+    "expiredSmartDeposit": "智能存款已过期",
     "failedToGetFundingOptions": "充值选项错误",
     "failedToSaveFundingOptions": "保存失败",
     "feeAssetBalanceNotEnough": "手续费余额不足",
+    "forbiddenByIntegration": "访问被禁止",
     "fromAccountNotSupported": "不支持提现",
+    "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
+    "invalidField": "信息无效",
+    "invalidFromIntegrationToken": "来源代币无效",
+    "invalidIntegrationToken": "代币无效",
+    "invalidToIntegrationToken": "目标代币无效",
     "kycRequired": "需要进行KYC身份验证",
     "locked": "账户已被锁定",
+    "missingField": "信息缺失",
     "networkDisabled": "网络已被禁用",
+    "networkUnsupported": "不支持该网络",
+    "noAvailableSmartContract": "智能合约服务暂不可用",
+    "notAuthorizedFromIntegrationToken": "资金来源未授权",
+    "notAuthorizedToIntegrationToken": "目标账户未授权",
+    "notFound": "未找到相关内容",
+    "notSupported": "不支持",
+    "orderTypeNotSupported": "不支持该订单类型",
     "passKeyNotSupported": "不支持通行密钥",
+    "paymentMethodNotAvailable": "付款方式不可用",
+    "permissionDenied": "访问被拒绝",
     "previewExpired": "预览已过期",
+    "refusedByIntegration": "转账被拒绝",
     "satoshiTestRequired": "金额超限",
+    "serverFailure": "服务器错误",
     "symbolNotSupported": "不支持该币种",
     "symbolNotSupportedBySource": "不支持该资金来源",
     "symbolNotSupportedByTarget": "不支持目标账户",
+    "symbolNotSupportedForTrading": "不支持该交易",
+    "timeInForceNotSupported": "不支持该有效时间类型",
     "toAccountNotSupported": "不支持存款",
     "tooManyRequests": "操作请求过多",
     "transferAlreadyRequested": "转账请求已提交",
     "twoFaFailed": "无效的双重认证",
-    "withdrawalLocked": "提款已被锁定",
-    "badRequest": "请求无效",
-    "serverFailure": "服务器错误",
-    "permissionDenied": "访问被拒绝",
-    "notFound": "未找到相关内容",
-    "missingField": "信息缺失",
-    "invalidField": "信息无效",
-    "notSupported": "不支持",
-    "integrationError": "钱包集成错误",
-    "invalidIntegrationToken": "代币无效",
     "unauthorizedToken": "代币未授权",
-    "forbiddenByIntegration": "访问被禁止",
-    "networkUnsupported": "不支持该网络",
-    "invalidFromIntegrationToken": "来源代币无效",
-    "invalidToIntegrationToken": "目标代币无效",
-    "notAuthorizedFromIntegrationToken": "资金来源未授权",
-    "notAuthorizedToIntegrationToken": "目标账户未授权",
-    "configurationMismatch": "配置异常",
-    "refusedByIntegration": "转账被拒绝",
-    "noAvailableSmartContract": "智能合约服务暂不可用",
-    "expiredSmartDeposit": "智能存款已过期",
-    "symbolNotSupportedForTrading": "不支持该交易",
-    "orderTypeNotSupported": "不支持该订单类型",
-    "accountTypeNotSupported": "不支持该账户类型",
-    "paymentMethodNotAvailable": "付款方式不可用",
-    "timeInForceNotSupported": "不支持该有效时间类型"
+    "withdrawalLocked": "提款已被锁定"
   },
   "errorMessages": {
     "amountBelowMinimum": "转账金额小于此网络的最低转账值。",
@@ -811,30 +811,30 @@
     "selectAnotherDescription": "请选择其他交易所或钱包以充值。"
   },
   "oauthExternalPage": {
-    "connected": {
-      "title": "您已与{{selectedIntegrationName}}连接",
-      "subtitle": "返回至{{clientName}}继续",
-      "action": "返回{{clientName}}"
+    "awaitingConnection": {
+      "action": "重新打开{{selectedIntegrationName}}",
+      "subtitle": "请在浏览器中完成登录并批准访问。",
+      "title": "等待连接"
     },
     "checking": {
       "message": "正在检查您的资产……"
     },
-    "awaitingConnection": {
-      "title": "等待连接",
-      "subtitle": "请在浏览器中完成登录并批准访问。",
-      "action": "重新打开{{selectedIntegrationName}}"
+    "connected": {
+      "action": "返回{{clientName}}",
+      "subtitle": "返回至{{clientName}}继续",
+      "title": "您已与{{selectedIntegrationName}}连接"
     },
     "error": {
       "connection": {
-        "title": "无法连接到{{selectedIntegrationName}}",
+        "action": "重新打开{{selectedIntegrationName}}",
         "subtitle": "您似乎未完成登录流程或未批准访问权限。要继续，请重新打开{{selectedIntegrationName}}并完成登录。",
-        "action": "重新打开{{selectedIntegrationName}}"
+        "title": "无法连接到{{selectedIntegrationName}}"
       }
     },
     "redirecting": {
-      "title": "跳转至 {{selectedIntegrationName}}",
+      "action": "继续前往{{selectedIntegrationName}}",
       "subtitle": "您将被跳转至浏览器以使用{{selectedIntegrationName}}安全登录。完成后，您将自动返回本页。",
-      "action": "继续前往{{selectedIntegrationName}}"
+      "title": "跳转至 {{selectedIntegrationName}}"
     }
   },
   "oauthInitialPage": {
