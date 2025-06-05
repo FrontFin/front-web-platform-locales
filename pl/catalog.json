@@ -220,7 +220,7 @@
     "awaitingConfirmation": "Oczekiwanie na potwierdzenie z aplikacji mobilnej",
     "clickOpenApp": "Kliknij <1> Otwórz aplikację {{integrationName}}</1> poniżej",
     "confirmInApp": "Potwierdź w swojej mobilnej aplikacji {{integrationName}}, że to rzeczywiście ty próbujesz się zalogować.",
-    "confirmPrompt": "Potwierdź wezwanie, aby zweryfikować, że to ty",
+    "confirmPrompt": "Potwierdź w komunikacie, że to Ty",
     "openApp": "Otwórz aplikację {{integrationName}}",
     "openAppOnPhone": "Otwórz aplikację {{integrationName}} na swoim telefonie",
     "returnHere": "Wróć tutaj, aby kontynuować",
@@ -259,8 +259,8 @@
       "purchase": "Zakup <1>{{amount}}</1> wartości {{symbol}} w {{selectedIntegrationName}}.",
       "requestToTransferPaymentSmartToAddress": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} przez relacyjny kontrakt {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentSmartToClient": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} przez relacyjny kontrakt {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentToAddress": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}}.",
-      "requestToTransferPaymentToClient": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}}.",
+      "requestToTransferPaymentToAddress": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}}.",
+      "requestToTransferPaymentToClient": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}}.",
       "requestToTransferSmartToAddress": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{shortToAddress}} przez relacyjny kontrakt {{shortSmartContractsAddress}}.",
       "requestToTransferSmartToClient": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}} przez relacyjny kontrakt {{shortSmartContractsAddress}}.",
       "requestToTransferToAddress": "Żądanie transferu <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{shortToAddress}}.",
@@ -323,7 +323,7 @@
     "configurationMismatch": "Błąd konfiguracji",
     "emptyWalletBalance": "Pusty portfel",
     "expiredSmartDeposit": "Inteligentny depozyt wygasł",
-    "failedToGetFundingOptions": "Błąd opcji finansowania",
+    "failedToGetFundingOptions": "Błąd przy pobieraniu dostępnych metod wpłaty",
     "failedToSaveFundingOptions": "Zapis nie powiódł się",
     "feeAssetBalanceNotEnough": "Niewystarczające środki na pokrycie opłat",
     "forbiddenByIntegration": "Dostęp zabroniony",
@@ -344,8 +344,8 @@
     "notAuthorizedToIntegrationToken": "Destynacja nieautoryzowana",
     "notFound": "Nie znaleziono",
     "notSupported": "Nieobsługiwany",
-    "orderTypeNotSupported": "Typ zlecenia nieobsługiwany",
-    "passKeyNotSupported": "Klucz dostępu nieobsługiwany",
+    "orderTypeNotSupported": "Nieobsługiwany typ zlecenia",
+    "passKeyNotSupported": "Klucz dostępu nie jest obsługiwany",
     "paymentMethodNotAvailable": "Metoda płatności niedostępna",
     "permissionDenied": "Dostęp zabroniony",
     "previewExpired": "Podgląd wygasł",
@@ -359,7 +359,7 @@
     "timeInForceNotSupported": "Reguła 'Time in Force' nieobsługiwana",
     "toAccountNotSupported": "Depozyt nieobsługiwany",
     "tooManyRequests": "Za dużo żądań",
-    "transferAlreadyRequested": "Transfer już jest zlecony",
+    "transferAlreadyRequested": "Transfer został już zlecony",
     "twoFaFailed": "Nieprawidłowy kod 2FA",
     "unauthorizedToken": "Nieautoryzowany token",
     "withdrawalLocked": "Wypłaty zablokowane"
@@ -376,8 +376,8 @@
     "failedToSaveFundingOptions": "Nie udało się zapisać metod płatności",
     "feeAssetBalanceNotEnough": "Niewystarczające środki na opłaty transferowe.",
     "fromAccountNotSupported": "Konto nie obsługuje obecnie wypłat w kryptowalutach.",
-    "integrationNotAvailable": "Integracja jest obecnie niedostępna.",
-    "kycRequired": "Nie można zainicjować transferu. Integracja wymaga zakończenia weryfikacji KYC przed umożliwieniem transferów kryptowalut.",
+    "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
+    "kycRequired": "Nie można zainicjować transferu. Integracja wymaga ukończenia weryfikacji KYC na koncie przed włączeniem transferów kryptowalut.",
     "locked": "Twoje konto jest zablokowane",
     "networkDisabled": "Sieć jest obecnie wyłączona i nie może być używana.",
     "passKeyNotSupported": "Klucz dostępu nie jest obecnie obsługiwany, proszę wyłączyć, aby kontynuować.",
@@ -386,10 +386,10 @@
     "symbolNotSupported": "Symbol nie jest obsługiwany przez integrację.",
     "symbolNotSupportedBySource": "Symbol do transferu nie jest obsługiwany przez źródłowy portfel w żądanej sieci.",
     "symbolNotSupportedByTarget": "Nie udało się znaleźć adresu do wpłaty dla wybranej kryptowaluty.",
-    "toAccountNotSupported": "Konto docelowe nie obsługuje obecnie depozytów w kryptowalutach.",
+    "toAccountNotSupported": "Konto docelowe nie obsługuje obecnie wpłat w kryptowalutach.",
     "tooManyRequests": "Proszę spróbować ponownie później.",
     "transferAlreadyRequested": "Transfer już jest zlecony.",
-    "twoFaFailed": "Dwukrotna walidacja nie powiodła się. Spróbuj ponownie.",
+    "twoFaFailed": "Dwustopniowa weryfikacja się nie powiodła. Proszę spróbować ponownie.",
     "withdrawalLocked": "Dla twojego bezpieczeństwa, wypłaty są zablokowane na 24 godziny po zmianie ustawień konta. Proszę spróbować ponownie później."
   },
   "errorPage": {
@@ -452,18 +452,18 @@
     "email": "E-mail",
     "emailOrUsername": "E-mail lub nazwa użytkownika",
     "mfaCode": "Kod MFA",
-    "passphrase": "Fraza kluczowa",
+    "passphrase": "Fraza bezpieczeństwa",
     "password": "Hasło",
     "phone": "Numer telefonu",
     "privateKey": "Klucz prywatny",
     "secretKey": "Klucz tajny",
-    "tradePin": "Kod transakcyjny",
+    "tradePin": "Kod PIN transakcyjny",
     "userId": "Identyfikator użytkownika",
     "username": "Nazwa użytkownika"
   },
   "fullScreenSpinner": {
     "linking": "Podłączanie Twojego konta...",
-    "loading": "Nadal trwa praca..."
+    "loading": "Przetwarzanie w toku..."
   },
   "fundingLoadingOverlay": {
     "loading": "Ładowanie..."
@@ -473,7 +473,7 @@
       "conversion": "Opłata za konwersję {{integrationName}} z {{conversionFromCurrency}} na {{conversionToCurrency}}",
       "deposit": "Opłata depozytowa {{integrationName}}",
       "purchase": "Opłata za zakup {{integrationName}} {{fiatSymbol}} na {{cryptocurrencySymbol}}",
-      "withdrawal": "Opłata z tytułu wypłaty {{integrationName}}"
+      "withdrawal": "Opłata za wypłatę w {{integrationName}}"
     },
     "info": {
       "conversion": "Opłata, którą {{integrationName}} pobierze za przeliczenie Twojego {{conversionFromSymbol}} na {{conversionToSymbol}}.",
@@ -482,13 +482,13 @@
     }
   },
   "fundingMethodsList": {
-    "buyingPower": "Siła nabywcza",
+    "buyingPower": "Dostępne środki",
     "cryptocurrencyBalance": "Saldo {{symbol}}",
-    "noneSelected": "nic nie wybrano",
+    "noneSelected": "nie wybrano żadnej opcji",
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
-    "stablecoinConversion": "Konwersja stablecoin",
+    "stablecoinConversion": "Przeliczanie stablecoina",
     "withAdditional_one": "{{mainOption}} + {{count}} inne",
-    "withAdditional_other": "{{mainOption}} + {{count}} inne"
+    "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{integrationName}} nie obsługuje użycia tej metody finansowania do zakupu {{assetName}}.",
@@ -497,7 +497,7 @@
     "currencyNotSupported": "Kupowanie kryptowalut za pomocą metody finansowania innej niż USD nie jest obecnie obsługiwane.",
     "depositAmountLimitExceeded": "Ten zakup przekroczyłby dzienny limit depozytu {{integrationName}} dla tej metody finansowania.",
     "depositCountLimitReached": "Ta metoda finansowania osiągnęła już maksymalną liczbę depozytów dziennych {{integrationName}}.",
-    "depositsNotSupported": "Ta metoda finansowania nie jest obsługiwana dla tej transakcji.",
+    "depositsNotSupported": "Ta metoda wpłaty nie jest obsługiwana dla tej transakcji.",
     "instantDepositLimitExceeded": "Limit natychmiastowego depozytu tej metody finansowania jest niewystarczający dla tego zakupu",
     "instantDepositsNotSupported": "Ta metoda finansowania nie obsługuje natychmiastowych depozytów, więc nie może być użyta do tego zakupu.",
     "insufficientBalance": "Niewystarczające saldo, aby sfinansować ten zakup.",
