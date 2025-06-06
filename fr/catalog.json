@@ -1,6 +1,6 @@
 {
   "accessDeniedPage": {
-    "body": "Malheureusement, l'activité de votre pays n'est actuellement pas autorisée.",
+    "body": "Malheureusement, l’activité dans votre pays n’est actuellement pas autorisée.",
     "title": "Accès refusé"
   },
   "addressWhitelistPage": {
@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Une erreur est survenue.",
-    "directMobileFlowError": "Session expirée. Veuillez retourner à votre page de paiement TAO et réessayer."
+    "directMobileFlowError": "Session expirée. Veuillez retourner sur votre page de paiement TAO et réessayer."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Connecter un autre portefeuille",
@@ -281,11 +281,11 @@
     "checkDetails40": "Voir les détails de la transaction",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>seront reçu à {{shortAddress}}",
     "depositClient": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> dans {{clientName}} ({{shortAddress}})",
-    "directMobileBody": "Retournez à votre page de paiement TAO pour finaliser votre paiement.",
+    "directMobileBody": "Retournez sur votre page de paiement TAO pour finaliser votre paiement.",
     "directMobileTitle": "Paiement initié",
     "goBackToShift4": "← Retourner à Shift4",
     "goToIntegrationToApprove": "Veuillez aller sur <1>{{selectedIntegrationName}}</1> pour approuver ce transfert.",
-    "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3>à {{clientName}}",
+    "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3> à {{clientName}}",
     "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau."
   },
   "doneVerifyPage": {
@@ -318,14 +318,14 @@
     "amountExceedsMaximum": "Montant trop élevé",
     "badRequest": "Requête invalide",
     "balanceNotEnough": "Solde insuffisant",
-    "binanceTravelRuleRestriction": "Restriction de la règle de voyage",
+    "binanceTravelRuleRestriction": "Restriction imposée par la Travel Rule",
     "coinbaseUnavailable": "Coinbase indisponible",
     "configurationMismatch": "Erreur de configuration",
     "emptyWalletBalance": "Portefeuille vide",
     "expiredSmartDeposit": "Dépôt intelligent expiré",
     "failedToGetFundingOptions": "Erreur d'options de financement",
     "failedToSaveFundingOptions": "Échec de l'enregistrement",
-    "feeAssetBalanceNotEnough": "Solde de frais insuffisant",
+    "feeAssetBalanceNotEnough": "Solde insuffisant pour couvrir les frais",
     "forbiddenByIntegration": "Accès interdit",
     "fromAccountNotSupported": "Retrait non pris en charge",
     "integrationError": "Erreur d'intégration",
@@ -356,13 +356,34 @@
     "symbolNotSupportedBySource": "Source non prise en charge",
     "symbolNotSupportedByTarget": "Destination non prise en charge",
     "symbolNotSupportedForTrading": "Trading non pris en charge",
-    "timeInForceNotSupported": "Modalité temporelle non prise en charge",
+    "timeInForceNotSupported": "Paramètre « Time in Force » non pris en charge",
     "toAccountNotSupported": "Dépôt non pris en charge",
-    "tooManyRequests": "Trop de demandes",
+    "tooManyRequests": "Trop de requêtes",
     "transferAlreadyRequested": "Transfert déjà demandé",
     "twoFaFailed": "Code 2FA invalide",
     "unauthorizedToken": "Jeton non autorisé",
-    "withdrawalLocked": "Retraits verrouillés"
+    "coinbaseTravelRuleRestriction": "Restriction imposée par la Travel Rule",
+    "withdrawalLocked": "Retraits verrouillés",
+    "selfTransferNotAllowed": "Transfert personnel non autorisé",
+    "sendAccessDisabled": "Envoi d'accès désactivé",
+    "tryAgainAfterLogin": "Connexion requise",
+    "unableToSend": "Échec du transfert",
+    "userInfoUnavailable": "Informations utilisateur indisponibles",
+    "webWithdrawalLimitExceeded": "Limite de retrait dépassée",
+    "whitelistAddressRequired": "Liste blanche d'adresses requise",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Retrait temporairement désactivé",
+    "withdrawalDisabledDueToScamRisk": "Retrait temporairement désactivé",
+    "withdrawalDisabledDueToSecurityReset": "Retrait temporairement désactivé",
+    "withdrawalDisabledDueToSuspiciousActivity": "Retrait temporairement désactivé",
+    "withdrawalPendingDepositConfirmation": "Retrait en attente de confirmation",
+    "accountNotFound": "Compte introuvable",
+    "addressNotAllowlisted": "Adresse non autorisée",
+    "addressAllowlistPending": "Liste blanche d'adresse en attente",
+    "authenticationFailed": "Échec de l'authentification",
+    "belowMinimumFiatDeposit": "En dessous du dépôt minimum en monnaie fiduciaire",
+    "exceedsApplicationLimit": "Dépassé la limite de l'application",
+    "invalidCredentials": "Identifiants invalides",
+    "mfaNotSupported": "MFA non pris en charge"
   },
   "errorMessages": {
     "amountBelowMinimum": "Le montant demandé est inférieur au montant minimum de transfert autorisé sur ce réseau.",
@@ -390,7 +411,36 @@
     "tooManyRequests": "Veuillez réessayer plus tard.",
     "transferAlreadyRequested": "Le transfert est déjà demandé.",
     "twoFaFailed": "La validation en deux étapes a échoué. Veuillez réessayer.",
-    "withdrawalLocked": "Pour votre sécurité, les retraits sont temporairement désactivés pendant 24 heures après toute modification des paramètres du compte. Veuillez réessayer plus tard."
+    "coinbaseTravelRuleRestriction": "L'API Coinbase ne prend actuellement pas en charge les transferts depuis votre pays en raison des restrictions globales sur les règles de déplacement.",
+    "withdrawalLocked": "Pour votre sécurité, les retraits sont temporairement désactivés pendant 24 heures après toute modification des paramètres du compte. Veuillez réessayer plus tard.",
+    "accountNotFound": "Impossible de récupérer votre/vos compte(s).",
+    "addressNotAllowlisted": "Impossible d'initier le retrait depuis Coinbase. Vous devez ajouter cette adresse de destinataire à votre liste autorisée ici : https://www.coinbase.com/settings/allowlist",
+    "addressAllowlistPending": "Cette adresse de destinataire a été ajoutée à votre liste autorisée et est en attente de validation.",
+    "authenticationFailed": "Impossible de s'authentifier avec l'intégration sélectionnée.",
+    "belowMinimumFiatDeposit": "Le montant est inférieur à la limite de dépôt minimum en monnaie fiduciaire.",
+    "exceedsApplicationLimit": "Le montant du transfert dépasse la limite de l'application.",
+    "invalidCredentials": "Identifiants invalides. Veuillez réessayer.",
+    "mfaNotSupported": "L'authentification multifacteur n'est pas prise en charge pour cette opération.",
+    "selfTransferNotAllowed": "Vous ne pouvez pas envoyer un transfert depuis un compte vers lui-même.",
+    "sendAccessDisabled": "Impossible d'initier le retrait car l'accès d'envoi a été désactivé pour ce compte.",
+    "tryAgainAfterLogin": "Veuillez réessayer après vous être connecté.",
+    "unableToSend": "Impossible d'envoyer le transfert. Veuillez réessayer.",
+    "userInfoUnavailable": "Impossible d'obtenir les informations utilisateur. Veuillez réessayer.",
+    "webWithdrawalLimitExceeded": "Vous avez dépassé la limite maximale de retrait quotidien pour la version web de Binance.",
+    "whitelistAddressRequired": "L'adresse de destination doit être sur liste blanche.",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Pour la sécurité de vos actifs, certains de vos actifs de dépôt C2C doivent être gelés pendant 24 heures. Après 24 heures, l'état gelé sera automatiquement levé et vous pourrez retirer de la crypto. Pendant la période de gel, vos transactions sur site ne seront pas affectées, veuillez utiliser normalement les services de transaction de Binance.",
+    "withdrawalDisabledDueToScamRisk": "Votre retrait a été identifié comme étant à haut risque. Pour sécuriser vos fonds, les retraits de votre compte sont temporairement désactivés pendant 1 heure.",
+    "withdrawalDisabledDueToSecurityReset": "La fonction de retrait de votre compte a été temporairement désactivée suite à une récente réinitialisation de vérification de sécurité.",
+    "withdrawalDisabledDueToSuspiciousActivity": "Votre fonction de retrait a été désactivée en raison d'une activité suspecte. Veuillez compléter le processus de vérification sur Binance. Si vous ne pouvez pas vérifier, contactez le service client. Si vous avez récemment terminé la vérification, veuillez patienter un moment et réessayer.",
+    "withdrawalPendingDepositConfirmation": "Votre dépôt n'a pas atteint les confirmations de déverrouillage requises pour le retrait. Veuillez vérifier l'historique des transactions pour plus de détails.",
+    "invalidFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
+    "invalidToIntegrationToken": "Impossible d'identifier la destination.",
+    "notAuthorizedFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
+    "notAuthorizedToIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
+    "configurationMismatch": "Impossible d'initier le transfert. La configuration du compte ne correspond pas au transfert demandé.",
+    "refusedByIntegration": "Impossible d'initier le transfert. L'intégration a refusé la demande.",
+    "noAvailableSmartContract": "Contrat intelligent indisponible",
+    "expiredSmartDeposit": "Le dépôt intelligent a expiré. Le contrat intelligent a été désalloué."
   },
   "errorPage": {
     "title": "Une erreur est survenue."
@@ -813,7 +863,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Rouvrir {{selectedIntegrationName}}",
-      "subtitle": "Veuillez terminer la connexion et approuver l'accès dans votre navigateur.",
+      "subtitle": "Veuillez finaliser la connexion et approuver l’accès dans votre navigateur.",
       "title": "En attente de connexion"
     },
     "checking": {
@@ -821,19 +871,20 @@
     },
     "connected": {
       "action": "Retourner à {{clientName}}",
+      "backup": "Vous avez connecté votre compte avec succès.",
       "subtitle": "Retour à {{clientName}} pour continuer",
       "title": "Vous êtes connecté avec {{selectedIntegrationName}}"
     },
     "error": {
       "connection": {
         "action": "Rouvrir {{selectedIntegrationName}}",
-        "subtitle": "Il semble que vous n'ayez pas terminé de vous connecter ou d'approuver l'accès. Pour continuer, veuillez rouvrir {{selectedIntegrationName}} et terminer la connexion.",
+        "subtitle": "Il semble que vous n’ayez pas terminé la connexion ou approuvé l’accès. Pour continuer, veuillez rouvrir {{selectedIntegrationName}} et finaliser la connexion.",
         "title": "Impossible de se connecter à {{selectedIntegrationName}}"
       }
     },
     "redirecting": {
       "action": "Continuer sur {{selectedIntegrationName}}",
-      "subtitle": "Vous serez redirigé vers votre navigateur pour vous connecter en toute sécurité avec {{selectedIntegrationName}}. Une fois terminé, vous reviendrez ici automatiquement.",
+      "subtitle": "Vous serez redirigé vers votre navigateur pour vous connecter en toute sécurité avec {{selectedIntegrationName}}. Une fois la connexion terminée, vous reviendrez ici automatiquement.",
       "title": "Redirection vers {{selectedIntegrationName}}"
     }
   },
@@ -1017,7 +1068,7 @@
     "returnToClientButton": "Retour à {{clientName}}",
     "spotAccountsBody": "Seuls les comptes de type spot sont actuellement pris en charge. Les actifs dans d'autres types de comptes, tels que les comptes sur marge, ne seront pas détectés.",
     "topUpButton": "Recharger le solde",
-    "topUpUSDCInstruction": "Rechargez votre solde USDC dans votre portefeuille Phantom.",
+    "topUpUSDCInstruction": "Rechargez votre solde en USDC dans votre portefeuille Phantom.",
     "tryAgainFromTaoInstruction": "Réessayez depuis votre page de paiement TAO.",
     "unableTransferError": "Impossible d'initier le transfert."
   },

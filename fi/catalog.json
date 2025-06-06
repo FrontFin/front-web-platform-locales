@@ -41,7 +41,7 @@
     "chooseAnotherAccount": "Valitse toinen tili",
     "description": "Sinulla on oltava sekä sähköposti että tunnistautumissovellus määriteltyinä 2FA-menetelminä <1>Binance</1>-tililläsi.",
     "ensureConfigured": "Varmista, että sekä sähköposti että tunnistautumissovellus ovat määriteltyinä 2FA:lle",
-    "goToSettings": "Siirry <1>Binancen</1> tietoturva-asetuksiin napauttamalla alta",
+    "goToSettings": "Siirry <1>Binancen</1> tietoturva-asetuksiin klikkaamalta alta",
     "mayNeedReAuthApp": "Huomautus: Saatat joutua tunnistautumaan uudelleen Binance-tilillesi aloittaaksesi tämän siirron, kun palaat <2>sovellukseen</2>.",
     "mayNeedReAuthClient": "Huomautus: Saatat joutua tunnistautumaan uudelleen Binance-tilillesi aloittaaksesi tämän siirron, kun palaat <2>{{clientName}}</2>.",
     "openBinance": "Avaa Binance",
@@ -54,7 +54,7 @@
     "securityNote": "Huomio: Turvallisuussyistä kryptonostot on poistettu käytöstä 24 tunnin ajaksi salasanan vaihdon jälkeen.",
     "steps": {
       "completeProcess": "Viimeistele palautusprosessi salasanasi palauttamiseksi.",
-      "enterEmail": "Syötä sähköpostisi tai puhelinnumerosi ja napauta \"Unohditko salasanasi?\".",
+      "enterEmail": "Syötä sähköpostisi tai puhelinnumerosi ja klikkaa \"Unohditko salasanasi?\".",
       "goToBinance": "Valitse <1>Siirry Binance.com-sivustolle</1> ja sinut ohjataan Binancen sisäänkirjautumissivulle.",
       "returnToLogin": "Palaa tänne kirjautuaksesi sisään uudella salasanallasi."
     },
@@ -107,7 +107,7 @@
   },
   "chainSwitch": {
     "monitoringApproval": "Hyväksynnän seuranta...",
-    "networkChangeDeclined": "Verkon vaihto evättiin",
+    "networkChangeDeclined": "Verkon vaihto hylättiin",
     "networkChangeDeclinedBody": "Olet kieltäytynyt pyynnöstä vaihtaa verkkoja lompakossasi",
     "resendNetworkSwitch": "Lähetä verkon vaihtopyyntö uudelleen",
     "stayOnNetwork": "Pysy {{networkName}} verkossa",
@@ -131,7 +131,7 @@
     "availableForTransfer": "Saatavilla",
     "cancel": "Peruuta",
     "closeCap": "Sulje",
-    "codeNotCorrent": "Annettu koodi on virheellinen.",
+    "codeNotCorrent": "Annettu koodi ei ole oikea.",
     "continueCap": "Jatka",
     "doneCap": "Valmis",
     "failedToLoadTrasferError": "Siirtojen tietoja ei saatu ladattua",
@@ -161,7 +161,7 @@
     "failedTitle": "Yhteys epäonnistui",
     "notConnectedStep1": "1. Avaa tämä linkki <1>tietokoneella</1>",
     "notConnectedStep2": "2. Syötä tämä koodi luodaksesi turvallisen yhteyden lompakkoosi",
-    "notConnectedTitle": "Käytä tietokonetta yhdistääksesi {{selectedIntegrationName}}iin"
+    "notConnectedTitle": "Käytä tietokonetta yhdistääksesi {{selectedIntegrationName}}in"
   },
   "connectionDeclinedPage": {
     "connectAnother": "Yhdistä toinen tili"
@@ -231,7 +231,7 @@
     "verifyLoggedIn": "Varmista, että olet kirjautumassa sisään uudelta laitteelta"
   },
   "doneExternalVerifyScreen": {
-    "body": "Olet varmistanut onnistuneesti omistuksesi <2>{{selectedIntegrationName}}</2> lompakossa.",
+    "body": "Olet varmistanut onnistuneesti omistuksesi <2>{{selectedIntegrationName}}</2> lompakossasi.",
     "returnAction": "Palaa takaisin {{clientName}}"
   },
   "donePage": {
@@ -241,11 +241,11 @@
     "continueToTransfer": "Jatka siirtoon",
     "done": "Valmis",
     "linkAnother": "Liitä toinen tili",
-    "linkedToClient": "Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}</2> <5>{{clientName}}</5>:n.",
+    "linkedToClient": "</1><</1>Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}n</2> <5>{{clientName}}</5>iin.",
     "linkedToThisApp": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}n</2> <5>tähän sovellukseen</5>."
   },
   "doneTransferDetails": {
-    "awaitinApprovalLabel": "Tätä siirtoa ei aloiteta ennen kuin se on hyväksytty {{selectedIntegrationName}}:ssä.",
+    "awaitinApprovalLabel": "Tätä siirtoa ei aloiteta ennen kuin se on hyväksytty {{selectedIntegrationName}}ssä.",
     "defaultTitle": "Tapahtuma valmis",
     "depositTitle": "Talletus valmis",
     "onrampTitle": "Osto valmis",
@@ -323,7 +323,7 @@
     "configurationMismatch": "Määritysvirhe",
     "emptyWalletBalance": "Tyhjä lompakko",
     "expiredSmartDeposit": "Älytalletus vanhentunut",
-    "failedToGetFundingOptions": "Virhe talletustavoissa",
+    "failedToGetFundingOptions": "Virhe rahoitustavoissa",
     "failedToSaveFundingOptions": "Tallennus epäonnistui",
     "feeAssetBalanceNotEnough": "Palkkiosaldo ei riitä",
     "forbiddenByIntegration": "Pääsy estetty",
@@ -362,7 +362,28 @@
     "transferAlreadyRequested": "Siirto on jo pyydetty",
     "twoFaFailed": "Virheellinen 2FA-koodi",
     "unauthorizedToken": "Luvaton tunniste",
-    "withdrawalLocked": "Nostot lukittu"
+    "coinbaseTravelRuleRestriction": "Matkustusrajoitus",
+    "withdrawalLocked": "Nostot lukittu",
+    "selfTransferNotAllowed": "Itseiemestitio ei sallittu",
+    "sendAccessDisabled": "Lähetysoikeus on estetty",
+    "tryAgainAfterLogin": "Kirjautuminen vaaditaan",
+    "unableToSend": "Siirto epäonnistui",
+    "userInfoUnavailable": "Käyttäjätiedot eivät ole saatavilla",
+    "webWithdrawalLimitExceeded": "Nostoraja ylitetty",
+    "whitelistAddressRequired": "Osoitelistalle lisääminen vaaditaan",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Nosto on väliaikaisesti estetty",
+    "withdrawalDisabledDueToScamRisk": "Nosto on väliaikaisesti estetty",
+    "withdrawalDisabledDueToSecurityReset": "Nosto on väliaikaisesti estetty",
+    "withdrawalDisabledDueToSuspiciousActivity": "Nosto on väliaikaisesti estetty",
+    "withdrawalPendingDepositConfirmation": "Noston vahvistus odottaa vielä",
+    "accountNotFound": "Tiliä ei löytynyt",
+    "addressNotAllowlisted": "Osoitetta ei ole sallittujen listalla",
+    "addressAllowlistPending": "Osoitteen salliminen odottaa vielä",
+    "authenticationFailed": "Tunnistus epäonnistui",
+    "belowMinimumFiatDeposit": "Alle vähimmäisfiattitalletuksen rajan",
+    "exceedsApplicationLimit": "Ylittää sovelluksen rajan",
+    "invalidCredentials": "Virheelliset kirjautumistiedot",
+    "mfaNotSupported": "MFA Ei tueta"
   },
   "errorMessages": {
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
@@ -390,7 +411,36 @@
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",
     "twoFaFailed": "Kaksivaiheinen tunnistautuminen epäonnistui. Ole hyvä ja yritä uudelleen.",
-    "withdrawalLocked": "Turvallisuutesi vuoksi nostoja on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen."
+    "coinbaseTravelRuleRestriction": "Coinbase API ei tällä hetkellä tue siirtoja maastasi maailmanlaajuisten matkustusrajoitusten vuoksi.",
+    "withdrawalLocked": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen.",
+    "accountNotFound": "Ei voi hakea tiliäsi.",
+    "addressNotAllowlisted": "Ei voi aloittaa nostoa Coinbasesta. Sinun tulee lisätä tämä vastaanottajan osoite Sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",
+    "addressAllowlistPending": "Tämä vastaanottajan osoite on lisätty Sallittujen listalle ja odottaa käsittelyä.",
+    "authenticationFailed": "Ei voi todentaa valitulla integraatiolla.",
+    "belowMinimumFiatDeposit": "Summa on alle vähimmäisfiattitalletuksen rajan.",
+    "exceedsApplicationLimit": "Siirtosumma ylittää sovelluksen rajan.",
+    "invalidCredentials": "Virheelliset kirjautumistiedot. Ole hyvä ja yritä uudelleen.",
+    "mfaNotSupported": "Monivaiheista todennusta ei tueta tähän operaatioon.",
+    "selfTransferNotAllowed": "Et voi lähettää siirtoa tililtä itselleen.",
+    "sendAccessDisabled": "Ei voi aloittaa nostoa, koska tämän tilin lähetysoikeudet on poistettu käytöstä.",
+    "tryAgainAfterLogin": "Yritä uudelleen kirjauduttuasi sisään.",
+    "unableToSend": "Ei voi lähettää siirtoa. Yritä uudelleen.",
+    "userInfoUnavailable": "Ei voi hakea käyttäjätietoja. Yritä uudelleen.",
+    "webWithdrawalLimitExceeded": "Olet ylittänyt verkkoversion päivittäisen nostorajan Binancessa.",
+    "whitelistAddressRequired": "Kohdeosoitteen on oltava sallittujen listalla.",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Varojesi turvallisuuden vuoksi osa C2C-talletusvaroistasi jäädytetään 24 tunniksi. 24 tunnin jälkeen jäädytystila puretaan automaattisesti ja voit nostaa kryptoa. Jäädytyksen aikana paikan päällä oleviin maksutapahtumiisi ei ole vaikutusta. Käytä Binance:n maksupalveluita normaalisti.",
+    "withdrawalDisabledDueToScamRisk": "Nostosi on tunnistettu korkean riskin kohteeksi. Turvataksesi varasi, nostot tililtäsi on väliaikaisesti poistettu käytöstä tunniksi.",
+    "withdrawalDisabledDueToSecurityReset": "Tilisi nostotoiminto on väliaikaisesti poistettu käytöstä äskettäisen turvallisuusvarmennuksen nollauksen vuoksi.",
+    "withdrawalDisabledDueToSuspiciousActivity": "Nostotoimintosi on poistettu käytöstä epäilyttävän toiminnan vuoksi. Suorita vahvistusprosessi Binancessa. Jos et voi vahvistaa, ota yhteyttä asiakastukeen. Jos olet äskettäin suorittanut vahvistuksen, odota hetki ja yritä uudelleen.",
+    "withdrawalPendingDepositConfirmation": "Talletuksesi ei ole täyttänyt vaadittuja vahvistuksia nostoa varten. Katso lisätietoja tapahtumahistoriasta.",
+    "invalidFromIntegrationToken": "Ei voi aloittaa siirtoa. Tilin tunnistamiseen käytetty tunnus ei ole valtuutettu suorittamaan tätä tointa.",
+    "invalidToIntegrationToken": "Ei voi tunnistaa kohdetta.",
+    "notAuthorizedFromIntegrationToken": "Ei voi aloittaa siirtoa. Tilin tunnistamiseen käytetty tunnus ei ole valtuutettu suorittamaan tätä tointa.",
+    "notAuthorizedToIntegrationToken": "Ei voi aloittaa siirtoa. Tilin tunnistamiseen käytetty tunnus ei ole valtuutettu suorittamaan tätä tointa.",
+    "configurationMismatch": "Ei voi aloittaa siirtoa. Tilin määritys ei vastaa pyydettyä siirtoa.",
+    "refusedByIntegration": "Ei voi aloittaa siirtoa. Integraatio on hylännyt pyynnön.",
+    "noAvailableSmartContract": "Ei ole saatavilla Älysopimusta",
+    "expiredSmartDeposit": "Älytalletus on vanhentunut. Älysopimus on vapautettu."
   },
   "errorPage": {
     "title": "Tapahtui virhe."
@@ -491,20 +541,20 @@
     "withAdditional_other": "{{mainOption}} + {{count}} muut"
   },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}} ei tue tämän talletustavan käyttöä {{assetName}} ostamiseen.",
-    "coveredByExistingCryptocurrencyBalance": "Sinulla on jo riittävästi {{assetName}} saldoa tähän ostoon, joten lisätalletustapoja ei tarvita.",
-    "coveredByOtherFundingOptions": "Tätä talletustapaa ei tueta tässä siirrossa.",
-    "currencyNotSupported": "Krypton ostamista muulla kuin USD pohjaisella talletustavalla ei tueta vielä.",
-    "depositAmountLimitExceeded": "Tämä ostos ylittäisi {{integrationName}}:n enimmäistalletusrajan tälle talletustavalle 1 päivän aikana.",
-    "depositCountLimitReached": "Tämä talletustapa on jo saavuttanut {{integrationName}}:n enimmäismäärän talletuksia 1 päivän aikana.",
+    "buyingPowerUsageNotSupported": "{{integrationName}} ei tue tämän rahoitustavan käyttöä {{assetName}} ostamiseen.",
+    "coveredByExistingCryptocurrencyBalance": "Sinulla on jo riittävästi {{assetName}} saldoa tähän ostoon, joten muita rahoitustapoja ei tarvita.",
+    "coveredByOtherFundingOptions": "Tätä rahoitustapaa ei tueta tässä siirrossa.",
+    "currencyNotSupported": "Krypton ostamista muulla kuin USD pohjaisella rahoitustavalla ei tueta vielä.",
+    "depositAmountLimitExceeded": "Tämä ostos ylittäisi {{integrationName}}:n enimmäistalletusrajan tälle rahoitustavalle 1 päivän aikana.",
+    "depositCountLimitReached": "Tämä rahoitustapa on jo saavuttanut {{integrationName}}:n enimmäismäärän talletuksia 1 päivän aikana.",
     "depositsNotSupported": "Tämä talletustapa ei ole käytössä tässä tapahtumassa.",
-    "instantDepositLimitExceeded": "Tämän talletustavan välitön talletusraja on riittämätön tähän ostoon",
-    "instantDepositsNotSupported": "Tämä talletustapa ei tue välittömiä talletuksia, joten sitä ei voida käyttää tähän ostoon.",
+    "instantDepositLimitExceeded": "Tämän rahoitustavan välitön talletusraja on riittämätön tähän ostoon",
+    "instantDepositsNotSupported": "Tämä rahoitustapa ei tue välittömiä talletuksia, joten sitä ei voida käyttää tähän ostoon.",
     "insufficientBalance": "Saldo ei riitä tämän ostoksen maksamiseen.",
-    "maximumDepositLimitViolated": "Summa ylittää tämän talletustavan enimmäistalletusrajan.",
-    "minimumDepositLimitViolated": "Summa on alle tämän talletustavan vähimmäistalletusrajan.",
-    "paymentMethodTypeNotSupported": "Tämä talletustapa ei ole vielä käytössä.",
-    "unknown": "Tämä talletustapa ei ole käytössä."
+    "maximumDepositLimitViolated": "Summa ylittää tämän rahoitustavan enimmäistalletusrajan.",
+    "minimumDepositLimitViolated": "Summa on alle tämän rahoitustavan vähimmäistalletusrajan.",
+    "paymentMethodTypeNotSupported": "Tämä rahoitustapa ei ole vielä käytössä.",
+    "unknown": "Tämä rahoitustapa ei ole käytössä."
   },
   "fundingPage": {
     "activatePaymentMethod": "Aktivoi maksutapa {{selectedIntegrationName}}",
@@ -525,9 +575,9 @@
     "noPaymentMethods": "Ei linkitettyjä maksutapoja.",
     "noTokensAvailableForConversion": "Ei muuntamiseen sopivia tokeneita saatavilla",
     "save": "Tallenna",
-    "selectFundingMethodAvailablity": "Valituilla talletustavoilla on {{selectedAvailableAmount}}. Valitse lisätalletustapa siirtääksesi {{neededAmount}}.",
-    "selectFundingMethods": "Valitse talletustapa siirtääksesi <2>{{amount}} ~ {{amountInFiat}}</2>.",
-    "selectFundingMethodsTitle": "Talletustapaa ei ole valittu",
+    "selectFundingMethodAvailablity": "Valituilla rahoitustavalla on {{selectedAvailableAmount}}. Valitse lisärahoitustapa siirtääksesi {{neededAmount}}.",
+    "selectFundingMethods": "Valitse rahoitustapa siirtääksesi <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "Rahoitustapaa ei ole valittu",
     "selectOtherHoldings": "Valitse muista varoista",
     "symbolBalance": "{{symbol}} Saldo",
     "title": "Talletustavat"
@@ -578,7 +628,7 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
-    "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n {{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
+    "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n vähimmäismäärä{{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
     "belowMinimum": "Alle {{integrationName}}:n vähimmäismäärän",
     "belowRequestedAmountDescription": "Saldosi {{balance}} on pienempi kuin {{amount}}, joka vaaditaan kattamaan pyydetty siirtomäärä + palkkiot.",
     "gasFeeAssetBalanceNotEnoughDescription": "Saldosi {{balance}} ei riitä kattamaan arvioutua gas-maksua {{gasFee}} verkossa {{network}}.",
@@ -695,7 +745,7 @@
     "title": "Varmennus epäonnistui"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Huomautus: Näet XRP:lle testitapahtuman minimiarvoilla. Tällä vain varmistetaan lompakkosi. Tapahtuma ei maksa sinulle mitään tai lähetä varoja.",
+    "rippleBody": "Huomautus: Näet XRP:lle testitapahtuman minimiarvoilla. Tällä vain varmistetaan lompakkosi. Tapahtuma ei maksa sinulle mitään tai lähetä mitään varoja.",
     "title": "Tarkista ja allekirjoita viesti laitteellasi"
   },
   "ledgerUSB": {
@@ -821,6 +871,7 @@
     },
     "connected": {
       "action": "Palaa takaisin {{clientName}}",
+      "backup": "Olet yhdistynyt onnistuneesti tiliisi.",
       "subtitle": "Palaa takaisin {{clientName}} jatkaaksesi",
       "title": "Olet yhdistetty {{selectedIntegrationName}}:iin"
     },
@@ -945,9 +996,9 @@
     "estimatedGasFee": "Arvioitu kaasumaksu",
     "estimatedGasFeeHint": "Arvioidut maksut, jotka maksetaan verkon validoijille heidän käyttämästään laskentatehosta tämän siirron käsittelemiseksi.",
     "from": "Lähettäjä",
-    "fundingWith": "Rahoittaa",
-    "institutionTransferFee": "{{selectedIntegrationName}} nostomaksu",
-    "institutionTransferFeeHint": "Maksu, jonka {{selectedIntegrationName}} veloittaa mahdollistaakseen {{symbol}}:n siirtämisen.",
+    "fundingWith": "Rahoita",
+    "institutionTransferFee": "{{selectedIntegrationName}} Nostomaksu",
+    "institutionTransferFeeHint": "Maksu, jonka {{selectedIntegrationName}} veloittaa mahdollistaakseen siiron pois {{symbol}}:sta.",
     "insufficientFunds": "Riittämättömät varat",
     "maxAmount": "Tilisi voi rahoittaa enintään <2>{{networkMaxAmount}}</2>. Haluatko muuttaa siirtosummaa vastaamaan tätä määrää?",
     "monitoring": "Hyväksyntä seurannassa...",
@@ -1057,34 +1108,34 @@
     "title": "Määritä sähköposti"
   },
   "termsAndConditionsPage": {
-    "paragraph1": "Mesh Connect, Inc. (<1> \"Yhtiö\"</1>) on teknologiatoimittaja, joka tuottaa viestintävälineen (<3>\"Työkalu\"</3>), joka madollistaa kolmannen osapuolen palvelun (<5>\"Käyttäjän Palvelu\"</5>) tiettyjen toimintojen käytön. Tämä toiminnallisuus on tarkoitettu mahdollistamaan viestintäsi kolmannen osapuolen tileihisi ja lompakkoihisi (<7>”Yhdistetyt tilit”</7>) Loppukäyttäjä -palvelun kautta, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa.",
+    "paragraph1": "Mesh Connect, Inc. (<1> \"Yhtiö\"</1>) on teknologiatoimittaja, joka tuottaa viestintävälineen (<3>\"Työkalu\"</3>), joka madollistaa kolmannen osapuolen palvelun (<5>\"Loppukäyttäjän Palvelu\"</5>) tiettyjen toimintojen käytön. Tämä toiminnallisuus on tarkoitettu mahdollistamaan viestintäsi kolmannen osapuolen tileihisi ja lompakkoihisi (<7>”Yhdistetyt tilit”</7>) Loppukäyttäjä -palvelun kautta, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa.",
     "paragraph10": "Välimiesmenettelyn järjestää American Arbitration Association sen kuluttajavälimiesmenettelysääntöjen mukaisesti, sovellettuna näissä ehdoissa määritetyin muutoksin. Kuluttajavälimiesmenettelysäännöt ovat saatavilla verkossa osoitteessa <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Välimies järjestää kuulemiset, mikäli niitä pidetään, puhelin- tai videoyhteyden välityksellä henkilökohtaisten tapaamisten sijaan, ellei välimies sinun tai meidän pyynnöstä katso, että henkilökohtainen kuuleminen on tarkoituksenmukainen. Mahdolliset henkilökohtaiset tapaamiset järjestetään paikassa, joka on molemmille osapuolille kohtuullisen sopiva, ottaen asianmukaisesti huomioon heidän matkustusmahdollisuutensa ja muut olennaiset olosuhteet. Jos sinä ja Yhtiö ette pääse yhteisymmärrykseen sijainnista, paikan määrittää AAA tai välimies. Välimiehen päätös noudattaa näitä ehtoja ja on lopullinen sekä sitova. Välimiehellä on valtuudet myöntää tilapäinen, väliaikainen tai pysyvä kieltomääräys taikka muu erityistä suoritusta koskeva oikeuskeino näiden ehtojen nojalla, mutta vain siinä määrin kuin yksittäinen väite välimiehen käsiteltävänä sitä edellyttää. Välimiehen antama ratkaisu voidaan vahvistaa ja panna täytäntöön missä tahansa toimivaltaisessa tuomioistuimessa. Edellä mainituista huolimatta mikään näissä ehdoissa ei estä sinua ottamasta yhteyttä liittovaltion, osavaltion tai paikallisiin viranomaisiin, jotka lain sallimissa rajoissa voivat puolestasi hakea oikeussuojaa meitä vastaan.",
-    "paragraph11": "Nämä ehdot muodostavat täydellisen sopimuksen sinun ja Yhtiön välillä suhteessa niiden aihepiiriin, ja ne korvaavat kaikki aiemmat esitykset tai sopimukset, olivatpa ne suullisia tai kirjallisia, kyseisistä asioista. Jos jokin ehto on sovellettavan lain mukaan täytäntöönpanokelvoton, tämä ehto on siten muutettu, että se noudattaa lakia alkuperäisen ehdon tarkoituksen säilyttämiseksi mahdollisimman laajasti. Mikä tahansa ehto, joka ei voi siten muuttua, erotetaan, ja kaikki muut termit pysyvät voimassa. Hyväksyt ja sopimus, että Yhtiön palveluntarjoajat ovat näiden ehtojen kolmannen osapuolen edunsaajia. Hyväksymällä nämä ehdot tai käyttämällä Työkalua, sitoudut noudattamaan tämän sopimuksen ehtoja ja edellytyksiä.",
-    "paragraph2": "Tiedostat ja hyväksyt, että End User Servicen tietty toiminnallisuus perustuu Työkaluun; että käytät kyseistä toiminnallisuutta ohjeidesi mukaisesti; että yhtiö tai sen palveluntarjoajat eivät tarjoa välityspalveluita eivätkä osallistu maksuprosesseihin; ja että Yhtiö tai sen palveluntarjoajat eivät ole millään tavoin vastuussa End User Servicestä tai mistään Liitetystä Tilistä, niiden tarjoajien ehdoista, toimintaperiaatteista, toimista tai laiminlyönneistä.",
-    "paragraph3": "Vakuutat ja takaat, että sinulla on kaikki tarvittavat oikeudet ja suostumukset yhdistääksesi ja päästääksesi käsiksi kutakin Liitettyä Tiliä läpi kyseisen toiminnallisuuden, mukaan lukien oikeuden antaa Yhtiölle ja sen palveluntarjoajille tilisi kirjautumistunnukset, lompakkosi osoitteet tai mikä tahansa tilitietosi tai henkilökohtaiset tietosi jokaisen Liitetyn Tilin osalta. Tällä annat Yhtiölle ja sen palveluntarjoajille valtuutuksen välittää ohjeita sekä tietoja, dataa ja muuta materiaalia End User Servicen ja jokaisen Liitetyn Tilin välillä ja tiedostat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa minkään tällaisten ohjeiden suorituksesta tai mistään tällaisesta materiaalista (ml. niiden tarkkuus, ajankohtaisuus tai täydellisyys).",
-    "paragraph4": "Tiedostat lukeneesi Yhtiön Tietosuojakäytännön, joka on saatavilla osoitteessa <2>https://meshconnect.com/privacy-policy</2> ja hyväksyt, että käyttämällä Työkalua, suostut Yhtiön käyttää Henkilötietojasi sellaisenaan kuin se on Tietosuojakäytännössä määritelty ja esitetty.",
-    "paragraph5": "Työkalu on saatavilla ",
-    "paragraph6": "Missään tapauksessa yritys tai sen palveluntarjoajat eivät ole vastuussa, olipa kyseessä sopimus, takuu, vahingonkorvaus (mukaan lukien laiminlyönti), tuotevastuu, tiukka vastuu tai muu teoría, mistään epäsuorista, satunnaisista, erityisistä tai seurannaisvahingoista, jotka liittyvät Työkalun, End User Servicen tai minkä tahansa Connected Accountin käyttöön (tai kyvyttömyyteen käyttää), mukaan lukien kaikki ohjeet tai materiaalit, jotka on siirretty käyttämällä Tietokoneella mahdollistettua toiminnallisuutta. Edellä mainitut rajoitukset, pois sulkemiset ja vastuun rajoitukset soveltuvat sovellettavan lain sallimassa enimmäismäärässä, vaikka mikään oikeuskeino ei täyttäisi sen olennaista tarkoitusta. Ilman rajoitusta edellä mainittuihin yhtiön ja sen palveluntarjoajien kumulatiivinen vastuu Työkaluun liittyen ei ylitä kymmentä dollaria.",
-    "paragraph7": "Hyväksyt puolustaa, korvata ja pitää yhtiö ja sen johtajat, virkailijat, työntekijät, lisenssinhaltijat, urakoitsijat ja edustajat harmittomana vastaan mahdolliset kolmannen osapuolen vaatimukset, toimet, kanteet, tutkimukset tai oikeudenkäynnit ja kaikki tappiot, vastuut, vahingot, kustannukset ja kulut, jotka johtuvat tai liittyvät Työkalun, End User Servicen ja/tai minkä tahansa Liitetyn Tilin käyttöön (tai väärinkäyttöön).",
-    "paragraph8": "Yhtiöllä on oikeus muuttaa näitä ehtoja milloin tahansa. Jatkuva minkä tahansa Työkalun mahdollistaman toiminnallisuuden käyttösi näiden muutosten jälkeen tarkoittaa, että hyväksyt päivitetyt ehdot.",
-    "paragraph9": "Näitä ehtoja säätelevät Delawaren valtion lait, poissulkien sen lain valintaperiaatteet. Paitsi kiistakysymykset, jotka täyttävät pienistä vaatimuksista vastaavan tuomioistuimen vaatimukset, kaikki kiistat, jotka johtuvat tai liittyvät näihin ehtoihin tai mikä tahansa sinun ja Yhtiön välisten suhteiden osa, on ratkaistava lopullisessa ja sitovassa välimiesmenettelyssä puolueettoman välimiehen edessä pikemmin kuin tuomioistuimessa tuomarin tai lautamieskunnan edessä ja hyväksyt, että Yhtiö ja sinä luovutte oikeudesta lautamieskäsittelyyn. Tällaisia kiistoja ovat muun muassa ilman rajoituksia tämä välimiesmenettelylausekkeen tulkintaan tai soveltamiseen liittyvät kiistat, mukaan lukien välimiesmenettelylausekkeen tai minkä tahansa sen osan täytäntöönpanokelpoisuus, peruutettavuus tai voimassaolokelpoisuus. Kaikki tällaiset asiat ratkaisee välimies eikä tuomioistuin tai tuomari. Hyväksyt, että kaikki näiden ehtojen mukaiset välimiesmenettelyt toteutetaan yksilöllisesti; ryhmävälimiesmenettelyt ja luokkakanteet eivät ole sallittuja, ja hyväksyt luopua mahdollisuudesta osallistua luokkakanteeseen.",
-    "title": "{{shortName}} End User<2></2>Käyttöehdot"
+    "paragraph11": "Nämä ehdot muodostavat täydellisen sopimuksen sinun ja Yhtiön välillä koskien niiden sisältöä, ja ne korvaavat kaikki aiemmat suulliset tai kirjalliset esitykset tai sopimukset kyseisistä asioista. Jos jokin ehto on sovellettavan lain mukaan täytäntöönpanokelvoton, kyseistä ehtoa muutetaan tässä siten, että se on lain mukainen, säilyttäen kuitenkin mahdollisimman laajasti alkuperäisen ehdon tarkoituksen. Mikäli jotain ehtoa ei voida tällaisella tavalla muuttaa, se poistetaan sopimuksesta, ja kaikki muut ehdot pysyvät voimassa. Tiedostat ja hyväksyt, että Yhtiön palveluntarjoajat ovat näissä ehdoissa tarkoitettuja kolmansien osapuolien edunsaajia. Hyväksymällä nämä ehdot tai käyttämällä Työkalua, sitoudut noudattamaan tämän sopimuksen ehtoja.",
+    "paragraph2": "Tiedostat ja hyväksyt, että osa Loppukäyttäjän Palvelun toiminnallisuudesta perustuu Työkaluun; että käytät kyseistä toiminnallisuutta ohjeidesi mukaisesti; että Yhtiö tai sen palveluntarjoajat eivät tarjoa välityspalveluita eivätkä osallistu maksujen käsittelyyn; ja että Yhtiö tai sen palveluntarjoajat eivät ole millään tavoin vastuussa Loppukäyttäjän Palvelusta tai mistään Yhdistetystä Tilistä tai niiden tarjoajien ehdoista, käytännöistä, toimista tai laiminlyönneistä.",
+    "paragraph3": "Vakuutat ja takaat, että sinulla on kaikki tarvittavat oikeudet ja suostumukset yhdistyä ja käyttää kutakin Yhdistettyä tiliä sen tomintojen kautta, mukaan lukien oikeuden antaa Yhtiölle ja sen palveluntarjoajille tilisi kirjautumistunnukset, lompakkosi osoitteet ja/tai mikä tahansa Liitetyn Tilin tili- tai henkilökohtaiset tiedot. Valtuutat täten Yhtiön ja sen palveluntarjoajat välittämään ohjeita sekä tietoja, dataa ja muuta materiaalia Loppukäyttäjän Palvelun ja jokaisen Liitetyn Tilin välillä sekä tiedostat ja hyväksyt sen, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa minkään tällaisten ohjeiden suorituksesta tai mistään vastaavasta materiaalista (ml. niiden tarkkuus, ajankohtaisuus tai täydellisyys).",
+    "paragraph4": "Tiedostat lukeneesi Yhtiön Tietosuojakäytännön, joka on saatavilla osoitteessa <2>https://meshconnect.com/privacy-policy</2> ja hyväksyt, että käyttämällä Työkalua, annat suostumuksen sille, että Yhtiö käsittelee henkilötietojasi tietosuojakäytännössä määritellyllä tavalla.",
+    "paragraph5": "Työkalu tarjotaan käyttöön 'SELLAISENA KUN SE ON' ja 'SAATAVUUDEN MUKAAN' kaikkine virheineen, ilman minkäänlaista takuuta. Yhtiö ei anna Työkaluun liittyen minkäänlaisia nimenomaisia tai epäsuoria takuita sen kauppakelpoisuudesta, tiettyyn tarkoitukseen sopivuudesta tai oikeuksien loukkaamattomuudesta.",
+    "paragraph6": "MISSÄÄN OLOSUHTEISSA YRITYS TAI SEN PALVELUNTARJOAJAT EIVÄT OLE VASTUUSSA, OLIPA KYSEESSÄ SOPIMUS, TAKUU, VAHINGONKORVAUS (LAIMINLYÖNTI MUKAAN LUKIEN), TUOTEVASTUU, ANAKARA VASTUU, TAI MUU TEORIA, MISTÄÄN EPÄSUORISTA, SATUNNAISISTA, ERITYISISTÄ TAI VÄLLILISITÄ VAHINGOISTA, JOTKA LIITTYVÄT TYÖKALUN, LOPPUKÄYTTÄJÄN PALVELUN TAI MINKÄ TAHANSA YHDISTETYN TILIN KÄYTTÖÖN (TAI KYVYTTÖMYYTEEN KÄYTTÄÄ), MUKAAN LUKIEN KAIKKI OHJEET JA MATERIAALIT JOTKA ON SIIRRETTY TYÖKALUN MAHDOLLISTAMILLA TOIMINNOILLA. EDELLÄ MAINITTUJA RAJOITUKSIA POIS SULKEMISIA JA VASTUUVAPAUSLAUSEKKEITA SOVELLETAAN SOVELLLETTAVAN LAIN SALLIMASSA ENIMMÄISMÄÄRÄSSÄ, VAIKKA JOKIN OIKEUSSUOJAKEINO EI TÄYTTÄISI OLENNAISTA TARKOITUSTAAN. EDELLÄ MAINITTUA RAJOITTAMATTA, YHTIÖN JA SEN PALVELUNTARJOAJIEN KOKONAISVASTUU TYÖKALUUN LIITTYEN EI YLITÄ KYMMENTÄ DOLLARIA.",
+    "paragraph7": "Sitoudut puolustamaan, korvaamaan ja pitämään yhtiön sekä sen johtajat, toimihenkilöt, työntekijät, lisenssinantajat, alihankkijat ja edustajat vahingoittumattomina kolmansien osapuolien vaatimuksilta, toimilta, kanteilta, tutkimukilta tai oikeudenkäynneiltä sekä tappiolta, vastuilta, vahingoilta, kustannuksilta ja kuluilta, jotka johtuvat tai liittyvät Työkalun, Loppukäyttäjän Palvelun ja/tai minkä tahansa Yhdistetyn Tilin käyttöön (tai väärinkäyttöön).",
+    "paragraph8": "Yhtiöllä on oikeus muuttaa näitä ehtoja milloin tahansa. Minkä tahansa Työkalun mahdollistaman toiminnallisuuden käyttö näiden muutosten jälkeen tarkoittaa, että hyväksyt päivitetyt ehdot.",
+    "paragraph9": "Näihin ehtoihin sovelletaan Delawaren osavaltion lakeja, poissulkien sen lainvalintaperiaatteet. Paitsi kiistakysymykset, jotka täyttävät vähäisistä vaatimuksista vastaavan tuomioistuimen vaatimukset, kaikki kiistat, jotka johtuvat tai liittyvät näihin ehtoihin tai mihin tahansa sinun ja Yhtiön välisen suhteiden osaan, olivatpa ne sopimus-, vahingonkorvaus-, lakiperusteisia, petokseen, harhaanjohtamiseen tai muuhun oikeudelliseen teoriaan perustuvia, on ratkaistava lopullisessa ja sitovassa välimiesmenettelyssä puolueettoman välimiehen toimesta sen sijaan, että ne käsiteltäisiin tuomioistuimessa tuomarin tai valamiehistön edessä ja sinä hyväksyt sen, että sekä sinä että Yhtiö luovutte oikeudesta valamiesoikeudenkäyntiin. Tällaiset riidat sisältävät, rajoituksetta, myös riidat, jotka liittyvät tämän välimiesmenettelyehdon tulkintaan tai soveltamiseen, mukaan lukien sen täytäntöönpanokelpoisuus, peruutettavuus tai pätevyys tai minkä tahansa tämän välimiesmenettelyehdon osan pätevyys. Kaikki tällaiset asiat ratkaisee välimies eikä tuomioistuin tai tuomari. Hyväksyt, että kaikki näiden ehtojen mukaiset välimiesmenettelyt toteutetaan yksilöllisesti; ryhmävälimiesmenettelyt ja luokkakanteet eivät ole sallittuja, ja hyväksyt luopua mahdollisuudesta osallistua luokkakanteeseen.",
+    "title": "{{shortName}} Loppukäyttäjän <2></2>Käyttöehdot"
   },
   "transferAmountPage": {
     "buttonTitle": {
-      "deposit": "Esikatselu talletus",
-      "onramp": "Esikatselu osto",
-      "transfer": "Esikatselu siirto"
+      "deposit": "Talletuksen esikatselu",
+      "onramp": "Oston esikatselu",
+      "transfer": "Siirron esikatselu"
     },
     "errorMessage": {
-      "insufficientFunds": "Riittämättömät varat siirto- ja gas-maksujen kattamiseen. Suurin Siirtosumma on {{maxAmount}}.",
-      "minimumAmount": "Pienin siirtosumma on {{minAmount}}.",
-      "zeroAmount": "Syötä ei-nollaraha"
+      "insufficientFunds": "Varat eivät riitä kattamaan siirtoa ja gas-maksua. Suurin mahdollinen siirtosumma on {{maxAmount}}.",
+      "minimumAmount": "Pienin mahdollinen siirtosumma on {{minAmount}}.",
+      "zeroAmount": "Syötä ei nolla-arvoinen summa"
     },
     "title": {
-      "deposit": "Anna talletussumma",
-      "onramp": "Anna ostosumma",
-      "transfer": "Anna siirtosumma"
+      "deposit": "Syötä talletussumma",
+      "onramp": "Syötä ostosumma",
+      "transfer": "Syötä siirtosumma"
     }
   },
   "transferCanceledPage": {
@@ -1096,16 +1147,16 @@
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Odotetaan vahvistusta mobiilisovelluksesta",
     "confirmButton": "Olen varmentanut sovelluksessani",
-    "description": "Vahvista {{selectedIntegrationName}} mobiilisovelluksessa, että olet sinä, joka yrittää kirjautua sisään.",
+    "description": "Vahvista {{selectedIntegrationName}} mobiilisovelluksessa, että olet kirjautumassa sisään.",
     "desktopSteps": {
       "confirm": "Vahvista pyyntö varmistaaksesi henkilöllisyytesi",
       "openApp": "Avaa {{selectedIntegrationName}} sovellus puhelimellasi",
       "return": "Palaa tänne jatkaaksesi"
     },
     "mobileSteps": {
-      "clickOpen": "Klikkaa <1>Avaa {{selectedIntegrationName}} sovellus</1> alla",
-      "verifyLogin": "Varmista, että kirjaudut sisään uudesta laitteesta",
-      "verifyTransfer": "Varmista, että sinä olet henkilö, joka yrittää siirtää varoja"
+      "clickOpen": "Klikkaa alta <1>Avaa {{selectedIntegrationName}} sovellus</1>",
+      "verifyLogin": "Varmista, että olet kirjautumassa sisään uudelta laitteelta",
+      "verifyTransfer": "Varmista, että varojen siirtopyyntö on sinun tekemäsi"
     },
     "openApp": "Avaa {{selectedIntegrationName}} sovellus",
     "sendNewRequest": "Lähetä uusi pyyntö",
@@ -1116,32 +1167,32 @@
     "approve": "Klikkaa <1>Hyväksy</1> vahvistussivulla.",
     "approveOrCancel": "Klikkaa <1>Hyväksy tai peruuta nostopyyntö</1> sähköpostissa.",
     "confirmButton": "Olen hyväksynyt nostopyynnön",
-    "description": "Tarkista postilaatikkosi sähköpostille, jossa pyydetään vahvistamaan uusi nosto.",
-    "return": "Palaa tänne ja klikkaa alla olevaa jatkaaksesi siirtoa.",
+    "description": "Tarkista sähköpostistasi viesti, jossa pyydetään vahvistamaan uusi nosto.",
+    "return": "Palaa tänne ja klikkaa alta jatkaaksesi siirtoa.",
     "title": "Hyväksy nosto"
   },
   "transferErrorPage": {
-    "defaultError": "Tapahtui tuntematon virhe. Klikkaa alla olevaa linkkiä aloittaaksesi uuden siirtosession."
+    "defaultError": "Tapahtui tuntematon virhe. Klikkaa alta aloittaaksesi uuden siirron."
   },
   "transferErrors": {
     "failedToExecute": "Siirron suoritus epäonnistui",
-    "failedToPreview": "Ei voitu esikatsella siirtoa",
+    "failedToPreview": "Siirron esikatselu epäonnistui",
     "mfaEmailFailed": "Virheellinen koodi sähköpostista, anna koodi uudelleen",
-    "mfaFaceFailed": "Todennus epäonnistui, yritä uudelleen",
-    "mfaFailed": "Virheellinen koodi, anna koodi uudelleen",
-    "mfaPhoneFailed": "Virheellinen sms-koodi, anna koodi uudelleen",
-    "mfaTotpFailed": "Virheellinen TOTP-koodi, anna koodi uudelleen",
-    "mfaTradingPinFailed": "MFA-kauppapin-koe epäonnistui, anna koodi uudelleen"
+    "mfaFaceFailed": "Varmistus epäonnistui, yritä uudelleen",
+    "mfaFailed": "Väärä koodi, anna koodi uudelleen",
+    "mfaPhoneFailed": "Väärä sms-koodi, anna koodi uudelleen",
+    "mfaTotpFailed": "Väärä TOTP-koodi, anna koodi uudelleen",
+    "mfaTradingPinFailed": "Väärä MFA kaupankäynnin PIN-koodi, anna koodi uudelleen"
   },
   "transferFacePage": {
     "clickOpenApp": "Klikkaa <1>Avaa {{selectedIntegrationName}} sovellus</1> avataksesi sovelluksesi ja viimeistelläksesi kasvotunnistuksen.",
-    "completeMobile": "Suorita kasvotunnistus vahvistaaksesi, että todella yrität siirtää varoja.",
+    "completeMobile": "Suorita kasvotunnistus vahvistaaksesi, että olet siirtämässä varoja.",
     "confirmCompleted": "Olen suorittanut varmennuksen",
     "openApp": "Avaa {{selectedIntegrationName}} -sovellus",
-    "reopenApp": "Avaa uudelleen {{selectedIntegrationName}} sovellus",
+    "reopenApp": "Avaa {{selectedIntegrationName}} sovellus uudelleen",
     "return": "Palaa sitten tänne viimeistelläksesi tilisi yhdistämisen.",
     "returnContinue": "Palaa tänne jatkaaksesi tilisi yhdistämistä.",
-    "scanQR": "Skannaa QR-koodi suorittaaksesi kasvotunnistus ja vahvistaaksesi, että todella yrität siirtää varoja.",
+    "scanQR": "Skannaa QR-koodi suorittaaksesi kasvotunnistus ja vahvistaaksesi, että olet siirtämässä varoja.",
     "title": "Varmistus"
   },
   "transferMfaPage": {
@@ -1149,13 +1200,13 @@
     "verify": "Varmenna"
   },
   "transferPreviewErrorPage": {
-    "aboveMaximum": "Yli {{integrationName}} enimmäis",
-    "belowMinimum": "Alle {{integrationName}} minimum",
+    "aboveMaximum": "Yli {{integrationName}}:n sallitun enimmäismäärän",
+    "belowMinimum": "Alle {{integrationName}}:n sallitun minimimmäärän",
     "connectAnotherAccount": "Ole hyvä ja yhdistä toinen tili.",
-    "connectDifferent": "Yhdistä toinen tili",
+    "connectDifferent": "Yhdistä muu tili",
     "insufficientBalanceError": "Riittämätön saldo tähän tapahtumaan.",
     "insufficientFunds": "Riittämättömät varat",
-    "unknownError": "Tapahtui tuntematon virhe. Napsauta alla aloittaaksesi uuden siirtosession."
+    "unknownError": "Tapahtui tuntematon virhe. Klikkaa alta aloittaaksesi uuden siirron."
   },
   "transferSteps": {
     "approveTransfer": "Hyväksyt siirron {{integrationName}}:stä {{clientName}}",
@@ -1176,15 +1227,15 @@
     "description": "Ostettu määrä on pienempi kuin odotettu johtuen {{token}}-hinnan ja/tai gas-kulujen muutoksista.",
     "ifDontComplete": "Jos et tee siirtoa, {{token}}-saldosi jää {{selectedIntegrationName}}-tilillesi.",
     "onYourAccount": "Tililläsi",
-    "title": "Siirtopäivitys",
+    "title": "Siirron päivitys",
     "youWillReceive": "Saat"
   },
   "transferWithdrawalAddressConfirmation": {
-    "checkInbox": "Tarkista postilaatikkosi sähköpostista, jossa pyydetään vahvistamaan uusi nostoaosoite.",
-    "clickConfirm": "Klikkaa sähköpostissa kohtaa <1>Vahvista osoite</1>.",
+    "checkInbox": "Tarkista sähköpostistasi viesti, jossa pyydetään vahvistamaan uusi nosto-osoite.",
+    "clickConfirm": "Klikkaa <1>Vahvista osoite</1> sähköpostissa.",
     "confirmedButton": "Olen vahvistanut osoitteen",
-    "return": "Palaa takaisin ja klikkaa alla viimeistelläksesi siirron.",
-    "title": "Vahvista nostoaosoite"
+    "return": "Palaa tänne ja klikkaa alta viimeistelläksesi siirron.",
+    "title": "Vahvista nosto-osoite"
   },
   "trezorContext": {
     "failedGetBTCError": "BTC-lompakon tietojen saaminen epäonnistui",
@@ -1197,45 +1248,45 @@
     "clientVerifyLabel": "{{clientName}}:n täytyy tarkistaa lompakkosi",
     "secureLabel": "Nopea, turvallinen ja ilmainen",
     "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa mitään tapahtumia lompakollasi.",
-    "signText": "Sinua pyydetään allekirjoittamaan Trezor-laitteessasi viesti, joka vahvistaa omistuksesi wallet.",
+    "signText": "Sinua pyydetään allekirjoittamaan Trezor-laitteessasi viesti, joka vahvistaa tämän lompakon omistusoikeutesi.",
     "title": "Melkein valmis!",
-    "verifyingLabel": "Varmistetaan walletiasi..."
+    "verifyingLabel": "Varmistetaan lompakkoasi..."
   },
   "trezorError": {
-    "connectionDeclinedBody": "Olet hylännyt pyynnön yhdistää lompakkoosi tai aiempi pyyntö on yhä aktiivinen.",
-    "connectionDeclinedTitle": "Yhteys hylätty",
-    "signatureDeclinedBody": "Olet kieltänyt allekirjoituspyynnön walletissasi, tai aikaisempi pyyntö on vielä voimassa.",
-    "signatureDeclinedTitle": "Allekirjoitus evätty"
+    "connectionDeclinedBody": "Olet hylännyt pyynnön yhdistää lompakkosi tai aiempi pyyntö on yhä aktiivinen.",
+    "connectionDeclinedTitle": "Yhdistäminen hylätty",
+    "signatureDeclinedBody": "Olet hylännyt allekirjoituspyynnön lompakossasi, tai aiempi pyyntö on vielä voimassa.",
+    "signatureDeclinedTitle": "Allekirjoitus hylätty"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}}:n täytyy tarkistaa lompakkosi",
-    "clientVerifyText": "Sinut ohjataan turvallisesti Trezor-laitteeseesi allekirjoittamaan viesti, joka vahvistaa omistuksesi walletista.",
-    "connectingLabel": "Yhdistetään walletiasi...",
+    "clientVerifyLabel": "{{clientName}}:n täytyy vahvistaa lompakkosi",
+    "clientVerifyText": "Sinut ohjataan turvallisesti Trezor-laitteeseesi allekirjoittamaan viesti, joka vahvistaa lompakkosi omistusoikeutesi.",
+    "connectingLabel": "Yhdistetään lompakkoasi...",
     "secureLabel": "Nopea, turvallinen ja ilmainen",
-    "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa tapahtumia lompakollasi."
+    "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa mitään tapahtumia lompakollasi."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} haluaa, että vahvistat omistuksesi <3>{{requestedNetworkName}}</3> -osoitteesta <6>{{truncatedRequestedAddress}}</6>. Tämä osoite ei ole liitetty yhdistettyyn walletiin. Liitä toinen wallet.",
+    "body": "{{clientName}} haluaa, että vahvistat <3>{{requestedNetworkName}}</3> -osoitteen omistusoikeuden <6>{{truncatedRequestedAddress}}</6>. Tätä osoitetta ei ole liitetty yhdistettyyn lompakkoon. Ole hyvä ja liitä toinen lompakko.",
     "connectAnotherAction": "Yhdistä toinen lompakko",
     "title": "Oho!"
   },
   "verifyError": {
-    "body": "Lompakkosi todentaminen ei onnistunut. Varmista, että olet valinnut oikean verkon ja antanut oikean wallet-osoitteen.",
+    "body": "Laitelompakkosi todentaminen epäonnistui. Varmista, että olet valinnut oikean verkon ja antanut oikean lompakko-osoitteen.",
     "title": "Varmennus epäonnistui"
   },
   "verifyErrorPage": {
-    "body": "Olet kieltänyt allekirjoituspyynnön walletissasi, tai aikaisempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusta ilman allekirjoitusta.",
-    "title": "Vahvistus evätty"
+    "body": "Olet hylännyt allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
+    "title": "Vahvistus hylätty"
   },
   "wallectConnect": {
     "noActiveSessionError": "Ei aktiivista WalletConnect-istuntoa",
-    "transactionHashError": "Ei voitu saada tapahtuman hash",
+    "transactionHashError": "Tapahtuman hash-arvon hakeminen epäonnistui",
     "unknownError": "Tapahtui tuntematon virhe. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Palaa takaisin kassasovellukseesi suorittaaksesi {{clientName}}-ostoksesi loppuun.",
+    "completePaymentMessage": "Palaa takaisin kassalle viimeistelläksesi {{clientName}}-ostoksesi.",
     "continueMessage": "Jatka {{clientName}} -sovelluksessa.",
-    "successMessage": "Olet onnistuneesti vahvistanut {{walletName}} walletisi omistuksen."
+    "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden."
   },
   "withdrawalLockedErrorPage": {
     "another": "Siirto toiselta tililtä",
