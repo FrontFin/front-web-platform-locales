@@ -564,7 +564,7 @@
     "balances": "Số dư",
     "balanceWithAproximateFiat": "Số dư: {{amount}} ~ {{amountInFiat}}",
     "buyingPower": "Sức mua",
-    "changeAmount": "Hoặc thay đổi số tiền để chuyển đến {{availableAmount}}.",
+    "changeAmount": "Hoặc thay đổi số tiền để giao dịch đến {{availableAmount}}.",
     "changePreferredPaymentMethod": "Thay đổi phương thức thanh toán ưa thích",
     "changePreferredToken": "Thay đổi token ưa thích",
     "cryptoConversion": "Chuyển đổi tiền mã hóa",
@@ -575,8 +575,8 @@
     "noPaymentMethods": "Không có phương thức thanh toán liên kết.",
     "noTokensAvailableForConversion": "Không có token nào khả dụng để chuyển đổi",
     "save": "Lưu",
-    "selectFundingMethodAvailablity": "Các phương thức tài trợ đã chọn của bạn có {{selectedAvailableAmount}}. Vui lòng chọn thêm các phương thức tài trợ để chuyển {{neededAmount}}.",
-    "selectFundingMethods": "Vui lòng chọn phương thức tài trợ để chuyển <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodAvailablity": "Phương thức thanh toán bạn đã chọn hiện có {{selectedAvailableAmount}}. Vui lòng chọn thêm phương thức thanh toán khác để giao dịch {{neededAmount}}.",
+    "selectFundingMethods": "Vui lòng chọn phương thức thanh toán để giao dịch <2>{{amount}} ~ {{amountInFiat}}</2>.",
     "selectFundingMethodsTitle": "Chưa chọn phương thức tài trợ",
     "selectOtherHoldings": "Chọn từ các khoản nắm giữ khác",
     "symbolBalance": "Số dư {{symbol}}",
@@ -613,10 +613,10 @@
     "error": "Không thể thực hiện giao dịch",
     "loadingLabel": "Đang xác minh giao dịch của bạn...",
     "networkConfirmations": "Giao dịch chưa hoàn thành cho đến khi nhận được đủ xác nhận từ mạng lưới.",
-    "notInitiatedUntilApproved": "Giao dịch này sẽ không được bắt đầu cho đến khi nó được phê duyệt trong {{selectedIntegrationName}}.",
+    "notInitiatedUntilApproved": "Giao dịch này sẽ không được bắt đầu cho đến khi nó được chấp nhận trong {{selectedIntegrationName}}.",
     "recievedDetails": "Bạn sẽ nhận được <1>{{amountStr}}</1> tại {{clientName}} ({{shortAddress}})",
-    "requestRecieved": "Yêu cầu chuyển khoản đến {{destination}} của bạn đã được {{selectedIntegrationName}} nhận.",
-    "revolutApproveInfo": "Chuyển khoản này sẽ không được khởi động cho đến khi nó được chấp thuận trong ứng dụng Revolut",
+    "requestRecieved": "Yêu cầu giao dịch đến {{destination}} của bạn đã được {{selectedIntegrationName}} nhận",
+    "revolutApproveInfo": "Giao dịch này sẽ không được khởi động cho đến khi nó được chấp nhận trong ứng dụng Revolut",
     "transactionComplete": "Giao dịch hoàn thành"
   },
   "handleOauthPage": {
@@ -627,18 +627,18 @@
     "connectAction": "Kết nối với {{selectedIntegrationName}}"
   },
   "ineligibleReason": {
-    "amountBelowMinimumDescription": "Số tiền chuyển yêu cầu {{requestedAmount}} thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} đối với mạng {{network}}.",
+    "amountBelowMinimumDescription": "Số tiền chuyển khoản yêu cầu {{requestedAmount}} thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} đối với mạng {{network}}.",
     "balanceBelowMinimumDescription": "Số dư {{currentBalance}} của bạn thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} để chuyển trên mạng {{network}}.",
     "belowMinimum": "Dưới mức tối thiểu của {{integrationName}}",
-    "belowRequestedAmountDescription": "Số dư {{balance}} của bạn thấp hơn {{amount}} cần thiết để chi trả số tiền chuyển yêu cầu + phí.",
+    "belowRequestedAmountDescription": "Số dư {{balance}} của bạn thấp hơn {{amount}} cần thiết để thực hiện giao dịch + phí.",
     "gasFeeAssetBalanceNotEnoughDescription": "Số dư {{balance}} của bạn không đủ để chi trả phí gas ước tính {{gasFee}} trên mạng {{network}}.",
     "insufficientBalance": "Số dư không đủ",
-    "insufficientBalanceDescription": "Số dư {{currentBalance}} của bạn thấp hơn mức tối thiểu cho chuyển khoản này.",
-    "notEligible": "Không đủ điều kiện cho chuyển này",
-    "notEligibleDescription": "{{symbol}} không được chấp nhận cho chuyển khoản này.",
+    "insufficientBalanceDescription": "Số dư hiện tại {{currentBalance}} của bạn thấp hơn mức tối thiểu cho giao dịch này.",
+    "notEligible": "Không đủ điều kiện thực hiện giao dịch này",
+    "notEligibleDescription": "{{symbol}} không được chấp nhận cho giao dịch này.",
     "notSupportedByInstitution": "Hiện tại không được hỗ trợ bởi {{integrationName}}",
     "notSupportedForTransferBySource": "Không được hỗ trợ bởi {{integrationName}}",
-    "nyCoinbaseUserRestrictions": "{{symbol}} trên {{network}} không được chấp nhận cho chuyển khoản này do hạn chế hỗ trợ đa chuỗi của NY.",
+    "nyCoinbaseUserRestrictions": "{{symbol}} trên {{network}} không được chấp nhận cho giao dịch này do hạn chế hỗ trợ đa chuỗi (multi-chain) tại New York.",
     "symbolDoesNotMatch": "Không được hỗ trợ bởi {{clientName}}",
     "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này."
   },
@@ -655,7 +655,7 @@
     "agreement": "Bằng cách chọn “Tiếp tục” bạn đồng ý với <1></1><2>Điều khoản và Điều kiện</2>",
     "credentials": "Thông tin đăng nhập của bạn không bao giờ được lưu trữ",
     "encryption": "Dữ liệu của bạn luôn được mã hóa",
-    "explicitApproval": "Sự chấp thuận rõ ràng của bạn luôn được yêu cầu để thực hiện chuyển khoản",
+    "explicitApproval": "Sự chấp nhận rõ ràng của bạn luôn được yêu cầu để thực hiện giao dịch",
     "thirdParty": "Tài sản của bạn không bao giờ tiếp xúc với bên thứ ba"
   },
   "initialVerifyPage": {
@@ -675,24 +675,24 @@
     "addIp": "Thêm địa chỉ IP bên dưới làm Địa chỉ IP đáng tin cậy",
     "clickOnEdit": "Nhấn vào chỉnh sửa hạn chế",
     "copyIpTitle": "Địa chỉ IP",
-    "description": "<0>Binance</0> yêu cầu người dùng API đưa địa chỉ IP vào danh sách trắng để đảm bảo tính hợp pháp của các yêu cầu giao dịch và chuyển nhượng.",
+    "description": "<0>Binance</0> yêu cầu người dùng API phải thêm địa chỉ IP vào danh sách cho phép khi gửi các yêu cầu giao dịch mua bán và chuyển tiền.",
     "findKey": "Tìm khóa sử dụng cho kết nối này",
     "openLink": "Mở <2><0>Quản lý API Binance</0></2>",
-    "requirementsTitle": "Nếu bạn định giao dịch hoặc chuyển nhượng thông qua kết nối này:",
+    "requirementsTitle": "Nếu bạn định giao dịch hoặc chuyển tiền thông qua kết nối này:",
     "title": "Trước khi bạn tiếp tục Danh sách trắng địa chỉ IP này"
   },
   "kycDonePage": {
-    "successMessage": "Bạn đã xác minh thành công danh tính của mình và kích hoạt chuyển tiền điện tử trong tài khoản {{integrationName}} của mình"
+    "successMessage": "Bạn đã xác minh thành công danh tính của mình và kích hoạt giao dịch chuyển tiền điện tử trong tài khoản {{integrationName}} của mình"
   },
   "kycInitialPage": {
-    "description": "Vì sự bảo mật của bạn, {{integrationName}} yêu cầu bạn xác minh danh tính trước khi có thể chuyển tiền điện tử.",
+    "description": "Vì sự bảo mật của bạn, {{integrationName}} yêu cầu bạn xác minh danh tính trước khi có thể giao dịch tiền điện tử.",
     "steps": {
-      "completeVerification": "Hoàn thành quá trình để xác minh danh tính của bạn và kích hoạt chuyển khoản từ tài khoản của bạn",
-      "navigateCrypto": "Đi đến tab Crypto, mở tài sản bạn muốn chuyển và nhấp vào \"Gửi\"",
+      "completeVerification": "Hoàn thành quá trình để xác minh danh tính của bạn và kích hoạt giao dịch từ tài khoản của bạn",
+      "navigateCrypto": "Đi đến mục Crypto, mở tài sản bạn muốn chuyển và nhấp vào \"Gửi\"",
       "openAccount": "Mở tài khoản {{integrationName}} của bạn",
       "returnToScreen": "Quay lại màn hình này"
     },
-    "title": "Kích hoạt chuyển khoản trong tài khoản {{integrationName}} của bạn",
+    "title": "Kích hoạt chuyển khoản trong tài khoản {{integrationName}} của bạn",
     "verifiedButton": "Tôi đã xác minh danh tính của mình với {{integrationName}}"
   },
   "kycPendingPage": {
@@ -702,11 +702,11 @@
   },
   "kycRobinhoodPage": {
     "clickContinue": "Nhấn <1>Tiếp tục</1> để mở {{selectedIntegrationName}}.",
-    "clickContinueAfterActivated": "Sau khi bạn đã kích hoạt chuyển tiền điện tử trong {{selectedIntegrationName}}, nhấp bên dưới để <5>Tiếp tục</5> với chuyển khoản của bạn.",
+    "clickContinueAfterActivated": "Sau khi bạn đã kích hoạt chuyển tiền điện tử trong {{selectedIntegrationName}}, hãy nhấp vào nút <5>Tiếp tục</5> bên dưới để tiếp tục giao dịch.",
     "completeVerification": "Hoàn tất xác minh danh tính và/hoặc thêm phương pháp xác thực hai yếu tố.",
     "connectAnother": "Kết nối một tài khoản khác",
-    "note": "Xin lưu ý: bạn có thể cần đăng nhập lại vào tài khoản {{selectedIntegrationName}} của mình để bắt đầu chuyển khoản này khi bạn quay lại.",
-    "return": "Quay lại đây để hoàn thành chuyển khoản.",
+    "note": "Lưu ý: khi bạn quay lại, có thể bạn sẽ cần phải đăng nhập lại vào tài khoản {{selectedIntegrationName}} của mình để bắt đầu giao dịch.",
+    "return": "Quay lại đây để hoàn thành giao dịch.",
     "title": "Kích hoạt chuyển khoản trong tài khoản của bạn"
   },
   "ledgerBluetooth": {
@@ -772,7 +772,7 @@
     "phone": "Nhập mã một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến điện thoại của bạn.",
     "totp": "Nhập mã một lần do ứng dụng xác thực mà bạn đã liên kết với <1>{{selectedIntegrationName}}</1> cung cấp.",
     "tradingPin": "Vui lòng nhập mã PIN giao dịch liên quan đến tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
-    "transferFlow": "Nhập mã một lần của bạn để xác nhận rằng chính bạn đang thực hiện chuyển khoản này.",
+    "transferFlow": "Nhập mã xác thực một lần để xác nhận bạn là người thực hiện giao dịch này.",
     "twoFactor": "Nhập mã do phương pháp xác thực hai yếu tố mà bạn đã cấu hình trong tài khoản của <1>{{selectedIntegrationName}}</1> cung cấp."
   },
   "mfaPage": {
@@ -796,7 +796,7 @@
     "emailTitle": "Bạn đã liên kết thành công email của mình với tài khoản <2>{{selectedIntegrationName}}</2>.",
     "proceed": "Tiến hành",
     "proceedKey": "Nhấp vào bên dưới để tiếp tục tạo khóa",
-    "proceedTransfer": "Nhấp vào bên dưới để tiếp tục chuyển khoản",
+    "proceedTransfer": "Nhấp vào bên dưới để tiếp tục giao dịch",
     "setUpApp": "Cài đặt ứng dụng xác thực",
     "totpTitle": "Bạn đã liên kết thành công ứng dụng xác thực với tài khoản <2>{{selectedIntegrationName}}</2> của bạn."
   },
@@ -894,7 +894,7 @@
     "title": "Đăng nhập vào tài khoản của bạn"
   },
   "oAuthMessageListener": {
-    "clientUsesMesh": "{{clientName}} sử dụng Mesh để kết nối an toàn và hỗ trợ việc chuyển khoản của bạn trong {{selectedIntegrationName}}.",
+    "clientUsesMesh": "{{clientName}} sử dụng Mesh để kết nối an toàn và hỗ trợ việc giao dịch của bạn trong {{selectedIntegrationName}}.",
     "description": "Đăng nhập vào tài khoản của bạn và cho phép truy cập",
     "monitoring": "Đang giám sát để phê duyệt...",
     "open": "Mở {{selectedIntegrationName}}",
@@ -904,7 +904,7 @@
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
-      "client": "Bạn chấp thuận chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}}.",
+      "client": "Bạn chấp nhận chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}}.",
       "destination": "Bạn chấp thuận chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến địa chỉ đích."
     },
     "buyingPowerPurchase": "Mua <1>{{amount}}</1> trị giá {{symbol}} <5>(~ {{amountInCrypto}})</5> trên {{selectedIntegrationName}}.",
@@ -912,7 +912,7 @@
     "depositTitle": "Đang tiến hành nạp tiền",
     "description": "Có thể mất một chút thời gian...",
     "existingCryptocurrencyBalance": {
-      "approveClient": "Bạn phê duyệt việc chuyển từ {{selectedIntegrationName}} đến {{clientName}}.",
+      "approveClient": "Bạn chấp nhận giao dịch từ {{selectedIntegrationName}} đến {{clientName}}.",
       "approveDestination": "Bạn phê duyệt việc chuyển từ {{selectedIntegrationName}} đến điểm đến.",
       "transfer": "Chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}}.",
       "transferHideClient": "Chuyển khoản <1>{{amount}}</1> từ {{selectedIntegrationName}}.",
