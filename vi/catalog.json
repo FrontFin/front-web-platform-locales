@@ -438,7 +438,7 @@
     "notAuthorizedFromIntegrationToken": "Không thể khởi tạo chuyển khoản. Mã thông báo xác thực cho tài khoản này không được ủy quyền thực hiện hành động này.",
     "notAuthorizedToIntegrationToken": "Không thể khởi tạo chuyển khoản. Mã thông báo xác thực cho tài khoản này không được ủy quyền thực hiện hành động này.",
     "configurationMismatch": "Không thể khởi tạo chuyển khoản. Cấu hình tài khoản không khớp với yêu cầu chuyển khoản.",
-    "refusedByIntegration": "Không thể khởi tạo chuyển khoản. Tích hợp đã từ chối yêu cầu.",
+    "refusedByIntegration": "Không thể bắt đầu giao dịch. Hệ thống tích hợp đã từ chối yêu cầu.",
     "noAvailableSmartContract": "Không có Hợp đồng Thông minh khả dụng",
     "expiredSmartDeposit": "Nạp tiền thông minh đã hết hạn. Hợp đồng thông minh đã được giải phóng."
   },
@@ -478,7 +478,7 @@
   },
   "externalTransferCallbackPage": {
     "continue": "Tiếp tục đến {{clientName}}",
-    "transferRequested": "Đã yêu cầu chuyển tiền, vui lòng quay lại {{clientName}}",
+    "transferRequested": "Đã yêu cầu giao dịch, vui lòng quay lại {{clientName}}",
     "updatingTransfer": "Cập nhật trạng thái giao dịch ..."
   },
   "facePage": {
@@ -528,7 +528,7 @@
     "info": {
       "conversion": "Phí mà {{integrationName}} sẽ thu để chuyển đổi {{conversionFromSymbol}} của bạn thành {{conversionToSymbol}}.",
       "purchase": "Phí mà {{integrationName}} sẽ thu để hỗ trợ bạn mua {{symbol}}.",
-      "withdrawal": "Phí mà {{integrationName}} sẽ tính phí để hỗ trợ bạn chuyển tiền ra khỏi {{symbol}}."
+      "withdrawal": "Phí mà {{integrationName}} sẽ tính phí để hỗ trợ bạn giao dịch {{symbol}} ra ngoài."
     }
   },
   "fundingMethodsList": {
@@ -610,9 +610,9 @@
   },
   "handleExternalTransferPage": {
     "detailButton": "Xem chuyện gì đã xảy ra",
-    "error": "Không thể thực hiện chuyển khoản",
-    "loadingLabel": "Đang xác minh chuyển khoản của bạn...",
-    "networkConfirmations": "Chuyển khoản chưa hoàn thành cho đến khi nhận được đủ xác nhận từ mạng lưới.",
+    "error": "Không thể thực hiện giao dịch",
+    "loadingLabel": "Đang xác minh giao dịch của bạn...",
+    "networkConfirmations": "Giao dịch chưa hoàn thành cho đến khi nhận được đủ xác nhận từ mạng lưới.",
     "notInitiatedUntilApproved": "Giao dịch này sẽ không được bắt đầu cho đến khi nó được phê duyệt trong {{selectedIntegrationName}}.",
     "recievedDetails": "Bạn sẽ nhận được <1>{{amountStr}}</1> tại {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Yêu cầu chuyển khoản đến {{destination}} của bạn đã được {{selectedIntegrationName}} nhận.",
@@ -1147,16 +1147,16 @@
   "transferDeviceConfirmation": {
     "awaitingConfirmation": "Đang chờ xác nhận từ ứng dụng di động",
     "confirmButton": "Tôi đã xác minh trên ứng dụng của mình",
-    "description": "Xác nhận trong ứng dụng di động {{selectedIntegrationName}} rằng bạn thật sự đang cố gắng đăng nhập.",
+    "description": "Xác nhận trong ứng dụng {{selectedIntegrationName}} trên điện thoại để tiếp tục đăng nhập.",
     "desktopSteps": {
-      "confirm": "Xác nhận trên lời nhắc để xác minh đó là bạn",
+      "confirm": "Vui lòng xác nhận trong thông báo để xác minh danh tính của bạn",
       "openApp": "Mở ứng dụng {{selectedIntegrationName}} trên điện thoại của bạn",
       "return": "Quay lại đây để tiếp tục"
     },
     "mobileSteps": {
       "clickOpen": "Nhấp <1>Mở ứng dụng {{selectedIntegrationName}}</1> bên dưới",
       "verifyLogin": "Xác minh rằng bạn đang đăng nhập từ một thiết bị mới",
-      "verifyTransfer": "Xác minh rằng bạn là người yêu cầu chuyển khoản"
+      "verifyTransfer": "Xác minh rằng bạn là người yêu cầu thực hiện giao dịch"
     },
     "openApp": "Mở ứng dụng {{selectedIntegrationName}}",
     "sendNewRequest": "Gửi một yêu cầu mới",
@@ -1165,8 +1165,8 @@
   },
   "transferEmailApprovalConfirmation": {
     "approve": "Nhấn <1>Chấp nhận</1> trên trang xác nhận.",
-    "approveOrCancel": "Nhấp <1>Chấp thuận hoặc Hủy Rút Tiền</1> trong email.",
-    "confirmButton": "Tôi đã chấp thuận rút tiền",
+    "approveOrCancel": "Nhấp <1>Chấp nhận hoặc Hủy Rút Tiền</1> trong email.",
+    "confirmButton": "Tôi đã chấp nhận rút tiền",
     "description": "Vui lòng kiểm tra hộp thư của bạn để nhận email yêu cầu bạn xác nhận một lần rút tiền mới.",
     "return": "Quay lại đây và nhấp bên dưới để tiếp tục chuyển khoản của bạn.",
     "title": "Chấp nhận rút tiền"
@@ -1175,22 +1175,22 @@
     "defaultError": "Xảy ra một lỗi không xác định. Vui lòng nhấp chuột bên dưới để bắt đầu một phiên chuyển khoản mới."
   },
   "transferErrors": {
-    "failedToExecute": "Không thể thực hiện chuyển tiền",
-    "failedToPreview": "Không thể xem trước chuyển tiền",
-    "mfaEmailFailed": "Mã từ email sai, vui lòng nhập lại mã",
+    "failedToExecute": "Không thể thực hiện giao dịch",
+    "failedToPreview": "Không thể xem trước giao dịch",
+    "mfaEmailFailed": "Mã từ email không đúng, vui lòng nhập lại mã",
     "mfaFaceFailed": "Xác minh không thành công, vui lòng thử lại",
-    "mfaFailed": "Mã sai, vui lòng nhập lại mã",
-    "mfaPhoneFailed": "Mã SMS sai, vui lòng nhập lại mã",
-    "mfaTotpFailed": "Mã TOTP sai, vui lòng nhập lại mã",
-    "mfaTradingPinFailed": "Mã pin giao dịch MFA không thành công, vui lòng nhập lại mã"
+    "mfaFailed": "Mã không đúng, vui lòng nhập lại",
+    "mfaPhoneFailed": "Mã SMS không đúng, vui lòng nhập lại mã",
+    "mfaTotpFailed": "Mã TOTP không đúng, vui lòng nhập lại mã",
+    "mfaTradingPinFailed": "Mã PIN giao dịch (MFA) không đúng, vui lòng nhập lại mã"
   },
   "transferFacePage": {
-    "clickOpenApp": "Nhấp <1>Mở ứng dụng {{selectedIntegrationName}}</1> để mở ứng dụng của bạn và hoàn thành việc xác minh khuôn mặt.",
-    "completeMobile": "Hoàn thành việc xác minh khuôn mặt để xác nhận rằng thực sự bạn đang cố gắng chuyển tiền.",
+    "clickOpenApp": "Nhấn <1>Mở ứng dụng {{selectedIntegrationName}}</1> để mở ứng dụng và hoàn tất xác minh khuôn mặt.",
+    "completeMobile": "Hoàn thành bước xác minh khuôn mặt để xác nhận bạn đang thực hiện giao dịch chuyển tiền.",
     "confirmCompleted": "Tôi đã hoàn tất xác minh",
     "openApp": "Mở ứng dụng {{selectedIntegrationName}}",
     "reopenApp": "Mở lại ứng dụng {{selectedIntegrationName}}",
-    "return": "Sau đó, quay lại đây để hoàn thành liên kết tài khoản của bạn.",
+    "return": "Sau đó quay lại đây để hoàn thành liên kết tài khoản của bạn.",
     "returnContinue": "Quay lại đây để tiếp tục liên kết tài khoản của bạn.",
     "scanQR": "Quét mã QR để hoàn thành xác minh khuôn mặt và xác nhận rằng thực sự bạn đang cố gắng chuyển tiền.",
     "title": "Xác minh"
@@ -1204,28 +1204,28 @@
     "belowMinimum": "Dưới mức tối thiểu của {{integrationName}}",
     "connectAnotherAccount": "Vui lòng kết nối tài khoản khác.",
     "connectDifferent": "Kết nối một tài khoản khác",
-    "insufficientBalanceError": "Không đủ số dư để thực hiện giao dịch này.",
+    "insufficientBalanceError": "Số dư không đủ để thực hiện giao dịch này.",
     "insufficientFunds": "Không đủ ngân sách",
-    "unknownError": "Một lỗi không xác định đã xảy ra. Vui lòng nhấp bên dưới để bắt đầu một phiên chuyển khoản mới."
+    "unknownError": "Có lỗi xảy ra. Vui lòng nhấn nút bên dưới để bắt đầu phiên chuyển tiền mới."
   },
   "transferSteps": {
-    "approveTransfer": "Bạn chấp thuận chuyển từ {{integrationName}} đến {{clientName}}",
-    "approveTransferDeFi": "Bạn sẽ được yêu cầu chấp thuận chuyển giao trên {{integrationName}}",
-    "approveTransferToDestination": "Bạn chấp thuận chuyển từ {{integrationName}} đến đích",
+    "approveTransfer": "Bạn chấp nhận chuyển từ {{integrationName}} đến {{clientName}}",
+    "approveTransferDeFi": "Bạn sẽ được yêu cầu chấp nhận chuyển giao trên {{integrationName}}",
+    "approveTransferToDestination": "Bạn chấp nhận giao dịch từ {{integrationName}} đến đích",
     "convertAmount": "Chuyển đổi {{fromAmount}} sang {{toCurrency}}",
-    "depositAmount": "Gửi {{amount}} từ {{paymentMethod}} đến {{integrationName}}",
-    "purchaseAmount": "Mua <2>{{amount}}</2> trị giá {{cryptocurrencySymbol}} trong {{integrationName}}.",
+    "depositAmount": "Nạp {{amount}} từ {{paymentMethod}} đến {{integrationName}}",
+    "purchaseAmount": "Mua <2>{{amount}}</2> tương đương {{cryptocurrencySymbol}} trên {{integrationName}}.",
     "showLess": "Hiển thị ít hơn",
     "showMore": "Hiển thị thêm",
     "title": "Điều gì sẽ xảy ra",
     "transferAmount": "Chuyển khoản <1>{{cryptoAmount}}</1> từ {{integrationName}} đến {{clientName}} {{targetAddress}}.",
-    "transferAmountSmartDeposit": "Chuyển khoản <1>{{cryptoAmount}}</1> từ {{integrationName}} đến {{clientName}} {{targetAddress}} qua hợp đồng chuyển tiếp."
+    "transferAmountSmartDeposit": "Giao dịch <1>{{cryptoAmount}}</1> từ {{integrationName}} đến {{clientName}} {{targetAddress}} thông qua hợp đồng chuyển tiếp."
   },
   "transferUpdateDrawerContent": {
     "approveTransfer": "Chấp nhận giao dịch",
     "cancel": "Hủy bỏ",
-    "description": "Số lượng mua thấp hơn dự kiến do sự thay đổi giá {{token}} và/hoặc phí gas.",
-    "ifDontComplete": "Nếu bạn không hoàn tất chuyển khoản, số dư {{token}} của bạn sẽ vẫn ở trong tài khoản {{selectedIntegrationName}} của bạn.",
+    "description": "Số lượng mua được thấp hơn dự kiến do biến động giá {{token}} và/hoặc phí gas.",
+    "ifDontComplete": "Nếu bạn không hoàn tất giao dịch, số dư {{token}} sẽ vẫn ở trong tài khoản {{selectedIntegrationName}} của bạn.",
     "onYourAccount": "Trong tài khoản của bạn",
     "title": "Cập nhật giao dịch",
     "youWillReceive": "Bạn sẽ nhận được"
@@ -1234,7 +1234,7 @@
     "checkInbox": "Vui lòng kiểm tra email của bạn để xác nhận địa chỉ rút tiền mới.",
     "clickConfirm": "Nhấp <1>Xác nhận địa chỉ</1> trong email.",
     "confirmedButton": "Tôi đã xác nhận địa chỉ",
-    "return": "Quay lại đây và nhấp chuột bên dưới để hoàn tất chuyển khoản.",
+    "return": "Quay lại đây và nhấn bên dưới để hoàn tất chuyển khoản.",
     "title": "Xác nhận địa chỉ rút tiền"
   },
   "trezorContext": {
@@ -1289,7 +1289,7 @@
     "successMessage": "Bạn đã xác minh thành công quyền sở hữu của ví {{walletName}} của mình."
   },
   "withdrawalLockedErrorPage": {
-    "another": "Chuyển từ tài khoản khác",
+    "another": "Giao dịch từ tài khoản khác",
     "title": "Rút tiền tạm thời bị vô hiệu hóa"
   }
 }
