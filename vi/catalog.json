@@ -24,7 +24,7 @@
     "closeButton": "Đóng",
     "continueTo": "Tiếp tục đến {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
-    "notSupported": "{{selectedIntegrationName}} không hỗ trợ giao dịch cho các token hoặc mạng được yêu cầu.",
+    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "receiveAmountInput": {
       "networkName": "trên {{networkName}}"
     },
@@ -318,7 +318,7 @@
     "amountExceedsMaximum": "Số tiền quá cao",
     "badRequest": "Yêu cầu không hợp lệ",
     "balanceNotEnough": "Không đủ tiền",
-    "binanceTravelRuleRestriction": "Luật Giao Dịch (Travel Rule)",
+    "binanceTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
     "coinbaseUnavailable": "Coinbase không khả dụng",
     "configurationMismatch": "Lỗi cấu hình",
     "emptyWalletBalance": "Ví rỗng",
@@ -362,9 +362,9 @@
     "transferAlreadyRequested": "Yêu cầu chuyển khoản đã được gửi",
     "twoFaFailed": "Mã 2FA không hợp lệ",
     "unauthorizedToken": "Token chưa được cấp quyền",
-    "coinbaseTravelRuleRestriction": "Luật Giao Dịch (Travel Rule)",
+    "coinbaseTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
     "withdrawalLocked": "Rút tiền bị khóa",
-    "selfTransferNotAllowed": "Không Cho Phép Chuyển Khoản Tự Động",
+    "selfTransferNotAllowed": "Không được phép chuyển tiền cho chính mình",
     "sendAccessDisabled": "Gửi tiền bị vô hiệu hóa",
     "tryAgainAfterLogin": "Yêu Cầu Đăng Nhập",
     "unableToSend": "Chuyển Khoản Thất Bại",
@@ -378,19 +378,19 @@
     "withdrawalPendingDepositConfirmation": "Rút Tiền Đang Chờ Xác Nhận",
     "accountNotFound": "Không Tìm Thấy Tài Khoản",
     "addressNotAllowlisted": "Địa chỉ không nằm trong danh sách an toàn",
-    "addressAllowlistPending": "Danh Sách Chờ Xác Nhận Địa Chỉ",
+    "addressAllowlistPending": "Địa chỉ an toàn đang chờ xét duyệt",
     "authenticationFailed": "Xác Thực Thất Bại",
     "belowMinimumFiatDeposit": "Số tiền nạp thấp hơn hạn mức tối thiểu",
-    "exceedsApplicationLimit": "Vượt quá giới hạn ứng dụng",
+    "exceedsApplicationLimit": "Vượt quá hạn mức cho phép của ứng dụng",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
     "mfaNotSupported": "Xác thực hai lớp không được hỗ trợ"
   },
   "errorMessages": {
-    "amountBelowMinimum": "Số tiền yêu cầu dưới mức tối thiểu cho phép trên mạng này.",
-    "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức cho phép tối đa trên mạng này.",
+    "amountBelowMinimum": "Số tiền yêu cầu thấp hơn mức tối thiểu cho phép trên mạng lưới này.",
+    "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức tối đa cho phép trên mạng lưới này.",
     "balanceNotEnough": "Số dư không đủ.",
     "binanceTravelRuleRestriction": "Binance không hỗ trợ chuyển khoản đến địa chỉ đích do hạn chế theo quy định về du lịch.",
-    "coinbaseUnavailable": "Coinbase đã xảy ra lỗi. Hãy kiểm tra tài khoản CB của bạn để xem giao dịch đã thành công chưa.",
+    "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
     "default": "Đã xảy ra lỗi.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
     "failedToGetFundingOptions": "Không thể nhận tùy chọn tài trợ",
@@ -403,7 +403,7 @@
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
     "passKeyNotSupported": "Khóa truy cập hiện không được hỗ trợ, vui lòng vô hiệu hóa để tiếp tục.",
     "previewExpired": "Bản xem trước đã hết hạn.",
-    "satoshiTestRequired": "API Coinbase không hỗ trợ chuyển khoản trên 1000 Eur do hạn chế quy tắc di chuyển. Vui lòng thử lại với số tiền thấp hơn.",
+    "satoshiTestRequired": "API của Coinbase không hỗ trợ chuyển tiền vượt quá 1000 Euro do giới hạn của quy tắc giao dịch (travel rule). Vui lòng thử lại với số tiền thấp hơn.",
     "symbolNotSupported": "Ký hiệu không được tích hợp hỗ trợ.",
     "symbolNotSupportedBySource": "Ký hiệu cần chuyển không được ví nguồn hỗ trợ trên mạng được yêu cầu.",
     "symbolNotSupportedByTarget": "Không thể tìm thấy địa chỉ gửi tiền cho đồng tiền được yêu cầu.",
@@ -411,7 +411,7 @@
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Chuyển tiền đã được yêu cầu trước đó.",
     "twoFaFailed": "Xác thực hai yếu tố đã thất bại. Vui lòng thử lại.",
-    "coinbaseTravelRuleRestriction": "API của Coinbase hiện không hỗ trợ chuyển khoản từ quốc gia của bạn do hạn chế quy tắc du lịch toàn cầu.",
+    "coinbaseTravelRuleRestriction": "API của Coinbase hiện chưa hỗ trợ chuyển tiền từ quốc gia của bạn do hạn chế toàn cầu của quy tắc giao dịch (travel rule).",
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
     "addressNotAllowlisted": "Không thể khởi tạo rút tiền từ Coinbase. Bạn hãy thêm địa chỉ người nhận này vào Danh sách được phép tại đây: https://www.coinbase.com/settings/allowlist",
@@ -663,20 +663,20 @@
     "drawerTitle": "Phê duyệt yêu cầu chữ ký<1></1> trong ví của bạn",
     "item1Body": "Bạn sẽ được yêu cầu ký một tin nhắn trong {{selectedIntegrationName}} để xác nhận bạn sở hữu ví này.",
     "item1Title": "{{clientName}} phải xác minh địa chỉ của bạn",
-    "item2Body": "Việc ký không cấp phép cho {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn.",
+    "item2Body": "Việc ký sẽ xác nhận không cho {{clientName}} bất kỳ quyền nào để thực hiện giao dịch với ví của bạn.",
     "item2Title": "Nhanh chóng, an toàn và miễn phí",
-    "monitoringLabel": "Giám sát chữ ký...",
-    "resendAction": "Gửi lại yêu cầu chữ ký",
+    "monitoringLabel": "Đang chờ chữ ký...",
+    "resendAction": "Gửi lại yêu cầu chữ ký",
     "title": "Gần xong rồi!",
     "verifyAction": "Xác minh địa chỉ",
     "verifyingLabel": "Đang xác minh chữ ký..."
   },
   "ipWhiteListPage": {
     "addIp": "Thêm địa chỉ IP bên dưới làm Địa chỉ IP đáng tin cậy",
-    "clickOnEdit": "Nhấn vào chỉnh sửa hạn chế",
+    "clickOnEdit": "Nhấn vào để chỉnh sửa hạn chế",
     "copyIpTitle": "Địa chỉ IP",
     "description": "<0>Binance</0> yêu cầu người dùng API phải thêm địa chỉ IP vào danh sách cho phép khi gửi các yêu cầu giao dịch mua bán và chuyển tiền.",
-    "findKey": "Tìm khóa sử dụng cho kết nối này",
+    "findKey": "Tìm khóa được sử dụng cho kết nối này",
     "openLink": "Mở <2><0>Quản lý API Binance</0></2>",
     "requirementsTitle": "Nếu bạn định giao dịch hoặc chuyển tiền thông qua kết nối này:",
     "title": "Trước khi bạn tiếp tục Danh sách trắng địa chỉ IP này"
@@ -856,7 +856,7 @@
     "title": "Tiếp tục trên cửa sổ {{selectedIntegrationName}} <1></1>"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}} không hỗ trợ chuyển khoản cho các mã thông báo và/hoặc mạng yêu cầu.",
+    "description": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherDescription": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền."
   },
@@ -967,10 +967,10 @@
     "close": "Đóng",
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
-    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các mã thông báo và/hoặc mạng yêu cầu.",
+    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherExchange": "Vui lòng chọn một sàn hoặc ví khác để nạp tiền.",
-    "selectNetwork": "Chọn mạng lưới chuyển khoản",
+    "selectNetwork": "Chọn mạng chuyển tiền",
     "title": "Chọn tài sản để giao dịch"
   },
   "previewPageUI": {
@@ -1037,13 +1037,13 @@
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
     "selectAsset": "Chọn tài sản để giao dịch",
-    "selectNetwork": "Chọn mạng lưới chuyển khoản"
+    "selectNetwork": "Chọn mạng chuyển tiền"
   },
   "robinhoodConnectOAuthPage": {
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
     "selectAsset": "Chọn tài sản để giao dịch",
-    "selectNetwork": "Chọn mạng lưới chuyển khoản"
+    "selectNetwork": "Chọn mạng chuyển tiền"
   },
   "selectCryptoFundingPage": {
     "title": "Chọn tài sản"
@@ -1053,7 +1053,7 @@
     "binanceDirectNoAssetsBody2": "Bạn có thể thêm tiền vào tài khoản của mình hoặc kết nối với tài khoản khác để tiếp tục quá trình chuyển khoản.",
     "cannotFundBody": "Bạn không có đủ số dư tiền mã hóa hoặc tiền pháp định trong tài khoản này để thực hiện giao dịch này.",
     "cannotFundTitle": "Không thể tài trợ giao dịch",
-    "connectAnotherButton": "Kết nối tài khoản khác",
+    "connectAnotherButton": "Kết nối với tài khoản khác",
     "defaultTitle": "Chọn token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
@@ -1109,7 +1109,7 @@
   },
   "termsAndConditionsPage": {
     "paragraph1": "Mesh Connect, Inc. (Công ty <1>“Công ty”</1>) là nhà cung cấp công nghệ tạo ra công cụ giao tiếp (công cụ <3>“Công cụ”</3>) giúp tạo điều kiện cho một số chức năng của dịch vụ bên thứ ba bạn đang sử dụng (dịch vụ <5>“Dịch vụ Người dùng Cuối”</5>). Chức năng này nhằm giúp bạn giao tiếp với các tài khoản và ví bên thứ ba của mình (<7>“Tài khoản Kết nối”</7>) thông qua Dịch vụ Người dùng Cuối, bao gồm cả việc gửi hướng dẫn mà bạn muốn thực hiện.",
-    "paragraph10": "Việc phân xử sẽ được thực hiện bởi Hiệp hội Trọng tài Mỹ theo Quy tắc Trọng tài Người tiêu dùng của mình, đã được sửa đổi theo các điều khoản này. Quy tắc Trọng tài Người tiêu dùng có sẵn trực tuyến tại <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Trọng tài viên sẽ tiến hành các phiên điều trần, nếu có, thông qua hội nghị truyền hình hoặc hội nghị truyền hình, thay vì gặp mặt trực tiếp, trừ khi tổ trọng tài viên quyết định theo yêu cầu của bạn hoặc chúng tôi rằng một phiên điều trần trực tiếp là thích hợp. Bất kỳ việc xuất hiện trực tiếp nào sẽ được tổ chức tại một địa điểm thuận tiện hợp lý cho cả hai bên với sự cân nhắc đến khả năng đi lại và các hoàn cảnh liên quan khác của họ. Nếu bạn và Công ty không thể đồng ý về một địa điểm, quyết định đó sẽ được thực hiện bởi AAA hoặc trọng tài viên. Quyết định của trọng tài viên sẽ tuân theo các điều khoản này và sẽ là cuối cùng và có hiệu lực ràng buộc. Trọng tài viên sẽ có quyền trao quyền giúp tạm thời, tạm thời hoặc vĩnh viễn cũng như quyền cung cấp thực hiện cụ thể của các điều khoản này, nhưng chỉ trong chừng mực cần thiết để cung cấp sự đền bù được bảo lãnh bởi yêu cầu cá nhân đang được trọng tài xem xét. Phán quyết của trọng tài viên có thể được xác nhận và thi hành tại bất kỳ tòa án có thẩm quyền nào đối với nó. Mặc dù đã trình bày ở trên, không có điều gì trong các điều khoản này ngăn cản bạn đưa các vấn đề đến sự chú ý của các cơ quan liên bang, tiểu bang hoặc địa phương, và nếu pháp luật cho phép, họ có thể tìm kiếm sự giúp đỡ chống lại chúng tôi cho bạn.",
+    "paragraph10": "Việc phân sử sẽ được thực hiện bởi Hiệp hội Trọng tài Hoa Kỳ (American Arbitration Association - AAA) theo Bộ Quy tắc Trọng tài Người tiêu dùng (Consumer Arbitration Rules), được sửa đổi bởi các điều khoản này. Bộ Quy tắc Trọng tài Người tiêu dùng có thể được xem trực tuyến tại <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>.\nTrọng tài sẽ tiến hành các cuộc họp (nếu có) qua hội nghị truyền hình hoặc hội nghị video, thay vì gặp trực tiếp, trừ khi trọng tài xác định rằng, một cuộc họp trực tiếp là cần thiết theo yêu cầu của bạn hoặc của chúng tôi. Mọi cuộc gặp trực tiếp sẽ được tổ chức tại địa điểm thuận tiện hợp lý cho cả hai bên, xem xét khả năng đi lại và các hoàn cảnh liên quan khác. Nếu bạn và Công ty không thể thống nhất địa điểm, quyết định này sẽ do AAA hoặc trọng tài đưa ra. Quyết định của trọng tài sẽ tuân theo các điều khoản này và mang tính cuối cùng, có hiệu lực ràng buộc. Trọng tài có thẩm quyền ban hành các biện pháp tạm thời, lâu dài hoặc vĩnh viễn để ngăn chặn hành vi hoặc yêu cầu thực hiện cụ thể các điều khoản này, nhưng chỉ trong phạm vi cần thiết để giải quyết yêu cầu cá nhân trước trọng tài. Phán quyết của trọng tài có thể được xác nhận và thi hành tại bất kỳ tòa án nào có thẩm quyền. Bất chấp các điều trên, không điều khoản nào trong các điều khoản này cấm bạn trình bày các vấn đề với các cơ quan liên bang, tiểu bang hoặc địa phương và, nếu luật pháp cho phép, các cơ quan này có thể yêu cầu bồi thường thay bạn.",
     "paragraph11": "Các điều khoản này tạo thành thỏa thuận hoàn chỉnh giữa bạn và Công ty liên quan đến vấn đề này và thay thế tất cả các đại diện hoặc thỏa thuận trước đó, dù bằng lời nói hay bằng văn bản, liên quan đến các vấn đề như vậy. Nếu bất kỳ điều khoản nào không thể thi hành theo luật áp dụng, thì điều khoản đó sẽ được sửa đổi để giữ nguyên tôn chỉ của điều khoản ban đầu đến mức tối đa có thể trong khi vẫn tuân thủ luật pháp. Bất kỳ điều khoản nào không thể được sửa đổi như vậy sẽ được loại bỏ và tất cả các điều khoản còn lại vẫn có hiệu lực. Bạn công nhận và đồng ý rằng các nhà cung cấp dịch vụ của Công ty là các bên thứ ba được hưởng lợi dự kiến từ các điều khoản này. Bằng cách chấp nhận các điều khoản và điều kiện này hoặc sử dụng Công cụ, bạn đồng ý rằng bạn bị ràng buộc bởi các điều khoản và điều kiện của thỏa thuận này.",
     "paragraph2": "Bạn công nhận và đồng ý rằng một số chức năng của Dịch vụ Người dùng Cuối dựa trên Công cụ; rằng việc sử dụng chức năng đó là theo hướng dẫn của bạn; rằng Công ty và các nhà cung cấp dịch vụ của nó không cung cấp dịch vụ môi giới hoặc tham gia vào xử lý thanh toán; và rằng Công ty và các nhà cung cấp dịch vụ của nó không có trách nhiệm hoặc nghĩa vụ đối với Dịch vụ Người dùng Cuối hoặc bất kỳ Tài khoản Kết nối nào, hoặc các điều khoản, chính sách, hành vi hoặc không làm của các nhà cung cấp.",
     "paragraph3": "Bạn cam kết và đảm bảo rằng bạn có đầy đủ quyền và sự đồng ý cần thiết để kết nối và truy cập từng Tài khoản Đã Kết nối thông qua chức năng này, bao gồm quyền cung cấp cho Công ty và các nhà cung cấp dịch vụ của Công ty thông tin đăng nhập tài khoản, địa chỉ ví và/hoặc bất kỳ thông tin tài khoản hoặc thông tin cá nhân nào của bạn đối với từng Tài khoản Đã Kết nối. Bạn ủy quyền cho Công ty và các nhà cung cấp dịch vụ của mình truyền tải các hướng dẫn cũng như thông tin, dữ liệu và các tài liệu khác giữa Dịch vụ Người Dùng Cuối và từng Tài khoản Đã Kết nối, đồng thời bạn thừa nhận và đồng ý rằng Công ty và các nhà cung cấp dịch vụ không chịu trách nhiệm hay nghĩa vụ pháp lý nào đối với việc thực hiện các hướng dẫn đó, hoặc bất kỳ tài liệu nào (bao gồm độ chính xác, kịp thời hoặc đầy đủ của chúng).",
