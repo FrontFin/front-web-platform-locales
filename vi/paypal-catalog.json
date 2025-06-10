@@ -20,15 +20,15 @@
     "closeButton": "Đóng",
     "continueTo": "Tiếp tục đến {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền chuyển",
-    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển khoản cho các token và/hoặc mạng yêu cầu.",
+    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "receiveAmountInput": {
       "networkName": "trên {{networkName}}"
     },
-    "selectAnotherAccount": "Chọn tài khoản khác",
+    "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherExchange": "Vui lòng chọn sàn giao dịch hoặc ví khác để gửi tiền từ đó.",
     "selectAsset": "Chọn tài sản để chuyển",
     "selectCurrency": "Chọn tiền tệ",
-    "selectNetwork": "Chọn mạng để chuyển",
+    "selectNetwork": "Chọn mạng chuyển tiền",
     "youPay": "Bạn thanh toán",
     "youReceive": "Bạn nhận"
   },
@@ -434,7 +434,7 @@
     "detailButton": "Xem điều gì đã xảy ra",
     "error": "Không thể thực hiện chuyển khoản",
     "loadingLabel": "Đang xác thực chuyển khoản của bạn...",
-    "networkConfirmations": "Chuyển khoản này sẽ không được khởi động cho đến khi được phê duyệt trong {{selectedIntegrationName}}.",
+    "networkConfirmations": "Giao dịch chuyển tiền này sẽ không được thực hiện cho đến khi được phê duyệt trong {{selectedIntegrationName}}.",
     "notInitiatedUntilApproved": "Chuyển khoản này sẽ không được khởi động cho đến khi được phê duyệt trong {{selectedIntegrationName}}.",
     "recievedDetails": "Bạn sẽ nhận được <1>{{amountStr}}</1> trong {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Yêu cầu của bạn chuyển đến {{destination}} đã được nhận bởi {{selectedIntegrationName}}",
@@ -670,8 +670,8 @@
     "title": "Tiếp tục trên cửa sổ {{selectedIntegrationName}}<1></1>"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}} không hỗ trợ chuyển khoản đối với các token và/hoặc mạng lưới được yêu cầu.",
-    "selectAnotherAccount": "Chọn tài khoản khác",
+    "description": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
+    "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherDescription": "Vui lòng chọn một sàn giao dịch hoặc ví khác để gửi đi."
   },
   "oAuthMessageListener": {
@@ -741,10 +741,10 @@
     "close": "Đóng",
     "continue": "Tiếp tục đến {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền chuyển",
-    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển các token và/hoặc các mạng được yêu cầu.",
-    "selectAnotherAccount": "Chọn tài khoản khác",
+    "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
+    "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherExchange": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp từ.",
-    "selectNetwork": "Chọn mạng chuyển",
+    "selectNetwork": "Chọn mạng chuyển tiền",
     "title": "Chọn tài sản để chuyển"
   },
   "previewTransfer": {
@@ -797,13 +797,13 @@
     "continue": "Tiếp tục đến {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền chuyển",
     "selectAsset": "Chọn tài sản để chuyển",
-    "selectNetwork": "Chọn mạng chuyển"
+    "selectNetwork": "Chọn mạng chuyển tiền"
   },
   "robinhoodConnectOAuthPage": {
     "continue": "Tiếp tục đến {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền chuyển",
     "selectAsset": "Chọn tài sản để chuyển",
-    "selectNetwork": "Chọn mạng chuyển"
+    "selectNetwork": "Chọn mạng chuyển tiền"
   },
   "selectCryptoFundingPage": {
     "title": "Chọn tài sản"
@@ -813,7 +813,7 @@
     "binanceDirectNoAssetsBody2": "Bạn có thể nạp thêm tiền vào tài khoản hoặc kết nối một tài khoản khác để tiếp tục chuyển khoản.",
     "cannotFundBody": "Bạn không có đủ số dư tiền mã hóa hoặc tiền pháp định trong tài khoản này để tài trợ cho giao dịch này.",
     "cannotFundTitle": "Không thể tài trợ giao dịch",
-    "connectAnotherButton": "Kết nối tài khoản khác",
+    "connectAnotherButton": "Kết nối với tài khoản khác",
     "defaultTitle": "Chọn token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
@@ -867,7 +867,7 @@
   },
   "termsAndConditionsPage": {
     "paragraph1": "Mesh Connect, Inc. (gọi là <1>“Công ty”</1>) là một nhà cung cấp công nghệ giúp tạo ra một công cụ giao tiếp (gọi là <3>“Công cụ”</3>) hỗ trợ thực hiện một số chức năng của dịch vụ bên thứ ba mà bạn đang sử dụng (gọi là <5>“Dịch vụ Người Dùng Cuối”</5>). Chức năng này giúp bạn giao tiếp với các tài khoản và ví bên thứ ba của mình (<7>“Tài khoản Kết nối”</7>) thông qua Dịch vụ Người Dùng Cuối, bao gồm cả việc gửi các chỉ dẫn mà bạn muốn thực hiện.",
-    "paragraph10": "Trọng tài sẽ được quản lý bởi Hiệp hội Trọng tài Mỹ theo Quy tắc Trọng tài Người tiêu dùng, được sửa đổi bởi các điều khoản này. Quy tắc Trọng tài Người tiêu dùng có sẵn trực tuyến tại <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Trọng tài viên sẽ tiến hành phiên điều trần, nếu có, bằng hội nghị truyền hình hoặc hội nghị truyền hình thay vì gặp mặt trực tiếp, trừ khi trọng tài viên quyết định theo yêu cầu của bạn hoặc của chúng tôi rằng cuộc họp trực tiếp là phù hợp. Bất kỳ buổi họp mặt trực tiếp nào sẽ diễn ra tại một địa điểm hợp lý cho cả hai bên, có tính đến khả năng di chuyển và các hoàn cảnh liên quan khác của họ. Nếu bạn và Công ty không thể thống nhất về địa điểm, quyết định đó sẽ được thực hiện bởi AAA hoặc trọng tài viên. Quyết định của trọng tài viên sẽ tuân theo các điều khoản này và sẽ là cuối cùng và bắt buộc. Trọng tài viên có thẩm quyền trao tặng biện pháp khấm chế tạm thời, tạm thời hoặc vĩnh viễn hoặc biện pháp cung cấp thực hiện cụ thể của các điều khoản này, nhưng chỉ trong phạm vi cần thiết để cung cấp biện pháp khắc phục được bảo đảm bởi yêu cầu cá nhân trước trọng tài viên. Phán quyết của trọng tài viên có thể được xác nhận và thực thi trong bất kỳ tòa án nào có thẩm quyền. Mặc dù có những điều trên, không có điều gì trong các điều khoản này sẽ ngăn cản bạn đưa các vấn đề trước sự chú ý của các cơ quan liên bang, tiểu bang hoặc địa phương và, nếu pháp luật cho phép, họ có thể yêu cầu hỗ trợ từ chúng tôi cho bạn.",
+    "paragraph10": "Việc phân sử sẽ được thực hiện bởi Hiệp hội Trọng tài Hoa Kỳ (American Arbitration Association - AAA) theo Bộ Quy tắc Trọng tài Người tiêu dùng (Consumer Arbitration Rules), được sửa đổi bởi các điều khoản này. Bộ Quy tắc Trọng tài Người tiêu dùng có thể được xem trực tuyến tại <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>.\nTrọng tài sẽ tiến hành các cuộc họp (nếu có) qua hội nghị truyền hình hoặc hội nghị video, thay vì gặp trực tiếp, trừ khi trọng tài xác định rằng, một cuộc họp trực tiếp là cần thiết theo yêu cầu của bạn hoặc của chúng tôi. Mọi cuộc gặp trực tiếp sẽ được tổ chức tại địa điểm thuận tiện hợp lý cho cả hai bên, xem xét khả năng đi lại và các hoàn cảnh liên quan khác. Nếu bạn và Công ty không thể thống nhất địa điểm, quyết định này sẽ do AAA hoặc trọng tài đưa ra. Quyết định của trọng tài sẽ tuân theo các điều khoản này và mang tính cuối cùng, có hiệu lực ràng buộc. Trọng tài có thẩm quyền ban hành các biện pháp tạm thời, lâu dài hoặc vĩnh viễn để ngăn chặn hành vi hoặc yêu cầu thực hiện cụ thể các điều khoản này, nhưng chỉ trong phạm vi cần thiết để giải quyết yêu cầu cá nhân trước trọng tài. Phán quyết của trọng tài có thể được xác nhận và thi hành tại bất kỳ tòa án nào có thẩm quyền. Bất chấp các điều trên, không điều khoản nào trong các điều khoản này cấm bạn trình bày các vấn đề với các cơ quan liên bang, tiểu bang hoặc địa phương và, nếu luật pháp cho phép, các cơ quan này có thể yêu cầu bồi thường thay bạn.",
     "paragraph11": "Các điều khoản này tạo thành thỏa thuận hoàn chỉnh giữa bạn và Công ty liên quan đến đối tượng của chúng, và thay thế mọi đại diện hoặc thỏa thuận trước đây, dù là bằng miệng hay bằng văn bản, liên quan đến các vấn đề đó. Nếu bất kỳ điều khoản nào không thể thực thi được theo luật hiện hành, điều khoản đó sẽ được sửa đổi để tuân thủ luật, đồng thời giữ lại tối đa ý định của điều khoản gốc. Bất kỳ điều khoản nào không thể được sửa đổi như vậy sẽ bị loại bỏ và tất cả các điều khoản còn lại sẽ vẫn có hiệu lực. Bạn thừa nhận và đồng ý rằng các nhà cung cấp dịch vụ của Công ty là những bên thứ ba có quyền lợi đối với các điều khoản này. Bằng cách chấp nhận các điều khoản và điều kiện này hoặc sử dụng Công cụ, bạn đồng ý rằng bạn bị ràng buộc bởi các điều khoản và điều kiện của thỏa thuận này.",
     "paragraph2": "Bạn thừa nhận và đồng ý rằng một số chức năng của Dịch vụ Người Dùng Cuối dựa trên Công cụ; rằng việc bạn sử dụng chức năng như vậy là theo chỉ dẫn của bạn; rằng Công ty cũng như các nhà cung cấp dịch vụ của họ không cung cấp các dịch vụ giao dịch môi giới hoặc tham gia vào việc xử lý thanh toán; và rằng Công ty cũng như các nhà cung cấp dịch vụ của họ không có trách nhiệm hay trách nhiệm pháp lý cho Dịch vụ Người Dùng Cuối hay bất kỳ Tài Khoản Kết Nối nào, hoặc các điều khoản, chính sách, hành động hay thiếu sót của những nhà cung cấp này.",
     "paragraph3": "Bạn khẳng định và đảm bảo rằng bạn có tất cả các quyền và sự đồng ý cần thiết để kết nối và truy cập từng Tài Khoản Kết Nối thông qua chức năng như vậy, bao gồm quyền cung cấp cho Công ty và các nhà cung cấp dịch vụ của họ thông tin đăng nhập tài khoản của bạn, địa chỉ ví và/hoặc bất kỳ thông tin tài khoản hoặc thông tin cá nhân nào của bạn cho từng Tài Khoản Kết Nối. Bằng cách này, bạn ủy quyền cho Công ty và các nhà cung cấp dịch vụ của họ truyền tải chỉ dẫn, thông tin, dữ liệu và các tài liệu khác giữa Dịch vụ Người Dùng Cuối và từng Tài Khoản Kết Nối, và bạn thừa nhận và đồng ý rằng Công ty và các nhà cung cấp dịch vụ của họ không chịu trách nhiệm hoặc trách nhiệm pháp lý cho việc thực hiện bất kỳ chỉ dẫn nào như vậy, hoặc cho bất kỳ tài liệu nào như vậy (bao gồm tính chính xác, kịp thời hoặc đầy đủ của chúng).",
