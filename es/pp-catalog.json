@@ -1,4 +1,8 @@
 {
+  "accessDeniedPage": {
+    "body": "Desafortunadamente, la actividad desde tu país actualmente no está permitida.",
+    "title": "Acceso denegado"
+  },
   "addressWhitelistPage": {
     "addAddress": "Añadir la siguiente dirección como aprobada:",
     "goToAccount": "Ve a tu cuenta en <1>{{selectedIntegrationName}} </1>",
@@ -67,10 +71,14 @@
     "authApp": "Aplicación de Autenticación",
     "email": "Correo electrónico",
     "enabled": "Activo",
+    "error": "Error al vincular MFA",
     "notEnabled": "Deshabilitado"
   },
   "browserContent": {
     "openButtom": "Abrir {{integrationName}}"
+  },
+  "catalogCell": {
+    "select": "Selecciona {{integrationName}}, {{badge}}"
   },
   "catalogList": {
     "badges": {
@@ -82,7 +90,8 @@
     "paymentTitle": "Selecciona tu cuenta",
     "prodOnly": "Sólo producción",
     "search": "buscar",
-    "title": "Selecciona una cuenta para vincular"
+    "title": "Selecciona una cuenta para vincular",
+    "title40": "Conectar a una plataforma o wallet"
   },
   "catalogTile": {
     "select": "Selecciona {{integrationName}}, {{badge}}"
@@ -128,20 +137,23 @@
     "failedToLoadTrasferError": "Error al cargar la información sobre la transferencia",
     "genericConnectErrorMessage": "No se pudo conectar a su integración",
     "maxCap": "Máx",
-    "mesh": "Malla",
+    "mesh": "Mesh",
     "notFound": "No se encontró",
     "searchCap": "Buscar",
     "securedBy": "Protegido por",
     "somethingWentWrong": "Algo salió mal...",
     "submitCap": "Enviar",
     "successTitle": "¡Éxito!",
+    "termsOfUse": "Al continuar, aceptas los <2>términos de uso</2>",
     "tryAgain": "Inténtalo de nuevo"
   },
   "commonContent": {
+    "connecting": "Conectando...",
     "description": "facilitará la conexión segura con {{integrationName}}.",
     "monitoring": "Esperando la aprobación...",
     "resend": "Reenviar solicitud de conexión",
-    "title": "Aprueba la solicitud de conexión<1></1> en la cartera"
+    "title": "Aprueba la solicitud de conexión<1></1> en la cartera",
+    "title40": "Aprueba la solicitud de conexión en tu<1></1> aplicación de {{walletName}}."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Sigue las instrucciones de tu computadora para conectar tu {{selectedIntegrationName}}",
@@ -155,7 +167,8 @@
     "connectAnother": "Conectar otra cuenta"
   },
   "connectionFailedPage": {
-    "defaultError": "Ha ocurrido un error."
+    "defaultError": "Ha ocurrido un error.",
+    "directMobileFlowError": "La sesión ha expirado. Por favor, vuelva a su página de pago de TAO e intente nuevamente."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Conectar otra cartera",
@@ -176,6 +189,13 @@
   },
   "deFiWalletDrawerContent": {
     "actionButton": "Conectar con {{selectedIntegrationName}}"
+  },
+  "deFiWalletInitialPage": {
+    "continue": "Continúa en {{walletName}}",
+    "previewButton": "Conectar",
+    "previewTitle": "Conectar cuenta",
+    "subtitle": "Haz clic abajo para abrir {{walletName}}. Luego aprueba la solicitud de conexión para mostrar tu pago.",
+    "title": "Conectar tu wallet"
   },
   "defiWalletQrPage": {
     "declinedBody": "Has rechazado la solicitud para conectar tu cartera, o la solicitud anterior sigue activa.",
@@ -258,10 +278,14 @@
   "doneTransferPage": {
     "awaitingApproval": "Ésta transferencia no se iniciará hasta que sea aprobada en {{selectedIntegrationName}}.",
     "checkDetails": "Revisar lo que sucedió",
+    "checkDetails40": "Ver detalles de la transacción",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>será recibido en {{shortAddress}}",
-    "depositClient": "Recibirás<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>en {{clientName}} ({{shortAddress}})",
+    "depositClient": "Recibirás <2>{{amountCrypto}} ~ {{amountFiat}}</2> en {{clientName}} ({{shortAddress}})",
+    "directMobileBody": "Regrese a su página de pago de TAO para finalizar su pago.",
+    "directMobileTitle": "Pago iniciado",
+    "goBackToShift4": "← Regresar a Shift4",
     "goToIntegrationToApprove": "Por favor, ve a <1>{{selectedIntegrationName}}</1> para aprobar esta transferencia.",
-    "paymentInitiated": "Has iniciado un pago de <1></1><2>{{amountCrypto}}</2> <3></3> a {{clientName}}",
+    "paymentInitiated": "Has iniciado un pago de <1></1><2>{{amountCrypto}}</2> <4></4> a {{clientName}}",
     "waiting": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red."
   },
   "doneVerifyPage": {
@@ -287,6 +311,136 @@
     "stillWaitingLoading": "Esperando por el correo electrónico...",
     "title": "Confirma tu identidad",
     "warningTitle": "Lee todo el mensaje antes de continuar."
+  },
+  "errorHeadlines": {
+    "accountTypeNotSupported": "Tipo de cuenta no soportada",
+    "amountBelowMinimum": "Cantidad demasiado baja",
+    "amountExceedsMaximum": "Cantidad demasiado alta",
+    "badRequest": "Solicitud inválida",
+    "balanceNotEnough": "Saldo insuficiente",
+    "binanceTravelRuleRestriction": "Restricción de la Norma de Viaje",
+    "coinbaseUnavailable": "Coinbase no disponible",
+    "configurationMismatch": "Error de configuración",
+    "emptyWalletBalance": "Wallet vacía",
+    "expiredSmartDeposit": "Depósito inteligente expirado",
+    "failedToGetFundingOptions": "Error en opciones de financiación",
+    "failedToSaveFundingOptions": "Guardado fallido",
+    "feeAssetBalanceNotEnough": "Saldo insuficiente de tarifas",
+    "forbiddenByIntegration": "Acceso prohibido",
+    "fromAccountNotSupported": "Retiro no soportado",
+    "integrationError": "Error de integración",
+    "integrationNotAvailable": "Integración no disponible",
+    "invalidField": "Información inválida",
+    "invalidFromIntegrationToken": "Token de origen inválido",
+    "invalidIntegrationToken": "Token inválido",
+    "invalidToIntegrationToken": "Token de destino inválido",
+    "kycRequired": "Se requiere KYC",
+    "locked": "Cuenta bloqueada",
+    "missingField": "Información faltante",
+    "networkDisabled": "Red deshabilitada",
+    "networkUnsupported": "Red no soportada",
+    "noAvailableSmartContract": "Contrato inteligente no disponible",
+    "notAuthorizedFromIntegrationToken": "Fuente no autorizada",
+    "notAuthorizedToIntegrationToken": "Destino no autorizado",
+    "notFound": "No se encontró",
+    "notSupported": "No soportado",
+    "orderTypeNotSupported": "Tipo de orden no soportada",
+    "passKeyNotSupported": "Llave de acceso no soportada",
+    "paymentMethodNotAvailable": "Método de pago no disponible",
+    "permissionDenied": "Acceso denegado",
+    "previewExpired": "Vista previa expirada",
+    "refusedByIntegration": "Transferencia rechazada",
+    "satoshiTestRequired": "Límite de cantidad excedido",
+    "serverFailure": "Error del servidor",
+    "symbolNotSupported": "Símbolo no soportado",
+    "symbolNotSupportedBySource": "Fuente no soportada",
+    "symbolNotSupportedByTarget": "Destino no soportado",
+    "symbolNotSupportedForTrading": "Operación no soportada",
+    "timeInForceNotSupported": "Tiempo en vigencia no soportado",
+    "toAccountNotSupported": "Depósito no soportado",
+    "tooManyRequests": "Demasiadas solicitudes",
+    "transferAlreadyRequested": "La transferencia ya fue solicitada",
+    "twoFaFailed": "Código 2FA no válido",
+    "unauthorizedToken": "Token no autorizado",
+    "coinbaseTravelRuleRestriction": "Restricción de la Norma de Viaje",
+    "withdrawalLocked": "Retiros bloqueados",
+    "selfTransferNotAllowed": "Transferencia automática no permitida",
+    "sendAccessDisabled": "Acceso para enviar deshabilitado",
+    "tryAgainAfterLogin": "Inicio de sesión requerido",
+    "unableToSend": "Transferencia fallida",
+    "userInfoUnavailable": "Información del usuario no disponible",
+    "webWithdrawalLimitExceeded": "Límite de retiro excedido",
+    "whitelistAddressRequired": "Se requiere lista blanca de direcciones",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Retiros deshabilitados temporalmente",
+    "withdrawalDisabledDueToScamRisk": "Retiros deshabilitados temporalmente",
+    "withdrawalDisabledDueToSecurityReset": "Retiros deshabilitados temporalmente",
+    "withdrawalDisabledDueToSuspiciousActivity": "Retiros deshabilitados temporalmente",
+    "withdrawalPendingDepositConfirmation": "Retiro pendiente de confirmación",
+    "accountNotFound": "Cuenta no encontrada",
+    "addressNotAllowlisted": "Dirección no permitida en la lista blanca",
+    "addressAllowlistPending": "Lista blanca de direcciones pendiente",
+    "authenticationFailed": "Autenticación fallida",
+    "belowMinimumFiatDeposit": "Depósito Fiat por debajo del mínimo",
+    "exceedsApplicationLimit": "Supera el límite de la aplicación",
+    "invalidCredentials": "Credenciales inválidas",
+    "mfaNotSupported": "La MFA no es compatible"
+  },
+  "errorMessages": {
+    "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
+    "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
+    "balanceNotEnough": "Saldo insuficiente.",
+    "binanceTravelRuleRestriction": "Binance no permite transferencias a la dirección de destino debido a restricciones de la regla de viaje.",
+    "coinbaseUnavailable": "Coinbase tuvo un error. Vaya a verificar su cuenta de CB para ver si la transferencia se realizó.",
+    "default": "Ha ocurrido un error.",
+    "emptyWalletBalance": "El saldo de tu cartera de origen está vacío.",
+    "failedToGetFundingOptions": "No se pudo obtener las opciones de fondeo",
+    "failedToSaveFundingOptions": "No se pudo guardar las opciones de fondeo",
+    "feeAssetBalanceNotEnough": "Fondos insuficientes para los costos de transferencia.",
+    "fromAccountNotSupported": "La cuenta actualmente no admite retiros de criptomonedas.",
+    "integrationNotAvailable": "La integración no está disponible.",
+    "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación de identidad personal antes de habilitar transferencias de criptomonedas.",
+    "locked": "Su cuenta está bloqueada",
+    "networkDisabled": "La red está actualmente deshabilitada y no se puede usar.",
+    "passKeyNotSupported": "La clave de acceso no es compatible actualmente, por favor desactívelo para continuar.",
+    "previewExpired": "La vista previa ha expirado.",
+    "satoshiTestRequired": "La API de Coinbase no admite transferencias superiores a 1000 euros debido a restricciones de la regla de viaje. Intente nuevamente con un monto menor.",
+    "symbolNotSupported": "El símbolo no es compatible con la integración.",
+    "symbolNotSupportedBySource": "El símbolo para transferir no es compatible con la cartera de origen en la red solicitada.",
+    "symbolNotSupportedByTarget": "No se pudo encontrar la dirección de depósito para la moneda solicitada.",
+    "toAccountNotSupported": "La cuenta de destino no admite actualmente depósitos de criptomonedas.",
+    "tooManyRequests": "Inténtalo de nuevo más tarde.",
+    "transferAlreadyRequested": "La transferencia ya fue solicitada.",
+    "twoFaFailed": "La validación de dos factores falló. Por favor, inténtalo de nuevo.",
+    "coinbaseTravelRuleRestriction": "La API de Coinbase actualmente no admite transferencias desde su país debido a las restricciones de la regla de viaje global.",
+    "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde.",
+    "accountNotFound": "No se puede recuperar su(s) cuenta(s).",
+    "addressNotAllowlisted": "No se puede iniciar el retiro de Coinbase. Debe agregar esta dirección de destinatario a su Lista de Permitidos aquí: https://www.coinbase.com/settings/allowlist",
+    "addressAllowlistPending": "Esta dirección de destinatario se ha añadido a su Lista de Permitidos y está pendiente de retención.",
+    "authenticationFailed": "No se puede autenticar con la integración seleccionada.",
+    "belowMinimumFiatDeposit": "La cantidad está por debajo del límite mínimo de depósito fiat.",
+    "exceedsApplicationLimit": "La cantidad de transferencia supera el límite de la aplicación.",
+    "invalidCredentials": "Las credenciales proporcionadas son inválidas. Por favor inténtelo de nuevo.",
+    "mfaNotSupported": "La autenticación multifactor no está soportada para esta operación.",
+    "selfTransferNotAllowed": "No puedes enviar transferencias de una cuenta a sí misma.",
+    "sendAccessDisabled": "No se puede iniciar retiro ya que el acceso de envío ha sido desactivado para esta cuenta.",
+    "tryAgainAfterLogin": "Por favor, inténtelo de nuevo después de iniciar sesión.",
+    "unableToSend": "No se puede enviar la transferencia. Por favor, inténtelo de nuevo.",
+    "userInfoUnavailable": "No se puede obtener la información del usuario. Por favor, inténtelo de nuevo.",
+    "webWithdrawalLimitExceeded": "Ha superado el límite máximo diario de retiro para la versión web de Binance.",
+    "whitelistAddressRequired": "La dirección de destino debe estar en la lista blanca.",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Para la seguridad de sus activos, algunos de sus activos de depósito C2C deben estar congelados por 24 horas. Después de 24 horas, el estado de congelación se levantará automáticamente y podrá retirar cripto. Durante el periodo de congelación, sus transacciones en el sitio no se verán afectadas, por favor utilice los servicios de transacción de Binance normalmente.",
+    "withdrawalDisabledDueToScamRisk": "Su retiro ha sido identificado como de alto riesgo. Para mantener sus fondos seguros, los retiros de su cuenta están temporalmente deshabilitados por 1 hora.",
+    "withdrawalDisabledDueToSecurityReset": "La función de retiro de su cuenta ha sido temporalmente deshabilitada debido a un reinicio reciente de verificación de seguridad.",
+    "withdrawalDisabledDueToSuspiciousActivity": "Su función de retiro ha sido deshabilitada debido a actividad sospechosa. Por favor, complete el proceso de verificación en Binance. Si no puede verificar, contacte a Soporte al Cliente. Si recientemente completó la verificación, por favor espere un momento e inténtelo de nuevo.",
+    "withdrawalPendingDepositConfirmation": "Su depósito no ha cumplido con las confirmaciones de desbloqueo requeridas para el retiro. Por favor, chequee el Historial de Transacciones para más detalles.",
+    "invalidFromIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
+    "invalidToIntegrationToken": "No se puede identificar el destino.",
+    "notAuthorizedFromIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
+    "notAuthorizedToIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
+    "configurationMismatch": "No se puede iniciar la transferencia. La configuración de la cuenta no coincide con la transferencia solicitada.",
+    "refusedByIntegration": "No se puede iniciar la transferencia. La integración ha rechazado la solicitud.",
+    "noAvailableSmartContract": "No hay contrato inteligente disponible",
+    "expiredSmartDeposit": "El depósito inteligente ha expirado. El contrato inteligente ha sido desalocado."
   },
   "errorPage": {
     "title": "Ha ocurrido un error."
@@ -339,17 +493,30 @@
     "title": "Verificación"
   },
   "fields": {
+    "apiKey": "Llaves de API",
+    "apiSecret": "Secreto de API",
     "authToken": "Token de autorización",
     "challengeCode": "Código de desafío",
+    "clientId": "ID de cliente",
+    "clientSecret": "Secreto del cliente",
+    "email": "E-mail",
+    "emailOrUsername": "Correo electrónico o nombre de usuario",
     "mfaCode": "Código MFA",
+    "passphrase": "Frase de acceso",
     "password": "Contraseña",
     "phone": "Número de teléfono",
+    "privateKey": "Clave privada",
+    "secretKey": "Clave secreta",
     "tradePin": "NIP de trading",
+    "userId": "ID de usuario",
     "username": "Nombre de usuario"
   },
   "fullScreenSpinner": {
     "linking": "Vinculando tu cuenta...",
     "loading": "Espere por favor..."
+  },
+  "fundingLoadingOverlay": {
+    "loading": "Cargando..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -403,12 +570,14 @@
     "cryptoConversion": "Cambio de criptomonedas",
     "description": "Total: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Dinero inmediato disponible: {{amountInFiat}})",
+    "insufficientFunds": "Saldo insuficiente",
     "linkedPaymentMethods": "Formas de pago vinculadas",
     "noPaymentMethods": "No hay formas de pago vinculadas.",
     "noTokensAvailableForConversion": "No hay tokens disponibles para la conversión",
     "save": "Guardar",
     "selectFundingMethodAvailablity": "Tus formas de pago seleccionadas tienen {{selectedAvailableAmount}} disponible. Por favor, selecciona otras formas de pago adicionales para completar {{neededAmount}}.",
     "selectFundingMethods": "Por favor, selecciona formas de pago para transferir <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "No se ha seleccionado un método de financiación",
     "selectOtherHoldings": "Seleccionar otros recursos",
     "symbolBalance": "Saldo {{symbol}}",
     "title": "Formas de pago"
@@ -429,6 +598,15 @@
     "linkedToThisApp": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>esta aplicación</5>.",
     "nextStep": "A continuación crearemos una llave para <2>actualizaciones ininterrumpidas</2> para que no tenga que volver a iniciar sesión",
     "tempAccess": "Sólo quiero acceso temporal"
+  },
+  "getBrokerAccessTokenErrors": {
+    "add2FA": "Por favor, conecta la aplicación para 2FA. E intenta de nuevo.",
+    "identityVerificationRequired": "Necesitas completar la verificación de identidad para usar la función de llaves de API. Por favor, completa la verificación de identidad para continuar.",
+    "invalidCredentials": "Credenciales de inicio de sesión inválidas. Por favor, inténtelo de nuevo.",
+    "maximumApiKeyLimitExceeded": "Se alcanzó la limitación máxima permitida para la llave del API. Por favor, elimina una llave no utilizada para continuar.",
+    "unsupportedCountryErrorMessage": "Actualmente no soportamos tu cuenta",
+    "wrongEmailCode": "Código de correo electrónico incorrecto, por favor intenta de nuevo",
+    "wrongTotpCode": "Código de autenticación incorrecto, por favor intenta de nuevo"
   },
   "handleExternalTransferPage": {
     "detailButton": "Ver lo que sucedió",
@@ -481,6 +659,7 @@
     "thirdParty": "Tus activos nunca tocan a un tercero"
   },
   "initialVerifyPage": {
+    "content40": "Confirme que posee esta wallet",
     "drawerTitle": "Apruebe la solicitud de firma<1></1> en su cartera",
     "item1Body": "Se te pedirá que firmes un mensaje en {{selectedIntegrationName}} que confirma la propiedad esta cartera.",
     "item1Title": "{{clientName}} debe validar la dirección",
@@ -543,8 +722,8 @@
     "clientVerifyLabel": "{{clientName}} debe verificar su cartera",
     "clientVerifyText": "Se te pedirá que firmes un mensaje en tu dispositivo Ledger que confirma que eres dueño de esta cartera.",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu monedero.",
-    "title": "¡Casi está ahí!"
+    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con cartera.",
+    "title": "¡Ya casi!"
   },
   "ledgerError": {
     "incorrectAppError": "La aplicación incorrecta está abierta en tu dispositivo. Por favor, abre la aplicación correcta e inténtalo de nuevo.",
@@ -553,20 +732,20 @@
     "notSelectedError": "Ninguna aplicación seleccionada. Por favor, seleccione una aplicación e inténtelo de nuevo.",
     "rejectError": "El usuario ha rechazado la operación. Por favor, inténtelo de nuevo.",
     "title": "Conexión fallida",
-    "transportError": "Se ha producido un error de transporte con su dispositivo Ledger.",
-    "transportLockedError": "El transporte está bloqueado. Por favor, desbloquea tu dispositivo e inténtalo de nuevo.",
+    "transportError": "Se ha producido un error de conexión con su dispositivo Ledger.",
+    "transportLockedError": "La conexión está bloqueado. Por favor, desbloquea tu dispositivo e inténtalo de nuevo.",
     "unexpectedError": "Se ha producido un error inesperado.",
     "unknownError": "Se ha producido un error desconocido con su dispositivo Ledger."
   },
   "ledgerOpenApp": {
-    "title": "Abre la aplicación {{network}} en tu dispositivo"
+    "title": "Abre la aplicación de {{network}} en tu dispositivo"
   },
   "ledgerSignError": {
     "body": "Has rechazado la solicitud para verificar tu cartera.",
     "title": "Error de verificación"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Nota: Para XRP, verá una transacción tonta con valores mínimos. Esto es sólo para verificar su cartera y no costará nada ni enviará fondos.",
+    "rippleBody": "Nota: Para XRP, verá una transacción de prueba con valores mínimos. Esto es sólo para verificar su cartera y no se cobrará nada ni se enviarán fondos.",
     "title": "Revisar y firmar el mensaje en tu dispositivo"
   },
   "ledgerUSB": {
@@ -574,7 +753,7 @@
     "step2": "Siga las instrucciones en la ventana USB y en su dispositivo Ledger para completar la conexión"
   },
   "loginDeviceVerifiedPage": {
-    "loginButton": "Ir a Login",
+    "loginButton": "Ir al inicio de sesión",
     "subtitle": "Proceder a iniciar sesión.",
     "title": "Tu dispositivo está aprobado."
   },
@@ -583,21 +762,21 @@
   },
   "mfaHint": {
     "email": "Revisa tu email",
-    "phone": "Revisa tu teléfono para un mensaje SMS",
+    "phone": "Busca en tu teléfono un mensaje SMS",
     "sandbox": "Pista: {{hint}}",
-    "totp": "Compruebe su aplicación de autenticación"
+    "totp": "Revise su aplicación de autenticación"
   },
   "mfaInstructionsText": {
-    "email": "Introduce el código único que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
-    "paymentFlow": "Introduce tu código de una sola vez para confirmar que realmente inicias este pago.",
-    "phone": "Introduce el código único que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
-    "totp": "Introduzca el código de una sola vez proporcionado por la aplicación de autenticador que ha vinculado a <1>{{selectedIntegrationName}}</1>.",
+    "email": "Introduzca el código que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
+    "paymentFlow": "Introduce tu código para confirmar tu identidad.",
+    "phone": "Introduce el código que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
+    "totp": "Introduzca el código proporcionado por la aplicación del autenticador que ha vinculado a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Introduce el código PIN asociado a tu cuenta <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Introduce tu código de una sola vez para confirmar que realmente inicias esta transferencia.",
+    "transferFlow": "Introduce tu código para confirmar tu identidad.",
     "twoFactor": "Introduzca el código proporcionado por el método de autenticación de dos factores que ha configurado en su cuenta <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
-    "enterCode": "Introduce tu código de una sola vez para confirmarlo<1></1>realmente intentas iniciar sesión.",
+    "enterCode": "Introduce tu código para confirmar tu identidad al iniciar sesión.",
     "enterPin": "Introduce tu PIN de trading",
     "title": "Verificación",
     "verify": "Verificar"
@@ -652,7 +831,14 @@
   },
   "navHeader": {
     "close": "Cerrar el modal",
-    "goBack": "Retroceder"
+    "goBack": "Retroceder",
+    "title": "Pagar con cripto"
+  },
+  "networkSelectionDrawer": {
+    "description": "Las redes a continuación son todas opciones seguras y compatibles para este pago. Hemos seleccionado automáticamente la red de menor tarifa para ti.",
+    "estimatedGasFeeLabel": "Est. tarifa de gas:",
+    "lowestFeeLabel": "Menor tarifa",
+    "title": "Selecciona una red"
   },
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
@@ -673,6 +859,39 @@
     "description": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitadas.",
     "selectAnotherAccount": "Seleccione otra cuenta",
     "selectAnotherDescription": "Por favor, seleccione otro tipo de cambio o cartera de la cual depositar."
+  },
+  "oauthExternalPage": {
+    "awaitingConnection": {
+      "action": "Reabrir {{selectedIntegrationName}}",
+      "subtitle": "Por favor, termine de iniciar sesión y apruebe el acceso en su navegador.",
+      "title": "Esperando conexión"
+    },
+    "checking": {
+      "message": "Verificando sus activos..."
+    },
+    "connected": {
+      "action": "Regresa a {{clientName}}",
+      "backup": "Has conectado con éxito tu cuenta.",
+      "subtitle": "Regresa a {{clientName}} para continuar",
+      "title": "Estás conectado con {{selectedIntegrationName}}"
+    },
+    "error": {
+      "connection": {
+        "action": "Reabrir {{selectedIntegrationName}}",
+        "subtitle": "Parece que no terminaste de iniciar sesión o aprobar acceso. Para continuar, por favor vuelve a abrir {{selectedIntegrationName}} y completa el inicio de sesión.",
+        "title": "No se pudo conectar a {{selectedIntegrationName}}"
+      }
+    },
+    "redirecting": {
+      "action": "Continúa en {{selectedIntegrationName}}",
+      "subtitle": "Serás redirigido a tu navegador para iniciar sesión de forma segura con {{selectedIntegrationName}}. Una vez que termines, regresarás aquí automáticamente.",
+      "title": "Redirigiendo a {{selectedIntegrationName}}"
+    }
+  },
+  "oauthInitialPage": {
+    "continue": "Continuar en {{integrationName}}",
+    "description": "Haz clic abajo para abrir {{integrationName}}, e inicia sesión en tu cuenta para mostrar tu pago.",
+    "title": "Inicia sesión en tu cuenta"
   },
   "oAuthMessageListener": {
     "clientUsesMesh": "{{clientName}} usa Mesh para conectar de forma segura y facilitar tu transferencia en {{selectedIntegrationName}}.",
@@ -704,11 +923,18 @@
       "transferSmartDepositWithAddress": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{address}} a través de un relay contract.",
       "transferWithAddress": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{address}}."
     },
+    "mayTakeFewSeconds": "Esto puede tardar unos segundos",
     "onrampTitle": "Compra en curso",
     "paymentMethodDepositUsage": "Depositar <1>{{amount}}</1> de {{paymentMethod}} a {{selectedIntegrationName}}.",
     "paymentTitle": "Pago en curso",
+    "processing": "Procesando pago",
     "transactionTitle": "Transacción en curso",
     "tryAgain": "Inténtalo de nuevo"
+  },
+  "orderSummaryDrawer": {
+    "merchantInfoName": "Comerciante: {{clientName}}",
+    "title": "Resumen del pedido",
+    "totalLabel": "Total"
   },
   "passwordPage": {
     "fieldError": "Por favor, captura tu {{field}}",
@@ -747,6 +973,19 @@
     "selectNetwork": "Seleccionar red de transferencia",
     "title": "Seleccionar recurso a transferir"
   },
+  "previewPageUI": {
+    "accountLabel": "Cuenta",
+    "buildingPreviewPayment": "Construyendo la vista previa de tu pago...",
+    "confirmTransaction": "Confirma esta transacción en tu aplicación de {{selectedIntegrationName}}.",
+    "fewSeconds": "Esto puede tardar unos segundos",
+    "includeFeesMessage": "Incluye {{amount}} en tarifas",
+    "networkLabel": "Red",
+    "paymentTitle": "Pagar a {{clientName}}",
+    "paymentTotalLabel": "Pagar total",
+    "payWithLabel": "Pagar con",
+    "payWithLabelWithName": "Pagar con {{integrationName}}",
+    "processingPayment": "Procesando tu pago"
+  },
   "previewTransfer": {
     "allFeesIncluded": "Todas las comisiones incluidas",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
@@ -760,6 +999,7 @@
     "fundingWith": "Fondear con",
     "institutionTransferFee": "Comisión de retiro de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "La comisión que {{selectedIntegrationName}} cobrará para facilitar tu transferencia de {{symbol}}.",
+    "insufficientFunds": "Saldo insuficiente",
     "maxAmount": "Tu cuenta puede depositar un máximo de <2>{{networkMaxAmount}}</2>. ¿Quieres ajustar tu transferencia a esta cantidad?",
     "monitoring": "Esperando la aprobación...",
     "network": "Red",
@@ -828,6 +1068,8 @@
     "returnToClientButton": "Regresar a {{clientName}}",
     "spotAccountsBody": "Solo las cuentas spot son soportadas. No se detectarán activos en otros apartados.",
     "topUpButton": "Recargar saldo",
+    "topUpUSDCInstruction": "Recargue su saldo de USDC en su wallet de Phantom.",
+    "tryAgainFromTaoInstruction": "Inténtelo de nuevo desde su página de pago de TAO.",
     "unableTransferError": "No se puede iniciar la transferencia."
   },
   "selectItem": {
@@ -879,6 +1121,23 @@
     "paragraph9": "Estos términos se regirán por las leyes del Estado de Delaware, excluyendo su elección de principios de ley. Excepto por disputas que reúnan los requisitos para un tribunal de demandas pequeñas, todas las disputas que surjan o estén relacionadas con estos términos o cualquier aspecto de la relación entre usted y la empresa, si se basa en contrato, agravio, estatua, fraude, tergiversación o cualquier otra teoría legal, será resuelto mediante arbitraje final y vinculante ante un arbitrador neutral en lugar de ante un tribunal por un juez o jurado, y usted acepta que la Compañía y usted están renunciando al derecho de juicio por un jurado. Tales disputas incluyen, sin limitación, disputas que surgen de o relacionadas con la interpretación o aplicación de esta disposición de arbitraje, incluyendo la vigencia, revocabilidad o validez de la disposición de arbitraje o de cualquier parte de la disposición de arbitraje. Todas estas cuestiones serán decididas por un árbitro y no por un tribunal o juez. Usted acepta que cualquier arbitraje bajo estas condiciones tendrá lugar de forma individual; los arbitrajes de clase y las acciones de clase no están permitidos, y usted está aceptando renunciar a la capacidad de participar en una acción de clase.",
     "title": "Términos y Condiciones del usuario final de {{shortName}}<2></2>"
   },
+  "transferAmountPage": {
+    "buttonTitle": {
+      "deposit": "Vista previa del depósito",
+      "onramp": "Vista previa de la compra",
+      "transfer": "Vista previa de la transferencia"
+    },
+    "errorMessage": {
+      "insufficientFunds": "Fondos insuficientes para cubrir la transferencia y las comisiones de la red. El monto máximo es de {{maxAmount}}.",
+      "minimumAmount": "La cantidad mínima de transferencia es de {{minAmount}}.",
+      "zeroAmount": "Por favor, introduce una cantidad diferente de cero"
+    },
+    "title": {
+      "deposit": "Introduce la cantidad a depositar",
+      "onramp": "Introduce el monto de la compra",
+      "transfer": "Introduzca el monto de la transferencia"
+    }
+  },
   "transferCanceledPage": {
     "title": "Transferencia cancelada",
     "titlePayment": "Pago cancelado",
@@ -914,6 +1173,16 @@
   },
   "transferErrorPage": {
     "defaultError": "Se produjo un error desconocido. Por favor, haga clic a continuación para iniciar una nueva sesión de transferencia."
+  },
+  "transferErrors": {
+    "failedToExecute": "Error al ejecutar una transferencia",
+    "failedToPreview": "Error al previsualizar la transferencia",
+    "mfaEmailFailed": "Código incorrecto del correo electrónico, por favor introduce el código nuevamente",
+    "mfaFaceFailed": "Verificación fallida, por favor intenta de nuevo",
+    "mfaFailed": "Código incorrecto, por favor introduce el código nuevamente",
+    "mfaPhoneFailed": "Código SMS incorrecto, por favor introduce el código de nuevo",
+    "mfaTotpFailed": "Código incorrecto, por favor introduce el código de nuevo",
+    "mfaTradingPinFailed": "Error en el NIP de trading, por favor introduce el código de nuevo"
   },
   "transferFacePage": {
     "clickOpenApp": "Haz clic en <1>Abrir la aplicación de {{selectedIntegrationName}}</1> para abrir tu aplicación y completar la verificación de caras.",
@@ -978,31 +1247,31 @@
   "trezorDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} debe verificar su cartera",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "El firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu monedero.",
+    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con cartera.",
     "signText": "Se te pedirá que firmes un mensaje en tu dispositivo Trezor que confirma que eres propietario de esta cartera.",
-    "title": "¡Casi está ahí!",
+    "title": "¡Ya casi!",
     "verifyingLabel": "Verificando tu cartera..."
   },
   "trezorError": {
-    "connectionDeclinedBody": "Has rechazado la solicitud para conectar tu billetera, o una solicitud anterior sigue activa.",
+    "connectionDeclinedBody": "Has rechazado la solicitud para conectar tu cartera, o una solicitud anterior sigue activa.",
     "connectionDeclinedTitle": "Conexión rechazada",
-    "signatureDeclinedBody": "Has rechazado la solicitud de firma en tu billetera, o una solicitud anterior sigue activa.",
+    "signatureDeclinedBody": "Has rechazado la solicitud de firma en tu cartera, o una solicitud anterior sigue activa.",
     "signatureDeclinedTitle": "Firma rechazada"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}} debe verificar su cartera",
+    "clientVerifyLabel": "{{clientName}} debe verificar tu cartera",
     "clientVerifyText": "Serás transferido de forma segura a tu Trezor para firmar un mensaje en tu dispositivo que te confirme que eres dueño de tu cartera.",
     "connectingLabel": "Conectando tu cartera...",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu monedero."
+    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu cartera."
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} le gustaría que verifiques la propiedad de la dirección <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Esa dirección no está asociada con la billetera conectada. Por favor, conecta otra billetera.",
+    "body": "{{clientName}} necesita que verifiques la propiedad de la dirección en <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Esa dirección no está asociada con la billetera conectada. Por favor, conecta otra billetera.",
     "connectAnotherAction": "Conectar otra cartera",
     "title": "Uh oh!"
   },
   "verifyError": {
-    "body": "No se puede verificar su cartera de hardware. Por favor, asegúrese de que ha seleccionado la red correcta e ingresó la dirección correcta del monedero.",
+    "body": "No se puede verificar su cartera de hardware. Por favor, asegúrese de que ha seleccionado la red correcta e ingresó la dirección correcta.",
     "title": "Error de verificación"
   },
   "verifyErrorPage": {
@@ -1010,17 +1279,17 @@
     "title": "Verificación rechazada"
   },
   "wallectConnect": {
-    "noActiveSessionError": "Ninguna sesión activa WalletConnect",
+    "noActiveSessionError": "Ninguna sesión activa de WalletConnect",
     "transactionHashError": "No se pudo obtener el hash de la transacción",
     "unknownError": "Se ha producido un error desconocido. {{error}}"
   },
   "walletDoneScreen": {
-    "continueMessage": "Por favor, continúa en tu aplicación {{clientName}}.",
-    "completePaymentMessage": "Regresa a tu experiencia de pago para completar tu compra con {{clientName}}.",
-    "successMessage": "Has verificado con éxito la propiedad de tu billetera {{walletName}}."
+    "completePaymentMessage": "Regresa a tu proceso de pago para completar tu compra con {{clientName}}.",
+    "continueMessage": "Por favor, continúa en tu aplicación de {{clientName}}.",
+    "successMessage": "Has verificado con éxito la propiedad de tu cartera {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
     "another": "Transferir desde otra cuenta",
-    "title": "Las retiradas están desactivadas tempranamente"
+    "title": "Los retiros están deshabilitados temporalmente"
   }
 }
