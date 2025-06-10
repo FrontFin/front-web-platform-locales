@@ -544,7 +544,7 @@
     "buyingPowerUsageNotSupported": "{{integrationName}} không hỗ trợ sử dụng phương thức thanh toán này để mua {{assetName}}.",
     "coveredByExistingCryptocurrencyBalance": "Bạn đã có đủ số dư {{assetName}} cho lần mua này mà không cần phương pháp cấp vốn bổ sung nào.",
     "coveredByOtherFundingOptions": "Phương thức cấp vốn này không được hỗ trợ cho giao dịch này.",
-    "currencyNotSupported": "Việc mua tiền điện tử bằng phương thức tài trợ không phải USD vẫn chưa được hỗ trợ.",
+    "currencyNotSupported": "Hiện chưa hỗ trợ mua tiền mã hoá bằng phương thức thanh toán không phải USD.",
     "depositAmountLimitExceeded": "Việc mua này sẽ vượt qua giới hạn gửi tiền tối đa của {{integrationName}} trong vòng 1 ngày cho phương thức tài trợ này.",
     "depositCountLimitReached": "Phương thức tài trợ này đã đạt đến số lượng tiền gửi tối đa của {{integrationName}} trong vòng 1 ngày.",
     "depositsNotSupported": "Phương thức nạp tiền này không được hỗ trợ cho giao dịch này.",
@@ -722,7 +722,7 @@
     "clientVerifyLabel": "{{clientName}} phải xác minh ví của bạn",
     "clientVerifyText": "Bạn sẽ được yêu cầu ký một tin nhắn trên thiết bị Ledger của bạn để xác nhận bạn sở hữu ví này.",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
-    "secureText": "Việc ký không có nghĩa là cấp quyền để {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn.",
+    "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn.",
     "title": "Sắp xong!"
   },
   "ledgerError": {
@@ -850,7 +850,7 @@
     "wontAllow": "Không cho phép"
   },
   "oAuthBrokerPage": {
-    "monitoring": "Đang giám sát để phê duyệt...",
+    "monitoring": "Đang chờ phê duyệt...",
     "reopenButton": "Nhấp vào đây để mở lại {{selectedIntegrationName}}",
     "subtitle": "Đăng nhập vào tài khoản của bạn và cho phép truy cập",
     "title": "Tiếp tục trên cửa sổ {{selectedIntegrationName}} <1></1>"
@@ -896,11 +896,11 @@
   "oAuthMessageListener": {
     "clientUsesMesh": "{{clientName}} sử dụng Mesh để kết nối an toàn và hỗ trợ việc giao dịch của bạn trong {{selectedIntegrationName}}.",
     "description": "Đăng nhập vào tài khoản của bạn và cho phép truy cập",
-    "monitoring": "Đang giám sát để phê duyệt...",
+    "monitoring": "Đang chờ phê duyệt...",
     "open": "Mở {{selectedIntegrationName}}",
     "reopen": "Mở lại {{selectedIntegrationName}}",
     "title": "Tiếp tục trên cửa sổ {{selectedIntegrationName}}",
-    "willFacilitate": "sẽ hỗ trợ kết nối an toàn với {{selectedIntegrationName}}."
+    "willFacilitate": "hỗ trợ kết nối an toàn với {{selectedIntegrationName}}."
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
@@ -923,7 +923,7 @@
       "transferSmartDepositWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}} thông qua hợp đồng chuyển tiếp.",
       "transferWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}}."
     },
-    "mayTakeFewSeconds": "Điều này có thể mất vài giây",
+    "mayTakeFewSeconds": "Quá trình này có thể mất vài giây",
     "onrampTitle": "Đang tiến hành mua hàng",
     "paymentMethodDepositUsage": "Nạp tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
     "paymentTitle": "Đang tiến hành thanh toán",
@@ -956,8 +956,8 @@
   },
   "paymentUpdateDrawerContent": {
     "cancel": "Hủy bỏ",
-    "clickToPay": "Nhấp vào bên dưới để nạp thêm số dư {{token}} để thực hiện thanh toán này.",
-    "description": "Số dư {{token}} của bạn sau khi mua thấp hơn dự kiến do thay đổi giá {{token}} và/hoặc phí gas.",
+    "clickToPay": "Nhấn vào bên dưới sau đó nạp thêm {{token}} để thực hiện thanh toán này.",
+    "description": "Số dư {{token}} của bạn sau khi mua thấp hơn dự kiến do biến động giá {{token}} hoặc phí gas.",
     "ifDontComplete": "Nếu bạn không hoàn tất thanh toán, số dư {{token}} của bạn sẽ vẫn nằm trong tài khoản {{selectedIntegrationName}} của bạn.",
     "onYourAccount": "Trên tài khoản của bạn",
     "title": "Cập nhật thanh toán",
@@ -1001,7 +1001,7 @@
     "institutionTransferFeeHint": "Phí mà {{selectedIntegrationName}} sẽ tính để hỗ trợ chuyển khoản của bạn khỏi {{symbol}}.",
     "insufficientFunds": "Không đủ tiền",
     "maxAmount": "Tài khoản của bạn có thể nạp tối đa <2>{{networkMaxAmount}}</2>. Bạn có muốn điều chỉnh chuyển khoản của mình đến số tiền này không?",
-    "monitoring": "Đang giám sát để phê duyệt...",
+    "monitoring": "Đang chờ phê duyệt...",
     "network": "Mạng",
     "onrampTitle": "Xem trước mua hàng",
     "payingWith": "Thanh toán với",
@@ -1010,7 +1010,7 @@
     "processingFee": "Phí Xử Lý",
     "processingFeeHint": "Khoản phí thu được để xử lý giao dịch này.",
     "receive": "Nhận",
-    "resendTransferRequest": "Gửi lại yêu cầu chuyển khoản",
+    "resendTransferRequest": "Gửi lại yêu cầu giao dịch",
     "seconds": "{{seconds}}s",
     "symbolBalance": "Số dư {{symbol}}",
     "to": "Đến",
@@ -1033,7 +1033,7 @@
     "onNetwork": "trên {{network}}"
   },
   "revolutConnectOAuthPage": {
-    "amountMustBeAtLeast": "Số tiền phải ít nhất là $8",
+    "amountMustBeAtLeast": "Số tiền giao dịch tối thiểu là 8 USD",
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
     "selectAsset": "Chọn tài sản để giao dịch",
@@ -1052,7 +1052,7 @@
     "binanceDirectNoAssetsBody1": "Có vẻ như bạn không có tài sản nào trong tài khoản được liên kết của mình.",
     "binanceDirectNoAssetsBody2": "Bạn có thể thêm tiền vào tài khoản của mình hoặc kết nối với tài khoản khác để tiếp tục quá trình chuyển khoản.",
     "cannotFundBody": "Bạn không có đủ số dư tiền mã hóa hoặc tiền pháp định trong tài khoản này để thực hiện giao dịch này.",
-    "cannotFundTitle": "Không thể tài trợ giao dịch",
+    "cannotFundTitle": "Gửi lại yêu cầu giao dịch",
     "connectAnotherButton": "Kết nối với tài khoản khác",
     "defaultTitle": "Chọn token",
     "depositTitle": "Chọn token nạp",
@@ -1068,7 +1068,7 @@
     "returnToClientButton": "Quay lại {{clientName}}",
     "spotAccountsBody": "Chỉ hỗ trợ tài khoản spot. Tài sản trong các loại tài khoản khác, chẳng hạn như ký quỹ, sẽ không được phát hiện.",
     "topUpButton": "Nạp tiền",
-    "topUpUSDCInstruction": "Nạp thêm số dư USDC vào ví Phantom của bạn.",
+    "topUpUSDCInstruction": "Nạp thêm USDC vào ví Phantom của bạn.",
     "tryAgainFromTaoInstruction": "Thử lại từ trang thanh toán TAO của bạn.",
     "unableTransferError": "Không thể bắt đầu chuyển tiền."
   },
@@ -1172,7 +1172,7 @@
     "title": "Chấp nhận rút tiền"
   },
   "transferErrorPage": {
-    "defaultError": "Xảy ra một lỗi không xác định. Vui lòng nhấp chuột bên dưới để bắt đầu một phiên chuyển khoản mới."
+    "defaultError": "Lỗi không xác định. Nhấn vào bên dưới để tạo một giao dịch chuyển tiền mới."
   },
   "transferErrors": {
     "failedToExecute": "Không thể thực hiện giao dịch",
@@ -1206,7 +1206,7 @@
     "connectDifferent": "Kết nối một tài khoản khác",
     "insufficientBalanceError": "Số dư không đủ để thực hiện giao dịch này.",
     "insufficientFunds": "Không đủ ngân sách",
-    "unknownError": "Có lỗi xảy ra. Vui lòng nhấn nút bên dưới để bắt đầu phiên chuyển tiền mới."
+    "unknownError": "Lỗi không xác định. Nhấn vào bên dưới để tạo một giao dịch chuyển tiền mới."
   },
   "transferSteps": {
     "approveTransfer": "Bạn chấp nhận chuyển từ {{integrationName}} đến {{clientName}}",
@@ -1247,7 +1247,7 @@
   "trezorDeviceConnected": {
     "clientVerifyLabel": "{{clientName}} cần xác minh ví của bạn",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
-    "secureText": "Việc ký không có nghĩa là cấp quyền để {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn.",
+    "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn.",
     "signText": "Bạn sẽ được yêu cầu ký một tin nhắn trong thiết bị Trezor của bạn xác nhận rằng bạn sở hữu ví này.",
     "title": "Sắp xong!",
     "verifyingLabel": "Đang xác minh ví của bạn..."
@@ -1259,11 +1259,11 @@
     "signatureDeclinedTitle": "Từ chối chữ ký"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}} phải xác minh ví của bạn",
-    "clientVerifyText": "Bạn sẽ được chuyển an toàn đến Trezor của mình để ký một thông điệp trong thiết bị của bạn xác nhận rằng bạn sở hữu ví của mình.",
-    "connectingLabel": "Đang kết nối ví của bạn...",
+    "clientVerifyLabel": "{{clientName}} cần xác minh ví của bạn",
+    "clientVerifyText": "Bạn sẽ được chuyển đến thiết bị Trezor của mình để ký một thông điệp nhằm xác nhận bạn là chủ sở hữu của ví.",
+    "connectingLabel": "Đang kết nối với ví của bạn...",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
-    "secureText": "Ký không cho phép {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn."
+    "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn."
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} muốn bạn xác minh quyền sở hữu địa chỉ <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Địa chỉ này không kết nối với ví đã kết nối. Vui lòng kết nối một ví khác.",
