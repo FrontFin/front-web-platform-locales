@@ -871,7 +871,7 @@
     },
     "connected": {
       "action": "{{clientName}} पर लौटें",
-      "backup": "आपका खाता सफलतापूर्वक जुड़ गया है।",
+      "backup": "आपने सफलतापूर्वक अपने खाते को जोड़ लिया है।",
       "subtitle": "जारी रखने के लिए {{clientName}} पर वापस जाएं",
       "title": "आप {{selectedIntegrationName}} से जुड़ गए हैं"
     },
@@ -896,7 +896,7 @@
   "oAuthMessageListener": {
     "clientUsesMesh": "{{clientName}} सुरक्षित रूप से कनेक्ट करने और {{selectedIntegrationName}} में आपके स्थानांतरण की सुविधा के लिए Mesh का उपयोग करता है।",
     "description": "अपने खाते में लॉगिन करें और पहुंच की अनुमति दें",
-    "monitoring": "मंजूरी के लिए निगरानी कर रहे हैं...",
+    "monitoring": "मंजूरी की प्रतीक्षा में...",
     "open": "{{selectedIntegrationName}} खोलें",
     "reopen": "{{selectedIntegrationName}} को फिर से खोलें",
     "title": "{{selectedIntegrationName}} विंडो पर जारी रखें",
@@ -909,27 +909,27 @@
     },
     "buyingPowerPurchase": "<1>{{amount}}</1> मूल्य का {{symbol}} की खरीद <5>(~ {{amountInCrypto}})</5> में {{selectedIntegrationName}}।",
     "conversionStep": "<1>{{amount}}</1> को <3>{{currency}}</3> में रूपांतरित किया जा रहा है।",
-    "depositTitle": "जमा प्रगति पर है",
+    "depositTitle": "जमा प्रक्रिया में है",
     "description": "इसमें कुछ समय लग सकता है...",
     "existingCryptocurrencyBalance": {
       "approveClient": "आप {{selectedIntegrationName}} से {{clientName}} में स्थानांतरण को स्वीकृत करते हैं।",
       "approveDestination": "आप {{selectedIntegrationName}} से गंतव्य के लिए स्थानांतरण को स्वीकृत करते हैं।",
       "transfer": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{clientName}}।",
-      "transferHideClient": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से।",
-      "transferHideClientWithAddress": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{address}}।",
-      "transferSmartDeposit": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{clientName}} रिले कॉन्ट्रैक्ट द्वारा।",
-      "transferSmartDepositHideClient": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से रिले कॉन्ट्रैक्ट द्वारा।",
-      "transferSmartDepositHideClientWithAddress": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{address}} रिले कॉन्ट्रैक्ट द्वारा।",
-      "transferSmartDepositWithAddress": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{clientName}} {{address}} रिले कॉन्ट्रैक्ट द्वारा।",
-      "transferWithAddress": "<1>{{amount}}</1> का स्थानांतरण {{selectedIntegrationName}} से {{clientName}} {{address}}।"
+      "transferHideClient": "{{selectedIntegrationName}} से <1>{{amount}}</1> का स्थानांतरण।",
+      "transferHideClientWithAddress": "{{selectedIntegrationName}} से {{address}} को <1>{{amount}}</1> का स्थानांतरण।",
+      "transferSmartDeposit": "{{selectedIntegrationName}} से {{clientName}} के लिए एक रिले अनुबंध के माध्यम से <1>{{amount}}</1> का स्थानांतरण।",
+      "transferSmartDepositHideClient": "{{selectedIntegrationName}} से रिले अनुबंध के माध्यम से <1>{{amount}}</1> का स्थानांतरण।",
+      "transferSmartDepositHideClientWithAddress": "{{selectedIntegrationName}} से {{address}} को रिले अनुबंध के माध्यम से <1>{{amount}}</1> का स्थानांतरण।",
+      "transferSmartDepositWithAddress": "{{selectedIntegrationName}} से {{clientName}} {{address}} को रिले अनुबंध के माध्यम से <1>{{amount}}</1> का स्थानांतरण।",
+      "transferWithAddress": "{{selectedIntegrationName}} से {{clientName}} {{address}} को <1>{{amount}}</1> का स्थानांतरण।"
     },
     "mayTakeFewSeconds": "इसमें कुछ सेकंड लग सकते हैं",
     "onrampTitle": "खरीदारी प्रगति में है",
-    "paymentMethodDepositUsage": "कार्यप्रणाली विधि {{paymentMethod}} से {{selectedIntegrationName}} में <1>{{amount}}</1> का जमा।",
+    "paymentMethodDepositUsage": "{{paymentMethod}} से {{selectedIntegrationName}} तक <1>{{amount}}</1> का जमा।",
     "paymentTitle": "भुगतान प्रगति में है",
     "processing": "भुगतान संसाधित किया जा रहा है",
     "transactionTitle": "लेन-देन प्रगति में है",
-    "tryAgain": "फिर से प्रयास करें"
+    "tryAgain": "पुनः प्रयास करें"
   },
   "orderSummaryDrawer": {
     "merchantInfoName": "व्यापारी: {{clientName}}",
@@ -1003,29 +1003,29 @@
     "maxAmount": "आपका खाता अधिकतम <2>{{networkMaxAmount}}</2> तक वित्त पोषण कर सकता है। आप अपना स्थानांतरण इस राशि पर समायोजित करना चाहेंगे?",
     "monitoring": "मंजूरी की प्रतीक्षा में...",
     "network": "नेटवर्क",
-    "onrampTitle": "खरीदारी का पूर्वावलोकन",
-    "payingWith": "साथ भुगतान करना",
+    "onrampTitle": "खरीद पूर्वावलोकन",
+    "payingWith": "इसके साथ भुगतान",
     "paymentTitle": "भुगतान का पूर्वावलोकन",
     "proceed": "आगे बढ़ें",
     "processingFee": "प्रसंस्करण शुल्क",
-    "processingFeeHint": "इस लेन-देन को प्रोसेस करने के लिए लागू की गई प्रोसेसिंग फीस।",
+    "processingFeeHint": "इस लेन-देन को संसाधित करने के लिए एकत्र किया गया शुल्क।",
     "receive": "प्राप्त करें",
     "resendTransferRequest": "स्थानांतरण अनुरोध दोबारा भेजें",
     "seconds": "{{seconds}}से",
-    "symbolBalance": "{{symbol}} बैलेंस",
+    "symbolBalance": "{{symbol}} शेष राशि",
     "to": "को",
     "total": "कुल",
     "transferDeclined": "स्थानांतरण अस्वीकार किया गया",
     "transferDeclinedBody": "आपने अपने वॉलेट में स्थानांतरण अनुरोध को अस्वीकार कर दिया है।",
     "transferTitle": "स्थानांतरण का पूर्वावलोकन",
-    "youMayReceiveLess": "{{symbol}} मूल्य में परिवर्तन के कारण आप कम प्राप्त कर सकते हैं।"
+    "youMayReceiveLess": "{{symbol}} की कीमत में उतार-चढ़ाव के कारण आपको कम राशि प्राप्त हो सकती है।"
   },
   "privacyComponent": {
-    "content": "आपकी डेटा हर समय निजी और एन्क्रिप्टेड होती है।"
+    "content": "आपका डेटा हर समय निजी और एन्क्रिप्टेड रहता है।"
   },
   "qrCodePassword": {
-    "expired": "QR कोड की मियाद खत्म हो चुकी है।",
-    "generateNew": "एक नया QR कोड उत्पन्न करें",
+    "expired": "क्यूआर कोड की समय सीमा समाप्त हो गई है",
+    "generateNew": "एक नया क्यूआर कोड उत्पन्न करें",
     "qrCodeLabel": "आपके मोबाइल उपकरण पर कनेक्शन स्थापित करने के लिए क्यूआर कोड स्कैन किया जा सकता है।",
     "scanText": "तुरंत लॉग इन करने के लिए अपने {{appName}} ऐप <1></1> के साथ इस कोड को स्कैन करें।"
   },
@@ -1046,19 +1046,19 @@
     "selectNetwork": "स्थानांतरण नेटवर्क का चयन करें"
   },
   "selectCryptoFundingPage": {
-    "title": "एसेट चुनें"
+    "title": "संपत्ति चुनें"
   },
   "selectHoldingPage": {
-    "binanceDirectNoAssetsBody1": "ऐसा लगता है कि आपके लिंक्ड खाते में कोई भी संपत्ति नहीं है।",
+    "binanceDirectNoAssetsBody1": "ऐसा लगता है कि आपके जुड़े खाते में कोई संपत्ति नहीं है।",
     "binanceDirectNoAssetsBody2": "आप अपने खाते में फंड जोड़ सकते हैं या इस स्थानांतरण के लिए एक अलग खाता कनेक्ट कर सकते हैं।",
-    "cannotFundBody": "इस खाते में इस लेनदेन को फंड करने के लिए आपके पास पर्याप्त क्रिप्टो या फ़िएट बैलेंस नहीं है।",
-    "cannotFundTitle": "लेन-देन को फंड नहीं किया जा सका",
-    "connectAnotherButton": "एक अलग खाता कनेक्ट करें",
+    "cannotFundBody": "इस खाते में इस लेनदेन को पूरा करने के लिए आपके पास पर्याप्त क्रिप्टो या फिएट बैलेंस नहीं है।",
+    "cannotFundTitle": "लेनदेन को निधि प्रदान नहीं की जा सकती",
+    "connectAnotherButton": "अन्य खाता कनेक्ट करें",
     "defaultTitle": "टोकन चुनें",
     "depositTitle": "जमा टोकन चुनें",
     "ineligibleAssets": "अयोग्य संपत्तियाँ",
-    "loading": "आपकी संपत्ति लोड हो रही है...",
-    "noAssetsTitle": "लिंक्ड खाते में कोई संपत्ति नहीं मिली",
+    "loading": "आपकी संपत्तियाँ लोड हो रही हैं...",
+    "noAssetsTitle": "लिंक किए गए खाते में कोई संपत्ति नहीं पाई गई",
     "noEligibleAssetsTitle": "इस खाते में कोई भी संपत्ति इस स्थानांतरण के लिए योग्य नहीं है",
     "notEnoughtBody": "अपने खाते में और {{symbol}} जोड़ें, फिर यहाँ वापस आकर पुनः प्रयास करें।",
     "notEnoughtTitle": "पर्याप्त {{symbol}} नहीं",
@@ -1068,8 +1068,8 @@
     "returnToClientButton": "{{clientName}} पर लौटें",
     "spotAccountsBody": "वर्तमान में केवल स्पॉट खाते समर्थित हैं। मार्जिन जैसे अन्य खाते प्रकार में संपत्तियां दिखाई नहीं देंगी।",
     "topUpButton": "बैलेंस टॉप अप करें",
-    "topUpUSDCInstruction": "अपने फैंटम वालेट में यूएसडीसी बैलेंस को पुनः पूरित करें।",
-    "tryAgainFromTaoInstruction": "कृपया अपने TAO चेकआउट पृष्ठ से पुनः प्रयास करें।",
+    "topUpUSDCInstruction": "अपने Phantom वॉलेट में USDC बैलेंस टॉप अप करें।",
+    "tryAgainFromTaoInstruction": "कृपया अपने TAO चेकआउट पेज से दोबारा प्रयास करें।",
     "unableTransferError": "स्थानांतरण आरंभ नहीं किया जा सका।"
   },
   "selectItem": {
@@ -1090,15 +1090,15 @@
     "title": "आपका सत्र समाप्त हो गया है।"
   },
   "sessionInfo": {
-    "text": "यदि आपके पास प्रश्न हैं, तो कृपया इस सत्र ID के साथ इसकी रिपोर्ट करें <2>{{sessionId}}</2>।"
+    "text": "यदि आपके कोई प्रश्न हैं, कृपया इसे सत्र आईडी <2>{{sessionId}}</2> के साथ रिपोर्ट करें।"
   },
   "setupAuthAppPage": {
-    "alternativeText": "वैकल्पिक रूप से, आप इस मैनुअल कोड को प्रमाणक ऐप में चिपका सकते हैं",
+    "alternativeText": "इसके विकल्प के रूप में, आप इस मैनुअल कोड को प्रमाणिकरण ऐप में पेस्ट कर सकते हैं",
     "copyCodeTitle": "मैनुअल कोड",
-    "downloadStep": "Google Play या ऐप स्टोर से <1>गूगल ऑथेंटिकेटर ऐप</1> डाउनलोड करें",
+    "downloadStep": "Google Play या App Store से <1>Google Authenticator ऐप</1> डाउनलोड करें",
     "nextButton": "अगला",
     "qrCodeAlt": "क्यूआर कोड",
-    "scanStep": "<1>QR कोड स्कैन करके</1>अपने प्रमाणक ऐप में {{selectedIntegrationName}} जोड़ें",
+    "scanStep": "<1> क्यूआर कोड स्कैन करके</1>अपने प्रमाणक ऐप में {{selectedIntegrationName}} जोड़ें",
     "title": "प्रमाणक ऐप सेट करें"
   },
   "setupEmailPage": {
@@ -1263,12 +1263,12 @@
     "clientVerifyText": "आपको सुरक्षित रूप से अपने Trezor में ट्रांसफर किया जाएगा, ताकि आप अपने डिवाइस में एक संदेश पर हस्ताक्षर कर सकें, जो आपकी वॉलेट का स्वामित्व पुष्ट करे।",
     "connectingLabel": "आपके वॉलेट को जोड़ने की प्रक्रिया चल रही है...",
     "secureLabel": "तेज़, सुरक्षित और मुफ्त",
-    "secureText": "हस्ताक्षर करने से {{clientName}} को आपके वॉलेट के साथ कोई लेन-देन करने की अनुमति नहीं मिलती है।"
+    "secureText": "हस्ताक्षर करने से किसी भी तरह से {{clientName}} को आपके वॉलेट के साथ लेन-देन करने की अनुमति नहीं मिलती है।"
   },
   "verifyAddressAndNetworkErrorPage": {
-    "body": "{{clientName}} <3>{{requestedNetworkName}}</3> पते <6>{{truncatedRequestedAddress}}</6> का स्वामित्व सत्यापित करना चाहता है। यह पता जुड़े हुए वॉलेट के साथ संबद्ध नहीं है। कृपया एक और वॉलेट कनेक्ट करें।",
-    "connectAnotherAction": "दूसरे वॉलेट को कनेक्ट करें",
-    "title": "उह ओ!"
+    "body": "{{clientName}} आपसे <3>{{requestedNetworkName}}</3> पते <6>{{truncatedRequestedAddress}}</6> का स्वामित्व सत्यापित करने का अनुरोध कर रहा है। यह पता जुड़े हुए वॉलेट से संबद्ध नहीं है। कृपया कोई अन्य वॉलेट कनेक्ट करें।",
+    "connectAnotherAction": "अन्य वॉलेट कनेक्ट करें",
+    "title": "ओह हो!"
   },
   "verifyError": {
     "body": "आपके हार्डवेयर वॉलेट को सत्यापित नहीं किया जा सका। कृपया सुनिश्चित करें कि आपने सही नेटवर्क चुना है और सही वॉलेट का पता दर्ज किया है।",
@@ -1280,7 +1280,7 @@
   },
   "wallectConnect": {
     "noActiveSessionError": "कोई सक्रिय WalletConnect सत्र नहीं है",
-    "transactionHashError": "ट्रांजैक्शन हैश प्राप्त नहीं कर सके",
+    "transactionHashError": "लेन-देन हैश प्राप्त नहीं हो सका",
     "unknownError": "एक अज्ञात त्रुटि हुई। {{error}}"
   },
   "walletDoneScreen": {
