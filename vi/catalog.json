@@ -29,7 +29,7 @@
       "networkName": "trên {{networkName}}"
     },
     "selectAnotherAccount": "Chọn một tài khoản khác",
-    "selectAnotherExchange": "Vui lòng chọn sàn giao dịch hoặc ví khác để gửi tiền từ.",
+    "selectAnotherExchange": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền.",
     "selectAsset": "Chọn tài sản để giao dịch",
     "selectCurrency": "Chọn đơn vị tiền tệ",
     "selectNetwork": "Chọn mạng lưới chuyển tiền",
@@ -323,7 +323,7 @@
     "configurationMismatch": "Lỗi cấu hình",
     "emptyWalletBalance": "Ví rỗng",
     "expiredSmartDeposit": "Tiền gửi thông minh đã hết hạn",
-    "failedToGetFundingOptions": "Lỗi Tùy Chọn Tài Trợ",
+    "failedToGetFundingOptions": "Lỗi tùy chọn nạp tiền",
     "failedToSaveFundingOptions": "Lưu thất bại",
     "feeAssetBalanceNotEnough": "Không đủ số dư để trả phí",
     "forbiddenByIntegration": "Truy cập bị cấm",
@@ -352,7 +352,7 @@
     "refusedByIntegration": "Giao dịch bị từ chối",
     "satoshiTestRequired": "Số tiền vượt hạn mức cho phép",
     "serverFailure": "Lỗi máy chủ",
-    "symbolNotSupported": "Ký hiệu không được hỗ trợ",
+    "symbolNotSupported": "Loại tiền mã hóa không được hỗ trợ",
     "symbolNotSupportedBySource": "Nguồn không được hỗ trợ",
     "symbolNotSupportedByTarget": "Điểm nhận không được hỗ trợ",
     "symbolNotSupportedForTrading": "Giao dịch không được hỗ trợ",
@@ -393,19 +393,19 @@
     "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
     "default": "Đã xảy ra lỗi.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
-    "failedToGetFundingOptions": "Không thể nhận tùy chọn tài trợ",
-    "failedToSaveFundingOptions": "Không thể lưu các tùy chọn tài trợ",
-    "feeAssetBalanceNotEnough": "Không đủ tiền để trả phí chuyển.",
+    "failedToGetFundingOptions": "Không thể lấy tùy chọn nạp tiền",
+    "failedToSaveFundingOptions": "Không thể lưu tùy chọn nạp tiền",
+    "feeAssetBalanceNotEnough": "Không đủ tiền để thanh toán phí chuyển tiền.",
     "fromAccountNotSupported": "Tài khoản hiện tại không hỗ trợ rút tiền điện tử.",
-    "integrationNotAvailable": "Tích hợp hiện không khả dụng.",
-    "kycRequired": "Không thể khởi tạo chuyển tiền. Tích hợp yêu cầu tài khoản hoàn thành xác minh KYC trước khi cho phép chuyển tiền điện tử.",
+    "integrationNotAvailable": "Tích hợp này hiện không khả dụng.",
+    "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
     "locked": "Tài khoản của bạn bị khóa",
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
     "passKeyNotSupported": "Khóa truy cập hiện không được hỗ trợ, vui lòng vô hiệu hóa để tiếp tục.",
     "previewExpired": "Bản xem trước đã hết hạn.",
     "satoshiTestRequired": "API của Coinbase không hỗ trợ chuyển tiền vượt quá 1000 Euro do giới hạn của quy tắc giao dịch (travel rule). Vui lòng thử lại với số tiền thấp hơn.",
-    "symbolNotSupported": "Ký hiệu không được tích hợp hỗ trợ.",
-    "symbolNotSupportedBySource": "Ký hiệu cần chuyển không được ví nguồn hỗ trợ trên mạng được yêu cầu.",
+    "symbolNotSupported": "Loại tiền mã hóa không được tích hợp hỗ trợ.",
+    "symbolNotSupportedBySource": "Loại tiền mã hóa cần chuyển không được ví nguồn hỗ trợ trên mạng yêu cầu.",
     "symbolNotSupportedByTarget": "Không thể tìm thấy địa chỉ gửi tiền cho đồng tiền được yêu cầu.",
     "toAccountNotSupported": "Tài khoản đích hiện không hỗ trợ gửi tiền điện tử.",
     "tooManyRequests": "Vui lòng thử lại sau.",
@@ -414,15 +414,15 @@
     "coinbaseTravelRuleRestriction": "API của Coinbase hiện chưa hỗ trợ chuyển tiền từ quốc gia của bạn do hạn chế toàn cầu của quy tắc giao dịch (travel rule).",
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
-    "addressNotAllowlisted": "Không thể bắt đầu rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Địa chỉ người nhận này đã được thêm vào Danh sách được phép của bạn và đang chờ xác nhận.",
+    "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
+    "addressAllowlistPending": "Địa chỉ người nhận này đã được thêm vào Danh sách an toàn của bạn và hiện đang chờ giữ lệnh.",
     "authenticationFailed": "Không thể xác thực với tích hợp đã chọn.",
-    "belowMinimumFiatDeposit": "Số tiền dưới giới hạn nạp tiền mặt tối thiểu.",
+    "belowMinimumFiatDeposit": "Số tiền thấp hơn mức nạp tiền tối thiểu.",
     "exceedsApplicationLimit": "Số tiền chuyển vượt quá giới hạn ứng dụng.",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
-    "mfaNotSupported": "Xác thực hai lớp không được hỗ trợ cho hoạt động này.",
+    "mfaNotSupported": "Xác thực đa yếu tố không được hỗ trợ cho hoạt động này.",
     "selfTransferNotAllowed": "Bạn không thể chuyển từ một tài khoản đến chính nó.",
-    "sendAccessDisabled": "Không thể khởi tạo rút tiền do quyền truy cập gửi bị vô hiệu hóa cho tài khoản này.",
+    "sendAccessDisabled": "Không thể thực hiện rút tiền vì quyền gửi đã bị vô hiệu hóa cho tài khoản này.",
     "tryAgainAfterLogin": "Vui lòng thử lại sau khi đăng nhập.",
     "unableToSend": "Không thể gửi giao dịch chuyển tiền. Vui lòng thử lại.",
     "userInfoUnavailable": "Không thể lấy thông tin người dùng. Vui lòng thử lại.",
@@ -494,11 +494,11 @@
   },
   "fields": {
     "apiKey": "Khóa API",
-    "apiSecret": "Mật khẩu API",
+    "apiSecret": "Mã bí mật API",
     "authToken": "Mã xác thực",
     "challengeCode": "Mã xác thực",
     "clientId": "ID khách hàng",
-    "clientSecret": "Mật khẩu khách hàng",
+    "clientSecret": "Mã bí mật của ứng dụng",
     "email": "Email",
     "emailOrUsername": "Email hoặc tên người dùng",
     "mfaCode": "Mã MFA",
@@ -513,14 +513,14 @@
   },
   "fullScreenSpinner": {
     "linking": "Đang liên kết tài khoản của bạn...",
-    "loading": "Vẫn đang làm việc..."
+    "loading": "Đang xử lý..."
   },
   "fundingLoadingOverlay": {
     "loading": "Đang tải..."
   },
   "fundingMethodFees": {
     "fee": {
-      "conversion": "{{integrationName}} {{conversionFromCurrency}} sang {{conversionToCurrency}} Phí chuyển đổi",
+      "conversion": "Phí chuyển đổi từ {{conversionFromCurrency}} sang {{conversionToCurrency}} trong {{integrationName}}",
       "deposit": "Phí gửi tiền {{integrationName}}",
       "purchase": "Phí mua {{cryptocurrencySymbol}} bằng {{fiatSymbol}} qua {{integrationName}}",
       "withdrawal": "Phí rút tiền {{integrationName}}"
@@ -541,23 +541,23 @@
     "withAdditional_other": "{{mainOption}} + {{count}} người khác"
   },
   "fundingOptionUnavailabilityReason": {
-    "buyingPowerUsageNotSupported": "{{integrationName}} không hỗ trợ sử dụng phương thức thanh toán này để mua {{assetName}}.",
-    "coveredByExistingCryptocurrencyBalance": "Bạn đã có đủ số dư {{assetName}} cho lần mua này mà không cần phương pháp cấp vốn bổ sung nào.",
-    "coveredByOtherFundingOptions": "Phương thức cấp vốn này không được hỗ trợ cho giao dịch này.",
-    "currencyNotSupported": "Việc mua tiền điện tử bằng phương thức tài trợ không phải USD vẫn chưa được hỗ trợ.",
-    "depositAmountLimitExceeded": "Việc mua này sẽ vượt qua giới hạn gửi tiền tối đa của {{integrationName}} trong vòng 1 ngày cho phương thức tài trợ này.",
-    "depositCountLimitReached": "Phương thức tài trợ này đã đạt đến số lượng tiền gửi tối đa của {{integrationName}} trong vòng 1 ngày.",
+    "buyingPowerUsageNotSupported": "{{integrationName}} không hỗ trợ sử dụng phương thức nạp tiền này để mua {{assetName}}.",
+    "coveredByExistingCryptocurrencyBalance": "Bạn có đủ số dư {{assetName}} để thực hiện giao dịch này mà không cần phương thức nạp tiền bổ sung nào.",
+    "coveredByOtherFundingOptions": "Phương thức nạp tiền này không được hỗ trợ cho giao dịch này.",
+    "currencyNotSupported": "Hiện chưa hỗ trợ mua tiền mã hoá bằng Phương thức nạp tiền không phải USD.",
+    "depositAmountLimitExceeded": "Giao dịch mua này sẽ vượt quá giới hạn nạp tiền tối đa trong 1 ngày của {{integrationName}} cho phương thức nạp tiền này.",
+    "depositCountLimitReached": "Phương thức nạp tiền này đã đạt đến số lượng tiền gửi tối đa của {{integrationName}} trong vòng 1 ngày.",
     "depositsNotSupported": "Phương thức nạp tiền này không được hỗ trợ cho giao dịch này.",
-    "instantDepositLimitExceeded": "Giới hạn tiền gửi ngay lập tức của phương thức tài trợ này không đủ cho việc mua này.",
-    "instantDepositsNotSupported": "Phương thức tài trợ này không hỗ trợ tiền gửi ngay lập tức, vì vậy nó không thể được sử dụng cho việc mua này.",
-    "insufficientBalance": "Số dư không đủ để cấp tiền cho giao dịch mua này.",
-    "maximumDepositLimitViolated": "Số tiền vượt quá giới hạn gửi tiền tối đa của phương thức tài trợ này.",
-    "minimumDepositLimitViolated": "Số tiền thấp hơn giới hạn gửi tiền tối thiểu của phương thức tài trợ này.",
-    "paymentMethodTypeNotSupported": "Phương thức tài trợ này vẫn chưa được hỗ trợ.",
-    "unknown": "Tùy chọn tài chính này không có sẵn."
+    "instantDepositLimitExceeded": "Giới hạn tiền gửi ngay lập tức của phương thức nạp tiền này không đủ cho việc mua này",
+    "instantDepositsNotSupported": "Phương thức nạp tiền này không hỗ trợ tiền gửi ngay lập tức, vì vậy nó không thể được sử dụng cho việc mua này.",
+    "insufficientBalance": "Số dư không đủ để nạp tiền tiền cho giao dịch mua này.",
+    "maximumDepositLimitViolated": "Số tiền vượt quá giới hạn gửi tiền tối đa của phương thức nạp tiền.",
+    "minimumDepositLimitViolated": "Số tiền thấp hơn giới hạn gửi tiền tối thiểu của phương thức nạp tiền.",
+    "paymentMethodTypeNotSupported": "Phương thức nạp tiền này vẫn chưa được hỗ trợ.",
+    "unknown": "Tùy chọn nạp tiền này không có sẵn."
   },
   "fundingPage": {
-    "activatePaymentMethod": "Kích hoạt phương thức thanh toán trên {{selectedIntegrationName}}",
+    "activatePaymentMethod": "Kích hoạt Phương thức nạp tiền trên {{selectedIntegrationName}}",
     "aproximateFiat": "~{{amountInFiat}}",
     "balanceAmount": "Số dư: {{amount}}",
     "balanceAmountWithConversion": "Số dư: ~{{amount}} ({{conversionSymbols}})",
@@ -569,31 +569,31 @@
     "changePreferredToken": "Thay đổi token ưa thích",
     "cryptoConversion": "Chuyển đổi tiền mã hóa",
     "description": "Tổng cộng: {{amount}} ~ {{amountInFiat}}",
-    "instantCashAvailable": "(Tiền mặt hiện tại có sẵn: {{amountInFiat}})",
+    "instantCashAvailable": "(Tiền mặt có sẵn: {{amountInFiat}})",
     "insufficientFunds": "Không đủ tiền",
     "linkedPaymentMethods": "Phương thức thanh toán liên kết",
     "noPaymentMethods": "Không có phương thức thanh toán liên kết.",
     "noTokensAvailableForConversion": "Không có token nào khả dụng để chuyển đổi",
     "save": "Lưu",
-    "selectFundingMethodAvailablity": "Phương thức thanh toán bạn đã chọn hiện có {{selectedAvailableAmount}}. Vui lòng chọn thêm phương thức thanh toán khác để giao dịch {{neededAmount}}.",
-    "selectFundingMethods": "Vui lòng chọn phương thức thanh toán để giao dịch <2>{{amount}} ~ {{amountInFiat}}</2>.",
-    "selectFundingMethodsTitle": "Chưa chọn phương thức tài trợ",
+    "selectFundingMethodAvailablity": "Phương thức nạp tiền bạn đã chọn hiện có {{selectedAvailableAmount}}. Vui lòng chọn thêm phương thức nạp tiền khác để giao dịch {{neededAmount}}.",
+    "selectFundingMethods": "Vui lòng chọn phương thức nạp tiền để thực hiện giao dịch chuyển <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodsTitle": "Chưa chọn phương thức nạp tiền",
     "selectOtherHoldings": "Chọn từ các khoản nắm giữ khác",
     "symbolBalance": "Số dư {{symbol}}",
-    "title": "Phương pháp tài trợ"
+    "title": "Phương thức nạp tiền"
   },
   "gasFeeUpdateDrawerContent": {
-    "approvePayment": "Phê duyệt thanh toán",
+    "approvePayment": "Chấp nhận thanh toán",
     "cancel": "Hủy bỏ",
-    "description": "Phí gas cao hơn ước tính ban đầu.",
-    "ifDontComplete": "Nếu bạn không hoàn tất thanh toán, số dư {{token}} của bạn sẽ còn lại trong tài khoản {{selectedIntegrationName}} của bạn.",
+    "description": "Phí giao dịch (gas) cao hơn ước tính trước đó.",
+    "ifDontComplete": "Nếu bạn không hoàn tất thanh toán, số dư {{token}} sẽ vẫn nằm trong tài khoản {{selectedIntegrationName}} của bạn.",
     "newEstimate": "Ước tính mới",
     "originalEstimate": "Ước tính ban đầu",
-    "title": "Cập nhật phí gas"
+    "title": "Cập nhật phí giao dịch (gas)"
   },
   "generateKeyPage": {
     "establishedInClient": "Bạn đã thiết lập thành công các cập nhật liên tục trong<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "Bạn đã thành công trong việc thiết lập các cập nhật không bị gián đoạn trong<1></1><2>ứng dụng này</2>.",
+    "establishedInThisApp": "Bạn đã thiết lập thành công các cập nhật liên tục trong<1></1><2>ứng dụng này</2>.",
     "linkedToInClient": "Bạn đã liên kết thành công<1></1><2>{{selectedIntegrationName}}</2> với <5>{{clientName}}</5>.",
     "linkedToThisApp": "Bạn đã liên kết thành công<1></1><2>{{selectedIntegrationName}}</2> với <5>ứng dụng này</5>.",
     "nextStep": "Tiếp theo, chúng tôi sẽ tạo khóa cho <2>cập nhật liên tục</2> để bạn không cần phải đăng nhập lại",
@@ -601,7 +601,7 @@
   },
   "getBrokerAccessTokenErrors": {
     "add2FA": "Vui lòng kết nối ứng dụng 2FA. Và thử lại.",
-    "identityVerificationRequired": "Bạn cần hoàn thành xác minh nhận dạng để sử dụng tính năng khóa API. Vui lòng hoàn tất xác minh nhận dạng để tiếp tục.",
+    "identityVerificationRequired": "Bạn cần hoàn thành xác minh danh tính (KYC) để sử dụng tính năng khóa API. Vui lòng thực hiện xác minh danh tính (KYC) để tiếp tục.",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
     "maximumApiKeyLimitExceeded": "Đã đạt đến giới hạn khóa API cho phép tối đa. Vui lòng xóa khóa không sử dụng để tiếp tục.",
     "unsupportedCountryErrorMessage": "Chúng tôi hiện không hỗ trợ tài khoản của bạn",
@@ -609,7 +609,7 @@
     "wrongTotpCode": "Mã xác thực không đúng, vui lòng thử lại"
   },
   "handleExternalTransferPage": {
-    "detailButton": "Xem chuyện gì đã xảy ra",
+    "detailButton": "Xem chi tiết sự cố",
     "error": "Không thể thực hiện giao dịch",
     "loadingLabel": "Đang xác minh giao dịch của bạn...",
     "networkConfirmations": "Giao dịch chưa hoàn thành cho đến khi nhận được đủ xác nhận từ mạng lưới.",
@@ -623,7 +623,7 @@
     "error": "Không thể liên kết tài khoản của bạn. {{error}}"
   },
   "hardwareWalletDrawerContent": {
-    "body": "{{clientName}} sử dụng Mesh để tạo điều kiện cho kết nối an toàn với {{selectedIntegrationName}}.",
+    "body": "{{clientName}} sử dụng Mesh để thiết lập kết nối an toàn với {{selectedIntegrationName}}.",
     "connectAction": "Kết nối với {{selectedIntegrationName}}"
   },
   "ineligibleReason": {
@@ -643,7 +643,7 @@
     "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này."
   },
   "initialLedgerScreen": {
-    "title": "Bật và mở khóa thiết bị của bạn"
+    "title": "Bật nguồn và mở khóa thiết bị của bạn"
   },
   "initialScreen": {
     "accountTitle": "Ứng dụng này sẽ liên kết tài khoản của bạn một cách an toàn",
@@ -661,7 +661,7 @@
   "initialVerifyPage": {
     "content40": "Xác nhận bạn sở hữu ví này",
     "drawerTitle": "Phê duyệt yêu cầu chữ ký<1></1> trong ví của bạn",
-    "item1Body": "Bạn sẽ được yêu cầu ký một tin nhắn trong {{selectedIntegrationName}} để xác nhận bạn sở hữu ví này.",
+    "item1Body": "Bạn sẽ được một tin nhắn yêu cầu ký trên {{selectedIntegrationName}} để xác nhận bạn là chủ sở hữu của ví này.",
     "item1Title": "{{clientName}} phải xác minh địa chỉ của bạn",
     "item2Body": "Việc ký sẽ xác nhận không cho {{clientName}} bất kỳ quyền nào để thực hiện giao dịch với ví của bạn.",
     "item2Title": "Nhanh chóng, an toàn và miễn phí",
@@ -703,7 +703,7 @@
   "kycRobinhoodPage": {
     "clickContinue": "Nhấn <1>Tiếp tục</1> để mở {{selectedIntegrationName}}.",
     "clickContinueAfterActivated": "Sau khi bạn đã kích hoạt chuyển tiền điện tử trong {{selectedIntegrationName}}, hãy nhấp vào nút <5>Tiếp tục</5> bên dưới để tiếp tục giao dịch.",
-    "completeVerification": "Hoàn tất xác minh danh tính và/hoặc thêm phương pháp xác thực hai yếu tố.",
+    "completeVerification": "Hoàn tất xác minh danh tính và thêm phương pháp xác thực hai yếu tố.",
     "connectAnother": "Kết nối một tài khoản khác",
     "note": "Lưu ý: khi bạn quay lại, có thể bạn sẽ cần phải đăng nhập lại vào tài khoản {{selectedIntegrationName}} của mình để bắt đầu giao dịch.",
     "return": "Quay lại đây để hoàn thành giao dịch.",
@@ -719,14 +719,14 @@
     "usbConnect": "Kết nối với USB"
   },
   "ledgerDeviceConnected": {
-    "clientVerifyLabel": "{{clientName}} phải xác minh ví của bạn",
-    "clientVerifyText": "Bạn sẽ được yêu cầu ký một tin nhắn trên thiết bị Ledger của bạn để xác nhận bạn sở hữu ví này.",
+    "clientVerifyLabel": "{{clientName}} cần xác minh ví của bạn",
+    "clientVerifyText": "Bạn sẽ được một tin nhắn yêu cầu ký trên thiết bị Ledger của bạn để xác nhận bạn là chủ sở hữu của ví này.",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
-    "secureText": "Việc ký không có nghĩa là cấp quyền để {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn.",
-    "title": "Sắp xong!"
+    "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn.",
+    "title": "Gần xong rồi!"
   },
   "ledgerError": {
-    "incorrectAppError": "Ứng dụng sai đang mở trên thiết bị của bạn. Vui lòng mở ứng dụng đúng và thử lại.",
+    "incorrectAppError": "Bạn đang mở sai ứng dụng trên thiết bị. Vui lòng mở đúng ứng dụng và thử lại.",
     "lockedError": "Thiết bị của bạn đang bị khóa. Vui lòng mở khóa và thử lại.",
     "noDeviceError": "Không có thiết bị nào được chọn. Vui lòng chọn một thiết bị và thử lại.",
     "notSelectedError": "Không có ứng dụng nào được chọn. Vui lòng chọn một ứng dụng và thử lại.",
@@ -745,12 +745,12 @@
     "title": "Xác minh thất bại"
   },
   "ledgerSignMessage": {
-    "rippleBody": "Ghi chú: Đối với XRP, bạn sẽ thấy một giao dịch giả với các giá trị tối thiểu. Đây chỉ là để xác minh ví của bạn và sẽ không tốn chi phí hoặc gửi bất kỳ khoản tiền nào.",
-    "title": "Xem xét và ký tin nhắn trên thiết bị của bạn"
+    "rippleBody": "Lưu ý: Đối với XRP, bạn sẽ thấy một giao dịch với giá trị tối thiểu. Giao dịch này chỉ nhằm mục đích xác minh ví của bạn và không mất phí hoặc gửi bất kỳ khoản tiền nào.",
+    "title": "Xem xét thông báo và ký trên thiết bị của bạn"
   },
   "ledgerUSB": {
     "step1": "Chọn thiết bị của bạn từ cửa sổ <1>USB</1>",
-    "step2": "Làm theo hướng dẫn trong cửa sổ USB và trên thiết bị Ledger của bạn để hoàn thành kết nối"
+    "step2": "Làm theo hướng dẫn trên cửa sổ USB và trên thiết bị Ledger của bạn để hoàn thành kết nối"
   },
   "loginDeviceVerifiedPage": {
     "loginButton": "Đi đến Đăng nhập",
@@ -762,7 +762,7 @@
   },
   "mfaHint": {
     "email": "Kiểm tra email của bạn",
-    "phone": "Kiểm tra điện thoại của bạn để nhận tin nhắn SMS",
+    "phone": "Kiểm tra tin nhắn SMS trên điện thoại của bạn",
     "sandbox": "Gợi ý: {{hint}}",
     "totp": "Kiểm tra ứng dụng xác thực của bạn"
   },
@@ -784,20 +784,20 @@
   "mfaSetupPage": {
     "emailButton": "Cài đặt xác minh email",
     "emailSubtitle": "Nhấp vào nút bên dưới để thêm email vào tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
-    "keyGenerationBody": "Để bảo mật cho bạn, <1>{{selectedIntegrationName}} </1> yêu cầu người dùng phải bật phương pháp xác minh email và ứng dụng xác thực để tạo khóa",
-    "keyGenerationTitle": "Kích hoạt tạo khóa API từ tài khoản {{selectedIntegrationName}} của bạn",
-    "totpButton": "Cài đặt ứng dụng xác thực",
+    "keyGenerationBody": "Vì lý do bảo mật, <1>{{selectedIntegrationName}}</1> yêu cầu người dùng phải bật cả xác minh email và ứng dụng xác thực (MFA) để tạo khóa",
+    "keyGenerationTitle": "Bật tạo khóa API từ tài khoản {{selectedIntegrationName}} của bạn",
+    "totpButton": "Thiết lập ứng dụng xác thực",
     "totpSubtitle": "Nhấp vào nút bên dưới để thêm ứng dụng xác thực vào tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
-    "withdrawalBody": "Để bảo mật cho bạn, <1>{{selectedIntegrationName}} </1> yêu cầu người dùng phải bật phương pháp xác minh email và ứng dụng xác thực để rút tài sản",
+    "withdrawalBody": "Vì lý do bảo mật, <1>{{selectedIntegrationName}}</1> yêu cầu người dùng phải bật cả xác minh email và ứng dụng xác thực (MFA) để rút tài sản.",
     "withdrawalTitle": "Kích hoạt rút tiền từ tài khoản {{selectedIntegrationName}} của bạn"
   },
   "mfaSuccessPage": {
     "addAuthApp": "Nhấp vào nút bên dưới để thêm ứng dụng xác thực vào tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
-    "emailTitle": "Bạn đã liên kết thành công email của mình với tài khoản <2>{{selectedIntegrationName}}</2>.",
+    "emailTitle": "Bạn đã liên kết thành công email của mình với tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
     "proceed": "Tiến hành",
     "proceedKey": "Nhấp vào bên dưới để tiếp tục tạo khóa",
     "proceedTransfer": "Nhấp vào bên dưới để tiếp tục giao dịch",
-    "setUpApp": "Cài đặt ứng dụng xác thực",
+    "setUpApp": "Thiết lập ứng dụng xác thực",
     "totpTitle": "Bạn đã liên kết thành công ứng dụng xác thực với tài khoản <2>{{selectedIntegrationName}}</2> của bạn."
   },
   "mfaTitle": {
@@ -835,7 +835,7 @@
     "title": "Thanh toán bằng tiền điện tử"
   },
   "networkSelectionDrawer": {
-    "description": "Các mạng dưới đây đều là những tùy chọn an toàn, tương thích cho khoản thanh toán này. Chúng tôi đã tự động chọn mạng có phí thấp nhất cho bạn.",
+    "description": "Các mạng dưới đây đều là những lựa chọn an toàn và tương thích cho khoản thanh toán này. Chúng tôi đã tự động chọn mạng có phí thấp nhất cho bạn.",
     "estimatedGasFeeLabel": "Phí gas ước tính:",
     "lowestFeeLabel": "Phí thấp nhất",
     "title": "Chọn mạng"
@@ -845,12 +845,12 @@
     "movingFunds": "chuyển tiền mà không có sự cho phép của bạn",
     "titleWithClient": "{{clientName}} <2></2> Quyền hạn",
     "titleWithoutClient": "Quyền hạn của ứng dụng này<1></1>",
-    "transactionRequest": "gửi yêu cầu cho các giao dịch",
+    "transactionRequest": "gửi yêu cầu giao dịch",
     "viewActivity": "xem số dư, hoạt động, dữ liệu hồ sơ",
     "wontAllow": "Không cho phép"
   },
   "oAuthBrokerPage": {
-    "monitoring": "Đang giám sát để phê duyệt...",
+    "monitoring": "Đang chờ phê duyệt...",
     "reopenButton": "Nhấp vào đây để mở lại {{selectedIntegrationName}}",
     "subtitle": "Đăng nhập vào tài khoản của bạn và cho phép truy cập",
     "title": "Tiếp tục trên cửa sổ {{selectedIntegrationName}} <1></1>"
@@ -863,7 +863,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Mở lại {{selectedIntegrationName}}",
-      "subtitle": "Vui lòng hoàn tất đăng nhập và chấp thuận quyền truy cập trong trình duyệt của bạn.",
+      "subtitle": "Vui lòng đăng nhập và phê duyệt quyền truy cập trong trình duyệt của bạn.",
       "title": "Đang chờ kết nối"
     },
     "checking": {
@@ -896,11 +896,11 @@
   "oAuthMessageListener": {
     "clientUsesMesh": "{{clientName}} sử dụng Mesh để kết nối an toàn và hỗ trợ việc giao dịch của bạn trong {{selectedIntegrationName}}.",
     "description": "Đăng nhập vào tài khoản của bạn và cho phép truy cập",
-    "monitoring": "Đang giám sát để phê duyệt...",
+    "monitoring": "Đang chờ phê duyệt...",
     "open": "Mở {{selectedIntegrationName}}",
     "reopen": "Mở lại {{selectedIntegrationName}}",
     "title": "Tiếp tục trên cửa sổ {{selectedIntegrationName}}",
-    "willFacilitate": "sẽ hỗ trợ kết nối an toàn với {{selectedIntegrationName}}."
+    "willFacilitate": "hỗ trợ kết nối an toàn với {{selectedIntegrationName}}."
   },
   "onRampLoadingScreen": {
     "approveTransferStep": {
@@ -923,7 +923,7 @@
       "transferSmartDepositWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}} thông qua hợp đồng chuyển tiếp.",
       "transferWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}}."
     },
-    "mayTakeFewSeconds": "Điều này có thể mất vài giây",
+    "mayTakeFewSeconds": "Quá trình này có thể mất vài giây",
     "onrampTitle": "Đang tiến hành mua hàng",
     "paymentMethodDepositUsage": "Nạp tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
     "paymentTitle": "Đang tiến hành thanh toán",
@@ -956,9 +956,9 @@
   },
   "paymentUpdateDrawerContent": {
     "cancel": "Hủy bỏ",
-    "clickToPay": "Nhấp vào bên dưới để nạp thêm số dư {{token}} để thực hiện thanh toán này.",
-    "description": "Số dư {{token}} của bạn sau khi mua thấp hơn dự kiến do thay đổi giá {{token}} và/hoặc phí gas.",
-    "ifDontComplete": "Nếu bạn không hoàn tất thanh toán, số dư {{token}} của bạn sẽ vẫn nằm trong tài khoản {{selectedIntegrationName}} của bạn.",
+    "clickToPay": "Nhấn vào bên dưới sau đó nạp thêm {{token}} để thực hiện thanh toán này.",
+    "description": "Số dư {{token}} của bạn sau khi mua thấp hơn dự kiến do biến động giá {{token}} hoặc phí gas.",
+    "ifDontComplete": "Nếu bạn không hoàn tất thanh toán, số dư {{token}} sẽ vẫn nằm trong tài khoản {{selectedIntegrationName}} của bạn.",
     "onYourAccount": "Trên tài khoản của bạn",
     "title": "Cập nhật thanh toán",
     "topUp": "Nạp thêm số dư {{token}}"
@@ -969,13 +969,13 @@
     "enterAmount": "Nhập số tiền giao dịch",
     "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "selectAnotherAccount": "Chọn một tài khoản khác",
-    "selectAnotherExchange": "Vui lòng chọn một sàn hoặc ví khác để nạp tiền.",
+    "selectAnotherExchange": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền.",
     "selectNetwork": "Chọn mạng chuyển tiền",
     "title": "Chọn tài sản để giao dịch"
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",
-    "buildingPreviewPayment": "Xây dựng bản xem trước thanh toán của bạn...",
+    "buildingPreviewPayment": "Đang tạo bản xem trước thanh toán của bạn...",
     "confirmTransaction": "Xác nhận giao dịch này trong ứng dụng {{selectedIntegrationName}} của bạn.",
     "fewSeconds": "Điều này có thể mất vài giây",
     "includeFeesMessage": "Bao gồm {{amount}} phí giao dịch",
@@ -994,14 +994,14 @@
     "depositTitle": "Xem trước nạp tiền",
     "dustLeft": "Bạn có thể còn lại một ít {{symbol}}.",
     "estimatedGasFee": "Phí Gas Dự Kiến",
-    "estimatedGasFeeHint": "Các khoản phí dự kiến sẽ được trả để bồi thường cho trình xác thực mạng cho sức mạnh tính toán họ sử dụng để xử lý giao dịch này.",
+    "estimatedGasFeeHint": "Phí ước tính sẽ được dùng để trả cho các trình xác thực mạng vì công sức bỏ ra để xử lý giao dịch này.",
     "from": "Từ",
     "fundingWith": "Nạp tiền bằng",
     "institutionTransferFee": "Phí Rút Tiền {{selectedIntegrationName}}",
-    "institutionTransferFeeHint": "Phí mà {{selectedIntegrationName}} sẽ tính để hỗ trợ chuyển khoản của bạn khỏi {{symbol}}.",
+    "institutionTransferFeeHint": "Phí mà {{selectedIntegrationName}} sẽ thu để hỗ trợ bạn chuyển {{symbol}} ra ngoài.",
     "insufficientFunds": "Không đủ tiền",
-    "maxAmount": "Tài khoản của bạn có thể nạp tối đa <2>{{networkMaxAmount}}</2>. Bạn có muốn điều chỉnh chuyển khoản của mình đến số tiền này không?",
-    "monitoring": "Đang giám sát để phê duyệt...",
+    "maxAmount": "Tài khoản của bạn có thể nạp tối đa <2>{{networkMaxAmount}}</2>. Bạn có muốn điều chỉnh số tiền chuyển khoản của mình theo số tiền này không?",
+    "monitoring": "Đang chờ phê duyệt...",
     "network": "Mạng",
     "onrampTitle": "Xem trước mua hàng",
     "payingWith": "Thanh toán với",
@@ -1010,7 +1010,7 @@
     "processingFee": "Phí Xử Lý",
     "processingFeeHint": "Khoản phí thu được để xử lý giao dịch này.",
     "receive": "Nhận",
-    "resendTransferRequest": "Gửi lại yêu cầu chuyển khoản",
+    "resendTransferRequest": "Gửi lại yêu cầu giao dịch",
     "seconds": "{{seconds}}s",
     "symbolBalance": "Số dư {{symbol}}",
     "to": "Đến",
@@ -1033,7 +1033,7 @@
     "onNetwork": "trên {{network}}"
   },
   "revolutConnectOAuthPage": {
-    "amountMustBeAtLeast": "Số tiền phải ít nhất là $8",
+    "amountMustBeAtLeast": "Số tiền giao dịch tối thiểu là 8 USD",
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
     "selectAsset": "Chọn tài sản để giao dịch",
@@ -1049,28 +1049,28 @@
     "title": "Chọn tài sản"
   },
   "selectHoldingPage": {
-    "binanceDirectNoAssetsBody1": "Có vẻ như bạn không có tài sản nào trong tài khoản được liên kết của mình.",
+    "binanceDirectNoAssetsBody1": "Có vẻ như bạn không có tài sản nào trong tài khoản đã liên kết.",
     "binanceDirectNoAssetsBody2": "Bạn có thể thêm tiền vào tài khoản của mình hoặc kết nối với tài khoản khác để tiếp tục quá trình chuyển khoản.",
-    "cannotFundBody": "Bạn không có đủ số dư tiền mã hóa hoặc tiền pháp định trong tài khoản này để thực hiện giao dịch này.",
-    "cannotFundTitle": "Không thể tài trợ giao dịch",
+    "cannotFundBody": "Bạn không có đủ số dư tiền điện tử hoặc tiền pháp định trong tài khoản này để thực hiện giao dịch.",
+    "cannotFundTitle": "Không thể cấp tiền cho giao dịch",
     "connectAnotherButton": "Kết nối với tài khoản khác",
     "defaultTitle": "Chọn token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
     "loading": "Đang tải tài sản của bạn...",
     "noAssetsTitle": "Không thấy tài sản nào trong tài khoản liên kết",
-    "noEligibleAssetsTitle": "Không có tài sản nào trong tài khoản này đủ điều kiện cho chuyển khoản này",
+    "noEligibleAssetsTitle": "Không có tài sản nào trong tài khoản này đủ điều kiện để chuyển khoản",
     "notEnoughtBody": "Thêm {{symbol}} vào tài khoản của bạn, sau đó quay lại đây để thử lại.",
     "notEnoughtTitle": "Không đủ {{symbol}}",
-    "otherEligible": "Tài sản đủ điều kiện khác",
+    "otherEligible": "Các tài sản đủ điều kiện khác",
     "paymentTitle": "Chọn token thanh toán",
     "returnToAppButton": "Quay lại ứng dụng",
     "returnToClientButton": "Quay lại {{clientName}}",
-    "spotAccountsBody": "Chỉ hỗ trợ tài khoản spot. Tài sản trong các loại tài khoản khác, chẳng hạn như ký quỹ, sẽ không được phát hiện.",
-    "topUpButton": "Nạp tiền",
-    "topUpUSDCInstruction": "Nạp thêm số dư USDC vào ví Phantom của bạn.",
-    "tryAgainFromTaoInstruction": "Thử lại từ trang thanh toán TAO của bạn.",
-    "unableTransferError": "Không thể bắt đầu chuyển tiền."
+    "spotAccountsBody": "Hiện chỉ hỗ trợ tài khoản giao ngay (spot). Tài sản trong các loại tài khoản khác, như tài khoản ký quỹ (margin), sẽ không được phát hiện.",
+    "topUpButton": "Bổ sung số dư",
+    "topUpUSDCInstruction": "Nạp thêm USDC vào ví Phantom của bạn.",
+    "tryAgainFromTaoInstruction": "Vui lòng thử lại từ trang thanh toán TAO của bạn.",
+    "unableTransferError": "Không thể bắt đầu giao dịch chuyển tiền."
   },
   "selectItem": {
     "label": "Chọn {{text}}"
@@ -1084,13 +1084,13 @@
   "selectWalletScreen": {
     "ledgerDevice": "Thiết bị Ledger",
     "ledgerLiveMobileApp": "Ứng dụng Ledger Live trên di động",
-    "title": "Làm thế nào bạn muốn kết nối với {{selectedIntegrationName}}?"
+    "title": "Bạn muốn kết nối với {{selectedIntegrationName}} bằng cách nào?"
   },
   "sessionExpired": {
-    "title": "Phiên của bạn đã hết hạn."
+    "title": "Phiên làm việc của bạn đã hết hạn."
   },
   "sessionInfo": {
-    "text": "Nếu bạn có câu hỏi, vui lòng báo cáo với ID phiên <2>{{sessionId}}</2>."
+    "text": "Nếu bạn có thắc mắc, vui lòng gửi báo cáo kèm theo ID phiên làm việc <2>{{sessionId}}</2>."
   },
   "setupAuthAppPage": {
     "alternativeText": "Ngoài ra, bạn có thể dán mã thủ công này vào ứng dụng xác thực",
@@ -1099,7 +1099,7 @@
     "nextButton": "Tiếp theo",
     "qrCodeAlt": "Mã QR",
     "scanStep": "Thêm {{selectedIntegrationName}} vào ứng dụng xác thực của bạn bằng cách <1>quét mã QR</1>",
-    "title": "Thiết lập Ứng dụng Xác thực"
+    "title": "Thiết lập ứng dụng xác thực"
   },
   "setupEmailPage": {
     "description": "Nhập địa chỉ email của bạn.<1></1><2>{{selectedIntegrationName}}</2> sẽ sử dụng email này để gửi bạn mã xác nhận khi bạn thực hiện một số hành động nhất định trong tài khoản của mình.",
@@ -1116,9 +1116,9 @@
     "paragraph4": "Bạn xác nhận rằng bạn đã đọc Chính sách bảo mật của Công ty, có sẵn tại <2>https://meshconnect.com/privacy-policy</2>, và đồng ý rằng, bằng cách sử dụng Công cụ, bạn đồng ý cho phép Công ty sử dụng Thông tin Cá nhân của bạn như được định nghĩa và quy định trong Chính sách bảo mật.",
     "paragraph5": "Công cụ này được cung cấp trên cơ sở “NGUYÊN TRẠNG” và “KHI CÓ SẴN”, với mọi khiếm khuyết và không có bất kỳ cam kết hay bảo đảm nào dưới bất kỳ hình thức nào. Công ty không đưa ra bất kỳ tuyên bố hay đảm bảo nào, dù rõ ràng hay ngụ ý, liên quan đến Công cụ, bao gồm nhưng không giới hạn ở các bảo đảm về khả năng thương mại, sự phù hợp với một mục đích cụ thể hoặc việc không vi phạm quyền của bên thứ ba.",
     "paragraph6": "TRONG BẤT KỲ TRƯỜNG HỢP NÀO, CÔNG TY HOẶC CÁC NHÀ CUNG CẤP DỊCH VỤ CỦA CÔNG TY SẼ KHÔNG CHỊU TRÁCH NHIỆM, DÙ THEO HỢP ĐỒNG, BẢO ĐẢM, HÀNH VI DÂN SỰ (KỂ CẢ DO SƠ SUẤT), TRÁCH NHIỆM SẢN PHẨM, TRÁCH NHIỆM PHÁP LÝ, HOẶC BẤT KỲ LÝ THUYẾT PHÁP LÝ NÀO KHÁC, ĐỐI VỚI BẤT KỲ THIỆT HẠI GIÁN TIẾP, NGẪU NHIÊN, ĐẶC BIỆT HOẶC HỆ QUẢ NÀO PHÁT SINH TỪ VIỆC SỬ DỤNG (HOẶC KHÔNG THỂ SỬ DỤNG) CÔNG CỤ, DỊCH VỤ NGƯỜI DÙNG CUỐI, HOẶC BẤT KỲ TÀI KHOẢN KẾT NỐI NÀO, BAO GỒM CẢ CÁC HƯỚNG DẪN HOẶC TÀI LIỆU ĐƯỢC TRUYỀN QUA CÁC CHỨC NĂNG DO CÔNG CỤ HỖ TRỢ. CÁC GIỚI HẠN, MIỄN TRỪ TRÁCH NHIỆM NÊU TRÊN SẼ ĐƯỢC ÁP DỤNG Ở MỨC TỐI ĐA MÀ PHÁP LUẬT CHO PHÉP, NGAY CẢ KHI MỘT BIỆN PHÁP KHẮC PHỤC NÀO ĐÓ KHÔNG ĐẠT ĐƯỢC MỤC ĐÍCH CỐT YẾU. KHÔNG GIỚI HẠN NHỮNG ĐIỀU TRÊN, TỔNG MỨC TRÁCH NHIỆM CỦA CÔNG TY VÀ CÁC NHÀ CUNG CẤP DỊCH VỤ LIÊN QUAN ĐẾN CÔNG CỤ SẼ KHÔNG VƯỢT QUÁ MƯỜI ĐÔ LA MỸ.",
-    "paragraph7": "Bạn sẽ bào chữa, bồi thường và giữ vô hại cho Công ty và các giám đốc, quan chức, nhân viên, người cấp phép, nhà thầu và đại diện của nó khỏi và chống lại bất kỳ yêu cầu, hành động, vụ kiện, điều tra hoặc tố tụng nào của bên thứ ba, và bất kỳ tổn thất, nghĩa vụ, thiệt hại, chi phí và phí tổn phát sinh từ hoặc liên quan đến việc sử dụng (hoặc sử dụng sai) của bạn đối với Công cụ, Dịch vụ Người dùng Cuối và/hoặc bất kỳ Tài khoản Kết nối nào.",
-    "paragraph8": "Công ty có thể thay đổi các điều khoản này bất kỳ lúc nào. Sự tiếp tục sử dụng của bạn đối với bất kỳ chức năng nào được kích hoạt bởi Công cụ sau bất kỳ thay đổi nào như vậy tạo thành sự chấp nhận của bạn đối với các điều khoản cập nhật.",
-    "paragraph9": "Các điều khoản này sẽ chịu sự điều chỉnh bởi luật của Bang Delaware, ngoại trừ các nguyên tắc lựa chọn luật của nó. Ngoại trừ các tranh chấp đủ điều kiện cho tòa án các yêu cầu nhỏ, tất cả các tranh chấp phát sinh từ hoặc liên quan đến các điều khoản này hoặc bất kỳ khía cạnh nào của mối quan hệ giữa bạn và Công ty, dù dựa trên hợp đồng, hành vi sai trái, luật định, gian lận, trình bày sai hay bất kỳ lý thuyết pháp lý nào khác, sẽ được giải quyết thông qua trọng tài cuối cùng và bắt buộc trước một trọng tài viên trung lập thay vì tại tòa án bởi thẩm phán hoặc bồi thẩm đoàn và bạn đồng ý rằng Công ty và bạn đều từ bỏ quyền xét xử bởi bồi thẩm đoàn. Các tranh chấp như vậy bao gồm, không giới hạn, tranh chấp phát sinh từ hoặc liên quan đến việc diễn giải hoặc áp dụng quy định trọng tài này, bao gồm sự khả thi, rút lại hoặc tính hợp lệ của quy định trọng tài hoặc bất kỳ phần nào của quy định trọng tài. Tất cả các vấn đề như vậy sẽ do trọng tài viên quyết định và không phải là tòa án hay thẩm phán. Bạn đồng ý rằng bất kỳ trọng tài nào theo các điều khoản này sẽ diễn ra trên cơ sở cá nhân; các trọng tài tập thể và các hành động tập thể không được phép, và bạn đồng ý từ bỏ khả năng tham gia vào một hành động tập thể.",
+    "paragraph7": "Bạn sẽ chịu trách nhiệm bảo vệ, bồi thường và miễn trừ trách nhiệm cho Công ty cùng với các giám đốc, cán bộ, nhân viên, bên cấp phép, nhà thầu và đại diện của Công ty trước mọi khiếu nại, hành động pháp lý, vụ kiện, điều tra hoặc thủ tục của bên thứ ba, cũng như mọi tổn thất, nghĩa vụ, thiệt hại, chi phí và khoản chi phát sinh từ hoặc liên quan đến việc sử dụng (hoặc sử dụng sai) của bạn đối với Công cụ, Dịch vụ dành cho Người dùng Cuối hoặc bất kỳ Tài khoản được Kết nối nào.",
+    "paragraph8": "Công ty có thể thay đổi các điều khoản này bất kỳ lúc nào. Việc bạn tiếp tục sử dụng bất kỳ chức năng nào được cung cấp bởi Công cụ sau khi các thay đổi được áp dụng đồng nghĩa với việc bạn chấp nhận các điều khoản đã cập nhật.",
+    "paragraph9": "Các điều khoản này sẽ chịu sự điều chỉnh bởi luật của Bang Delaware, ngoại trừ các nguyên tắc lựa chọn luật của tiểu bang này. Ngoại trừ những tranh chấp thuộc phạm vi của tòa án giải quyết các yêu cầu nhỏ, tất cả các tranh chấp phát sinh liên quan đến các điều khoản này hoặc bất kỳ khía cạnh nào của mối quan hệ giữa bạn và Công ty, dù dựa trên hợp đồng, hành vi vi phạm, luật pháp, gian lận, thông tin sai lệch hay bất kỳ lý thuyết pháp lý nào khác, sẽ được giải quyết thông qua trọng tài cuối cùng và có tính rằng buộc, trước một trọng tài viên trung lập thay vì tại tòa án bởi thẩm phán hoặc bồi thẩm đoàn. Bạn đồng ý rằng cả Công ty và bạn đều từ bỏ quyền xét xử bởi bồi thẩm đoàn. Các tranh chấp như vậy bao gồm, nhưng không giới hạn, tranh chấp liên quan đến việc diễn giải hoặc áp dụng quy định trọng tài này, bao gồm tính khả thi, khả năng thu hồi hoặc hiệu lực của quy định trọng tài hoặc bất kỳ phần nào của quy định trọng tài. Tất cả các vấn đề như vậy sẽ do trọng tài viên quyết định, không phải bởi tòa án hay thẩm phán. Bạn đồng ý rằng bất kỳ trọng tài nào theo các điều khoản này sẽ diễn ra trên cơ sở cá nhân; các trọng tài tập thể và các vụ kiện tập thể đều không được phép, và bạn đồng ý từ bỏ quyền tham gia vào một vụ kiện tập thể.",
     "title": "{{shortName}} Điều khoản và Điều kiện dành cho người dùng cuối<2></2>"
   },
   "transferAmountPage": {
@@ -1167,12 +1167,12 @@
     "approve": "Nhấn <1>Chấp nhận</1> trên trang xác nhận.",
     "approveOrCancel": "Nhấp <1>Chấp nhận hoặc Hủy Rút Tiền</1> trong email.",
     "confirmButton": "Tôi đã chấp nhận rút tiền",
-    "description": "Vui lòng kiểm tra hộp thư của bạn để nhận email yêu cầu bạn xác nhận một lần rút tiền mới.",
+    "description": "Vui lòng kiểm tra hộp thư của bạn để xác nhận yêu cầu rút tiền mới.",
     "return": "Quay lại đây và nhấp bên dưới để tiếp tục chuyển khoản của bạn.",
     "title": "Chấp nhận rút tiền"
   },
   "transferErrorPage": {
-    "defaultError": "Xảy ra một lỗi không xác định. Vui lòng nhấp chuột bên dưới để bắt đầu một phiên chuyển khoản mới."
+    "defaultError": "Lỗi không xác định. Nhấn vào bên dưới để tạo một giao dịch chuyển tiền mới."
   },
   "transferErrors": {
     "failedToExecute": "Không thể thực hiện giao dịch",
@@ -1206,7 +1206,7 @@
     "connectDifferent": "Kết nối một tài khoản khác",
     "insufficientBalanceError": "Số dư không đủ để thực hiện giao dịch này.",
     "insufficientFunds": "Không đủ ngân sách",
-    "unknownError": "Có lỗi xảy ra. Vui lòng nhấn nút bên dưới để bắt đầu phiên chuyển tiền mới."
+    "unknownError": "Lỗi không xác định. Nhấn vào bên dưới để tạo một giao dịch chuyển tiền mới."
   },
   "transferSteps": {
     "approveTransfer": "Bạn chấp nhận chuyển từ {{integrationName}} đến {{clientName}}",
@@ -1242,28 +1242,28 @@
     "failedGetETHError": "Không thể lấy địa chỉ ETH",
     "failedSignBTCError": "Không thể ký tin nhắn BTC",
     "failedSignETHError": "Không thể ký tin nhắn ETH",
-    "unknownError": "Xảy ra lỗi không xác định"
+    "unknownError": "Lỗi không xác định"
   },
   "trezorDeviceConnected": {
-    "clientVerifyLabel": "{{clientName}} phải xác minh ví của bạn",
+    "clientVerifyLabel": "{{clientName}} cần xác minh ví của bạn",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
-    "secureText": "Việc ký không có nghĩa là cấp quyền để {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn.",
-    "signText": "Bạn sẽ được yêu cầu ký một tin nhắn trong thiết bị Trezor của bạn xác nhận rằng bạn sở hữu ví này.",
-    "title": "Sắp xong!",
+    "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn.",
+    "signText": "Bạn sẽ được một tin nhắn yêu cầu ký trên thiết bị Trezor của bạn để xác nhận bạn là chủ sở hữu của ví này.",
+    "title": "Gần xong rồi!",
     "verifyingLabel": "Đang xác minh ví của bạn..."
   },
   "trezorError": {
     "connectionDeclinedBody": "Bạn đã từ chối yêu cầu kết nối ví của mình hoặc yêu cầu trước đó vẫn còn hoạt động.",
     "connectionDeclinedTitle": "Kết nối bị từ chối",
     "signatureDeclinedBody": "Bạn đã từ chối yêu cầu chữ ký trong ví của mình hoặc một yêu cầu trước đó vẫn đang hoạt động.",
-    "signatureDeclinedTitle": "Từ chối chữ ký"
+    "signatureDeclinedTitle": "Yêu cầu chữ ký đã bị từ chối"
   },
   "trezorInitial": {
-    "clientVerifyLabel": "{{clientName}} phải xác minh ví của bạn",
-    "clientVerifyText": "Bạn sẽ được chuyển an toàn đến Trezor của mình để ký một thông điệp trong thiết bị của bạn xác nhận rằng bạn sở hữu ví của mình.",
-    "connectingLabel": "Đang kết nối ví của bạn...",
+    "clientVerifyLabel": "{{clientName}} cần xác minh ví của bạn",
+    "clientVerifyText": "Bạn sẽ được chuyển đến thiết bị Trezor của mình để ký một thông điệp nhằm xác nhận bạn là chủ sở hữu của ví.",
+    "connectingLabel": "Đang kết nối với ví của bạn...",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
-    "secureText": "Ký không cho phép {{clientName}} thực hiện bất kỳ giao dịch nào với ví của bạn."
+    "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn."
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} muốn bạn xác minh quyền sở hữu địa chỉ <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Địa chỉ này không kết nối với ví đã kết nối. Vui lòng kết nối một ví khác.",
@@ -1275,16 +1275,16 @@
     "title": "Xác minh thất bại"
   },
   "verifyErrorPage": {
-    "body": "Bạn đã từ chối yêu cầu chữ ký trong ví của mình hoặc một yêu cầu trước đó vẫn đang hoạt động. {{clientName}} không thể xác minh quyền sở hữu ví của bạn mà không có chữ ký.",
+    "body": "Bạn đã từ chối yêu cầu chữ ký trong ví của mình hoặc một yêu cầu trước đó vẫn đang hoạt động. {{clientName}} không thể xác minh quyền sở hữu ví của bạn nếu không có chữ ký.",
     "title": "Từ chối xác minh"
   },
   "wallectConnect": {
-    "noActiveSessionError": "Không có phiên WalletConnect nào hoạt động",
-    "transactionHashError": "Không thể lấy hash giao dịch",
-    "unknownError": "Đã xảy ra lỗi không xác định. {{error}}"
+    "noActiveSessionError": "Không có phiên WalletConnect đang hoạt động",
+    "transactionHashError": "Không thể lấy mã giao dịch",
+    "unknownError": "Lỗi không xác định. {{error}}"
   },
   "walletDoneScreen": {
-    "completePaymentMessage": "Trở lại trải nghiệm thanh toán của bạn để hoàn tất việc mua {{clientName}}.",
+    "completePaymentMessage": "Vui lòng quay lại trang thanh toán để hoàn tất giao dịch mua {{clientName}}.",
     "continueMessage": "Vui lòng tiếp tục trong ứng dụng {{clientName}} của bạn.",
     "successMessage": "Bạn đã xác minh thành công quyền sở hữu của ví {{walletName}} của mình."
   },
