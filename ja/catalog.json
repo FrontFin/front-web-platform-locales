@@ -435,12 +435,12 @@
     "withdrawalPendingDepositConfirmation": "あなたの入金は引き出しに必要な確認を満たしていません。詳細については取引履歴を確認してください",
     "invalidFromIntegrationToken": "送金を開始できません。このアカウントで認証に使用されているトークンにはこの操作の権限がありません",
     "invalidToIntegrationToken": "宛先を識別できません",
-    "notAuthorizedFromIntegrationToken": "送金を開始できません。このアカウントで認証に使用されているトークンにはこの操作の権限がありません",
-    "notAuthorizedToIntegrationToken": "送金を開始できません。このアカウントで認証に使用されているトークンにはこの操作の権限がありません",
-    "configurationMismatch": "送金を開始できません。アカウントの設定が要求された送金と一致していません",
-    "refusedByIntegration": "送金を開始できません。統合が要求を拒否しました",
-    "noAvailableSmartContract": "利用可能なスマートコントラクトはありません",
-    "expiredSmartDeposit": "スマートデポジットが期限切れです。スマートコントラクトは解除されました"
+    "notAuthorizedFromIntegrationToken": "送金を開始できません。このアカウントへの認証に使用されたトークンには、本操作を行う権限がありません。",
+    "notAuthorizedToIntegrationToken": "送金を開始できません。このアカウントへの認証に使用されたトークンには、本操作を行う権限がありません。",
+    "configurationMismatch": "送金を開始できません。アカウントの設定が、要求された送金内容と一致していません。",
+    "refusedByIntegration": "送金を開始できません。連携先がリクエストを拒否しました。",
+    "noAvailableSmartContract": "利用可能なスマートコントラクトが存在しません。",
+    "expiredSmartDeposit": "スマート入金の有効期限が切れました。スマートコントラクトは解除されました。"
   },
   "errorPage": {
     "title": "エラーが発生しました。"
@@ -570,14 +570,14 @@
     "cryptoConversion": "暗号資産の換算",
     "description": "合計: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "（利用可能な即時現金：{{amountInFiat}}）",
-    "insufficientFunds": "残高不足",
+    "insufficientFunds": "残高が不足しています。",
     "linkedPaymentMethods": "リンクされた支払方法",
     "noPaymentMethods": "リンクされた支払方法がありません。",
     "noTokensAvailableForConversion": "変換可能なトークンがありません。",
     "save": "保存",
     "selectFundingMethodAvailablity": "選択された資金調達方法の残高は{{selectedAvailableAmount}}です。{{neededAmount}}を送金するために、追加の資金調達方法を選択してください。",
     "selectFundingMethods": "<2>{{amount}}～{{amountInFiat}}</2>を送金するための資金調達方法を選択してください。",
-    "selectFundingMethodsTitle": "資金調達方法が選択されていません",
+    "selectFundingMethodsTitle": "資金調達方法が選択されていません。",
     "selectOtherHoldings": "他の保有を選択",
     "symbolBalance": "{{symbol}} 残高",
     "title": "資金調達方法"
