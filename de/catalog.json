@@ -432,7 +432,7 @@
     "withdrawalDisabledDueToScamRisk": "Deine Abhebung wurde als hohes Risiko identifiziert. Um Deine Gelder zu schützen, sind Abhebungen von Deinem Konto vorübergehend für 1 Stunde deaktiviert.",
     "withdrawalDisabledDueToSecurityReset": "Die Abhebefunktion Deines Kontos wurde aufgrund einer kürzlich erfolgten Sicherheitsüberprüfung vorübergehend deaktiviert.",
     "withdrawalDisabledDueToSuspiciousActivity": "Deine Abhebefunktion wurde aufgrund verdächtiger Aktivitäten deaktiviert. Bitte vervollständige den Verifizierungsprozess auf Binance. Wenn Du nicht verifizieren kannst, kontaktiere den Kundensupport. Wenn Du kürzlich die Verifizierung abgeschlossen hast, warte bitte einen Moment und versuche es erneut.",
-    "withdrawalPendingDepositConfirmation": "Ihr Einzahlung hat nicht die erforderlichen Bestätigungen zur Entsperrung für die Abhebung erfüllt. Bitte überprüfen Sie das Transaktionsprotokoll für weitere Details.",
+    "withdrawalPendingDepositConfirmation": "Deine Einzahlung hat nicht die erforderlichen Bestätigungen zur Entsperrung für die Abhebung erfüllt. Bitte überprüfe das Überweisungshistorie für weitere Details.",
     "invalidFromIntegrationToken": "Überweisung konnte nicht eingeleitet werden. Der zur Authentifizierung dieses Kontos verwendete Token ist nicht berechtigt, diese Aktion auszuführen.",
     "invalidToIntegrationToken": "Ziel konnte nicht identifiziert werden.",
     "notAuthorizedFromIntegrationToken": "Überweisung konnte nicht eingeleitet werden. Der zur Authentifizierung dieses Kontos verwendete Token ist nicht berechtigt, diese Aktion auszuführen.",
@@ -440,7 +440,7 @@
     "configurationMismatch": "Überweisung konnte nicht eingeleitet werden. Die Konfiguration des Kontos entspricht nicht der angeforderten Überweisung.",
     "refusedByIntegration": "Überweisung konnte nicht eingeleitet werden. Die Integration hat die Anfrage abgelehnt.",
     "noAvailableSmartContract": "Kein Smart Contract verfügbar",
-    "expiredSmartDeposit": "Das Smart-Deposit ist abgelaufen. Der Smart Contract wurde deallokiert."
+    "expiredSmartDeposit": "Das Smart-Deposit ist abgelaufen. Der Smart Contract wurde aufgehoben."
   },
   "errorPage": {
     "title": "Ein Fehler ist aufgetreten."
@@ -516,7 +516,7 @@
     "loading": "Arbeitet noch..."
   },
   "fundingLoadingOverlay": {
-    "loading": "Laden..."
+    "loading": "Laden ..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -835,7 +835,7 @@
     "title": "Mit Krypto bezahlen"
   },
   "networkSelectionDrawer": {
-    "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Sie automatisch ausgewählt.",
+    "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Dich automatisch ausgewählt.",
     "estimatedGasFeeLabel": "Geschätzte Gasgebühr:",
     "lowestFeeLabel": "Niedrigste Gebühr",
     "title": "Netzwerk auswählen"
@@ -863,28 +863,28 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Öffne {{selectedIntegrationName}} erneut",
-      "subtitle": "Bitte melden Sie sich in Ihrem Browser an und genehmigen Sie den Zugriff.",
+      "subtitle": "Bitte schließe die Anmeldung und Freigabe des Zugangs in Deinem Browser ab.",
       "title": "Warte auf Verbindung"
     },
     "checking": {
-      "message": "Ihre Assets werden überprüft..."
+      "message": "Deine Assets werden überprüft ..."
     },
     "connected": {
       "action": "Zurück zu {{clientName}}",
-      "backup": "Du hast erfolgreich Dein Konto verbunden.",
+      "backup": "Du hast Dein Konto erfolgreich verbunden.",
       "subtitle": "Zurück zu {{clientName}}, um fortzufahren",
-      "title": "Sie sind mit {{selectedIntegrationName}} verbunden"
+      "title": "Du bist mit {{selectedIntegrationName}} verbunden"
     },
     "error": {
       "connection": {
         "action": "Öffne {{selectedIntegrationName}} erneut",
-        "subtitle": "Es scheint, dass Sie die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen haben. Bitte öffnen Sie {{selectedIntegrationName}} erneut und beenden Sie die Anmeldung.",
+        "subtitle": "Es scheint, dass Du die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen hast. Bitte öffne {{selectedIntegrationName}} erneut und schließe die Anmeldung ab.",
         "title": "Konnte keine Verbindung zu {{selectedIntegrationName}} herstellen"
       }
     },
     "redirecting": {
       "action": "Weiter zu {{selectedIntegrationName}}",
-      "subtitle": "Sie werden zu Ihrem Browser weitergeleitet, um sich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Sie fertig sind, kehren Sie automatisch hierher zurück.",
+      "subtitle": "Du wirst zu Deinem Browser weitergeleitet, um Dich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Du fertig bist, wirst Du automatisch hierher zurückkehren.",
       "title": "Umleitung zu {{selectedIntegrationName}}"
     }
   },
@@ -975,8 +975,8 @@
   },
   "previewPageUI": {
     "accountLabel": "Konto",
-    "buildingPreviewPayment": "Erstellen Ihrer Zahlungsansicht ...",
-    "confirmTransaction": "Bestätigen Sie diese Transaktion in Ihrer {{selectedIntegrationName}}-App.",
+    "buildingPreviewPayment": "Erstellen Deiner Zahlungsvorschau ...",
+    "confirmTransaction": "Bestätige diese Überweisung in Deiner {{selectedIntegrationName}}-App.",
     "fewSeconds": "Dies kann einige Sekunden dauern",
     "includeFeesMessage": "Beinhaltet {{amount}} an Gebühren",
     "networkLabel": "Netzwerk",
@@ -984,7 +984,7 @@
     "paymentTotalLabel": "Gesamtbetrag bezahlen",
     "payWithLabel": "Bezahlen mit",
     "payWithLabelWithName": "Bezahlen mit {{integrationName}}",
-    "processingPayment": "Ihre Zahlung wird bearbeitet"
+    "processingPayment": "Deine Zahlung wird bearbeitet"
   },
   "previewTransfer": {
     "allFeesIncluded": "Alle Gebühren eingeschlossen",
@@ -1068,8 +1068,8 @@
     "returnToClientButton": "Zurück zu {{clientName}}",
     "spotAccountsBody": "Derzeit werden nur Spot-Konten unterstützt. Assets in anderen Kontotypen, wie Margin, werden nicht erkannt.",
     "topUpButton": "Guthaben aufladen",
-    "topUpUSDCInstruction": "Laden Sie Ihr USDC-Guthaben in Ihrem Phantom-Wallet auf.",
-    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer TAO-Kassenseite.",
+    "topUpUSDCInstruction": "Lade Dein USDC-Guthaben in Deiner Phantom-Wallet auf.",
+    "tryAgainFromTaoInstruction": "Versuche es erneut von Deiner TAO-Kassenseite.",
     "unableTransferError": "Die Überweisung kann nicht gestartet werden."
   },
   "selectItem": {
