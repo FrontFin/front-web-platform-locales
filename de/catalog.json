@@ -1,6 +1,6 @@
 {
   "accessDeniedPage": {
-    "body": "Leider ist Aktivitäten aus Ihrem Land derzeit nicht erlaubt.",
+    "body": "Leider sind Aktivitäten aus Deinem Land derzeit nicht erlaubt.",
     "title": "Zugriff verweigert"
   },
   "addressWhitelistPage": {
@@ -148,7 +148,7 @@
     "tryAgain": "Erneut versuchen"
   },
   "commonContent": {
-    "connecting": "Verbinden...",
+    "connecting": "Verbinden ...",
     "description": "wird die sichere Verbindung mit {{integrationName}} erleichtern.",
     "monitoring": "Warten auf Genehmigung ...",
     "resend": "Verbindungsanfrage erneut senden",
@@ -168,7 +168,7 @@
   },
   "connectionFailedPage": {
     "defaultError": "Ein Fehler ist aufgetreten.",
-    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehren Sie zu Ihrer TAO-Kassenseite zurück und versuchen Sie es erneut."
+    "directMobileFlowError": "Sitzung abgelaufen. Bitte kehre zu Deiner TAO-Kassenseite zurück und versuche es erneut."
   },
   "connectionUnavailablePage": {
     "connectAnother": "Eine weitere Wallet verbinden",
@@ -280,12 +280,12 @@
     "checkDetails": "Sieh, was passiert ist",
     "checkDetails40": "Transaktionsdetails anzeigen",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>wird an {{shortAddress}} empfangen",
-    "depositClient": "Du wirst<1>{{amountCrypto}} ~ {{amountFiat}}</1>in {{clientName}} ({{shortAddress}}) erhalten",
-    "directMobileBody": "Kehren Sie zu Ihrer TAO-Kassenseite zurück, um Ihre Zahlung abzuschließen.",
+    "depositClient": "Du wirst<2>{{amountCrypto}} ~ {{amountFiat}}</2> in {{clientName}} ({{shortAddress}}) erhalten",
+    "directMobileBody": "Kehre zu Deiner TAO-Kassenseite zurück, um Deine Zahlung abzuschließen.",
     "directMobileTitle": "Zahlung initiiert",
     "goBackToShift4": "← Zurück zu Shift4",
     "goToIntegrationToApprove": "Bitte gehe zu <1>{{selectedIntegrationName}}</1>, um diese Überweisung zu genehmigen.",
-    "paymentInitiated": "Du hast eine Zahlung von<1></1><2>{{amountCrypto}}</2><3></3>an {{clientName}} eingeleitet",
+    "paymentInitiated": "Du hast eine Zahlung von <1></1><2>{{amountCrypto}}</2> <4></4>an {{clientName}} eingeleitet",
     "waiting": "Überweisungen sind nicht abgeschlossen, bis sie genügend Netzwerkbestätigungen erhalten haben."
   },
   "doneVerifyPage": {
@@ -318,10 +318,10 @@
     "amountExceedsMaximum": "Betrag zu hoch",
     "badRequest": "Ungültige Anfrage",
     "balanceNotEnough": "Unzureichendes Guthaben",
-    "binanceTravelRuleRestriction": "Reisebeschränkung Regel",
+    "binanceTravelRuleRestriction": "Reisebeschränkung",
     "coinbaseUnavailable": "Coinbase nicht verfügbar",
     "configurationMismatch": "Konfigurationsfehler",
-    "emptyWalletBalance": "Leerer Wallet",
+    "emptyWalletBalance": "Leere Wallet",
     "expiredSmartDeposit": "Smart-Einzahlung abgelaufen",
     "failedToGetFundingOptions": "Fehler bei den Finanzierungsmöglichkeiten",
     "failedToSaveFundingOptions": "Speichern fehlgeschlagen",
@@ -359,31 +359,33 @@
     "timeInForceNotSupported": "Gültigkeitsdauer nicht unterstützt",
     "toAccountNotSupported": "Einzahlung nicht unterstützt",
     "tooManyRequests": "Zu viele Anfragen",
-    "transferAlreadyRequested": "Transfer bereits angefordert",
+    "transferAlreadyRequested": "Überweisung bereits angefordert",
     "twoFaFailed": "Ungültiger 2FA-Code",
     "unauthorizedToken": "Unbefugtes Token",
-    "coinbaseTravelRuleRestriction": "Reisebeschränkung Regel",
+    "coinbaseTravelRuleRestriction": "Reisebeschränkung",
     "withdrawalLocked": "Abhebungen gesperrt",
     "selfTransferNotAllowed": "Selbstüberweisung nicht erlaubt",
-    "sendAccessDisabled": "Zugriff senden deaktiviert",
+    "sendAccessDisabled": "Zugriff zum Senden deaktiviert",
     "tryAgainAfterLogin": "Anmeldung erforderlich",
     "unableToSend": "Überweisung fehlgeschlagen",
     "userInfoUnavailable": "Benutzerinformationen nicht verfügbar",
     "webWithdrawalLimitExceeded": "Abhebungslimit überschritten",
-    "whitelistAddressRequired": "Adress-Weißliste erforderlich",
+    "whitelistAddressRequired": "Adress-Whitelist erforderlich",
     "withdrawalDisabledDueToC2CDepositFreeze": "Abhebung vorübergehend deaktiviert",
     "withdrawalDisabledDueToScamRisk": "Abhebung vorübergehend deaktiviert",
     "withdrawalDisabledDueToSecurityReset": "Abhebung vorübergehend deaktiviert",
     "withdrawalDisabledDueToSuspiciousActivity": "Abhebung vorübergehend deaktiviert",
-    "withdrawalPendingDepositConfirmation": "Abhebung ausstehend Bestätigung",
+    "withdrawalPendingDepositConfirmation": "Ausstehende Abhebung-Bestätigung",
     "accountNotFound": "Konto nicht gefunden",
-    "addressNotAllowlisted": "Adresse nicht in Weißliste",
-    "addressAllowlistPending": "Adress-Weißliste ausstehend",
+    "addressNotAllowlisted": "Adresse nicht in Whitelist",
+    "addressAllowlistPending": "Adress-Whitelist ausstehend",
     "authenticationFailed": "Authentifizierung fehlgeschlagen",
-    "belowMinimumFiatDeposit": "Unter dem minimalen Fiat-Einzahlungslimit",
-    "exceedsApplicationLimit": "Überschreitet Anwendungsgrenze",
+    "belowMinimumFiatDeposit": "Unter dem minimalen Fiat-Einzahlungsbetrag",
+    "exceedsApplicationLimit": "Überschreitet Anwendungslimit",
     "invalidCredentials": "Ungültige Anmeldedaten",
-    "mfaNotSupported": "MFA wird nicht unterstützt"
+    "mfaNotSupported": "MFA wird nicht unterstützt",
+    "withdrawalLockedP2P": "Abhebungen deaktiviert",
+    "unableToSendContactSupport": "Abhebungen deaktiviert"
   },
   "errorMessages": {
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
@@ -411,28 +413,28 @@
     "tooManyRequests": "Bitte versuche es später noch einmal.",
     "transferAlreadyRequested": "Die Überweisung ist bereits angefordert.",
     "twoFaFailed": "Zwei-Faktor-Validierung fehlgeschlagen. Bitte versuche es erneut.",
-    "coinbaseTravelRuleRestriction": "Die Coinbase-API unterstützt derzeit keine Überweisungen aus Ihrem Land aufgrund von globalen Reisevorschriften.",
+    "coinbaseTravelRuleRestriction": "Die Coinbase-API unterstützt derzeit keine Überweisungen aus Deinem Land aufgrund von globalen Reisebeschränkungen.",
     "withdrawalLocked": "Zu Deiner Sicherheit sind Abhebungen 24 Stunden nach einer Änderung der Konto-Einstellungen deaktiviert. Bitte versuche es später erneut.",
-    "accountNotFound": "Ihr Konto kann nicht abgerufen werden.",
-    "addressNotAllowlisted": "Rücktritt von Coinbase konnte nicht eingeleitet werden. Sie müssen diese Empfängeradresse hier zu Ihrer Allowlist hinzufügen: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Diese Empfängeradresse wurde zu Ihrer Allowlist hinzugefügt und wartet auf eine Genehmigung.",
+    "accountNotFound": "Deine Konten können nicht abgerufen werden.",
+    "addressNotAllowlisted": "Abhebung von Coinbase konnte nicht eingeleitet werden. Du musst diese Empfängeradresse hier zu Deiner Whitelist hinzufügen: https://www.coinbase.com/settings/allowlist",
+    "addressAllowlistPending": "Diese Empfängeradresse wurde zu Deiner Whitelist hinzugefügt und wartet auf eine Genehmigung.",
     "authenticationFailed": "Authentifizierung mit der ausgewählten Integration nicht möglich.",
     "belowMinimumFiatDeposit": "Betrag liegt unter dem minimalen Einzahlungslimit.",
-    "exceedsApplicationLimit": "Überweisungsbetrag überschreitet das Anwendungsmaximum.",
+    "exceedsApplicationLimit": "Überweisungsbetrag überschreitet das Anwendungslimit.",
     "invalidCredentials": "Ungültige Anmeldedaten. Bitte versuche es erneut.",
     "mfaNotSupported": "Mehrfaktor-Authentifizierung wird für diese Operation nicht unterstützt.",
-    "selfTransferNotAllowed": "Sie können keine Überweisung von einem Konto auf sich selbst senden.",
-    "sendAccessDisabled": "Rücktritt kann nicht eingeleitet werden, da der Sendungszugang für dieses Konto deaktiviert wurde.",
-    "tryAgainAfterLogin": "Bitte versuchen Sie es erneut, nachdem Sie sich eingeloggt haben.",
-    "unableToSend": "Überweisung konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
-    "userInfoUnavailable": "Benutzerinfos konnten nicht abgerufen werden. Bitte versuchen Sie es erneut.",
-    "webWithdrawalLimitExceeded": "Sie haben das maximale tägliche Abhebungslimit für die Webversion von Binance überschritten.",
+    "selfTransferNotAllowed": "Du kannst keine Überweisung von einem Konto auf sich selbst senden.",
+    "sendAccessDisabled": "Abhebung kann nicht eingeleitet werden, da der Sendezugang für dieses Konto deaktiviert wurde.",
+    "tryAgainAfterLogin": "Bitte versuche es erneut, nachdem Du Dich eingeloggt hast.",
+    "unableToSend": "Überweisung konnte nicht gesendet werden. Bitte versuche es erneut.",
+    "userInfoUnavailable": "Benutzerinfos konnten nicht abgerufen werden. Bitte versuche es erneut.",
+    "webWithdrawalLimitExceeded": "Du hast das maximale tägliche Abhebungslimit für die Webversion von Binance überschritten.",
     "whitelistAddressRequired": "Zieladresse muss auf die Whitelist gesetzt werden.",
-    "withdrawalDisabledDueToC2CDepositFreeze": "Aus Sicherheitsgründen müssen einige Ihrer C2C-Einlagen für 24 Stunden eingefroren werden. Nach 24 Stunden wird der eingefrorene Zustand automatisch aufgehoben und Sie können Krypto abheben. Während der Gefrierperiode werden Ihre Vor-Ort-Transaktionen nicht beeinträchtigt. Bitte nutzen Sie Binance's Transaktionsdienste normal.",
-    "withdrawalDisabledDueToScamRisk": "Ihre Abhebung wurde als hohes Risiko identifiziert. Um Ihre Gelder zu schützen, sind Abhebungen von Ihrem Konto vorübergehend für 1 Stunde deaktiviert.",
-    "withdrawalDisabledDueToSecurityReset": "Die Abhebefunktion Ihres Kontos wurde aufgrund einer kürzlich erfolgten Sicherheitsüberprüfung vorübergehend deaktiviert.",
-    "withdrawalDisabledDueToSuspiciousActivity": "Ihre Abhebefunktion wurde aufgrund verdächtiger Aktivitäten deaktiviert. Bitte vervollständigen Sie den Verifizierungsprozess auf Binance. Wenn Sie nicht verifizieren können, kontaktieren Sie den Kundensupport. Wenn Sie kürzlich die Verifizierung abgeschlossen haben, warten Sie bitte einen Moment und versuchen Sie es erneut.",
-    "withdrawalPendingDepositConfirmation": "Ihr Einzahlung hat nicht die erforderlichen Bestätigungen zur Entsperrung für die Abhebung erfüllt. Bitte überprüfen Sie das Transaktionsprotokoll für weitere Details.",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Aus Sicherheitsgründen müssen einige Deiner C2C-Einlagen für 24 Stunden eingefroren werden. Nach 24 Stunden wird der eingefrorene Zustand automatisch aufgehoben und Du kannst Krypto abheben. Während der Sperrzeit werden Deine Vor-Ort-Transaktionen nicht beeinträchtigt sein, bitte nutze Binance's Transaktionsdienste normal.",
+    "withdrawalDisabledDueToScamRisk": "Deine Abhebung wurde als hohes Risiko identifiziert. Um Deine Gelder zu schützen, sind Abhebungen von Deinem Konto vorübergehend für 1 Stunde deaktiviert.",
+    "withdrawalDisabledDueToSecurityReset": "Die Abhebefunktion Deines Kontos wurde aufgrund einer kürzlich erfolgten Sicherheitsüberprüfung vorübergehend deaktiviert.",
+    "withdrawalDisabledDueToSuspiciousActivity": "Deine Abhebefunktion wurde aufgrund verdächtiger Aktivitäten deaktiviert. Bitte vervollständige den Verifizierungsprozess auf Binance. Wenn Du nicht verifizieren kannst, kontaktiere den Kundensupport. Wenn Du kürzlich die Verifizierung abgeschlossen hast, warte bitte einen Moment und versuche es erneut.",
+    "withdrawalPendingDepositConfirmation": "Deine Einzahlung hat nicht die erforderlichen Bestätigungen zur Entsperrung für die Abhebung erfüllt. Bitte überprüfe das Überweisungshistorie für weitere Details.",
     "invalidFromIntegrationToken": "Überweisung konnte nicht eingeleitet werden. Der zur Authentifizierung dieses Kontos verwendete Token ist nicht berechtigt, diese Aktion auszuführen.",
     "invalidToIntegrationToken": "Ziel konnte nicht identifiziert werden.",
     "notAuthorizedFromIntegrationToken": "Überweisung konnte nicht eingeleitet werden. Der zur Authentifizierung dieses Kontos verwendete Token ist nicht berechtigt, diese Aktion auszuführen.",
@@ -440,7 +442,9 @@
     "configurationMismatch": "Überweisung konnte nicht eingeleitet werden. Die Konfiguration des Kontos entspricht nicht der angeforderten Überweisung.",
     "refusedByIntegration": "Überweisung konnte nicht eingeleitet werden. Die Integration hat die Anfrage abgelehnt.",
     "noAvailableSmartContract": "Kein Smart Contract verfügbar",
-    "expiredSmartDeposit": "Das Smart-Deposit ist abgelaufen. Der Smart Contract wurde deallokiert."
+    "expiredSmartDeposit": "Das Smart-Deposit ist abgelaufen. Der Smart Contract wurde aufgehoben.",
+    "withdrawalLockedP2P": "Zu Deiner Sicherheit sind Abhebungen 24 Stunden nach einem P2P-Kauf deaktiviert. Bitte versuche es später erneut.",
+    "unableToSendContactSupport": "Du kannst derzeit keine Kryptowährung senden. Bitte kontaktiere den Coinbase-Support."
   },
   "errorPage": {
     "title": "Ein Fehler ist aufgetreten."
@@ -516,7 +520,7 @@
     "loading": "Arbeitet noch..."
   },
   "fundingLoadingOverlay": {
-    "loading": "Laden..."
+    "loading": "Laden ..."
   },
   "fundingMethodFees": {
     "fee": {
@@ -819,6 +823,7 @@
   "mobileAppLink": {
     "awaitingConfirmation": "Warten auf Bestätigung durch die mobile App",
     "openAppButton": "Öffne {{selectedIntegrationName}}-App",
+    "returnToClient": "Kehren Sie zu {{clientName}} zurück, nachdem Sie die Verbindungsanfrage in {{selectedIntegrationName}} genehmigt haben.",
     "sendNewRequest": "Neue Anfrage senden",
     "steps": {
       "authorize": "Klicke auf der Bestätigungsseite auf <1>Autorisieren</1>.",
@@ -835,7 +840,7 @@
     "title": "Mit Krypto bezahlen"
   },
   "networkSelectionDrawer": {
-    "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Sie automatisch ausgewählt.",
+    "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Dich automatisch ausgewählt.",
     "estimatedGasFeeLabel": "Geschätzte Gasgebühr:",
     "lowestFeeLabel": "Niedrigste Gebühr",
     "title": "Netzwerk auswählen"
@@ -863,28 +868,28 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Öffne {{selectedIntegrationName}} erneut",
-      "subtitle": "Bitte melden Sie sich in Ihrem Browser an und genehmigen Sie den Zugriff.",
+      "subtitle": "Bitte schließe die Anmeldung und Freigabe des Zugangs in Deinem Browser ab.",
       "title": "Warte auf Verbindung"
     },
     "checking": {
-      "message": "Ihre Assets werden überprüft..."
+      "message": "Deine Assets werden überprüft ..."
     },
     "connected": {
       "action": "Zurück zu {{clientName}}",
-      "backup": "Du hast erfolgreich Dein Konto verbunden.",
+      "backup": "Du hast Dein Konto erfolgreich verbunden.",
       "subtitle": "Zurück zu {{clientName}}, um fortzufahren",
-      "title": "Sie sind mit {{selectedIntegrationName}} verbunden"
+      "title": "Du bist mit {{selectedIntegrationName}} verbunden"
     },
     "error": {
       "connection": {
         "action": "Öffne {{selectedIntegrationName}} erneut",
-        "subtitle": "Es scheint, dass Sie die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen haben. Bitte öffnen Sie {{selectedIntegrationName}} erneut und beenden Sie die Anmeldung.",
+        "subtitle": "Es scheint, dass Du die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen hast. Bitte öffne {{selectedIntegrationName}} erneut und schließe die Anmeldung ab.",
         "title": "Konnte keine Verbindung zu {{selectedIntegrationName}} herstellen"
       }
     },
     "redirecting": {
       "action": "Weiter zu {{selectedIntegrationName}}",
-      "subtitle": "Sie werden zu Ihrem Browser weitergeleitet, um sich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Sie fertig sind, kehren Sie automatisch hierher zurück.",
+      "subtitle": "Du wirst zu Deinem Browser weitergeleitet, um Dich sicher mit {{selectedIntegrationName}} anzumelden. Sobald Du fertig bist, wirst Du automatisch hierher zurückkehren.",
       "title": "Umleitung zu {{selectedIntegrationName}}"
     }
   },
@@ -975,8 +980,8 @@
   },
   "previewPageUI": {
     "accountLabel": "Konto",
-    "buildingPreviewPayment": "Erstellen Ihrer Zahlungsansicht ...",
-    "confirmTransaction": "Bestätigen Sie diese Transaktion in Ihrer {{selectedIntegrationName}}-App.",
+    "buildingPreviewPayment": "Erstellen Deiner Zahlungsvorschau ...",
+    "confirmTransaction": "Bestätige diese Überweisung in Deiner {{selectedIntegrationName}}-App.",
     "fewSeconds": "Dies kann einige Sekunden dauern",
     "includeFeesMessage": "Beinhaltet {{amount}} an Gebühren",
     "networkLabel": "Netzwerk",
@@ -984,7 +989,7 @@
     "paymentTotalLabel": "Gesamtbetrag bezahlen",
     "payWithLabel": "Bezahlen mit",
     "payWithLabelWithName": "Bezahlen mit {{integrationName}}",
-    "processingPayment": "Ihre Zahlung wird bearbeitet"
+    "processingPayment": "Deine Zahlung wird bearbeitet"
   },
   "previewTransfer": {
     "allFeesIncluded": "Alle Gebühren eingeschlossen",
@@ -1068,8 +1073,8 @@
     "returnToClientButton": "Zurück zu {{clientName}}",
     "spotAccountsBody": "Derzeit werden nur Spot-Konten unterstützt. Assets in anderen Kontotypen, wie Margin, werden nicht erkannt.",
     "topUpButton": "Guthaben aufladen",
-    "topUpUSDCInstruction": "Laden Sie Ihr USDC-Guthaben in Ihrem Phantom-Wallet auf.",
-    "tryAgainFromTaoInstruction": "Versuchen Sie es erneut von Ihrer TAO-Kassenseite.",
+    "topUpUSDCInstruction": "Lade Dein USDC-Guthaben in Deiner Phantom-Wallet auf.",
+    "tryAgainFromTaoInstruction": "Versuche es erneut von Deiner TAO-Kassenseite.",
     "unableTransferError": "Die Überweisung kann nicht gestartet werden."
   },
   "selectItem": {
