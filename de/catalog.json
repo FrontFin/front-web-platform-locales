@@ -132,6 +132,7 @@
     "cancel": "Abbrechen",
     "closeCap": "Schließen",
     "codeNotCorrent": "Der angegebene Code ist nicht korrekt.",
+    "connectAnotherAccount": "Ein weiteres Konto verbinden",
     "continueCap": "Fortfahren",
     "doneCap": "Fertig",
     "failedToLoadTrasferError": "Fehler beim Laden der Informationen über die Überweisung",
@@ -217,10 +218,15 @@
     "body": "{{integrationName}} ist auf diesem Gerät nicht installiert. Bitte installiere die {{integrationName}}-App oder verbinde eine andere Wallet.",
     "title": "Verbindung nicht verfügbar"
   },
-  "deFiWalletConnectionFailedPage": {
-    "body": "Bitte überprüfen Sie Ihre Brieftasche und genehmigen Sie die Verbindungsanfrage.",
-    "title": "Wir haben keine Antwort rechtzeitig erhalten",
-    "chooseDifferentAccount": "Anderes Konto wählen"
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Bitte überprüfen Sie Ihr Wallet und genehmigen Sie die Verbindungsanfrage.",
+    "title": "Wir haben keine rechtzeitige Antwort erhalten.",
+    "chooseDifferentAccount": "Anderes Konto auswählen"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Es scheint, dass Sie die Verbindungsanfrage abgelehnt haben oder eine frühere Anfrage noch aktiv ist. Wenn das ein Fehler war, versuchen Sie es erneut.",
+    "title": "Ups!",
+    "chooseDifferentAccount": "Anderes Konto auswählen"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Warten auf Bestätigung durch die Smartphone-App",
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
     "amountExceedsMaximum": "Angeforderter Betrag überschreitet den maximal zulässigen Überweisungsbetrag in diesem Netzwerk.",
     "balanceNotEnough": "Nicht genügend Guthaben.",
-    "binanceTravelRuleRestriction": "Binance unterstützt Überweisungen an die Empfängeradresse aufgrund von Reisebeschränkungen nicht.",
+    "binanceTravelRuleRestriction": "Binance unterstützt derzeit keine Überweisungen aus deinem Land.",
     "coinbaseUnavailable": "Es gab einen Fehler bei Coinbase. Bitte überprüfe Dein CB-Konto, um zu sehen, ob die Überweisung durchgeführt wurde.",
     "default": "Ein Fehler ist aufgetreten.",
     "emptyWalletBalance": "Herkunft-Wallet-Guthaben ist leer.",
@@ -410,9 +416,9 @@
     "kycRequired": "Überweisung nicht möglich. Für die Integration ist die KYC-Verifizierung der Konten erforderlich, bevor Krypto-Überweisungen aktiviert werden können.",
     "locked": "Ihr Konto ist gesperrt",
     "networkDisabled": "Das Netzwerk ist derzeit deaktiviert und kann nicht verwendet werden.",
-    "passKeyNotSupported": "Passkey wird derzeit nicht unterstützt, bitte deaktiviere es, um fortzufahren.",
+    "passKeyNotSupported": "Leider wird Passkey-2FA derzeit nicht unterstützt. Bitte fügen Sie Google Authenticator als zusätzliche 2FA hinzu und versuchen Sie den Transfer erneut.",
     "previewExpired": "Die Vorschau ist abgelaufen.",
-    "satoshiTestRequired": "Coinbase-API unterstützt keine Überweisungen über 1.000 Euro aufgrund von Reisebeschränkungen. Bitte versuche es erneut mit einem niedrigeren Betrag.",
+    "satoshiTestRequired": "Coinbase unterstützt keine Überweisungen über 1.000 Euro. Bitte versuchen Sie es mit einem niedrigeren Betrag erneut.",
     "symbolNotSupported": "Symbol wird von der Integration nicht unterstützt.",
     "symbolNotSupportedBySource": "Symbol für Übertragung wird von der Herkunfts-Wallet über das angeforderte Netzwerk nicht unterstützt.",
     "symbolNotSupportedByTarget": "Konnte die Einzahlungsadresse für die angeforderte Münze nicht finden.",
@@ -420,7 +426,7 @@
     "tooManyRequests": "Bitte versuche es später noch einmal.",
     "transferAlreadyRequested": "Die Überweisung ist bereits angefordert.",
     "twoFaFailed": "Zwei-Faktor-Validierung fehlgeschlagen. Bitte versuche es erneut.",
-    "coinbaseTravelRuleRestriction": "Die Coinbase-API unterstützt derzeit keine Überweisungen aus Deinem Land aufgrund von globalen Reisebeschränkungen.",
+    "coinbaseTravelRuleRestriction": "Coinbase unterstützt derzeit keine Überweisungen aus Ihrem Land.",
     "withdrawalLocked": "Zu Deiner Sicherheit sind Abhebungen 24 Stunden nach einer Änderung der Konto-Einstellungen deaktiviert. Bitte versuche es später erneut.",
     "accountNotFound": "Deine Konten können nicht abgerufen werden.",
     "addressNotAllowlisted": "Abhebung von Coinbase konnte nicht eingeleitet werden. Du musst diese Empfängeradresse hier zu Deiner Whitelist hinzufügen: https://www.coinbase.com/settings/allowlist",
@@ -435,7 +441,7 @@
     "tryAgainAfterLogin": "Bitte versuche es erneut, nachdem Du Dich eingeloggt hast.",
     "unableToSend": "Überweisung konnte nicht gesendet werden. Bitte versuche es erneut.",
     "userInfoUnavailable": "Benutzerinfos konnten nicht abgerufen werden. Bitte versuche es erneut.",
-    "webWithdrawalLimitExceeded": "Du hast das maximale tägliche Abhebungslimit für die Webversion von Binance überschritten.",
+    "webWithdrawalLimitExceeded": "Du hast das maximale tägliche Abhebungslimit für Binance überschritten.",
     "whitelistAddressRequired": "Zieladresse muss auf die Whitelist gesetzt werden.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Aus Sicherheitsgründen müssen einige Deiner C2C-Einlagen für 24 Stunden eingefroren werden. Nach 24 Stunden wird der eingefrorene Zustand automatisch aufgehoben und Du kannst Krypto abheben. Während der Sperrzeit werden Deine Vor-Ort-Transaktionen nicht beeinträchtigt sein, bitte nutze Binance's Transaktionsdienste normal.",
     "withdrawalDisabledDueToScamRisk": "Deine Abhebung wurde als hohes Risiko identifiziert. Um Deine Gelder zu schützen, sind Abhebungen von Deinem Konto vorübergehend für 1 Stunde deaktiviert.",

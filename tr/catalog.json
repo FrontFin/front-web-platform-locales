@@ -132,6 +132,7 @@
     "cancel": "İptal",
     "closeCap": "Kapat",
     "codeNotCorrent": "Verilen kod doğru değil.",
+    "connectAnotherAccount": "Başka bir hesap bağlayın",
     "continueCap": "Devam et",
     "doneCap": "Tamamlandı",
     "failedToLoadTrasferError": "Transfer hakkında bilgi yüklenemedi",
@@ -217,9 +218,14 @@
     "body": "Bu cihazda {{integrationName}} yüklü değil. Lütfen {{integrationName}} uygulamasını yükleyin veya başka bir cüzdan bağlayın.",
     "title": "Bağlantı kullanılamıyor"
   },
-  "deFiWalletConnectionFailedPage": {
+  "deFiWalletConnectionUnavailablePage": {
     "body": "Lütfen cüzdanınızı kontrol edin ve bağlantı isteğini onaylayın.",
     "title": "Zamanında yanıt alamadık",
+    "chooseDifferentAccount": "Farklı bir hesap seçin"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Bağlantı isteğini reddetmiş gibi görünüyorsunuz veya önceki bir istek hâlâ aktif. Bu bir hataydıysa, tekrar deneyin.",
+    "title": "Hata!",
     "chooseDifferentAccount": "Farklı bir hesap seçin"
   },
   "deviceConfirmationScreenPage": {
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
     "amountExceedsMaximum": "Talep edilen miktar, bu ağdaki maksimum izin verilen transfer miktarını aşıyor.",
     "balanceNotEnough": "Yeterli bakiye yok.",
-    "binanceTravelRuleRestriction": "Binance, seyahat kuralı kısıtlamaları nedeniyle hedef adrese transferleri desteklememektedir.",
+    "binanceTravelRuleRestriction": "Binance şu anda ülkenizden transferleri desteklememektedir.",
     "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
     "default": "Bir hata oluştu.",
     "emptyWalletBalance": "Kaynak cüzdan bakiyesi boş.",
@@ -410,9 +416,9 @@
     "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektiriyor.",
     "locked": "Hesabınız kilitlendi.",
     "networkDisabled": "Ağ şu anda devre dışı ve kullanılamaz durumda.",
-    "passKeyNotSupported": "Parola anahtarı şu anda desteklenmiyor, devam etmek için lütfen devre dışı bırakın.",
+    "passKeyNotSupported": "Ne yazık ki, Passkey 2FA şu anda desteklenmiyor. Lütfen ek bir 2FA olarak Google Authenticator ekleyin ve transferi yeniden deneyin.",
     "previewExpired": "Önizleme süresi doldu.",
-    "satoshiTestRequired": "Coinbase API, seyahat kuralı kısıtlamaları nedeniyle 1000 Euro üzeri transferleri desteklemez. Lütfen daha düşük bir tutarla tekrar deneyin.",
+    "satoshiTestRequired": "Coinbase, 1000 Euro üzerindeki transferleri desteklemiyor. Lütfen daha düşük bir miktarla tekrar deneyin.",
     "symbolNotSupported": "Sembol, entegrasyon tarafından desteklenmiyor.",
     "symbolNotSupportedBySource": "Transfer edilecek sembol, kaynak cüzdan tarafından istenen ağ üzerinde desteklenmiyor.",
     "symbolNotSupportedByTarget": "İstenen coin için para yatırma adresi bulunamadı.",
@@ -420,7 +426,7 @@
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",
     "twoFaFailed": "İki faktörlü doğrulama başarısız oldu. Lütfen tekrar deneyin.",
-    "coinbaseTravelRuleRestriction": "Coinbase API, küresel seyahat kuralı kısıtlamaları nedeniyle şu anda ülkenizden yapılan transferleri desteklemiyor.",
+    "coinbaseTravelRuleRestriction": "Coinbase, şu anda ülkenizden gerçekleştirilen transferleri desteklemiyor.",
     "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
     "accountNotFound": "''''Hesabınızı alamadık.",
     "addressNotAllowlisted": "Coinbase üzerinden çekim yapılamıyor. Bu alıcı adresini Buraya İzin Listesine eklemelisiniz: https://www.coinbase.com/settings/allowlist",
@@ -435,7 +441,7 @@
     "tryAgainAfterLogin": "Giriş yaptıktan sonra lütfen tekrar deneyin.",
     "unableToSend": "Transfer gönderilemiyor. Lütfen tekrar deneyin.",
     "userInfoUnavailable": "Kullanıcı bilgileri alınamıyor. Lütfen tekrar deneyin.",
-    "webWithdrawalLimitExceeded": "Binance web sürümü için günlük maksimum çekim limitini aştınız.",
+    "webWithdrawalLimitExceeded": "Binance günlük maksimum çekim limitini aştınız.",
     "whitelistAddressRequired": "Hedef adres beyaz listede olmalı.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Varlıklarınızın güvenliği için, bazı C2C Para Yatırma varlıklarınız 24 saat boyunca dondurulacaktır. 24 saat sonra, dondurma durumu otomatik olarak kaldırılacak ve kriptonuzu çekebilirsiniz. Dondurma süresince yerinde işlemleriniz etkilenmeyecektir. Binance'in işlem hizmetlerini normal şekilde kullanabilirsiniz.",
     "withdrawalDisabledDueToScamRisk": "Çekiminiz yüksek risk taşıyor olarak tespit edildi. Fonlarınızı güvende tutmak için, hesabınızdaki çekimler 1 saat süreyle geçici olarak devre dışı bırakılmıştır.",

@@ -132,6 +132,7 @@
     "cancel": "キャンセル",
     "closeCap": "閉じる",
     "codeNotCorrent": "提供されたコードが正しくありません。",
+    "connectAnotherAccount": "別のアカウントを接続",
     "continueCap": "続行",
     "doneCap": "完了",
     "failedToLoadTrasferError": "転送情報の読み込みに失敗しました",
@@ -217,10 +218,15 @@
     "body": "このデバイスに{{integrationName}}がインストールされていません。{{integrationName}}アプリをインストールするか、別のウォレットを接続してください。",
     "title": "接続が利用できません"
   },
-  "deFiWalletConnectionFailedPage": {
+  "deFiWalletConnectionUnavailablePage": {
     "body": "ウォレットを確認し、接続要求を承認してください。",
     "title": "時間内に応答がありませんでした。",
-    "chooseDifferentAccount": "別のアカウントを選択"
+    "chooseDifferentAccount": "別のアカウントを選択する。"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "接続要求を拒否したか、以前の要求がまだアクティブです。もし間違いでしたら、再試行してください。",
+    "title": "おっと！",
+    "chooseDifferentAccount": "別のアカウントを選択する。"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "モバイルアプリでの承認を待っています",
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "要求された金額は、このネットワークでの最小許容振り込み額を下回っています。",
     "amountExceedsMaximum": "要求された金額は、このネットワークでの最大許容振り込み額を超えています。",
     "balanceNotEnough": "残高が不足しています。",
-    "binanceTravelRuleRestriction": "トラベルルールの制限により、Binanceは宛先アドレスへの送金をサポートしていません。",
+    "binanceTravelRuleRestriction": "Binanceは現在、あなたの国からの送金をサポートしていません。",
     "coinbaseUnavailable": "Coinbaseでエラーが発生しました。お手数ですが、ご自身のCBアカウントをご確認のうえ、送金が完了しているかご確認ください。",
     "default": "エラーが発生しました。",
     "emptyWalletBalance": "元のウォレットの残高が空です。",
@@ -410,9 +416,9 @@
     "kycRequired": "送金を開始できません。この連携機能では、暗号資産の送金を有効にする前に、アカウントの本人確認(KYC)手続きが必要です。",
     "locked": "お客様のアカウントはロックされています",
     "networkDisabled": "現在、このネットワークは無効になっており、ご利用いただけません。",
-    "passKeyNotSupported": "現在、パスキーには対応していません。続行するには無効にしてください。",
+    "passKeyNotSupported": "残念ながら、Passkeyによる2FAは現在サポートされていません。Google Authenticatorを追加の2FAとして追加し、再度転送を試みてください。",
     "previewExpired": "プレビューは失効しました。",
-    "satoshiTestRequired": "CoinbaseのAPIは旅行規則の制限により、1000ユーロを超える送金をサポートしていません。お手数ですが、より少ない金額で再度お試しください。",
+    "satoshiTestRequired": "Coinbaseは1000ユーロを超える転送をサポートしていません。より少ない金額で再試行してください。",
     "symbolNotSupported": "統合ではこのシンボルをサポートしていません。",
     "symbolNotSupportedBySource": "送金元のウォレットでは、要求されたネットワーク上でこのシンボルの送金はサポートされていません。",
     "symbolNotSupportedByTarget": "ご指定のコインの入金アドレスが見つかりませんでした。",
@@ -420,7 +426,7 @@
     "tooManyRequests": "後でもう一度お試しください。",
     "transferAlreadyRequested": "送金はすでに申請されています。",
     "twoFaFailed": "二要素認証に失敗しました。もう一度お試しください。",
-    "coinbaseTravelRuleRestriction": "Coinbase APIは、現在グローバルトラベルルールの制限により、お客様の国からの送金をサポートしておりません。",
+    "coinbaseTravelRuleRestriction": "Coinbaseは現在、あなたの国からの転送をサポートしていません。",
     "withdrawalLocked": "セキュリティ保護のため、アカウント設定の変更後24時間は出金が無効になります。後ほど再度お試しください。",
     "accountNotFound": "アカウントの取得ができませんでした。",
     "addressNotAllowlisted": "Coinbaseからの出金を開始できません。受取人のアドレスを以下の許可リストに追加してください：\nhttps://www.coinbase.com/settings/allowlist",

@@ -132,6 +132,7 @@
     "cancel": "Hủy bỏ",
     "closeCap": "Đóng",
     "codeNotCorrent": "Mã bạn đã nhập không đúng.",
+    "connectAnotherAccount": "Kết nối tài khoản khác",
     "continueCap": "Tiếp tục",
     "doneCap": "Xong",
     "failedToLoadTrasferError": "Không tải được thông tin về giao dịch",
@@ -217,10 +218,15 @@
     "body": "{{integrationName}} chưa được cài đặt trên thiết bị này. Vui lòng cài đặt ứng dụng {{integrationName}} hoặc kết nối ví khác.",
     "title": "Kết nối không khả dụng"
   },
-  "deFiWalletConnectionFailedPage": {
-    "body": "Vui lòng kiểm tra ví của bạn và chấp nhận yêu cầu kết nối.",
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Vui lòng kiểm tra ví của bạn và phê duyệt yêu cầu kết nối.",
     "title": "Chúng tôi không nhận được phản hồi kịp thời",
-    "chooseDifferentAccount": "Chọn một tài khoản khác"
+    "chooseDifferentAccount": "Kết nối với tài khoản khác"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Có vẻ bạn đã từ chối yêu cầu kết nối, hoặc một yêu cầu trước đó vẫn đang hoạt động. Nếu đó là một sai lầm, hãy thử lại.",
+    "title": "Rất tiếc!",
+    "chooseDifferentAccount": "Kết nối với tài khoản khác"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Đang chờ xác nhận từ ứng dụng di động",
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "Số tiền yêu cầu thấp hơn mức tối thiểu cho phép trên mạng lưới này.",
     "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức tối đa cho phép trên mạng lưới này.",
     "balanceNotEnough": "Số dư không đủ.",
-    "binanceTravelRuleRestriction": "Binance không hỗ trợ chuyển khoản đến địa chỉ đích do hạn chế theo quy định về du lịch.",
+    "binanceTravelRuleRestriction": "Hiện tại Binance không hỗ trợ chuyển khoản từ quốc gia của bạn.",
     "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
     "default": "Đã xảy ra lỗi.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
@@ -410,9 +416,9 @@
     "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
     "locked": "Tài khoản của bạn bị khóa",
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
-    "passKeyNotSupported": "Khóa truy cập hiện không được hỗ trợ, vui lòng vô hiệu hóa để tiếp tục.",
+    "passKeyNotSupported": "Rất tiếc, hiện tại Passkey 2FA chưa được hỗ trợ. Vui lòng thêm Google Authenticator như một phương thức 2FA bổ sung và thử chuyển lại.",
     "previewExpired": "Bản xem trước đã hết hạn.",
-    "satoshiTestRequired": "API của Coinbase không hỗ trợ chuyển tiền vượt quá 1000 Euro do giới hạn của quy tắc giao dịch (travel rule). Vui lòng thử lại với số tiền thấp hơn.",
+    "satoshiTestRequired": "Coinbase không hỗ trợ chuyển tiền vượt quá 1000 Euro.",
     "symbolNotSupported": "Loại tiền mã hóa không được tích hợp hỗ trợ.",
     "symbolNotSupportedBySource": "Loại tiền mã hóa cần chuyển không được ví nguồn hỗ trợ trên mạng yêu cầu.",
     "symbolNotSupportedByTarget": "Không thể tìm thấy địa chỉ gửi tiền cho đồng tiền được yêu cầu.",
@@ -420,7 +426,7 @@
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Giao dịch chuyển tiền đã được yêu cầu trước đó.",
     "twoFaFailed": "Xác thực hai yếu tố đã thất bại. Vui lòng thử lại.",
-    "coinbaseTravelRuleRestriction": "API của Coinbase hiện chưa hỗ trợ chuyển tiền từ quốc gia của bạn do hạn chế toàn cầu của quy tắc giao dịch (travel rule).",
+    "coinbaseTravelRuleRestriction": "Coinbase hiện không hỗ trợ chuyển tiền từ nước của bạn.",
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
     "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",

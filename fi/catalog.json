@@ -132,6 +132,7 @@
     "cancel": "Peruuta",
     "closeCap": "Sulje",
     "codeNotCorrent": "Annettu koodi ei ole oikea.",
+    "connectAnotherAccount": "Yhdistä toinen tili",
     "continueCap": "Jatka",
     "doneCap": "Valmis",
     "failedToLoadTrasferError": "Siirtojen tietoja ei saatu ladattua",
@@ -217,10 +218,15 @@
     "body": "{{integrationName}}-sovellusta ei ole asennettu tälle laitteelle. Asenna {{integrationName}} -sovellus, tai liitä toinen lompakko.",
     "title": "Yhteys ei ole saatavilla"
   },
-  "deFiWalletConnectionFailedPage": {
+  "deFiWalletConnectionUnavailablePage": {
     "body": "Tarkista lompakkosi ja hyväksy yhdistämispyyntö.",
     "title": "Emme saaneet vastausta ajoissa",
-    "chooseDifferentAccount": "Yhdistä eri tili"
+    "chooseDifferentAccount": "Valitse toinen tili"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Näyttää siltä, että hylkäsit yhdistämispyynnön tai edellinen pyyntö on edelleen aktiivinen. Jos tämä oli virhe, yritä uudelleen.",
+    "title": "Hups!",
+    "chooseDifferentAccount": "Valitse toinen tili"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Odotetaan vahvistusta mobiilisovelluksesta",
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
     "amountExceedsMaximum": "Pyydetty summa ylittää verkon suurimman sallitun siirtosumman.",
     "balanceNotEnough": "Ei tarpeeksi saldoa.",
-    "binanceTravelRuleRestriction": "Binance ei tue siirtoja määränpäähän matkustusrajoitusten vuoksi.",
+    "binanceTravelRuleRestriction": "Binance ei tällä hetkellä tue siirtoja maastasi.",
     "coinbaseUnavailable": "Coinbasessa tapahtui virhe. Tarkista CB-tilisi nähdäksesi, menikö siirto läpi.",
     "default": "Tapahtui virhe.",
     "emptyWalletBalance": "Lähdelompakon saldo on tyhjä.",
@@ -410,9 +416,9 @@
     "kycRequired": "Siirtoa ei voida käynnistää. Integraatio vaatii asiakkaan tunnistamisen (KYC) suorittamista ennen kryptosiirtojen sallimista.",
     "locked": "Tilisi on lukittu",
     "networkDisabled": "Verkko on tällä hetkellä poissa käytöstä eikä sitä voi käyttää.",
-    "passKeyNotSupported": "Passkeyta ei tällä hetkellä tueta, ole hyvä ja poista se käytöstä jatkaaksesi.",
+    "passKeyNotSupported": "Valitettavasti Passkey 2FA:ta ei tällä hetkellä tueta. Lisää Google Authenticator lisä-2FA:ksi ja yritä siirtoa uudelleen.",
     "previewExpired": "Esikatselu on vanhentunut.",
-    "satoshiTestRequired": "Coinbase API ei tue yli 1000 euron siirtoja matkustusrajoitusten vuoksi. Yritä uudelleen pienemmällä summalla.",
+    "satoshiTestRequired": "Coinbase ei tue yli 1000 euron siirtoja. Yritä uudelleen pienemmällä summalla.",
     "symbolNotSupported": "Integraatio ei tue symbolia.",
     "symbolNotSupportedBySource": "Lähdelompakko ei tue siirrettävää valuuttaa pyydetyssä verkossa.",
     "symbolNotSupportedByTarget": "Talletusosoitetta pyydetylle kolikolle ei löydy.",
@@ -420,7 +426,7 @@
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",
     "twoFaFailed": "Kaksivaiheinen tunnistautuminen epäonnistui. Ole hyvä ja yritä uudelleen.",
-    "coinbaseTravelRuleRestriction": "Coinbase API ei tällä hetkellä tue siirtoja maastasi maailmanlaajuisten matkustusrajoitusten vuoksi.",
+    "coinbaseTravelRuleRestriction": "Coinbase ei tällä hetkellä tue maastasi tehtäviä siirtoja.",
     "withdrawalLocked": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen.",
     "accountNotFound": "Tiläsi/tilejäsi ei voida hakea.",
     "addressNotAllowlisted": "Nostoa Coinbasesta ei voida aloittaa. Sinun tulee lisätä tämä vastaanottajan osoite sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",

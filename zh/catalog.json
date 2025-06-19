@@ -132,6 +132,7 @@
     "cancel": "取消",
     "closeCap": "关闭",
     "codeNotCorrent": "验证码不正确。",
+    "connectAnotherAccount": "连接另一个账户",
     "continueCap": "继续",
     "doneCap": "完成",
     "failedToLoadTrasferError": "加载转账信息失败",
@@ -217,10 +218,15 @@
     "body": "{{integrationName}}未在此设备上安装。请安装{{integrationName}}应用，或连接另一个钱包。",
     "title": "连接不可用"
   },
-  "deFiWalletConnectionFailedPage": {
+  "deFiWalletConnectionUnavailablePage": {
     "body": "请检查您的钱包并批准连接请求。",
-    "title": "我们未能及时收到响应",
-    "chooseDifferentAccount": "选择其他账户"
+    "title": "我们未及时收到回应",
+    "chooseDifferentAccount": "连接其他账户"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "看起来您拒绝了连接请求，或者之前的请求仍然活动。如果那是一个错误，请重试。",
+    "title": "哎呀！",
+    "chooseDifferentAccount": "连接其他账户"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "等待手机端应用程序确认",
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "转账金额低于此网络的最低转账金额要求。",
     "amountExceedsMaximum": "转账金额超过此网络的最高转账金额限制。",
     "balanceNotEnough": "余额不足。",
-    "binanceTravelRuleRestriction": "因旅行规则限制，Binance无法支持到此地址的转账。",
+    "binanceTravelRuleRestriction": "Binance目前不支持您所在国家的转账。",
     "coinbaseUnavailable": "Coinbase发生错误。请检查您的CB账号以查看转账是否成功。",
     "default": "发生了一个错误。",
     "emptyWalletBalance": "源钱包余额为空。",
@@ -410,9 +416,9 @@
     "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
     "locked": "您的帐户已被锁定",
     "networkDisabled": "网络当前已被禁用，无法使用。",
-    "passKeyNotSupported": "当前不支持该密钥，请关闭后继续操作。",
+    "passKeyNotSupported": "很遗憾，目前不支持 Passkey 2FA。请添加 Google Authenticator 作为额外的 2FA，然后重试转账。",
     "previewExpired": "预览已过期。",
-    "satoshiTestRequired": "由于旅行规则限制，Coinbase API不支持超过1000欧元的转账。请输入较小金额再次尝试。",
+    "satoshiTestRequired": "Coinbase API 不支持超过 1000 欧元的转账。请输入较小金额再次尝试。",
     "symbolNotSupported": "集成不支持此代币符号。",
     "symbolNotSupportedBySource": "源钱包不支持您在所要求的网络上转移的代币符号。",
     "symbolNotSupportedByTarget": "无法找到所请求币种的充值地址。",
@@ -420,7 +426,7 @@
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
     "twoFaFailed": "双重验证失败。请重试。",
-    "coinbaseTravelRuleRestriction": "Coinbase API目前不支持来自您所在国家/地区的转账，原因是全球旅行规则的限制。",
+    "coinbaseTravelRuleRestriction": "Coinbase 目前不支持从您的国家进行转账。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "accountNotFound": "无法检索您的账户。",
     "addressNotAllowlisted": "无法从 Coinbase 发起提款。您必须将此收件人地址添加到您的允许列表：https://www.coinbase.com/settings/allowlist",
@@ -435,7 +441,7 @@
     "tryAgainAfterLogin": "请登录后再试。",
     "unableToSend": "无法发送转账。请再试一次。",
     "userInfoUnavailable": "无法获取用户信息。请再试一次。",
-    "webWithdrawalLimitExceeded": "您已超出 Binance 网页版本的每日最大提款限额。",
+    "webWithdrawalLimitExceeded": "您已超出Binance每日最大提款限额。",
     "whitelistAddressRequired": "目标地址必须被列入白名单。",
     "withdrawalDisabledDueToC2CDepositFreeze": "为了您资产的安全，一些 C2C 存款资产需要被冻结 24 小时。24 小时后，冻结状态将自动解除，您即可提取加密货币。在冻结期间，您的场内交易不受影响，请正常使用 Binance 的交易服务。",
     "withdrawalDisabledDueToScamRisk": "您的提款已被识别为高风险。为了保护您的资金，您的账户提款功能暂时被禁用 1 小时。",

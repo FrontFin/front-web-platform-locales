@@ -132,6 +132,7 @@
     "cancel": "Cancelar",
     "closeCap": "Fechar",
     "codeNotCorrent": "O código fornecido não está correto.",
+    "connectAnotherAccount": "Conectar a outra conta",
     "continueCap": "Continuar",
     "doneCap": "Concluído",
     "failedToLoadTrasferError": "Falha ao carregar a informação sobre a transferência",
@@ -217,9 +218,14 @@
     "body": "{{integrationName}} não está instalado neste dispositivo. Por favor, instala a aplicação {{integrationName}} ou liga a outra carteira.",
     "title": "Ligação indisponível"
   },
-  "deFiWalletConnectionFailedPage": {
+  "deFiWalletConnectionUnavailablePage": {
     "body": "Por favor, verifique sua carteira e aprove a solicitação de conexão.",
     "title": "Não recebemos uma resposta a tempo",
+    "chooseDifferentAccount": "Conectar uma conta diferente"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Parece que você recusou a solicitação de conexão, ou uma solicitação anterior ainda está ativa. Se isso foi um engano, tente novamente.",
+    "title": "Oops!",
     "chooseDifferentAccount": "Conectar uma conta diferente"
   },
   "deviceConfirmationScreenPage": {
@@ -398,7 +404,7 @@
     "amountBelowMinimum": "A quantidade solicitada está abaixo da quantidade mínima permitida para transferência nesta rede.",
     "amountExceedsMaximum": "A quantidade solicitada excede a quantidade máxima permitida para transferência nesta rede.",
     "balanceNotEnough": "Saldo insuficiente.",
-    "binanceTravelRuleRestriction": "A Binance não suporta transferências para o endereço de destino devido a restrições da regra de viagem.",
+    "binanceTravelRuleRestriction": "Binance atualmente não suporta transferências do seu país.",
     "coinbaseUnavailable": "Coinbase teve um erro. Verifica a tua conta CB para ver se a transferência foi concluída.",
     "default": "Ocorreu um erro.",
     "emptyWalletBalance": "Estás sem saldo na tua carteira.",
@@ -410,7 +416,7 @@
     "kycRequired": "Não foi possível iniciar a transferência. A integração requer que as contas completem a verificação KYC antes de habilitar transferências de criptomoedas.",
     "locked": "A tua conta está bloqueada",
     "networkDisabled": "A rede está atualmente desativada e não pode ser usada.",
-    "passKeyNotSupported": "A chave de acesso não é suportada no momento, por favor, desativa para continuar.",
+    "passKeyNotSupported": "Infelizmente, a Autenticação de Dois Fatores (2FA) com Passkey não é atualmente suportada. Por favor, adicione o Google Authenticator como um 2FA adicional e tente a transferência novamente.",
     "previewExpired": "A pré-visualização expirou.",
     "satoshiTestRequired": "A API do Coinbase não suporta transferências acima de 1000 Euros devido a restrições de regras de viagem. Por favor, tenta novamente com um valor mais baixo.",
     "symbolNotSupported": "Símbolo não suportado pela integração.",
@@ -420,7 +426,7 @@
     "tooManyRequests": "Por favor, tenta novamente mais tarde.",
     "transferAlreadyRequested": "A transferência já foi solicitada.",
     "twoFaFailed": "A validação em dois fatores falhou. Por favor, tenta novamente.",
-    "coinbaseTravelRuleRestriction": "A API do Coinbase atualmente não suporta transferências do teu país devido a restrições da regra de viagens globais.",
+    "coinbaseTravelRuleRestriction": "Coinbase atualmente não suporta transferências do seu país.",
     "withdrawalLocked": "Para tua segurança, levantamentos são desabilitadas por 24 horas após uma alteração nas configurações da conta. Por favor, tenta novamente mais tarde.",
     "accountNotFound": "Não foi possível recuperar a(s) tua(s) conta(s).",
     "addressNotAllowlisted": "Não foi possível iniciar o levantamento na Coinbase. Deves adicionar este endereço de destino à tua Lista de Edereços Autorizados aqui: https://www.coinbase.com/settings/allowlist",
