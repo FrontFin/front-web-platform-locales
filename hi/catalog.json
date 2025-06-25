@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "फिएट/क्रिप्टो स्विच करें"
   },
+  "topupNeeded": {
+    "title": "रिचार्ज की आवश्यकता",
+    "subtitle": "आपकी खरीदी गई {{symbol}} शेष राशि अनुमान से कम है, जिसकी वजह कीमत और/या गैस में उतार-चढ़ाव हो सकते हैं।",
+    "currentBalance": "वर्तमान शेष राशि",
+    "required": "आवश्यक",
+    "disclaimer": "यदि आप भुगतान नहीं करते हैं, तो आपका {{symbol}} शेष आपके {{integrationName}} खाते में रहेगा।",
+    "previewTopup": "टॉप-अप पूर्वावलोकन",
+    "cancel": "रद्द करें"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "राशि {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} के भीतर होनी चाहिए",
     "amountMustBeWithinErrorMessage": "राशि USD $21 - $15,000 के भीतर होनी चाहिए",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "अनुरोधित राशि इस नेटवर्क पर न्यूनतम अनुमत हस्तांतरण राशि से कम है।",
     "amountExceedsMaximum": "अनुरोधित राशि इस नेटवर्क पर अधिकतम अनुमत हस्तांतरण राशि से अधिक है।",
     "balanceNotEnough": "पर्याप्त शेष राशि नहीं है।",
-    "binanceTravelRuleRestriction": "बाइनेंस वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
+    "binanceTravelRuleRestriction": "बिनेंस वर्तमान में आपके देश से {{operation}} का समर्थन नहीं करता है।",
+    "binanceTravelRuleRestrictionPayment": "वर्तमान में Binance आपके देश से भुगतान का समर्थन नहीं करता है।",
+    "binanceTravelRuleRestrictionTransfer": "वर्तमान में Binance आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
     "coinbaseUnavailable": "Coinbase में एक त्रुटि हुई है। कृपया अपने CB खाते में जाकर जांचें कि स्थानांतरण पूरा हुआ है या नहीं।",
     "default": "एक त्रुटि उत्पन्न हुई है।",
     "emptyWalletBalance": "स्रोत वॉलेट की शेष राशि खाली है।",
@@ -417,7 +428,9 @@
     "kycRequired": "स्थानांतरण आरंभ करने में असमर्थ। क्रिप्टो ट्स्थानांतरण सक्षम करने से पहले एकीकरण को खातों से केवाईसी सत्यापन पूरा करना आवश्यक है।",
     "locked": "आपका खाता लॉक है",
     "networkDisabled": "नेटवर्क वर्तमान में अक्षम है और इसका उपयोग नहीं किया जा सकता है।",
-    "passKeyNotSupported": "दुर्भाग्यवश, Passkey 2FA को वर्तमान में समर्थित नहीं किया जाता है। कृपया Google Authenticator को एक अतिरिक्त 2FA के रूप में जोड़ें और स्थानांतरण पुनः प्रयास करें।",
+    "passKeyNotSupported": "दुर्भाग्यवश, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया एक अतिरिक्त 2FA के रूप में Google प्रमाणक जोड़ें और {{operation}} को पुनः प्रयास करें।",
+    "passKeyNotSupportedPayment": "दुर्भाग्यवश, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया अतिरिक्त 2FA के रूप में Google Authenticator जोड़ें और भुगतान को पुनः प्रयास करें।",
+    "passKeyNotSupportedTransfer": "दुर्भाग्यवश, पासकी 2एफए वर्तमान में समर्थित नहीं है। कृपया Google Authenticator को एक अतिरिक्त 2एफए के रूप में जोड़ें और ट्रांसफर दोबारा प्रयास करें।",
     "previewExpired": "पूर्वावलोकन की समय सीमा समाप्त हो गई है।",
     "satoshiTestRequired": "यात्रा नियम प्रतिबंधों के कारण, Coinbase 1000 यूरो से अधिक के स्थानांतरण का समर्थन नहीं करता। कृपया कम राशि के साथ पुनः प्रयास करें।",
     "symbolNotSupported": "चिह्न को एकीकरण द्वारा समर्थित नहीं है।",
@@ -427,7 +440,9 @@
     "tooManyRequests": "कृपया बाद में पुनः प्रयास करें।",
     "transferAlreadyRequested": "स्थानांतरण पहले से अनुरोधित है।",
     "twoFaFailed": "द्वि-कारक सत्यापन विफल। कृपया पुनः प्रयास करें।",
-    "coinbaseTravelRuleRestriction": "Coinbase वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestriction": "कॉइनबेस वर्तमान में आपके देश से {{operation}} का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestrictionPayment": "वर्तमान में Coinbase आपके देश से भुगतान का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestrictionTransfer": "वर्तमान में Coinbase आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
     "withdrawalLocked": "आपकी सुरक्षा के लिए, खाता सेटिंग्स में परिवर्तन के बाद 24 घंटे के लिए निकासी अक्षम कर दी गई है। कृपया बाद में पुनः प्रयास करें।",
     "accountNotFound": "आपका खाता (खाते) प्राप्त करने में असमर्थ।",
     "addressNotAllowlisted": "Coinbase से निकासी शुरू करने में असमर्थ। आपको इस प्राप्तकर्ता पते को अपनी अनुमति सूची में जोड़ना होगा: https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "स्थानांतरण अस्वीकार किया गया",
     "transferDeclinedBody": "आपने अपने वॉलेट में स्थानांतरण अनुरोध को अस्वीकार कर दिया है।",
     "transferTitle": "स्थानांतरण का पूर्वावलोकन",
-    "youMayReceiveLess": "{{symbol}} की कीमत में उतार-चढ़ाव के कारण आपको कम राशि प्राप्त हो सकती है।"
+    "youMayReceiveLess": "{{symbol}} की कीमत में उतार-चढ़ाव के कारण आपको कम राशि प्राप्त हो सकती है।",
+    "transferDeclined40": "अनुरोध अस्वीकृत",
+    "transferDeclinedBody40": "ऐसा लगता है कि आपने लेनदेन को मना कर दिया। यदि यह एक गलती थी, फिर से प्रयास करें और अपने वॉलेट में अनुरोध को स्वीकृति दें।",
+    "transferTimeout": "हमें समय पर प्रतिक्रिया नहीं मिली",
+    "transferTimeoutBody": "कृपया फिर से प्रयास करें और लेनदेन अनुरोध को स्वीकृत करें।"
   },
   "privacyComponent": {
     "content": "आपका डेटा हर समय निजी और एन्क्रिप्टेड रहता है।"

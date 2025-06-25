@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Cambiar Fiat/Cripto"
   },
+  "topupNeeded": {
+    "title": "Recarga necesaria",
+    "subtitle": "Tu saldo comprado de {{symbol}} es menor de lo esperado debido a fluctuaciones de precio y/o de gas.",
+    "currentBalance": "Saldo actual",
+    "required": "Requerido",
+    "disclaimer": "Si no completas el pago, tu saldo en {{symbol}} permanecerá en tu cuenta de {{integrationName}}.",
+    "previewTopup": "Vista previa de recarga",
+    "cancel": "Cancelar"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "La cantidad debe estar dentro de {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "El importe debe estar dentro de USD $21 - $15,000",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
     "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
     "balanceNotEnough": "Saldo insuficiente.",
-    "binanceTravelRuleRestriction": "Binance no soporta actualmente transferencias desde su país.",
+    "binanceTravelRuleRestriction": "Binance actualmente no admite {{operation}}s de su país.",
+    "binanceTravelRuleRestrictionPayment": "Binance no admite actualmente los pagos desde tu país.",
+    "binanceTravelRuleRestrictionTransfer": "Binance no admite actualmente las transferencias desde tu país.",
     "coinbaseUnavailable": "Coinbase tuvo un error. Vaya a verificar su cuenta de CB para ver si la transferencia se realizó.",
     "default": "Ha ocurrido un error.",
     "emptyWalletBalance": "El saldo de tu cartera de origen está vacío.",
@@ -417,7 +428,9 @@
     "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación de identidad personal antes de habilitar transferencias de criptomonedas.",
     "locked": "Su cuenta está bloqueada",
     "networkDisabled": "La red está actualmente deshabilitada y no se puede usar.",
-    "passKeyNotSupported": "Desafortunadamente, Passkey 2FA no es compatible actualmente. Por favor, agrega Google Authenticator como 2FA adicional e intenta la transferencia nuevamente.",
+    "passKeyNotSupported": "Desafortunadamente, Passkey 2FA no es compatible en este momento. Por favor, añada Google Authenticator como un 2FA adicional e intente nuevamente el {{operation}}.",
+    "passKeyNotSupportedPayment": "Desafortunadamente, Passkey 2FA no es compatible actualmente. Por favor, añada Google Authenticator como un 2FA adicional y vuelva a intentar el pago.",
+    "passKeyNotSupportedTransfer": "Desafortunadamente, Passkey 2FA no es compatible actualmente. Por favor, agregue Google Authenticator como un 2FA adicional y vuelva a intentar la transferencia.",
     "previewExpired": "La vista previa ha expirado.",
     "satoshiTestRequired": "Coinbase no admite transferencias superiores a 1000 euros. Intente nuevamente con un monto menor.",
     "symbolNotSupported": "El símbolo no es compatible con la integración.",
@@ -427,7 +440,9 @@
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
     "transferAlreadyRequested": "La transferencia ya fue solicitada.",
     "twoFaFailed": "La validación de dos factores falló. Por favor, inténtalo de nuevo.",
-    "coinbaseTravelRuleRestriction": "Coinbase no admite actualmente transferencias desde su país.",
+    "coinbaseTravelRuleRestriction": "Coinbase actualmente no admite {{operation}}s de su país.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase no admite actualmente los pagos desde tu país.",
+    "coinbaseTravelRuleRestrictionTransfer": "Coinbase no admite actualmente las transferencias desde tu país.",
     "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde.",
     "accountNotFound": "No se puede recuperar su(s) cuenta(s).",
     "addressNotAllowlisted": "No se puede iniciar el retiro de Coinbase. Debe agregar esta dirección de destinatario a su Lista de Permitidos aquí: https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "Transferencia rechazada",
     "transferDeclinedBody": "Has rechazado la solicitud de transferencia en tu cartera.",
     "transferTitle": "Vista previa de la transferencia",
-    "youMayReceiveLess": "Puedes recibir menos debido la volatilidad de {{symbol}}."
+    "youMayReceiveLess": "Puedes recibir menos debido la volatilidad de {{symbol}}.",
+    "transferDeclined40": "Solicitud denegada",
+    "transferDeclinedBody40": "Parece que negaste la transacción. Si fue un error, intentalo de nuevo y aprueba la solicitud en tu wallet",
+    "transferTimeout": "No recibimos una respuesta a tiempo",
+    "transferTimeoutBody": "Por favor, inténtelo de nuevo y apruebe la solicitud de la transacción."
   },
   "privacyComponent": {
     "content": "Tus datos se mantienen privados y cifrados en todo momento."

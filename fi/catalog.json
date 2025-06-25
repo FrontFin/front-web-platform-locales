@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta"
   },
+  "topupNeeded": {
+    "title": "Lisärahoitusta tarvitaan",
+    "subtitle": "Ostamasi {{symbol}} saldo on odotettua pienempi johtuen hinnan ja/tai kaasun vaihteluista.",
+    "currentBalance": "Nykyinen saldo",
+    "required": "Vaaditaan",
+    "disclaimer": "Jos et suorita maksua, {{symbol}} tilin saldo pysyy {{integrationName}} tililläsi.",
+    "previewTopup": "Esikatselu lisäystä varten",
+    "cancel": "Peruuta"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Määrän on oltava välillä {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Määrän on oltava välillä 21 USD - 15 000 USD",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
     "amountExceedsMaximum": "Pyydetty summa ylittää verkon suurimman sallitun siirtosumman.",
     "balanceNotEnough": "Ei tarpeeksi saldoa.",
-    "binanceTravelRuleRestriction": "Binance ei tällä hetkellä tue siirtoja maastasi.",
+    "binanceTravelRuleRestriction": "Binance ei tällä hetkellä tue {{operation}}-toimintoja maassasi.",
+    "binanceTravelRuleRestrictionPayment": "Binance ei tällä hetkellä tue maksuja maastasi.",
+    "binanceTravelRuleRestrictionTransfer": "Binance ei tällä hetkellä tue siirtoja maastasi.",
     "coinbaseUnavailable": "Coinbasessa tapahtui virhe. Tarkista CB-tilisi nähdäksesi, menikö siirto läpi.",
     "default": "Tapahtui virhe.",
     "emptyWalletBalance": "Lähdelompakon saldo on tyhjä.",
@@ -417,7 +428,9 @@
     "kycRequired": "Siirtoa ei voida käynnistää. Integraatio vaatii asiakkaan tunnistamisen (KYC) suorittamista ennen kryptosiirtojen sallimista.",
     "locked": "Tilisi on lukittu",
     "networkDisabled": "Verkko on tällä hetkellä poissa käytöstä eikä sitä voi käyttää.",
-    "passKeyNotSupported": "Valitettavasti Passkey 2FA:ta ei tällä hetkellä tueta. Lisää Google Authenticator lisä-2FA:ksi ja yritä siirtoa uudelleen.",
+    "passKeyNotSupported": "Valitettavasti Passkey 2FA:ta ei tällä hetkellä tueta. Lisää Google Authenticator lisätoiminteeksi ja yritä uudelleen {{operation}}.",
+    "passKeyNotSupportedPayment": "Valitettavasti Passkey 2FA ei ole tällä hetkellä tuettu. Lisää Google Authenticator lisä 2FA:ksi ja yritä maksua uudelleen.",
+    "passKeyNotSupportedTransfer": "Valitettavasti Passkey 2FA ei ole tällä hetkellä tuettu. Lisää Google Authenticator lisä-2FA:ksi ja yritä siirtoa uudelleen.",
     "previewExpired": "Esikatselu on vanhentunut.",
     "satoshiTestRequired": "Coinbase ei tue yli 1000 euron siirtoja. Yritä uudelleen pienemmällä summalla.",
     "symbolNotSupported": "Integraatio ei tue symbolia.",
@@ -427,7 +440,9 @@
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",
     "twoFaFailed": "Kaksivaiheinen tunnistautuminen epäonnistui. Ole hyvä ja yritä uudelleen.",
-    "coinbaseTravelRuleRestriction": "Coinbase ei tällä hetkellä tue maastasi tehtäviä siirtoja.",
+    "coinbaseTravelRuleRestriction": "Coinbase ei tällä hetkellä tue {{operation}}-toimintoja maassasi.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase ei tällä hetkellä tue maksuja maastasi.",
+    "coinbaseTravelRuleRestrictionTransfer": "Coinbase ei tällä hetkellä tue siirtoja maastasi.",
     "withdrawalLocked": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen.",
     "accountNotFound": "Tiläsi/tilejäsi ei voida hakea.",
     "addressNotAllowlisted": "Nostoa Coinbasesta ei voida aloittaa. Sinun tulee lisätä tämä vastaanottajan osoite sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "Siirto hylätty",
     "transferDeclinedBody": "Olet hylännyt siirtopyynnön lompakossasi.",
     "transferTitle": "Siirron esikatselu",
-    "youMayReceiveLess": "Saatat saadavähemmän johtuen {{symbol}} hinnan liikkeistä."
+    "youMayReceiveLess": "Saatat saadavähemmän johtuen {{symbol}} hinnan liikkeistä.",
+    "transferDeclined40": "Pyyntö evätty",
+    "transferDeclinedBody40": "Näyttää siltä, että hylkäsit tapahtuman. Jos kyseessä oli virhe, yritä uudelleen ja hyväksy pyyntö lompakossasi",
+    "transferTimeout": "Emme saaneet vastausta ajoissa",
+    "transferTimeoutBody": "Yritä uudelleen ja hyväksy maksupyyntö."
   },
   "privacyComponent": {
     "content": "Tietosi ovat aina yksityisiä ja salattuja."

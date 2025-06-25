@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "切换法币/加密货币"
   },
+  "topupNeeded": {
+    "title": "充值需要",
+    "subtitle": "由于价格和/或手续费波动，您购买的{{symbol}}余额低于预期。",
+    "currentBalance": "当前余额",
+    "required": "必需",
+    "disclaimer": "如果您未完成支付，您的{{symbol}}余额将保留在您的{{integrationName}}帐户中。",
+    "previewTopup": "预览充值",
+    "cancel": "取消"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "金额必须在{{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}之间",
     "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "转账金额低于此网络的最低转账金额要求。",
     "amountExceedsMaximum": "转账金额超过此网络的最高转账金额限制。",
     "balanceNotEnough": "余额不足。",
-    "binanceTravelRuleRestriction": "Binance目前不支持您所在国家的转账。",
+    "binanceTravelRuleRestriction": "Binance目前不支持来自您所在国家/地区的{{operation}}。",
+    "binanceTravelRuleRestrictionPayment": "币安目前不支持来自您所在国家的付款。",
+    "binanceTravelRuleRestrictionTransfer": "币安目前不支持来自您所在国家的转账。",
     "coinbaseUnavailable": "Coinbase发生错误。请检查您的CB账号以查看转账是否成功。",
     "default": "发生了一个错误。",
     "emptyWalletBalance": "源钱包余额为空。",
@@ -417,7 +428,9 @@
     "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
     "locked": "您的帐户已被锁定",
     "networkDisabled": "网络当前已被禁用，无法使用。",
-    "passKeyNotSupported": "很遗憾，目前不支持 Passkey 2FA。请添加 Google Authenticator 作为额外的 2FA，然后重试转账。",
+    "passKeyNotSupported": "很遗憾，目前不支持Passkey 2FA。请添加Google Authenticator作为额外的2FA，然后重试{{operation}}。",
+    "passKeyNotSupportedPayment": "很遗憾，Passkey 2FA 目前不支持。请添加 Google 验证器作为额外的 2FA，并重试付款。",
+    "passKeyNotSupportedTransfer": "很遗憾，目前不支持密码钥匙双因素认证。请添加Google Authenticator作为附加的双因素认证，然后重试传输。",
     "previewExpired": "预览已过期。",
     "satoshiTestRequired": "Coinbase API 不支持超过 1000 欧元的转账。请输入较小金额再次尝试。",
     "symbolNotSupported": "集成不支持此代币符号。",
@@ -427,7 +440,9 @@
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
     "twoFaFailed": "双重验证失败。请重试。",
-    "coinbaseTravelRuleRestriction": "Coinbase 目前不支持从您的国家进行转账。",
+    "coinbaseTravelRuleRestriction": "Coinbase目前不支持来自您所在国家/地区的{{operation}}。",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase目前不支持来自您所在国家的付款。",
+    "coinbaseTravelRuleRestrictionTransfer": "Coinbase目前不支持来自您所在国家的转账。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "accountNotFound": "无法检索您的账户。",
     "addressNotAllowlisted": "无法从 Coinbase 发起提款。您必须将此收件人地址添加到您的允许列表：https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "转账被拒绝",
     "transferDeclinedBody": "您已经在钱包中拒绝该转账请求。",
     "transferTitle": "转账预览",
-    "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
+    "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。",
+    "transferDeclined40": "请求被拒绝",
+    "transferDeclinedBody40": "看起来您拒绝了这笔交易。如果这是一个错误，请重试并在您的钱包中批准请求",
+    "transferTimeout": "我们未及时收到回应",
+    "transferTimeoutBody": "请重试并批准交易请求。"
   },
   "privacyComponent": {
     "content": "您的数据全程加密，隐私绝对安全。"

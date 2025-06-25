@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Przełącz Fiat/Krypto"
   },
+  "topupNeeded": {
+    "title": "Doładowanie potrzebne",
+    "subtitle": "Twoje zakupione saldo {{symbol}} jest niższe niż oczekiwano z powodu wahań cen i/lub kosztów gazu.",
+    "currentBalance": "Aktualne saldo",
+    "required": "Wymagane",
+    "disclaimer": "Jeżeli nie zakończysz płatności, saldo {{symbol}} pozostanie na Twoim koncie {{integrationName}}.",
+    "previewTopup": "Podgląd doładowania",
+    "cancel": "Anuluj"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Kwota musi mieścić się w przedziale {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Kwota musi mieścić się w przedziale od 21 do 15.000 USD",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "Żądana kwota jest poniżej minimalnej dopuszczalnej kwoty transferu w tej sieci.",
     "amountExceedsMaximum": "Żądana kwota przekracza maksymalną dopuszczalną kwotę transferu w tej sieci.",
     "balanceNotEnough": "Niewystarczające saldo.",
-    "binanceTravelRuleRestriction": "Binance obecnie nie obsługuje transferów z Twojego kraju.",
+    "binanceTravelRuleRestriction": "Binance nie obsługuje obecnie {{operation}} z Twojego kraju.",
+    "binanceTravelRuleRestrictionPayment": "Binance obecnie nie obsługuje płatności z Twojego kraju.",
+    "binanceTravelRuleRestrictionTransfer": "Binance obecnie nie obsługuje przelewów z Twojego kraju.",
     "coinbaseUnavailable": "Wystąpił błąd Coinbase. Sprawdź swoje konto CB, aby sprawdzić, czy transfer został zrealizowany.",
     "default": "Wystąpił błąd.",
     "emptyWalletBalance": "Brak środków na portfelu źródłowym.",
@@ -417,7 +428,9 @@
     "kycRequired": "Nie można zainicjować transferu. Integracja wymaga ukończenia weryfikacji KYC na koncie przed włączeniem transferów kryptowalut.",
     "locked": "Twoje konto jest zablokowane",
     "networkDisabled": "Sieć jest obecnie wyłączona i nie może być używana.",
-    "passKeyNotSupported": "Niestety, Passkey 2FA nie jest obecnie obsługiwane. Proszę dodać Google Authenticator jako dodatkowe uwierzytelnianie 2FA i spróbować ponownie przenieść.",
+    "passKeyNotSupported": "Niestety, Passkey 2FA nie jest obecnie obsługiwane. Proszę dodać Google Authenticator jako dodatkowe 2FA i ponownie spróbować wykonać {{operation}}.",
+    "passKeyNotSupportedPayment": "Niestety, Passkey 2FA nie jest obecnie obsługiwane. Proszę dodać Google Authenticator jako dodatkowe 2FA i spróbować ponownie dokonać płatności.",
+    "passKeyNotSupportedTransfer": "Niestety, 2FA za pomocą klucza dostępu obecnie nie jest obsługiwane. Proszę dodać Google Authenticator jako dodatkowy 2FA i ponowić próbę transferu.",
     "previewExpired": "Podgląd wygasł.",
     "satoshiTestRequired": "Coinbase nie wspiera transferów powyżej 1000 euro. Proszę spróbować ponownie z niższą kwotą.",
     "symbolNotSupported": "Waluta nie jest obsługiwana przez integrację.",
@@ -427,7 +440,9 @@
     "tooManyRequests": "Proszę spróbować ponownie później.",
     "transferAlreadyRequested": "Transfer już jest zlecony.",
     "twoFaFailed": "Dwustopniowa weryfikacja się nie powiodła. Proszę spróbować ponownie.",
-    "coinbaseTravelRuleRestriction": "Coinbase obecnie nie wspiera transferów z Twojego kraju.",
+    "coinbaseTravelRuleRestriction": "Coinbase nie obsługuje obecnie {{operation}} z Twojego kraju.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase obecnie nie obsługuje płatności z Twojego kraju.",
+    "coinbaseTravelRuleRestrictionTransfer": "Coinbase obecnie nie obsługuje przelewów z Twojego kraju.",
     "withdrawalLocked": "Dla twojego bezpieczeństwa, wypłaty są zablokowane na 24 godziny po zmianie ustawień konta. Proszę spróbować ponownie później.",
     "accountNotFound": "Nie udało się odzyskać Twojego konta.",
     "addressNotAllowlisted": "Nie udało się zainicjować wypłaty z Coinbase. Musisz dodać ten adres odbiorcy do listy dozwolonych tutaj: https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "Transfer odrzucony",
     "transferDeclinedBody": "Odrzuciłeś prośbę o transfer w swoim portfelu.",
     "transferTitle": "Podgląd transferu",
-    "youMayReceiveLess": "Możesz otrzymać mniej z powodu zmian w cenie {{symbol}}."
+    "youMayReceiveLess": "Możesz otrzymać mniej z powodu zmian w cenie {{symbol}}.",
+    "transferDeclined40": "Żądanie odrzucone",
+    "transferDeclinedBody40": "Wygląda na to, że odrzuciłeś transakcję. Jeśli to była pomyłka, spróbuj ponownie i zatwierdź żądanie w swoim portfelu",
+    "transferTimeout": "Nie otrzymaliśmy odpowiedzi na czas",
+    "transferTimeoutBody": "Spróbuj ponownie i zatwierdź żądanie transakcji."
   },
   "privacyComponent": {
     "content": "Twoje dane są zawsze prywatne i zaszyfrowane."

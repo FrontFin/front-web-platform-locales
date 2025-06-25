@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Fiat/Krypto wechseln"
   },
+  "topupNeeded": {
+    "title": "Aufladen nötig",
+    "subtitle": "Dein gekaufter {{symbol}}-Saldo ist aufgrund von Preis- und/oder Gas-Schwankungen niedriger als erwartet.",
+    "currentBalance": "Aktuelles Guthaben",
+    "required": "Erforderlich",
+    "disclaimer": "Wenn Du die Zahlung nicht abschließt, bleibt Dein {{symbol}}-Guthaben in Deinem {{integrationName}}-Konto.",
+    "previewTopup": "Vorschau aufladen",
+    "cancel": "Abbrechen"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Der Betrag muss zwischen {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} liegen",
     "amountMustBeWithinErrorMessage": "Der Betrag muss zwischen 21 USD und 15.000 USD liegen",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
     "amountExceedsMaximum": "Angeforderter Betrag überschreitet den maximal zulässigen Überweisungsbetrag in diesem Netzwerk.",
     "balanceNotEnough": "Nicht genügend Guthaben.",
-    "binanceTravelRuleRestriction": "Binance unterstützt derzeit keine Überweisungen aus deinem Land.",
+    "binanceTravelRuleRestriction": "Binance unterstützt momentan keine {{operation}}en aus Ihrem Land.",
+    "binanceTravelRuleRestrictionPayment": "Binance unterstützt derzeit keine Zahlungen aus Ihrem Land.",
+    "binanceTravelRuleRestrictionTransfer": "Binance unterstützt derzeit keine Überweisungen aus Ihrem Land.",
     "coinbaseUnavailable": "Es gab einen Fehler bei Coinbase. Bitte überprüfe Dein CB-Konto, um zu sehen, ob die Überweisung durchgeführt wurde.",
     "default": "Ein Fehler ist aufgetreten.",
     "emptyWalletBalance": "Herkunft-Wallet-Guthaben ist leer.",
@@ -417,7 +428,9 @@
     "kycRequired": "Überweisung nicht möglich. Für die Integration ist die KYC-Verifizierung der Konten erforderlich, bevor Krypto-Überweisungen aktiviert werden können.",
     "locked": "Ihr Konto ist gesperrt",
     "networkDisabled": "Das Netzwerk ist derzeit deaktiviert und kann nicht verwendet werden.",
-    "passKeyNotSupported": "Leider wird Passkey-2FA derzeit nicht unterstützt. Bitte fügen Sie Google Authenticator als zusätzliche 2FA hinzu und versuchen Sie den Transfer erneut.",
+    "passKeyNotSupported": "Leider wird Passkey-2FA derzeit nicht unterstützt. Bitte fügen Sie Google Authenticator als zusätzliche 2FA hinzu und versuchen Sie den {{operation}} erneut.",
+    "passKeyNotSupportedPayment": "Leider wird Passkey 2FA momentan nicht unterstützt. Bitte fügen Sie Google Authenticator als zusätzliche 2FA hinzu und versuchen Sie die Zahlung erneut.",
+    "passKeyNotSupportedTransfer": "Leider wird Passkey 2FA derzeit nicht unterstützt. Bitte fügen Sie Google Authenticator als zusätzliche 2FA hinzu und versuchen Sie den Transfer erneut.",
     "previewExpired": "Die Vorschau ist abgelaufen.",
     "satoshiTestRequired": "Coinbase unterstützt keine Überweisungen über 1.000 Euro. Bitte versuchen Sie es mit einem niedrigeren Betrag erneut.",
     "symbolNotSupported": "Symbol wird von der Integration nicht unterstützt.",
@@ -427,7 +440,9 @@
     "tooManyRequests": "Bitte versuche es später noch einmal.",
     "transferAlreadyRequested": "Die Überweisung ist bereits angefordert.",
     "twoFaFailed": "Zwei-Faktor-Validierung fehlgeschlagen. Bitte versuche es erneut.",
-    "coinbaseTravelRuleRestriction": "Coinbase unterstützt derzeit keine Überweisungen aus Ihrem Land.",
+    "coinbaseTravelRuleRestriction": "Coinbase unterstützt momentan keine {{operation}}en aus Ihrem Land.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase unterstützt derzeit keine Zahlungen aus Ihrem Land.",
+    "coinbaseTravelRuleRestrictionTransfer": "Coinbase unterstützt derzeit keine Überweisungen aus Ihrem Land.",
     "withdrawalLocked": "Zu Deiner Sicherheit sind Abhebungen 24 Stunden nach einer Änderung der Konto-Einstellungen deaktiviert. Bitte versuche es später erneut.",
     "accountNotFound": "Deine Konten können nicht abgerufen werden.",
     "addressNotAllowlisted": "Abhebung von Coinbase konnte nicht eingeleitet werden. Du musst diese Empfängeradresse hier zu Deiner Whitelist hinzufügen: https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "Überweisung abgelehnt",
     "transferDeclinedBody": "Du hast die Überweisungsanfrage in Deiner Wallet abgelehnt.",
     "transferTitle": "Überweisungsvorschau",
-    "youMayReceiveLess": "Es kann sein, dass Du aufgrund von Preisschwankungen von {{symbol}} weniger erhälst."
+    "youMayReceiveLess": "Es kann sein, dass Du aufgrund von Preisschwankungen von {{symbol}} weniger erhälst.",
+    "transferDeclined40": "Anfrage abgelehnt",
+    "transferDeclinedBody40": "Es sieht aus, als hätten Sie die Transaktion abgelehnt. Falls das ein Fehler war, versuchen Sie es erneut und genehmigen Sie die Anfrage in Ihrer Brieftasche.",
+    "transferTimeout": "Wir haben keine rechtzeitige Antwort erhalten.",
+    "transferTimeoutBody": "Bitte versuchen Sie es erneut und genehmigen Sie die Transaktionsanfrage."
   },
   "privacyComponent": {
     "content": "Deine Daten sind jederzeit privat und verschlüsselt."

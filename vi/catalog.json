@@ -17,6 +17,15 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Chuyển đổi Tiền pháp định/Mã hoá"
   },
+  "topupNeeded": {
+    "title": "Cần nạp tiền",
+    "subtitle": "Số dư {{symbol}} mua của bạn thấp hơn dự kiến do giá và/hoặc biến động khí.",
+    "currentBalance": "Số dư hiện tại",
+    "required": "Bắt buộc",
+    "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{symbol}} sẽ vẫn nằm trong tài khoản {{integrationName}} của bạn.",
+    "previewTopup": "Xem trước nạp tiền",
+    "cancel": "Hủy bỏ"
+  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Số tiền phải nằm trong khoảng 21 USD - 15.000 USD",
@@ -405,7 +414,9 @@
     "amountBelowMinimum": "Số tiền yêu cầu thấp hơn mức tối thiểu cho phép trên mạng lưới này.",
     "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức tối đa cho phép trên mạng lưới này.",
     "balanceNotEnough": "Số dư không đủ.",
-    "binanceTravelRuleRestriction": "Hiện tại Binance không hỗ trợ chuyển khoản từ quốc gia của bạn.",
+    "binanceTravelRuleRestriction": "Binance hiện không hỗ trợ {{operation}} từ quốc gia của bạn.",
+    "binanceTravelRuleRestrictionPayment": "Binance hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
+    "binanceTravelRuleRestrictionTransfer": "Binance hiện không hỗ trợ chuyển khoản từ quốc gia của bạn.",
     "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
     "default": "Đã xảy ra lỗi.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
@@ -417,7 +428,9 @@
     "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
     "locked": "Tài khoản của bạn bị khóa",
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
-    "passKeyNotSupported": "Rất tiếc, hiện tại Passkey 2FA chưa được hỗ trợ. Vui lòng thêm Google Authenticator như một phương thức 2FA bổ sung và thử chuyển lại.",
+    "passKeyNotSupported": "Rất tiếc, hiện không hỗ trợ Passkey 2FA. Vui lòng thêm Google Authenticator làm 2FA bổ sung và thử lại {{operation}}.",
+    "passKeyNotSupportedPayment": "Rất tiếc, Passkey 2FA hiện không được hỗ trợ. Vui lòng thêm Google Authenticator như một phương thức 2FA bổ sung và thử thanh toán lại.",
+    "passKeyNotSupportedTransfer": "Rất tiếc, Passkey 2FA hiện không được hỗ trợ. Vui lòng thêm Google Authenticator làm 2FA bổ sung và thử chuyển lại.",
     "previewExpired": "Bản xem trước đã hết hạn.",
     "satoshiTestRequired": "Coinbase không hỗ trợ chuyển tiền vượt quá 1000 Euro.",
     "symbolNotSupported": "Loại tiền mã hóa không được tích hợp hỗ trợ.",
@@ -427,7 +440,9 @@
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Giao dịch chuyển tiền đã được yêu cầu trước đó.",
     "twoFaFailed": "Xác thực hai yếu tố đã thất bại. Vui lòng thử lại.",
-    "coinbaseTravelRuleRestriction": "Coinbase hiện không hỗ trợ chuyển tiền từ nước của bạn.",
+    "coinbaseTravelRuleRestriction": "Coinbase hiện không hỗ trợ {{operation}} từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionTransfer": "Coinbase hiện không hỗ trợ chuyển khoản từ quốc gia của bạn.",
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
     "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
@@ -1039,7 +1054,11 @@
     "transferDeclined": "Giao dịch bị từ chối",
     "transferDeclinedBody": "Bạn đã từ chối yêu cầu chuyển khoản trong ví của mình.",
     "transferTitle": "Xem trước giao dịch",
-    "youMayReceiveLess": "Bạn có thể nhận {{symbol}} ít hơn do biến động giá."
+    "youMayReceiveLess": "Bạn có thể nhận {{symbol}} ít hơn do biến động giá.",
+    "transferDeclined40": "Yêu cầu bị từ chối",
+    "transferDeclinedBody40": "Có vẻ bạn đã từ chối giao dịch. Nếu đó là một sai lầm, hãy thử lại và phê duyệt yêu cầu trong ví của bạn",
+    "transferTimeout": "Chúng tôi không nhận được phản hồi kịp thời",
+    "transferTimeoutBody": "Vui lòng thử lại và chấp thuận yêu cầu giao dịch."
   },
   "privacyComponent": {
     "content": "Dữ liệu của bạn luôn được giữ kín và mã hóa."
