@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Afficher en : fiat / crypto"
   },
-  "topupNeeded": {
-    "title": "Rechargement nécessaire",
-    "subtitle": "Votre solde d'achat de {{symbol}} est inférieur à celui attendu en raison des fluctuations de prix et/ou de gaz.",
-    "currentBalance": "Solde actuel",
-    "required": "Requis",
-    "disclaimer": "Si vous ne terminez pas le paiement, votre solde de {{symbol}} restera dans votre compte {{integrationName}}.",
-    "previewTopup": "Aperçu de la recharge",
-    "cancel": "Annuler"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} {{selectedFiat}} - et {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Le montant doit être compris entre 21 USD et 15 000 USD",
@@ -132,13 +123,14 @@
     "verificationCodeInputTitle": "Code de vérification"
   },
   "chooseAccountPage": {
-    "linkToApp": "Lequel de vos comptes souhaitez-vous que <1></1> lie à cette application ",
+    "linkToApp": "Lequel de vos comptes souhaitez-vous que <1></1> lie à cette application\u00a0",
     "linkToClient": "Lequel de vos comptes souhaitez-vous que <1></1> lie à {{clientName}}",
     "title": "Sélectionnez les sous-comptes"
   },
   "common": {
     "availableForTransfer": "Disponible",
     "cancel": "Annuler",
+    "chooseDifferentAccount": "Choisissez un autre compte",
     "closeCap": "Fermer",
     "codeNotCorrent": "Le code que vous avez saisi est incorrect.",
     "connectAnotherAccount": "Connecter un autre compte",
@@ -155,17 +147,16 @@
     "submitCap": "Soumettre",
     "successTitle": "Action complétée avec succès !",
     "termsOfUse": "En continuant, vous acceptez les <2>conditions d'utilisation</2>",
-    "tryAgain": "Réessayez",
-    "chooseDifferentAccount": "Choisissez un autre compte"
+    "tryAgain": "Réessayez"
   },
   "commonContent": {
     "connecting": "Connexion...",
     "description": "facilitera la connexion sécurisée avec {{integrationName}}.",
     "monitoring": "En cours d’approbation...",
     "resend": "Renvoyer la demande de connexion",
+    "takingLongerTitle": "Toujours là ?… Vérifiez votre portefeuille et approuvez la demande pour continuer.",
     "title": "Approuvez la demande de connexion<1></1> dans votre portefeuille",
-    "title40": "Approuvez la demande de connexion dans votre<1></1> application {{walletName}}.",
-    "takingLongerTitle": "Toujours là ?… Vérifiez votre portefeuille et approuvez la demande pour continuer."
+    "title40": "Approuvez la demande de connexion dans votre<1></1> application {{walletName}}."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Suivez les instructions sur votre ordinateur pour connecter votre {{selectedIntegrationName}}",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "Changer de devise"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Il semble que vous ayez refusé la demande de connexion ou qu'une demande précédente soit encore active. Si c'était une erreur, essayez à nouveau.",
+    "chooseDifferentAccount": "Choisissez un autre compte",
+    "title": "Oups!"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Veuillez vérifier votre portefeuille et approuver la demande de connexion.",
+    "chooseDifferentAccount": "Choisissez un autre compte",
+    "title": "Nous n'avons pas reçu de réponse à temps"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours en cours.",
@@ -222,21 +223,11 @@
     "monitoringApproval": "En cours d’approbation...",
     "selectNetwork": "Sélectionnez le réseau",
     "title": "Changement de réseau",
-    "whichNetwork": "Quel réseau dans votre portefeuille <1>{{selectedIntegrationName}}</1><4></4>souhaitez-vous lier ?"
+    "whichNetwork": "Quel réseau dans votre portefeuille <1>{{selectedIntegrationName}}</1><4></4>souhaitez-vous lier\u00a0?"
   },
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} n'est pas installé sur cet appareil. Veuillez télécharger l'application {{integrationName}} ou connecter un autre portefeuille.",
     "title": "Connexion indisponible"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "Veuillez vérifier votre portefeuille et approuver la demande de connexion.",
-    "title": "Nous n'avons pas reçu de réponse à temps",
-    "chooseDifferentAccount": "Choisissez un autre compte"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "Il semble que vous ayez refusé la demande de connexion ou qu'une demande précédente soit encore active. Si c'était une erreur, essayez à nouveau.",
-    "title": "Oups!",
-    "chooseDifferentAccount": "Choisissez un autre compte"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "En attente de votre confirmation dans l’application mobile",
@@ -335,15 +326,22 @@
     "warningTitle": "Lisez ce message en entier avant de continuer."
   },
   "errorHeadlines": {
+    "accountNotFound": "Compte introuvable",
     "accountTypeNotSupported": "Type de compte non pris en charge",
+    "addressAllowlistPending": "Liste blanche d'adresse en attente",
+    "addressNotAllowlisted": "Adresse non autorisée",
     "amountBelowMinimum": "Montant trop bas",
     "amountExceedsMaximum": "Montant trop élevé",
+    "authenticationFailed": "Échec de l'authentification",
     "badRequest": "Requête invalide",
     "balanceNotEnough": "Solde insuffisant",
+    "belowMinimumFiatDeposit": "En dessous du dépôt minimum en monnaie fiduciaire",
     "binanceTravelRuleRestriction": "Restriction imposée par la Travel Rule",
+    "coinbaseTravelRuleRestriction": "Restriction imposée par la Travel Rule",
     "coinbaseUnavailable": "Coinbase indisponible",
     "configurationMismatch": "Erreur de configuration",
     "emptyWalletBalance": "Portefeuille vide",
+    "exceedsApplicationLimit": "Dépassé la limite de l'application",
     "expiredSmartDeposit": "Dépôt intelligent expiré",
     "failedToGetFundingOptions": "Erreur d'options de financement",
     "failedToSaveFundingOptions": "Échec de l'enregistrement",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "Retrait non pris en charge",
     "integrationError": "Erreur d'intégration",
     "integrationNotAvailable": "Intégration indisponible",
+    "invalidCredentials": "Identifiants invalides",
     "invalidField": "Informations invalides",
     "invalidFromIntegrationToken": "Jeton source invalide",
     "invalidIntegrationToken": "Connexion expirée",
     "invalidToIntegrationToken": "Jeton de destination invalide",
     "kycRequired": "KYC requis",
     "locked": "Compte verrouillé",
+    "mfaNotSupported": "MFA non pris en charge",
     "missingField": "Informations manquantes",
     "networkDisabled": "Réseau désactivé",
     "networkUnsupported": "Réseau non pris en charge",
@@ -372,24 +372,24 @@
     "permissionDenied": "Accès refusé",
     "previewExpired": "Aperçu expiré",
     "refusedByIntegration": "Transfert refusé",
+    "reLogInFaceRecognitionDueToScamRisk": "Réessayez",
     "satoshiTestRequired": "Limite de montant dépassée",
+    "selfTransferNotAllowed": "Transfert personnel non autorisé",
+    "sendAccessDisabled": "Envoi d'accès désactivé",
     "serverFailure": "Erreur du serveur",
     "symbolNotSupported": "Symbole non pris en charge",
     "symbolNotSupportedBySource": "Source non prise en charge",
     "symbolNotSupportedByTarget": "Destination non prise en charge",
     "symbolNotSupportedForTrading": "Trading non pris en charge",
-    "timeInForceNotSupported": "Paramètre « Time in Force » non pris en charge",
+    "timeInForceNotSupported": "Paramètre «\u202fTime in Force\u202f» non pris en charge",
     "toAccountNotSupported": "Dépôt non pris en charge",
     "tooManyRequests": "Trop de requêtes",
     "transferAlreadyRequested": "Transfert déjà demandé",
-    "twoFaFailed": "Code 2FA invalide",
-    "unauthorizedToken": "Jeton non autorisé",
-    "coinbaseTravelRuleRestriction": "Restriction imposée par la Travel Rule",
-    "withdrawalLocked": "Retraits verrouillés",
-    "selfTransferNotAllowed": "Transfert personnel non autorisé",
-    "sendAccessDisabled": "Envoi d'accès désactivé",
     "tryAgainAfterLogin": "Connexion requise",
+    "twoFaFailed": "Code 2FA invalide",
     "unableToSend": "Échec du transfert",
+    "unableToSendContactSupport": "Retraits désactivés",
+    "unauthorizedToken": "Jeton non autorisé",
     "userInfoUnavailable": "Informations utilisateur indisponibles",
     "webWithdrawalLimitExceeded": "Limite de retrait dépassée",
     "whitelistAddressRequired": "Liste blanche d'adresses requise",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "Retrait temporairement désactivé",
     "withdrawalDisabledDueToSecurityReset": "Retrait temporairement désactivé",
     "withdrawalDisabledDueToSuspiciousActivity": "Retrait temporairement désactivé",
-    "withdrawalPendingDepositConfirmation": "Retrait en attente de confirmation",
-    "accountNotFound": "Compte introuvable",
-    "addressNotAllowlisted": "Adresse non autorisée",
-    "addressAllowlistPending": "Liste blanche d'adresse en attente",
-    "authenticationFailed": "Échec de l'authentification",
-    "belowMinimumFiatDeposit": "En dessous du dépôt minimum en monnaie fiduciaire",
-    "exceedsApplicationLimit": "Dépassé la limite de l'application",
-    "invalidCredentials": "Identifiants invalides",
-    "mfaNotSupported": "MFA non pris en charge",
+    "withdrawalLocked": "Retraits verrouillés",
     "withdrawalLockedP2P": "Retraits désactivés",
-    "unableToSendContactSupport": "Retraits désactivés",
-    "reLogInFaceRecognitionDueToScamRisk": "Réessayez"
+    "withdrawalPendingDepositConfirmation": "Retrait en attente de confirmation"
   },
   "errorMessages": {
+    "accountNotFound": "Impossible de récupérer votre/vos compte(s).",
+    "addressAllowlistPending": "Cette adresse de destinataire a été ajoutée à votre liste autorisée et est en attente de validation.",
+    "addressNotAllowlisted": "Impossible d'initier le retrait depuis Coinbase. Vous devez ajouter cette adresse de destinataire à votre liste autorisée ici : https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Le montant demandé est inférieur au montant minimum de transfert autorisé sur ce réseau.",
     "amountExceedsMaximum": "Le montant demandé dépasse le montant maximum autorisé pour un transfert sur ce réseau.",
+    "authenticationFailed": "Impossible de s'authentifier avec l'intégration sélectionnée.",
     "balanceNotEnough": "Solde insuffisant.",
+    "belowMinimumFiatDeposit": "Le montant est inférieur à la limite de dépôt minimum en monnaie fiduciaire.",
     "binanceTravelRuleRestriction": "Binance ne prend actuellement pas en charge les transferts depuis votre pays.",
     "binanceTravelRuleRestrictionDeposit": "Binance ne prend actuellement pas en charge les dépôts depuis votre pays.",
     "binanceTravelRuleRestrictionOnramp": "Binance ne prend actuellement pas en charge les achats depuis votre pays.",
     "binanceTravelRuleRestrictionPayment": "Binance ne prend actuellement pas en charge les paiements depuis votre pays.",
+    "coinbaseTravelRuleRestriction": "Coinbase ne prend actuellement pas en charge les transferts depuis votre pays.",
+    "coinbaseTravelRuleRestrictionDeposit": "Coinbase ne prend actuellement pas en charge les dépôts depuis votre pays.",
+    "coinbaseTravelRuleRestrictionOnramp": "Coinbase ne prend actuellement pas en charge les achats depuis votre pays.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase ne prend actuellement pas en charge les paiements depuis votre pays.",
     "coinbaseUnavailable": "Coinbase a rencontré une erreur. Veuillez vérifier votre compte Coinbase pour confirmer si le transfert a bien été effectué.",
+    "configurationMismatch": "Impossible d'initier le transfert. La configuration du compte ne correspond pas au transfert demandé.",
     "default": "Une erreur est survenue.",
     "emptyWalletBalance": "Le solde du portefeuille Source est vide.",
+    "exceedsApplicationLimit": "Le montant du transfert dépasse la limite de l'application.",
+    "expiredSmartDeposit": "Le dépôt intelligent a expiré. Le contrat intelligent a été désalloué.",
     "failedToGetFundingOptions": "Échec de l'obtention des options de financement",
     "failedToSaveFundingOptions": "Échec de l'enregistrement des options de financement",
     "feeAssetBalanceNotEnough": "Fonds insuffisants pour les frais de transfert.",
     "fromAccountNotSupported": "Le compte ne prend actuellement pas en charge les retraits de crypto-monnaie.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
+    "invalidCredentials": "Identifiants invalides. Veuillez réessayer.",
+    "invalidFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
+    "invalidIntegrationToken": "Veuillez vous reconnecter pour continuer.",
+    "invalidToIntegrationToken": "Impossible d'identifier la destination.",
     "kycRequired": "Impossible de lancer le transfert. Cette intégration nécessite que les comptes aient complété une vérification KYC avant d'autoriser les transferts de crypto-monnaies.",
     "locked": "Votre compte est verrouillé",
+    "mfaNotSupported": "L'authentification multifacteur n'est pas prise en charge pour cette opération.",
     "networkDisabled": "Le réseau est actuellement désactivé et ne peut pas être utilisé.",
+    "noAvailableSmartContract": "Contrat intelligent indisponible",
+    "notAuthorizedFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
+    "notAuthorizedToIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
     "passKeyNotSupported": "Malheureusement, Passkey 2FA n'est actuellement pas pris en charge. Veuillez ajouter Google Authenticator en tant que 2FA supplémentaire et réessayer le transfert.",
     "passKeyNotSupportedDeposit": "Malheureusement, Passkey 2FA n'est actuellement pas pris en charge. Veuillez ajouter Google Authenticator en tant que 2FA supplémentaire et réessayer le dépôt.",
     "passKeyNotSupportedOnramp": "Malheureusement, Passkey 2FA n'est actuellement pas pris en charge. Veuillez ajouter Google Authenticator en tant que 2FA supplémentaire et réessayer l'achat.",
     "passKeyNotSupportedPayment": "Malheureusement, le 2FA Passkey n'est pas encore pris en charge. Veuillez ajouter Google Authenticator comme 2FA supplémentaire et réessayer le paiement.",
     "previewExpired": "L'aperçu a expiré.",
+    "refusedByIntegration": "Impossible d'initier le transfert. L'intégration a refusé la demande.",
+    "reLogInFaceRecognitionDueToScamRisk": "Pour votre sécurité, veuillez vous reconnecter et compléter la reconnaissance faciale.",
     "satoshiTestRequired": "Coinbase ne prend pas en charge les transferts supérieurs à 1000 euros. Veuillez réessayer avec un montant inférieur.",
+    "selfTransferNotAllowed": "Vous ne pouvez pas envoyer un transfert depuis un compte vers lui-même.",
+    "sendAccessDisabled": "Impossible d'initier le retrait car l'accès d'envoi a été désactivé pour ce compte.",
     "symbolNotSupported": "Le symbole n'est pas pris en charge par l'intégration.",
     "symbolNotSupportedBySource": "Le symbole à transférer n’est pas pris en charge par le portefeuille source sur le réseau sélectionné.",
     "symbolNotSupportedByTarget": "Impossible de trouver l’adresse de dépôt pour la crypto-monnaie demandée.",
     "toAccountNotSupported": "Le compte de destination ne prend actuellement pas en charge les dépôts de crypto-monnaie.",
     "tooManyRequests": "Veuillez réessayer plus tard.",
     "transferAlreadyRequested": "Le transfert est déjà demandé.",
-    "twoFaFailed": "La validation en deux étapes a échoué. Veuillez réessayer.",
-    "coinbaseTravelRuleRestriction": "Coinbase ne prend actuellement pas en charge les transferts depuis votre pays.",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase ne prend actuellement pas en charge les dépôts depuis votre pays.",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase ne prend actuellement pas en charge les achats depuis votre pays.",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase ne prend actuellement pas en charge les paiements depuis votre pays.",
-    "withdrawalLocked": "Pour votre sécurité, les retraits sont temporairement désactivés pendant 24 heures après toute modification des paramètres du compte. Veuillez réessayer plus tard.",
-    "accountNotFound": "Impossible de récupérer votre/vos compte(s).",
-    "addressNotAllowlisted": "Impossible d'initier le retrait depuis Coinbase. Vous devez ajouter cette adresse de destinataire à votre liste autorisée ici : https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Cette adresse de destinataire a été ajoutée à votre liste autorisée et est en attente de validation.",
-    "authenticationFailed": "Impossible de s'authentifier avec l'intégration sélectionnée.",
-    "belowMinimumFiatDeposit": "Le montant est inférieur à la limite de dépôt minimum en monnaie fiduciaire.",
-    "exceedsApplicationLimit": "Le montant du transfert dépasse la limite de l'application.",
-    "invalidCredentials": "Identifiants invalides. Veuillez réessayer.",
-    "mfaNotSupported": "L'authentification multifacteur n'est pas prise en charge pour cette opération.",
-    "selfTransferNotAllowed": "Vous ne pouvez pas envoyer un transfert depuis un compte vers lui-même.",
-    "sendAccessDisabled": "Impossible d'initier le retrait car l'accès d'envoi a été désactivé pour ce compte.",
     "tryAgainAfterLogin": "Veuillez réessayer après vous être connecté.",
+    "twoFaFailed": "La validation en deux étapes a échoué. Veuillez réessayer.",
     "unableToSend": "Impossible d'envoyer le transfert. Veuillez réessayer.",
+    "unableToSendContactSupport": "Vous ne pouvez pas envoyer de cryptomonnaie pour le moment. Veuillez contacter l’assistance Coinbase.",
     "userInfoUnavailable": "Impossible d'obtenir les informations utilisateur. Veuillez réessayer.",
     "webWithdrawalLimitExceeded": "Vous avez dépassé la limite maximale de retrait quotidien pour Binance.",
     "whitelistAddressRequired": "L'adresse de destination doit être sur liste blanche.",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "Votre retrait a été identifié comme étant à haut risque. Pour sécuriser vos fonds, les retraits de votre compte sont temporairement désactivés pendant 1 heure.",
     "withdrawalDisabledDueToSecurityReset": "La fonction de retrait de votre compte a été temporairement désactivée suite à une récente réinitialisation de vérification de sécurité.",
     "withdrawalDisabledDueToSuspiciousActivity": "Votre fonction de retrait a été désactivée en raison d'une activité suspecte. Veuillez compléter le processus de vérification sur Binance. Si vous ne pouvez pas vérifier, contactez le service client. Si vous avez récemment terminé la vérification, veuillez patienter un moment et réessayer.",
-    "withdrawalPendingDepositConfirmation": "Votre dépôt n'a pas atteint les confirmations de déverrouillage requises pour le retrait. Veuillez vérifier l'historique des transactions pour plus de détails.",
-    "invalidFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
-    "invalidIntegrationToken": "Veuillez vous reconnecter pour continuer.",
-    "invalidToIntegrationToken": "Impossible d'identifier la destination.",
-    "notAuthorizedFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
-    "notAuthorizedToIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
-    "configurationMismatch": "Impossible d'initier le transfert. La configuration du compte ne correspond pas au transfert demandé.",
-    "refusedByIntegration": "Impossible d'initier le transfert. L'intégration a refusé la demande.",
-    "noAvailableSmartContract": "Contrat intelligent indisponible",
-    "expiredSmartDeposit": "Le dépôt intelligent a expiré. Le contrat intelligent a été désalloué.",
+    "withdrawalLocked": "Pour votre sécurité, les retraits sont temporairement désactivés pendant 24 heures après toute modification des paramètres du compte. Veuillez réessayer plus tard.",
     "withdrawalLockedP2P": "Pour votre sécurité, les retraits sont désactivés pendant 24 heures après un achat P2P. Veuillez réessayer plus tard.",
-    "unableToSendContactSupport": "Vous ne pouvez pas envoyer de cryptomonnaie pour le moment. Veuillez contacter l’assistance Coinbase.",
-    "reLogInFaceRecognitionDueToScamRisk": "Pour votre sécurité, veuillez vous reconnecter et compléter la reconnaissance faciale."
+    "withdrawalPendingDepositConfirmation": "Votre dépôt n'a pas atteint les confirmations de déverrouillage requises pour le retrait. Veuillez vérifier l'historique des transactions pour plus de détails."
   },
   "errorPage": {
     "title": "Une erreur est survenue."
@@ -576,6 +567,7 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -619,6 +611,23 @@
     "selectOtherHoldings": "Sélectionner parmi les autres avoirs",
     "symbolBalance": "Solde {{symbol}}",
     "title": "Méthodes de financement"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Approuver le paiement",
@@ -1039,7 +1048,7 @@
     "institutionTransferFee": "Frais de retrait de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert depuis {{symbol}}.",
     "insufficientFunds": "Fonds insuffisants",
-    "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant ?",
+    "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant\u202f?",
     "monitoring": "En attente d’approbation...",
     "network": "Réseau",
     "onrampTitle": "Aperçu de l'achat",
@@ -1055,13 +1064,13 @@
     "to": "À",
     "total": "Total",
     "transferDeclined": "Transfert refusé",
-    "transferDeclinedBody": "Vous avez refusé la demande de transfert dans votre portefeuille.",
-    "transferTitle": "Aperçu du transfert",
-    "youMayReceiveLess": "Vous pourriez recevoir un montant inférieur en raison de la fluctuation du prix du {{symbol}}.",
     "transferDeclined40": "Demande refusée",
+    "transferDeclinedBody": "Vous avez refusé la demande de transfert dans votre portefeuille.",
     "transferDeclinedBody40": "Il semble que vous ayez refusé la transaction. Si c'était une erreur, réessayez et approuvez la demande dans votre portefeuille",
     "transferTimeout": "Nous n'avons pas reçu de réponse à temps",
-    "transferTimeoutBody": "Veuillez réessayer et approuver la demande de transaction."
+    "transferTimeoutBody": "Veuillez réessayer et approuver la demande de transaction.",
+    "transferTitle": "Aperçu du transfert",
+    "youMayReceiveLess": "Vous pourriez recevoir un montant inférieur en raison de la fluctuation du prix du {{symbol}}."
   },
   "privacyComponent": {
     "content": "Vos données sont privées et cryptées à tout moment."
@@ -1151,10 +1160,10 @@
     "title": "Configurer l'e-mail"
   },
   "termsAndConditionsPage": {
-    "paragraph1": "Mesh Connect, Inc. (l’<1>« Entreprise »</1>) est un fournisseur de technologie qui met à disposition un outil de communication (l’<3>« Outil »</3>) facilitant certaines fonctionnalités d’un service tiers que vous utilisez (le <5>« Service Utilisateur Final »</5>).\nCet Outil a pour objectif de vous permettre de communiquer avec vos comptes et portefeuilles tiers (<7>« Comptes Connectés »</7>) via le Service Utilisateur Final, notamment en transmettant des instructions que vous souhaitez exécuter.",
+    "paragraph1": "Mesh Connect, Inc. (l’<1>«\u202fEntreprise\u202f»</1>) est un fournisseur de technologie qui met à disposition un outil de communication (l’<3>«\u202fOutil\u202f»</3>) facilitant certaines fonctionnalités d’un service tiers que vous utilisez (le <5>«\u202fService Utilisateur Final\u202f»</5>).\nCet Outil a pour objectif de vous permettre de communiquer avec vos comptes et portefeuilles tiers (<7>«\u202fComptes Connectés\u202f»</7>) via le Service Utilisateur Final, notamment en transmettant des instructions que vous souhaitez exécuter.",
     "paragraph10": "L'arbitrage sera administré par l'American Arbitration Association selon ses règles d'arbitrage des consommateurs, modifiées par ces termes. Les règles d'arbitrage des consommateurs sont disponibles en ligne à <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. L'arbitre mènera des audiences, le cas échéant, par téléconférence ou vidéoconférence, plutôt qu'en présence personnelle, sauf si l'arbitre décide sur demande de vous ou de nous qu'une audience en personne est appropriée. Toute rencontre en personne sera tenue dans un lieu raisonnablement pratique pour les deux parties, en tenant compte de leur capacité à se déplacer et de circonstances pertinentes. Si vous et l'Entreprise ne pouvez pas vous entendre sur un lieu, cette détermination devrait être faite par l'AAA ou par l'arbitre. La décision de l’arbitre devra être conforme aux présentes conditions, et elle sera définitive et contraignante. L’arbitre aura le pouvoir d’accorder toute mesure de redressement temporaire, provisoire ou permanent, y compris l’exécution spécifique des présentes conditions, mais uniquement dans la mesure nécessaire pour accorder la réparation justifiée par la réclamation individuelle présentée devant lui. La sentence arbitrale pourra être homologuée et exécutée devant tout tribunal compétent.\nNonobstant ce qui précède, aucune disposition des présentes conditions ne vous empêche de soumettre une plainte à une autorité fédérale, étatique ou locale, laquelle pourra, si la loi le permet, engager une action en votre nom contre nous.",
     "paragraph11": "Ces conditions constituent l’intégralité de l’accord entre vous et l’Entreprise concernant leur objet, et remplacent toutes déclarations ou accords antérieurs, oraux ou écrits, relatifs à ces sujets. Si une disposition est jugée inapplicable en vertu de la législation applicable, elle sera modifiée dans la mesure nécessaire pour se conformer à la loi tout en préservant, autant que possible, l’intention initiale. Toute disposition qui ne peut être modifiée de cette manière sera réputée dissociable, et les dispositions restantes resteront pleinement en vigueur. Vous reconnaissez et acceptez que les prestataires de services de l’Entreprise sont des tiers bénéficiaires de ces conditions. En acceptant ces conditions ou en utilisant l’Outil, vous acceptez d’être lié par les termes du présent accord.",
-    "paragraph2": "Vous reconnaissez et acceptez que certaines fonctionnalités du Service Utilisateur Final reposent sur l’Outil ; que l’utilisation de ces fonctionnalités se fait à votre demande ; que ni l’Entreprise ni ses prestataires de services ne fournissent de services de courtage ni ne participent au traitement des paiements ; et que ni l’Entreprise ni ses prestataires de services n’assument de responsabilité ou d’obligation à l’égard du Service Utilisateur Final, de tout Compte Connecté, ou des conditions, politiques, actes ou omissions de leurs fournisseurs respectifs.",
+    "paragraph2": "Vous reconnaissez et acceptez que certaines fonctionnalités du Service Utilisateur Final reposent sur l’Outil\u202f; que l’utilisation de ces fonctionnalités se fait à votre demande\u202f; que ni l’Entreprise ni ses prestataires de services ne fournissent de services de courtage ni ne participent au traitement des paiements\u202f; et que ni l’Entreprise ni ses prestataires de services n’assument de responsabilité ou d’obligation à l’égard du Service Utilisateur Final, de tout Compte Connecté, ou des conditions, politiques, actes ou omissions de leurs fournisseurs respectifs.",
     "paragraph3": "Vous déclarez et garantissez que vous disposez de tous les droits et consentements nécessaires pour vous connecter à chaque Compte Connecté et y accéder via ces fonctionnalités, y compris le droit de fournir à l’Entreprise et à ses prestataires de services vos identifiants de connexion, adresses de portefeuilles et/ou toute information de compte ou donnée personnelle relative à chaque Compte Connecté. Par la présente, vous autorisez l’Entreprise et ses prestataires de services à transmettre des instructions, ainsi que des informations, données et autres contenus, entre le Service Utilisateur Final et chaque Compte Connecté. Vous reconnaissez et acceptez que l’Entreprise et ses prestataires de services n’assument aucune responsabilité quant à l’exécution de ces instructions ni quant à ces contenus (y compris leur exactitude, leur actualité ou leur exhaustivité).",
     "paragraph4": "Vous reconnaissez avoir lu la politique de confidentialité de l’Entreprise, disponible à l’adresse suivante : <2>https://meshconnect.com/privacy-policy</2>, et acceptez qu’en utilisant l’Outil, vous consentez à l’utilisation de vos informations personnelles par l’Entreprise, conformément aux modalités définies dans ladite politique de confidentialité.",
     "paragraph5": "L’Outil est mis à disposition sur une base « TEL QUEL » et « TEL QUE DISPONIBLE », avec tous ses défauts et sans aucune garantie ni déclaration de quelque nature que ce soit.\nL’Entreprise ne formule aucune garantie, expresse ou implicite, concernant l’Outil, y compris, sans s’y limiter, les garanties de qualité marchande, d’adéquation à un usage particulier ou de non-contrefaçon.",
@@ -1163,6 +1172,15 @@
     "paragraph8": "L’Entreprise peut modifier ces conditions à tout moment. Le fait de continuer à utiliser toute fonctionnalité activée par l’Outil après de telles modifications constitue votre acceptation des conditions mises à jour.",
     "paragraph9": "Ces conditions sont régies par les lois de l’État du Delaware, à l’exclusion de ses règles de conflit de lois. Sauf en cas de litiges relevant d’un tribunal des petites créances, tout différend découlant de ces conditions ou lié à celles-ci — ou à tout aspect de la relation entre vous et l’Entreprise — qu’il soit fondé sur un contrat, un délit, une loi, une fraude, une fausse déclaration ou toute autre théorie juridique, sera résolu par un arbitrage définitif et contraignant devant un arbitre neutre, et non devant un tribunal, un juge ou un jury.\nVous acceptez que vous et l’Entreprise renonciez chacun expressément au droit à un procès devant jury. Ces différends incluent, sans s’y limiter, ceux relatifs à l’interprétation ou à l’application de la présente clause d’arbitrage, y compris son applicabilité, sa révocabilité ou sa validité, en tout ou en partie. Toutes ces questions seront tranchées par l’arbitre, et non par un tribunal ou un juge. Vous acceptez que tout arbitrage en vertu de ces conditions se déroule sur une base individuelle : les arbitrages collectifs et les recours collectifs sont interdits, et vous renoncez à toute possibilité d’y participer.",
     "title": "Conditions générales d’utilisation de {{shortName}} pour l’utilisateur final <2></2>"
+  },
+  "topupNeeded": {
+    "cancel": "Annuler",
+    "currentBalance": "Solde actuel",
+    "disclaimer": "Si vous ne terminez pas le paiement, votre solde de {{symbol}} restera dans votre compte {{integrationName}}.",
+    "previewTopup": "Aperçu de la recharge",
+    "required": "Requis",
+    "subtitle": "Votre solde d'achat de {{symbol}} est inférieur à celui attendu en raison des fluctuations de prix et/ou de gaz.",
+    "title": "Rechargement nécessaire"
   },
   "transferAmountPage": {
     "buttonTitle": {
@@ -1214,11 +1232,6 @@
     "return": "Revenez ici et cliquez ci-dessous pour continuer votre transfert.",
     "title": "Approuver le retrait"
   },
-  "transferInsufficientBalancePage": {
-    "title": "Solde insuffisant",
-    "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
-    "transferBody": "Votre solde est insuffisant pour effectuer ce transfert."
-  },
   "transferErrorPage": {
     "defaultError": "Une erreur inconnue s'est produite. Veuillez cliquer ci-dessous pour démarrer une nouvelle session de transfert."
   },
@@ -1242,6 +1255,11 @@
     "returnContinue": "Revenez ici pour continuer à lier votre compte.",
     "scanQR": "Scannez le code QR pour effectuer la vérification faciale et confirmer que vous êtes bien à l’origine de la demande de transfert de fonds.",
     "title": "Vérification"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
+    "title": "Solde insuffisant",
+    "transferBody": "Votre solde est insuffisant pour effectuer ce transfert."
   },
   "transferMfaPage": {
     "title": "Vérification",

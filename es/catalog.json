@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Cambiar Fiat/Cripto"
   },
-  "topupNeeded": {
-    "title": "Recarga necesaria",
-    "subtitle": "Tu saldo comprado de {{symbol}} es menor de lo esperado debido a fluctuaciones de precio y/o de gas.",
-    "currentBalance": "Saldo actual",
-    "required": "Requerido",
-    "disclaimer": "Si no completas el pago, tu saldo en {{symbol}} permanecerá en tu cuenta de {{integrationName}}.",
-    "previewTopup": "Vista previa de recarga",
-    "cancel": "Cancelar"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "La cantidad debe estar dentro de {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "El importe debe estar dentro de USD $21 - $15,000",
@@ -139,6 +130,7 @@
   "common": {
     "availableForTransfer": "Disponible",
     "cancel": "Cancelar",
+    "chooseDifferentAccount": "Elige una cuenta diferente",
     "closeCap": "Cerrar",
     "codeNotCorrent": "El código proporcionado no es correcto.",
     "connectAnotherAccount": "Conectar otra cuenta",
@@ -155,17 +147,16 @@
     "submitCap": "Enviar",
     "successTitle": "¡Éxito!",
     "termsOfUse": "Al continuar, aceptas los <2>términos de uso</2>",
-    "tryAgain": "Inténtalo de nuevo",
-    "chooseDifferentAccount": "Elige una cuenta diferente"
+    "tryAgain": "Inténtalo de nuevo"
   },
   "commonContent": {
     "connecting": "Conectando...",
     "description": "facilitará la conexión segura con {{integrationName}}.",
     "monitoring": "Esperando la aprobación...",
     "resend": "Reenviar solicitud de conexión",
+    "takingLongerTitle": "¿Todavía ahí?… Revise su wallet y apruebe la solicitud para continuar.",
     "title": "Aprueba la solicitud de conexión<1></1> en la cartera",
-    "title40": "Aprueba la solicitud de conexión en tu<1></1> aplicación de {{walletName}}.",
-    "takingLongerTitle": "¿Todavía ahí?… Revise su wallet y apruebe la solicitud para continuar."
+    "title40": "Aprueba la solicitud de conexión en tu<1></1> aplicación de {{walletName}}."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Sigue las instrucciones de tu computadora para conectar tu {{selectedIntegrationName}}",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "Cambiar moneda"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Parece que denegaste la solicitud de conexión o que una solicitud anterior todavía está activa. Si fue un error, inténtalo de nuevo.",
+    "chooseDifferentAccount": "Elige una cuenta diferente",
+    "title": "¡Ups!"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Por favor revisa tu wallet y aprueba la solicitud de conexión.",
+    "chooseDifferentAccount": "Elige una cuenta diferente",
+    "title": "No recibimos una respuesta a tiempo"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Rechazaste la solicitud para conectar tu cartera, o una solicitud anterior sigue activa.",
@@ -227,16 +228,6 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} no está instalado en este dispositivo. Por favor, instale la aplicación {{integrationName}} o conecte otra cartera.",
     "title": "La conexión no está disponible"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "Por favor revisa tu wallet y aprueba la solicitud de conexión.",
-    "title": "No recibimos una respuesta a tiempo",
-    "chooseDifferentAccount": "Elige una cuenta diferente"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "Parece que denegaste la solicitud de conexión o que una solicitud anterior todavía está activa. Si fue un error, inténtalo de nuevo.",
-    "title": "¡Ups!",
-    "chooseDifferentAccount": "Elige una cuenta diferente"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Esperando la confirmación en la aplicación móvil",
@@ -335,15 +326,22 @@
     "warningTitle": "Lee todo el mensaje antes de continuar."
   },
   "errorHeadlines": {
+    "accountNotFound": "Cuenta no encontrada",
     "accountTypeNotSupported": "Tipo de cuenta no soportada",
+    "addressAllowlistPending": "Lista blanca de direcciones pendiente",
+    "addressNotAllowlisted": "Dirección no permitida en la lista blanca",
     "amountBelowMinimum": "Cantidad demasiado baja",
     "amountExceedsMaximum": "Cantidad demasiado alta",
+    "authenticationFailed": "Autenticación fallida",
     "badRequest": "Solicitud inválida",
     "balanceNotEnough": "Saldo insuficiente",
+    "belowMinimumFiatDeposit": "Depósito Fiat por debajo del mínimo",
     "binanceTravelRuleRestriction": "Restricción de la Norma de Viaje",
+    "coinbaseTravelRuleRestriction": "Restricción de la Norma de Viaje",
     "coinbaseUnavailable": "Coinbase no disponible",
     "configurationMismatch": "Error de configuración",
     "emptyWalletBalance": "Wallet vacía",
+    "exceedsApplicationLimit": "Supera el límite de la aplicación",
     "expiredSmartDeposit": "Depósito inteligente expirado",
     "failedToGetFundingOptions": "Error en opciones de financiación",
     "failedToSaveFundingOptions": "Guardado fallido",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "Retiro no soportado",
     "integrationError": "Error de integración",
     "integrationNotAvailable": "Integración no disponible",
+    "invalidCredentials": "Credenciales inválidas",
     "invalidField": "Información inválida",
     "invalidFromIntegrationToken": "Token de origen inválido",
     "invalidIntegrationToken": "Inicio de sesión caducado",
     "invalidToIntegrationToken": "Token de destino inválido",
     "kycRequired": "Se requiere KYC",
     "locked": "Cuenta bloqueada",
+    "mfaNotSupported": "La MFA no es compatible",
     "missingField": "Información faltante",
     "networkDisabled": "Red deshabilitada",
     "networkUnsupported": "Red no soportada",
@@ -372,7 +372,10 @@
     "permissionDenied": "Acceso denegado",
     "previewExpired": "Vista previa expirada",
     "refusedByIntegration": "Transferencia rechazada",
+    "reLogInFaceRecognitionDueToScamRisk": "Intentar de nuevo",
     "satoshiTestRequired": "Límite de cantidad excedido",
+    "selfTransferNotAllowed": "Transferencia automática no permitida",
+    "sendAccessDisabled": "Acceso para enviar deshabilitado",
     "serverFailure": "Error del servidor",
     "symbolNotSupported": "Símbolo no soportado",
     "symbolNotSupportedBySource": "Fuente no soportada",
@@ -382,14 +385,11 @@
     "toAccountNotSupported": "Depósito no soportado",
     "tooManyRequests": "Demasiadas solicitudes",
     "transferAlreadyRequested": "La transferencia ya fue solicitada",
-    "twoFaFailed": "Código 2FA no válido",
-    "unauthorizedToken": "Token no autorizado",
-    "coinbaseTravelRuleRestriction": "Restricción de la Norma de Viaje",
-    "withdrawalLocked": "Retiros bloqueados",
-    "selfTransferNotAllowed": "Transferencia automática no permitida",
-    "sendAccessDisabled": "Acceso para enviar deshabilitado",
     "tryAgainAfterLogin": "Inicio de sesión requerido",
+    "twoFaFailed": "Código 2FA no válido",
     "unableToSend": "Transferencia fallida",
+    "unableToSendContactSupport": "Retiros deshabilitados",
+    "unauthorizedToken": "Token no autorizado",
     "userInfoUnavailable": "Información del usuario no disponible",
     "webWithdrawalLimitExceeded": "Límite de retiro excedido",
     "whitelistAddressRequired": "Se requiere lista blanca de direcciones",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "Retiros deshabilitados temporalmente",
     "withdrawalDisabledDueToSecurityReset": "Retiros deshabilitados temporalmente",
     "withdrawalDisabledDueToSuspiciousActivity": "Retiros deshabilitados temporalmente",
-    "withdrawalPendingDepositConfirmation": "Retiro pendiente de confirmación",
-    "accountNotFound": "Cuenta no encontrada",
-    "addressNotAllowlisted": "Dirección no permitida en la lista blanca",
-    "addressAllowlistPending": "Lista blanca de direcciones pendiente",
-    "authenticationFailed": "Autenticación fallida",
-    "belowMinimumFiatDeposit": "Depósito Fiat por debajo del mínimo",
-    "exceedsApplicationLimit": "Supera el límite de la aplicación",
-    "invalidCredentials": "Credenciales inválidas",
-    "mfaNotSupported": "La MFA no es compatible",
+    "withdrawalLocked": "Retiros bloqueados",
     "withdrawalLockedP2P": "Retiros deshabilitados",
-    "unableToSendContactSupport": "Retiros deshabilitados",
-    "reLogInFaceRecognitionDueToScamRisk": "Intentar de nuevo"
+    "withdrawalPendingDepositConfirmation": "Retiro pendiente de confirmación"
   },
   "errorMessages": {
+    "accountNotFound": "No se puede recuperar su(s) cuenta(s).",
+    "addressAllowlistPending": "Esta dirección de destinatario se ha añadido a su Lista de Permitidos y está pendiente de retención.",
+    "addressNotAllowlisted": "No se puede iniciar el retiro de Coinbase. Debe agregar esta dirección de destinatario a su Lista de Permitidos aquí: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
     "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
+    "authenticationFailed": "No se puede autenticar con la integración seleccionada.",
     "balanceNotEnough": "Saldo insuficiente.",
+    "belowMinimumFiatDeposit": "La cantidad está por debajo del límite mínimo de depósito fiat.",
     "binanceTravelRuleRestriction": "Binance actualmente no admite transferencias desde tu país.",
     "binanceTravelRuleRestrictionDeposit": "Binance actualmente no admite depósitos desde tu país.",
     "binanceTravelRuleRestrictionOnramp": "Binance actualmente no admite compras desde tu país.",
     "binanceTravelRuleRestrictionPayment": "Binance no admite actualmente los pagos desde tu país.",
+    "coinbaseTravelRuleRestriction": "Coinbase actualmente no admite transferencias desde tu país.",
+    "coinbaseTravelRuleRestrictionDeposit": "Coinbase actualmente no admite depósitos desde tu país.",
+    "coinbaseTravelRuleRestrictionOnramp": "Coinbase actualmente no admite compras desde tu país.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase no admite actualmente los pagos desde tu país.",
     "coinbaseUnavailable": "Coinbase tuvo un error. Vaya a verificar su cuenta de CB para ver si la transferencia se realizó.",
+    "configurationMismatch": "No se puede iniciar la transferencia. La configuración de la cuenta no coincide con la transferencia solicitada.",
     "default": "Ha ocurrido un error.",
     "emptyWalletBalance": "El saldo de tu cartera de origen está vacío.",
+    "exceedsApplicationLimit": "La cantidad de transferencia supera el límite de la aplicación.",
+    "expiredSmartDeposit": "El depósito inteligente ha expirado. El contrato inteligente ha sido desalocado.",
     "failedToGetFundingOptions": "No se pudo obtener las opciones de fondeo",
     "failedToSaveFundingOptions": "No se pudo guardar las opciones de fondeo",
     "feeAssetBalanceNotEnough": "Fondos insuficientes para los costos de transferencia.",
     "fromAccountNotSupported": "La cuenta actualmente no admite retiros de criptomonedas.",
     "integrationNotAvailable": "La integración no está disponible.",
+    "invalidCredentials": "Las credenciales proporcionadas son inválidas. Por favor inténtelo de nuevo.",
+    "invalidFromIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
+    "invalidIntegrationToken": "Por favor, inicie sesión nuevamente para continuar.",
+    "invalidToIntegrationToken": "No se puede identificar el destino.",
     "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación de identidad personal antes de habilitar transferencias de criptomonedas.",
     "locked": "Su cuenta está bloqueada",
+    "mfaNotSupported": "La autenticación multifactor no está soportada para esta operación.",
     "networkDisabled": "La red está actualmente deshabilitada y no se puede usar.",
+    "noAvailableSmartContract": "No hay contrato inteligente disponible",
+    "notAuthorizedFromIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
+    "notAuthorizedToIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
     "passKeyNotSupported": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como un 2FA adicional e intenta de nuevo la transferencia.",
     "passKeyNotSupportedDeposit": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como un 2FA adicional e intenta de nuevo el depósito.",
     "passKeyNotSupportedOnramp": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como un 2FA adicional e intenta de nuevo la compra.",
     "passKeyNotSupportedPayment": "Desafortunadamente, Passkey 2FA no es compatible actualmente. Por favor, añada Google Authenticator como un 2FA adicional y vuelva a intentar el pago.",
     "previewExpired": "La vista previa ha expirado.",
+    "refusedByIntegration": "No se puede iniciar la transferencia. La integración ha rechazado la solicitud.",
+    "reLogInFaceRecognitionDueToScamRisk": "Por su seguridad, por favor, vuelva a iniciar sesión y complete el reconocimiento facial.",
     "satoshiTestRequired": "Coinbase no admite transferencias superiores a 1000 euros. Intente nuevamente con un monto menor.",
+    "selfTransferNotAllowed": "No puedes enviar transferencias de una cuenta a sí misma.",
+    "sendAccessDisabled": "No se puede iniciar retiro ya que el acceso de envío ha sido desactivado para esta cuenta.",
     "symbolNotSupported": "El símbolo no es compatible con la integración.",
     "symbolNotSupportedBySource": "El símbolo para transferir no es compatible con la cartera de origen en la red solicitada.",
     "symbolNotSupportedByTarget": "No se pudo encontrar la dirección de depósito para la moneda solicitada.",
     "toAccountNotSupported": "La cuenta de destino no admite actualmente depósitos de criptomonedas.",
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
     "transferAlreadyRequested": "La transferencia ya fue solicitada.",
-    "twoFaFailed": "La validación de dos factores falló. Por favor, inténtalo de nuevo.",
-    "coinbaseTravelRuleRestriction": "Coinbase actualmente no admite transferencias desde tu país.",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase actualmente no admite depósitos desde tu país.",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase actualmente no admite compras desde tu país.",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase no admite actualmente los pagos desde tu país.",
-    "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde.",
-    "accountNotFound": "No se puede recuperar su(s) cuenta(s).",
-    "addressNotAllowlisted": "No se puede iniciar el retiro de Coinbase. Debe agregar esta dirección de destinatario a su Lista de Permitidos aquí: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Esta dirección de destinatario se ha añadido a su Lista de Permitidos y está pendiente de retención.",
-    "authenticationFailed": "No se puede autenticar con la integración seleccionada.",
-    "belowMinimumFiatDeposit": "La cantidad está por debajo del límite mínimo de depósito fiat.",
-    "exceedsApplicationLimit": "La cantidad de transferencia supera el límite de la aplicación.",
-    "invalidCredentials": "Las credenciales proporcionadas son inválidas. Por favor inténtelo de nuevo.",
-    "mfaNotSupported": "La autenticación multifactor no está soportada para esta operación.",
-    "selfTransferNotAllowed": "No puedes enviar transferencias de una cuenta a sí misma.",
-    "sendAccessDisabled": "No se puede iniciar retiro ya que el acceso de envío ha sido desactivado para esta cuenta.",
     "tryAgainAfterLogin": "Por favor, inténtelo de nuevo después de iniciar sesión.",
+    "twoFaFailed": "La validación de dos factores falló. Por favor, inténtalo de nuevo.",
     "unableToSend": "No se puede enviar la transferencia. Por favor, inténtelo de nuevo.",
+    "unableToSendContactSupport": "Actualmente no puede enviar criptomonedas. Por favor, contacte con el soporte de Coinbase.",
     "userInfoUnavailable": "No se puede obtener la información del usuario. Por favor, inténtelo de nuevo.",
     "webWithdrawalLimitExceeded": "Ha superado el límite máximo diario de retiro para Binance.",
     "whitelistAddressRequired": "La dirección de destino debe estar en la lista blanca.",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "Su retiro ha sido identificado como de alto riesgo. Para mantener sus fondos seguros, los retiros de su cuenta están temporalmente deshabilitados por 1 hora.",
     "withdrawalDisabledDueToSecurityReset": "La función de retiro de su cuenta ha sido temporalmente deshabilitada debido a un reinicio reciente de verificación de seguridad.",
     "withdrawalDisabledDueToSuspiciousActivity": "Su función de retiro ha sido deshabilitada debido a actividad sospechosa. Por favor, complete el proceso de verificación en Binance. Si no puede verificar, contacte a Soporte al Cliente. Si recientemente completó la verificación, por favor espere un momento e inténtelo de nuevo.",
-    "withdrawalPendingDepositConfirmation": "Su depósito no ha cumplido con las confirmaciones de desbloqueo requeridas para el retiro. Por favor, chequee el Historial de Transacciones para más detalles.",
-    "invalidFromIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
-    "invalidIntegrationToken": "Por favor, inicie sesión nuevamente para continuar.",
-    "invalidToIntegrationToken": "No se puede identificar el destino.",
-    "notAuthorizedFromIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
-    "notAuthorizedToIntegrationToken": "No se puede iniciar la transferencia. El token utilizado para autenticar esta cuenta no está autorizado para realizar esta acción.",
-    "configurationMismatch": "No se puede iniciar la transferencia. La configuración de la cuenta no coincide con la transferencia solicitada.",
-    "refusedByIntegration": "No se puede iniciar la transferencia. La integración ha rechazado la solicitud.",
-    "noAvailableSmartContract": "No hay contrato inteligente disponible",
-    "expiredSmartDeposit": "El depósito inteligente ha expirado. El contrato inteligente ha sido desalocado.",
+    "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde.",
     "withdrawalLockedP2P": "Por su seguridad, los retiros están deshabilitados durante 24 horas después de una compra P2P. Por favor, inténtelo de nuevo más tarde.",
-    "unableToSendContactSupport": "Actualmente no puede enviar criptomonedas. Por favor, contacte con el soporte de Coinbase.",
-    "reLogInFaceRecognitionDueToScamRisk": "Por su seguridad, por favor, vuelva a iniciar sesión y complete el reconocimiento facial."
+    "withdrawalPendingDepositConfirmation": "Su depósito no ha cumplido con las confirmaciones de desbloqueo requeridas para el retiro. Por favor, chequee el Historial de Transacciones para más detalles."
   },
   "errorPage": {
     "title": "Ha ocurrido un error."
@@ -576,6 +567,7 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -619,6 +611,23 @@
     "selectOtherHoldings": "Seleccionar otros recursos",
     "symbolBalance": "Saldo {{symbol}}",
     "title": "Formas de pago"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Aprobar el pago",
@@ -1055,13 +1064,13 @@
     "to": "A",
     "total": "Total",
     "transferDeclined": "Transferencia rechazada",
-    "transferDeclinedBody": "Has rechazado la solicitud de transferencia en tu cartera.",
-    "transferTitle": "Vista previa de la transferencia",
-    "youMayReceiveLess": "Puedes recibir menos debido la volatilidad de {{symbol}}.",
     "transferDeclined40": "Solicitud denegada",
+    "transferDeclinedBody": "Has rechazado la solicitud de transferencia en tu cartera.",
     "transferDeclinedBody40": "Parece que negaste la transacción. Si fue un error, intentalo de nuevo y aprueba la solicitud en tu wallet",
     "transferTimeout": "No recibimos una respuesta a tiempo",
-    "transferTimeoutBody": "Por favor, inténtelo de nuevo y apruebe la solicitud de la transacción."
+    "transferTimeoutBody": "Por favor, inténtelo de nuevo y apruebe la solicitud de la transacción.",
+    "transferTitle": "Vista previa de la transferencia",
+    "youMayReceiveLess": "Puedes recibir menos debido la volatilidad de {{symbol}}."
   },
   "privacyComponent": {
     "content": "Tus datos se mantienen privados y cifrados en todo momento."
@@ -1164,6 +1173,15 @@
     "paragraph9": "Estos términos se regirán por las leyes del Estado de Delaware, excluyendo su elección de principios de ley. Excepto por disputas que reúnan los requisitos para un tribunal de demandas pequeñas, todas las disputas que surjan o estén relacionadas con estos términos o cualquier aspecto de la relación entre usted y la empresa, si se basa en contrato, agravio, estatua, fraude, tergiversación o cualquier otra teoría legal, será resuelto mediante arbitraje final y vinculante ante un arbitrador neutral en lugar de ante un tribunal por un juez o jurado, y usted acepta que la Compañía y usted están renunciando al derecho de juicio por un jurado. Tales disputas incluyen, sin limitación, disputas que surgen de o relacionadas con la interpretación o aplicación de esta disposición de arbitraje, incluyendo la vigencia, revocabilidad o validez de la disposición de arbitraje o de cualquier parte de la disposición de arbitraje. Todas estas cuestiones serán decididas por un árbitro y no por un tribunal o juez. Usted acepta que cualquier arbitraje bajo estas condiciones tendrá lugar de forma individual; los arbitrajes de clase y las acciones de clase no están permitidos, y usted está aceptando renunciar a la capacidad de participar en una acción de clase.",
     "title": "Términos y Condiciones del usuario final de {{shortName}}<2></2>"
   },
+  "topupNeeded": {
+    "cancel": "Cancelar",
+    "currentBalance": "Saldo actual",
+    "disclaimer": "Si no completas el pago, tu saldo en {{symbol}} permanecerá en tu cuenta de {{integrationName}}.",
+    "previewTopup": "Vista previa de recarga",
+    "required": "Requerido",
+    "subtitle": "Tu saldo comprado de {{symbol}} es menor de lo esperado debido a fluctuaciones de precio y/o de gas.",
+    "title": "Recarga necesaria"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Vista previa del depósito",
@@ -1214,11 +1232,6 @@
     "return": "Vuelve aquí y haz clic abajo para continuar con la transferencia.",
     "title": "Aprobar el retiro"
   },
-  "transferInsufficientBalancePage": {
-    "title": "Saldo insuficiente",
-    "paymentBody": "Tu saldo es demasiado bajo para completar esta compra.",
-    "transferBody": "Tu saldo es demasiado bajo para completar esta transferencia."
-  },
   "transferErrorPage": {
     "defaultError": "Se produjo un error desconocido. Por favor, haga clic a continuación para iniciar una nueva sesión de transferencia."
   },
@@ -1242,6 +1255,11 @@
     "returnContinue": "Regresa aquí para continuar vinculando tu cuenta.",
     "scanQR": "Escanea el código QR para completar la verificación de cara y confirma tu identidad.",
     "title": "Verificación"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "Tu saldo es demasiado bajo para completar esta compra.",
+    "title": "Saldo insuficiente",
+    "transferBody": "Tu saldo es demasiado bajo para completar esta transferencia."
   },
   "transferMfaPage": {
     "title": "Verificación",

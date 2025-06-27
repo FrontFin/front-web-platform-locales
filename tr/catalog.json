@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Fiat/Kripto değiştir"
   },
-  "topupNeeded": {
-    "title": "Yükleme gerekli",
-    "subtitle": "Satın alınan {{symbol}} bakiyeniz, fiyat ve/veya gaz dalgalanmaları nedeniyle beklenenden daha düşük.",
-    "currentBalance": "Mevcut bakiye",
-    "required": "Gerekli",
-    "disclaimer": "Eğer ödemeyi tamamlamazsanız, {{symbol}} bakiyeniz {{integrationName}} hesabınızda kalacak.",
-    "previewTopup": "Ön izleme yüklemesi",
-    "cancel": "İptal"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Miktar {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} arasında olmalıdır",
     "amountMustBeWithinErrorMessage": "Tutar $21 - $15,000 ABD Doları arasında olmalıdır",
@@ -139,6 +130,7 @@
   "common": {
     "availableForTransfer": "Kullanılabilir",
     "cancel": "İptal",
+    "chooseDifferentAccount": "Farklı bir hesap seçin",
     "closeCap": "Kapat",
     "codeNotCorrent": "Verilen kod doğru değil.",
     "connectAnotherAccount": "Başka bir hesap bağlayın",
@@ -155,17 +147,16 @@
     "submitCap": "Gönder",
     "successTitle": "Başarılı!",
     "termsOfUse": "Devam ederek <1>kullanım şartlarını</1> kabul ediyorsunuz",
-    "tryAgain": "Tekrar deneyin",
-    "chooseDifferentAccount": "Farklı bir hesap seçin"
+    "tryAgain": "Tekrar deneyin"
   },
   "commonContent": {
     "connecting": "Bağlanıyor...",
     "description": "{{integrationName}} ile güvenli bağlantıyı kolaylaştıracaktır.",
     "monitoring": "Onay bekleniyor...",
     "resend": "Bağlantı isteğini yeniden gönder",
+    "takingLongerTitle": "Hala orada mısınız?… Devam etmek için cüzdanınızı kontrol edin ve isteği onaylayın.",
     "title": "Bağlantı isteğini cüzdanınızda onaylayın<1></1>",
-    "title40": "<1></1> {{walletName}} uygulamanızda bağlantı isteğini onaylayın.",
-    "takingLongerTitle": "Hala orada mısınız?… Devam etmek için cüzdanınızı kontrol edin ve isteği onaylayın."
+    "title40": "<1></1> {{walletName}} uygulamanızda bağlantı isteğini onaylayın."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "{{selectedIntegrationName}} bağlamak için masaüstünüzdeki talimatları izleyin",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "Para birimini değiştir"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Bağlantı isteğini reddetmiş gibi görünüyorsunuz veya önceki bir istek hâlâ aktif. Bu bir hataydıysa, tekrar deneyin.",
+    "chooseDifferentAccount": "Farklı bir hesap seçin",
+    "title": "Hata!"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Lütfen cüzdanınızı kontrol edin ve bağlantı isteğini onaylayın.",
+    "chooseDifferentAccount": "Farklı bir hesap seçin",
+    "title": "Zamanında yanıt alamadık"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Cüzdanınızı bağlama isteğini reddettiniz veya önceki bir istek hala aktif durumda.",
@@ -227,16 +228,6 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "Bu cihazda {{integrationName}} yüklü değil. Lütfen {{integrationName}} uygulamasını yükleyin veya başka bir cüzdan bağlayın.",
     "title": "Bağlantı kullanılamıyor"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "Lütfen cüzdanınızı kontrol edin ve bağlantı isteğini onaylayın.",
-    "title": "Zamanında yanıt alamadık",
-    "chooseDifferentAccount": "Farklı bir hesap seçin"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "Bağlantı isteğini reddetmiş gibi görünüyorsunuz veya önceki bir istek hâlâ aktif. Bu bir hataydıysa, tekrar deneyin.",
-    "title": "Hata!",
-    "chooseDifferentAccount": "Farklı bir hesap seçin"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Mobil uygulamadan onay bekleniyor",
@@ -335,15 +326,22 @@
     "warningTitle": "Devam etmeden önce bu mesajın tamamını okuyun."
   },
   "errorHeadlines": {
+    "accountNotFound": "Hesap Bulunamadı",
     "accountTypeNotSupported": "Hesap türü desteklenmiyor",
+    "addressAllowlistPending": "Adres Beyaz Liste Onayı Bekliyor",
+    "addressNotAllowlisted": "Adres Beyaz Listede Değil",
     "amountBelowMinimum": "Tutar çok düşük",
     "amountExceedsMaximum": "Tutar çok yüksek",
+    "authenticationFailed": "Kimlik Doğrulama Başarısız",
     "badRequest": "Geçersiz istek",
     "balanceNotEnough": "Yetersiz bakiye",
+    "belowMinimumFiatDeposit": "Minimum Emir Para Yatırma Altında",
     "binanceTravelRuleRestriction": "Seyahat kuralı kısıtlaması",
+    "coinbaseTravelRuleRestriction": "Seyahat kuralı kısıtlaması",
     "coinbaseUnavailable": "Coinbase kullanılamıyor",
     "configurationMismatch": "Yapılandırma hatası",
     "emptyWalletBalance": "Boş cüzdan",
+    "exceedsApplicationLimit": "Uygulama Limiti Aşıldı",
     "expiredSmartDeposit": "Akıllı para yatırma süresi doldu",
     "failedToGetFundingOptions": "Fonlama seçenekleri hatası",
     "failedToSaveFundingOptions": "Kaydetme başarısız",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "Çekim desteklenmiyor",
     "integrationError": "Entegrasyon hatası",
     "integrationNotAvailable": "Entegrasyon kullanılamıyor",
+    "invalidCredentials": "Geçersiz Bilgiler",
     "invalidField": "Geçersiz bilgi",
     "invalidFromIntegrationToken": "Geçersiz kaynak tokeni",
     "invalidIntegrationToken": "Oturum Süresi Doldu",
     "invalidToIntegrationToken": "Geçersiz hedef tokeni",
     "kycRequired": "Kimlik doğrulaması gerekli",
     "locked": "Hesap kilitli",
+    "mfaNotSupported": "Çok Faktörlü Kimlik Doğrulama Desteklenmiyor",
     "missingField": "Bilgi eksikliği",
     "networkDisabled": "Ağ devre dışı",
     "networkUnsupported": "Ağ desteklenmiyor",
@@ -372,7 +372,10 @@
     "permissionDenied": "Erişim reddedildi",
     "previewExpired": "Ön izleme süresi doldu",
     "refusedByIntegration": "Transfer reddedildi",
+    "reLogInFaceRecognitionDueToScamRisk": "Tekrar deneyin",
     "satoshiTestRequired": "Tutar limiti aşıldı",
+    "selfTransferNotAllowed": "Kendi Kendine Transfer İzin Verilmiyor",
+    "sendAccessDisabled": "Erişim İzni Verme Devre Dışı Bırakıldı",
     "serverFailure": "Sunucu hatası",
     "symbolNotSupported": "Sembol desteklenmiyor",
     "symbolNotSupportedBySource": "Kaynak desteklenmiyor",
@@ -382,14 +385,11 @@
     "toAccountNotSupported": "Para yatırma desteklenmiyor",
     "tooManyRequests": "Çok fazla istek",
     "transferAlreadyRequested": "Transfer zaten talep edildi",
-    "twoFaFailed": "Geçersiz 2FA kodu",
-    "unauthorizedToken": "Yetkisiz token",
-    "coinbaseTravelRuleRestriction": "Seyahat kuralı kısıtlaması",
-    "withdrawalLocked": "Çekim kilitli",
-    "selfTransferNotAllowed": "Kendi Kendine Transfer İzin Verilmiyor",
-    "sendAccessDisabled": "Erişim İzni Verme Devre Dışı Bırakıldı",
     "tryAgainAfterLogin": "Oturum Açılması Gerekiyor",
+    "twoFaFailed": "Geçersiz 2FA kodu",
     "unableToSend": "Transfer Başarısız Oldu",
+    "unableToSendContactSupport": "Çekimler Devre Dışı Bırakıldı",
+    "unauthorizedToken": "Yetkisiz token",
     "userInfoUnavailable": "Kullanıcı Bilgisi Bulunamıyor",
     "webWithdrawalLimitExceeded": "Para Çekme Limiti Aşıldı",
     "whitelistAddressRequired": "Adres Beyaz Listeye Eklenmeli",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "Para Çekme Geçici Olarak Devre Dışı",
     "withdrawalDisabledDueToSecurityReset": "Para Çekme Geçici Olarak Devre Dışı",
     "withdrawalDisabledDueToSuspiciousActivity": "Para Çekme Geçici Olarak Devre Dışı",
-    "withdrawalPendingDepositConfirmation": "Para Çekme Onay Bekliyor",
-    "accountNotFound": "Hesap Bulunamadı",
-    "addressNotAllowlisted": "Adres Beyaz Listede Değil",
-    "addressAllowlistPending": "Adres Beyaz Liste Onayı Bekliyor",
-    "authenticationFailed": "Kimlik Doğrulama Başarısız",
-    "belowMinimumFiatDeposit": "Minimum Emir Para Yatırma Altında",
-    "exceedsApplicationLimit": "Uygulama Limiti Aşıldı",
-    "invalidCredentials": "Geçersiz Bilgiler",
-    "mfaNotSupported": "Çok Faktörlü Kimlik Doğrulama Desteklenmiyor",
+    "withdrawalLocked": "Çekim kilitli",
     "withdrawalLockedP2P": "Çekimler Devre Dışı Bırakıldı",
-    "unableToSendContactSupport": "Çekimler Devre Dışı Bırakıldı",
-    "reLogInFaceRecognitionDueToScamRisk": "Tekrar deneyin"
+    "withdrawalPendingDepositConfirmation": "Para Çekme Onay Bekliyor"
   },
   "errorMessages": {
+    "accountNotFound": "''''Hesabınızı alamadık.",
+    "addressAllowlistPending": "Bu alıcı adresiniz İzin Listenize eklendi ve işlem bekliyor.",
+    "addressNotAllowlisted": "Coinbase üzerinden çekim yapılamıyor. Bu alıcı adresini Buraya İzin Listesine eklemelisiniz: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
     "amountExceedsMaximum": "Talep edilen miktar, bu ağdaki maksimum izin verilen transfer miktarını aşıyor.",
+    "authenticationFailed": "Seçilen entegrasyon ile kimlik doğrulama başarısız oldu.",
     "balanceNotEnough": "Yeterli bakiye yok.",
+    "belowMinimumFiatDeposit": "Miktar bu ödeme yönteminin minimum para yatırma limitinin altında.",
     "binanceTravelRuleRestriction": "Binance şu anda ülkenizden transferleri desteklememektedir.",
     "binanceTravelRuleRestrictionDeposit": "Binance şu anda ülkenizden mevduat kabul etmemektedir.",
     "binanceTravelRuleRestrictionOnramp": "Binance şu anda ülkenizden alımları desteklememektedir.",
     "binanceTravelRuleRestrictionPayment": "Binance şu anda ülkenizden yapılan ödemeleri desteklememektedir.",
+    "coinbaseTravelRuleRestriction": "Coinbase şu anda ülkenizden transferleri desteklememektedir.",
+    "coinbaseTravelRuleRestrictionDeposit": "Coinbase şu anda ülkenizden mevduat kabul etmemektedir.",
+    "coinbaseTravelRuleRestrictionOnramp": "Coinbase şu anda ülkenizden alımları desteklememektedir.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase şu anda ülkenizden yapılan ödemeleri desteklememektedir.",
     "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
+    "configurationMismatch": "Transfer başlatılamıyor. Hesap yapılandırması istenen transfer ile eşleşmiyor.",
     "default": "Bir hata oluştu.",
     "emptyWalletBalance": "Kaynak cüzdan bakiyesi boş.",
+    "exceedsApplicationLimit": "Transfer miktarı uygulama limitini aşıyor.",
+    "expiredSmartDeposit": "Akıllı para yatırma süresi doldu. Akıllı sözleşme de düşürüldü.",
     "failedToGetFundingOptions": "Ödeme seçeneklerini alma başarısız oldu",
     "failedToSaveFundingOptions": "Ödeme seçeneklerini kaydetme başarısız oldu",
     "feeAssetBalanceNotEnough": "Transfer ücretleri için yetersiz bakiye.",
     "fromAccountNotSupported": "Hesap şu anda kripto çekimlerini desteklemiyor.",
     "integrationNotAvailable": "Entegrasyon şu anda mevcut değil.",
+    "invalidCredentials": "Geçersiz giriş bilgileri. Lütfen tekrar deneyin.",
+    "invalidFromIntegrationToken": "Transfer başlatılamıyor. Bu hesabı doğrulamak için kullanılan token, bu işlemi yapmak için yetkilendirilmemiş.",
+    "invalidIntegrationToken": "Devam etmek için lütfen tekrar oturum açın.",
+    "invalidToIntegrationToken": "Hedef belirlenemiyor.",
     "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektiriyor.",
     "locked": "Hesabınız kilitlendi.",
+    "mfaNotSupported": "Çok faktörlü kimlik doğrulama bu işlem için desteklenmiyor.",
     "networkDisabled": "Ağ şu anda devre dışı ve kullanılamaz durumda.",
+    "noAvailableSmartContract": "Akıllı Sözleşme Kullanılamıyor",
+    "notAuthorizedFromIntegrationToken": "Transfer başlatılamıyor. Bu hesabı doğrulamak için kullanılan token, bu işlemi yapmak için yetkilendirilmemiş.",
+    "notAuthorizedToIntegrationToken": "Transfer başlatılamıyor. Bu hesabı doğrulamak için kullanılan token, bu işlemi yapmak için yetkilendirilmemiş.",
     "passKeyNotSupported": "Maalesef, Passkey 2FA şu anda desteklenmemektedir. Lütfen Google Authenticator'ı ek bir 2FA olarak ekleyin ve yeniden transfer deneyin.",
     "passKeyNotSupportedDeposit": "Maalesef, Passkey 2FA şu anda desteklenmemektedir. Lütfen Google Authenticator'ı ek bir 2FA olarak ekleyin ve yeniden mevduat deneyin.",
     "passKeyNotSupportedOnramp": "Maalesef, Passkey 2FA şu anda desteklenmemektedir. Lütfen Google Authenticator'ı ek bir 2FA olarak ekleyin ve yeniden satın alma deneyin.",
     "passKeyNotSupportedPayment": "Maalesef, Geçiş Anahtarı 2FA şu anda desteklenmiyor. Lütfen ek bir 2FA olarak Google Authenticator ekleyin ve ödeme işlemini tekrar deneyin.",
     "previewExpired": "Önizleme süresi doldu.",
+    "refusedByIntegration": "Transfer başlatılamıyor. Entegrasyon talebi reddetti.",
+    "reLogInFaceRecognitionDueToScamRisk": "Güvenliğiniz için, lütfen tekrar giriş yapıp yüz tanımanın tamamlayın.",
     "satoshiTestRequired": "Coinbase, 1000 Euro üzerindeki transferleri desteklemiyor. Lütfen daha düşük bir miktarla tekrar deneyin.",
+    "selfTransferNotAllowed": "Bir hesaptan kendisine transfer gönderemezsiniz.",
+    "sendAccessDisabled": "Çekim yapılamıyor, çünkü bu hesap için gönderme erişimi devre dışı bırakılmış.",
     "symbolNotSupported": "Sembol, entegrasyon tarafından desteklenmiyor.",
     "symbolNotSupportedBySource": "Transfer edilecek sembol, kaynak cüzdan tarafından istenen ağ üzerinde desteklenmiyor.",
     "symbolNotSupportedByTarget": "İstenen coin için para yatırma adresi bulunamadı.",
     "toAccountNotSupported": "Hedef hesap şu anda kripto para yatırımlarını desteklemiyor.",
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",
-    "twoFaFailed": "İki faktörlü doğrulama başarısız oldu. Lütfen tekrar deneyin.",
-    "coinbaseTravelRuleRestriction": "Coinbase şu anda ülkenizden transferleri desteklememektedir.",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase şu anda ülkenizden mevduat kabul etmemektedir.",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase şu anda ülkenizden alımları desteklememektedir.",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase şu anda ülkenizden yapılan ödemeleri desteklememektedir.",
-    "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
-    "accountNotFound": "''''Hesabınızı alamadık.",
-    "addressNotAllowlisted": "Coinbase üzerinden çekim yapılamıyor. Bu alıcı adresini Buraya İzin Listesine eklemelisiniz: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Bu alıcı adresiniz İzin Listenize eklendi ve işlem bekliyor.",
-    "authenticationFailed": "Seçilen entegrasyon ile kimlik doğrulama başarısız oldu.",
-    "belowMinimumFiatDeposit": "Miktar bu ödeme yönteminin minimum para yatırma limitinin altında.",
-    "exceedsApplicationLimit": "Transfer miktarı uygulama limitini aşıyor.",
-    "invalidCredentials": "Geçersiz giriş bilgileri. Lütfen tekrar deneyin.",
-    "mfaNotSupported": "Çok faktörlü kimlik doğrulama bu işlem için desteklenmiyor.",
-    "selfTransferNotAllowed": "Bir hesaptan kendisine transfer gönderemezsiniz.",
-    "sendAccessDisabled": "Çekim yapılamıyor, çünkü bu hesap için gönderme erişimi devre dışı bırakılmış.",
     "tryAgainAfterLogin": "Giriş yaptıktan sonra lütfen tekrar deneyin.",
+    "twoFaFailed": "İki faktörlü doğrulama başarısız oldu. Lütfen tekrar deneyin.",
     "unableToSend": "Transfer gönderilemiyor. Lütfen tekrar deneyin.",
+    "unableToSendContactSupport": "Şu anda kripto gönderimi yapamıyorsunuz. Lütfen Coinbase destek ekibi ile iletişime geçin.",
     "userInfoUnavailable": "Kullanıcı bilgileri alınamıyor. Lütfen tekrar deneyin.",
     "webWithdrawalLimitExceeded": "Binance günlük maksimum çekim limitini aştınız.",
     "whitelistAddressRequired": "Hedef adres beyaz listede olmalı.",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "Çekiminiz yüksek risk taşıyor olarak tespit edildi. Fonlarınızı güvende tutmak için, hesabınızdaki çekimler 1 saat süreyle geçici olarak devre dışı bırakılmıştır.",
     "withdrawalDisabledDueToSecurityReset": "Hesabınızın çekim fonksiyonu yakın zamandaki güvenlik doğrulaması sıfırlaması nedeniyle geçici olarak devre dışı bırakıldı.",
     "withdrawalDisabledDueToSuspiciousActivity": "Şüpheli aktivite nedeniyle çekim fonksiyonunuz devre dışı bırakıldı. Lütfen Binance'de doğrulama sürecini tamamlayın. Eğer doğrulama yapamıyorsanız, Müşteri Desteği ile iletişime geçin. Yakın zamanda doğrulama yaptıysanız lütfen bir an bekleyin ve tekrar deneyin.",
-    "withdrawalPendingDepositConfirmation": "Yatırmanız, çekim için gerekli kilit açma onaylarını karşılamadı. Daha fazla ayrıntı için İşlem Geçmişini kontrol edin.",
-    "invalidFromIntegrationToken": "Transfer başlatılamıyor. Bu hesabı doğrulamak için kullanılan token, bu işlemi yapmak için yetkilendirilmemiş.",
-    "invalidIntegrationToken": "Devam etmek için lütfen tekrar oturum açın.",
-    "invalidToIntegrationToken": "Hedef belirlenemiyor.",
-    "notAuthorizedFromIntegrationToken": "Transfer başlatılamıyor. Bu hesabı doğrulamak için kullanılan token, bu işlemi yapmak için yetkilendirilmemiş.",
-    "notAuthorizedToIntegrationToken": "Transfer başlatılamıyor. Bu hesabı doğrulamak için kullanılan token, bu işlemi yapmak için yetkilendirilmemiş.",
-    "configurationMismatch": "Transfer başlatılamıyor. Hesap yapılandırması istenen transfer ile eşleşmiyor.",
-    "refusedByIntegration": "Transfer başlatılamıyor. Entegrasyon talebi reddetti.",
-    "noAvailableSmartContract": "Akıllı Sözleşme Kullanılamıyor",
-    "expiredSmartDeposit": "Akıllı para yatırma süresi doldu. Akıllı sözleşme de düşürüldü.",
+    "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
     "withdrawalLockedP2P": "Güvenliğiniz için, P2P alımının ardından 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
-    "unableToSendContactSupport": "Şu anda kripto gönderimi yapamıyorsunuz. Lütfen Coinbase destek ekibi ile iletişime geçin.",
-    "reLogInFaceRecognitionDueToScamRisk": "Güvenliğiniz için, lütfen tekrar giriş yapıp yüz tanımanın tamamlayın."
+    "withdrawalPendingDepositConfirmation": "Yatırmanız, çekim için gerekli kilit açma onaylarını karşılamadı. Daha fazla ayrıntı için İşlem Geçmişini kontrol edin."
   },
   "errorPage": {
     "title": "Bir hata oluştu."
@@ -619,6 +610,23 @@
     "selectOtherHoldings": "Diğer varlıklarınızdan seçim yapın",
     "symbolBalance": "{{symbol}} Bakiyesi",
     "title": "Ödeme yöntemleri"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Ödemeyi onayla",
@@ -1055,13 +1063,13 @@
     "to": "Alıcı",
     "total": "Toplam",
     "transferDeclined": "Transfer reddedildi",
-    "transferDeclinedBody": "Cüzdanınızdaki transfer isteğini reddettiniz.",
-    "transferTitle": "Transfer ön izlemesi",
-    "youMayReceiveLess": "{{symbol}} fiyat hareketinden dolayı daha az alabilirsiniz.",
     "transferDeclined40": "Talep reddedildi",
+    "transferDeclinedBody": "Cüzdanınızdaki transfer isteğini reddettiniz.",
     "transferDeclinedBody40": "Görünüşe göre işlemi reddettiniz. Eğer bu bir hataydıysa, tekrar deneyin ve isteği cüzdanınızda onaylayın",
     "transferTimeout": "Zamanında yanıt alamadık",
-    "transferTimeoutBody": "Lütfen tekrar deneyin ve işlem talebini onaylayın."
+    "transferTimeoutBody": "Lütfen tekrar deneyin ve işlem talebini onaylayın.",
+    "transferTitle": "Transfer ön izlemesi",
+    "youMayReceiveLess": "{{symbol}} fiyat hareketinden dolayı daha az alabilirsiniz."
   },
   "privacyComponent": {
     "content": "Verileriniz her zaman gizli ve şifrelenmiş olarak korunur."
@@ -1164,6 +1172,15 @@
     "paragraph9": "Bu koşullar, hukuk seçimi ilkeleri hariç olmak üzere, Delaware Eyaleti yasalarına tabi olacaktır. Küçük davalar mahkemesinde görülebilecek uyuşmazlıklar hariç olmak üzere, bu koşullardan veya sizinle Şirket arasındaki ilişkinin herhangi bir yönünden kaynaklanan ya da bunlarla ilgili tüm uyuşmazlıklar — sözleşme, haksız fiil, yasa, dolandırıcılık, yanlış beyan veya başka herhangi bir hukuki teoriye dayansa da — bir mahkemede hâkim veya jüri önünde değil, tarafsız bir hakem önünde nihai ve bağlayıcı tahkim yoluyla çözülecektir. Siz ve Şirket, jüri ile yargılanma hakkınızdan feragat ettiğinizi kabul edersiniz. Bu tür uyuşmazlıklar, tahkim hükmünün yorumlanması veya uygulanmasıyla ilgili olanlar da dahil olmak üzere (tahkim hükmünün uygulanabilirliği, geri alınabilirliği veya geçerliliği dahil) her türlü ihtilafı kapsar. Tüm bu konular yalnızca bir hakem tarafından karara bağlanacak, bir mahkeme ya da hâkim tarafından değil. Bu koşullara göre yapılacak herhangi bir tahkimin bireysel bazda gerçekleşeceğini kabul edersiniz; toplu tahkimler veya toplu davalar kabul edilmez ve siz de toplu davaya katılma hakkınızdan feragat ettiğinizi kabul etmiş olursunuz.",
     "title": "{{shortName}} Son Kullanıcı<2></2>Koşulları"
   },
+  "topupNeeded": {
+    "cancel": "İptal",
+    "currentBalance": "Mevcut bakiye",
+    "disclaimer": "Eğer ödemeyi tamamlamazsanız, {{symbol}} bakiyeniz {{integrationName}} hesabınızda kalacak.",
+    "previewTopup": "Ön izleme yüklemesi",
+    "required": "Gerekli",
+    "subtitle": "Satın alınan {{symbol}} bakiyeniz, fiyat ve/veya gaz dalgalanmaları nedeniyle beklenenden daha düşük.",
+    "title": "Yükleme gerekli"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Para yatırma ön izlemesi",
@@ -1214,11 +1231,6 @@
     "return": "Transfer işleminize devam etmek için buraya geri dönün ve aşağıya tıklayın.",
     "title": "Para çekmeyi onaylayın"
   },
-  "transferInsufficientBalancePage": {
-    "title": "Yetersiz bakiye",
-    "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
-    "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz."
-  },
   "transferErrorPage": {
     "defaultError": "Bilinmeyen bir hata oluştu. Yeni bir transfer oturumu başlatmak için aşağıya tıklayın."
   },
@@ -1242,6 +1254,11 @@
     "returnContinue": "Hesabınızı bağlamaya devam etmek için buraya geri dönün.",
     "scanQR": "Gerçekten sizin para transferi gerçekleştirmeye çalıştığınızı doğrulamak için QR kodunu tarayarak yüz doğrulamasını tamamlayın.",
     "title": "Doğrulama"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
+    "title": "Yetersiz bakiye",
+    "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz."
   },
   "transferMfaPage": {
     "title": "Doğrulama",

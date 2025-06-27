@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "फिएट/क्रिप्टो स्विच करें"
   },
-  "topupNeeded": {
-    "title": "रिचार्ज की आवश्यकता",
-    "subtitle": "आपकी खरीदी गई {{symbol}} शेष राशि अनुमान से कम है, जिसकी वजह कीमत और/या गैस में उतार-चढ़ाव हो सकते हैं।",
-    "currentBalance": "वर्तमान शेष राशि",
-    "required": "आवश्यक",
-    "disclaimer": "यदि आप भुगतान नहीं करते हैं, तो आपका {{symbol}} शेष आपके {{integrationName}} खाते में रहेगा।",
-    "previewTopup": "टॉप-अप पूर्वावलोकन",
-    "cancel": "रद्द करें"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "राशि {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} के भीतर होनी चाहिए",
     "amountMustBeWithinErrorMessage": "राशि USD $21 - $15,000 के भीतर होनी चाहिए",
@@ -139,6 +130,7 @@
   "common": {
     "availableForTransfer": "उपलब्ध",
     "cancel": "रद्द करें",
+    "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें",
     "closeCap": "बंद करें",
     "codeNotCorrent": "प्रदान किया गया कोड सही नहीं है।",
     "connectAnotherAccount": "अन्य खाता कनेक्ट करें",
@@ -155,17 +147,16 @@
     "submitCap": "जमा करें",
     "successTitle": "सफलता!",
     "termsOfUse": "जारी रखकर आप <2>प्रयोग की शर्तें</2> स्वीकार करते हैं",
-    "tryAgain": "पुनः प्रयास करें",
-    "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें"
+    "tryAgain": "पुनः प्रयास करें"
   },
   "commonContent": {
     "connecting": "कनेक्ट हो रहा है...",
     "description": "{{integrationName}} के साथ सुरक्षित कनेक्शन स्थापित करेगा।",
     "monitoring": "मंजूरी की प्रतीक्षा में...",
     "resend": "कनेक्शन अनुरोध पुनः भेजें",
+    "takingLongerTitle": "अब भी वहां हैं?… अपना बटुआ देखें और जारी रखने के लिए अनुरोध को स्वीकृति दें।",
     "title": "अपने वॉलेट में कनेक्शन<1></1> अनुरोध को स्वीकृति दें",
-    "title40": "अपने<1></1> {{walletName}} ऐप में कनेक्शन अनुरोध को स्वीकृति दें।",
-    "takingLongerTitle": "अब भी वहां हैं?… अपना बटुआ देखें और जारी रखने के लिए अनुरोध को स्वीकृति दें।"
+    "title40": "अपने<1></1> {{walletName}} ऐप में कनेक्शन अनुरोध को स्वीकृति दें।"
   },
   "connectExternalPageScreen": {
     "connectedTitle": "अपने {{selectedIntegrationName}} को कनेक्ट करने के लिए अपने डेस्कटॉप पर निर्देशों का पालन करें",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "मुद्रा बदलें"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "ऐसा लगता है कि आपने कनेक्शन अनुरोध को मना कर दिया है, या कोई पूर्व अनुरोध अभी भी सक्रिय है। अगर यह एक गलती थी, तो पुनः प्रयास करें।",
+    "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें",
+    "title": "अरे!"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "कृपया अपने बटुए की जाँच करें और कनेक्शन अनुरोध को स्वीकृति दें।",
+    "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें",
+    "title": "हमें समय पर प्रतिक्रिया नहीं मिली"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "आपने अपने वॉलेट को कनेक्ट करने के अनुरोध को अस्वीकार कर दिया है, या एक पिछला अनुरोध अभी भी सक्रिय है।",
@@ -227,16 +228,6 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} इस डिवाइस पर इंस्टॉल नहीं है। कृपया {{integrationName}} ऐप इंस्टॉल करें, या एक अन्य वॉलेट कनेक्ट करें।",
     "title": "कनेक्शन उपलब्ध नहीं है"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "कृपया अपने बटुए की जाँच करें और कनेक्शन अनुरोध को स्वीकृति दें।",
-    "title": "हमें समय पर प्रतिक्रिया नहीं मिली",
-    "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "ऐसा लगता है कि आपने कनेक्शन अनुरोध को मना कर दिया है, या कोई पूर्व अनुरोध अभी भी सक्रिय है। अगर यह एक गलती थी, तो पुनः प्रयास करें।",
-    "title": "अरे!",
-    "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "मोबाइल ऐप से पुष्टि की प्रतीक्षा की जा रही है",
@@ -335,15 +326,22 @@
     "warningTitle": "आगे बढ़ने से पहले इस पूरे संदेश को पढ़ें।"
   },
   "errorHeadlines": {
+    "accountNotFound": "खाता नहीं मिला",
     "accountTypeNotSupported": "खाता प्रकार समर्थित नहीं है",
+    "addressAllowlistPending": "पते की स्वीकृति सूची लंबित है",
+    "addressNotAllowlisted": "पता अनुमत सूची में नहीं है",
     "amountBelowMinimum": "राशि बहुत कम है",
     "amountExceedsMaximum": "राशि बहुत अधिक है",
+    "authenticationFailed": "प्रमाणीकरण असफल",
     "badRequest": "अवैध अनुरोध",
     "balanceNotEnough": "अपर्याप्त धनराशि",
+    "belowMinimumFiatDeposit": "न्यूनतम फिएट डिपॉजिट से कम",
     "binanceTravelRuleRestriction": "यात्रा नियम प्रतिबंध",
+    "coinbaseTravelRuleRestriction": "यात्रा नियम प्रतिबंध",
     "coinbaseUnavailable": "Coinbase उपलब्ध नहीं है",
     "configurationMismatch": "कॉन्फ़िगरेशन त्रुटि",
     "emptyWalletBalance": "खाली वॉलेट",
+    "exceedsApplicationLimit": "आवेदन सीमा से अधिक",
     "expiredSmartDeposit": "स्मार्ट जमा की अवधि समाप्त हो गई",
     "failedToGetFundingOptions": "फंडिंग विकल्प त्रुटि",
     "failedToSaveFundingOptions": "सेव असफल हुआ",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "निकासी समर्थित नहीं है",
     "integrationError": "एकीकरण त्रुटि",
     "integrationNotAvailable": "एकीकरण उपलब्ध नहीं है",
+    "invalidCredentials": "अमान्य क्रेडेंशियल्स",
     "invalidField": "अमान्य जानकारी",
     "invalidFromIntegrationToken": "अमान्य स्रोत टोकन",
     "invalidIntegrationToken": "लॉगिन की अवधि समाप्त हुई",
     "invalidToIntegrationToken": "अमान्य गंतव्य टोकन",
     "kycRequired": "के वाई सी आवश्यक",
     "locked": "खाता लॉक किया गया है",
+    "mfaNotSupported": "MFA समर्थित नहीं है",
     "missingField": "जानकारी अनुपलब्ध",
     "networkDisabled": "नेटवर्क अक्षम",
     "networkUnsupported": "नेटवर्क समर्थित नहीं है",
@@ -372,7 +372,10 @@
     "permissionDenied": "प्रवेश अस्वीकृत",
     "previewExpired": "पूर्वावलोकन समाप्त हुआ",
     "refusedByIntegration": "हस्तांतरण अस्वीकृत",
+    "reLogInFaceRecognitionDueToScamRisk": "फिर से प्रयास करें",
     "satoshiTestRequired": "राशि सीमा पार की",
+    "selfTransferNotAllowed": "स्वयं हस्तांतरण की अनुमति नहीं है",
+    "sendAccessDisabled": "पहुंच भेजना अक्षम",
     "serverFailure": "सर्वर त्रुटि",
     "symbolNotSupported": "प्रतीक समर्थित नहीं है",
     "symbolNotSupportedBySource": "स्रोत समर्थित नहीं है",
@@ -382,14 +385,11 @@
     "toAccountNotSupported": "जमा समर्थित नहीं है",
     "tooManyRequests": "बहुत अधिक अनुरोध",
     "transferAlreadyRequested": "स्थानांतरण पहले ही अनुरोध किया जा चुका है",
-    "twoFaFailed": "अमान्य 2FA कोड",
-    "unauthorizedToken": "अनधिकृत टोकन",
-    "coinbaseTravelRuleRestriction": "यात्रा नियम प्रतिबंध",
-    "withdrawalLocked": "निकासी लॉक की गई है",
-    "selfTransferNotAllowed": "स्वयं हस्तांतरण की अनुमति नहीं है",
-    "sendAccessDisabled": "पहुंच भेजना अक्षम",
     "tryAgainAfterLogin": "लॉगिन आवश्यक",
+    "twoFaFailed": "अमान्य 2FA कोड",
     "unableToSend": "हस्तांतरण असफल",
+    "unableToSendContactSupport": "निकासी बंद कर दी गई है",
+    "unauthorizedToken": "अनधिकृत टोकन",
     "userInfoUnavailable": "उपयोगकर्ता जानकारी अनुपलब्ध",
     "webWithdrawalLimitExceeded": "निकासी सीमा पार हो गई है",
     "whitelistAddressRequired": "पता श्वेतसूची आवश्यक है",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "निकासी अस्थायी रूप से अक्षम",
     "withdrawalDisabledDueToSecurityReset": "निकासी अस्थायी रूप से अक्षम",
     "withdrawalDisabledDueToSuspiciousActivity": "निकासी अस्थायी रूप से अक्षम",
-    "withdrawalPendingDepositConfirmation": "निकासी की पुष्टि लंबित",
-    "accountNotFound": "खाता नहीं मिला",
-    "addressNotAllowlisted": "पता अनुमत सूची में नहीं है",
-    "addressAllowlistPending": "पते की स्वीकृति सूची लंबित है",
-    "authenticationFailed": "प्रमाणीकरण असफल",
-    "belowMinimumFiatDeposit": "न्यूनतम फिएट डिपॉजिट से कम",
-    "exceedsApplicationLimit": "आवेदन सीमा से अधिक",
-    "invalidCredentials": "अमान्य क्रेडेंशियल्स",
-    "mfaNotSupported": "MFA समर्थित नहीं है",
+    "withdrawalLocked": "निकासी लॉक की गई है",
     "withdrawalLockedP2P": "निकासी बंद कर दी गई है",
-    "unableToSendContactSupport": "निकासी बंद कर दी गई है",
-    "reLogInFaceRecognitionDueToScamRisk": "फिर से प्रयास करें"
+    "withdrawalPendingDepositConfirmation": "निकासी की पुष्टि लंबित"
   },
   "errorMessages": {
+    "accountNotFound": "आपका खाता (खाते) प्राप्त करने में असमर्थ।",
+    "addressAllowlistPending": "यह प्राप्तकर्ता पता आपकी अनुमति सूची में जोड़ा गया है और एक होल्ड के लिए लंबित है।",
+    "addressNotAllowlisted": "Coinbase से निकासी शुरू करने में असमर्थ। आपको इस प्राप्तकर्ता पते को अपनी अनुमति सूची में जोड़ना होगा: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "अनुरोधित राशि इस नेटवर्क पर न्यूनतम अनुमत हस्तांतरण राशि से कम है।",
     "amountExceedsMaximum": "अनुरोधित राशि इस नेटवर्क पर अधिकतम अनुमत हस्तांतरण राशि से अधिक है।",
+    "authenticationFailed": "चयनित एकीकरण के साथ प्रमाणीकरण में असमर्थ।",
     "balanceNotEnough": "पर्याप्त शेष राशि नहीं है।",
+    "belowMinimumFiatDeposit": "राशि न्यूनतम फिएट जमा सीमा से कम है।",
     "binanceTravelRuleRestriction": "बाइनेंस वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
     "binanceTravelRuleRestrictionDeposit": "बाइनेंस वर्तमान में आपके देश से जमा का समर्थन नहीं करता है।",
     "binanceTravelRuleRestrictionOnramp": "बाइनेंस वर्तमान में आपके देश से खरीद का समर्थन नहीं करता है।",
     "binanceTravelRuleRestrictionPayment": "वर्तमान में Binance आपके देश से भुगतान का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestriction": "कॉइनबेस वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestrictionDeposit": "कॉइनबेस वर्तमान में आपके देश से जमा का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestrictionOnramp": "कॉइनबेस वर्तमान में आपके देश से खरीद का समर्थन नहीं करता है।",
+    "coinbaseTravelRuleRestrictionPayment": "वर्तमान में Coinbase आपके देश से भुगतान का समर्थन नहीं करता है।",
     "coinbaseUnavailable": "Coinbase में एक त्रुटि हुई है। कृपया अपने CB खाते में जाकर जांचें कि स्थानांतरण पूरा हुआ है या नहीं।",
+    "configurationMismatch": "हस्तांतरण शुरू करने में असमर्थ। खाते का विन्यास अनुरोधित स्थानांतरण से मेल नहीं खाता।",
     "default": "एक त्रुटि उत्पन्न हुई है।",
     "emptyWalletBalance": "स्रोत वॉलेट की शेष राशि खाली है।",
+    "exceedsApplicationLimit": "स्थानांतरण राशि अनुप्रयोग सीमा से अधिक है।",
+    "expiredSmartDeposit": "स्मार्ट जमा की समय सीमा समाप्त हो चुकी है। स्मार्ट अनुबंध को हटा दिया गया है।",
     "failedToGetFundingOptions": "वित्तीय विकल्प प्राप्त करने में विफल",
     "failedToSaveFundingOptions": "वित्तीय विकल्प सहेजने में विफल",
     "feeAssetBalanceNotEnough": "हस्तांतरण शुल्क के लिए अपर्याप्त धनराशि।",
     "fromAccountNotSupported": "खाता वर्तमान में क्रिप्टो निकासी का समर्थन नहीं करता है।",
     "integrationNotAvailable": "एकीकरण वर्तमान में उपलब्ध नहीं है।",
+    "invalidCredentials": "अमान्य क्रेडेंशियल्स। कृपया पुनः प्रयास करें।",
+    "invalidFromIntegrationToken": "हस्तांतरण शुरू करने में असमर्थ। इस खाते में प्रमाणीकृत करने के लिए उपयोग किया गया टोकन इस क्रिया को करने के लिए अधिकृत नहीं है।",
+    "invalidIntegrationToken": "कृपया जारी रखने के लिए फिर से लॉगिन करें।",
+    "invalidToIntegrationToken": "गंतव्य की पहचान करने में असमर्थ।",
     "kycRequired": "स्थानांतरण आरंभ करने में असमर्थ। क्रिप्टो ट्स्थानांतरण सक्षम करने से पहले एकीकरण को खातों से केवाईसी सत्यापन पूरा करना आवश्यक है।",
     "locked": "आपका खाता लॉक है",
+    "mfaNotSupported": "इस ऑपरेशन के लिए बहु-कारक प्रमाणीकरण समर्थित नहीं है।",
     "networkDisabled": "नेटवर्क वर्तमान में अक्षम है और इसका उपयोग नहीं किया जा सकता है।",
+    "noAvailableSmartContract": "कोई स्मार्ट अनुबंध उपलब्ध नहीं है",
+    "notAuthorizedFromIntegrationToken": "हस्तांतरण शुरू करने में असमर्थ। इस खाते में प्रमाणीकृत करने के लिए उपयोग किया गया टोकन इस क्रिया को करने के लिए अधिकृत नहीं है।",
+    "notAuthorizedToIntegrationToken": "हस्तांतरण शुरू करने में असमर्थ। इस खाते में प्रमाणीकृत करने के लिए उपयोग किया गया टोकन इस क्रिया को करने के लिए अधिकृत नहीं है।",
     "passKeyNotSupported": "दुर्भाग्य से, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया एक अतिरिक्त 2FA के रूप में गूगल ऑथेंटिकेटर जोड़ें और ट्रांसफर को पुनः प्रयास करें।",
     "passKeyNotSupportedDeposit": "दुर्भाग्य से, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया एक अतिरिक्त 2FA के रूप में गूगल ऑथेंटिकेटर जोड़ें और जमा को पुनः प्रयास करें।",
     "passKeyNotSupportedOnramp": "दुर्भाग्य से, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया एक अतिरिक्त 2FA के रूप में गूगल ऑथेंटिकेटर जोड़ें और खरीद को पुनः प्रयास करें।",
     "passKeyNotSupportedPayment": "दुर्भाग्यवश, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया अतिरिक्त 2FA के रूप में Google Authenticator जोड़ें और भुगतान को पुनः प्रयास करें।",
     "previewExpired": "पूर्वावलोकन की समय सीमा समाप्त हो गई है।",
+    "refusedByIntegration": "हस्तांतरण शुरू करने में असमर्थ। एकीकरण ने अनुरोध को अस्वीकार कर दिया है।",
+    "reLogInFaceRecognitionDueToScamRisk": "आपकी सुरक्षा के लिए, कृपया दोबारा लॉगिन करें और फेस पहचान प्रक्रिया पूरी करें।",
     "satoshiTestRequired": "यात्रा नियम प्रतिबंधों के कारण, Coinbase 1000 यूरो से अधिक के स्थानांतरण का समर्थन नहीं करता। कृपया कम राशि के साथ पुनः प्रयास करें।",
+    "selfTransferNotAllowed": "आप एक खाते से उसी खाते में स्थानांतरण नहीं कर सकते।",
+    "sendAccessDisabled": "इस खाते के लिए भेजने की अनुमति निष्क्रिय कर दी गई है, जिसके कारण निकासी शुरू नहीं की जा सकती।",
     "symbolNotSupported": "चिह्न को एकीकरण द्वारा समर्थित नहीं है।",
     "symbolNotSupportedBySource": "सूत्र वॉलेट द्वारा अनुरोधित नेटवर्क पर स्थानांतरण के लिए चिह्न समर्थित नहीं है।",
     "symbolNotSupportedByTarget": "अनुरोधित सिक्के के लिए जमा पता नहीं मिल सका।",
     "toAccountNotSupported": "गंतव्य खाता वर्तमान में क्रिप्टो जमा नहीं करता है।",
     "tooManyRequests": "कृपया बाद में पुनः प्रयास करें।",
     "transferAlreadyRequested": "स्थानांतरण पहले से अनुरोधित है।",
-    "twoFaFailed": "द्वि-कारक सत्यापन विफल। कृपया पुनः प्रयास करें।",
-    "coinbaseTravelRuleRestriction": "कॉइनबेस वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
-    "coinbaseTravelRuleRestrictionDeposit": "कॉइनबेस वर्तमान में आपके देश से जमा का समर्थन नहीं करता है।",
-    "coinbaseTravelRuleRestrictionOnramp": "कॉइनबेस वर्तमान में आपके देश से खरीद का समर्थन नहीं करता है।",
-    "coinbaseTravelRuleRestrictionPayment": "वर्तमान में Coinbase आपके देश से भुगतान का समर्थन नहीं करता है।",
-    "withdrawalLocked": "आपकी सुरक्षा के लिए, खाता सेटिंग्स में परिवर्तन के बाद 24 घंटे के लिए निकासी अक्षम कर दी गई है। कृपया बाद में पुनः प्रयास करें।",
-    "accountNotFound": "आपका खाता (खाते) प्राप्त करने में असमर्थ।",
-    "addressNotAllowlisted": "Coinbase से निकासी शुरू करने में असमर्थ। आपको इस प्राप्तकर्ता पते को अपनी अनुमति सूची में जोड़ना होगा: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "यह प्राप्तकर्ता पता आपकी अनुमति सूची में जोड़ा गया है और एक होल्ड के लिए लंबित है।",
-    "authenticationFailed": "चयनित एकीकरण के साथ प्रमाणीकरण में असमर्थ।",
-    "belowMinimumFiatDeposit": "राशि न्यूनतम फिएट जमा सीमा से कम है।",
-    "exceedsApplicationLimit": "स्थानांतरण राशि अनुप्रयोग सीमा से अधिक है।",
-    "invalidCredentials": "अमान्य क्रेडेंशियल्स। कृपया पुनः प्रयास करें।",
-    "mfaNotSupported": "इस ऑपरेशन के लिए बहु-कारक प्रमाणीकरण समर्थित नहीं है।",
-    "selfTransferNotAllowed": "आप एक खाते से उसी खाते में स्थानांतरण नहीं कर सकते।",
-    "sendAccessDisabled": "इस खाते के लिए भेजने की अनुमति निष्क्रिय कर दी गई है, जिसके कारण निकासी शुरू नहीं की जा सकती।",
     "tryAgainAfterLogin": "कृपया लॉग इन करने के बाद पुनः प्रयास करें।",
+    "twoFaFailed": "द्वि-कारक सत्यापन विफल। कृपया पुनः प्रयास करें।",
     "unableToSend": "स्थानांतरण भेजने में असमर्थ। कृपया फिर से प्रयास करें।",
+    "unableToSendContactSupport": "आप फिलहाल क्रिप्टो नहीं भेज सकते। कृपया कॉइनबेस सहायता से संपर्क करें।",
     "userInfoUnavailable": "उपयोगकर्ता जानकारी प्राप्त करने में असमर्थ। कृपया पुनः प्रयास करें।",
     "webWithdrawalLimitExceeded": "आपने Binance वेब संस्करण के लिए दैनिक अधिकतम निकासी सीमा पार कर ली है।",
     "whitelistAddressRequired": "गंतव्य पते को श्वेतसूची में होना चाहिए।",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "आपकी निकासी को उच्च जोखिम के रूप में पहचाना गया है। आपके धन की सुरक्षा के लिए, आपके खाते से निकासी 1 घंटे के लिए अस्थायी रूप से अक्षम कर दी गई है।",
     "withdrawalDisabledDueToSecurityReset": "आपके खाते की निकासी कार्यक्षमता हालिया सुरक्षा सत्यापन रिसेट के कारण अस्थायी रूप से अक्षम कर दी गई है।",
     "withdrawalDisabledDueToSuspiciousActivity": "संदिग्ध गतिविधि के कारण आपकी निकासी कार्यक्षमता अक्षम कर दी गई है। कृपया Binance पर सत्यापन प्रक्रिया पूरी करें। यदि आप सत्यापित करने में असमर्थ हैं, तो ग्राहक सहायता से संपर्क करें। यदि आपने हाल ही में सत्यापन पूरा कर लिया है, तो कृपया एक क्षण प्रतीक्षा करें और पुनः प्रयास करें।",
-    "withdrawalPendingDepositConfirmation": "आपकी जमा राशि निकासी के लिए आवश्यक अनलॉक पुष्टि से मेल नहीं खाती है। अधिक जानकारी के लिए कृपया लेन-देन इतिहास देखें।",
-    "invalidFromIntegrationToken": "हस्तांतरण शुरू करने में असमर्थ। इस खाते में प्रमाणीकृत करने के लिए उपयोग किया गया टोकन इस क्रिया को करने के लिए अधिकृत नहीं है।",
-    "invalidIntegrationToken": "कृपया जारी रखने के लिए फिर से लॉगिन करें।",
-    "invalidToIntegrationToken": "गंतव्य की पहचान करने में असमर्थ।",
-    "notAuthorizedFromIntegrationToken": "हस्तांतरण शुरू करने में असमर्थ। इस खाते में प्रमाणीकृत करने के लिए उपयोग किया गया टोकन इस क्रिया को करने के लिए अधिकृत नहीं है।",
-    "notAuthorizedToIntegrationToken": "हस्तांतरण शुरू करने में असमर्थ। इस खाते में प्रमाणीकृत करने के लिए उपयोग किया गया टोकन इस क्रिया को करने के लिए अधिकृत नहीं है।",
-    "configurationMismatch": "हस्तांतरण शुरू करने में असमर्थ। खाते का विन्यास अनुरोधित स्थानांतरण से मेल नहीं खाता।",
-    "refusedByIntegration": "हस्तांतरण शुरू करने में असमर्थ। एकीकरण ने अनुरोध को अस्वीकार कर दिया है।",
-    "noAvailableSmartContract": "कोई स्मार्ट अनुबंध उपलब्ध नहीं है",
-    "expiredSmartDeposit": "स्मार्ट जमा की समय सीमा समाप्त हो चुकी है। स्मार्ट अनुबंध को हटा दिया गया है।",
+    "withdrawalLocked": "आपकी सुरक्षा के लिए, खाता सेटिंग्स में परिवर्तन के बाद 24 घंटे के लिए निकासी अक्षम कर दी गई है। कृपया बाद में पुनः प्रयास करें।",
     "withdrawalLockedP2P": "आपकी सुरक्षा के लिए, P2P खरीद के बाद 24 घंटे के लिए निकासी अक्षम कर दी गई है। कृपया बाद में पुनः प्रयास करें।",
-    "unableToSendContactSupport": "आप फिलहाल क्रिप्टो नहीं भेज सकते। कृपया कॉइनबेस सहायता से संपर्क करें।",
-    "reLogInFaceRecognitionDueToScamRisk": "आपकी सुरक्षा के लिए, कृपया दोबारा लॉगिन करें और फेस पहचान प्रक्रिया पूरी करें।"
+    "withdrawalPendingDepositConfirmation": "आपकी जमा राशि निकासी के लिए आवश्यक अनलॉक पुष्टि से मेल नहीं खाती है। अधिक जानकारी के लिए कृपया लेन-देन इतिहास देखें।"
   },
   "errorPage": {
     "title": "एक त्रुटि हुई है।"
@@ -619,6 +610,23 @@
     "selectOtherHoldings": "अन्य होल्डिंग्स से चुनें",
     "symbolBalance": "{{symbol}} शेष",
     "title": "फंडिंग विधियाँ"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "भुगतान स्वीकृत करें",
@@ -1055,13 +1063,13 @@
     "to": "को",
     "total": "कुल",
     "transferDeclined": "स्थानांतरण अस्वीकार किया गया",
-    "transferDeclinedBody": "आपने अपने वॉलेट में स्थानांतरण अनुरोध को अस्वीकार कर दिया है।",
-    "transferTitle": "स्थानांतरण का पूर्वावलोकन",
-    "youMayReceiveLess": "{{symbol}} की कीमत में उतार-चढ़ाव के कारण आपको कम राशि प्राप्त हो सकती है।",
     "transferDeclined40": "अनुरोध अस्वीकृत",
+    "transferDeclinedBody": "आपने अपने वॉलेट में स्थानांतरण अनुरोध को अस्वीकार कर दिया है।",
     "transferDeclinedBody40": "ऐसा लगता है कि आपने लेनदेन को मना कर दिया। यदि यह एक गलती थी, फिर से प्रयास करें और अपने वॉलेट में अनुरोध को स्वीकृति दें।",
     "transferTimeout": "हमें समय पर प्रतिक्रिया नहीं मिली",
-    "transferTimeoutBody": "कृपया फिर से प्रयास करें और लेनदेन अनुरोध को स्वीकृत करें।"
+    "transferTimeoutBody": "कृपया फिर से प्रयास करें और लेनदेन अनुरोध को स्वीकृत करें।",
+    "transferTitle": "स्थानांतरण का पूर्वावलोकन",
+    "youMayReceiveLess": "{{symbol}} की कीमत में उतार-चढ़ाव के कारण आपको कम राशि प्राप्त हो सकती है।"
   },
   "privacyComponent": {
     "content": "आपका डेटा हर समय निजी और एन्क्रिप्टेड रहता है।"
@@ -1164,6 +1172,15 @@
     "paragraph9": "इन शर्तों का संचालन डेलावेयर राज्य के कानूनों के अधीन होगा, इसके कानूनी सिद्धांत विकल्पों को छोड़कर। लघु दावा न्यायालय के लिए योग्य विवादों को छोड़कर, इन शर्तों से उत्पन्न या संबंधित सभी विवादों के नियम, चाहे अनुबंध, अपराध, कानून, धोखाधड़ी, गलत प्रतिनिधित्व या किन्हीं अन्य कानूनी सिद्धांत के आधार पर हों, एक मध्यस्थ तटस्थ के सामने अंतिम और बाध्यकारी मध्यस्थता के माध्यम से सुलझाया जाएगा बजाय अदालत द्वारा जज या जूरी के और आप सहमति देते हैं कि कंपनी और आप दोनों किसी जूरी द्वारा सुनवाई का अधिकार छोड़ रहे हैं। ऐसे विवादों में, विवादों का अर्थ और अनुवाद शामिल है, जबकि उनकी वैधता, फूटकारिता या किसी भी खंड का एक खंड का उल्लंघन, रद्द करने की क्षमता या वैधता शामिल होगी। सभी ऐसे मामलों पर मध्यस्थ द्वारा निर्णय लिया जाएगा और अदालत या जज द्वारा नहीं। आप सहमत हैं कि इन शर्तों के तहत कोई भी मध्यस्थता एक व्यक्ति के आधार पर होगी; वर्गीय मध्यस्थ और वर्गीय क्रियाओं की अनुमति नहीं है, और आप वर्गीय कारवाई में भाग लेने की क्षमता को छोड़ने के लिए सहमत हैं।",
     "title": "{{shortName}} अंतिम उपयोगकर्ता<2></2>शर्तें और नियम"
   },
+  "topupNeeded": {
+    "cancel": "रद्द करें",
+    "currentBalance": "वर्तमान शेष राशि",
+    "disclaimer": "यदि आप भुगतान नहीं करते हैं, तो आपका {{symbol}} शेष आपके {{integrationName}} खाते में रहेगा।",
+    "previewTopup": "टॉप-अप पूर्वावलोकन",
+    "required": "आवश्यक",
+    "subtitle": "आपकी खरीदी गई {{symbol}} शेष राशि अनुमान से कम है, जिसकी वजह कीमत और/या गैस में उतार-चढ़ाव हो सकते हैं।",
+    "title": "रिचार्ज की आवश्यकता"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "जमा पूर्वावलोकन",
@@ -1214,11 +1231,6 @@
     "return": "यहां लौटें और अपनी ट्रांसफर को जारी रखने के लिए नीचे क्लिक करें।",
     "title": "निकासी स्वीकृत करें"
   },
-  "transferInsufficientBalancePage": {
-    "title": "अपर्याप्त शेष राशि",
-    "paymentBody": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
-    "transferBody": "आपका शेष राशि इस स्थानांतरण को पूरा करने के लिए अपर्याप्त है।"
-  },
   "transferErrorPage": {
     "defaultError": "एक अज्ञात त्रुटि हुई है। कृपया एक नई स्थानांतरण सत्र शुरू करने के लिए नीचे क्लिक करें।"
   },
@@ -1242,6 +1254,11 @@
     "returnContinue": "अपने खाते को लिंक करने के लिए यहाँ लौटें।",
     "scanQR": "क्यूआर कोड स्कैन करें ताकि चेहरा सत्यापन पूरा हो सके और यह पुष्टि हो कि वास्तव में आप ही धनराशि स्थानांतरित करने का प्रयास कर रहे हैं।",
     "title": "सत्यापन"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
+    "title": "अपर्याप्त शेष राशि",
+    "transferBody": "आपका शेष राशि इस स्थानांतरण को पूरा करने के लिए अपर्याप्त है।"
   },
   "transferMfaPage": {
     "title": "सत्यापन",

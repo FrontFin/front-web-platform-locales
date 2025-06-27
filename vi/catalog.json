@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Chuyển đổi Tiền pháp định/Mã hoá"
   },
-  "topupNeeded": {
-    "title": "Cần nạp tiền",
-    "subtitle": "Số dư {{symbol}} mua của bạn thấp hơn dự kiến do giá và/hoặc biến động khí.",
-    "currentBalance": "Số dư hiện tại",
-    "required": "Bắt buộc",
-    "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{symbol}} sẽ vẫn nằm trong tài khoản {{integrationName}} của bạn.",
-    "previewTopup": "Xem trước nạp tiền",
-    "cancel": "Hủy bỏ"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Số tiền phải nằm trong khoảng 21 USD - 15.000 USD",
@@ -139,6 +130,7 @@
   "common": {
     "availableForTransfer": "Có sẵn",
     "cancel": "Hủy bỏ",
+    "chooseDifferentAccount": "Kết nối với tài khoản khác",
     "closeCap": "Đóng",
     "codeNotCorrent": "Mã bạn đã nhập không đúng.",
     "connectAnotherAccount": "Kết nối tài khoản khác",
@@ -155,17 +147,16 @@
     "submitCap": "Gửi",
     "successTitle": "Thành công!",
     "termsOfUse": "Bằng cách tiếp tục, bạn đồng ý với <1>Điều khoản sử dụng</1>",
-    "tryAgain": "Thử lại",
-    "chooseDifferentAccount": "Kết nối với tài khoản khác"
+    "tryAgain": "Thử lại"
   },
   "commonContent": {
     "connecting": "Đang kết nối...",
     "description": "sẽ hỗ trợ kết nối an toàn với {{integrationName}}.",
     "monitoring": "Đang chờ phê duyệt...",
     "resend": "Gửi lại yêu cầu kết nối",
+    "takingLongerTitle": "Vẫn ở đó?… Kiểm tra ví của bạn và chấp nhận yêu cầu để tiếp tục.",
     "title": "Chấp nhận yêu cầu kết nối<1></1> trong ví của bạn",
-    "title40": "Chấp nhận yêu cầu kết nối trong ứng dụng <1></1> {{walletName}} của bạn.",
-    "takingLongerTitle": "Vẫn ở đó?… Kiểm tra ví của bạn và chấp nhận yêu cầu để tiếp tục."
+    "title40": "Chấp nhận yêu cầu kết nối trong ứng dụng <1></1> {{walletName}} của bạn."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Làm theo hướng dẫn trên máy tính để kết nối với {{selectedIntegrationName}} của bạn",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "Thay đổi đơn vị tiền tệ"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Có vẻ bạn đã từ chối yêu cầu kết nối, hoặc một yêu cầu trước đó vẫn đang hoạt động. Nếu đó là một sai lầm, hãy thử lại.",
+    "chooseDifferentAccount": "Kết nối với tài khoản khác",
+    "title": "Rất tiếc!"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Vui lòng kiểm tra ví của bạn và phê duyệt yêu cầu kết nối.",
+    "chooseDifferentAccount": "Kết nối với tài khoản khác",
+    "title": "Chúng tôi không nhận được phản hồi kịp thời"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Bạn đã từ chối yêu cầu kết nối ví hoặc yêu cầu trước đó vẫn đang hoạt động.",
@@ -227,16 +228,6 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} chưa được cài đặt trên thiết bị này. Vui lòng cài đặt ứng dụng {{integrationName}} hoặc kết nối ví khác.",
     "title": "Kết nối không khả dụng"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "Vui lòng kiểm tra ví của bạn và phê duyệt yêu cầu kết nối.",
-    "title": "Chúng tôi không nhận được phản hồi kịp thời",
-    "chooseDifferentAccount": "Kết nối với tài khoản khác"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "Có vẻ bạn đã từ chối yêu cầu kết nối, hoặc một yêu cầu trước đó vẫn đang hoạt động. Nếu đó là một sai lầm, hãy thử lại.",
-    "title": "Rất tiếc!",
-    "chooseDifferentAccount": "Kết nối với tài khoản khác"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Đang chờ xác nhận từ ứng dụng di động",
@@ -335,15 +326,22 @@
     "warningTitle": "Đọc toàn bộ thông báo này trước khi tiếp tục."
   },
   "errorHeadlines": {
+    "accountNotFound": "Không Tìm Thấy Tài Khoản",
     "accountTypeNotSupported": "Loại tài khoản không được hỗ trợ",
+    "addressAllowlistPending": "Địa chỉ an toàn đang chờ xét duyệt",
+    "addressNotAllowlisted": "Địa chỉ không nằm trong danh sách an toàn",
     "amountBelowMinimum": "Số tiền quá thấp",
     "amountExceedsMaximum": "Số tiền quá cao",
+    "authenticationFailed": "Xác Thực Thất Bại",
     "badRequest": "Yêu cầu không hợp lệ",
     "balanceNotEnough": "Không đủ tiền",
+    "belowMinimumFiatDeposit": "Số tiền nạp thấp hơn hạn mức tối thiểu",
     "binanceTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
+    "coinbaseTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
     "coinbaseUnavailable": "Coinbase không khả dụng",
     "configurationMismatch": "Lỗi cấu hình",
     "emptyWalletBalance": "Ví rỗng",
+    "exceedsApplicationLimit": "Vượt quá hạn mức cho phép của ứng dụng",
     "expiredSmartDeposit": "Tiền gửi thông minh đã hết hạn",
     "failedToGetFundingOptions": "Lỗi tùy chọn nạp tiền",
     "failedToSaveFundingOptions": "Lưu thất bại",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "Rút tiền không được hỗ trợ",
     "integrationError": "Lỗi tích hợp",
     "integrationNotAvailable": "Tích hợp hiện không khả dụng",
+    "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
     "invalidField": "Thông tin không hợp lệ",
     "invalidFromIntegrationToken": "Token nguồn không hợp lệ",
     "invalidIntegrationToken": "Thời gian đăng nhập đã hết hạn",
     "invalidToIntegrationToken": "Token điểm nhận không hợp kệ",
     "kycRequired": "Cần KYC",
     "locked": "Tài khoản bị khóa",
+    "mfaNotSupported": "Xác thực hai lớp không được hỗ trợ",
     "missingField": "Thiếu thông tin",
     "networkDisabled": "Mạng đã bị vô hiệu hóa",
     "networkUnsupported": "Mạng không được hỗ trợ",
@@ -372,7 +372,10 @@
     "permissionDenied": "Truy cập bị từ chối",
     "previewExpired": "Bản xem trước đã hết hạn",
     "refusedByIntegration": "Giao dịch bị từ chối",
+    "reLogInFaceRecognitionDueToScamRisk": "Thử lại",
     "satoshiTestRequired": "Số tiền vượt hạn mức cho phép",
+    "selfTransferNotAllowed": "Không được phép chuyển tiền cho chính mình",
+    "sendAccessDisabled": "Gửi tiền bị vô hiệu hóa",
     "serverFailure": "Lỗi máy chủ",
     "symbolNotSupported": "Loại tiền mã hóa không được hỗ trợ",
     "symbolNotSupportedBySource": "Nguồn không được hỗ trợ",
@@ -382,14 +385,11 @@
     "toAccountNotSupported": "Nạp tiền không được hỗ trợ",
     "tooManyRequests": "Quá nhiều yêu cầu",
     "transferAlreadyRequested": "Yêu cầu chuyển khoản đã được gửi",
-    "twoFaFailed": "Mã 2FA không hợp lệ",
-    "unauthorizedToken": "Token chưa được cấp quyền",
-    "coinbaseTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
-    "withdrawalLocked": "Rút tiền bị khóa",
-    "selfTransferNotAllowed": "Không được phép chuyển tiền cho chính mình",
-    "sendAccessDisabled": "Gửi tiền bị vô hiệu hóa",
     "tryAgainAfterLogin": "Yêu Cầu Đăng Nhập",
+    "twoFaFailed": "Mã 2FA không hợp lệ",
     "unableToSend": "Chuyển Khoản Thất Bại",
+    "unableToSendContactSupport": "Rút tiền bị vô hiệu hóa",
+    "unauthorizedToken": "Token chưa được cấp quyền",
     "userInfoUnavailable": "Thông tin người dùng không khả dụng",
     "webWithdrawalLimitExceeded": "Vượt quá giới hạn rút tiền",
     "whitelistAddressRequired": "Yêu cầu địa chỉ nằm trong danh sách an toàn",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
     "withdrawalDisabledDueToSecurityReset": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
     "withdrawalDisabledDueToSuspiciousActivity": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
-    "withdrawalPendingDepositConfirmation": "Rút Tiền Đang Chờ Xác Nhận",
-    "accountNotFound": "Không Tìm Thấy Tài Khoản",
-    "addressNotAllowlisted": "Địa chỉ không nằm trong danh sách an toàn",
-    "addressAllowlistPending": "Địa chỉ an toàn đang chờ xét duyệt",
-    "authenticationFailed": "Xác Thực Thất Bại",
-    "belowMinimumFiatDeposit": "Số tiền nạp thấp hơn hạn mức tối thiểu",
-    "exceedsApplicationLimit": "Vượt quá hạn mức cho phép của ứng dụng",
-    "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
-    "mfaNotSupported": "Xác thực hai lớp không được hỗ trợ",
+    "withdrawalLocked": "Rút tiền bị khóa",
     "withdrawalLockedP2P": "Rút tiền bị vô hiệu hóa",
-    "unableToSendContactSupport": "Rút tiền bị vô hiệu hóa",
-    "reLogInFaceRecognitionDueToScamRisk": "Thử lại"
+    "withdrawalPendingDepositConfirmation": "Rút Tiền Đang Chờ Xác Nhận"
   },
   "errorMessages": {
+    "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
+    "addressAllowlistPending": "Địa chỉ người nhận này đã được thêm vào Danh sách an toàn của bạn và hiện đang chờ giữ lệnh.",
+    "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Số tiền yêu cầu thấp hơn mức tối thiểu cho phép trên mạng lưới này.",
     "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức tối đa cho phép trên mạng lưới này.",
+    "authenticationFailed": "Không thể xác thực với tích hợp đã chọn.",
     "balanceNotEnough": "Số dư không đủ.",
+    "belowMinimumFiatDeposit": "Số tiền thấp hơn mức nạp tiền tối thiểu.",
     "binanceTravelRuleRestriction": "Binance hiện không hỗ trợ chuyển tiền từ quốc gia của bạn.",
     "binanceTravelRuleRestrictionDeposit": "Binance hiện không hỗ trợ nạp tiền từ quốc gia của bạn.",
     "binanceTravelRuleRestrictionOnramp": "Binance hiện không hỗ trợ mua từ quốc gia của bạn.",
     "binanceTravelRuleRestrictionPayment": "Binance hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestriction": "Coinbase hiện không hỗ trợ chuyển tiền từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionDeposit": "Coinbase hiện không hỗ trợ nạp tiền từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionOnramp": "Coinbase hiện không hỗ trợ mua từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
     "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
+    "configurationMismatch": "Không thể khởi tạo chuyển khoản. Cấu hình tài khoản không phù hợp với yêu cầu chuyển tiền.",
     "default": "Đã xảy ra lỗi.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
+    "exceedsApplicationLimit": "Số tiền chuyển vượt quá giới hạn ứng dụng.",
+    "expiredSmartDeposit": "Nạp tiền thông minh đã hết hạn. Hợp đồng thông minh đã được giải phóng.",
     "failedToGetFundingOptions": "Không thể lấy tùy chọn nạp tiền",
     "failedToSaveFundingOptions": "Không thể lưu tùy chọn nạp tiền",
     "feeAssetBalanceNotEnough": "Không đủ tiền để thanh toán phí chuyển tiền.",
     "fromAccountNotSupported": "Tài khoản hiện tại không hỗ trợ rút tiền điện tử.",
     "integrationNotAvailable": "Tích hợp này hiện không khả dụng.",
+    "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
+    "invalidFromIntegrationToken": "Không thể thực hiện chuyển khoản. Token dùng để xác thực vào tài khoản này không được cấp quyền thực hiện hành động này.",
+    "invalidIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
+    "invalidToIntegrationToken": "Không thể xác định địa chỉ nhận.",
     "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
     "locked": "Tài khoản của bạn bị khóa",
+    "mfaNotSupported": "Xác thực đa yếu tố không được hỗ trợ cho hoạt động này.",
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
+    "noAvailableSmartContract": "Không có Hợp đồng Thông minh khả dụng",
+    "notAuthorizedFromIntegrationToken": "Không thể khởi tạo chuyển khoản. Mã thông báo xác thực cho tài khoản này không được ủy quyền thực hiện hành động này.",
+    "notAuthorizedToIntegrationToken": "Không thể khởi tạo chuyển khoản. Mã thông báo xác thực cho tài khoản này không được ủy quyền thực hiện hành động này.",
     "passKeyNotSupported": "Rất tiếc, Passkey 2FA hiện tại không được hỗ trợ. Vui lòng thêm Google Authenticator như một 2FA bổ sung và thử lại việc chuyển tiền.",
     "passKeyNotSupportedDeposit": "Rất tiếc, Passkey 2FA hiện tại không được hỗ trợ. Vui lòng thêm Google Authenticator như một 2FA bổ sung và thử lại việc nạp tiền.",
     "passKeyNotSupportedOnramp": "Rất tiếc, Passkey 2FA hiện tại không được hỗ trợ. Vui lòng thêm Google Authenticator như một 2FA bổ sung và thử lại việc mua hàng.",
     "passKeyNotSupportedPayment": "Rất tiếc, Passkey 2FA hiện không được hỗ trợ. Vui lòng thêm Google Authenticator như một phương thức 2FA bổ sung và thử thanh toán lại.",
     "previewExpired": "Bản xem trước đã hết hạn.",
+    "refusedByIntegration": "Không thể bắt đầu giao dịch. Hệ thống tích hợp đã từ chối yêu cầu.",
+    "reLogInFaceRecognitionDueToScamRisk": "Vì sự an toàn của bạn, vui lòng đăng nhập lại và hoàn tất nhận diện khuôn mặt.",
     "satoshiTestRequired": "Coinbase không hỗ trợ chuyển tiền vượt quá 1000 Euro.",
+    "selfTransferNotAllowed": "Bạn không thể chuyển từ một tài khoản đến chính nó.",
+    "sendAccessDisabled": "Không thể thực hiện rút tiền vì quyền gửi đã bị vô hiệu hóa cho tài khoản này.",
     "symbolNotSupported": "Loại tiền mã hóa không được tích hợp hỗ trợ.",
     "symbolNotSupportedBySource": "Loại tiền mã hóa cần chuyển không được ví nguồn hỗ trợ trên mạng yêu cầu.",
     "symbolNotSupportedByTarget": "Không thể tìm thấy địa chỉ gửi tiền cho đồng tiền được yêu cầu.",
     "toAccountNotSupported": "Tài khoản đích hiện không hỗ trợ gửi tiền điện tử.",
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Giao dịch chuyển tiền đã được yêu cầu trước đó.",
-    "twoFaFailed": "Xác thực hai yếu tố đã thất bại. Vui lòng thử lại.",
-    "coinbaseTravelRuleRestriction": "Coinbase hiện không hỗ trợ chuyển tiền từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase hiện không hỗ trợ nạp tiền từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase hiện không hỗ trợ mua từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
-    "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
-    "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
-    "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Địa chỉ người nhận này đã được thêm vào Danh sách an toàn của bạn và hiện đang chờ giữ lệnh.",
-    "authenticationFailed": "Không thể xác thực với tích hợp đã chọn.",
-    "belowMinimumFiatDeposit": "Số tiền thấp hơn mức nạp tiền tối thiểu.",
-    "exceedsApplicationLimit": "Số tiền chuyển vượt quá giới hạn ứng dụng.",
-    "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
-    "mfaNotSupported": "Xác thực đa yếu tố không được hỗ trợ cho hoạt động này.",
-    "selfTransferNotAllowed": "Bạn không thể chuyển từ một tài khoản đến chính nó.",
-    "sendAccessDisabled": "Không thể thực hiện rút tiền vì quyền gửi đã bị vô hiệu hóa cho tài khoản này.",
     "tryAgainAfterLogin": "Vui lòng thử lại sau khi đăng nhập.",
+    "twoFaFailed": "Xác thực hai yếu tố đã thất bại. Vui lòng thử lại.",
     "unableToSend": "Không thể gửi giao dịch chuyển tiền. Vui lòng thử lại.",
+    "unableToSendContactSupport": "Hiện tại, bạn không thể gửi tiền mã hóa. Vui lòng liên hệ với bộ phận hỗ trợ của Coinbase.",
     "userInfoUnavailable": "Không thể lấy thông tin người dùng. Vui lòng thử lại.",
     "webWithdrawalLimitExceeded": "Bạn đã vượt quá hạn mức rút tiền tối đa trong ngày cho phiên bản web của Binance.",
     "whitelistAddressRequired": "Địa chỉ nhận phải nằm trong danh sách cho phép.",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "Giao dịch rút tiền của bạn được xác định là có rủi ro cao. Để bảo vệ tài sản, chức năng rút tiền từ tài khoản của bạn sẽ tạm thời bị khóa trong 1 giờ.",
     "withdrawalDisabledDueToSecurityReset": "Chức năng rút tiền trên tài khoản của bạn tạm thời bị vô hiệu hóa do quá trình thiết lập lại xác minh bảo mật gần đây.",
     "withdrawalDisabledDueToSuspiciousActivity": "Chức năng rút tiền của bạn đã bị vô hiệu hóa do phát hiện hoạt động đáng ngờ. Vui lòng hoàn tất quá trình xác minh trên Binance. Nếu bạn không thể xác minh, hãy liên hệ Bộ phận Hỗ trợ Khách hàng. Nếu bạn vừa hoàn tất xác minh gần đây, vui lòng chờ trong giây lát và thử lại.",
-    "withdrawalPendingDepositConfirmation": "Số lần nạp tiền của bạn chưa đáp ứng đủ điều kiện để mớ khóa chức năng rút tiền. Vui lòng kiểm tra lịch sử giao dịch để biết thêm chi tiết.",
-    "invalidFromIntegrationToken": "Không thể thực hiện chuyển khoản. Token dùng để xác thực vào tài khoản này không được cấp quyền thực hiện hành động này.",
-    "invalidIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
-    "invalidToIntegrationToken": "Không thể xác định địa chỉ nhận.",
-    "notAuthorizedFromIntegrationToken": "Không thể khởi tạo chuyển khoản. Mã thông báo xác thực cho tài khoản này không được ủy quyền thực hiện hành động này.",
-    "notAuthorizedToIntegrationToken": "Không thể khởi tạo chuyển khoản. Mã thông báo xác thực cho tài khoản này không được ủy quyền thực hiện hành động này.",
-    "configurationMismatch": "Không thể khởi tạo chuyển khoản. Cấu hình tài khoản không phù hợp với yêu cầu chuyển tiền.",
-    "refusedByIntegration": "Không thể bắt đầu giao dịch. Hệ thống tích hợp đã từ chối yêu cầu.",
-    "noAvailableSmartContract": "Không có Hợp đồng Thông minh khả dụng",
-    "expiredSmartDeposit": "Nạp tiền thông minh đã hết hạn. Hợp đồng thông minh đã được giải phóng.",
+    "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "withdrawalLockedP2P": "Vì lý do bảo mật của bạn, việc rút tiền bị vô hiệu hóa trong 24 giờ sau giao dịch P2P. Vui lòng thử lại sau.",
-    "unableToSendContactSupport": "Hiện tại, bạn không thể gửi tiền mã hóa. Vui lòng liên hệ với bộ phận hỗ trợ của Coinbase.",
-    "reLogInFaceRecognitionDueToScamRisk": "Vì sự an toàn của bạn, vui lòng đăng nhập lại và hoàn tất nhận diện khuôn mặt."
+    "withdrawalPendingDepositConfirmation": "Số lần nạp tiền của bạn chưa đáp ứng đủ điều kiện để mớ khóa chức năng rút tiền. Vui lòng kiểm tra lịch sử giao dịch để biết thêm chi tiết."
   },
   "errorPage": {
     "title": "Đã xảy ra lỗi."
@@ -619,6 +610,23 @@
     "selectOtherHoldings": "Chọn từ các khoản nắm giữ khác",
     "symbolBalance": "Số dư {{symbol}}",
     "title": "Phương thức nạp tiền"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Chấp nhận thanh toán",
@@ -1055,13 +1063,13 @@
     "to": "Đến",
     "total": "Tổng cộng",
     "transferDeclined": "Giao dịch bị từ chối",
-    "transferDeclinedBody": "Bạn đã từ chối yêu cầu chuyển khoản trong ví của mình.",
-    "transferTitle": "Xem trước giao dịch",
-    "youMayReceiveLess": "Bạn có thể nhận {{symbol}} ít hơn do biến động giá.",
     "transferDeclined40": "Yêu cầu bị từ chối",
+    "transferDeclinedBody": "Bạn đã từ chối yêu cầu chuyển khoản trong ví của mình.",
     "transferDeclinedBody40": "Có vẻ bạn đã từ chối giao dịch. Nếu đó là một sai lầm, hãy thử lại và phê duyệt yêu cầu trong ví của bạn",
     "transferTimeout": "Chúng tôi không nhận được phản hồi kịp thời",
-    "transferTimeoutBody": "Vui lòng thử lại và chấp thuận yêu cầu giao dịch."
+    "transferTimeoutBody": "Vui lòng thử lại và chấp thuận yêu cầu giao dịch.",
+    "transferTitle": "Xem trước giao dịch",
+    "youMayReceiveLess": "Bạn có thể nhận {{symbol}} ít hơn do biến động giá."
   },
   "privacyComponent": {
     "content": "Dữ liệu của bạn luôn được giữ kín và mã hóa."
@@ -1164,6 +1172,15 @@
     "paragraph9": "Các điều khoản này sẽ chịu sự điều chỉnh bởi luật của Bang Delaware, ngoại trừ các nguyên tắc lựa chọn luật của tiểu bang này. Ngoại trừ những tranh chấp thuộc phạm vi của tòa án giải quyết các yêu cầu nhỏ, tất cả các tranh chấp phát sinh liên quan đến các điều khoản này hoặc bất kỳ khía cạnh nào của mối quan hệ giữa bạn và Công ty, dù dựa trên hợp đồng, hành vi vi phạm, luật pháp, gian lận, thông tin sai lệch hay bất kỳ lý thuyết pháp lý nào khác, sẽ được giải quyết thông qua trọng tài cuối cùng và có tính rằng buộc, trước một trọng tài viên trung lập thay vì tại tòa án bởi thẩm phán hoặc bồi thẩm đoàn. Bạn đồng ý rằng cả Công ty và bạn đều từ bỏ quyền xét xử bởi bồi thẩm đoàn. Các tranh chấp như vậy bao gồm, nhưng không giới hạn, tranh chấp liên quan đến việc diễn giải hoặc áp dụng quy định trọng tài này, bao gồm tính khả thi, khả năng thu hồi hoặc hiệu lực của quy định trọng tài hoặc bất kỳ phần nào của quy định trọng tài. Tất cả các vấn đề như vậy sẽ do trọng tài viên quyết định, không phải bởi tòa án hay thẩm phán. Bạn đồng ý rằng bất kỳ trọng tài nào theo các điều khoản này sẽ diễn ra trên cơ sở cá nhân; các trọng tài tập thể và các vụ kiện tập thể đều không được phép, và bạn đồng ý từ bỏ quyền tham gia vào một vụ kiện tập thể.",
     "title": "{{shortName}} Điều khoản và Điều kiện dành cho người dùng cuối<2></2>"
   },
+  "topupNeeded": {
+    "cancel": "Hủy bỏ",
+    "currentBalance": "Số dư hiện tại",
+    "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{symbol}} sẽ vẫn nằm trong tài khoản {{integrationName}} của bạn.",
+    "previewTopup": "Xem trước nạp tiền",
+    "required": "Bắt buộc",
+    "subtitle": "Số dư {{symbol}} mua của bạn thấp hơn dự kiến do giá và/hoặc biến động khí.",
+    "title": "Cần nạp tiền"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Xem trước khoản tiền gửi",
@@ -1214,11 +1231,6 @@
     "return": "Quay lại đây và nhấp bên dưới để tiếp tục chuyển khoản của bạn.",
     "title": "Chấp nhận rút tiền"
   },
-  "transferInsufficientBalancePage": {
-    "title": "Số dư không đủ",
-    "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
-    "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."
-  },
   "transferErrorPage": {
     "defaultError": "Lỗi không xác định. Nhấn vào bên dưới để tạo một giao dịch chuyển tiền mới."
   },
@@ -1242,6 +1254,11 @@
     "returnContinue": "Quay lại đây để tiếp tục liên kết tài khoản của bạn.",
     "scanQR": "Quét mã QR để hoàn tất xác minh khuôn mặt và xác nhận bạn chính là người thực hiện giao dịch.",
     "title": "Xác minh"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
+    "title": "Số dư không đủ",
+    "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."
   },
   "transferMfaPage": {
     "title": "Xác minh",

@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "Переключить Валюта/Крипто"
   },
-  "topupNeeded": {
-    "title": "Пополнение необходимо",
-    "subtitle": "Ваш купленный баланс {{symbol}} ниже ожидаемого из-за колебаний цен и/или изменения газа.",
-    "currentBalance": "Текущий баланс",
-    "required": "Требуется",
-    "disclaimer": "Если Вы не завершите платеж, Ваш баланс {{symbol}} останется на Вашем аккаунте {{integrationName}}.",
-    "previewTopup": "Предпросмотр пополнения",
-    "cancel": "Отмена"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15,000",
@@ -139,6 +130,7 @@
   "common": {
     "availableForTransfer": "Доступно",
     "cancel": "Отмена",
+    "chooseDifferentAccount": "Подключить другой аккаунт",
     "closeCap": "Закрыть",
     "codeNotCorrent": "Предоставленный код неверен.",
     "connectAnotherAccount": "Подключить другой аккаунт",
@@ -155,17 +147,16 @@
     "submitCap": "Отправить",
     "successTitle": "Успешно!",
     "termsOfUse": "Продолжая, вы принимаете <1>условия использования</1>",
-    "tryAgain": "Попробовать снова",
-    "chooseDifferentAccount": "Подключить другой аккаунт"
+    "tryAgain": "Попробовать снова"
   },
   "commonContent": {
     "connecting": "Подключение...",
     "description": "облегчит безопасное соединение с {{integrationName}}.",
     "monitoring": "Ждём подтверждения...",
     "resend": "Повторно отправить запрос на подключение",
+    "takingLongerTitle": "Вы все еще там? Проверьте свой электронный кошелек и одобрите запрос для продолжения.",
     "title": "Подтвердите запрос на <1></1> подключение в вашем кошельке",
-    "title40": "Подтвердите запрос на подключение в вашем<1></1> приложении {{walletName}}.",
-    "takingLongerTitle": "Вы все еще там? Проверьте свой электронный кошелек и одобрите запрос для продолжения."
+    "title40": "Подтвердите запрос на подключение в вашем<1></1> приложении {{walletName}}."
   },
   "connectExternalPageScreen": {
     "connectedTitle": "Следуйте инструкциям на вашем компьютере, чтобы подключить {{selectedIntegrationName}}",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "Изменить валюту"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
+    "chooseDifferentAccount": "Подключить другой аккаунт",
+    "title": "Ой!"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "Пожалуйста, проверьте свой электронный кошелек и одобрите запрос на подключение.",
+    "chooseDifferentAccount": "Подключить другой аккаунт",
+    "title": "Мы не получили ответ вовремя"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "Вы отклонили запрос на подключение вашего кошелька, или предыдущий запрос все еще активен.",
@@ -227,16 +228,6 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} не установлен на этом устройстве. Пожалуйста, установите приложение {{integrationName}} или подключите другой кошелек.",
     "title": "Подключение недоступно"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "Пожалуйста, проверьте свой электронный кошелек и одобрите запрос на подключение.",
-    "title": "Мы не получили ответ вовремя",
-    "chooseDifferentAccount": "Подключить другой аккаунт"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
-    "title": "Ой!",
-    "chooseDifferentAccount": "Подключить другой аккаунт"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Ожидание подтверждения от мобильного приложения",
@@ -335,15 +326,22 @@
     "warningTitle": "Прочитайте это сообщение целиком, прежде чем продолжить."
   },
   "errorHeadlines": {
+    "accountNotFound": "Аккаунт не найден",
     "accountTypeNotSupported": "Тип аккаунта не поддерживается",
+    "addressAllowlistPending": "Адрес в ожидании включения в белый список",
+    "addressNotAllowlisted": "Адрес не находится в белом списке",
     "amountBelowMinimum": "Сумма слишком мала",
     "amountExceedsMaximum": "Сумма слишком велика",
+    "authenticationFailed": "Ошибка аутентификации",
     "badRequest": "Некорректный запрос",
     "balanceNotEnough": "Недостаточный баланс",
+    "belowMinimumFiatDeposit": "Минимальная сумма депозита недостаточна",
     "binanceTravelRuleRestriction": "Ограничение правила поездок",
+    "coinbaseTravelRuleRestriction": "Ограничение правила переводов",
     "coinbaseUnavailable": "Coinbase недоступен",
     "configurationMismatch": "Ошибка конфигурации",
     "emptyWalletBalance": "Пустой электронный кошелек",
+    "exceedsApplicationLimit": "Превышен лимит",
     "expiredSmartDeposit": "Срок действия смарт-депозита истек",
     "failedToGetFundingOptions": "Ошибка способов пополнения",
     "failedToSaveFundingOptions": "Не удалось сохранить",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "Вывод не поддерживается",
     "integrationError": "Ошибка интеграции",
     "integrationNotAvailable": "Интеграция недоступна",
+    "invalidCredentials": "Недействительные учетные данные",
     "invalidField": "Недействительная информация",
     "invalidFromIntegrationToken": "Недействительный исходный токен",
     "invalidIntegrationToken": "Время сессии вышло",
     "invalidToIntegrationToken": "Недействительный конечный токен",
     "kycRequired": "Требуется KYC",
     "locked": "Аккаунт заблокирован",
+    "mfaNotSupported": "MFA не поддерживается",
     "missingField": "Отсутствует информация",
     "networkDisabled": "Сеть отключена",
     "networkUnsupported": "Сеть не поддерживается",
@@ -372,7 +372,10 @@
     "permissionDenied": "Доступ запрещен",
     "previewExpired": "Срок действия превью истек",
     "refusedByIntegration": "Перевод отклонена",
+    "reLogInFaceRecognitionDueToScamRisk": "Попробовать ещё раз",
     "satoshiTestRequired": "Превышен лимит суммы",
+    "selfTransferNotAllowed": "Самоперевод не разрешен",
+    "sendAccessDisabled": "Отправка отключена",
     "serverFailure": "Ошибка сервера",
     "symbolNotSupported": "Токен не поддерживается",
     "symbolNotSupportedBySource": "Источник не поддерживается",
@@ -382,14 +385,11 @@
     "toAccountNotSupported": "Депозит не поддерживается",
     "tooManyRequests": "Слишком много запросов",
     "transferAlreadyRequested": "Перевод уже запрошен",
-    "twoFaFailed": "Неправильный код 2FA",
-    "unauthorizedToken": "Несанкционированный токен",
-    "coinbaseTravelRuleRestriction": "Ограничение правила переводов",
-    "withdrawalLocked": "Выводы заблокированы",
-    "selfTransferNotAllowed": "Самоперевод не разрешен",
-    "sendAccessDisabled": "Отправка отключена",
     "tryAgainAfterLogin": "Требуется авторизация",
+    "twoFaFailed": "Неправильный код 2FA",
     "unableToSend": "Не удалось выполнить перевод",
+    "unableToSendContactSupport": "Вывод средств отключен",
+    "unauthorizedToken": "Несанкционированный токен",
     "userInfoUnavailable": "Информация о пользователе недоступна",
     "webWithdrawalLimitExceeded": "Превышен лимит снятия",
     "whitelistAddressRequired": "Требуется внести адрес в белый список",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "Переводы временно отключены",
     "withdrawalDisabledDueToSecurityReset": "Переводы временно отключены",
     "withdrawalDisabledDueToSuspiciousActivity": "Переводы временно отключены",
-    "withdrawalPendingDepositConfirmation": "Перевод ожидает подтверждения",
-    "accountNotFound": "Аккаунт не найден",
-    "addressNotAllowlisted": "Адрес не находится в белом списке",
-    "addressAllowlistPending": "Адрес в ожидании включения в белый список",
-    "authenticationFailed": "Ошибка аутентификации",
-    "belowMinimumFiatDeposit": "Минимальная сумма депозита недостаточна",
-    "exceedsApplicationLimit": "Превышен лимит",
-    "invalidCredentials": "Недействительные учетные данные",
-    "mfaNotSupported": "MFA не поддерживается",
+    "withdrawalLocked": "Выводы заблокированы",
     "withdrawalLockedP2P": "Вывод средств отключен",
-    "unableToSendContactSupport": "Вывод средств отключен",
-    "reLogInFaceRecognitionDueToScamRisk": "Попробовать ещё раз"
+    "withdrawalPendingDepositConfirmation": "Перевод ожидает подтверждения"
   },
   "errorMessages": {
+    "accountNotFound": "Не удается получить информацию о вашей учетной записи.",
+    "addressAllowlistPending": "Этот адрес получателя добавлен в ваш список разрешённых и ожидает разблокировки.",
+    "addressNotAllowlisted": "Не удается начать вывод с Coinbase. Добавьте этот адрес получателя в свой список разрешённых адресов здесь: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Запрашиваемая сумма ниже минимально допустимой для перевода в этой сети.",
     "amountExceedsMaximum": "Запрашиваемая сумма превышает максимально допустимую для перевода в этой сети.",
+    "authenticationFailed": "Не удается выполнить аутентификацию с выбранной интеграцией.",
     "balanceNotEnough": "Недостаточно средств.",
+    "belowMinimumFiatDeposit": "Сумма ниже минимального лимита депозита.",
     "binanceTravelRuleRestriction": "Binance в настоящее время не поддерживает переводы из вашей страны.",
     "binanceTravelRuleRestrictionDeposit": "Binance в настоящее время не поддерживает депозиты из вашей страны.",
     "binanceTravelRuleRestrictionOnramp": "Binance в настоящее время не поддерживает покупки из вашей страны.",
     "binanceTravelRuleRestrictionPayment": "Binance в настоящее время не поддерживает платежи из вашей страны.",
+    "coinbaseTravelRuleRestriction": "Coinbase в настоящее время не поддерживает переводы из вашей страны.",
+    "coinbaseTravelRuleRestrictionDeposit": "Coinbase в настоящее время не поддерживает депозиты из вашей страны.",
+    "coinbaseTravelRuleRestrictionOnramp": "Coinbase в настоящее время не поддерживает покупки из вашей страны.",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase в настоящее время не поддерживает платежи из вашей страны.",
     "coinbaseUnavailable": "Произошла ошибка на Coinbase. Проверьте свой аккаунт, чтобы узнать, проведён ли перевод.",
+    "configurationMismatch": "Не удается начать перевод. Конфигурация учетной записи не соответствует запрашиваемому переводу.",
     "default": "Произошла ошибка.",
     "emptyWalletBalance": "Баланс исходного кошелька пуст.",
+    "exceedsApplicationLimit": "Сумма перевода превышает лимит.",
+    "expiredSmartDeposit": "Срок действия Смарт-депозита истек. Смарт-контракт был деактивирован.",
     "failedToGetFundingOptions": "Не удалось получить варианты финансирования",
     "failedToSaveFundingOptions": "Не удалось сохранить варианты финансирования",
     "feeAssetBalanceNotEnough": "Недостаточно средств для оплаты комиссий за перевод.",
     "fromAccountNotSupported": "На данный момент учетная запись не поддерживает снятие криптовалюты.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
+    "invalidCredentials": "Предоставленные учетные данные неверны. Пожалуйста, попробуйте снова.",
+    "invalidFromIntegrationToken": "Не удается начать перевод. Токен, используемый для аутентификации в этом аккаунте, не имеет разрешения на выполнение этого действия.",
+    "invalidIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
+    "invalidToIntegrationToken": "Не удается определить получателя.",
     "kycRequired": "Не удается начать перевод. Интеграция требует завершения KYC проверки аккаунтов, прежде чем разрешит крипто переводы.",
     "locked": "Ваш аккаунт заблокирован",
+    "mfaNotSupported": "Многофакторная аутентификация для этой операции не поддерживается.",
     "networkDisabled": "Сеть в настоящий момент отключена и не может быть использована.",
+    "noAvailableSmartContract": "Смарт-контракт недоступен",
+    "notAuthorizedFromIntegrationToken": "Не удается начать перевод. Токен, используемый для аутентификации в этом аккаунте, не имеет разрешения на выполнение этого действия.",
+    "notAuthorizedToIntegrationToken": "Не удается начать перевод. Токен, используемый для аутентификации в этом аккаунте, не имеет разрешения на выполнение этого действия.",
     "passKeyNotSupported": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку передачи.",
     "passKeyNotSupportedDeposit": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку внесения депозита.",
     "passKeyNotSupportedOnramp": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку покупки.",
     "passKeyNotSupportedPayment": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку оплаты.",
     "previewExpired": "Предварительный просмотр истек.",
+    "refusedByIntegration": "Не удается начать перевод. Интеграция отклонила запрос.",
+    "reLogInFaceRecognitionDueToScamRisk": "Для вашей безопасности, пожалуйста, войдите в систему заново и пройдите распознавание лица.",
     "satoshiTestRequired": "Coinbase не поддерживает переводы свыше 1000 евро. Пожалуйста, попробуйте снова с меньшей суммой.",
+    "selfTransferNotAllowed": "Вы не можете перевести средства с одного аккаунта на тот же аккаунт.",
+    "sendAccessDisabled": "Не удается начать вывод средств, так как доступ к отправке отключен для этого счета.",
     "symbolNotSupported": "Токен не поддерживается интеграцией.",
     "symbolNotSupportedBySource": "Токен для передачи не поддерживается исходным кошельком через запрошенную сеть.",
     "symbolNotSupportedByTarget": "Не удалось найти адрес для депозита по запрошенному токену.",
     "toAccountNotSupported": "На данный момент учетная запись не поддерживает депозиты криптовалюты.",
     "tooManyRequests": "Пожалуйста, повторите попытку позже.",
     "transferAlreadyRequested": "Перевод уже запрошен.",
-    "twoFaFailed": "Двухфакторная проверка не удалась. Пожалуйста, попробуйте ещё раз.",
-    "coinbaseTravelRuleRestriction": "Coinbase в настоящее время не поддерживает переводы из вашей страны.",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase в настоящее время не поддерживает депозиты из вашей страны.",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase в настоящее время не поддерживает покупки из вашей страны.",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase в настоящее время не поддерживает платежи из вашей страны.",
-    "withdrawalLocked": "Для вашей безопасности вывод средств отключён на 24 часа после изменения настроек аккаунта. Пожалуйста, попробуйте позже.",
-    "accountNotFound": "Не удается получить информацию о вашей учетной записи.",
-    "addressNotAllowlisted": "Не удается начать вывод с Coinbase. Добавьте этот адрес получателя в свой список разрешённых адресов здесь: https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "Этот адрес получателя добавлен в ваш список разрешённых и ожидает разблокировки.",
-    "authenticationFailed": "Не удается выполнить аутентификацию с выбранной интеграцией.",
-    "belowMinimumFiatDeposit": "Сумма ниже минимального лимита депозита.",
-    "exceedsApplicationLimit": "Сумма перевода превышает лимит.",
-    "invalidCredentials": "Предоставленные учетные данные неверны. Пожалуйста, попробуйте снова.",
-    "mfaNotSupported": "Многофакторная аутентификация для этой операции не поддерживается.",
-    "selfTransferNotAllowed": "Вы не можете перевести средства с одного аккаунта на тот же аккаунт.",
-    "sendAccessDisabled": "Не удается начать вывод средств, так как доступ к отправке отключен для этого счета.",
     "tryAgainAfterLogin": "Пожалуйста, попробуйте снова после входа в систему.",
+    "twoFaFailed": "Двухфакторная проверка не удалась. Пожалуйста, попробуйте ещё раз.",
     "unableToSend": "Не удается отправить перевод. Пожалуйста, попробуйте снова.",
+    "unableToSendContactSupport": "В настоящее время вы не можете отправить криптовалюту. Пожалуйста, свяжитесь с поддержкой Coinbase.",
     "userInfoUnavailable": "Не удается получить информацию о пользователе. Пожалуйста, попробуйте снова.",
     "webWithdrawalLimitExceeded": "Вы превысили максимальный дневной лимит на вывод средств для Binance.",
     "whitelistAddressRequired": "Адрес назначения должен быть добавлен в белый список.",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "Ваш вывод средств был определен как высокорисковый. Чтобы сохранить ваши средства в безопасности, вывод средств с вашего счета временно отключен на 1 час.",
     "withdrawalDisabledDueToSecurityReset": "Функция вывода средств вашей учетной записи временно отключена из-за недавней проверки безопасности.",
     "withdrawalDisabledDueToSuspiciousActivity": "Функция вывода средств отключена из-за подозрительной активности. Пожалуйста, завершите процесс проверки на Binance. Если вы не можете пройти проверку, свяжитесь со Службой поддержки. Если вы недавно завершили проверку, подождите немного и попробуйте снова.",
-    "withdrawalPendingDepositConfirmation": "Ваш депозит не достиг требуемого количества подтверждений для разблокировки вывода. Проверьте Историю транзакций для деталей.",
-    "invalidFromIntegrationToken": "Не удается начать перевод. Токен, используемый для аутентификации в этом аккаунте, не имеет разрешения на выполнение этого действия.",
-    "invalidIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
-    "invalidToIntegrationToken": "Не удается определить получателя.",
-    "notAuthorizedFromIntegrationToken": "Не удается начать перевод. Токен, используемый для аутентификации в этом аккаунте, не имеет разрешения на выполнение этого действия.",
-    "notAuthorizedToIntegrationToken": "Не удается начать перевод. Токен, используемый для аутентификации в этом аккаунте, не имеет разрешения на выполнение этого действия.",
-    "configurationMismatch": "Не удается начать перевод. Конфигурация учетной записи не соответствует запрашиваемому переводу.",
-    "refusedByIntegration": "Не удается начать перевод. Интеграция отклонила запрос.",
-    "noAvailableSmartContract": "Смарт-контракт недоступен",
-    "expiredSmartDeposit": "Срок действия Смарт-депозита истек. Смарт-контракт был деактивирован.",
+    "withdrawalLocked": "Для вашей безопасности вывод средств отключён на 24 часа после изменения настроек аккаунта. Пожалуйста, попробуйте позже.",
     "withdrawalLockedP2P": "Для вашей безопасности вывод средств отключен на 24 часа после P2P покупки. Пожалуйста, попробуйте позже.",
-    "unableToSendContactSupport": "В настоящее время вы не можете отправить криптовалюту. Пожалуйста, свяжитесь с поддержкой Coinbase.",
-    "reLogInFaceRecognitionDueToScamRisk": "Для вашей безопасности, пожалуйста, войдите в систему заново и пройдите распознавание лица."
+    "withdrawalPendingDepositConfirmation": "Ваш депозит не достиг требуемого количества подтверждений для разблокировки вывода. Проверьте Историю транзакций для деталей."
   },
   "errorPage": {
     "title": "Произошла ошибка."
@@ -576,6 +567,8 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -619,6 +612,23 @@
     "selectOtherHoldings": "Выберите из других залогов",
     "symbolBalance": "Баланс {{symbol}}",
     "title": "Методы обеспечения"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Одобрить платеж",
@@ -1055,13 +1065,13 @@
     "to": "Кому",
     "total": "Итого",
     "transferDeclined": "Перевод отклонена",
-    "transferDeclinedBody": "Вы отклонили запрос на перевод в вашем кошельке.",
-    "transferTitle": "Предпросмотр передачи",
-    "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}.",
     "transferDeclined40": "Запрос отклонён",
+    "transferDeclinedBody": "Вы отклонили запрос на перевод в вашем кошельке.",
     "transferDeclinedBody40": "Похоже, вы отклонили транзакцию. Если это было ошибкой, попробуйте снова и одобрите запрос в вашем электронном кошельке",
     "transferTimeout": "Мы не получили ответ вовремя",
-    "transferTimeoutBody": "Пожалуйста, попробуйте снова и одобрите запрос на транзакцию."
+    "transferTimeoutBody": "Пожалуйста, попробуйте снова и одобрите запрос на транзакцию.",
+    "transferTitle": "Предпросмотр передачи",
+    "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}."
   },
   "privacyComponent": {
     "content": "Ваши данные являются конфиденциальными и зашифрованы в любое время."
@@ -1164,6 +1174,15 @@
     "paragraph9": "Настоящие условия регулируются законодательством штата Делавэр, за исключением принципов выбора права. За исключением споров, которые могут быть рассмотрены в суде по рассмотрению мелких исков, все споры, возникающие из или связанные с настоящими условиями или любым аспектом отношений между вами и Компанией, будь то на основании договора, деликта, закона, мошенничества, введения в заблуждение или любой другой правовой теории, будут разрешаться путем окончательного и обязательного арбитража перед нейтральным арбитром, а не в суде судьей или присяжными, и вы соглашаетесь, что Компания и вы каждый отказываетесь от права на суд присяжных. Такие споры включают, без ограничений, споры, возникающие в связи с интерпретацией или применением данного положения об арбитраже, включая правомерность, возможность отзыва или действительность положения об арбитраже или любой части положения об арбитраже. Все такие вопросы должны решаться арбитром, а не судом или судьей. Вы соглашаетесь, что любой арбитраж в соответствии с настоящими условиями будет проводиться на индивидуальной основе; коллективные арбитражи и коллективные иски не допускаются, и вы соглашаетесь отказаться от возможности участвовать в коллективном иске.",
     "title": "Условия использования для <2></2> конечных пользователей {{shortName}} "
   },
+  "topupNeeded": {
+    "cancel": "Отмена",
+    "currentBalance": "Текущий баланс",
+    "disclaimer": "Если Вы не завершите платеж, Ваш баланс {{symbol}} останется на Вашем аккаунте {{integrationName}}.",
+    "previewTopup": "Предпросмотр пополнения",
+    "required": "Требуется",
+    "subtitle": "Ваш купленный баланс {{symbol}} ниже ожидаемого из-за колебаний цен и/или изменения газа.",
+    "title": "Пополнение необходимо"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Просмотр депозита",
@@ -1214,11 +1233,6 @@
     "return": "Вернитесь сюда и нажмите ниже, чтобы продолжить перевод.",
     "title": "Подтвердить вывод средств"
   },
-  "transferInsufficientBalancePage": {
-    "title": "Недостаточный баланс",
-    "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
-    "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
-  },
   "transferErrorPage": {
     "defaultError": "Произошла неизвестная ошибка. Нажмите ниже, чтобы начать новый сеанс перевода."
   },
@@ -1242,6 +1256,11 @@
     "returnContinue": "Вернитесь сюда, чтобы продолжить привязку вашего аккаунта.",
     "scanQR": "Отсканируйте QR-код, чтобы завершить верификацию лица для подтверждения, что вы действительно пытаетесь перевести средства.",
     "title": "Верификация"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
+    "title": "Недостаточный баланс",
+    "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
   },
   "transferMfaPage": {
     "title": "Верификация",

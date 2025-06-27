@@ -17,15 +17,6 @@
   "binanceConnectAmountInput": {
     "switchFiatCrypto": "切换法币/加密货币"
   },
-  "topupNeeded": {
-    "title": "余额不足，请充值",
-    "subtitle": "由于价格或燃料费波动，您世纪获得{{symbol}}的金额可能低于预估值。",
-    "currentBalance": "当前余额",
-    "required": "必需",
-    "disclaimer": "如果您未完成付款，您的{{symbol}}余额将保留在您的{{integrationName}}帐户中。",
-    "previewTopup": "查看充值详情",
-    "cancel": "取消"
-  },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "金额必须在{{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}之间",
     "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
@@ -139,6 +130,7 @@
   "common": {
     "availableForTransfer": "可用",
     "cancel": "取消",
+    "chooseDifferentAccount": "选择其他账户",
     "closeCap": "关闭",
     "codeNotCorrent": "验证码不正确。",
     "connectAnotherAccount": "连接另一个账户",
@@ -155,17 +147,16 @@
     "submitCap": "提交",
     "successTitle": "成功！",
     "termsOfUse": "继续操作即表示您接受<1>使用条款</1>",
-    "tryAgain": "再试一次",
-    "chooseDifferentAccount": "选择其他账户"
+    "tryAgain": "再试一次"
   },
   "commonContent": {
     "connecting": "正在连接......",
     "description": "将建立与{{integrationName}}的安全连接。",
     "monitoring": "等待批准中...",
     "resend": "重新发送关联请求",
+    "takingLongerTitle": "还在吗？请在钱包中批准本次操作，确保交易继续进行。",
     "title": "在您的钱包中批准关联<1></1>请求",
-    "title40": "在您的<1></1> {{walletName}}应用中批准连接请求。",
-    "takingLongerTitle": "还在吗？请在钱包中批准本次操作，确保交易继续进行。"
+    "title40": "在您的<1></1> {{walletName}}应用中批准连接请求。"
   },
   "connectExternalPageScreen": {
     "connectedTitle": "请按照桌面操作提示连接您的{{selectedIntegrationName}}",
@@ -192,6 +183,16 @@
   },
   "currencyBox": {
     "changeCurrency": "更改货币"
+  },
+  "deFiWalletConnectionDeclinedPage": {
+    "body": "您可能已拒绝连接请求，或之前的请求仍在进行中，若为误操作，请重试。",
+    "chooseDifferentAccount": "选择其他账户",
+    "title": "哎哟，出了点问题！"
+  },
+  "deFiWalletConnectionUnavailablePage": {
+    "body": "请检查您的钱包并批准连接请求。",
+    "chooseDifferentAccount": "选择其他账户",
+    "title": "响应超时，我们未收到您的确认"
   },
   "deFiWalletDeclinedConnectionPage": {
     "connectionDeclinedBody": "您已拒绝关联钱包的请求，或仍有未完成请求。",
@@ -227,16 +228,6 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}}未在此设备上安装。请安装{{integrationName}}应用，或连接另一个钱包。",
     "title": "连接不可用"
-  },
-  "deFiWalletConnectionUnavailablePage": {
-    "body": "请检查您的钱包并批准连接请求。",
-    "title": "响应超时，我们未收到您的确认",
-    "chooseDifferentAccount": "选择其他账户"
-  },
-  "deFiWalletConnectionDeclinedPage": {
-    "body": "您可能已拒绝连接请求，或之前的请求仍在进行中，若为误操作，请重试。",
-    "title": "哎哟，出了点问题！",
-    "chooseDifferentAccount": "选择其他账户"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "等待手机端应用程序确认",
@@ -335,15 +326,22 @@
     "warningTitle": "在继续之前，请完整阅读此信息。"
   },
   "errorHeadlines": {
+    "accountNotFound": "未找到账户",
     "accountTypeNotSupported": "不支持该账户类型",
+    "addressAllowlistPending": "地址白名单挂起中",
+    "addressNotAllowlisted": "地址未列入白名单",
     "amountBelowMinimum": "金额过低",
     "amountExceedsMaximum": "金额过高",
+    "authenticationFailed": "身份验证失败",
     "badRequest": "请求无效",
     "balanceNotEnough": "余额不足",
+    "belowMinimumFiatDeposit": "低于最低法定存款限额",
     "binanceTravelRuleRestriction": "旅行规则限制",
+    "coinbaseTravelRuleRestriction": "旅行规则限制",
     "coinbaseUnavailable": "Coinbase服务不可用",
     "configurationMismatch": "配置异常",
     "emptyWalletBalance": "清空钱包",
+    "exceedsApplicationLimit": "超过应用程序限制",
     "expiredSmartDeposit": "智能充值已过期",
     "failedToGetFundingOptions": "充值选项错误",
     "failedToSaveFundingOptions": "保存失败",
@@ -352,12 +350,14 @@
     "fromAccountNotSupported": "不支持提现",
     "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
+    "invalidCredentials": "凭证无效",
     "invalidField": "信息无效",
     "invalidFromIntegrationToken": "源代币无效",
     "invalidIntegrationToken": "登录已过期",
     "invalidToIntegrationToken": "目标代币无效",
     "kycRequired": "需要进行KYC身份验证",
     "locked": "账户已被锁定",
+    "mfaNotSupported": "多因素身份验证不支持",
     "missingField": "信息缺失",
     "networkDisabled": "网络已被禁用",
     "networkUnsupported": "不支持该网络",
@@ -372,7 +372,10 @@
     "permissionDenied": "访问被拒绝",
     "previewExpired": "预览已过期",
     "refusedByIntegration": "转账被拒绝",
+    "reLogInFaceRecognitionDueToScamRisk": "再试一次",
     "satoshiTestRequired": "金额超限",
+    "selfTransferNotAllowed": "不允许自助转账",
+    "sendAccessDisabled": "发送权限已禁用",
     "serverFailure": "服务器错误",
     "symbolNotSupported": "不支持该币种",
     "symbolNotSupportedBySource": "不支持该资金来源",
@@ -382,14 +385,11 @@
     "toAccountNotSupported": "不支持存款",
     "tooManyRequests": "操作请求过多",
     "transferAlreadyRequested": "转账请求已提交",
-    "twoFaFailed": "无效双重认证",
-    "unauthorizedToken": "代币未授权",
-    "coinbaseTravelRuleRestriction": "旅行规则限制",
-    "withdrawalLocked": "提现已被锁定",
-    "selfTransferNotAllowed": "不允许自助转账",
-    "sendAccessDisabled": "发送权限已禁用",
     "tryAgainAfterLogin": "需要登录",
+    "twoFaFailed": "无效双重认证",
     "unableToSend": "转账失败",
+    "unableToSendContactSupport": "提现已被锁定",
+    "unauthorizedToken": "代币未授权",
     "userInfoUnavailable": "用户信息不可用",
     "webWithdrawalLimitExceeded": "提现金额超限",
     "whitelistAddressRequired": "需要白名单地址",
@@ -397,68 +397,69 @@
     "withdrawalDisabledDueToScamRisk": "因C2C存款冻结，提款暂被禁用",
     "withdrawalDisabledDueToSecurityReset": "因C2C存款冻结，提款暂被禁用",
     "withdrawalDisabledDueToSuspiciousActivity": "因C2C存款冻结，提款暂被禁用",
-    "withdrawalPendingDepositConfirmation": "提款待确认",
-    "accountNotFound": "未找到账户",
-    "addressNotAllowlisted": "地址未列入白名单",
-    "addressAllowlistPending": "地址白名单挂起中",
-    "authenticationFailed": "身份验证失败",
-    "belowMinimumFiatDeposit": "低于最低法定存款限额",
-    "exceedsApplicationLimit": "超过应用程序限制",
-    "invalidCredentials": "凭证无效",
-    "mfaNotSupported": "多因素身份验证不支持",
+    "withdrawalLocked": "提现已被锁定",
     "withdrawalLockedP2P": "提现已被锁定",
-    "unableToSendContactSupport": "提现已被锁定",
-    "reLogInFaceRecognitionDueToScamRisk": "再试一次"
+    "withdrawalPendingDepositConfirmation": "提款待确认"
   },
   "errorMessages": {
+    "accountNotFound": "无法检索您的账户。",
+    "addressAllowlistPending": "此收件人地址已添加到您的允许列表，正在等待冻结。",
+    "addressNotAllowlisted": "无法从 Coinbase 发起提款。您必须将此收件人地址添加到您的允许列表：https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "转账金额低于此网络的最低转账金额要求。",
     "amountExceedsMaximum": "转账金额超过此网络的最高转账金额限制。",
+    "authenticationFailed": "无法与选定的集成进行身份验证。",
     "balanceNotEnough": "余额不足。",
+    "belowMinimumFiatDeposit": "金额低于最低法定存款限额。",
     "binanceTravelRuleRestriction": "Binance目前不支持来自您所在国家/地区的转账。",
     "binanceTravelRuleRestrictionDeposit": "Binance目前不支持来自您所在国家/地区的存款。",
     "binanceTravelRuleRestrictionOnramp": "Binance目前不支持来自您所在国家/地区的购买。",
     "binanceTravelRuleRestrictionPayment": "币安目前不支持来自您所在国家的付款。",
+    "coinbaseTravelRuleRestriction": "Coinbase目前不支持来自您所在国家/地区的转账。",
+    "coinbaseTravelRuleRestrictionDeposit": "Coinbase目前不支持来自您所在国家/地区的存款。",
+    "coinbaseTravelRuleRestrictionOnramp": "Coinbase目前不支持来自您所在国家/地区的购买。",
+    "coinbaseTravelRuleRestrictionPayment": "Coinbase目前不支持来自您所在国家的付款。",
     "coinbaseUnavailable": "Coinbase发生错误。请检查您的CB账号以查看转账是否成功。",
+    "configurationMismatch": "无法发起转账。账户配置与请求的转账不匹配。",
     "default": "发生了一个错误。",
     "emptyWalletBalance": "源钱包余额为空。",
+    "exceedsApplicationLimit": "转账金额超过应用程序限制。",
+    "expiredSmartDeposit": "智能存款已过期，智能合约已被取消分配。",
     "failedToGetFundingOptions": "获取充值方式失败",
     "failedToSaveFundingOptions": "保存充值方式失败",
     "feeAssetBalanceNotEnough": "余额不足以支付转账费用。",
     "fromAccountNotSupported": "此帐户目前不支持加密货币提现。",
     "integrationNotAvailable": "该集成当前不可用。",
+    "invalidCredentials": "登录凭证无效。请重试。",
+    "invalidFromIntegrationToken": "无法发起转账。用于验证此账户的令牌不被授权执行此操作。",
+    "invalidIntegrationToken": "请重新登录以继续。",
+    "invalidToIntegrationToken": "无法识别目标。",
     "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
     "locked": "您的帐户已被锁定",
+    "mfaNotSupported": "此操作不支持多因素身份验证。",
     "networkDisabled": "网络当前已被禁用，无法使用。",
+    "noAvailableSmartContract": "没有可用的智能合约",
+    "notAuthorizedFromIntegrationToken": "无法发起转账。用于验证此账户的令牌不被授权执行此操作。",
+    "notAuthorizedToIntegrationToken": "无法发起转账。用于验证此账户的令牌不被授权执行此操作。",
     "passKeyNotSupported": "很遗憾，Passkey 2FA目前不支持。请添加Google身份验证器作为额外的2FA，并重试转账。",
     "passKeyNotSupportedDeposit": "很遗憾，Passkey 2FA目前不支持。请添加Google身份验证器作为额外的2FA，并重试存款。",
     "passKeyNotSupportedOnramp": "很遗憾，Passkey 2FA目前不支持。请添加Google身份验证器作为额外的2FA，并重试购买。",
     "passKeyNotSupportedPayment": "很遗憾，Passkey 2FA 目前不支持。请添加 Google 验证器作为额外的 2FA，并重试付款。",
     "previewExpired": "预览已过期。",
+    "refusedByIntegration": "无法发起转账。集成拒绝了请求。",
+    "reLogInFaceRecognitionDueToScamRisk": "为了您的安全，请重新登录并完成人脸识别。",
     "satoshiTestRequired": "Coinbase API 不支持超过 1000 欧元的转账。请输入较小金额再次尝试。",
+    "selfTransferNotAllowed": "您不能从账户向自身发送转账。",
+    "sendAccessDisabled": "由于此账户的发送访问已被禁用，无法发起提款。",
     "symbolNotSupported": "集成不支持此代币符号。",
     "symbolNotSupportedBySource": "源钱包不支持您在所要求的网络上转移的代币符号。",
     "symbolNotSupportedByTarget": "无法找到所请求币种的充值地址。",
     "toAccountNotSupported": "目标账户目前不支持加密货币入金。",
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
-    "twoFaFailed": "双重验证失败。请重试。",
-    "coinbaseTravelRuleRestriction": "Coinbase目前不支持来自您所在国家/地区的转账。",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase目前不支持来自您所在国家/地区的存款。",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase目前不支持来自您所在国家/地区的购买。",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase目前不支持来自您所在国家的付款。",
-    "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
-    "accountNotFound": "无法检索您的账户。",
-    "addressNotAllowlisted": "无法从 Coinbase 发起提款。您必须将此收件人地址添加到您的允许列表：https://www.coinbase.com/settings/allowlist",
-    "addressAllowlistPending": "此收件人地址已添加到您的允许列表，正在等待冻结。",
-    "authenticationFailed": "无法与选定的集成进行身份验证。",
-    "belowMinimumFiatDeposit": "金额低于最低法定存款限额。",
-    "exceedsApplicationLimit": "转账金额超过应用程序限制。",
-    "invalidCredentials": "登录凭证无效。请重试。",
-    "mfaNotSupported": "此操作不支持多因素身份验证。",
-    "selfTransferNotAllowed": "您不能从账户向自身发送转账。",
-    "sendAccessDisabled": "由于此账户的发送访问已被禁用，无法发起提款。",
     "tryAgainAfterLogin": "请登录后再试。",
+    "twoFaFailed": "双重验证失败。请重试。",
     "unableToSend": "无法发送转账。请再试一次。",
+    "unableToSendContactSupport": "您目前无法发送加密货币。请联系Coinbase客服。",
     "userInfoUnavailable": "无法获取用户信息。请再试一次。",
     "webWithdrawalLimitExceeded": "您已超出Binance每日最大提款限额。",
     "whitelistAddressRequired": "目标地址必须被列入白名单。",
@@ -466,19 +467,9 @@
     "withdrawalDisabledDueToScamRisk": "您的提款已被识别为高风险。为了保护您的资金，您的账户提款功能暂时被禁用 1 小时。",
     "withdrawalDisabledDueToSecurityReset": "由于最近的安全验证重置，您的账户提款功能已被暂时禁用。",
     "withdrawalDisabledDueToSuspiciousActivity": "由于可疑活动，您的提款功能已被禁用。请在 Binance 完成验证过程。如无法验证，请联系客户支持。如果您最近已完成验证，请稍等片刻再试。",
-    "withdrawalPendingDepositConfirmation": "您的存款未达到提款所需的解锁确认次数。请查看交易历史获取详情。",
-    "invalidFromIntegrationToken": "无法发起转账。用于验证此账户的令牌不被授权执行此操作。",
-    "invalidIntegrationToken": "请重新登录以继续。",
-    "invalidToIntegrationToken": "无法识别目标。",
-    "notAuthorizedFromIntegrationToken": "无法发起转账。用于验证此账户的令牌不被授权执行此操作。",
-    "notAuthorizedToIntegrationToken": "无法发起转账。用于验证此账户的令牌不被授权执行此操作。",
-    "configurationMismatch": "无法发起转账。账户配置与请求的转账不匹配。",
-    "refusedByIntegration": "无法发起转账。集成拒绝了请求。",
-    "noAvailableSmartContract": "没有可用的智能合约",
-    "expiredSmartDeposit": "智能存款已过期，智能合约已被取消分配。",
+    "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "withdrawalLockedP2P": "出于安全考虑，在进行P2P购买后的24小时内不可提现。请稍后再试。",
-    "unableToSendContactSupport": "您目前无法发送加密货币。请联系Coinbase客服。",
-    "reLogInFaceRecognitionDueToScamRisk": "为了您的安全，请重新登录并完成人脸识别。"
+    "withdrawalPendingDepositConfirmation": "您的存款未达到提款所需的解锁确认次数。请查看交易历史获取详情。"
   },
   "errorPage": {
     "title": "出现错误。"
@@ -619,6 +610,23 @@
     "selectOtherHoldings": "从其他资产中选择",
     "symbolBalance": "{{symbol}}余额",
     "title": "充值方式"
+  },
+  "fundingSelectionDrawer": {
+    "balances": "",
+    "disclaimerDepositFirstLine": "",
+    "disclaimerPaymentFirstLine": "",
+    "disclaimerSecondLineAutomatedSwapDeposit": "",
+    "disclaimerSecondLineAutomatedSwapPayment": "",
+    "disclaimerSecondLineAutomatedSwapTransfer": "",
+    "disclaimerSecondLineOtherBalancesDeposit": "",
+    "disclaimerSecondLineOtherBalancesPayment": "",
+    "disclaimerSecondLineOtherBalancesTransfer": "",
+    "disclaimerTransferFirstLine": "",
+    "stablecoinDepositDisclaimerFirstLine": "",
+    "stablecoinPaymentDisclaimerFirstLine": "",
+    "stablecoinTransferDisclaimerFirstLine": "",
+    "title": "",
+    "total": ""
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "批准付款",
@@ -1055,13 +1063,13 @@
     "to": "收款方",
     "total": "总计",
     "transferDeclined": "转账被拒绝",
-    "transferDeclinedBody": "您已经在钱包中拒绝该转账请求。",
-    "transferTitle": "转账预览",
-    "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。",
     "transferDeclined40": "请求被拒绝",
+    "transferDeclinedBody": "您已经在钱包中拒绝该转账请求。",
     "transferDeclinedBody40": "看起来您拒绝了这笔交易。如果这是一个错误，请重试并在您的钱包中批准请求",
     "transferTimeout": "我们未及时收到回应",
-    "transferTimeoutBody": "请重试并批准交易请求。"
+    "transferTimeoutBody": "请重试并批准交易请求。",
+    "transferTitle": "转账预览",
+    "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
   "privacyComponent": {
     "content": "您的数据全程加密，隐私绝对安全。"
@@ -1164,6 +1172,15 @@
     "paragraph9": "上述条款将由特拉华州法律管辖，不包括其法律选择原则。除符合小额索赔法庭受理条件的争议外，所有因这些条款或您与公司之间关系的任何方面所引起的争议，无论是基于合同、侵权、法定、欺诈、失实陈述或任何其他法律理论，都将由中立仲裁员给出的最终且具有约束力的仲裁解决，而不是在法院由法官或陪审团解决， 您同意与公司双方都放弃陪审团审判的权利。此类争议包括但不限于对仲裁条款解释或适用的争议，包括仲裁条款的可执行性、可撤销性或有效性问题。所有此类事项将由仲裁员而非法院解决。您同意根据这些条款进行的任何仲裁应以个人为基础进行，不允许集体仲裁和集体诉讼， 您同意放弃参与集体诉讼的权利。",
     "title": "{{shortName}} 终端用户<2></2>条款与条件"
   },
+  "topupNeeded": {
+    "cancel": "取消",
+    "currentBalance": "当前余额",
+    "disclaimer": "如果您未完成付款，您的{{symbol}}余额将保留在您的{{integrationName}}帐户中。",
+    "previewTopup": "查看充值详情",
+    "required": "必需",
+    "subtitle": "由于价格或燃料费波动，您世纪获得{{symbol}}的金额可能低于预估值。",
+    "title": "余额不足，请充值"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "预览充值",
@@ -1214,11 +1231,6 @@
     "return": "返回此处并点击下方以继续您的转账。",
     "title": "批准提现"
   },
-  "transferInsufficientBalancePage": {
-    "title": "余额不足",
-    "paymentBody": "您的余额不足以完成此购买。",
-    "transferBody": "您的余额不足，无法完成此次转账。"
-  },
   "transferErrorPage": {
     "defaultError": "发生未知错误。请点击下方开始新的转账流程。"
   },
@@ -1242,6 +1254,11 @@
     "returnContinue": "返回此处继续链接您的账户。",
     "scanQR": "扫描二维码完成面部验证以确认是您本人正在转移资金。",
     "title": "验证"
+  },
+  "transferInsufficientBalancePage": {
+    "paymentBody": "您的余额不足以完成此购买。",
+    "title": "余额不足",
+    "transferBody": "您的余额不足，无法完成此次转账。"
   },
   "transferMfaPage": {
     "title": "验证",
