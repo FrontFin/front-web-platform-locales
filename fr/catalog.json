@@ -441,14 +441,14 @@
     "notAuthorizedFromIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
     "notAuthorizedToIntegrationToken": "Impossible d'initier le transfert. Le jeton utilisé pour s'authentifier dans ce compte n'est pas autorisé à réaliser cette action.",
     "passKeyNotSupported": "Malheureusement, Passkey 2FA n'est actuellement pas pris en charge. Veuillez ajouter Google Authenticator en tant que 2FA supplémentaire et réessayer le transfert.",
-    "passKeyNotSupportedDeposit": "Malheureusement, Passkey 2FA n'est actuellement pas pris en charge. Veuillez ajouter Google Authenticator en tant que 2FA supplémentaire et réessayer le dépôt.",
-    "passKeyNotSupportedOnramp": "Malheureusement, Passkey 2FA n'est actuellement pas pris en charge. Veuillez ajouter Google Authenticator en tant que 2FA supplémentaire et réessayer l'achat.",
+    "passKeyNotSupportedDeposit": "Malheureusement, l’authentification Passkey n’est pas encore prise en charge. Veuillez ajouter Google Authenticator comme méthode 2FA supplémentaire, puis réessayez le dépôt.",
+    "passKeyNotSupportedOnramp": "Malheureusement, l’authentification Passkey n’est pas encore prise en charge. Veuillez ajouter Google Authenticator comme méthode 2FA supplémentaire, puis réessayez votre achat.",
     "passKeyNotSupportedPayment": "Malheureusement, le 2FA Passkey n'est pas encore pris en charge. Veuillez ajouter Google Authenticator comme 2FA supplémentaire et réessayer le paiement.",
     "previewExpired": "L'aperçu a expiré.",
     "refusedByIntegration": "Impossible d'initier le transfert. L'intégration a refusé la demande.",
     "reLogInFaceRecognitionDueToScamRisk": "Pour votre sécurité, veuillez vous reconnecter et compléter la reconnaissance faciale.",
     "satoshiTestRequired": "Coinbase ne prend pas en charge les transferts supérieurs à 1000 euros. Veuillez réessayer avec un montant inférieur.",
-    "selfTransferNotAllowed": "Vous ne pouvez pas envoyer un transfert depuis un compte vers lui-même.",
+    "selfTransferNotAllowed": "Vous ne pouvez pas effectuer un transfert vers le même compte.",
     "sendAccessDisabled": "Impossible d'initier le retrait car l'accès d'envoi a été désactivé pour ce compte.",
     "symbolNotSupported": "Le symbole n'est pas pris en charge par l'intégration.",
     "symbolNotSupportedBySource": "Le symbole à transférer n’est pas pris en charge par le portefeuille source sur le réseau sélectionné.",
@@ -463,7 +463,7 @@
     "userInfoUnavailable": "Impossible d'obtenir les informations utilisateur. Veuillez réessayer.",
     "webWithdrawalLimitExceeded": "Vous avez dépassé la limite maximale de retrait quotidien pour Binance.",
     "whitelistAddressRequired": "L'adresse de destination doit être sur liste blanche.",
-    "withdrawalDisabledDueToC2CDepositFreeze": "Pour la sécurité de vos actifs, certains dépôts C2C seront temporairement gelés pendant 24 heures. Passé 24 heures le statut \"gelé\" sera automatiquement levé et vous pourrez retirer vos cryptomonnaies. Pendant la période de gel, vos transactions sur la plateforme ne seront pas affectées. Vous pouvez continuer à utiliser normalement les services de Binance.",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Pour la sécurité de vos actifs, certains dépôts C2C seront temporairement gelés pendant 24 heures. Passé 24 heures, le statut \"gelé\" sera automatiquement levé, et vous pourrez retirer vos cryptomonnaies. Durant cette période, vos transactions sur la plateforme ne seront pas impactées : vous pouvez continuer à utiliser les services Binance normalement.",
     "withdrawalDisabledDueToScamRisk": "Votre retrait a été identifié comme étant à haut risque. Pour sécuriser vos fonds, les retraits de votre compte sont temporairement désactivés pendant 1 heure.",
     "withdrawalDisabledDueToSecurityReset": "La fonction de retrait de votre compte a été temporairement désactivée suite à une récente réinitialisation de vérification de sécurité.",
     "withdrawalDisabledDueToSuspiciousActivity": "Votre fonction de retrait a été désactivée en raison d'une activité suspecte. Veuillez compléter le processus de vérification sur Binance. Si vous ne pouvez pas vérifier, contactez le service client. Si vous avez récemment terminé la vérification, veuillez patienter un moment et réessayer.",
@@ -1258,7 +1258,9 @@
   "transferInsufficientBalancePage": {
     "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
     "title": "Solde insuffisant",
-    "transferBody": "Votre solde est insuffisant pour effectuer ce transfert."
+    "transferBody": "Votre solde est insuffisant pour effectuer ce transfert.",
+    "gasTitle": "Solde de gaz insuffisant",
+    "gasBody": "Les frais de gaz pour le réseau {{network}} sont payés en {{symbol}}. Veuillez recharger votre solde en {{symbol}} puis réessayez cette transaction."
   },
   "transferMfaPage": {
     "title": "Vérification",
