@@ -36,25 +36,6 @@
     "youPay": "由您支付",
     "youReceive": "由您接收"
   },
-  "onRampOAuthPage": {
-    "amountMustBeWithin": "金额必须在{{minAmount}} - {{maxAmount}}之间",
-    "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
-    "buyCrypto": "使用Binance Connect购买加密货币",
-    "closeButton": "关闭",
-    "continueTo": "继续前往{{selectedIntegrationName}}",
-    "enterAmount": "输入转账金额",
-    "notSupported": "{{selectedIntegrationName}}不支持所请求的代币和/或网络的转账。",
-    "receiveAmountInput": {
-      "networkName": "在{{networkName}}"
-    },
-    "selectAnotherAccount": "选择另一个账户",
-    "selectAnotherExchange": "请另选其他交易所或钱包进行存款。",
-    "selectAsset": "选择要转账的资产",
-    "selectCurrency": "选择货币",
-    "selectNetwork": "选择转账网络",
-    "youPay": "由您支付",
-    "youReceive": "由您接收"
-  },
   "binanceMfaPage": {
     "add2fa": "请在Binance账户中添加所需的双重认证方式（2FA）",
     "chooseAnotherAccount": "选择另一个账户",
@@ -321,8 +302,8 @@
     "goBackToShift4": "返回Shift4",
     "goToIntegrationToApprove": "请前往<1>{{selectedIntegrationName}}</1>批准此转账。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><4></4>的支付至{{clientName}}",
-    "waiting": "在收到足够的网络认证之前，转账不会完成。",
-    "paymentSuccessful": "支付成功！"
+    "paymentSuccessful": "支付成功！",
+    "waiting": "在收到足够的网络认证之前，转账不会完成。"
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "<4>{{clientName}}</4>对于{{address}}地址的所有权已验证完成。",
@@ -1020,6 +1001,25 @@
     "transactionTitle": "交易中",
     "tryAgain": "再试一次"
   },
+  "onRampOAuthPage": {
+    "amountMustBeWithin": "金额必须在{{minAmount}} - {{maxAmount}}之间",
+    "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
+    "buyCrypto": "使用Binance Connect购买加密货币",
+    "closeButton": "关闭",
+    "continueTo": "继续前往{{selectedIntegrationName}}",
+    "enterAmount": "输入转账金额",
+    "notSupported": "{{selectedIntegrationName}}不支持所请求的代币和/或网络的转账。",
+    "receiveAmountInput": {
+      "networkName": "在{{networkName}}"
+    },
+    "selectAnotherAccount": "选择另一个账户",
+    "selectAnotherExchange": "请另选其他交易所或钱包进行存款。",
+    "selectAsset": "选择要转账的资产",
+    "selectCurrency": "选择货币",
+    "selectNetwork": "选择转账网络",
+    "youPay": "由您支付",
+    "youReceive": "由您接收"
+  },
   "orderSummaryDrawer": {
     "merchantInfoName": "商户：{{clientName}}",
     "title": "订单详情",
@@ -1237,9 +1237,9 @@
     },
     "title": {
       "deposit": "输入存款金额",
+      "link40": "输入金额",
       "onramp": "输入购买金额",
-      "transfer": "输入转账金额",
-      "link40": "输入金额"
+      "transfer": "输入转账金额"
     }
   },
   "transferCanceledPage": {
