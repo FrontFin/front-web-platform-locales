@@ -36,25 +36,6 @@
     "youPay": "You pay",
     "youReceive": "You receive"
   },
-  "onRampOAuthPage": {
-    "amountMustBeWithin": "Amount must be within {{minAmount}} - {{maxAmount}}",
-    "amountMustBeWithinErrorMessage": "Amount must be within USD $21 - $15,000",
-    "buyCrypto": "Buy crypto using Binance Connect",
-    "closeButton": "Close",
-    "continueTo": "Continue to {{selectedIntegrationName}}",
-    "enterAmount": "Enter transfer amount",
-    "notSupported": "{{selectedIntegrationName}} does not support transfers for the tokens and/or networks requested.",
-    "receiveAmountInput": {
-      "networkName": "on {{networkName}}"
-    },
-    "selectAnotherAccount": "Select another account",
-    "selectAnotherExchange": "Please select another exchange or wallet to deposit from.",
-    "selectAsset": "Select asset to transfer",
-    "selectCurrency": "Select a currency",
-    "selectNetwork": "Select transfer network",
-    "youPay": "You pay",
-    "youReceive": "You receive"
-  },
   "binanceMfaPage": {
     "add2fa": "Please add the necessary Two-Factor Authentication (2FA) methods in Binance",
     "chooseAnotherAccount": "Choose another account",
@@ -321,8 +302,8 @@
     "goBackToShift4": "← Go back to Shift4",
     "goToIntegrationToApprove": "Please go to <1>{{selectedIntegrationName}}</1> to approve this transfer.",
     "paymentInitiated": "You have initiated a payment of <1></1><2>{{amountCrypto}}</2> <4></4>to {{clientName}}",
-    "waiting": "Transfers are not complete until they have received enough network confirmations.",
-    "paymentSuccessful": "Payment successful!"
+    "paymentSuccessful": "Payment successful!",
+    "waiting": "Transfers are not complete until they have received enough network confirmations."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Ownership of address {{address}} has already been verified for <4>{{clientName}}</4>.",
@@ -1020,6 +1001,25 @@
     "transactionTitle": "Transaction in progress",
     "tryAgain": "Try again"
   },
+  "onRampOAuthPage": {
+    "amountMustBeWithin": "Amount must be within {{minAmount}} - {{maxAmount}}",
+    "amountMustBeWithinErrorMessage": "Amount must be within USD $21 - $15,000",
+    "buyCrypto": "Buy crypto using Binance Connect",
+    "closeButton": "Close",
+    "continueTo": "Continue to {{selectedIntegrationName}}",
+    "enterAmount": "Enter transfer amount",
+    "notSupported": "{{selectedIntegrationName}} does not support transfers for the tokens and/or networks requested.",
+    "receiveAmountInput": {
+      "networkName": "on {{networkName}}"
+    },
+    "selectAnotherAccount": "Select another account",
+    "selectAnotherExchange": "Please select another exchange or wallet to deposit from.",
+    "selectAsset": "Select asset to transfer",
+    "selectCurrency": "Select a currency",
+    "selectNetwork": "Select transfer network",
+    "youPay": "You pay",
+    "youReceive": "You receive"
+  },
   "orderSummaryDrawer": {
     "merchantInfoName": "Merchant: {{clientName}}",
     "title": "Order summary",
@@ -1070,7 +1070,7 @@
     "includeFeesMessage": "Includes {{amount}} in fees",
     "networkLabel": "Network",
     "paymentTitle": "Pay {{clientName}}",
-    "paymentTotalLabel": "Pay total",
+    "paymentTotalLabel": "Total",
     "payWithLabel": "Pay with",
     "payWithLabelWithName": "Pay with {{integrationName}}",
     "processingPayment": "Processing your payment"
@@ -1237,9 +1237,9 @@
     },
     "title": {
       "deposit": "Enter deposit amount",
+      "link40": "Enter amount",
       "onramp": "Enter purchase amount",
-      "transfer": "Enter transfer amount",
-      "link40": "Enter amount"
+      "transfer": "Enter transfer amount"
     }
   },
   "transferCanceledPage": {
