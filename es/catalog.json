@@ -36,25 +36,6 @@
     "youPay": "Pagarás",
     "youReceive": "Recibirás"
   },
-  "onRampOAuthPage": {
-    "amountMustBeWithin": "La cantidad debe estar dentro de {{minAmount}} - {{maxAmount}}",
-    "amountMustBeWithinErrorMessage": "El importe debe estar dentro de USD $21 - $15,000",
-    "buyCrypto": "Compra criptomonedas usando Binance Connect",
-    "closeButton": "Cerrar",
-    "continueTo": "Continúa en {{selectedIntegrationName}}",
-    "enterAmount": "Introduce el monto de la transferencia",
-    "notSupported": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitadas.",
-    "receiveAmountInput": {
-      "networkName": "en {{networkName}}"
-    },
-    "selectAnotherAccount": "Selecciona otra cuenta",
-    "selectAnotherExchange": "Por favor, selecciona otra plataforma o cartera de la cual depositar.",
-    "selectAsset": "Selecciona un recurso a transferir",
-    "selectCurrency": "Selecciona una moneda",
-    "selectNetwork": "Selecciona una red",
-    "youPay": "Pagarás",
-    "youReceive": "Recibirás"
-  },
   "binanceMfaPage": {
     "add2fa": "Por favor, agrega los métodos requeridos de autenticación de dos factores (2FA) en Binance",
     "chooseAnotherAccount": "Elegir otra cuenta",
@@ -321,8 +302,8 @@
     "goBackToShift4": "← Regresar a Shift4",
     "goToIntegrationToApprove": "Por favor, ve a <1>{{selectedIntegrationName}}</1> para aprobar esta transferencia.",
     "paymentInitiated": "Has iniciado un pago de <1></1><2>{{amountCrypto}}</2> <4></4> a {{clientName}}",
-    "waiting": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red.",
-    "paymentSuccessful": "¡Pago exitoso!"
+    "paymentSuccessful": "¡Pago exitoso!",
+    "waiting": "Las transferencias no se completan hasta que no hayan recibido suficientes confirmaciones de red."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "La propiedad de la dirección {{address}} ya ha sido verificada por <4>{{clientName}}</4>.",
@@ -1020,6 +1001,25 @@
     "transactionTitle": "Transacción en curso",
     "tryAgain": "Inténtalo de nuevo"
   },
+  "onRampOAuthPage": {
+    "amountMustBeWithin": "La cantidad debe estar dentro de {{minAmount}} - {{maxAmount}}",
+    "amountMustBeWithinErrorMessage": "El importe debe estar dentro de USD $21 - $15,000",
+    "buyCrypto": "Compra criptomonedas usando Binance Connect",
+    "closeButton": "Cerrar",
+    "continueTo": "Continúa en {{selectedIntegrationName}}",
+    "enterAmount": "Introduce el monto de la transferencia",
+    "notSupported": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitadas.",
+    "receiveAmountInput": {
+      "networkName": "en {{networkName}}"
+    },
+    "selectAnotherAccount": "Selecciona otra cuenta",
+    "selectAnotherExchange": "Por favor, selecciona otra plataforma o cartera de la cual depositar.",
+    "selectAsset": "Selecciona un recurso a transferir",
+    "selectCurrency": "Selecciona una moneda",
+    "selectNetwork": "Selecciona una red",
+    "youPay": "Pagarás",
+    "youReceive": "Recibirás"
+  },
   "orderSummaryDrawer": {
     "merchantInfoName": "Comerciante: {{clientName}}",
     "title": "Resumen del pedido",
@@ -1237,9 +1237,9 @@
     },
     "title": {
       "deposit": "Introduce la cantidad a depositar",
+      "link40": "Introduzca el importe",
       "onramp": "Introduce el monto de la compra",
-      "transfer": "Introduzca el monto de la transferencia",
-      "link40": "Introduzca el importe"
+      "transfer": "Introduzca el monto de la transferencia"
     }
   },
   "transferCanceledPage": {
