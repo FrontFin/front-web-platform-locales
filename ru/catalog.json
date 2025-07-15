@@ -36,25 +36,6 @@
     "youPay": "Вы платите",
     "youReceive": "Вы получаете"
   },
-  "onRampOAuthPage": {
-    "amountMustBeWithin": "Сумма должна быть в пределах {{minAmount}} - {{maxAmount}}",
-    "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15,000",
-    "buyCrypto": "Купить криптовалюту с помощью Binance Connect",
-    "closeButton": "Закрыть",
-    "continueTo": "Перейти к  {{selectedIntegrationName}}",
-    "enterAmount": "Введите сумму перевода",
-    "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
-    "receiveAmountInput": {
-      "networkName": "на {{networkName}}"
-    },
-    "selectAnotherAccount": "Выберите другой аккаунт",
-    "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
-    "selectAsset": "Выберите актив для перевода",
-    "selectCurrency": "Выберите валюту",
-    "selectNetwork": "Выберите сеть для перевода",
-    "youPay": "Вы платите",
-    "youReceive": "Вы получаете"
-  },
   "binanceMfaPage": {
     "add2fa": "Пожалуйста, добавьте необходимые двухфакторные методы аутентификации (2FA) в Binance",
     "chooseAnotherAccount": "Выберите другой аккаунт",
@@ -321,8 +302,8 @@
     "goBackToShift4": "← Вернуться к Shift4",
     "goToIntegrationToApprove": "Пожалуйста, перейдите в <1>{{selectedIntegrationName}}</1> для подтверждения перевода.",
     "paymentInitiated": "Вы инициировали платеж <1></1><2>{{amountCrypto}}</2><4></4> для {{clientName}}",
-    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети.",
-    "paymentSuccessful": "Платеж успешно выполнен!"
+    "paymentSuccessful": "Платеж успешно выполнен!",
+    "waiting": "Переводы не завершены, пока они не получат достаточно подтверждений сети."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Владелец адреса {{address}} уже верифицирован для <4>{{clientName}}</4>.",
@@ -1020,6 +1001,25 @@
     "transactionTitle": "Идет обработка транзакции",
     "tryAgain": "Попробовать еще раз"
   },
+  "onRampOAuthPage": {
+    "amountMustBeWithin": "Сумма должна быть в пределах {{minAmount}} - {{maxAmount}}",
+    "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15,000",
+    "buyCrypto": "Купить криптовалюту с помощью Binance Connect",
+    "closeButton": "Закрыть",
+    "continueTo": "Перейти к  {{selectedIntegrationName}}",
+    "enterAmount": "Введите сумму перевода",
+    "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
+    "receiveAmountInput": {
+      "networkName": "на {{networkName}}"
+    },
+    "selectAnotherAccount": "Выберите другой аккаунт",
+    "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
+    "selectAsset": "Выберите актив для перевода",
+    "selectCurrency": "Выберите валюту",
+    "selectNetwork": "Выберите сеть для перевода",
+    "youPay": "Вы платите",
+    "youReceive": "Вы получаете"
+  },
   "orderSummaryDrawer": {
     "merchantInfoName": "Продавец: {{clientName}}",
     "title": "Итог заказа",
@@ -1237,9 +1237,9 @@
     },
     "title": {
       "deposit": "Введите сумму пополнения",
+      "link40": "Введите сумму пополнения",
       "onramp": "Введите сумму покупки",
-      "transfer": "Введите сумму перевода",
-      "link40": "Введите сумму пополнения"
+      "transfer": "Введите сумму перевода"
     }
   },
   "transferCanceledPage": {
