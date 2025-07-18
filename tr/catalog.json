@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Bakiyeler",
+    "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} token ile mevduat kabul eder.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} tokeni ile ödemeyi kabul eder.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} tokeni ile transferleri kabul eder.",
     "disclaimerDepositFirstLine": "Hedef, {{symbol}} token ile mevduat kabul eder.",
     "disclaimerPaymentFirstLine": "Hedef, {{symbol}} token ile ödeme kabul eder.",
     "disclaimerSecondLineAutomatedSwapDeposit": "{{symbol}} bakiyenizi tamamlamamız gerekecek. Bu nedenle, hesabınızdaki başka bir tokenı otomatik olarak {{symbol}} ile değiştirerek bu yatırımı gerçekleştireceğiz.",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "Yeterli {{symbol}} yok, bu yüzden ödemeyi tamamlamak için hesabınızdaki diğer bakiyeler kullanılarak tamamlayacağız.",
     "disclaimerSecondLineOtherBalancesTransfer": "Yeterli {{symbol}} yok, bu yüzden transferencia tamamlamak için hesabınızdaki diğer bakiyeler kullanılarak tamamlayacağız.",
     "disclaimerTransferFirstLine": "Hedef, {{symbol}} token ile transfer kabul eder.",
-    "stablecoinDepositDisclaimerFirstLine": "Hedef, stabilcoin {{symbol}} ile mevduat kabul eder.",
-    "stablecoinPaymentDisclaimerFirstLine": "Hedef, stabilcoin {{symbol}} ile ödeme kabul eder.",
-    "stablecoinTransferDisclaimerFirstLine": "Hedef, stabilcoin {{symbol}} ile transfer kabul eder.",
-    "title": "Ödeme yöntemleri",
-    "total": "Toplam: {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} token ile mevduat kabul eder.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} tokeni ile ödemeyi kabul eder.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} tokeni ile transferleri kabul eder.",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} {{symbol}} stablecoini ile mevduat kabul eder.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} {{symbol}} stablecoini ile ödemeyi kabul eder.",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} {{symbol}} stabilcoin ile transferleri kabul eder.",
-    "thisMerchant": "Bu satıcı"
+    "stablecoinDepositDisclaimerFirstLine": "Hedef, stabilcoin {{symbol}} ile mevduat kabul eder.",
+    "stablecoinPaymentDisclaimerFirstLine": "Hedef, stabilcoin {{symbol}} ile ödeme kabul eder.",
+    "stablecoinTransferDisclaimerFirstLine": "Hedef, stabilcoin {{symbol}} ile transfer kabul eder.",
+    "thisMerchant": "Bu satıcı",
+    "title": "Ödeme yöntemleri",
+    "total": "Toplam: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Ödemeyi onayla",
@@ -827,8 +827,8 @@
     "title": "Cihazınız onaylandı."
   },
   "mfaError": {
-    "default": "Yanlış kod, lütfen tekrar deneyin",
-    "authenticator": "Geçersiz kod. Kimlik doğrulayıcı uygulamanızı kontrol edin"
+    "authenticator": "Geçersiz kod. Kimlik doğrulayıcı uygulamanızı kontrol edin",
+    "default": "Yanlış kod, lütfen tekrar deneyin"
   },
   "mfaHint": {
     "email": "E-postanızı kontrol edin",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "<2>{{selectedIntegrationName}}</2> tarafından e-postanıza gönderilen tek seferlik kodu girin.",
-    "paymentFlow": "Bu ödemeyi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
     "newPaymentFlow": "Bu işlemi onaylamak için bir kereye <2>{{selectedIntegrationName}}</2> kodunuzu giriniz.",
+    "paymentFlow": "Bu ödemeyi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
     "phone": "<2>{{selectedIntegrationName}}</2> tarafından telefonunuza gönderilen tek seferlik kodu girin.",
     "totp": "<1>{{selectedIntegrationName}}</1> ile bağladığınız doğrulayıcı uygulamanın sağladığı tek seferlik kodu girin.",
     "tradingPin": "Lütfen <2>{{selectedIntegrationName}}</2> hesabınızla ilişkili işlem PIN kodunu giriniz.",
@@ -1171,7 +1171,8 @@
     "label": "{{text}} seçin"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "Uygun olmayan ağlar"
+    "ineligibleNetwork": "Uygun olmayan ağlar",
+    "title": "Bir ağı seçin"
   },
   "selectNetworkScreen": {
     "title": "Bağlanılacak ağı seçin"
