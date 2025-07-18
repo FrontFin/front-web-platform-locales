@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "余额",
+    "disclaimerClientDepositFirstLine": "{{clientName}}接受{{symbol}}代币的存款。",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} 接受 {{symbol}} 代币的支付。",
+    "disclaimerClientTransferFirstLine": "{{clientName}} 接受 {{symbol}} 代币的转账。",
     "disclaimerDepositFirstLine": "目标接受{{symbol}}代币的存款。",
     "disclaimerPaymentFirstLine": "目标接受{{symbol}}代币的付款。",
     "disclaimerSecondLineAutomatedSwapDeposit": "我们需要补充您的{{symbol}}余额，因此我们会自动将您账户中的另一种代币转换为{{symbol}}以进行这笔存款。",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成支付。",
     "disclaimerSecondLineOtherBalancesTransfer": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成转账。",
     "disclaimerTransferFirstLine": "目标接受{{symbol}}代币的转账。",
-    "stablecoinDepositDisclaimerFirstLine": "目标接受稳定币{{symbol}}的存款。",
-    "stablecoinPaymentDisclaimerFirstLine": "目标接受稳定币{{symbol}}的付款。",
-    "stablecoinTransferDisclaimerFirstLine": "目标接受稳定币{{symbol}}的转账。",
-    "title": "充值方式",
-    "total": "总金额: {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}}接受{{symbol}}代币的存款。",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} 接受 {{symbol}} 代币的支付。",
-    "disclaimerClientTransferFirstLine": "{{clientName}} 接受 {{symbol}} 代币的转账。",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} 接受 {{symbol}} 稳定币的存款。",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} 接受 {{symbol}} 稳定币的支付。",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}}接受稳定币{{symbol}}的转账。",
-    "thisMerchant": "此商户"
+    "stablecoinDepositDisclaimerFirstLine": "目标接受稳定币{{symbol}}的存款。",
+    "stablecoinPaymentDisclaimerFirstLine": "目标接受稳定币{{symbol}}的付款。",
+    "stablecoinTransferDisclaimerFirstLine": "目标接受稳定币{{symbol}}的转账。",
+    "thisMerchant": "此商户",
+    "title": "充值方式",
+    "total": "总金额: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "批准付款",
@@ -827,8 +827,8 @@
     "title": "您的设备已通过验证。"
   },
   "mfaError": {
-    "default": "验证码错误，请重试",
-    "authenticator": "无效代码。请查看您的验证器"
+    "authenticator": "无效代码。请查看您的验证器",
+    "default": "验证码错误，请重试"
   },
   "mfaHint": {
     "email": "检查您的电子邮件",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "输入 <2>{{selectedIntegrationName}}</2> 已发送至您邮箱的一次性验证码。",
-    "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
     "newPaymentFlow": "请输入您的一次性<2>{{selectedIntegrationName}}</2>代码以确认此交易。",
+    "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
     "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性验证码。",
     "totp": "请输入由您绑定 <1>{{selectedIntegrationName}}</1> 相关身份验证器提供的一次性验证码。",
     "tradingPin": "请输入与您的 <2>{{selectedIntegrationName}}</2> 账户绑定的交易 PIN 码。",
@@ -1171,7 +1171,8 @@
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "无法使用的网络"
+    "ineligibleNetwork": "无法使用的网络",
+    "title": "选择一个网络"
   },
   "selectNetworkScreen": {
     "title": "选择要连接的网络"
