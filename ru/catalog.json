@@ -581,8 +581,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -629,9 +627,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Балансы",
-    "disclaimerClientDepositFirstLine": "{{clientName}} принимает депозиты в токене {{symbol}}.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} принимает оплату в токене {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} принимает переводы в токене {{symbol}}.",
+    "disclaimerClientDepositFirstLine": "{{clientName}} принимает депозиты в {{symbol}}.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} принимает оплату в {{symbol}}.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} принимает переводы в {{symbol}}.",
     "disclaimerDepositFirstLine": "Целевая платформа принимает переводы в токене {{symbol}}.",
     "disclaimerPaymentFirstLine": "Целевая платформа принимает оплату в токене {{symbol}}.",
     "disclaimerSecondLineAutomatedSwapDeposit": "Мы должны пополнить ваш баланс {{symbol}}, поэтому мы произведём автоматический обмен другого токена в вашем аккаунте на {{symbol}}, чтобы совершить этот перевод.",
@@ -827,6 +825,7 @@
     "title": "Ваше устройство одобрено."
   },
   "mfaError": {
+    "authenticator": "Неверный код. Проверьте ваше 2FA приложение",
     "default": "Неверный код, попробуйте еще раз"
   },
   "mfaHint": {
@@ -837,6 +836,7 @@
   },
   "mfaInstructionsText": {
     "email": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш email.",
+    "newPaymentFlow": "Введите ваш одноразовый код <2>{{selectedIntegrationName}}</2> для подтверждения этой транзакции.",
     "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот платеж.",
     "phone": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш телефон.",
     "totp": "Введите одноразовый код, предоставленный приложением-аутентификатором, на которое вы использовали для <1>{{selectedIntegrationName}}</1>.",
@@ -1169,7 +1169,8 @@
     "label": "Выбор {{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "Неподходящие сети"
+    "ineligibleNetwork": "Неподходящие сети",
+    "title": "Выберите сеть"
   },
   "selectNetworkScreen": {
     "title": "Выберите сеть для подключения"
