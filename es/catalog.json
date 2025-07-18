@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Saldos",
+    "disclaimerClientDepositFirstLine": "{{clientName}} acepta depósitos en el token {{symbol}}.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} acepta pagos en el token {{symbol}}.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} acepta transferencias en el token {{symbol}}.",
     "disclaimerDepositFirstLine": "Target acepta depósitos en el token {{symbol}}.",
     "disclaimerPaymentFirstLine": "Target acepta pagos en el token {{symbol}}.",
     "disclaimerSecondLineAutomatedSwapDeposit": "Tendremos que recargar tu saldo de {{symbol}}, así que haremos un intercambio automatizado de otro token en tu cuenta a {{symbol}} para hacer este depósito.",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "No tienes suficiente {{symbol}}, así que te completaremos utilizando otros saldos en tu cuenta para completar el pago.",
     "disclaimerSecondLineOtherBalancesTransfer": "No tienes suficiente {{symbol}}, así que te completaremos utilizando otros saldos en tu cuenta para completar la transferencia.",
     "disclaimerTransferFirstLine": "Target acepta transferencias en el token {{symbol}}.",
-    "stablecoinDepositDisclaimerFirstLine": "Target acepta depósitos en la stablecoin {{symbol}}.",
-    "stablecoinPaymentDisclaimerFirstLine": "Target acepta pagos en la stablecoin {{symbol}}.",
-    "stablecoinTransferDisclaimerFirstLine": "Target acepta transferencias en la stablecoin {{symbol}}.",
-    "title": "Formas de pago",
-    "total": "Total: {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}} acepta depósitos en el token {{symbol}}.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} acepta pagos en el token {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} acepta transferencias en el token {{symbol}}.",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} acepta depósitos en la moneda estable {{symbol}}.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} acepta pagos en la moneda estable {{symbol}}.",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} acepta transferencias en la stablecoin {{symbol}}.",
-    "thisMerchant": "Este comerciante"
+    "stablecoinDepositDisclaimerFirstLine": "Target acepta depósitos en la stablecoin {{symbol}}.",
+    "stablecoinPaymentDisclaimerFirstLine": "Target acepta pagos en la stablecoin {{symbol}}.",
+    "stablecoinTransferDisclaimerFirstLine": "Target acepta transferencias en la stablecoin {{symbol}}.",
+    "thisMerchant": "Este comerciante",
+    "title": "Formas de pago",
+    "total": "Total: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Aprobar el pago",
@@ -827,8 +827,8 @@
     "title": "Tu dispositivo está aprobado."
   },
   "mfaError": {
-    "default": "Código incorrecto, inténtelo de nuevo",
-    "authenticator": "Código inválido. Revise su aplicación de autenticación"
+    "authenticator": "Código inválido. Revise su aplicación de autenticación",
+    "default": "Código incorrecto, inténtelo de nuevo"
   },
   "mfaHint": {
     "email": "Revisa tu email",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "Introduzca el código que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
-    "paymentFlow": "Introduce tu código para confirmar tu identidad.",
     "newPaymentFlow": "Ingrese su código de <2>{{selectedIntegrationName}}</2> de un solo uso para confirmar esta transacción.",
+    "paymentFlow": "Introduce tu código para confirmar tu identidad.",
     "phone": "Introduce el código que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
     "totp": "Introduzca el código proporcionado por la aplicación del autenticador que ha vinculado a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Introduce el código PIN asociado a tu cuenta <2>{{selectedIntegrationName}}</2>.",
@@ -1171,7 +1171,8 @@
     "label": "Selecciona {{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "Redes inelegibles"
+    "ineligibleNetwork": "Redes inelegibles",
+    "title": "Elige una red"
   },
   "selectNetworkScreen": {
     "title": "Selecciona la red a conectar"
