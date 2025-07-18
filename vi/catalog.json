@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Số dư",
+    "disclaimerClientDepositFirstLine": "{{clientName}} chấp nhận tiền gửi bằng token {{symbol}}.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} chấp nhận thanh toán bằng mã thông báo {{symbol}}.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} chấp nhận chuyển khoản bằng mã thông báo {{symbol}}.",
     "disclaimerDepositFirstLine": "Mục tiêu chấp nhận tiền nạp bằng mã thông báo {{symbol}}.",
     "disclaimerPaymentFirstLine": "Mục tiêu chấp nhận thanh toán bằng mã thông báo {{symbol}}.",
     "disclaimerSecondLineAutomatedSwapDeposit": "Chúng tôi sẽ phải nạp thêm vào số dư {{symbol}} của bạn, vì vậy chúng tôi sẽ tiến hành một giao dịch hoán đổi tự động của một token khác trong tài khoản của bạn thành {{symbol}} để thực hiện khoản tiền gửi này.",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "Bạn không có đủ {{symbol}}, vì vậy chúng tôi sẽ bổ sung cho bạn từ các số dư khác trong tài khoản của bạn để hoàn tất thanh toán.",
     "disclaimerSecondLineOtherBalancesTransfer": "Bạn không có đủ {{symbol}}, vì vậy chúng tôi sẽ bổ sung cho bạn từ các số dư khác trong tài khoản của bạn để hoàn tất chuyển khoản.",
     "disclaimerTransferFirstLine": "Mục tiêu chấp nhận chuyển khoản bằng mã thông báo {{symbol}}.",
-    "stablecoinDepositDisclaimerFirstLine": "Mục tiêu chấp nhận tiền nạp bằng stablecoin {{symbol}}.",
-    "stablecoinPaymentDisclaimerFirstLine": "Mục tiêu chấp nhận thanh toán bằng stablecoin {{symbol}}.",
-    "stablecoinTransferDisclaimerFirstLine": "Mục tiêu chấp nhận chuyển khoản bằng stablecoin {{symbol}}.",
-    "title": "Phương thức thanh toán",
-    "total": "Tổng cộng: {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}} chấp nhận tiền gửi bằng token {{symbol}}.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} chấp nhận thanh toán bằng mã thông báo {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} chấp nhận chuyển khoản bằng mã thông báo {{symbol}}.",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} chấp nhận gửi tiền bằng stablecoin {{symbol}}.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} chấp nhận thanh toán bằng stablecoin {{symbol}}.",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} chấp nhận chuyển khoản bằng stablecoin {{symbol}}.",
-    "thisMerchant": "Thương nhân này"
+    "stablecoinDepositDisclaimerFirstLine": "Mục tiêu chấp nhận tiền nạp bằng stablecoin {{symbol}}.",
+    "stablecoinPaymentDisclaimerFirstLine": "Mục tiêu chấp nhận thanh toán bằng stablecoin {{symbol}}.",
+    "stablecoinTransferDisclaimerFirstLine": "Mục tiêu chấp nhận chuyển khoản bằng stablecoin {{symbol}}.",
+    "thisMerchant": "Thương nhân này",
+    "title": "Phương thức thanh toán",
+    "total": "Tổng cộng: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Chấp nhận thanh toán",
@@ -827,8 +827,8 @@
     "title": "Thiết bị của bạn đã được phê duyệt."
   },
   "mfaError": {
-    "default": "Mã không chính xác, vui lòng thử lại",
-    "authenticator": "Mã không hợp lệ. Kiểm tra ứng dụng xác thực của bạn"
+    "authenticator": "Mã không hợp lệ. Kiểm tra ứng dụng xác thực của bạn",
+    "default": "Mã không chính xác, vui lòng thử lại"
   },
   "mfaHint": {
     "email": "Kiểm tra email của bạn",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "Nhập mã dùng một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến email của bạn.",
-    "paymentFlow": "Nhập mã dùng một lần để xác nhận chính bạn đang thực hiện thanh toán.",
     "newPaymentFlow": "Nhập mã <2>{{selectedIntegrationName}}</2> một lần của bạn để xác nhận giao dịch này.",
+    "paymentFlow": "Nhập mã dùng một lần để xác nhận chính bạn đang thực hiện thanh toán.",
     "phone": "Nhập mã một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến điện thoại của bạn.",
     "totp": "Nhập mã một lần do ứng dụng xác thực mà bạn đã liên kết với <1>{{selectedIntegrationName}}</1> cung cấp.",
     "tradingPin": "Vui lòng nhập mã PIN giao dịch liên kết với tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
@@ -1171,7 +1171,8 @@
     "label": "Chọn {{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "Mạng không đủ điều kiện"
+    "ineligibleNetwork": "Mạng không đủ điều kiện",
+    "title": "Chọn một mạng"
   },
   "selectNetworkScreen": {
     "title": "Chọn mạng để kết nối"
