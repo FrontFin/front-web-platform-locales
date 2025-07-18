@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Konten",
+    "disclaimerClientDepositFirstLine": "{{clientName}} akzeptiert Einzahlungen in das {{symbol}} Token.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} akzeptiert Zahlungen im {{symbol}} Token.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} akzeptiert Überweisungen im {{symbol}} Token.",
     "disclaimerDepositFirstLine": "Ziel akzeptiert Einzahlungen in {{symbol}}-Token.",
     "disclaimerPaymentFirstLine": "Ziel akzeptiert Zahlungen in {{symbol}}-Token.",
     "disclaimerSecondLineAutomatedSwapDeposit": "Wir müssen Ihr {{symbol}}-Guthaben aufladen, daher werden wir einen automatischen Tausch eines anderen Tokens in Ihrem Konto in {{symbol}} vornehmen, um diese Einzahlung zu tätigen.",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "Sie haben nicht genug {{symbol}}, daher werden wir Ihr Guthaben mit anderen Konten in Ihrem Konto aufstocken, um die Zahlung abzuschließen.",
     "disclaimerSecondLineOtherBalancesTransfer": "Sie haben nicht genug {{symbol}}, daher werden wir Ihr Guthaben mit anderen Konten in Ihrem Konto aufstocken, um die Überweisung abzuschließen.",
     "disclaimerTransferFirstLine": "Ziel akzeptiert Übertragungen in {{symbol}}-Token.",
-    "stablecoinDepositDisclaimerFirstLine": "Ziel akzeptiert Einzahlungen in der Stablecoin {{symbol}}.",
-    "stablecoinPaymentDisclaimerFirstLine": "Ziel akzeptiert Zahlungen in der Stablecoin {{symbol}}.",
-    "stablecoinTransferDisclaimerFirstLine": "Ziel akzeptiert Übertragungen in der Stablecoin {{symbol}}.",
-    "title": "Zahlungsmethoden",
-    "total": "Gesamt: {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}} akzeptiert Einzahlungen in das {{symbol}} Token.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} akzeptiert Zahlungen im {{symbol}} Token.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} akzeptiert Überweisungen im {{symbol}} Token.",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} akzeptiert Einzahlungen in der Stablecoin {{symbol}}.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} akzeptiert Zahlungen in der Stablecoin {{symbol}}.",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akzeptiert Überweisungen in der Stablecoin {{symbol}}.",
-    "thisMerchant": "Dieser Händler"
+    "stablecoinDepositDisclaimerFirstLine": "Ziel akzeptiert Einzahlungen in der Stablecoin {{symbol}}.",
+    "stablecoinPaymentDisclaimerFirstLine": "Ziel akzeptiert Zahlungen in der Stablecoin {{symbol}}.",
+    "stablecoinTransferDisclaimerFirstLine": "Ziel akzeptiert Übertragungen in der Stablecoin {{symbol}}.",
+    "thisMerchant": "Dieser Händler",
+    "title": "Zahlungsmethoden",
+    "total": "Gesamt: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Zahlung genehmigen",
@@ -827,8 +827,8 @@
     "title": "Dein Gerät ist genehmigt."
   },
   "mfaError": {
-    "default": "Falscher Code, bitte versuche es erneut",
-    "authenticator": "Ungültiger Code. Überprüfe Deine Authentifizierungs-App"
+    "authenticator": "Ungültiger Code. Überprüfe Deine Authentifizierungs-App",
+    "default": "Falscher Code, bitte versuche es erneut"
   },
   "mfaHint": {
     "email": "Überprüfe Deine E-Mail",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "Gib den Einmalcode ein, den <2>{{selectedIntegrationName}}</2> Dir per E-Mail gesendet hat.",
-    "paymentFlow": "Gib Deinen Einmalcode ein, um zu bestätigen, dass es wirklich Du bist, der diese Zahlung initiieren will.",
     "newPaymentFlow": "Gib Deinen einmaligen <2>{{selectedIntegrationName}}</2> Code ein, um diese Transaktion zu bestätigen.",
+    "paymentFlow": "Gib Deinen Einmalcode ein, um zu bestätigen, dass es wirklich Du bist, der diese Zahlung initiieren will.",
     "phone": "Gib den Einmalcode ein, den <2>{{selectedIntegrationName}}</2> Dir per SMS an Dein Telefon gesendet hat.",
     "totp": "Gib den Einmalcode ein, der von der Authentifizierungs-App bereitgestellt wurde, die Du mit <1>{{selectedIntegrationName}}</1> verknüpft hast.",
     "tradingPin": "Bitte gib den Handels-PIN-Code ein, der mit Deinem <2>{{selectedIntegrationName}}</2>-Konto verknüpft ist.",
@@ -1171,7 +1171,8 @@
     "label": "{{text}} auswählen"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "Nicht berechtigte Netzwerke"
+    "ineligibleNetwork": "Nicht berechtigte Netzwerke",
+    "title": "Wählen Sie ein Netzwerk"
   },
   "selectNetworkScreen": {
     "title": "Netzwerk auswählen, zu dem verbunden wird"
