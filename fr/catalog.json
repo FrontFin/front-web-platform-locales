@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Soldes",
+    "disclaimerClientDepositFirstLine": "{{clientName}} accepte les dépôts en jeton {{symbol}}.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} accepte le paiement en jeton {{symbol}}.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} accepte les transferts en jeton {{symbol}}.",
     "disclaimerDepositFirstLine": "Target accepte les dépôts en jeton {{symbol}}.",
     "disclaimerPaymentFirstLine": "Target accepte le paiement en jeton {{symbol}}.",
     "disclaimerSecondLineAutomatedSwapDeposit": "Nous devrons recharger votre solde de {{symbol}}, nous effectuerons donc un échange automatisé d'un autre jeton de votre compte en {{symbol}} pour effectuer ce dépôt.",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "Vous n'avez pas assez de {{symbol}}, nous compléterons donc votre solde en utilisant d'autres soldes de votre compte pour finaliser le paiement.",
     "disclaimerSecondLineOtherBalancesTransfer": "Vous n'avez pas assez de {{symbol}}, nous compléterons donc votre solde en utilisant d'autres soldes de votre compte pour finaliser le transfert.",
     "disclaimerTransferFirstLine": "Target accepte les transferts en jeton {{symbol}}.",
-    "stablecoinDepositDisclaimerFirstLine": "Target accepte les dépôts en stablecoin {{symbol}}.",
-    "stablecoinPaymentDisclaimerFirstLine": "Target accepte le paiement en stablecoin {{symbol}}.",
-    "stablecoinTransferDisclaimerFirstLine": "Target accepte les transferts en stablecoin {{symbol}}.",
-    "title": "Méthodes de financement",
-    "total": "Total : {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}} accepte les dépôts en jeton {{symbol}}.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} accepte le paiement en jeton {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} accepte les transferts en jeton {{symbol}}.",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} accepte les dépôts en stablecoin {{symbol}}.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} accepte le paiement en stablecoin {{symbol}}.",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} accepte les transferts en stablecoin {{symbol}}.",
-    "thisMerchant": "Ce marchand"
+    "stablecoinDepositDisclaimerFirstLine": "Target accepte les dépôts en stablecoin {{symbol}}.",
+    "stablecoinPaymentDisclaimerFirstLine": "Target accepte le paiement en stablecoin {{symbol}}.",
+    "stablecoinTransferDisclaimerFirstLine": "Target accepte les transferts en stablecoin {{symbol}}.",
+    "thisMerchant": "Ce marchand",
+    "title": "Méthodes de financement",
+    "total": "Total : {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "Approuver le paiement",
@@ -827,8 +827,8 @@
     "title": "Votre appareil est approuvé."
   },
   "mfaError": {
-    "default": "Code incorrect, veuillez réessayer",
-    "authenticator": "Code invalide. Vérifiez votre application d'authentification"
+    "authenticator": "Code invalide. Vérifiez votre application d'authentification",
+    "default": "Code incorrect, veuillez réessayer"
   },
   "mfaHint": {
     "email": "Vérifiez votre e-mail",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "Entrez le code unique que <2>{{selectedIntegrationName}}</2> a envoyé à votre e-mail.",
-    "paymentFlow": "Saisissez votre code unique pour confirmer que c'est bien vous qui initiez ce paiement.",
     "newPaymentFlow": "Entrez votre code unique <2>{{selectedIntegrationName}}</2> pour confirmer cette transaction.",
+    "paymentFlow": "Saisissez votre code unique pour confirmer que c'est bien vous qui initiez ce paiement.",
     "phone": "Entrez le code unique que <2>{{selectedIntegrationName}}</2> vous a envoyé sur votre téléphone.",
     "totp": "Entrez le code unique fourni par l’application d’authentification liée à <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Veuillez entrer le code PIN de trading associé à votre compte <2>{{selectedIntegrationName}}</2>.",
@@ -1171,7 +1171,8 @@
     "label": "Sélectionner {{text}}"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "Réseaux inéligibles"
+    "ineligibleNetwork": "Réseaux inéligibles",
+    "title": "Choisissez un réseau"
   },
   "selectNetworkScreen": {
     "title": "Sélectionnez le réseau à connecter"
