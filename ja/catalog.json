@@ -629,6 +629,9 @@
   },
   "fundingSelectionDrawer": {
     "balances": "残高",
+    "disclaimerClientDepositFirstLine": "{{clientName}} は {{symbol}} トークンの入金を受け入れます。",
+    "disclaimerClientPaymentFirstLine": "{{clientName}}は{{symbol}}トークンでの支払いを受け付けています。",
+    "disclaimerClientTransferFirstLine": "{{clientName}}は{{symbol}}トークンでの送金を受け付けています。",
     "disclaimerDepositFirstLine": "ターゲットは{{symbol}}トークンでの入金を受け付けます。",
     "disclaimerPaymentFirstLine": "ターゲットは{{symbol}}トークンでの支払いを受け付けます。",
     "disclaimerSecondLineAutomatedSwapDeposit": "{{symbol}} 残高を補充する必要があるため、別のトークンを {{symbol}} に変換して、この入金を自動で行います。",
@@ -638,18 +641,15 @@
     "disclaimerSecondLineOtherBalancesPayment": "{{symbol}} が不足していますので、支払いを完了するために、アカウント内の他の残高を使用して補います。",
     "disclaimerSecondLineOtherBalancesTransfer": "{{symbol}} が不足していますので、振替を完了するために、アカウント内の他の残高を使用して補います。",
     "disclaimerTransferFirstLine": "ターゲットは{{symbol}}トークンでの振込を受け付けます。",
-    "stablecoinDepositDisclaimerFirstLine": "ターゲットはステーブルコイン{{symbol}}での入金を受け付けます。",
-    "stablecoinPaymentDisclaimerFirstLine": "ターゲットはステーブルコイン{{symbol}}での支払いを受け付けます。",
-    "stablecoinTransferDisclaimerFirstLine": "ターゲットはステーブルコイン{{symbol}}での振込を受け付けます。",
-    "title": "資金調達方法",
-    "total": "合計: {{amountInFiat}}",
-    "disclaimerClientDepositFirstLine": "{{clientName}} は {{symbol}} トークンの入金を受け入れます。",
-    "disclaimerClientPaymentFirstLine": "{{clientName}}は{{symbol}}トークンでの支払いを受け付けています。",
-    "disclaimerClientTransferFirstLine": "{{clientName}}は{{symbol}}トークンでの送金を受け付けています。",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}}はステーブルコイン{{symbol}}での入金を受け付けています。",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}}はステーブルコイン{{symbol}}での支払いを受け付けています。",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} はステーブルコイン {{symbol}} の振替を受け入れます。",
-    "thisMerchant": "この商人"
+    "stablecoinDepositDisclaimerFirstLine": "ターゲットはステーブルコイン{{symbol}}での入金を受け付けます。",
+    "stablecoinPaymentDisclaimerFirstLine": "ターゲットはステーブルコイン{{symbol}}での支払いを受け付けます。",
+    "stablecoinTransferDisclaimerFirstLine": "ターゲットはステーブルコイン{{symbol}}での振込を受け付けます。",
+    "thisMerchant": "この商人",
+    "title": "資金調達方法",
+    "total": "合計: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
     "approvePayment": "支払いを承認する",
@@ -827,8 +827,8 @@
     "title": "デバイスが承認されました。"
   },
   "mfaError": {
-    "default": "コードが正しくありません。もう一度お試しください",
-    "authenticator": "無効なコードです。認証アプリを確認してください"
+    "authenticator": "無効なコードです。認証アプリを確認してください",
+    "default": "コードが正しくありません。もう一度お試しください"
   },
   "mfaHint": {
     "email": "メールを確認してください",
@@ -838,8 +838,8 @@
   },
   "mfaInstructionsText": {
     "email": "<2>{{selectedIntegrationName}}</2>から送信されたメールのワンタイムコードを入力してください。",
-    "paymentFlow": "この支払いを開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
     "newPaymentFlow": "この取引を確認するために<2>{{selectedIntegrationName}}</2>のワンタイムコードを入力してください。",
+    "paymentFlow": "この支払いを開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
     "phone": "<2>{{selectedIntegrationName}}</2>から携帯電話に送信されたワンタイムコードを入力してください。",
     "totp": "<1>{{selectedIntegrationName}}</1>に連携している認証アプリから発行されたワンタイムコードを入力してください。",
     "tradingPin": "<2>{{selectedIntegrationName}}</2>アカウントに関連付けられている取引用PINコードを入力してください。",
@@ -1171,7 +1171,8 @@
     "label": "{{text}}を選択"
   },
   "selectNetworkPage": {
-    "ineligibleNetwork": "送金対象外のネットワーク"
+    "ineligibleNetwork": "送金対象外のネットワーク",
+    "title": "ネットワークを選択"
   },
   "selectNetworkScreen": {
     "title": "接続するネットワークを選択"
