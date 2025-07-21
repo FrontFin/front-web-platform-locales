@@ -405,7 +405,7 @@
     "withdrawalLocked": "提现已被锁定",
     "withdrawalLockedP2P": "提现已被锁定",
     "withdrawalPendingDepositConfirmation": "提现待确认",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "提现操作暂时不可用"
+    "withdrawalTimeoutDueToRecentFundsManipulation": "提币请求超时"
   },
   "errorMessages": {
     "accountNotFound": "账户信息获取失败",
@@ -480,12 +480,12 @@
     "whitelistAddressRequired": "目标地址必须添加至白名单。",
     "withdrawalDisabledDueToC2CDepositFreeze": "为保障您的资产安全，部分 C2C 充值资产将被冻结 24 小时。24 小时后，冻结状态将自动解除，您仍可提取加密货币。在冻结期间，其他交易不受影响，请正常使用 Binance 的交易服务。",
     "withdrawalDisabledDueToScamRisk": "您的提币操作被识别为高风险。为了保障您的资金，您的账户提币功能已被暂时禁用 1 小时。",
-    "withdrawalDisabledDueToSecurityReset": "由于最近的安全验证重置，您的账户提款功能已被暂时禁用。",
-    "withdrawalDisabledDueToSuspiciousActivity": "由于可疑活动，您的提款功能已被禁用。请在 Binance 完成验证过程。如无法验证，请联系客户支持。如果您最近已完成验证，请稍等片刻再试。",
+    "withdrawalDisabledDueToSecurityReset": "由于您最近重置了安全验证，账户提币功能已被暂时停用。",
+    "withdrawalDisabledDueToSuspiciousActivity": "由于检测到可疑活动，您的提币功能已被禁用。请在 Binance 完成验证流程。如无法完成验证，请联系客服。如果您已完成验证，请稍等片刻重试。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
-    "withdrawalLockedP2P": "出于安全考虑，在进行P2P购买后的24小时内不可提现。请稍后再试。",
-    "withdrawalPendingDepositConfirmation": "您的存款未达到提款所需的解锁确认次数。请查看交易历史获取详情。",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "提款只能在购买或存款交易后至少48小时进行。"
+    "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提币，请稍后再试。",
+    "withdrawalPendingDepositConfirmation": "您的充值尚未达到提币所需的锁定确认数。请查看交易记录获取更多详情。",
+    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提币。"
   },
   "errorPage": {
     "title": "出现错误。"
@@ -629,14 +629,14 @@
   },
   "fundingSelectionDrawer": {
     "balances": "余额",
-    "disclaimerClientDepositFirstLine": "{{clientName}}接受{{symbol}}代币的存款。",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} 接受 {{symbol}} 代币的支付。",
-    "disclaimerClientTransferFirstLine": "{{clientName}} 接受 {{symbol}} 代币的转账。",
-    "disclaimerDepositFirstLine": "目标接受{{symbol}}代币的存款。",
-    "disclaimerPaymentFirstLine": "目标接受{{symbol}}代币的付款。",
-    "disclaimerSecondLineAutomatedSwapDeposit": "我们需要补充您的{{symbol}}余额，因此我们会自动将您账户中的另一种代币转换为{{symbol}}以进行这笔存款。",
-    "disclaimerSecondLineAutomatedSwapPayment": "我们将需要补充您的{{symbol}}余额，因此我们将自动将您账户中的其他代币转换为{{symbol}}来完成这笔付款。",
-    "disclaimerSecondLineAutomatedSwapTransfer": "我们需要补充您的{{symbol}}余额，因此我们会自动将您账户中的另一种代币转换为{{symbol}}以进行这笔转账。",
+    "disclaimerClientDepositFirstLine": "{{clientName}}支持{{symbol}}代币充值。",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} 支持{{symbol}} 代币付款。",
+    "disclaimerClientTransferFirstLine": "{{clientName}} 支持 {{symbol}} 代币转账。",
+    "disclaimerDepositFirstLine": "目标账户支持{{symbol}}代币充值。",
+    "disclaimerPaymentFirstLine": "目标账户支持{{symbol}}代币支付。",
+    "disclaimerSecondLineAutomatedSwapDeposit": "您的{{symbol}}余额不足，我们将自动将您账户中的其他代币转换为{{symbol}}以完成此次充值。",
+    "disclaimerSecondLineAutomatedSwapPayment": "您的{{symbol}}余额不足，我们将自动将您账户中的其他代币转换为{{symbol}}以完成此次支付。",
+    "disclaimerSecondLineAutomatedSwapTransfer": "您的{{symbol}}余额不足，我们将自动将您账户中的其他代币转换为{{symbol}}以完成此次转账。",
     "disclaimerSecondLineOtherBalancesDeposit": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成存款。",
     "disclaimerSecondLineOtherBalancesPayment": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成支付。",
     "disclaimerSecondLineOtherBalancesTransfer": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成转账。",
@@ -1171,9 +1171,9 @@
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "gasFeeDescription": "<0>Est. gas fee:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "gasFeeDescription": "<0>预计燃气费：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "无法使用的网络",
-    "integrationFeeDescription": "<0>Est. {{selectedIntegrationName}} fee:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "integrationFeeDescription": "<0>预计{{selectedIntegrationName}}费用：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "title": "选择一个网络"
   },
   "selectNetworkScreen": {
@@ -1305,9 +1305,9 @@
     "title": "验证"
   },
   "transferInsufficientBalancePage": {
-    "gasBody": "{{network}} 网络的燃气费用以 {{symbol}} 支付。请充值您的 {{symbol}} 余额，然后再次尝试此交易。",
-    "gasTitle": "汽油余额不足",
-    "paymentBody": "您的余额不足以完成此购买。",
+    "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
+    "gasTitle": "燃料费余额不足",
+    "paymentBody": "您的余额不足以完成此交易。",
     "title": "余额不足",
     "transferBody": "您的余额不足，无法完成此次转账。"
   },
@@ -1406,6 +1406,6 @@
   },
   "withdrawalLockedErrorPage": {
     "another": "从其他账户转账",
-    "title": "暂时无法使用提款功能"
+    "title": "暂时无法使用提币功能"
   }
 }
