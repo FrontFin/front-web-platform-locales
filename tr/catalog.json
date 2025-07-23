@@ -94,6 +94,18 @@
     "title": "Bağlantı yapmak için hesabınızı seçin",
     "title40": "Hesabınızı seçin"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} cihazınızda desteklenmiyor.",
+    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
+    "travelRuleVaspIdRequired": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
+    "travelRuleAmountLimit": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
+    "lessThanIntegrationMinAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun asgari tutarının altında.",
+    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}, {{pair}} transferlerini desteklemiyor.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} ülkenizde mevcut değil."
+  },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Çekim desteklenmiyor",
     "integrationError": "Entegrasyon hatası",
     "integrationNotAvailable": "Entegrasyon kullanılamıyor",
+    "notAvailableText": "Kullanılamıyor",
     "invalidCredentials": "Geçersiz Bilgiler",
     "invalidField": "Geçersiz bilgi",
     "invalidFromIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
@@ -1310,7 +1323,9 @@
     "gasTitle": "Yetersiz gaz bakiyesi",
     "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
     "title": "Yetersiz bakiye",
-    "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz."
+    "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz.",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance"
   },
   "transferMfaPage": {
     "title": "Doğrulama",
