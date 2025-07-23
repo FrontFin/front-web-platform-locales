@@ -94,6 +94,18 @@
     "title": "选择要关联的账户",
     "title40": "选择你的账户"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}}不支持您的设备。",
+    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "lessThanIntegrationMinAmount": "请求金额低于{{integrationName}}经纪商的最低额度。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}不支持{{pair}}转移。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}}在您的国家不可用。"
+  },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "不支持提现",
     "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
+    "notAvailableText": "不可用",
     "invalidCredentials": "账号或密码错误",
     "invalidField": "信息无效",
     "invalidFromIntegrationToken": "身份验证已过期",
@@ -1310,7 +1323,9 @@
     "gasTitle": "燃料费余额不足",
     "paymentBody": "您的余额不足以完成此交易。",
     "title": "余额不足",
-    "transferBody": "您的余额不足，无法完成此次转账。"
+    "transferBody": "您的余额不足，无法完成此次转账。",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance"
   },
   "transferMfaPage": {
     "title": "验证",
