@@ -94,6 +94,18 @@
     "title": "Выберите учетную запись для подключения",
     "title40": "Подключить биржу или электронный кошелек"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} не поддерживается на вашем устройстве.",
+    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK Контекста: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы брокера {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы {{pair}}.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашей стране."
+  },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Вывод не поддерживается",
     "integrationError": "Ошибка интеграции",
     "integrationNotAvailable": "Интеграция недоступна",
+    "notAvailableText": "Недоступно",
     "invalidCredentials": "Недействительные учетные данные",
     "invalidField": "Недействительная информация",
     "invalidFromIntegrationToken": "Срок действия аутентификации истек",
@@ -1310,7 +1323,9 @@
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
     "title": "Недостаточный баланс",
-    "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
+    "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод.",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance"
   },
   "transferMfaPage": {
     "title": "Верификация",
