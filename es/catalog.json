@@ -94,6 +94,18 @@
     "title": "Selecciona una cuenta para vincular",
     "title40": "Conectar a una plataforma o wallet"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} no es compatible con su dispositivo.",
+    "sdkVersionNotSupported": "El mecanismo TrueAuth de {{integrationName}} no es compatible con este SDK Context: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "travelRuleVaspIdRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "travelRuleAmountLimit": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "lessThanIntegrationMinAmount": "El monto solicitado está por debajo del mínimo del corredor de {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "El monto solicitado supera el máximo del corredor de {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} no admite transferencias de {{pair}}.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} no admite transferencias para ninguna de las combinaciones de token/red proporcionadas.",
+    "integrationNotSupportedCountry": "{{integrationName}} no está disponible en su país."
+  },
   "catalogTile": {
     "select": "Selecciona {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Retiro no soportado",
     "integrationError": "Error de integración",
     "integrationNotAvailable": "Integración no disponible",
+    "notAvailableText": "No Disponible",
     "invalidCredentials": "Credenciales inválidas",
     "invalidField": "Información inválida",
     "invalidFromIntegrationToken": "Autenticación Expirada",
@@ -1310,7 +1323,9 @@
     "gasTitle": "Saldo insuficiente de gas",
     "paymentBody": "Tu saldo es demasiado bajo para completar esta compra.",
     "title": "Saldo insuficiente",
-    "transferBody": "Tu saldo es demasiado bajo para completar esta transferencia."
+    "transferBody": "Tu saldo es demasiado bajo para completar esta transferencia.",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance"
   },
   "transferMfaPage": {
     "title": "Verificación",
