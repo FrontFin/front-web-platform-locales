@@ -94,6 +94,18 @@
     "title": "लिंक करने के लिए खाता चुनें",
     "title40": "अपना खाता चुनें"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} आपके डिवाइस पर समर्थित नहीं है।",
+    "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} इस स्थानांतरण का समर्थन नहीं करता है अनुपालन पात्रता प्रतिबंधों के कारण।",
+    "travelRuleVaspIdRequired": "{{integrationName}} इस स्थानांतरण का समर्थन नहीं करता है अनुपालन पात्रता प्रतिबंधों के कारण।",
+    "travelRuleAmountLimit": "{{integrationName}} इस स्थानांतरण का समर्थन नहीं करता है अनुपालन पात्रता प्रतिबंधों के कारण।",
+    "lessThanIntegrationMinAmount": "अनुरोधित राशि {{integrationName}} दलाल के न्यूनतम से कम है।",
+    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} {{pair}} स्थानांतरण का समर्थन नहीं करता।",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
+    "integrationNotSupportedCountry": "{{integrationName}} आपके देश में उपलब्ध नहीं है।"
+  },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} चुनें"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "निकासी समर्थित नहीं है",
     "integrationError": "एकीकरण त्रुटि",
     "integrationNotAvailable": "एकीकरण उपलब्ध नहीं है",
+    "notAvailableText": "उपलब्ध नहीं है",
     "invalidCredentials": "अमान्य क्रेडेंशियल्स",
     "invalidField": "अमान्य जानकारी",
     "invalidFromIntegrationToken": "प्रमाणीकरण की समय सीमा समाप्त हो गई",
@@ -1310,7 +1323,9 @@
     "gasTitle": "गैस शेष राशि अपर्याप्त",
     "paymentBody": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
     "title": "अपर्याप्त शेष राशि",
-    "transferBody": "आपका शेष राशि इस स्थानांतरण को पूरा करने के लिए अपर्याप्त है।"
+    "transferBody": "आपका शेष राशि इस स्थानांतरण को पूरा करने के लिए अपर्याप्त है।",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance"
   },
   "transferMfaPage": {
     "title": "सत्यापन",
