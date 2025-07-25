@@ -94,6 +94,18 @@
     "title": "Veuillez sélectionner un compte à lier",
     "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} n'est pas pris en charge sur votre appareil.",
+    "sdkVersionNotSupported": "Le mécanisme TrueAuth de {{integrationName}} n'est pas pris en charge pour ce contexte SDK : {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ne prend pas en charge ce transfert en raison de restrictions d'éligibilité de conformité.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ne prend pas en charge ce transfert en raison de restrictions d'éligibilité de conformité.",
+    "travelRuleAmountLimit": "{{integrationName}} ne prend pas en charge ce transfert en raison de restrictions d'éligibilité de conformité.",
+    "lessThanIntegrationMinAmount": "Le montant demandé est en dessous du minimum du courtier {{integrationName}}",
+    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts {{pair}}.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
+    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre pays."
+  },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Retrait non pris en charge",
     "integrationError": "Erreur d'intégration",
     "integrationNotAvailable": "Intégration indisponible",
+    "notAvailableText": "Non Disponible",
     "invalidCredentials": "Identifiants invalides",
     "invalidField": "Informations invalides",
     "invalidFromIntegrationToken": "Authentification expirée",
@@ -1152,6 +1165,7 @@
     "defaultTitle": "Sélectionner un jeton",
     "depositTitle": "Sélectionner un jeton de dépôt",
     "ineligibleAssets": "Actifs inéligibles",
+    "link40Title": "Choisissez un jeton",
     "loading": "Chargement de vos actifs...",
     "noAssetsTitle": "Aucun actif détecté sur le compte lié",
     "noEligibleAssetsTitle": "Aucun actif dans ce compte n'est éligible pour ce transfert",
@@ -1309,7 +1323,9 @@
     "gasTitle": "Solde de gaz insuffisant",
     "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
     "title": "Solde insuffisant",
-    "transferBody": "Votre solde est insuffisant pour effectuer ce transfert."
+    "transferBody": "Votre solde est insuffisant pour effectuer ce transfert.",
+    "noBalanceBody": "Vous n'avez pas de solde {{symbol}} à transférer. Veuillez recharger votre solde et réessayer.",
+    "noBalanceTitle": "Pas de solde"
   },
   "transferMfaPage": {
     "title": "Vérification",

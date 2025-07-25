@@ -94,6 +94,18 @@
     "title": "Konto zum Verknüpfen auswählen",
     "title40": "Wähle Dein Konto"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} wird auf Ihrem Gerät nicht unterstützt.",
+    "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "travelRuleVaspIdRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "travelRuleAmountLimit": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Minimum des {{integrationName}} Brokers.",
+    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine {{pair}}-Transfers.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
+    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrem Land nicht verfügbar."
+  },
   "catalogTile": {
     "select": "Wähle {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Abhebung nicht unterstützt",
     "integrationError": "Integrationsfehler",
     "integrationNotAvailable": "Integration nicht verfügbar",
+    "notAvailableText": "Nicht verfügbar",
     "invalidCredentials": "Ungültige Anmeldedaten",
     "invalidField": "Ungültige Informationen",
     "invalidFromIntegrationToken": "Authentifizierung abgelaufen",
@@ -1152,6 +1165,7 @@
     "defaultTitle": "Token auswählen",
     "depositTitle": "Einzahlungstoken auswählen",
     "ineligibleAssets": "Nicht berechtigte Assets",
+    "link40Title": "Wählen Sie ein Token",
     "loading": "Ihre Assets werden geladen ...",
     "noAssetsTitle": "Keine Assets im verbundenen Konto erkannt",
     "noEligibleAssetsTitle": "Keine Assets in diesem Konto sind für diese Überweisung berechtigt",
@@ -1309,7 +1323,9 @@
     "gasTitle": "Unzureichendes Gasguthaben",
     "paymentBody": "Ihr Kontostand ist zu niedrig, um diesen Kauf abzuschließen.",
     "title": "Unzureichendes Guthaben",
-    "transferBody": "Ihr Guthaben ist zu niedrig, um diese Überweisung abzuschließen."
+    "transferBody": "Ihr Guthaben ist zu niedrig, um diese Überweisung abzuschließen.",
+    "noBalanceBody": "Sie haben kein {{symbol}} Guthaben zu übertragen. Bitte füllen Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalanceTitle": "Kein Guthaben"
   },
   "transferMfaPage": {
     "title": "Verifizierung",

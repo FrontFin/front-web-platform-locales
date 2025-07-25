@@ -94,6 +94,18 @@
     "title": "Chọn tài khoản để liên kết",
     "title40": "Chọn tài khoản của bạn"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên thiết bị của bạn.",
+    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "travelRuleVaspIdRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "travelRuleAmountLimit": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của nhà môi giới {{integrationName}}",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển {{pair}}.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng tại quốc gia của bạn."
+  },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Rút tiền không được hỗ trợ",
     "integrationError": "Lỗi tích hợp",
     "integrationNotAvailable": "Tích hợp hiện không khả dụng",
+    "notAvailableText": "Không có sẵn",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
     "invalidField": "Thông tin không hợp lệ",
     "invalidFromIntegrationToken": "Xác thực đã hết hạn",
@@ -1152,6 +1165,7 @@
     "defaultTitle": "Chọn token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
+    "link40Title": "Chọn một đồng tiền",
     "loading": "Đang tải tài sản của bạn...",
     "noAssetsTitle": "Không thấy tài sản nào trong tài khoản liên kết",
     "noEligibleAssetsTitle": "Không có tài sản nào trong tài khoản này đủ điều kiện để chuyển khoản",
@@ -1309,7 +1323,9 @@
     "gasTitle": "Không đủ số dư để trả phí gas",
     "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
     "title": "Số dư không đủ",
-    "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."
+    "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này.",
+    "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
+    "noBalanceTitle": "Không có số dư"
   },
   "transferMfaPage": {
     "title": "Xác minh",

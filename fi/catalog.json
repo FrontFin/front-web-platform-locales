@@ -94,6 +94,18 @@
     "title": "Valitse linkitettävä tili",
     "title40": "Valitse tilisi"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} ei ole tuettu laitteessasi.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleAmountLimit": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}-välittäjän minimirajan.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue {{pair}}-siirtoja.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla maassasi."
+  },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Nostoa ei tueta",
     "integrationError": "Integraatiovirhe",
     "integrationNotAvailable": "Integraatio ei ole saatavilla",
+    "notAvailableText": "Ei saatavilla",
     "invalidCredentials": "Virheelliset kirjautumistiedot",
     "invalidField": "Virheellisiä tietoja",
     "invalidFromIntegrationToken": "Autentikointi vanhentunut",
@@ -1152,6 +1165,7 @@
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
     "ineligibleAssets": "Kelpaamattomat varat",
+    "link40Title": "Valitse tunnus",
     "loading": "Ladataan omaisuuttasi...",
     "noAssetsTitle": "Liitetyltä tililtä ei löytynyt varoja",
     "noEligibleAssetsTitle": "Tällä tilillä ei ole varoja, joita voidaan käyttää tähän siirtoon",
@@ -1309,7 +1323,9 @@
     "gasTitle": "Riittämätön kaasusaldo",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
     "title": "Riittämätön saldo",
-    "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
+    "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen.",
+    "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "noBalanceTitle": "Ei saldoa"
   },
   "transferMfaPage": {
     "title": "Varmistus",

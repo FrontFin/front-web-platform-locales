@@ -94,6 +94,18 @@
     "title": "选择要关联的账户",
     "title40": "选择你的账户"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}}不支持您的设备。",
+    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "lessThanIntegrationMinAmount": "请求金额低于{{integrationName}}经纪商的最低额度。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}不支持{{pair}}转移。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}}在您的国家不可用。"
+  },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "不支持提现",
     "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
+    "notAvailableText": "不可用",
     "invalidCredentials": "账号或密码错误",
     "invalidField": "信息无效",
     "invalidFromIntegrationToken": "身份验证已过期",
@@ -637,16 +650,16 @@
     "disclaimerSecondLineAutomatedSwapDeposit": "您的{{symbol}}余额不足，我们将自动将您账户中的其他代币转换为{{symbol}}以完成此次充值。",
     "disclaimerSecondLineAutomatedSwapPayment": "您的{{symbol}}余额不足，我们将自动将您账户中的其他代币转换为{{symbol}}以完成此次支付。",
     "disclaimerSecondLineAutomatedSwapTransfer": "您的{{symbol}}余额不足，我们将自动将您账户中的其他代币转换为{{symbol}}以完成此次转账。",
-    "disclaimerSecondLineOtherBalancesDeposit": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成存款。",
-    "disclaimerSecondLineOtherBalancesPayment": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成支付。",
-    "disclaimerSecondLineOtherBalancesTransfer": "您的 {{symbol}} 不足，因此我们将使用您账户中的其他余额为您充值以完成转账。",
-    "disclaimerTransferFirstLine": "目标接受{{symbol}}代币的转账。",
-    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} 接受 {{symbol}} 稳定币的存款。",
-    "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} 接受 {{symbol}} 稳定币的支付。",
-    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}}接受稳定币{{symbol}}的转账。",
-    "stablecoinDepositDisclaimerFirstLine": "目标接受稳定币{{symbol}}的存款。",
-    "stablecoinPaymentDisclaimerFirstLine": "目标接受稳定币{{symbol}}的付款。",
-    "stablecoinTransferDisclaimerFirstLine": "目标接受稳定币{{symbol}}的转账。",
+    "disclaimerSecondLineOtherBalancesDeposit": "您的 {{symbol}} 不足，我们将通过兑换您账户中的其他代币来完成此次充值。",
+    "disclaimerSecondLineOtherBalancesPayment": "您的 {{symbol}} 不足，我们将通过兑换您账户中的其他代币来完成此次充值此次支付。",
+    "disclaimerSecondLineOtherBalancesTransfer": "您的 {{symbol}} 不足，我们将通过兑换您账户中的其他代币来完成此次充值此次转账。",
+    "disclaimerTransferFirstLine": "目标账户接受{{symbol}}代币转账。",
+    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} 支持 {{symbol}} 稳定币充值。",
+    "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} 支持 {{symbol}} 稳定币支付。",
+    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}}支持稳定币{{symbol}}转账。",
+    "stablecoinDepositDisclaimerFirstLine": "目标账户支持稳定币{{symbol}}充值。",
+    "stablecoinPaymentDisclaimerFirstLine": "目标账户支持稳定币{{symbol}}支付。",
+    "stablecoinTransferDisclaimerFirstLine": "目标账户接受稳定币{{symbol}}转账。",
     "thisMerchant": "此商户",
     "title": "充值方式",
     "total": "总金额: {{amountInFiat}}"
@@ -827,7 +840,7 @@
     "title": "您的设备已通过验证。"
   },
   "mfaError": {
-    "authenticator": "无效代码。请查看您的验证器",
+    "authenticator": "验证码无效，请检查您的身份验证器应用",
     "default": "验证码错误，请重试"
   },
   "mfaHint": {
@@ -838,7 +851,7 @@
   },
   "mfaInstructionsText": {
     "email": "输入 <2>{{selectedIntegrationName}}</2> 已发送至您邮箱的一次性验证码。",
-    "newPaymentFlow": "请输入您的一次性<2>{{selectedIntegrationName}}</2>代码以确认此交易。",
+    "newPaymentFlow": "请输入一次性<2>{{selectedIntegrationName}}</2>代码以确认此交易。",
     "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
     "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性验证码。",
     "totp": "请输入由您绑定 <1>{{selectedIntegrationName}}</1> 相关身份验证器提供的一次性验证码。",
@@ -890,7 +903,7 @@
   "mobileAppLink": {
     "awaitingConfirmation": "等待移动端应用确认",
     "openAppButton": "打开{{selectedIntegrationName}}应用",
-    "returnToClient": "批准{{selectedIntegrationName}}中的连接请求后返回{{clientName}}。",
+    "returnToClient": "在{{selectedIntegrationName}}中批准连接请求后，请返回{{clientName}}。",
     "sendNewRequest": "发送新请求",
     "steps": {
       "authorize": "在确认页面点击<1>授权</1>。",
@@ -1010,12 +1023,12 @@
     "closeButton": "关闭",
     "continueTo": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
-    "notSupported": "{{selectedIntegrationName}}不支持所请求的代币和/或网络的转账。",
+    "notSupported": "{{selectedIntegrationName}}不支持所请求代币和/或网络的转账。",
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
     "selectAnotherAccount": "选择另一个账户",
-    "selectAnotherExchange": "请另选其他交易所或钱包进行存款。",
+    "selectAnotherExchange": "请另选其他交易所或钱包进行充值。",
     "selectAsset": "选择要转账的资产",
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
@@ -1109,8 +1122,8 @@
     "transferDeclined": "转账被拒绝",
     "transferDeclined40": "请求被拒绝",
     "transferDeclinedBody": "您已经在钱包中拒绝该转账请求。",
-    "transferDeclinedBody40": "看起来您拒绝了这笔交易。如果这是一个错误，请重试并在您的钱包中批准请求",
-    "transferTimeout": "我们未及时收到回应",
+    "transferDeclinedBody40": "看起来您拒绝了这笔交易。如果是误操作，请重试并在您的钱包中批准该请求",
+    "transferTimeout": "我们未能及时收到响应",
     "transferTimeoutBody": "请重试并批准交易请求。",
     "transferTitle": "转账预览",
     "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
@@ -1152,6 +1165,7 @@
     "defaultTitle": "选择代币",
     "depositTitle": "选择充值代币",
     "ineligibleAssets": "无法使用的资产",
+    "link40Title": "选择一个令牌",
     "loading": "正在加载您的资产……",
     "noAssetsTitle": "关联账户中未检测出资产",
     "noEligibleAssetsTitle": "此账户中资产不符合该转账要求",
@@ -1171,7 +1185,7 @@
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "gasFeeDescription": "<0>预计燃气费：</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "gasFeeDescription": "<0>预计燃料费：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "无法使用的网络",
     "integrationFeeDescription": "<0>预计{{selectedIntegrationName}}费用：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "title": "选择一个网络"
@@ -1206,7 +1220,7 @@
     "title": "设置电子邮箱"
   },
   "termsAndConditionsPage": {
-    "englishDisclaimer": "这是一个仅供您参考的信息翻译。本<2>Mesh 最终用户条款与条件的英文版本</2>是具有法律约束力的版本。",
+    "englishDisclaimer": "这是仅供参考的信息性翻译，<2>Mesh 终端用户条款与条件的英文版本</2>为具有法律约束力的版本。",
     "paragraph1": "Mesh Connect, Inc.（以下简称<1>“该公司”</1>）是一个技术提供商，该公司创建了一款通讯工具（以下简称<3>“工具”</3>），协助您使用的第三方服务的某些功能（以下简称<5>“终端用户服务”</5>）。这些功能旨在通过终端用户服务，使您能够与您的第三方账户和钱包（<7>“连接账户”</7>）交互，包括发送您希望执行的指令。",
     "paragraph10": "仲裁将由美国仲裁协会根据修改后的《消费者仲裁规则》进行管理，这些规则可在<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>查看。通常仲裁员通过电话或视讯会议进行听证，若您或我们认为有必要亲自出席，须经过仲裁员批准，待其认定当面听证适当，则可安排当面听证。任何当面听证都会被安排在对双方合理的地点，并充分考虑到出行的能力和其他相关情况。如果您与公司无法就地点达成协议，则应由AAA或仲裁员作出决定。仲裁员的裁决将遵循这些条款，作为有约束力的最终裁定。仲裁员有权授予临时、短期或永久性的禁令或授予执行某项特殊条款的救济，但仅限于仲裁员受理的个别索赔所需的救济。仲裁员的裁决可以在具有管辖权的任何法院得到确认和执行。尽管有上述规定，这些条款中的任何规定均不妨碍您提请联邦、州或地方机构注意相关问题，如果法律允许，这些机构可以为您寻求对我们的救济。",
     "paragraph11": "这些条款构成您和本公司之间关于其主题的完整协议，并取代所有此前的相关口头或书面陈述或协议。如果任何条款在适用法律下不可执行，则该条款应在尽可能不改变原条款意图的前提下进行修订。如无法进行此类修订，该条款将被分割，其余条款继续有效。您确认并同意公司的服务提供商为这些条款的预期第三方受益人。若您接受这些条款与条件或使用工具，即表示您同意受本协约条款与条件的约束。",
@@ -1309,7 +1323,9 @@
     "gasTitle": "燃料费余额不足",
     "paymentBody": "您的余额不足以完成此交易。",
     "title": "余额不足",
-    "transferBody": "您的余额不足，无法完成此次转账。"
+    "transferBody": "您的余额不足，无法完成此次转账。",
+    "noBalanceBody": "您没有可转账的{{symbol}}余额。请充值后重试。",
+    "noBalanceTitle": "没有余额"
   },
   "transferMfaPage": {
     "title": "验证",

@@ -94,6 +94,18 @@
     "title": "Wybierz konto do połączenia",
     "title40": "Wybierz swoje konto"
   },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} nie jest obsługiwany na Twoim urządzeniu.",
+    "sdkVersionNotSupported": "Mechanizm TrueAuth {{integrationName}} nie jest obsługiwany dla tego kontekstu SDK: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} nie obsługuje tego transferu z powodu ograniczeń zgodności z wymogami kwalifikacji.",
+    "travelRuleVaspIdRequired": "{{integrationName}} nie obsługuje tego transferu z powodu ograniczeń zgodności z wymogami kwalifikacji.",
+    "travelRuleAmountLimit": "{{integrationName}} nie obsługuje tego transferu z powodu ograniczeń zgodności z wymogami kwalifikacji.",
+    "lessThanIntegrationMinAmount": "Żądana kwota jest poniżej minimalnego progu brokera {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Żądana kwota przekracza maksymalny próg brokera {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje transferów {{pair}}.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje transferów dla żadnej z danych kombinacji token/sieć.",
+    "integrationNotSupportedCountry": "{{integrationName}} nie jest dostępny w Twoim kraju."
+  },
   "catalogTile": {
     "select": "Wybierz {{integrationName}}, {{badge}}"
   },
@@ -355,6 +367,7 @@
     "fromAccountNotSupported": "Wypłata nieobsługiwana",
     "integrationError": "Błąd integracji",
     "integrationNotAvailable": "Integracja niedostępna",
+    "notAvailableText": "Niedostępne",
     "invalidCredentials": "Nieprawidłowe dane do logowania",
     "invalidField": "Niepoprawne informacje",
     "invalidFromIntegrationToken": "Uwierzytelnienie wygasło",
@@ -1152,6 +1165,7 @@
     "defaultTitle": "Wybierz token",
     "depositTitle": "Wybierz token wpłaty",
     "ineligibleAssets": "Niewłaściwe środki",
+    "link40Title": "Wybierz token",
     "loading": "Ładowanie twoich środków...",
     "noAssetsTitle": "Na połączonym koncie nie wykryto środków",
     "noEligibleAssetsTitle": "Na tym koncie nie ma aktywów, które kwalifikują się do tego transferu",
@@ -1309,7 +1323,9 @@
     "gasTitle": "Niewystarczające saldo gazu",
     "paymentBody": "Twoje saldo jest zbyt niskie, aby dokończyć ten zakup.",
     "title": "Niewystarczające saldo",
-    "transferBody": "Twoje saldo jest zbyt niskie, aby zakończyć ten transfer."
+    "transferBody": "Twoje saldo jest zbyt niskie, aby zakończyć ten transfer.",
+    "noBalanceBody": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
+    "noBalanceTitle": "Brak salda"
   },
   "transferMfaPage": {
     "title": "Weryfikacja",
