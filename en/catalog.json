@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Select {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} does not support transfers for any of the provided token/network combinations.",
+    "integrationNotSupportedCountry": "{{integrationName}} is not available in your country.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} does not support {{pair}} transfers.",
+    "lessThanIntegrationMinAmount": "The requested amount is below {{integrationName}} broker's minimum",
+    "moreThanIntegrationMaxAmount": "The requested amount is above {{integrationName}} broker's maximum",
+    "platformNotSupported": "{{integrationName}} is not supported on your device.",
+    "sdkVersionNotSupported": "{{integrationName}}'s TrueAuth mechanism is not supported for this SDK Context: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
+    "travelRuleVaspIdRequired": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "search",
     "title": "Select account to link",
     "title40": "Choose your account"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} is not supported on your device.",
-    "sdkVersionNotSupported": "{{integrationName}}'s TrueAuth mechanism is not supported for this SDK Context: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
-    "travelRuleVaspIdRequired": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
-    "travelRuleAmountLimit": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
-    "lessThanIntegrationMinAmount": "The requested amount is below {{integrationName}} broker's minimum",
-    "moreThanIntegrationMaxAmount": "The requested amount is above {{integrationName}} broker's maximum",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} does not support {{pair}} transfers.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} does not support transfers for any of the provided token/network combinations.",
-    "integrationNotSupportedCountry": "{{integrationName}} is not available in your country."
   },
   "catalogTile": {
     "select": "Select {{integrationName}}, {{badge}}"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "Withdrawal Not Supported",
     "integrationError": "Integration Error",
     "integrationNotAvailable": "Integration Unavailable",
-    "notAvailableText": "Not Available",
     "invalidCredentials": "Invalid Credentials",
     "invalidField": "Invalid Information",
     "invalidFromIntegrationToken": "Authentication Expired",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "Smart Contract Unavailable",
     "notAuthorizedFromIntegrationToken": "Authentication Expired",
     "notAuthorizedToIntegrationToken": "Authentication Expired",
+    "notAvailableText": "Not Available",
     "notFound": "Not Found",
     "notSupported": "Not Supported",
     "orderTypeNotSupported": "Order Type Not Supported",
@@ -549,6 +549,10 @@
     "openApp": "Open {{integrationName}} app",
     "reopenApp": "Re-open {{integrationName}} app",
     "title": "Verification"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Processing fee",
+    "title": "Included fees"
   },
   "fields": {
     "apiKey": "API key",
@@ -1128,6 +1132,16 @@
     "transferTitle": "Transfer preview",
     "youMayReceiveLess": "You may receive less due to {{symbol}} price movement."
   },
+  "previewTransferPageUI": {
+    "fee": "Includes {{amount}} in fees",
+    "fundingMethods": "Funding methods",
+    "receive": "Receive",
+    "refreshing": "Refresh in {{seconds}}s",
+    "send": "Send",
+    "title": "Transfer preview",
+    "tokenOnNetwork": "{{token}} on {{network}}",
+    "transferToken": "Transfer token"
+  },
   "privacyComponent": {
     "content": "Your data is private and encrypted at all times."
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Gas fees for the {{network}} network are paid in {{symbol}}. Please top up your {{symbol}} balance and then try this transaction again.",
     "gasTitle": "Insufficient gas balance",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance",
     "paymentBody": "Your balance is too low to complete this purchase.",
     "title": "Insufficient balance",
-    "transferBody": "Your balance is too low to complete this transfer.",
-    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
-    "noBalanceTitle": "No balance"
+    "transferBody": "Your balance is too low to complete this transfer."
   },
   "transferMfaPage": {
     "title": "Verification",
