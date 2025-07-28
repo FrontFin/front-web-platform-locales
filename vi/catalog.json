@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng tại quốc gia của bạn.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển {{pair}}.",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của nhà môi giới {{integrationName}}",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên thiết bị của bạn.",
+    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "travelRuleVaspIdRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "Tìm kiếm",
     "title": "Chọn tài khoản để liên kết",
     "title40": "Chọn tài khoản của bạn"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên thiết bị của bạn.",
-    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "travelRuleVaspIdRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "travelRuleAmountLimit": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của nhà môi giới {{integrationName}}",
-    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển {{pair}}.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
-    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng tại quốc gia của bạn."
   },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "Rút tiền không được hỗ trợ",
     "integrationError": "Lỗi tích hợp",
     "integrationNotAvailable": "Tích hợp hiện không khả dụng",
-    "notAvailableText": "Không có sẵn",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
     "invalidField": "Thông tin không hợp lệ",
     "invalidFromIntegrationToken": "Xác thực đã hết hạn",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "Hợp đồng thông minh không khả dụng",
     "notAuthorizedFromIntegrationToken": "Xác thực đã hết hạn",
     "notAuthorizedToIntegrationToken": "Xác thực đã hết hạn",
+    "notAvailableText": "Không có sẵn",
     "notFound": "Không tìm thấy",
     "notSupported": "Không được hỗ trợ",
     "orderTypeNotSupported": "Loại đơn hàng không được hỗ trợ",
@@ -549,6 +549,10 @@
     "openApp": "Mở ứng dụng {{integrationName}}",
     "reopenApp": "Mở lại ứng dụng {{integrationName}}",
     "title": "Xác minh"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Processing fee",
+    "title": "Included fees"
   },
   "fields": {
     "apiKey": "Khóa API",
@@ -1128,6 +1132,16 @@
     "transferTitle": "Xem trước giao dịch",
     "youMayReceiveLess": "Bạn có thể nhận {{symbol}} ít hơn do biến động giá."
   },
+  "previewTransferPageUI": {
+    "fee": "Bao gồm {{amount}} phí giao dịch",
+    "fundingMethods": "Phương thức nạp tiền",
+    "receive": "Nhận",
+    "refreshing": "Refresh in {{seconds}}s",
+    "send": "Send",
+    "title": "Xem trước giao dịch",
+    "tokenOnNetwork": "{{token}} on {{network}}",
+    "transferToken": "Transfer token"
+  },
   "privacyComponent": {
     "content": "Dữ liệu của bạn luôn được giữ kín và mã hóa."
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Phí gas cho mạng {{network}} được trả bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào số dư của bạn và thử giao dịch này một lần nữa.",
     "gasTitle": "Không đủ số dư để trả phí gas",
+    "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
+    "noBalanceTitle": "Không có số dư",
     "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
     "title": "Số dư không đủ",
-    "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này.",
-    "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
-    "noBalanceTitle": "Không có số dư"
+    "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."
   },
   "transferMfaPage": {
     "title": "Xác minh",
