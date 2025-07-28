@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}、{{badge}}を選択する"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
+    "integrationNotSupportedCountry": "{{integrationName}}はお住まいの国では利用できません。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}は{{pair}}の転送をサポートしていません。",
+    "lessThanIntegrationMinAmount": "リクエストされた金額は{{integrationName}}の最低限度未満です。",
+    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
+    "platformNotSupported": "{{integrationName}}はお使いのデバイスでサポートされていません。",
+    "sdkVersionNotSupported": "{{integrationName}}のTrueAuthメカニズムは、SDKコンテキスト: {{sdkContext}}でサポートされていません。",
+    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
+    "travelRuleVaspIdRequired": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。"
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "検索",
     "title": "リンクするアカウントを選択",
     "title40": "アカウントを選択してください"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}}はお使いのデバイスでサポートされていません。",
-    "sdkVersionNotSupported": "{{integrationName}}のTrueAuthメカニズムは、SDKコンテキスト: {{sdkContext}}でサポートされていません。",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
-    "travelRuleVaspIdRequired": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
-    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
-    "lessThanIntegrationMinAmount": "リクエストされた金額は{{integrationName}}の最低限度未満です。",
-    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}は{{pair}}の転送をサポートしていません。",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
-    "integrationNotSupportedCountry": "{{integrationName}}はお住まいの国では利用できません。"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}}を選択"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "出金はサポートされていません",
     "integrationError": "統合エラー",
     "integrationNotAvailable": "連携が利用できません",
-    "notAvailableText": "利用不可",
     "invalidCredentials": "認証情報が無効です",
     "invalidField": "無効な情報",
     "invalidFromIntegrationToken": "認証の有効期限が切れました",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "スマートコントラクトが利用できません",
     "notAuthorizedFromIntegrationToken": "認証の有効期限が切れました",
     "notAuthorizedToIntegrationToken": "認証の有効期限が切れました",
+    "notAvailableText": "利用不可",
     "notFound": "見つかりませんでした",
     "notSupported": "サポートされていません",
     "orderTypeNotSupported": "この注文タイプには対応していません。",
@@ -549,6 +549,10 @@
     "openApp": "{{integrationName}}アプリを開く",
     "reopenApp": "{{integrationName}}アプリを再度開く",
     "title": "確認"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} 処理手数料",
+    "title": "手数料を含む"
   },
   "fields": {
     "apiKey": "APIキー",
@@ -1128,6 +1132,16 @@
     "transferTitle": "送金プレビュー",
     "youMayReceiveLess": "{{symbol}}の価格変動により、受取額が少なくなる可能性があります。"
   },
+  "previewTransferPageUI": {
+    "fee": "手数料{{amount}}を含みます",
+    "fundingMethods": "資金調達方法",
+    "receive": "受取",
+    "refreshing": "{{seconds}}秒後に更新",
+    "send": "送信",
+    "title": "送金プレビュー",
+    "tokenOnNetwork": "{{network}} 上の {{token}}",
+    "transferToken": "トークンを移行"
+  },
   "privacyComponent": {
     "content": "お客様のデータは常に暗号化され、安全に保護されています。"
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}}ネットワークのガス料金は{{symbol}}で支払われます。{{symbol}}残高を補充して、もう一度このトランザクションをお試しください。",
     "gasTitle": "ガス残高が不足しています",
+    "noBalanceBody": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
+    "noBalanceTitle": "残高なし",
     "paymentBody": "残高不足のため、この購入を完了できません。",
     "title": "残高不足",
-    "transferBody": "この振込を完了するには残高が不足しています。",
-    "noBalanceBody": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
-    "noBalanceTitle": "残高なし"
+    "transferBody": "この振込を完了するには残高が不足しています。"
   },
   "transferMfaPage": {
     "title": "確認",

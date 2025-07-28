@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla maassasi.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue {{pair}}-siirtoja.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}-välittäjän minimirajan.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "platformNotSupported": "{{integrationName}} ei ole tuettu laitteessasi.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "haku",
     "title": "Valitse linkitettävä tili",
     "title40": "Valitse tilisi"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} ei ole tuettu laitteessasi.",
-    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleVaspIdRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleAmountLimit": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}-välittäjän minimirajan.",
-    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue {{pair}}-siirtoja.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
-    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla maassasi."
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "Nostoa ei tueta",
     "integrationError": "Integraatiovirhe",
     "integrationNotAvailable": "Integraatio ei ole saatavilla",
-    "notAvailableText": "Ei saatavilla",
     "invalidCredentials": "Virheelliset kirjautumistiedot",
     "invalidField": "Virheellisiä tietoja",
     "invalidFromIntegrationToken": "Autentikointi vanhentunut",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "Älysopimus ei ole saatavilla",
     "notAuthorizedFromIntegrationToken": "Autentikointi vanhentunut",
     "notAuthorizedToIntegrationToken": "Autentikointi vanhentunut",
+    "notAvailableText": "Ei saatavilla",
     "notFound": "Ei löydetty",
     "notSupported": "Ei tueta",
     "orderTypeNotSupported": "Tilaustyyppiä ei tueta",
@@ -549,6 +549,10 @@
     "openApp": "Avaa {{integrationName}} -sovellus",
     "reopenApp": "Avaa {{integrationName}}-sovellus uudelleen",
     "title": "Varmistus"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Käsittelymaksu",
+    "title": "Sisältää maksut"
   },
   "fields": {
     "apiKey": "API-avain",
@@ -1128,6 +1132,16 @@
     "transferTitle": "Siirron esikatselu",
     "youMayReceiveLess": "Saatat saadavähemmän johtuen {{symbol}} hinnan liikkeistä."
   },
+  "previewTransferPageUI": {
+    "fee": "Sisältää {{amount}} maksuina",
+    "fundingMethods": "Talletustavat",
+    "receive": "Vastaanota",
+    "refreshing": "Päivitä {{seconds}} sekuntia",
+    "send": "Lähetä",
+    "title": "Siirron esikatselu",
+    "tokenOnNetwork": "{{token}} {{network}} -verkossa",
+    "transferToken": "Siirrä tunniste"
+  },
   "privacyComponent": {
     "content": "Tietosi ovat aina yksityisiä ja salattuja."
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Kaasukustannukset {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
     "gasTitle": "Riittämätön kaasusaldo",
+    "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "noBalanceTitle": "Ei saldoa",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
     "title": "Riittämätön saldo",
-    "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen.",
-    "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
-    "noBalanceTitle": "Ei saldoa"
+    "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
   },
   "transferMfaPage": {
     "title": "Varmistus",

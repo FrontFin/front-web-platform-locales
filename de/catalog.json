@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} auswählen"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
+    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrem Land nicht verfügbar.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine {{pair}}-Transfers.",
+    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Minimum des {{integrationName}} Brokers.",
+    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
+    "platformNotSupported": "{{integrationName}} wird auf Ihrem Gerät nicht unterstützt.",
+    "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
+    "travelRuleAmountLimit": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "travelRuleVaspIdRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "Suche",
     "title": "Konto zum Verknüpfen auswählen",
     "title40": "Wähle Dein Konto"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} wird auf Ihrem Gerät nicht unterstützt.",
-    "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
-    "travelRuleVaspIdRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
-    "travelRuleAmountLimit": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
-    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Minimum des {{integrationName}} Brokers.",
-    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine {{pair}}-Transfers.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
-    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrem Land nicht verfügbar."
   },
   "catalogTile": {
     "select": "Wähle {{integrationName}}, {{badge}}"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "Abhebung nicht unterstützt",
     "integrationError": "Integrationsfehler",
     "integrationNotAvailable": "Integration nicht verfügbar",
-    "notAvailableText": "Nicht verfügbar",
     "invalidCredentials": "Ungültige Anmeldedaten",
     "invalidField": "Ungültige Informationen",
     "invalidFromIntegrationToken": "Authentifizierung abgelaufen",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "Smart Contract nicht verfügbar",
     "notAuthorizedFromIntegrationToken": "Authentifizierung abgelaufen",
     "notAuthorizedToIntegrationToken": "Authentifizierung abgelaufen",
+    "notAvailableText": "Nicht verfügbar",
     "notFound": "Nicht gefunden",
     "notSupported": "Nicht unterstützt",
     "orderTypeNotSupported": "Bestelltyp nicht unterstützt",
@@ -549,6 +549,10 @@
     "openApp": "Öffne {{integrationName}}-App",
     "reopenApp": "{{integrationName}}-App erneut öffnen",
     "title": "Verifizierung"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Bearbeitungsgebühr",
+    "title": "Enthaltene Gebühren"
   },
   "fields": {
     "apiKey": "API-Schlüssel",
@@ -1128,6 +1132,16 @@
     "transferTitle": "Überweisungsvorschau",
     "youMayReceiveLess": "Es kann sein, dass Du aufgrund von Preisschwankungen von {{symbol}} weniger erhälst."
   },
+  "previewTransferPageUI": {
+    "fee": "Beinhaltet {{amount}} an Gebühren",
+    "fundingMethods": "Finanzierungsmethoden",
+    "receive": "Erhalten",
+    "refreshing": "Aktualisieren in {{seconds}}s",
+    "send": "Senden",
+    "title": "Überweisungsvorschau",
+    "tokenOnNetwork": "{{token}} auf {{network}}",
+    "transferToken": "Token übertragen"
+  },
   "privacyComponent": {
     "content": "Deine Daten sind jederzeit privat und verschlüsselt."
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Gasgebühren für das {{network}}-Netzwerk werden in {{symbol}} bezahlt. Bitte füllen Sie Ihr {{symbol}}-Guthaben auf und versuchen Sie die Transaktion erneut.",
     "gasTitle": "Unzureichendes Gasguthaben",
+    "noBalanceBody": "Sie haben kein {{symbol}} Guthaben zu übertragen. Bitte füllen Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalanceTitle": "Kein Guthaben",
     "paymentBody": "Ihr Kontostand ist zu niedrig, um diesen Kauf abzuschließen.",
     "title": "Unzureichendes Guthaben",
-    "transferBody": "Ihr Guthaben ist zu niedrig, um diese Überweisung abzuschließen.",
-    "noBalanceBody": "Sie haben kein {{symbol}} Guthaben zu übertragen. Bitte füllen Sie Ihr Guthaben auf und versuchen Sie es erneut.",
-    "noBalanceTitle": "Kein Guthaben"
+    "transferBody": "Ihr Guthaben ist zu niedrig, um diese Überweisung abzuschließen."
   },
   "transferMfaPage": {
     "title": "Verifizierung",

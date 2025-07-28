@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "选择{{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}}在您的国家不可用。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}不支持{{pair}}转移。",
+    "lessThanIntegrationMinAmount": "请求金额低于{{integrationName}}经纪商的最低额度。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "platformNotSupported": "{{integrationName}}不支持您的设备。",
+    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。"
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "搜索",
     "title": "选择要关联的账户",
     "title40": "选择你的账户"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}}不支持您的设备。",
-    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
-    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "lessThanIntegrationMinAmount": "请求金额低于{{integrationName}}经纪商的最低额度。",
-    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}不支持{{pair}}转移。",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
-    "integrationNotSupportedCountry": "{{integrationName}}在您的国家不可用。"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "不支持提现",
     "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
-    "notAvailableText": "不可用",
     "invalidCredentials": "账号或密码错误",
     "invalidField": "信息无效",
     "invalidFromIntegrationToken": "身份验证已过期",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "智能合约服务暂不可用",
     "notAuthorizedFromIntegrationToken": "身份验证已过期",
     "notAuthorizedToIntegrationToken": "身份验证已过期",
+    "notAvailableText": "不可用",
     "notFound": "未找到相关内容",
     "notSupported": "不支持",
     "orderTypeNotSupported": "不支持该订单类型",
@@ -549,6 +549,10 @@
     "openApp": "打开{{integrationName}}应用",
     "reopenApp": "重新打开{{integrationName}}应用",
     "title": "验证"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} 处理费",
+    "title": "包含的费用"
   },
   "fields": {
     "apiKey": "API 密钥",
@@ -1128,6 +1132,16 @@
     "transferTitle": "转账预览",
     "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
+  "previewTransferPageUI": {
+    "fee": "包含 {{amount}} 手续费",
+    "fundingMethods": "充值方式",
+    "receive": "收款",
+    "refreshing": "{{seconds}} 秒后刷新",
+    "send": "发送",
+    "title": "转账预览",
+    "tokenOnNetwork": "{{token}} 在 {{network}}",
+    "transferToken": "转账代币"
+  },
   "privacyComponent": {
     "content": "您的数据全程加密，隐私绝对安全。"
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
     "gasTitle": "燃料费余额不足",
+    "noBalanceBody": "您没有可转账的{{symbol}}余额。请充值后重试。",
+    "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
     "title": "余额不足",
-    "transferBody": "您的余额不足，无法完成此次转账。",
-    "noBalanceBody": "您没有可转账的{{symbol}}余额。请充值后重试。",
-    "noBalanceTitle": "没有余额"
+    "transferBody": "您的余额不足，无法完成此次转账。"
   },
   "transferMfaPage": {
     "title": "验证",
