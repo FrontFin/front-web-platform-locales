@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашей стране.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы {{pair}}.",
+    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы брокера {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
+    "platformNotSupported": "{{integrationName}} не поддерживается на вашем устройстве.",
+    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK Контекста: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "поиск",
     "title": "Выберите учетную запись для подключения",
     "title40": "Подключить биржу или электронный кошелек"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} не поддерживается на вашем устройстве.",
-    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK Контекста: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "travelRuleAmountLimit": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы брокера {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы {{pair}}.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
-    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашей стране."
   },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
@@ -367,7 +367,6 @@
     "fromAccountNotSupported": "Вывод не поддерживается",
     "integrationError": "Ошибка интеграции",
     "integrationNotAvailable": "Интеграция недоступна",
-    "notAvailableText": "Недоступно",
     "invalidCredentials": "Недействительные учетные данные",
     "invalidField": "Недействительная информация",
     "invalidFromIntegrationToken": "Срок действия аутентификации истек",
@@ -382,6 +381,7 @@
     "noAvailableSmartContract": "Смарт-контракт недоступен",
     "notAuthorizedFromIntegrationToken": "Срок действия аутентификации истек",
     "notAuthorizedToIntegrationToken": "Срок действия аутентификации истек",
+    "notAvailableText": "Недоступно",
     "notFound": "Не найдено",
     "notSupported": "Не поддерживается",
     "orderTypeNotSupported": "Тип ордера не поддерживается",
@@ -549,6 +549,10 @@
     "openApp": "Открыть приложение {{integrationName}}",
     "reopenApp": "Переоткрыть приложение {{integrationName}}",
     "title": "Верификация"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Processing fee",
+    "title": "Included fees"
   },
   "fields": {
     "apiKey": "Ключ API",
@@ -1128,6 +1132,16 @@
     "transferTitle": "Предпросмотр передачи",
     "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}."
   },
+  "previewTransferPageUI": {
+    "fee": "Включает {{amount}} в виде сборов",
+    "fundingMethods": "Методы обеспечения",
+    "receive": "Получить",
+    "refreshing": "Refresh in {{seconds}}s",
+    "send": "Send",
+    "title": "Предпросмотр передачи",
+    "tokenOnNetwork": "{{token}} on {{network}}",
+    "transferToken": "Transfer token"
+  },
   "privacyComponent": {
     "content": "Ваши данные являются конфиденциальными и зашифрованы в любое время."
   },
@@ -1321,11 +1335,11 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Комиссия за газ для сети {{network}} взимается в {{symbol}}. Пожалуйста, пополните баланс {{symbol}} и повторите эту транзакцию.",
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
+    "noBalanceBody": "У вас нет баланса {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noBalanceTitle": "Нет баланса",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
     "title": "Недостаточный баланс",
-    "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод.",
-    "noBalanceBody": "У вас нет баланса {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
-    "noBalanceTitle": "Нет баланса"
+    "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
   },
   "transferMfaPage": {
     "title": "Верификация",
