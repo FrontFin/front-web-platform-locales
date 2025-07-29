@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "{{requestedAmount}} की अनुरोधित स्थानांतरण राशि {{integrationName}} द्वारा {{minimumAmount}} के न्यूनतम से कम है {{network}} नेटवर्क पर स्थानांतरण के लिए।",
     "balanceBelowMinimumDescription": "आपकी {{currentBalance}} शेष राशि {{network}} नेटवर्क पर स्थानांतरित करने के लिए {{integrationName}} की {{minimumAmount}} न्यूनतम राशि से कम है।",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "{{integrationName}} के न्यूनतम से कम",
     "belowRequestedAmountDescription": "आपका {{balance}} शेष राशि अनुरोधित स्थानांतरण राशि + शुल्क को कवर करने के लिए {{amount}} से कम है।",
     "gasFeeAssetBalanceNotEnoughDescription": "आपका {{balance}} शेष राशि {{network}} नेटवर्क पर अनुमानित {{gasFee}} गैस फ़ीस को कवर करने के लिए अपर्याप्त है।",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "{{integrationName}} द्वारा समर्थित नहीं है",
     "nyCoinbaseUserRestrictions": "NY मल्टी-चेन समर्थन प्रतिबंधों के कारण {{network}} पर {{symbol}} इस ट्रांसफ़र के लिए स्वीकार्य नहीं है।",
     "symbolDoesNotMatch": "{{clientName}} द्वारा समर्थित नहीं है",
-    "symbolDoesNotMatchDescription": "इस स्थानांतरण के लिए {{symbol}} स्वीकार नहीं किया गया है।"
+    "symbolDoesNotMatchDescription": "इस स्थानांतरण के लिए {{symbol}} स्वीकार नहीं किया गया है।",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "कोई बैलेंस नहीं",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "अपना डिवाइस चालू करें और अनलॉक करें"
