@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Seleciona {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências para nenhuma das combinações de token/rede fornecidas.",
-    "integrationNotSupportedCountry": "{{integrationName}} não está disponível no seu país.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências de {{pair}}.",
-    "lessThanIntegrationMinAmount": "O valor solicitado está abaixo do mínimo do corretor {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "O valor solicitado está acima do máximo do corretor {{integrationName}}.",
-    "platformNotSupported": "{{integrationName}} não é compatível com o seu dispositivo.",
-    "sdkVersionNotSupported": "O mecanismo TrueAuth de {{integrationName}} não é compatível com este Contexto do SDK: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} não suporta esta transferência devido a restrições de elegibilidade de conformidade.",
-    "travelRuleVaspIdRequired": "{{integrationName}} não suporta esta transferência devido a restrições de elegibilidade de conformidade.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} não suporta esta transferência devido a restrições de elegibilidade de conformidade."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "procurar",
     "title": "Seleciona uma conta para conectar",
     "title40": "Escolhe a tua conta"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} não é compatível com este tipo de dispositivo.",
+    "sdkVersionNotSupported": "O mecanismo TrueAuth de {{integrationName}} não é compatível com este Contexto do SDK: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "travelRuleVaspIdRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "travelRuleAmountLimit": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "lessThanIntegrationMinAmount": "O valor solicitado está abaixo do mínimo do {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "O valor solicitado está acima do máximo do corretor {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} não suporta este token e rede.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências para nenhuma das combinações de token/rede fornecidas.",
+    "integrationNotSupportedCountry": "{{integrationName}} não está disponível na sua região."
   },
   "catalogTile": {
     "select": "Seleciona {{integrationName}}, {{badge}}"
