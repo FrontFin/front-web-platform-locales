@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
-    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng tại quốc gia của bạn.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển {{pair}}.",
-    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của nhà môi giới {{integrationName}}",
-    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
-    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên thiết bị của bạn.",
-    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "travelRuleVaspIdRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "Tìm kiếm",
     "title": "Chọn tài khoản để liên kết",
     "title40": "Chọn tài khoản của bạn"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên loại thiết bị này.",
+    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "travelRuleVaspIdRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn."
   },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
