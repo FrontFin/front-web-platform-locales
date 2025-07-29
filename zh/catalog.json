@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "选择{{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
-    "integrationNotSupportedCountry": "{{integrationName}}在您的国家不可用。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}不支持{{pair}}转移。",
-    "lessThanIntegrationMinAmount": "请求金额低于{{integrationName}}经纪商的最低额度。",
-    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
-    "platformNotSupported": "{{integrationName}}不支持您的设备。",
-    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
-    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。"
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "搜索",
     "title": "选择要关联的账户",
     "title40": "选择你的账户"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
+    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。",
+    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持。",
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
