@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Le montant du transfert demandé de {{requestedAmount}} est inférieur au montant minimum de {{minimumAmount}} requis par {{integrationName}} pour un transfert sur le réseau {{network}}.",
     "balanceBelowMinimumDescription": "Votre solde de {{currentBalance}} est inférieur au montant minimum de {{minimumAmount}} requis par {{integrationName}} pour effectuer un transfert sur le réseau {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Votre solde de {{currentBalance}} est inférieur au minimum de {{minimumAmount}} {{integrationName}} requis pour transférer {{symbol}} sur {{network}}. Veuillez recharger votre solde et réessayer.",
     "belowMinimum": "En dessous du minimum de {{integrationName}}",
     "belowRequestedAmountDescription": "Votre solde {{balance}} est inférieur au {{amount}} requis pour couvrir le montant du transfert demandé + les frais.",
     "gasFeeAssetBalanceNotEnoughDescription": "Votre solde {{balance}} est insuffisant pour couvrir les frais de gaz estimés de {{gasFee}} sur le réseau {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Non pris en charge par {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} sur {{network}} n'est pas accepté pour ce transfert en raison des restrictions de support multi-chaînes à NY.",
     "symbolDoesNotMatch": "Non pris en charge par {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} n'est pas accepté pour ce transfert."
+    "symbolDoesNotMatchDescription": "{{symbol}} n'est pas accepté pour ce transfert.",
+    "noGasBalancePaymentDescription": "Cette transaction nécessite {{amount}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez recharger vos soldes et réessayer.",
+    "noGasBalanceTransferDescription": "Cette transaction nécessite un solde disponible de {{symbol}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez recharger vos soldes et réessayer.",
+    "noBalance": "Pas de solde",
+    "noBalancePaymentDescription": "Votre solde de {{balance}} est insuffisant pour effectuer ce paiement de {{amount}}. Veuillez recharger votre solde et réessayer.",
+    "noBalanceTransferDescription": "Vous n'avez pas de solde {{symbol}} à transférer. Veuillez recharger votre solde et réessayer.",
+    "noGasBalancePaymentSelectNetworkDescription": "Cette transaction nécessite {{amount}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez choisir un autre réseau ou recharger vos soldes et réessayer.",
+    "noGasBalanceTransferSelectNetworkDescription": "Cette transaction nécessite un solde disponible de {{symbol}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez choisir un autre réseau ou recharger vos soldes et réessayer.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Votre solde de {{balance}} est insuffisant pour effectuer ce paiement de {{amount}}. Veuillez choisir un autre réseau ou recharger votre solde et réessayer.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Vos soldes sont insuffisants pour effectuer ce paiement. Veuillez choisir un autre réseau ou recharger votre solde et réessayer.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "Vous n'avez pas de soldes à transférer. Veuillez recharger un solde et réessayer."
   },
   "initialLedgerScreen": {
     "title": "Allumez et déverrouillez votre appareil"
