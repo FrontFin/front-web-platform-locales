@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
     "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n vähimmäismäärä{{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "Alle {{integrationName}}:n vähimmäismäärän",
     "belowRequestedAmountDescription": "Saldosi {{balance}} on pienempi kuin {{amount}}, joka vaaditaan kattamaan pyydetty siirtomäärä + palkkiot.",
     "gasFeeAssetBalanceNotEnoughDescription": "Saldosi {{balance}} ei riitä kattamaan arvioutua gas-maksua {{gasFee}} verkossa {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "{{integrationName}} ei tue",
     "nyCoinbaseUserRestrictions": "{{symbol}} {{network}}:ssä ei hyväksytä tähän siirtoon NY:n moniketjutuen rajoitusten vuoksi.",
     "symbolDoesNotMatch": "{{clientName}} ei tue",
-    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon."
+    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon.",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "Ei saldoa",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "Käynnistä ja avaa laitteesi"
