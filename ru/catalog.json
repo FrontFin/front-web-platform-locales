@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
-    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашей стране.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы {{pair}}.",
-    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы брокера {{integrationName}}",
-    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
-    "platformNotSupported": "{{integrationName}} не поддерживается на вашем устройстве.",
-    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "поиск",
     "title": "Выберите учетную запись для подключения",
     "title40": "Подключить биржу или электронный кошелек"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} не поддерживается на этом типе устройства.",
+    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы для {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает этот токен и сеть.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашем регионе."
   },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
