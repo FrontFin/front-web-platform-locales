@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Сумма запрошенного перевода {{requestedAmount}} меньше минимальной суммы {{integrationName}} {{minimumAmount}} для перевода в сети {{network}}.",
     "balanceBelowMinimumDescription": "Ваш баланс в {{currentBalance}} меньше минимума {{minimumAmount}} {{integrationName}} для перевода по сети {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "Ниже минимального лимита {{integrationName}}",
     "belowRequestedAmountDescription": "Ваш баланс в {{balance}} меньше, чем в {{amount}}, необходимых для покрытия запрашиваемой суммы перевода + комиссии.",
     "gasFeeAssetBalanceNotEnoughDescription": "Ваш баланс {{balance}} не достаточен, чтобы покрыть комиссию за газ {{gasFee}} в сети {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Не поддерживается {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} на {{network}} не доступен для этого перевода из-за ограничений поддержки многоцепочной сети в штате Нью-Йорк.",
     "symbolDoesNotMatch": "Не поддерживается {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода."
+    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода.",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "Баланс недостаточен",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "Включите  и разблокируйте устройство"
