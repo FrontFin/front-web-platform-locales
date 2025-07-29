@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "{{network}}ネットワークにおける{{integrationName}}の最低送金額{{minimumAmount}}に対し、ご指定の送金額{{requestedAmount}}が不足しています。",
     "balanceBelowMinimumDescription": "{{network}}ネットワークでの{{integrationName}}の送金最低額{{minimumAmount}}に対して、現在の残高{{currentBalance}}が不足しています。",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "{{integrationName}} の最低以下",
     "belowRequestedAmountDescription": "ご指定の送金額と手数料をカバーするには、現在の残高{{balance}}が必要額{{amount}}に満たしていません。",
     "gasFeeAssetBalanceNotEnoughDescription": "{{network}}ネットワークでの推定ガス代{{gasFee}}を賄うには、現在の残高{{balance}}が不足しています。",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "{{integrationName}}はサポートされていません",
     "nyCoinbaseUserRestrictions": "NYマルチチェーン対応制限により、{{network}}上の{{symbol}}はこの送金では利用できません。",
     "symbolDoesNotMatch": "{{clientName}}ではサポートされていません",
-    "symbolDoesNotMatchDescription": "この送金では{{symbol}}は利用できません。"
+    "symbolDoesNotMatchDescription": "この送金では{{symbol}}は利用できません。",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "残高なし",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "デバイスの電源を入れ、ロックを解除してください"
