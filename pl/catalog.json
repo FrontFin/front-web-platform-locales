@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Żądana kwota transferu {{requestedAmount}} jest niższa niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
     "balanceBelowMinimumDescription": "Twoje saldo {{currentBalance}} jest niższe niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "Poniżej minimalnego limitu {{integrationName}}",
     "belowRequestedAmountDescription": "Twoje saldo {{balance}} jest mniejsze niż {{amount}}. Ta kwota jest wymagana do pokrycia wybranej kwoty transferu wraz z opłatami.",
     "gasFeeAssetBalanceNotEnoughDescription": "Twoje saldo {{balance}} jest niewystarczające, aby pokryć szacunkową opłatę za gaz {{gasFee}} w sieci {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Nieobsługiwane przez {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} w sieci {{network}} nie jest akceptowany do tego transferu z powodu ograniczeń wsparcia NY multi-chain.",
     "symbolDoesNotMatch": "Nieobsługiwane przez {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} nie jest akceptowany dla tego transferu."
+    "symbolDoesNotMatchDescription": "{{symbol}} nie jest akceptowany dla tego transferu.",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "Brak salda",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "Włącz i odblokuj swoje urządzenie"
