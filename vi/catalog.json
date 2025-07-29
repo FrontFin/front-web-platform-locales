@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Số tiền chuyển khoản yêu cầu {{requestedAmount}} thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} đối với mạng {{network}}.",
     "balanceBelowMinimumDescription": "Số dư {{currentBalance}} của bạn thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} để chuyển trên mạng {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "Dưới mức tối thiểu của {{integrationName}}",
     "belowRequestedAmountDescription": "Số dư {{balance}} của bạn thấp hơn {{amount}} cần thiết để thực hiện giao dịch + phí.",
     "gasFeeAssetBalanceNotEnoughDescription": "Số dư {{balance}} của bạn không đủ để chi trả phí gas ước tính {{gasFee}} trên mạng {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Không được hỗ trợ bởi {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} trên {{network}} không được chấp nhận cho giao dịch này do hạn chế hỗ trợ đa chuỗi (multi-chain) tại New York.",
     "symbolDoesNotMatch": "Không được hỗ trợ bởi {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này."
+    "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này.",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "Không có số dư",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "Bật nguồn và mở khóa thiết bị của bạn"
