@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
-    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla maassasi.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue {{pair}}-siirtoja.",
-    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}-välittäjän minimirajan.",
-    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
-    "platformNotSupported": "{{integrationName}} ei ole tuettu laitteessasi.",
-    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleVaspIdRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "haku",
     "title": "Valitse linkitettävä tili",
     "title40": "Valitse tilisi"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi."
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
