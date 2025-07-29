@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} चुनें"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
+    "integrationNotSupportedCountry": "{{integrationName}} आपके देश में उपलब्ध नहीं है।",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} {{pair}} स्थानांतरण का समर्थन नहीं करता।",
+    "lessThanIntegrationMinAmount": "अनुरोधित राशि {{integrationName}} दलाल के न्यूनतम से कम है।",
+    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
+    "platformNotSupported": "{{integrationName}} आपके डिवाइस पर समर्थित नहीं है।",
+    "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
+    "travelRuleAmountLimit": "{{integrationName}} इस स्थानांतरण का समर्थन नहीं करता है अनुपालन पात्रता प्रतिबंधों के कारण।",
+    "travelRuleVaspIdRequired": "{{integrationName}} इस स्थानांतरण का समर्थन नहीं करता है अनुपालन पात्रता प्रतिबंधों के कारण।",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} इस स्थानांतरण का समर्थन नहीं करता है अनुपालन पात्रता प्रतिबंधों के कारण।"
+  },
   "catalogList": {
     "badges": {
       "api": "एपीआई",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "राशि बहुत अधिक है",
     "authenticationFailed": "प्रमाणीकरण असफल",
     "badRequest": "अवैध अनुरोध",
-    "balanceNotEnough": "अपर्याप्त धनराशि",
+    "balanceNotEnough": "अपर्याप्त उपलब्ध शेष राशि",
     "belowMinimumFiatDeposit": "न्यूनतम फिएट डिपॉजिट से कम",
     "binanceTravelRuleRestriction": "यात्रा नियम प्रतिबंध",
     "coinbaseTravelRuleRestriction": "यात्रा नियम प्रतिबंध",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "स्मार्ट अनुबंध उपलब्ध नहीं है",
     "notAuthorizedFromIntegrationToken": "प्रमाणीकरण की समय सीमा समाप्त हो गई",
     "notAuthorizedToIntegrationToken": "प्रमाणीकरण की समय सीमा समाप्त हो गई",
+    "notAvailableText": "उपलब्ध नहीं है",
     "notFound": "नहीं मिला",
     "notSupported": "समर्थित नहीं है",
     "orderTypeNotSupported": "ऑर्डर प्रकार समर्थित नहीं है",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "अनुरोधित राशि इस नेटवर्क पर न्यूनतम अनुमत हस्तांतरण राशि से कम है।",
     "amountExceedsMaximum": "अनुरोधित राशि इस नेटवर्क पर अधिकतम अनुमत हस्तांतरण राशि से अधिक है।",
     "authenticationFailed": "चयनित एकीकरण के साथ प्रमाणीकरण में असमर्थ।",
-    "balanceNotEnough": "पर्याप्त शेष राशि नहीं है।",
+    "balanceNotEnough": "आपके खाते में पर्याप्त शेष राशि दिख रही है, लेकिन कुछ धनराशि लंबित, आरक्षित, या शुल्क के लिए आवश्यक हो सकती हैं। कृपया कम राशि भेजने का प्रयास करें।",
     "belowMinimumFiatDeposit": "राशि न्यूनतम फिएट जमा सीमा से कम है।",
     "binanceTravelRuleRestriction": "बाइनेंस वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
     "binanceTravelRuleRestrictionDeposit": "बाइनेंस वर्तमान में आपके देश से जमा का समर्थन नहीं करता है।",
@@ -536,6 +549,10 @@
     "openApp": "{{integrationName}} ऐप खोलें",
     "reopenApp": "{{integrationName}} ऐप पुनः खोलें",
     "title": "सत्यापन"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} प्रसंस्करण शुल्क",
+    "title": "शुल्क शामिल"
   },
   "fields": {
     "apiKey": "एपीआई कुंजी",
@@ -1115,6 +1132,16 @@
     "transferTitle": "स्थानांतरण का पूर्वावलोकन",
     "youMayReceiveLess": "{{symbol}} की कीमत में उतार-चढ़ाव के कारण आपको कम राशि प्राप्त हो सकती है।"
   },
+  "previewTransferPageUI": {
+    "fee": "शुल्क में {{amount}} शामिल है",
+    "fundingMethods": "फंडिंग विधियाँ",
+    "receive": "प्राप्त करें",
+    "refreshing": "{{seconds}} सेकंड में ताज़ा करें",
+    "send": "भेजें",
+    "title": "स्थानांतरण का पूर्वावलोकन",
+    "tokenOnNetwork": "{{network}} पर {{token}}",
+    "transferToken": "टोकन स्थानांतरित करें"
+  },
   "privacyComponent": {
     "content": "आपका डेटा हर समय निजी और एन्क्रिप्टेड रहता है।"
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "टोकन चुनें",
     "depositTitle": "जमा टोकन चुनें",
     "ineligibleAssets": "अयोग्य संपत्तियाँ",
+    "link40Title": "टोकन चुनें",
     "loading": "आपकी संपत्तियाँ लोड हो रही हैं...",
     "noAssetsTitle": "लिंक किए गए खाते में कोई संपत्ति नहीं पाई गई",
     "noEligibleAssetsTitle": "इस खाते में कोई भी संपत्ति इस स्थानांतरण के लिए योग्य नहीं है",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}} नेटवर्क के लिए गैस शुल्क {{symbol}} में भुगतान किए जाते हैं। कृपया अपनी {{symbol}} शेष राशि बढ़ाएं और फिर इस लेन-देन को पुनः करने का प्रयास करें।",
     "gasTitle": "गैस शेष राशि अपर्याप्त",
+    "noBalanceBody": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
+    "noBalanceTitle": "कोई बैलेंस नहीं",
     "paymentBody": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
     "title": "अपर्याप्त शेष राशि",
     "transferBody": "आपका शेष राशि इस स्थानांतरण को पूरा करने के लिए अपर्याप्त है।"

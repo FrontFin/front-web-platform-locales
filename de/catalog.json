@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} auswählen"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
+    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrem Land nicht verfügbar.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine {{pair}}-Transfers.",
+    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Minimum des {{integrationName}} Brokers.",
+    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
+    "platformNotSupported": "{{integrationName}} wird auf Ihrem Gerät nicht unterstützt.",
+    "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
+    "travelRuleAmountLimit": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "travelRuleVaspIdRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "Betrag zu hoch",
     "authenticationFailed": "Authentifizierung fehlgeschlagen",
     "badRequest": "Ungültige Anfrage",
-    "balanceNotEnough": "Unzureichendes Guthaben",
+    "balanceNotEnough": "Unzureichendes verfügbares Guthaben",
     "belowMinimumFiatDeposit": "Unter dem minimalen Fiat-Einzahlungsbetrag",
     "binanceTravelRuleRestriction": "Reisebeschränkung",
     "coinbaseTravelRuleRestriction": "Reisebeschränkung",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "Smart Contract nicht verfügbar",
     "notAuthorizedFromIntegrationToken": "Authentifizierung abgelaufen",
     "notAuthorizedToIntegrationToken": "Authentifizierung abgelaufen",
+    "notAvailableText": "Nicht verfügbar",
     "notFound": "Nicht gefunden",
     "notSupported": "Nicht unterstützt",
     "orderTypeNotSupported": "Bestelltyp nicht unterstützt",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
     "amountExceedsMaximum": "Angeforderter Betrag überschreitet den maximal zulässigen Überweisungsbetrag in diesem Netzwerk.",
     "authenticationFailed": "Authentifizierung mit der ausgewählten Integration nicht möglich.",
-    "balanceNotEnough": "Nicht genügend Guthaben.",
+    "balanceNotEnough": "Ihr Konto zeigt ein ausreichendes Guthaben an, aber einige Beträge können noch ausstehend, reserviert oder für Gebühren benötigt sein. Bitte versuchen Sie, einen kleineren Betrag zu senden.",
     "belowMinimumFiatDeposit": "Betrag liegt unter dem minimalen Einzahlungslimit.",
     "binanceTravelRuleRestriction": "Binance unterstützt derzeit keine Überweisungen aus Ihrem Land.",
     "binanceTravelRuleRestrictionDeposit": "Binance unterstützt derzeit keine Einzahlungen aus Ihrem Land.",
@@ -536,6 +549,10 @@
     "openApp": "Öffne {{integrationName}}-App",
     "reopenApp": "{{integrationName}}-App erneut öffnen",
     "title": "Verifizierung"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Bearbeitungsgebühr",
+    "title": "Enthaltene Gebühren"
   },
   "fields": {
     "apiKey": "API-Schlüssel",
@@ -1115,6 +1132,16 @@
     "transferTitle": "Überweisungsvorschau",
     "youMayReceiveLess": "Es kann sein, dass Du aufgrund von Preisschwankungen von {{symbol}} weniger erhälst."
   },
+  "previewTransferPageUI": {
+    "fee": "Beinhaltet {{amount}} an Gebühren",
+    "fundingMethods": "Finanzierungsmethoden",
+    "receive": "Erhalten",
+    "refreshing": "Aktualisieren in {{seconds}}s",
+    "send": "Senden",
+    "title": "Überweisungsvorschau",
+    "tokenOnNetwork": "{{token}} auf {{network}}",
+    "transferToken": "Token übertragen"
+  },
   "privacyComponent": {
     "content": "Deine Daten sind jederzeit privat und verschlüsselt."
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "Token auswählen",
     "depositTitle": "Einzahlungstoken auswählen",
     "ineligibleAssets": "Nicht berechtigte Assets",
+    "link40Title": "Wählen Sie ein Token",
     "loading": "Ihre Assets werden geladen ...",
     "noAssetsTitle": "Keine Assets im verbundenen Konto erkannt",
     "noEligibleAssetsTitle": "Keine Assets in diesem Konto sind für diese Überweisung berechtigt",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Gasgebühren für das {{network}}-Netzwerk werden in {{symbol}} bezahlt. Bitte füllen Sie Ihr {{symbol}}-Guthaben auf und versuchen Sie die Transaktion erneut.",
     "gasTitle": "Unzureichendes Gasguthaben",
+    "noBalanceBody": "Sie haben kein {{symbol}} Guthaben zu übertragen. Bitte füllen Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalanceTitle": "Kein Guthaben",
     "paymentBody": "Ihr Kontostand ist zu niedrig, um diesen Kauf abzuschließen.",
     "title": "Unzureichendes Guthaben",
     "transferBody": "Ihr Guthaben ist zu niedrig, um diese Überweisung abzuschließen."

@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng tại quốc gia của bạn.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển {{pair}}.",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của nhà môi giới {{integrationName}}",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên thiết bị của bạn.",
+    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "travelRuleVaspIdRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "Số tiền quá cao",
     "authenticationFailed": "Xác Thực Thất Bại",
     "badRequest": "Yêu cầu không hợp lệ",
-    "balanceNotEnough": "Không đủ tiền",
+    "balanceNotEnough": "Không đủ số dư khả dụng",
     "belowMinimumFiatDeposit": "Số tiền nạp thấp hơn hạn mức tối thiểu",
     "binanceTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
     "coinbaseTravelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "Hợp đồng thông minh không khả dụng",
     "notAuthorizedFromIntegrationToken": "Xác thực đã hết hạn",
     "notAuthorizedToIntegrationToken": "Xác thực đã hết hạn",
+    "notAvailableText": "Không có sẵn",
     "notFound": "Không tìm thấy",
     "notSupported": "Không được hỗ trợ",
     "orderTypeNotSupported": "Loại đơn hàng không được hỗ trợ",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "Số tiền yêu cầu thấp hơn mức tối thiểu cho phép trên mạng lưới này.",
     "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức tối đa cho phép trên mạng lưới này.",
     "authenticationFailed": "Không thể xác thực với tích hợp đã chọn.",
-    "balanceNotEnough": "Số dư không đủ.",
+    "balanceNotEnough": "Tài khoản của bạn thể hiện số dư đủ, nhưng một số tiền có thể đang chờ xử lý, được giữ lại hoặc được yêu cầu cho phí. Vui lòng thử gửi một số tiền nhỏ hơn.",
     "belowMinimumFiatDeposit": "Số tiền thấp hơn mức nạp tiền tối thiểu.",
     "binanceTravelRuleRestriction": "Binance hiện không hỗ trợ chuyển tiền từ quốc gia của bạn.",
     "binanceTravelRuleRestrictionDeposit": "Binance hiện không hỗ trợ nạp tiền từ quốc gia của bạn.",
@@ -536,6 +549,10 @@
     "openApp": "Mở ứng dụng {{integrationName}}",
     "reopenApp": "Mở lại ứng dụng {{integrationName}}",
     "title": "Xác minh"
+  },
+  "feesDrawer": {
+    "processingFee": "Phí xử lý {{clientName}}",
+    "title": "Bao gồm phí"
   },
   "fields": {
     "apiKey": "Khóa API",
@@ -1115,6 +1132,16 @@
     "transferTitle": "Xem trước giao dịch",
     "youMayReceiveLess": "Bạn có thể nhận {{symbol}} ít hơn do biến động giá."
   },
+  "previewTransferPageUI": {
+    "fee": "Bao gồm {{amount}} phí giao dịch",
+    "fundingMethods": "Phương thức nạp tiền",
+    "receive": "Nhận",
+    "refreshing": "Làm mới sau {{seconds}} giây",
+    "send": "Gửi",
+    "title": "Xem trước giao dịch",
+    "tokenOnNetwork": "{{token}} trên {{network}}",
+    "transferToken": "Chuyển mã thông báo"
+  },
   "privacyComponent": {
     "content": "Dữ liệu của bạn luôn được giữ kín và mã hóa."
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "Chọn token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
+    "link40Title": "Chọn một đồng tiền",
     "loading": "Đang tải tài sản của bạn...",
     "noAssetsTitle": "Không thấy tài sản nào trong tài khoản liên kết",
     "noEligibleAssetsTitle": "Không có tài sản nào trong tài khoản này đủ điều kiện để chuyển khoản",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Phí gas cho mạng {{network}} được trả bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào số dư của bạn và thử giao dịch này một lần nữa.",
     "gasTitle": "Không đủ số dư để trả phí gas",
+    "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
+    "noBalanceTitle": "Không có số dư",
     "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
     "title": "Số dư không đủ",
     "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."

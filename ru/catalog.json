@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашей стране.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы {{pair}}.",
+    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы брокера {{integrationName}}",
+    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
+    "platformNotSupported": "{{integrationName}} не поддерживается на вашем устройстве.",
+    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "Сумма слишком велика",
     "authenticationFailed": "Ошибка аутентификации",
     "badRequest": "Некорректный запрос",
-    "balanceNotEnough": "Недостаточный баланс",
+    "balanceNotEnough": "Недостаточный доступный баланс",
     "belowMinimumFiatDeposit": "Минимальная сумма депозита недостаточна",
     "binanceTravelRuleRestriction": "Ограничение правила поездок",
     "coinbaseTravelRuleRestriction": "Ограничение правила переводов",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "Смарт-контракт недоступен",
     "notAuthorizedFromIntegrationToken": "Срок действия аутентификации истек",
     "notAuthorizedToIntegrationToken": "Срок действия аутентификации истек",
+    "notAvailableText": "Недоступно",
     "notFound": "Не найдено",
     "notSupported": "Не поддерживается",
     "orderTypeNotSupported": "Тип ордера не поддерживается",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "Запрашиваемая сумма ниже минимально допустимой для перевода в этой сети.",
     "amountExceedsMaximum": "Запрашиваемая сумма превышает максимально допустимую для перевода в этой сети.",
     "authenticationFailed": "Не удается выполнить аутентификацию с выбранной интеграцией.",
-    "balanceNotEnough": "Недостаточно средств.",
+    "balanceNotEnough": "На вашем счете отображается достаточный баланс, но некоторые средства могут быть в ожидании, зарезервированы или требоваться для оплаты комиссии. Пожалуйста, попробуйте отправить меньшую сумму.",
     "belowMinimumFiatDeposit": "Сумма ниже минимального лимита депозита.",
     "binanceTravelRuleRestriction": "Binance в настоящее время не поддерживает переводы из вашей страны.",
     "binanceTravelRuleRestrictionDeposit": "Binance в настоящее время не поддерживает депозиты из вашей страны.",
@@ -536,6 +549,10 @@
     "openApp": "Открыть приложение {{integrationName}}",
     "reopenApp": "Переоткрыть приложение {{integrationName}}",
     "title": "Верификация"
+  },
+  "feesDrawer": {
+    "processingFee": "Комиссия за обработку {{clientName}}",
+    "title": "Включенные комиссии"
   },
   "fields": {
     "apiKey": "Ключ API",
@@ -1115,6 +1132,16 @@
     "transferTitle": "Предпросмотр передачи",
     "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}."
   },
+  "previewTransferPageUI": {
+    "fee": "Включает {{amount}} в виде сборов",
+    "fundingMethods": "Методы обеспечения",
+    "receive": "Получить",
+    "refreshing": "Обновление через {{seconds}}с",
+    "send": "Отправить",
+    "title": "Предпросмотр передачи",
+    "tokenOnNetwork": "{{token}} через {{network}}",
+    "transferToken": "Токен для трансфера"
+  },
   "privacyComponent": {
     "content": "Ваши данные являются конфиденциальными и зашифрованы в любое время."
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "Выбрать токен",
     "depositTitle": "Выберите токен для депозита",
     "ineligibleAssets": "Неподходящие активы",
+    "link40Title": "Выберите токен",
     "loading": "Загрузка ваших активов...",
     "noAssetsTitle": "В привязанном аккаунте не обнаружены активы",
     "noEligibleAssetsTitle": "Ни один актив на этом счете не может использоваться для этого перевода",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Комиссия за газ для сети {{network}} взимается в {{symbol}}. Пожалуйста, пополните баланс {{symbol}} и повторите эту транзакцию.",
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
+    "noBalanceBody": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noBalanceTitle": "Баланс недостаточен",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
     "title": "Недостаточный баланс",
     "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."

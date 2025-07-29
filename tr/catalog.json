@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} seçin"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} ülkenizde mevcut değil.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}, {{pair}} transferlerini desteklemiyor.",
+    "lessThanIntegrationMinAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun asgari tutarının altında.",
+    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
+    "platformNotSupported": "{{integrationName}} cihazınızda desteklenmiyor.",
+    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
+    "travelRuleAmountLimit": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
+    "travelRuleVaspIdRequired": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "Tutar çok yüksek",
     "authenticationFailed": "Kimlik Doğrulama Başarısız",
     "badRequest": "Geçersiz istek",
-    "balanceNotEnough": "Yetersiz bakiye",
+    "balanceNotEnough": "Yetersiz Kullanılabilir Bakiye",
     "belowMinimumFiatDeposit": "Minimum Emir Para Yatırma Altında",
     "binanceTravelRuleRestriction": "Seyahat kuralı kısıtlaması",
     "coinbaseTravelRuleRestriction": "Seyahat kuralı kısıtlaması",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "Akıllı sözleşme kullanılamıyor",
     "notAuthorizedFromIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
     "notAuthorizedToIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
+    "notAvailableText": "Kullanılamıyor",
     "notFound": "Bulunamadı",
     "notSupported": "Desteklenmiyor",
     "orderTypeNotSupported": "Emir türü desteklenmiyor",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
     "amountExceedsMaximum": "Talep edilen miktar, bu ağdaki maksimum izin verilen transfer miktarını aşıyor.",
     "authenticationFailed": "Seçilen entegrasyon ile kimlik doğrulama başarısız oldu.",
-    "balanceNotEnough": "Yeterli bakiye yok.",
+    "balanceNotEnough": "Hesabınız yeterli bakiye gösteriyor, ancak bazı fonlar beklemede olabilir, rezerve edilebilir veya ücretler için gerekli olabilir. Lütfen daha küçük bir miktar göndermeyi deneyin.",
     "belowMinimumFiatDeposit": "Miktar bu ödeme yönteminin minimum para yatırma limitinin altında.",
     "binanceTravelRuleRestriction": "Binance şu anda ülkenizden transferleri desteklememektedir.",
     "binanceTravelRuleRestrictionDeposit": "Binance şu anda ülkenizden mevduat kabul etmemektedir.",
@@ -536,6 +549,10 @@
     "openApp": "{{integrationName}} uygulamasını aç",
     "reopenApp": "{{integrationName}} uygulamasını tekrar aç",
     "title": "Doğrulama"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} İşlem ücreti",
+    "title": "Dahil edilen ücretler"
   },
   "fields": {
     "apiKey": "API anahtarı",
@@ -1115,6 +1132,16 @@
     "transferTitle": "Transfer ön izlemesi",
     "youMayReceiveLess": "{{symbol}} fiyat hareketinden dolayı daha az alabilirsiniz."
   },
+  "previewTransferPageUI": {
+    "fee": "Ücretler dahil {{amount}}",
+    "fundingMethods": "Ödeme yöntemleri",
+    "receive": "Almak",
+    "refreshing": "{{seconds}} sn içinde yenile",
+    "send": "Gönder",
+    "title": "Transfer ön izlemesi",
+    "tokenOnNetwork": "{{token}} üzerinde {{network}}",
+    "transferToken": "Jetonu transfer et"
+  },
   "privacyComponent": {
     "content": "Verileriniz her zaman gizli ve şifrelenmiş olarak korunur."
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "Token seçin",
     "depositTitle": "Yatırılacak token'ı seçin",
     "ineligibleAssets": "Uygun olmayan varlıklar",
+    "link40Title": "Bir token seçin",
     "loading": "Varlıklarınız yükleniyor...",
     "noAssetsTitle": "Bağlanan hesapta varlık tespit edilmedi",
     "noEligibleAssetsTitle": "Bu hesaptaki varlıklar bu çekim için uygun değil",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}} ağı için gaz ücretleri {{symbol}} olarak ödenmektedir. Lütfen {{symbol}} bakiyenizi tamamlayın ve bu işlemi tekrar deneyin.",
     "gasTitle": "Yetersiz gaz bakiyesi",
+    "noBalanceBody": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi tamamlayın ve tekrar deneyin.",
+    "noBalanceTitle": "Bakiye yok",
     "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
     "title": "Yetersiz bakiye",
     "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz."

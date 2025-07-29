@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Select {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} does not support transfers for any of the provided token/network combinations.",
+    "integrationNotSupportedCountry": "{{integrationName}} is not available in your country.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} does not support {{pair}} transfers.",
+    "lessThanIntegrationMinAmount": "The requested amount is below {{integrationName}} broker's minimum",
+    "moreThanIntegrationMaxAmount": "The requested amount is above {{integrationName}} broker's maximum",
+    "platformNotSupported": "{{integrationName}} is not supported on your device.",
+    "sdkVersionNotSupported": "{{integrationName}}'s TrueAuth mechanism is not supported for this SDK Context: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
+    "travelRuleVaspIdRequired": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} does not support this transfer due to compliance eligibility restrictions."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -350,7 +362,7 @@
     "amountExceedsMaximum": "Amount Too High",
     "authenticationFailed": "Authentication Failed",
     "badRequest": "Invalid Request",
-    "balanceNotEnough": "Insufficient Balance",
+    "balanceNotEnough": "Insufficient Available Balance",
     "belowMinimumFiatDeposit": "Below Minimum Fiat Deposit",
     "binanceTravelRuleRestriction": "Travel Rule Restriction",
     "coinbaseTravelRuleRestriction": "Travel Rule Restriction",
@@ -382,6 +394,7 @@
     "noAvailableSmartContract": "Smart Contract Unavailable",
     "notAuthorizedFromIntegrationToken": "Authentication Expired",
     "notAuthorizedToIntegrationToken": "Authentication Expired",
+    "notAvailableText": "Not Available",
     "notFound": "Not Found",
     "notSupported": "Not Supported",
     "orderTypeNotSupported": "Order Type Not Supported",
@@ -427,7 +440,7 @@
     "amountBelowMinimum": "Requested amount is below the minimum allowable transfer amount on this network.",
     "amountExceedsMaximum": "Requested amount exceeds the maximum allowable transfer amount on this network.",
     "authenticationFailed": "Unable to authenticate with the selected integration.",
-    "balanceNotEnough": "Not enough balance.",
+    "balanceNotEnough": "Your account shows sufficient balance, but some funds may be pending, reserved, or required for fees. Please try sending a smaller amount.",
     "belowMinimumFiatDeposit": "Amount is below the minimum fiat deposit limit.",
     "binanceTravelRuleRestriction": "Binance does not currently support transfers from your country.",
     "binanceTravelRuleRestrictionDeposit": "Binance does not currently support deposits from your country.",
@@ -549,6 +562,10 @@
     "openApp": "Open {{integrationName}} app",
     "reopenApp": "Re-open {{integrationName}} app",
     "title": "Verification"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Processing fee",
+    "title": "Included fees"
   },
   "fields": {
     "apiKey": "API key",
@@ -711,6 +728,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "The requested transfer amount of {{requestedAmount}} is less than {{integrationName}}’s minimum of {{minimumAmount}} to transfer on the {{network}} network.",
     "balanceBelowMinimumDescription": "Your {{currentBalance}} balance is less than {{integrationName}}’s {{minimumAmount}} minimum to transfer on the {{network}} network.",
+    "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
     "belowMinimum": "Below {{integrationName}}’s minimum",
     "belowRequestedAmountDescription": "Your {{balance}} balance is less than the {{amount}} required to cover the requested transfer amount + fees.",
     "gasFeeAssetBalanceNotEnoughDescription": "Your {{balance}} balance is insufficient to cover the estimated {{gasFee}} gas fee on the {{network}} network.",
@@ -722,7 +740,20 @@
     "notSupportedForTransferBySource": "Not supported by {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} on {{network}} not accepted for this transfer due to NY multi-chain support restrictions.",
     "symbolDoesNotMatch": "Not supported by {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} not accepted for this transfer."
+    "symbolDoesNotMatchDescription": "{{symbol}} not accepted for this transfer.",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noBalance": "No balance",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalanceTransferDescription": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
   },
   "initialLedgerScreen": {
     "title": "Power on and unlock your device"
@@ -1128,6 +1159,16 @@
     "transferTitle": "Transfer preview",
     "youMayReceiveLess": "You may receive less due to {{symbol}} price movement."
   },
+  "previewTransferPageUI": {
+    "fee": "Includes {{amount}} in fees",
+    "fundingMethods": "Funding methods",
+    "receive": "Receive",
+    "refreshing": "Refresh in {{seconds}}s",
+    "send": "Send",
+    "title": "Transfer preview",
+    "tokenOnNetwork": "{{token}} on {{network}}",
+    "transferToken": "Transfer token"
+  },
   "privacyComponent": {
     "content": "Your data is private and encrypted at all times."
   },
@@ -1321,6 +1362,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Gas fees for the {{network}} network are paid in {{symbol}}. Please top up your {{symbol}} balance and then try this transaction again.",
     "gasTitle": "Insufficient gas balance",
+    "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTitle": "No balance",
     "paymentBody": "Your balance is too low to complete this purchase.",
     "title": "Insufficient balance",
     "transferBody": "Your balance is too low to complete this transfer."

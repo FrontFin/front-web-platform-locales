@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}、{{badge}}を選択する"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
+    "integrationNotSupportedCountry": "{{integrationName}}はお住まいの国では利用できません。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}は{{pair}}の転送をサポートしていません。",
+    "lessThanIntegrationMinAmount": "リクエストされた金額は{{integrationName}}の最低限度未満です。",
+    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
+    "platformNotSupported": "{{integrationName}}はお使いのデバイスでサポートされていません。",
+    "sdkVersionNotSupported": "{{integrationName}}のTrueAuthメカニズムは、SDKコンテキスト: {{sdkContext}}でサポートされていません。",
+    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
+    "travelRuleVaspIdRequired": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限により、この転送をサポートしていません。"
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "入力された金額が上限を超えています。",
     "authenticationFailed": "認証が失敗しました",
     "badRequest": "無効なリクエストです",
-    "balanceNotEnough": "残高が不足しています。",
+    "balanceNotEnough": "利用できる残高が不足しています",
     "belowMinimumFiatDeposit": "法定通貨の最低入金額",
     "binanceTravelRuleRestriction": "トラベルルールによる制限があります。",
     "coinbaseTravelRuleRestriction": "トラベルルールによる制限",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "スマートコントラクトが利用できません",
     "notAuthorizedFromIntegrationToken": "認証の有効期限が切れました",
     "notAuthorizedToIntegrationToken": "認証の有効期限が切れました",
+    "notAvailableText": "利用不可",
     "notFound": "見つかりませんでした",
     "notSupported": "サポートされていません",
     "orderTypeNotSupported": "この注文タイプには対応していません。",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "要求された金額は、このネットワークでの最小許容振り込み額を下回っています。",
     "amountExceedsMaximum": "要求された金額は、このネットワークでの最大許容振り込み額を超えています。",
     "authenticationFailed": "選択した連携先での認証に失敗しました。",
-    "balanceNotEnough": "残高が不足しています。",
+    "balanceNotEnough": "アカウントに十分な残高があると表示される場合でも、一部の資金が保留中、予約済み、または手数料として必要なことがあります。少額で再度お試しください。",
     "belowMinimumFiatDeposit": "金額が法定通貨の最低入金額に満たしていません。",
     "binanceTravelRuleRestriction": "現在、お住まいの国からの転送はBinanceでサポートされていません。",
     "binanceTravelRuleRestrictionDeposit": "現在、お住まいの国からの入金はBinanceでサポートされていません。",
@@ -536,6 +549,10 @@
     "openApp": "{{integrationName}}アプリを開く",
     "reopenApp": "{{integrationName}}アプリを再度開く",
     "title": "確認"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} 処理手数料",
+    "title": "手数料を含む"
   },
   "fields": {
     "apiKey": "APIキー",
@@ -1115,6 +1132,16 @@
     "transferTitle": "送金プレビュー",
     "youMayReceiveLess": "{{symbol}}の価格変動により、受取額が少なくなる可能性があります。"
   },
+  "previewTransferPageUI": {
+    "fee": "手数料{{amount}}を含みます",
+    "fundingMethods": "資金調達方法",
+    "receive": "受取",
+    "refreshing": "{{seconds}}秒後に更新",
+    "send": "送信",
+    "title": "送金プレビュー",
+    "tokenOnNetwork": "{{network}} 上の {{token}}",
+    "transferToken": "トークンを移行"
+  },
   "privacyComponent": {
     "content": "お客様のデータは常に暗号化され、安全に保護されています。"
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "トークンを選択",
     "depositTitle": "入金用のトークンを選択",
     "ineligibleAssets": "送金対象外の資産",
+    "link40Title": "トークンを選択",
     "loading": "資産を読み込み中。。。",
     "noAssetsTitle": "連携アカウントに資産が検出されませんでした",
     "noEligibleAssetsTitle": "このアカウントの資産は送金対象外です",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}}ネットワークのガス料金は{{symbol}}で支払われます。{{symbol}}残高を補充して、もう一度このトランザクションをお試しください。",
     "gasTitle": "ガス残高が不足しています",
+    "noBalanceBody": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
+    "noBalanceTitle": "残高なし",
     "paymentBody": "残高不足のため、この購入を完了できません。",
     "title": "残高不足",
     "transferBody": "この振込を完了するには残高が不足しています。"

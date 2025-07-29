@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Selecciona {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} no admite transferencias para ninguna de las combinaciones de token/red proporcionadas.",
+    "integrationNotSupportedCountry": "{{integrationName}} no está disponible en su país.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} no admite transferencias de {{pair}}.",
+    "lessThanIntegrationMinAmount": "El monto solicitado está por debajo del mínimo del corredor de {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "El monto solicitado supera el máximo del corredor de {{integrationName}}.",
+    "platformNotSupported": "{{integrationName}} no es compatible con su dispositivo.",
+    "sdkVersionNotSupported": "El mecanismo TrueAuth de {{integrationName}} no es compatible con este SDK Context: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "travelRuleVaspIdRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "Cantidad demasiado alta",
     "authenticationFailed": "Autenticación fallida",
     "badRequest": "Solicitud inválida",
-    "balanceNotEnough": "Saldo insuficiente",
+    "balanceNotEnough": "Saldo insuficiente disponible",
     "belowMinimumFiatDeposit": "Depósito Fiat por debajo del mínimo",
     "binanceTravelRuleRestriction": "Restricción de la Norma de Viaje",
     "coinbaseTravelRuleRestriction": "Restricción de la Norma de Viaje",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "Contrato inteligente no disponible",
     "notAuthorizedFromIntegrationToken": "Autenticación Expirada",
     "notAuthorizedToIntegrationToken": "Autenticación Expirada",
+    "notAvailableText": "No Disponible",
     "notFound": "No se encontró",
     "notSupported": "No soportado",
     "orderTypeNotSupported": "Tipo de orden no soportada",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "La cantidad solicitada está por debajo de la cantidad mínima permitida para transferencia en esta red.",
     "amountExceedsMaximum": "La cantidad solicitada excede la cantidad máxima permitida para transferencia en esta red.",
     "authenticationFailed": "No se puede autenticar con la integración seleccionada.",
-    "balanceNotEnough": "Saldo insuficiente.",
+    "balanceNotEnough": "Su cuenta muestra un saldo suficiente, pero algunos fondos pueden estar pendientes, reservados o requeridos para tarifas. Por favor, intente enviar una cantidad menor.",
     "belowMinimumFiatDeposit": "La cantidad está por debajo del límite mínimo de depósito fiat.",
     "binanceTravelRuleRestriction": "Binance actualmente no admite transferencias desde tu país.",
     "binanceTravelRuleRestrictionDeposit": "Binance actualmente no admite depósitos desde tu país.",
@@ -536,6 +549,10 @@
     "openApp": "Abrir aplicación de {{integrationName}}",
     "reopenApp": "Volver a abrir aplicación de {{integrationName}}",
     "title": "Verificación"
+  },
+  "feesDrawer": {
+    "processingFee": "Tarifa de procesamiento de {{clientName}}",
+    "title": "Tarifas incluidas"
   },
   "fields": {
     "apiKey": "Llaves de API",
@@ -1115,6 +1132,16 @@
     "transferTitle": "Vista previa de la transferencia",
     "youMayReceiveLess": "Puedes recibir menos debido la volatilidad de {{symbol}}."
   },
+  "previewTransferPageUI": {
+    "fee": "Incluye {{amount}} en tarifas",
+    "fundingMethods": "Formas de pago",
+    "receive": "Recibir",
+    "refreshing": "Actualizar en {{seconds}}s",
+    "send": "Enviar",
+    "title": "Vista previa de la transferencia",
+    "tokenOnNetwork": "{{token}} en {{network}}",
+    "transferToken": "Transferir token"
+  },
   "privacyComponent": {
     "content": "Tus datos se mantienen privados y cifrados en todo momento."
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "Selecciona un recurso",
     "depositTitle": "Selecciona una cripto para el depósito",
     "ineligibleAssets": "Activos no elegibles",
+    "link40Title": "Elija un token",
     "loading": "Cargando sus activos...",
     "noAssetsTitle": "Ningún activo detectado en la cuenta vinculada",
     "noEligibleAssetsTitle": "Ningún activo en esta cuenta es elegible para esta transferencia",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Las tarifas de gas para la red {{network}} se pagan en {{symbol}}. Por favor recargue su saldo de {{symbol}} y vuelva a intentar esta transacción.",
     "gasTitle": "Saldo insuficiente de gas",
+    "noBalanceBody": "No tienes saldo de {{symbol}} para transferir. Por favor, recarga tu saldo e inténtalo de nuevo.",
+    "noBalanceTitle": "Sin saldo",
     "paymentBody": "Tu saldo es demasiado bajo para completar esta compra.",
     "title": "Saldo insuficiente",
     "transferBody": "Tu saldo es demasiado bajo para completar esta transferencia."

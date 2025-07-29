@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla maassasi.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue {{pair}}-siirtoja.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}-välittäjän minimirajan.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "platformNotSupported": "{{integrationName}} ei ole tuettu laitteessasi.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei tue tätä siirtoa säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -338,7 +350,7 @@
     "amountExceedsMaximum": "Summa liian suuri",
     "authenticationFailed": "Tunnistus epäonnistui",
     "badRequest": "Virheellinen pyyntö",
-    "balanceNotEnough": "Ei tarpeeksi saldoa",
+    "balanceNotEnough": "Saapuva saldo ei riitä",
     "belowMinimumFiatDeposit": "Alle vähimmäis Fiat-talletuksen rajan",
     "binanceTravelRuleRestriction": "Matkustusrajoitus",
     "coinbaseTravelRuleRestriction": "Matkustusrajoitus",
@@ -369,6 +381,7 @@
     "noAvailableSmartContract": "Älysopimus ei ole saatavilla",
     "notAuthorizedFromIntegrationToken": "Autentikointi vanhentunut",
     "notAuthorizedToIntegrationToken": "Autentikointi vanhentunut",
+    "notAvailableText": "Ei saatavilla",
     "notFound": "Ei löydetty",
     "notSupported": "Ei tueta",
     "orderTypeNotSupported": "Tilaustyyppiä ei tueta",
@@ -414,7 +427,7 @@
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
     "amountExceedsMaximum": "Pyydetty summa ylittää verkon suurimman sallitun siirtosumman.",
     "authenticationFailed": "Tunnistautuminen valitun integraation kanssa ei onnistunut.",
-    "balanceNotEnough": "Ei tarpeeksi saldoa.",
+    "balanceNotEnough": "Tililläsi on riittävä saldo, mutta rahaa voi olla odottamassa, varattu tai niillä saatetaan kattaa maksuja. Yritä lähettää pienempi summa.",
     "belowMinimumFiatDeposit": "Summa on alle vähimmäis Fiat-talletuksen rajan.",
     "binanceTravelRuleRestriction": "Binance ei tällä hetkellä tue rahansiirtoja maastasi.",
     "binanceTravelRuleRestrictionDeposit": "Binance ei tällä hetkellä tue talletuksia maastasi.",
@@ -536,6 +549,10 @@
     "openApp": "Avaa {{integrationName}} -sovellus",
     "reopenApp": "Avaa {{integrationName}}-sovellus uudelleen",
     "title": "Varmistus"
+  },
+  "feesDrawer": {
+    "processingFee": "{{clientName}} Käsittelymaksu",
+    "title": "Sisältää maksut"
   },
   "fields": {
     "apiKey": "API-avain",
@@ -1115,6 +1132,16 @@
     "transferTitle": "Siirron esikatselu",
     "youMayReceiveLess": "Saatat saadavähemmän johtuen {{symbol}} hinnan liikkeistä."
   },
+  "previewTransferPageUI": {
+    "fee": "Sisältää {{amount}} maksuina",
+    "fundingMethods": "Talletustavat",
+    "receive": "Vastaanota",
+    "refreshing": "Päivitä {{seconds}} sekuntia",
+    "send": "Lähetä",
+    "title": "Siirron esikatselu",
+    "tokenOnNetwork": "{{token}} {{network}} -verkossa",
+    "transferToken": "Siirrä tunniste"
+  },
   "privacyComponent": {
     "content": "Tietosi ovat aina yksityisiä ja salattuja."
   },
@@ -1152,6 +1179,7 @@
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
     "ineligibleAssets": "Kelpaamattomat varat",
+    "link40Title": "Valitse tunnus",
     "loading": "Ladataan omaisuuttasi...",
     "noAssetsTitle": "Liitetyltä tililtä ei löytynyt varoja",
     "noEligibleAssetsTitle": "Tällä tilillä ei ole varoja, joita voidaan käyttää tähän siirtoon",
@@ -1307,6 +1335,8 @@
   "transferInsufficientBalancePage": {
     "gasBody": "Kaasukustannukset {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
     "gasTitle": "Riittämätön kaasusaldo",
+    "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "noBalanceTitle": "Ei saldoa",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
     "title": "Riittämätön saldo",
     "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
