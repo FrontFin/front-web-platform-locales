@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} seçin"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
-    "integrationNotSupportedCountry": "{{integrationName}} ülkenizde mevcut değil.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}, {{pair}} transferlerini desteklemiyor.",
-    "lessThanIntegrationMinAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun asgari tutarının altında.",
-    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
-    "platformNotSupported": "{{integrationName}} cihazınızda desteklenmiyor.",
-    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
-    "travelRuleAmountLimit": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
-    "travelRuleVaspIdRequired": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} bu aktarımı uygunluk kısıtlamaları nedeniyle desteklemiyor."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "arama",
     "title": "Bağlantı yapmak için hesabınızı seçin",
     "title40": "Hesabınızı seçin"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
+    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
+    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil."
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
