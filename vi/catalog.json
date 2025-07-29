@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
-    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng tại quốc gia của bạn.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển {{pair}}.",
-    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của nhà môi giới {{integrationName}}",
-    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
-    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên thiết bị của bạn.",
-    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "travelRuleVaspIdRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} không hỗ trợ chuyển khoản này do hạn chế đáp ứng tính hợp lệ về quy định tuân thủ."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "Tìm kiếm",
     "title": "Chọn tài khoản để liên kết",
     "title40": "Chọn tài khoản của bạn"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} không được hỗ trợ trên loại thiết bị này.",
+    "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "travelRuleVaspIdRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn."
   },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Số tiền chuyển khoản yêu cầu {{requestedAmount}} thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} đối với mạng {{network}}.",
     "balanceBelowMinimumDescription": "Số dư {{currentBalance}} của bạn thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} để chuyển trên mạng {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Số dư {{currentBalance}} của bạn dưới mức tối thiểu {{minimumAmount}} của {{integrationName}} để chuyển {{symbol}} trên {{network}}. Vui lòng nạp thêm vào số dư của bạn và thử lại.",
     "belowMinimum": "Dưới mức tối thiểu của {{integrationName}}",
     "belowRequestedAmountDescription": "Số dư {{balance}} của bạn thấp hơn {{amount}} cần thiết để thực hiện giao dịch + phí.",
     "gasFeeAssetBalanceNotEnoughDescription": "Số dư {{balance}} của bạn không đủ để chi trả phí gas ước tính {{gasFee}} trên mạng {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Không được hỗ trợ bởi {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} trên {{network}} không được chấp nhận cho giao dịch này do hạn chế hỗ trợ đa chuỗi (multi-chain) tại New York.",
     "symbolDoesNotMatch": "Không được hỗ trợ bởi {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này."
+    "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này.",
+    "noGasBalancePaymentDescription": "Giao dịch này yêu cầu {{amount}} và {{feeInFiat}} trị giá {{feeSymbol}} để đóng phí gas. Vui lòng nạp thêm vào số dư của bạn và thử lại.",
+    "noGasBalanceTransferDescription": "Giao dịch này yêu cầu số dư khả dụng {{symbol}} và {{feeInFiat}} trị giá {{feeSymbol}} để đóng phí gas. Vui lòng nạp thêm vào số dư của bạn và thử lại.",
+    "noBalance": "Không có số dư",
+    "noBalancePaymentDescription": "Số dư {{balance}} của bạn không đủ để thực hiện thanh toán {{amount}} này. Vui lòng nạp thêm vào số dư của bạn và thử lại.",
+    "noBalanceTransferDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
+    "noGasBalancePaymentSelectNetworkDescription": "Giao dịch này yêu cầu {{amount}} và {{feeInFiat}} trị giá {{feeSymbol}} để đóng phí gas. Vui lòng chọn mạng khác hoặc nạp thêm vào số dư của bạn và thử lại.",
+    "noGasBalanceTransferSelectNetworkDescription": "Giao dịch này yêu cầu số dư khả dụng {{symbol}} và {{feeInFiat}} trị giá {{feeSymbol}} để đóng phí gas. Vui lòng chọn mạng khác hoặc nạp thêm vào số dư của bạn và thử lại.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Giao dịch này yêu cầu một số dư khả dụng để chuyển, cộng thêm {{feeInFiat}} bằng {{feeSymbol}} để trả phí gas. Vui lòng chọn một mạng khác, hoặc nạp thêm số dư và thử lại.",
+    "noBalancePaymentSelectNetworkDescription": "Số dư {{balance}} của bạn không đủ để thực hiện thanh toán {{amount}} này. Vui lòng chọn mạng khác hoặc nạp thêm vào số dư của bạn và thử lại.",
+    "noBalanceTransferSelectNetworkDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng chọn một mạng khác, hoặc nạp thêm số dư và thử lại.",
+    "noBalancesPaymentDescription": "Số dư của bạn không đủ để thực hiện thanh toán này. Vui lòng chọn mạng khác hoặc nạp thêm vào số dư của bạn và thử lại.",
+    "noBalancesTransferSelectNetworkDescription": "Bạn không có số dư nào để chuyển. Vui lòng chọn một mạng khác, hoặc nạp thêm số dư và thử lại.",
+    "noBalancesTransferkDescription": "Bạn không có số dư để chuyển. Vui lòng nạp thêm vào số dư và thử lại."
   },
   "initialLedgerScreen": {
     "title": "Bật nguồn và mở khóa thiết bị của bạn"

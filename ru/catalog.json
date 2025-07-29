@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
-    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашей стране.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы {{pair}}.",
-    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы брокера {{integrationName}}",
-    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
-    "platformNotSupported": "{{integrationName}} не поддерживается на вашем устройстве.",
-    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживает этот перевод из-за ограничений по соблюдению требований."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "поиск",
     "title": "Выберите учетную запись для подключения",
     "title40": "Подключить биржу или электронный кошелек"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} не поддерживается на этом типе устройства.",
+    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы для {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает этот токен и сеть.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашем регионе."
   },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Сумма запрошенного перевода {{requestedAmount}} меньше минимальной суммы {{integrationName}} {{minimumAmount}} для перевода в сети {{network}}.",
     "balanceBelowMinimumDescription": "Ваш баланс в {{currentBalance}} меньше минимума {{minimumAmount}} {{integrationName}} для перевода по сети {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Ваш баланс {{currentBalance}} ниже минимального уровня {{minimumAmount}} для {{integrationName}} для перевода {{symbol}} на {{network}}. Пожалуйста, пополните свой баланс и попробуйте снова.",
     "belowMinimum": "Ниже минимального лимита {{integrationName}}",
     "belowRequestedAmountDescription": "Ваш баланс в {{balance}} меньше, чем в {{amount}}, необходимых для покрытия запрашиваемой суммы перевода + комиссии.",
     "gasFeeAssetBalanceNotEnoughDescription": "Ваш баланс {{balance}} не достаточен, чтобы покрыть комиссию за газ {{gasFee}} в сети {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Не поддерживается {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} на {{network}} не доступен для этого перевода из-за ограничений поддержки многоцепочной сети в штате Нью-Йорк.",
     "symbolDoesNotMatch": "Не поддерживается {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода."
+    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода.",
+    "noGasBalancePaymentDescription": "Эта транзакция требует {{amount}} и {{feeInFiat}}, эквивалентные {{feeSymbol}}, для оплаты газовых сборов. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noGasBalanceTransferDescription": "Эта транзакция требует доступный баланс {{symbol}} и {{feeInFiat}}, эквивалентные {{feeSymbol}}, для оплаты газовых сборов. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noBalance": "Баланс недостаточен",
+    "noBalancePaymentDescription": "Ваш баланс {{balance}} недостаточен для осуществления этого платежа на сумму {{amount}}. Пожалуйста, пополните баланс и попробуйте снова.",
+    "noBalanceTransferDescription": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noGasBalancePaymentSelectNetworkDescription": "Эта транзакция требует {{amount}} и {{feeInFiat}}, эквивалентные {{feeSymbol}}, для оплаты газовых сборов. Пожалуйста, выберите другую сеть или пополните балансы и попробуйте снова.",
+    "noGasBalanceTransferSelectNetworkDescription": "Эта транзакция требует доступный баланс {{symbol}} и {{feeInFiat}}, эквивалентные {{feeSymbol}}, для оплаты газовых сборов. Пожалуйста, выберите другую сеть или пополните балансы и попробуйте снова.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Эта транзакция требует доступного баланса для перевода, а также {{feeInFiat}} в {{feeSymbol}} для оплаты комиссий за газ. Пожалуйста, выберите другую сеть или пополните ваши балансы и попробуйте снова.",
+    "noBalancePaymentSelectNetworkDescription": "Ваш баланс {{balance}} недостаточен для осуществления этого платежа на сумму {{amount}}. Пожалуйста, выберите другую сеть или пополните баланс и попробуйте снова.",
+    "noBalanceTransferSelectNetworkDescription": "У вас нет {{symbol}} для перевода. Пожалуйста, выберите другую сеть или пополните ваш баланс и попробуйте снова.",
+    "noBalancesPaymentDescription": "Ваши балансы недостаточны для осуществления этого платежа. Пожалуйста, выберите другую сеть или пополните баланс и попробуйте снова.",
+    "noBalancesTransferSelectNetworkDescription": "У вас нет балансов для перевода. Пожалуйста, выберите другую сеть или пополните ваш баланс и попробуйте снова.",
+    "noBalancesTransferkDescription": "У вас нет балансов для перевода. Пожалуйста, пополните баланс и попробуйте снова."
   },
   "initialLedgerScreen": {
     "title": "Включите  и разблокируйте устройство"

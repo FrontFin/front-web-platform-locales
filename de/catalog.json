@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} auswählen"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
-    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrem Land nicht verfügbar.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine {{pair}}-Transfers.",
-    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Minimum des {{integrationName}} Brokers.",
-    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
-    "platformNotSupported": "{{integrationName}} wird auf Ihrem Gerät nicht unterstützt.",
-    "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
-    "travelRuleAmountLimit": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
-    "travelRuleVaspIdRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} unterstützt diesen Transfer nicht aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "Suche",
     "title": "Konto zum Verknüpfen auswählen",
     "title40": "Wähle Dein Konto"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} wird auf diesem Gerätetyp nicht unterstützt.",
+    "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
+    "travelRuleVaspIdRequired": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
+    "travelRuleAmountLimit": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
+    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Mindestbetrag von {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt dieses Token und Netzwerk nicht.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
+    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrer Region nicht verfügbar."
   },
   "catalogTile": {
     "select": "Wähle {{integrationName}}, {{badge}}"
@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Der angeforderte Überweisungsbetrag von {{requestedAmount}} ist geringer als das {{minimumAmount}}-Minimum von {{integrationName}}, um im Netzwerk {{network}} zu überweisen.",
     "balanceBelowMinimumDescription": "Dein {{currentBalance}}-Kontostand ist geringer als das {{minimumAmount}}-Minimum von {{integrationName}}, um im Netzwerk {{network}} zu überweisen.",
+    "balanceBelowIntegrationMinimumDescription": "Ihr {{currentBalance}} Guthaben liegt unter dem {{minimumAmount}} {{integrationName}} Minimum, um {{symbol}} auf {{network}} zu übertragen. Bitte laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
     "belowMinimum": "Unter dem Minimum von {{integrationName}}.",
     "belowRequestedAmountDescription": "Dein {{balance}}-Guthaben ist geringer als die {{amount}}, die erforderlich sind, um den angeforderten Überweisungsbetrag + Gebühren zu decken.",
     "gasFeeAssetBalanceNotEnoughDescription": "Dein {{balance}}-Guthaben reicht nicht aus, um die geschätzte {{gasFee}}-Gasgebühr im Netzwerk {{network}} zu decken.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Nicht unterstützt von {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} auf {{network}} für diese Überweisung aufgrund von Multi-Chain-Unterstützungsbeschränkungen in New York nicht akzeptiert.",
     "symbolDoesNotMatch": "Nicht unterstützt von {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} wird für diese Übertragung nicht akzeptiert."
+    "symbolDoesNotMatchDescription": "{{symbol}} wird für diese Übertragung nicht akzeptiert.",
+    "noGasBalancePaymentDescription": "Diese Transaktion erfordert {{amount}} und {{feeInFiat}} im Wert von {{feeSymbol}}, um Gasgebühren zu zahlen. Bitte laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noGasBalanceTransferDescription": "Diese Transaktion erfordert ein verfügbares {{symbol}} Guthaben und {{feeInFiat}} im Wert von {{feeSymbol}}, um Gasgebühren zu zahlen. Bitte laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalance": "Kein Guthaben",
+    "noBalancePaymentDescription": "Ihr {{balance}} Guthaben reicht nicht aus, um diese {{amount}} Zahlung zu leisten. Bitte laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalanceTransferDescription": "Sie haben kein {{symbol}} Guthaben zu übertragen. Bitte füllen Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noGasBalancePaymentSelectNetworkDescription": "Diese Transaktion erfordert {{amount}} und {{feeInFiat}} im Wert von {{feeSymbol}}, um Gasgebühren zu zahlen. Bitte wählen Sie ein anderes Netzwerk oder laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noGasBalanceTransferSelectNetworkDescription": "Diese Transaktion erfordert ein verfügbares {{symbol}} Guthaben und {{feeInFiat}} im Wert von {{feeSymbol}}, um Gasgebühren zu zahlen. Bitte wählen Sie ein anderes Netzwerk oder laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Diese Transaktion erfordert einen verfügbaren Saldo für die Überweisung plus {{feeInFiat}} wert von {{feeSymbol}}, um die Gasgebühren zu bezahlen. Bitte wählen Sie ein anderes Netzwerk, oder füllen Sie Ihre Salden auf und versuchen Sie es erneut.",
+    "noBalancePaymentSelectNetworkDescription": "Ihr {{balance}} Guthaben reicht nicht aus, um diese {{amount}} Zahlung zu leisten. Bitte wählen Sie ein anderes Netzwerk oder laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalanceTransferSelectNetworkDescription": "Sie haben keinen {{symbol}}-Saldo zur Übertragung. Bitte wählen Sie ein anderes Netzwerk, oder füllen Sie Ihren Saldo auf und versuchen Sie es erneut.",
+    "noBalancesPaymentDescription": "Ihre Guthaben reichen nicht aus, um diese Zahlung zu leisten. Bitte wählen Sie ein anderes Netzwerk oder laden Sie Ihr Guthaben auf und versuchen Sie es erneut.",
+    "noBalancesTransferSelectNetworkDescription": "Sie haben keine Salden zur Übertragung. Bitte wählen Sie ein anderes Netzwerk, oder füllen Sie Ihren Saldo auf und versuchen Sie es erneut.",
+    "noBalancesTransferkDescription": "Sie haben keine Guthaben zum Übertragen. Bitte laden Sie ein Guthaben auf und versuchen Sie es erneut."
   },
   "initialLedgerScreen": {
     "title": "Schalte Dein Gerät ein und entsperre es"

@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
-    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre pays.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts {{pair}}.",
-    "lessThanIntegrationMinAmount": "Le montant demandé est en dessous du minimum du courtier {{integrationName}}",
-    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
-    "platformNotSupported": "{{integrationName}} n'est pas pris en charge sur votre appareil.",
-    "sdkVersionNotSupported": "Le mécanisme TrueAuth de {{integrationName}} n'est pas pris en charge pour ce contexte SDK : {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} ne prend pas en charge ce transfert en raison de restrictions d'éligibilité de conformité.",
-    "travelRuleVaspIdRequired": "{{integrationName}} ne prend pas en charge ce transfert en raison de restrictions d'éligibilité de conformité.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} ne prend pas en charge ce transfert en raison de restrictions d'éligibilité de conformité."
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "recherche",
     "title": "Veuillez sélectionner un compte à lier",
     "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} n'est pas pris en charge sur ce type d'appareil.",
+    "sdkVersionNotSupported": "Le mécanisme TrueAuth de {{integrationName}} n'est pas pris en charge pour ce contexte SDK : {{sdkContext}}.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "travelRuleVaspIdRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "travelRuleAmountLimit": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "lessThanIntegrationMinAmount": "Le montant demandé est inférieur au minimum requis par {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge ce jeton et ce réseau.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
+    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre région."
   },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Le montant du transfert demandé de {{requestedAmount}} est inférieur au montant minimum de {{minimumAmount}} requis par {{integrationName}} pour un transfert sur le réseau {{network}}.",
     "balanceBelowMinimumDescription": "Votre solde de {{currentBalance}} est inférieur au montant minimum de {{minimumAmount}} requis par {{integrationName}} pour effectuer un transfert sur le réseau {{network}}.",
+    "balanceBelowIntegrationMinimumDescription": "Votre solde de {{currentBalance}} est inférieur au minimum de {{minimumAmount}} {{integrationName}} requis pour transférer {{symbol}} sur {{network}}. Veuillez recharger votre solde et réessayer.",
     "belowMinimum": "En dessous du minimum de {{integrationName}}",
     "belowRequestedAmountDescription": "Votre solde {{balance}} est inférieur au {{amount}} requis pour couvrir le montant du transfert demandé + les frais.",
     "gasFeeAssetBalanceNotEnoughDescription": "Votre solde {{balance}} est insuffisant pour couvrir les frais de gaz estimés de {{gasFee}} sur le réseau {{network}}.",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "Non pris en charge par {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} sur {{network}} n'est pas accepté pour ce transfert en raison des restrictions de support multi-chaînes à NY.",
     "symbolDoesNotMatch": "Non pris en charge par {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} n'est pas accepté pour ce transfert."
+    "symbolDoesNotMatchDescription": "{{symbol}} n'est pas accepté pour ce transfert.",
+    "noGasBalancePaymentDescription": "Cette transaction nécessite {{amount}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez recharger vos soldes et réessayer.",
+    "noGasBalanceTransferDescription": "Cette transaction nécessite un solde disponible de {{symbol}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez recharger vos soldes et réessayer.",
+    "noBalance": "Pas de solde",
+    "noBalancePaymentDescription": "Votre solde de {{balance}} est insuffisant pour effectuer ce paiement de {{amount}}. Veuillez recharger votre solde et réessayer.",
+    "noBalanceTransferDescription": "Vous n'avez pas de solde {{symbol}} à transférer. Veuillez recharger votre solde et réessayer.",
+    "noGasBalancePaymentSelectNetworkDescription": "Cette transaction nécessite {{amount}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez choisir un autre réseau ou recharger vos soldes et réessayer.",
+    "noGasBalanceTransferSelectNetworkDescription": "Cette transaction nécessite un solde disponible de {{symbol}} et {{feeInFiat}} en {{feeSymbol}} pour payer les frais de gaz. Veuillez choisir un autre réseau ou recharger vos soldes et réessayer.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Cette transaction nécessite un solde disponible pour le transfert plus {{feeInFiat}} de {{feeSymbol}} pour payer les frais de gaz. Veuillez sélectionner un réseau différent ou recharger vos soldes et réessayer.",
+    "noBalancePaymentSelectNetworkDescription": "Votre solde de {{balance}} est insuffisant pour effectuer ce paiement de {{amount}}. Veuillez choisir un autre réseau ou recharger votre solde et réessayer.",
+    "noBalanceTransferSelectNetworkDescription": "Vous n'avez pas de solde de {{symbol}} à transférer. Veuillez sélectionner un réseau différent ou recharger votre solde et réessayer.",
+    "noBalancesPaymentDescription": "Vos soldes sont insuffisants pour effectuer ce paiement. Veuillez choisir un autre réseau ou recharger votre solde et réessayer.",
+    "noBalancesTransferSelectNetworkDescription": "Vous n'avez pas de soldes à transférer. Veuillez sélectionner un réseau différent ou recharger votre solde et réessayer.",
+    "noBalancesTransferkDescription": "Vous n'avez pas de soldes à transférer. Veuillez recharger un solde et réessayer."
   },
   "initialLedgerScreen": {
     "title": "Allumez et déverrouillez votre appareil"

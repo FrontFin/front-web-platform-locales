@@ -80,18 +80,6 @@
   "catalogCell": {
     "select": "选择{{integrationName}}, {{badge}}"
   },
-  "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
-    "integrationNotSupportedCountry": "{{integrationName}}在您的国家不可用。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}}不支持{{pair}}转移。",
-    "lessThanIntegrationMinAmount": "请求金额低于{{integrationName}}经纪商的最低额度。",
-    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
-    "platformNotSupported": "{{integrationName}}不支持您的设备。",
-    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
-    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。",
-    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持此转移。"
-  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -105,6 +93,18 @@
     "search": "搜索",
     "title": "选择要关联的账户",
     "title40": "选择你的账户"
+  },
+  "catalogFilterIneligibilityReasons": {
+    "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
+    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。",
+    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持。",
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -715,6 +715,7 @@
   "ineligibleReason": {
     "amountBelowMinimumDescription": "该转账金额{{requestedAmount}}低于{{integrationName}}的网络最低转账要求{{minimumAmount}}。",
     "balanceBelowMinimumDescription": "您的余额{{currentBalance}}低于{{integrationName}}网络最低转账要求{{minimumAmount}}。",
+    "balanceBelowIntegrationMinimumDescription": "您的{{currentBalance}}余额低于{{integrationName}}的最低转账要求{{minimumAmount}} {{symbol}}于{{network}}上。请增加余额后重试。",
     "belowMinimum": "低于{{integrationName}}的最低限额",
     "belowRequestedAmountDescription": "您的{{balance}}余额不足与支付本次转账及手续费{{amount}}。",
     "gasFeeAssetBalanceNotEnoughDescription": "您的{{balance}}余额不足以支付{{network}}网络预估{{gasFee}}燃料费。",
@@ -726,7 +727,20 @@
     "notSupportedForTransferBySource": "不支持{{integrationName}}",
     "nyCoinbaseUserRestrictions": "受纽约州多链支持限制影响，无法在{{network}}上接受此{{symbol}}转账。",
     "symbolDoesNotMatch": "{{clientName}}不支持",
-    "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。"
+    "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。",
+    "noGasBalancePaymentDescription": "此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请增加您的余额后重试。",
+    "noGasBalanceTransferDescription": "此交易需要可用的{{symbol}}余额和价值{{feeInFiat}}的{{feeSymbol}}用于支付gas 费用。请增加您的余额后重试。",
+    "noBalance": "没有余额",
+    "noBalancePaymentDescription": "您的{{balance}}余额不足以进行此{{amount}}支付。请增加您的余额后重试。",
+    "noBalanceTransferDescription": "您没有可转账的{{symbol}}余额。请充值后重试。",
+    "noGasBalancePaymentSelectNetworkDescription": "此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请选择其他网络，或增加您的余额后重试。",
+    "noGasBalanceTransferSelectNetworkDescription": "此交易需要可用的{{symbol}}余额和价值{{feeInFiat}}的{{feeSymbol}}用于支付gas费用。请选择其他网络，或增加您的余额后重试。",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "此交易需要可用余额进行转账，并需{{feeInFiat}}的{{feeSymbol}}支付燃气费。请选择不同的网络，或充值后重试。",
+    "noBalancePaymentSelectNetworkDescription": "您的{{balance}}余额不足以进行此{{amount}}支付。请选择其他网络，或增加您的余额后重试。",
+    "noBalanceTransferSelectNetworkDescription": "您没有 {{symbol}} 余额来转账。请选择不同的网络，或充值后重试。",
+    "noBalancesPaymentDescription": "您的余额不足以进行此次支付。请选择其他网络，或增加您的余额后重试。",
+    "noBalancesTransferSelectNetworkDescription": "您没有可转账的余额。请选择不同的网络，或充值后重试。",
+    "noBalancesTransferkDescription": "您没有可转账的余额。请增加一个余额后重试。"
   },
   "initialLedgerScreen": {
     "title": "请开启并解锁您的设备"
