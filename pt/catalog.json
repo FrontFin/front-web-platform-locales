@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Seleciona {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências para nenhuma das combinações de token/rede fornecidas.",
+    "integrationNotSupportedCountry": "{{integrationName}} não está disponível na sua região.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} não suporta este token e rede.",
+    "lessThanIntegrationMinAmount": "O valor solicitado está abaixo do mínimo do {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "O valor solicitado está acima do máximo do corretor {{integrationName}}.",
+    "platformNotSupported": "{{integrationName}} não é compatível com este tipo de dispositivo.",
+    "sdkVersionNotSupported": "O mecanismo TrueAuth de {{integrationName}} não é compatível com este Contexto do SDK: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "travelRuleVaspIdRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "procurar",
     "title": "Seleciona uma conta para conectar",
     "title40": "Escolhe a tua conta"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} não é compatível com este tipo de dispositivo.",
-    "sdkVersionNotSupported": "O mecanismo TrueAuth de {{integrationName}} não é compatível com este Contexto do SDK: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
-    "travelRuleVaspIdRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
-    "travelRuleAmountLimit": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
-    "lessThanIntegrationMinAmount": "O valor solicitado está abaixo do mínimo do {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "O valor solicitado está acima do máximo do corretor {{integrationName}}.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} não suporta este token e rede.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências para nenhuma das combinações de token/rede fornecidas.",
-    "integrationNotSupportedCountry": "{{integrationName}} não está disponível na sua região."
   },
   "catalogTile": {
     "select": "Seleciona {{integrationName}}, {{badge}}"
@@ -157,12 +157,12 @@
     "reconnectYourAccount": "Reconecte a sua conta",
     "searchCap": "Procurar",
     "securedBy": "Protegido por",
+    "sendingCap": "Enviando",
     "somethingWentWrong": "Algo correu mal...",
     "submitCap": "Enviar",
     "successTitle": "Sucesso!",
     "termsOfUse": "Ao continuar aceitas os <1>termos de uso</1>",
-    "tryAgain": "Tenta novamente",
-    "sendingCap": "Enviando"
+    "tryAgain": "Tenta novamente"
   },
   "commonContent": {
     "connecting": "A conectar...",
@@ -552,6 +552,8 @@
     "title": "Verificação"
   },
   "feesDrawer": {
+    "gasFeeDescription": "The estimated cost to compensate network validators for processing the transaction.",
+    "institutionFeeDescription": "This fee covers the network cost for processing your withdrawal. It varies depending on the selected cryptocurrency and current blockchain conditions.",
     "processingFee": "Taxa de processamento de {{clientName}}",
     "title": "Taxas incluídas"
   },
@@ -715,33 +717,33 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "O valor solicitado de transferência de {{requestedAmount}} é menor que o mínimo de {{minimumAmount}} de {{integrationName}} para transferir na rede {{network}}.",
-    "balanceBelowMinimumDescription": "O teu saldo de {{currentBalance}} é menor que o mínimo de {{minimumAmount}} de {{integrationName}} para transferir na rede {{network}}.",
     "balanceBelowIntegrationMinimumDescription": "Seu saldo de {{currentBalance}} está abaixo do mínimo de {{minimumAmount}} do {{integrationName}} para transferir {{symbol}} na {{network}}. Por favor, carregue seu saldo e tente novamente.",
+    "balanceBelowMinimumDescription": "O teu saldo de {{currentBalance}} é menor que o mínimo de {{minimumAmount}} de {{integrationName}} para transferir na rede {{network}}.",
     "belowMinimum": "Abaixo do mínimo de {{integrationName}}",
     "belowRequestedAmountDescription": "O teu saldo de {{balance}} é menor que o {{amount}} necessário para cobrir o valor solicitado da transferência + taxas.",
     "gasFeeAssetBalanceNotEnoughDescription": "O teu saldo {{balance}} é insuficiente para cobrir a taxa de gás estimada de {{gasFee}} na rede {{network}}.",
     "insufficientBalance": "Saldo insuficiente",
     "insufficientBalanceDescription": "O teu saldo de {{currentBalance}} é menor que o mínimo para esta transferência.",
+    "noBalance": "Sem saldo",
+    "noBalancePaymentDescription": "Seu saldo de {{balance}} é insuficiente para fazer este pagamento de {{amount}}. Por favor, carregue seu saldo e tente novamente.",
+    "noBalancePaymentSelectNetworkDescription": "Seu saldo de {{balance}} é insuficiente para fazer este pagamento de {{amount}}. Por favor, selecione uma rede diferente, ou carregue seu saldo e tente novamente.",
+    "noBalancesPaymentDescription": "Seus saldos são insuficientes para fazer este pagamento. Por favor, selecione uma rede diferente, ou carregue seu saldo e tente novamente.",
+    "noBalancesTransferkDescription": "Você não tem saldos para transferir. Por favor, recarregue um saldo e tente novamente.",
+    "noBalancesTransferSelectNetworkDescription": "Você não tem saldos para transferir. Por favor, selecione uma rede diferente ou recarregue seu saldo e tente novamente.",
+    "noBalanceTransferDescription": "Você não tem saldo de {{symbol}} para transferir. Por favor, carregue seu saldo e tente novamente.",
+    "noBalanceTransferSelectNetworkDescription": "Você não tem saldo em {{symbol}} para transferir. Por favor, selecione uma rede diferente ou recarregue seu saldo e tente novamente.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Esta transação requer um saldo disponível para transferir, além de {{feeInFiat}} em {{feeSymbol}} para pagar as taxas de gas. Por favor, selecione uma rede diferente ou recarregue seus saldos e tente novamente.",
+    "noGasBalancePaymentDescription": "Essa transação requer {{amount}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, recarregue seus saldos e tente novamente.",
+    "noGasBalancePaymentSelectNetworkDescription": "Essa transação requer {{amount}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, selecione uma rede diferente, ou recarregue seus saldos e tente novamente.",
+    "noGasBalanceTransferDescription": "Essa transação requer um saldo disponível de {{symbol}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, recarregue seus saldos e tente novamente.",
+    "noGasBalanceTransferSelectNetworkDescription": "Essa transação requer um saldo disponível de {{symbol}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, selecione uma rede diferente, ou recarregue seus saldos e tente novamente.",
     "notEligible": "Não elegível para esta transferência",
     "notEligibleDescription": "{{symbol}} não é aceite para esta transferência.",
     "notSupportedByInstitution": "Atualmente não é suportado por {{integrationName}}",
     "notSupportedForTransferBySource": "Não é suportado por {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} na {{network}} não é aceite para esta transferência devido a restrições de suporte multichain em NY.",
     "symbolDoesNotMatch": "Não é suportado por {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} não é aceite para esta transferência.",
-    "noGasBalancePaymentDescription": "Essa transação requer {{amount}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, recarregue seus saldos e tente novamente.",
-    "noGasBalanceTransferDescription": "Essa transação requer um saldo disponível de {{symbol}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, recarregue seus saldos e tente novamente.",
-    "noBalance": "Sem saldo",
-    "noBalancePaymentDescription": "Seu saldo de {{balance}} é insuficiente para fazer este pagamento de {{amount}}. Por favor, carregue seu saldo e tente novamente.",
-    "noBalanceTransferDescription": "Você não tem saldo de {{symbol}} para transferir. Por favor, carregue seu saldo e tente novamente.",
-    "noGasBalancePaymentSelectNetworkDescription": "Essa transação requer {{amount}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, selecione uma rede diferente, ou recarregue seus saldos e tente novamente.",
-    "noGasBalanceTransferSelectNetworkDescription": "Essa transação requer um saldo disponível de {{symbol}} e {{feeInFiat}} em valor de {{feeSymbol}} para pagar taxas de gás. Por favor, selecione uma rede diferente, ou recarregue seus saldos e tente novamente.",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "Esta transação requer um saldo disponível para transferir, além de {{feeInFiat}} em {{feeSymbol}} para pagar as taxas de gas. Por favor, selecione uma rede diferente ou recarregue seus saldos e tente novamente.",
-    "noBalancePaymentSelectNetworkDescription": "Seu saldo de {{balance}} é insuficiente para fazer este pagamento de {{amount}}. Por favor, selecione uma rede diferente, ou carregue seu saldo e tente novamente.",
-    "noBalanceTransferSelectNetworkDescription": "Você não tem saldo em {{symbol}} para transferir. Por favor, selecione uma rede diferente ou recarregue seu saldo e tente novamente.",
-    "noBalancesPaymentDescription": "Seus saldos são insuficientes para fazer este pagamento. Por favor, selecione uma rede diferente, ou carregue seu saldo e tente novamente.",
-    "noBalancesTransferSelectNetworkDescription": "Você não tem saldos para transferir. Por favor, selecione uma rede diferente ou recarregue seu saldo e tente novamente.",
-    "noBalancesTransferkDescription": "Você não tem saldos para transferir. Por favor, recarregue um saldo e tente novamente."
+    "symbolDoesNotMatchDescription": "{{symbol}} não é aceite para esta transferência."
   },
   "initialLedgerScreen": {
     "title": "Liga e desbloqueia o teu dispositivo"
@@ -1051,6 +1053,7 @@
     "selectAsset": "Seleciona o ativo para transferir",
     "selectCurrency": "Seleciona uma moeda",
     "selectNetwork": "Seleciona a rede de transferência",
+    "unsupportedCurrencyError": "A moeda selecionada não é suportada para rampa de entrada no seu país.",
     "youPay": "Tu pagas",
     "youReceive": "Tu recebes"
   },
