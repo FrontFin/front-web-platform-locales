@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Select {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} does not support transfers for any of the provided token/network combinations.",
+    "integrationNotSupportedCountry": "{{integrationName}} isn't available in your region.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} doesn't support this token and network.",
+    "lessThanIntegrationMinAmount": "The requested amount is below {{integrationName}}'s minimum .",
+    "moreThanIntegrationMaxAmount": "The requested amount is above {{integrationName}} broker's maximum",
+    "platformNotSupported": "{{integrationName}} is not supported on this type of device.",
+    "sdkVersionNotSupported": "{{integrationName}}'s TrueAuth mechanism is not supported for this SDK Context: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} is not supported due to compliance eligibility restrictions.",
+    "travelRuleVaspIdRequired": "{{integrationName}} is not supported due to compliance eligibility restrictions.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} is not supported due to compliance eligibility restrictions."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "search",
     "title": "Select account to link",
     "title40": "Choose your account"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} is not supported on this type of device.",
-    "sdkVersionNotSupported": "{{integrationName}}'s TrueAuth mechanism is not supported for this SDK Context: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} is not supported due to compliance eligibility restrictions.",
-    "travelRuleVaspIdRequired": "{{integrationName}} is not supported due to compliance eligibility restrictions.",
-    "travelRuleAmountLimit": "{{integrationName}} is not supported due to compliance eligibility restrictions.",
-    "lessThanIntegrationMinAmount": "The requested amount is below {{integrationName}}'s minimum .",
-    "moreThanIntegrationMaxAmount": "The requested amount is above {{integrationName}} broker's maximum",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} doesn't support this token and network.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} does not support transfers for any of the provided token/network combinations.",
-    "integrationNotSupportedCountry": "{{integrationName}} isn't available in your region."
   },
   "catalogTile": {
     "select": "Select {{integrationName}}, {{badge}}"
@@ -157,12 +157,12 @@
     "reconnectYourAccount": "Reconnect your account",
     "searchCap": "Search",
     "securedBy": "Secured by",
+    "sendingCap": "Sending",
     "somethingWentWrong": "Something went wrong...",
     "submitCap": "Submit",
     "successTitle": "Success!",
     "termsOfUse": "By continuing you accept the <1>terms of use</1>",
-    "tryAgain": "Try again",
-    "sendingCap": "Sending"
+    "tryAgain": "Try again"
   },
   "commonContent": {
     "connecting": "Connecting...",
@@ -552,6 +552,8 @@
     "title": "Verification"
   },
   "feesDrawer": {
+    "gasFeeDescription": "The estimated cost to compensate network validators for processing the transaction.",
+    "institutionFeeDescription": "This fee covers the network cost for processing your withdrawal. It varies depending on the selected cryptocurrency and current blockchain conditions.",
     "processingFee": "{{clientName}} Processing fee",
     "title": "Included fees"
   },
@@ -715,33 +717,33 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "The requested transfer amount of {{requestedAmount}} is less than {{integrationName}}’s minimum of {{minimumAmount}} to transfer on the {{network}} network.",
-    "balanceBelowMinimumDescription": "Your {{currentBalance}} balance is less than {{integrationName}}’s {{minimumAmount}} minimum to transfer on the {{network}} network.",
     "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
+    "balanceBelowMinimumDescription": "Your {{currentBalance}} balance is less than {{integrationName}}’s {{minimumAmount}} minimum to transfer on the {{network}} network.",
     "belowMinimum": "Below {{integrationName}}’s minimum",
     "belowRequestedAmountDescription": "Your {{balance}} balance is less than the {{amount}} required to cover the requested transfer amount + fees.",
     "gasFeeAssetBalanceNotEnoughDescription": "Your {{balance}} balance is insufficient to cover the estimated {{gasFee}} gas fee on the {{network}} network.",
     "insufficientBalance": "Insufficient balance",
     "insufficientBalanceDescription": "Your {{currentBalance}} balance is less than the the minimum for this transfer.",
+    "noBalance": "No balance",
+    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
+    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
+    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again.",
+    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
+    "noBalanceTransferDescription": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
+    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
+    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
+    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
     "notEligible": "Not eligible for this transfer",
     "notEligibleDescription": "{{symbol}} not accepted for this transfer.",
     "notSupportedByInstitution": "Currently not supported by {{integrationName}}",
     "notSupportedForTransferBySource": "Not supported by {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} on {{network}} not accepted for this transfer due to NY multi-chain support restrictions.",
     "symbolDoesNotMatch": "Not supported by {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} not accepted for this transfer.",
-    "noGasBalancePaymentDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
-    "noGasBalanceTransferDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please top up your balances and try again.",
-    "noBalance": "No balance",
-    "noBalancePaymentDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please top up your balance and try again.",
-    "noBalanceTransferDescription": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
-    "noGasBalancePaymentSelectNetworkDescription": "This transaction requires {{amount}} and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
-    "noGasBalanceTransferSelectNetworkDescription": "This transaction requires an available {{symbol}} balance and {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "This transaction requires an available balance to transfer plus {{feeInFiat}} worth of {{feeSymbol}} to pay gas fees. Please select a different network, or top up your balances and try again.",
-    "noBalancePaymentSelectNetworkDescription": "Your {{balance}} balance is insufficient to make this {{amount}} payment. Please select a different network, or top up your balance and try again.",
-    "noBalanceTransferSelectNetworkDescription": "You have no {{symbol}} balance to transfer. Please select a different network, or top up your balance and try again.",
-    "noBalancesPaymentDescription": "Your balances are insufficient to make this payment. Please select a different network, or top up your balance and try again.",
-    "noBalancesTransferSelectNetworkDescription": "You have no balances to transfer. Please select a different network, or top up your balance and try again.",
-    "noBalancesTransferkDescription": "You have no balances to transfer. Please top up a balance and try again."
+    "symbolDoesNotMatchDescription": "{{symbol}} not accepted for this transfer."
   },
   "initialLedgerScreen": {
     "title": "Power on and unlock your device"
@@ -1051,9 +1053,9 @@
     "selectAsset": "Select asset to transfer",
     "selectCurrency": "Select a currency",
     "selectNetwork": "Select transfer network",
+    "unsupportedCurrencyError": "The selected currency is not supported for onramp in your country.",
     "youPay": "You pay",
-    "youReceive": "You receive",
-    "unsupportedCurrencyError" : "The selected currency is not supported for onramp in your country."
+    "youReceive": "You receive"
   },
   "orderSummaryDrawer": {
     "merchantInfoName": "Merchant: {{clientName}}",
