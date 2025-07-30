@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "haku",
     "title": "Valitse linkitettävä tili",
     "title40": "Valitse tilisi"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
-    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
-    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
-    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi."
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
@@ -157,12 +157,12 @@
     "reconnectYourAccount": "Yhdistä tilisi uudelleen",
     "searchCap": "Haku",
     "securedBy": "Suojattu",
+    "sendingCap": "Lähetetään",
     "somethingWentWrong": "Jotain meni pieleen...",
     "submitCap": "Lähetä",
     "successTitle": "Onnistui!",
     "termsOfUse": "Jatkamalla hyväksyt <2>käyttöehdot</2>",
-    "tryAgain": "Yritä uudelleen",
-    "sendingCap": "Lähetetään"
+    "tryAgain": "Yritä uudelleen"
   },
   "commonContent": {
     "connecting": "Yhdistetään...",
@@ -552,6 +552,8 @@
     "title": "Varmistus"
   },
   "feesDrawer": {
+    "gasFeeDescription": "The estimated cost to compensate network validators for processing the transaction.",
+    "institutionFeeDescription": "This fee covers the network cost for processing your withdrawal. It varies depending on the selected cryptocurrency and current blockchain conditions.",
     "processingFee": "{{clientName}} Käsittelymaksu",
     "title": "Sisältää maksut"
   },
@@ -715,33 +717,33 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
-    "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n vähimmäismäärä{{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
     "balanceBelowIntegrationMinimumDescription": "Sinun {{currentBalance}} saldo on alle {{minimumAmount}} {{integrationName}} minimin siirtääksesi {{symbol}} verkossa {{network}}. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
+    "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n vähimmäismäärä{{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
     "belowMinimum": "Alle {{integrationName}}:n vähimmäismäärän",
     "belowRequestedAmountDescription": "Saldosi {{balance}} on pienempi kuin {{amount}}, joka vaaditaan kattamaan pyydetty siirtomäärä + palkkiot.",
     "gasFeeAssetBalanceNotEnoughDescription": "Saldosi {{balance}} ei riitä kattamaan arvioutua gas-maksua {{gasFee}} verkossa {{network}}.",
     "insufficientBalance": "Riittämätön saldo",
     "insufficientBalanceDescription": "Nykyinen saldosi {{currentBalance}} on pienempi kuin tämän siirron vähimmäismäärä.",
+    "noBalance": "Ei saldoa",
+    "noBalancePaymentDescription": "Sinun {{balance}} saldo on riittämätön tämän {{amount}} maksun suorittamiseen. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
+    "noBalancePaymentSelectNetworkDescription": "Sinun {{balance}} saldo on riittämätön tämän {{amount}} maksun suorittamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
+    "noBalancesPaymentDescription": "Sinun saldot ovat riittämättömät tämän maksun suorittamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
+    "noBalancesTransferkDescription": "Sinulla ei ole saldoja siirtoon. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
+    "noBalancesTransferSelectNetworkDescription": "Sinulla ei ole mitään saldoa siirtämiseen. Valitse toinen verkko tai lisää saldoasi ja yritä uudelleen.",
+    "noBalanceTransferDescription": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "noBalanceTransferSelectNetworkDescription": "Sinulla ei ole {{symbol}} saldoa siirtämiseen. Valitse toinen verkko tai lisää saldoasi ja yritä uudelleen.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Tämä tapahtuma vaatii siirrettävän saldon ja {{feeSymbol}}:n kryptovaluutan arvoa {{feeInFiat}} kaasumaksujen maksamiseen. Valitse toinen verkko tai lisää saldoasi ja yritä uudelleen.",
+    "noGasBalancePaymentDescription": "Tämä tapahtuma vaatii {{amount}} ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
+    "noGasBalancePaymentSelectNetworkDescription": "Tämä tapahtuma vaatii {{amount}} ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
+    "noGasBalanceTransferDescription": "Tämä tapahtuma vaatii saatavilla olevan {{symbol}} saldon ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
+    "noGasBalanceTransferSelectNetworkDescription": "Tämä tapahtuma vaatii saatavilla olevan {{symbol}} saldon ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
     "notEligible": "Ei oikeutettu tähän siirtoon",
     "notEligibleDescription": "{{symbol}} ei ole hyväksytty tähän siirtoon.",
     "notSupportedByInstitution": "{{integrationName}} ei tue tällä hetkellä",
     "notSupportedForTransferBySource": "{{integrationName}} ei tue",
     "nyCoinbaseUserRestrictions": "{{symbol}} {{network}}:ssä ei hyväksytä tähän siirtoon NY:n moniketjutuen rajoitusten vuoksi.",
     "symbolDoesNotMatch": "{{clientName}} ei tue",
-    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon.",
-    "noGasBalancePaymentDescription": "Tämä tapahtuma vaatii {{amount}} ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
-    "noGasBalanceTransferDescription": "Tämä tapahtuma vaatii saatavilla olevan {{symbol}} saldon ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
-    "noBalance": "Ei saldoa",
-    "noBalancePaymentDescription": "Sinun {{balance}} saldo on riittämätön tämän {{amount}} maksun suorittamiseen. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
-    "noBalanceTransferDescription": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
-    "noGasBalancePaymentSelectNetworkDescription": "Tämä tapahtuma vaatii {{amount}} ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
-    "noGasBalanceTransferSelectNetworkDescription": "Tämä tapahtuma vaatii saatavilla olevan {{symbol}} saldon ja {{feeInFiat}} arvosta {{feeSymbol}} kaasumaksujen maksamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "Tämä tapahtuma vaatii siirrettävän saldon ja {{feeSymbol}}:n kryptovaluutan arvoa {{feeInFiat}} kaasumaksujen maksamiseen. Valitse toinen verkko tai lisää saldoasi ja yritä uudelleen.",
-    "noBalancePaymentSelectNetworkDescription": "Sinun {{balance}} saldo on riittämätön tämän {{amount}} maksun suorittamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
-    "noBalanceTransferSelectNetworkDescription": "Sinulla ei ole {{symbol}} saldoa siirtämiseen. Valitse toinen verkko tai lisää saldoasi ja yritä uudelleen.",
-    "noBalancesPaymentDescription": "Sinun saldot ovat riittämättömät tämän maksun suorittamiseen. Ole hyvä ja valitse toinen verkko, tai täydennä saldoasi ja yritä uudelleen.",
-    "noBalancesTransferSelectNetworkDescription": "Sinulla ei ole mitään saldoa siirtämiseen. Valitse toinen verkko tai lisää saldoasi ja yritä uudelleen.",
-    "noBalancesTransferkDescription": "Sinulla ei ole saldoja siirtoon. Ole hyvä ja täydennä saldoasi ja yritä uudelleen."
+    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon."
   },
   "initialLedgerScreen": {
     "title": "Käynnistä ja avaa laitteesi"
@@ -1051,6 +1053,7 @@
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
+    "unsupportedCurrencyError": "Valitsemaasi valuuttaa ei tueta maassasi.",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat"
   },
