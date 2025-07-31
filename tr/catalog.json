@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} seçin"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
+    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
+    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
+    "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
+    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
+    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir."
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "arama",
     "title": "Bağlantı yapmak için hesabınızı seçin",
     "title40": "Hesabınızı seçin"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
-    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
-    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
-    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil."
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
@@ -157,12 +157,12 @@
     "reconnectYourAccount": "Hesabınızı yeniden bağlayın",
     "searchCap": "Arama",
     "securedBy": "Tarafından güvence altına alınmıştır",
+    "sendingCap": "Gönderiliyor",
     "somethingWentWrong": "Bir şeyler ters gitti...",
     "submitCap": "Gönder",
     "successTitle": "Başarılı!",
     "termsOfUse": "Devam ederek <1>kullanım şartlarını</1> kabul ediyorsunuz",
-    "tryAgain": "Tekrar deneyin",
-    "sendingCap": "Gönderiliyor"
+    "tryAgain": "Tekrar deneyin"
   },
   "commonContent": {
     "connecting": "Bağlanıyor...",
@@ -552,6 +552,8 @@
     "title": "Doğrulama"
   },
   "feesDrawer": {
+    "gasFeeDescription": "İşlemi işlemek için ağ doğrulayıcılarına tazminat ödemek üzere tahmini maliyet.",
+    "institutionFeeDescription": "Bu ücret, çekim işleminizi gerçekleştirmek için ağ maliyetlerini karşılar. Seçilen kripto para birimine ve güncel blok zinciri koşullarına bağlı olarak değişiklik gösterir.",
     "processingFee": "{{clientName}} İşlem ücreti",
     "title": "Dahil edilen ücretler"
   },
@@ -715,33 +717,33 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Talep edilen {{requestedAmount}} transfer tutarı, {{network}} ağı üzerindeki {{integrationName}}’in minimum {{minimumAmount}} transfer tutarından daha azdır.",
-    "balanceBelowMinimumDescription": "{{currentBalance}} bakiyeniz, {{integrationName}} tarafından {{network}} ağı üzerinde transfer edilen {{minimumAmount}} minimum miktarından daha azdır.",
     "balanceBelowIntegrationMinimumDescription": "{{integrationName}} üzerindeki {{symbol}}'ü aktarmak için {{currentBalance}} bakiyeniz, {{minimumAmount}} {{integrationName}} minimumunun altında. Lütfen bakiyenizi yenileyin ve tekrar deneyin.",
+    "balanceBelowMinimumDescription": "{{currentBalance}} bakiyeniz, {{integrationName}} tarafından {{network}} ağı üzerinde transfer edilen {{minimumAmount}} minimum miktarından daha azdır.",
     "belowMinimum": "{{integrationName}} minumumu altında",
     "belowRequestedAmountDescription": "{{balance}} bakiyeniz, istenen transfer miktarı + ücretleri karşılayacak {{amount}} miktarından daha azdır.",
     "gasFeeAssetBalanceNotEnoughDescription": "{{network}} ağındaki tahmini {{gasFee}} gas ücreti için {{balance}} bakiyeniz yetersizdir.",
     "insufficientBalance": "Yetersiz bakiye",
     "insufficientBalanceDescription": "{{currentBalance}} bakiyeniz bu transfer için gereken minimum miktardan daha azdır.",
+    "noBalance": "Bakiye yok",
+    "noBalancePaymentDescription": "Bu {{amount}} ödemesini yapmak için {{balance}} bakiyeniz yetersiz. Lütfen bakiyenizi yenileyin ve tekrar deneyin.",
+    "noBalancePaymentSelectNetworkDescription": "Bu {{amount}} ödemesini yapmak için {{balance}} bakiyeniz yetersiz. Lütfen farklı bir ağ seçin veya bakiyenizi yenileyip tekrar deneyin.",
+    "noBalancesPaymentDescription": "Bu ödemeyi yapmak için bakiyeleriniz yetersiz. Lütfen farklı bir ağ seçin veya bakiyenizi yenileyip tekrar deneyin.",
+    "noBalancesTransferkDescription": "Aktaracak bir bakiyeniz yok. Lütfen bir bakiye yükleyin ve tekrar deneyin.",
+    "noBalancesTransferSelectNetworkDescription": "Aktarılacak bir bakiyeniz yok. Lütfen farklı bir ağ seçin veya bakiyenizi doldurun ve tekrar deneyin.",
+    "noBalanceTransferDescription": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi tamamlayın ve tekrar deneyin.",
+    "noBalanceTransferSelectNetworkDescription": "Aktarılacak {{symbol}} bakiyeniz yok. Lütfen farklı bir ağ seçin veya bakiyenizi doldurun ve tekrar deneyin.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Bu işlem, transfer etmek için yeterli bir bakiye ve gaz ücretlerini ödemek için {{feeSymbol}} değerinde {{feeInFiat}} gerektirir. Lütfen farklı bir ağ seçin veya bakiyenizi doldurun ve tekrar deneyin.",
+    "noGasBalancePaymentDescription": "Bu işlem, gaz ücretlerini ödemek için {{amount}} ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen bakiyelerinizi yenileyin ve tekrar deneyin.",
+    "noGasBalancePaymentSelectNetworkDescription": "Bu işlem, gaz ücretlerini ödemek için {{amount}} ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen farklı bir ağ seçin veya bakiyelerinizi yenileyip tekrar deneyin.",
+    "noGasBalanceTransferDescription": "Bu işlem, gaz ücretlerini ödemek için kullanılabilir bir {{symbol}} bakiyesi ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen bakiyelerinizi yenileyin ve tekrar deneyin.",
+    "noGasBalanceTransferSelectNetworkDescription": "Bu işlem, gaz ücretlerini ödemek için kullanılabilir bir {{symbol}} bakiyesi ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen farklı bir ağ seçin veya bakiyelerinizi yenileyip tekrar deneyin.",
     "notEligible": "Bu transfer için uygun değil",
     "notEligibleDescription": "{{symbol}} bu transfer için kabul edilmedi.",
     "notSupportedByInstitution": "Şu anda {{integrationName}} tarafından desteklenmiyor",
     "notSupportedForTransferBySource": "{{integrationName}} tarafından desteklenmiyor",
     "nyCoinbaseUserRestrictions": "NY çoklu zincir destek sınırlamaları nedeniyle {{network}} üzerindeki {{symbol}} bu transfer için kabul edilmedi.",
     "symbolDoesNotMatch": "{{clientName}} tarafından desteklenmiyor",
-    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi.",
-    "noGasBalancePaymentDescription": "Bu işlem, gaz ücretlerini ödemek için {{amount}} ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen bakiyelerinizi yenileyin ve tekrar deneyin.",
-    "noGasBalanceTransferDescription": "Bu işlem, gaz ücretlerini ödemek için kullanılabilir bir {{symbol}} bakiyesi ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen bakiyelerinizi yenileyin ve tekrar deneyin.",
-    "noBalance": "Bakiye yok",
-    "noBalancePaymentDescription": "Bu {{amount}} ödemesini yapmak için {{balance}} bakiyeniz yetersiz. Lütfen bakiyenizi yenileyin ve tekrar deneyin.",
-    "noBalanceTransferDescription": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi tamamlayın ve tekrar deneyin.",
-    "noGasBalancePaymentSelectNetworkDescription": "Bu işlem, gaz ücretlerini ödemek için {{amount}} ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen farklı bir ağ seçin veya bakiyelerinizi yenileyip tekrar deneyin.",
-    "noGasBalanceTransferSelectNetworkDescription": "Bu işlem, gaz ücretlerini ödemek için kullanılabilir bir {{symbol}} bakiyesi ve {{feeInFiat}} değerinde {{feeSymbol}} gerektirir. Lütfen farklı bir ağ seçin veya bakiyelerinizi yenileyip tekrar deneyin.",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "Bu işlem, transfer etmek için yeterli bir bakiye ve gaz ücretlerini ödemek için {{feeSymbol}} değerinde {{feeInFiat}} gerektirir. Lütfen farklı bir ağ seçin veya bakiyenizi doldurun ve tekrar deneyin.",
-    "noBalancePaymentSelectNetworkDescription": "Bu {{amount}} ödemesini yapmak için {{balance}} bakiyeniz yetersiz. Lütfen farklı bir ağ seçin veya bakiyenizi yenileyip tekrar deneyin.",
-    "noBalanceTransferSelectNetworkDescription": "Aktarılacak {{symbol}} bakiyeniz yok. Lütfen farklı bir ağ seçin veya bakiyenizi doldurun ve tekrar deneyin.",
-    "noBalancesPaymentDescription": "Bu ödemeyi yapmak için bakiyeleriniz yetersiz. Lütfen farklı bir ağ seçin veya bakiyenizi yenileyip tekrar deneyin.",
-    "noBalancesTransferSelectNetworkDescription": "Aktarılacak bir bakiyeniz yok. Lütfen farklı bir ağ seçin veya bakiyenizi doldurun ve tekrar deneyin.",
-    "noBalancesTransferkDescription": "Aktaracak bir bakiyeniz yok. Lütfen bir bakiye yükleyin ve tekrar deneyin."
+    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi."
   },
   "initialLedgerScreen": {
     "title": "Cihazınızı açın ve kilidini açın"
@@ -1051,6 +1053,7 @@
     "selectAsset": "Transfer edilecek varlığı seçin",
     "selectCurrency": "Bir para birimi seçin",
     "selectNetwork": "Transfer ağını seçin",
+    "unsupportedCurrencyError": "Seçilen para birimi, ülkenizde onramp için desteklenmiyor.",
     "youPay": "Ödemeniz gereken tutar",
     "youReceive": "Alacağınız tutar"
   },

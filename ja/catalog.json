@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}、{{badge}}を選択する"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
+    "integrationNotSupportedCountry": "{{integrationName}}はあなたの地域では利用できません。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} はこのトークンとネットワークをサポートしていません。",
+    "lessThanIntegrationMinAmount": "要求された金額は {{integrationName}} の最小額を下回っています。",
+    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
+    "platformNotSupported": "{{integrationName}}はこの種類のデバイスではサポートされていません。",
+    "sdkVersionNotSupported": "{{integrationName}}のTrueAuthメカニズムは、SDKコンテキスト: {{sdkContext}}でサポートされていません。",
+    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
+    "travelRuleVaspIdRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。"
+  },
   "catalogList": {
     "badges": {
       "api": "API",
@@ -93,18 +105,6 @@
     "search": "検索",
     "title": "リンクするアカウントを選択",
     "title40": "アカウントを選択してください"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}}はこの種類のデバイスではサポートされていません。",
-    "sdkVersionNotSupported": "{{integrationName}}のTrueAuthメカニズムは、SDKコンテキスト: {{sdkContext}}でサポートされていません。",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
-    "travelRuleVaspIdRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
-    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
-    "lessThanIntegrationMinAmount": "要求された金額は {{integrationName}} の最小額を下回っています。",
-    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} はこのトークンとネットワークをサポートしていません。",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
-    "integrationNotSupportedCountry": "{{integrationName}}はあなたの地域では利用できません。"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}}を選択"
@@ -157,12 +157,12 @@
     "reconnectYourAccount": "アカウントの再接続",
     "searchCap": "検索",
     "securedBy": "保護されています",
+    "sendingCap": "送信中",
     "somethingWentWrong": "何かがうまくいきませんでした。。。",
     "submitCap": "送信",
     "successTitle": "成功しました！",
     "termsOfUse": "続行することで、 <1>terms of use</1>に同意したものとみなされます",
-    "tryAgain": "もう一度お試しください",
-    "sendingCap": "送信中"
+    "tryAgain": "もう一度お試しください"
   },
   "commonContent": {
     "connecting": "接続中。。。",
@@ -552,6 +552,8 @@
     "title": "確認"
   },
   "feesDrawer": {
+    "gasFeeDescription": "取引を処理するためにネットワークバリデーターに支払う推定コストです。",
+    "institutionFeeDescription": "この料金は、ご出金の処理に要するネットワーク費用をカバーします。選択した仮想通貨と現在のブロックチェーンの状況によって変動します。",
     "processingFee": "{{clientName}} 処理手数料",
     "title": "手数料を含む"
   },
@@ -715,33 +717,33 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "{{network}}ネットワークにおける{{integrationName}}の最低送金額{{minimumAmount}}に対し、ご指定の送金額{{requestedAmount}}が不足しています。",
-    "balanceBelowMinimumDescription": "{{network}}ネットワークでの{{integrationName}}の送金最低額{{minimumAmount}}に対して、現在の残高{{currentBalance}}が不足しています。",
     "balanceBelowIntegrationMinimumDescription": "{{integrationName}}の{{symbol}}を{{network}}に転送するための{{minimumAmount}}の最低限を下回る{{currentBalance}}の残高です。 残高を補充して、もう一度お試しください。",
+    "balanceBelowMinimumDescription": "{{network}}ネットワークでの{{integrationName}}の送金最低額{{minimumAmount}}に対して、現在の残高{{currentBalance}}が不足しています。",
     "belowMinimum": "{{integrationName}} の最低以下",
     "belowRequestedAmountDescription": "ご指定の送金額と手数料をカバーするには、現在の残高{{balance}}が必要額{{amount}}に満たしていません。",
     "gasFeeAssetBalanceNotEnoughDescription": "{{network}}ネットワークでの推定ガス代{{gasFee}}を賄うには、現在の残高{{balance}}が不足しています。",
     "insufficientBalance": "残高不足",
     "insufficientBalanceDescription": "現在の残高{{currentBalance}}は、この送金の最低金額に満たしていません。",
+    "noBalance": "残高なし",
+    "noBalancePaymentDescription": "この{{amount}}の支払いを行うには、{{balance}}残高が不足しています。 残高を補充して、もう一度お試しください。",
+    "noBalancePaymentSelectNetworkDescription": "この{{amount}}の支払いを行うには、{{balance}}残高が不足しています。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
+    "noBalancesPaymentDescription": "この支払いを行うには、残高が不足しています。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
+    "noBalancesTransferkDescription": "転送する残高がありません。 残高を補充して、もう一度お試しください。",
+    "noBalancesTransferSelectNetworkDescription": "送金する残高がありません。別のネットワークを選択するか、残高を追加して再試行してください。",
+    "noBalanceTransferDescription": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
+    "noBalanceTransferSelectNetworkDescription": "{{symbol}}の残高がないため、送金できません。別のネットワークを選択するか、残高を追加して再試行してください。",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "この取引には、送金可能な残高に加えて、ガス手数料を支払うための{{feeSymbol}}相当の{{feeInFiat}}が必要です。別のネットワークを選択するか、残高を追加して再試行してください。",
+    "noGasBalancePaymentDescription": "この取引には、{{amount}}と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 残高を補充して、もう一度お試しください。",
+    "noGasBalancePaymentSelectNetworkDescription": "この取引には、{{amount}}と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
+    "noGasBalanceTransferDescription": "この取引には、利用可能な{{symbol}}の残高と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 残高を補充して、もう一度お試しください。",
+    "noGasBalanceTransferSelectNetworkDescription": "この取引には、利用可能な{{symbol}}の残高と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
     "notEligible": "この送金の対象ではありません",
     "notEligibleDescription": "この送金では{{symbol}}は利用できません。",
     "notSupportedByInstitution": "現在、{{integrationName}}ではサポートされていません",
     "notSupportedForTransferBySource": "{{integrationName}}はサポートされていません",
     "nyCoinbaseUserRestrictions": "NYマルチチェーン対応制限により、{{network}}上の{{symbol}}はこの送金では利用できません。",
     "symbolDoesNotMatch": "{{clientName}}ではサポートされていません",
-    "symbolDoesNotMatchDescription": "この送金では{{symbol}}は利用できません。",
-    "noGasBalancePaymentDescription": "この取引には、{{amount}}と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 残高を補充して、もう一度お試しください。",
-    "noGasBalanceTransferDescription": "この取引には、利用可能な{{symbol}}の残高と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 残高を補充して、もう一度お試しください。",
-    "noBalance": "残高なし",
-    "noBalancePaymentDescription": "この{{amount}}の支払いを行うには、{{balance}}残高が不足しています。 残高を補充して、もう一度お試しください。",
-    "noBalanceTransferDescription": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
-    "noGasBalancePaymentSelectNetworkDescription": "この取引には、{{amount}}と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
-    "noGasBalanceTransferSelectNetworkDescription": "この取引には、利用可能な{{symbol}}の残高と{{feeInFiat}}相当の{{feeSymbol}}がガス料金を支払うために必要です。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "この取引には、送金可能な残高に加えて、ガス手数料を支払うための{{feeSymbol}}相当の{{feeInFiat}}が必要です。別のネットワークを選択するか、残高を追加して再試行してください。",
-    "noBalancePaymentSelectNetworkDescription": "この{{amount}}の支払いを行うには、{{balance}}残高が不足しています。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
-    "noBalanceTransferSelectNetworkDescription": "{{symbol}}の残高がないため、送金できません。別のネットワークを選択するか、残高を追加して再試行してください。",
-    "noBalancesPaymentDescription": "この支払いを行うには、残高が不足しています。 別のネットワークを選択するか、残高を補充して、もう一度お試しください。",
-    "noBalancesTransferSelectNetworkDescription": "送金する残高がありません。別のネットワークを選択するか、残高を追加して再試行してください。",
-    "noBalancesTransferkDescription": "転送する残高がありません。 残高を補充して、もう一度お試しください。"
+    "symbolDoesNotMatchDescription": "この送金では{{symbol}}は利用できません。"
   },
   "initialLedgerScreen": {
     "title": "デバイスの電源を入れ、ロックを解除してください"
@@ -1051,6 +1053,7 @@
     "selectAsset": "転送する資産を選択",
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
+    "unsupportedCurrencyError": "選択された通貨は、あなたの国のオンランプに対応していません。",
     "youPay": "支払う",
     "youReceive": "受け取る"
   },

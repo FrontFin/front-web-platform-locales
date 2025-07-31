@@ -80,6 +80,18 @@
   "catalogCell": {
     "select": "{{integrationName}}, {{badge}} चुनें"
   },
+  "catalogFilterIneligibilityReasons": {
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
+    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
+    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
+    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
+    "platformNotSupported": "{{integrationName}} इस प्रकार के उपकरण पर समर्थित नहीं है।",
+    "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
+    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "travelRuleVaspIdRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।"
+  },
   "catalogList": {
     "badges": {
       "api": "एपीआई",
@@ -93,18 +105,6 @@
     "search": "खोज",
     "title": "लिंक करने के लिए खाता चुनें",
     "title40": "अपना खाता चुनें"
-  },
-  "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} इस प्रकार के उपकरण पर समर्थित नहीं है।",
-    "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
-    "travelRuleVaspIdRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
-    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
-    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
-    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
-    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} चुनें"
@@ -157,12 +157,12 @@
     "reconnectYourAccount": "अपने खाते को पुनः कनेक्ट करें",
     "searchCap": "खोजें",
     "securedBy": "द्वारा सुरक्षित",
+    "sendingCap": "भेज रहा है",
     "somethingWentWrong": "कुछ गलत हो गया...",
     "submitCap": "जमा करें",
     "successTitle": "सफलता!",
     "termsOfUse": "जारी रखकर आप <2>प्रयोग की शर्तें</2> स्वीकार करते हैं",
-    "tryAgain": "पुनः प्रयास करें",
-    "sendingCap": "भेज रहा है"
+    "tryAgain": "पुनः प्रयास करें"
   },
   "commonContent": {
     "connecting": "कनेक्ट हो रहा है...",
@@ -552,6 +552,8 @@
     "title": "सत्यापन"
   },
   "feesDrawer": {
+    "gasFeeDescription": "लेनदेन की प्रक्रिया के लिए नेटवर्क वेलिडेटर्स को मुआवजा देने की अनुमानित लागत।",
+    "institutionFeeDescription": "यह शुल्क आपके निकासी के प्रसंस्करण के लिए नेटवर्क लागत को कवर करता है। यह चयनित क्रिप्टोक्यूरेंसी और मौजूदा ब्लॉकचेन स्थितियों के अनुसार भिन्न होता है।",
     "processingFee": "{{clientName}} प्रसंस्करण शुल्क",
     "title": "शुल्क शामिल"
   },
@@ -715,33 +717,33 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "{{requestedAmount}} की अनुरोधित स्थानांतरण राशि {{integrationName}} द्वारा {{minimumAmount}} के न्यूनतम से कम है {{network}} नेटवर्क पर स्थानांतरण के लिए।",
-    "balanceBelowMinimumDescription": "आपकी {{currentBalance}} शेष राशि {{network}} नेटवर्क पर स्थानांतरित करने के लिए {{integrationName}} की {{minimumAmount}} न्यूनतम राशि से कम है।",
     "balanceBelowIntegrationMinimumDescription": "आपका {{currentBalance}} शेष {{integrationName}} पर {{symbol}} स्थानांतरित करने के लिए {{minimumAmount}} न्यूनतम से नीचे है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "balanceBelowMinimumDescription": "आपकी {{currentBalance}} शेष राशि {{network}} नेटवर्क पर स्थानांतरित करने के लिए {{integrationName}} की {{minimumAmount}} न्यूनतम राशि से कम है।",
     "belowMinimum": "{{integrationName}} के न्यूनतम से कम",
     "belowRequestedAmountDescription": "आपका {{balance}} शेष राशि अनुरोधित स्थानांतरण राशि + शुल्क को कवर करने के लिए {{amount}} से कम है।",
     "gasFeeAssetBalanceNotEnoughDescription": "आपका {{balance}} शेष राशि {{network}} नेटवर्क पर अनुमानित {{gasFee}} गैस फ़ीस को कवर करने के लिए अपर्याप्त है।",
     "insufficientBalance": "अपर्याप्त शेष राशि",
     "insufficientBalanceDescription": "आपका {{currentBalance}} शेष राशि इस स्थानांतरण के लिए न्यूनतम से कम है।",
+    "noBalance": "कोई बैलेंस नहीं",
+    "noBalancePaymentDescription": "आपका {{balance}} शेष इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noBalancePaymentSelectNetworkDescription": "आपका {{balance}} शेष इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noBalancesPaymentDescription": "आपकी शेष राशि इस भुगतान करने के लिए अपर्याप्त हैं। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noBalancesTransferkDescription": "स्थानांतरण करने के लिए आपके पास कोई शेष राशि नहीं है। कृपया एक शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noBalancesTransferSelectNetworkDescription": "स्थानांतरण करने के लिए आपके पास कोई शेष राशि नहीं है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noBalanceTransferDescription": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
+    "noBalanceTransferSelectNetworkDescription": "स्थानांतरण करने के लिए आपके पास कोई {{symbol}} शेष राशि नहीं है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "इस लेनदेन के लिए स्थानांतरण करने के लिए उपलब्ध शेष राशि के साथ {{feeInFiat}} मूल्य का {{feeSymbol}} गैस शुल्क का भुगतान करने के लिए आवश्यक है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि को बढ़ाएं और पुनः प्रयास करें।",
+    "noGasBalancePaymentDescription": "इस लेनदेन के लिए {{amount}} और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noGasBalancePaymentSelectNetworkDescription": "इस लेनदेन के लिए {{amount}} और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noGasBalanceTransferDescription": "इस लेनदेन के लिए उपलब्ध {{symbol}} शेष और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noGasBalanceTransferSelectNetworkDescription": "इस लेनदेन के लिए उपलब्ध {{symbol}} शेष और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
     "notEligible": "इस स्थानांतरण के लिए योग्य नहीं",
     "notEligibleDescription": "इस स्थानांतरण के लिए {{symbol}} स्वीकर नहीं किया गया है।",
     "notSupportedByInstitution": "वर्तमान में {{integrationName}} द्वारा समर्थित नहीं है",
     "notSupportedForTransferBySource": "{{integrationName}} द्वारा समर्थित नहीं है",
     "nyCoinbaseUserRestrictions": "NY मल्टी-चेन समर्थन प्रतिबंधों के कारण {{network}} पर {{symbol}} इस ट्रांसफ़र के लिए स्वीकार्य नहीं है।",
     "symbolDoesNotMatch": "{{clientName}} द्वारा समर्थित नहीं है",
-    "symbolDoesNotMatchDescription": "इस स्थानांतरण के लिए {{symbol}} स्वीकार नहीं किया गया है।",
-    "noGasBalancePaymentDescription": "इस लेनदेन के लिए {{amount}} और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noGasBalanceTransferDescription": "इस लेनदेन के लिए उपलब्ध {{symbol}} शेष और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalance": "कोई बैलेंस नहीं",
-    "noBalancePaymentDescription": "आपका {{balance}} शेष इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalanceTransferDescription": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
-    "noGasBalancePaymentSelectNetworkDescription": "इस लेनदेन के लिए {{amount}} और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noGasBalanceTransferSelectNetworkDescription": "इस लेनदेन के लिए उपलब्ध {{symbol}} शेष और गैस शुल्क चुकाने के लिए {{feeSymbol}} के {{feeInFiat}} मूल्य की आवश्यकता है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "इस लेनदेन के लिए स्थानांतरण करने के लिए उपलब्ध शेष राशि के साथ {{feeInFiat}} मूल्य का {{feeSymbol}} गैस शुल्क का भुगतान करने के लिए आवश्यक है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि को बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancePaymentSelectNetworkDescription": "आपका {{balance}} शेष इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalanceTransferSelectNetworkDescription": "स्थानांतरण करने के लिए आपके पास कोई {{symbol}} शेष राशि नहीं है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancesPaymentDescription": "आपकी शेष राशि इस भुगतान करने के लिए अपर्याप्त हैं। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancesTransferSelectNetworkDescription": "स्थानांतरण करने के लिए आपके पास कोई शेष राशि नहीं है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancesTransferkDescription": "स्थानांतरण करने के लिए आपके पास कोई शेष राशि नहीं है। कृपया एक शेष राशि बढ़ाएं और पुनः प्रयास करें।"
+    "symbolDoesNotMatchDescription": "इस स्थानांतरण के लिए {{symbol}} स्वीकार नहीं किया गया है।"
   },
   "initialLedgerScreen": {
     "title": "अपना डिवाइस चालू करें और अनलॉक करें"
@@ -1051,6 +1053,7 @@
     "selectAsset": "स्थानांतरण के लिए संपत्ति चुनें",
     "selectCurrency": "एक मुद्रा का चयन करें",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
+    "unsupportedCurrencyError": "आपके देश में चयनित मुद्रा को ऑनरैंप के लिए समर्थन नहीं दिया गया है।",
     "youPay": "आप भुगतान करेंगे",
     "youReceive": "आप प्राप्त करेंगे"
   },
