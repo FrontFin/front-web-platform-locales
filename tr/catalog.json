@@ -202,12 +202,10 @@
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Bağlantı isteğini reddetmiş gibi görünüyorsunuz veya önceki bir istek hâlâ aktif. Bu bir hataydıysa, tekrar deneyin.",
-    "chooseDifferentAccount": "Farklı bir hesap seçin",
     "title": "Hata!"
   },
   "deFiWalletConnectionUnavailablePage": {
     "body": "Lütfen cüzdanınızı kontrol edin ve bağlantı isteğini onaylayın.",
-    "chooseDifferentAccount": "Farklı bir hesap seçin",
     "title": "Zamanında yanıt alamadık"
   },
   "deFiWalletDeclinedConnectionPage": {
@@ -555,6 +553,7 @@
     "gasFeeDescription": "İşlemi işlemek için ağ doğrulayıcılarına tazminat ödemek üzere tahmini maliyet.",
     "institutionFeeDescription": "Bu ücret, çekim işleminizi gerçekleştirmek için ağ maliyetlerini karşılar. Seçilen kripto para birimine ve güncel blok zinciri koşullarına bağlı olarak değişiklik gösterir.",
     "processingFee": "{{clientName}} İşlem ücreti",
+    "processingFeeDescription": "{{clientName}} işlemin tamamlanmasını kolaylaştırmak için tahsil edilir.",
     "title": "Dahil edilen ücretler"
   },
   "fields": {
@@ -1062,7 +1061,8 @@
   "orderSummaryDrawer": {
     "merchantInfoName": "Satıcı: {{clientName}}",
     "title": "Sipariş özeti",
-    "totalLabel": "Toplam"
+    "totalLabel": "Toplam",
+    "paymentToClient": "Ödeme {{clientName}}'e"
   },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} giriniz",
@@ -1165,7 +1165,8 @@
     "send": "Gönder",
     "title": "Transfer ön izlemesi",
     "tokenOnNetwork": "{{token}} üzerinde {{network}}",
-    "transferToken": "Jetonu transfer et"
+    "transferToken": "Jetonu transfer et",
+    "sendButton": "Gönder"
   },
   "privacyComponent": {
     "content": "Verileriniz her zaman gizli ve şifrelenmiş olarak korunur."
@@ -1200,7 +1201,6 @@
     "binanceDirectNoAssetsBody2": "Hesabınıza para ekleyebilir veya transferinize devam etmek için farklı bir hesap bağlayabilirsiniz.",
     "cannotFundBody": "Bu işlemi gerçekleştirmek için bu hesaptaki kripto veya fiat bakiyeniz yetersiz.",
     "cannotFundTitle": "İşlem finanse edilemiyor",
-    "connectAnotherButton": "Farklı bir hesap bağlayın",
     "defaultTitle": "Token seçin",
     "depositTitle": "Yatırılacak token'ı seçin",
     "ineligibleAssets": "Uygun olmayan varlıklar",
@@ -1374,7 +1374,6 @@
     "aboveMaximum": "{{integrationName}} maksimumunun üstünde",
     "belowMinimum": "{{integrationName}} minumumunun altında",
     "connectAnotherAccount": "Lütfen başka bir hesap bağlayın.",
-    "connectDifferent": "Farklı bir hesap bağlayın",
     "insufficientBalanceError": "Bu işlem için bakiyeniz yetersiz.",
     "insufficientFunds": "Yetersiz bakiye",
     "unknownError": "Bilinmeyen bir hata oluştu. Yeni bir transfer oturumu başlatmak için aşağıya tıklayın."

@@ -202,12 +202,10 @@
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Wygląda na to, że odrzuciłeś żądanie połączenia lub wcześniejsze żądanie jest nadal aktywne. Jeśli to był błąd, spróbuj ponownie.",
-    "chooseDifferentAccount": "Wybierz inne konto",
     "title": "Ups!"
   },
   "deFiWalletConnectionUnavailablePage": {
     "body": "Proszę sprawdzić swój portfel i zatwierdzić żądanie połączenia.",
-    "chooseDifferentAccount": "Wybierz inne konto",
     "title": "Nie otrzymaliśmy odpowiedzi na czas"
   },
   "deFiWalletDeclinedConnectionPage": {
@@ -555,6 +553,7 @@
     "gasFeeDescription": "Szacowany koszt kompensacji walidatorów sieci za przetworzenie transakcji.",
     "institutionFeeDescription": "Ta opłata pokrywa koszt sieciowy za przetwarzanie wypłaty. Zależy ona od wybranej kryptowaluty oraz aktualnych warunków blockchain.",
     "processingFee": "Opłata za przetwarzanie {{clientName}}",
+    "processingFeeDescription": "Opłata, którą {{clientName}} pobiera w celu ułatwienia realizacji tej transakcji.",
     "title": "Wliczone opłaty"
   },
   "fields": {
@@ -1062,7 +1061,8 @@
   "orderSummaryDrawer": {
     "merchantInfoName": "Sprzedający: {{clientName}}",
     "title": "Podsumowanie zamówienia",
-    "totalLabel": "Całkowita suma"
+    "totalLabel": "Całkowita suma",
+    "paymentToClient": "Płatność dla {{clientName}}"
   },
   "passwordPage": {
     "fieldError": "Wprowadź swój {{field}}",
@@ -1165,7 +1165,8 @@
     "send": "Wyślij",
     "title": "Podgląd transferu",
     "tokenOnNetwork": "{{token}} na {{network}}",
-    "transferToken": "Przelej token"
+    "transferToken": "Przelej token",
+    "sendButton": "Wyślij"
   },
   "privacyComponent": {
     "content": "Twoje dane są zawsze prywatne i zaszyfrowane."
@@ -1200,7 +1201,6 @@
     "binanceDirectNoAssetsBody2": "Możesz dodać środki do swojego konta lub połączyć inne, aby kontynuować transfer.",
     "cannotFundBody": "Nie masz wystarczającej ilości kryptowalut lub środków fiat na swoim koncie, aby zrealizować tę transakcję.",
     "cannotFundTitle": "Nie masz wystarczających środków, aby wykonać tę transakcję",
-    "connectAnotherButton": "Połącz inne konto",
     "defaultTitle": "Wybierz token",
     "depositTitle": "Wybierz token wpłaty",
     "ineligibleAssets": "Niewłaściwe środki",
@@ -1374,7 +1374,6 @@
     "aboveMaximum": "Powyżej maksymalnego limitu {{integrationName}}",
     "belowMinimum": "Poniżej minimalnego limitu {{integrationName}}",
     "connectAnotherAccount": "Proszę połączyć inne konto.",
-    "connectDifferent": "Połącz inne konto",
     "insufficientBalanceError": "Niewystarczające środki, aby sfinansować tę transakcję.",
     "insufficientFunds": "Niewystarczające środki",
     "unknownError": "Wystąpił nieznany błąd. Kliknij poniżej, aby rozpocząć nową sesję transferu."
