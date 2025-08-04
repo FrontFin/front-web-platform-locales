@@ -202,12 +202,10 @@
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Parece que denegaste la solicitud de conexión o que una solicitud anterior todavía está activa. Si fue un error, inténtalo de nuevo.",
-    "chooseDifferentAccount": "Elige una cuenta diferente",
     "title": "¡Ups!"
   },
   "deFiWalletConnectionUnavailablePage": {
     "body": "Por favor revisa tu wallet y aprueba la solicitud de conexión.",
-    "chooseDifferentAccount": "Elige una cuenta diferente",
     "title": "No recibimos una respuesta a tiempo"
   },
   "deFiWalletDeclinedConnectionPage": {
@@ -555,6 +553,7 @@
     "gasFeeDescription": "El costo estimado para compensar a los validadores de red por procesar la transacción.",
     "institutionFeeDescription": "Esta tarifa cubre el costo de la red para procesar su retiro. Varía según la criptomoneda seleccionada y las condiciones actuales de la blockchain.",
     "processingFee": "Tarifa de procesamiento de {{clientName}}",
+    "processingFeeDescription": "La tarifa que {{clientName}} cobra para facilitar la finalización de esta transacción.",
     "title": "Tarifas incluidas"
   },
   "fields": {
@@ -1062,7 +1061,8 @@
   "orderSummaryDrawer": {
     "merchantInfoName": "Comerciante: {{clientName}}",
     "title": "Resumen del pedido",
-    "totalLabel": "Total"
+    "totalLabel": "Total",
+    "paymentToClient": "Pago a {{clientName}}"
   },
   "passwordPage": {
     "fieldError": "Por favor, captura tu {{field}}",
@@ -1165,7 +1165,8 @@
     "send": "Enviar",
     "title": "Vista previa de la transferencia",
     "tokenOnNetwork": "{{token}} en {{network}}",
-    "transferToken": "Transferir token"
+    "transferToken": "Transferir token",
+    "sendButton": "Enviar"
   },
   "privacyComponent": {
     "content": "Tus datos se mantienen privados y cifrados en todo momento."
@@ -1200,7 +1201,6 @@
     "binanceDirectNoAssetsBody2": "Puede agregar fondos a su cuenta o conectar una diferente para continuar con la transferencia.",
     "cannotFundBody": "No tienes suficiente saldo cripto o fiat en esta cuenta para financiar esta transacción.",
     "cannotFundTitle": "No se puede financiar la transacción",
-    "connectAnotherButton": "Conectar una cuenta distinta",
     "defaultTitle": "Selecciona un recurso",
     "depositTitle": "Selecciona una cripto para el depósito",
     "ineligibleAssets": "Activos no elegibles",
@@ -1374,7 +1374,6 @@
     "aboveMaximum": "Sobre el máximo en {{integrationName}}",
     "belowMinimum": "Debajo del mínimo en {{integrationName}}",
     "connectAnotherAccount": "Por favor, conecta otra cuenta.",
-    "connectDifferent": "Conectar una cuenta distinta",
     "insufficientBalanceError": "Saldo insuficiente para pagar esta transacción.",
     "insufficientFunds": "Saldo insuficiente",
     "unknownError": "Se ha producido un error desconocido. Por favor, haga clic a continuación para iniciar una nueva sesión de transferencia."

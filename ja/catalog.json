@@ -202,12 +202,10 @@
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "接続要求を拒否したか、以前の要求がまだアクティブです。もし間違いでしたら、再試行してください。",
-    "chooseDifferentAccount": "別のアカウントを選択する。",
     "title": "おっと！"
   },
   "deFiWalletConnectionUnavailablePage": {
     "body": "ウォレットを確認し、接続要求を承認してください。",
-    "chooseDifferentAccount": "別のアカウントを選択する。",
     "title": "時間内に応答がありませんでした。"
   },
   "deFiWalletDeclinedConnectionPage": {
@@ -555,6 +553,7 @@
     "gasFeeDescription": "取引を処理するためにネットワークバリデーターに支払う推定コストです。",
     "institutionFeeDescription": "この料金は、ご出金の処理に要するネットワーク費用をカバーします。選択した仮想通貨と現在のブロックチェーンの状況によって変動します。",
     "processingFee": "{{clientName}} 処理手数料",
+    "processingFeeDescription": "費用 {{clientName}} は、この取引の完了を促進するために徴収されます。",
     "title": "手数料を含む"
   },
   "fields": {
@@ -1062,7 +1061,8 @@
   "orderSummaryDrawer": {
     "merchantInfoName": "マーチャント: {{clientName}}",
     "title": "注文概要",
-    "totalLabel": "合計"
+    "totalLabel": "合計",
+    "paymentToClient": "{{clientName}}への支払い"
   },
   "passwordPage": {
     "fieldError": "{{field}}を入力してください",
@@ -1165,7 +1165,8 @@
     "send": "送信",
     "title": "送金プレビュー",
     "tokenOnNetwork": "{{network}} 上の {{token}}",
-    "transferToken": "トークンを移行"
+    "transferToken": "トークンを移行",
+    "sendButton": "送信"
   },
   "privacyComponent": {
     "content": "お客様のデータは常に暗号化され、安全に保護されています。"
@@ -1200,7 +1201,6 @@
     "binanceDirectNoAssetsBody2": "送金を続けるには、資金を追加するか、別のアカウントを接続してください。",
     "cannotFundBody": "このアカウントの暗号資産または法定通貨の残高が不足しています。",
     "cannotFundTitle": "取引に必要な資金が不足しています",
-    "connectAnotherButton": "別のアカウントを接続する",
     "defaultTitle": "トークンを選択",
     "depositTitle": "入金用のトークンを選択",
     "ineligibleAssets": "送金対象外の資産",
@@ -1374,7 +1374,6 @@
     "aboveMaximum": "{{integrationName}}の以上限を超えています",
     "belowMinimum": "{{integrationName}}の以下限を下回っています",
     "connectAnotherAccount": "別のアカウントを接続してください。",
-    "connectDifferent": "別のアカウントを接続する",
     "insufficientBalanceError": "この取引を実行するには残高が不足しています。",
     "insufficientFunds": "残高不足",
     "unknownError": "不明なエラーが発生しました。新しい送金セッションを開始するには、以下のボタンをクリックしてください。"

@@ -202,12 +202,10 @@
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
-    "chooseDifferentAccount": "Подключить другой аккаунт",
     "title": "Ой!"
   },
   "deFiWalletConnectionUnavailablePage": {
     "body": "Пожалуйста, проверьте свой электронный кошелек и одобрите запрос на подключение.",
-    "chooseDifferentAccount": "Подключить другой аккаунт",
     "title": "Мы не получили ответ вовремя"
   },
   "deFiWalletDeclinedConnectionPage": {
@@ -555,6 +553,7 @@
     "gasFeeDescription": "Примерная стоимость компенсации валидаторам сети за обработку транзакции.",
     "institutionFeeDescription": "Эта комиссия покрывает стоимость сети за обработку вашего вывода. Она изменяется в зависимости от выбранной криптовалюты и текущих условий блокчейна.",
     "processingFee": "Комиссия за обработку {{clientName}}",
+    "processingFeeDescription": "Комиссия, которую собирает {{clientName}}, чтобы помочь завершить эту транзакцию.",
     "title": "Включенные комиссии"
   },
   "fields": {
@@ -1062,7 +1061,8 @@
   "orderSummaryDrawer": {
     "merchantInfoName": "Продавец: {{clientName}}",
     "title": "Итог заказа",
-    "totalLabel": "Итого"
+    "totalLabel": "Итого",
+    "paymentToClient": "Платёж к {{clientName}}"
   },
   "passwordPage": {
     "fieldError": "Пожалуйста, введите {{field}}",
@@ -1165,7 +1165,8 @@
     "send": "Отправить",
     "title": "Предпросмотр трансфера",
     "tokenOnNetwork": "{{token}} через {{network}}",
-    "transferToken": "Токен для трансфера"
+    "transferToken": "Токен для трансфера",
+    "sendButton": "Отправить"
   },
   "privacyComponent": {
     "content": "Ваши данные являются конфиденциальными и зашифрованы в любое время."
@@ -1200,7 +1201,6 @@
     "binanceDirectNoAssetsBody2": "Вы можете пополнить свой счет или подключить другой счет, чтобы продолжить перевод.",
     "cannotFundBody": "У вас недостаточно криптовалюты или баланса фиатных средств на этом счете для пополнения этой транзакции.",
     "cannotFundTitle": "Не удается оплатить транзакцию",
-    "connectAnotherButton": "Подключить другой аккаунт",
     "defaultTitle": "Выбрать токен",
     "depositTitle": "Выберите токен для депозита",
     "ineligibleAssets": "Неподходящие активы",
@@ -1374,7 +1374,6 @@
     "aboveMaximum": "Превышает лимит {{integrationName}}",
     "belowMinimum": "Ниже минимального лимита {{integrationName}}",
     "connectAnotherAccount": "Пожалуйста, подключите другую учетную запись.",
-    "connectDifferent": "Подключить другой аккаунт",
     "insufficientBalanceError": "Недостаточно средств для пополнения этой транзакции.",
     "insufficientFunds": "Недостаточно средств",
     "unknownError": "Произошла неизвестная ошибка. Нажмите ниже, чтобы начать новый сеанс перевода."
