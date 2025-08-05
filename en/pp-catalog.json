@@ -1,1 +1,134 @@
-{}
+{
+  "paypal": {
+    "exitPage": {
+      "title": "Are you sure you want to exit?",
+      "description": "Your progress will be lost.",
+      "buttons": {
+        "continue": "Continue With Payment",
+        "exit": "Exit"
+      }
+    },
+    "errorPage": {
+      "title": "Something went wrong"
+    },
+    "previewPage": {
+      "title": "Pay {merchantName}",
+      "from": "From {integrationName}",
+      "howItWorks": "How it works",
+      "labels": {
+        "payWith": "Pay with",
+        "send": "Send",
+        "order": "Order",
+        "total": "Total",
+        "purchase": "{merchantName} purchase",
+        "networkFee": "Estimated network fee",
+        "conversionFee": "{integrationName} conversion fee",
+        "transactionBuffer": "Transaction buffer"
+      },
+      "hints": {
+        "networkFee": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
+        "conversionFee": "This fee {integrationName} collects to convert.",
+        "transactionBuffer": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {settlementCurrency} in your wallet."
+      },
+      "fees": {
+        "withBuffer": "{transactionBuffer} Buffer + {totalFees} fees included",
+        "withoutBuffer": "{totalFees} fees included",
+        "unusedBuffer": "You'll keep any unused buffer."
+      },
+      "disclaimer": "Refunds will be issued in {settlementCurrency} only. The exchange rate and fees change frequently. All crypto purchases are final.",
+      "pyusdNotice": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain.",
+      "feeChanged": "The network fee has changed. Please check your total and continue",
+      "buttons": {
+        "pay": "Pay",
+        "ok": "OK"
+      }
+    },
+    "transferErrorPage": {
+      "titles": {
+        "insufficientFunds": "Insufficient funds",
+        "default": "We're unable to process this payment"
+      },
+      "descriptions": {
+        "insufficientFunds": "Your balance is too low to complete this purchase.",
+        "connection": "",
+        "belowNetworkMinimum": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase.",
+        "default": "Your funds will stay in your {integrationName} account."
+      },
+      "buttons": {
+        "chooseDifferent": "Choose a Different Account",
+        "close": "Close",
+        "tryAgain": "Try Again"
+      }
+    },
+    "doneTransferPage": {
+      "title": "Payment on its way",
+      "description": "You just paid {amount}. You'll get a confirmation from {clientName} when it's complete.",
+      "disclaimer": "Transfers are not complete until they have received enough network confirmations.",
+      "buttons": {
+        "seeDetails": "See what happened",
+        "done": "Done"
+      }
+    },
+    "doneTransferDetailsPage": {
+      "title": "What happened",
+      "disclaimer": "Transfers are not complete until they have received enough network confirmations.",
+      "buttons": {
+        "goBack": "Go Back"
+      }
+    },
+    "topupNeededPage": {
+      "title": "Top-up needed",
+      "description": {
+        "singleSymbol": "The value of the converted {convertedSymbol} to {targetSymbol} is lower than expected due to price and/or network fees fluctuations.",
+        "multipleSymbols": "The value of the assets converted to {targetSymbol} is lower than expected due to price and/or network fees fluctuations."
+      },
+      "labels": {
+        "currentBalance": "Current balance",
+        "required": "Required"
+      },
+      "disclaimer": "If you do not complete the payment, your {targetSymbol} balance will remain in your {integrationName} account.",
+      "buttons": {
+        "viewTopup": "View Top-Up",
+        "cancel": "Cancel"
+      }
+    },
+    "infoScreenPage": {
+      "title": "Log in to review payment details",
+      "rules": {
+        "privacy": "Your info is never stored. Access will end after this payment.",
+        "control": "Use your crypto, review details and approve to pay.",
+        "conversion": "Automatic conversion keeps things simple."
+      },
+      "termsText": "PayPal processes this merchant's payments. By continuing, you allow Mesh to access your account and transfer crypto to PayPal to pay for your purchase.",
+      "termsLink": "Mesh's Terms",
+      "termsApply": "apply.",
+      "buttons": {
+        "continue": "Continue",
+        "continueToIntegration": "Continue to {integrationName}"
+      }
+    },
+    "preparingPaymentPage": {
+      "title": "Preparing your payment details"
+    },
+    "brokerLoadingPage": {
+      "stillWorking": "Still working..."
+    },
+    "walletConfirmationPage": {
+      "title": "Confirm this transaction in your {integrationName} app"
+    },
+    "connection": {
+      "approveConnectionPage": {
+        "title": "Approve the connection request in your wallet",
+        "buttons": {
+          "continue": "Continue to {integrationName}"
+        }
+      },
+      "oauthStatusPage": {
+        "title": "Log into your account and allow access",
+        "buttons": {
+          "continue": "Continue to {integrationName}"
+        }
+      }
+    }
+  }
+}
