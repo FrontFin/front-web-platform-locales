@@ -81,16 +81,16 @@
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
-    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre région.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge ce jeton et ce réseau.",
-    "lessThanIntegrationMinAmount": "Le montant demandé est inférieur au minimum requis par {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
     "platformNotSupported": "{{integrationName}} n'est pas pris en charge sur ce type d'appareil.",
     "sdkVersionNotSupported": "Le mécanisme TrueAuth de {{integrationName}} n'est pas pris en charge pour ce contexte SDK : {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
     "travelRuleVaspIdRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité."
+    "travelRuleAmountLimit": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "lessThanIntegrationMinAmount": "Le montant demandé est inférieur au minimum requis par {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge ce jeton et ce réseau.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
+    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre région."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "Disponible uniquement en production",
     "search": "recherche",
     "title": "Veuillez sélectionner un compte à lier",
-    "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter"
+    "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "Retrait non pris en charge",
     "integrationError": "Erreur d'intégration",
     "integrationNotAvailable": "Intégration indisponible",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "Identifiants invalides",
     "invalidField": "Informations invalides",
     "invalidFromIntegrationToken": "Authentification expirée",
