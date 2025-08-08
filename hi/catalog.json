@@ -81,16 +81,16 @@
     "select": "{{integrationName}}, {{badge}} चुनें"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
-    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
-    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
-    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
     "platformNotSupported": "{{integrationName}} इस प्रकार के उपकरण पर समर्थित नहीं है।",
     "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
-    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
     "travelRuleVaspIdRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।"
+    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
+    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
+    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।"
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "केवल उत्पादन के लिए",
     "search": "खोज",
     "title": "लिंक करने के लिए खाता चुनें",
-    "title40": "अपना खाता चुनें"
+    "title40": "अपना खाता चुनें",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} चुनें"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "निकासी समर्थित नहीं है",
     "integrationError": "एकीकरण त्रुटि",
     "integrationNotAvailable": "एकीकरण उपलब्ध नहीं है",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "अमान्य क्रेडेंशियल्स",
     "invalidField": "अमान्य जानकारी",
     "invalidFromIntegrationToken": "प्रमाणीकरण की समय सीमा समाप्त हो गई",
