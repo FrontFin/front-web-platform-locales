@@ -81,16 +81,16 @@
     "select": "选择{{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
-    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
-    "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
-    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
     "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
     "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
-    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。",
     "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持。",
-    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。"
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。"
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "仅限生产环境",
     "search": "搜索",
     "title": "选择要关联的账户",
-    "title40": "选择你的账户"
+    "title40": "选择你的账户",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "不支持提现",
     "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "账号或密码错误",
     "invalidField": "信息无效",
     "invalidFromIntegrationToken": "身份验证已过期",
