@@ -81,16 +81,16 @@
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
-    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
-    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
     "platformNotSupported": "{{integrationName}} không được hỗ trợ trên loại thiết bị này.",
     "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
     "travelRuleVaspIdRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ"
+    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "Chỉ dành cho sản xuất",
     "search": "Tìm kiếm",
     "title": "Chọn tài khoản để liên kết",
-    "title40": "Chọn tài khoản của bạn"
+    "title40": "Chọn tài khoản của bạn",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "Rút tiền không được hỗ trợ",
     "integrationError": "Lỗi tích hợp",
     "integrationNotAvailable": "Tích hợp hiện không khả dụng",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
     "invalidField": "Thông tin không hợp lệ",
     "invalidFromIntegrationToken": "Xác thực đã hết hạn",
