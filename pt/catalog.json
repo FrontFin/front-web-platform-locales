@@ -81,16 +81,16 @@
     "select": "Seleciona {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências para nenhuma das combinações de token/rede fornecidas.",
-    "integrationNotSupportedCountry": "{{integrationName}} não está disponível na sua região.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} não suporta este token e rede.",
-    "lessThanIntegrationMinAmount": "O valor solicitado está abaixo do mínimo do {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "O valor solicitado está acima do máximo do corretor {{integrationName}}.",
     "platformNotSupported": "{{integrationName}} não é compatível com este tipo de dispositivo.",
     "sdkVersionNotSupported": "O mecanismo TrueAuth de {{integrationName}} não é compatível com este Contexto do SDK: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
     "travelRuleVaspIdRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade."
+    "travelRuleAmountLimit": "{{integrationName}} não é suportado devido a restrições de elegibilidade de conformidade.",
+    "lessThanIntegrationMinAmount": "O valor solicitado está abaixo do mínimo do {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "O valor solicitado está acima do máximo do corretor {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} não suporta este token e rede.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} não suporta transferências para nenhuma das combinações de token/rede fornecidas.",
+    "integrationNotSupportedCountry": "{{integrationName}} não está disponível na sua região."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "Somente produção",
     "search": "procurar",
     "title": "Seleciona uma conta para conectar",
-    "title40": "Escolhe a tua conta"
+    "title40": "Escolhe a tua conta",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "Seleciona {{integrationName}}, {{badge}}"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "Levantamento não suportado",
     "integrationError": "Erro de Integração",
     "integrationNotAvailable": "Integração Indisponível",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "Credênciais Inválidas",
     "invalidField": "Informação Inválida",
     "invalidFromIntegrationToken": "Autenticação Expirada",
