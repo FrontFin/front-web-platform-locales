@@ -81,16 +81,16 @@
     "select": "{{integrationName}}、{{badge}}を選択する"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
-    "integrationNotSupportedCountry": "{{integrationName}}はあなたの地域では利用できません。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} はこのトークンとネットワークをサポートしていません。",
-    "lessThanIntegrationMinAmount": "要求された金額は {{integrationName}} の最小額を下回っています。",
-    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
     "platformNotSupported": "{{integrationName}}はこの種類のデバイスではサポートされていません。",
     "sdkVersionNotSupported": "{{integrationName}}のTrueAuthメカニズムは、SDKコンテキスト: {{sdkContext}}でサポートされていません。",
-    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
     "travelRuleVaspIdRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。"
+    "travelRuleAmountLimit": "{{integrationName}} は、コンプライアンス資格制限によりサポートされていません。",
+    "lessThanIntegrationMinAmount": "要求された金額は {{integrationName}} の最小額を下回っています。",
+    "moreThanIntegrationMaxAmount": "リクエストされた金額は{{integrationName}}の最大限度を超えています。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} はこのトークンとネットワークをサポートしていません。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}は提供されたトークン/ネットワークの組み合わせのいずれもサポートしていません。",
+    "integrationNotSupportedCountry": "{{integrationName}}はあなたの地域では利用できません。"
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "本番のみ",
     "search": "検索",
     "title": "リンクするアカウントを選択",
-    "title40": "アカウントを選択してください"
+    "title40": "アカウントを選択してください",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}}を選択"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "出金はサポートされていません",
     "integrationError": "統合エラー",
     "integrationNotAvailable": "連携が利用できません",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "認証情報が無効です",
     "invalidField": "無効な情報",
     "invalidFromIntegrationToken": "認証の有効期限が切れました",
