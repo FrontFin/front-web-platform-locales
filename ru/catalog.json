@@ -81,16 +81,16 @@
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
-    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашем регионе.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает этот токен и сеть.",
-    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы для {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
     "platformNotSupported": "{{integrationName}} не поддерживается на этом типе устройства.",
     "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
     "travelRuleVaspIdRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований."
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы для {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает этот токен и сеть.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашем регионе."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "Только продакшен",
     "search": "поиск",
     "title": "Выберите учетную запись для подключения",
-    "title40": "Подключить биржу или электронный кошелек"
+    "title40": "Подключить биржу или электронный кошелек",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "Вывод не поддерживается",
     "integrationError": "Ошибка интеграции",
     "integrationNotAvailable": "Интеграция недоступна",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "Недействительные учетные данные",
     "invalidField": "Недействительная информация",
     "invalidFromIntegrationToken": "Срок действия аутентификации истек",
