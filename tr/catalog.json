@@ -81,16 +81,16 @@
     "select": "{{integrationName}}, {{badge}} seçin"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
-    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
-    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
-    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
     "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
     "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
-    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
     "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir."
+    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
+    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "Sadece canlı",
     "search": "arama",
     "title": "Bağlantı yapmak için hesabınızı seçin",
-    "title40": "Hesabınızı seçin"
+    "title40": "Hesabınızı seçin",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "Çekim desteklenmiyor",
     "integrationError": "Entegrasyon hatası",
     "integrationNotAvailable": "Entegrasyon kullanılamıyor",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "Geçersiz Bilgiler",
     "invalidField": "Geçersiz bilgi",
     "invalidFromIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
