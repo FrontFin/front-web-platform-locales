@@ -60,6 +60,17 @@
     },
     "title": "Réinitialiser le mot de passe"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Continuer avec l'application Binance",
+    "descriptionDeposit": "Revenez ici pour déposer après vous être connecté avec votre application mobile Binance.",
+    "descriptionGeneral": "Revenez ici pour continuer après vous être connecté avec votre application mobile Binance.",
+    "descriptionOnRamp": "Revenez ici pour continuer après vous être connecté avec votre application mobile Binance.",
+    "descriptionPay": "Revenez ici pour payer après vous être connecté avec votre application mobile Binance.",
+    "loginWithEmailButton": "Se connecter avec Email/Téléphone",
+    "or": "ou",
+    "scanText": "Scannez avec l'appareil photo de votre téléphone sur l'application Binance pour vous connecter.",
+    "title": "Se connecter"
+  },
   "bindFacePage": {
     "completedButton": "Je l'ai complété sur mon téléphone",
     "linkText": "Si vous ne pouvez pas scanner le code QR, veuillez suivre ce <2><0>lien</0></2>.",
@@ -81,16 +92,16 @@
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
-    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre région.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge ce jeton et ce réseau.",
-    "lessThanIntegrationMinAmount": "Le montant demandé est inférieur au minimum requis par {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
     "platformNotSupported": "{{integrationName}} n'est pas pris en charge sur ce type d'appareil.",
     "sdkVersionNotSupported": "Le mécanisme TrueAuth de {{integrationName}} n'est pas pris en charge pour ce contexte SDK : {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
     "travelRuleVaspIdRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité."
+    "travelRuleAmountLimit": "{{integrationName}} n'est pas pris en charge en raison de restrictions d'éligibilité de conformité.",
+    "lessThanIntegrationMinAmount": "Le montant demandé est inférieur au minimum requis par {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Le montant demandé dépasse le maximum du courtier {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge ce jeton et ce réseau.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ne prend pas en charge les transferts pour aucune des combinaisons de jeton/réseau fournies.",
+    "integrationNotSupportedCountry": "{{integrationName}} n'est pas disponible dans votre région."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "Disponible uniquement en production",
     "search": "recherche",
     "title": "Veuillez sélectionner un compte à lier",
-    "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter"
+    "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter",
+    "emptyCatalogTitle": "Pas de portefeuilles et d'échanges disponibles",
+    "emptyCatalogBody": "Cela peut être dû à votre localisation, aux exigences de conformité ou à la compatibilité de l'appareil."
   },
   "catalogTile": {
     "select": "Sélectionnez {{integrationName}}, {{badge}}"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "Retrait non pris en charge",
     "integrationError": "Erreur d'intégration",
     "integrationNotAvailable": "Intégration indisponible",
+    "integrationNotAvailableTitle": "{{integrationName}} n'est pas disponible",
     "invalidCredentials": "Identifiants invalides",
     "invalidField": "Informations invalides",
     "invalidFromIntegrationToken": "Authentification expirée",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "Source non prise en charge",
     "symbolNotSupportedByTarget": "Destination non prise en charge",
     "symbolNotSupportedForTrading": "Trading non pris en charge",
+    "symbolNotSupportedInRegion": "Non pris en charge",
     "timeInForceNotSupported": "Paramètre « Time in Force » non pris en charge",
     "toAccountNotSupported": "Dépôt non pris en charge",
     "tooManyRequests": "Trop de requêtes",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "Le symbole n'est pas pris en charge par l'intégration.",
     "symbolNotSupportedBySource": "Le symbole à transférer n’est pas pris en charge par le portefeuille source sur le réseau sélectionné.",
     "symbolNotSupportedByTarget": "Impossible de trouver l’adresse de dépôt pour la crypto-monnaie demandée.",
+    "symbolNotSupportedInRegion": "Un symbole sélectionné n'est pas pris en charge par Coinbase en raison de restrictions régionales",
     "toAccountNotSupported": "Le compte de destination ne prend actuellement pas en charge les dépôts de crypto-monnaie.",
     "tooManyRequests": "Veuillez réessayer plus tard.",
     "transferAlreadyRequested": "Le transfert est déjà demandé.",

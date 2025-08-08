@@ -60,6 +60,17 @@
     },
     "title": "Palauta salasana"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Jatka Binance-sovelluksella",
+    "descriptionDeposit": "Palaa tänne tallettamaan yhdistettyäsi Binance mobiilisovelluksesi.",
+    "descriptionGeneral": "Palaa tänne jatkaaksesi yhdistettyäsi Binance mobiilisovelluksesi.",
+    "descriptionOnRamp": "Palaa tänne jatkaaksesi yhdistettyäsi Binance mobiilisovelluksesi.",
+    "descriptionPay": "Palaa tänne maksaaksesi yhdistettyäsi Binance mobiilisovelluksesi.",
+    "loginWithEmailButton": "Kirjaudu sisään sähköpostilla/puhelimella",
+    "or": "tai",
+    "scanText": "Skannaa puhelimesi kameralla Binance-sovelluksessa kirjautuaksesi.",
+    "title": "Sisäänkirjautuminen"
+  },
   "bindFacePage": {
     "completedButton": "Olen suorittanut tämän puhelimellani",
     "linkText": "Jos et voi skannata QR-koodia, seuraa tätä <2><0>linkkiä</0></2>.",
@@ -81,16 +92,16 @@
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
-    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
-    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
-    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
     "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
     "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
     "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
+    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "Vain tuotanto",
     "search": "haku",
     "title": "Valitse linkitettävä tili",
-    "title40": "Valitse tilisi"
+    "title40": "Valitse tilisi",
+    "emptyCatalogTitle": "Ei saatavilla olevia lompakoita ja pörssejä",
+    "emptyCatalogBody": "Tämä voi johtua sijainnistasi, säännösten noudattamisesta tai laitteen yhteensopivuudesta."
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "Nostoa ei tueta",
     "integrationError": "Integraatiovirhe",
     "integrationNotAvailable": "Integraatio ei ole saatavilla",
+    "integrationNotAvailableTitle": "{{integrationName}} ei ole saatavilla",
     "invalidCredentials": "Virheelliset kirjautumistiedot",
     "invalidField": "Virheellisiä tietoja",
     "invalidFromIntegrationToken": "Autentikointi vanhentunut",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "Lähdettä ei tueta",
     "symbolNotSupportedByTarget": "Kohdetta ei tueta",
     "symbolNotSupportedForTrading": "Kaupankäyntiä ei tueta",
+    "symbolNotSupportedInRegion": "Ei tueta",
     "timeInForceNotSupported": "Aikatoimeksiantoa ei tueta",
     "toAccountNotSupported": "Talletusta ei tueta",
     "tooManyRequests": "Liian monta pyyntöä",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "Integraatio ei tue symbolia.",
     "symbolNotSupportedBySource": "Lähdelompakko ei tue siirrettävää valuuttaa pyydetyssä verkossa.",
     "symbolNotSupportedByTarget": "Talletusosoitetta pyydetylle kolikolle ei löydy.",
+    "symbolNotSupportedInRegion": "Valittua symbolia ei tueta Coinbasessa alueellisten rajoitusten vuoksi",
     "toAccountNotSupported": "Kohdetili ei tällä hetkellä hyväksy kryptotalletuksia.",
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",

@@ -60,6 +60,17 @@
     },
     "title": "Şifreyi sıfırla"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Binance uygulaması ile devam et",
+    "descriptionDeposit": "Binance mobil uygulamanızla bağlandıktan sonra buraya geri dönerek yatırın.",
+    "descriptionGeneral": "Binance mobil uygulamanızla bağlandıktan sonra buraya geri dönerek devam edin.",
+    "descriptionOnRamp": "Binance mobil uygulamanızla bağlandıktan sonra buraya geri dönerek devam edin.",
+    "descriptionPay": "Binance mobil uygulamanızla bağlandıktan sonra buraya geri dönerek ödeyin.",
+    "loginWithEmailButton": "E-posta/Telefon ile giriş yap",
+    "or": "ya da",
+    "scanText": "Giriş yapmak için Binance uygulamasında telefon kamerası ile tarayın.",
+    "title": "Giriş yap"
+  },
   "bindFacePage": {
     "completedButton": "Bunu telefonumda tamamladım",
     "linkText": "QR kodunu tarayamazsanız, lütfen bu <2><0>bağlantıyı</0></2> takip edin.",
@@ -81,16 +92,16 @@
     "select": "{{integrationName}}, {{badge}} seçin"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
-    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
-    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
-    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
     "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
     "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
-    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
     "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir."
+    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
+    "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "Sadece canlı",
     "search": "arama",
     "title": "Bağlantı yapmak için hesabınızı seçin",
-    "title40": "Hesabınızı seçin"
+    "title40": "Hesabınızı seçin",
+    "emptyCatalogTitle": "Mevcut cüzdanlar ve borsalar yok",
+    "emptyCatalogBody": "Bu, konumunuz, uyumluluk gereksinimleri veya cihaz uyumluluğu nedeniyle olabilir."
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "Çekim desteklenmiyor",
     "integrationError": "Entegrasyon hatası",
     "integrationNotAvailable": "Entegrasyon kullanılamıyor",
+    "integrationNotAvailableTitle": "{{integrationName}} mevcut değil",
     "invalidCredentials": "Geçersiz Bilgiler",
     "invalidField": "Geçersiz bilgi",
     "invalidFromIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "Kaynak desteklenmiyor",
     "symbolNotSupportedByTarget": "Hedef Desteklenmiyor",
     "symbolNotSupportedForTrading": "Alım satım desteklenmiyor",
+    "symbolNotSupportedInRegion": "Desteklenmiyor",
     "timeInForceNotSupported": "Geçerlilik süresi desteklenmiyor",
     "toAccountNotSupported": "Para yatırma desteklenmiyor",
     "tooManyRequests": "Çok fazla istek",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "Sembol, entegrasyon tarafından desteklenmiyor.",
     "symbolNotSupportedBySource": "Transfer edilecek sembol, kaynak cüzdan tarafından istenen ağ üzerinde desteklenmiyor.",
     "symbolNotSupportedByTarget": "İstenen coin için para yatırma adresi bulunamadı.",
+    "symbolNotSupportedInRegion": "Seçilen sembol, bölge kısıtlamaları nedeniyle Coinbase tarafından desteklenmemektedir.",
     "toAccountNotSupported": "Hedef hesap şu anda kripto para yatırımlarını desteklemiyor.",
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",

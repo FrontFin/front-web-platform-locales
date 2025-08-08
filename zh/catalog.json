@@ -60,6 +60,17 @@
     },
     "title": "重置密码"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "继续使用 Binance 应用",
+    "descriptionDeposit": "连接 Binance 移动应用后，返回此处进行存款。",
+    "descriptionGeneral": "连接 Binance 移动应用后，返回此处继续。",
+    "descriptionOnRamp": "连接 Binance 移动应用后，返回此处继续。",
+    "descriptionPay": "连接 Binance 移动应用后，返回此处付款。",
+    "loginWithEmailButton": "使用邮箱/手机登录",
+    "or": "或",
+    "scanText": "在 Binance 应用上用手机相机扫描以登录。",
+    "title": "登录"
+  },
   "bindFacePage": {
     "completedButton": "我已在手机上完成此项",
     "linkText": "若您无法扫描二维码，请点击此<2><0>链接</0></2>。",
@@ -81,16 +92,16 @@
     "select": "选择{{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
-    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
-    "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
-    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
     "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
     "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
-    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。",
     "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持。",
-    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。"
+    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
+    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。"
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "仅限生产环境",
     "search": "搜索",
     "title": "选择要关联的账户",
-    "title40": "选择你的账户"
+    "title40": "选择你的账户",
+    "emptyCatalogTitle": "暂无可用钱包和交易所",
+    "emptyCatalogBody": "这可能是由于您的所在地、合规要求或设备兼容性的问题。"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "不支持提现",
     "integrationError": "钱包集成错误",
     "integrationNotAvailable": "钱包集成暂不可用",
+    "integrationNotAvailableTitle": "{{integrationName}} 不可用",
     "invalidCredentials": "账号或密码错误",
     "invalidField": "信息无效",
     "invalidFromIntegrationToken": "身份验证已过期",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "不支持该资金来源",
     "symbolNotSupportedByTarget": "不支持目标账户",
     "symbolNotSupportedForTrading": "不支持该交易",
+    "symbolNotSupportedInRegion": "不支持",
     "timeInForceNotSupported": "不支持该有效时间类型",
     "toAccountNotSupported": "不支持存款",
     "tooManyRequests": "操作请求过多",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "集成不支持此代币符号。",
     "symbolNotSupportedBySource": "源钱包不支持您在所要求的网络上转移的代币符号。",
     "symbolNotSupportedByTarget": "无法找到所请求币种的充值地址。",
+    "symbolNotSupportedInRegion": "由于地区限制，Coinbase 不支持所选符号",
     "toAccountNotSupported": "目标账户目前不支持加密货币入金。",
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",

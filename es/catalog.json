@@ -60,6 +60,17 @@
     },
     "title": "Restablecer contraseña"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Continuar con la aplicación de Binance",
+    "descriptionDeposit": "Regrese aquí para depositar después de conectarse con su aplicación móvil de Binance.",
+    "descriptionGeneral": "Regrese aquí para continuar después de conectarse con su aplicación móvil de Binance.",
+    "descriptionOnRamp": "Regrese aquí para continuar después de conectarse con su aplicación móvil de Binance.",
+    "descriptionPay": "Regrese aquí para pagar después de conectarse con su aplicación móvil de Binance.",
+    "loginWithEmailButton": "Iniciar sesión con correo electrónico/teléfono",
+    "or": "o",
+    "scanText": "Escanea con la cámara de tu teléfono en la aplicación de Binance para iniciar sesión.",
+    "title": "Iniciar sesión"
+  },
   "bindFacePage": {
     "completedButton": "He completado esto desde mi teléfono",
     "linkText": "Si no puedes escanear el código QR, por favor sigue este <2><0>enlace</0></2>.",
@@ -81,16 +92,16 @@
     "select": "Selecciona {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} no admite transferencias para ninguna de las combinaciones de token/red proporcionadas.",
-    "integrationNotSupportedCountry": "{{integrationName}} no está disponible en su región.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} no admite este token y red.",
-    "lessThanIntegrationMinAmount": "La cantidad solicitada está por debajo del mínimo de {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "El monto solicitado supera el máximo del corredor de {{integrationName}}.",
     "platformNotSupported": "{{integrationName}} no es compatible con este tipo de dispositivo.",
     "sdkVersionNotSupported": "El mecanismo TrueAuth de {{integrationName}} no es compatible con este SDK Context: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
     "travelRuleVaspIdRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento."
+    "travelRuleAmountLimit": "{{integrationName}} no admite esta transferencia debido a restricciones de elegibilidad de cumplimiento.",
+    "lessThanIntegrationMinAmount": "La cantidad solicitada está por debajo del mínimo de {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "El monto solicitado supera el máximo del corredor de {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} no admite este token y red.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} no admite transferencias para ninguna de las combinaciones de token/red proporcionadas.",
+    "integrationNotSupportedCountry": "{{integrationName}} no está disponible en su región."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "Sólo producción",
     "search": "buscar",
     "title": "Selecciona una cuenta para vincular",
-    "title40": "Conectar a una plataforma o wallet"
+    "title40": "Conectar a una plataforma o wallet",
+    "emptyCatalogTitle": "No hay wallets y exchanges disponibles",
+    "emptyCatalogBody": "Esto podría deberse a su ubicación, requisitos de cumplimiento, o compatibilidad del dispositivo."
   },
   "catalogTile": {
     "select": "Selecciona {{integrationName}}, {{badge}}"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "Retiro no soportado",
     "integrationError": "Error de integración",
     "integrationNotAvailable": "Integración no disponible",
+    "integrationNotAvailableTitle": "{{integrationName}} no está disponible",
     "invalidCredentials": "Credenciales inválidas",
     "invalidField": "Información inválida",
     "invalidFromIntegrationToken": "Autenticación Expirada",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "Fuente no soportada",
     "symbolNotSupportedByTarget": "Destino no soportado",
     "symbolNotSupportedForTrading": "Operación no soportada",
+    "symbolNotSupportedInRegion": "No soportado",
     "timeInForceNotSupported": "Tiempo en vigencia no soportado",
     "toAccountNotSupported": "Depósito no soportado",
     "tooManyRequests": "Demasiadas solicitudes",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "El símbolo no es compatible con la integración.",
     "symbolNotSupportedBySource": "El símbolo para transferir no es compatible con la cartera de origen en la red solicitada.",
     "symbolNotSupportedByTarget": "No se pudo encontrar la dirección de depósito para la moneda solicitada.",
+    "symbolNotSupportedInRegion": "Un símbolo seleccionado no es compatible con Coinbase debido a restricciones de región",
     "toAccountNotSupported": "La cuenta de destino no admite actualmente depósitos de criptomonedas.",
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
     "transferAlreadyRequested": "La transferencia ya fue solicitada.",

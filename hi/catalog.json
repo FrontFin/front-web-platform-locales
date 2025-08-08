@@ -60,6 +60,17 @@
     },
     "title": "पासवर्ड रीसेट करें"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Binance ऐप के साथ जारी रखें",
+    "descriptionDeposit": "अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद यहां जमा करने के लिए लौटें।",
+    "descriptionGeneral": "अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद यहां जारी रखने के लिए लौटें।",
+    "descriptionOnRamp": "अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद यहां जारी रखने के लिए लौटें।",
+    "descriptionPay": "अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद यहां भुगतान करने के लिए लौटें।",
+    "loginWithEmailButton": "ईमेल/फ़ोन से लॉगिन करें",
+    "or": "या",
+    "scanText": "लॉगिन के लिए Binance ऐप पर अपने फ़ोन कैमरे से स्कैन करें।",
+    "title": "लॉग इन करें"
+  },
   "bindFacePage": {
     "completedButton": "मैंने इसे अपने फ़ोन पर पूरा कर लिया है",
     "linkText": "यदि आप QR कोड स्कैन करने में असमर्थ हैं, तो कृपया इस <2><0>लिंक</0></2> का अनुसरण करें।",
@@ -81,16 +92,16 @@
     "select": "{{integrationName}}, {{badge}} चुनें"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
-    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
-    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
-    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
     "platformNotSupported": "{{integrationName}} इस प्रकार के उपकरण पर समर्थित नहीं है।",
     "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
-    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
     "travelRuleVaspIdRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।"
+    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
+    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
+    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।"
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "केवल उत्पादन के लिए",
     "search": "खोज",
     "title": "लिंक करने के लिए खाता चुनें",
-    "title40": "अपना खाता चुनें"
+    "title40": "अपना खाता चुनें",
+    "emptyCatalogTitle": "कोई उपलब्ध वालेट और एक्सचेंज नहीं है",
+    "emptyCatalogBody": "यह आपके स्थान, अनुपालन आवश्यकताओं, या डिवाइस संगतता के कारण हो सकता है।"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} चुनें"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "निकासी समर्थित नहीं है",
     "integrationError": "एकीकरण त्रुटि",
     "integrationNotAvailable": "एकीकरण उपलब्ध नहीं है",
+    "integrationNotAvailableTitle": "{{integrationName}} उपलब्ध नहीं है",
     "invalidCredentials": "अमान्य क्रेडेंशियल्स",
     "invalidField": "अमान्य जानकारी",
     "invalidFromIntegrationToken": "प्रमाणीकरण की समय सीमा समाप्त हो गई",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "स्रोत समर्थित नहीं है",
     "symbolNotSupportedByTarget": "गंतव्य समर्थित नहीं है",
     "symbolNotSupportedForTrading": "ट्रेडिंग समर्थित नहीं है",
+    "symbolNotSupportedInRegion": "समर्थित नहीं है",
     "timeInForceNotSupported": "टाइम इन फोर्स समर्थित नहीं है",
     "toAccountNotSupported": "जमा समर्थित नहीं है",
     "tooManyRequests": "बहुत अधिक अनुरोध",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "चिह्न को एकीकरण द्वारा समर्थित नहीं है।",
     "symbolNotSupportedBySource": "सूत्र वॉलेट द्वारा अनुरोधित नेटवर्क पर स्थानांतरण के लिए चिह्न समर्थित नहीं है।",
     "symbolNotSupportedByTarget": "अनुरोधित सिक्के के लिए जमा पता नहीं मिल सका।",
+    "symbolNotSupportedInRegion": "चयनित प्रतीक को क्षेत्रीय प्रतिबंधों के कारण कॉइनबेस द्वारा समर्थित नहीं किया गया है",
     "toAccountNotSupported": "गंतव्य खाता वर्तमान में क्रिप्टो जमा नहीं करता है।",
     "tooManyRequests": "कृपया बाद में पुनः प्रयास करें।",
     "transferAlreadyRequested": "स्थानांतरण पहले से अनुरोधित है।",

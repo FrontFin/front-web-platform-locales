@@ -60,6 +60,17 @@
     },
     "title": "Đặt lại mật khẩu"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Tiếp tục với ứng dụng Binance",
+    "descriptionDeposit": "Quay lại đây để gửi tiền sau khi kết nối với ứng dụng di động Binance của bạn.",
+    "descriptionGeneral": "Quay lại đây để tiếp tục sau khi kết nối với ứng dụng di động Binance của bạn.",
+    "descriptionOnRamp": "Quay lại đây để tiếp tục sau khi kết nối với ứng dụng di động Binance của bạn.",
+    "descriptionPay": "Quay lại đây để thanh toán sau khi kết nối với ứng dụng di động Binance của bạn.",
+    "loginWithEmailButton": "Đăng nhập bằng Email/Số điện thoại",
+    "or": "hoặc",
+    "scanText": "Quét bằng camera điện thoại trên ứng dụng Binance để đăng nhập.",
+    "title": "Đăng nhập"
+  },
   "bindFacePage": {
     "completedButton": "Tôi đã hoàn thành trên điện thoại của mình",
     "linkText": "Nếu bạn không thể quét mã QR, vui lòng làm theo <2><0>liên kết</0></2> này.",
@@ -81,16 +92,16 @@
     "select": "Chọn {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
-    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
-    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
     "platformNotSupported": "{{integrationName}} không được hỗ trợ trên loại thiết bị này.",
     "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
     "travelRuleVaspIdRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ"
+    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
+    "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ chuyển cho bất kỳ sự kết hợp token/mạng nào được cung cấp.",
+    "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "Chỉ dành cho sản xuất",
     "search": "Tìm kiếm",
     "title": "Chọn tài khoản để liên kết",
-    "title40": "Chọn tài khoản của bạn"
+    "title40": "Chọn tài khoản của bạn",
+    "emptyCatalogTitle": "Không có ví và sàn giao dịch nào khả dụng",
+    "emptyCatalogBody": "Điều này có thể là do vị trí của bạn, yêu cầu tuân thủ hoặc khả năng tương thích của thiết bị."
   },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "Rút tiền không được hỗ trợ",
     "integrationError": "Lỗi tích hợp",
     "integrationNotAvailable": "Tích hợp hiện không khả dụng",
+    "integrationNotAvailableTitle": "{{integrationName}} không khả dụng",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ",
     "invalidField": "Thông tin không hợp lệ",
     "invalidFromIntegrationToken": "Xác thực đã hết hạn",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "Nguồn không được hỗ trợ",
     "symbolNotSupportedByTarget": "Điểm nhận không được hỗ trợ",
     "symbolNotSupportedForTrading": "Giao dịch không được hỗ trợ",
+    "symbolNotSupportedInRegion": "Không được hỗ trợ",
     "timeInForceNotSupported": "Thời gian hiệu lực không được hỗ trợ",
     "toAccountNotSupported": "Nạp tiền không được hỗ trợ",
     "tooManyRequests": "Quá nhiều yêu cầu",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "Loại tiền mã hóa không được tích hợp hỗ trợ.",
     "symbolNotSupportedBySource": "Loại tiền mã hóa cần chuyển không được ví nguồn hỗ trợ trên mạng yêu cầu.",
     "symbolNotSupportedByTarget": "Không thể tìm thấy địa chỉ gửi tiền cho đồng tiền được yêu cầu.",
+    "symbolNotSupportedInRegion": "Biểu tượng được chọn không được Coinbase hỗ trợ do hạn chế vùng.",
     "toAccountNotSupported": "Tài khoản đích hiện không hỗ trợ gửi tiền điện tử.",
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Giao dịch chuyển tiền đã được yêu cầu trước đó.",
