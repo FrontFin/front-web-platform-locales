@@ -81,16 +81,16 @@
     "select": "{{integrationName}}, {{badge}} auswählen"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
-    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrer Region nicht verfügbar.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt dieses Token und Netzwerk nicht.",
-    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Mindestbetrag von {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
     "platformNotSupported": "{{integrationName}} wird auf diesem Gerätetyp nicht unterstützt.",
     "sdkVersionNotSupported": "{{integrationName}}s TrueAuth-Mechanismus wird für diesen SDK-Kontext: {{sdkContext}} nicht unterstützt.",
-    "travelRuleAmountLimit": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
     "travelRuleVaspIdRequired": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt."
+    "travelRuleAmountLimit": "{{integrationName}} wird aufgrund von Eignungsbeschränkungen zur Einhaltung gesetzlicher Vorschriften nicht unterstützt.",
+    "lessThanIntegrationMinAmount": "Der angeforderte Betrag liegt unter dem Mindestbetrag von {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Der angeforderte Betrag liegt über dem Maximum des {{integrationName}} Brokers.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} unterstützt dieses Token und Netzwerk nicht.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} unterstützt keine Transfers für eine der angegebenen Token/Netzwerk-Kombinationen.",
+    "integrationNotSupportedCountry": "{{integrationName}} ist in Ihrer Region nicht verfügbar."
   },
   "catalogList": {
     "badges": {
@@ -104,7 +104,9 @@
     "prodOnly": "Nur Produktion",
     "search": "Suche",
     "title": "Konto zum Verknüpfen auswählen",
-    "title40": "Wähle Dein Konto"
+    "title40": "Wähle Dein Konto",
+    "emptyCatalogTitle": "No available wallets and exchanges",
+    "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility."
   },
   "catalogTile": {
     "select": "Wähle {{integrationName}}, {{badge}}"
@@ -367,6 +369,7 @@
     "fromAccountNotSupported": "Abhebung nicht unterstützt",
     "integrationError": "Integrationsfehler",
     "integrationNotAvailable": "Integration nicht verfügbar",
+    "integrationNotAvailableTitle": "{{integrationName}} isn't available",
     "invalidCredentials": "Ungültige Anmeldedaten",
     "invalidField": "Ungültige Informationen",
     "invalidFromIntegrationToken": "Authentifizierung abgelaufen",
