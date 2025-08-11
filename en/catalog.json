@@ -1122,50 +1122,48 @@
     "title": "Select asset to transfer"
   },
   "paypal": {
-    "previewPage": {
-      "howItWorks": "How it works",
-      "payMerchant": "Pay {{merchantName}}",
-      "fromIntegration": "From {{integrationName}}",
-      "payWith": "Pay with",
-      "send": "Send",
-      "order": "Order",
-      "networkFee": "Network fee",
-      "integrationFee": "{{integrationName}} fee",
-      "transactionBuffer": "Transaction buffer",
-      "bufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{currency}} in your wallet.",
-      "total": "Total",
-      "feesIncluded": "{{amount}} fees included",
-      "bufferAndFeesIncluded": "{{bufferAmount}} Buffer + {{feeAmount}} fees included",
-      "unusedBufferKeep": "You'll keep any unused buffer.",
-      "refundNote": "Refunds will be issued in {{currency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
-      "pay": "Pay",
-      "feeChangedWarning": "The network fee has changed. Please check your total and confirm.",
-      "pyusdNote": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain.",
-      "ok": "OK"
+    "exitPage": {
+      "title": "Are you sure you want to exit?",
+      "description": "Your progress will be lost.",
+      "buttons": {
+        "continue": "Continue With Payment",
+        "exit": "Exit"
+      }
     },
     "errorPage": {
       "title": "Something went wrong"
     },
-    "sessionInfo": {
-      "text": "If you have questions, please report this with session ID {{sessionId}}."
-    },
-    "exitPage": {
-      "title": "Are you sure you want to exit?",
-      "subtitle": "Your progress will be lost.",
-      "continueWithPayment": "Continue With Payment",
-      "exit": "Exit"
-    },
-    "doneTransferPage": {
-      "title": "Payment on its way",
-      "description": "You just paid {{amount}}. You'll get a confirmation from {{clientName}} when it's complete.",
-      "seeWhatHappened": "See what happened",
-      "transfersNote": "Transfers are not complete until they have received enough network confirmations.",
-      "done": "Done"
-    },
-    "doneTransferDetailsPage": {
-      "title": "What happened",
-      "transfersNote": "Transfers are not complete until they have received enough network confirmations.",
-      "goBack": "Go Back"
+    "previewPage": {
+      "title": "Pay {merchantName}",
+      "from": "From {integrationName}",
+      "howItWorks": "How it works",
+      "labels": {
+        "payWith": "Pay with",
+        "send": "Send",
+        "order": "Order",
+        "total": "Total",
+        "purchase": "{merchantName} purchase",
+        "networkFee": "Estimated network fee",
+        "conversionFee": "{integrationName} conversion fee",
+        "transactionBuffer": "Transaction buffer"
+      },
+      "hints": {
+        "networkFee": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
+        "conversionFee": "This fee {integrationName} collects to convert.",
+        "transactionBuffer": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {settlementCurrency} in your wallet."
+      },
+      "fees": {
+        "withBuffer": "{transactionBuffer} Buffer + {totalFees} fees included",
+        "withoutBuffer": "{totalFees} fees included",
+        "unusedBuffer": "You'll keep any unused buffer."
+      },
+      "disclaimer": "Refunds will be issued in {settlementCurrency} only. The exchange rate and fees change frequently. All crypto purchases are final.",
+      "pyusdNotice": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain.",
+      "feeChangedWarning": "The network fee has changed. Please check your total and continue",
+      "buttons": {
+        "pay": "Pay",
+        "ok": "OK"
+      }
     },
     "transferErrorPage": {
       "insufficientFunds": {
@@ -1173,16 +1171,18 @@
         "subtitle": "Your balance is too low to complete this purchase."
       },
       "connection": {
-        "title": "We're unable to process this payment",
-        "subtitle": ""
+        "subtitle": "Connection error occurred. Please try again."
+      },
+      "belowNetworkMinimum": {
+        "subtitle": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase."
+      },
+      "requestDenied": {
+        "title": "Request denied",
+        "subtitle": "The request was denied by your financial institution."
       },
       "payment": {
         "title": "We're unable to process this payment",
-        "subtitle": "Your funds will stay in your {{integrationName}} account."
-      },
-      "belowNetworkMinimum": {
-        "title": "We're unable to process this payment",
-        "subtitle": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase."
+        "subtitle": "Your funds will stay in your {integrationName} account."
       },
       "buttons": {
         "chooseDifferent": "Choose a Different Account",
@@ -1190,48 +1190,91 @@
         "tryAgain": "Try Again"
       }
     },
-    "initialSteps": {
-      "title": "Log in to review payment details",
-      "privacyRule": "Your info is never stored. Access will end after this payment.",
-      "cryptoRule": "Use your crypto, review details and approve to pay.",
-      "conversionRule": "Automatic conversion keeps things simple.",
-      "termsText": "PayPal processes this merchant's payments. By continuing, you allow Mesh to access your account and transfer crypto to PayPal to pay for your purchase.",
-      "meshTerms": "Mesh's Terms",
-      "termsApply": "apply.",
-      "continue": "Continue",
-      "continueToIntegration": "Continue to {{integrationName}}"
+    "doneTransferPage": {
+      "title": "Payment on its way",
+      "description": "You just paid {amount}. You'll get a confirmation from {clientName} when it's complete.",
+      "disclaimer": "Transfers are not complete until they have received enough network confirmations.",
+      "buttons": {
+        "seeDetails": "See what happened",
+        "done": "Done"
+      }
     },
-    "connectionPage": {
-      "continueToIntegration": "Continue to {{integrationName}}",
-      "approveConnection": "Approve the connection request in your wallet"
+    "doneTransferDetailsPage": {
+      "title": "What happened"
     },
-    "topupPage": {
+    "topupNeededPage": {
       "title": "Top-up needed",
-      "description": "You need more {{targetSymbol}} to complete this purchase. Convert {{convertedSymbols}} to {{targetSymbol}}.",
-      "currentBalance": "Current balance",
-      "required": "Required",
-      "balanceNote": "If you do not complete the payment, your {{targetSymbol}} balance will remain in your {{integrationName}} account.",
-      "viewTopUp": "View Top-Up",
-      "cancel": "Cancel"
+      "descriptions": {
+        "singleAsset": "The value of the converted {convertedSymbol} to {targetSymbol} is lower than expected due to price and/or network fees fluctuations.",
+        "multipleAssets": "The value of the assets converted to {targetSymbol} is lower than expected due to price and/or network fees fluctuations."
+      },
+      "labels": {
+        "currentBalance": "Current balance",
+        "required": "Required"
+      },
+      "disclaimer": "If you do not complete the payment, your {targetSymbol} balance will remain in your {integrationName} account.",
+      "buttons": {
+        "viewTopUp": "View Top-Up",
+        "cancel": "Cancel"
+      }
     },
-    "loadingScreen": {
-      "stillWorking": "Still working...",
-      "paymentTitle": "Processing payment",
-      "mayTakeFewSeconds": "This may take a few seconds",
-      "tryAgain": "Try Again"
+    "infoScreenUI": {
+      "title": "How it works",
+      "rules": {
+        "rule1": "Connect your account",
+        "rule2": "No transaction fees",
+        "rule3": "Crypto purchases are final"
+      },
+      "terms": {
+        "linkText": "Terms and conditions",
+        "agreement": "By continuing, you agree to {integrationName}'s {termsLink}."
+      },
+      "buttons": {
+        "continue": "Continue"
+      }
     },
-    "fundingSteps": {
-      "error": "An error has occurred. Please try again",
-      "conversion": "Conversion of {{amount}} {{symbol}} to {{currency}}",
-      "deposit": "Deposit of {{amount}} from {{paymentMethod}}",
-      "purchase": "Purchase of {{amount}} {{symbol}}",
-      "approval": "Approval of your transfer out of {{integrationName}}",
-      "transfer": "Transfer {{symbol}} for your purchase"
+    "preparingPaymentPage": {
+      "title": "Preparing your payment"
     },
-    "common": {
-      "poweredBy": "Powered by",
-      "payWithCrypto": "Pay with crypto",
-      "close": "Close"
+    "brokerLoadingPage": {
+      "title": "Still working..."
+    },
+    "walletConfirmationPage": {
+      "title": "Approve in {integrationName}"
+    },
+    "connection": {
+      "approveConnectionPage": {
+        "title": "Approve this connection"
+      },
+      "oauthStatusPage": {
+        "title": "Log into your account and allow access"
+      },
+      "buttons": {
+        "continueToIntegration": "Continue to {integrationName}"
+      }
+    },
+    "fundingOptions": {
+      "paymentMethod": {
+        "title": "Linked payment method(s)",
+        "instantCashAvailable": "Instant cash available: {amount}",
+        "paymentTypes": {
+          "card": "Card",
+          "bankAccount": "Bank account",
+          "digitalWallet": "Wallet"
+        }
+      },
+      "conversion": {
+        "available": "{amount} available"
+      },
+      "existingBalance": {
+        "available": "{amount} available"
+      },
+      "buyingPower": {
+        "available": "{amount} available"
+      },
+      "common": {
+        "change": "Change"
+      }
     }
   },
   "previewPageUI": {
