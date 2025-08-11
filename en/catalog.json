@@ -1134,30 +1134,30 @@
       "title": "Something went wrong"
     },
     "previewPage": {
-      "title": "Pay {merchantName}",
-      "from": "From {integrationName}",
+      "title": "Pay {{merchantName}}",
+      "from": "From {{integrationName}}",
       "howItWorks": "How it works",
       "labels": {
         "payWith": "Pay with",
         "send": "Send",
         "order": "Order",
         "total": "Total",
-        "purchase": "{merchantName} purchase",
+        "purchase": "{{merchantName}} purchase",
         "networkFee": "Estimated network fee",
-        "conversionFee": "{integrationName} conversion fee",
+        "conversionFee": "{{integrationName}} conversion fee",
         "transactionBuffer": "Transaction buffer"
       },
       "hints": {
         "networkFee": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
-        "conversionFee": "This fee {integrationName} collects to convert.",
-        "transactionBuffer": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {settlementCurrency} in your wallet."
+        "conversionFee": "This fee {{integrationName}} collects to convert.",
+        "transactionBuffer": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet."
       },
       "fees": {
-        "withBuffer": "{transactionBuffer} Buffer + {totalFees} fees included",
-        "withoutBuffer": "{totalFees} fees included",
+        "withBuffer": "{{transactionBuffer}} Buffer + {{totalFees}} fees included",
+        "withoutBuffer": "{{totalFees}} fees included",
         "unusedBuffer": "You'll keep any unused buffer."
       },
-      "disclaimer": "Refunds will be issued in {settlementCurrency} only. The exchange rate and fees change frequently. All crypto purchases are final.",
+      "disclaimer": "Refunds will be issued in {{settlementCurrency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
       "pyusdNotice": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain.",
       "feeChangedWarning": "The network fee has changed. Please check your total and continue",
       "buttons": {
@@ -1182,7 +1182,7 @@
       },
       "payment": {
         "title": "We're unable to process this payment",
-        "subtitle": "Your funds will stay in your {integrationName} account."
+        "subtitle": "Your funds will stay in your {{integrationName}} account."
       },
       "buttons": {
         "chooseDifferent": "Choose a Different Account",
@@ -1192,7 +1192,7 @@
     },
     "doneTransferPage": {
       "title": "Payment on its way",
-      "description": "You just paid {amount}. You'll get a confirmation from {clientName} when it's complete.",
+      "description": "You just paid {{amount}}. You'll get a confirmation from {{clientName}} when it's complete.",
       "disclaimer": "Transfers are not complete until they have received enough network confirmations.",
       "buttons": {
         "seeDetails": "See what happened",
@@ -1205,14 +1205,14 @@
     "topupNeededPage": {
       "title": "Top-up needed",
       "descriptions": {
-        "singleAsset": "The value of the converted {convertedSymbol} to {targetSymbol} is lower than expected due to price and/or network fees fluctuations.",
-        "multipleAssets": "The value of the assets converted to {targetSymbol} is lower than expected due to price and/or network fees fluctuations."
+        "singleAsset": "The value of the converted {{convertedSymbol}} to {{targetSymbol}} is lower than expected due to price and/or network fees fluctuations.",
+        "multipleAssets": "The value of the assets converted to {{targetSymbol}} is lower than expected due to price and/or network fees fluctuations."
       },
       "labels": {
         "currentBalance": "Current balance",
         "required": "Required"
       },
-      "disclaimer": "If you do not complete the payment, your {targetSymbol} balance will remain in your {integrationName} account.",
+      "disclaimer": "If you do not complete the payment, your {{targetSymbol}} balance will remain in your {{integrationName}} account.",
       "buttons": {
         "viewTopUp": "View Top-Up",
         "cancel": "Cancel"
@@ -1227,7 +1227,7 @@
       },
       "terms": {
         "linkText": "Terms and conditions",
-        "agreement": "By continuing, you agree to {integrationName}'s {termsLink}."
+        "agreement": "By continuing, you agree to {{integrationName}}'s {{termsLink}}."
       },
       "buttons": {
         "continue": "Continue"
@@ -1240,7 +1240,7 @@
       "title": "Still working..."
     },
     "walletConfirmationPage": {
-      "title": "Approve in {integrationName}"
+      "title": "Approve in {{integrationName}}"
     },
     "connection": {
       "approveConnectionPage": {
@@ -1250,13 +1250,13 @@
         "title": "Log into your account and allow access"
       },
       "buttons": {
-        "continueToIntegration": "Continue to {integrationName}"
+        "continueToIntegration": "Continue to {{integrationName}}"
       }
     },
     "fundingOptions": {
       "paymentMethod": {
         "title": "Linked payment method(s)",
-        "instantCashAvailable": "Instant cash available: {amount}",
+        "instantCashAvailable": "Instant cash available: {{amount}}",
         "paymentTypes": {
           "card": "Card",
           "bankAccount": "Bank account",
@@ -1264,13 +1264,13 @@
         }
       },
       "conversion": {
-        "available": "{amount} available"
+        "available": "{{amount}} available"
       },
       "existingBalance": {
-        "available": "{amount} available"
+        "available": "{{amount}} available"
       },
       "buyingPower": {
-        "available": "{amount} available"
+        "available": "{{amount}} available"
       },
       "common": {
         "change": "Change"
