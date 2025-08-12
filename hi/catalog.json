@@ -1127,8 +1127,116 @@
     "title": "स्थानांतरण के लिए संपत्ति चुनें"
   },
   "paypal": {
+    "common": {
+      "cancel": "रद्द करें",
+      "done": "हो गया",
+      "continue": "जारी रखें",
+      "save": "सहेजें",
+      "close": "बंद करें",
+      "tryAgain": "फिर से प्रयास करें",
+      "ok": "OK",
+      "pay": "Pay",
+      "total": "कुल",
+      "order": "Order",
+      "change": "बदलें",
+      "stillWorking": "अभी भी काम कर रहा है..."
+    },
+    "topupPage": {
+      "title": "रिचार्ज की आवश्यकता",
+      "currentBalance": "वर्तमान शेष राशि",
+      "required": "आवश्यक",
+      "viewTopUp": "टॉप-अप देखें",
+      "disclaimer": "यदि आप भुगतान पूरा नहीं करते हैं, तो आपका {{targetSymbol}} शेष आपके {{integrationName}} खाते में रहेगा।",
+      "conversionDescription": "मूल्य और/या नेटवर्क शुल्क में उतार-चढ़ाव के कारण {{convertedSymbol}} का {{targetSymbol}} में परिवर्तित मूल्य अपेक्षित से कम है।",
+      "assetsDescription": "मूल्य और/या नेटवर्क शुल्क में उतार-चढ़ाव के कारण संपत्तियों का {{targetSymbol}} के लिए परिवर्तित मूल्य अपेक्षित से कम है।"
+    },
+    "doneTransferPage": {
+      "title": "भुगतान प्रारंभ हो गया है",
+      "description": "आपने अभी {{amount}} का भुगतान किया है। जब यह पूरा हो जाएगा, {{clientName}} से पुष्टि प्राप्त होगी।",
+      "seeDetails": "देखें क्या हुआ",
+      "disclaimer": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।"
+    },
+    "exitPage": {
+      "title": "क्या आप सुनिश्चित हैं कि आप बाहर जाना चाहते हैं?",
+      "subtitle": "आपकी प्रगति खो जाएगी।",
+      "continuePayment": "भुगतान जारी रखें",
+      "exit": "निकास करें"
+    },
+    "infoScreen": {
+      "title": "Log in to review payment details",
+      "rule1": "Your info is never stored. Access will end after this payment.",
+      "rule2": "Use your crypto, review details and approve to pay.",
+      "rule3": "स्वचालित रूपांतरण चीजों को सरल बनाए रखता है।"
+    },
+    "transferErrorPage": {
+      "insufficientFunds": "अपर्याप्त कोष",
+      "requestDenied": "अनुरोध अस्वीकृत",
+      "defaultTitle": "We're unable to process this payment",
+      "insufficientFundsMessage": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
+      "belowNetworkMinimumMessage": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase.",
+      "requestDeniedMessage": "It looks like you denied the transaction. If that was a mistake, try again and approve the request in your wallet.",
+      "defaultMessage": "Your funds will stay in your {{integrationName}} account.",
+      "chooseDifferentAccount": "Choose a Different Account"
+    },
     "previewPage": {
-      "howItWorks": "यह कैसे काम करता है"
+      "title": "Pay {{merchantName}}",
+      "from": "From {{integrationName}}",
+      "payWith": "इसके साथ भुगतान करें",
+      "send": "भेजें",
+      "merchantPurchase": "{{merchantName}} purchase",
+      "estimatedNetworkFee": "Estimated network fee",
+      "conversionFee": "{{integrationName}} conversion fee",
+      "transactionBuffer": "Transaction buffer",
+      "feesIncluded": "{{amount}} fees included",
+      "bufferAndFees": "{{bufferAmount}} Buffer + {{feesAmount}} fees included",
+      "bufferDisclaimer": "You'll keep any unused buffer.",
+      "howItWorks": "यह कैसे काम करता है",
+      "refundDisclaimer": "Refunds will be issued in {{settlementCurrency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
+      "feeChangedNotice": "The network fee has changed. Please check your total and confirm.",
+      "networkFeeHint": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
+      "conversionFeeHint": "This fee {{integrationName}} collects to convert.",
+      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet.",
+      "pyusdDisclaimer": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain."
+    },
+    "connectionPage": {
+      "approveConnection": "Approve the connection request in your wallet",
+      "oauthLogin": "अपने खाते में लॉगिन करें और अनुमति दें",
+      "continueTo": "{{integrationName}} पर जारी रखें"
+    },
+    "brokerLoading": {
+      "preparingPayment": "Preparing your payment details"
+    },
+    "fundingOptions": {
+      "title": "Funding options",
+      "balances": "Balance(s)",
+      "linkedPaymentMethods": "लिंक की गई भुगतान विधि(एं)",
+      "buyingPower": "खरीदने की क्षमता",
+      "instantCashAvailable": "Instant cash available: {{amount}}",
+      "available": "{{amount}} available",
+      "exchangeRateDisclaimer": "Exchange rate may include a spread.",
+      "paymentMethodTypes": {
+        "card": "Card",
+        "bankAccount": "बैंक खाता",
+        "digitalWallet": "Wallet"
+      }
+    },
+    "walletConfirmation": {
+      "title": "Confirm this transaction in your {{integrationName}} app"
+    },
+    "fundingSteps": {
+      "errorMessage": "An error has occurred. Please try again",
+      "conversion": "Conversion of {{amount}} {{symbol}} to {{currency}}",
+      "deposit": "Deposit of {{amount}} from {{paymentMethod}}",
+      "purchase": "Purchase of {{amount}} {{symbol}}",
+      "approval": "Approval of your transfer out of {{integrationName}}",
+      "transfer": "Transfer {{symbol}} for your purchase"
+    },
+    "termsOfUse": {
+      "text": "By continuing you accept the",
+      "linkText": "terms of use"
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
     }
   },
   "previewPageUI": {
