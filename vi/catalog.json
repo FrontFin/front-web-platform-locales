@@ -1127,8 +1127,116 @@
     "title": "Chọn tài sản để giao dịch"
   },
   "paypal": {
+    "common": {
+      "cancel": "Hủy bỏ",
+      "done": "Xong",
+      "continue": "Tiếp tục",
+      "save": "Lưu",
+      "close": "Đóng",
+      "tryAgain": "Thử lại",
+      "ok": "OK",
+      "pay": "Pay",
+      "total": "Tổng cộng",
+      "order": "Order",
+      "change": "Thay đổi",
+      "stillWorking": "Đang xử lý..."
+    },
+    "topupPage": {
+      "title": "Cần nạp tiền",
+      "currentBalance": "Số dư hiện tại",
+      "required": "Bắt buộc",
+      "viewTopUp": "Xem Top-Up",
+      "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{targetSymbol}} sẽ vẫn nằm trong tài khoản {{integrationName}} của bạn.",
+      "conversionDescription": "Giá trị của {{convertedSymbol}} đã chuyển đổi sang {{targetSymbol}} thấp hơn do biến động giá và/hoặc phí mạng.",
+      "assetsDescription": "Giá trị của tài sản đã chuyển đổi sang {{targetSymbol}} thấp hơn do biến động giá và/hoặc phí mạng."
+    },
+    "doneTransferPage": {
+      "title": "Thanh toán đang trên đường đến",
+      "description": "Bạn vừa thanh toán {{amount}}. Bạn sẽ nhận được xác nhận từ {{clientName}} khi hoàn tất.",
+      "seeDetails": "Xem điều gì đã xảy ra",
+      "disclaimer": "Các giao dịch không hoàn tất cho đến khi chúng nhận đủ số xác nhận từ mạng lưới."
+    },
+    "exitPage": {
+      "title": "Bạn có chắc chắn muốn thoát không?",
+      "subtitle": "Tiến trình của bạn sẽ bị mất.",
+      "continuePayment": "Tiếp tục với thanh toán",
+      "exit": "Thoát"
+    },
+    "infoScreen": {
+      "title": "Log in to review payment details",
+      "rule1": "Your info is never stored. Access will end after this payment.",
+      "rule2": "Use your crypto, review details and approve to pay.",
+      "rule3": "Chuyển đổi tự động giúp đơn giản hóa mọi thứ."
+    },
+    "transferErrorPage": {
+      "insufficientFunds": "Không đủ ngân sách",
+      "requestDenied": "Yêu cầu bị từ chối",
+      "defaultTitle": "We're unable to process this payment",
+      "insufficientFundsMessage": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
+      "belowNetworkMinimumMessage": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase.",
+      "requestDeniedMessage": "It looks like you denied the transaction. If that was a mistake, try again and approve the request in your wallet.",
+      "defaultMessage": "Your funds will stay in your {{integrationName}} account.",
+      "chooseDifferentAccount": "Choose a Different Account"
+    },
     "previewPage": {
-      "howItWorks": "Cách nó hoạt động"
+      "title": "Pay {{merchantName}}",
+      "from": "From {{integrationName}}",
+      "payWith": "Thanh toán bằng",
+      "send": "Gửi",
+      "merchantPurchase": "{{merchantName}} purchase",
+      "estimatedNetworkFee": "Estimated network fee",
+      "conversionFee": "{{integrationName}} conversion fee",
+      "transactionBuffer": "Transaction buffer",
+      "feesIncluded": "{{amount}} fees included",
+      "bufferAndFees": "{{bufferAmount}} Buffer + {{feesAmount}} fees included",
+      "bufferDisclaimer": "You'll keep any unused buffer.",
+      "howItWorks": "Cách nó hoạt động",
+      "refundDisclaimer": "Refunds will be issued in {{settlementCurrency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
+      "feeChangedNotice": "The network fee has changed. Please check your total and confirm.",
+      "networkFeeHint": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
+      "conversionFeeHint": "This fee {{integrationName}} collects to convert.",
+      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet.",
+      "pyusdDisclaimer": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain."
+    },
+    "connectionPage": {
+      "approveConnection": "Approve the connection request in your wallet",
+      "oauthLogin": "Đăng nhập vào tài khoản của bạn và cho phép truy cập",
+      "continueTo": "Tiếp tục đến {{integrationName}}"
+    },
+    "brokerLoading": {
+      "preparingPayment": "Preparing your payment details"
+    },
+    "fundingOptions": {
+      "title": "Funding options",
+      "balances": "Balance(s)",
+      "linkedPaymentMethods": "Phương thức thanh toán liên kết",
+      "buyingPower": "Sức mua",
+      "instantCashAvailable": "Instant cash available: {{amount}}",
+      "available": "{{amount}} available",
+      "exchangeRateDisclaimer": "Exchange rate may include a spread.",
+      "paymentMethodTypes": {
+        "card": "Card",
+        "bankAccount": "Tài khoản ngân hàng",
+        "digitalWallet": "Wallet"
+      }
+    },
+    "walletConfirmation": {
+      "title": "Confirm this transaction in your {{integrationName}} app"
+    },
+    "fundingSteps": {
+      "errorMessage": "An error has occurred. Please try again",
+      "conversion": "Conversion of {{amount}} {{symbol}} to {{currency}}",
+      "deposit": "Deposit of {{amount}} from {{paymentMethod}}",
+      "purchase": "Purchase of {{amount}} {{symbol}}",
+      "approval": "Approval of your transfer out of {{integrationName}}",
+      "transfer": "Transfer {{symbol}} for your purchase"
+    },
+    "termsOfUse": {
+      "text": "By continuing you accept the",
+      "linkText": "terms of use"
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
     }
   },
   "previewPageUI": {
