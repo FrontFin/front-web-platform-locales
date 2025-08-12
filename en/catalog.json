@@ -1121,160 +1121,144 @@
     "selectNetwork": "Select transfer network",
     "title": "Select asset to transfer"
   },
+
   "paypal": {
-    "exitPage": {
-      "title": "Are you sure you want to exit?",
-      "description": "Your progress will be lost.",
-      "buttons": {
-        "continue": "Continue With Payment",
-        "exit": "Exit"
-      }
+    "initialSteps": {
+      "title": "How PayPal crypto works",
+      "privacyRule": "Your personal information stays private",
+      "cryptoRule": "We'll only use crypto you've approved",
+      "conversionRule": "Convert to stablecoins automatically when needed",
+      "termsText": "By continuing, you agree to",
+      "meshTerms": "Mesh terms of service",
+      "continueToIntegration": "Continue to {{integrationName}}",
+      "continue": "Continue"
     },
-    "errorPage": {
-      "title": "Something went wrong"
+    "connectionPage": {
+      "continueToIntegration": "Continue to {{integrationName}}",
+      "approveConnection": "Approve Connection"
     },
     "previewPage": {
-      "title": "Pay {{merchantName}}",
-      "from": "From {{integrationName}}",
+      "feeChangedWarning": "Fees have changed since you started this transaction",
+      "payMerchant": "Pay {{merchantName}}",
+      "fromIntegration": "from {{integrationName}}",
+      "payWith": "Pay with",
+      "send": "Send",
+      "networkFee": "Network fee",
+      "integrationFee": "{{integrationName}} fee",
+      "transactionBuffer": "Transaction buffer",
+      "bufferHint": "{{bufferAmount}} to cover potential fee changes",
+      "total": "Total",
+      "order": "Order",
+      "bufferAndFeesIncluded": "{{bufferAmount}} buffer and {{feeAmount}} in fees included",
+      "feesIncluded": "{{feeAmount}} in fees included",
+      "unusedBufferKeep": "You keep any unused buffer amount",
       "howItWorks": "How it works",
-      "labels": {
-        "payWith": "Pay with",
-        "send": "Send",
-        "order": "Order",
-        "total": "Total",
-        "purchase": "{{merchantName}} purchase",
-        "networkFee": "Estimated network fee",
-        "conversionFee": "{{integrationName}} conversion fee",
-        "transactionBuffer": "Transaction buffer"
-      },
-      "hints": {
-        "networkFee": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
-        "conversionFee": "This fee {{integrationName}} collects to convert.",
-        "transactionBuffer": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet."
-      },
-      "fees": {
-        "withBuffer": "{{transactionBuffer}} Buffer + {{totalFees}} fees included",
-        "withoutBuffer": "{{totalFees}} fees included",
-        "unusedBuffer": "You'll keep any unused buffer."
-      },
-      "disclaimer": "Refunds will be issued in {{settlementCurrency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
-      "pyusdNotice": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain.",
-      "feeChangedWarning": "The network fee has changed. Please check your total and continue",
-      "buttons": {
-        "pay": "Pay",
-        "ok": "OK"
-      }
-    },
-    "transferErrorPage": {
-      "insufficientFunds": {
-        "title": "Insufficient funds",
-        "subtitle": "Your balance is too low to complete this purchase."
-      },
-      "connection": {
-        "subtitle": "Connection error occurred. Please try again."
-      },
-      "belowNetworkMinimum": {
-        "subtitle": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase."
-      },
-      "requestDenied": {
-        "title": "Request denied",
-        "subtitle": "The request was denied by your financial institution."
-      },
-      "payment": {
-        "title": "We're unable to process this payment",
-        "subtitle": "Your funds will stay in your {{integrationName}} account."
-      },
-      "buttons": {
-        "chooseDifferent": "Choose a Different Account",
-        "close": "Close",
-        "tryAgain": "Try Again"
-      }
+      "refundNote": "{{integrationName}} will refund you if the merchant doesn't accept your payment",
+      "pay": "Pay",
+      "pyusdNote": "This payment will be sent using PayPal USD, a digital currency issued by Paxos Trust Company",
+      "ok": "OK"
     },
     "doneTransferPage": {
-      "title": "Payment on its way",
-      "description": "You just paid {{amount}}. You'll get a confirmation from {{clientName}} when it's complete.",
-      "disclaimer": "Transfers are not complete until they have received enough network confirmations.",
-      "buttons": {
-        "seeDetails": "See what happened",
-        "done": "Done"
-      }
+      "title": "Payment sent!",
+      "description": "{{amount}} has been sent to {{clientName}}",
+      "seeWhatHappened": "See what happened",
+      "transfersNote": "Transfers can take up to 15 minutes to complete",
+      "done": "Done"
     },
     "doneTransferDetailsPage": {
-      "title": "What happened"
+      "title": "Transaction complete",
+      "transfersNote": "Transfers can take up to 15 minutes to complete",
+      "goBack": "Go back"
+    },
+    "exitPage": {
+      "title": "Are you sure you want to leave?",
+      "description": "You'll need to start the payment process over",
+      "buttons": {
+        "continue": "Continue payment",
+        "exit": "Leave"
+      }
     },
     "topupNeededPage": {
-      "title": "Top-up needed",
-      "descriptions": {
-        "singleAsset": "The value of the converted {{convertedSymbol}} to {{targetSymbol}} is lower than expected due to price and/or network fees fluctuations.",
-        "multipleAssets": "The value of the assets converted to {{targetSymbol}} is lower than expected due to price and/or network fees fluctuations."
-      },
+      "title": "You need more funds",
       "labels": {
         "currentBalance": "Current balance",
         "required": "Required"
       },
-      "disclaimer": "If you do not complete the payment, your {{targetSymbol}} balance will remain in your {{integrationName}} account.",
+      "disclaimer": "Top up {{targetSymbol}} balance to pay with {{integrationName}}",
       "buttons": {
-        "viewTopUp": "View Top-Up",
+        "viewTopUp": "View top-up options",
         "cancel": "Cancel"
+      },
+      "descriptions": {
+        "singleAsset": "You need {{requiredAmountFormatted}} {{targetSymbol}} to complete this payment, but you only have {{currentAmountFormatted}} {{targetSymbol}}.",
+        "multipleAssets": "You need {{requiredAmountFormatted}} {{targetSymbol}} to complete this payment. We can convert {{convertedSymbols}} to {{targetSymbol}}."
       }
     },
-    "infoScreenUI": {
-      "title": "How it works",
-      "rules": {
-        "rule1": "Connect your account",
-        "rule2": "No transaction fees",
-        "rule3": "Crypto purchases are final"
-      },
-      "terms": {
-        "linkText": "Terms and conditions",
-        "agreement": "By continuing, you agree to {{integrationName}}'s {{termsLink}}."
-      },
-      "buttons": {
-        "continue": "Continue"
-      }
-    },
-    "preparingPaymentPage": {
-      "title": "Preparing your payment"
-    },
-    "brokerLoadingPage": {
-      "title": "Still working..."
-    },
-    "walletConfirmationPage": {
-      "title": "Approve in {{integrationName}}"
-    },
-    "connection": {
-      "approveConnectionPage": {
-        "title": "Approve this connection"
-      },
-      "oauthStatusPage": {
-        "title": "Log into your account and allow access"
-      },
-      "buttons": {
-        "continueToIntegration": "Continue to {{integrationName}}"
-      }
+    "fundingSteps": {
+      "error": "Error occurred",
+      "conversion": "Converting {{amount}} {{symbol}} to {{currency}}",
+      "deposit": "Depositing {{amount}} from {{paymentMethod}}",
+      "purchase": "Purchasing {{amount}} {{symbol}}",
+      "approval": "Waiting for {{integrationName}} approval",
+      "transfer": "Transferring {{symbol}}"
     },
     "fundingOptions": {
+      "common": {
+        "change": "Change",
+        "available": "available"
+      },
       "paymentMethod": {
-        "title": "Linked payment method(s)",
-        "instantCashAvailable": "Instant cash available: {{amount}}",
+        "title": "Payment method",
+        "instantCashAvailable": "{{amount}} instant cash available",
         "paymentTypes": {
           "card": "Card",
-          "bankAccount": "Bank account",
-          "digitalWallet": "Wallet"
+          "bankAccount": "Bank account"
         }
       },
       "conversion": {
         "available": "{{amount}} available"
       },
-      "existingBalance": {
-        "available": "{{amount}} available"
-      },
       "buyingPower": {
-        "available": "{{amount}} available"
+        "title": "Buying power"
+      },
+      "existingBalance": {
+        "title": "Existing balance"
+      }
+    },
+    "loadingScreen": {
+      "stillWorking": "Still working on it...",
+      "tryAgain": "Try again"
+    },
+    "transferErrorPage": {
+      "insufficientFunds": {
+        "title": "Insufficient funds",
+        "subtitle": "You don't have enough funds to complete this transaction"
+      },
+      "requestDenied": {
+        "title": "Request denied",
+        "subtitle": "Your payment request was denied"
+      },
+      "connection": {
+        "subtitle": "There was a connection error"
+      },
+      "belowNetworkMinimum": {
+        "subtitle": "The transaction amount is below the network minimum"
+      },
+      "payment": {
+        "title": "Payment error",
+        "subtitle": "There was an error processing your payment to {{integrationName}}"
       },
       "common": {
-        "change": "Change"
+        "chooseDifferentAccount": "Choose different funding",
+        "close": "Close",
+        "tryAgain": "Try again"
       }
+    },
+    "walletConfirmation": {
+      "confirmTransaction": "Confirm this transaction in your {{integrationName}} app"
+    },
+    "preparingPayment": {
+      "title": "Preparing your payment details"
     }
   },
   "previewPageUI": {
