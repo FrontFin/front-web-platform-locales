@@ -1121,144 +1121,117 @@
     "selectNetwork": "Select transfer network",
     "title": "Select asset to transfer"
   },
-
   "paypal": {
-    "initialSteps": {
-      "title": "How PayPal crypto works",
-      "privacyRule": "Your personal information stays private",
-      "cryptoRule": "We'll only use crypto you've approved",
-      "conversionRule": "Convert to stablecoins automatically when needed",
-      "termsText": "By continuing, you agree to",
-      "meshTerms": "Mesh terms of service",
-      "continueToIntegration": "Continue to {{integrationName}}",
-      "continue": "Continue"
-    },
-    "connectionPage": {
-      "continueToIntegration": "Continue to {{integrationName}}",
-      "approveConnection": "Approve Connection"
-    },
-    "previewPage": {
-      "feeChangedWarning": "Fees have changed since you started this transaction",
-      "payMerchant": "Pay {{merchantName}}",
-      "fromIntegration": "from {{integrationName}}",
-      "payWith": "Pay with",
-      "send": "Send",
-      "networkFee": "Network fee",
-      "integrationFee": "{{integrationName}} fee",
-      "transactionBuffer": "Transaction buffer",
-      "bufferHint": "{{bufferAmount}} to cover potential fee changes",
+    "common": {
+      "cancel": "Cancel",
+      "done": "Done",
+      "continue": "Continue",
+      "save": "Save",
+      "close": "Close",
+      "tryAgain": "Try Again",
+      "ok": "OK",
+      "pay": "Pay",
       "total": "Total",
       "order": "Order",
-      "bufferAndFeesIncluded": "{{bufferAmount}} buffer and {{feeAmount}} in fees included",
-      "feesIncluded": "{{feeAmount}} in fees included",
-      "unusedBufferKeep": "You keep any unused buffer amount",
-      "howItWorks": "How it works",
-      "refundNote": "{{integrationName}} will refund you if the merchant doesn't accept your payment",
-      "pay": "Pay",
-      "pyusdNote": "This payment will be sent using PayPal USD, a digital currency issued by Paxos Trust Company",
-      "ok": "OK"
+      "change": "Change",
+      "stillWorking": "Still working..."
+    },
+    "topupPage": {
+      "title": "Top-up needed",
+      "currentBalance": "Current balance",
+      "required": "Required",
+      "viewTopUp": "View Top-Up",
+      "disclaimer": "If you do not complete the payment, your {{targetSymbol}} balance will remain in your {{integrationName}} account.",
+      "conversionDescription": "The value of the converted {{convertedSymbol}} to {{targetSymbol}} is lower than expected due to price and/or network fees fluctuations.",
+      "assetsDescription": "The value of the assets converted to {{targetSymbol}} is lower than expected due to price and/or network fees fluctuations."
     },
     "doneTransferPage": {
-      "title": "Payment sent!",
-      "description": "{{amount}} has been sent to {{clientName}}",
-      "seeWhatHappened": "See what happened",
-      "transfersNote": "Transfers can take up to 15 minutes to complete",
-      "done": "Done"
-    },
-    "doneTransferDetailsPage": {
-      "title": "Transaction complete",
-      "transfersNote": "Transfers can take up to 15 minutes to complete",
-      "goBack": "Go back"
+      "title": "Payment on its way",
+      "description": "You just paid {{amount}}. You'll get a confirmation from {{clientName}} when it's complete.",
+      "seeDetails": "See what happened",
+      "disclaimer": "Transfers are not complete until they have received enough network confirmations."
     },
     "exitPage": {
-      "title": "Are you sure you want to leave?",
-      "description": "You'll need to start the payment process over",
-      "buttons": {
-        "continue": "Continue payment",
-        "exit": "Leave"
-      }
+      "title": "Are you sure you want to exit?",
+      "subtitle": "Your progress will be lost.",
+      "continuePayment": "Continue With Payment",
+      "exit": "Exit"
     },
-    "topupNeededPage": {
-      "title": "You need more funds",
-      "labels": {
-        "currentBalance": "Current balance",
-        "required": "Required"
-      },
-      "disclaimer": "Top up {{targetSymbol}} balance to pay with {{integrationName}}",
-      "buttons": {
-        "viewTopUp": "View top-up options",
-        "cancel": "Cancel"
-      },
-      "descriptions": {
-        "singleAsset": "You need {{requiredAmountFormatted}} {{targetSymbol}} to complete this payment, but you only have {{currentAmountFormatted}} {{targetSymbol}}.",
-        "multipleAssets": "You need {{requiredAmountFormatted}} {{targetSymbol}} to complete this payment. We can convert {{convertedSymbols}} to {{targetSymbol}}."
-      }
-    },
-    "fundingSteps": {
-      "error": "Error occurred",
-      "conversion": "Converting {{amount}} {{symbol}} to {{currency}}",
-      "deposit": "Depositing {{amount}} from {{paymentMethod}}",
-      "purchase": "Purchasing {{amount}} {{symbol}}",
-      "approval": "Waiting for {{integrationName}} approval",
-      "transfer": "Transferring {{symbol}}"
-    },
-    "fundingOptions": {
-      "common": {
-        "change": "Change",
-        "available": "available"
-      },
-      "paymentMethod": {
-        "title": "Payment method",
-        "instantCashAvailable": "{{amount}} instant cash available",
-        "paymentTypes": {
-          "card": "Card",
-          "bankAccount": "Bank account"
-        }
-      },
-      "conversion": {
-        "available": "{{amount}} available"
-      },
-      "buyingPower": {
-        "title": "Buying power"
-      },
-      "existingBalance": {
-        "title": "Existing balance"
-      }
-    },
-    "loadingScreen": {
-      "stillWorking": "Still working on it...",
-      "tryAgain": "Try again"
+    "infoScreen": {
+      "title": "Log in to review payment details",
+      "rule1": "Your info is never stored. Access will end after this payment.",
+      "rule2": "Use your crypto, review details and approve to pay.",
+      "rule3": "Automatic conversion keeps things simple."
     },
     "transferErrorPage": {
-      "insufficientFunds": {
-        "title": "Insufficient funds",
-        "subtitle": "You don't have enough funds to complete this transaction"
-      },
-      "requestDenied": {
-        "title": "Request denied",
-        "subtitle": "Your payment request was denied"
-      },
-      "connection": {
-        "subtitle": "There was a connection error"
-      },
-      "belowNetworkMinimum": {
-        "subtitle": "The transaction amount is below the network minimum"
-      },
-      "payment": {
-        "title": "Payment error",
-        "subtitle": "There was an error processing your payment to {{integrationName}}"
-      },
-      "common": {
-        "chooseDifferentAccount": "Choose different funding",
-        "close": "Close",
-        "tryAgain": "Try again"
+      "insufficientFunds": "Insufficient funds",
+      "requestDenied": "Request denied",
+      "defaultTitle": "We're unable to process this payment",
+      "insufficientFundsMessage": "Your balance is too low to complete this purchase.",
+      "belowNetworkMinimumMessage": "This purchase amount is below your account's minimum exchange limit. Connect another account to complete your purchase.",
+      "requestDeniedMessage": "It looks like you denied the transaction. If that was a mistake, try again and approve the request in your wallet.",
+      "defaultMessage": "Your funds will stay in your {{integrationName}} account.",
+      "chooseDifferentAccount": "Choose a Different Account"
+    },
+    "previewPage": {
+      "title": "Pay {{merchantName}}",
+      "from": "From {{integrationName}}",
+      "payWith": "Pay with",
+      "send": "Send",
+      "merchantPurchase": "{{merchantName}} purchase",
+      "estimatedNetworkFee": "Estimated network fee",
+      "conversionFee": "{{integrationName}} conversion fee",
+      "transactionBuffer": "Transaction buffer",
+      "feesIncluded": "{{amount}} fees included",
+      "bufferAndFees": "{{bufferAmount}} Buffer + {{feesAmount}} fees included",
+      "bufferDisclaimer": "You'll keep any unused buffer.",
+      "howItWorks": "How it works",
+      "refundDisclaimer": "Refunds will be issued in {{settlementCurrency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
+      "feeChangedNotice": "The network fee has changed. Please check your total and confirm.",
+      "networkFeeHint": "Helps get your transaction onto the blockchain by covering the costs for the network validators who process it",
+      "conversionFeeHint": "This fee {{integrationName}} collects to convert.",
+      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet.",
+      "pyusdDisclaimer": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain."
+    },
+    "connectionPage": {
+      "approveConnection": "Approve the connection request in your wallet",
+      "oauthLogin": "Log into your account and allow access",
+      "continueTo": "Continue to {{integrationName}}"
+    },
+    "brokerLoading": {
+      "preparingPayment": "Preparing your payment details"
+    },
+    "fundingOptions": {
+      "title": "Funding options",
+      "balances": "Balance(s)",
+      "linkedPaymentMethods": "Linked payment method(s)",
+      "buyingPower": "Buying power",
+      "instantCashAvailable": "Instant cash available: {{amount}}",
+      "available": "{{amount}} available",
+      "exchangeRateDisclaimer": "Exchange rate may include a spread.",
+      "paymentMethodTypes": {
+        "card": "Card",
+        "bankAccount": "Bank account",
+        "digitalWallet": "Wallet"
       }
     },
     "walletConfirmation": {
-      "confirmTransaction": "Confirm this transaction in your {{integrationName}} app"
+      "title": "Confirm this transaction in your {{integrationName}} app"
     },
-    "preparingPayment": {
-      "title": "Preparing your payment details"
+    "fundingSteps": {
+      "errorMessage": "An error has occurred. Please try again",
+      "conversion": "Conversion of {{amount}} {{symbol}} to {{currency}}",
+      "deposit": "Deposit of {{amount}} from {{paymentMethod}}",
+      "purchase": "Purchase of {{amount}} {{symbol}}",
+      "approval": "Approval of your transfer out of {{integrationName}}",
+      "transfer": "Transfer {{symbol}} for your purchase"
+    },
+    "termsOfUse": {
+      "text": "By continuing you accept the",
+      "linkText": "terms of use"
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
     }
   },
   "previewPageUI": {
