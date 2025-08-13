@@ -60,6 +60,17 @@
     },
     "title": "पासवर्ड रीसेट करें"
   },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Binance ऐप के साथ जारी रखें",
+    "descriptionDeposit": "<1>अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद यहां जमा करें</1>।",
+    "descriptionGeneral": "<1>यहां वापस आएं जारी रखने के लिए</1> अपने Binance मोबाइल ऐप के साथ कनेक्ट करने के बाद।",
+    "descriptionOnRamp": "<1>यहां वापस आएं जारी रखने के लिए</1> अपने Binance मोबाइल ऐप के साथ कनेक्ट करने के बाद।",
+    "descriptionPay": "<1>यहां वापस आएं भुगतान करने के लिए</1> अपने Binance मोबाइल ऐप के साथ कनेक्ट करने के बाद।",
+    "loginWithEmailButton": "ईमेल/फ़ोन से लॉगिन करें",
+    "or": "या",
+    "scanText": "लॉग इन के लिए अपने फोन कैमरे या Binance ऐप से स्कैन करें।",
+    "title": "लॉग इन करें"
+  },
   "bindFacePage": {
     "completedButton": "मैंने इसे अपने फ़ोन पर पूरा कर लिया है",
     "linkText": "यदि आप QR कोड स्कैन करने में असमर्थ हैं, तो कृपया इस <2><0>लिंक</0></2> का अनुसरण करें।",
@@ -81,16 +92,16 @@
     "select": "{{integrationName}}, {{badge}} चुनें"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
-    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
-    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
-    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
     "platformNotSupported": "{{integrationName}} इस प्रकार के उपकरण पर समर्थित नहीं है।",
     "sdkVersionNotSupported": "{{integrationName}} की TrueAuth प्रक्रिया इस SDK पर समर्थित नहीं है: {{sdkContext}}।",
-    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
     "travelRuleVaspIdRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।"
+    "travelRuleAmountLimit": "{{integrationName}} अनुपालन पात्रता प्रतिबंधों के कारण समर्थित नहीं है।",
+    "lessThanIntegrationMinAmount": "अनुरोध की गई राशि {{integrationName}} के न्यूनतम मानक से कम है।",
+    "moreThanIntegrationMaxAmount": "अनुरोधित राशि {{integrationName}} दलाल के अधिकतम से अधिक है।",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} इस टोकन और नेटवर्क का समर्थन नहीं करता है।",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} किसी भी प्रदत्त टोकन/नेटवर्क संयोजन के लिए स्थानांतरण का समर्थन नहीं करता।",
+    "integrationNotSupportedCountry": "{{integrationName}} आपके क्षेत्र में उपलब्ध नहीं है।"
   },
   "catalogList": {
     "badges": {
@@ -104,7 +115,9 @@
     "prodOnly": "केवल उत्पादन के लिए",
     "search": "खोज",
     "title": "लिंक करने के लिए खाता चुनें",
-    "title40": "अपना खाता चुनें"
+    "title40": "अपना खाता चुनें",
+    "emptyCatalogTitle": "कोई उपलब्ध वालेट और एक्सचेंज नहीं है",
+    "emptyCatalogBody": "यह आपके स्थान, अनुपालन आवश्यकताओं, या डिवाइस संगतता के कारण हो सकता है।"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} चुनें"
@@ -367,6 +380,7 @@
     "fromAccountNotSupported": "निकासी समर्थित नहीं है",
     "integrationError": "एकीकरण त्रुटि",
     "integrationNotAvailable": "एकीकरण उपलब्ध नहीं है",
+    "integrationNotAvailableTitle": "{{integrationName}} उपलब्ध नहीं है",
     "invalidCredentials": "अमान्य क्रेडेंशियल्स",
     "invalidField": "अमान्य जानकारी",
     "invalidFromIntegrationToken": "प्रमाणीकरण की समय सीमा समाप्त हो गई",
@@ -400,6 +414,7 @@
     "symbolNotSupportedBySource": "स्रोत समर्थित नहीं है",
     "symbolNotSupportedByTarget": "गंतव्य समर्थित नहीं है",
     "symbolNotSupportedForTrading": "ट्रेडिंग समर्थित नहीं है",
+    "symbolNotSupportedInRegion": "समर्थित नहीं है",
     "timeInForceNotSupported": "टाइम इन फोर्स समर्थित नहीं है",
     "toAccountNotSupported": "जमा समर्थित नहीं है",
     "tooManyRequests": "बहुत अधिक अनुरोध",
@@ -482,6 +497,7 @@
     "symbolNotSupported": "चिह्न को एकीकरण द्वारा समर्थित नहीं है।",
     "symbolNotSupportedBySource": "सूत्र वॉलेट द्वारा अनुरोधित नेटवर्क पर स्थानांतरण के लिए चिह्न समर्थित नहीं है।",
     "symbolNotSupportedByTarget": "अनुरोधित सिक्के के लिए जमा पता नहीं मिल सका।",
+    "symbolNotSupportedInRegion": "चयनित प्रतीक को क्षेत्रीय प्रतिबंधों के कारण कॉइनबेस द्वारा समर्थित नहीं किया गया है",
     "toAccountNotSupported": "गंतव्य खाता वर्तमान में क्रिप्टो जमा नहीं करता है।",
     "tooManyRequests": "कृपया बाद में पुनः प्रयास करें।",
     "transferAlreadyRequested": "स्थानांतरण पहले से अनुरोधित है।",
@@ -926,9 +942,14 @@
   },
   "mobileAppLink": {
     "awaitingConfirmation": "मोबाइल ऐप से पुष्टि की प्रतीक्षा की जा रही है",
+    "awaitingConfirmationShort": "पुष्टि की प्रतीक्षा कर रहे हैं...",
+    "loginRequestSent": "लॉगिन अनुरोध आपके {{selectedIntegrationName}} ऐप को भेजा गया है।",
     "openAppButton": "{{selectedIntegrationName}} ऐप खोलें",
     "returnToClient": "{{selectedIntegrationName}} में कनेक्शन अनुरोध को स्वीकृति देने के बाद {{clientName}} पर लौटें।",
+    "sendAgain": "फिर से भेजें",
     "sendNewRequest": "एक नया अनुरोध भेजें",
+    "troubleshootTitle": "आपको अनुरोध नहीं मिला?",
+    "troubleshootExchangeMode": "सुनिश्चित करें कि आप एक्सचेंज मोड में हैं, वॉलेट में नहीं।",
     "steps": {
       "authorize": "पुष्टि पृष्ठ पर <1> अधिकृत </1> पर क्लिक करें।",
       "openApp": "नीचे <1> {{selectedIntegrationName}} ऐप खोलें</1> पर क्लिक करें।",
@@ -1106,8 +1127,116 @@
     "title": "स्थानांतरण के लिए संपत्ति चुनें"
   },
   "paypal": {
+    "common": {
+      "cancel": "रद्द करें",
+      "done": "हो गया",
+      "continue": "जारी रखें",
+      "save": "सहेजें",
+      "close": "बंद करें",
+      "tryAgain": "फिर से प्रयास करें",
+      "ok": "ठीक है",
+      "pay": "भुगतान करें",
+      "total": "कुल",
+      "order": "ऑर्डर",
+      "change": "बदलें",
+      "stillWorking": "अभी भी काम कर रहा है..."
+    },
+    "topupPage": {
+      "title": "रिचार्ज की आवश्यकता",
+      "currentBalance": "वर्तमान शेष राशि",
+      "required": "आवश्यक",
+      "viewTopUp": "टॉप-अप देखें",
+      "disclaimer": "यदि आप भुगतान पूरा नहीं करते हैं, तो आपका {{targetSymbol}} शेष आपके {{integrationName}} खाते में रहेगा।",
+      "conversionDescription": "मूल्य और/या नेटवर्क शुल्क में उतार-चढ़ाव के कारण {{convertedSymbol}} का {{targetSymbol}} में परिवर्तित मूल्य अपेक्षित से कम है।",
+      "assetsDescription": "मूल्य और/या नेटवर्क शुल्क में उतार-चढ़ाव के कारण संपत्तियों का {{targetSymbol}} के लिए परिवर्तित मूल्य अपेक्षित से कम है।"
+    },
+    "doneTransferPage": {
+      "title": "भुगतान प्रारंभ हो गया है",
+      "description": "आपने अभी {{amount}} का भुगतान किया है। जब यह पूरा हो जाएगा, {{clientName}} से पुष्टि प्राप्त होगी।",
+      "seeDetails": "देखें क्या हुआ",
+      "disclaimer": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।"
+    },
+    "exitPage": {
+      "title": "क्या आप सुनिश्चित हैं कि आप बाहर जाना चाहते हैं?",
+      "subtitle": "आपकी प्रगति खो जाएगी।",
+      "continuePayment": "भुगतान जारी रखें",
+      "exit": "निकास करें"
+    },
+    "infoScreen": {
+      "title": "भुगतान विवरण की समीक्षा करने के लिए लॉग इन करें",
+      "rule1": "आपकी जानकारी कभी संग्रहीत नहीं की जाती। इस भुगतान के बाद पहुंच समाप्त हो जाएगी।",
+      "rule2": "अपना क्रिप्टो का उपयोग करें, विवरण की समीक्षा करें और भुगतान की स्वीकृति दें।",
+      "rule3": "स्वचालित रूपांतरण चीजों को सरल बनाए रखता है।"
+    },
+    "transferErrorPage": {
+      "insufficientFunds": "अपर्याप्त कोष",
+      "requestDenied": "अनुरोध अस्वीकृत",
+      "defaultTitle": "हम इस भुगतान को संसाधित करने में असमर्थ हैं",
+      "insufficientFundsMessage": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
+      "belowNetworkMinimumMessage": "यह खरीद राशि आपके खाते की न्यूनतम विनिमय सीमा से नीचे है। अपनी खरीद पूरी करने के लिए अन्य खाता कनेक्ट करें।",
+      "requestDeniedMessage": "ऐसा लगता है कि आपने लेन-देन को अस्वीकार कर दिया है। यदि ऐसा गलती से हुआ है, तो पुनः प्रयास करें और अपने वॉलेट में अनुरोध को स्वीकृत करें।",
+      "defaultMessage": "आपके {{integrationName}} खाते में बना रहेगा।",
+      "chooseDifferentAccount": "किसी भिन्न खाते का चयन करें"
+    },
     "previewPage": {
-      "howItWorks": "यह कैसे काम करता है"
+      "title": "{{merchantName}} को भुगतान करें",
+      "from": "{{integrationName}} से",
+      "payWith": "इसके साथ भुगतान करें",
+      "send": "भेजें",
+      "merchantPurchase": "{{merchantName}} खरीद",
+      "estimatedNetworkFee": "अनुमानित नेटवर्क शुल्क",
+      "conversionFee": "{{integrationName}} रूपांतरण शुल्क",
+      "transactionBuffer": "लेन-देन बफर",
+      "feesIncluded": "{{amount}} शुल्क शामिल",
+      "bufferAndFees": "{{bufferAmount}} बफर + {{feesAmount}} शुल्क शामिल",
+      "bufferDisclaimer": "आप कोई अप्रयुक्त बफर रखेंगे।",
+      "howItWorks": "यह कैसे काम करता है",
+      "refundDisclaimer": "रिफंड केवल {{settlementCurrency}} में जारी किए जाएंगे। विनिमय दर और शुल्क अक्सर बदलते रहते हैं। सभी क्रिप्टो खरीदारी अंतिम हैं।",
+      "feeChangedNotice": "नेटवर्क शुल्क बदल गया है। कृपया अपनी कुल राशि जाँचें और पुष्टि करें।",
+      "networkFeeHint": "यह शुल्क आपके लेन-देन को ब्लॉकचैन पर लाने में सहायक होता है, जो इसे संसाधित करने वाले नेटवर्क मान्यकर्ताओं के लिए लागत को कवर करके होता है।",
+      "conversionFeeHint": "यह शुल्क {{integrationName}} रूपांतरण के लिए एकत्र करता है।",
+      "transactionBufferHint": "यह राशि आपके खरीद को सुनिश्चित करने में सहायक होती है, भले ही क्रिप्टो मूल्य बदलें। इससे कुछ {{settlementCurrency}} आपके वॉलेट में रह सकता है।",
+      "pyusdDisclaimer": "लेन-देन PayPal USD (PYUSD) का उपयोग करके पूरा किया जाएगा, जो Paxos Trust Company, LLC द्वारा जारी और संरक्षित एक स्थिर मुद्रानी है। PYUSD ब्लॉकचैन पर चलता है।"
+    },
+    "connectionPage": {
+      "approveConnection": "अपनी वॉलेट में कनेक्शन अनुरोध को स्वीकृति दें",
+      "oauthLogin": "अपने खाते में लॉगिन करें और अनुमति दें",
+      "continueTo": "{{integrationName}} पर जारी रखें"
+    },
+    "brokerLoading": {
+      "preparingPayment": "आपके भुगतान विवरण तैयार किए जा रहे हैं"
+    },
+    "fundingOptions": {
+      "title": "फंडिंग विकल्प",
+      "balances": "शेष राशि",
+      "linkedPaymentMethods": "लिंक की गई भुगतान विधि(एं)",
+      "buyingPower": "खरीदने की क्षमता",
+      "instantCashAvailable": "तत्काल नकद उपलब्ध: {{amount}}",
+      "available": "{{amount}} उपलब्ध",
+      "exchangeRateDisclaimer": "विनिमय दर में एक प्रसार शामिल हो सकता है।",
+      "paymentMethodTypes": {
+        "card": "कार्ड",
+        "bankAccount": "बैंक खाता",
+        "digitalWallet": "वॉलेट"
+      }
+    },
+    "walletConfirmation": {
+      "title": "अपने {{integrationName}} ऐप में इस लेन-देन की पुष्टि करें।"
+    },
+    "fundingSteps": {
+      "errorMessage": "एक त्रुटि हुई है। कृपया पुनः प्रयास करें",
+      "conversion": "{{amount}} {{symbol}} का {{currency}} में रूपांतरण",
+      "deposit": "{{paymentMethod}} से {{amount}} का जमा",
+      "purchase": "{{amount}} {{symbol}} की खरीदारी",
+      "approval": "{{integrationName}} से बाहर आपके स्थानांतरण की स्वीकृति",
+      "transfer": "अपनी खरीद के लिए {{symbol}} स्थानांतरण करें"
+    },
+    "termsOfUse": {
+      "text": "जारी रखकर आप इसको स्वीकार करते हैं",
+      "linkText": "उपयोग की शर्तें"
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (\"कंपनी\") एक प्रौद्योगिकी प्रदाता है जो एक संचार उपकरण (\"उपकरण\") बनाता है जो आप जिस थर्ड-पार्टी सेवा का उपयोग कर रहे हैं (\"अंतिम उपयोगकर्ता सेवा\") की कुछ कार्यक्षमताओं को सुगम बनाता है। ऐसी कार्यक्षमता का मकसद आपको अंतिम उपयोगकर्ता सेवा के माध्यम से अपने थर्ड-पार्टी खाते और वॉलेट (\"कनेक्टेड खातों\") के साथ संवाद करने में सक्षम बनाना है, जिसमें वे निर्देश भेजना शामिल है जिन्हें आप क्रियान्वित करना चाहते हैं। Mesh आपको PayPal, Inc. (\"PayPal\") के लिए एक सेवा प्रदाता के रूप में यह उपकरण प्रदान कर रहा है\n\nआप स्वीकार और सहमति देते हैं कि अंतिम उपयोगकर्ता सेवा की कुछ कार्यक्षमता उपकरण पर आधारित है; कि ऐसी कार्यक्षमता का आपका उपयोग आपके निर्देश में है; कि न तो कंपनी और न ही इसके सेवा प्रदाता ब्रोकरेज सेवाएं उपलब्ध कराते हैं या भुगतान प्रसंस्करण में शामिल हैं; और न ही कंपनी और न ही इसके सेवा प्रदाताओं की अंतिम उपयोगकर्ता सेवा या किसी कनेक्टेड खाते, या उनके प्रदाताओं की शर्तों, नीतियों, कार्यों या चूक के लिए कोई जिम्मेदारी या दायित्व है।\n\nआप यह प्रतिनिधित्व करते और वारंटी करते हैं कि आपके पास प्रत्येक कनेक्टेड खाते के माध्यम से जुड़ने और पहुंचने के लिए सभी अधिकार और सहमति है, जिसमें कंपनी और उसके सेवा प्रदाताओं को आपके खाता लॉगिन क्रेडेंशियल्स, वॉलेट पते और/या आपके खाते की आपकी कोई भी व्यक्तिगत जानकारी प्रदान करने का अधिकार शामिल है। आप यहाँ कंपनी और उसके सेवा प्रदाताओं को निर्देशों, डेटा और अन्य सामग्रियों को अंतिम उपयोगकर्ता सेवा और प्रत्येक कनेक्टेड खाते के बीच प्रसारित करने का अधिकार देते हैं, और आप स्वीकार और सहमति देते हैं कि कंपनी और उसके सेवा प्रदाताओं का ऐसे किसी भी निर्देश के निष्पादन के लिए, या किसी भी सामग्री के लिए (उनकी सटीकता, समयबद्धता या पूर्णता सहित) कोई जिम्मेदारी या दायित्व नहीं है।\n\nआप सहमत हैं कि यदि आप थर्ड-पार्टियों, में व्यापार करने के लिए उपकरण का उपयोग करते हैं, जिसमें लेकिन ऑनलाइन व्यापारियों या किसी भी प्रकार की खरीदारी के लिए लेन-देन का संचालन शामिल नहीं है (\"थर्ड-पार्टी लेन-देन\"), यह कि कंपनी और न PayPal किसी भी प्रकार के विवाद के जिम्मेदार नहीं होंगे।"
     }
   },
   "previewPageUI": {
