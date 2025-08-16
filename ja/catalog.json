@@ -71,6 +71,14 @@
     "scanText": "電話のカメラまたはBinanceアプリでスキャンしてログインします。",
     "title": "ログイン"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "要求を承認しなかったようです。それが間違いであれば、再試行してください。",
+    "title": "おっと！"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "時間内に応答がありませんでした。もう一度お試しください。",
+    "title": "リクエストの期限が切れました。"
+  },
   "bindFacePage": {
     "completedButton": "携帯電話でこの操作を完了しました",
     "linkText": "QRコードをスキャンできない場合は、この<2><0>link</0></2>にアクセスしてください。",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
     "unsupportedCurrencyError": "選択された通貨は、あなたの国のオンランプに対応していません。",
+    "buildingYourPreview": "プレビューを作成しています。。。",
+    "Processing": "処理中。。。",
     "youPay": "支払う",
     "youReceive": "受け取る",
     "unsupportedPair": "このネットワーク/シンボルペアは現在サポートされていません。別のものを選択してください。"
@@ -1088,6 +1098,11 @@
     "title": "注文概要",
     "totalLabel": "合計",
     "paymentToClient": "{{clientName}}への支払い"
+  },
+  "depositFallback": {
+    "description": "心配ありません… 別の{{integrationName}}引き出し方法で取引を完了します。",
+    "instruction": "プレビューをクリックして転送を確認し、取引を完了させてください。",
+    "previewButton": "送金内容の確認"
   },
   "passwordPage": {
     "fieldError": "{{field}}を入力してください",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "資金オプション",
+      "total": "合計 {{amount}}",
       "balances": "残高(s)",
       "linkedPaymentMethods": "リンクされた支払方法",
       "buyingPower": "購入可能額",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "エラーが発生しました。もう一度お試しください",
-      "conversion": "{{amount}} {{symbol}}から{{currency}}への換算",
+      "conversion": "{{amount}}を{{currency}}に換算",
       "deposit": "{{paymentMethod}}からへの{{amount}}の入金",
       "purchase": "{{amount}} {{symbol}}の購入",
       "approval": "{{integrationName}}からの送金の承認",

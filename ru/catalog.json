@@ -71,6 +71,14 @@
     "scanText": "Сканируйте камерой телефона или приложением Binance для входа.",
     "title": "Вход"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Похоже, вы не одобрили запрос. Если это ошибка, пожалуйста, попробуйте снова.",
+    "title": "Ой!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Мы не получили ответ вовремя. Пожалуйста, попробуйте снова.",
+    "title": "Срок действия запроса истёк."
+  },
   "bindFacePage": {
     "completedButton": "Я завершил это на своем телефоне",
     "linkText": "Если вы не можете отсканировать QR-код, перейдите по <2><0>ссылке</0></2>.",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "Выберите валюту",
     "selectNetwork": "Выберите сеть для перевода",
     "unsupportedCurrencyError": "Выбранная валюта не поддерживается для оплаты в вашей стране.",
+    "buildingYourPreview": "Создание вашего предварительного просмотра...",
+    "Processing": "Обработка...",
     "youPay": "Вы платите",
     "youReceive": "Вы получаете",
     "unsupportedPair": "Эта пара сеть/токен в настоящее время не поддерживается. Пожалуйста, выберите другую."
@@ -1088,6 +1098,11 @@
     "title": "Итог заказа",
     "totalLabel": "Итого",
     "paymentToClient": "Платёж {{clientName}}"
+  },
+  "depositFallback": {
+    "description": "Не волнуйтесь... мы завершим вашу транзакцию с помощью альтернативного метода снятия {{integrationName}}.",
+    "instruction": "Нажмите Предварительный просмотр для проверки и завершения вашей транзакции.",
+    "previewButton": "Предварительный просмотр перевода"
   },
   "passwordPage": {
     "fieldError": "Пожалуйста, введите {{field}}",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "Варианты финансирования",
+      "total": "Итого {{amount}}",
       "balances": "Баланс(ы)",
       "linkedPaymentMethods": "Связанные способ(ы) оплаты",
       "buyingPower": "Доступные средства",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "Произошла ошибка. Попробуйте снова",
-      "conversion": "Конвертация {{amount}} {{symbol}} в {{currency}}",
+      "conversion": "Конвертация {{amount}} в {{currency}}",
       "deposit": "Пополнение {{amount}} с {{paymentMethod}}",
       "purchase": "Покупка {{amount}} {{symbol}}",
       "approval": "Одобрение вашего перевода из {{integrationName}}",

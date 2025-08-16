@@ -71,6 +71,14 @@
     "scanText": "लॉग इन के लिए अपने फोन कैमरे या Binance ऐप से स्कैन करें।",
     "title": "लॉग इन करें"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "ऐसा लगता है कि आपने अनुरोध को स्वीकृति नहीं दी। यदि यह गलती से हुआ है, तो कृपया पुनः प्रयास करें।",
+    "title": "अरे!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "हमें समय पर प्रतिक्रिया नहीं मिली। कृपया पुनः प्रयास करें।",
+    "title": "अनुरोध की समय सीमा समाप्त"
+  },
   "bindFacePage": {
     "completedButton": "मैंने इसे अपने फ़ोन पर पूरा कर लिया है",
     "linkText": "यदि आप QR कोड स्कैन करने में असमर्थ हैं, तो कृपया इस <2><0>लिंक</0></2> का अनुसरण करें।",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "एक मुद्रा का चयन करें",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
     "unsupportedCurrencyError": "आपके देश में चयनित मुद्रा को ऑनरैंप के लिए समर्थन नहीं दिया गया है।",
+    "buildingYourPreview": "आपके पूर्वावलोकन का निर्माण हो रहा है...",
+    "Processing": "प्रसंस्करण हो रहा है...",
     "youPay": "आप भुगतान करेंगे",
     "youReceive": "आप प्राप्त करेंगे",
     "unsupportedPair": "यह नेटवर्क/प्रतीक जोड़ी इस समय समर्थित नहीं है। कृपया दूसरा चुनें।"
@@ -1088,6 +1098,11 @@
     "title": "ऑर्डर सारांश",
     "totalLabel": "कुल",
     "paymentToClient": "{{clientName}} को भुगतान"
+  },
+  "depositFallback": {
+    "description": "चिंता न करें... हम आपके लेन-देन को एक वैकल्पिक {{integrationName}} निकासी विधि के साथ अंतिम रूप देंगे।",
+    "instruction": "अपने लेन-देन की समीक्षा और अंतिम रूप देने के लिए पूर्वावलोकन हस्तांतरण पर क्लिक करें।",
+    "previewButton": "हस्तांतरण पूर्वावलोकन"
   },
   "passwordPage": {
     "fieldError": "कृपया अपना {{field}} दर्ज करें",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "फंडिंग विकल्प",
+      "total": "कुल {{amount}}",
       "balances": "शेष राशि",
       "linkedPaymentMethods": "लिंक की गई भुगतान विधि(एं)",
       "buyingPower": "खरीदने की क्षमता",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "एक त्रुटि हुई है। कृपया पुनः प्रयास करें",
-      "conversion": "{{amount}} {{symbol}} का {{currency}} में रूपांतरण",
+      "conversion": "{{amount}} का {{currency}} में रूपांतरण",
       "deposit": "{{paymentMethod}} से {{amount}} का जमा",
       "purchase": "{{amount}} {{symbol}} की खरीदारी",
       "approval": "{{integrationName}} से बाहर आपके स्थानांतरण की स्वीकृति",

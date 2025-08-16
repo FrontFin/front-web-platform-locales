@@ -71,6 +71,14 @@
     "scanText": "Skannaa puhelimesi kameralla tai Binance-sovelluksella kirjautuaksesi sisään.",
     "title": "Sisäänkirjautuminen"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
+    "title": "Hups!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Emme saaneet vastausta ajoissa. Yritä uudelleen.",
+    "title": "Pyyntö vanhentui"
+  },
   "bindFacePage": {
     "completedButton": "Olen suorittanut tämän puhelimellani",
     "linkText": "Jos et voi skannata QR-koodia, seuraa tätä <2><0>linkkiä</0></2>.",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
     "unsupportedCurrencyError": "Valitsemaasi valuuttaa ei tueta maassasi.",
+    "buildingYourPreview": "Rakennetaan esikatselua...",
+    "Processing": "Käsitellään...",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat",
     "unsupportedPair": "Tämä verkko/symbolipari ei ole tällä hetkellä tuettu. Valitse toinen."
@@ -1088,6 +1098,11 @@
     "title": "Tilauksen yhteenveto",
     "totalLabel": "Yhteensä",
     "paymentToClient": "Maksu {{clientName}}ille"
+  },
+  "depositFallback": {
+    "description": "Älä huoli... viimeistelemme tapahtumasi vaihtoehtoisella {{integrationName}}-nostomenetelmällä.",
+    "instruction": "Napsauta Esikatselu siirtoa tarkistaaksesi ja viimeistelläksesi tapahtumasi.",
+    "previewButton": "Siirron esikatselu"
   },
   "passwordPage": {
     "fieldError": "Ole hyvä ja syötä {{field}}",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "Rahoitusvaihtoehdot",
+      "total": "Yhteensä {{amount}}",
       "balances": "Saldot",
       "linkedPaymentMethods": "Linkitetyt Maksutavat",
       "buyingPower": "Ostovoima",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "Virhe on tapahtunut. Yritä uudestaan",
-      "conversion": "Muunnetaan {{amount}} {{symbol}} valuutaksi {{currency}}",
+      "conversion": "Vaihda {{amount}} valuutaksi {{currency}}",
       "deposit": "Talletus {{amount}} maksutavasta {{paymentMethod}}",
       "purchase": "Osto {{amount}} {{symbol}}",
       "approval": "Hyväksy siirto pois {{integrationName}}",

@@ -71,6 +71,14 @@
     "scanText": "Zeskanuj kod za pomocą aparatu telefonu lub aplikacji Binance, aby zalogować się.",
     "title": "Zaloguj się"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Wygląda na to, że nie zatwierdziłeś prośby. Jeśli to był błąd, spróbuj ponownie.",
+    "title": "Ups!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Nie otrzymaliśmy odpowiedzi na czas. Proszę spróbować ponownie",
+    "title": "Żądanie wygasło"
+  },
   "bindFacePage": {
     "completedButton": "Ukończone na telefonie",
     "linkText": "Jeśli nie możesz zeskanować kodu QR, skorzystaj z tego <2><0>linku</0></2>.",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
     "unsupportedCurrencyError": "Wybrana waluta jest nieobsługiwana dla onramp w Twoim kraju.",
+    "buildingYourPreview": "Tworzenie podglądu...",
+    "Processing": "Przetwarzanie...",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz",
     "unsupportedPair": "Ta para sieć/symbol nie jest obecnie obsługiwana. Proszę wybrać inny."
@@ -1088,6 +1098,11 @@
     "title": "Podsumowanie zamówienia",
     "totalLabel": "Całkowita suma",
     "paymentToClient": "Płatność dla {{clientName}}"
+  },
+  "depositFallback": {
+    "description": "Nie martw się... sfinalizujemy twoją transakcję za pomocą alternatywnej metody wypłaty {{integrationName}}.",
+    "instruction": "Kliknij Podgląd transferu, aby przejrzeć i sfinalizować swoją transakcję.",
+    "previewButton": "Podgląd transferu"
   },
   "passwordPage": {
     "fieldError": "Wprowadź swój {{field}}",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "Opcje finansowania",
+      "total": "Łącznie {{amount}}",
       "balances": "Salda",
       "linkedPaymentMethods": "Połączone metody płatności",
       "buyingPower": "Zdolność zakupowa",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "Wystąpił błąd. Spróbuj ponownie",
-      "conversion": "Konwersja {{amount}} {{symbol}} na {{currency}}",
+      "conversion": "Przeliczanie {{amount}} na {{currency}}",
       "deposit": "Wpłata {{amount}} z {{paymentMethod}}",
       "purchase": "Zakup {{amount}} {{symbol}}",
       "approval": "Zatwierdzenie twojego transferu z {{integrationName}}",
