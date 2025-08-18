@@ -61,15 +61,23 @@
     "title": "重置密码"
   },
   "binanceDirectLoginPage": {
-    "continueWithAppButton": "继续使用 Binance 应用",
-    "descriptionDeposit": "<1>在连接您的Binance手机应用程序后返回此处存入</1>。",
-    "descriptionGeneral": "<1>返回此处以继续</1> 在通过您的 Binance 移动应用连接后。",
-    "descriptionOnRamp": "<1>返回此处以继续</1> 在通过您的 Binance 移动应用连接后。",
-    "descriptionPay": "<1>返回此处以支付</1> 在通过您的 Binance 移动应用连接后。",
+    "continueWithAppButton": "继续使用 Binance",
+    "descriptionDeposit": "在连接您的Binance移动应用程序后<1>返回此处充值</1>。",
+    "descriptionGeneral": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
+    "descriptionOnRamp": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
+    "descriptionPay": "在连接您的Binance移动应用程序后<1>返回此处支付</1> 。",
     "loginWithEmailButton": "使用邮箱/手机登录",
     "or": "或",
     "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
     "title": "登录"
+  },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "请求未被批准。如果是错误，请重试。",
+    "title": "哎哟，出了点问题！"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "我们未能及时收到响应，请重试",
+    "title": "请求已过期"
   },
   "bindFacePage": {
     "completedButton": "我已在手机上完成此项",
@@ -93,14 +101,14 @@
   },
   "catalogFilterIneligibilityReasons": {
     "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
-    "sdkVersionNotSupported": "{{integrationName}}的TrueAuth机制不支持此SDK上下文：{{sdkContext}}。",
-    "travelRuleWalletOwnershipRequired": "由于合规资格限制，{{integrationName}} 不支持。",
-    "travelRuleVaspIdRequired": "由于合规资格限制，{{integrationName}} 不支持。",
-    "travelRuleAmountLimit": "由于合规资格限制，{{integrationName}} 不支持。",
+    "sdkVersionNotSupported": "{{integrationName}}此SDK上下文不支持此TrueAuth认证机制{{sdkContext}}。",
+    "travelRuleWalletOwnershipRequired": "因合规资格限制，暂不支持{{integrationName}} 。",
+    "travelRuleVaspIdRequired": "因合规资格限制，暂不支持{{integrationName}} 。",
+    "travelRuleAmountLimit": "因合规资格限制，暂不支持{{integrationName}} 。",
     "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
-    "moreThanIntegrationMaxAmount": "请求金额高于{{integrationName}}经纪商的最高额度。",
+    "moreThanIntegrationMaxAmount": "请求金额超出{{integrationName}}经纪商的最高限额",
     "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}不支持任何所提供的代币/网络组合的转移。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}所选代币/网络组合均不支持转账。",
     "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。"
   },
   "catalogList": {
@@ -117,7 +125,7 @@
     "title": "选择要关联的账户",
     "title40": "选择你的账户",
     "emptyCatalogTitle": "暂无可用钱包和交易所",
-    "emptyCatalogBody": "这可能是由于您的所在地、合规要求或设备兼容性的问题。"
+    "emptyCatalogBody": "这可能是由于您的所在区域、合规要求或设备兼容性的问题。"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -170,7 +178,7 @@
     "reconnectYourAccount": "重新连接您的账户",
     "searchCap": "搜索",
     "securedBy": "由...提供安全保障",
-    "sendingCap": "发送",
+    "sendingCap": "发送中",
     "processingCap": "处理中",
     "somethingWentWrong": "出了点问题...",
     "submitCap": "提交",
@@ -443,7 +451,7 @@
     "amountBelowMinimum": "转账金额低于此网络的最低转账金额要求。",
     "amountExceedsMaximum": "转账金额超过此网络的最高转账金额限制。",
     "authenticationFailed": "无法认证所选的集成服务。",
-    "balanceNotEnough": "您的账户显示余额充足，但部分资金可能处于待处理状态、已保留或用于支付费用。请尝试发送较小金额。",
+    "balanceNotEnough": "账户余额充足，但部分资金可能正在处理中、受限或用于手续费。请减少转账金额再尝试。",
     "belowMinimumFiatDeposit": "金额低于最低法币起充金额。",
     "binanceTravelRuleRestriction": "Binance目前不支持您所在国家/地区的转账操作。",
     "binanceTravelRuleRestrictionDeposit": "Binance目前不支持您所在国家/地区的充值操作。",
@@ -483,7 +491,7 @@
     "passKeyNotSupportedDeposit": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试充值。",
     "passKeyNotSupportedOnramp": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试购买。",
     "passKeyNotSupportedPayment": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试支付。",
-    "passKeyNotSupportedRedirect": "正在重定向到替代的 Coinbase 提现方式...",
+    "passKeyNotSupportedRedirect": "系统正在切换至其他 Coinbase 提现方法……",
     "permissionDenied": "您没有访问此接口所需的权限，请联系Mesh团队申请访问权限。",
     "previewExpired": "预览已过期。",
     "refusedByIntegration": "无法发起转账。",
@@ -497,7 +505,7 @@
     "symbolNotSupported": "集成不支持此代币符号。",
     "symbolNotSupportedBySource": "源钱包不支持您在所要求的网络上转移的代币符号。",
     "symbolNotSupportedByTarget": "无法找到所请求币种的充值地址。",
-    "symbolNotSupportedInRegion": "由于地区限制，Coinbase 不支持所选符号",
+    "symbolNotSupportedInRegion": "由于地区限制，Coinbase 暂不支持该币种",
     "toAccountNotSupported": "目标账户目前不支持加密货币入金。",
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
@@ -569,9 +577,9 @@
     "title": "验证"
   },
   "feesDrawer": {
-    "gasFeeDescription": "补偿网络验证者执行交易的估计费用。",
+    "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
     "institutionFeeDescription": "此费用涵盖处理您的提款时的网络成本。费用根据选定的加密货币和当前区块链条件而有所不同。",
-    "processingFee": "{{clientName}} 处理费",
+    "processingFee": "{{clientName}} 手续费",
     "processingFeeDescription": "{{clientName}} 收取的费用以便于完成此交易。",
     "title": "包含的费用"
   },
@@ -1079,6 +1087,8 @@
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
     "unsupportedCurrencyError": "您所在国家不支持所选货币的入口。",
+    "buildingYourPreview": "正在生成您的预览……",
+    "Processing": "处理中……",
     "youPay": "由您支付",
     "youReceive": "由您接收",
     "unsupportedPair": "当前不支持此网络／符号对。 请选择其他。"
@@ -1088,6 +1098,11 @@
     "title": "订单详情",
     "totalLabel": "总计",
     "paymentToClient": "支付给{{clientName}}"
+  },
+  "depositFallback": {
+    "description": "不用担心……我们将使用另一种 {{integrationName}} 提现方式完成您的交易。",
+    "instruction": "点击“预览转账”以查看并完成您的交易。",
+    "previewButton": "预览转账"
   },
   "passwordPage": {
     "fieldError": "请输入您的{{field}}",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "资金选项",
+      "total": "总金额: {{amount}}",
       "balances": "余额",
       "linkedPaymentMethods": "已关联的支付方式",
       "buyingPower": "购买力",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "发生错误。请再试一次",
-      "conversion": "将{{amount}} {{symbol}}兑换为{{currency}}",
+      "conversion": "将 {{amount}} 兑换为 {{currency}}",
       "deposit": "从{{paymentMethod}}充值{{amount}}",
       "purchase": "购买{{amount}} {{symbol}}",
       "approval": "批准从{{integrationName}}的转账",

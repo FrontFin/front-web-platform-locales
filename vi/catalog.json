@@ -71,6 +71,14 @@
     "scanText": "Dùng camera trên điện thoại hoặc ứng dụng Binance để quét mã và đăng nhập.",
     "title": "Đăng nhập"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Có vẻ như bạn đã không phê duyệt yêu cầu. Nếu đó là một sai lầm, xin vui lòng thử lại.",
+    "title": "Rất tiếc!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Chúng tôi không nhận được phản hồi kịp thời. Xin vui lòng thử lại.",
+    "title": "Yêu cầu đã hết hạn"
+  },
   "bindFacePage": {
     "completedButton": "Tôi đã hoàn thành trên điện thoại của mình",
     "linkText": "Nếu bạn không thể quét mã QR, vui lòng làm theo <2><0>liên kết</0></2> này.",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "Chọn đơn vị tiền tệ",
     "selectNetwork": "Chọn mạng lưới chuyển tiền",
     "unsupportedCurrencyError": "Đồng tiền đã chọn không được hỗ trợ để nạp tiền trong quốc gia của bạn.",
+    "buildingYourPreview": "Đang tạo bản xem trước của bạn...",
+    "Processing": "Đang xử lý...",
     "youPay": "Bạn trả",
     "youReceive": "Bạn nhận được",
     "unsupportedPair": "Cặp mạng/kí hiệu này hiện không được hỗ trợ. Vui lòng chọn một mục khác."
@@ -1088,6 +1098,11 @@
     "title": "Tóm tắt đơn hàng",
     "totalLabel": "Tổng cộng",
     "paymentToClient": "Thanh toán đến {{clientName}}"
+  },
+  "depositFallback": {
+    "description": "Không cần lo lắng... chúng tôi sẽ hoàn tất giao dịch của bạn bằng phương thức rút tiền {{integrationName}} thay thế.",
+    "instruction": "Nhấp vào Xem trước chuyển khoản để xem lại và hoàn tất giao dịch của bạn.",
+    "previewButton": "Xem trước chuyển tiền"
   },
   "passwordPage": {
     "fieldError": "Vui lòng nhập {{field}} của bạn",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "Lựa chọn nguồn tài trợ",
+      "total": "Tổng {{amount}}",
       "balances": "Số dư",
       "linkedPaymentMethods": "Phương thức thanh toán liên kết",
       "buyingPower": "Sức mua",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại",
-      "conversion": "Chuyển đổi {{amount}} {{symbol}} sang {{currency}}",
+      "conversion": "Chuyển đổi {{amount}} sang {{currency}}",
       "deposit": "Nạp {{amount}} từ {{paymentMethod}}",
       "purchase": "Mua {{amount}} {{symbol}}",
       "approval": "Phê duyệt việc chuyển ra từ {{integrationName}} của bạn",

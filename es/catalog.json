@@ -71,6 +71,14 @@
     "scanText": "Escanea con la cámara de tu teléfono o la aplicación de Binance para iniciar sesión.",
     "title": "Iniciar sesión"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Parece que no aprobaste la solicitud. Si fue un error, por favor intenta de nuevo.",
+    "title": "¡Ups!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "No recibimos una respuesta a tiempo. Por favor, intenta de nuevo.",
+    "title": "Solicitud expirada"
+  },
   "bindFacePage": {
     "completedButton": "He completado esto desde mi teléfono",
     "linkText": "Si no puedes escanear el código QR, por favor sigue este <2><0>enlace</0></2>.",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "Selecciona una moneda",
     "selectNetwork": "Selecciona una red",
     "unsupportedCurrencyError": "La moneda seleccionada no es compatible para el procesamiento en tu país.",
+    "buildingYourPreview": "Construyendo la vista previa...",
+    "Processing": "Procesando...",
     "youPay": "Pagarás",
     "youReceive": "Recibirás",
     "unsupportedPair": "Este par de red/símbolo no está soportado actualmente. Por favor, elija otro."
@@ -1088,6 +1098,11 @@
     "title": "Resumen del pedido",
     "totalLabel": "Total",
     "paymentToClient": "Pago a {{clientName}}"
+  },
+  "depositFallback": {
+    "description": "No se preocupe... finalizaremos su transacción con un método de retiro alternativo de {{integrationName}}.",
+    "instruction": "Haga clic en Vista previa de la transferencia para revisar y finalizar su transacción.",
+    "previewButton": "Vista previa de la transferencia"
   },
   "passwordPage": {
     "fieldError": "Por favor, captura tu {{field}}",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "Opciones de financiación",
+      "total": "Total {{amount}}",
       "balances": "Saldo(s)",
       "linkedPaymentMethods": "Formas de pago vinculadas",
       "buyingPower": "Poder de compra",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "Ha ocurrido un error. Por favor, inténtalo de nuevo",
-      "conversion": "Conversión de {{amount}} {{symbol}} a {{currency}}",
+      "conversion": "Conversi\u000f3n de {{amount}} a {{currency}}",
       "deposit": "Depositar {{amount}} desde {{paymentMethod}}",
       "purchase": "Compra de {{amount}} {{symbol}}",
       "approval": "Aprobación de tu transferencia desde {{integrationName}}",

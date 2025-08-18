@@ -71,6 +71,14 @@
     "scanText": "Giriş yapmak için telefon kameranız veya Binance uygulaması ile tarayın.",
     "title": "Giriş yap"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Görünüşe göre isteği onaylamadınız. Bu bir hata ise lütfen tekrar deneyin.",
+    "title": "Hata!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Zamanında yanıt alamadık. Lütfen tekrar deneyin.",
+    "title": "Talep süresi doldu."
+  },
   "bindFacePage": {
     "completedButton": "Bunu telefonumda tamamladım",
     "linkText": "QR kodunu tarayamazsanız, lütfen bu <2><0>bağlantıyı</0></2> takip edin.",
@@ -1079,6 +1087,8 @@
     "selectCurrency": "Bir para birimi seçin",
     "selectNetwork": "Transfer ağını seçin",
     "unsupportedCurrencyError": "Seçilen para birimi, ülkenizde onramp için desteklenmiyor.",
+    "buildingYourPreview": "Önizlemeniz oluşturuluyor...",
+    "Processing": "İşleniyor...",
     "youPay": "Ödemeniz gereken tutar",
     "youReceive": "Alacağınız tutar",
     "unsupportedPair": "Bu ağ/simge çifti şu anda desteklenmiyor. Lütfen başka bir tane seçin."
@@ -1088,6 +1098,11 @@
     "title": "Sipariş özeti",
     "totalLabel": "Toplam",
     "paymentToClient": "Ödeme {{clientName}}'e"
+  },
+  "depositFallback": {
+    "description": "Endişelenmeyin... İşleminizi alternatif {{integrationName}} para çekme yöntemi ile sonuçlandıracağız.",
+    "instruction": "İşleminizi incelemek ve tamamlamak için Önizleme transferine tıklayın.",
+    "previewButton": "Transfer ön izlemesi"
   },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} giriniz",
@@ -1208,6 +1223,7 @@
     },
     "fundingOptions": {
       "title": "Ödeme seçenekleri",
+      "total": "Toplam {{amount}}",
       "balances": "Bakiye(ler)",
       "linkedPaymentMethods": "Bağlantılı ödeme yöntemi/leri",
       "buyingPower": "Alım gücü",
@@ -1225,7 +1241,7 @@
     },
     "fundingSteps": {
       "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin",
-      "conversion": "{{amount}} {{symbol}}'in {{currency}}'ye dönüşümü",
+      "conversion": "{{amount}}'yi {{currency}}'ye dönüştürme",
       "deposit": "{{amount}} {{paymentMethod}}'dan yatırılması",
       "purchase": "{{amount}} {{symbol}} satın alımı",
       "approval": "{{integrationName}} dışındaki transferinizin onayı",
