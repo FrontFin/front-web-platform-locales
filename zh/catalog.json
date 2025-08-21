@@ -36,6 +36,25 @@
     "youPay": "由您支付",
     "youReceive": "由您接收"
   },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "请求未被批准。如果是错误，请重试。",
+    "title": "哎哟，出了点问题！"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "我们未能及时收到响应，请重试",
+    "title": "请求已过期"
+  },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "继续使用 Binance",
+    "descriptionDeposit": "在连接您的Binance移动应用程序后<1>返回此处充值</1>。",
+    "descriptionGeneral": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
+    "descriptionOnRamp": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
+    "descriptionPay": "在连接您的Binance移动应用程序后<1>返回此处支付</1> 。",
+    "loginWithEmailButton": "使用邮箱/手机登录",
+    "or": "或",
+    "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
+    "title": "登录"
+  },
   "binanceMfaPage": {
     "add2fa": "请在Binance账户中添加所需的双重认证方式（2FA）",
     "chooseAnotherAccount": "选择另一个账户",
@@ -60,25 +79,6 @@
     },
     "title": "重置密码"
   },
-  "binanceDirectLoginPage": {
-    "continueWithAppButton": "继续使用 Binance",
-    "descriptionDeposit": "在连接您的Binance移动应用程序后<1>返回此处充值</1>。",
-    "descriptionGeneral": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
-    "descriptionOnRamp": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
-    "descriptionPay": "在连接您的Binance移动应用程序后<1>返回此处支付</1> 。",
-    "loginWithEmailButton": "使用邮箱/手机登录",
-    "or": "或",
-    "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
-    "title": "登录"
-  },
-  "binanceDirectLoginConnectionDeniedPage": {
-    "body": "请求未被批准。如果是错误，请重试。",
-    "title": "哎哟，出了点问题！"
-  },
-  "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "我们未能及时收到响应，请重试",
-    "title": "请求已过期"
-  },
   "bindFacePage": {
     "completedButton": "我已在手机上完成此项",
     "linkText": "若您无法扫描二维码，请点击此<2><0>链接</0></2>。",
@@ -100,16 +100,16 @@
     "select": "选择{{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
-    "sdkVersionNotSupported": "{{integrationName}}此SDK上下文不支持此TrueAuth认证机制{{sdkContext}}。",
-    "travelRuleWalletOwnershipRequired": "因合规资格限制，暂不支持{{integrationName}} 。",
-    "travelRuleVaspIdRequired": "因合规资格限制，暂不支持{{integrationName}} 。",
-    "travelRuleAmountLimit": "因合规资格限制，暂不支持{{integrationName}} 。",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}所选代币/网络组合均不支持转账。",
+    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
     "lessThanIntegrationMinAmount": "请求的金额低于 {{integrationName}} 的最低金额。",
     "moreThanIntegrationMaxAmount": "请求金额超出{{integrationName}}经纪商的最高限额",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} 不支持此代币和网络。",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}所选代币/网络组合均不支持转账。",
-    "integrationNotSupportedCountry": "{{integrationName}} 在您的地区不可用。"
+    "platformNotSupported": "{{integrationName}} 不支持此设备类型。",
+    "sdkVersionNotSupported": "{{integrationName}}此SDK上下文不支持此TrueAuth认证机制{{sdkContext}}。",
+    "travelRuleAmountLimit": "因合规资格限制，暂不支持{{integrationName}} 。",
+    "travelRuleVaspIdRequired": "因合规资格限制，暂不支持{{integrationName}} 。",
+    "travelRuleWalletOwnershipRequired": "因合规资格限制，暂不支持{{integrationName}} 。"
   },
   "catalogList": {
     "badges": {
@@ -118,14 +118,14 @@
       "installed": "已安装",
       "linked": "之前已链接"
     },
+    "emptyCatalogBody": "这可能是由于您的所在区域、合规要求或设备兼容性的问题。",
+    "emptyCatalogTitle": "暂无可用钱包和交易所",
     "noResults": "抱歉，未找到相关结果",
     "paymentTitle": "选择支付账号",
     "prodOnly": "仅限生产环境",
     "search": "搜索",
     "title": "选择要关联的账户",
-    "title40": "选择你的账户",
-    "emptyCatalogTitle": "暂无可用钱包和交易所",
-    "emptyCatalogBody": "这可能是由于您的所在区域、合规要求或设备兼容性的问题。"
+    "title40": "选择你的账户"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -175,11 +175,11 @@
     "maxCap": "最大",
     "mesh": "Mesh",
     "notFound": "未找到",
+    "processingCap": "处理中",
     "reconnectYourAccount": "重新连接您的账户",
     "searchCap": "搜索",
     "securedBy": "由...提供安全保障",
     "sendingCap": "发送中",
-    "processingCap": "处理中",
     "somethingWentWrong": "出了点问题...",
     "submitCap": "提交",
     "successTitle": "成功！",
@@ -264,6 +264,11 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}}未在此设备上安装。请安装{{integrationName}}应用，或连接另一个钱包。",
     "title": "连接不可用"
+  },
+  "depositFallback": {
+    "description": "不用担心……我们将使用另一种 {{integrationName}} 提现方式完成您的交易。",
+    "instruction": "点击“预览转账”以查看并完成您的交易。",
+    "previewButton": "预览转账"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "等待手机端应用程序确认",
@@ -769,8 +774,8 @@
     "notSupportedForTransferBySource": "不支持{{integrationName}}",
     "nyCoinbaseUserRestrictions": "受纽约州多链支持限制影响，无法在{{network}}上接受此{{symbol}}转账。",
     "symbolDoesNotMatch": "{{clientName}}不支持",
-    "symbolDoesNotMatchNoClientName": "不支持此应用程序",
-    "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。"
+    "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。",
+    "symbolDoesNotMatchNoClientName": "不支持此应用程序"
   },
   "initialLedgerScreen": {
     "title": "请开启并解锁您的设备"
@@ -956,13 +961,13 @@
     "returnToClient": "在{{selectedIntegrationName}}中批准连接请求后，请返回{{clientName}}。",
     "sendAgain": "再次发送",
     "sendNewRequest": "发送新请求",
-    "troubleshootTitle": "没有收到请求？",
-    "troubleshootExchangeMode": "确保您处于交易模式，而不是钱包。",
     "steps": {
       "authorize": "在确认页面点击<1>授权</1>。",
       "openApp": "在下方点击<1>打开{{selectedIntegrationName}}应用</1>。",
       "return": "返回此处以完成账户关联。"
-    }
+    },
+    "troubleshootExchangeMode": "确保您处于交易模式，而不是钱包。",
+    "troubleshootTitle": "没有收到请求？"
   },
   "mobileContent": {
     "actionButton": "打开{{integrationName}}"
@@ -1001,9 +1006,9 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "重新打开{{selectedIntegrationName}}",
+      "note": "前往{{selectedIntegrationName}}以完成您的存款",
       "subtitle": "请在浏览器中完成登录并批准访问。",
-      "title": "等待连接",
-      "note": "前往{{selectedIntegrationName}}以完成您的存款"
+      "title": "等待连接"
     },
     "checking": {
       "message": "正在检查您的资产……"
@@ -1073,11 +1078,13 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "金额必须在{{minAmount}} - {{maxAmount}}之间",
     "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
+    "buildingYourPreview": "正在生成您的预览……",
     "buyCrypto": "使用Binance Connect购买加密货币",
     "closeButton": "关闭",
     "continueTo": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "notSupported": "{{selectedIntegrationName}}不支持所请求代币和/或网络的转账。",
+    "Processing": "处理中……",
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
@@ -1087,22 +1094,15 @@
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
     "unsupportedCurrencyError": "您所在国家不支持所选货币的入口。",
-    "buildingYourPreview": "正在生成您的预览……",
-    "Processing": "处理中……",
+    "unsupportedPair": "当前不支持此网络／符号对。 请选择其他。",
     "youPay": "由您支付",
-    "youReceive": "由您接收",
-    "unsupportedPair": "当前不支持此网络／符号对。 请选择其他。"
+    "youReceive": "由您接收"
   },
   "orderSummaryDrawer": {
     "merchantInfoName": "商户：{{clientName}}",
+    "paymentToClient": "支付给{{clientName}}",
     "title": "订单详情",
-    "totalLabel": "总计",
-    "paymentToClient": "支付给{{clientName}}"
-  },
-  "depositFallback": {
-    "description": "不用担心……我们将使用另一种 {{integrationName}} 提现方式完成您的交易。",
-    "instruction": "点击“预览转账”以查看并完成您的交易。",
-    "previewButton": "预览转账"
+    "totalLabel": "总计"
   },
   "passwordPage": {
     "fieldError": "请输入您的{{field}}",
@@ -1131,6 +1131,130 @@
     "title": "支付状态更新",
     "topUp": "充值{{token}}余额"
   },
+  "paypal": {
+    "brokerLoading": {
+      "preparingPayment": "正在准备您的支付详情"
+    },
+    "common": {
+      "cancel": "取消",
+      "change": "更改",
+      "close": "关闭",
+      "continue": "继续",
+      "done": "完成",
+      "goBack": "返回",
+      "ok": "确认",
+      "order": "订单",
+      "pay": "支付",
+      "save": "保存",
+      "stillWorking": "处理中...",
+      "total": "总计",
+      "tryAgain": "再次尝试"
+    },
+    "connectionPage": {
+      "approveConnection": "在您的钱包中批准连接请求",
+      "continueTo": "继续前往{{integrationName}}",
+      "oauthLogin": "登录您的账户并允许访问"
+    },
+    "doneTransferDetailsPage": {
+      "disclaimer": "在收到足够的网络认证之前，转账不会完成。",
+      "title": "发生了什么"
+    },
+    "doneTransferPage": {
+      "description": "您刚支付了{{amount}}。完成后，您将收到来自{{clientName}}的确认信息。",
+      "disclaimer": "在收到足够的网络认证之前，转账不会完成。",
+      "seeDetails": "查看原因",
+      "title": "支付已发起"
+    },
+    "exitPage": {
+      "continuePayment": "继续付款",
+      "exit": "退出",
+      "subtitle": "您的进度将会丢失。",
+      "title": "您确定要退出吗？"
+    },
+    "fundingOptions": {
+      "available": "{{amount}} 可用",
+      "balances": "余额",
+      "buyingPower": "购买力",
+      "exchangeRateDisclaimer": "汇率可能包含差价。",
+      "instantCashAvailable": "可用即时现金: {{amount}}",
+      "linkedPaymentMethods": "已关联的支付方式",
+      "paymentMethodTypes": {
+        "bankAccount": "银行账户",
+        "card": "卡",
+        "digitalWallet": "钱包"
+      },
+      "title": "资金选项",
+      "total": "总金额: {{amount}}"
+    },
+    "fundingSteps": {
+      "approval": "批准从{{integrationName}}的转账",
+      "conversion": "将 {{amount}} 兑换为 {{currency}}",
+      "deposit": "从{{paymentMethod}}充值{{amount}}",
+      "errorMessage": "发生错误。请再试一次",
+      "purchase": "购买{{amount}} {{symbol}}",
+      "transfer": "为您的购买转账{{symbol}}"
+    },
+    "infoScreen": {
+      "rule1": "您的信息不会被存储。支付完成后，将断开访问。",
+      "rule2": "使用您的加密货币，查看详情并批准支付。",
+      "rule3": "自动兑换使一切变得简单。",
+      "title": "登录以查看支付详情"
+    },
+    "previewPage": {
+      "bufferAndFees": "{{bufferAmount}}缓冲+{{feesAmount}}费用已包含",
+      "bufferDisclaimer": "您将保留未用完的缓冲。",
+      "conversionFee": "{{integrationName}}转换费",
+      "conversionFeeHint": "{{integrationName}}收取此费用进行转换。",
+      "estimatedNetworkFee": "网络费用估计",
+      "feeChangedNotice": "网络费用已更改。请检查您的总费用并确认。",
+      "feesIncluded": "总费用为{{amount}}",
+      "from": "来自{{integrationName}}",
+      "howItWorks": "它是怎么工作的",
+      "merchantPurchase": "{{merchantName}}购买",
+      "networkFeeHint": "通过支付网络验证器的费用帮助将交易导入区块链",
+      "payWith": "使用...支付",
+      "pyusdDisclaimer": "交易将使用PayPal USD (PYUSD)完成，这是由Paxos Trust Company, LLC发行并托管的稳定币。PYUSD在区块链上运行。",
+      "refundDisclaimer": "退款仅以{{settlementCurrency}}发放。汇率和费用经常变化。所有加密货币购买为最终交易。",
+      "send": "发送",
+      "title": "支付{{merchantName}}",
+      "transactionBuffer": "交易缓冲",
+      "transactionBufferHint": "为了避免加密价格波动造成影响，这一金额会被添加到您的购买中，并可能使您的钱包中留下部分{{settlementCurrency}}。"
+    },
+    "sessionExpiredPage": {
+      "description": "如果当此会话活跃时，您在其他平台上登录到您的帐户，则通常会发生这种情况。",
+      "retry": "请点击重试以登录并重试您的交易。",
+      "title": "会话已过期"
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (\"公司\") 是一家技术提供商，提供通信工具 (\"工具\")，帮助您实现您使用的第三方服务 (\"终端用户服务\") 的某些功能。此功能旨在帮助您通过终端用户服务与第三方账户和钱包 (\"连接账户\") 进行通信，包括发送您希望执行的指令。Mesh作为PayPal, Inc. (\"PayPal\")的服务提供商，为您提供此工具。您承认并同意，终端用户服务的某些功能基于此工具；您使用这些功能是根据您的指示；公司及其服务提供商不提供经纪服务或参与支付处理；公司及其服务提供商对此End User Service或任何连接帐户或其提供者的条款、政策、行为或不作为概不负责或承担责任。您声明并保证，您拥有所有必要的权利和同意通过此功能连接并访问每个连接帐户，包括向公司及其服务提供商提供您的账户登录凭据、钱包地址和/或任何相关账户或个人信息的权利。您特此授权公司及其服务提供商在终端用户服务和每个连接帐户之间传输指令以及信息、数据和其他材料，并且您承认并同意公司及其服务提供商对任何此类指令的执行不负责任，也不会对任何此类材料（包括其准确性、及时性或完整性）负责。您同意，如果您使用该工具进行与第三方的交易，包括但不限于在线商户或任何类型的购买 (\"第三方交易\")，则公司或PayPal均不对与此类交易相关的任何争议负责。您负责直接与任何相关第三方联系，以解决任何争议、未经授权的交易请求、退款请求或任何与第三方交易有关的索赔或问题。使用加密货币进行的购买可能会受到限制。"
+    },
+    "termsOfUse": {
+      "linkText": "使用条款",
+      "text": "继续操作即表示您接受使用条款"
+    },
+    "topupPage": {
+      "assetsDescription": "兑换为{{targetSymbol}}的资产因价格和/或网络费用波动而低于预期。",
+      "conversionDescription": "兑换{{convertedSymbol}}到{{targetSymbol}}的价值因价格和/或网络费用波动而低于预期。",
+      "currentBalance": "当前余额",
+      "disclaimer": "如果您未完成付款，您的{{targetSymbol}}余额将保留在您的{{integrationName}}帐户中。",
+      "required": "必需",
+      "title": "余额不足，请充值",
+      "viewTopUp": "查看充值"
+    },
+    "transferErrorPage": {
+      "belowNetworkMinimumMessage": "此购买金额低于您账户的最低兑换限额。请连接其他账户以完成购买。",
+      "chooseDifferentAccount": "选择其他账户",
+      "defaultMessage": "资金将保留在您的{{integrationName}}账户中。",
+      "defaultTitle": "我们无法处理此支付",
+      "insufficientFunds": "余额不足",
+      "insufficientFundsMessage": "您的余额不足以完成此交易。",
+      "requestDenied": "请求被拒绝",
+      "requestDeniedMessage": "看起来您拒绝了这笔交易。如果是误操作，请重试并在您的钱包中批准该请求。"
+    },
+    "walletConfirmation": {
+      "title": "在您的{{integrationName}}应用中确认此交易。"
+    }
+  },
   "payPalConnectOAuthPage": {
     "close": "关闭",
     "continue": "继续前往{{selectedIntegrationName}}",
@@ -1140,130 +1264,6 @@
     "selectAnotherExchange": "请选择另一个可以进行充值的交易所或钱包。",
     "selectNetwork": "选择转账网络",
     "title": "选择要转账的资产"
-  },
-  "paypal": {
-    "common": {
-      "cancel": "取消",
-      "done": "完成",
-      "continue": "继续",
-      "save": "保存",
-      "close": "关闭",
-      "tryAgain": "再次尝试",
-      "ok": "确认",
-      "pay": "支付",
-      "total": "总计",
-      "order": "订单",
-      "change": "更改",
-      "stillWorking": "处理中...",
-      "goBack": "返回"
-    },
-    "sessionExpiredPage": {
-      "title": "会话已过期",
-      "description": "如果当此会话活跃时，您在其他平台上登录到您的帐户，则通常会发生这种情况。",
-      "retry": "请点击重试以登录并重试您的交易。"
-    },
-    "topupPage": {
-      "title": "余额不足，请充值",
-      "currentBalance": "当前余额",
-      "required": "必需",
-      "viewTopUp": "查看充值",
-      "disclaimer": "如果您未完成付款，您的{{targetSymbol}}余额将保留在您的{{integrationName}}帐户中。",
-      "conversionDescription": "兑换{{convertedSymbol}}到{{targetSymbol}}的价值因价格和/或网络费用波动而低于预期。",
-      "assetsDescription": "兑换为{{targetSymbol}}的资产因价格和/或网络费用波动而低于预期。"
-    },
-    "doneTransferPage": {
-      "title": "支付已发起",
-      "description": "您刚支付了{{amount}}。完成后，您将收到来自{{clientName}}的确认信息。",
-      "seeDetails": "查看原因",
-      "disclaimer": "在收到足够的网络认证之前，转账不会完成。"
-    },
-    "doneTransferDetailsPage": {
-      "title": "发生了什么",
-      "disclaimer": "在收到足够的网络认证之前，转账不会完成。"
-    },
-    "exitPage": {
-      "title": "您确定要退出吗？",
-      "subtitle": "您的进度将会丢失。",
-      "continuePayment": "继续付款",
-      "exit": "退出"
-    },
-    "infoScreen": {
-      "title": "登录以查看支付详情",
-      "rule1": "您的信息不会被存储。支付完成后，将断开访问。",
-      "rule2": "使用您的加密货币，查看详情并批准支付。",
-      "rule3": "自动兑换使一切变得简单。"
-    },
-    "transferErrorPage": {
-      "insufficientFunds": "余额不足",
-      "requestDenied": "请求被拒绝",
-      "defaultTitle": "我们无法处理此支付",
-      "insufficientFundsMessage": "您的余额不足以完成此交易。",
-      "belowNetworkMinimumMessage": "此购买金额低于您账户的最低兑换限额。请连接其他账户以完成购买。",
-      "requestDeniedMessage": "看起来您拒绝了这笔交易。如果是误操作，请重试并在您的钱包中批准该请求。",
-      "defaultMessage": "资金将保留在您的{{integrationName}}账户中。",
-      "chooseDifferentAccount": "选择其他账户"
-    },
-    "previewPage": {
-      "title": "支付{{merchantName}}",
-      "from": "来自{{integrationName}}",
-      "payWith": "使用...支付",
-      "send": "发送",
-      "merchantPurchase": "{{merchantName}}购买",
-      "estimatedNetworkFee": "网络费用估计",
-      "conversionFee": "{{integrationName}}转换费",
-      "transactionBuffer": "交易缓冲",
-      "feesIncluded": "总费用为{{amount}}",
-      "bufferAndFees": "{{bufferAmount}}缓冲+{{feesAmount}}费用已包含",
-      "bufferDisclaimer": "您将保留未用完的缓冲。",
-      "howItWorks": "它是怎么工作的",
-      "refundDisclaimer": "退款仅以{{settlementCurrency}}发放。汇率和费用经常变化。所有加密货币购买为最终交易。",
-      "feeChangedNotice": "网络费用已更改。请检查您的总费用并确认。",
-      "networkFeeHint": "通过支付网络验证器的费用帮助将交易导入区块链",
-      "conversionFeeHint": "{{integrationName}}收取此费用进行转换。",
-      "transactionBufferHint": "为了避免加密价格波动造成影响，这一金额会被添加到您的购买中，并可能使您的钱包中留下部分{{settlementCurrency}}。",
-      "pyusdDisclaimer": "交易将使用PayPal USD (PYUSD)完成，这是由Paxos Trust Company, LLC发行并托管的稳定币。PYUSD在区块链上运行。"
-    },
-    "connectionPage": {
-      "approveConnection": "在您的钱包中批准连接请求",
-      "oauthLogin": "登录您的账户并允许访问",
-      "continueTo": "继续前往{{integrationName}}"
-    },
-    "brokerLoading": {
-      "preparingPayment": "正在准备您的支付详情"
-    },
-    "fundingOptions": {
-      "title": "资金选项",
-      "total": "总金额: {{amount}}",
-      "balances": "余额",
-      "linkedPaymentMethods": "已关联的支付方式",
-      "buyingPower": "购买力",
-      "instantCashAvailable": "可用即时现金: {{amount}}",
-      "available": "{{amount}} 可用",
-      "exchangeRateDisclaimer": "汇率可能包含差价。",
-      "paymentMethodTypes": {
-        "card": "卡",
-        "bankAccount": "银行账户",
-        "digitalWallet": "钱包"
-      }
-    },
-    "walletConfirmation": {
-      "title": "在您的{{integrationName}}应用中确认此交易。"
-    },
-    "fundingSteps": {
-      "errorMessage": "发生错误。请再试一次",
-      "conversion": "将 {{amount}} 兑换为 {{currency}}",
-      "deposit": "从{{paymentMethod}}充值{{amount}}",
-      "purchase": "购买{{amount}} {{symbol}}",
-      "approval": "批准从{{integrationName}}的转账",
-      "transfer": "为您的购买转账{{symbol}}"
-    },
-    "termsOfUse": {
-      "text": "继续操作即表示您接受使用条款",
-      "linkText": "使用条款"
-    },
-    "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"公司\") 是一家技术提供商，提供通信工具 (\"工具\")，帮助您实现您使用的第三方服务 (\"终端用户服务\") 的某些功能。此功能旨在帮助您通过终端用户服务与第三方账户和钱包 (\"连接账户\") 进行通信，包括发送您希望执行的指令。Mesh作为PayPal, Inc. (\"PayPal\")的服务提供商，为您提供此工具。您承认并同意，终端用户服务的某些功能基于此工具；您使用这些功能是根据您的指示；公司及其服务提供商不提供经纪服务或参与支付处理；公司及其服务提供商对此End User Service或任何连接帐户或其提供者的条款、政策、行为或不作为概不负责或承担责任。您声明并保证，您拥有所有必要的权利和同意通过此功能连接并访问每个连接帐户，包括向公司及其服务提供商提供您的账户登录凭据、钱包地址和/或任何相关账户或个人信息的权利。您特此授权公司及其服务提供商在终端用户服务和每个连接帐户之间传输指令以及信息、数据和其他材料，并且您承认并同意公司及其服务提供商对任何此类指令的执行不负责任，也不会对任何此类材料（包括其准确性、及时性或完整性）负责。您同意，如果您使用该工具进行与第三方的交易，包括但不限于在线商户或任何类型的购买 (\"第三方交易\")，则公司或PayPal均不对与此类交易相关的任何争议负责。您负责直接与任何相关第三方联系，以解决任何争议、未经授权的交易请求、退款请求或任何与第三方交易有关的索赔或问题。使用加密货币进行的购买可能会受到限制。"
-    }
   },
   "previewPageUI": {
     "accountLabel": "账户",
@@ -1319,6 +1319,7 @@
     "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
   "previewTransferPageUI": {
+    "depositFromIntegration": "来自 {{integrationName}} 的存款",
     "fee": "包含 {{amount}} 手续费",
     "fundingMethods": "充值方式",
     "receive": "收款",
@@ -1326,8 +1327,7 @@
     "send": "发送",
     "title": "转账预览",
     "tokenOnNetwork": "{{token}} 在 {{network}}",
-    "transferToken": "转账代币",
-    "depositFromIntegration": "来自 {{integrationName}} 的存款"
+    "transferToken": "转账代币"
   },
   "privacyComponent": {
     "content": "您的数据全程加密，隐私绝对安全。"
@@ -1358,6 +1358,7 @@
     "title": "选择资产"
   },
   "selectHoldingPage": {
+    "balance": "",
     "binanceDirectNoAssetsBody1": "您的关联账户中似乎没有任何资产。",
     "binanceDirectNoAssetsBody2": "您可以充值至您的帐户，或选择另一个帐户继续转账。",
     "cannotFundBody": "您的账户中加密货币或法定货币余额不足，无法进行此交易。",
@@ -1367,6 +1368,7 @@
     "ineligibleAssets": "无法使用的资产",
     "link40Title": "选择一个令牌",
     "loading": "正在加载您的资产……",
+    "network": "",
     "noAssetsTitle": "关联账户中未检测出资产",
     "noEligibleAssetsTitle": "此账户中资产不符合该转账要求",
     "notEnoughtBody": "请向您的账户充值更多{{symbol}}，然后返回此处重试。",
