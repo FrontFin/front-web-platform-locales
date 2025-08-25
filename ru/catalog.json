@@ -812,7 +812,9 @@
     "resendAction": "Повторно отправить запрос на подпись",
     "title": "Почти готово!",
     "verifyAction": "Подтвердить адрес",
-    "verifyingLabel": "Проверка подписи..."
+    "verifyingLabel": "Проверка подписи...",
+    "approveSignature": "Approve the signature request in your {{walletName}} app.",
+    "approveSignatureStillThere": "Still there?…  Please approve the signature request in your {{walletName}} app."
   },
   "ipWhiteListPage": {
     "addIp": "Добавить IP адрес ниже в качестве доверенного",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} хочет проверить право собственности на <3>{{requestedNetworkName}}</3> адрес <6>{{truncatedRequestedAddress}}</6>. Этот адрес не связан с подключенным кошельком. Пожалуйста, подключите другой кошелек.",
+    "body40": "{{clientName}} would like you to verify ownership of address {{address}}. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "Подключить другой кошелек",
     "title": "Ой!"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "Вы отклонили запрос на подпись в вашем кошельке, или предыдущий запрос по-прежнему активен. {{clientName}} не может подтвердить собственность вашего кошелька без подписи.",
-    "title": "Проверка отклонена"
+    "body40": "It looks like you denied the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
+    "title": "Проверка отклонена",
+    "timeout": "Please check your wallet and approve the signature request in your {{walletName}} app."
   },
   "wallectConnect": {
     "noActiveSessionError": "Нет активных сеансов WalletConnect",
