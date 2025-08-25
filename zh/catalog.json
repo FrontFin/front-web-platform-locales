@@ -38,7 +38,7 @@
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "请求未被批准。如果是错误，请重试。",
-    "title": "哎哟，出了点问题！"
+    "title": "哎呀，出了点问题！"
   },
   "binanceDirectLoginConnectionTimeOutPage": {
     "body": "我们未能及时收到响应，请重试",
@@ -244,7 +244,15 @@
     "previewButton": "关联",
     "previewTitle": "关联账户",
     "subtitle": "点击下方打开{{walletName}}。批准该关联请求并预览您的支付。",
-    "title": "关联您的钱包"
+    "title": "关联您的钱包",
+    "dappPage": {
+      "payTitle": "用您的钱包支付",
+      "depositTitle": "用您的钱包充值",
+      "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。",
+      "continueButton": "继续前往 {{walletName}}",
+      "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
+      "spinnerText": "用您的 {{walletName}} 钱包完成支付"
+    }
   },
   "defiWalletQrPage": {
     "declinedBody": "您已拒绝关联此钱包的请求，或之前请求仍在进行中。",
@@ -266,7 +274,7 @@
     "title": "连接不可用"
   },
   "depositFallback": {
-    "description": "不用担心……我们将使用另一种 {{integrationName}} 提现方式完成您的交易。",
+    "description": "请放心……我们将使用其他{{integrationName}} 提现方式完成您的交易。",
     "instruction": "点击“预览转账”以查看并完成您的交易。",
     "previewButton": "预览转账"
   },
@@ -583,9 +591,9 @@
   },
   "feesDrawer": {
     "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
-    "institutionFeeDescription": "此费用涵盖处理您的提款时的网络成本。费用根据选定的加密货币和当前区块链条件而有所不同。",
+    "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
-    "processingFeeDescription": "{{clientName}} 收取的费用以便于完成此交易。",
+    "processingFeeDescription": "{{clientName}} 所付费用用于完成此交易。",
     "title": "包含的费用"
   },
   "fields": {
@@ -748,7 +756,7 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "该转账金额{{requestedAmount}}低于{{integrationName}}的网络最低转账要求{{minimumAmount}}。",
-    "balanceBelowIntegrationMinimumDescription": "您的{{currentBalance}}余额低于{{integrationName}}的最低转账要求{{minimumAmount}} {{symbol}}于{{network}}上。请增加余额后重试。",
+    "balanceBelowIntegrationMinimumDescription": "您的{{currentBalance}}余额低于{{integrationName}}在{{network}}上转账{{symbol}}所需的最低金额{{minimumAmount}} 请充值后重试。",
     "balanceBelowMinimumDescription": "您的余额{{currentBalance}}低于{{integrationName}}网络最低转账要求{{minimumAmount}}。",
     "belowMinimum": "低于{{integrationName}}的最低限额",
     "belowRequestedAmountDescription": "您的{{balance}}余额不足与支付本次转账及手续费{{amount}}。",
@@ -756,17 +764,17 @@
     "insufficientBalance": "余额不足",
     "insufficientBalanceDescription": "您的{{currentBalance}}余额低于该转账的最低限额。",
     "noBalance": "没有余额",
-    "noBalancePaymentDescription": "您的{{balance}}余额不足以进行此{{amount}}支付。请增加您的余额后重试。",
-    "noBalancePaymentSelectNetworkDescription": "您的{{balance}}余额不足以进行此{{amount}}支付。请选择其他网络，或增加您的余额后重试。",
-    "noBalancesPaymentDescription": "您的余额不足以进行此次支付。请选择其他网络，或增加您的余额后重试。",
-    "noBalancesTransferkDescription": "您没有可转账的余额。请增加一个余额后重试。",
-    "noBalancesTransferSelectNetworkDescription": "您没有可转账的余额。请选择不同的网络，或充值后重试。",
-    "noBalanceTransferDescription": "您没有可转账的{{symbol}}余额。请充值后重试。",
-    "noBalanceTransferSelectNetworkDescription": "您没有 {{symbol}} 余额来转账。请选择不同的网络，或充值后重试。",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "此交易需要可用余额进行转账，并需{{feeInFiat}}的{{feeSymbol}}支付燃气费。请选择不同的网络，或充值后重试。",
-    "noGasBalancePaymentDescription": "此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请增加您的余额后重试。",
+    "noBalancePaymentDescription": "您的{{balance}}余额不足以支付{{amount}}。请充值后重试。",
+    "noBalancePaymentSelectNetworkDescription": "您的{{balance}}余额不足，无法支付{{amount}}。请选择其他网络，或充值后重试。",
+    "noBalancesPaymentDescription": "您的余额不足以进行此次支付。请选择其他网络，或或充值后重试。",
+    "noBalancesTransferkDescription": "您。请充值后重试。",
+    "noBalancesTransferSelectNetworkDescription": "您当前余额为了零。请选择不同的网络，或充值后重试。",
+    "noBalanceTransferDescription": "您当前{{symbol}}余额为零。请充值后重试。",
+    "noBalanceTransferSelectNetworkDescription": "您当前{{symbol}} 余额为零。请选择不同的网络，或充值后重试。",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "完成此交易需要余额覆盖转账金额及{{feeInFiat}}的{{feeSymbol}}支付燃料费。请选择不同的网络，或充值后重试。",
+    "noGasBalancePaymentDescription": "完成此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请增加您的余额后重试。",
     "noGasBalancePaymentSelectNetworkDescription": "此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请选择其他网络，或增加您的余额后重试。",
-    "noGasBalanceTransferDescription": "此交易需要可用的{{symbol}}余额和价值{{feeInFiat}}的{{feeSymbol}}用于支付gas 费用。请增加您的余额后重试。",
+    "noGasBalanceTransferDescription": "此交易需要可用的{{symbol}}余额及价值{{feeInFiat}}的{{feeSymbol}}来支付燃料费。请补足余额后重试。",
     "noGasBalanceTransferSelectNetworkDescription": "此交易需要可用的{{symbol}}余额和价值{{feeInFiat}}的{{feeSymbol}}用于支付gas费用。请选择其他网络，或增加您的余额后重试。",
     "notEligible": "无权完成本次转账",
     "notEligibleDescription": "{{symbol}}无法接受此转账。",
@@ -775,7 +783,7 @@
     "nyCoinbaseUserRestrictions": "受纽约州多链支持限制影响，无法在{{network}}上接受此{{symbol}}转账。",
     "symbolDoesNotMatch": "{{clientName}}不支持",
     "symbolDoesNotMatchDescription": "此转账不接受{{symbol}}。",
-    "symbolDoesNotMatchNoClientName": "不支持此应用程序"
+    "symbolDoesNotMatchNoClientName": "此应用程序不支持"
   },
   "initialLedgerScreen": {
     "title": "请开启并解锁您的设备"
@@ -955,19 +963,19 @@
   },
   "mobileAppLink": {
     "awaitingConfirmation": "等待移动端应用确认",
-    "awaitingConfirmationShort": "等待确认...",
+    "awaitingConfirmationShort": "等待确认……",
     "loginRequestSent": "登录请求已发送到您的{{selectedIntegrationName}}应用。",
     "openAppButton": "打开{{selectedIntegrationName}}应用",
     "returnToClient": "在{{selectedIntegrationName}}中批准连接请求后，请返回{{clientName}}。",
-    "sendAgain": "再次发送",
+    "sendAgain": "重新转账",
     "sendNewRequest": "发送新请求",
     "steps": {
       "authorize": "在确认页面点击<1>授权</1>。",
       "openApp": "在下方点击<1>打开{{selectedIntegrationName}}应用</1>。",
       "return": "返回此处以完成账户关联。"
     },
-    "troubleshootExchangeMode": "确保您处于交易模式，而不是钱包。",
-    "troubleshootTitle": "没有收到请求？"
+    "troubleshootExchangeMode": "请确保当前为交易模式，而非钱包模式。",
+    "troubleshootTitle": "未收到请求？"
   },
   "mobileContent": {
     "actionButton": "打开{{integrationName}}"
@@ -1078,7 +1086,7 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "金额必须在{{minAmount}} - {{maxAmount}}之间",
     "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
-    "buildingYourPreview": "正在生成您的预览……",
+    "buildingYourPreview": "正在生成交易预览……",
     "buyCrypto": "使用Binance Connect购买加密货币",
     "closeButton": "关闭",
     "continueTo": "继续前往{{selectedIntegrationName}}",
@@ -1094,7 +1102,7 @@
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
     "unsupportedCurrencyError": "您所在国家不支持所选货币的入口。",
-    "unsupportedPair": "当前不支持此网络／符号对。 请选择其他。",
+    "unsupportedPair": "所选网络和币种组合暂不可用， 请选择其他选项。",
     "youPay": "由您支付",
     "youReceive": "由您接收"
   },
@@ -1163,10 +1171,10 @@
       "description": "您刚支付了{{amount}}。完成后，您将收到来自{{clientName}}的确认信息。",
       "disclaimer": "在收到足够的网络认证之前，转账不会完成。",
       "seeDetails": "查看原因",
-      "title": "支付已发起"
+      "title": "支付正在处理"
     },
     "exitPage": {
-      "continuePayment": "继续付款",
+      "continuePayment": "前往支付",
       "exit": "退出",
       "subtitle": "您的进度将会丢失。",
       "title": "您确定要退出吗？"
@@ -1174,7 +1182,7 @@
     "fundingOptions": {
       "available": "{{amount}} 可用",
       "balances": "余额",
-      "buyingPower": "购买力",
+      "buyingPower": "可用资金",
       "exchangeRateDisclaimer": "汇率可能包含差价。",
       "instantCashAvailable": "可用即时现金: {{amount}}",
       "linkedPaymentMethods": "已关联的支付方式",
@@ -1183,7 +1191,7 @@
         "card": "卡",
         "digitalWallet": "钱包"
       },
-      "title": "资金选项",
+      "title": "充值方式",
       "total": "总金额: {{amount}}"
     },
     "fundingSteps": {
@@ -1209,15 +1217,15 @@
       "feeChangedNotice": "网络费用已更改。请检查您的总费用并确认。",
       "feesIncluded": "总费用为{{amount}}",
       "from": "来自{{integrationName}}",
-      "howItWorks": "它是怎么工作的",
+      "howItWorks": "使用说明",
       "merchantPurchase": "{{merchantName}}购买",
       "networkFeeHint": "通过支付网络验证器的费用帮助将交易导入区块链",
       "payWith": "使用...支付",
       "pyusdDisclaimer": "交易将使用PayPal USD (PYUSD)完成，这是由Paxos Trust Company, LLC发行并托管的稳定币。PYUSD在区块链上运行。",
       "refundDisclaimer": "退款仅以{{settlementCurrency}}发放。汇率和费用经常变化。所有加密货币购买为最终交易。",
-      "send": "发送",
+      "send": "转账",
       "title": "支付{{merchantName}}",
-      "transactionBuffer": "交易缓冲",
+      "transactionBuffer": "交易缓冲额度",
       "transactionBufferHint": "为了避免加密价格波动造成影响，这一金额会被添加到您的购买中，并可能使您的钱包中留下部分{{settlementCurrency}}。"
     },
     "sessionExpiredPage": {
@@ -1230,7 +1238,7 @@
     },
     "termsOfUse": {
       "linkText": "使用条款",
-      "text": "继续操作即表示您接受使用条款"
+      "text": "继续操作即表示您同意使用条款"
     },
     "topupPage": {
       "assetsDescription": "兑换为{{targetSymbol}}的资产因价格和/或网络费用波动而低于预期。",
@@ -1242,17 +1250,17 @@
       "viewTopUp": "查看充值"
     },
     "transferErrorPage": {
-      "belowNetworkMinimumMessage": "此购买金额低于您账户的最低兑换限额。请连接其他账户以完成购买。",
+      "belowNetworkMinimumMessage": "交易金额低于最低兑换限额。请连接其他账户完成交易。",
       "chooseDifferentAccount": "选择其他账户",
-      "defaultMessage": "资金将保留在您的{{integrationName}}账户中。",
+      "defaultMessage": "您的资金将保留在您的{{integrationName}}账户中。",
       "defaultTitle": "我们无法处理此支付",
       "insufficientFunds": "余额不足",
       "insufficientFundsMessage": "您的余额不足以完成此交易。",
       "requestDenied": "请求被拒绝",
-      "requestDeniedMessage": "看起来您拒绝了这笔交易。如果是误操作，请重试并在您的钱包中批准该请求。"
+      "requestDeniedMessage": "交易被拒绝。如需继续，请重试并在您的钱包中批准该请求。"
     },
     "walletConfirmation": {
-      "title": "在您的{{integrationName}}应用中确认此交易。"
+      "title": "在您的{{integrationName}}应用中确认此交易"
     }
   },
   "payPalConnectOAuthPage": {
@@ -1270,8 +1278,8 @@
     "buildingPreviewPayment": "正在生成您的付款预览……",
     "buildingPreviewTransfer": "正在生成您的转账预览……",
     "confirmTransaction": "在您的 {{selectedIntegrationName}} 应用中确认此交易。",
-    "fewSeconds": "这可能需要一会儿",
-    "fewSecondsWithDots": "这可能需要一会儿...",
+    "fewSeconds": "请稍后",
+    "fewSecondsWithDots": "请稍后……",
     "includeFeesMessage": "包含 {{amount}} 手续费",
     "networkLabel": "网络",
     "paymentTitle": "支付 {{clientName}}",
@@ -1319,12 +1327,12 @@
     "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
   "previewTransferPageUI": {
-    "depositFromIntegration": "来自 {{integrationName}} 的存款",
+    "depositFromIntegration": "通过{{integrationName}} 充值",
     "fee": "包含 {{amount}} 手续费",
     "fundingMethods": "充值方式",
     "receive": "收款",
     "refreshing": "{{seconds}} 秒后刷新",
-    "send": "发送",
+    "send": "支付",
     "title": "转账预览",
     "tokenOnNetwork": "{{token}} 在 {{network}}",
     "transferToken": "转账代币"
@@ -1358,7 +1366,7 @@
     "title": "选择资产"
   },
   "selectHoldingPage": {
-    "balance": "",
+    "balance": "余额",
     "binanceDirectNoAssetsBody1": "您的关联账户中似乎没有任何资产。",
     "binanceDirectNoAssetsBody2": "您可以充值至您的帐户，或选择另一个帐户继续转账。",
     "cannotFundBody": "您的账户中加密货币或法定货币余额不足，无法进行此交易。",
@@ -1366,9 +1374,9 @@
     "defaultTitle": "选择代币",
     "depositTitle": "选择充值代币",
     "ineligibleAssets": "无法使用的资产",
-    "link40Title": "选择一个令牌",
+    "link40Title": "选择一个代币",
     "loading": "正在加载您的资产……",
-    "network": "",
+    "network": "{{networkName}} 网络",
     "noAssetsTitle": "关联账户中未检测出资产",
     "noEligibleAssetsTitle": "此账户中资产不符合该转账要求",
     "notEnoughtBody": "请向您的账户充值更多{{symbol}}，然后返回此处重试。",
@@ -1523,7 +1531,7 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
     "gasTitle": "燃料费余额不足",
-    "noBalanceBody": "您没有可转账的{{symbol}}余额。请充值后重试。",
+    "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
     "title": "余额不足",
