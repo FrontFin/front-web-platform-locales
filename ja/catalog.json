@@ -812,7 +812,9 @@
     "resendAction": "署名リクエストを再送信する",
     "title": "もう少しです！",
     "verifyAction": "アドレスを確認",
-    "verifyingLabel": "署名を確認中。。。"
+    "verifyingLabel": "署名を確認中。。。",
+    "approveSignature": "Approve the signature request in your {{walletName}} app.",
+    "approveSignatureStillThere": "Still there?…  Please approve the signature request in your {{walletName}} app."
   },
   "ipWhiteListPage": {
     "addIp": "以下のIPアドレスを信頼できるIPとして追加してください",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
+    "body40": "{{clientName}} would like you to verify ownership of address {{address}}. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "別のウォレットを接続する",
     "title": "あれ？"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。署名がないため、{{clientName}}はウォレットの所有権を確認できません。",
-    "title": "確認が拒否されました"
+    "body40": "It looks like you denied the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
+    "title": "確認が拒否されました",
+    "timeout": "Please check your wallet and approve the signature request in your {{walletName}} app."
   },
   "wallectConnect": {
     "noActiveSessionError": "有効なWalletConnectセッションはありません",
