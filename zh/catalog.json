@@ -774,7 +774,7 @@
     "noGasAvailableBalanceTransferSelectNetworkDescription": "完成此交易需要余额覆盖转账金额及{{feeInFiat}}的{{feeSymbol}}支付燃料费。请选择不同的网络，或充值后重试。",
     "noGasBalancePaymentDescription": "完成此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请增加您的余额后重试。",
     "noGasBalancePaymentSelectNetworkDescription": "此交易需要{{amount}}和价值{{feeInFiat}}的{{feeSymbol}}用于支付 gas 费用。请选择其他网络，或增加您的余额后重试。",
-    "noGasBalanceTransferDescription": "此交易需要可用的{{symbol}}余额和价值{{feeInFiat}}的{{feeSymbol}}用于支付gas 费用。请增加您的余额后重试。",
+    "noGasBalanceTransferDescription": "此交易需要可用的{{symbol}}余额及价值{{feeInFiat}}的{{feeSymbol}}来支付燃料费。请补足余额后重试。",
     "noGasBalanceTransferSelectNetworkDescription": "此交易需要可用的{{symbol}}余额和价值{{feeInFiat}}的{{feeSymbol}}用于支付gas费用。请选择其他网络，或增加您的余额后重试。",
     "notEligible": "无权完成本次转账",
     "notEligibleDescription": "{{symbol}}无法接受此转账。",
@@ -1217,7 +1217,7 @@
       "feeChangedNotice": "网络费用已更改。请检查您的总费用并确认。",
       "feesIncluded": "总费用为{{amount}}",
       "from": "来自{{integrationName}}",
-      "howItWorks": "它是怎么工作的",
+      "howItWorks": "使用说明",
       "merchantPurchase": "{{merchantName}}购买",
       "networkFeeHint": "通过支付网络验证器的费用帮助将交易导入区块链",
       "payWith": "使用...支付",
@@ -1250,17 +1250,17 @@
       "viewTopUp": "查看充值"
     },
     "transferErrorPage": {
-      "belowNetworkMinimumMessage": "此购买金额低于您账户的最低兑换限额。请连接其他账户以完成购买。",
+      "belowNetworkMinimumMessage": "交易金额低于最低兑换限额。请连接其他账户完成交易。",
       "chooseDifferentAccount": "选择其他账户",
-      "defaultMessage": "资金将保留在您的{{integrationName}}账户中。",
+      "defaultMessage": "您的资金将保留在您的{{integrationName}}账户中。",
       "defaultTitle": "我们无法处理此支付",
       "insufficientFunds": "余额不足",
       "insufficientFundsMessage": "您的余额不足以完成此交易。",
       "requestDenied": "请求被拒绝",
-      "requestDeniedMessage": "看起来您拒绝了这笔交易。如果是误操作，请重试并在您的钱包中批准该请求。"
+      "requestDeniedMessage": "交易被拒绝。如需继续，请重试并在您的钱包中批准该请求。"
     },
     "walletConfirmation": {
-      "title": "在您的{{integrationName}}应用中确认此交易。"
+      "title": "在您的{{integrationName}}应用中确认此交易"
     }
   },
   "payPalConnectOAuthPage": {
@@ -1278,8 +1278,8 @@
     "buildingPreviewPayment": "正在生成您的付款预览……",
     "buildingPreviewTransfer": "正在生成您的转账预览……",
     "confirmTransaction": "在您的 {{selectedIntegrationName}} 应用中确认此交易。",
-    "fewSeconds": "这可能需要一会儿",
-    "fewSecondsWithDots": "这可能需要一会儿...",
+    "fewSeconds": "请稍后",
+    "fewSecondsWithDots": "请稍后……",
     "includeFeesMessage": "包含 {{amount}} 手续费",
     "networkLabel": "网络",
     "paymentTitle": "支付 {{clientName}}",
@@ -1327,12 +1327,12 @@
     "youMayReceiveLess": "由于{{symbol}}价格波动，您收到的金额可能会更少。"
   },
   "previewTransferPageUI": {
-    "depositFromIntegration": "来自 {{integrationName}} 的存款",
+    "depositFromIntegration": "通过{{integrationName}} 充值",
     "fee": "包含 {{amount}} 手续费",
     "fundingMethods": "充值方式",
     "receive": "收款",
     "refreshing": "{{seconds}} 秒后刷新",
-    "send": "发送",
+    "send": "支付",
     "title": "转账预览",
     "tokenOnNetwork": "{{token}} 在 {{network}}",
     "transferToken": "转账代币"
@@ -1374,7 +1374,7 @@
     "defaultTitle": "选择代币",
     "depositTitle": "选择充值代币",
     "ineligibleAssets": "无法使用的资产",
-    "link40Title": "选择一个令牌",
+    "link40Title": "选择一个代币",
     "loading": "正在加载您的资产……",
     "network": "{{networkName}} 网络",
     "noAssetsTitle": "关联账户中未检测出资产",
@@ -1531,7 +1531,7 @@
   "transferInsufficientBalancePage": {
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
     "gasTitle": "燃料费余额不足",
-    "noBalanceBody": "您没有可转账的{{symbol}}余额。请充值后重试。",
+    "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
     "title": "余额不足",
