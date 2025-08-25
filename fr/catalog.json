@@ -812,7 +812,9 @@
     "resendAction": "Renvoyer la demande de signature",
     "title": "Presque terminé !",
     "verifyAction": "Vérifier l'adresse",
-    "verifyingLabel": "Vérification de la signature..."
+    "verifyingLabel": "Vérification de la signature...",
+    "approveSignature": "Approve the signature request in your {{walletName}} app.",
+    "approveSignatureStillThere": "Still there?…  Please approve the signature request in your {{walletName}} app."
   },
   "ipWhiteListPage": {
     "addIp": "Ajoutez l'adresse IP ci-dessous en tant qu'adresse IP de confiance",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} souhaite que vous vérifiiez la propriété de l'adresse <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Cette adresse n'est pas associée au portefeuille connecté. Veuillez connecter un autre portefeuille.",
+    "body40": "{{clientName}} would like you to verify ownership of address {{address}}. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "Connecter un autre portefeuille",
     "title": "Oh là là !"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "Vous avez refusé la demande de signature dans votre portefeuille, ou une demande précédente est toujours active. {{clientName}} ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
-    "title": "Vérification refusée"
+    "body40": "It looks like you denied the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
+    "title": "Vérification refusée",
+    "timeout": "Please check your wallet and approve the signature request in your {{walletName}} app."
   },
   "wallectConnect": {
     "noActiveSessionError": "Pas de session WalletConnect active",
