@@ -812,7 +812,9 @@
     "resendAction": "Reenviar solicitud de firma",
     "title": "¡Ya casi!",
     "verifyAction": "Verifica la dirección",
-    "verifyingLabel": "Validando la firma..."
+    "verifyingLabel": "Validando la firma...",
+    "approveSignature": "Approve the signature request in your {{walletName}} app.",
+    "approveSignatureStillThere": "Still there?…  Please approve the signature request in your {{walletName}} app."
   },
   "ipWhiteListPage": {
     "addIp": "Añadir la dirección IP como una IP de confianza",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} necesita que verifiques la propiedad de la dirección en <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Esa dirección no está asociada con la billetera conectada. Por favor, conecta otra billetera.",
+    "body40": "{{clientName}} would like you to verify ownership of address {{address}}. That address is not associated with the connected wallet. Please connect another wallet.",
     "connectAnotherAction": "Conectar otra cartera",
     "title": "Uh oh!"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "Has rechazado la solicitud de firma en tu billetera, o una solicitud anterior sigue activa. {{clientName}} no puede verificar la propiedad de su cartera sin una firma.",
-    "title": "Verificación rechazada"
+    "body40": "It looks like you denied the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
+    "title": "Verificación rechazada",
+    "timeout": "Please check your wallet and approve the signature request in your {{walletName}} app."
   },
   "wallectConnect": {
     "noActiveSessionError": "Ninguna sesión activa de WalletConnect",
