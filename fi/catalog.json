@@ -812,7 +812,9 @@
     "resendAction": "Lähetä allekirjoituspyyntö uudelleen",
     "title": "Melkein valmis!",
     "verifyAction": "Vahvista osoite",
-    "verifyingLabel": "Allekirjoituksen tarkistaminen..."
+    "verifyingLabel": "Allekirjoituksen tarkistaminen...",
+    "approveSignature": "Hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi.",
+    "approveSignatureStillThere": "Oletko yhä paikalla?…  Ole hyvä ja hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi."
   },
   "ipWhiteListPage": {
     "addIp": "Lisää alla oleva IP-osoite Luotetuiksi IP-osoitteiksi",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} haluaa, että vahvistat <3>{{requestedNetworkName}}</3> -osoitteen omistusoikeuden <6>{{truncatedRequestedAddress}}</6>. Tätä osoitetta ei ole liitetty yhdistettyyn lompakkoon. Ole hyvä ja liitä toinen lompakko.",
+    "body40": "{{clientName}} haluaa, että vahvistat osoitteen {{address}} omistusoikeuden. Tätä osoitetta ei ole liitetty yhdistettyyn lompakkoon. Ole hyvä ja liitä toinen lompakko.",
     "connectAnotherAction": "Yhdistä toinen lompakko",
     "title": "Oho!"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "Olet hylännyt allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
-    "title": "Vahvistus hylätty"
+    "body40": "Näyttää siltä, että hylkäsit allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
+    "title": "Vahvistus hylätty",
+    "timeout": "Ole hyvä ja tarkista lompakkosi ja hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi."
   },
   "wallectConnect": {
     "noActiveSessionError": "Ei aktiivista WalletConnect-istuntoa",
@@ -1627,7 +1632,8 @@
   "walletDoneScreen": {
     "completePaymentMessage": "Palaa takaisin kassalle viimeistelläksesi {{clientName}}-ostoksesi.",
     "continueMessage": "Jatka {{clientName}} -sovelluksessa.",
-    "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden."
+    "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden.",
+    "alreadyVerified": "{{walletName}} lompakon omistusoikeus on jo vahvistettu."
   },
   "withdrawalLockedErrorPage": {
     "another": "Siirto toiselta tililtä",

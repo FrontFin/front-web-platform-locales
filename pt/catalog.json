@@ -812,7 +812,9 @@
     "resendAction": "Reenviar pedido de assinatura",
     "title": "Quase lá!",
     "verifyAction": "Verificar endereço",
-    "verifyingLabel": "A verificar a assinatura..."
+    "verifyingLabel": "A verificar a assinatura...",
+    "approveSignature": "Aprovar o pedido de assinatura na <></> aplicação {{walletName}}.",
+    "approveSignatureStillThere": "Ainda aí?… Por favor, aprova o pedido de assinatura na aplicação {{walletName}}."
   },
   "ipWhiteListPage": {
     "addIp": "Adiciona o endereço IP abaixo como um IP Confiável",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} necessita que verifiques que és o proprietário do endereço <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Esse endereço não está associado à carteira conectada. Por favor, conecta outra carteira.",
+    "body40": "{{clientName}} necessita que verifiques que és o proprietário do endereço <>{{address}}</>. Esse endereço não está associado à carteira conectada. Por favor, conecta outra carteira.",
     "connectAnotherAction": "Conectar outra carteira",
     "title": "Uh oh!"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "Recusaste o pedido de assinatura na tua carteira, ou um pedido anterior ainda está ativa. {{clientName}} não consegue verificar que és o proprietário da carteira sem uma assinatura.",
-    "title": "Verificação recusada"
+    "body40": "Parece que você recusou o pedido de assinatura na sua carteira, ou um pedido anterior ainda está ativo. {{clientName}} não pode verificar a propriedade da sua carteira sem uma assinatura.",
+    "title": "Verificação recusada",
+    "timeout": "Por favor, verifica a tua carteira e aprova o pedido de assinatura na aplicação {{walletName}}."
   },
   "wallectConnect": {
     "noActiveSessionError": "Nenhuma sessão ativa WalletConnect",
@@ -1627,7 +1632,8 @@
   "walletDoneScreen": {
     "completePaymentMessage": "Retorna à página de check-out para completares a tua compra de {{clientName}}.",
     "continueMessage": "Por favor, continua na tua app {{clientName}}.",
-    "successMessage": "Verificaste com sucesso que és proprietário da carteira {{walletName}}."
+    "successMessage": "Verificaste com sucesso que és proprietário da carteira {{walletName}}.",
+    "alreadyVerified": "A propriedade da carteira {{walletName}} já foi verificada."
   },
   "withdrawalLockedErrorPage": {
     "another": "Transferir de outra conta",

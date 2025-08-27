@@ -812,7 +812,9 @@
     "resendAction": "署名リクエストを再送信する",
     "title": "もう少しです！",
     "verifyAction": "アドレスを確認",
-    "verifyingLabel": "署名を確認中。。。"
+    "verifyingLabel": "署名を確認中。。。",
+    "approveSignature": "{{walletName}}アプリで署名リクエストを承認してください。",
+    "approveSignatureStillThere": "まだいらっしゃいますか？… {{walletName}}アプリで署名リクエストを承認してください。"
   },
   "ipWhiteListPage": {
     "addIp": "以下のIPアドレスを信頼できるIPとして追加してください",
@@ -1608,6 +1610,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
+    "body40": "{{clientName}}は、<>{{address}}</>のアドレス<>{}</>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
     "connectAnotherAction": "別のウォレットを接続する",
     "title": "あれ？"
   },
@@ -1617,7 +1620,9 @@
   },
   "verifyErrorPage": {
     "body": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。署名がないため、{{clientName}}はウォレットの所有権を確認できません。",
-    "title": "確認が拒否されました"
+    "body40": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。{{clientName}}は署名がないため、ウォレットの所有権を確認できません。",
+    "title": "確認が拒否されました",
+    "timeout": "ウォレットを確認し、{{walletName}}アプリで署名リクエストを承認してください。"
   },
   "wallectConnect": {
     "noActiveSessionError": "有効なWalletConnectセッションはありません",
@@ -1627,7 +1632,8 @@
   "walletDoneScreen": {
     "completePaymentMessage": "{{clientName}}での購入を完了するには、チェックアウト画面に戻ってください。",
     "continueMessage": "{{clientName}}アプリで操作を続けてください。",
-    "successMessage": "{{walletName}}ウォレットの所有権が正常に確認されました。"
+    "successMessage": "{{walletName}}ウォレットの所有権が正常に確認されました。",
+    "alreadyVerified": "{{walletName}}ウォレットの所有権はすでに確認されています。"
   },
   "withdrawalLockedErrorPage": {
     "another": "別のアカウントから送金する",
