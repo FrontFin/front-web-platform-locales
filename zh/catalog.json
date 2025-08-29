@@ -222,6 +222,10 @@
   "currencyBox": {
     "changeCurrency": "更改货币"
   },
+  "dappDoneTransferPage": {
+    "subtitle": "Please go back to {{clientName}} to finalize your purchase.",
+    "title": "Confirm your payment in {{clientName}}"
+  },
   "deFiWalletConnectionDeclinedPage": {
     "body": "您的连接请求被拒绝，或已有请求在处理中。如操作有误，请重试。",
     "title": "哎哟，出了点问题！"
@@ -241,24 +245,25 @@
   },
   "deFiWalletInitialPage": {
     "continue": "继续前往{{walletName}}",
+    "dappPage": {
+      "continueButton": "继续前往 {{walletName}}",
+      "depositTitle": "用您的钱包充值",
+      "payTitle": "用您的钱包支付",
+      "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
+      "spinnerText": "用您的 {{walletName}} 钱包完成支付",
+      "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。"
+    },
     "previewButton": "关联",
     "previewTitle": "关联账户",
     "subtitle": "点击下方打开{{walletName}}。批准该关联请求并预览您的支付。",
-    "title": "关联您的钱包",
-    "dappPage": {
-      "payTitle": "用您的钱包支付",
-      "depositTitle": "用您的钱包充值",
-      "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。",
-      "continueButton": "继续前往 {{walletName}}",
-      "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
-      "spinnerText": "用您的 {{walletName}} 钱包完成支付"
-    }
+    "title": "关联您的钱包"
   },
   "defiWalletQrPage": {
     "declinedBody": "您已拒绝关联此钱包的请求，或之前请求仍在进行中。",
     "declinedTitle": "关联被拒绝",
     "description": "打开{{selectedIntegrationName}}并扫描<3></3>QR码关联",
     "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立关联",
+    "scanInstruction": "Open the {{walletName}} app on your phone and scan the QR code to link",
     "title": "关联 {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
