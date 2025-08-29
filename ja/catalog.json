@@ -222,6 +222,10 @@
   "currencyBox": {
     "changeCurrency": "通貨を変更"
   },
+  "dappDoneTransferPage": {
+    "subtitle": "Please go back to {{clientName}} to finalize your purchase.",
+    "title": "Confirm your payment in {{clientName}}"
+  },
   "deFiWalletConnectionDeclinedPage": {
     "body": "接続要求を拒否したか、以前の要求がまだアクティブです。もし間違いでしたら、再試行してください。",
     "title": "おっと！"
@@ -241,24 +245,25 @@
   },
   "deFiWalletInitialPage": {
     "continue": "{{walletName}}に進む",
+    "dappPage": {
+      "continueButton": "{{walletName}}で続行",
+      "depositTitle": "お財布から預け入れ",
+      "payTitle": "お財布で支払う",
+      "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
+      "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。",
+      "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。"
+    },
     "previewButton": "接続",
     "previewTitle": "アカウントを接続",
     "subtitle": "下のボタンをクリックして{{walletName}}を開いてください。次に接続要求を承認して、支払いをプレビューします。",
-    "title": "ウォレットを接続",
-    "dappPage": {
-      "payTitle": "お財布で支払う",
-      "depositTitle": "お財布から預け入れ",
-      "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
-      "continueButton": "{{walletName}}で続行",
-      "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
-      "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。"
-    }
+    "title": "ウォレットを接続"
   },
   "defiWalletQrPage": {
     "declinedBody": "ウォレットの接続リクエストを拒否したか、以前のリクエストがまだアクティブです。",
     "declinedTitle": "接続が拒否されました",
     "description": "{{selectedIntegrationName}}を開いて<3></3>QRコードをスキャンしてください。",
     "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
+    "scanInstruction": "Open the {{walletName}} app on your phone and scan the QR code to link",
     "title": "{{selectedIntegrationName}}と接続する"
   },
   "defiWalletSelectNetworkPage": {
