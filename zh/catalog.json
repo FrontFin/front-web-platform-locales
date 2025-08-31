@@ -223,8 +223,8 @@
     "changeCurrency": "更改货币"
   },
   "dappDoneTransferPage": {
-    "subtitle": "请返回至{{clientName}}以完成您的购买。",
-    "title": "在{{clientName}}中确认您的付款。"
+    "subtitle": "请返回至{{clientName}}完成您的交易。",
+    "title": "在{{clientName}}中确认您的支付。"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "您的连接请求被拒绝，或已有请求在处理中。如操作有误，请重试。",
@@ -263,7 +263,7 @@
     "declinedTitle": "关联被拒绝",
     "description": "打开{{selectedIntegrationName}}并扫描<3></3>QR码关联",
     "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立关联",
-    "scanInstruction": "在手机上打开{{walletName}}应用并扫描二维码进行链接",
+    "scanInstruction": "在手机上打开{{walletName}}并扫描二维码链接",
     "title": "关联 {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -819,7 +819,7 @@
     "verifyAction": "验证地址",
     "verifyingLabel": "签名验证中......",
     "approveSignature": "在您的 {{walletName}} 应用中批准签名请求。",
-    "approveSignatureStillThere": "还在那儿吗？请在您的 {{walletName}} 应用中批准签名请求。"
+    "approveSignatureStillThere": "还在吗？请在您的 {{walletName}} 应用中批准签名请求。"
   },
   "ipWhiteListPage": {
     "addIp": "将以下IP地址加至信任IP列表",
@@ -971,7 +971,7 @@
   "mobileAppLink": {
     "awaitingConfirmation": "等待移动端应用确认",
     "awaitingConfirmationShort": "等待确认……",
-    "loginRequestSent": "登录请求已发送到您的{{selectedIntegrationName}}应用。",
+    "loginRequestSent": "登录请求已发送至您的{{selectedIntegrationName}}应用。",
     "openAppButton": "打开{{selectedIntegrationName}}应用",
     "returnToClient": "在{{selectedIntegrationName}}中批准连接请求后，请返回{{clientName}}。",
     "sendAgain": "重新转账",
@@ -1021,7 +1021,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "重新打开{{selectedIntegrationName}}",
-      "note": "前往{{selectedIntegrationName}}以完成您的存款",
+      "note": "请您前往{{selectedIntegrationName}}以完成充值",
       "subtitle": "请在浏览器中完成登录并批准访问。",
       "title": "等待连接"
     },
@@ -1108,7 +1108,7 @@
     "selectAsset": "选择要转账的资产",
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
-    "unsupportedCurrencyError": "您所在国家不支持所选货币的入口。",
+    "unsupportedCurrencyError": "您所在国家/地区不支持所选币种购买或充值。",
     "unsupportedPair": "所选网络和币种组合暂不可用， 请选择其他选项。",
     "youPay": "由您支付",
     "youReceive": "由您接收"
@@ -1148,7 +1148,7 @@
   },
   "paypal": {
     "brokerLoading": {
-      "preparingPayment": "正在准备您的支付详情"
+      "preparingPayment": "正在生成您的支付详情"
     },
     "common": {
       "cancel": "取消",
@@ -1161,7 +1161,7 @@
       "order": "订单",
       "pay": "支付",
       "save": "保存",
-      "stillWorking": "处理中...",
+      "stillWorking": "处理中……",
       "total": "总计",
       "tryAgain": "再次尝试"
     },
@@ -1171,11 +1171,11 @@
       "oauthLogin": "登录您的账户并允许访问"
     },
     "doneTransferDetailsPage": {
-      "disclaimer": "在收到足够的网络认证之前，转账不会完成。",
+      "disclaimer": "交易需要等待网络确认完成。",
       "title": "发生了什么"
     },
     "doneTransferPage": {
-      "description": "您刚支付了{{amount}}。完成后，您将收到来自{{clientName}}的确认信息。",
+      "description": "您刚支付了{{amount}}。交易完成后您将收到{{clientName}}的确认信息。",
       "disclaimer": "在收到足够的网络认证之前，转账不会完成。",
       "seeDetails": "查看原因",
       "title": "支付正在处理"
@@ -1187,11 +1187,11 @@
       "title": "您确定要退出吗？"
     },
     "fundingOptions": {
-      "available": "{{amount}} 可用",
+      "available": "{{amount}} 可用余额",
       "balances": "余额",
       "buyingPower": "可用资金",
       "exchangeRateDisclaimer": "汇率可能包含差价。",
-      "instantCashAvailable": "可用即时现金: {{amount}}",
+      "instantCashAvailable": "即时可用现金: {{amount}}",
       "linkedPaymentMethods": "已关联的支付方式",
       "paymentMethodTypes": {
         "bankAccount": "银行账户",
@@ -1207,41 +1207,41 @@
       "deposit": "从{{paymentMethod}}充值{{amount}}",
       "errorMessage": "发生错误。请再试一次",
       "purchase": "购买{{amount}} {{symbol}}",
-      "transfer": "为您的购买转账{{symbol}}"
+      "transfer": "请转入{{symbol}}以完成购买"
     },
     "infoScreen": {
-      "rule1": "您的信息不会被存储。支付完成后，将断开访问。",
-      "rule2": "使用您的加密货币，查看详情并批准支付。",
-      "rule3": "自动兑换使一切变得简单。",
+      "rule1": "您的信息不会被存储。支付完成后将终止访问。",
+      "rule2": "用加密货币支付，请查看详情并批准付款。",
+      "rule3": "自动兑换，简化您的操作。",
       "title": "登录以查看支付详情"
     },
     "previewPage": {
-      "bufferAndFees": "{{bufferAmount}}缓冲+{{feesAmount}}费用已包含",
-      "bufferDisclaimer": "您将保留未用完的缓冲。",
-      "conversionFee": "{{integrationName}}转换费",
-      "conversionFeeHint": "{{integrationName}}收取此费用进行转换。",
-      "estimatedNetworkFee": "网络费用估计",
-      "feeChangedNotice": "网络费用已更改。请检查您的总费用并确认。",
-      "feesIncluded": "总费用为{{amount}}",
+      "bufferAndFees": "{{bufferAmount}}缓冲金+{{feesAmount}}手续费用已包含",
+      "bufferDisclaimer": "未使用的缓冲金额将返还给您。",
+      "conversionFee": "{{integrationName}}兑换手续费",
+      "conversionFeeHint": "{{integrationName}}收取此费用完成兑换。",
+      "estimatedNetworkFee": "预估网络费用",
+      "feeChangedNotice": "网络费用已更新。请核对总金额并确认。",
+      "feesIncluded": "包含手续费{{amount}}",
       "from": "来自{{integrationName}}",
       "howItWorks": "使用说明",
       "merchantPurchase": "{{merchantName}}购买",
       "networkFeeHint": "通过支付网络验证器的费用帮助将交易导入区块链",
       "payWith": "使用...支付",
       "pyusdDisclaimer": "交易将使用PayPal USD (PYUSD)完成，这是由Paxos Trust Company, LLC发行并托管的稳定币。PYUSD在区块链上运行。",
-      "refundDisclaimer": "退款仅以{{settlementCurrency}}发放。汇率和费用经常变化。所有加密货币购买为最终交易。",
+      "refundDisclaimer": "退款仅以{{settlementCurrency}}形式发放。汇率和费用会频繁变动。所有加密货币购买均为最终交易。",
       "send": "转账",
       "title": "支付{{merchantName}}",
       "transactionBuffer": "交易缓冲额度",
-      "transactionBufferHint": "为了避免加密价格波动造成影响，这一金额会被添加到您的购买中，并可能使您的钱包中留下部分{{settlementCurrency}}。"
+      "transactionBufferHint": "该金额用于确保购买顺利完成，即使加密货币价格发生波动。可能会在您的钱包中留下部分{{settlementCurrency}}余额。"
     },
     "sessionExpiredPage": {
-      "description": "如果当此会话活跃时，您在其他平台上登录到您的帐户，则通常会发生这种情况。",
+      "description": "如果您在本次会话期间在其他平台上登录帐户，则通常会发生这种情况。",
       "retry": "请点击重试以登录并重试您的交易。",
       "title": "会话已过期"
     },
     "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"公司\") 是一家技术提供商，提供通信工具 (\"工具\")，帮助您实现您使用的第三方服务 (\"终端用户服务\") 的某些功能。此功能旨在帮助您通过终端用户服务与第三方账户和钱包 (\"连接账户\") 进行通信，包括发送您希望执行的指令。Mesh作为PayPal, Inc. (\"PayPal\")的服务提供商，为您提供此工具。您承认并同意，终端用户服务的某些功能基于此工具；您使用这些功能是根据您的指示；公司及其服务提供商不提供经纪服务或参与支付处理；公司及其服务提供商对此End User Service或任何连接帐户或其提供者的条款、政策、行为或不作为概不负责或承担责任。您声明并保证，您拥有所有必要的权利和同意通过此功能连接并访问每个连接帐户，包括向公司及其服务提供商提供您的账户登录凭据、钱包地址和/或任何相关账户或个人信息的权利。您特此授权公司及其服务提供商在终端用户服务和每个连接帐户之间传输指令以及信息、数据和其他材料，并且您承认并同意公司及其服务提供商对任何此类指令的执行不负责任，也不会对任何此类材料（包括其准确性、及时性或完整性）负责。您同意，如果您使用该工具进行与第三方的交易，包括但不限于在线商户或任何类型的购买 (\"第三方交易\")，则公司或PayPal均不对与此类交易相关的任何争议负责。您负责直接与任何相关第三方联系，以解决任何争议、未经授权的交易请求、退款请求或任何与第三方交易有关的索赔或问题。使用加密货币进行的购买可能会受到限制。"
+      "fullText": "Mesh Connect, Inc.（“公司”） 是一家技术提供商，提供一款通信工具（“工具”），用于协助您所使用的第三方服务（“终端用户服务”）的某些功能。该功能旨在使您能够通过终端用户服务与您的第三方账户和钱包（“已连接账户”）进行通信，包括发送您希望执行的指令。Mesh 作为 PayPal, Inc.（“PayPal”） 的服务提供商向您提供该工具。\n\n您承认并同意，终端用户服务的某些功能基于该工具；您使用这些功能是根据您的指示；公司及其服务提供商不提供经纪服务或支付处理服务；且公司及其服务提供商对终端用户服务或任何已连接账户，以及其提供商的条款、政策、行为或不作为不承担任何责任。\n\n您声明并保证，您拥有通过该功能连接并访问每个已连接账户所需的所有权利和同意，包括向公司及其服务提供商提供您的账户登录凭证、钱包地址及/或每个已连接账户的任何账户或个人信息的权利。您在此授权公司及其服务提供商在终端用户服务与每个已连接账户之间传输指令以及信息、数据和其他资料，且您承认并同意，公司及其服务提供商对任何此类指令的执行，或任何此类资料（包括其准确性、及时性或完整性）不承担任何责任。\n\n您同意，如果您使用该工具与第三方进行交易，包括但不限于在线商家或进行任何形式的购买（“第三方交易”），公司及 PayPal 对此类交易的任何争议不承担责任。您有责任直接联系相关第三方以解决任何争议、未经授权交易的索赔、退款请求或与第三方交易相关的任何其他索赔或问题。使用加密货币进行的购买可能会受到有限的保护"
     },
     "termsOfUse": {
       "linkText": "使用条款",
@@ -1249,9 +1249,9 @@
     },
     "topupPage": {
       "assetsDescription": "兑换为{{targetSymbol}}的资产因价格和/或网络费用波动而低于预期。",
-      "conversionDescription": "兑换{{convertedSymbol}}到{{targetSymbol}}的价值因价格和/或网络费用波动而低于预期。",
+      "conversionDescription": "兑换{{convertedSymbol}}到{{targetSymbol}}的金额因价格和/或网络手续费波动而低于预期。",
       "currentBalance": "当前余额",
-      "disclaimer": "如果您未完成付款，您的{{targetSymbol}}余额将保留在您的{{integrationName}}帐户中。",
+      "disclaimer": "如您未完成付款，您的{{targetSymbol}}余额将保留在您的{{integrationName}}帐户中。",
       "required": "必需",
       "title": "余额不足，请充值",
       "viewTopUp": "查看充值"
@@ -1615,7 +1615,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} 希望您验证对 <3>{{requestedNetworkName}}</3> 地址 <6>{{truncatedRequestedAddress}}</6> 的所有权。该地址与已连接的钱包并无关联。请连接另一个钱包。",
-    "body40": "{{clientName}} 希望您验证对地址 {{address}} 的所有权。该地址与已连接的钱包并无关联。请连接另一个钱包。",
+    "body40": "{{clientName}} 要求您确认地址 {{address}} 的所有权。当前钱包未关联粗地址，请连接另一个钱包。",
     "connectAnotherAction": "连接另一个钱包",
     "title": "哎呀！"
   },
@@ -1625,7 +1625,7 @@
   },
   "verifyErrorPage": {
     "body": "您已拒绝在您的钱包中签署请求，或先前的请求仍处于活动状态。{{clientName}} 无法在没有签名的情况下验证您钱包的所有权。",
-    "body40": "您似乎拒绝了您钱包中的签名请求，或者先前的请求仍处于活动状态。{{clientName}} 无法在没有签名的情况下验证您钱包的所有权。",
+    "body40": "您可能拒绝了钱包中的签名请求，或之前的请求未完成。请签名，否则{{clientName}} 无法确认您钱包的所有权。",
     "title": "验证被拒绝",
     "timeout": "请查看您的钱包并在 {{walletName}} 里批准签名请求。"
   },
