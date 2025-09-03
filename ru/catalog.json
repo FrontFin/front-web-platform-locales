@@ -223,8 +223,8 @@
     "changeCurrency": "Изменить валюту"
   },
   "dappDoneTransferPage": {
-    "subtitle": "",
-    "title": ""
+    "subtitle": "Пожалуйста, вернитесь в {{clientName}}, чтобы завершить покупку.",
+    "title": "Подтвердите ваш платеж в {{clientName}}"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
@@ -246,32 +246,24 @@
   "deFiWalletInitialPage": {
     "continue": "Перейти к {{walletName}}",
     "dappPage": {
-      "continueButton": "",
-      "depositTitle": "",
-      "payTitle": "",
-      "qrSubtitle": "",
-      "spinnerText": "",
-      "subtitle": ""
+      "continueButton": "Продолжить в {{walletName}}",
+      "depositTitle": "Пополните с вашего электронного кошелька",
+      "payTitle": "Оплатите с вашего электронного кошелька",
+      "qrSubtitle": "Откройте приложение камеры на вашем телефоне и отсканируйте QR-код, чтобы связать",
+      "spinnerText": "Завершите оплату в вашем электронном кошельке {{walletName}}",
+      "subtitle": "Продолжите в {{walletName}}. Вернитесь сюда, когда закончите."
     },
     "previewButton": "Подключить",
     "previewTitle": "Подключить аккаунт",
     "subtitle": "Нажмите ниже, чтобы открыть {{walletName}}. Затем одобрите запрос на подключение, чтобы просмотреть ваш платеж.",
-    "title": "Подключить ваш электронный кошелек",
-    "dappPage": {
-      "payTitle": "Оплатите с вашего электронного кошелька",
-      "depositTitle": "Пополните с вашего электронного кошелька",
-      "subtitle": "Продолжите в {{walletName}}. Вернитесь сюда, когда закончите.",
-      "continueButton": "Продолжить в {{walletName}}",
-      "qrSubtitle": "Откройте приложение камеры на вашем телефоне и отсканируйте QR-код, чтобы связать",
-      "spinnerText": "Завершите оплату в вашем электронном кошельке {{walletName}}"
-    }
+    "title": "Подключить ваш электронный кошелек"
   },
   "defiWalletQrPage": {
     "declinedBody": "Вы отклонили запрос на подключение вашего кошелька, или предыдущий запрос все еще активен.",
     "declinedTitle": "Соединение отклонено",
     "description": "Откройте {{selectedIntegrationName}} и отсканируйте <3></3>QR-код, чтобы подключится",
     "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
-    "scanInstruction": "",
+    "scanInstruction": "Откройте приложение {{walletName}} на вашем телефоне и отсканируйте QR-код, чтобы связать",
     "title": "Подключиться {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -1477,6 +1469,7 @@
     "errorMessage": {
       "insufficientFunds": "Недостаточно средств для покрытия комиссии за перевод и газа. Максимальная сумма перевода: {{maxAmount}}.",
       "minimumAmount": "Минимальная сумма перевода - {{minAmount}}.",
+      "maximumAmount": "Максимальная сумма перевода - {{maxAmount}}.",
       "zeroAmount": "Пожалуйста, введите ненулевую сумму"
     },
     "title": {
