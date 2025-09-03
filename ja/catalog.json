@@ -223,8 +223,8 @@
     "changeCurrency": "通貨を変更"
   },
   "dappDoneTransferPage": {
-    "subtitle": "",
-    "title": ""
+    "subtitle": "購入を完了するには{{clientName}}に戻ってください。",
+    "title": "{{clientName}}で支払いを確認してください。"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "接続要求を拒否したか、以前の要求がまだアクティブです。もし間違いでしたら、再試行してください。",
@@ -246,32 +246,24 @@
   "deFiWalletInitialPage": {
     "continue": "{{walletName}}に進む",
     "dappPage": {
-      "continueButton": "",
-      "depositTitle": "",
-      "payTitle": "",
-      "qrSubtitle": "",
-      "spinnerText": "",
-      "subtitle": ""
+      "continueButton": "{{walletName}}で続行",
+      "depositTitle": "お財布から預け入れ",
+      "payTitle": "お財布で支払う",
+      "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
+      "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。",
+      "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。"
     },
     "previewButton": "接続",
     "previewTitle": "アカウントを接続",
     "subtitle": "下のボタンをクリックして{{walletName}}を開いてください。次に接続要求を承認して、支払いをプレビューします。",
-    "title": "ウォレットを接続",
-    "dappPage": {
-      "payTitle": "お財布で支払う",
-      "depositTitle": "お財布から預け入れ",
-      "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
-      "continueButton": "{{walletName}}で続行",
-      "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
-      "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。"
-    }
+    "title": "ウォレットを接続"
   },
   "defiWalletQrPage": {
     "declinedBody": "ウォレットの接続リクエストを拒否したか、以前のリクエストがまだアクティブです。",
     "declinedTitle": "接続が拒否されました",
     "description": "{{selectedIntegrationName}}を開いて<3></3>QRコードをスキャンしてください。",
     "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
-    "scanInstruction": "",
+    "scanInstruction": "電話で{{walletName}}アプリを開き、QRコードをスキャンしてリンクします。",
     "title": "{{selectedIntegrationName}}と接続する"
   },
   "defiWalletSelectNetworkPage": {
@@ -1477,6 +1469,7 @@
     "errorMessage": {
       "insufficientFunds": "残高が不足しています「ガス代を含む」。最大送金額は {{maxAmount}} です。",
       "minimumAmount": "最小送金額は {{minAmount}} です。",
+      "maximumAmount": "最大送金額は {{maxAmount}} です。",
       "zeroAmount": "ゼロ以外の金額を入力してください"
     },
     "title": {
