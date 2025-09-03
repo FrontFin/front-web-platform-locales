@@ -41,7 +41,7 @@
     "title": "Oups!"
   },
   "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "Nous n'avons pas reçu de réponse à temps. Veuillez réessayer.",
+    "body": "Nous n'avons pas reçu de réponse à temps. Veuillez réessayer",
     "title": "Demande expirée"
   },
   "binanceDirectLoginPage": {
@@ -223,8 +223,8 @@
     "changeCurrency": "Changer de devise"
   },
   "dappDoneTransferPage": {
-    "subtitle": "",
-    "title": ""
+    "subtitle": "Veuillez revenir à {{clientName}} pour finaliser votre achat.",
+    "title": "Confirmez votre paiement dans {{clientName}}"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Il semble que vous ayez refusé la demande de connexion ou qu'une demande précédente soit encore active. Si c'était une erreur, essayez à nouveau.",
@@ -246,32 +246,24 @@
   "deFiWalletInitialPage": {
     "continue": "Continuez sur {{walletName}}",
     "dappPage": {
-      "continueButton": "",
-      "depositTitle": "",
-      "payTitle": "",
-      "qrSubtitle": "",
-      "spinnerText": "",
-      "subtitle": ""
+      "continueButton": "Continuez dans {{walletName}}",
+      "depositTitle": "Dépôt depuis votre portefeuille",
+      "payTitle": "Payez dans votre portefeuille",
+      "qrSubtitle": "Ouvrez l'application de caméra sur votre téléphone et scannez le QR code pour lier",
+      "spinnerText": "Terminez le paiement sur votre portefeuille {{walletName}}",
+      "subtitle": "Continuez dans {{walletName}}. Revenez ici lorsque vous avez terminé."
     },
     "previewButton": "Connecter",
     "previewTitle": "Connecter le compte",
     "subtitle": "Cliquez ci-dessous pour ouvrir {{walletName}}. Ensuite, approuvez la demande de connexion pour prévisualiser votre paiement.",
-    "title": "Connecter votre portefeuille",
-    "dappPage": {
-      "payTitle": "Payez dans votre portefeuille",
-      "depositTitle": "Déposez à partir de votre portefeuille",
-      "subtitle": "Continuez dans {{walletName}}. Revenez ici lorsque vous avez terminé.",
-      "continueButton": "Continuez dans {{walletName}}",
-      "qrSubtitle": "Ouvrez l'application de caméra sur votre téléphone et scannez le QR code pour lier",
-      "spinnerText": "Terminez le paiement sur votre portefeuille {{walletName}}"
-    }
+    "title": "Connecter votre portefeuille"
   },
   "defiWalletQrPage": {
     "declinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours en cours.",
     "declinedTitle": "Connexion refusée",
     "description": "Ouvrez {{selectedIntegrationName}} et scannez le<3></3>code QR pour lier votre compte",
     "qrCodeLabel": "Le code QR peut être scanné sur votre appareil mobile pour établir la connexion",
-    "scanInstruction": "",
+    "scanInstruction": "Ouvrez l'application {{walletName}} sur votre téléphone et scannez le QR code pour lier",
     "title": "Connectez-vous avec {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -1186,7 +1178,7 @@
       "description": "Vous venez de payer {{amount}}. Vous recevrez une confirmation de {{clientName}} une fois terminé.",
       "disclaimer": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau.",
       "seeDetails": "Voir ce qui s'est passé",
-      "title": "Paiement en chemin"
+      "title": "Paiement en cours"
     },
     "exitPage": {
       "continuePayment": "Continuer avec le Paiement",
@@ -1227,7 +1219,7 @@
       "bufferAndFees": "{{bufferAmount}} Tampon + {{feesAmount}} frais inclus",
       "bufferDisclaimer": "Vous conserverez tout tampon inutilisé.",
       "conversionFee": "Frais de conversion {{integrationName}}",
-      "conversionFeeHint": "Ces frais {{integrationName}} collecte pour convertir.",
+      "conversionFeeHint": "Ces frais sont collectés par {{integrationName}} pour la conversion.",
       "estimatedNetworkFee": "Frais de réseau estimés",
       "feeChangedNotice": "Les frais de réseau ont changé. Veuillez vérifier votre total et confirmer.",
       "feesIncluded": "{{amount}} frais inclus",
@@ -1477,6 +1469,7 @@
     "errorMessage": {
       "insufficientFunds": "Fonds insuffisants pour couvrir les frais de transfert et de gaz. Le montant de transfert maximum est {{maxAmount}}.",
       "minimumAmount": "Le montant de transfert minimum est {{minAmount}}.",
+      "maximumAmount": "Le montant de transfert maximum est {{maxAmount}}.",
       "zeroAmount": "Veuillez entrer un montant différent de zéro"
     },
     "title": {
