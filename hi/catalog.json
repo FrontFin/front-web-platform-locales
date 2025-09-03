@@ -223,8 +223,8 @@
     "changeCurrency": "मुद्रा बदलें"
   },
   "dappDoneTransferPage": {
-    "subtitle": "",
-    "title": ""
+    "subtitle": "कृपया अपने खरीद को अंतिम रूप देने के लिए {{clientName}} पर वापस जाएं।",
+    "title": "{{clientName}} में अपने भुगतान की पुष्टि करें"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "ऐसा लगता है कि आपने कनेक्शन अनुरोध को मना कर दिया है, या कोई पूर्व अनुरोध अभी भी सक्रिय है। अगर यह एक गलती थी, तो पुनः प्रयास करें।",
@@ -246,32 +246,24 @@
   "deFiWalletInitialPage": {
     "continue": "{{walletName}} पर जारी रखें",
     "dappPage": {
-      "continueButton": "",
-      "depositTitle": "",
-      "payTitle": "",
-      "qrSubtitle": "",
-      "spinnerText": "",
-      "subtitle": ""
+      "continueButton": "{{walletName}} में जारी रखें",
+      "depositTitle": "अपने वॉलेट से जमा करें",
+      "payTitle": "आपके वॉलेट में भुगतान करें",
+      "qrSubtitle": "अपने फ़ोन पर कैमरा ऐप खोलें और लिंक करने के लिए क्यूआर कोड स्कैन करें",
+      "spinnerText": "अपने {{walletName}} वॉलेट पर भुगतान पूरा करें",
+      "subtitle": "{{walletName}} में जारी रखें। जब आप कर लें तब यहाँ वापस आएँ।"
     },
     "previewButton": "जुड़ें",
     "previewTitle": "खाता जोड़ें",
     "subtitle": "{{walletName}} खोलने के लिए नीचे क्लिक करें। फिर अपने भुगतान का पूर्वावलोकन करने के लिए कनेक्शन अनुरोध को स्वीकृत करें।",
-    "title": "अपने वॉलेट को जोड़ें",
-    "dappPage": {
-      "payTitle": "आपके वॉलेट में भुगतान करें",
-      "depositTitle": "अपने वॉलेट से जमा करें",
-      "subtitle": "{{walletName}} में जारी रखें। जब आप कर लें तब यहाँ वापस आएँ।",
-      "continueButton": "{{walletName}} में जारी रखें",
-      "qrSubtitle": "अपने फ़ोन पर कैमरा ऐप खोलें और लिंक करने के लिए क्यूआर कोड स्कैन करें",
-      "spinnerText": "अपने {{walletName}} वॉलेट पर भुगतान पूरा करें"
-    }
+    "title": "अपने वॉलेट को जोड़ें"
   },
   "defiWalletQrPage": {
     "declinedBody": "आपने अपनी वॉलेट से कनेक्ट करने के अनुरोध को अस्वीकृत कर दिया है, या एक पिछला अनुरोध अभी भी सक्रिय है।",
     "declinedTitle": "कनेक्शन अस्वीकृत",
     "description": "{{selectedIntegrationName}} खोलें और<3></3>क्यूआर कोड को स्कैन करें",
     "qrCodeLabel": "कनेक्शन स्थापित करने के लिए क्यूआर कोड को आपके मोबाइल डिवाइस पर स्कैन किया जा सकता है",
-    "scanInstruction": "",
+    "scanInstruction": "अपने फोन पर {{walletName}} ऐप खोलें और QR कोड को स्कैन करके लिंक करें",
     "title": "{{selectedIntegrationName}} के साथ जुड़े"
   },
   "defiWalletSelectNetworkPage": {
@@ -1477,6 +1469,7 @@
     "errorMessage": {
       "insufficientFunds": "हस्तांतरण और गैस शुल्क को कवर करने के लिए अपर्याप्त धनराशि। अधिकतम हस्तांतरण राशि {{maxAmount}} है।",
       "minimumAmount": "न्यूनतम हस्तांतरण राशि {{minAmount}} है।",
+      "maximumAmount": "अधिकतम हस्तांतरण राशि {{maxAmount}} है।",
       "zeroAmount": "कृपया गैर-शून्य राशि दर्ज करें"
     },
     "title": {

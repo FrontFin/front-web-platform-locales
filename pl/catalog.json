@@ -223,8 +223,8 @@
     "changeCurrency": "Zmiana waluty"
   },
   "dappDoneTransferPage": {
-    "subtitle": "",
-    "title": ""
+    "subtitle": "Proszę wrócić do {{clientName}}, aby sfinalizować zakup.",
+    "title": "Potwierdź swoją płatność w {{clientName}}"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Wygląda na to, że odrzuciłeś żądanie połączenia lub wcześniejsze żądanie jest nadal aktywne. Jeśli to był błąd, spróbuj ponownie.",
@@ -246,32 +246,24 @@
   "deFiWalletInitialPage": {
     "continue": "Kontynuuj do {{walletName}}",
     "dappPage": {
-      "continueButton": "",
-      "depositTitle": "",
-      "payTitle": "",
-      "qrSubtitle": "",
-      "spinnerText": "",
-      "subtitle": ""
+      "continueButton": "Kontynuuj w {{walletName}}",
+      "depositTitle": "Wpłać z swojego portfela",
+      "payTitle": "Opłać w swoim portfelu",
+      "qrSubtitle": "Otwórz aplikację aparatu w telefonie i zeskanuj kod QR, aby połączyć",
+      "spinnerText": "Ukończ płatność w swoim portfelu {{walletName}}",
+      "subtitle": "Kontynuuj w {{walletName}}. Wracaj tutaj, gdy skończysz."
     },
     "previewButton": "Połącz",
     "previewTitle": "Połącz konto",
     "subtitle": "Kliknij poniżej, aby otworzyć {{walletName}}. Następnie zatwierdź prośbę o połączenie, aby wyświetlić podgląd płatności.",
-    "title": "Połącz swój portfel",
-    "dappPage": {
-      "payTitle": "Opłać w swoim portfelu",
-      "depositTitle": "Wpłać z swojego portfela",
-      "subtitle": "Kontynuuj w {{walletName}}. Wracaj tutaj, gdy skończysz.",
-      "continueButton": "Kontynuuj w {{walletName}}",
-      "qrSubtitle": "Otwórz aplikację aparatu w telefonie i zeskanuj kod QR, aby połączyć",
-      "spinnerText": "Ukończ płatność w swoim portfelu {{walletName}}"
-    }
+    "title": "Połącz swój portfel"
   },
   "defiWalletQrPage": {
     "declinedBody": "Odrzuciłeś prośbę o połączenie swojego portfela, lub poprzednia prośba nadal jest aktywna.",
     "declinedTitle": "Połączenie odrzucone",
     "description": "Otwórz {{selectedIntegrationName}} i zeskanuj<3></3>kod QR, aby połączyć konto",
     "qrCodeLabel": "Kod QR można zeskanować na urządzeniu mobilnym, aby nawiązać połączenie",
-    "scanInstruction": "",
+    "scanInstruction": "Otwórz aplikację {{walletName}} na telefonie i zeskanuj kod QR, aby połączyć się",
     "title": "Połącz się z {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -1477,6 +1469,7 @@
     "errorMessage": {
       "insufficientFunds": "Niewystarczające środki na pokrycie transferu i opłat za gaz. Maksymalna kwota transferu to {{maxAmount}}.",
       "minimumAmount": "Minimalna kwota transferu to {{minAmount}}.",
+      "maximumAmount": "Maksymalna kwota transferu to {{maxAmount}}.",
       "zeroAmount": "Wprowadź poprawną kwotę powyżej zera"
     },
     "title": {
