@@ -251,7 +251,11 @@
       "payTitle": "आपके वॉलेट में भुगतान करें",
       "qrSubtitle": "अपने फ़ोन पर कैमरा ऐप खोलें और लिंक करने के लिए क्यूआर कोड स्कैन करें",
       "spinnerText": "अपने {{walletName}} वॉलेट पर भुगतान पूरा करें",
-      "subtitle": "{{walletName}} में जारी रखें। जब आप कर लें तब यहाँ वापस आएँ।"
+      "subtitle": "{{walletName}} में जारी रखें। जब आप कर लें तब यहाँ वापस आएँ।",
+      "verifyWalletTitle": "अपने वॉलेट का सत्यापन करें",
+      "approveConnectionToVerifyLoadingText": "अपनी सत्यापन प्रक्रिया शुरू करने के लिए कनेक्शन को स्वीकृति दें",
+      "approveConnectionToPaymentLoadingText": "अपनी भुगतान प्रक्रिया शुरू करने के लिए कनेक्शन को स्वीकृति दें",
+      "approveConnectionToDepositLoadingText": "अपनी जमा प्रक्रिया शुरू करने के लिए कनेक्शन को स्वीकृति दें"
     },
     "previewButton": "जुड़ें",
     "previewTitle": "खाता जोड़ें",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "आपकी सुरक्षा के लिए, खाता सेटिंग्स में परिवर्तन के बाद 24 घंटे के लिए निकासी अक्षम कर दी गई है। कृपया बाद में पुनः प्रयास करें।",
     "withdrawalLockedP2P": "आपकी सुरक्षा के लिए, P2P खरीद के बाद 24 घंटे के लिए निकासी अक्षम कर दी गई है। कृपया बाद में पुनः प्रयास करें।",
     "withdrawalPendingDepositConfirmation": "आपकी जमा राशि निकासी के लिए आवश्यक अनलॉक पुष्टि से मेल नहीं खाती है। अधिक जानकारी के लिए कृपया लेन-देन इतिहास देखें।",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "निकासी केवल खरीद या जमा लेनदेन के बाद कम-से-कम 48 घंटे में की जा सकती हैं।"
+    "withdrawalTimeoutDueToRecentFundsManipulation": "निकासी केवल खरीद या जमा लेनदेन के बाद कम-से-कम 48 घंटे में की जा सकती हैं।",
+    "pleaseTryAgain": "कृपया पुनः प्रयास करें।",
+    "incorrectUsernameOrPassword": "गलत उपयोगकर्ता नाम या पासवर्ड।",
+    "incorrectPasswordChancesRemaining": "गलत पासवर्ड। आपके पास {{count}} मौके शेष हैं।",
+    "invalidPhoneNumber": "कृपया एक वैध फोन नंबर दर्ज करें।",
+    "accountLocked": "यह खाता लॉक कर दिया गया है।",
+    "incorrectEmail": "आपने गलत ईमेल दर्ज किया है।",
+    "loginWithQrOrMobileLink": "कृपया QR कोड या मोबाइल लिंक का उपयोग करके लॉगिन करें।",
+    "tooManyAttemptsOneMinute": "बहुत अधिक प्रयास। कृपया 1 मिनट में पुनः प्रयास करें।",
+    "qrOrMobileLinkIn24Hours": "कृपया 24 घंटों में QR कोड या मोबाइल लिंक का उपयोग करके पुनः प्रयास करें।",
+    "loginFirst": "कृपया पहले लॉग इन करें।",
+    "pleaseLogin": "कृपया लॉगिन करें।",
+    "pleaseTryAgainIn1Hour": "कृपया 1 घंटे में पुनः प्रयास करें।",
+    "accountDisabled": "यह खाता अक्षम कर दिया गया है।",
+    "emailCodeExpired": "ईमेल सत्यापन कोड की अवधि समाप्त हो चुकी है। कृपया नया कोड अनुरोध करें।",
+    "verificationFailed": "सत्यापन विफल हो गया। कृपया पुनः प्रयास करें।",
+    "incorrect2faCode": "गलत 2FA कोड।"
   },
   "errorPage": {
     "title": "एक त्रुटि हुई है।"
@@ -595,6 +615,7 @@
     "title": "सत्यापन"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "आपके वॉलेट में संपत्तियों के स्वचालित अदला-बदली की सुविधा के लिए एक शुल्क, लक्ष्य हस्तांतरण संपत्ति में।",
     "gasFeeDescription": "लेनदेन की प्रक्रिया के लिए नेटवर्क वेलिडेटर्स को मुआवजा देने की अनुमानित लागत।",
     "institutionFeeDescription": "यह शुल्क आपके निकासी के प्रसंस्करण के लिए नेटवर्क लागत को कवर करता है। यह चयनित क्रिप्टोक्यूरेंसी और मौजूदा ब्लॉकचेन स्थितियों के अनुसार भिन्न होता है।",
     "processingFee": "{{clientName}} प्रसंस्करण शुल्क",
@@ -1114,6 +1135,7 @@
     "youReceive": "आप प्राप्त करेंगे"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "ऑटोमेटेड अदला-बदली शुल्क",
     "merchantInfoName": "व्यापारी: {{clientName}}",
     "paymentToClient": "{{clientName}} को भुगतान",
     "title": "ऑर्डर सारांश",
@@ -1478,6 +1500,10 @@
       "onramp": "खरीद राशि दर्ज करें",
       "transfer": "स्थानांतरण राशि दर्ज करें"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} जमा के लिए उपलब्ध",
+    "basedOnYourBalances": "आपकी शेष राशि के आधार पर"
   },
   "transferCanceledPage": {
     "title": "स्थानांतरण रद्द किया गया है",

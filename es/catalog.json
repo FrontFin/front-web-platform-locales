@@ -251,7 +251,11 @@
       "payTitle": "Paga en tu wallet",
       "qrSubtitle": "Abre la aplicación de cámara en tu teléfono y escanea el código QR para vincular",
       "spinnerText": "Finaliza el pago en tu wallet {{walletName}}",
-      "subtitle": "Continúa en {{walletName}}. Regresa aquí cuando termines."
+      "subtitle": "Continúa en {{walletName}}. Regresa aquí cuando termines.",
+      "verifyWalletTitle": "Verifica tu wallet",
+      "approveConnectionToVerifyLoadingText": "Aprueba la conexión para iniciar tu verificación",
+      "approveConnectionToPaymentLoadingText": "Aprueba la conexión para iniciar tu pago",
+      "approveConnectionToDepositLoadingText": "Aprueba la conexión para iniciar tu depósito"
     },
     "previewButton": "Conectar",
     "previewTitle": "Conectar cuenta",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo más tarde.",
     "withdrawalLockedP2P": "Por su seguridad, los retiros están deshabilitados durante 24 horas después de una compra P2P. Por favor, inténtelo de nuevo más tarde.",
     "withdrawalPendingDepositConfirmation": "Su depósito no ha cumplido con las confirmaciones de desbloqueo requeridas para el retiro. Por favor, chequee el Historial de Transacciones para más detalles.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Los retiros se pueden realizar al menos 48 horas después de una transacción de compra o depósito."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Los retiros se pueden realizar al menos 48 horas después de una transacción de compra o depósito.",
+    "pleaseTryAgain": "Por favor, inténtalo de nuevo.",
+    "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
+    "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Le quedan {{count}} intentos.",
+    "invalidPhoneNumber": "Por favor, introduzca un número de teléfono válido.",
+    "accountLocked": "Esta cuenta ha sido bloqueada.",
+    "incorrectEmail": "Ha ingresado un correo electrónico incorrecto.",
+    "loginWithQrOrMobileLink": "Por favor, inicie sesión usando el código QR o el enlace móvil.",
+    "tooManyAttemptsOneMinute": "Demasiados intentos. Por favor, inténtalo de nuevo en 1 minuto.",
+    "qrOrMobileLinkIn24Hours": "Por favor, inténtalo de nuevo en 24 horas usando el código QR o el enlace móvil.",
+    "loginFirst": "Por favor, inicie sesión primero.",
+    "pleaseLogin": "Por favor, inicie sesión.",
+    "pleaseTryAgainIn1Hour": "Inténtelo de nuevo en 1 hora.",
+    "accountDisabled": "Esta cuenta ha sido desactivada.",
+    "emailCodeExpired": "El código de verificación de correo electrónico ha caducado. Por favor, solicite un nuevo código.",
+    "verificationFailed": "Verificación fallida, por favor intenta de nuevo.",
+    "incorrect2faCode": "Código de 2FA incorrecto."
   },
   "errorPage": {
     "title": "Ha ocurrido un error."
@@ -595,6 +615,7 @@
     "title": "Verificación"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "Una tarifa para facilitar un intercambio automatizado de activos en su wallet en el activo de transferencia objetivo.",
     "gasFeeDescription": "El costo estimado para compensar a los validadores de red por procesar la transacción.",
     "institutionFeeDescription": "Esta tarifa cubre el costo de la red para procesar su retiro. Varía según la criptomoneda seleccionada y las condiciones actuales de la blockchain.",
     "processingFee": "Tarifa de procesamiento de {{clientName}}",
@@ -1114,6 +1135,7 @@
     "youReceive": "Recibirás"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "Comisión automatizada de intercambio",
     "merchantInfoName": "Comerciante: {{clientName}}",
     "paymentToClient": "Pago a {{clientName}}",
     "title": "Resumen del pedido",
@@ -1478,6 +1500,10 @@
       "onramp": "Introduce el monto de la compra",
       "transfer": "Introduzca el monto de la transferencia"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} disponible para depósito",
+    "basedOnYourBalances": "Basado en tus saldos"
   },
   "transferCanceledPage": {
     "title": "Transferencia cancelada",

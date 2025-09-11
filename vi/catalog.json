@@ -251,7 +251,11 @@
       "payTitle": "Thanh toán từ ví của bạn",
       "qrSubtitle": "Mở ứng dụng máy ảnh trên điện thoại của bạn và quét mã QR để kết nối",
       "spinnerText": "Hoàn tất thanh toán trên ví {{walletName}} của bạn",
-      "subtitle": "Tiếp tục trong {{walletName}}. Quay lại đây khi bạn hoàn tất."
+      "subtitle": "Tiếp tục trong {{walletName}}. Quay lại đây khi bạn hoàn tất.",
+      "verifyWalletTitle": "Xác minh ví của bạn",
+      "approveConnectionToVerifyLoadingText": "Phê duyệt kết nối để bắt đầu xác minh của bạn",
+      "approveConnectionToPaymentLoadingText": "Phê duyệt kết nối để bắt đầu thanh toán của bạn",
+      "approveConnectionToDepositLoadingText": "Phê duyệt kết nối để bắt đầu gửi tiền của bạn"
     },
     "previewButton": "Kết nối",
     "previewTitle": "Kết nối tài khoản",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "withdrawalLockedP2P": "Vì lý do bảo mật của bạn, việc rút tiền bị vô hiệu hóa trong 24 giờ sau giao dịch P2P. Vui lòng thử lại sau.",
     "withdrawalPendingDepositConfirmation": "Số lần nạp tiền của bạn chưa đáp ứng đủ điều kiện để mớ khóa chức năng rút tiền. Vui lòng kiểm tra lịch sử giao dịch để biết thêm chi tiết.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Rút tiền có thể thực hiện ít nhất 48 giờ sau khi mua hoặc nạp tiền."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Rút tiền có thể thực hiện ít nhất 48 giờ sau khi mua hoặc nạp tiền.",
+    "pleaseTryAgain": "Vui lòng thử lại.",
+    "incorrectUsernameOrPassword": "Tên đăng nhập hoặc mật khẩu không đúng.",
+    "incorrectPasswordChancesRemaining": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
+    "invalidPhoneNumber": "Hãy nhập một số điện thoại hợp lệ.",
+    "accountLocked": "Tài khoản này đã bị khóa.",
+    "incorrectEmail": "Bạn đã nhập sai email.",
+    "loginWithQrOrMobileLink": "Vui lòng đăng nhập bằng mã QR hoặc liên kết di động.",
+    "tooManyAttemptsOneMinute": "Quá nhiều lần thử. Vui lòng thử lại sau 1 phút.",
+    "qrOrMobileLinkIn24Hours": "Vui lòng thử lại sau 24 giờ bằng mã QR hoặc liên kết di động.",
+    "loginFirst": "Vui lòng đăng nhập trước.",
+    "pleaseLogin": "Vui lòng đăng nhập.",
+    "pleaseTryAgainIn1Hour": "Vui lòng thử lại sau 1 giờ.",
+    "accountDisabled": "Tài khoản này đã bị vô hiệu hóa.",
+    "emailCodeExpired": "Mã xác minh email đã hết hạn. Vui lòng yêu cầu mã mới.",
+    "verificationFailed": "Xác minh không thành công, vui lòng thử lại.",
+    "incorrect2faCode": "Mã 2FA không chính xác."
   },
   "errorPage": {
     "title": "Đã xảy ra lỗi."
@@ -595,6 +615,7 @@
     "title": "Xác minh"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "Một khoản phí hỗ trợ hoán đổi tự động tài sản trong ví của bạn thành tài sản chuyển giao mục tiêu.",
     "gasFeeDescription": "Chi phí ước tính để bồi thường cho các trình xác thực mạng khi xử lý giao dịch.",
     "institutionFeeDescription": "Phí này bao gồm chi phí mạng cho việc xử lý rút tiền của bạn. Nó thay đổi tùy thuộc vào tiền điện tử được chọn và điều kiện blockchain hiện tại.",
     "processingFee": "Phí xử lý {{clientName}}",
@@ -1114,6 +1135,7 @@
     "youReceive": "Bạn nhận được"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "Phí trao đổi tự động",
     "merchantInfoName": "Người bán: {{clientName}}",
     "paymentToClient": "Thanh toán đến {{clientName}}",
     "title": "Tóm tắt đơn hàng",
@@ -1478,6 +1500,10 @@
       "onramp": "Nhập số tiền mua",
       "transfer": "Nhập số tiền giao dịch a"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} có sẵn để gửi tiền",
+    "basedOnYourBalances": "Dựa trên số dư của bạn"
   },
   "transferCanceledPage": {
     "title": "Chuyển khoản đã bị hủy",

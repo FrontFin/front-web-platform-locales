@@ -251,7 +251,11 @@
       "payTitle": "お財布で支払う",
       "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
       "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。",
-      "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。"
+      "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
+      "verifyWalletTitle": "ウォレットを確認する",
+      "approveConnectionToVerifyLoadingText": "認証を開始するには接続を承認してください",
+      "approveConnectionToPaymentLoadingText": "支払いを開始するには接続を承認してください",
+      "approveConnectionToDepositLoadingText": "入金を開始するには接続を承認してください"
     },
     "previewButton": "接続",
     "previewTitle": "アカウントを接続",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "セキュリティ保護のため、アカウント設定の変更後24時間は出金が無効になります。後ほど再度お試しください。",
     "withdrawalLockedP2P": "セキュリティ保護のため、P2P購入後24時間は出金が無効になります。後ほど再度お試しください。",
     "withdrawalPendingDepositConfirmation": "お客様の入金は、出金に必要な承認確認数を満たしていません。詳細は取引履歴をご確認ください。",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "引き出しは、購入または入金取引から少なくとも48時間後に行うことができます。"
+    "withdrawalTimeoutDueToRecentFundsManipulation": "引き出しは、購入または入金取引から少なくとも48時間後に行うことができます。",
+    "pleaseTryAgain": "もう一度お試しください。",
+    "incorrectUsernameOrPassword": "ユーザー名またはパスワードが間違っています。",
+    "incorrectPasswordChancesRemaining": "パスワードが間違っています。あと{{count}}回試せます。",
+    "invalidPhoneNumber": "有効な電話番号を入力してください。",
+    "accountLocked": "このアカウントはロックされました。",
+    "incorrectEmail": "間違ったメールアドレスを入力しました。",
+    "loginWithQrOrMobileLink": "QRコードまたはモバイルリンクでログインしてください。",
+    "tooManyAttemptsOneMinute": "試行回数が多すぎます。1分後にもう一度お試しください。",
+    "qrOrMobileLinkIn24Hours": "QRコードまたはモバイルリンクを使って24時間後に再試行してください。",
+    "loginFirst": "まずログインしてください。",
+    "pleaseLogin": "ログインしてください。",
+    "pleaseTryAgainIn1Hour": "1時間後にもう一度お試しください。",
+    "accountDisabled": "このアカウントは無効化されました。",
+    "emailCodeExpired": "メール認証コードの有効期限が切れました。新しいコードをリクエストしてください。",
+    "verificationFailed": "本人確認に失敗しました。もう一度お試しください.。",
+    "incorrect2faCode": "2FAコードが正しくありません。"
   },
   "errorPage": {
     "title": "エラーが発生しました。"
@@ -595,6 +615,7 @@
     "title": "確認"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "ウォレット内の資産をターゲットの転送資産に自動的にスワップするための手数料です。",
     "gasFeeDescription": "取引を処理するためにネットワークバリデーターに支払う推定コストです。",
     "institutionFeeDescription": "この料金は、ご出金の処理に要するネットワーク費用をカバーします。選択した仮想通貨と現在のブロックチェーンの状況によって変動します。",
     "processingFee": "{{clientName}} 処理手数料",
@@ -1114,6 +1135,7 @@
     "youReceive": "受け取る"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "自動スワップ手数料",
     "merchantInfoName": "マーチャント: {{clientName}}",
     "paymentToClient": "{{clientName}}への支払い",
     "title": "注文概要",
@@ -1478,6 +1500,10 @@
       "onramp": "購入金額を入力",
       "transfer": "送金額を入力"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} は預金可能",
+    "basedOnYourBalances": "あなたの残高に基づいて"
   },
   "transferCanceledPage": {
     "title": "送金がキャンセルされました",
