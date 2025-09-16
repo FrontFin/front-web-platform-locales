@@ -251,7 +251,11 @@
       "payTitle": "In Ihrer Wallet bezahlen",
       "qrSubtitle": "Öffnen Sie die Kamera-App auf Ihrem Telefon und scannen Sie den QR-Code, um die Verbindung herzustellen",
       "spinnerText": "Beenden Sie die Zahlung in Ihrer {{walletName}} Wallet",
-      "subtitle": "Fahren Sie mit {{walletName}} fort. Kehren Sie hier zurück, wenn Sie fertig sind."
+      "subtitle": "Fahren Sie mit {{walletName}} fort. Kehren Sie hier zurück, wenn Sie fertig sind.",
+      "verifyWalletTitle": "Verifiziere Deine Wallet",
+      "approveConnectionToVerifyLoadingText": "Verbindung genehmigen, um mit der Verifikation zu starten",
+      "approveConnectionToPaymentLoadingText": "Verbindung genehmigen, um mit der Zahlung zu starten",
+      "approveConnectionToDepositLoadingText": "Verbindung genehmigen, um mit der Einzahlung zu starten"
     },
     "previewButton": "Verbinden",
     "previewTitle": "Konto verbinden",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "Zu Deiner Sicherheit sind Abhebungen 24 Stunden nach einer Änderung der Konto-Einstellungen deaktiviert. Bitte versuche es später erneut.",
     "withdrawalLockedP2P": "Zu Deiner Sicherheit sind Abhebungen 24 Stunden nach einem P2P-Kauf deaktiviert. Bitte versuche es später erneut.",
     "withdrawalPendingDepositConfirmation": "Deine Einzahlung hat nicht die erforderlichen Bestätigungen zur Entsperrung für die Abhebung erfüllt. Bitte überprüfe das Überweisungshistorie für weitere Details.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Abhebungen können frühestens 48 Stunden nach einem Kauf- oder Einzahlvorgang durchgeführt werden."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Abhebungen können frühestens 48 Stunden nach einem Kauf- oder Einzahlvorgang durchgeführt werden.",
+    "pleaseTryAgain": "Bitte versuche es erneut.",
+    "incorrectUsernameOrPassword": "Falscher Benutzername oder falsches Passwort.",
+    "incorrectPasswordChancesRemaining": "Falsches Passwort. Du hast noch {{count}} Versuche.",
+    "invalidPhoneNumber": "Bitte eine gültige Telefonnummer eingeben.",
+    "accountLocked": "Dieses Konto wurde gesperrt.",
+    "incorrectEmail": "Du hast eine falsche E-Mail-Adresse eingegeben.",
+    "loginWithQrOrMobileLink": "Bitte logge dich mit QR-Code oder Handy-Link ein.",
+    "tooManyAttemptsOneMinute": "Zu viele Versuche. Bitte versuche es in 1 Minute erneut.",
+    "qrOrMobileLinkIn24Hours": "Bitte versuche es in 24 Stunden mit QR-Code oder Handy-Link erneut.",
+    "loginFirst": "Bitte zuerst einloggen.",
+    "pleaseLogin": "Bitte melden Sie sich an.",
+    "pleaseTryAgainIn1Hour": "Bitte versuchen Sie es in 1 Stunde erneut.",
+    "accountDisabled": "Dieses Konto wurde deaktiviert.",
+    "emailCodeExpired": "Der Bestätigungscode für die E-Mail ist abgelaufen. Bitte fordern Sie einen neuen Code an.",
+    "verificationFailed": "Verifizierung fehlgeschlagen, bitte erneut versuchen.",
+    "incorrect2faCode": "Falscher 2FA-Code."
   },
   "errorPage": {
     "title": "Ein Fehler ist aufgetreten."
@@ -595,6 +615,7 @@
     "title": "Verifizierung"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "Eine Gebühr, um den automatisierten Tausch von Vermögenswerten in Ihrer Wallet in das Zieltransfer-Asset zu erleichtern.",
     "gasFeeDescription": "Die geschätzten Kosten zur Entschädigung der Netzwerkvalidierer für die Bearbeitung der Transaktion.",
     "institutionFeeDescription": "Diese Gebühr deckt die Netzwerkkosten für die Bearbeitung Ihrer Abhebung ab. Sie variiert je nach ausgewählter Kryptowährung und den aktuellen Blockchain-Bedingungen.",
     "processingFee": "{{clientName}} Bearbeitungsgebühr",
@@ -1114,6 +1135,7 @@
     "youReceive": "Du erhälst"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "Automatisierte Swap-Gebühr",
     "merchantInfoName": "Händler: {{clientName}}",
     "paymentToClient": "Zahlung an {{clientName}}",
     "title": "Bestellübersicht",
@@ -1478,6 +1500,10 @@
       "onramp": "Kaufbetrag eingeben",
       "transfer": "Überweisungsbetrag eingeben"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} verfügbar für Einzahlung",
+    "basedOnYourBalances": "Basierend auf Ihren Kontoständen"
   },
   "transferCanceledPage": {
     "title": "Überweisung abgebrochen",

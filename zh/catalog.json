@@ -251,7 +251,11 @@
       "payTitle": "用您的钱包支付",
       "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
       "spinnerText": "用您的 {{walletName}} 钱包完成支付",
-      "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。"
+      "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。",
+      "verifyWalletTitle": "验证您的钱包",
+      "approveConnectionToVerifyLoadingText": "在您的钱包中批准连接请求开始验证",
+      "approveConnectionToPaymentLoadingText": "在您的钱包中批准连接请求开始付款",
+      "approveConnectionToDepositLoadingText": "在您的钱包中批准连接请求开始存款"
     },
     "previewButton": "关联",
     "previewTitle": "关联账户",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提币，请稍后再试。",
     "withdrawalPendingDepositConfirmation": "您的充值尚未达到提币所需的锁定确认数。请查看交易记录获取更多详情。",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提币。"
+    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提币。",
+    "pleaseTryAgain": "请重试。",
+    "incorrectUsernameOrPassword": "用户名或密码错误。",
+    "incorrectPasswordChancesRemaining": "密码错误。您还有 {{count}} 次机会。",
+    "invalidPhoneNumber": "请输入有效的电话号码。",
+    "accountLocked": "此帐户已被锁定。",
+    "incorrectEmail": "您输入的电子邮件有误。",
+    "loginWithQrOrMobileLink": "请使用二维码或移动链接登录。",
+    "tooManyAttemptsOneMinute": "尝试次数过多。请在 1 分钟后再试。",
+    "qrOrMobileLinkIn24Hours": "请在 24 小时后使用二维码或移动链接重试。",
+    "loginFirst": "请先登录。",
+    "pleaseLogin": "请登录。",
+    "pleaseTryAgainIn1Hour": "请在1小时后再试。",
+    "accountDisabled": "该帐户已被禁用。",
+    "emailCodeExpired": "电子邮件验证码已过期。请申请新的代码。",
+    "verificationFailed": "验证失败，请重试。",
+    "incorrect2faCode": "两因素认证代码错误。"
   },
   "errorPage": {
     "title": "出现错误。"
@@ -595,6 +615,7 @@
     "title": "验证"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "用于自动交换您钱包中的资产到目标转账资产的手续费。",
     "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
     "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
@@ -1114,6 +1135,7 @@
     "youReceive": "由您接收"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "自动交换费用",
     "merchantInfoName": "商户：{{clientName}}",
     "paymentToClient": "支付给{{clientName}}",
     "title": "订单详情",
@@ -1478,6 +1500,10 @@
       "onramp": "输入购买金额",
       "transfer": "输入转账金额"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} 可用余额进行存款",
+    "basedOnYourBalances": "基于您的余额"
   },
   "transferCanceledPage": {
     "title": "转账已取消",

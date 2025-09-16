@@ -251,7 +251,11 @@
       "payTitle": "Cüzdanınıza ödeyin",
       "qrSubtitle": "Telefonunuzdaki kamera uygulamasını açın ve bağlantı için QR kodunu tarayın",
       "spinnerText": "Ödemeyi {{walletName}} cüzdanınızda tamamlayın",
-      "subtitle": "{{walletName}}'de devam edin. Bitirdiğinizde buraya geri dönün."
+      "subtitle": "{{walletName}}'de devam edin. Bitirdiğinizde buraya geri dönün.",
+      "verifyWalletTitle": "Cüzdanınızı doğrulayın",
+      "approveConnectionToVerifyLoadingText": "Doğrulamaya başlamak için bağlantıyı onaylayın",
+      "approveConnectionToPaymentLoadingText": "Ödemenize başlamak için bağlantıyı onaylayın",
+      "approveConnectionToDepositLoadingText": "Yatırma işleminize başlamak için bağlantıyı onaylayın"
     },
     "previewButton": "Bağla",
     "previewTitle": "Hesabı bağlayın",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
     "withdrawalLockedP2P": "Güvenliğiniz için, P2P alımının ardından 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
     "withdrawalPendingDepositConfirmation": "Yatırmanız, çekim için gerekli kilit açma onaylarını karşılamadı. Daha fazla ayrıntı için İşlem Geçmişini kontrol edin.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Para çekme işlemi, satın alınan veya yatırılan bir işlemden en az 48 saat sonra yapılabilir."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Para çekme işlemi, satın alınan veya yatırılan bir işlemden en az 48 saat sonra yapılabilir.",
+    "pleaseTryAgain": "Lütfen tekrar deneyin.",
+    "incorrectUsernameOrPassword": "Yanlış kullanıcı adı veya parola.",
+    "incorrectPasswordChancesRemaining": "Yanlış parola. {{count}} hakkınız kaldı.",
+    "invalidPhoneNumber": "Lütfen geçerli bir telefon numarası girin.",
+    "accountLocked": "Bu hesap kilitlendi.",
+    "incorrectEmail": "Yanlış e-posta adresi girdiniz.",
+    "loginWithQrOrMobileLink": "Lütfen QR kodu veya Mobil bağlantı ile giriş yapın.",
+    "tooManyAttemptsOneMinute": "Çok fazla deneme. Lütfen 1 dakika içinde tekrar deneyin.",
+    "qrOrMobileLinkIn24Hours": "Lütfen QR kodu veya Mobil bağlantı ile 24 saat içinde tekrar deneyin.",
+    "loginFirst": "Lütfen önce giriş yapın.",
+    "pleaseLogin": "Lütfen giriş yapın.",
+    "pleaseTryAgainIn1Hour": "Lütfen 1 saat içinde tekrar deneyin.",
+    "accountDisabled": "Bu hesap devre dışı bırakıldı.",
+    "emailCodeExpired": "E-posta doğrulama kodu süresi doldu. Lütfen yeni bir kod isteyin.",
+    "verificationFailed": "Doğrulama başarısız oldu. Lütfen tekrar deneyin.",
+    "incorrect2faCode": "Yanlış 2FA kodu."
   },
   "errorPage": {
     "title": "Bir hata oluştu."
@@ -595,6 +615,7 @@
     "title": "Doğrulama"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "Cüzdanınızda bulunan varlıkların hedef transfer varlığına otomatik dönüşümünü sağlamak için bir ücret.",
     "gasFeeDescription": "İşlemi işlemek için ağ doğrulayıcılarına tazminat ödemek üzere tahmini maliyet.",
     "institutionFeeDescription": "Bu ücret, çekim işleminizi gerçekleştirmek için ağ maliyetlerini karşılar. Seçilen kripto para birimine ve güncel blok zinciri koşullarına bağlı olarak değişiklik gösterir.",
     "processingFee": "{{clientName}} İşlem ücreti",
@@ -1114,6 +1135,7 @@
     "youReceive": "Alacağınız tutar"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "Otomatik değişim ücreti",
     "merchantInfoName": "Satıcı: {{clientName}}",
     "paymentToClient": "Ödeme {{clientName}}'e",
     "title": "Sipariş özeti",
@@ -1478,6 +1500,10 @@
       "onramp": "Satın alma tutarını girin",
       "transfer": "Transfer tutarını girin"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} depozit için kullanılabilir",
+    "basedOnYourBalances": "Hesap bakiyelerinize göre"
   },
   "transferCanceledPage": {
     "title": "Transfer iptal edildi",

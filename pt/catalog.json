@@ -251,7 +251,11 @@
       "payTitle": "Pague na sua carteira",
       "qrSubtitle": "Abra o aplicativo de câmera no seu telefone e escaneie o código QR para vincular",
       "spinnerText": "Finalizar o pagamento na sua carteira {{walletName}}",
-      "subtitle": "Continue em {{walletName}}. Retorne aqui quando terminar."
+      "subtitle": "Continue em {{walletName}}. Retorne aqui quando terminar.",
+      "verifyWalletTitle": "Verifique a sua carteira",
+      "approveConnectionToVerifyLoadingText": "Aprove a conexão para iniciar a sua verificação",
+      "approveConnectionToPaymentLoadingText": "Aprove a conexão para iniciar o seu pagamento",
+      "approveConnectionToDepositLoadingText": "Aprove a conexão para iniciar o seu depósito"
     },
     "previewButton": "Ligar",
     "previewTitle": "Ligar a uma conta",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "Para tua segurança, levantamentos são desabilitadas por 24 horas após uma alteração nas configurações da conta. Por favor, tenta novamente mais tarde.",
     "withdrawalLockedP2P": "Para tua segurança, levantamentos são desabilitados por 24 horas após uma compra P2P. Por favor, tenta novamente mais tarde.",
     "withdrawalPendingDepositConfirmation": "O teu depósito não atendeu às confirmações de desbloqueio necessárias para levantamento. Por favor, verifica o Histórico de Transações para mais detalhes.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Os levantamentos podem ser efectuados no mínimo 48 horas após uma transacção de compra ou depósito."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Os levantamentos podem ser efectuados no mínimo 48 horas após uma transacção de compra ou depósito.",
+    "pleaseTryAgain": "Por favor, tente novamente.",
+    "incorrectUsernameOrPassword": "Nome de usuário ou senha incorreta.",
+    "incorrectPasswordChancesRemaining": "Senha incorreta. Você tem {{count}} tentativas restantes.",
+    "invalidPhoneNumber": "Por favor, insira um número de telefone válido.",
+    "accountLocked": "Esta conta foi bloqueada.",
+    "incorrectEmail": "Você digitou um email incorreto.",
+    "loginWithQrOrMobileLink": "Por favor, faça login usando código QR ou link móvel.",
+    "tooManyAttemptsOneMinute": "Muitas tentativas. Tente novamente em 1 minuto.",
+    "qrOrMobileLinkIn24Hours": "Tente novamente em 24 horas usando código QR ou link móvel.",
+    "loginFirst": "Por favor, faça login primeiro.",
+    "pleaseLogin": "Por favor, effectue o login.",
+    "pleaseTryAgainIn1Hour": "Por favor, tente novamente em 1 hora.",
+    "accountDisabled": "Esta conta foi desativada.",
+    "emailCodeExpired": "Código de verificação por email expirou. Por favor, solicite um novo código.",
+    "verificationFailed": "Verificação falhou, por favor, tente novamente.",
+    "incorrect2faCode": "Código 2FA incorreto."
   },
   "errorPage": {
     "title": "Ocorreu um erro."
@@ -595,6 +615,7 @@
     "title": "Verificação"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "Uma taxa para facilitar uma troca automatizada de ativos na sua carteira para o ativo de transferência alvo.",
     "gasFeeDescription": "O custo estimado para compensar os validadores da rede pelo processamento da transação.",
     "institutionFeeDescription": "Esta taxa cobre o custo de rede para processar seu saque. Ela varia dependendo da criptomoeda selecionada e das condições atuais do blockchain.",
     "processingFee": "Taxa de processamento de {{clientName}}",
@@ -1114,6 +1135,7 @@
     "youReceive": "Tu recebes"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "Taxa de troca automatizada",
     "merchantInfoName": "Comerciante: {{clientName}}",
     "paymentToClient": "Pagamento para {{clientName}}",
     "title": "Resumo do pedido",
@@ -1478,6 +1500,10 @@
       "onramp": "Insire o valor da compra",
       "transfer": "Digita o valor da transferência"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} disponível para depósito",
+    "basedOnYourBalances": "Com base nos seus saldos"
   },
   "transferCanceledPage": {
     "title": "Transferência cancelada",

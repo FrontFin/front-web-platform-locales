@@ -251,7 +251,11 @@
       "payTitle": "Maksa lompakossasi",
       "qrSubtitle": "Avaa puhelimesi kamera ja skannaa QR-koodi linkittämiseksi",
       "spinnerText": "Viimeistele maksu {{walletName}} lompakossasi",
-      "subtitle": "Jatka {{walletName}}:ssa. Palaa tänne, kun olet valmis."
+      "subtitle": "Jatka {{walletName}}:ssa. Palaa tänne, kun olet valmis.",
+      "verifyWalletTitle": "Varmista lompakkosi",
+      "approveConnectionToVerifyLoadingText": "Hyväksy yhteys varmennuksen aloittamiseksi",
+      "approveConnectionToPaymentLoadingText": "Hyväksy yhteys maksun aloittamiseksi",
+      "approveConnectionToDepositLoadingText": "Hyväksy yhteys talletuksen aloittamiseksi"
     },
     "previewButton": "Yhdistä",
     "previewTitle": "Yhdistä tili",
@@ -542,7 +546,23 @@
     "withdrawalLocked": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen.",
     "withdrawalLockedP2P": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi P2P-ostoksen jälkeen. Yritä myöhemmin uudelleen.",
     "withdrawalPendingDepositConfirmation": "Talletuksesi ei ole täyttänyt vaadittuja vahvistuksia nostoa varten. Katso lisätietoja tapahtumahistoriasta.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot voidaan tehdä vähintään 48 tuntia oston tai talletuksen jälkeen."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot voidaan tehdä vähintään 48 tuntia oston tai talletuksen jälkeen.",
+    "pleaseTryAgain": "Yritä uudelleen.",
+    "incorrectUsernameOrPassword": "Väärä käyttäjänimi tai salasana.",
+    "incorrectPasswordChancesRemaining": "Väärä salasana. Sinulla on {{count}} mahdollisuutta jäljellä.",
+    "invalidPhoneNumber": "Syötä kelvollinen puhelinnumero.",
+    "accountLocked": "Tämä tili on lukittu.",
+    "incorrectEmail": "Olet antanut virheellisen sähköpostin.",
+    "loginWithQrOrMobileLink": "Kirjaudu sisään käyttäen QR-koodia tai mobiililinkkiä.",
+    "tooManyAttemptsOneMinute": "Liian monta yritystä. Yritä uudelleen 1 minuutin kuluttua.",
+    "qrOrMobileLinkIn24Hours": "Yritä uudelleen 24 tunnin kuluttua käyttäen QR-koodia tai mobiililinkkiä.",
+    "loginFirst": "Kirjaudu ensin sisään.",
+    "pleaseLogin": "Ole hyvä ja kirjaudu sisään.",
+    "pleaseTryAgainIn1Hour": "Yritä uudelleen tunnin kuluttua.",
+    "accountDisabled": "Tämä tili on poistettu käytöstä.",
+    "emailCodeExpired": "Sähköpostin vahvistuskoodi vanhentui. Ole hyvä ja pyydä uusi koodi.",
+    "verificationFailed": "Varmistus epäonnistui, yritä uudelleen.",
+    "incorrect2faCode": "Virheellinen 2FA-koodi."
   },
   "errorPage": {
     "title": "Tapahtui virhe."
@@ -595,6 +615,7 @@
     "title": "Varmistus"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "Maksu, joka helpottaa automaattista varojen vaihtoasi lompakossasi tavoitevaraan.",
     "gasFeeDescription": "Arvioidut kustannukset verkon validoijien kompensoimiseksi tapahtuman käsittelystä.",
     "institutionFeeDescription": "Tämä maksu kattaa verkon kustannukset nostosi käsittelystä. Se vaihtelee valitun kryptovaluutan ja nykyisten lohkoketjun olosuhteiden mukaan.",
     "processingFee": "{{clientName}} Käsittelymaksu",
@@ -1114,6 +1135,7 @@
     "youReceive": "Sinä vastaanotat"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "Automaattinen vaihtomaksu",
     "merchantInfoName": "Kauppias: {{clientName}}",
     "paymentToClient": "Maksu {{clientName}}ille",
     "title": "Tilauksen yhteenveto",
@@ -1478,6 +1500,10 @@
       "onramp": "Syötä ostosumma",
       "transfer": "Syötä siirtosumma"
     }
+  },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} saatavilla talletukseen",
+    "basedOnYourBalances": "Saldojesi perusteella"
   },
   "transferCanceledPage": {
     "title": "Siirto peruttu",
