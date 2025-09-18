@@ -247,20 +247,36 @@
     "continue": "Continue to {{walletName}}",
     "dappPage": {
       "continueButton": "Continue in {{walletName}}",
-      "depositTitle": "Deposit from your wallet",
-      "payTitle": "Pay in your wallet",
       "qrSubtitle": "Open the camera app on your phone and scan the QR code to link",
-      "spinnerText": "Finish the payment on your {{walletName}} wallet",
+      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
+      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
       "subtitle": "Continue in {{walletName}}. Return here when you're done.",
-      "verifyWalletTitle": "Verify your wallet",
-      "approveConnectionToVerifyLoadingText": "Approve connection to start your verification",
-      "approveConnectionToPaymentLoadingText": "Approve connection to start your payment",
-      "approveConnectionToDepositLoadingText": "Approve connection to start your deposit"
+      "payTitle": "Pay in your wallet",
+      "depositTitle": "Deposit from your wallet",
+      "verifyWalletTitle": "Verify your wallet"
     },
     "previewButton": "Connect",
     "previewTitle": "Connect account",
     "subtitle": "Click below to open {{walletName}}. Then approve the connection request to preview your payment.",
     "title": "Connect your wallet"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Approve connection to verify your wallet",
+    "paymentFlowSubtitle": "Approve connection to start your payment",
+    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "title": "Connect account"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Verify your wallet",
+    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "titleAlreadyDenied": "Oops!",
+    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "resend": "Resend signature request"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Wallet verified!",
+    "subtitle": "Return to {{clientName}}",
+    "returnToClient": "Return to {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
