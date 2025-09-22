@@ -248,8 +248,8 @@
     "dappPage": {
       "continueButton": "Продолжить в {{walletName}}",
       "qrSubtitle": "Откройте приложение камеры на вашем телефоне и отсканируйте QR-код, чтобы связать",
-      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
-      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
+      "spinnerTransactionText": "Завершите эту транзакцию в приложении вашего {{walletName}}.",
+      "spinnerVerifyText": "Завершите проверку владения в приложении вашего {{walletName}}.",
       "subtitle": "Продолжите в {{walletName}}. Вернитесь сюда, когда закончите.",
       "payTitle": "Оплатите с вашего электронного кошелька",
       "depositTitle": "Пополните с вашего электронного кошелька",
@@ -261,20 +261,20 @@
     "title": "Подключить ваш электронный кошелек"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "verifyFlowSubtitle": "Подтвердите подключение, чтобы проверить ваш электронный кошелек.",
+    "paymentFlowSubtitle": "Подтвердите подключение, чтобы начать оплату.",
+    "depositFlowSubtitle": "Подтвердите подключение, чтобы начать перевод.",
     "title": "Подключить аккаунт"
   },
   "inWalletBrowserVerifyPage": {
     "titleInitial": "Проверка вашего электронного кошелька",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "subtitleInitial": "Подтвердите, что вы владеете этим электронным кошельком, подписав сообщение. Если вы не видите запрос, нажмите кнопку ниже.",
     "titleAlreadyDenied": "Ой!",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleAlreadyDenied": "Кажется, вы отклонили запрос на подпись. Revolut не может подтвердить право владения вашим электронным кошельком без подписи.",
     "resend": "Повторно отправить запрос на подпись"
   },
   "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
+    "title": "Электронный кошелек проверен!",
     "subtitle": "Вернуться к {{clientName}}",
     "returnToClient": "Вернуться к {{clientName}}"
   },
@@ -1169,6 +1169,20 @@
       "qrCode": "QR код"
     },
     "title": "Вход"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Deposit with QR code"
+    },
+    "screen": {
+      "headline": "Having trouble?",
+      "subtitle": "You can still complete your deposit manually.",
+      "tokenLabel": "Токен",
+      "networkLabel": "Сеть",
+      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
+      "copyWalletAddress": "Copy wallet address",
+      "downloadQr": "Download the QR code"
+    }
   },
   "paymentMethods": {
     "bankAccount": "Банковский счет",
