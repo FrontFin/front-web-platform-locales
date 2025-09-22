@@ -247,20 +247,36 @@
     "continue": "{{walletName}}に進む",
     "dappPage": {
       "continueButton": "{{walletName}}で続行",
-      "depositTitle": "お財布から預け入れ",
-      "payTitle": "お財布で支払う",
       "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
-      "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。",
+      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
+      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
       "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
-      "verifyWalletTitle": "ウォレットを確認する",
-      "approveConnectionToVerifyLoadingText": "認証を開始するには接続を承認してください",
-      "approveConnectionToPaymentLoadingText": "支払いを開始するには接続を承認してください",
-      "approveConnectionToDepositLoadingText": "入金を開始するには接続を承認してください"
+      "payTitle": "お財布で支払う",
+      "depositTitle": "お財布から預け入れ",
+      "verifyWalletTitle": "ウォレットを確認する"
     },
     "previewButton": "接続",
     "previewTitle": "アカウントを接続",
     "subtitle": "下のボタンをクリックして{{walletName}}を開いてください。次に接続要求を承認して、支払いをプレビューします。",
     "title": "ウォレットを接続"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Approve connection to verify your wallet",
+    "paymentFlowSubtitle": "Approve connection to start your payment",
+    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "title": "アカウントを接続"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "ウォレットを確認する",
+    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "titleAlreadyDenied": "おっと！",
+    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "resend": "署名リクエストを再送信する"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Wallet verified!",
+    "subtitle": "{{clientName}}に戻る",
+    "returnToClient": "{{clientName}}に戻る"
   },
   "defiWalletQrPage": {
     "declinedBody": "ウォレットの接続リクエストを拒否したか、以前のリクエストがまだアクティブです。",
