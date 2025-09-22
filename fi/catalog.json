@@ -247,20 +247,36 @@
     "continue": "Jatka siirtymällä {{walletName}}iin",
     "dappPage": {
       "continueButton": "Jatka {{walletName}}:ssa",
-      "depositTitle": "Talleta lompakostasi",
-      "payTitle": "Maksa lompakossasi",
       "qrSubtitle": "Avaa puhelimesi kamera ja skannaa QR-koodi linkittämiseksi",
-      "spinnerText": "Viimeistele maksu {{walletName}} lompakossasi",
+      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
+      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
       "subtitle": "Jatka {{walletName}}:ssa. Palaa tänne, kun olet valmis.",
-      "verifyWalletTitle": "Varmista lompakkosi",
-      "approveConnectionToVerifyLoadingText": "Hyväksy yhteys varmennuksen aloittamiseksi",
-      "approveConnectionToPaymentLoadingText": "Hyväksy yhteys maksun aloittamiseksi",
-      "approveConnectionToDepositLoadingText": "Hyväksy yhteys talletuksen aloittamiseksi"
+      "payTitle": "Maksa lompakossasi",
+      "depositTitle": "Talleta lompakostasi",
+      "verifyWalletTitle": "Varmista lompakkosi"
     },
     "previewButton": "Yhdistä",
     "previewTitle": "Yhdistä tili",
     "subtitle": "Napauta alta avataksesi {{walletName}}n. Hyväksy sitten yhteyspyyntö esikatsellaksesi maksusi.",
     "title": "Yhdistä lompakkosi"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Approve connection to verify your wallet",
+    "paymentFlowSubtitle": "Approve connection to start your payment",
+    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "title": "Yhdistä tili"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Varmista lompakkosi",
+    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "titleAlreadyDenied": "Hups!",
+    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "resend": "Lähetä allekirjoituspyyntö uudelleen"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Wallet verified!",
+    "subtitle": "Palaa {{clientName}}iin",
+    "returnToClient": "Palaa {{clientName}}iin"
   },
   "defiWalletQrPage": {
     "declinedBody": "Olet hylännyt pyynnön yhdistää lompakkoosi tai aiempi pyyntö on yhä aktiivinen.",
