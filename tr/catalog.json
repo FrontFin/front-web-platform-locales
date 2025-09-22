@@ -248,8 +248,8 @@
     "dappPage": {
       "continueButton": "{{walletName}}'de devam edin",
       "qrSubtitle": "Telefonunuzdaki kamera uygulamasını açın ve bağlantı için QR kodunu tarayın",
-      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
-      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
+      "spinnerTransactionText": "Bu işlemi {{walletName}} uygulamanızda tamamlayın",
+      "spinnerVerifyText": "Sahiplik doğrulamasını {{walletName}} uygulamanızda tamamlayın",
       "subtitle": "{{walletName}}'de devam edin. Bitirdiğinizde buraya geri dönün.",
       "payTitle": "Cüzdanınıza ödeyin",
       "depositTitle": "Cüzdanınızdan para yatırın",
@@ -261,20 +261,20 @@
     "title": "Cüzdanınızı bağlayın"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "verifyFlowSubtitle": "Cüzdanınızı doğrulamak için bağlantıyı onaylayın",
+    "paymentFlowSubtitle": "Ödemenizin başlaması için bağlantıyı onaylayın",
+    "depositFlowSubtitle": "Transferinizin başlaması için bağlantıyı onaylayın",
     "title": "Hesabı bağlayın"
   },
   "inWalletBrowserVerifyPage": {
     "titleInitial": "Cüzdanınızı doğrulayın",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "subtitleInitial": "Bu cüzdanın size ait olduğunu bir mesaj imzalayarak doğrulayın. Talebi göremiyorsanız aşağıdaki butona tıklayın.",
     "titleAlreadyDenied": "Hata!",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleAlreadyDenied": "İmza talebini reddetmiş gibi görünüyorsunuz. Revolut, cüzdanınızın sahibini imza olmadan doğrulayamaz.",
     "resend": "İmza isteğini yeniden gönder"
   },
   "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
+    "title": "Cüzdan doğrulandı!",
     "subtitle": "{{clientName}} dön",
     "returnToClient": "{{clientName}} dön"
   },
@@ -1169,6 +1169,20 @@
       "qrCode": "QR Kod"
     },
     "title": "Giriş yap"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Deposit with QR code"
+    },
+    "screen": {
+      "headline": "Having trouble?",
+      "subtitle": "You can still complete your deposit manually.",
+      "tokenLabel": "Jeton",
+      "networkLabel": "Ağ test",
+      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
+      "copyWalletAddress": "Copy wallet address",
+      "downloadQr": "Download the QR code"
+    }
   },
   "paymentMethods": {
     "bankAccount": "Banka hesabı",
