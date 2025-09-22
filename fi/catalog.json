@@ -248,8 +248,8 @@
     "dappPage": {
       "continueButton": "Jatka {{walletName}}:ssa",
       "qrSubtitle": "Avaa puhelimesi kamera ja skannaa QR-koodi linkittämiseksi",
-      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
-      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
+      "spinnerTransactionText": "Viimeistele tämä tapahtuma {{walletName}}-sovelluksessasi",
+      "spinnerVerifyText": "Viimeistele omistajuuden varmentaminen {{walletName}}-sovelluksessasi",
       "subtitle": "Jatka {{walletName}}:ssa. Palaa tänne, kun olet valmis.",
       "payTitle": "Maksa lompakossasi",
       "depositTitle": "Talleta lompakostasi",
@@ -261,20 +261,20 @@
     "title": "Yhdistä lompakkosi"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "verifyFlowSubtitle": "Hyväksy yhteyden tarkistus lompakossasi",
+    "paymentFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa maksun",
+    "depositFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa siirron",
     "title": "Yhdistä tili"
   },
   "inWalletBrowserVerifyPage": {
     "titleInitial": "Varmista lompakkosi",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "subtitleInitial": "Vahvista, että omistat tämän lompakon, allekirjoittamalla viesti. Jos et näe pyyntöä, napsauta alla olevaa painiketta.",
     "titleAlreadyDenied": "Hups!",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleAlreadyDenied": "Näyttää siltä, että hylkäsit allekirjoituspyynnön. Revolut ei voi varmistaa lompakkosi omistajuutta ilman allekirjoitusta.",
     "resend": "Lähetä allekirjoituspyyntö uudelleen"
   },
   "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
+    "title": "Lompakko vahvistettu!",
     "subtitle": "Palaa {{clientName}}iin",
     "returnToClient": "Palaa {{clientName}}iin"
   },
@@ -1169,6 +1169,20 @@
       "qrCode": "QR-koodi"
     },
     "title": "Sisäänkirjautuminen"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Deposit with QR code"
+    },
+    "screen": {
+      "headline": "Having trouble?",
+      "subtitle": "You can still complete your deposit manually.",
+      "tokenLabel": "Token",
+      "networkLabel": "Verkko",
+      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
+      "copyWalletAddress": "Copy wallet address",
+      "downloadQr": "Download the QR code"
+    }
   },
   "paymentMethods": {
     "bankAccount": "Pankkitili",
