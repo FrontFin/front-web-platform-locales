@@ -248,8 +248,8 @@
     "dappPage": {
       "continueButton": "Continuez dans {{walletName}}",
       "qrSubtitle": "Ouvrez l'application de caméra sur votre téléphone et scannez le QR code pour lier",
-      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
-      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
+      "spinnerTransactionText": "Terminez cette transaction dans votre application {{walletName}}",
+      "spinnerVerifyText": "Terminez la vérification de propriété dans votre application {{walletName}}",
       "subtitle": "Continuez dans {{walletName}}. Revenez ici lorsque vous avez terminé.",
       "payTitle": "Payez dans votre portefeuille",
       "depositTitle": "Dépôt depuis votre portefeuille",
@@ -261,20 +261,20 @@
     "title": "Connecter votre portefeuille"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "verifyFlowSubtitle": "Approuvez la connexion pour vérifier votre portefeuille",
+    "paymentFlowSubtitle": "Approuvez la connexion pour commencer votre paiement",
+    "depositFlowSubtitle": "Approuvez la connexion pour commencer votre transfert",
     "title": "Connecter le compte"
   },
   "inWalletBrowserVerifyPage": {
     "titleInitial": "Vérifiez votre portefeuille",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "subtitleInitial": "Confirmez que vous possédez ce portefeuille en signant un message. Si vous ne voyez pas la demande, cliquez sur le bouton ci-dessous.",
     "titleAlreadyDenied": "Oups!",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleAlreadyDenied": "Il semble que vous ayez refusé la demande de signature. Revolut ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
     "resend": "Renvoyer la demande de signature"
   },
   "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
+    "title": "Portefeuille vérifié!",
     "subtitle": "Retourner à {{clientName}}",
     "returnToClient": "Retourner à {{clientName}}"
   },
@@ -1169,6 +1169,20 @@
       "qrCode": "Code QR"
     },
     "title": "Se connecter"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Deposit with QR code"
+    },
+    "screen": {
+      "headline": "Having trouble?",
+      "subtitle": "You can still complete your deposit manually.",
+      "tokenLabel": "Jeton",
+      "networkLabel": "Réseau",
+      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
+      "copyWalletAddress": "Copy wallet address",
+      "downloadQr": "Download the QR code"
+    }
   },
   "paymentMethods": {
     "bankAccount": "Compte bancaire",
