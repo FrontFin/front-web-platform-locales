@@ -247,20 +247,36 @@
     "continue": "Weiter zu {{walletName}}",
     "dappPage": {
       "continueButton": "Weiter in {{walletName}}",
-      "depositTitle": "Von Ihrer Wallet einzahlen",
-      "payTitle": "In Ihrer Wallet bezahlen",
       "qrSubtitle": "Öffnen Sie die Kamera-App auf Ihrem Telefon und scannen Sie den QR-Code, um die Verbindung herzustellen",
-      "spinnerText": "Beenden Sie die Zahlung in Ihrer {{walletName}} Wallet",
+      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
+      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
       "subtitle": "Fahren Sie mit {{walletName}} fort. Kehren Sie hier zurück, wenn Sie fertig sind.",
-      "verifyWalletTitle": "Verifiziere Deine Wallet",
-      "approveConnectionToVerifyLoadingText": "Verbindung genehmigen, um mit der Verifikation zu starten",
-      "approveConnectionToPaymentLoadingText": "Verbindung genehmigen, um mit der Zahlung zu starten",
-      "approveConnectionToDepositLoadingText": "Verbindung genehmigen, um mit der Einzahlung zu starten"
+      "payTitle": "In Ihrer Wallet bezahlen",
+      "depositTitle": "Von Ihrer Wallet einzahlen",
+      "verifyWalletTitle": "Verifiziere Deine Wallet"
     },
     "previewButton": "Verbinden",
     "previewTitle": "Konto verbinden",
     "subtitle": "Klicke unten, um {{walletName}} zu öffnen. Genehmige dann die Verbindungsanfrage für eine Vorschau Deiner Zahlung.",
     "title": "Deine Wallet verbinden"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Approve connection to verify your wallet",
+    "paymentFlowSubtitle": "Approve connection to start your payment",
+    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "title": "Konto verbinden"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Verifiziere Deine Wallet",
+    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "titleAlreadyDenied": "Ups!",
+    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "resend": "Unterschriftanfrage erneut senden"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Wallet verified!",
+    "subtitle": "Zurück zu {{clientName}}",
+    "returnToClient": "Zurück zu {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Du hast die Anfrage zur Verbindung Deiner Wallet abgelehnt oder eine vorherige Anfrage ist noch aktiv.",
