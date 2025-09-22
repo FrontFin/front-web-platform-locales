@@ -248,8 +248,8 @@
     "dappPage": {
       "continueButton": "{{walletName}}で続行",
       "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
-      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
-      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
+      "spinnerTransactionText": "この取引を{{walletName}}アプリで完了してください。",
+      "spinnerVerifyText": "{{walletName}}アプリで所有権の確認を完了してください。",
       "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
       "payTitle": "お財布で支払う",
       "depositTitle": "お財布から預け入れ",
@@ -261,20 +261,20 @@
     "title": "ウォレットを接続"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "verifyFlowSubtitle": "ウォレットで接続を承認して確認してください。",
+    "paymentFlowSubtitle": "ウォレットで接続を承認して支払いを開始してください。",
+    "depositFlowSubtitle": "ウォレットで接続を承認して送金を開始してください。",
     "title": "アカウントを接続"
   },
   "inWalletBrowserVerifyPage": {
     "titleInitial": "ウォレットを確認する",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "subtitleInitial": "メッセージに署名してこのウォレットを所有していることを確認してください。要求が表示されない場合は、下のボタンをクリックしてください。",
     "titleAlreadyDenied": "おっと！",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleAlreadyDenied": "署名リクエストを拒否したようです。署名がないとRevolutはウォレットの所有権を確認できません。",
     "resend": "署名リクエストを再送信する"
   },
   "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
+    "title": "ウォレットが検証されました！",
     "subtitle": "{{clientName}}に戻る",
     "returnToClient": "{{clientName}}に戻る"
   },
@@ -1169,6 +1169,20 @@
       "qrCode": "QRコード"
     },
     "title": "ログイン"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Deposit with QR code"
+    },
+    "screen": {
+      "headline": "Having trouble?",
+      "subtitle": "You can still complete your deposit manually.",
+      "tokenLabel": "トークン",
+      "networkLabel": "ネットワーク",
+      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
+      "copyWalletAddress": "Copy wallet address",
+      "downloadQr": "Download the QR code"
+    }
   },
   "paymentMethods": {
     "bankAccount": "銀行口座",
