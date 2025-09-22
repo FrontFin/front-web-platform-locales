@@ -247,20 +247,36 @@
     "continue": "继续前往{{walletName}}",
     "dappPage": {
       "continueButton": "继续前往 {{walletName}}",
-      "depositTitle": "用您的钱包充值",
-      "payTitle": "用您的钱包支付",
       "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
-      "spinnerText": "用您的 {{walletName}} 钱包完成支付",
+      "spinnerTransactionText": "在您的{{walletName}}应用中完成此次交易",
+      "spinnerVerifyText": "在您的{{walletName}}应用中完成所有权验证",
       "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。",
-      "verifyWalletTitle": "验证您的钱包",
-      "approveConnectionToVerifyLoadingText": "在您的钱包中批准连接请求开始验证",
-      "approveConnectionToPaymentLoadingText": "在您的钱包中批准连接请求开始付款",
-      "approveConnectionToDepositLoadingText": "在您的钱包中批准连接请求开始存款"
+      "payTitle": "用您的钱包支付",
+      "depositTitle": "用您的钱包充值",
+      "verifyWalletTitle": "验证您的钱包"
     },
     "previewButton": "关联",
     "previewTitle": "关联账户",
     "subtitle": "点击下方打开{{walletName}}。批准该关联请求并预览您的支付。",
     "title": "关联您的钱包"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "批准连接请求以验证您的钱包",
+    "paymentFlowSubtitle": "批准连接请求以开始付款",
+    "depositFlowSubtitle": "批准连接请求以开始转账",
+    "title": "关联账户"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "验证您的钱包",
+    "subtitleInitial": "通过签署消息确认您是此钱包的所有者。如果您未看到请求，请点击下方按钮。",
+    "titleAlreadyDenied": "哎哟，出了点问题！",
+    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "resend": "重新发送签名请求"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Wallet verified!",
+    "subtitle": "返回{{clientName}}",
+    "returnToClient": "返回{{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "您已拒绝关联此钱包的请求，或之前请求仍在进行中。",
