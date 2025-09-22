@@ -248,8 +248,8 @@
     "dappPage": {
       "continueButton": "Continúa en {{walletName}}",
       "qrSubtitle": "Abre la aplicación de cámara en tu teléfono y escanea el código QR para vincular",
-      "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
-      "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
+      "spinnerTransactionText": "Confirma esta transacción en tu aplicación de {{walletName}}},{",
+      "spinnerVerifyText": "Confirma la verificación de propiedad en tu aplicación de {{walletName}}",
       "subtitle": "Continúa en {{walletName}}. Regresa aquí cuando termines.",
       "payTitle": "Paga en tu wallet",
       "depositTitle": "Depositar desde tu wallet",
@@ -261,20 +261,20 @@
     "title": "Conectar tu wallet"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "verifyFlowSubtitle": "Aprueba la conexión para verificar tu wallet",
+    "paymentFlowSubtitle": "Aprueba la conexión para iniciar tu pago",
+    "depositFlowSubtitle": "Aprueba la conexión para iniciar tu transferencia",
     "title": "Conectar cuenta"
   },
   "inWalletBrowserVerifyPage": {
     "titleInitial": "Verifica tu wallet",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "subtitleInitial": "Confirma que posees este wallet firmando un mensaje. Si no ves la solicitud, haz clic en el botón de abajo.",
     "titleAlreadyDenied": "¡Ups!",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleAlreadyDenied": "Parece que negaste la solicitud de firma. Revolut no puede verificar la propiedad de tu wallet sin una firma.",
     "resend": "Reenviar solicitud de firma"
   },
   "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
+    "title": "¡Wallet verificado!",
     "subtitle": "Regresa a {{clientName}}",
     "returnToClient": "Regresa a {{clientName}}"
   },
@@ -1169,6 +1169,20 @@
       "qrCode": "Código QR"
     },
     "title": "Iniciar sesión"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Deposit with QR code"
+    },
+    "screen": {
+      "headline": "Having trouble?",
+      "subtitle": "You can still complete your deposit manually.",
+      "tokenLabel": "Token",
+      "networkLabel": "Red",
+      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
+      "copyWalletAddress": "Copy wallet address",
+      "downloadQr": "Download the QR code"
+    }
   },
   "paymentMethods": {
     "bankAccount": "Cuenta bancaria",
