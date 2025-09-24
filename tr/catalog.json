@@ -61,10 +61,8 @@
     "description": "<1>Binance</1> hesabınızda hem E-posta hem de Kimlik Doğrulayıcı Uygulama 2FA yöntemi olarak yapılandırılmış olmalıdır.",
     "ensureConfigured": "Hem E-posta hem de Kimlik Doğrulayıcı Uygulamanın 2FA için yapılandırıldığından emin olun",
     "goToSettings": "<1>Binance</1> güvenlik ayarlarınıza gitmek için aşağıya tıklayın",
-    "mayNeedReAuthApp": "Lütfen dikkat: <2>uygulamaya</2> döndüğünüzde bu transferi başlatmak için Binance hesabınıza yeniden kimlik doğrulaması yapmanız gerekebilir.",
     "mayNeedReAuthClient": "Lütfen dikkat: <2>{{clientName}}</2> döndüğünüzde bu transferi başlatmak için Binance hesabınıza yeniden kimlik doğrulaması yapmanız gerekebilir.",
     "openBinance": "Binance'i aç",
-    "returnToApp": "Bu transferi tekrar denemek için <1>uygulamaya</1> geri dön",
     "returnToClient": "Bu transferi tekrar denemek için <1>{{clientName}}</1> geri dön",
     "title": "Binance hesabınızdan para çekme işlemlerini etkinleştirin"
   },
@@ -157,7 +155,6 @@
     "verificationCodeInputTitle": "Doğrulama kodu"
   },
   "chooseAccountPage": {
-    "linkToApp": "Hangi hesabınızı bu uygulamaya <1></1> bağlamak istersiniz",
     "linkToClient": "Hangi hesabınızı {{clientName}} bağlamak istersiniz",
     "title": "Alt hesapları seçin"
   },
@@ -312,8 +309,7 @@
     "continueToTransfer": "Transfer etmeye devam et",
     "done": "Tamamlandı",
     "linkAnother": "Başka bir hesap bağla",
-    "linkedToClient": "<1></1><2>{{integrationName}}</2> ile <5>{{clientName}}</5> bağlantısını başarıyla yaptınız.",
-    "linkedToThisApp": "<1></1><2>{{integrationName}}</2> başarılı bir şekilde <5>bu uygulamaya</5> bağlandı."
+    "linkedToClient": "<1></1><2>{{integrationName}}</2> ile <5>{{clientName}}</5> bağlantısını başarıyla yaptınız."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Bu transfer, {{selectedIntegrationName}}'de onaylanana kadar başlatılmayacaktır.",
@@ -323,26 +319,17 @@
     "paymentTitle": "Ödeme tamamlandı",
     "steps": {
       "approvedFromCeFiToClient": "{{selectedIntegrationName}}'den {{clientName}}'e yapılan transferi onaylıyorsunuz.",
-      "approvedFromCeFiToDestination": "{{selectedIntegrationName}}'den hedefe yapılan transferi onayladınız.",
       "approvedFromDeFi": "{{selectedIntegrationName}}'de transferi onayladınız.",
       "conversion": "<1>{{amount}}</1>'yi <4>{{currency}}</4>'ye dönüştürme.",
       "deposit": "{{paymentMethod}}'den {{selectedIntegrationName}}'e <1>{{amount}}</1> yatırma.",
       "purchase": "{{selectedIntegrationName}}'de <1>{{amount}}</1> değerinde {{symbol}} satın alma.",
-      "requestToTransferPaymentSmartToAddress": "{{selectedIntegrationName}} üzerinden, {{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla <1>{{transferPreviewAmount}}</1> tutarında transfer etme talebi.",
       "requestToTransferPaymentSmartToClient": "{{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla {{selectedIntegrationName}}'dan {{clientName}}'e <1>{{transferPreviewAmount}}</1> tutarında transfer talebi.",
-      "requestToTransferPaymentToAddress": "{{selectedIntegrationName}}'den <1>{{transferPreviewAmount}}</1> transfer etme talebi.",
       "requestToTransferPaymentToClient": "{{selectedIntegrationName}}'den {{clientName}}'e <1>{{transferPreviewAmount}}</1> transfer etme talebi.",
-      "requestToTransferSmartToAddress": "{{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla {{selectedIntegrationName}}'dan {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> tutarında transfer talebi.",
       "requestToTransferSmartToClient": "{{selectedIntegrationName}}'dan {{clientName}} {{shortToAddress}}'a, {{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla <1>{{transferPreviewAmount}}</1> tutarında transfer talebi.",
-      "requestToTransferToAddress": "{{selectedIntegrationName}}'den {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> transfer etme talebi.",
       "requestToTransferToClient": "{{selectedIntegrationName}}'den {{clientName}} {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> transfer etme talebi.",
-      "transferPaymentSmartToAddress": "{{selectedIntegrationName}} üzerinden, {{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla <1>{{transferPreviewAmount}}</1> tutarında transfer.",
       "transferPaymentSmartToClient": "{{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla {{selectedIntegrationName}}'dan {{clientName}}'e <1>{{transferPreviewAmount}}</1> tutarında transfer.",
-      "transferPaymentToAddress": "{{selectedIntegrationName}}'den <1>{{transferPreviewAmount}}</1> transfer etme.",
       "transferPaymentToClient": "{{selectedIntegrationName}}'den {{clientName}}'e <1>{{transferPreviewAmount}}</1> transfer etme.",
-      "transferSmartToAddress": "{{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla {{selectedIntegrationName}}'dan {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> tutarında transfer.",
       "transferSmartToClient": "{{selectedIntegrationName}}'dan {{clientName}} {{shortToAddress}}'a, {{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla <1>{{transferPreviewAmount}}</1> tutarında transfer etme.",
-      "transferToAddress": "{{selectedIntegrationName}}'den {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> transfer etme.",
       "transferToClient": "{{selectedIntegrationName}}'den {{clientName}} {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> transfer etme."
     }
   },
@@ -350,7 +337,6 @@
     "awaitingApproval": "Bu transfer, {{selectedIntegrationName}}'de onaylanana kadar başlatılmayacaktır.",
     "checkDetails": "Ne olduğunu gör",
     "checkDetails40": "İşlem ayrıntılarını görüntüle",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1> {{shortAddress}} adresine ulaşacaktır",
     "depositClient": "{{clientName}} ({{shortAddress}}) için<2>{{amountCrypto}} ~ {{amountFiat}}</2> alacaksınız.",
     "directMobileBody": "Ödemenizi tamamlamak için TAO ödeme sayfanıza geri dönün.",
     "directMobileTitle": "Ödeme başlatıldı",
@@ -747,9 +733,7 @@
   },
   "generateKeyPage": {
     "establishedInClient": "<1></1><2>{{clientName}}</2> üzerinde kesintisiz güncellemeleri başarıyla ayarladınız.",
-    "establishedInThisApp": "<1></1><2>bu uygulama</2> içinde kesintisiz güncellemeleri başarıyla ayarladınız.",
     "linkedToInClient": "<1></1><2>{{selectedIntegrationName}}</2> öğesini <5>{{clientName}}</5> öğesine başarıyla bağladınız.",
-    "linkedToThisApp": "<1></1><2>{{selectedIntegrationName}}</2> öğesini <5>bu uygulama</5> öğesine başarıyla bağladınız.",
     "nextStep": "Bir sonraki adımda, <2>kesintisiz güncellemeler</2> için bir anahtar oluşturacağız, böylece tekrar oturum açmanız gerekmez.",
     "tempAccess": "Sadece geçici erişim istiyorum"
   },
@@ -808,17 +792,14 @@
     "notSupportedForTransferBySource": "{{integrationName}} tarafından desteklenmiyor",
     "nyCoinbaseUserRestrictions": "NY çoklu zincir destek sınırlamaları nedeniyle {{network}} üzerindeki {{symbol}} bu transfer için kabul edilmedi.",
     "symbolDoesNotMatch": "{{clientName}} tarafından desteklenmiyor",
-    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi.",
-    "symbolDoesNotMatchNoClientName": "Bu uygulama tarafından desteklenmiyor"
+    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi."
   },
   "initialLedgerScreen": {
     "title": "Cihazınızı açın ve kilidini açın"
   },
   "initialScreen": {
-    "accountTitle": "Bu uygulama hesabınıza güvenli bir şekilde bağlanacaktır",
     "clientNameAccountTitle": "{{clientName}} hesabınıza güvenli bir şekilde bağlanacaktır",
-    "clientNameWalletTitle": "{{clientName}} cüzdanınıza güvenli bir şekilde bağlanacaktır",
-    "walletTitle": "Bu uygulama cüzdanınıza güvenli bir şekilde bağlanacaktır"
+    "clientNameWalletTitle": "{{clientName}} cüzdanınıza güvenli bir şekilde bağlanacaktır"
   },
   "initialSteps": {
     "agreement": "“Devam Et”i seçerek, <1></1><2>Son Kullanıcı Şartları ve Koşulları</2> kabul etmiş olursunuz",
@@ -1023,7 +1004,6 @@
     "allow": "İzin Ver",
     "movingFunds": "izin olmadan fonlarınızı taşımak",
     "titleWithClient": "{{clientName}} <2></2> İzinler",
-    "titleWithoutClient": "Bu uygulamanın <1></1> İzinleri",
     "transactionRequest": "işlemler için talepler gönderme",
     "viewActivity": "bakiye, etkinlik, profil verilerini görüntüleme",
     "wontAllow": "İzin verilmeyecek"
@@ -1095,11 +1075,7 @@
       "approveClient": "{{selectedIntegrationName}}'den {{clientName}}'e transferi onaylıyorsunuz.",
       "approveDestination": "{{selectedIntegrationName}}'den hedefe yapılan transferi onaylıyorsunuz.",
       "transfer": "{{selectedIntegrationName}}'den {{clientName}}'e <1>{{amount}}</1> transferi.",
-      "transferHideClient": "{{selectedIntegrationName}}'den <1>{{amount}}</1> transferi.",
-      "transferHideClientWithAddress": "{{selectedIntegrationName}}'den {{address}}'e <1>{{amount}}</1> transferi.",
       "transferSmartDeposit": "{{selectedIntegrationName}}'den {{clientName}}'e bir aktarma sözleşmesiyle <1>{{amount}}</1> transferi.",
-      "transferSmartDepositHideClient": "{{selectedIntegrationName}}'den bir aktarma sözleşmesiyle <1>{{amount}}</1> transferi.",
-      "transferSmartDepositHideClientWithAddress": "{{selectedIntegrationName}}'den {{address}}'e bir aktarma sözleşmesiyle <1>{{amount}}</1> transferi.",
       "transferSmartDepositWithAddress": "{{selectedIntegrationName}}'den {{clientName}} {{address}}'e bir aktarma sözleşmesiyle <1>{{amount}}</1> transferi.",
       "transferWithAddress": "{{selectedIntegrationName}}'den {{clientName}} {{address}}'e <1>{{amount}}</1> transferi."
     },
@@ -1414,7 +1390,6 @@
     "notEnoughtTitle": "Yeterli {{symbol}} yok",
     "otherEligible": "Diğer uygun varlıklar",
     "paymentTitle": "Ödeme tokeni seçiniz",
-    "returnToAppButton": "Uygulamaya geri dön",
     "returnToClientButton": "{{clientName}}'e dön",
     "spotAccountsBody": "Şu anda yalnızca spot hesaplar desteklenmektedir. Marjin gibi diğer hesap türlerindeki varlıklar tespit edilmeyecektir.",
     "topUpButton": "Bakiye Yükleyin",

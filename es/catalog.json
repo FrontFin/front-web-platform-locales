@@ -61,10 +61,8 @@
     "description": "Debes de correo electrónico y dos factores configurada como métodos de autenticación en tu cuenta <1>Binance</1>.",
     "ensureConfigured": "Asegúrese de que tanto un Email como una aplicación de autenticación están configurados para 2FA",
     "goToSettings": "Haz clic abajo para ir a la configuración de seguridad de <1>Binance</1>",
-    "mayNeedReAuthApp": "Ten en cuenta: es posible que tengas que volver a autenticarte en tu cuenta de Binance para iniciar esta transferencia cuando vuelvas a <2>la aplicación</2>.",
     "mayNeedReAuthClient": "Ten en cuenta: es posible que debas volver a autenticarte en tu cuenta de Binance para iniciar esta transferencia cuando vuelvas a <2>{{clientName}}</2>.",
     "openBinance": "Abrir Binance",
-    "returnToApp": "Volver a <1>la aplicación</1> para reintentar esta transferencia",
     "returnToClient": "Regresa a <1>{{clientName}}</1> para reintentar esta transferencia",
     "title": "Activar retiros desde tu cuenta de Binance"
   },
@@ -157,7 +155,6 @@
     "verificationCodeInputTitle": "Código de verificación"
   },
   "chooseAccountPage": {
-    "linkToApp": "¿Cuál de tus cuentas te gustaría que <1></1> enlazara a esta aplicación",
     "linkToClient": "¿Cuál de tus cuentas te gustaría que <1></1> enlazara a {{clientName}}",
     "title": "Elige subcuentas"
   },
@@ -312,8 +309,7 @@
     "continueToTransfer": "Continuar con la transferencia",
     "done": "Finalizado",
     "linkAnother": "Vincular otra cuenta",
-    "linkedToClient": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>{{clientName}}</5>.",
-    "linkedToThisApp": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>this application</5>."
+    "linkedToClient": "You have successfully linked<1></1><2>{{selectedIntegrationName}}</2> to <5>{{clientName}}</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Esta transferencia no se iniciará hasta que sea aprobada en {{selectedIntegrationName}}.",
@@ -323,26 +319,17 @@
     "paymentTitle": "Pago completado",
     "steps": {
       "approvedFromCeFiToClient": "Apruebas la transferencia de {{selectedIntegrationName}} a {{clientName}}.",
-      "approvedFromCeFiToDestination": "Apruebas la transferencia de {{selectedIntegrationName}} al destino.",
       "approvedFromDeFi": "Has aprobado la transferencia en {{selectedIntegrationName}}.",
       "conversion": "Conversión de <1>{{amount}}</1> a <4>{{currency}}</4>.",
       "deposit": "Depósito de <1>{{amount}}</1> desde {{paymentMethod}} a {{selectedIntegrationName}}.",
       "purchase": "Compra por valor de <1>{{amount}}</1> {{symbol}} en {{selectedIntegrationName}}.",
-      "requestToTransferPaymentSmartToAddress": "Solicitud de transferencia de <1>{{transferPreviewAmount}}</1> desde {{selectedIntegrationName}} a través del relay contract {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentSmartToClient": "Solicitud de transferencia de <1>{{transferPreviewAmount}}</1> en {{selectedIntegrationName}} a {{clientName}} a través del relay contract {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentToAddress": "Solicitud de transferencia de <1>{{transferPreviewAmount}}</1> desde {{selectedIntegrationName}}.",
       "requestToTransferPaymentToClient": "Solicitud de transferencia de <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}}.",
-      "requestToTransferSmartToAddress": "Solicitud de transferencia de<1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{shortToAddress}} a través del relay contract {{shortSmartContractsAddress}}.",
       "requestToTransferSmartToClient": "Solicitud de transferencia de <1>{{transferPreviewAmount}}</1> desde {{selectedIntegrationName}} a {{clientName}} {{shortToAddress}} a través del relay contract{{shortSmartContractsAddress}}.",
-      "requestToTransferToAddress": "Solicitud de transferencia de <1>{{transferPreviewAmount}}</1> desde {{selectedIntegrationName}} a {{shortToAddress}}.",
       "requestToTransferToClient": "Solicitud de transferencia <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{shortToAddress}}.",
-      "transferPaymentSmartToAddress": "Transferencia de <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a través del contrato de retransmisión {{shortSmartContractsAddress}}.",
       "transferPaymentSmartToClient": "Transferencia de <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}} a través del contrato de retransmisión {{shortSmartContractsAddress}}.",
-      "transferPaymentToAddress": "Transferencia de <1>{{transferPreviewAmount}}</1> desde {{selectedIntegrationName}}.",
       "transferPaymentToClient": "Transfiere <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}}.",
-      "transferSmartToAddress": "Transfiere <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{shortToAddress}} a través del contrato de retransmisión {{shortSmartContractsAddress}}.",
       "transferSmartToClient": "Transfiere <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{shortToAddress}} a través del contrato de retransmisión {{shortSmartContractsAddress}}.",
-      "transferToAddress": "Transfiere <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{shortToAddress}}.",
       "transferToClient": "Transfiere <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{shortToAddress}}."
     }
   },
@@ -350,7 +337,6 @@
     "awaitingApproval": "Ésta transferencia no se iniciará hasta que sea aprobada en {{selectedIntegrationName}}.",
     "checkDetails": "Revisar lo que sucedió",
     "checkDetails40": "Ver detalles de la transacción",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>será recibido en {{shortAddress}}",
     "depositClient": "Recibirás <2>{{amountCrypto}} ~ {{amountFiat}}</2> en {{clientName}} ({{shortAddress}})",
     "directMobileBody": "Regrese a su página de pago de TAO para finalizar su pago.",
     "directMobileTitle": "Pago iniciado",
@@ -747,9 +733,7 @@
   },
   "generateKeyPage": {
     "establishedInClient": "Has establecido con éxito actualizaciones ininterrumpidas en<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "Ha establecido con éxito actualizaciones ininterrumpidas en<1></1><2>esta aplicación</2>.",
     "linkedToInClient": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>esta aplicación</5>.",
     "nextStep": "A continuación crearemos una llave para <2>actualizaciones ininterrumpidas</2> para que no tenga que volver a iniciar sesión",
     "tempAccess": "Sólo quiero acceso temporal"
   },
@@ -808,17 +792,14 @@
     "notSupportedForTransferBySource": "No es soportado por {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} en {{network}} no es aceptado para esta transferencia debido a las restricciones de multicadena de NY.",
     "symbolDoesNotMatch": "No es soportado por {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} no es aceptado para esta transferencia.",
-    "symbolDoesNotMatchNoClientName": "No compatible con esta aplicación"
+    "symbolDoesNotMatchDescription": "{{symbol}} no es aceptado para esta transferencia."
   },
   "initialLedgerScreen": {
     "title": "Enciende y desbloquea tu dispositivo"
   },
   "initialScreen": {
-    "accountTitle": "Esta aplicación se enlazará de forma segura su cuenta",
     "clientNameAccountTitle": "{{clientName}} enlazará su cuenta de forma segura",
-    "clientNameWalletTitle": "{{clientName}} se conectará su cartera de forma segura",
-    "walletTitle": "Esta aplicación se conectará de forma segura a su cartera"
+    "clientNameWalletTitle": "{{clientName}} se conectará su cartera de forma segura"
   },
   "initialSteps": {
     "agreement": "Al seleccionar \"Continuar\" usted acepta los <1></1><2>Términos y Condiciones</2>",
@@ -1023,7 +1004,6 @@
     "allow": "Permitir",
     "movingFunds": "mover tus fondos sin tu permiso",
     "titleWithClient": "Permisos en {{clientName}} <2></2>",
-    "titleWithoutClient": "Permisos de esta aplicación <1></1>",
     "transactionRequest": "enviando las solicitudes para transacciones",
     "viewActivity": "ver saldos, actividad y datos del perfil",
     "wontAllow": "No permitirá"
@@ -1095,11 +1075,7 @@
       "approveClient": "Apruebas la transferencia de {{selectedIntegrationName}} a {{clientName}}.",
       "approveDestination": "Apruebas la transferencia de {{selectedIntegrationName}} al destino.",
       "transfer": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{clientName}}.",
-      "transferHideClient": "Transferencia de <1>{{amount}}</1> desde {{selectedIntegrationName}}.",
-      "transferHideClientWithAddress": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{address}}.",
       "transferSmartDeposit": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{clientName}} a través de un smart contract.",
-      "transferSmartDepositHideClient": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a través de un smart contract.",
-      "transferSmartDepositHideClientWithAddress": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{address}} a través de un relay contract.",
       "transferSmartDepositWithAddress": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{address}} a través de un relay contract.",
       "transferWithAddress": "Transferencia de <1>{{amount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{address}}."
     },
@@ -1414,7 +1390,6 @@
     "notEnoughtTitle": "No hay suficiente {{symbol}}",
     "otherEligible": "Otros activos elegibles",
     "paymentTitle": "Seleccionar una cripto para el pago",
-    "returnToAppButton": "Regresar a la aplicación",
     "returnToClientButton": "Regresar a {{clientName}}",
     "spotAccountsBody": "Solo las cuentas spot son soportadas. No se detectarán activos en otros apartados.",
     "topUpButton": "Recargar saldo",

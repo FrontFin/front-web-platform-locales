@@ -61,10 +61,8 @@
     "description": "Bạn phải cài đặt cả Email và Ứng dụng xác thực làm phương thức 2FA trong tài khoản <1>Binance</1> của mình.",
     "ensureConfigured": "Đảm bảo rằng cả Email và Ứng dụng xác thực đều đã được cài đặt cho 2FA",
     "goToSettings": "Nhấp bên dưới để truy cập cài đặt bảo mật <1>Binance</1> của bạn",
-    "mayNeedReAuthApp": "Lưu ý: Bạn có thể cần đăng nhập lại vào tài khoản Binance của mình để bắt đầu giao dịch chuyển khoản khi quay lại <2>ứng dụng</2>.",
     "mayNeedReAuthClient": "Lưu ý: Bạn có thể cần đăng nhập lại vào tài khoản Binance của mình để bắt đầu giao dịch chuyển khoản khi quay lại <2>{{clientName}}</2>.",
     "openBinance": "Mở Binance",
-    "returnToApp": "Quay lại <1>ứng dụng</1> để thực hiện lại giao dịch",
     "returnToClient": "Quay lại <1>{{clientName}}</1> để thực hiện lại giao dịch",
     "title": "Kích hoạt rút tiền từ tài khoản Binance của bạn"
   },
@@ -157,7 +155,6 @@
     "verificationCodeInputTitle": "Mã xác minh"
   },
   "chooseAccountPage": {
-    "linkToApp": "Bạn muốn liên kết tài khoản nào của mình <1></1> với ứng dụng này",
     "linkToClient": "Bạn muốn liên kết tài khoản nào của mình <1></1> với {{clientName}}",
     "title": "Chọn tài khoản phụ"
   },
@@ -312,8 +309,7 @@
     "continueToTransfer": "Tiếp tục giao dịch",
     "done": "Xong",
     "linkAnother": "Liên kết tài khoản khác",
-    "linkedToClient": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>ứng dụng này</5>."
+    "linkedToClient": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>{{clientName}}</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Giao dịch này sẽ không được khởi tạo cho đến khi được chấp nhận trong {{selectedIntegrationName}}.",
@@ -323,26 +319,17 @@
     "paymentTitle": "Thanh toán hoàn tất",
     "steps": {
       "approvedFromCeFiToClient": "Bạn xác nhận chuyển từ {{selectedIntegrationName}} đến {{clientName}}.",
-      "approvedFromCeFiToDestination": "Bạn chấp thuận chuyển từ {{selectedIntegrationName}} đến địa chỉ đích.",
       "approvedFromDeFi": "Bạn đã phê duyệt chuyển trên {{selectedIntegrationName}}.",
       "conversion": "Chuyển đổi <1>{{amount}}</1> thành <4>{{currency}}</4>.",
       "deposit": "Gửi tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
       "purchase": "Mua <1>{{amount}}</1> trị giá {{symbol}} tại {{selectedIntegrationName}}.",
-      "requestToTransferPaymentSmartToAddress": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} qua hợp đồng trung gian {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentSmartToClient": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} qua hợp đồng trung gian {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentToAddress": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}}.",
       "requestToTransferPaymentToClient": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}}.",
-      "requestToTransferSmartToAddress": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{shortToAddress}} qua hợp đồng trung gian {{shortSmartContractsAddress}}.",
       "requestToTransferSmartToClient": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{shortToAddress}} thông qua hợp đồng chuyển tiếp {{shortSmartContractsAddress}}.",
-      "requestToTransferToAddress": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{shortToAddress}}.",
       "requestToTransferToClient": "Yêu cầu chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{shortToAddress}}.",
-      "transferPaymentSmartToAddress": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} thông qua hợp đồng chuyển tiếp {{shortSmartContractsAddress}}.",
       "transferPaymentSmartToClient": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} thông qua hợp đồng chuyển tiếp {{shortSmartContractsAddress}}.",
-      "transferPaymentToAddress": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}}.",
       "transferPaymentToClient": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}}.",
-      "transferSmartToAddress": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{shortToAddress}} thông qua hợp đồng chuyển tiếp {{shortSmartContractsAddress}}.",
       "transferSmartToClient": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{shortToAddress}} thông qua hợp đồng chuyển tiếp {{shortSmartContractsAddress}}.",
-      "transferToAddress": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{shortToAddress}}.",
       "transferToClient": "Chuyển <1>{{transferPreviewAmount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{shortToAddress}}."
     }
   },
@@ -350,7 +337,6 @@
     "awaitingApproval": "Giao dịch này sẽ không được thực hiện cho đến khi được phê duyệt trong {{selectedIntegrationName}}.",
     "checkDetails": "Xem điều gì đã xảy ra",
     "checkDetails40": "Xem chi tiết giao dịch",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1> sẽ được nhận tại {{shortAddress}}",
     "depositClient": "Bạn sẽ nhận <2>{{amountCrypto}} ~ {{amountFiat}}</2> tại {{clientName}} ({{shortAddress}})",
     "directMobileBody": "Quay lại trang thanh toán TAO của bạn để hoàn tất việc thanh toán.",
     "directMobileTitle": "Thanh toán đã được bắt đầu",
@@ -747,9 +733,7 @@
   },
   "generateKeyPage": {
     "establishedInClient": "Bạn đã thiết lập thành công các cập nhật liên tục trong<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "Bạn đã thiết lập thành công các cập nhật liên tục trong<1></1><2>ứng dụng này</2>.",
     "linkedToInClient": "Bạn đã liên kết thành công<1></1><2>{{selectedIntegrationName}}</2> với <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Bạn đã liên kết thành công<1></1><2>{{selectedIntegrationName}}</2> với <5>ứng dụng này</5>.",
     "nextStep": "Tiếp theo, chúng tôi sẽ tạo khóa cho <2>cập nhật liên tục</2> để bạn không cần phải đăng nhập lại",
     "tempAccess": "Tôi chỉ muốn truy cập tạm thời"
   },
@@ -808,17 +792,14 @@
     "notSupportedForTransferBySource": "Không được hỗ trợ bởi {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} trên {{network}} không được chấp nhận cho giao dịch này do hạn chế hỗ trợ đa chuỗi (multi-chain) tại New York.",
     "symbolDoesNotMatch": "Không được hỗ trợ bởi {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này.",
-    "symbolDoesNotMatchNoClientName": "Không được hỗ trợ bởi ứng dụng này"
+    "symbolDoesNotMatchDescription": "{{symbol}} không được chấp nhận cho giao dịch này."
   },
   "initialLedgerScreen": {
     "title": "Bật nguồn và mở khóa thiết bị của bạn"
   },
   "initialScreen": {
-    "accountTitle": "Ứng dụng này sẽ liên kết tài khoản của bạn một cách an toàn",
     "clientNameAccountTitle": "{{clientName}} sẽ liên kết tài khoản của bạn một cách an toàn",
-    "clientNameWalletTitle": "{{clientName}} sẽ kết nối ví của bạn một cách an toàn",
-    "walletTitle": "Ứng dụng này sẽ kết nối ví của bạn một cách an toàn"
+    "clientNameWalletTitle": "{{clientName}} sẽ kết nối ví của bạn một cách an toàn"
   },
   "initialSteps": {
     "agreement": "Bằng cách chọn “Tiếp tục” bạn đồng ý với <1></1><2>Điều khoản và Điều kiện</2>",
@@ -1023,7 +1004,6 @@
     "allow": "Cho phép",
     "movingFunds": "chuyển tiền mà không có sự cho phép của bạn",
     "titleWithClient": "{{clientName}} <2></2> Quyền hạn",
-    "titleWithoutClient": "Quyền hạn của ứng dụng này<1></1>",
     "transactionRequest": "gửi yêu cầu giao dịch",
     "viewActivity": "xem số dư, hoạt động, dữ liệu hồ sơ",
     "wontAllow": "Không cho phép"
@@ -1095,11 +1075,7 @@
       "approveClient": "Bạn xác nhận chuyển tiền từ {{selectedIntegrationName}} đến {{clientName}}.",
       "approveDestination": "Bạn xác nhận chuyển tiền từ {{selectedIntegrationName}} đến điểm nhận.",
       "transfer": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}}.",
-      "transferHideClient": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}}.",
-      "transferHideClientWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{address}}.",
       "transferSmartDeposit": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} thông qua hợp đồng chuyển tiếp.",
-      "transferSmartDepositHideClient": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} thông qua hợp đồng chuyển tiếp.",
-      "transferSmartDepositHideClientWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{address}} thông qua hợp đồng chuyển tiếp.",
       "transferSmartDepositWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}} thông qua hợp đồng chuyển tiếp.",
       "transferWithAddress": "Chuyển <1>{{amount}}</1> từ {{selectedIntegrationName}} đến {{clientName}} {{address}}."
     },
@@ -1414,7 +1390,6 @@
     "notEnoughtTitle": "Không đủ {{symbol}}",
     "otherEligible": "Các tài sản đủ điều kiện khác",
     "paymentTitle": "Chọn token thanh toán",
-    "returnToAppButton": "Quay lại ứng dụng",
     "returnToClientButton": "Quay lại {{clientName}}",
     "spotAccountsBody": "Hiện chỉ hỗ trợ tài khoản giao ngay (spot). Tài sản trong các loại tài khoản khác, như tài khoản ký quỹ (margin), sẽ không được phát hiện.",
     "topUpButton": "Bổ sung số dư",

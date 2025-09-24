@@ -61,10 +61,8 @@
     "description": "Musisz mieć skonfigurowane zarówno e-mail, jak i aplikację uwierzytelniającą jako metody uwierzytelnienia dwuskładnikowego (2FA) na swoim koncie <1>Binance</1>.",
     "ensureConfigured": "Upewnij się, że zarówno e-mail, jak i aplikacja uwierzytelniająca są skonfigurowane do 2FA",
     "goToSettings": "Kliknij poniżej, aby przejść do swoich ustawień bezpieczeństwa w <1>Binance</1>",
-    "mayNeedReAuthApp": "Uwaga: po powrocie do <2>aplikacji</2> może być konieczne ponowne uwierzytelnienie na koncie Binance, aby zainicjować ten transfer.",
     "mayNeedReAuthClient": "Uwaga: po powrocie do <2>{{clientName}}</2> może być konieczne ponowne uwierzytelnienie na koncie Binance, aby zainicjować ten transfer.",
     "openBinance": "Otwórz Binance",
-    "returnToApp": "Wróć do <1>aplikacji</1>, aby ponowić tę transakcję",
     "returnToClient": "Wróć do <1>{{clientName}}</1>, aby ponowić tę transakcję",
     "title": "Włącz wypłaty z twojego konta Binance"
   },
@@ -157,7 +155,6 @@
     "verificationCodeInputTitle": "Kod weryfikacyjny"
   },
   "chooseAccountPage": {
-    "linkToApp": "Które z Twoich kont chcesz <1></1> powiązać z tą aplikacją",
     "linkToClient": "Które z twoich kont chcesz <1></1> połączyć z {{clientName}}",
     "title": "Wybierz subkonta"
   },
@@ -312,8 +309,7 @@
     "continueToTransfer": "Dalej do transferu",
     "done": "Gotowe",
     "linkAnother": "Połącz inne konto",
-    "linkedToClient": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>tą aplikacją</5>."
+    "linkedToClient": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>{{clientName}}</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Ten transfer nie zostanie rozpoczęty, dopóki nie zostanie zatwierdzony w {{selectedIntegrationName}}.",
@@ -323,26 +319,17 @@
     "paymentTitle": "Płatność zakończona",
     "steps": {
       "approvedFromCeFiToClient": "Zatwierdzasz transfer z {{selectedIntegrationName}} do {{clientName}}.",
-      "approvedFromCeFiToDestination": "Zatwierdzasz transfer z {{selectedIntegrationName}} do wybranego odbiorcy.",
       "approvedFromDeFi": "Zatwierdziłeś transfer w {{selectedIntegrationName}}.",
       "conversion": "Przeliczenie <1>{{amount}}</1> na <4>{{currency}}</4>.",
       "deposit": "Wpłata <1>{{amount}}</1> z {{paymentMethod}} do {{selectedIntegrationName}}.",
       "purchase": "Zakup {{symbol}} o wartości <1>{{amount}}</1> w {{selectedIntegrationName}}.",
-      "requestToTransferPaymentSmartToAddress": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentSmartToClient": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentToAddress": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}}.",
       "requestToTransferPaymentToClient": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}}.",
-      "requestToTransferSmartToAddress": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{shortToAddress}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
       "requestToTransferSmartToClient": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
-      "requestToTransferToAddress": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} na {{shortToAddress}}.",
       "requestToTransferToClient": "Prośba o transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}}.",
-      "transferPaymentSmartToAddress": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
       "transferPaymentSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
-      "transferPaymentToAddress": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}}.",
       "transferPaymentToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}}.",
-      "transferSmartToAddress": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{shortToAddress}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
       "transferSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
-      "transferToAddress": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{shortToAddress}}.",
       "transferToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}}."
     }
   },
@@ -350,7 +337,6 @@
     "awaitingApproval": "Transfer nie zostanie rozpoczęty, dopóki nie zostanie zatwierdzony w {{selectedIntegrationName}}.",
     "checkDetails": "Dowiedz się, co się stało",
     "checkDetails40": "Zobacz szczegóły transakcji",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>zostanie otrzymane przez {{shortAddress}}",
     "depositClient": "Otrzymasz <2>{{amountCrypto}} ~ {{amountFiat}}</2> na konto {{clientName}} ({{shortAddress}})",
     "directMobileBody": "Wróć do strony płatności TAO, aby sfinalizować transakcję.",
     "directMobileTitle": "Płatność rozpoczęta",
@@ -747,9 +733,7 @@
   },
   "generateKeyPage": {
     "establishedInClient": "Pomyślnie nawiązano stałe aktualizacje w<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "Pomyślnie nawiązano stałe aktualizacje w<1></1><2>tej aplikacji</2>.",
     "linkedToInClient": "Pomyślnie powiązano<1></1><2>{{selectedIntegrationName}}</2> z <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Pomyślnie powiązano<1></1><2>{{selectedIntegrationName}}</2> z <5>tą aplikacją</5>.",
     "nextStep": "Następnie utworzymy klucz dla <2>nieprzerwanych aktualizacji</2>, abyś nie musiał się ponownie logować",
     "tempAccess": "Chcę tylko tymczasowy dostęp"
   },
@@ -808,17 +792,14 @@
     "notSupportedForTransferBySource": "Nieobsługiwane przez {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} w sieci {{network}} nie jest akceptowany do tego transferu z powodu ograniczeń wsparcia NY multi-chain.",
     "symbolDoesNotMatch": "Nieobsługiwane przez {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} nie jest akceptowany dla tego transferu.",
-    "symbolDoesNotMatchNoClientName": "Nieobsługiwane przez tę aplikację"
+    "symbolDoesNotMatchDescription": "{{symbol}} nie jest akceptowany dla tego transferu."
   },
   "initialLedgerScreen": {
     "title": "Włącz i odblokuj swoje urządzenie"
   },
   "initialScreen": {
-    "accountTitle": "Ta aplikacja bezpiecznie połączy twoje konto",
     "clientNameAccountTitle": "{{clientName}} bezpiecznie połączy twoje konto",
-    "clientNameWalletTitle": "{{clientName}} bezpiecznie połączy twój portfel",
-    "walletTitle": "Ta aplikacja bezpiecznie połączy twój portfel"
+    "clientNameWalletTitle": "{{clientName}} bezpiecznie połączy twój portfel"
   },
   "initialSteps": {
     "agreement": "Wybierając „Kontynuuj” wyrażasz zgodę na <1></1><2>Warunki i Regulamin użytkownika końcowego</2>",
@@ -1023,7 +1004,6 @@
     "allow": "Zezwól",
     "movingFunds": "przenoszenie środków bez Twojej zgody",
     "titleWithClient": "Uprawnienia <2></2> {{clientName}}",
-    "titleWithoutClient": "Uprawnienia tej aplikacji <1></1>",
     "transactionRequest": "wysyłanie próśb o transakcje",
     "viewActivity": "przeglądanie sald, aktywności, danych profilu",
     "wontAllow": "Nie zezwalaj"
@@ -1095,11 +1075,7 @@
       "approveClient": "Zatwierdzasz transfer z {{selectedIntegrationName}} do {{clientName}}.",
       "approveDestination": "Zatwierdzasz transfer z {{selectedIntegrationName}} do odbiorcy.",
       "transfer": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{clientName}}.",
-      "transferHideClient": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}}.",
-      "transferHideClientWithAddress": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{address}}.",
       "transferSmartDeposit": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{clientName}} za pośrednictwem relay contract.",
-      "transferSmartDepositHideClient": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} za pośrednictwem relay contract.",
-      "transferSmartDepositHideClientWithAddress": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} na adres {{address}} za pośrednictwem relay contract.",
       "transferSmartDepositWithAddress": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{address}} za pośrednictwem relay contract.",
       "transferWithAddress": "Transfer <1>{{amount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{address}}."
     },
@@ -1414,7 +1390,6 @@
     "notEnoughtTitle": "Niewystarczająca ilość {{symbol}}",
     "otherEligible": "Inne kwalifikujące się aktywa",
     "paymentTitle": "Wybierz token płatności",
-    "returnToAppButton": "Wróć do aplikacji",
     "returnToClientButton": "Wróć do {{clientName}}",
     "spotAccountsBody": "Obecnie obsługiwane są tylko konta spot. Aktywa na innych typach kont, takich jak margin, nie będą wykrywane.",
     "topUpButton": "Doładuj saldo",

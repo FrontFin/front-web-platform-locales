@@ -61,10 +61,8 @@
     "description": "Sinulla on oltava sekä sähköposti että tunnistautumissovellus määriteltyinä 2FA-menetelminä <1>Binance</1>-tililläsi.",
     "ensureConfigured": "Varmista, että sekä sähköposti että tunnistautumissovellus ovat määriteltyinä 2FA:lle",
     "goToSettings": "Siirry <1>Binancen</1> tietoturva-asetuksiin klikkaamalta alta",
-    "mayNeedReAuthApp": "Huomautus: Saatat joutua tunnistautumaan uudelleen Binance-tilillesi aloittaaksesi tämän siirron, kun palaat <2>sovellukseen</2>.",
     "mayNeedReAuthClient": "Huomautus: Saatat joutua tunnistautumaan uudelleen Binance-tilillesi aloittaaksesi tämän siirron, kun palaat <2>{{clientName}}iin</2>.",
     "openBinance": "Avaa Binance",
-    "returnToApp": "Palaa <1>sovellukseen</1> yrittääksesi tätä siirtoa uudelleen",
     "returnToClient": "Palaa <1>{{clientName}}</1>iin yrittääksesi tätä siirtoa uudelleen",
     "title": "Ota käyttöön varojen nostot Binance-tililtäsi"
   },
@@ -157,7 +155,6 @@
     "verificationCodeInputTitle": "Vahvistuskoodi"
   },
   "chooseAccountPage": {
-    "linkToApp": "Minkä tileistäsi haluaisit <1></1> liittää tähän sovellukseen?",
     "linkToClient": "Minkä tileistäsi haluaisit <1></1> liittää {{clientName}}iin",
     "title": "Valitse alatilit"
   },
@@ -312,8 +309,7 @@
     "continueToTransfer": "Jatka siirtoon",
     "done": "Valmis",
     "linkAnother": "Liitä toinen tili",
-    "linkedToClient": "</1><</1>Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}n</2> <5>{{clientName}}</5>iin.",
-    "linkedToThisApp": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}n</2> <5>tähän sovellukseen</5>."
+    "linkedToClient": "</1><</1>Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}n</2> <5>{{clientName}}</5>iin."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Tätä siirtoa ei aloiteta ennen kuin se on hyväksytty {{selectedIntegrationName}}ssä.",
@@ -323,26 +319,17 @@
     "paymentTitle": "Maksu suoritettu",
     "steps": {
       "approvedFromCeFiToClient": "Hyväksyt siirron {{selectedIntegrationName}}sta {{clientName}}iin.",
-      "approvedFromCeFiToDestination": "Hyväksyt siirron {{selectedIntegrationName}}sta.",
       "approvedFromDeFi": "Hyväksyit siirron kohteessa {{selectedIntegrationName}}.",
       "conversion": "Muunnetaan <1>{{amount}}</1> valuutaksi <4>{{currency}}</4>.",
       "deposit": "Talletus <1>{{amount}}</1> kohteesta {{paymentMethod}} kohteeseen {{selectedIntegrationName}}.",
       "purchase": "Osto <1>{{amount}}</1> arvosta {{symbol}} kohteessa {{selectedIntegrationName}}.",
-      "requestToTransferPaymentSmartToAddress": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentSmartToClient": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentToAddress": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}}.",
       "requestToTransferPaymentToClient": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}}.",
-      "requestToTransferSmartToAddress": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{shortToAddress}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
       "requestToTransferSmartToClient": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}} {{shortToAddress}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
-      "requestToTransferToAddress": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{shortToAddress}}.",
       "requestToTransferToClient": "Pyyntö siirtää <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}} {{shortToAddress}}.",
-      "transferPaymentSmartToAddress": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
       "transferPaymentSmartToClient": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
-      "transferPaymentToAddress": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}}.",
       "transferPaymentToClient": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}}.",
-      "transferSmartToAddress": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{shortToAddress}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
       "transferSmartToClient": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}} {{shortToAddress}} käyttäen välityssopimusta {{shortSmartContractsAddress}}.",
-      "transferToAddress": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{shortToAddress}}.",
       "transferToClient": "Siirto <1>{{transferPreviewAmount}}</1> kohteesta {{selectedIntegrationName}} kohteeseen {{clientName}} {{shortToAddress}}."
     }
   },
@@ -350,7 +337,6 @@
     "awaitingApproval": "Tätä siirtoa ei aloiteta ennen kuin se hyväksytään {{selectedIntegrationName}}:ssa.",
     "checkDetails": "Katso mitä tapahtui",
     "checkDetails40": "Tarkastele tapahtuman tietoja",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>vastaanotetaan osoitteeseen {{shortAddress}}",
     "depositClient": "Saat<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tilille {{clientName}} ({{shortAddress}})",
     "directMobileBody": "Palaa TAO-maksusivullesi viimeistelläksesi maksusi.",
     "directMobileTitle": "Maksu aloitettu",
@@ -747,9 +733,7 @@
   },
   "generateKeyPage": {
     "establishedInClient": "Jatkuvat päivitykset on määritetty onnistuneesti<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "Jatkuvat päivitykset on määritetty onnistuneesti<1></1><2>tässä sovelluksessa</2>.",
     "linkedToInClient": "Olet onnistuneesti linkittänyt<1></1><2>{{selectedIntegrationName}}n</2> <5>{{clientName}}iin</5>.",
-    "linkedToThisApp": "Olet onnistuneesti linkittänyt<1></1><2>{{selectedIntegrationName}}n</2> <5>tähän sovellukseen</5>.",
     "nextStep": "Seuraavaksi luomme avaimen <2>jatkuville päivityksille</2>, jotta sinun ei tarvitse kirjautua uudelleen sisään",
     "tempAccess": "Haluan vain tilapäisen pääsyn"
   },
@@ -808,17 +792,14 @@
     "notSupportedForTransferBySource": "{{integrationName}} ei tue",
     "nyCoinbaseUserRestrictions": "{{symbol}} {{network}}:ssä ei hyväksytä tähän siirtoon NY:n moniketjutuen rajoitusten vuoksi.",
     "symbolDoesNotMatch": "{{clientName}} ei tue",
-    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon.",
-    "symbolDoesNotMatchNoClientName": "Ei tuettu tässä sovelluksessa"
+    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon."
   },
   "initialLedgerScreen": {
     "title": "Käynnistä ja avaa laitteesi"
   },
   "initialScreen": {
-    "accountTitle": "Tämä sovellus yhdistää tilisi turvallisesti",
     "clientNameAccountTitle": "{{clientName}} yhdistää tilisi turvallisesti",
-    "clientNameWalletTitle": "{{clientName}} yhdistää kryptolompakkosi turvallisesti",
-    "walletTitle": "Tämä sovellus yhdistää kryptolompakkosi turvallisesti"
+    "clientNameWalletTitle": "{{clientName}} yhdistää kryptolompakkosi turvallisesti"
   },
   "initialSteps": {
     "agreement": "Valitsemalla ”Jatka” hyväksyt <1></1><2>Loppukäyttäjän käyttöehdot</2>",
@@ -1023,7 +1004,6 @@
     "allow": "Salli",
     "movingFunds": "varojen siirtäminen ilman lupaasi",
     "titleWithClient": "{{clientName}} <2></2> Käyttöoikeudet",
-    "titleWithoutClient": "Tämän sovelluksen <1></1> käyttöoikeudet",
     "transactionRequest": "lähetetään pyyntöjä tapahtumille",
     "viewActivity": "saldojen, tapahtumien ja profiilitietojen tarkastelu",
     "wontAllow": "Ei sallita"
@@ -1095,11 +1075,7 @@
       "approveClient": "Hyväksyt siirron {{selectedIntegrationName}}sta {{clientName}}iin.",
       "approveDestination": "Hyväksyt siirron {{selectedIntegrationName}}sta kohteeseen.",
       "transfer": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta {{clientName}}iin.",
-      "transferHideClient": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta.",
-      "transferHideClientWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta {{address}}iin.",
       "transferSmartDeposit": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta {{clientName}}iin välittäjäsopimuksen kautta.",
-      "transferSmartDepositHideClient": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta välittäjäsopimuksen kautta.",
-      "transferSmartDepositHideClientWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta osoitteeseen {{address}} välittäjäsopimuksen kautta.",
       "transferSmartDepositWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta {{clientName}} {{address}}lle välittäjäsopimuksen kautta.",
       "transferWithAddress": "Siirto <1>{{amount}}</1> {{selectedIntegrationName}}sta {{clientName}} {{address}}lle."
     },
@@ -1414,7 +1390,6 @@
     "notEnoughtTitle": "Ei riittävästi {{symbol}}",
     "otherEligible": "Muut kelvolliset omaisuudet",
     "paymentTitle": "Valitse maksutoken",
-    "returnToAppButton": "Palaa sovellukseen",
     "returnToClientButton": "Palaa {{clientName}}iin",
     "spotAccountsBody": "Tällä hetkellä vain spot-tilit ovat tuettuja. Esimerkiksi marginaalitileillä olevat varat eivät näy.",
     "topUpButton": "Lisää saldoa",

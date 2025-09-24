@@ -61,10 +61,8 @@
     "description": "Вы должны иметь оба метода 2FA: электронную почту и приложение для аутентификации, настроенные в вашей учетной записи <1>Binance</1>.",
     "ensureConfigured": "Убедитесь, что электронная почта и приложение для аутентификации настроены для двухфакторной аутентификации",
     "goToSettings": "Нажмите ниже, чтобы перейти к настройкам безопасности <1>Binance</1>",
-    "mayNeedReAuthApp": "Обратите внимание: Вам может потребоваться повторная аутентификация в аккаунте Binance для начала этого перевода при возвращении в <2>приложение</2>.",
     "mayNeedReAuthClient": "Обратите внимание: Вам может потребоваться повторная аутентификация в аккаунте Binance для начала этого перевода при возвращении в <2>{{clientName}}</2>.",
     "openBinance": "Открыть Binance",
-    "returnToApp": "Вернитесь к <1>приложению</1>, чтобы повторить перевод",
     "returnToClient": "Вернитесь к <1>{{clientName}}</1>, чтобы повторить перевод",
     "title": "Включите вывод средств с вашего счета Binance"
   },
@@ -157,7 +155,6 @@
     "verificationCodeInputTitle": "Проверочный код"
   },
   "chooseAccountPage": {
-    "linkToApp": "Какую из ваших учетных записей вы хотите <1></1> подключить к этому приложению",
     "linkToClient": "Какую из ваших учетных записей вы хотите <1></1> подключить к {{clientName}}",
     "title": "Выберите дочерние аккаунты"
   },
@@ -312,8 +309,7 @@
     "continueToTransfer": "Перейти к переводу",
     "done": "Готово",
     "linkAnother": "Привязать другой аккаунт",
-    "linkedToClient": "Вы успешно подключили <1></1><2>{{integrationName}}</2> к <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Вы успешно подключили <1></1><2>{{integrationName}}</2> к <5>этому приложению</5>."
+    "linkedToClient": "Вы успешно подключили <1></1><2>{{integrationName}}</2> к <5>{{clientName}}</5>."
   },
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
@@ -323,26 +319,17 @@
     "paymentTitle": "Оплата завершена",
     "steps": {
       "approvedFromCeFiToClient": "Вы одобряете перевод с {{selectedIntegrationName}} на {{clientName}}.",
-      "approvedFromCeFiToDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
       "approvedFromDeFi": "Вы подтвердили перевод на {{selectedIntegrationName}}.",
       "conversion": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
       "deposit": "Пополнение <1>{{amount}}</1> с {{paymentMethod}} на {{selectedIntegrationName}}.",
       "purchase": "Покупка {{symbol}} стоимостью <1>{{amount}}</1> в {{selectedIntegrationName}}.",
-      "requestToTransferPaymentSmartToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} через релейный контракт {{shortSmartContractsAddress}}.",
       "requestToTransferPaymentSmartToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} в {{clientName}} через релейный контракт {{shortSmartContractsAddress}}.",
-      "requestToTransferPaymentToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}}.",
       "requestToTransferPaymentToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}}.",
-      "requestToTransferSmartToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} на {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
       "requestToTransferSmartToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
-      "requestToTransferToAddress": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{shortToAddress}}.",
       "requestToTransferToClient": "Запрос на перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}}.",
-      "transferPaymentSmartToAddress": "Перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} через релейный контракт {{shortSmartContractsAddress}}.",
       "transferPaymentSmartToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} через релейный контракт {{shortSmartContractsAddress}}.",
-      "transferPaymentToAddress": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}}.",
       "transferPaymentToClient": "Перевод <1>{{transferPreviewAmount}}</1> от {{selectedIntegrationName}} на {{clientName}}.",
-      "transferSmartToAddress": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{shortToAddress}} по договору реле {{shortSmartContractsAddress}}.",
       "transferSmartToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
-      "transferToAddress": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{shortToAddress}}.",
       "transferToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}}."
     }
   },
@@ -350,7 +337,6 @@
     "awaitingApproval": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
     "checkDetails": "Посмотреть детали",
     "checkDetails40": "Просмотреть детали транзакции",
-    "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
     "depositClient": "Вы получите <2>{{amountCrypto}} ~ {{amountFiat}}</2> на {{clientName}} ({{shortAddress}})",
     "directMobileBody": "Вернитесь на страницу оформления заказа TAO, чтобы завершить оплату.",
     "directMobileTitle": "Платеж инициирован",
@@ -747,9 +733,7 @@
   },
   "generateKeyPage": {
     "establishedInClient": "Вы успешно настроили непрерывные обновления в<1></1><2>{{clientName}}</2>.",
-    "establishedInThisApp": "Вы успешно настроили непрерывные обновления в<1></1><2>это приложение</2>.",
     "linkedToInClient": "Вы успешно привязали <1></1><2>{{selectedIntegrationName}}</2> к <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Вы успешно привязали<1></1><2>{{selectedIntegrationName}}</2> <5>этому приложению</5>.",
     "nextStep": "Далее мы создадим ключ для <2>бесперебойного обновления</2>, так что вам не нужно заходить в свой аккаунт снова",
     "tempAccess": "Я хочу только временный доступ"
   },
@@ -808,17 +792,14 @@
     "notSupportedForTransferBySource": "Не поддерживается {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} на {{network}} не доступен для этого перевода из-за ограничений поддержки многоцепочной сети в штате Нью-Йорк.",
     "symbolDoesNotMatch": "Не поддерживается {{clientName}}",
-    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода.",
-    "symbolDoesNotMatchNoClientName": "Не поддерживается этим приложением"
+    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода."
   },
   "initialLedgerScreen": {
     "title": "Включите  и разблокируйте устройство"
   },
   "initialScreen": {
-    "accountTitle": "Это приложение безопасно подключит ваш аккаунт",
     "clientNameAccountTitle": "{{clientName}} безопасно подключит ваш аккаунт",
-    "clientNameWalletTitle": "{{clientName}} безопасно подключит ваш кошелек",
-    "walletTitle": "Это приложение безопасно подключит ваш кошелек"
+    "clientNameWalletTitle": "{{clientName}} безопасно подключит ваш кошелек"
   },
   "initialSteps": {
     "agreement": "Выбрав \"Продолжить\", вы соглашаетесь с <1></1><2>Пользовательскими условиями пользования</2>",
@@ -1023,7 +1004,6 @@
     "allow": "Разрешено",
     "movingFunds": "перемещение средств без вашего разрешения",
     "titleWithClient": "Права доступа <2></2> {{clientName}}",
-    "titleWithoutClient": "Права доступа <1></1> этого приложения",
     "transactionRequest": "отправка запросов на переводы",
     "viewActivity": "просмотр балансов, активности, данных профиля",
     "wontAllow": "Не разрешено"
@@ -1095,11 +1075,7 @@
       "approveClient": "Вы одобряете перевод с {{selectedIntegrationName}} на {{clientName}}.",
       "approveDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
       "transfer": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}}.",
-      "transferHideClient": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}}.",
-      "transferHideClientWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{address}}.",
       "transferSmartDeposit": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} через релейный контракт.",
-      "transferSmartDepositHideClient": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} через релейный контракт.",
-      "transferSmartDepositHideClientWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} на {{address}} через релейный контракт.",
       "transferSmartDepositWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} {{address}} через релейный контракт.",
       "transferWithAddress": "Перевод <1>{{amount}}</1> из {{selectedIntegrationName}} в {{clientName}} {{address}}."
     },
@@ -1414,7 +1390,6 @@
     "notEnoughtTitle": "Недостаточно {{symbol}}",
     "otherEligible": "Другие допустимые активы",
     "paymentTitle": "Выберите токен для платежа",
-    "returnToAppButton": "Вернуться в приложение",
     "returnToClientButton": "Вернуться к {{clientName}}",
     "spotAccountsBody": "В настоящее время поддерживаются только спот-счета. Активы на других типах счетов, например на маржинальных, не будут отображены.",
     "topUpButton": "Пополнить баланс",
