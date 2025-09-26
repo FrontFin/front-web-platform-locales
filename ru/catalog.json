@@ -247,20 +247,36 @@
     "continue": "Перейти к {{walletName}}",
     "dappPage": {
       "continueButton": "Продолжить в {{walletName}}",
-      "depositTitle": "Пополните с вашего электронного кошелька",
-      "payTitle": "Оплатите с вашего электронного кошелька",
       "qrSubtitle": "Откройте приложение камеры на вашем телефоне и отсканируйте QR-код, чтобы связать",
-      "spinnerText": "Завершите оплату в вашем электронном кошельке {{walletName}}",
+      "spinnerTransactionText": "Завершите эту транзакцию в вашем приложении {{walletName}}",
+      "spinnerVerifyText": "Завершите проверку владения в вашем приложении {{walletName}}",
       "subtitle": "Продолжите в {{walletName}}. Вернитесь сюда, когда закончите.",
-      "verifyWalletTitle": "Проверка вашего электронного кошелька",
-      "approveConnectionToVerifyLoadingText": "Подтвердите подключение, чтобы начать проверку",
-      "approveConnectionToPaymentLoadingText": "Подтвердите подключение, чтобы начать оплату",
-      "approveConnectionToDepositLoadingText": "Подтвердите подключение, чтобы начать перевод"
+      "payTitle": "Оплатите с вашего электронного кошелька",
+      "depositTitle": "Пополните с вашего электронного кошелька",
+      "verifyWalletTitle": "Проверка вашего электронного кошелька"
     },
     "previewButton": "Подключить",
     "previewTitle": "Подключить аккаунт",
     "subtitle": "Нажмите ниже, чтобы открыть {{walletName}}. Затем одобрите запрос на подключение, чтобы просмотреть ваш платеж.",
     "title": "Подключить ваш электронный кошелек"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Подтвердите подключение, чтобы проверить ваш электронный кошелек",
+    "paymentFlowSubtitle": "Подтвердите подключение, чтобы начать оплату",
+    "depositFlowSubtitle": "Подтвердите подключение, чтобы начать перевод",
+    "title": "Подключить аккаунт"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Проверка вашего электронного кошелька",
+    "subtitleInitial": "Подтвердите, что вы владеете этим электронным кошельком, подписав сообщение. Если вы не видите запрос, нажмите кнопку ниже.",
+    "titleAlreadyDenied": "Ой!",
+    "subtitleAlreadyDenied": "Кажется, вы отклонили запрос на подпись. Revolut не может подтвердить право владения вашим электронным кошельком без подписи.",
+    "resend": "Повторно отправить запрос на подпись"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Электронный кошелек проверен!",
+    "subtitle": "Вернуться к {{clientName}}",
+    "returnToClient": "Вернуться к {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Вы отклонили запрос на подключение вашего кошелька, или предыдущий запрос все еще активен.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Ошибка конфигурации",
     "emptyWalletBalance": "Пустой электронный кошелек",
     "exceedsApplicationLimit": "Превышен лимит",
+    "existingApiKey": "Существующий API ключ",
     "expiredSmartDeposit": "Срок действия транзакции истек",
     "faceVerificationFailed": "Проверка лица не удалась",
     "failedToGetFundingOptions": "Ошибка способов пополнения",
@@ -488,6 +505,7 @@
     "default": "Произошла ошибка.",
     "emptyWalletBalance": "Баланс исходного кошелька пуст.",
     "exceedsApplicationLimit": "Сумма перевода превышает лимит.",
+    "existingApiKey": "API ключ с этой конфигурацией уже существует. Пожалуйста, используйте другую конфигурацию или удалите существующий ключ.",
     "expiredSmartDeposit": "Срок действия транзакции истек",
     "expiredSmartDepositDeposit": "Срок действия смарт-депозита истек",
     "expiredSmartOnramp": "Срок действия покупки истек",
@@ -618,7 +636,7 @@
     "automatedSwapFeeDescription": "Плата за автоматизированный обмен активов в вашем электронном кошельке на целевой актив перевода.",
     "gasFeeDescription": "Примерная стоимость компенсации валидаторам сети за обработку транзакции.",
     "institutionFeeDescription": "Эта комиссия покрывает стоимость сети за обработку вашего вывода. Она изменяется в зависимости от выбранной криптовалюты и текущих условий блокчейна.",
-    "processingFee": "Комиссия за обработку {{clientName}}",
+    "processingFee": "комиссия за обработку {{clientName}}",
     "processingFeeDescription": "Комиссия, которую собирает {{clientName}}, чтобы совершить этот перевод.",
     "title": "Включенные комиссии"
   },
@@ -1154,6 +1172,20 @@
     },
     "title": "Вход"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Депозит через QR-код"
+    },
+    "screen": {
+      "headline": "Возникли проблемы?",
+      "subtitle": "Вы можете завершить депозит вручную.",
+      "tokenLabel": "Токен",
+      "networkLabel": "Сеть",
+      "warning": "Переводите только USDT в сети Base на этот адрес, иначе ваши средства могут быть утеряны",
+      "copyWalletAddress": "Скопировать адрес электронного кошелька",
+      "downloadQr": "Скачать QR-код"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Банковский счет",
     "card": "Дебетовая карта",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "Предполагаемая комиссия, которая будет выплачена для компенсации за вычислительную мощность, используемую для обработки этой транзакции.",
     "from": "От",
     "fundingWith": "Пополнение с",
-    "institutionTransferFee": "Комиссия вывода средств из {{selectedIntegrationName}}",
+    "institutionTransferFee": "комиссия снятия {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Комиссия, которую {{selectedIntegrationName}} взимает для облегчения перевода из {{symbol}}.",
     "insufficientFunds": "Недостаточно средств",
     "maxAmount": "Ваш счет может пополнять не более <2>{{networkMaxAmount}}</2>. Вы хотите скорректировать Ваш перевод на эту сумму?",
@@ -1340,7 +1372,7 @@
     "payingWith": "Оплата через",
     "paymentTitle": "Предпросмотр платежа",
     "proceed": "Продолжить",
-    "processingFee": "Комиссия за обработку",
+    "processingFee": "Плата за обработку",
     "processingFeeHint": "Комиссия за обработку этой транзакции.",
     "receive": "Получить",
     "resendTransferRequest": "Отправить запрос на перевод еще раз",
@@ -1565,12 +1597,18 @@
     "title": "Верификация"
   },
   "transferInsufficientBalancePage": {
+    "title": "Недостаточно средств",
+    "paymentInsufficientBalance": "Ваш баланс {{balance}} {{symbol}} в сети {{network}} недостаточен для совершения этого платежа на сумму {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Эта транзакция требует {{amount}} {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
+    "depositNoBalance": "У вас нет баланса {{symbol}} в сети {{network}} для перевода.",
+    "depositInsufficientBalanceAndGas": "Эта транзакция требует ненулевого баланса {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
+    "topUpAction": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз.",
     "gasBody": "Комиссия за газ для сети {{network}} взимается в {{symbol}}. Пожалуйста, пополните баланс {{symbol}} и повторите эту транзакцию.",
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
+    "gasAndBalanceTitle": "Недостаточный баланс газа и средств",
     "noBalanceBody": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
     "noBalanceTitle": "Баланс недостаточен",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
-    "title": "Недостаточный баланс",
     "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
   },
   "transferMfaPage": {

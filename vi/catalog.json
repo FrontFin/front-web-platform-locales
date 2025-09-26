@@ -247,20 +247,36 @@
     "continue": "Tiếp tục đến {{walletName}}",
     "dappPage": {
       "continueButton": "Tiếp tục trong {{walletName}}",
-      "depositTitle": "Nạp tiền từ ví của bạn",
-      "payTitle": "Thanh toán từ ví của bạn",
       "qrSubtitle": "Mở ứng dụng máy ảnh trên điện thoại của bạn và quét mã QR để kết nối",
-      "spinnerText": "Hoàn tất thanh toán trên ví {{walletName}} của bạn",
+      "spinnerTransactionText": "Hoàn tất giao dịch này trong ứng dụng {{walletName}} của bạn",
+      "spinnerVerifyText": "Hoàn tất xác minh quyền sở hữu trong ứng dụng {{walletName}} của bạn",
       "subtitle": "Tiếp tục trong {{walletName}}. Quay lại đây khi bạn hoàn tất.",
-      "verifyWalletTitle": "Xác minh ví của bạn",
-      "approveConnectionToVerifyLoadingText": "Phê duyệt kết nối để bắt đầu xác minh của bạn",
-      "approveConnectionToPaymentLoadingText": "Phê duyệt kết nối để bắt đầu thanh toán của bạn",
-      "approveConnectionToDepositLoadingText": "Phê duyệt kết nối để bắt đầu gửi tiền của bạn"
+      "payTitle": "Thanh toán từ ví của bạn",
+      "depositTitle": "Nạp tiền từ ví của bạn",
+      "verifyWalletTitle": "Xác minh ví của bạn"
     },
     "previewButton": "Kết nối",
     "previewTitle": "Kết nối tài khoản",
     "subtitle": "Nhấp vào bên dưới để mở {{walletName}}. Sau đó chấp nhận yêu cầu kết nối để xem trước khoản thanh toán của bạn.",
     "title": "Kết nối ví của bạn"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Chấp nhận kết nối để xác minh ví của bạn",
+    "paymentFlowSubtitle": "Chấp nhận kết nối để bắt đầu thanh toán của bạn",
+    "depositFlowSubtitle": "Chấp nhận kết nối để bắt đầu chuyển khoản của bạn",
+    "title": "Kết nối tài khoản"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Xác minh ví của bạn",
+    "subtitleInitial": "Xác nhận bạn sở hữu ví này bằng cách ký một tin nhắn. Nếu bạn không thấy yêu cầu, hãy nhấp vào nút bên dưới.",
+    "titleAlreadyDenied": "Rất tiếc!",
+    "subtitleAlreadyDenied": "Có vẻ như bạn đã từ chối yêu cầu chữ ký. Revolut không thể xác minh quyền sở hữu của ví của bạn nếu không có chữ ký.",
+    "resend": "Gửi lại yêu cầu chữ ký"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Ví đã được xác minh!",
+    "subtitle": "Quay lại {{clientName}}",
+    "returnToClient": "Quay lại {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Bạn đã từ chối yêu cầu kết nối ví hoặc yêu cầu trước đó vẫn đang hoạt động.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Lỗi cấu hình",
     "emptyWalletBalance": "Ví rỗng",
     "exceedsApplicationLimit": "Vượt quá hạn mức cho phép của ứng dụng",
+    "existingApiKey": "Khóa API hiện có",
     "expiredSmartDeposit": "Giao dịch đã hết hạn",
     "faceVerificationFailed": "Xác minh khuôn mặt thất bại",
     "failedToGetFundingOptions": "Lỗi tùy chọn nạp tiền",
@@ -488,6 +505,7 @@
     "default": "Đã xảy ra lỗi.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
     "exceedsApplicationLimit": "Số tiền chuyển vượt quá giới hạn ứng dụng.",
+    "existingApiKey": "Khóa API với cấu hình này đã tồn tại. Vui lòng sử dụng cấu hình khác hoặc xoá khóa hiện có.",
     "expiredSmartDeposit": "Giao dịch đã hết hạn",
     "expiredSmartDepositDeposit": "Tiền gửi đã hết hạn",
     "expiredSmartOnramp": "Mua hàng đã hết hạn",
@@ -1154,6 +1172,20 @@
     },
     "title": "Đăng nhập"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Gửi tiền bằng mã QR"
+    },
+    "screen": {
+      "headline": "Gặp khó khăn?",
+      "subtitle": "Bạn vẫn có thể hoàn thành gửi tiền của mình bằng cách thủ công.",
+      "tokenLabel": "Token",
+      "networkLabel": "Mạng",
+      "warning": "Chỉ chuyển USDT trên Base đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất",
+      "copyWalletAddress": "Sao chép địa chỉ ví",
+      "downloadQr": "Tải xuống mã QR"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Tài khoản ngân hàng",
     "card": "Thẻ ghi nợ",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "Phí ước tính sẽ được dùng để trả cho các trình xác thực mạng vì công sức bỏ ra để xử lý giao dịch này.",
     "from": "Từ",
     "fundingWith": "Nạp tiền bằng",
-    "institutionTransferFee": "Phí Rút Tiền {{selectedIntegrationName}}",
+    "institutionTransferFee": "Phí rút tiền {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Phí mà {{selectedIntegrationName}} sẽ thu để hỗ trợ bạn chuyển {{symbol}} ra ngoài.",
     "insufficientFunds": "Không đủ tiền",
     "maxAmount": "Tài khoản của bạn có thể nạp tối đa <2>{{networkMaxAmount}}</2>. Bạn có muốn điều chỉnh số tiền chuyển khoản của mình theo số tiền này không?",
@@ -1565,12 +1597,18 @@
     "title": "Xác minh"
   },
   "transferInsufficientBalancePage": {
+    "title": "Không đủ ngân sách",
+    "paymentInsufficientBalance": "Số dư {{balance}} {{symbol}} của bạn trên mạng {{network}} không đủ để thực hiện thanh toán {{amount}} {{symbol}} này.",
+    "paymentInsufficientBalanceAndGas": "Giao dịch này yêu cầu {{amount}} {{symbol}} và ~${{gasFee}} giá trị ETH trên mạng {{network}} để trả phí gas.",
+    "depositNoBalance": "Bạn không có số dư {{symbol}} trên mạng {{network}} để chuyển.",
+    "depositInsufficientBalanceAndGas": "Giao dịch này yêu cầu số dư {{symbol}} không phải bằng 0 và ~${{gasFee}} giá trị ETH trên mạng {{network}} để trả phí gas.",
+    "topUpAction": "Vui lòng nạp thêm vào ví của bạn và thử lại.",
     "gasBody": "Phí gas cho mạng {{network}} được trả bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào số dư của bạn và thử giao dịch này một lần nữa.",
     "gasTitle": "Không đủ số dư để trả phí gas",
+    "gasAndBalanceTitle": "Không đủ phí gas và số dư",
     "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
     "noBalanceTitle": "Không có số dư",
     "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
-    "title": "Số dư không đủ",
     "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."
   },
   "transferMfaPage": {

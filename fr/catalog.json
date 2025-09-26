@@ -247,20 +247,36 @@
     "continue": "Continuez sur {{walletName}}",
     "dappPage": {
       "continueButton": "Continuez dans {{walletName}}",
-      "depositTitle": "Dépôt depuis votre portefeuille",
-      "payTitle": "Payez dans votre portefeuille",
       "qrSubtitle": "Ouvrez l'application de caméra sur votre téléphone et scannez le QR code pour lier",
-      "spinnerText": "Terminez le paiement sur votre portefeuille {{walletName}}",
+      "spinnerTransactionText": "Terminez cette transaction dans votre application {{walletName}}",
+      "spinnerVerifyText": "Terminez la vérification de propriété dans votre application {{walletName}}",
       "subtitle": "Continuez dans {{walletName}}. Revenez ici lorsque vous avez terminé.",
-      "verifyWalletTitle": "Vérifiez votre portefeuille",
-      "approveConnectionToVerifyLoadingText": "Approuvez la connexion pour commencer votre vérification",
-      "approveConnectionToPaymentLoadingText": "Approuvez la connexion pour commencer votre paiement",
-      "approveConnectionToDepositLoadingText": "Approuvez la connexion pour commencer votre dépôt"
+      "payTitle": "Payez dans votre portefeuille",
+      "depositTitle": "Dépôt depuis votre portefeuille",
+      "verifyWalletTitle": "Vérifiez votre portefeuille"
     },
     "previewButton": "Connecter",
     "previewTitle": "Connecter le compte",
     "subtitle": "Cliquez ci-dessous pour ouvrir {{walletName}}. Ensuite, approuvez la demande de connexion pour prévisualiser votre paiement.",
     "title": "Connecter votre portefeuille"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Approuvez la connexion pour vérifier votre portefeuille",
+    "paymentFlowSubtitle": "Approuvez la connexion pour commencer votre paiement",
+    "depositFlowSubtitle": "Approuvez la connexion pour commencer votre transfert",
+    "title": "Connecter le compte"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Vérifiez votre portefeuille",
+    "subtitleInitial": "Confirmez que vous possédez ce portefeuille en signant un message. Si vous ne voyez pas la demande, cliquez sur le bouton ci-dessous.",
+    "titleAlreadyDenied": "Oups!",
+    "subtitleAlreadyDenied": "Il semble que vous ayez refusé la demande de signature. Revolut ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
+    "resend": "Renvoyer la demande de signature"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Portefeuille vérifié!",
+    "subtitle": "Retourner à {{clientName}}",
+    "returnToClient": "Retourner à {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours en cours.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Erreur de configuration",
     "emptyWalletBalance": "Portefeuille vide",
     "exceedsApplicationLimit": "Dépassé la limite de l'application",
+    "existingApiKey": "Clé d'API existante",
     "expiredSmartDeposit": "Dépôt intelligent expiré",
     "faceVerificationFailed": "Échec de la vérification du visage",
     "failedToGetFundingOptions": "Erreur d'options de financement",
@@ -488,6 +505,7 @@
     "default": "Une erreur est survenue.",
     "emptyWalletBalance": "Le solde du portefeuille Source est vide.",
     "exceedsApplicationLimit": "Le montant du transfert dépasse la limite de l'application.",
+    "existingApiKey": "Une clé d'API avec cette configuration existe déjà. Veuillez utiliser une configuration différente ou supprimer la clé existante.",
     "expiredSmartDeposit": "Dépôt intelligent expiré",
     "expiredSmartDepositDeposit": "Dépôt expiré",
     "expiredSmartOnramp": "Achat expiré",
@@ -618,7 +636,7 @@
     "automatedSwapFeeDescription": "Des frais pour faciliter un échange automatisé d'actifs dans votre portefeuille vers l'actif de transfert cible.",
     "gasFeeDescription": "Le coût estimé pour compenser les validateurs de réseau pour le traitement de la transaction.",
     "institutionFeeDescription": "Cette commission couvre le coût du réseau pour traiter votre retrait. Elle varie en fonction de la cryptomonnaie sélectionnée et des conditions actuelles de la blockchain.",
-    "processingFee": "{{clientName}} Frais de traitement",
+    "processingFee": "{{clientName}} frais de traitement",
     "processingFeeDescription": "La commission que {{clientName}} perçoit pour faciliter la réalisation de cette transaction.",
     "title": "Frais inclus"
   },
@@ -1154,6 +1172,20 @@
     },
     "title": "Se connecter"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Dépôt avec code QR"
+    },
+    "screen": {
+      "headline": "Vous avez des difficultés ?",
+      "subtitle": "Vous pouvez toujours compléter votre dépôt manuellement.",
+      "tokenLabel": "Jeton",
+      "networkLabel": "Réseau",
+      "warning": "Transférez uniquement des USDT sur Base à cette adresse, sinon vos actifs risquent d'être perdus",
+      "copyWalletAddress": "Copier l'adresse du portefeuille",
+      "downloadQr": "Télécharger le code QR"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Compte bancaire",
     "card": "Carte de débit",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "Frais estimés payés pour compenser les validateurs du réseau pour la puissance de calcul utilisée lors du traitement de cette transaction.",
     "from": "De",
     "fundingWith": "Approvisionnement avec",
-    "institutionTransferFee": "Frais de retrait de {{selectedIntegrationName}}",
+    "institutionTransferFee": "frais de retrait de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Les frais que {{selectedIntegrationName}} facturera pour faciliter votre transfert depuis {{symbol}}.",
     "insufficientFunds": "Fonds insuffisants",
     "maxAmount": "Votre compte peut approvisionner jusqu’à <2>{{networkMaxAmount}}</2>. Souhaitez-vous ajuster votre transfert à ce montant ?",
@@ -1565,12 +1597,18 @@
     "title": "Vérification"
   },
   "transferInsufficientBalancePage": {
+    "title": "Fonds insuffisants",
+    "paymentInsufficientBalance": "Votre solde de {{balance}} {{symbol}} sur le réseau {{network}} est insuffisant pour effectuer ce paiement de {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Cette transaction nécessite {{amount}} {{symbol}} et environ ${{gasFee}} en ETH sur le réseau {{network}} pour payer les frais de gaz.",
+    "depositNoBalance": "Vous n'avez pas de solde {{symbol}} sur le réseau {{network}} à transférer.",
+    "depositInsufficientBalanceAndGas": "Cette transaction nécessite un solde {{symbol}} non nul et environ ${{gasFee}} en ETH sur le réseau {{network}} pour payer les frais de gaz.",
+    "topUpAction": "Veuillez recharger votre portefeuille et réessayer.",
     "gasBody": "Les frais de gaz pour le réseau {{network}} sont payés en {{symbol}}. Veuillez recharger votre solde en {{symbol}} puis réessayez cette transaction.",
     "gasTitle": "Solde de gaz insuffisant",
+    "gasAndBalanceTitle": "Gaz et solde insuffisants",
     "noBalanceBody": "Vous n'avez pas de solde {{symbol}} à transférer. Veuillez recharger votre solde et réessayer.",
     "noBalanceTitle": "Pas de solde",
     "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
-    "title": "Solde insuffisant",
     "transferBody": "Votre solde est insuffisant pour effectuer ce transfert."
   },
   "transferMfaPage": {

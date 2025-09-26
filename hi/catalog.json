@@ -247,20 +247,36 @@
     "continue": "{{walletName}} पर जारी रखें",
     "dappPage": {
       "continueButton": "{{walletName}} में जारी रखें",
-      "depositTitle": "अपने वॉलेट से जमा करें",
-      "payTitle": "आपके वॉलेट में भुगतान करें",
       "qrSubtitle": "अपने फ़ोन पर कैमरा ऐप खोलें और लिंक करने के लिए क्यूआर कोड स्कैन करें",
-      "spinnerText": "अपने {{walletName}} वॉलेट पर भुगतान पूरा करें",
+      "spinnerTransactionText": "अपने {{walletName}} ऐप में इस लेन-देन को पूरा करें।",
+      "spinnerVerifyText": "अपने {{walletName}} ऐप में मालिकाना हक़ सत्यापन पूरा करें।",
       "subtitle": "{{walletName}} में जारी रखें। जब आप कर लें तब यहाँ वापस आएँ।",
-      "verifyWalletTitle": "अपने वॉलेट का सत्यापन करें",
-      "approveConnectionToVerifyLoadingText": "अपनी सत्यापन प्रक्रिया शुरू करने के लिए कनेक्शन को स्वीकृति दें",
-      "approveConnectionToPaymentLoadingText": "अपनी भुगतान प्रक्रिया शुरू करने के लिए कनेक्शन को स्वीकृति दें",
-      "approveConnectionToDepositLoadingText": "अपनी जमा प्रक्रिया शुरू करने के लिए कनेक्शन को स्वीकृति दें"
+      "payTitle": "आपके वॉलेट में भुगतान करें",
+      "depositTitle": "अपने वॉलेट से जमा करें",
+      "verifyWalletTitle": "अपने वॉलेट का सत्यापन करें"
     },
     "previewButton": "जुड़ें",
     "previewTitle": "खाता जोड़ें",
     "subtitle": "{{walletName}} खोलने के लिए नीचे क्लिक करें। फिर अपने भुगतान का पूर्वावलोकन करने के लिए कनेक्शन अनुरोध को स्वीकृत करें।",
     "title": "अपने वॉलेट को जोड़ें"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "अपने वॉलेट में कनेक्शन को स्वीकृति दें ताकि आप अपने वॉलेट को सत्यापित कर सकें।",
+    "paymentFlowSubtitle": "अपने वॉलेट में कनेक्शन को स्वीकृति दें ताकि आप अपने भुगतान को शुरू कर सकें।",
+    "depositFlowSubtitle": "अपने वॉलेट में कनेक्शन को स्वीकृति दें ताकि आप अपने ट्रांसफर को शुरू कर सकें।",
+    "title": "खाता जोड़ें"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "अपने वॉलेट का सत्यापन करें",
+    "subtitleInitial": "संदेश पर हस्ताक्षर करके पुष्टि करें कि यह वॉलेट आपका है। यदि आप अनुरोध नहीं देखते हैं, तो नीचे दिए गए बटन पर क्लिक करें।",
+    "titleAlreadyDenied": "अरे!",
+    "subtitleAlreadyDenied": "ऐसा लगता है कि आपने हस्ताक्षर अनुरोध को अस्वीकार कर दिया। हस्ताक्षर के बिना Revolut आपके पर्स की स्वामित्व सत्यापित नहीं कर सकता।",
+    "resend": "हस्ताक्षर अनुरोध पुनः भेजें"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "पर्स सत्यापित!",
+    "subtitle": "{{clientName}} पर लौटें",
+    "returnToClient": "{{clientName}} पर लौटें"
   },
   "defiWalletQrPage": {
     "declinedBody": "आपने अपनी वॉलेट से कनेक्ट करने के अनुरोध को अस्वीकृत कर दिया है, या एक पिछला अनुरोध अभी भी सक्रिय है।",
@@ -401,6 +417,7 @@
     "configurationMismatch": "कॉन्फ़िगरेशन त्रुटि",
     "emptyWalletBalance": "खाली वॉलेट",
     "exceedsApplicationLimit": "आवेदन सीमा से अधिक",
+    "existingApiKey": "मौजूदा एपीआई कुंजी",
     "expiredSmartDeposit": "लेन-देन की समय सीमा समाप्त हो गई",
     "faceVerificationFailed": "चेहरा सत्यापन विफल",
     "failedToGetFundingOptions": "फंडिंग विकल्प त्रुटि",
@@ -488,6 +505,7 @@
     "default": "एक त्रुटि उत्पन्न हुई है।",
     "emptyWalletBalance": "स्रोत वॉलेट की शेष राशि खाली है।",
     "exceedsApplicationLimit": "स्थानांतरण राशि अनुप्रयोग सीमा से अधिक है।",
+    "existingApiKey": "इस विन्यास के साथ एक एपीआई कुंजी पहले से ही मौजूद है। कृपया एक अलग विन्यास का उपयोग करें या मौजूदा कुंजी को हटाएं।",
     "expiredSmartDeposit": "लेन-देन की समय सीमा समाप्त हो गई",
     "expiredSmartDepositDeposit": "जमा की अवधि समाप्त हो गई",
     "expiredSmartOnramp": "खरीद की अवधि समाप्त हो गई",
@@ -1154,6 +1172,20 @@
     },
     "title": "लॉग इन करें"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "क्यूआर कोड के साथ जमा करें"
+    },
+    "screen": {
+      "headline": "कोई समस्या है?",
+      "subtitle": "आप अभी भी अपना जमा मैन्युअल रूप से पूरा कर सकते हैं।",
+      "tokenLabel": "टोकन",
+      "networkLabel": "नेटवर्क",
+      "warning": "सिर्फ इस पते पर बेस पर यूएसडीटी ट्रांसफर करें अन्यथा आपकी संपत्तियां खो सकती हैं",
+      "copyWalletAddress": "वॉलेट पता कॉपी करें",
+      "downloadQr": "क्यूआर कोड डाउनलोड करें"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "बैंक खाता",
     "card": "डेबिट कार्ड",
@@ -1565,12 +1597,18 @@
     "title": "सत्यापन"
   },
   "transferInsufficientBalancePage": {
+    "title": "अपर्याप्त कोष",
+    "paymentInsufficientBalance": "{{network}} नेटवर्क पर आपका {{balance}} {{symbol}} का बैलेंस इस {{amount}} {{symbol}} भुगतान के लिए पर्याप्त नहीं है।",
+    "paymentInsufficientBalanceAndGas": "इस लेन-देन के लिए {{network}} नेटवर्क पर गैस शुल्क का भुगतान करने के लिए {{amount}} {{symbol}} और ~${{gasFee}} मूल्य का ईटीएच आवश्यक है।",
+    "depositNoBalance": "{{network}} नेटवर्क पर स्थानांतरण के लिए आपका {{symbol}} बैलेंस शून्य है।",
+    "depositInsufficientBalanceAndGas": "इस लेन-देन के लिए गैर-शून्य {{symbol}} बैलेंस और गैस शुल्क का भुगतान करने के लिए {{network}} नेटवर्क पर ~${{gasFee}} मूल्य का ईटीएच आवश्यक है।",
+    "topUpAction": "कृपया अपने वॉलेट को टॉप अप करें और फिर से प्रयास करें।",
     "gasBody": "{{network}} नेटवर्क के लिए गैस शुल्क {{symbol}} में भुगतान किए जाते हैं। कृपया अपनी {{symbol}} शेष राशि बढ़ाएं और फिर इस लेन-देन को पुनः करने का प्रयास करें।",
     "gasTitle": "गैस शेष राशि अपर्याप्त",
+    "gasAndBalanceTitle": "गैस और शेष राशि अपर्याप्त",
     "noBalanceBody": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
     "noBalanceTitle": "कोई बैलेंस नहीं",
     "paymentBody": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
-    "title": "अपर्याप्त शेष राशि",
     "transferBody": "आपका शेष राशि इस स्थानांतरण को पूरा करने के लिए अपर्याप्त है।"
   },
   "transferMfaPage": {

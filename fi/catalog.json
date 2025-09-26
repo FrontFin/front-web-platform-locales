@@ -247,20 +247,36 @@
     "continue": "Jatka siirtymällä {{walletName}}iin",
     "dappPage": {
       "continueButton": "Jatka {{walletName}}:ssa",
-      "depositTitle": "Talleta lompakostasi",
-      "payTitle": "Maksa lompakossasi",
       "qrSubtitle": "Avaa puhelimesi kamera ja skannaa QR-koodi linkittämiseksi",
-      "spinnerText": "Viimeistele maksu {{walletName}} lompakossasi",
+      "spinnerTransactionText": "Viimeistele tämä tapahtuma {{walletName}}-sovelluksessasi",
+      "spinnerVerifyText": "Viimeistele omistajuuden varmentaminen {{walletName}}-sovelluksessasi",
       "subtitle": "Jatka {{walletName}}:ssa. Palaa tänne, kun olet valmis.",
-      "verifyWalletTitle": "Varmista lompakkosi",
-      "approveConnectionToVerifyLoadingText": "Hyväksy yhteys varmennuksen aloittamiseksi",
-      "approveConnectionToPaymentLoadingText": "Hyväksy yhteys maksun aloittamiseksi",
-      "approveConnectionToDepositLoadingText": "Hyväksy yhteys talletuksen aloittamiseksi"
+      "payTitle": "Maksa lompakossasi",
+      "depositTitle": "Talleta lompakostasi",
+      "verifyWalletTitle": "Varmista lompakkosi"
     },
     "previewButton": "Yhdistä",
     "previewTitle": "Yhdistä tili",
     "subtitle": "Napauta alta avataksesi {{walletName}}n. Hyväksy sitten yhteyspyyntö esikatsellaksesi maksusi.",
     "title": "Yhdistä lompakkosi"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Hyväksy yhteyden tarkistus lompakossasi",
+    "paymentFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa maksun",
+    "depositFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa siirron",
+    "title": "Yhdistä tili"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Varmista lompakkosi",
+    "subtitleInitial": "Vahvista, että omistat tämän lompakon, allekirjoittamalla viesti. Jos et näe pyyntöä, napsauta alla olevaa painiketta.",
+    "titleAlreadyDenied": "Hups!",
+    "subtitleAlreadyDenied": "Näyttää siltä, että hylkäsit allekirjoituspyynnön. Revolut ei voi varmistaa lompakkosi omistajuutta ilman allekirjoitusta.",
+    "resend": "Lähetä allekirjoituspyyntö uudelleen"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Lompakko vahvistettu!",
+    "subtitle": "Palaa {{clientName}}iin",
+    "returnToClient": "Palaa {{clientName}}iin"
   },
   "defiWalletQrPage": {
     "declinedBody": "Olet hylännyt pyynnön yhdistää lompakkoosi tai aiempi pyyntö on yhä aktiivinen.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Määritysvirhe",
     "emptyWalletBalance": "Tyhjä lompakko",
     "exceedsApplicationLimit": "Ylittää sovelluksen rajan",
+    "existingApiKey": "Nykyinen API-avain",
     "expiredSmartDeposit": "Tapahtuma vanhentunut",
     "faceVerificationFailed": "Kasvojentunnistus epäonnistui",
     "failedToGetFundingOptions": "Virhe rahoitustavoissa",
@@ -488,6 +505,7 @@
     "default": "Tapahtui virhe.",
     "emptyWalletBalance": "Lähdelompakon saldo on tyhjä.",
     "exceedsApplicationLimit": "Siirtosumma ylittää sovelluksen rajan.",
+    "existingApiKey": "API-avain tällä kokoonpanolla on jo olemassa. Käytä toista kokoonpanoa tai poista nykyinen avain.",
     "expiredSmartDeposit": "Tapahtuma vanhentunut",
     "expiredSmartDepositDeposit": "Älytalletus vanhentunut",
     "expiredSmartOnramp": "Osto vanhentunut",
@@ -618,7 +636,7 @@
     "automatedSwapFeeDescription": "Maksu, joka helpottaa automaattista varojen vaihtoasi lompakossasi tavoitevaraan.",
     "gasFeeDescription": "Arvioidut kustannukset verkon validoijien kompensoimiseksi tapahtuman käsittelystä.",
     "institutionFeeDescription": "Tämä maksu kattaa verkon kustannukset nostosi käsittelystä. Se vaihtelee valitun kryptovaluutan ja nykyisten lohkoketjun olosuhteiden mukaan.",
-    "processingFee": "{{clientName}} Käsittelymaksu",
+    "processingFee": "{{clientName}} käsittelymaksu",
     "processingFeeDescription": "Maksu, jonka {{clientName}} perii tämän tapahtuman saattamiseksi loppuun.",
     "title": "Sisältää maksut"
   },
@@ -1154,6 +1172,20 @@
     },
     "title": "Sisäänkirjautuminen"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Talleta QR-koodilla"
+    },
+    "screen": {
+      "headline": "Onko sinulla ongelmia?",
+      "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
+      "tokenLabel": "Token",
+      "networkLabel": "Verkko",
+      "warning": "Siirrä vain USDT Base-verkossa tähän osoitteeseen, muuten omaisuutesi voivat kadota.",
+      "copyWalletAddress": "Kopioi lompakon osoite",
+      "downloadQr": "Lataa QR-koodi"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Pankkitili",
     "card": "Pankkikortti",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "Arvioidut maksut, jotka maksetaan verkon validoijille heidän käyttämästään laskentatehosta tämän siirron käsittelemiseksi.",
     "from": "Lähettäjä",
     "fundingWith": "Rahoita",
-    "institutionTransferFee": "{{selectedIntegrationName}} Nostomaksu",
+    "institutionTransferFee": "{{selectedIntegrationName}} nostomaksu",
     "institutionTransferFeeHint": "Maksu, jonka {{selectedIntegrationName}} veloittaa mahdollistaakseen siiron pois {{symbol}}:sta.",
     "insufficientFunds": "Riittämättömät varat",
     "maxAmount": "Tilisi voi rahoittaa enintään <2>{{networkMaxAmount}}</2>. Haluatko muuttaa siirtosummaa vastaamaan tätä määrää?",
@@ -1565,12 +1597,18 @@
     "title": "Varmistus"
   },
   "transferInsufficientBalancePage": {
+    "title": "Riittämättömät varat",
+    "paymentInsufficientBalance": "Sinun {{balance}} {{symbol}} saldosi {{network}} verkossa on riittämätön suorittamaan tätä {{amount}} {{symbol}} maksua.",
+    "paymentInsufficientBalanceAndGas": "Tämä transaktio vaatii {{amount}} {{symbol}} ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
+    "depositNoBalance": "Sinulla ei ole {{symbol}} saldoa {{network}} verkossa siirtämiseen.",
+    "depositInsufficientBalanceAndGas": "Tämä transaktio vaatii ei-nollan {{symbol}} saldon ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
+    "topUpAction": "Täydennä lompakkosi ja yritä uudelleen.",
     "gasBody": "Kaasukustannukset {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
     "gasTitle": "Riittämätön kaasusaldo",
+    "gasAndBalanceTitle": "Riittämätön kaasu ja saldo",
     "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
     "noBalanceTitle": "Ei saldoa",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
-    "title": "Riittämätön saldo",
     "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
   },
   "transferMfaPage": {

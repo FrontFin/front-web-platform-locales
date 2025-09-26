@@ -247,20 +247,36 @@
     "continue": "Continúa en {{walletName}}",
     "dappPage": {
       "continueButton": "Continúa en {{walletName}}",
-      "depositTitle": "Depositar desde tu wallet",
-      "payTitle": "Paga en tu wallet",
       "qrSubtitle": "Abre la aplicación de cámara en tu teléfono y escanea el código QR para vincular",
-      "spinnerText": "Finaliza el pago en tu wallet {{walletName}}",
+      "spinnerTransactionText": "Confirma esta transacción en tu aplicación de {{walletName}}},{",
+      "spinnerVerifyText": "Confirma la verificación de propiedad en tu aplicación de {{walletName}}",
       "subtitle": "Continúa en {{walletName}}. Regresa aquí cuando termines.",
-      "verifyWalletTitle": "Verifica tu wallet",
-      "approveConnectionToVerifyLoadingText": "Aprueba la conexión para iniciar tu verificación",
-      "approveConnectionToPaymentLoadingText": "Aprueba la conexión para iniciar tu pago",
-      "approveConnectionToDepositLoadingText": "Aprueba la conexión para iniciar tu depósito"
+      "payTitle": "Paga en tu wallet",
+      "depositTitle": "Depositar desde tu wallet",
+      "verifyWalletTitle": "Verifica tu wallet"
     },
     "previewButton": "Conectar",
     "previewTitle": "Conectar cuenta",
     "subtitle": "Haz clic abajo para abrir {{walletName}}. Luego aprueba la solicitud de conexión para mostrar tu pago.",
     "title": "Conectar tu wallet"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Aprueba la conexión para verificar tu wallet",
+    "paymentFlowSubtitle": "Aprueba la conexión para iniciar tu pago",
+    "depositFlowSubtitle": "Aprueba la conexión para iniciar tu transferencia",
+    "title": "Conectar cuenta"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Verifica tu wallet",
+    "subtitleInitial": "Confirma que posees este wallet firmando un mensaje. Si no ves la solicitud, haz clic en el botón de abajo.",
+    "titleAlreadyDenied": "¡Ups!",
+    "subtitleAlreadyDenied": "Parece que negaste la solicitud de firma. Revolut no puede verificar la propiedad de tu wallet sin una firma.",
+    "resend": "Reenviar solicitud de firma"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "¡Wallet verificado!",
+    "subtitle": "Regresa a {{clientName}}",
+    "returnToClient": "Regresa a {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Has rechazado la solicitud para conectar tu cartera, o la solicitud anterior sigue activa.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Error de configuración",
     "emptyWalletBalance": "Wallet vacía",
     "exceedsApplicationLimit": "Supera el límite de la aplicación",
+    "existingApiKey": "Clave API existente",
     "expiredSmartDeposit": "Depósito Inteligente Expirado",
     "faceVerificationFailed": "Error de verificación facial",
     "failedToGetFundingOptions": "Error en opciones de financiación",
@@ -488,6 +505,7 @@
     "default": "Ha ocurrido un error.",
     "emptyWalletBalance": "El saldo de tu cartera de origen está vacío.",
     "exceedsApplicationLimit": "La cantidad de transferencia supera el límite de la aplicación.",
+    "existingApiKey": "Ya existe una clave API con esta configuración. Utilice una configuración diferente o elimine la clave existente.",
     "expiredSmartDeposit": "Depósito Inteligente Expirado",
     "expiredSmartDepositDeposit": "Depósito Expirado",
     "expiredSmartOnramp": "Compra Expirada",
@@ -618,7 +636,7 @@
     "automatedSwapFeeDescription": "Una tarifa para facilitar un intercambio automatizado de activos en su wallet en el activo de transferencia objetivo.",
     "gasFeeDescription": "El costo estimado para compensar a los validadores de red por procesar la transacción.",
     "institutionFeeDescription": "Esta tarifa cubre el costo de la red para procesar su retiro. Varía según la criptomoneda seleccionada y las condiciones actuales de la blockchain.",
-    "processingFee": "Tarifa de procesamiento de {{clientName}}",
+    "processingFee": "Cuota de procesamiento de {{clientName}}",
     "processingFeeDescription": "La tarifa que {{clientName}} cobra para facilitar la finalización de esta transacción.",
     "title": "Tarifas incluidas"
   },
@@ -1154,6 +1172,20 @@
     },
     "title": "Iniciar sesión"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Depósito con código QR"
+    },
+    "screen": {
+      "headline": "¿Tienes problemas?",
+      "subtitle": "Todavía puedes completar tu depósito manualmente.",
+      "tokenLabel": "Token",
+      "networkLabel": "Red",
+      "warning": "Solo transfiere USDT en Base a esta dirección, de lo contrario, tus activos pueden perderse",
+      "copyWalletAddress": "Copiar dirección de wallet",
+      "downloadQr": "Descargar el código QR"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Cuenta bancaria",
     "card": "Tarjeta de débito",
@@ -1565,12 +1597,18 @@
     "title": "Verificación"
   },
   "transferInsufficientBalancePage": {
+    "title": "Saldo insuficiente",
+    "paymentInsufficientBalance": "Tu saldo de {{balance}} {{symbol}} en la red {{network}} no es suficiente para realizar este pago de {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Esta transacción requiere {{amount}} {{symbol}} y aproximadamente ~${{gasFee}} en ETH en la red {{network}} para pagar las tarifas de gas.",
+    "depositNoBalance": "No tienes saldo de {{symbol}} en la red {{network}} para transferir.",
+    "depositInsufficientBalanceAndGas": "Esta transacción requiere un saldo de {{symbol}} distinto de cero y aproximadamente ~${{gasFee}} en ETH en la red {{network}} para pagar las tarifas de gas.",
+    "topUpAction": "Por favor, recarga tu wallet y vuelve a intentarlo.",
     "gasBody": "Las tarifas de gas para la red {{network}} se pagan en {{symbol}}. Por favor recargue su saldo de {{symbol}} y vuelva a intentar esta transacción.",
     "gasTitle": "Saldo insuficiente de gas",
+    "gasAndBalanceTitle": "Saldo insuficiente de gas y balance",
     "noBalanceBody": "No tienes saldo de {{symbol}} para transferir. Por favor, recarga tu saldo e inténtalo de nuevo.",
     "noBalanceTitle": "Sin saldo",
     "paymentBody": "Tu saldo es demasiado bajo para completar esta compra.",
-    "title": "Saldo insuficiente",
     "transferBody": "Tu saldo es demasiado bajo para completar esta transferencia."
   },
   "transferMfaPage": {

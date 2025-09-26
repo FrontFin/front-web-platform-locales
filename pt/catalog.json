@@ -247,20 +247,36 @@
     "continue": "Continua para {{walletName}}",
     "dappPage": {
       "continueButton": "Continua para {{walletName}}",
-      "depositTitle": "Deposite da sua carteira",
-      "payTitle": "Pague na sua carteira",
       "qrSubtitle": "Abra o aplicativo de câmera no seu telefone e escaneie o código QR para vincular",
-      "spinnerText": "Finalizar o pagamento na sua carteira {{walletName}}",
+      "spinnerTransactionText": "Finaliza esta transação na app {{walletName}}",
+      "spinnerVerifyText": "Finalize a verificação de propriedade na app {{walletName}}",
       "subtitle": "Continue em {{walletName}}. Retorne aqui quando terminar.",
-      "verifyWalletTitle": "Verifique a sua carteira",
-      "approveConnectionToVerifyLoadingText": "Aprove a conexão para iniciar a sua verificação",
-      "approveConnectionToPaymentLoadingText": "Aprove a conexão para iniciar o seu pagamento",
-      "approveConnectionToDepositLoadingText": "Aprove a conexão para iniciar o seu depósito"
+      "payTitle": "Pague na sua carteira",
+      "depositTitle": "Deposite da sua carteira",
+      "verifyWalletTitle": "Verifique a sua carteira"
     },
     "previewButton": "Ligar",
     "previewTitle": "Ligar a uma conta",
     "subtitle": "Clica em baixo para abrires {{walletName}}. Em seguida, aprova o pedido de ligação para visualizares o teu pagamento.",
     "title": "Liga à tua carteira"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Aprovar a ligação para verificar a tua carteira",
+    "paymentFlowSubtitle": "Aprovar a ligação para iniciar o teu pagamento",
+    "depositFlowSubtitle": "Aprovar a ligação para iniciar a tua transferência",
+    "title": "Ligar a uma conta"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Verifique a sua carteira",
+    "subtitleInitial": "Confirme que você possui esta carteira assinando uma mensagem. Se você não vir o pedido, clique no botão abaixo.",
+    "titleAlreadyDenied": "Oops!",
+    "subtitleAlreadyDenied": "Parece que você negou a solicitação de assinatura. A Revolut não pode verificar a propriedade da sua carteira sem uma assinatura.",
+    "resend": "Reenviar pedido de assinatura"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Carteira verificada!",
+    "subtitle": "Volta a {{clientName}}",
+    "returnToClient": "Volta a {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Recusaste o pedido para ligares à tua carteira ou um pedido anterior ainda está ativo.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Erro de Configuração",
     "emptyWalletBalance": "Carteira sem saldo",
     "exceedsApplicationLimit": "Excedeste o Limite da App",
+    "existingApiKey": "Chave de API Existente",
     "expiredSmartDeposit": "Transação Expirada",
     "faceVerificationFailed": "Verificação Facial Falhou",
     "failedToGetFundingOptions": "Erro nas Opções de Financiamento",
@@ -488,6 +505,7 @@
     "default": "Ocorreu um erro.",
     "emptyWalletBalance": "Estás sem saldo na tua carteira.",
     "exceedsApplicationLimit": "O valor da transferência excede o limite da app.",
+    "existingApiKey": "Uma chave de API com esta configuração já existe. Por favor, use uma configuração diferente ou remova a chave existente.",
     "expiredSmartDeposit": "Transação Expirada",
     "expiredSmartDepositDeposit": "Depósito com Contrato Inteligente Expirado",
     "expiredSmartOnramp": "Compras Expiradas",
@@ -1154,6 +1172,20 @@
     },
     "title": "Entrar"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Depósito com código QR"
+    },
+    "screen": {
+      "headline": "Está com problemas?",
+      "subtitle": "Você ainda pode completar seu depósito manualmente.",
+      "tokenLabel": "Token",
+      "networkLabel": "Rede",
+      "warning": "Transfira somente USDT na Base para este endereço, caso contrário, seus ativos podem ser perdidos.",
+      "copyWalletAddress": "Copiar endereço da carteira",
+      "downloadQr": "Baixar o código QR"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Conta bancária",
     "card": "Cartão de débito",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "As taxas estimadas que serão pagas para compensar os validadores de rede pela potência computacional utilizada para processar esta transação.",
     "from": "De",
     "fundingWith": "Financiamento com",
-    "institutionTransferFee": "Taxa de levantamento de {{selectedIntegrationName}}",
+    "institutionTransferFee": "taxa de levantamento de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "A taxa que {{selectedIntegrationName}} cobrará para facilitar a tua  transferência de {{symbol}}.",
     "insufficientFunds": "Fundos Insuficientes",
     "maxAmount": "A tua conta pode financiar um máximo de <2>{{networkMaxAmount}}</2>. Queres ajustar a tua transferência para este valor?",
@@ -1565,12 +1597,18 @@
     "title": "Verificação"
   },
   "transferInsufficientBalancePage": {
+    "title": "Fundos insuficientes",
+    "paymentInsufficientBalance": "Seu saldo de {{balance}} {{symbol}} na rede {{network}} é insuficiente para efetuar este pagamento de {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Esta transação requer {{amount}} {{symbol}} e ~${{gasFee}} em ETH na rede {{network}} para pagar as taxas de gás.",
+    "depositNoBalance": "Você não tem saldo de {{symbol}} na rede {{network}} para transferir.",
+    "depositInsufficientBalanceAndGas": "Esta transação requer um saldo não zero de {{symbol}} e ~${{gasFee}} em ETH na rede {{network}} para pagar as taxas de gás.",
+    "topUpAction": "Por favor, recarregue sua carteira e tente novamente.",
     "gasBody": "As taxas de gás para a rede {{network}} são pagas em {{symbol}}. Por favor, recarregue seu saldo de {{symbol}} e tente esta transação novamente.",
     "gasTitle": "Saldo de gás insuficiente",
+    "gasAndBalanceTitle": "Gás e saldo insuficientes",
     "noBalanceBody": "Você não tem saldo de {{symbol}} para transferir. Por favor, carregue seu saldo e tente novamente.",
     "noBalanceTitle": "Sem saldo",
     "paymentBody": "Seu saldo é muito baixo para concluir esta compra.",
-    "title": "Saldo insuficiente",
     "transferBody": "Seu saldo é muito baixo para completar esta transferência."
   },
   "transferMfaPage": {

@@ -247,20 +247,36 @@
     "continue": "继续前往{{walletName}}",
     "dappPage": {
       "continueButton": "继续前往 {{walletName}}",
-      "depositTitle": "用您的钱包充值",
-      "payTitle": "用您的钱包支付",
       "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
-      "spinnerText": "用您的 {{walletName}} 钱包完成支付",
+      "spinnerTransactionText": "在您的{{walletName}}应用中完成此次交易",
+      "spinnerVerifyText": "在您的{{walletName}}应用中完成所有权验证",
       "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。",
-      "verifyWalletTitle": "验证您的钱包",
-      "approveConnectionToVerifyLoadingText": "在您的钱包中批准连接请求开始验证",
-      "approveConnectionToPaymentLoadingText": "在您的钱包中批准连接请求开始付款",
-      "approveConnectionToDepositLoadingText": "在您的钱包中批准连接请求开始存款"
+      "payTitle": "用您的钱包支付",
+      "depositTitle": "用您的钱包充值",
+      "verifyWalletTitle": "验证您的钱包"
     },
     "previewButton": "关联",
     "previewTitle": "关联账户",
     "subtitle": "点击下方打开{{walletName}}。批准该关联请求并预览您的支付。",
     "title": "关联您的钱包"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "批准连接请求以验证您的钱包",
+    "paymentFlowSubtitle": "批准连接请求以开始付款",
+    "depositFlowSubtitle": "批准连接请求以开始转账",
+    "title": "关联账户"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "验证您的钱包",
+    "subtitleInitial": "通过签署消息确认您是此钱包的所有者。如果您未看到请求，请点击下方按钮。",
+    "titleAlreadyDenied": "哎哟，出了点问题！",
+    "subtitleAlreadyDenied": "看起来您拒绝了签名请求。没有签名，Revolut无法验证您钱包的所有权。",
+    "resend": "重新发送签名请求"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "钱包已验证！",
+    "subtitle": "返回{{clientName}}",
+    "returnToClient": "返回{{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "您已拒绝关联此钱包的请求，或之前请求仍在进行中。",
@@ -401,6 +417,7 @@
     "configurationMismatch": "配置异常",
     "emptyWalletBalance": "清空钱包",
     "exceedsApplicationLimit": "超过应用程序限制",
+    "existingApiKey": "现有 API 密钥",
     "expiredSmartDeposit": "智能充值交易已过期",
     "faceVerificationFailed": "面部验证失败",
     "failedToGetFundingOptions": "充值选项错误",
@@ -488,6 +505,7 @@
     "default": "发生了一个错误。",
     "emptyWalletBalance": "源钱包余额为空。",
     "exceedsApplicationLimit": "转账金额超出申请限额。",
+    "existingApiKey": "具有此配置的 API 密钥已存在。请使用不同的配置或删除现有的密钥。",
     "expiredSmartDeposit": "智能充值已过期",
     "expiredSmartDepositDeposit": "充值已过期",
     "expiredSmartOnramp": "购买已过期",
@@ -1154,6 +1172,20 @@
     },
     "title": "登录"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "使用二维码存款"
+    },
+    "screen": {
+      "headline": "遇到问题？",
+      "subtitle": "您仍然可以手动完成您的存款。",
+      "tokenLabel": "代币",
+      "networkLabel": "网络",
+      "warning": "仅在 Base 上转移 USDT 至此地址，否则您的资产可能会丢失。",
+      "copyWalletAddress": "复制钱包地址",
+      "downloadQr": "下载二维码"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "银行账户",
     "card": "借记卡",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "网络验证者处理交易的算力费用补偿估值。",
     "from": "发起者",
     "fundingWith": "充值方式",
-    "institutionTransferFee": "{{selectedIntegrationName}}提现费",
+    "institutionTransferFee": "{{selectedIntegrationName}} 提现费",
     "institutionTransferFeeHint": "为支持您从 {{symbol}}中发起的转账，{{selectedIntegrationName}} 将收取的费用。",
     "insufficientFunds": "余额不足",
     "maxAmount": "您的帐户最多可以存入<2>{{networkMaxAmount}}</2>。是否调整为此最大值？",
@@ -1565,12 +1597,18 @@
     "title": "验证"
   },
   "transferInsufficientBalancePage": {
+    "title": "余额不足",
+    "paymentInsufficientBalance": "您的 {{balance}} {{symbol}} 余额在 {{network}} 网络上不足以进行此 {{amount}} {{symbol}} 付款。",
+    "paymentInsufficientBalanceAndGas": "此交易需要 {{amount}} {{symbol}} 和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
+    "depositNoBalance": "您在 {{network}} 网络上没有可以转账的 {{symbol}} 余额。",
+    "depositInsufficientBalanceAndGas": "此交易需要非零 {{symbol}} 余额和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
+    "topUpAction": "请充值您的钱包后再试一次。",
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
     "gasTitle": "燃料费余额不足",
+    "gasAndBalanceTitle": "燃料费和余额不足",
     "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
-    "title": "余额不足",
     "transferBody": "您的余额不足，无法完成此次转账。"
   },
   "transferMfaPage": {

@@ -247,20 +247,36 @@
     "continue": "{{walletName}}に進む",
     "dappPage": {
       "continueButton": "{{walletName}}で続行",
-      "depositTitle": "お財布から預け入れ",
-      "payTitle": "お財布で支払う",
       "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
-      "spinnerText": "{{walletName}}ウォレットでの支払いを完了させてください。",
+      "spinnerTransactionText": "この取引を{{walletName}}アプリで完了してください。",
+      "spinnerVerifyText": "{{walletName}}アプリで所有権の確認を完了してください。",
       "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
-      "verifyWalletTitle": "ウォレットを確認する",
-      "approveConnectionToVerifyLoadingText": "認証を開始するには接続を承認してください",
-      "approveConnectionToPaymentLoadingText": "支払いを開始するには接続を承認してください",
-      "approveConnectionToDepositLoadingText": "入金を開始するには接続を承認してください"
+      "payTitle": "お財布で支払う",
+      "depositTitle": "お財布から預け入れ",
+      "verifyWalletTitle": "ウォレットを確認する"
     },
     "previewButton": "接続",
     "previewTitle": "アカウントを接続",
     "subtitle": "下のボタンをクリックして{{walletName}}を開いてください。次に接続要求を承認して、支払いをプレビューします。",
     "title": "ウォレットを接続"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "ウォレットで接続を承認して確認してください。",
+    "paymentFlowSubtitle": "ウォレットで接続を承認して支払いを開始してください。",
+    "depositFlowSubtitle": "ウォレットで接続を承認して送金を開始してください。",
+    "title": "アカウントを接続"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "ウォレットを確認する",
+    "subtitleInitial": "メッセージに署名してこのウォレットを所有していることを確認してください。要求が表示されない場合は、下のボタンをクリックしてください。",
+    "titleAlreadyDenied": "おっと！",
+    "subtitleAlreadyDenied": "署名リクエストを拒否したようです。署名がないとRevolutはウォレットの所有権を確認できません。",
+    "resend": "署名リクエストを再送信する"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "ウォレットが検証されました！",
+    "subtitle": "{{clientName}}に戻る",
+    "returnToClient": "{{clientName}}に戻る"
   },
   "defiWalletQrPage": {
     "declinedBody": "ウォレットの接続リクエストを拒否したか、以前のリクエストがまだアクティブです。",
@@ -401,6 +417,7 @@
     "configurationMismatch": "設定エラー",
     "emptyWalletBalance": "ウォレットが空です。",
     "exceedsApplicationLimit": "申請上限を超えています",
+    "existingApiKey": "既存のAPIキー",
     "expiredSmartDeposit": "トランザクションの有効期限が切れました",
     "faceVerificationFailed": "顔認証に失敗しました",
     "failedToGetFundingOptions": "資金調達方法にエラー",
@@ -488,6 +505,7 @@
     "default": "エラーが発生しました。",
     "emptyWalletBalance": "元のウォレットの残高が空です。",
     "exceedsApplicationLimit": "送金額が申請上限を超えています。",
+    "existingApiKey": "この設定のAPIキーはすでに存在します。別の設定を使用するか、既存のキーを削除してください。",
     "expiredSmartDeposit": "トランザクションの有効期限が切れました",
     "expiredSmartDepositDeposit": "入金の有効期限が切れました",
     "expiredSmartOnramp": "購入の有効期限が切れました",
@@ -1154,6 +1172,20 @@
     },
     "title": "ログイン"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "QRコードで入金"
+    },
+    "screen": {
+      "headline": "お困りですか？",
+      "subtitle": "手動で入金を完了することができます。",
+      "tokenLabel": "トークン",
+      "networkLabel": "ネットワーク",
+      "warning": "このアドレスにはUSDT on Baseのみを送金してください。それ以外の場合、資産が失われる可能性があります。",
+      "copyWalletAddress": "ウォレットアドレスをコピーする",
+      "downloadQr": "QRコードをダウンロード"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "銀行口座",
     "card": "デビットカード",
@@ -1565,12 +1597,18 @@
     "title": "確認"
   },
   "transferInsufficientBalancePage": {
+    "title": "残高不足",
+    "paymentInsufficientBalance": "{{network}}ネットワークの残高が{{balance}}{{symbol}}では、この{{amount}}{{symbol}}の支払いを行うのに不十分です。",
+    "paymentInsufficientBalanceAndGas": "このトランザクションには、ガス料金を支払うために{{network}}ネットワークで{{amount}}{{symbol}}と約{{gasFee}}ドル相当のETHが必要です。",
+    "depositNoBalance": "{{network}}ネットワーク上に転送する{{symbol}}の残高がありません。",
+    "depositInsufficientBalanceAndGas": "このトランザクションには、正の{{symbol}}残高とガス料金を支払うために{{network}}ネットワーク上で約{{gasFee}}ドル相当のETHが必要です。",
+    "topUpAction": "ウォレットにチャージして、もう一度お試しください。",
     "gasBody": "{{network}}ネットワークのガス料金は{{symbol}}で支払われます。{{symbol}}残高を補充して、もう一度このトランザクションをお試しください。",
     "gasTitle": "ガス残高が不足しています",
+    "gasAndBalanceTitle": "ガスと残高が不足しています",
     "noBalanceBody": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
     "noBalanceTitle": "残高なし",
     "paymentBody": "残高不足のため、この購入を完了できません。",
-    "title": "残高不足",
     "transferBody": "この振込を完了するには残高が不足しています。"
   },
   "transferMfaPage": {

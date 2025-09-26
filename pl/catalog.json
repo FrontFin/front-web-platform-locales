@@ -247,20 +247,36 @@
     "continue": "Kontynuuj do {{walletName}}",
     "dappPage": {
       "continueButton": "Kontynuuj w {{walletName}}",
-      "depositTitle": "Wpłać z swojego portfela",
-      "payTitle": "Opłać w swoim portfelu",
       "qrSubtitle": "Otwórz aplikację aparatu w telefonie i zeskanuj kod QR, aby połączyć",
-      "spinnerText": "Ukończ płatność w swoim portfelu {{walletName}}",
+      "spinnerTransactionText": "Zakończ tę transakcję w aplikacji {{walletName}}",
+      "spinnerVerifyText": "Zakończ weryfikację własności w aplikacji {{walletName}}",
       "subtitle": "Kontynuuj w {{walletName}}. Wracaj tutaj, gdy skończysz.",
-      "verifyWalletTitle": "Zweryfikuj swój portfel",
-      "approveConnectionToVerifyLoadingText": "Zatwierdź połączenie, aby rozpocząć weryfikację",
-      "approveConnectionToPaymentLoadingText": "Zatwierdź połączenie, aby rozpocząć płatność",
-      "approveConnectionToDepositLoadingText": "Zatwierdź połączenie, aby rozpocząć wpłatę"
+      "payTitle": "Opłać w swoim portfelu",
+      "depositTitle": "Wpłać z swojego portfela",
+      "verifyWalletTitle": "Zweryfikuj swój portfel"
     },
     "previewButton": "Połącz",
     "previewTitle": "Połącz konto",
     "subtitle": "Kliknij poniżej, aby otworzyć {{walletName}}. Następnie zatwierdź prośbę o połączenie, aby wyświetlić podgląd płatności.",
     "title": "Połącz swój portfel"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Zaakceptuj połączenie, aby zweryfikować swój portfel",
+    "paymentFlowSubtitle": "Zaakceptuj połączenie, aby rozpocząć płatność",
+    "depositFlowSubtitle": "Zaakceptuj połączenie, aby rozpocząć przelew",
+    "title": "Połącz konto"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Zweryfikuj swój portfel",
+    "subtitleInitial": "Potwierdź, że posiadasz ten portfel, podpisując wiadomość. Jeśli nie widzisz żądania, kliknij przycisk poniżej.",
+    "titleAlreadyDenied": "Ups!",
+    "subtitleAlreadyDenied": "Wygląda na to, że odrzuciłeś prośbę o podpis. Revolut nie może zweryfikować własności Twojego portfela bez podpisu.",
+    "resend": "Wyślij ponownie prośbę o podpis"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Portfel zweryfikowany!",
+    "subtitle": "Wróć do {{clientName}}",
+    "returnToClient": "Wróć do {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Odrzuciłeś prośbę o połączenie swojego portfela, lub poprzednia prośba nadal jest aktywna.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Błąd konfiguracji",
     "emptyWalletBalance": "Pusty portfel",
     "exceedsApplicationLimit": "Przekroczono limit aplikacji",
+    "existingApiKey": "Istniejący klucz API",
     "expiredSmartDeposit": "Transakcja wygasła",
     "faceVerificationFailed": "Weryfikacja twarzy nie powiodła się",
     "failedToGetFundingOptions": "Błąd przy pobieraniu dostępnych metod wpłaty",
@@ -488,6 +505,7 @@
     "default": "Wystąpił błąd.",
     "emptyWalletBalance": "Brak środków na portfelu źródłowym.",
     "exceedsApplicationLimit": "Kwota transferu przekracza limit aplikacji.",
+    "existingApiKey": "Klucz API z tą konfiguracją już istnieje. Proszę użyć innej konfiguracji lub usunąć istniejący klucz.",
     "expiredSmartDeposit": "Transakcja wygasła",
     "expiredSmartDepositDeposit": "Smart Deposit wygasł",
     "expiredSmartOnramp": "Zakup wygasł",
@@ -618,7 +636,7 @@
     "automatedSwapFeeDescription": "Opłata ułatwiająca automatyczną zamianę aktywów w twoim portfelu na docelowy aktyw transferu.",
     "gasFeeDescription": "Szacowany koszt kompensacji walidatorów sieci za przetworzenie transakcji.",
     "institutionFeeDescription": "Ta opłata pokrywa koszt sieciowy za przetwarzanie wypłaty. Zależy ona od wybranej kryptowaluty oraz aktualnych warunków blockchain.",
-    "processingFee": "Opłata za przetwarzanie {{clientName}}",
+    "processingFee": "opłata za przetwarzanie {{clientName}}",
     "processingFeeDescription": "Opłata, którą {{clientName}} pobiera w celu ułatwienia realizacji tej transakcji.",
     "title": "Wliczone opłaty"
   },
@@ -1154,6 +1172,20 @@
     },
     "title": "Zaloguj się"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Złóż depozyt za pomocą kodu QR"
+    },
+    "screen": {
+      "headline": "Masz problemy?",
+      "subtitle": "Możesz nadal uzupełnić depozyt ręcznie.",
+      "tokenLabel": "Token",
+      "networkLabel": "Sieć",
+      "warning": "Prześlij tylko USDT na bazę tego adresu, w przeciwnym razie Twoje aktywa mogą zostać utracone.",
+      "copyWalletAddress": "Skopiuj adres portfela",
+      "downloadQr": "Pobierz kod QR"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Konto bankowe",
     "card": "Karta debetowa",
@@ -1330,7 +1362,7 @@
     "estimatedGasFeeHint": "Szacowane opłaty, które zostaną zapłacone walidatorom sieci jako wynagrodzenie za moc obliczeniową wykorzystaną do przetworzenia tej transakcji.",
     "from": "Od",
     "fundingWith": "Wpłata przez",
-    "institutionTransferFee": "Opłata za wypłatę {{selectedIntegrationName}}",
+    "institutionTransferFee": "opłata za wypłatę {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "Opłata pobierana przez {{selectedIntegrationName}} za transfer środków {{symbol}}.",
     "insufficientFunds": "Niewystarczające środki",
     "maxAmount": "Twoje konto może zasilić maksymalnie kwota <2>{{networkMaxAmount}}</2>. Czy chcesz dostosować kwotę transferu do tej wartości?",
@@ -1565,12 +1597,18 @@
     "title": "Weryfikacja"
   },
   "transferInsufficientBalancePage": {
+    "title": "Niewystarczające środki",
+    "paymentInsufficientBalance": "Twój {{balance}} {{symbol}} na sieci {{network}} jest niewystarczający, aby dokonać tej płatności w wysokości {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Ta transakcja wymaga {{amount}} {{symbol}} oraz ~${{gasFee}} w ETH na sieci {{network}}, aby opłacić koszty gazu.",
+    "depositNoBalance": "Nie masz salda {{symbol}} na sieci {{network}}, aby dokonać transferu.",
+    "depositInsufficientBalanceAndGas": "Ta transakcja wymaga salda różnego od zera w {{symbol}} oraz ~${{gasFee}} w ETH na sieci {{network}}, aby opłacić koszty gazu.",
+    "topUpAction": "Proszę doładować portfel i spróbować ponownie.",
     "gasBody": "Opłaty za gaz dla sieci {{network}} są opłacane w {{symbol}}. Proszę uzupełnić saldo {{symbol}}, a następnie spróbować ponownie.",
     "gasTitle": "Niewystarczające saldo gazu",
+    "gasAndBalanceTitle": "Niewystarczająca ilość gazu i brak środków na koncie",
     "noBalanceBody": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
     "noBalanceTitle": "Brak salda",
     "paymentBody": "Twoje saldo jest zbyt niskie, aby dokończyć ten zakup.",
-    "title": "Niewystarczające saldo",
     "transferBody": "Twoje saldo jest zbyt niskie, aby zakończyć ten transfer."
   },
   "transferMfaPage": {

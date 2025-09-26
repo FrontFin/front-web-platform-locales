@@ -247,20 +247,36 @@
     "continue": "Weiter zu {{walletName}}",
     "dappPage": {
       "continueButton": "Weiter in {{walletName}}",
-      "depositTitle": "Von Ihrer Wallet einzahlen",
-      "payTitle": "In Ihrer Wallet bezahlen",
       "qrSubtitle": "Öffnen Sie die Kamera-App auf Ihrem Telefon und scannen Sie den QR-Code, um die Verbindung herzustellen",
-      "spinnerText": "Beenden Sie die Zahlung in Ihrer {{walletName}} Wallet",
+      "spinnerTransactionText": "Beenden Sie diese Transaktion in Ihrer {{walletName}}-App",
+      "spinnerVerifyText": "Beenden Sie die Eigentumsüberprüfung in Ihrer {{walletName}}-App",
       "subtitle": "Fahren Sie mit {{walletName}} fort. Kehren Sie hier zurück, wenn Sie fertig sind.",
-      "verifyWalletTitle": "Verifiziere Deine Wallet",
-      "approveConnectionToVerifyLoadingText": "Verbindung genehmigen, um mit der Verifikation zu starten",
-      "approveConnectionToPaymentLoadingText": "Verbindung genehmigen, um mit der Zahlung zu starten",
-      "approveConnectionToDepositLoadingText": "Verbindung genehmigen, um mit der Einzahlung zu starten"
+      "payTitle": "In Ihrer Wallet bezahlen",
+      "depositTitle": "Von Ihrer Wallet einzahlen",
+      "verifyWalletTitle": "Verifiziere Deine Wallet"
     },
     "previewButton": "Verbinden",
     "previewTitle": "Konto verbinden",
     "subtitle": "Klicke unten, um {{walletName}} zu öffnen. Genehmige dann die Verbindungsanfrage für eine Vorschau Deiner Zahlung.",
     "title": "Deine Wallet verbinden"
+  },
+  "inWalletBrowserInitialPage": {
+    "verifyFlowSubtitle": "Genehmigen Sie die Verbindung, um Ihre Wallet zu überprüfen",
+    "paymentFlowSubtitle": "Genehmigen Sie die Verbindung, um Ihre Zahlung zu starten",
+    "depositFlowSubtitle": "Genehmigen Sie die Verbindung, um Ihre Überweisung zu starten",
+    "title": "Konto verbinden"
+  },
+  "inWalletBrowserVerifyPage": {
+    "titleInitial": "Verifiziere Deine Wallet",
+    "subtitleInitial": "Bestätigen Sie den Besitz dieser Wallet, indem Sie eine Nachricht unterzeichnen. Wenn Sie die Anfrage nicht sehen, klicken Sie unten auf den Button.",
+    "titleAlreadyDenied": "Ups!",
+    "subtitleAlreadyDenied": "Es scheint, dass Sie die Unterschriftenanforderung abgelehnt haben. Revolut kann das Eigentum an Ihrer Wallet ohne Unterschrift nicht verifizieren.",
+    "resend": "Unterschriftanfrage erneut senden"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "title": "Wallet verifiziert!",
+    "subtitle": "Zurück zu {{clientName}}",
+    "returnToClient": "Zurück zu {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Du hast die Anfrage zur Verbindung Deiner Wallet abgelehnt oder eine vorherige Anfrage ist noch aktiv.",
@@ -401,6 +417,7 @@
     "configurationMismatch": "Konfigurationsfehler",
     "emptyWalletBalance": "Leere Wallet",
     "exceedsApplicationLimit": "Überschreitet Anwendungslimit",
+    "existingApiKey": "Vorhandener API-Schlüssel",
     "expiredSmartDeposit": "Transaktion abgelaufen",
     "faceVerificationFailed": "Gesichtsverifizierung fehlgeschlagen",
     "failedToGetFundingOptions": "Fehler bei den Finanzierungsmöglichkeiten",
@@ -488,6 +505,7 @@
     "default": "Ein Fehler ist aufgetreten.",
     "emptyWalletBalance": "Herkunft-Wallet-Guthaben ist leer.",
     "exceedsApplicationLimit": "Überweisungsbetrag überschreitet das Anwendungslimit.",
+    "existingApiKey": "Ein API-Schlüssel mit dieser Konfiguration existiert bereits. Bitte verwenden Sie eine andere Konfiguration oder entfernen Sie den bestehenden Schlüssel.",
     "expiredSmartDeposit": "Transaktion abgelaufen",
     "expiredSmartDepositDeposit": "Einzahlung abgelaufen",
     "expiredSmartOnramp": "Kauf abgelaufen",
@@ -1154,6 +1172,20 @@
     },
     "title": "Anmelden"
   },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "Einzahlen mit QR-Code"
+    },
+    "screen": {
+      "headline": "Haben Sie Probleme?",
+      "subtitle": "Sie können Ihre Einzahlung trotzdem manuell abschließen.",
+      "tokenLabel": "Token",
+      "networkLabel": "Netzwerk",
+      "warning": "Überweisen Sie nur USDT auf Base an diese Adresse, andernfalls könnten Ihre Vermögenswerte verloren gehen.",
+      "copyWalletAddress": "Wallet-Adresse kopieren",
+      "downloadQr": "QR-Code herunterladen"
+    }
+  },
   "paymentMethods": {
     "bankAccount": "Bankkonto",
     "card": "Debitkarte",
@@ -1565,12 +1597,18 @@
     "title": "Verifizierung"
   },
   "transferInsufficientBalancePage": {
+    "title": "Unzureichende Mittel",
+    "paymentInsufficientBalance": "Ihr {{balance}} {{symbol}}-Guthaben im {{network}} Netzwerk reicht nicht aus, um diese Zahlung von {{amount}} {{symbol}} zu tätigen.",
+    "paymentInsufficientBalanceAndGas": "Diese Transaktion erfordert {{amount}} {{symbol}} und ~${{gasFee}} an ETH im {{network}} Netzwerk, um die Gebühren zu bezahlen.",
+    "depositNoBalance": "Sie haben kein {{symbol}}-Guthaben im {{network}} Netzwerk, das Sie übertragen könnten.",
+    "depositInsufficientBalanceAndGas": "Diese Transaktion erfordert ein Guthaben von mehr als null {{symbol}} und ~${{gasFee}} an ETH im {{network}} Netzwerk, um die Gebühren zu bezahlen.",
+    "topUpAction": "Bitte laden Sie Ihre Geldbörse auf und versuchen Sie es erneut.",
     "gasBody": "Gasgebühren für das {{network}}-Netzwerk werden in {{symbol}} bezahlt. Bitte füllen Sie Ihr {{symbol}}-Guthaben auf und versuchen Sie die Transaktion erneut.",
     "gasTitle": "Unzureichendes Gasguthaben",
+    "gasAndBalanceTitle": "Unzureichendes Gas- und Guthaben",
     "noBalanceBody": "Sie haben kein {{symbol}} Guthaben zu übertragen. Bitte füllen Sie Ihr Guthaben auf und versuchen Sie es erneut.",
     "noBalanceTitle": "Kein Guthaben",
     "paymentBody": "Ihr Kontostand ist zu niedrig, um diesen Kauf abzuschließen.",
-    "title": "Unzureichendes Guthaben",
     "transferBody": "Ihr Guthaben ist zu niedrig, um diese Überweisung abzuschließen."
   },
   "transferMfaPage": {
