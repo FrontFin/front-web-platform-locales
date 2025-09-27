@@ -55,6 +55,17 @@
     "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
     "title": "登录"
   },
+  "binanceDirectPasswordPage": {
+    "accountNotFound": "未找到 Binance 账户。",
+    "invalidEmail": "请输入有效的电子邮件或电话号码。填写电话号码时不允许输入空格或特殊字符。",
+    "nextButton": "下一步",
+    "noPasswordCta1": "继续使用 Binance",
+    "noPasswordCta2": "重置密码",
+    "noPasswordMessage": "您尚未为此账户设置密码。继续使用 Binance 应用程序或重置您的密码。",
+    "noPasswordTitle": "此账户没有密码",
+    "titleStep1": "登录",
+    "titleStep2": "输入您的密码"
+  },
   "binanceMfaPage": {
     "add2fa": "请在Binance账户中添加所需的双重认证方式（2FA）",
     "chooseAnotherAccount": "选择另一个账户",
@@ -261,9 +272,9 @@
     "title": "关联您的钱包"
   },
   "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "批准连接请求以验证您的钱包",
-    "paymentFlowSubtitle": "批准连接请求以开始付款",
-    "depositFlowSubtitle": "批准连接请求以开始转账",
+    "verifyFlowSubtitle": "批准验证您钱包的连接请求",
+    "paymentFlowSubtitle": "批准付款的连接请求",
+    "depositFlowSubtitle": "批准转账的连接请求",
     "title": "关联账户"
   },
   "inWalletBrowserVerifyPage": {
@@ -576,11 +587,11 @@
     "qrOrMobileLinkIn24Hours": "请在 24 小时后使用二维码或移动链接重试。",
     "loginFirst": "请先登录。",
     "pleaseLogin": "请登录。",
-    "pleaseTryAgainIn1Hour": "请在1小时后再试。",
+    "pleaseTryAgainIn1Hour": "请在1小时后重试。",
     "accountDisabled": "该帐户已被禁用。",
     "emailCodeExpired": "电子邮件验证码已过期。请申请新的代码。",
     "verificationFailed": "验证失败，请重试。",
-    "incorrect2faCode": "两因素认证代码错误。"
+    "incorrect2faCode": "双重验证代码错误。"
   },
   "errorPage": {
     "title": "出现错误。"
@@ -1177,7 +1188,7 @@
       "depositWithQr": "使用二维码存款"
     },
     "screen": {
-      "headline": "遇到问题？",
+      "headline": "遇到问题了？",
       "subtitle": "您仍然可以手动完成您的存款。",
       "tokenLabel": "代币",
       "networkLabel": "网络",
@@ -1348,7 +1359,7 @@
     "paymentTotalLabel": "支付总额",
     "payWithLabel": "使用...支付",
     "payWithLabelWithName": "使用 {{integrationName}} 支付",
-    "plusFees": "{{amount}} + 费用",
+    "plusFees": "{{amount}} +手续费",
     "processingPayment": "正在处理您的付款"
   },
   "previewTransfer": {
@@ -1358,7 +1369,7 @@
     "changeAmount": "更改金额",
     "depositTitle": "存款预览",
     "dustLeft": "您可能会有一些多余的{{symbol}}。",
-    "estimatedGasFee": "燃料费估计",
+    "estimatedGasFee": "预估燃料费",
     "estimatedGasFeeHint": "网络验证者处理交易的算力费用补偿估值。",
     "from": "发起者",
     "fundingWith": "充值方式",
@@ -1525,7 +1536,7 @@
     "errorMessage": {
       "insufficientFunds": "余额不足以支付转账和手续费。最大转账金额为 {{maxAmount}}。",
       "minimumAmount": "最小转账金额为 {{minAmount}}。",
-      "maximumAmount": "最大转账金额为 {{maxAmount}}。",
+      "maximumAmount": "最高转账金额为 {{maxAmount}}。",
       "zeroAmount": "请输入非零金额"
     },
     "title": {
@@ -1536,8 +1547,8 @@
     }
   },
   "transferAmountInput": {
-    "availableForDeposit": "{{amount}} 可用余额进行存款",
-    "basedOnYourBalances": "基于您的余额"
+    "availableForDeposit": "{{amount}} 可存款余额",
+    "basedOnYourBalances": "根据您的余额情况"
   },
   "transferCanceledPage": {
     "title": "转账已取消",
@@ -1605,7 +1616,7 @@
     "topUpAction": "请充值您的钱包后再试一次。",
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
     "gasTitle": "燃料费余额不足",
-    "gasAndBalanceTitle": "燃料费和余额不足",
+    "gasAndBalanceTitle": "燃料费和余额均不足",
     "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
