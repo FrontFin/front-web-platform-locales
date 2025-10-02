@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
+    "scanText": "扫描二维码在您的移动设备上完成此过程。",
+    "scanTitle": "在币安完成您的存款",
     "selectAnotherAccount": "选择另一个账户",
     "selectAnotherExchange": "请另选其他交易所或钱包进行存款。",
     "selectAsset": "选择要转账的资产",
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
     "youPay": "由您支付",
-    "youReceive": "由您接收",
-    "scanTitle": "在币安完成您的存款",
-    "scanText": "扫描二维码在您的移动设备上完成此过程。"
+    "youReceive": "由您接收"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "请求未被批准。如果是错误，请重试。",
@@ -262,36 +262,18 @@
     "continue": "继续前往{{walletName}}",
     "dappPage": {
       "continueButton": "继续前往 {{walletName}}",
+      "depositTitle": "用您的钱包充值",
+      "payTitle": "用您的钱包支付",
       "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
       "spinnerTransactionText": "在您的{{walletName}}应用中完成此次交易",
       "spinnerVerifyText": "在您的{{walletName}}应用中完成所有权验证",
       "subtitle": "在 {{walletName}} 中继续操作，完成后返回此页面。",
-      "payTitle": "用您的钱包支付",
-      "depositTitle": "用您的钱包充值",
       "verifyWalletTitle": "验证您的钱包"
     },
     "previewButton": "关联",
     "previewTitle": "关联账户",
     "subtitle": "点击下方打开{{walletName}}。批准该关联请求并预览您的支付。",
     "title": "关联您的钱包"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "批准验证您钱包的连接请求",
-    "paymentFlowSubtitle": "批准付款的连接请求",
-    "depositFlowSubtitle": "批准转账的连接请求",
-    "title": "关联账户"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "验证您的钱包",
-    "subtitleInitial": "通过签署消息确认您是此钱包的所有者。如果您未看到请求，请点击下方按钮。",
-    "titleAlreadyDenied": "哎哟，出了点问题！",
-    "subtitleAlreadyDenied": "看起来您拒绝了签名请求。没有签名，Revolut无法验证您钱包的所有权。",
-    "resend": "重新发送签名请求"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "钱包已验证！",
-    "subtitle": "返回{{clientName}}",
-    "returnToClient": "返回{{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "您已拒绝关联此钱包的请求，或之前请求仍在进行中。",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "提币请求超时"
   },
   "errorMessages": {
+    "accountDisabled": "该帐户已被禁用。",
+    "accountLocked": "此帐户已被锁定。",
     "accountNotFound": "账户信息获取失败",
     "addressAllowlistPending": "此收款地址已添加至您的白名单，正在等待冻结期结束。",
     "addressNotAllowlisted": "无法从 Coinbase 发起提币，您必须先将该地址添加到您的白名单：https://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Coinbase发生错误。请检查您的CB账号以查看转账是否成功。",
     "configurationMismatch": "无法发起转账。账户配置与请求的转账不匹配。",
     "default": "发生了一个错误。",
+    "emailCodeExpired": "邮件验证码已过期。请申请新的验证码。",
     "emptyWalletBalance": "源钱包余额为空。",
     "exceedsApplicationLimit": "转账金额超出申请限额。",
     "existingApiKey": "请删除您 Binance 账户中的现有 API 密钥，然后重试。",
@@ -530,13 +515,21 @@
     "failedToSaveFundingOptions": "保存充值方式失败",
     "feeAssetBalanceNotEnough": "余额不足以支付转账费用。",
     "fromAccountNotSupported": "此帐户目前不支持加密货币提现。",
+    "incorrect2faCode": "双重验证代码错误。",
+    "incorrectEmail": "您输入的电子邮件有误。",
+    "incorrectPasswordChancesRemaining": "密码错误。您还有 {{count}} 次机会。",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "用户名或密码错误。",
     "integrationNotAvailable": "该集成当前不可用。",
     "invalidCredentials": "登录凭证无效，请重试。",
     "invalidFromIntegrationToken": "请重新登录以继续。",
     "invalidIntegrationToken": "请重新登录以继续。",
+    "invalidPhoneNumber": "请输入有效的电话号码。",
     "invalidToIntegrationToken": "请重新登录以继续...步骤",
     "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
     "locked": "您的帐户已被锁定",
+    "loginFirst": "请先登录。",
+    "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
     "mfaNotSupported": "此操作不支持多重身份验证。",
     "networkDisabled": "网络当前已被禁用，无法使用。",
     "noAvailableSmartContract": "无可用的智能合约",
@@ -548,7 +541,11 @@
     "passKeyNotSupportedPayment": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试支付。",
     "passKeyNotSupportedRedirect": "系统正在切换至其他 Coinbase 提现方法……",
     "permissionDenied": "您没有访问此接口所需的权限，请联系Mesh团队申请访问权限。",
+    "pleaseLogin": "请登录。",
+    "pleaseTryAgain": "请重试。",
+    "pleaseTryAgainIn1Hour": "请在1小时后重试。",
     "previewExpired": "预览已过期。",
+    "qrOrMobileLinkIn24Hours": "请在 24 小时后使用二维码或移动链接重试。",
     "refusedByIntegration": "无法发起转账。",
     "refusedByIntegrationDeposit": "无法发起充值。",
     "refusedByIntegrationOnramp": "无法发起购买。",
@@ -562,6 +559,7 @@
     "symbolNotSupportedByTarget": "无法找到所请求币种的充值地址。",
     "symbolNotSupportedInRegion": "由于地区限制，Coinbase 暂不支持该币种",
     "toAccountNotSupported": "目标账户目前不支持加密货币入金。",
+    "tooManyAttemptsOneMinute": "尝试次数过多。请在 1 分钟后重试。",
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
     "tryAgainAfterLogin": "请登录后再试。",
@@ -570,6 +568,7 @@
     "unableToSendContactSupport": "您目前无法进行加密货币转账。请联系Coinbase客服。",
     "unauthorizedToken": "请重新登录以继续。",
     "userInfoUnavailable": "无法获取用户信息，请重试。",
+    "verificationFailed": "验证失败，请重试。",
     "webWithdrawalLimitExceeded": "您已超出Binance每日最高提款限额。",
     "whitelistAddressRequired": "目标地址必须添加至白名单。",
     "withdrawalDisabledDueToC2CDepositFreeze": "为保障您的资产安全，部分 C2C 充值资产将被冻结 24 小时。24 小时后，冻结状态将自动解除，您仍可提取加密货币。在冻结期间，其他交易不受影响，请正常使用 Binance 的交易服务。",
@@ -579,23 +578,7 @@
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提币，请稍后再试。",
     "withdrawalPendingDepositConfirmation": "您的充值尚未达到提币所需的锁定确认数。请查看交易记录获取更多详情。",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提币。",
-    "pleaseTryAgain": "请重试。",
-    "incorrectUsernameOrPassword": "用户名或密码错误。",
-    "incorrectPasswordChancesRemaining": "密码错误。您还有 {{count}} 次机会。",
-    "invalidPhoneNumber": "请输入有效的电话号码。",
-    "accountLocked": "此帐户已被锁定。",
-    "incorrectEmail": "您输入的电子邮件有误。",
-    "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
-    "tooManyAttemptsOneMinute": "尝试次数过多。请在 1 分钟后重试。",
-    "qrOrMobileLinkIn24Hours": "请在 24 小时后使用二维码或移动链接重试。",
-    "loginFirst": "请先登录。",
-    "pleaseLogin": "请登录。",
-    "pleaseTryAgainIn1Hour": "请在1小时后重试。",
-    "accountDisabled": "该帐户已被禁用。",
-    "emailCodeExpired": "邮件验证码已过期。请申请新的验证码。",
-    "verificationFailed": "验证失败，请重试。",
-    "incorrect2faCode": "双重验证代码错误。"
+    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提币。"
   },
   "errorPage": {
     "title": "出现错误。"
@@ -861,6 +844,8 @@
     "thirdParty": "您的资产绝不经过第三方"
   },
   "initialVerifyPage": {
+    "approveSignature": "在您的 {{walletName}} 应用中批准签名请求。",
+    "approveSignatureStillThere": "还在吗？请在您的 {{walletName}} 应用中批准签名请求。",
     "content40": "请确认您是此钱包持有者",
     "drawerTitle": "请在钱包中批准<1></1>签名请求",
     "item1Body": "随后会要求您在{{selectedIntegrationName}}中签署验证消息，以确认钱包所有权。",
@@ -871,9 +856,25 @@
     "resendAction": "重新发送签名请求",
     "title": "即将完成！",
     "verifyAction": "验证地址",
-    "verifyingLabel": "签名验证中......",
-    "approveSignature": "在您的 {{walletName}} 应用中批准签名请求。",
-    "approveSignatureStillThere": "还在吗？请在您的 {{walletName}} 应用中批准签名请求。"
+    "verifyingLabel": "签名验证中......"
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "批准转账的连接请求",
+    "paymentFlowSubtitle": "批准付款的连接请求",
+    "title": "关联账户",
+    "verifyFlowSubtitle": "批准验证您钱包的连接请求"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "返回{{clientName}}",
+    "subtitle": "返回{{clientName}}",
+    "title": "钱包已验证！"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "重新发送签名请求",
+    "subtitleAlreadyDenied": "看起来您拒绝了签名请求。没有签名，Revolut无法验证您钱包的所有权。",
+    "subtitleInitial": "通过签署消息确认您是此钱包的所有者。如果您未看到请求，请点击下方按钮。",
+    "titleAlreadyDenied": "哎哟，出了点问题！",
+    "titleInitial": "验证您的钱包"
   },
   "ipWhiteListPage": {
     "addIp": "将以下IP地址加至信任IP列表",
@@ -1195,13 +1196,13 @@
       "depositWithQr": "使用二维码存款"
     },
     "screen": {
+      "copyWalletAddress": "复制钱包地址",
+      "downloadQr": "下载二维码",
       "headline": "遇到问题了？",
+      "networkLabel": "网络",
       "subtitle": "您仍可以手动完成您的存款。",
       "tokenLabel": "代币",
-      "networkLabel": "网络",
-      "warning": "仅在 Base 上转移 USDT 至此地址，否则您的资产可能会丢失。",
-      "copyWalletAddress": "复制钱包地址",
-      "downloadQr": "下载二维码"
+      "warning": "仅在 Base 上转移 USDT 至此地址，否则您的资产可能会丢失。"
     }
   },
   "paymentMethods": {
@@ -1454,11 +1455,11 @@
     "cannotFundTitle": "资金无法支持交易",
     "defaultTitle": "选择代币",
     "depositTitle": "选择充值代币",
-    "networkTitle": "选择一个网络",
     "ineligibleAssets": "无法使用的资产",
     "link40Title": "选择一个代币",
     "loading": "正在加载您的资产……",
     "network": "{{networkName}} 网络",
+    "networkTitle": "选择一个网络",
     "noAssetsTitle": "关联账户中未检测出资产",
     "noEligibleAssetsTitle": "此账户中资产不符合该转账要求",
     "notEnoughtBody": "请向您的账户充值更多{{symbol}}，然后返回此处重试。",
@@ -1535,6 +1536,10 @@
     "subtitle": "由于价格或燃料费波动，您世纪获得{{symbol}}的金额可能低于预估值。",
     "title": "余额不足，请充值"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} 可存款余额",
+    "basedOnYourBalances": "根据您的余额情况"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "预览充值",
@@ -1543,8 +1548,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "余额不足以支付转账和手续费。最大转账金额为 {{maxAmount}}。",
-      "minimumAmount": "最小转账金额为 {{minAmount}}。",
       "maximumAmount": "最高转账金额为 {{maxAmount}}。",
+      "minimumAmount": "最小转账金额为 {{minAmount}}。",
       "zeroAmount": "请输入非零金额"
     },
     "title": {
@@ -1553,10 +1558,6 @@
       "onramp": "输入购买金额",
       "transfer": "输入转账金额"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} 可存款余额",
-    "basedOnYourBalances": "根据您的余额情况"
   },
   "transferCanceledPage": {
     "title": "转账已取消",
@@ -1616,18 +1617,18 @@
     "title": "验证"
   },
   "transferInsufficientBalancePage": {
-    "title": "余额不足",
-    "paymentInsufficientBalance": "您的 {{balance}} {{symbol}} 余额在 {{network}} 网络上不足以进行此 {{amount}} {{symbol}} 付款。",
-    "paymentInsufficientBalanceAndGas": "此交易需要 {{amount}} {{symbol}} 和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
-    "depositNoBalance": "您在 {{network}} 网络上没有可以转账的 {{symbol}} 余额。",
     "depositInsufficientBalanceAndGas": "此交易需要非零 {{symbol}} 余额和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
-    "topUpAction": "请充值您的钱包后再试一次。",
+    "depositNoBalance": "您在 {{network}} 网络上没有可以转账的 {{symbol}} 余额。",
+    "gasAndBalanceTitle": "燃料费和余额均不足",
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
     "gasTitle": "燃料费余额不足",
-    "gasAndBalanceTitle": "燃料费和余额均不足",
     "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
+    "paymentInsufficientBalance": "您的 {{balance}} {{symbol}} 余额在 {{network}} 网络上不足以进行此 {{amount}} {{symbol}} 付款。",
+    "paymentInsufficientBalanceAndGas": "此交易需要 {{amount}} {{symbol}} 和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
+    "title": "余额不足",
+    "topUpAction": "请充值您的钱包后再试一次。",
     "transferBody": "您的余额不足，无法完成此次转账。"
   },
   "transferMfaPage": {
@@ -1712,8 +1713,8 @@
   "verifyErrorPage": {
     "body": "您已拒绝在您的钱包中签署请求，或先前的请求仍处于活动状态。{{clientName}} 无法在没有签名的情况下验证您钱包的所有权。",
     "body40": "您可能拒绝了钱包中的签名请求，或之前的请求未完成。请签名，否则{{clientName}} 无法确认您钱包的所有权。",
-    "title": "验证被拒绝",
-    "timeout": "请查看您的钱包并在 {{walletName}} 里批准签名请求。"
+    "timeout": "请查看您的钱包并在 {{walletName}} 里批准签名请求。",
+    "title": "验证被拒绝"
   },
   "wallectConnect": {
     "noActiveSessionError": "暂无活动状态中的WalletConnect会话",
@@ -1721,10 +1722,10 @@
     "unknownError": "发生未知错误。{{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "{{walletName}}钱包所有权已完成验证。",
     "completePaymentMessage": "返回您的结账页面以完成 {{clientName}} 的购买。",
     "continueMessage": "请继续在您的{{clientName}}应用中操作。",
-    "successMessage": "您已成功验证对 {{walletName}} 钱包的所有权。",
-    "alreadyVerified": "{{walletName}}钱包所有权已完成验证。"
+    "successMessage": "您已成功验证对 {{walletName}} 钱包的所有权。"
   },
   "withdrawalLockedErrorPage": {
     "another": "从其他账户转账",

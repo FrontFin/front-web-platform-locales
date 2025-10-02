@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "trên {{networkName}}"
     },
+    "scanText": "Quét mã QR để hoàn tất quá trình trên thiết bị di động của bạn.",
+    "scanTitle": "Hoàn thành khoản tiền gửi của bạn tại Binance",
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherExchange": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền.",
     "selectAsset": "Chọn tài sản để giao dịch",
     "selectCurrency": "Chọn đơn vị tiền tệ",
     "selectNetwork": "Chọn mạng lưới chuyển tiền",
     "youPay": "Bạn trả",
-    "youReceive": "Bạn nhận được",
-    "scanTitle": "Hoàn thành khoản tiền gửi của bạn tại Binance",
-    "scanText": "Quét mã QR để hoàn tất quá trình trên thiết bị di động của bạn."
+    "youReceive": "Bạn nhận được"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Có vẻ như bạn đã không phê duyệt yêu cầu. Nếu đó là một sai lầm, xin vui lòng thử lại.",
@@ -262,36 +262,18 @@
     "continue": "Tiếp tục đến {{walletName}}",
     "dappPage": {
       "continueButton": "Tiếp tục trong {{walletName}}",
+      "depositTitle": "Nạp tiền từ ví của bạn",
+      "payTitle": "Thanh toán từ ví của bạn",
       "qrSubtitle": "Mở ứng dụng máy ảnh trên điện thoại của bạn và quét mã QR để kết nối",
       "spinnerTransactionText": "Hoàn tất giao dịch này trong ứng dụng {{walletName}} của bạn",
       "spinnerVerifyText": "Hoàn tất xác minh quyền sở hữu trong ứng dụng {{walletName}} của bạn",
       "subtitle": "Tiếp tục trong {{walletName}}. Quay lại đây khi bạn hoàn tất.",
-      "payTitle": "Thanh toán từ ví của bạn",
-      "depositTitle": "Nạp tiền từ ví của bạn",
       "verifyWalletTitle": "Xác minh ví của bạn"
     },
     "previewButton": "Kết nối",
     "previewTitle": "Kết nối tài khoản",
     "subtitle": "Nhấp vào bên dưới để mở {{walletName}}. Sau đó chấp nhận yêu cầu kết nối để xem trước khoản thanh toán của bạn.",
     "title": "Kết nối ví của bạn"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Chấp nhận kết nối để xác minh ví của bạn",
-    "paymentFlowSubtitle": "Chấp nhận kết nối để bắt đầu thanh toán của bạn",
-    "depositFlowSubtitle": "Chấp nhận kết nối để bắt đầu chuyển khoản của bạn",
-    "title": "Kết nối tài khoản"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "Xác minh ví của bạn",
-    "subtitleInitial": "Xác nhận bạn sở hữu ví này bằng cách ký một tin nhắn. Nếu bạn không thấy yêu cầu, hãy nhấp vào nút bên dưới.",
-    "titleAlreadyDenied": "Rất tiếc!",
-    "subtitleAlreadyDenied": "Có vẻ như bạn đã từ chối yêu cầu chữ ký. Revolut không thể xác minh quyền sở hữu của ví của bạn nếu không có chữ ký.",
-    "resend": "Gửi lại yêu cầu chữ ký"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "Ví đã được xác minh!",
-    "subtitle": "Quay lại {{clientName}}",
-    "returnToClient": "Quay lại {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Bạn đã từ chối yêu cầu kết nối ví hoặc yêu cầu trước đó vẫn đang hoạt động.",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Hết hạn rút tiền"
   },
   "errorMessages": {
+    "accountDisabled": "Tài khoản này đã bị vô hiệu hóa.",
+    "accountLocked": "Tài khoản này đã bị khóa.",
     "accountNotFound": "Không thể truy xuất tài khoản của bạn.",
     "addressAllowlistPending": "Địa chỉ người nhận này đã được thêm vào Danh sách an toàn của bạn và hiện đang chờ giữ lệnh.",
     "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
     "configurationMismatch": "Không thể khởi tạo chuyển khoản. Cấu hình tài khoản không phù hợp với yêu cầu chuyển tiền.",
     "default": "Đã xảy ra lỗi.",
+    "emailCodeExpired": "Mã xác minh email đã hết hạn. Vui lòng yêu cầu mã mới.",
     "emptyWalletBalance": "Số dư ví nguồn trống.",
     "exceedsApplicationLimit": "Số tiền chuyển vượt quá giới hạn ứng dụng.",
     "existingApiKey": "Vui lòng xóa khóa API hiện tại trong tài khoản Binance của bạn, sau đó thử lại.",
@@ -530,13 +515,21 @@
     "failedToSaveFundingOptions": "Không thể lưu tùy chọn nạp tiền",
     "feeAssetBalanceNotEnough": "Không đủ tiền để thanh toán phí chuyển tiền.",
     "fromAccountNotSupported": "Tài khoản hiện tại không hỗ trợ rút tiền điện tử.",
+    "incorrect2faCode": "Mã 2FA không chính xác.",
+    "incorrectEmail": "Bạn đã nhập sai email.",
+    "incorrectPasswordChancesRemaining": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "Tên đăng nhập hoặc mật khẩu không đúng.",
     "integrationNotAvailable": "Tích hợp này hiện không khả dụng.",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
     "invalidFromIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
     "invalidIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
+    "invalidPhoneNumber": "Hãy nhập một số điện thoại hợp lệ.",
     "invalidToIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
     "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
     "locked": "Tài khoản của bạn bị khóa",
+    "loginFirst": "Vui lòng đăng nhập trước.",
+    "loginWithQrOrMobileLink": "Vui lòng đăng nhập bằng mã QR hoặc liên kết di động.",
     "mfaNotSupported": "Xác thực đa yếu tố không được hỗ trợ cho hoạt động này.",
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
     "noAvailableSmartContract": "Không có Hợp đồng Thông minh khả dụng",
@@ -548,7 +541,11 @@
     "passKeyNotSupportedPayment": "Rất tiếc, Passkey 2FA hiện không được hỗ trợ. Vui lòng thêm Google Authenticator như một phương thức 2FA bổ sung và thử thanh toán lại.",
     "passKeyNotSupportedRedirect": "Đang chuyển hướng đến phương pháp rút tiền Coinbase thay thế...",
     "permissionDenied": "Bạn không có quyền truy cập cần thiết để truy cập điểm cuối này, vui lòng liên hệ với đội ngũ Mesh để yêu cầu truy cập.",
+    "pleaseLogin": "Vui lòng đăng nhập.",
+    "pleaseTryAgain": "Vui lòng thử lại.",
+    "pleaseTryAgainIn1Hour": "Vui lòng thử lại sau 1 giờ.",
     "previewExpired": "Bản xem trước đã hết hạn.",
+    "qrOrMobileLinkIn24Hours": "Vui lòng thử lại sau 24 giờ bằng mã QR hoặc liên kết di động.",
     "refusedByIntegration": "Không thể bắt đầu chuyển khoản.",
     "refusedByIntegrationDeposit": "Không thể bắt đầu gửi tiền.",
     "refusedByIntegrationOnramp": "Không thể bắt đầu mua hàng.",
@@ -562,6 +559,7 @@
     "symbolNotSupportedByTarget": "Không thể tìm thấy địa chỉ gửi tiền cho đồng tiền được yêu cầu.",
     "symbolNotSupportedInRegion": "Biểu tượng được chọn không được Coinbase hỗ trợ do hạn chế vùng.",
     "toAccountNotSupported": "Tài khoản đích hiện không hỗ trợ gửi tiền điện tử.",
+    "tooManyAttemptsOneMinute": "Quá nhiều lần thử. Vui lòng thử lại sau 1 phút.",
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Giao dịch chuyển tiền đã được yêu cầu trước đó.",
     "tryAgainAfterLogin": "Vui lòng thử lại sau khi đăng nhập.",
@@ -570,6 +568,7 @@
     "unableToSendContactSupport": "Hiện tại, bạn không thể gửi tiền mã hóa. Vui lòng liên hệ với bộ phận hỗ trợ của Coinbase.",
     "unauthorizedToken": "Vui lòng đăng nhập lại để tiếp tục.",
     "userInfoUnavailable": "Không thể lấy thông tin người dùng. Vui lòng thử lại.",
+    "verificationFailed": "Xác minh không thành công, vui lòng thử lại.",
     "webWithdrawalLimitExceeded": "Bạn đã vượt quá hạn mức rút tiền tối đa trong ngày cho phiên bản web của Binance.",
     "whitelistAddressRequired": "Địa chỉ nhận phải nằm trong danh sách cho phép.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Để đảm bảo an toàn cho tài sản của bạn, một số tài sản nạp C2C cần được đóng băng trong 24 giờ. Sau 24 giờ, trạng thái đóng băng sẽ được tự động gỡ bỏ và bạn có thể rút tiền mã hóa. Trong thời gian đóng băng, giao dịch tại chỗ của bạn sẽ không bị ảnh hưởng, vui lòng sử dụng dịch vụ giao dịch của Binance như bình thường.",
@@ -579,23 +578,7 @@
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "withdrawalLockedP2P": "Vì lý do bảo mật của bạn, việc rút tiền bị vô hiệu hóa trong 24 giờ sau giao dịch P2P. Vui lòng thử lại sau.",
     "withdrawalPendingDepositConfirmation": "Số lần nạp tiền của bạn chưa đáp ứng đủ điều kiện để mớ khóa chức năng rút tiền. Vui lòng kiểm tra lịch sử giao dịch để biết thêm chi tiết.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Rút tiền có thể thực hiện ít nhất 48 giờ sau khi mua hoặc nạp tiền.",
-    "pleaseTryAgain": "Vui lòng thử lại.",
-    "incorrectUsernameOrPassword": "Tên đăng nhập hoặc mật khẩu không đúng.",
-    "incorrectPasswordChancesRemaining": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
-    "invalidPhoneNumber": "Hãy nhập một số điện thoại hợp lệ.",
-    "accountLocked": "Tài khoản này đã bị khóa.",
-    "incorrectEmail": "Bạn đã nhập sai email.",
-    "loginWithQrOrMobileLink": "Vui lòng đăng nhập bằng mã QR hoặc liên kết di động.",
-    "tooManyAttemptsOneMinute": "Quá nhiều lần thử. Vui lòng thử lại sau 1 phút.",
-    "qrOrMobileLinkIn24Hours": "Vui lòng thử lại sau 24 giờ bằng mã QR hoặc liên kết di động.",
-    "loginFirst": "Vui lòng đăng nhập trước.",
-    "pleaseLogin": "Vui lòng đăng nhập.",
-    "pleaseTryAgainIn1Hour": "Vui lòng thử lại sau 1 giờ.",
-    "accountDisabled": "Tài khoản này đã bị vô hiệu hóa.",
-    "emailCodeExpired": "Mã xác minh email đã hết hạn. Vui lòng yêu cầu mã mới.",
-    "verificationFailed": "Xác minh không thành công, vui lòng thử lại.",
-    "incorrect2faCode": "Mã 2FA không chính xác."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Rút tiền có thể thực hiện ít nhất 48 giờ sau khi mua hoặc nạp tiền."
   },
   "errorPage": {
     "title": "Đã xảy ra lỗi."
@@ -861,6 +844,8 @@
     "thirdParty": "Tài sản của bạn không bao giờ tiếp xúc với bên thứ ba"
   },
   "initialVerifyPage": {
+    "approveSignature": "Chấp nhận yêu cầu chữ ký trong ứng dụng {{walletName}} của bạn.",
+    "approveSignatureStillThere": "Vẫn ở đó chứ?… Vui lòng chấp nhận yêu cầu chữ ký trong ứng dụng {{walletName}} của bạn.",
     "content40": "Xác nhận bạn sở hữu ví này",
     "drawerTitle": "Phê duyệt yêu cầu chữ ký<1></1> trong ví của bạn",
     "item1Body": "Bạn sẽ được một tin nhắn yêu cầu ký trên {{selectedIntegrationName}} để xác nhận bạn là chủ sở hữu của ví này.",
@@ -871,9 +856,25 @@
     "resendAction": "Gửi lại yêu cầu chữ ký",
     "title": "Gần xong rồi!",
     "verifyAction": "Xác minh địa chỉ",
-    "verifyingLabel": "Đang xác minh chữ ký...",
-    "approveSignature": "Chấp nhận yêu cầu chữ ký trong ứng dụng {{walletName}} của bạn.",
-    "approveSignatureStillThere": "Vẫn ở đó chứ?… Vui lòng chấp nhận yêu cầu chữ ký trong ứng dụng {{walletName}} của bạn."
+    "verifyingLabel": "Đang xác minh chữ ký..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "Chấp nhận kết nối để bắt đầu chuyển khoản của bạn",
+    "paymentFlowSubtitle": "Chấp nhận kết nối để bắt đầu thanh toán của bạn",
+    "title": "Kết nối tài khoản",
+    "verifyFlowSubtitle": "Chấp nhận kết nối để xác minh ví của bạn"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "Quay lại {{clientName}}",
+    "subtitle": "Quay lại {{clientName}}",
+    "title": "Ví đã được xác minh!"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "Gửi lại yêu cầu chữ ký",
+    "subtitleAlreadyDenied": "Có vẻ như bạn đã từ chối yêu cầu chữ ký. Revolut không thể xác minh quyền sở hữu của ví của bạn nếu không có chữ ký.",
+    "subtitleInitial": "Xác nhận bạn sở hữu ví này bằng cách ký một tin nhắn. Nếu bạn không thấy yêu cầu, hãy nhấp vào nút bên dưới.",
+    "titleAlreadyDenied": "Rất tiếc!",
+    "titleInitial": "Xác minh ví của bạn"
   },
   "ipWhiteListPage": {
     "addIp": "Thêm địa chỉ IP bên dưới làm Địa chỉ IP đáng tin cậy",
@@ -1195,13 +1196,13 @@
       "depositWithQr": "Gửi tiền bằng mã QR"
     },
     "screen": {
+      "copyWalletAddress": "Sao chép địa chỉ ví",
+      "downloadQr": "Tải xuống mã QR",
       "headline": "Gặp khó khăn?",
+      "networkLabel": "Mạng",
       "subtitle": "Bạn vẫn có thể hoàn thành gửi tiền của mình bằng cách thủ công.",
       "tokenLabel": "Token",
-      "networkLabel": "Mạng",
-      "warning": "Chỉ chuyển USDT trên Base đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất",
-      "copyWalletAddress": "Sao chép địa chỉ ví",
-      "downloadQr": "Tải xuống mã QR"
+      "warning": "Chỉ chuyển USDT trên Base đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất"
     }
   },
   "paymentMethods": {
@@ -1454,11 +1455,11 @@
     "cannotFundTitle": "Không thể cấp tiền cho giao dịch",
     "defaultTitle": "Chọn một token",
     "depositTitle": "Chọn token nạp",
-    "networkTitle": "Chọn một mạng",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
     "link40Title": "Chọn một đồng tiền",
     "loading": "Đang tải tài sản của bạn...",
     "network": "mạng {{networkName}}",
+    "networkTitle": "Chọn một mạng",
     "noAssetsTitle": "Không thấy tài sản nào trong tài khoản liên kết",
     "noEligibleAssetsTitle": "Không có tài sản nào trong tài khoản này đủ điều kiện để chuyển khoản",
     "notEnoughtBody": "Thêm {{symbol}} vào tài khoản của bạn, sau đó quay lại đây để thử lại.",
@@ -1535,6 +1536,10 @@
     "subtitle": "Số dư {{symbol}} mua của bạn thấp hơn dự kiến do giá và/hoặc biến động khí.",
     "title": "Cần nạp tiền"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} có sẵn để gửi tiền",
+    "basedOnYourBalances": "Dựa trên số dư của bạn"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Xem trước khoản tiền gửi",
@@ -1543,8 +1548,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "Số dư không đủ để thực hiện chuyển khoản và phí gas. Số tiền chuyển tối đa là {{maxAmount}}.",
-      "minimumAmount": "Số tiền chuyển tối thiểu là {{minAmount}}.",
       "maximumAmount": "Số tiền chuyển tối đa là {{maxAmount}}.",
+      "minimumAmount": "Số tiền chuyển tối thiểu là {{minAmount}}.",
       "zeroAmount": "Vui lòng nhập một số tiền khác không"
     },
     "title": {
@@ -1553,10 +1558,6 @@
       "onramp": "Nhập số tiền mua",
       "transfer": "Nhập số tiền giao dịch a"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} có sẵn để gửi tiền",
-    "basedOnYourBalances": "Dựa trên số dư của bạn"
   },
   "transferCanceledPage": {
     "title": "Chuyển khoản đã bị hủy",
@@ -1616,18 +1617,18 @@
     "title": "Xác minh"
   },
   "transferInsufficientBalancePage": {
-    "title": "Không đủ ngân sách",
-    "paymentInsufficientBalance": "Số dư {{balance}} {{symbol}} của bạn trên mạng {{network}} không đủ để thực hiện thanh toán {{amount}} {{symbol}} này.",
-    "paymentInsufficientBalanceAndGas": "Giao dịch này yêu cầu {{amount}} {{symbol}} và ~${{gasFee}} giá trị ETH trên mạng {{network}} để trả phí gas.",
-    "depositNoBalance": "Bạn không có số dư {{symbol}} trên mạng {{network}} để chuyển.",
     "depositInsufficientBalanceAndGas": "Giao dịch này yêu cầu số dư {{symbol}} không phải bằng 0 và ~${{gasFee}} giá trị ETH trên mạng {{network}} để trả phí gas.",
-    "topUpAction": "Vui lòng nạp thêm vào ví của bạn và thử lại.",
+    "depositNoBalance": "Bạn không có số dư {{symbol}} trên mạng {{network}} để chuyển.",
+    "gasAndBalanceTitle": "Không đủ phí gas và số dư",
     "gasBody": "Phí gas cho mạng {{network}} được trả bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào số dư của bạn và thử giao dịch này một lần nữa.",
     "gasTitle": "Không đủ số dư để trả phí gas",
-    "gasAndBalanceTitle": "Không đủ phí gas và số dư",
     "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
     "noBalanceTitle": "Không có số dư",
     "paymentBody": "Số dư của bạn quá thấp để hoàn thành giao dịch mua này.",
+    "paymentInsufficientBalance": "Số dư {{balance}} {{symbol}} của bạn trên mạng {{network}} không đủ để thực hiện thanh toán {{amount}} {{symbol}} này.",
+    "paymentInsufficientBalanceAndGas": "Giao dịch này yêu cầu {{amount}} {{symbol}} và ~${{gasFee}} giá trị ETH trên mạng {{network}} để trả phí gas.",
+    "title": "Không đủ ngân sách",
+    "topUpAction": "Vui lòng nạp thêm vào ví của bạn và thử lại.",
     "transferBody": "Số dư của bạn quá thấp để hoàn thành chuyển khoản này."
   },
   "transferMfaPage": {
@@ -1712,8 +1713,8 @@
   "verifyErrorPage": {
     "body": "Bạn đã từ chối yêu cầu chữ ký trong ví của mình hoặc một yêu cầu trước đó vẫn đang hoạt động. {{clientName}} không thể xác minh quyền sở hữu ví của bạn nếu không có chữ ký.",
     "body40": "Có vẻ như bạn đã từ chối yêu cầu chữ ký trong ví của mình, hoặc một yêu cầu trước đó vẫn đang hoạt động. {{clientName}} không thể xác minh quyền sở hữu ví của bạn nếu không có chữ ký.",
-    "title": "Từ chối xác minh",
-    "timeout": "Vui lòng kiểm tra ví của bạn và chấp nhận yêu cầu chữ ký trong ứng dụng {{walletName}} của bạn."
+    "timeout": "Vui lòng kiểm tra ví của bạn và chấp nhận yêu cầu chữ ký trong ứng dụng {{walletName}} của bạn.",
+    "title": "Từ chối xác minh"
   },
   "wallectConnect": {
     "noActiveSessionError": "Không có phiên WalletConnect đang hoạt động",
@@ -1721,10 +1722,10 @@
     "unknownError": "Lỗi không xác định. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "Quyền sở hữu ví {{walletName}} đã được xác minh rồi.",
     "completePaymentMessage": "Vui lòng quay lại trang thanh toán để hoàn tất giao dịch mua {{clientName}}.",
     "continueMessage": "Vui lòng tiếp tục trong ứng dụng {{clientName}} của bạn.",
-    "successMessage": "Bạn đã xác minh thành công quyền sở hữu của ví {{walletName}} của mình.",
-    "alreadyVerified": "Quyền sở hữu ví {{walletName}} đã được xác minh rồi."
+    "successMessage": "Bạn đã xác minh thành công quyền sở hữu của ví {{walletName}} của mình."
   },
   "withdrawalLockedErrorPage": {
     "another": "Giao dịch từ tài khoản khác",
