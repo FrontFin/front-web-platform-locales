@@ -34,7 +34,9 @@
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
     "youPay": "支払う",
-    "youReceive": "受け取る"
+    "youReceive": "受け取る",
+    "scanTitle": "Binanceで入金を完了してください",
+    "scanText": "モバイルデバイスでプロセスを完了するにはQRコードをスキャンしてください。"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "要求を承認しなかったようです。それが間違いであれば、再試行してください。",
@@ -54,6 +56,19 @@
     "or": "または",
     "scanText": "電話のカメラまたはBinanceアプリでスキャンしてログインします。",
     "title": "ログイン"
+  },
+  "binanceDirectPasswordPage": {
+    "accountNotFound": "Binanceアカウントが見つかりません。",
+    "emailPhoneInput": "メール/電話番号（国コードを除く）",
+    "invalidEmail": "有効なメールアドレスまたは電話番号を入力してください。電話番号にスペースや特殊文字は使用できません。",
+    "nextButton": "次へ",
+    "noPasswordCta1": "Binanceアプリで続行",
+    "noPasswordCta2": "パスワードをリセットする",
+    "noPasswordMessage": "このアカウントにはパスワードが設定されていません。Binanceアプリで続行するか、パスワードをリセットしてください。",
+    "noPasswordTitle": "このアカウントのパスワードがありません",
+    "passwordInput": "パスワード",
+    "titleStep1": "ログイン",
+    "titleStep2": "パスワードを入力してください"
   },
   "binanceMfaPage": {
     "add2fa": "Binanceで必要な二要素認証(2FA)方法を追加してください",
@@ -505,7 +520,7 @@
     "default": "エラーが発生しました。",
     "emptyWalletBalance": "元のウォレットの残高が空です。",
     "exceedsApplicationLimit": "送金額が申請上限を超えています。",
-    "existingApiKey": "この設定のAPIキーはすでに存在します。別の設定を使用するか、既存のキーを削除してください。",
+    "existingApiKey": "バイナンスアカウントで既存のAPIキーを削除してから、再試行してください。",
     "expiredSmartDeposit": "トランザクションの有効期限が切れました",
     "expiredSmartDepositDeposit": "入金の有効期限が切れました",
     "expiredSmartOnramp": "購入の有効期限が切れました",
@@ -967,8 +982,11 @@
     "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
+    "codeSent": "<0>{{emailOrPhone}}</0>に送信されましたコード",
     "enterCode": "ログインしようとしているのが本当にご本人であることを確認するために、<1></1>ワンタイムコードを入力してください。",
+    "enterCode2": "認証アプリの<0>コードを入力してください。</0>",
     "enterPin": "取引PINコードを入力してください",
+    "enterVerificationCode": "確認コードを入力",
     "title": "確認",
     "verify": "確認する"
   },
@@ -1436,6 +1454,7 @@
     "cannotFundTitle": "取引に必要な資金が不足しています",
     "defaultTitle": "トークンを選択",
     "depositTitle": "入金用のトークンを選択",
+    "networkTitle": "ネットワークを選択",
     "ineligibleAssets": "送金対象外の資産",
     "link40Title": "トークンを選択",
     "loading": "資産を読み込み中。。。",

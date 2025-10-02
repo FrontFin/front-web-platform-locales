@@ -34,7 +34,9 @@
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
     "youPay": "Sinä maksat",
-    "youReceive": "Sinä vastaanotat"
+    "youReceive": "Sinä vastaanotat",
+    "scanTitle": "Viimeistele talletuksesi Binancessa",
+    "scanText": "Skannaa QR-koodi suorittaaksesi prosessin päätökseen mobiililaitteellasi."
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
@@ -54,6 +56,19 @@
     "or": "tai",
     "scanText": "Skannaa puhelimesi kameralla tai Binance-sovelluksella kirjautuaksesi sisään.",
     "title": "Sisäänkirjautuminen"
+  },
+  "binanceDirectPasswordPage": {
+    "accountNotFound": "Binance-tiliä ei löytynyt.",
+    "emailPhoneInput": "Sähköposti/Puhelin (ilman maatunnusta)",
+    "invalidEmail": "Anna kelvollinen sähköposti tai puhelinnumero. Puhelinnumeron kohdalla välilyönnit ja erikoismerkit eivät ole sallittuja.",
+    "nextButton": "Seuraava",
+    "noPasswordCta1": "Jatka Binance-sovelluksella",
+    "noPasswordCta2": "Palauta salasana",
+    "noPasswordMessage": "Et ole asettanut salasanaa tälle tilille. Jatka Binance-sovelluksen kautta tai nollaa salasanasi.",
+    "noPasswordTitle": "Ei salasanaa tälle tilille",
+    "passwordInput": "Salasana",
+    "titleStep1": "Sisäänkirjautuminen",
+    "titleStep2": "Syötä salasanasi"
   },
   "binanceMfaPage": {
     "add2fa": "Lisää vaaditut kaksivaiheisen tunnistautumisen (2FA) menetelmät Binanceen",
@@ -417,7 +432,7 @@
     "configurationMismatch": "Määritysvirhe",
     "emptyWalletBalance": "Tyhjä lompakko",
     "exceedsApplicationLimit": "Ylittää sovelluksen rajan",
-    "existingApiKey": "Nykyinen API-avain",
+    "existingApiKey": "Olemassa oleva API-avain",
     "expiredSmartDeposit": "Tapahtuma vanhentunut",
     "faceVerificationFailed": "Kasvojentunnistus epäonnistui",
     "failedToGetFundingOptions": "Virhe rahoitustavoissa",
@@ -505,7 +520,7 @@
     "default": "Tapahtui virhe.",
     "emptyWalletBalance": "Lähdelompakon saldo on tyhjä.",
     "exceedsApplicationLimit": "Siirtosumma ylittää sovelluksen rajan.",
-    "existingApiKey": "API-avain tällä kokoonpanolla on jo olemassa. Käytä toista kokoonpanoa tai poista nykyinen avain.",
+    "existingApiKey": "Poista ensin olemassa oleva API-avain Binance-tililtäsi ja yritä sitten uudelleen.",
     "expiredSmartDeposit": "Tapahtuma vanhentunut",
     "expiredSmartDepositDeposit": "Älytalletus vanhentunut",
     "expiredSmartOnramp": "Osto vanhentunut",
@@ -967,8 +982,11 @@
     "twoFactor": "Syötä koodi, jonka <1>{{selectedIntegrationName}}</1> -tilillesi määritelty kaksivaiheinen tunnistautumistapa on antanut."
   },
   "mfaPage": {
+    "codeSent": "Koodi lähetetty osoitteeseen <0>{{emailOrPhone}}</0>",
     "enterCode": "Syötä kertakäyttökoodi varmistaaksesi, että<1></1>olet todella kirjatumassa sisään.",
+    "enterCode2": "Syötä koodi <0>todennussovelluksestasi.</0>",
     "enterPin": "Syötä kaupankäynnin PIN-koodisi",
+    "enterVerificationCode": "Anna vahvistuskoodi",
     "title": "Varmistus",
     "verify": "Vahvista"
   },
@@ -1436,6 +1454,7 @@
     "cannotFundTitle": "Tapahtumaa ei voida rahoittaa",
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
+    "networkTitle": "Valitse verkko",
     "ineligibleAssets": "Kelpaamattomat varat",
     "link40Title": "Valitse tunnus",
     "loading": "Ladataan omaisuuttasi...",

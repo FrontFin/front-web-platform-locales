@@ -34,7 +34,9 @@
     "selectCurrency": "Bir para birimi seçin",
     "selectNetwork": "Transfer ağını seçin",
     "youPay": "Ödemeniz gereken tutar",
-    "youReceive": "Alacağınız tutar"
+    "youReceive": "Alacağınız tutar",
+    "scanTitle": "Binance'ta mevduatınızı tamamlayın",
+    "scanText": "İşlemi mobil cihazınızda tamamlamak için QR kodunu tarayın."
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Görünüşe göre isteği onaylamadınız. Bu bir hata ise lütfen tekrar deneyin.",
@@ -54,6 +56,19 @@
     "or": "ya da",
     "scanText": "Giriş yapmak için telefon kameranız veya Binance uygulaması ile tarayın.",
     "title": "Giriş yap"
+  },
+  "binanceDirectPasswordPage": {
+    "accountNotFound": "Binance hesabı bulunamadı.",
+    "emailPhoneInput": "E-posta/Telefon (ülke kodu olmadan)",
+    "invalidEmail": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin. Telefon numarası için boşluk veya özel karakterlere izin verilmez.",
+    "nextButton": "İleri",
+    "noPasswordCta1": "Binance uygulaması ile devam et",
+    "noPasswordCta2": "Şifreyi sıfırla",
+    "noPasswordMessage": "Bu hesap için bir şifre belirlemediniz. Binance uygulamasıyla devam edin veya şifrenizi sıfırlayın.",
+    "noPasswordTitle": "Bu hesap için şifre yok",
+    "passwordInput": "Şifre",
+    "titleStep1": "Giriş yap",
+    "titleStep2": "Şifrenizi girin"
   },
   "binanceMfaPage": {
     "add2fa": "Lütfen Binance'de gerekli İki Faktörlü Kimlik Doğrulama (2FA) yöntemlerini ekleyin",
@@ -417,7 +432,7 @@
     "configurationMismatch": "Yapılandırma hatası",
     "emptyWalletBalance": "Boş cüzdan",
     "exceedsApplicationLimit": "Uygulama Limiti Aşıldı",
-    "existingApiKey": "Mevcut API Anahtarı",
+    "existingApiKey": "Varolan API Anahtarı",
     "expiredSmartDeposit": "İşlemin süresi doldu",
     "faceVerificationFailed": "Yüz Doğrulaması Başarısız Oldu",
     "failedToGetFundingOptions": "Fonlama seçenekleri hatası",
@@ -505,7 +520,7 @@
     "default": "Bir hata oluştu.",
     "emptyWalletBalance": "Kaynak cüzdan bakiyesi boş.",
     "exceedsApplicationLimit": "Transfer miktarı uygulama limitini aşıyor.",
-    "existingApiKey": "Bu yapılandırmaya sahip bir API anahtarı zaten mevcut. Lütfen farklı bir yapılandırma kullanın veya mevcut anahtarı kaldırın.",
+    "existingApiKey": "Lütfen Binance hesabınızdaki mevcut API anahtarını silin ve yeniden deneyin.",
     "expiredSmartDeposit": "İşlemin süresi doldu",
     "expiredSmartDepositDeposit": "Para Yatırma Süresi Doldu",
     "expiredSmartOnramp": "Satın Alma Süresi Doldu",
@@ -967,8 +982,11 @@
     "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu girin."
   },
   "mfaPage": {
+    "codeSent": "Kod <0>{{emailOrPhone}}</0>'e gönderildi",
     "enterCode": "Giriş yapan kişinin gerçekten siz olduğunuzu<1></1>onaylamak için tek seferlik kodunuzu girin.",
+    "enterCode2": "<0>kimlik doğrulama uygulamanızdan</0> kodu girin.",
     "enterPin": "İşlem PIN'inizi girin",
+    "enterVerificationCode": "Doğrulama kodunu girin",
     "title": "Doğrulama",
     "verify": "Doğrula"
   },
@@ -1434,8 +1452,9 @@
     "binanceDirectNoAssetsBody2": "Hesabınıza para ekleyebilir veya transferinize devam etmek için farklı bir hesap bağlayabilirsiniz.",
     "cannotFundBody": "Bu işlemi gerçekleştirmek için bu hesaptaki kripto veya fiat bakiyeniz yetersiz.",
     "cannotFundTitle": "İşlem finanse edilemiyor",
-    "defaultTitle": "Token seçin",
+    "defaultTitle": "Bir jeton seçin",
     "depositTitle": "Yatırılacak token'ı seçin",
+    "networkTitle": "Bir ağı seçin",
     "ineligibleAssets": "Uygun olmayan varlıklar",
     "link40Title": "Bir token seçin",
     "loading": "Varlıklarınız yükleniyor...",

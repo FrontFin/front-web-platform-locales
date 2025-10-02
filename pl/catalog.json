@@ -34,7 +34,9 @@
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
     "youPay": "Płacisz",
-    "youReceive": "Otrzymujesz"
+    "youReceive": "Otrzymujesz",
+    "scanTitle": "Ukończ wpłatę na Binance",
+    "scanText": "Zeskanuj kod QR, aby zakończyć proces na swoim urządzeniu mobilnym."
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Wygląda na to, że nie zatwierdziłeś prośby. Jeśli to był błąd, spróbuj ponownie.",
@@ -54,6 +56,19 @@
     "or": "lub",
     "scanText": "Zeskanuj kod za pomocą aparatu telefonu lub aplikacji Binance, aby zalogować się.",
     "title": "Zaloguj się"
+  },
+  "binanceDirectPasswordPage": {
+    "accountNotFound": "Konto Binance nie zostało znalezione.",
+    "emailPhoneInput": "Email/Telefon (bez kodu kraju)",
+    "invalidEmail": "Proszę wprowadzić prawidłowy adres email lub numer telefonu. Spacje oraz znaki specjalne nie są dozwolone w numerze telefonu.",
+    "nextButton": "Dalej",
+    "noPasswordCta1": "Kontynuuj w aplikacji Binance",
+    "noPasswordCta2": "Zresetuj hasło",
+    "noPasswordMessage": "Nie ustawiłeś hasła dla tego konta. Kontynuuj korzystając z aplikacji Binance lub zresetuj swoje hasło.",
+    "noPasswordTitle": "Brak hasła do tego konta.",
+    "passwordInput": "Hasło",
+    "titleStep1": "Zaloguj się",
+    "titleStep2": "Wprowadź swoje hasło."
   },
   "binanceMfaPage": {
     "add2fa": "Proszę dodać wymagane metody uwierzytelniania dwuskładnikowego (2FA) w Binance",
@@ -505,7 +520,7 @@
     "default": "Wystąpił błąd.",
     "emptyWalletBalance": "Brak środków na portfelu źródłowym.",
     "exceedsApplicationLimit": "Kwota transferu przekracza limit aplikacji.",
-    "existingApiKey": "Klucz API z tą konfiguracją już istnieje. Proszę użyć innej konfiguracji lub usunąć istniejący klucz.",
+    "existingApiKey": "Usuń istniejący klucz API w swoim koncie Binance, a następnie spróbuj ponownie.",
     "expiredSmartDeposit": "Transakcja wygasła",
     "expiredSmartDepositDeposit": "Smart Deposit wygasł",
     "expiredSmartOnramp": "Zakup wygasł",
@@ -967,8 +982,11 @@
     "twoFactor": "Podaj kod wygenerowany przez metodę uwierzytelniania dwuskładnikowego, którą skonfigurowałeś na koncie <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
+    "codeSent": "Kod wysłany na <0>{{emailOrPhone}}</0>",
     "enterCode": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty próbujesz się zalogować.<1></1>",
+    "enterCode2": "Wprowadź kod z <0>aplikacji uwierzytelniającej.</0>",
     "enterPin": "Wpisz swój kod PIN do transakcji",
+    "enterVerificationCode": "Wprowadź kod weryfikacyjny",
     "title": "Weryfikacja",
     "verify": "Zweryfikuj"
   },
@@ -1436,6 +1454,7 @@
     "cannotFundTitle": "Nie masz wystarczających środków, aby wykonać tę transakcję",
     "defaultTitle": "Wybierz token",
     "depositTitle": "Wybierz token wpłaty",
+    "networkTitle": "Wybierz sieć",
     "ineligibleAssets": "Niewłaściwe środki",
     "link40Title": "Wybierz token",
     "loading": "Ładowanie twoich środków...",
