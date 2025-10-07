@@ -28,6 +28,8 @@
     "receiveAmountInput": {
       "networkName": "on {{networkName}}"
     },
+    "scanText": "Scan with your phone camera or the Binance app to finish your transaction.",
+    "scanTitle": "Finish in Binance",
     "selectAnotherAccount": "Select another account",
     "selectAnotherExchange": "Please select another exchange or wallet to deposit from.",
     "selectAsset": "Select asset to transfer",
@@ -50,10 +52,10 @@
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Continue with Binance app",
-    "descriptionDeposit": "<1>Return here to deposit</1> after connecting with your Binance mobile app.",
-    "descriptionGeneral": "<1>Return here to continue</1> after connecting with your Binance mobile app.",
-    "descriptionOnRamp": "<1>Return here to continue</1> after connecting with your Binance mobile app.",
-    "descriptionPay": "<1>Return here to pay</1> after connecting with your Binance mobile app.",
+    "descriptionDeposit": "<0>Return here to deposit</0> after connecting with your Binance mobile app.",
+    "descriptionGeneral": "<0>Return here to continue</0> after connecting with your Binance mobile app.",
+    "descriptionOnRamp": "<0>Return here to continue</0> after connecting with your Binance mobile app.",
+    "descriptionPay": "<0>Return here to pay</0> after connecting with your Binance mobile app.",
     "loginWithEmailButton": "Login with Email/Phone",
     "or": "or",
     "scanText": "Scan with your phone camera or the Binance app to log in.",
@@ -240,13 +242,20 @@
     "changeCurrency": "Change currency"
   },
   "dappDoneTransferPage": {
-    "subtitle": "Please go back to {{clientName}} to finalize your purchase.",
-    "title": "Confirm your payment in {{clientName}}",
-    "paymentSuccess":"Payment Successfull!",
-    "paymentSubtitle": "Return to your checkout page to finalize your order",
-    "depositSuccess":"Success!",
+    "depositSubtitle": "Return to {{clientName}}",
+    "depositSuccess": "Success!",
     "depositTitle": "You will receive <1>{{amountCrypto}} ~ {{amountFiat}}</1> in <2></2>{{clientName}}.",
-    "depositSubtitle": "Return to {{clientName}}"
+    "paymentSubtitle": "Return to your checkout page to finalize your order",
+    "paymentSuccess": "Payment Successfull!",
+    "subtitle": "Please go back to {{clientName}} to finalize your purchase.",
+    "title": "Confirm your payment in {{clientName}}"
+  },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "Return to {{clientName}}",
+    "depositSuccess": "Success!",
+    "depositTitle": "You will receive <2>{{amountCrypto}} ~ {{amountFiat}}</2> in<5></5>{{clientName}}.",
+    "paymentSubtitle": "Return to your checkout page to finalize your order",
+    "paymentSuccess": "Payment Successfull!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "It looks like you denied the connection request, or a previous request is still active. If that was a mistake, try again.",
@@ -269,36 +278,18 @@
     "continue": "Continue to {{walletName}}",
     "dappPage": {
       "continueButton": "Continue in {{walletName}}",
+      "depositTitle": "Deposit from your wallet",
+      "payTitle": "Pay in your wallet",
       "qrSubtitle": "Open the camera app on your phone and scan the QR code to link",
       "spinnerTransactionText": "Finish this transaction in your {{walletName}} app",
       "spinnerVerifyText": "Finish ownership verification in your {{walletName}} app",
       "subtitle": "Continue in {{walletName}}. Return here when you're done.",
-      "payTitle": "Pay in your wallet",
-      "depositTitle": "Deposit from your wallet",
       "verifyWalletTitle": "Verify your wallet"
     },
     "previewButton": "Connect",
     "previewTitle": "Connect account",
     "subtitle": "Click below to open {{walletName}}. Then approve the connection request to preview your payment.",
     "title": "Connect your wallet"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approve connection to verify your wallet",
-    "paymentFlowSubtitle": "Approve connection to start your payment",
-    "depositFlowSubtitle": "Approve connection to start your transfer",
-    "title": "Connect account"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "Verify your wallet",
-    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
-    "titleAlreadyDenied": "Oops!",
-    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
-    "resend": "Resend signature request"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "Wallet verified!",
-    "subtitle": "Return to {{clientName}}",
-    "returnToClient": "Return to {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "You have declined the request to connect your wallet, or a previous request is still active.",
@@ -506,6 +497,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Withdrawals Timeout"
   },
   "errorMessages": {
+    "accountDisabled": "This account has been disabled.",
+    "accountLocked": "This account has been locked.",
     "accountNotFound": "Unable to retrieve your account (s).",
     "addressAllowlistPending": "This recipient address has been added to your Allow List and is pending a hold.",
     "addressNotAllowlisted": "Unable to initiate withdrawal from Coinbase. You must add this recipient address to your Allow List here: https://www.coinbase.com/settings/allowlist",
@@ -525,6 +518,7 @@
     "coinbaseUnavailable": "Coinbase had an error. Go check your CB account to see if the transfer went through.",
     "configurationMismatch": "Unable to initiate transfer. The configuration of the account does not match the requested transfer.",
     "default": "An error has occurred.",
+    "emailCodeExpired": "Email verification code expired. Please request a new code.",
     "emptyWalletBalance": "Source wallet balance is empty.",
     "exceedsApplicationLimit": "Transfer amount exceeds the application limit.",
     "existingApiKey": "Please delete the existing API key in your Binance account, then try again.",
@@ -537,13 +531,22 @@
     "failedToSaveFundingOptions": "Failed to save funding options",
     "feeAssetBalanceNotEnough": "Insufficient funds for transfer fees.",
     "fromAccountNotSupported": "Account does not currently support crypto withdrawals.",
+    "incorrect2faCode": "Incorrect 2FA code.",
+    "incorrectEmail": "You have entered an incorrect email.",
+    "incorrectPasswordChancesRemaining": "Incorrect password. You have {{count}} chances remaining.",
+    "incorrectPasswordChancesRemaining_one": "Incorrect password. You have {{count}} chance remaining.",
+    "incorrectPasswordChancesRemaining_other": "Incorrect password. You have {{count}} chances remaining.",
+    "incorrectUsernameOrPassword": "Incorrect username or password.",
     "integrationNotAvailable": "The integration is not currently available.",
     "invalidCredentials": "Invalid credentials. Please try again.",
     "invalidFromIntegrationToken": "Please login again to continue.",
     "invalidIntegrationToken": "Please login again to continue.",
+    "invalidPhoneNumber": "Please enter a valid phone number.",
     "invalidToIntegrationToken": "Please login again to continue..",
     "kycRequired": "Unable to intiate transfer. Integration requires accounts to complete KYC verifiation before enabling crypto transfers.",
     "locked": "Your account is locked",
+    "loginFirst": "Please log in first.",
+    "loginWithQrOrMobileLink": "Please login using QR code or Mobile link.",
     "mfaNotSupported": "Multi-factor authentication is not supported for this operation.",
     "networkDisabled": "Network is currently disabled and cannot be used.",
     "noAvailableSmartContract": "No Smart Contract available",
@@ -555,7 +558,11 @@
     "passKeyNotSupportedPayment": "Unfortunately, Passkey 2FA is not currently supported. Please add Google Authenticator as an additional 2FA and retry the payment.",
     "passKeyNotSupportedRedirect": "Redirecting to an alternate Coinbase withdrawal method...",
     "permissionDenied": "You do not have the necessary permissions to access this endpoint, please contact the Mesh team to request access.",
+    "pleaseLogin": "Please login.",
+    "pleaseTryAgain": "Please try again.",
+    "pleaseTryAgainIn1Hour": "Please try again in 1 hour.",
     "previewExpired": "The preview has expired.",
+    "qrOrMobileLinkIn24Hours": "Please try again in 24 hours using QR code or Mobile link.",
     "refusedByIntegration": "Unable to initiate transfer.",
     "refusedByIntegrationDeposit": "Unable to initiate deposit.",
     "refusedByIntegrationOnramp": "Unable to initiate purchase.",
@@ -569,6 +576,7 @@
     "symbolNotSupportedByTarget": "Could not find deposit address for the requested coin.",
     "symbolNotSupportedInRegion": "A selected symbol is not supported by Coinbase due to region restrictions",
     "toAccountNotSupported": "Destination account does not currently support crypto deposits.",
+    "tooManyAttemptsOneMinute": "Too many attempts. Please try again in 1 minute.",
     "tooManyRequests": "Please try again later.",
     "transferAlreadyRequested": "The transfer is already requested.",
     "tryAgainAfterLogin": "Please try again after logging in.",
@@ -577,6 +585,7 @@
     "unableToSendContactSupport": "You are currently unable to send crypto. Please contact Coinbase support.",
     "unauthorizedToken": "Please login again to continue.",
     "userInfoUnavailable": "Unable to get user info. Please try again.",
+    "verificationFailed": "Verification failed. Please try again.",
     "webWithdrawalLimitExceeded": "You have exceeded the maximum daily withdrawal limit for Binance.",
     "whitelistAddressRequired": "Destination address must be whitelisted.",
     "withdrawalDisabledDueToC2CDepositFreeze": "For the safety of your assets, some of your C2C Deposit assets need to be frozen for 24 hours. After 24 hours, the frozen state will be automatically lifted and you can withdraw crypto. During the freezing period, your on-site transactions will not be affected, please use Binance's transaction services normally.",
@@ -586,23 +595,7 @@
     "withdrawalLocked": "For your security, withdrawals are disabled for 24hrs after a change to account settings. Please try again later.",
     "withdrawalLockedP2P": "For your security, withdrawals are disabled for 24hrs after a P2P purchase. Please try again later.",
     "withdrawalPendingDepositConfirmation": "Your deposit has not met the required unlock confirmations for withdrawal. Please check the Transaction History for more details.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Withdrawals can be made at least 48 hours after a buy or deposit transaction.",
-    "pleaseTryAgain": "Please try again.",
-    "incorrectUsernameOrPassword": "Incorrect username or password.",
-    "incorrectPasswordChancesRemaining": "Incorrect password. You have {{count}} chances remaining.",
-    "invalidPhoneNumber": "Please enter a valid phone number.",
-    "accountLocked": "This account has been locked.",
-    "incorrectEmail": "You have entered an incorrect email.",
-    "loginWithQrOrMobileLink": "Please login using QR code or Mobile link.",
-    "tooManyAttemptsOneMinute": "Too many attempts. Please try again in 1 minute.",
-    "qrOrMobileLinkIn24Hours": "Please try again in 24 hours using QR code or Mobile link.",
-    "loginFirst": "Please log in first.",
-    "pleaseLogin": "Please login.",
-    "pleaseTryAgainIn1Hour": "Please try again in 1 hour.",
-    "accountDisabled": "This account has been disabled.",
-    "emailCodeExpired": "Email verification code expired. Please request a new code.",
-    "verificationFailed": "Verification failed. Please try again.",
-    "incorrect2faCode": "Incorrect 2FA code."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Withdrawals can be made at least 48 hours after a buy or deposit transaction."
   },
   "errorPage": {
     "title": "An error has occurred."
@@ -868,6 +861,8 @@
     "thirdParty": "Your assets never touch a third party"
   },
   "initialVerifyPage": {
+    "approveSignature": "Approve the signature request in your {{walletName}} app.",
+    "approveSignatureStillThere": "Still there?…  Please approve the signature request in your {{walletName}} app.",
     "content40": "Confirm you own this wallet",
     "drawerTitle": "Approve the signature request<1></1> in your wallet",
     "item1Body": "You’ll be prompted to sign a message in {{selectedIntegrationName}} that confirms you own this wallet.",
@@ -878,9 +873,25 @@
     "resendAction": "Resend signature request",
     "title": "Almost there!",
     "verifyAction": "Verify address",
-    "verifyingLabel": "Verifying signature...",
-    "approveSignature": "Approve the signature request in your {{walletName}} app.",
-    "approveSignatureStillThere": "Still there?…  Please approve the signature request in your {{walletName}} app."
+    "verifyingLabel": "Verifying signature..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "Approve connection to start your transfer",
+    "paymentFlowSubtitle": "Approve connection to start your payment",
+    "title": "Connect account",
+    "verifyFlowSubtitle": "Approve connection to verify your wallet"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "Return to {{clientName}}",
+    "subtitle": "Return to {{clientName}}",
+    "title": "Wallet verified!"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "Resend signature request",
+    "subtitleAlreadyDenied": "It looks like you denied the signature request. Revolut cannot verify ownership of your wallet without a signature.",
+    "subtitleInitial": "Confirm you own this wallet by signing a message. If you don't see the request, click the button below.",
+    "titleAlreadyDenied": "Oops!",
+    "titleInitial": "Verify your wallet"
   },
   "ipWhiteListPage": {
     "addIp": "Add the IP address below as a Trusted IP",
@@ -989,7 +1000,9 @@
     "twoFactor": "Enter the code provided by the two-factor authentication method you have configured in your <1>{{selectedIntegrationName}}</1> account."
   },
   "mfaPage": {
-    "codeSent": "Code sent to <0>{{emailOrPhone}}</0>",
+    "codeSentEmail": "Code sent to your email",
+    "codeSentEmailOrPhoneValue": "Code sent to <0>{{emailOrPhone}}</0>",
+    "codeSentPhone": "Code sent to your phone via SMS",
     "enterCode": "Enter your one-time code to confirm it’s<1></1>really you trying to log in.",
     "enterCode2": "Enter the code from your <0>authenticator app.</0>",
     "enterPin": "Enter your trading PIN",
@@ -1199,16 +1212,21 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "Deposit with QR code"
+      "depositWithQr": "Deposit with QR code",
+      "depositWithWalletAddress": "Deposit with wallet address",
+      "dontSeeYourAccount": "Don't see your account?",
+      "needAnotherWay": "Need another way?"
     },
     "screen": {
-      "headline": "Having trouble?",
+      "copiedWalletAddress": "Copied",
+      "copyWalletAddress": "Copy wallet address",
+      "depositToClient": "Deposit to {{clientName}}",
+      "downloadQr": "Download the QR code",
+      "headline": "Deposit {{token}} on {{network}}",
+      "networkLabel": "Network",
       "subtitle": "You can still complete your deposit manually.",
       "tokenLabel": "Token",
-      "networkLabel": "Network",
-      "warning": "Only transfer USDT on Base to this address otherwise, your assets may be lost",
-      "copyWalletAddress": "Copy wallet address",
-      "downloadQr": "Download the QR code"
+      "warning": "Only transfer {{token}} on {{network}} to this address otherwise, your assets may be lost"
     }
   },
   "paymentMethods": {
@@ -1263,6 +1281,7 @@
     "exitPage": {
       "continuePayment": "Continue With Payment",
       "exit": "Exit",
+      "exitAnyway": "Exit anyway",
       "subtitle": "Your progress will be lost.",
       "title": "Are you sure you want to exit?"
     },
@@ -1461,11 +1480,11 @@
     "cannotFundTitle": "Cannot fund transaction",
     "defaultTitle": "Select a token",
     "depositTitle": "Select deposit token",
-    "networkTitle": "Choose a network",
     "ineligibleAssets": "Ineligible assets",
     "link40Title": "Choose a token",
     "loading": "Loading your assets...",
     "network": "{{networkName}} network",
+    "networkTitle": "Choose a network",
     "noAssetsTitle": "No assets detected in the linked account",
     "noEligibleAssetsTitle": "No assets in this account are eligible for this transfer",
     "notEnoughtBody": "Add more {{symbol}} to your account, then return here to try again.",
@@ -1542,6 +1561,10 @@
     "subtitle": "Your purchased {{symbol}} balance is lower than expected due to price and/or gas fluctuations.",
     "title": "Top-up needed"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} available for deposit",
+    "basedOnYourBalances": "Based on your balances"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Preview deposit",
@@ -1550,8 +1573,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "Insufficient funds to cover transfer and gas fees. Maximum transfer amount is {{maxAmount}}.",
-      "minimumAmount": "Minimum transfer amount is {{minAmount}}.",
       "maximumAmount": "Maximum transfer amount is {{maxAmount}}.",
+      "minimumAmount": "Minimum transfer amount is {{minAmount}}.",
       "zeroAmount": "Please enter a non-zero amount"
     },
     "title": {
@@ -1560,10 +1583,6 @@
       "onramp": "Enter purchase amount",
       "transfer": "Enter transfer amount"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} available for deposit",
-    "basedOnYourBalances": "Based on your balances"
   },
   "transferCanceledPage": {
     "title": "Transfer canceled",
@@ -1623,18 +1642,18 @@
     "title": "Verification"
   },
   "transferInsufficientBalancePage": {
-    "title": "Insufficient funds",
-    "paymentInsufficientBalance": "Your {{balance}} {{symbol}} balance on the {{network}} network is insufficient to make this {{amount}} {{symbol}} payment.",
-    "paymentInsufficientBalanceAndGas": "This transaction requires {{amount}} {{symbol}} and ~${{gasFee}} worth of ETH on the {{network}} network to pay gas fees.",
-    "depositNoBalance": "You have no {{symbol}} balance on the {{network}} network to transfer.",
     "depositInsufficientBalanceAndGas": "This transaction requires a non-zero {{symbol}} balance and ~${{gasFee}} worth of ETH on the {{network}} network to pay gas fees.",
-    "topUpAction": "Please top up your wallet and try again.",
+    "depositNoBalance": "You have no {{symbol}} balance on the {{network}} network to transfer.",
+    "gasAndBalanceTitle": "Insufficient gas and balance",
     "gasBody": "Gas fees for the {{network}} network are paid in {{symbol}}. Please top up your {{symbol}} balance and then try this transaction again.",
     "gasTitle": "Insufficient gas balance",
-    "gasAndBalanceTitle": "Insufficient gas and balance",
     "noBalanceBody": "You have no {{symbol}} balance to transfer. Please top up your balance and try again.",
     "noBalanceTitle": "No balance",
     "paymentBody": "Your balance is too low to complete this purchase.",
+    "paymentInsufficientBalance": "Your {{balance}} {{symbol}} balance on the {{network}} network is insufficient to make this {{amount}} {{symbol}} payment.",
+    "paymentInsufficientBalanceAndGas": "This transaction requires {{amount}} {{symbol}} and ~${{gasFee}} worth of ETH on the {{network}} network to pay gas fees.",
+    "title": "Insufficient funds",
+    "topUpAction": "Please top up your wallet and try again.",
     "transferBody": "Your balance is too low to complete this transfer."
   },
   "transferMfaPage": {
@@ -1719,8 +1738,8 @@
   "verifyErrorPage": {
     "body": "You have declined the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
     "body40": "It looks like you denied the signature request in your wallet, or a previous request is still active. {{clientName}} cannot verify ownership of your wallet without a signature.",
-    "title": "Verification declined",
-    "timeout": "Please check your wallet and approve the signature request in your {{walletName}} app."
+    "timeout": "Please check your wallet and approve the signature request in your {{walletName}} app.",
+    "title": "Verification declined"
   },
   "wallectConnect": {
     "noActiveSessionError": "No active WalletConnect session",
@@ -1728,10 +1747,10 @@
     "unknownError": "An unknown error occurred. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "Ownership of {{walletName}} wallet has already been verified.",
     "completePaymentMessage": "Return to your checkout experience to complete your {{clientName}} purchase.",
     "continueMessage": "Please continue in your {{clientName}} app.",
-    "successMessage": "You have successfully verified ownership of your {{walletName}} wallet.",
-    "alreadyVerified": "Ownership of {{walletName}} wallet has already been verified."
+    "successMessage": "You have successfully verified ownership of your {{walletName}} wallet."
   },
   "withdrawalLockedErrorPage": {
     "another": "Transfer from another account",

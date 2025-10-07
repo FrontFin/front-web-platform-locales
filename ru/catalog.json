@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "на {{networkName}}"
     },
+    "scanText": "Сканируйте QR-код, чтобы завершить процесс на вашем мобильном устройстве.",
+    "scanTitle": "Завершите ваш депозит на Binance",
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
     "selectAsset": "Выберите актив для перевода",
     "selectCurrency": "Выберите валюту",
     "selectNetwork": "Выберите сеть для перевода",
     "youPay": "Вы платите",
-    "youReceive": "Вы получаете",
-    "scanTitle": "Завершите ваш депозит на Binance",
-    "scanText": "Сканируйте QR-код, чтобы завершить процесс на вашем мобильном устройстве."
+    "youReceive": "Вы получаете"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Похоже, вы не одобрили запрос. Если это ошибка, пожалуйста, попробуйте снова.",
@@ -262,36 +262,18 @@
     "continue": "Перейти к {{walletName}}",
     "dappPage": {
       "continueButton": "Продолжить в {{walletName}}",
+      "depositTitle": "Пополните с вашего электронного кошелька",
+      "payTitle": "Оплатите с вашего электронного кошелька",
       "qrSubtitle": "Откройте приложение камеры на вашем телефоне и отсканируйте QR-код, чтобы связать",
       "spinnerTransactionText": "Завершите эту транзакцию в вашем приложении {{walletName}}",
       "spinnerVerifyText": "Завершите проверку владения в вашем приложении {{walletName}}",
       "subtitle": "Продолжите в {{walletName}}. Вернитесь сюда, когда закончите.",
-      "payTitle": "Оплатите с вашего электронного кошелька",
-      "depositTitle": "Пополните с вашего электронного кошелька",
       "verifyWalletTitle": "Проверка вашего электронного кошелька"
     },
     "previewButton": "Подключить",
     "previewTitle": "Подключить аккаунт",
     "subtitle": "Нажмите ниже, чтобы открыть {{walletName}}. Затем одобрите запрос на подключение, чтобы просмотреть ваш платеж.",
     "title": "Подключить ваш электронный кошелек"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Подтвердите подключение, чтобы проверить ваш электронный кошелек",
-    "paymentFlowSubtitle": "Подтвердите подключение, чтобы начать оплату",
-    "depositFlowSubtitle": "Подтвердите подключение, чтобы начать перевод",
-    "title": "Подключить аккаунт"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "Проверка вашего электронного кошелька",
-    "subtitleInitial": "Подтвердите, что вы владеете этим электронным кошельком, подписав сообщение. Если вы не видите запрос, нажмите кнопку ниже.",
-    "titleAlreadyDenied": "Ой!",
-    "subtitleAlreadyDenied": "Кажется, вы отклонили запрос на подпись. Revolut не может подтвердить право владения вашим электронным кошельком без подписи.",
-    "resend": "Повторно отправить запрос на подпись"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "Электронный кошелек проверен!",
-    "subtitle": "Вернуться к {{clientName}}",
-    "returnToClient": "Вернуться к {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Вы отклонили запрос на подключение вашего кошелька, или предыдущий запрос все еще активен.",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Тайм-аут снятия средств"
   },
   "errorMessages": {
+    "accountDisabled": "Этот аккаунт был отключен.",
+    "accountLocked": "Этот аккаунт заблокирован.",
     "accountNotFound": "Не удается получить информацию о вашей учетной записи.",
     "addressAllowlistPending": "Этот адрес получателя добавлен в ваш список разрешённых и ожидает разблокировки.",
     "addressNotAllowlisted": "Не удается начать вывод с Coinbase. Добавьте этот адрес получателя в свой список разрешённых адресов здесь: https://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Произошла ошибка на Coinbase. Проверьте свой аккаунт, чтобы узнать, проведён ли перевод.",
     "configurationMismatch": "Не удается начать перевод. Конфигурация учетной записи не соответствует запрашиваемому переводу.",
     "default": "Произошла ошибка.",
+    "emailCodeExpired": "Срок действия кода проверки электронной почты истек. Пожалуйста, запросите новый код.",
     "emptyWalletBalance": "Баланс исходного кошелька пуст.",
     "exceedsApplicationLimit": "Сумма перевода превышает лимит.",
     "existingApiKey": "Пожалуйста, удалите существующий API ключ в вашей учетной записи Binance и попробуйте снова.",
@@ -530,13 +515,24 @@
     "failedToSaveFundingOptions": "Не удалось сохранить варианты финансирования",
     "feeAssetBalanceNotEnough": "Недостаточно средств для оплаты комиссий за перевод.",
     "fromAccountNotSupported": "На данный момент учетная запись не поддерживает снятие криптовалюты.",
+    "incorrect2faCode": "Неверный код 2FA.",
+    "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
+    "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_few": "",
+    "incorrectPasswordChancesRemaining_many": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
     "invalidCredentials": "Предоставленные учетные данные неверны. Пожалуйста, попробуйте снова.",
     "invalidFromIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "invalidIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
+    "invalidPhoneNumber": "Пожалуйста, введите правильный номер телефона.",
     "invalidToIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "kycRequired": "Не удается начать перевод. Интеграция требует завершения KYC проверки аккаунтов, прежде чем разрешит крипто переводы.",
     "locked": "Ваш аккаунт заблокирован",
+    "loginFirst": "Пожалуйста, сначала войдите в систему.",
+    "loginWithQrOrMobileLink": "Пожалуйста, войдите, используя QR-код или мобильную ссылку.",
     "mfaNotSupported": "Многофакторная аутентификация для этой операции не поддерживается.",
     "networkDisabled": "Сеть в настоящий момент отключена и не может быть использована.",
     "noAvailableSmartContract": "Смарт-контракт недоступен",
@@ -548,7 +544,11 @@
     "passKeyNotSupportedPayment": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку оплаты.",
     "passKeyNotSupportedRedirect": "Перенаправление на альтернативный метод вывода Coinbase...",
     "permissionDenied": "У вас нет необходимых разрешений для доступа к этой функциональности, пожалуйста, свяжитесь с командой Mesh, чтобы запросить доступ.",
+    "pleaseLogin": "Пожалуйста, войдите.",
+    "pleaseTryAgain": "Пожалуйста, повторите попытку.",
+    "pleaseTryAgainIn1Hour": "Пожалуйста, повторите попытку через 1 час.",
     "previewExpired": "Предварительный просмотр истек.",
+    "qrOrMobileLinkIn24Hours": "Пожалуйста, повторите попытку через 24 часа, используя QR-код или мобильную ссылку.",
     "refusedByIntegration": "Невозможно начать перевод.",
     "refusedByIntegrationDeposit": "Невозможно начать депозит.",
     "refusedByIntegrationOnramp": "Невозможно начать покупку.",
@@ -562,6 +562,7 @@
     "symbolNotSupportedByTarget": "Не удалось найти адрес для депозита по запрошенному токену.",
     "symbolNotSupportedInRegion": "Выбранный символ не поддерживается Coinbase из-за региональных ограничений",
     "toAccountNotSupported": "На данный момент учетная запись не поддерживает депозиты криптовалюты.",
+    "tooManyAttemptsOneMinute": "Слишком много попыток. Пожалуйста, повторите через 1 минуту.",
     "tooManyRequests": "Пожалуйста, повторите попытку позже.",
     "transferAlreadyRequested": "Перевод уже запрошен.",
     "tryAgainAfterLogin": "Пожалуйста, попробуйте снова после входа в систему.",
@@ -570,6 +571,7 @@
     "unableToSendContactSupport": "В настоящее время вы не можете отправить криптовалюту. Пожалуйста, свяжитесь с поддержкой Coinbase.",
     "unauthorizedToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "userInfoUnavailable": "Не удается получить информацию о пользователе. Пожалуйста, попробуйте снова.",
+    "verificationFailed": "Проверка не удалась, пожалуйста, попробуйте ещё раз.",
     "webWithdrawalLimitExceeded": "Вы превысили максимальный дневной лимит на вывод средств для Binance.",
     "whitelistAddressRequired": "Адрес назначения должен быть добавлен в белый список.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Для безопасности ваших активов, некоторые из ваших активов C2C-департамента должны быть заморожены на 24 часа. Через 24 часа заморозка будет автоматически снята, и вы сможете вывести криптовалюту. Во время заморозки ваши операции на сайте не будут затронуты, пожалуйста, пользуйтесь торговыми услугами Binance как обычно.",
@@ -579,23 +581,7 @@
     "withdrawalLocked": "Для вашей безопасности вывод средств отключён на 24 часа после изменения настроек аккаунта. Пожалуйста, попробуйте позже.",
     "withdrawalLockedP2P": "Для вашей безопасности вывод средств отключен на 24 часа после P2P покупки. Пожалуйста, попробуйте позже.",
     "withdrawalPendingDepositConfirmation": "Ваш депозит не достиг требуемого количества подтверждений для разблокировки вывода. Проверьте Историю транзакций для деталей.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Вывод средств возможен не ранее чем через 48 часов после покупки или депозита.",
-    "pleaseTryAgain": "Пожалуйста, повторите попытку.",
-    "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
-    "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
-    "invalidPhoneNumber": "Пожалуйста, введите правильный номер телефона.",
-    "accountLocked": "Этот аккаунт заблокирован.",
-    "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
-    "loginWithQrOrMobileLink": "Пожалуйста, войдите, используя QR-код или мобильную ссылку.",
-    "tooManyAttemptsOneMinute": "Слишком много попыток. Пожалуйста, повторите через 1 минуту.",
-    "qrOrMobileLinkIn24Hours": "Пожалуйста, повторите попытку через 24 часа, используя QR-код или мобильную ссылку.",
-    "loginFirst": "Пожалуйста, сначала войдите в систему.",
-    "pleaseLogin": "Пожалуйста, войдите.",
-    "pleaseTryAgainIn1Hour": "Пожалуйста, повторите попытку через 1 час.",
-    "accountDisabled": "Этот аккаунт был отключен.",
-    "emailCodeExpired": "Срок действия кода проверки электронной почты истек. Пожалуйста, запросите новый код.",
-    "verificationFailed": "Проверка не удалась, пожалуйста, попробуйте ещё раз.",
-    "incorrect2faCode": "Неверный код 2FA."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Вывод средств возможен не ранее чем через 48 часов после покупки или депозита."
   },
   "errorPage": {
     "title": "Произошла ошибка."
@@ -701,6 +687,8 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -861,6 +849,8 @@
     "thirdParty": "Ваши активы никогда не передаются третьим сторонам"
   },
   "initialVerifyPage": {
+    "approveSignature": "Подтвердите запрос на подпись в вашем приложении {{walletName}}.",
+    "approveSignatureStillThere": "Вы еще здесь?... Пожалуйста, подтвердите запрос на подпись в вашем приложении {{walletName}}.",
     "content40": "Подтвердите, что вы владеете этим электронным кошельком",
     "drawerTitle": "Подтвердите запрос на подпись<1></1> в вашем кошельке",
     "item1Body": "Вам будет предложено подписать сообщение в {{selectedIntegrationName}}, которое подтверждает владение кошельком.",
@@ -871,9 +861,25 @@
     "resendAction": "Повторно отправить запрос на подпись",
     "title": "Почти готово!",
     "verifyAction": "Подтвердить адрес",
-    "verifyingLabel": "Проверка подписи...",
-    "approveSignature": "Подтвердите запрос на подпись в вашем приложении {{walletName}}.",
-    "approveSignatureStillThere": "Вы еще здесь?... Пожалуйста, подтвердите запрос на подпись в вашем приложении {{walletName}}."
+    "verifyingLabel": "Проверка подписи..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "Подтвердите подключение, чтобы начать перевод",
+    "paymentFlowSubtitle": "Подтвердите подключение, чтобы начать оплату",
+    "title": "Подключить аккаунт",
+    "verifyFlowSubtitle": "Подтвердите подключение, чтобы проверить ваш электронный кошелек"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "Вернуться к {{clientName}}",
+    "subtitle": "Вернуться к {{clientName}}",
+    "title": "Электронный кошелек проверен!"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "Повторно отправить запрос на подпись",
+    "subtitleAlreadyDenied": "Кажется, вы отклонили запрос на подпись. Revolut не может подтвердить право владения вашим электронным кошельком без подписи.",
+    "subtitleInitial": "Подтвердите, что вы владеете этим электронным кошельком, подписав сообщение. Если вы не видите запрос, нажмите кнопку ниже.",
+    "titleAlreadyDenied": "Ой!",
+    "titleInitial": "Проверка вашего электронного кошелька"
   },
   "ipWhiteListPage": {
     "addIp": "Добавить IP адрес ниже в качестве доверенного",
@@ -1195,13 +1201,13 @@
       "depositWithQr": "Депозит через QR-код"
     },
     "screen": {
+      "copyWalletAddress": "Скопировать адрес электронного кошелька",
+      "downloadQr": "Скачать QR-код",
       "headline": "Возникли проблемы?",
+      "networkLabel": "Сеть",
       "subtitle": "Вы можете завершить депозит вручную.",
       "tokenLabel": "Токен",
-      "networkLabel": "Сеть",
-      "warning": "Переводите только USDT в сети Base на этот адрес, иначе ваши средства могут быть утеряны",
-      "copyWalletAddress": "Скопировать адрес электронного кошелька",
-      "downloadQr": "Скачать QR-код"
+      "warning": "Переводите только USDT в сети Base на этот адрес, иначе ваши средства могут быть утеряны"
     }
   },
   "paymentMethods": {
@@ -1454,11 +1460,11 @@
     "cannotFundTitle": "Не удается оплатить транзакцию",
     "defaultTitle": "Выберите токен",
     "depositTitle": "Выберите токен для депозита",
-    "networkTitle": "Выберите сеть",
     "ineligibleAssets": "Неподходящие активы",
     "link40Title": "Выберите токен",
     "loading": "Загрузка ваших активов...",
     "network": "сеть {{networkName}}",
+    "networkTitle": "Выберите сеть",
     "noAssetsTitle": "В привязанном аккаунте не обнаружены активы",
     "noEligibleAssetsTitle": "Ни один актив на этом счете не может использоваться для этого перевода",
     "notEnoughtBody": "Добавьте еще {{symbol}} в свою учетную запись, затем вернитесь сюда, чтобы попробовать снова.",
@@ -1535,6 +1541,10 @@
     "subtitle": "Ваш купленный баланс {{symbol}} ниже ожидаемого из-за колебаний цен и/или изменения цены за газ.",
     "title": "Необходимо пополнение"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} доступно для перевода",
+    "basedOnYourBalances": "На основе вашего баланса"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Просмотр депозита",
@@ -1543,8 +1553,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "Недостаточно средств для покрытия комиссии за перевод и газа. Максимальная сумма перевода: {{maxAmount}}.",
-      "minimumAmount": "Минимальная сумма перевода - {{minAmount}}.",
       "maximumAmount": "Максимальная сумма перевода - {{maxAmount}}.",
+      "minimumAmount": "Минимальная сумма перевода - {{minAmount}}.",
       "zeroAmount": "Пожалуйста, введите ненулевую сумму"
     },
     "title": {
@@ -1553,10 +1563,6 @@
       "onramp": "Введите сумму покупки",
       "transfer": "Введите сумму перевода"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} доступно для перевода",
-    "basedOnYourBalances": "На основе вашего баланса"
   },
   "transferCanceledPage": {
     "title": "Перевод отменен",
@@ -1616,18 +1622,18 @@
     "title": "Верификация"
   },
   "transferInsufficientBalancePage": {
-    "title": "Недостаточно средств",
-    "paymentInsufficientBalance": "Ваш баланс {{balance}} {{symbol}} в сети {{network}} недостаточен для совершения этого платежа на сумму {{amount}} {{symbol}}.",
-    "paymentInsufficientBalanceAndGas": "Эта транзакция требует {{amount}} {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
-    "depositNoBalance": "У вас нет баланса {{symbol}} в сети {{network}} для перевода.",
     "depositInsufficientBalanceAndGas": "Эта транзакция требует ненулевого баланса {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
-    "topUpAction": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз.",
+    "depositNoBalance": "У вас нет баланса {{symbol}} в сети {{network}} для перевода.",
+    "gasAndBalanceTitle": "Недостаточный баланс газа и средств",
     "gasBody": "Комиссия за газ для сети {{network}} взимается в {{symbol}}. Пожалуйста, пополните баланс {{symbol}} и повторите эту транзакцию.",
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
-    "gasAndBalanceTitle": "Недостаточный баланс газа и средств",
     "noBalanceBody": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
     "noBalanceTitle": "Баланс недостаточен",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
+    "paymentInsufficientBalance": "Ваш баланс {{balance}} {{symbol}} в сети {{network}} недостаточен для совершения этого платежа на сумму {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Эта транзакция требует {{amount}} {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
+    "title": "Недостаточно средств",
+    "topUpAction": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз.",
     "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
   },
   "transferMfaPage": {
@@ -1712,8 +1718,8 @@
   "verifyErrorPage": {
     "body": "Вы отклонили запрос на подпись в вашем кошельке, или предыдущий запрос по-прежнему активен. {{clientName}} не может подтвердить собственность вашего кошелька без подписи.",
     "body40": "Кажется, вы отклонили запрос на подпись в своем кошельке, или предыдущий запрос все еще активен. {{clientName}} не может подтвердить право владения вашим электронный кошелек без подписи.",
-    "title": "Проверка отклонена",
-    "timeout": "Пожалуйста, проверьте ваш электронный кошелек и подтвердите запрос на подпись в вашем приложении {{walletName}}."
+    "timeout": "Пожалуйста, проверьте ваш электронный кошелек и подтвердите запрос на подпись в вашем приложении {{walletName}}.",
+    "title": "Проверка отклонена"
   },
   "wallectConnect": {
     "noActiveSessionError": "Нет активных сеансов WalletConnect",
@@ -1721,10 +1727,10 @@
     "unknownError": "Произошла неизвестная ошибка. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "Владелец электронного кошелька {{walletName}} уже верифицирован.",
     "completePaymentMessage": "Вернитесь к странице оплаты, чтобы продолжить покупку {{clientName}}.",
     "continueMessage": "Пожалуйста, продолжите в приложении {{clientName}}.",
-    "successMessage": "Вы успешно подтвердили право собственности на ваш кошелек {{walletName}}.",
-    "alreadyVerified": "Владелец электронного кошелька {{walletName}} уже верифицирован."
+    "successMessage": "Вы успешно подтвердили право собственности на ваш кошелек {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
     "another": "Перевод с другого счета",

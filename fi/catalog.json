@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "{{networkName}} verkossa"
     },
+    "scanText": "Skannaa QR-koodi suorittaaksesi prosessin päätökseen mobiililaitteellasi.",
+    "scanTitle": "Viimeistele talletuksesi Binancessa",
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko talletukseen.",
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
     "youPay": "Sinä maksat",
-    "youReceive": "Sinä vastaanotat",
-    "scanTitle": "Viimeistele talletuksesi Binancessa",
-    "scanText": "Skannaa QR-koodi suorittaaksesi prosessin päätökseen mobiililaitteellasi."
+    "youReceive": "Sinä vastaanotat"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
@@ -262,36 +262,18 @@
     "continue": "Jatka siirtymällä {{walletName}}iin",
     "dappPage": {
       "continueButton": "Jatka {{walletName}}:ssa",
+      "depositTitle": "Talleta lompakostasi",
+      "payTitle": "Maksa lompakossasi",
       "qrSubtitle": "Avaa puhelimesi kamera ja skannaa QR-koodi linkittämiseksi",
       "spinnerTransactionText": "Viimeistele tämä tapahtuma {{walletName}}-sovelluksessasi",
       "spinnerVerifyText": "Viimeistele omistajuuden varmentaminen {{walletName}}-sovelluksessasi",
       "subtitle": "Jatka {{walletName}}:ssa. Palaa tänne, kun olet valmis.",
-      "payTitle": "Maksa lompakossasi",
-      "depositTitle": "Talleta lompakostasi",
       "verifyWalletTitle": "Varmista lompakkosi"
     },
     "previewButton": "Yhdistä",
     "previewTitle": "Yhdistä tili",
     "subtitle": "Napauta alta avataksesi {{walletName}}n. Hyväksy sitten yhteyspyyntö esikatsellaksesi maksusi.",
     "title": "Yhdistä lompakkosi"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Hyväksy yhteyden tarkistus lompakossasi",
-    "paymentFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa maksun",
-    "depositFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa siirron",
-    "title": "Yhdistä tili"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "Varmista lompakkosi",
-    "subtitleInitial": "Vahvista, että omistat tämän lompakon, allekirjoittamalla viesti. Jos et näe pyyntöä, napsauta alla olevaa painiketta.",
-    "titleAlreadyDenied": "Hups!",
-    "subtitleAlreadyDenied": "Näyttää siltä, että hylkäsit allekirjoituspyynnön. Revolut ei voi varmistaa lompakkosi omistajuutta ilman allekirjoitusta.",
-    "resend": "Lähetä allekirjoituspyyntö uudelleen"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "Lompakko vahvistettu!",
-    "subtitle": "Palaa {{clientName}}iin",
-    "returnToClient": "Palaa {{clientName}}iin"
   },
   "defiWalletQrPage": {
     "declinedBody": "Olet hylännyt pyynnön yhdistää lompakkoosi tai aiempi pyyntö on yhä aktiivinen.",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot aikakatkaistu"
   },
   "errorMessages": {
+    "accountDisabled": "Tämä tili on poistettu käytöstä.",
+    "accountLocked": "Tämä tili on lukittu.",
     "accountNotFound": "Tiläsi/tilejäsi ei voida hakea.",
     "addressAllowlistPending": "Tämä vastaanottajan osoite on lisätty sallittujen listalle ja odottaa käsittelyä.",
     "addressNotAllowlisted": "Nostoa Coinbasesta ei voida aloittaa. Sinun tulee lisätä tämä vastaanottajan osoite sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Coinbasessa tapahtui virhe. Tarkista CB-tilisi nähdäksesi, menikö siirto läpi.",
     "configurationMismatch": "Siirtoa ei voida aloittaa. Tilin määritys ei vastaa pyydettyä siirtoa.",
     "default": "Tapahtui virhe.",
+    "emailCodeExpired": "Sähköpostin vahvistuskoodi vanhentui. Ole hyvä ja pyydä uusi koodi.",
     "emptyWalletBalance": "Lähdelompakon saldo on tyhjä.",
     "exceedsApplicationLimit": "Siirtosumma ylittää sovelluksen rajan.",
     "existingApiKey": "Poista ensin olemassa oleva API-avain Binance-tililtäsi ja yritä sitten uudelleen.",
@@ -530,13 +515,22 @@
     "failedToSaveFundingOptions": "Talletusvaihtoehtoja ei voitu tallentaa",
     "feeAssetBalanceNotEnough": "Ei riittävästi varoja siirtomaksuihin.",
     "fromAccountNotSupported": "Tili ei tue tällä hetkellä kryptonostoja.",
+    "incorrect2faCode": "Virheellinen 2FA-koodi.",
+    "incorrectEmail": "Olet antanut virheellisen sähköpostin.",
+    "incorrectPasswordChancesRemaining": "Väärä salasana. Sinulla on {{count}} mahdollisuutta jäljellä.",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "Väärä käyttäjänimi tai salasana.",
     "integrationNotAvailable": "Integraatio ei ole tällä hetkellä käytettävissä.",
     "invalidCredentials": "Virheelliset kirjautumistiedot. Ole hyvä ja yritä uudelleen.",
     "invalidFromIntegrationToken": "Kirjaudu sisään uudelleen jatkaaksesi.",
     "invalidIntegrationToken": "Kirjaudu sisään uudelleen jatkaaksesi.",
+    "invalidPhoneNumber": "Syötä kelvollinen puhelinnumero.",
     "invalidToIntegrationToken": "Kirjaudu uudelleen jatkaaksesi..",
     "kycRequired": "Siirtoa ei voida käynnistää. Integraatio vaatii asiakkaan tunnistamisen (KYC) suorittamista ennen kryptosiirtojen sallimista.",
     "locked": "Tilisi on lukittu",
+    "loginFirst": "Kirjaudu ensin sisään.",
+    "loginWithQrOrMobileLink": "Kirjaudu sisään käyttäen QR-koodia tai mobiililinkkiä.",
     "mfaNotSupported": "Monivaiheinen tunnistautuminen ei ole käytössä tässä operaatiossa.",
     "networkDisabled": "Verkko on tällä hetkellä poissa käytöstä eikä sitä voi käyttää.",
     "noAvailableSmartContract": "Älysopimusta ei ole saatavilla",
@@ -548,7 +542,11 @@
     "passKeyNotSupportedPayment": "Valitettavasti Passkey 2FA ei ole tällä hetkellä tuettu. Lisää Google Authenticator lisä 2FA:ksi ja yritä maksua uudelleen.",
     "passKeyNotSupportedRedirect": "Uudelleen ohjaus, valitse vaihtoehtoinen Coinbase-kotiutusmenetelmä...",
     "permissionDenied": "Sinulla ei ole tarvittavia käyttöoikeuksia tämän päätepisteen käyttämiseen, ota yhteyttä Mesh-tiimiin pyytääksesi käyttöoikeutta.",
+    "pleaseLogin": "Ole hyvä ja kirjaudu sisään.",
+    "pleaseTryAgain": "Yritä uudelleen.",
+    "pleaseTryAgainIn1Hour": "Yritä uudelleen tunnin kuluttua.",
     "previewExpired": "Esikatselu on vanhentunut.",
+    "qrOrMobileLinkIn24Hours": "Yritä uudelleen 24 tunnin kuluttua käyttäen QR-koodia tai mobiililinkkiä.",
     "refusedByIntegration": "Siirtoa ei ole mahdollista aloittaa.",
     "refusedByIntegrationDeposit": "Ei mahdollista aloittaa talletusta.",
     "refusedByIntegrationOnramp": "Ei mahdollista aloittaa ostoa.",
@@ -562,6 +560,7 @@
     "symbolNotSupportedByTarget": "Talletusosoitetta pyydetylle kolikolle ei löydy.",
     "symbolNotSupportedInRegion": "Valittua symbolia ei tueta Coinbasessa alueellisten rajoitusten vuoksi",
     "toAccountNotSupported": "Kohdetili ei tällä hetkellä hyväksy kryptotalletuksia.",
+    "tooManyAttemptsOneMinute": "Liian monta yritystä. Yritä uudelleen 1 minuutin kuluttua.",
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",
     "tryAgainAfterLogin": "Yritä uudelleen sisäänkirjautumisen jälkeen.",
@@ -570,6 +569,7 @@
     "unableToSendContactSupport": "Et voi tällä hetkellä lähettää kryptoa. Ota yhteyttä Coinbasen tukeen.",
     "unauthorizedToken": "Kirjaudu sisään uudelleen jatkaaksesi.",
     "userInfoUnavailable": "Käyttäjätietoja ei voida hakea. Yritä uudelleen.",
+    "verificationFailed": "Varmistus epäonnistui, yritä uudelleen.",
     "webWithdrawalLimitExceeded": "Olet ylittänyt selainversion päivittäisen nostorajan Binancessa.",
     "whitelistAddressRequired": "Kohdeosoitteen on oltava sallittujen osoitteiden listalla.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Omaisuutesi turvallisuuden varmistamiseksi osa C2C-talletusvaroistasi jäädytetään 24 tunnin ajaksi.\n24 tunnin jälkeen jäädytys poistetaan automaattisesti, ja voit nostaa kryptovaluuttaa. Jäädytysjakson aikana paikan päällä tehtävät tapahtumat eivät ole vaikutuksen alaisia – voit käyttää Binancen kaupankäyntipalveluita normaalisti.",
@@ -579,23 +579,7 @@
     "withdrawalLocked": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen.",
     "withdrawalLockedP2P": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi P2P-ostoksen jälkeen. Yritä myöhemmin uudelleen.",
     "withdrawalPendingDepositConfirmation": "Talletuksesi ei ole täyttänyt vaadittuja vahvistuksia nostoa varten. Katso lisätietoja tapahtumahistoriasta.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot voidaan tehdä vähintään 48 tuntia oston tai talletuksen jälkeen.",
-    "pleaseTryAgain": "Yritä uudelleen.",
-    "incorrectUsernameOrPassword": "Väärä käyttäjänimi tai salasana.",
-    "incorrectPasswordChancesRemaining": "Väärä salasana. Sinulla on {{count}} mahdollisuutta jäljellä.",
-    "invalidPhoneNumber": "Syötä kelvollinen puhelinnumero.",
-    "accountLocked": "Tämä tili on lukittu.",
-    "incorrectEmail": "Olet antanut virheellisen sähköpostin.",
-    "loginWithQrOrMobileLink": "Kirjaudu sisään käyttäen QR-koodia tai mobiililinkkiä.",
-    "tooManyAttemptsOneMinute": "Liian monta yritystä. Yritä uudelleen 1 minuutin kuluttua.",
-    "qrOrMobileLinkIn24Hours": "Yritä uudelleen 24 tunnin kuluttua käyttäen QR-koodia tai mobiililinkkiä.",
-    "loginFirst": "Kirjaudu ensin sisään.",
-    "pleaseLogin": "Ole hyvä ja kirjaudu sisään.",
-    "pleaseTryAgainIn1Hour": "Yritä uudelleen tunnin kuluttua.",
-    "accountDisabled": "Tämä tili on poistettu käytöstä.",
-    "emailCodeExpired": "Sähköpostin vahvistuskoodi vanhentui. Ole hyvä ja pyydä uusi koodi.",
-    "verificationFailed": "Varmistus epäonnistui, yritä uudelleen.",
-    "incorrect2faCode": "Virheellinen 2FA-koodi."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot voidaan tehdä vähintään 48 tuntia oston tai talletuksen jälkeen."
   },
   "errorPage": {
     "title": "Tapahtui virhe."
@@ -861,6 +845,8 @@
     "thirdParty": "Omaisuutesi eivät koskaan kosketa kolmansia osapuolia"
   },
   "initialVerifyPage": {
+    "approveSignature": "Hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi.",
+    "approveSignatureStillThere": "Oletko yhä paikalla?…  Ole hyvä ja hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi.",
     "content40": "Vahvista, että omistat tämän lompakon",
     "drawerTitle": "Hyväksy allekirjoituspyyntö<1></1> kryptolompakossasi",
     "item1Body": "Sinua pyydetään allekirjoittamaan viesti {{selectedIntegrationName}}: ssä, joka vahvistaa, että omistat tämän kryptolompakon.",
@@ -871,9 +857,25 @@
     "resendAction": "Lähetä allekirjoituspyyntö uudelleen",
     "title": "Melkein valmis!",
     "verifyAction": "Vahvista osoite",
-    "verifyingLabel": "Allekirjoituksen tarkistaminen...",
-    "approveSignature": "Hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi.",
-    "approveSignatureStillThere": "Oletko yhä paikalla?…  Ole hyvä ja hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi."
+    "verifyingLabel": "Allekirjoituksen tarkistaminen..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa siirron",
+    "paymentFlowSubtitle": "Hyväksy yhteys, jotta voit aloittaa maksun",
+    "title": "Yhdistä tili",
+    "verifyFlowSubtitle": "Hyväksy yhteyden tarkistus lompakossasi"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "Palaa {{clientName}}iin",
+    "subtitle": "Palaa {{clientName}}iin",
+    "title": "Lompakko vahvistettu!"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "Lähetä allekirjoituspyyntö uudelleen",
+    "subtitleAlreadyDenied": "Näyttää siltä, että hylkäsit allekirjoituspyynnön. Revolut ei voi varmistaa lompakkosi omistajuutta ilman allekirjoitusta.",
+    "subtitleInitial": "Vahvista, että omistat tämän lompakon, allekirjoittamalla viesti. Jos et näe pyyntöä, napsauta alla olevaa painiketta.",
+    "titleAlreadyDenied": "Hups!",
+    "titleInitial": "Varmista lompakkosi"
   },
   "ipWhiteListPage": {
     "addIp": "Lisää alla oleva IP-osoite Luotetuiksi IP-osoitteiksi",
@@ -1195,13 +1197,13 @@
       "depositWithQr": "Talleta QR-koodilla"
     },
     "screen": {
+      "copyWalletAddress": "Kopioi lompakon osoite",
+      "downloadQr": "Lataa QR-koodi",
       "headline": "Onko sinulla ongelmia?",
+      "networkLabel": "Verkko",
       "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
       "tokenLabel": "Token",
-      "networkLabel": "Verkko",
-      "warning": "Siirrä vain USDT Base-verkossa tähän osoitteeseen, muuten omaisuutesi voivat kadota.",
-      "copyWalletAddress": "Kopioi lompakon osoite",
-      "downloadQr": "Lataa QR-koodi"
+      "warning": "Siirrä vain USDT Base-verkossa tähän osoitteeseen, muuten omaisuutesi voivat kadota."
     }
   },
   "paymentMethods": {
@@ -1454,11 +1456,11 @@
     "cannotFundTitle": "Tapahtumaa ei voida rahoittaa",
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
-    "networkTitle": "Valitse verkko",
     "ineligibleAssets": "Kelpaamattomat varat",
     "link40Title": "Valitse tunnus",
     "loading": "Ladataan omaisuuttasi...",
     "network": "{{networkName}} verkko",
+    "networkTitle": "Valitse verkko",
     "noAssetsTitle": "Liitetyltä tililtä ei löytynyt varoja",
     "noEligibleAssetsTitle": "Tällä tilillä ei ole varoja, joita voidaan käyttää tähän siirtoon",
     "notEnoughtBody": "Lisää {{symbol}} tilillesi ja palaa sitten takaisin kokeilemaan uudelleen.",
@@ -1535,6 +1537,10 @@
     "subtitle": "Ostamasi {{symbol}} saldo on odotettua pienempi johtuen hinnan ja/tai kaasun vaihteluista.",
     "title": "Lisärahoitusta tarvitaan"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} saatavilla talletukseen",
+    "basedOnYourBalances": "Saldojesi perusteella"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Talletuksen esikatselu",
@@ -1543,8 +1549,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "Varat eivät riitä kattamaan siirtoa ja gas-maksua. Suurin mahdollinen siirtosumma on {{maxAmount}}.",
-      "minimumAmount": "Pienin mahdollinen siirtosumma on {{minAmount}}.",
       "maximumAmount": "Suurin mahdollinen siirtosumma on {{maxAmount}}.",
+      "minimumAmount": "Pienin mahdollinen siirtosumma on {{minAmount}}.",
       "zeroAmount": "Syötä ei nolla-arvoinen summa"
     },
     "title": {
@@ -1553,10 +1559,6 @@
       "onramp": "Syötä ostosumma",
       "transfer": "Syötä siirtosumma"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} saatavilla talletukseen",
-    "basedOnYourBalances": "Saldojesi perusteella"
   },
   "transferCanceledPage": {
     "title": "Siirto peruttu",
@@ -1616,18 +1618,18 @@
     "title": "Varmistus"
   },
   "transferInsufficientBalancePage": {
-    "title": "Riittämättömät varat",
-    "paymentInsufficientBalance": "Sinun {{balance}} {{symbol}} saldosi {{network}} verkossa on riittämätön suorittamaan tätä {{amount}} {{symbol}} maksua.",
-    "paymentInsufficientBalanceAndGas": "Tämä transaktio vaatii {{amount}} {{symbol}} ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
-    "depositNoBalance": "Sinulla ei ole {{symbol}} saldoa {{network}} verkossa siirtämiseen.",
     "depositInsufficientBalanceAndGas": "Tämä transaktio vaatii ei-nollan {{symbol}} saldon ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
-    "topUpAction": "Täydennä lompakkosi ja yritä uudelleen.",
+    "depositNoBalance": "Sinulla ei ole {{symbol}} saldoa {{network}} verkossa siirtämiseen.",
+    "gasAndBalanceTitle": "Riittämätön kaasu ja saldo",
     "gasBody": "Kaasukustannukset {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
     "gasTitle": "Riittämätön kaasusaldo",
-    "gasAndBalanceTitle": "Riittämätön kaasu ja saldo",
     "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
     "noBalanceTitle": "Ei saldoa",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
+    "paymentInsufficientBalance": "Sinun {{balance}} {{symbol}} saldosi {{network}} verkossa on riittämätön suorittamaan tätä {{amount}} {{symbol}} maksua.",
+    "paymentInsufficientBalanceAndGas": "Tämä transaktio vaatii {{amount}} {{symbol}} ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
+    "title": "Riittämättömät varat",
+    "topUpAction": "Täydennä lompakkosi ja yritä uudelleen.",
     "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
   },
   "transferMfaPage": {
@@ -1712,8 +1714,8 @@
   "verifyErrorPage": {
     "body": "Olet hylännyt allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
     "body40": "Näyttää siltä, että hylkäsit allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
-    "title": "Vahvistus hylätty",
-    "timeout": "Ole hyvä ja tarkista lompakkosi ja hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi."
+    "timeout": "Ole hyvä ja tarkista lompakkosi ja hyväksy allekirjoituspyyntö {{walletName}} sovelluksessasi.",
+    "title": "Vahvistus hylätty"
   },
   "wallectConnect": {
     "noActiveSessionError": "Ei aktiivista WalletConnect-istuntoa",
@@ -1721,10 +1723,10 @@
     "unknownError": "Tapahtui tuntematon virhe. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "{{walletName}} lompakon omistusoikeus on jo vahvistettu.",
     "completePaymentMessage": "Palaa takaisin kassalle viimeistelläksesi {{clientName}}-ostoksesi.",
     "continueMessage": "Jatka {{clientName}} -sovelluksessa.",
-    "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden.",
-    "alreadyVerified": "{{walletName}} lompakon omistusoikeus on jo vahvistettu."
+    "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden."
   },
   "withdrawalLockedErrorPage": {
     "another": "Siirto toiselta tililtä",

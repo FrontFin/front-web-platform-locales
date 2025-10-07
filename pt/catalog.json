@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "na {{networkName}}"
     },
+    "scanText": "Escaneie o código QR para concluir o processo no seu dispositivo móvel.",
+    "scanTitle": "Conclua seu depósito na Binance",
     "selectAnotherAccount": "Seleciona outra conta",
     "selectAnotherExchange": "Por favor, seleciona outra plataforma ou carteira para depositares.",
     "selectAsset": "Seleciona o ativo para transferir",
     "selectCurrency": "Seleciona uma moeda",
     "selectNetwork": "Seleciona a rede de transferência",
     "youPay": "Tu pagas",
-    "youReceive": "Tu recebes",
-    "scanTitle": "Conclua seu depósito na Binance",
-    "scanText": "Escaneie o código QR para concluir o processo no seu dispositivo móvel."
+    "youReceive": "Tu recebes"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Parece que você não aprovou a solicitação. Se isso foi um engano, por favor tente novamente.",
@@ -262,36 +262,18 @@
     "continue": "Continua para {{walletName}}",
     "dappPage": {
       "continueButton": "Continua para {{walletName}}",
+      "depositTitle": "Deposite da sua carteira",
+      "payTitle": "Pague na sua carteira",
       "qrSubtitle": "Abra o aplicativo de câmera no seu telefone e escaneie o código QR para vincular",
       "spinnerTransactionText": "Finaliza esta transação na app {{walletName}}",
       "spinnerVerifyText": "Finalize a verificação de propriedade na app {{walletName}}",
       "subtitle": "Continue em {{walletName}}. Retorne aqui quando terminar.",
-      "payTitle": "Pague na sua carteira",
-      "depositTitle": "Deposite da sua carteira",
       "verifyWalletTitle": "Verifique a sua carteira"
     },
     "previewButton": "Ligar",
     "previewTitle": "Ligar a uma conta",
     "subtitle": "Clica em baixo para abrires {{walletName}}. Em seguida, aprova o pedido de ligação para visualizares o teu pagamento.",
     "title": "Liga à tua carteira"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Aprovar a ligação para verificar a tua carteira",
-    "paymentFlowSubtitle": "Aprovar a ligação para iniciar o teu pagamento",
-    "depositFlowSubtitle": "Aprovar a ligação para iniciar a tua transferência",
-    "title": "Ligar a uma conta"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "Verifique a sua carteira",
-    "subtitleInitial": "Confirme que você possui esta carteira assinando uma mensagem. Se você não vir o pedido, clique no botão abaixo.",
-    "titleAlreadyDenied": "Oops!",
-    "subtitleAlreadyDenied": "Parece que você negou a solicitação de assinatura. A Revolut não pode verificar a propriedade da sua carteira sem uma assinatura.",
-    "resend": "Reenviar pedido de assinatura"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "Carteira verificada!",
-    "subtitle": "Volta a {{clientName}}",
-    "returnToClient": "Volta a {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Recusaste o pedido para ligares à tua carteira ou um pedido anterior ainda está ativo.",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Tempo de Espera para Levantamentos"
   },
   "errorMessages": {
+    "accountDisabled": "Esta conta foi desativada.",
+    "accountLocked": "Esta conta foi bloqueada.",
     "accountNotFound": "Não foi possível recuperar a(s) tua(s) conta(s).",
     "addressAllowlistPending": "Este endereço de destino foi adicionado à tua Lista de Endereços Autorizados e está a aguardar confirmação.",
     "addressNotAllowlisted": "Não foi possível iniciar o levantamento na Coinbase. Deves adicionar este endereço de destino à tua Lista de Edereços Autorizados aqui: https://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Coinbase teve um erro. Verifica a tua conta CB para ver se a transferência foi concluída.",
     "configurationMismatch": "Não foi possível iniciar a transferência. A configuração da conta não corresponde à transferência solicitada.",
     "default": "Ocorreu um erro.",
+    "emailCodeExpired": "Código de verificação por email expirou. Por favor, solicite um novo código.",
     "emptyWalletBalance": "Estás sem saldo na tua carteira.",
     "exceedsApplicationLimit": "O valor da transferência excede o limite da app.",
     "existingApiKey": "Por favor, delete a chave de API existente em sua conta Binance, e tente novamente.",
@@ -530,13 +515,23 @@
     "failedToSaveFundingOptions": "Falha ao salvar opções de financiamento",
     "feeAssetBalanceNotEnough": "Saldo insuficiente para taxas de transferência.",
     "fromAccountNotSupported": "A conta atualmente não suporta retiradas de criptomoedas.",
+    "incorrect2faCode": "Código 2FA incorreto.",
+    "incorrectEmail": "Você digitou um email incorreto.",
+    "incorrectPasswordChancesRemaining": "Senha incorreta. Você tem {{count}} tentativas restantes.",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_many": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "Nome de usuário ou senha incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
     "invalidCredentials": "Credenciais inválidas. Por favor, tenta novamente.",
     "invalidFromIntegrationToken": "Por favor, faça login novamente para continuar.",
     "invalidIntegrationToken": "Por favor, faça login novamente para continuar.",
+    "invalidPhoneNumber": "Por favor, insira um número de telefone válido.",
     "invalidToIntegrationToken": "Por favor, faça login novamente para continuar.",
     "kycRequired": "Não foi possível iniciar a transferência. A integração requer que as contas completem a verificação KYC antes de habilitar transferências de criptomoedas.",
     "locked": "A tua conta está bloqueada",
+    "loginFirst": "Por favor, faça login primeiro.",
+    "loginWithQrOrMobileLink": "Por favor, faça login usando código QR ou link móvel.",
     "mfaNotSupported": "Autenticação multifator (2FA) não é suportada para esta operação.",
     "networkDisabled": "A rede está atualmente desativada e não pode ser usada.",
     "noAvailableSmartContract": "Nenhum Contrato Inteligente disponível",
@@ -548,7 +543,11 @@
     "passKeyNotSupportedPayment": "Infelizmente, o Passkey 2FA não é suportado atualmente. Por favor, adicione o Google Authenticator como uma 2FA adicional e tente o pagamento novamente.",
     "passKeyNotSupportedRedirect": "Redirecionando para um método alternativo de retirada do Coinbase...",
     "permissionDenied": "Você não tem as permissões necessárias para acessar este endpoint, por favor entre em contato com a equipe Mesh para solicitar acesso.",
+    "pleaseLogin": "Por favor, effectue o login.",
+    "pleaseTryAgain": "Por favor, tente novamente.",
+    "pleaseTryAgainIn1Hour": "Por favor, tente novamente em 1 hora.",
     "previewExpired": "A pré-visualização expirou.",
+    "qrOrMobileLinkIn24Hours": "Tente novamente em 24 horas usando código QR ou link móvel.",
     "refusedByIntegration": "Não é possível iniciar a transferência.",
     "refusedByIntegrationDeposit": "Não é possível iniciar o depósito.",
     "refusedByIntegrationOnramp": "Não é possível iniciar a compra.",
@@ -562,6 +561,7 @@
     "symbolNotSupportedByTarget": "Não foi possível encontrar o endereço de depósito para a moeda solicitada.",
     "symbolNotSupportedInRegion": "Um símbolo selecionado não é suportado pela Coinbase devido a restrições regionais",
     "toAccountNotSupported": "A conta de destino atualmente não suporta depósitos de criptomoedas.",
+    "tooManyAttemptsOneMinute": "Muitas tentativas. Tente novamente em 1 minuto.",
     "tooManyRequests": "Por favor, tenta novamente mais tarde.",
     "transferAlreadyRequested": "A transferência já foi solicitada.",
     "tryAgainAfterLogin": "Por favor, tenta novamente após fazer login.",
@@ -570,6 +570,7 @@
     "unableToSendContactSupport": "Atualmente, não é possível enviar criptomoedas. Por favor, contacte o suporte da Coinbase.",
     "unauthorizedToken": "Por favor, faça login novamente para continuar.",
     "userInfoUnavailable": "Não foi possível obter informações do utilizador. Por favor, tenta novamente.",
+    "verificationFailed": "Verificação falhou, por favor, tente novamente.",
     "webWithdrawalLimitExceeded": "Excedeste o limite máximo diário de levantamentos para a versão web da Binance.",
     "whitelistAddressRequired": "O endereço de destino deve estar na Lista de Endereços Autorizados.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Para a segurança dos teus ativos, alguns dos teus ativos de Depósito C2C precisam ser congelados por 24 horas. Após 24 horas, o estado de congelamento será automaticamente retirado e poderás retirar as criptomoedas. Durante o período de congelamento, as tuas transações dentro da Binance não serão afetadas, podes continuar a utilizar normalmente os serviços de transação da Binance.",
@@ -579,23 +580,7 @@
     "withdrawalLocked": "Para tua segurança, levantamentos são desabilitadas por 24 horas após uma alteração nas configurações da conta. Por favor, tenta novamente mais tarde.",
     "withdrawalLockedP2P": "Para tua segurança, levantamentos são desabilitados por 24 horas após uma compra P2P. Por favor, tenta novamente mais tarde.",
     "withdrawalPendingDepositConfirmation": "O teu depósito não atendeu às confirmações de desbloqueio necessárias para levantamento. Por favor, verifica o Histórico de Transações para mais detalhes.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Os levantamentos podem ser efectuados no mínimo 48 horas após uma transacção de compra ou depósito.",
-    "pleaseTryAgain": "Por favor, tente novamente.",
-    "incorrectUsernameOrPassword": "Nome de usuário ou senha incorreta.",
-    "incorrectPasswordChancesRemaining": "Senha incorreta. Você tem {{count}} tentativas restantes.",
-    "invalidPhoneNumber": "Por favor, insira um número de telefone válido.",
-    "accountLocked": "Esta conta foi bloqueada.",
-    "incorrectEmail": "Você digitou um email incorreto.",
-    "loginWithQrOrMobileLink": "Por favor, faça login usando código QR ou link móvel.",
-    "tooManyAttemptsOneMinute": "Muitas tentativas. Tente novamente em 1 minuto.",
-    "qrOrMobileLinkIn24Hours": "Tente novamente em 24 horas usando código QR ou link móvel.",
-    "loginFirst": "Por favor, faça login primeiro.",
-    "pleaseLogin": "Por favor, effectue o login.",
-    "pleaseTryAgainIn1Hour": "Por favor, tente novamente em 1 hora.",
-    "accountDisabled": "Esta conta foi desativada.",
-    "emailCodeExpired": "Código de verificação por email expirou. Por favor, solicite um novo código.",
-    "verificationFailed": "Verificação falhou, por favor, tente novamente.",
-    "incorrect2faCode": "Código 2FA incorreto."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Os levantamentos podem ser efectuados no mínimo 48 horas após uma transacção de compra ou depósito."
   },
   "errorPage": {
     "title": "Ocorreu um erro."
@@ -701,6 +686,7 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -861,6 +847,8 @@
     "thirdParty": "Os teus ativos nunca passam por intermediários"
   },
   "initialVerifyPage": {
+    "approveSignature": "Aprovar o pedido de assinatura na <></> aplicação {{walletName}}.",
+    "approveSignatureStillThere": "Ainda aí?… Por favor, aprova o pedido de assinatura na aplicação {{walletName}}.",
     "content40": "Confirma que tu és o proprietário desta carteira",
     "drawerTitle": "Aprova a solicitação de assinatura<1></1> na tua carteira",
     "item1Body": "Vais ser solicitado a assinar uma mensagem em {{selectedIntegrationName}} que confirma que tu possuis esta carteira.",
@@ -871,9 +859,25 @@
     "resendAction": "Reenviar pedido de assinatura",
     "title": "Quase lá!",
     "verifyAction": "Verificar endereço",
-    "verifyingLabel": "A verificar a assinatura...",
-    "approveSignature": "Aprovar o pedido de assinatura na <></> aplicação {{walletName}}.",
-    "approveSignatureStillThere": "Ainda aí?… Por favor, aprova o pedido de assinatura na aplicação {{walletName}}."
+    "verifyingLabel": "A verificar a assinatura..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "Aprovar a ligação para iniciar a tua transferência",
+    "paymentFlowSubtitle": "Aprovar a ligação para iniciar o teu pagamento",
+    "title": "Ligar a uma conta",
+    "verifyFlowSubtitle": "Aprovar a ligação para verificar a tua carteira"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "Volta a {{clientName}}",
+    "subtitle": "Volta a {{clientName}}",
+    "title": "Carteira verificada!"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "Reenviar pedido de assinatura",
+    "subtitleAlreadyDenied": "Parece que você negou a solicitação de assinatura. A Revolut não pode verificar a propriedade da sua carteira sem uma assinatura.",
+    "subtitleInitial": "Confirme que você possui esta carteira assinando uma mensagem. Se você não vir o pedido, clique no botão abaixo.",
+    "titleAlreadyDenied": "Oops!",
+    "titleInitial": "Verifique a sua carteira"
   },
   "ipWhiteListPage": {
     "addIp": "Adiciona o endereço IP abaixo como um IP Confiável",
@@ -1195,13 +1199,13 @@
       "depositWithQr": "Depósito com código QR"
     },
     "screen": {
+      "copyWalletAddress": "Copiar endereço da carteira",
+      "downloadQr": "Baixar o código QR",
       "headline": "Está com problemas?",
+      "networkLabel": "Rede",
       "subtitle": "Você ainda pode completar seu depósito manualmente.",
       "tokenLabel": "Token",
-      "networkLabel": "Rede",
-      "warning": "Transfira somente USDT na Base para este endereço, caso contrário, seus ativos podem ser perdidos.",
-      "copyWalletAddress": "Copiar endereço da carteira",
-      "downloadQr": "Baixar o código QR"
+      "warning": "Transfira somente USDT na Base para este endereço, caso contrário, seus ativos podem ser perdidos."
     }
   },
   "paymentMethods": {
@@ -1454,11 +1458,11 @@
     "cannotFundTitle": "Não é possível financiar a transação",
     "defaultTitle": "Selecionar um token",
     "depositTitle": "Selecionar token de depósito",
-    "networkTitle": "Escolha uma rede",
     "ineligibleAssets": "Ativos não elegíveis",
     "link40Title": "Escolha um token",
     "loading": "A carregar os teus ativos...",
     "network": "Rede {{networkName}}",
+    "networkTitle": "Escolha uma rede",
     "noAssetsTitle": "Nenhum ativo detectado na conta associada",
     "noEligibleAssetsTitle": "Nenhum ativo nesta conta está elegível para esta transferência",
     "notEnoughtBody": "Adiciona mais {{symbol}} à tua conta, depois volta aqui para tentar novamente.",
@@ -1535,6 +1539,10 @@
     "subtitle": "O saldo adquirido de {{symbol}} é inferior ao esperado devido a flutuações de preço e/ou gás.",
     "title": "Reabastecimento necessário"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} disponível para depósito",
+    "basedOnYourBalances": "Com base nos seus saldos"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Visualizar depósito",
@@ -1543,8 +1551,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "Saldo insuficiente para cobrir taxas de transferência e taxas de gás. A quantidade máxima de transferência é {{maxAmount}}.",
-      "minimumAmount": "A quantidade mínima de transferência é {{minAmount}}.",
       "maximumAmount": "A quantidade máxima de transferência é {{maxAmount}}.",
+      "minimumAmount": "A quantidade mínima de transferência é {{minAmount}}.",
       "zeroAmount": "Por favor, insire um valor diferente de zero"
     },
     "title": {
@@ -1553,10 +1561,6 @@
       "onramp": "Insire o valor da compra",
       "transfer": "Digita o valor da transferência"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} disponível para depósito",
-    "basedOnYourBalances": "Com base nos seus saldos"
   },
   "transferCanceledPage": {
     "title": "Transferência cancelada",
@@ -1616,18 +1620,18 @@
     "title": "Verificação"
   },
   "transferInsufficientBalancePage": {
-    "title": "Fundos insuficientes",
-    "paymentInsufficientBalance": "Seu saldo de {{balance}} {{symbol}} na rede {{network}} é insuficiente para efetuar este pagamento de {{amount}} {{symbol}}.",
-    "paymentInsufficientBalanceAndGas": "Esta transação requer {{amount}} {{symbol}} e ~${{gasFee}} em ETH na rede {{network}} para pagar as taxas de gás.",
-    "depositNoBalance": "Você não tem saldo de {{symbol}} na rede {{network}} para transferir.",
     "depositInsufficientBalanceAndGas": "Esta transação requer um saldo não zero de {{symbol}} e ~${{gasFee}} em ETH na rede {{network}} para pagar as taxas de gás.",
-    "topUpAction": "Por favor, recarregue sua carteira e tente novamente.",
+    "depositNoBalance": "Você não tem saldo de {{symbol}} na rede {{network}} para transferir.",
+    "gasAndBalanceTitle": "Gás e saldo insuficientes",
     "gasBody": "As taxas de gás para a rede {{network}} são pagas em {{symbol}}. Por favor, recarregue seu saldo de {{symbol}} e tente esta transação novamente.",
     "gasTitle": "Saldo de gás insuficiente",
-    "gasAndBalanceTitle": "Gás e saldo insuficientes",
     "noBalanceBody": "Você não tem saldo de {{symbol}} para transferir. Por favor, carregue seu saldo e tente novamente.",
     "noBalanceTitle": "Sem saldo",
     "paymentBody": "Seu saldo é muito baixo para concluir esta compra.",
+    "paymentInsufficientBalance": "Seu saldo de {{balance}} {{symbol}} na rede {{network}} é insuficiente para efetuar este pagamento de {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Esta transação requer {{amount}} {{symbol}} e ~${{gasFee}} em ETH na rede {{network}} para pagar as taxas de gás.",
+    "title": "Fundos insuficientes",
+    "topUpAction": "Por favor, recarregue sua carteira e tente novamente.",
     "transferBody": "Seu saldo é muito baixo para completar esta transferência."
   },
   "transferMfaPage": {
@@ -1712,8 +1716,8 @@
   "verifyErrorPage": {
     "body": "Recusaste o pedido de assinatura na tua carteira, ou um pedido anterior ainda está ativa. {{clientName}} não consegue verificar que és o proprietário da carteira sem uma assinatura.",
     "body40": "Parece que você recusou o pedido de assinatura na sua carteira, ou um pedido anterior ainda está ativo. {{clientName}} não pode verificar a propriedade da sua carteira sem uma assinatura.",
-    "title": "Verificação recusada",
-    "timeout": "Por favor, verifica a tua carteira e aprova o pedido de assinatura na aplicação {{walletName}}."
+    "timeout": "Por favor, verifica a tua carteira e aprova o pedido de assinatura na aplicação {{walletName}}.",
+    "title": "Verificação recusada"
   },
   "wallectConnect": {
     "noActiveSessionError": "Nenhuma sessão ativa WalletConnect",
@@ -1721,10 +1725,10 @@
     "unknownError": "Um erro desconhecido ocorreu. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "A propriedade da carteira {{walletName}} já foi verificada.",
     "completePaymentMessage": "Retorna à página de check-out para completares a tua compra de {{clientName}}.",
     "continueMessage": "Por favor, continua na tua app {{clientName}}.",
-    "successMessage": "Verificaste com sucesso que és proprietário da carteira {{walletName}}.",
-    "alreadyVerified": "A propriedade da carteira {{walletName}} já foi verificada."
+    "successMessage": "Verificaste com sucesso que és proprietário da carteira {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
     "another": "Transferir de outra conta",

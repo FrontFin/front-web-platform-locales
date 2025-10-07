@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "{{networkName}} 上で"
     },
+    "scanText": "モバイルデバイスでプロセスを完了するにはQRコードをスキャンしてください。",
+    "scanTitle": "Binanceで入金を完了してください",
     "selectAnotherAccount": "別のアカウントを選択",
     "selectAnotherExchange": "入金元として別の取引所またはウォレットを選択してください。",
     "selectAsset": "転送する資産を選択",
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
     "youPay": "支払う",
-    "youReceive": "受け取る",
-    "scanTitle": "Binanceで入金を完了してください",
-    "scanText": "モバイルデバイスでプロセスを完了するにはQRコードをスキャンしてください。"
+    "youReceive": "受け取る"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "要求を承認しなかったようです。それが間違いであれば、再試行してください。",
@@ -262,36 +262,18 @@
     "continue": "{{walletName}}に進む",
     "dappPage": {
       "continueButton": "{{walletName}}で続行",
+      "depositTitle": "お財布から預け入れ",
+      "payTitle": "お財布で支払う",
       "qrSubtitle": "カメラアプリを開き、QRコードをスキャンしてリンクしてください。",
       "spinnerTransactionText": "この取引を{{walletName}}アプリで完了してください。",
       "spinnerVerifyText": "{{walletName}}アプリで所有権の確認を完了してください。",
       "subtitle": "{{walletName}}で続行してください。完了したらここに戻ってください。",
-      "payTitle": "お財布で支払う",
-      "depositTitle": "お財布から預け入れ",
       "verifyWalletTitle": "ウォレットを確認する"
     },
     "previewButton": "接続",
     "previewTitle": "アカウントを接続",
     "subtitle": "下のボタンをクリックして{{walletName}}を開いてください。次に接続要求を承認して、支払いをプレビューします。",
     "title": "ウォレットを接続"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "ウォレットで接続を承認して確認してください。",
-    "paymentFlowSubtitle": "ウォレットで接続を承認して支払いを開始してください。",
-    "depositFlowSubtitle": "ウォレットで接続を承認して送金を開始してください。",
-    "title": "アカウントを接続"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "ウォレットを確認する",
-    "subtitleInitial": "メッセージに署名してこのウォレットを所有していることを確認してください。要求が表示されない場合は、下のボタンをクリックしてください。",
-    "titleAlreadyDenied": "おっと！",
-    "subtitleAlreadyDenied": "署名リクエストを拒否したようです。署名がないとRevolutはウォレットの所有権を確認できません。",
-    "resend": "署名リクエストを再送信する"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "ウォレットが検証されました！",
-    "subtitle": "{{clientName}}に戻る",
-    "returnToClient": "{{clientName}}に戻る"
   },
   "defiWalletQrPage": {
     "declinedBody": "ウォレットの接続リクエストを拒否したか、以前のリクエストがまだアクティブです。",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "出金タイムアウト"
   },
   "errorMessages": {
+    "accountDisabled": "このアカウントは無効化されました。",
+    "accountLocked": "このアカウントはロックされました。",
     "accountNotFound": "アカウントの取得ができませんでした。",
     "addressAllowlistPending": "この受取人アドレスは許可リストに追加されており、保留中です。",
     "addressNotAllowlisted": "Coinbaseからの出金を開始できません。受取人のアドレスを以下の許可リストに追加してください：\nhttps://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Coinbaseでエラーが発生しました。お手数ですが、ご自身のCBアカウントをご確認のうえ、送金が完了しているかご確認ください。",
     "configurationMismatch": "送金を開始できません。アカウントの設定が、要求された送金内容と一致していません。",
     "default": "エラーが発生しました。",
+    "emailCodeExpired": "メール認証コードの有効期限が切れました。新しいコードをリクエストしてください。",
     "emptyWalletBalance": "元のウォレットの残高が空です。",
     "exceedsApplicationLimit": "送金額が申請上限を超えています。",
     "existingApiKey": "バイナンスアカウントで既存のAPIキーを削除してから、再試行してください。",
@@ -530,13 +515,21 @@
     "failedToSaveFundingOptions": "資金調達オプションの保存に失敗しました",
     "feeAssetBalanceNotEnough": "送金手数料が不足しています。",
     "fromAccountNotSupported": "このアカウントでは現在、暗号資産の出金に対応していません。",
+    "incorrect2faCode": "2FAコードが正しくありません。",
+    "incorrectEmail": "間違ったメールアドレスを入力しました。",
+    "incorrectPasswordChancesRemaining": "パスワードが間違っています。あと{{count}}回試せます。",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "ユーザー名またはパスワードが間違っています。",
     "integrationNotAvailable": "現在、この連携機能はご利用いただけません。",
     "invalidCredentials": "認証情報が正しくありません。もう一度お試しください。",
     "invalidFromIntegrationToken": "続行するにはもう一度ログインしてください。",
     "invalidIntegrationToken": "続行するにはもう一度ログインしてください。",
+    "invalidPhoneNumber": "有効な電話番号を入力してください。",
     "invalidToIntegrationToken": "続行するには再度ログインしてください。",
     "kycRequired": "送金を開始できません。この連携機能では、暗号資産の送金を有効にする前に、アカウントの本人確認(KYC)手続きが必要です。",
     "locked": "お客様のアカウントはロックされています",
+    "loginFirst": "まずログインしてください。",
+    "loginWithQrOrMobileLink": "QRコードまたはモバイルリンクでログインしてください。",
     "mfaNotSupported": "この操作では多要素認証はサポートされていません",
     "networkDisabled": "現在、このネットワークは無効になっており、ご利用いただけません。",
     "noAvailableSmartContract": "利用可能なスマートコントラクトが存在しません。",
@@ -548,7 +541,11 @@
     "passKeyNotSupportedPayment": "残念ながら、Passkey 2FAは現在サポートされていません。Google Authenticatorを追加の2FAとして追加し、再度支払いをお試しください。",
     "passKeyNotSupportedRedirect": "代替のCoinbase出金方法にリダイレクトしています...",
     "permissionDenied": "このエンドポイントにアクセスする権限がありません。アクセスをリクエストするには、Meshチームに連絡してください。",
+    "pleaseLogin": "ログインしてください。",
+    "pleaseTryAgain": "もう一度お試しください。",
+    "pleaseTryAgainIn1Hour": "1時間後にもう一度お試しください。",
     "previewExpired": "プレビューは失効しました。",
+    "qrOrMobileLinkIn24Hours": "QRコードまたはモバイルリンクを使って24時間後に再試行してください。",
     "refusedByIntegration": "送金を開始できませんでした。",
     "refusedByIntegrationDeposit": "入金を開始できませんでした。",
     "refusedByIntegrationOnramp": "購入を開始できませんでした。",
@@ -562,6 +559,7 @@
     "symbolNotSupportedByTarget": "ご指定のコインの入金アドレスが見つかりませんでした。",
     "symbolNotSupportedInRegion": "選択されたシンボルは、地域制限のためCoinbaseでサポートされていません。",
     "toAccountNotSupported": "宛先アカウントでは現在、暗号資産の入金がサポートされていません。",
+    "tooManyAttemptsOneMinute": "試行回数が多すぎます。1分後にもう一度お試しください。",
     "tooManyRequests": "後でもう一度お試しください。",
     "transferAlreadyRequested": "送金はすでに申請されています。",
     "tryAgainAfterLogin": "ログイン後に再度お試しください。",
@@ -570,6 +568,7 @@
     "unableToSendContactSupport": "現在、暗号通貨を送信できません。Coinbaseサポートに連絡してください。",
     "unauthorizedToken": "続行するにはもう一度ログインしてください。",
     "userInfoUnavailable": "ユーザー情報を取得できませんでした。再度お試しください。",
+    "verificationFailed": "本人確認に失敗しました。もう一度お試しください.。",
     "webWithdrawalLimitExceeded": "Binanceウェブ版の1日の出金上限を超えています。",
     "whitelistAddressRequired": "送金先アドレスはホワイトリストに登録されている必要があります。",
     "withdrawalDisabledDueToC2CDepositFreeze": "お客様の資産保護のため、一部のC2C入金資産は24時間の凍結が必要です。\n24時間経過後、凍結状態は自動的に解除され、暗号資産の出金が可能になります。\n凍結期間中も、取引所内での取引には影響ありませんので、通常通りBinanceの取引サービスをご利用ください。",
@@ -579,23 +578,7 @@
     "withdrawalLocked": "セキュリティ保護のため、アカウント設定の変更後24時間は出金が無効になります。後ほど再度お試しください。",
     "withdrawalLockedP2P": "セキュリティ保護のため、P2P購入後24時間は出金が無効になります。後ほど再度お試しください。",
     "withdrawalPendingDepositConfirmation": "お客様の入金は、出金に必要な承認確認数を満たしていません。詳細は取引履歴をご確認ください。",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "引き出しは、購入または入金取引から少なくとも48時間後に行うことができます。",
-    "pleaseTryAgain": "もう一度お試しください。",
-    "incorrectUsernameOrPassword": "ユーザー名またはパスワードが間違っています。",
-    "incorrectPasswordChancesRemaining": "パスワードが間違っています。あと{{count}}回試せます。",
-    "invalidPhoneNumber": "有効な電話番号を入力してください。",
-    "accountLocked": "このアカウントはロックされました。",
-    "incorrectEmail": "間違ったメールアドレスを入力しました。",
-    "loginWithQrOrMobileLink": "QRコードまたはモバイルリンクでログインしてください。",
-    "tooManyAttemptsOneMinute": "試行回数が多すぎます。1分後にもう一度お試しください。",
-    "qrOrMobileLinkIn24Hours": "QRコードまたはモバイルリンクを使って24時間後に再試行してください。",
-    "loginFirst": "まずログインしてください。",
-    "pleaseLogin": "ログインしてください。",
-    "pleaseTryAgainIn1Hour": "1時間後にもう一度お試しください。",
-    "accountDisabled": "このアカウントは無効化されました。",
-    "emailCodeExpired": "メール認証コードの有効期限が切れました。新しいコードをリクエストしてください。",
-    "verificationFailed": "本人確認に失敗しました。もう一度お試しください.。",
-    "incorrect2faCode": "2FAコードが正しくありません。"
+    "withdrawalTimeoutDueToRecentFundsManipulation": "引き出しは、購入または入金取引から少なくとも48時間後に行うことができます。"
   },
   "errorPage": {
     "title": "エラーが発生しました。"
@@ -861,6 +844,8 @@
     "thirdParty": "お客様の資産は第三者に一切触れられません"
   },
   "initialVerifyPage": {
+    "approveSignature": "{{walletName}}アプリで署名リクエストを承認してください。",
+    "approveSignatureStillThere": "まだいらっしゃいますか？… {{walletName}}アプリで署名リクエストを承認してください。",
     "content40": "このウォレットの所有を確認してください",
     "drawerTitle": "ウォレットで署名リクエストを承認してください<1></1>",
     "item1Body": "{{selectedIntegrationName}}で、このウォレットの所有を証明するメッセージへの署名を求められます。",
@@ -871,9 +856,25 @@
     "resendAction": "署名リクエストを再送信する",
     "title": "もう少しです！",
     "verifyAction": "アドレスを確認",
-    "verifyingLabel": "署名を確認中。。。",
-    "approveSignature": "{{walletName}}アプリで署名リクエストを承認してください。",
-    "approveSignatureStillThere": "まだいらっしゃいますか？… {{walletName}}アプリで署名リクエストを承認してください。"
+    "verifyingLabel": "署名を確認中。。。"
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "ウォレットで接続を承認して送金を開始してください。",
+    "paymentFlowSubtitle": "ウォレットで接続を承認して支払いを開始してください。",
+    "title": "アカウントを接続",
+    "verifyFlowSubtitle": "ウォレットで接続を承認して確認してください。"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "{{clientName}}に戻る",
+    "subtitle": "{{clientName}}に戻る",
+    "title": "ウォレットが検証されました！"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "署名リクエストを再送信する",
+    "subtitleAlreadyDenied": "署名リクエストを拒否したようです。署名がないとRevolutはウォレットの所有権を確認できません。",
+    "subtitleInitial": "メッセージに署名してこのウォレットを所有していることを確認してください。要求が表示されない場合は、下のボタンをクリックしてください。",
+    "titleAlreadyDenied": "おっと！",
+    "titleInitial": "ウォレットを確認する"
   },
   "ipWhiteListPage": {
     "addIp": "以下のIPアドレスを信頼できるIPとして追加してください",
@@ -1195,13 +1196,13 @@
       "depositWithQr": "QRコードで入金"
     },
     "screen": {
+      "copyWalletAddress": "ウォレットアドレスをコピーする",
+      "downloadQr": "QRコードをダウンロード",
       "headline": "お困りですか？",
+      "networkLabel": "ネットワーク",
       "subtitle": "手動で入金を完了することができます。",
       "tokenLabel": "トークン",
-      "networkLabel": "ネットワーク",
-      "warning": "このアドレスにはUSDT on Baseのみを送金してください。それ以外の場合、資産が失われる可能性があります。",
-      "copyWalletAddress": "ウォレットアドレスをコピーする",
-      "downloadQr": "QRコードをダウンロード"
+      "warning": "このアドレスにはUSDT on Baseのみを送金してください。それ以外の場合、資産が失われる可能性があります。"
     }
   },
   "paymentMethods": {
@@ -1454,11 +1455,11 @@
     "cannotFundTitle": "取引に必要な資金が不足しています",
     "defaultTitle": "トークンを選択",
     "depositTitle": "入金用のトークンを選択",
-    "networkTitle": "ネットワークを選択",
     "ineligibleAssets": "送金対象外の資産",
     "link40Title": "トークンを選択",
     "loading": "資産を読み込み中。。。",
     "network": "{{networkName}} ネットワーク",
+    "networkTitle": "ネットワークを選択",
     "noAssetsTitle": "連携アカウントに資産が検出されませんでした",
     "noEligibleAssetsTitle": "このアカウントの資産は送金対象外です",
     "notEnoughtBody": "{{symbol}}をアカウントに追加してから、再度お試しください。",
@@ -1535,6 +1536,10 @@
     "subtitle": "購入した{{symbol}}の残高は、価格やガスの変動により予想よりも低くなっています。",
     "title": "チャージが必要です"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} は預金可能",
+    "basedOnYourBalances": "あなたの残高に基づいて"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "入金プレビュー",
@@ -1543,8 +1548,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "残高が不足しています「ガス代を含む」。最大送金額は {{maxAmount}} です。",
-      "minimumAmount": "最小送金額は {{minAmount}} です。",
       "maximumAmount": "最大送金額は {{maxAmount}} です。",
+      "minimumAmount": "最小送金額は {{minAmount}} です。",
       "zeroAmount": "ゼロ以外の金額を入力してください"
     },
     "title": {
@@ -1553,10 +1558,6 @@
       "onramp": "購入金額を入力",
       "transfer": "送金額を入力"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} は預金可能",
-    "basedOnYourBalances": "あなたの残高に基づいて"
   },
   "transferCanceledPage": {
     "title": "送金がキャンセルされました",
@@ -1616,18 +1617,18 @@
     "title": "確認"
   },
   "transferInsufficientBalancePage": {
-    "title": "残高不足",
-    "paymentInsufficientBalance": "{{network}}ネットワークの残高が{{balance}}{{symbol}}では、この{{amount}}{{symbol}}の支払いを行うのに不十分です。",
-    "paymentInsufficientBalanceAndGas": "このトランザクションには、ガス料金を支払うために{{network}}ネットワークで{{amount}}{{symbol}}と約{{gasFee}}ドル相当のETHが必要です。",
-    "depositNoBalance": "{{network}}ネットワーク上に転送する{{symbol}}の残高がありません。",
     "depositInsufficientBalanceAndGas": "このトランザクションには、正の{{symbol}}残高とガス料金を支払うために{{network}}ネットワーク上で約{{gasFee}}ドル相当のETHが必要です。",
-    "topUpAction": "ウォレットにチャージして、もう一度お試しください。",
+    "depositNoBalance": "{{network}}ネットワーク上に転送する{{symbol}}の残高がありません。",
+    "gasAndBalanceTitle": "ガスと残高が不足しています",
     "gasBody": "{{network}}ネットワークのガス料金は{{symbol}}で支払われます。{{symbol}}残高を補充して、もう一度このトランザクションをお試しください。",
     "gasTitle": "ガス残高が不足しています",
-    "gasAndBalanceTitle": "ガスと残高が不足しています",
     "noBalanceBody": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
     "noBalanceTitle": "残高なし",
     "paymentBody": "残高不足のため、この購入を完了できません。",
+    "paymentInsufficientBalance": "{{network}}ネットワークの残高が{{balance}}{{symbol}}では、この{{amount}}{{symbol}}の支払いを行うのに不十分です。",
+    "paymentInsufficientBalanceAndGas": "このトランザクションには、ガス料金を支払うために{{network}}ネットワークで{{amount}}{{symbol}}と約{{gasFee}}ドル相当のETHが必要です。",
+    "title": "残高不足",
+    "topUpAction": "ウォレットにチャージして、もう一度お試しください。",
     "transferBody": "この振込を完了するには残高が不足しています。"
   },
   "transferMfaPage": {
@@ -1712,8 +1713,8 @@
   "verifyErrorPage": {
     "body": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。署名がないため、{{clientName}}はウォレットの所有権を確認できません。",
     "body40": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。{{clientName}}は署名がないため、ウォレットの所有権を確認できません。",
-    "title": "確認が拒否されました",
-    "timeout": "ウォレットを確認し、{{walletName}}アプリで署名リクエストを承認してください。"
+    "timeout": "ウォレットを確認し、{{walletName}}アプリで署名リクエストを承認してください。",
+    "title": "確認が拒否されました"
   },
   "wallectConnect": {
     "noActiveSessionError": "有効なWalletConnectセッションはありません",
@@ -1721,10 +1722,10 @@
     "unknownError": "不明なエラーが発生しました。{{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "{{walletName}}ウォレットの所有権はすでに確認されています。",
     "completePaymentMessage": "{{clientName}}での購入を完了するには、チェックアウト画面に戻ってください。",
     "continueMessage": "{{clientName}}アプリで操作を続けてください。",
-    "successMessage": "{{walletName}}ウォレットの所有権が正常に確認されました。",
-    "alreadyVerified": "{{walletName}}ウォレットの所有権はすでに確認されています。"
+    "successMessage": "{{walletName}}ウォレットの所有権が正常に確認されました。"
   },
   "withdrawalLockedErrorPage": {
     "another": "別のアカウントから送金する",

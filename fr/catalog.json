@@ -28,15 +28,15 @@
     "receiveAmountInput": {
       "networkName": "sur {{networkName}}"
     },
+    "scanText": "Scannez le code QR pour terminer le processus sur votre appareil mobile.",
+    "scanTitle": "Complétez votre dépôt sur Binance",
     "selectAnotherAccount": "Veuillez choisir un autre compte",
     "selectAnotherExchange": "Veuillez sélectionner un autre échange ou portefeuille pour effectuer le dépôt.",
     "selectAsset": "Choisissez l’actif que vous souhaitez transférer",
     "selectCurrency": "Choisissez une devise",
     "selectNetwork": "Choisissez le réseau pour le transfert",
     "youPay": "Montant à payer",
-    "youReceive": "Montant à recevoir",
-    "scanTitle": "Complétez votre dépôt sur Binance",
-    "scanText": "Scannez le code QR pour terminer le processus sur votre appareil mobile."
+    "youReceive": "Montant à recevoir"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Il semble que vous n'avez pas approuvé la demande. Si c'était une erreur, veuillez réessayer.",
@@ -262,36 +262,18 @@
     "continue": "Continuez sur {{walletName}}",
     "dappPage": {
       "continueButton": "Continuez dans {{walletName}}",
+      "depositTitle": "Dépôt depuis votre portefeuille",
+      "payTitle": "Payez dans votre portefeuille",
       "qrSubtitle": "Ouvrez l'application de caméra sur votre téléphone et scannez le QR code pour lier",
       "spinnerTransactionText": "Terminez cette transaction dans votre application {{walletName}}",
       "spinnerVerifyText": "Terminez la vérification de propriété dans votre application {{walletName}}",
       "subtitle": "Continuez dans {{walletName}}. Revenez ici lorsque vous avez terminé.",
-      "payTitle": "Payez dans votre portefeuille",
-      "depositTitle": "Dépôt depuis votre portefeuille",
       "verifyWalletTitle": "Vérifiez votre portefeuille"
     },
     "previewButton": "Connecter",
     "previewTitle": "Connecter le compte",
     "subtitle": "Cliquez ci-dessous pour ouvrir {{walletName}}. Ensuite, approuvez la demande de connexion pour prévisualiser votre paiement.",
     "title": "Connecter votre portefeuille"
-  },
-  "inWalletBrowserInitialPage": {
-    "verifyFlowSubtitle": "Approuvez la connexion pour vérifier votre portefeuille",
-    "paymentFlowSubtitle": "Approuvez la connexion pour commencer votre paiement",
-    "depositFlowSubtitle": "Approuvez la connexion pour commencer votre transfert",
-    "title": "Connecter le compte"
-  },
-  "inWalletBrowserVerifyPage": {
-    "titleInitial": "Vérifiez votre portefeuille",
-    "subtitleInitial": "Confirmez que vous possédez ce portefeuille en signant un message. Si vous ne voyez pas la demande, cliquez sur le bouton ci-dessous.",
-    "titleAlreadyDenied": "Oups!",
-    "subtitleAlreadyDenied": "Il semble que vous ayez refusé la demande de signature. Revolut ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
-    "resend": "Renvoyer la demande de signature"
-  },
-  "inWalletBrowserVerifyDonePage": {
-    "title": "Portefeuille vérifié!",
-    "subtitle": "Retourner à {{clientName}}",
-    "returnToClient": "Retourner à {{clientName}}"
   },
   "defiWalletQrPage": {
     "declinedBody": "Vous avez refusé la demande de connexion de votre portefeuille, ou une demande précédente est toujours en cours.",
@@ -499,6 +481,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Délai d'attente pour les retraits"
   },
   "errorMessages": {
+    "accountDisabled": "Ce compte a été désactivé.",
+    "accountLocked": "Ce compte a été verrouillé.",
     "accountNotFound": "Impossible de récupérer votre/vos compte(s).",
     "addressAllowlistPending": "Cette adresse de destinataire a été ajoutée à votre liste autorisée et est en attente de validation.",
     "addressNotAllowlisted": "Impossible d'initier le retrait depuis Coinbase. Vous devez ajouter cette adresse de destinataire à votre liste autorisée ici : https://www.coinbase.com/settings/allowlist",
@@ -518,6 +502,7 @@
     "coinbaseUnavailable": "Coinbase a rencontré une erreur. Veuillez vérifier votre compte Coinbase pour confirmer si le transfert a bien été effectué.",
     "configurationMismatch": "Impossible d'initier le transfert. La configuration du compte ne correspond pas au transfert demandé.",
     "default": "Une erreur est survenue.",
+    "emailCodeExpired": "Le code de vérification par e-mail a expiré. Veuillez demander un nouveau code.",
     "emptyWalletBalance": "Le solde du portefeuille Source est vide.",
     "exceedsApplicationLimit": "Le montant du transfert dépasse la limite de l'application.",
     "existingApiKey": "Veuillez supprimer la clé API existante dans votre compte Binance, puis réessayez.",
@@ -530,13 +515,23 @@
     "failedToSaveFundingOptions": "Échec de l'enregistrement des options de financement",
     "feeAssetBalanceNotEnough": "Fonds insuffisants pour les frais de transfert.",
     "fromAccountNotSupported": "Le compte ne prend actuellement pas en charge les retraits de crypto-monnaie.",
+    "incorrect2faCode": "Code 2FA incorrect.",
+    "incorrectEmail": "Vous avez entré un e-mail incorrect.",
+    "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_many": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
     "invalidCredentials": "Identifiants invalides. Veuillez réessayer.",
     "invalidFromIntegrationToken": "Veuillez vous reconnecter pour continuer.",
     "invalidIntegrationToken": "Veuillez vous reconnecter pour continuer.",
+    "invalidPhoneNumber": "Veuillez entrer un numéro de téléphone valide.",
     "invalidToIntegrationToken": "Veuillez vous reconnecter pour continuer.",
     "kycRequired": "Impossible de lancer le transfert. Cette intégration nécessite que les comptes aient complété une vérification KYC avant d'autoriser les transferts de crypto-monnaies.",
     "locked": "Votre compte est verrouillé",
+    "loginFirst": "Veuillez vous connecter d'abord.",
+    "loginWithQrOrMobileLink": "Veuillez vous connecter en utilisant le code QR ou le lien mobile.",
     "mfaNotSupported": "L'authentification multifacteur n'est pas prise en charge pour cette opération.",
     "networkDisabled": "Le réseau est actuellement désactivé et ne peut pas être utilisé.",
     "noAvailableSmartContract": "Contrat intelligent indisponible",
@@ -548,7 +543,11 @@
     "passKeyNotSupportedPayment": "Malheureusement, le 2FA Passkey n'est pas encore pris en charge. Veuillez ajouter Google Authenticator comme 2FA supplémentaire et réessayer le paiement.",
     "passKeyNotSupportedRedirect": "Redirection vers une méthode alternative de retrait Coinbase...",
     "permissionDenied": "Vous n'avez pas les permissions nécessaires pour accéder à ce point d'accès, veuillez contacter l'équipe Mesh pour demander l'accès.",
+    "pleaseLogin": "Veuillez vous connecter.",
+    "pleaseTryAgain": "Veuillez réessayer.",
+    "pleaseTryAgainIn1Hour": "Veuillez réessayer dans une heure.",
     "previewExpired": "L'aperçu a expiré.",
+    "qrOrMobileLinkIn24Hours": "Veuillez réessayer dans 24 heures en utilisant le code QR ou le lien mobile.",
     "refusedByIntegration": "Impossible d'initier le transfert.",
     "refusedByIntegrationDeposit": "Impossible d'initier le dépôt.",
     "refusedByIntegrationOnramp": "Impossible d'initier l'achat.",
@@ -562,6 +561,7 @@
     "symbolNotSupportedByTarget": "Impossible de trouver l’adresse de dépôt pour la crypto-monnaie demandée.",
     "symbolNotSupportedInRegion": "Un symbole sélectionné n'est pas pris en charge par Coinbase en raison de restrictions régionales",
     "toAccountNotSupported": "Le compte de destination ne prend actuellement pas en charge les dépôts de crypto-monnaie.",
+    "tooManyAttemptsOneMinute": "Trop de tentatives. Veuillez réessayer dans 1 minute.",
     "tooManyRequests": "Veuillez réessayer plus tard.",
     "transferAlreadyRequested": "Le transfert est déjà demandé.",
     "tryAgainAfterLogin": "Veuillez réessayer après vous être connecté.",
@@ -570,6 +570,7 @@
     "unableToSendContactSupport": "Vous ne pouvez pas envoyer de cryptomonnaie pour le moment. Veuillez contacter l’assistance Coinbase.",
     "unauthorizedToken": "Veuillez vous reconnecter pour continuer.",
     "userInfoUnavailable": "Impossible d'obtenir les informations utilisateur. Veuillez réessayer.",
+    "verificationFailed": "Échec de la vérification. Veuillez réessayer.",
     "webWithdrawalLimitExceeded": "Vous avez dépassé la limite maximale de retrait quotidien pour Binance.",
     "whitelistAddressRequired": "L'adresse de destination doit être sur liste blanche.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Pour la sécurité de vos actifs, certains dépôts C2C seront temporairement gelés pendant 24 heures. Passé 24 heures, le statut \"gelé\" sera automatiquement levé, et vous pourrez retirer vos cryptomonnaies. Durant cette période, vos transactions sur la plateforme ne seront pas impactées : vous pouvez continuer à utiliser les services Binance normalement.",
@@ -579,23 +580,7 @@
     "withdrawalLocked": "Pour votre sécurité, les retraits sont temporairement désactivés pendant 24 heures après toute modification des paramètres du compte. Veuillez réessayer plus tard.",
     "withdrawalLockedP2P": "Pour votre sécurité, les retraits sont désactivés pendant 24 heures après un achat P2P. Veuillez réessayer plus tard.",
     "withdrawalPendingDepositConfirmation": "Votre dépôt n'a pas atteint les confirmations de déverrouillage requises pour le retrait. Veuillez vérifier l'historique des transactions pour plus de détails.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Les retraits peuvent être effectués au moins 48 heures après un achat ou une transaction de dépôt.",
-    "pleaseTryAgain": "Veuillez réessayer.",
-    "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
-    "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
-    "invalidPhoneNumber": "Veuillez entrer un numéro de téléphone valide.",
-    "accountLocked": "Ce compte a été verrouillé.",
-    "incorrectEmail": "Vous avez entré un e-mail incorrect.",
-    "loginWithQrOrMobileLink": "Veuillez vous connecter en utilisant le code QR ou le lien mobile.",
-    "tooManyAttemptsOneMinute": "Trop de tentatives. Veuillez réessayer dans 1 minute.",
-    "qrOrMobileLinkIn24Hours": "Veuillez réessayer dans 24 heures en utilisant le code QR ou le lien mobile.",
-    "loginFirst": "Veuillez vous connecter d'abord.",
-    "pleaseLogin": "Veuillez vous connecter.",
-    "pleaseTryAgainIn1Hour": "Veuillez réessayer dans une heure.",
-    "accountDisabled": "Ce compte a été désactivé.",
-    "emailCodeExpired": "Le code de vérification par e-mail a expiré. Veuillez demander un nouveau code.",
-    "verificationFailed": "Échec de la vérification. Veuillez réessayer.",
-    "incorrect2faCode": "Code 2FA incorrect."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Les retraits peuvent être effectués au moins 48 heures après un achat ou une transaction de dépôt."
   },
   "errorPage": {
     "title": "Une erreur est survenue."
@@ -701,6 +686,7 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -861,6 +847,8 @@
     "thirdParty": "Vos actifs ne touchent jamais un tiers"
   },
   "initialVerifyPage": {
+    "approveSignature": "Approuvez la demande de signature dans votre application {{walletName}}.",
+    "approveSignatureStillThere": "Vous êtes toujours là ?… Veuillez approuver la demande de signature dans votre application {{walletName}}.",
     "content40": "Confirmez que vous possédez ce portefeuille",
     "drawerTitle": "Approuvez la demande de signature<1></1> dans votre portefeuille",
     "item1Body": "Il vous sera demandé de signer un message dans {{selectedIntegrationName}} confirmant que vous possédez ce portefeuille.",
@@ -871,9 +859,25 @@
     "resendAction": "Renvoyer la demande de signature",
     "title": "Presque terminé !",
     "verifyAction": "Vérifier l'adresse",
-    "verifyingLabel": "Vérification de la signature...",
-    "approveSignature": "Approuvez la demande de signature dans votre application {{walletName}}.",
-    "approveSignatureStillThere": "Vous êtes toujours là ?… Veuillez approuver la demande de signature dans votre application {{walletName}}."
+    "verifyingLabel": "Vérification de la signature..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "Approuvez la connexion pour commencer votre transfert",
+    "paymentFlowSubtitle": "Approuvez la connexion pour commencer votre paiement",
+    "title": "Connecter le compte",
+    "verifyFlowSubtitle": "Approuvez la connexion pour vérifier votre portefeuille"
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "returnToClient": "Retourner à {{clientName}}",
+    "subtitle": "Retourner à {{clientName}}",
+    "title": "Portefeuille vérifié!"
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "Renvoyer la demande de signature",
+    "subtitleAlreadyDenied": "Il semble que vous ayez refusé la demande de signature. Revolut ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
+    "subtitleInitial": "Confirmez que vous possédez ce portefeuille en signant un message. Si vous ne voyez pas la demande, cliquez sur le bouton ci-dessous.",
+    "titleAlreadyDenied": "Oups!",
+    "titleInitial": "Vérifiez votre portefeuille"
   },
   "ipWhiteListPage": {
     "addIp": "Ajoutez l'adresse IP ci-dessous en tant qu'adresse IP de confiance",
@@ -1195,13 +1199,13 @@
       "depositWithQr": "Dépôt avec code QR"
     },
     "screen": {
+      "copyWalletAddress": "Copier l'adresse du portefeuille",
+      "downloadQr": "Télécharger le code QR",
       "headline": "Avez-vous des difficultés ?",
+      "networkLabel": "Réseau",
       "subtitle": "Vous pouvez toujours compléter votre dépôt manuellement.",
       "tokenLabel": "Jeton",
-      "networkLabel": "Réseau",
-      "warning": "Transférez uniquement des USDT sur Base à cette adresse, sinon vos actifs risquent d'être perdus",
-      "copyWalletAddress": "Copier l'adresse du portefeuille",
-      "downloadQr": "Télécharger le code QR"
+      "warning": "Transférez uniquement des USDT sur Base à cette adresse, sinon vos actifs risquent d'être perdus"
     }
   },
   "paymentMethods": {
@@ -1454,11 +1458,11 @@
     "cannotFundTitle": "Impossible de financer la transaction",
     "defaultTitle": "Sélectionner un jeton",
     "depositTitle": "Sélectionner un jeton de dépôt",
-    "networkTitle": "Choisissez un réseau",
     "ineligibleAssets": "Actifs inéligibles",
     "link40Title": "Choisissez un jeton",
     "loading": "Chargement de vos actifs...",
     "network": "Réseau {{networkName}}",
+    "networkTitle": "Choisissez un réseau",
     "noAssetsTitle": "Aucun actif détecté sur le compte lié",
     "noEligibleAssetsTitle": "Aucun actif dans ce compte n'est éligible pour ce transfert",
     "notEnoughtBody": "Ajoutez plus de {{symbol}} à votre compte, puis revenez ici pour réessayer.",
@@ -1535,6 +1539,10 @@
     "subtitle": "Votre solde d'achat de {{symbol}} est inférieur à celui attendu en raison des fluctuations de prix et/ou de gaz.",
     "title": "Rechargement nécessaire"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "{{amount}} disponible pour dépôt",
+    "basedOnYourBalances": "Basé sur vos soldes"
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Aperçu du dépôt",
@@ -1543,8 +1551,8 @@
     },
     "errorMessage": {
       "insufficientFunds": "Fonds insuffisants pour couvrir les frais de transfert et de gaz. Le montant de transfert maximum est {{maxAmount}}.",
-      "minimumAmount": "Le montant de transfert minimum est {{minAmount}}.",
       "maximumAmount": "Le montant de transfert maximum est {{maxAmount}}.",
+      "minimumAmount": "Le montant de transfert minimum est {{minAmount}}.",
       "zeroAmount": "Veuillez entrer un montant différent de zéro"
     },
     "title": {
@@ -1553,10 +1561,6 @@
       "onramp": "Saisissez le montant de l’achat",
       "transfer": "Entrer le montant du transfert"
     }
-  },
-  "transferAmountInput": {
-    "availableForDeposit": "{{amount}} disponible pour dépôt",
-    "basedOnYourBalances": "Basé sur vos soldes"
   },
   "transferCanceledPage": {
     "title": "Transfert annulé",
@@ -1616,18 +1620,18 @@
     "title": "Vérification"
   },
   "transferInsufficientBalancePage": {
-    "title": "Fonds insuffisants",
-    "paymentInsufficientBalance": "Votre solde de {{balance}} {{symbol}} sur le réseau {{network}} est insuffisant pour effectuer ce paiement de {{amount}} {{symbol}}.",
-    "paymentInsufficientBalanceAndGas": "Cette transaction nécessite {{amount}} {{symbol}} et environ ${{gasFee}} en ETH sur le réseau {{network}} pour payer les frais de gaz.",
-    "depositNoBalance": "Vous n'avez pas de solde {{symbol}} sur le réseau {{network}} à transférer.",
     "depositInsufficientBalanceAndGas": "Cette transaction nécessite un solde {{symbol}} non nul et environ ${{gasFee}} en ETH sur le réseau {{network}} pour payer les frais de gaz.",
-    "topUpAction": "Veuillez recharger votre portefeuille et réessayer.",
+    "depositNoBalance": "Vous n'avez pas de solde {{symbol}} sur le réseau {{network}} à transférer.",
+    "gasAndBalanceTitle": "Gaz et solde insuffisants",
     "gasBody": "Les frais de gaz pour le réseau {{network}} sont payés en {{symbol}}. Veuillez recharger votre solde en {{symbol}} puis réessayez cette transaction.",
     "gasTitle": "Solde de gaz insuffisant",
-    "gasAndBalanceTitle": "Gaz et solde insuffisants",
     "noBalanceBody": "Vous n'avez pas de solde {{symbol}} à transférer. Veuillez recharger votre solde et réessayer.",
     "noBalanceTitle": "Pas de solde",
     "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
+    "paymentInsufficientBalance": "Votre solde de {{balance}} {{symbol}} sur le réseau {{network}} est insuffisant pour effectuer ce paiement de {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Cette transaction nécessite {{amount}} {{symbol}} et environ ${{gasFee}} en ETH sur le réseau {{network}} pour payer les frais de gaz.",
+    "title": "Fonds insuffisants",
+    "topUpAction": "Veuillez recharger votre portefeuille et réessayer.",
     "transferBody": "Votre solde est insuffisant pour effectuer ce transfert."
   },
   "transferMfaPage": {
@@ -1712,8 +1716,8 @@
   "verifyErrorPage": {
     "body": "Vous avez refusé la demande de signature dans votre portefeuille, ou une demande précédente est toujours active. {{clientName}} ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
     "body40": "Il semble que vous ayez refusé la demande de signature dans votre portefeuille, ou qu'une demande précédente soit toujours active. {{clientName}} ne peut pas vérifier la propriété de votre portefeuille sans une signature.",
-    "title": "Vérification refusée",
-    "timeout": "Veuillez vérifier votre portefeuille et approuver la demande de signature dans votre application {{walletName}}."
+    "timeout": "Veuillez vérifier votre portefeuille et approuver la demande de signature dans votre application {{walletName}}.",
+    "title": "Vérification refusée"
   },
   "wallectConnect": {
     "noActiveSessionError": "Pas de session WalletConnect active",
@@ -1721,10 +1725,10 @@
     "unknownError": "Une erreur inconnue est survenue. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "La propriété du portefeuille {{walletName}} a déjà été vérifiée.",
     "completePaymentMessage": "Retournez à votre expérience de paiement pour compléter votre achat {{clientName}}.",
     "continueMessage": "Veuillez continuer dans votre application {{clientName}}.",
-    "successMessage": "Vous avez vérifié avec succès la propriété de votre portefeuille {{walletName}}.",
-    "alreadyVerified": "La propriété du portefeuille {{walletName}} a déjà été vérifiée."
+    "successMessage": "Vous avez vérifié avec succès la propriété de votre portefeuille {{walletName}}."
   },
   "withdrawalLockedErrorPage": {
     "another": "Transfert depuis un autre compte",
