@@ -36,7 +36,9 @@
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
     "youPay": "支払う",
-    "youReceive": "受け取る"
+    "youReceive": "受け取る",
+    "returnToClient": "{{selectedIntegrationName}}を開き、QRコードを携帯端末でスキャンした後、こちらに戻って続行します。",
+    "openBinance": "Binanceを開く"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "要求を承認しなかったようです。それが間違いであれば、再試行してください。",
@@ -247,11 +249,11 @@
     "title": "{{clientName}}で支払いを確認してください。"
   },
   "dappDoneTransferPageUI": {
+    "depositSubtitle": "{{clientName}}に戻る",
     "depositSuccess": "成功しました！",
     "depositTitle": "{{clientName}}で <2>{{amountCrypto}} ～ {{amountFiat}}</2> を受け取ります",
-    "depositSubtitle": "{{clientName}}に戻る",
-    "paymentSuccess": "支払いに成功しました！",
-    "paymentSubtitle": "注文を完了するために、チェックアウトページに戻ってください"
+    "paymentSubtitle": "注文を完了するために、チェックアウトページに戻ってください",
+    "paymentSuccess": "支払いに成功しました！"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "接続要求を拒否したか、以前の要求がまだアクティブです。もし間違いでしたら、再試行してください。",
@@ -1210,18 +1212,18 @@
     "entry": {
       "depositWithQr": "QRコードで入金",
       "depositWithWalletAddress": "ウォレットアドレスで入金",
-      "needAnotherWay": "別の方法は必要ですか?",
-      "dontSeeYourAccount": "アカウントが見つかりませんか?"
+      "dontSeeYourAccount": "アカウントが見つかりませんか?",
+      "needAnotherWay": "別の方法は必要ですか?"
     },
     "screen": {
-      "copyWalletAddress": "ウォレットアドレスをコピーする",
       "copiedWalletAddress": "コピーしました",
+      "copyWalletAddress": "ウォレットアドレスをコピーする",
+      "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
       "headline": "{{network}}に{{token}}を入金",
       "networkLabel": "ネットワーク",
       "subtitle": "手動で入金を完了することができます。",
       "tokenLabel": "トークン",
-      "depositToClient": "{{clientName}}への入金",
       "warning": "このアドレスに{{network}}で{{token}}のみを転送してください、他の資産は失われる可能性があります"
     }
   },
