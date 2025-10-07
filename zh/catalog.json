@@ -28,8 +28,8 @@
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
-    "scanText": "扫描二维码在您的移动设备上完成此过程。",
-    "scanTitle": "在币安完成您的存款",
+    "scanText": "用手机相机扫描二维码或用Binance程序来完成您的交易。",
+    "scanTitle": "用Binance完成下一步",
     "selectAnotherAccount": "选择另一个账户",
     "selectAnotherExchange": "请另选其他交易所或钱包进行存款。",
     "selectAsset": "选择要转账的资产",
@@ -48,10 +48,10 @@
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "继续使用 Binance",
-    "descriptionDeposit": "在连接您的Binance移动应用程序后<1>返回此处充值</1>。",
-    "descriptionGeneral": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
-    "descriptionOnRamp": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
-    "descriptionPay": "在连接您的Binance移动应用程序后<1>返回此处支付</1> 。",
+    "descriptionDeposit": "连接您的Binance后<0>返回此处充值</0>。",
+    "descriptionGeneral": "连接您的Binance后<0>返回此处继续</0>。",
+    "descriptionOnRamp": "连接您的Binance后<0>返回此处继续</0>。",
+    "descriptionPay": "连接您的Binance后<0>返回此处支付</0>。",
     "loginWithEmailButton": "使用邮箱/手机登录",
     "or": "或",
     "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
@@ -62,7 +62,7 @@
     "emailPhoneInput": "电子邮件/电话（不含国家代码）",
     "invalidEmail": "请输入有效的电子邮件或电话号码。填写电话号码时不允许输入空格或特殊字符。",
     "nextButton": "下一步",
-    "noPasswordCta1": "继续使用 Binance",
+    "noPasswordCta1": "用Binance中完成下一步",
     "noPasswordCta2": "重置密码",
     "noPasswordMessage": "您尚未为此账户设置密码。继续使用 Binance 应用程序或重置您的密码。",
     "noPasswordTitle": "此账户没有密码",
@@ -240,18 +240,18 @@
   "dappDoneTransferPage": {
     "depositSubtitle": "返回{{clientName}}",
     "depositSuccess": "成功！",
-    "depositTitle": "您将收到<1>{{amountCrypto}} ~ {{amountFiat}}</1>在<2></2>{{clientName}}.",
-    "paymentSubtitle": "返回您的结账页面以完成您的订单",
+    "depositTitle": "您将在<2></2>{{clientName}}中收到<1>{{amountCrypto}} ~ {{amountFiat}}</1>。",
+    "paymentSubtitle": "返回您的结账页面以完成交易",
     "paymentSuccess": "支付成功！",
     "subtitle": "请返回至{{clientName}}完成您的交易。",
     "title": "在{{clientName}}中确认您的支付。"
   },
   "dappDoneTransferPageUI": {
-    "depositSuccess": "成功！",
-    "depositTitle": "您{{clientName}}将收到<2>{{amountCrypto}} ~ {{amountFiat}}</2>。",
     "depositSubtitle": "返回{{clientName}}",
-    "paymentSuccess": "支付成功！",
-    "paymentSubtitle": "返回您的结账页面以完成您的订单"
+    "depositSuccess": "成功！",
+    "depositTitle": "您将在<5></5>{{clientName}}.中收到<2>{{amountCrypto}} ~ {{amountFiat}}</2>。",
+    "paymentSubtitle": "返回您的结账页面以完成交易",
+    "paymentSuccess": "支付成功！"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "您的连接请求被拒绝，或已有请求在处理中。如操作有误，请重试。",
@@ -426,7 +426,7 @@
     "configurationMismatch": "配置异常",
     "emptyWalletBalance": "清空钱包",
     "exceedsApplicationLimit": "超过应用程序限制",
-    "existingApiKey": "现有 API 密钥",
+    "existingApiKey": "现有 Api 密钥",
     "expiredSmartDeposit": "智能充值交易已过期",
     "faceVerificationFailed": "面部验证失败",
     "failedToGetFundingOptions": "充值选项错误",
@@ -644,7 +644,7 @@
     "title": "验证"
   },
   "feesDrawer": {
-    "automatedSwapFeeDescription": "用于自动交换您钱包中的资产到目标转账资产的手续费。",
+    "automatedSwapFeeDescription": "自动兑换目标资产所需手续费",
     "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
     "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
@@ -1210,18 +1210,18 @@
     "entry": {
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址充值",
-      "needAnotherWay": "需要其他方式？",
-      "dontSeeYourAccount": "没有看到你的账户？"
+      "dontSeeYourAccount": "没有看到你的账户？",
+      "needAnotherWay": "需要其他方式？"
     },
     "screen": {
-      "copyWalletAddress": "复制钱包地址",
       "copiedWalletAddress": "已复制",
+      "copyWalletAddress": "复制钱包地址",
+      "depositToClient": "{{clientName}}充值",
       "downloadQr": "下载二维码",
       "headline": "在{{network}}上充值{{token}}",
       "networkLabel": "网络",
       "subtitle": "您仍可以手动完成您的存款。",
       "tokenLabel": "代币",
-      "depositToClient": "{{clientName}}充值",
       "warning": "仅将{{token}}转移到{{network}}上的此地址，否则，您的资产可能会丢失"
     }
   },
