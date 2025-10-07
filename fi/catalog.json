@@ -36,7 +36,9 @@
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
     "youPay": "Sinä maksat",
-    "youReceive": "Sinä vastaanotat"
+    "youReceive": "Sinä vastaanotat",
+    "returnToClient": "Avaa {{selectedIntegrationName}}, skannaa QR-koodi mobiililaitteellasi ja palaa sitten tähän jatkaaksesi.",
+    "openBinance": "Avaa Binance"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
@@ -247,11 +249,11 @@
     "title": "Vahvista maksusi {{clientName}}-sovelluksessa"
   },
   "dappDoneTransferPageUI": {
+    "depositSubtitle": "Palaa {{clientName}}iin",
     "depositSuccess": "Onnistui!",
     "depositTitle": "Saat<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3>tilille {{clientName}}.",
-    "depositSubtitle": "Palaa {{clientName}}iin",
-    "paymentSuccess": "Maksu onnistui!",
-    "paymentSubtitle": "Palaa kassasivullesi viimeistelläksesi tilauksesi"
+    "paymentSubtitle": "Palaa kassasivullesi viimeistelläksesi tilauksesi",
+    "paymentSuccess": "Maksu onnistui!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Näyttää siltä, että hylkäsit yhdistämispyynnön tai edellinen pyyntö on edelleen aktiivinen. Jos tämä oli virhe, yritä uudelleen.",
@@ -1210,18 +1212,18 @@
     "entry": {
       "depositWithQr": "Talleta QR-koodilla",
       "depositWithWalletAddress": "Talleta lompakon osoitteella",
-      "needAnotherWay": "Tarvitsetko toisen tavan?",
-      "dontSeeYourAccount": "Eikö tiliäsi näy?"
+      "dontSeeYourAccount": "Eikö tiliäsi näy?",
+      "needAnotherWay": "Tarvitsetko toisen tavan?"
     },
     "screen": {
-      "copyWalletAddress": "Kopioi lompakon osoite",
       "copiedWalletAddress": "Kopioitu",
+      "copyWalletAddress": "Kopioi lompakon osoite",
+      "depositToClient": "Talleta {{clientName}}iin",
       "downloadQr": "Lataa QR-koodi",
       "headline": "Talleta {{token}} verkossa {{network}}",
       "networkLabel": "Verkko",
       "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
       "tokenLabel": "Token",
-      "depositToClient": "Talleta {{clientName}}iin",
       "warning": "Siirrä vain {{token}} verkolla {{network}} tähän osoitteeseen, muutoin omaisuutesi voi kadota"
     }
   },
