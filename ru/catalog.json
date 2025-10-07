@@ -36,7 +36,9 @@
     "selectCurrency": "Выберите валюту",
     "selectNetwork": "Выберите сеть для перевода",
     "youPay": "Вы платите",
-    "youReceive": "Вы получаете"
+    "youReceive": "Вы получаете",
+    "returnToClient": "Откройте {{selectedIntegrationName}}, отсканируйте QR-код с помощью мобильного устройства, затем вернитесь сюда, чтобы продолжить.",
+    "openBinance": "Открыть Binance"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Похоже, вы не одобрили запрос. Если это ошибка, пожалуйста, попробуйте снова.",
@@ -247,11 +249,11 @@
     "title": "Подтвердите ваш платеж в {{clientName}}"
   },
   "dappDoneTransferPageUI": {
+    "depositSubtitle": "Вернуться к {{clientName}}",
     "depositSuccess": "Успешно!",
     "depositTitle": "Вы получите <2>{{amountCrypto}} ~ {{amountFiat}}</2> на<5></5>{{clientName}}.",
-    "depositSubtitle": "Вернуться к {{clientName}}",
-    "paymentSuccess": "Платеж успешно выполнен!",
-    "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ"
+    "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ",
+    "paymentSuccess": "Платеж успешно выполнен!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
@@ -1210,18 +1212,18 @@
     "entry": {
       "depositWithQr": "Депозит через QR-код",
       "depositWithWalletAddress": "Пополните с электронным кошельком",
-      "needAnotherWay": "Попробуйте другой способ?",
-      "dontSeeYourAccount": "Не видите свой счет?"
+      "dontSeeYourAccount": "Не видите свой счет?",
+      "needAnotherWay": "Попробуйте другой способ?"
     },
     "screen": {
-      "copyWalletAddress": "Скопировать адрес электронного кошелька",
       "copiedWalletAddress": "Скопировано",
+      "copyWalletAddress": "Скопировать адрес электронного кошелька",
+      "depositToClient": "Депозит на {{clientName}}",
       "downloadQr": "Скачать QR-код",
       "headline": "Пополнение {{token}} в сети {{network}}",
       "networkLabel": "Сеть",
       "subtitle": "Вы можете завершить депозит вручную.",
       "tokenLabel": "Токен",
-      "depositToClient": "Депозит на {{clientName}}",
       "warning": "Переводите только {{token}} в сети {{network}} на этот адрес, иначе ваши средства могут быть утеряны"
     }
   },
