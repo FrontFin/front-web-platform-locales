@@ -36,7 +36,9 @@
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
     "youPay": "由您支付",
-    "youReceive": "由您接收"
+    "youReceive": "由您接收",
+    "returnToClient": "打开{{selectedIntegrationName}}，用您的移动设备扫描QR码，然后返回这里继续。",
+    "openBinance": "打开Binance"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "请求未被批准。如果是错误，请重试。",
@@ -884,8 +886,8 @@
   },
   "inWalletBrowserVerifyPage": {
     "resend": "重新发送签名请求",
-    "subtitleAlreadyDenied": "看起来您拒绝了签名请求。没有签名，Revolut无法验证您钱包的所有权。",
-    "subtitleInitial": "通过签署消息确认您是此钱包的所有者。如果您未看到请求，请点击下方按钮。",
+    "subtitleAlreadyDenied": "检测到您已拒绝了钱包签名请求。由于缺少签名，Revolut无法验证该钱包所有权。",
+    "subtitleInitial": "请通过签名消息来确认您拥有此钱包。如果未看到签名请求，请点击下方按钮。",
     "titleAlreadyDenied": "哎哟，出了点问题！",
     "titleInitial": "验证您的钱包"
   },
@@ -1000,7 +1002,7 @@
     "codeSentEmailOrPhoneValue": "验证码已发送至<0>{{emailOrPhone}}</0>",
     "codeSentPhone": "验证码通过短信发送至您的手机",
     "enterCode": "输入您的一次性代码以确认确实是您尝试登录。",
-    "enterCode2": "请输入您<0>身份验证器应用</0>中的代码",
+    "enterCode2": "请输入您<0>身份验证应用</0>中的验证码",
     "enterPin": "请输入您的交易 PIN码",
     "enterVerificationCode": "输入验证码",
     "title": "验证",
@@ -1209,20 +1211,20 @@
   "payManual": {
     "entry": {
       "depositWithQr": "使用二维码存款",
-      "depositWithWalletAddress": "使用钱包地址充值",
+      "depositWithWalletAddress": "使用钱包地址进行充值",
       "dontSeeYourAccount": "没有看到你的账户？",
-      "needAnotherWay": "需要其他方式？"
+      "needAnotherWay": "使用其他支付方式？"
     },
     "screen": {
       "copiedWalletAddress": "已复制",
       "copyWalletAddress": "复制钱包地址",
-      "depositToClient": "{{clientName}}充值",
+      "depositToClient": "给{{clientName}}充值",
       "downloadQr": "下载二维码",
       "headline": "在{{network}}上充值{{token}}",
       "networkLabel": "网络",
       "subtitle": "您仍可以手动完成您的存款。",
       "tokenLabel": "代币",
-      "warning": "仅将{{token}}转移到{{network}}上的此地址，否则，您的资产可能会丢失"
+      "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
     }
   },
   "paymentMethods": {
@@ -1277,7 +1279,7 @@
     "exitPage": {
       "continuePayment": "前往支付",
       "exit": "退出",
-      "exitAnyway": "仍要退出",
+      "exitAnyway": "仍然退出",
       "subtitle": "您的进度将会丢失。",
       "title": "您确定要退出吗？"
     },
@@ -1638,7 +1640,7 @@
     "title": "验证"
   },
   "transferInsufficientBalancePage": {
-    "depositInsufficientBalanceAndGas": "此交易需要非零 {{symbol}} 余额和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
+    "depositInsufficientBalanceAndGas": "此交易需要您在 {{network}} 网络上有{{symbol}} 余额并持有足够的 ETH 来支付约${{gasFee}} 的燃气费。",
     "depositNoBalance": "您在 {{network}} 网络上没有可以转账的 {{symbol}} 余额。",
     "gasAndBalanceTitle": "燃料费和余额均不足",
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
@@ -1646,7 +1648,7 @@
     "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
-    "paymentInsufficientBalance": "您的 {{balance}} {{symbol}} 余额在 {{network}} 网络上不足以进行此 {{amount}} {{symbol}} 付款。",
+    "paymentInsufficientBalance": "您在 {{network}} 网络上 {{balance}} {{symbol}}的余额不足以支付 {{amount}} {{symbol}}。",
     "paymentInsufficientBalanceAndGas": "此交易需要 {{amount}} {{symbol}} 和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
     "title": "余额不足",
     "topUpAction": "请充值您的钱包后再试一次。",
