@@ -25,9 +25,11 @@
     "continueTo": "{{selectedIntegrationName}}へ進む",
     "enterAmount": "転送金額を入力",
     "notSupported": "{{selectedIntegrationName}}は要求されたトークンまたはネットワークの転送をサポートしていません。",
+    "openBinance": "Binanceを開く",
     "receiveAmountInput": {
       "networkName": "{{networkName}} 上で"
     },
+    "returnToClient": "{{selectedIntegrationName}}を開き、QRコードを携帯端末でスキャンした後、こちらに戻って続行します。",
     "scanText": "モバイルデバイスでプロセスを完了するにはQRコードをスキャンしてください。",
     "scanTitle": "Binanceで入金を完了してください",
     "selectAnotherAccount": "別のアカウントを選択",
@@ -36,9 +38,7 @@
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
     "youPay": "支払う",
-    "youReceive": "受け取る",
-    "returnToClient": "{{selectedIntegrationName}}を開き、QRコードを携帯端末でスキャンした後、こちらに戻って続行します。",
-    "openBinance": "Binanceを開く"
+    "youReceive": "受け取る"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "要求を承認しなかったようです。それが間違いであれば、再試行してください。",
@@ -999,7 +999,7 @@
   },
   "mfaPage": {
     "codeSentEmail": "コードがメールに送信されました",
-    "codeSentEmailOrPhoneValue": "コードが<0>{{emailOrPhone}}</0>に送信されました",
+    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
     "codeSentPhone": "コードが電話にSMSで送信されました",
     "enterCode": "ログインしようとしているのが本当にご本人であることを確認するために、<1></1>ワンタイムコードを入力してください。",
     "enterCode2": "認証アプリの<0>コードを入力してください。</0>",
@@ -1220,11 +1220,11 @@
       "copyWalletAddress": "ウォレットアドレスをコピーする",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
-      "headline": "{{network}}に{{token}}を入金",
+      "headline": "お困りですか？",
       "networkLabel": "ネットワーク",
       "subtitle": "手動で入金を完了することができます。",
       "tokenLabel": "トークン",
-      "warning": "このアドレスに{{network}}で{{token}}のみを転送してください、他の資産は失われる可能性があります"
+      "warning": "このアドレスにはUSDT on Baseのみを送金してください。それ以外の場合、資産が失われる可能性があります。"
     }
   },
   "paymentMethods": {
