@@ -36,7 +36,9 @@
     "selectCurrency": "Choisissez une devise",
     "selectNetwork": "Choisissez le réseau pour le transfert",
     "youPay": "Montant à payer",
-    "youReceive": "Montant à recevoir"
+    "youReceive": "Montant à recevoir",
+    "returnToClient": "Ouvrez {{selectedIntegrationName}}, scannez le code QR avec votre appareil mobile, puis revenez ici pour continuer.",
+    "openBinance": "Ouvrir Binance"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Il semble que vous n'avez pas approuvé la demande. Si c'était une erreur, veuillez réessayer.",
@@ -247,11 +249,11 @@
     "title": "Confirmez votre paiement dans {{clientName}}"
   },
   "dappDoneTransferPageUI": {
+    "depositSubtitle": "Retourner à {{clientName}}",
     "depositSuccess": "Action complétée avec succès !",
     "depositTitle": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> dans {{clientName}}.",
-    "depositSubtitle": "Retourner à {{clientName}}",
-    "paymentSuccess": "Paiement réussi !",
-    "paymentSubtitle": "Retournez sur votre page de paiement pour finaliser votre commande"
+    "paymentSubtitle": "Retournez sur votre page de paiement pour finaliser votre commande",
+    "paymentSuccess": "Paiement réussi !"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Il semble que vous ayez refusé la demande de connexion ou qu'une demande précédente soit encore active. Si c'était une erreur, essayez à nouveau.",
@@ -1210,18 +1212,18 @@
     "entry": {
       "depositWithQr": "Dépôt avec code QR",
       "depositWithWalletAddress": "Déposez avec l'adresse du portefeuille",
-      "needAnotherWay": "Besoin d'une autre méthode?",
-      "dontSeeYourAccount": "Vous ne voyez pas votre compte?"
+      "dontSeeYourAccount": "Vous ne voyez pas votre compte?",
+      "needAnotherWay": "Besoin d'une autre méthode?"
     },
     "screen": {
-      "copyWalletAddress": "Copier l'adresse du portefeuille",
       "copiedWalletAddress": "Copié",
+      "copyWalletAddress": "Copier l'adresse du portefeuille",
+      "depositToClient": "Dépôt à {{clientName}}",
       "downloadQr": "Télécharger le code QR",
       "headline": "Dépôt de {{token}} sur {{network}}",
       "networkLabel": "Réseau",
       "subtitle": "Vous pouvez toujours compléter votre dépôt manuellement.",
       "tokenLabel": "Jeton",
-      "depositToClient": "Dépôt à {{clientName}}",
       "warning": "Transférez uniquement {{token}} sur {{network}} à cette adresse, sinon vos actifs risquent d'être perdus"
     }
   },
