@@ -21,20 +21,20 @@
     "amountMustBeWithin": "Määrän on oltava välillä {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Määrän on oltava välillä 21 USD - 15 000 USD",
     "buyCrypto": "Osta kryptovaluuttaa Binance Connectilla",
-    "cashEquivalent": "",
+    "cashEquivalent": "Raha-arvo",
     "closeButton": "Sulje",
-    "continueInBinance": "",
+    "continueInBinance": "Jatka Binance-sovelluksella",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
-    "cryptoAmount": "",
+    "cryptoAmount": "Kryptosumma",
     "enterAmount": "Syötä siirron määrä",
-    "mobileLabelDeposit": "",
-    "mobileLabelOnramp": "",
+    "mobileLabelDeposit": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään talletuksesi.",
+    "mobileLabelOnramp": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään on-ramp-järjestelmäsi.",
     "notSupported": "{{selectedIntegrationName}} ei tue siirtoja pyydetyille tokeneille ja/tai verkoille.",
-    "openBinance": "",
+    "openBinance": "Avaa Binance",
     "receiveAmountInput": {
       "networkName": "{{networkName}} verkossa"
     },
-    "returnToClient": "",
+    "returnToClient": "Avaa {{selectedIntegrationName}}, skannaa QR-koodi mobiililaitteellasi ja palaa sitten tähän jatkaaksesi.",
     "scanText": "Skannaa QR-koodi suorittaaksesi prosessin päätökseen mobiililaitteellasi.",
     "scanTitle": "Viimeistele talletuksesi Binancessa",
     "selectAnotherAccount": "Valitse toinen tili",
@@ -245,15 +245,20 @@
     "changeCurrency": "Vaihda valuutta"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "Palaa {{clientName}}iin",
+    "depositSuccess": "Onnistui!",
+    "depositTitle": "Saat <1>{{amountCrypto}} ~ {{amountFiat}}</1> <2></2>{{clientName}}.",
+    "paymentSubtitle": "Palaa kassasivullesi viimeistelläksesi tilauksesi",
+    "paymentSuccess": "Maksu onnistui!",
     "subtitle": "Palaa takaisin {{clientName}} viimeistelläksesi ostoksesi.",
     "title": "Vahvista maksusi {{clientName}}-sovelluksessa"
   },
   "dappDoneTransferPageUI": {
-    "depositSubtitle": "",
-    "depositSuccess": "",
+    "depositSubtitle": "Palaa {{clientName}}iin",
+    "depositSuccess": "Onnistui!",
     "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
-    "paymentSubtitle": "",
-    "paymentSuccess": ""
+    "paymentSubtitle": "Palaa kassasivullesi viimeistelläksesi tilauksesi",
+    "paymentSuccess": "Maksu onnistui!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Näyttää siltä, että hylkäsit yhdistämispyynnön tai edellinen pyyntö on edelleen aktiivinen. Jos tämä oli virhe, yritä uudelleen.",
@@ -532,8 +537,8 @@
     "incorrect2faCode": "Virheellinen 2FA-koodi.",
     "incorrectEmail": "Olet antanut virheellisen sähköpostin.",
     "incorrectPasswordChancesRemaining": "Väärä salasana. Sinulla on {{count}} mahdollisuutta jäljellä.",
-    "incorrectPasswordChancesRemaining_one": "",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "Väärä salasana. Sinulla on yksi mahdollisuus jäljellä.",
+    "incorrectPasswordChancesRemaining_other": "Väärä salasana. Sinulla on {{count}} mahdollisuutta jäljellä.",
     "incorrectUsernameOrPassword": "Väärä käyttäjänimi tai salasana.",
     "integrationNotAvailable": "Integraatio ei ole tällä hetkellä käytettävissä.",
     "invalidCredentials": "Virheelliset kirjautumistiedot. Ole hyvä ja yritä uudelleen.",
@@ -998,10 +1003,9 @@
     "twoFactor": "Syötä koodi, jonka <1>{{selectedIntegrationName}}</1> -tilillesi määritelty kaksivaiheinen tunnistautumistapa on antanut."
   },
   "mfaPage": {
-    "codeSent": "Koodi lähetetty osoitteeseen <0>{{emailOrPhone}}</0>",
-    "codeSentEmail": "",
+    "codeSentEmail": "Koodi lähetetty sähköpostiisi",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "Koodi lähetetty puhelimeesi tekstiviestinä",
     "enterCode": "Syötä kertakäyttökoodi varmistaaksesi, että<1></1>olet todella kirjatumassa sisään.",
     "enterCode2": "Syötä koodi <0>todennussovelluksestasi.</0>",
     "enterPin": "Syötä kaupankäynnin PIN-koodisi",
@@ -1212,14 +1216,14 @@
   "payManual": {
     "entry": {
       "depositWithQr": "Talleta QR-koodilla",
-      "depositWithWalletAddress": "",
-      "dontSeeYourAccount": "",
-      "needAnotherWay": ""
+      "depositWithWalletAddress": "Talleta lompakon osoitteella",
+      "dontSeeYourAccount": "Eikö tiliäsi näy?",
+      "needAnotherWay": "Tarvitsetko toisen tavan?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "Kopioitu",
       "copyWalletAddress": "Kopioi lompakon osoite",
-      "depositToClient": "",
+      "depositToClient": "Talleta {{clientName}}iin",
       "downloadQr": "Lataa QR-koodi",
       "headline": "Onko sinulla ongelmia?",
       "networkLabel": "Verkko",
@@ -1280,7 +1284,7 @@
     "exitPage": {
       "continuePayment": "Jatka maksamaan",
       "exit": "Poistu",
-      "exitAnyway": "",
+      "exitAnyway": "Poistu silti",
       "subtitle": "Tekemäsi muutokset menetetään.",
       "title": "Oletko varma, että haluat poistua?"
     },
@@ -1449,7 +1453,7 @@
   "qrCodePassword": {
     "expired": "QR-koodi on vanhentunut",
     "generateNew": "Luo uusi QR-koodi",
-    "loading": "",
+    "loading": "QR-koodin lataus",
     "qrCodeLabel": "QR-koodi voidaan skannata mobiililaitteellasi yhteyden muodostamiseksi",
     "scanText": "Skannaa tämä koodi {{appName}}-sovelluksellasi <1></1> kirjautuaksesi sisään välittömästi."
   },
@@ -1481,6 +1485,7 @@
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
     "ineligibleAssets": "Kelpaamattomat varat",
+    "link40Subtitle": "{{integrationName}} lompakko hyväksyy:",
     "link40Title": "Valitse tunnus",
     "loading": "Ladataan omaisuuttasi...",
     "network": "{{networkName}} verkko",
