@@ -21,20 +21,20 @@
     "amountMustBeWithin": "金額は{{minFiat}} {{selectedFiat}} から {{maxFiat}} {{selectedFiat}} の範囲内である必要があります",
     "amountMustBeWithinErrorMessage": "金額は＄21〜＄15,000の範囲内で指定してください",
     "buyCrypto": "Binance Connectを使用して暗号通貨を購入",
-    "cashEquivalent": "",
+    "cashEquivalent": "現金同等物",
     "closeButton": "閉じる",
-    "continueInBinance": "",
+    "continueInBinance": "Binanceで続行",
     "continueTo": "{{selectedIntegrationName}}へ進む",
-    "cryptoAmount": "",
+    "cryptoAmount": "暗号通貨の量",
     "enterAmount": "転送金額を入力",
-    "mobileLabelDeposit": "",
-    "mobileLabelOnramp": "",
+    "mobileLabelDeposit": "Binanceで取引を完了し、ここに戻って入金を完了してください。",
+    "mobileLabelOnramp": "Binanceで取引を完了し、ここに戻ってオンランプを完了してください。",
     "notSupported": "{{selectedIntegrationName}}は要求されたトークンまたはネットワークの転送をサポートしていません。",
-    "openBinance": "",
+    "openBinance": "Binanceを開く",
     "receiveAmountInput": {
       "networkName": "{{networkName}} 上で"
     },
-    "returnToClient": "",
+    "returnToClient": "{{selectedIntegrationName}}を開き、QRコードを携帯端末でスキャンした後、こちらに戻って続行します。",
     "scanText": "モバイルデバイスでプロセスを完了するにはQRコードをスキャンしてください。",
     "scanTitle": "Binanceで入金を完了してください",
     "selectAnotherAccount": "別のアカウントを選択",
@@ -245,15 +245,20 @@
     "changeCurrency": "通貨を変更"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "{{clientName}}に戻る",
+    "depositSuccess": "成功しました！",
+    "depositTitle": "あなたは <1>{{amountCrypto}} ～ {{amountFiat}}</1> を <2></2>{{clientName}} で受け取ります。",
+    "paymentSubtitle": "注文を完了するために、チェックアウトページに戻ってください",
+    "paymentSuccess": "支払いに成功しました！",
     "subtitle": "購入を完了するには{{clientName}}に戻ってください。",
     "title": "{{clientName}}で支払いを確認してください。"
   },
   "dappDoneTransferPageUI": {
-    "depositSubtitle": "",
-    "depositSuccess": "",
+    "depositSubtitle": "{{clientName}}に戻る",
+    "depositSuccess": "成功しました！",
     "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
-    "paymentSubtitle": "",
-    "paymentSuccess": ""
+    "paymentSubtitle": "注文を完了するために、チェックアウトページに戻ってください",
+    "paymentSuccess": "支払いに成功しました！"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "接続要求を拒否したか、以前の要求がまだアクティブです。もし間違いでしたら、再試行してください。",
@@ -532,7 +537,8 @@
     "incorrect2faCode": "2FAコードが正しくありません。",
     "incorrectEmail": "間違ったメールアドレスを入力しました。",
     "incorrectPasswordChancesRemaining": "パスワードが間違っています。あと{{count}}回試せます。",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "パスワードが間違っています。残り{{count}}回のチャンスがあります。",
+    "incorrectPasswordChancesRemaining_other": "パスワードが間違っています。あと{{count}}回試せます。",
     "incorrectUsernameOrPassword": "ユーザー名またはパスワードが間違っています。",
     "integrationNotAvailable": "現在、この連携機能はご利用いただけません。",
     "invalidCredentials": "認証情報が正しくありません。もう一度お試しください。",
@@ -997,10 +1003,9 @@
     "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
-    "codeSent": "<0>{{emailOrPhone}}</0>に送信されましたコード",
-    "codeSentEmail": "",
+    "codeSentEmail": "コードがメールに送信されました",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "コードが電話にSMSで送信されました",
     "enterCode": "ログインしようとしているのが本当にご本人であることを確認するために、<1></1>ワンタイムコードを入力してください。",
     "enterCode2": "認証アプリの<0>コードを入力してください。</0>",
     "enterPin": "取引PINコードを入力してください",
@@ -1211,14 +1216,14 @@
   "payManual": {
     "entry": {
       "depositWithQr": "QRコードで入金",
-      "depositWithWalletAddress": "",
-      "dontSeeYourAccount": "",
-      "needAnotherWay": ""
+      "depositWithWalletAddress": "ウォレットアドレスで入金",
+      "dontSeeYourAccount": "アカウントが見つかりませんか?",
+      "needAnotherWay": "別の方法は必要ですか?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "コピーしました",
       "copyWalletAddress": "ウォレットアドレスをコピーする",
-      "depositToClient": "",
+      "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
       "headline": "お困りですか？",
       "networkLabel": "ネットワーク",
@@ -1279,7 +1284,7 @@
     "exitPage": {
       "continuePayment": "お支払いに進む",
       "exit": "終了",
-      "exitAnyway": "",
+      "exitAnyway": "とにかく終了",
       "subtitle": "進行状況が失われます。",
       "title": "本当に終了しますか？"
     },
@@ -1448,7 +1453,7 @@
   "qrCodePassword": {
     "expired": "QRコードの有効期限が切れました",
     "generateNew": "新しいQRコードを生成する",
-    "loading": "",
+    "loading": "QRコードの読み込み",
     "qrCodeLabel": "モバイル端末でQRコードをスキャンして接続を確立します",
     "scanText": "このコードを {{appName}} アプリでスキャン <1></1> すると、すぐにログインできます。"
   },
@@ -1480,6 +1485,7 @@
     "defaultTitle": "トークンを選択",
     "depositTitle": "入金用のトークンを選択",
     "ineligibleAssets": "送金対象外の資産",
+    "link40Subtitle": "{{integrationName}} ウォレットは次を受け入れます。",
     "link40Title": "トークンを選択",
     "loading": "資産を読み込み中。。。",
     "network": "{{networkName}} ネットワーク",
