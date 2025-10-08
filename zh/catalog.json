@@ -21,22 +21,22 @@
     "amountMustBeWithin": "金额必须在{{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}之间",
     "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
     "buyCrypto": "使用Binance Connect购买加密货币",
-    "cashEquivalent": "",
+    "cashEquivalent": "现金等价物",
     "closeButton": "关闭",
-    "continueInBinance": "",
+    "continueInBinance": "用Binance中完成下一步",
     "continueTo": "继续前往{{selectedIntegrationName}}",
-    "cryptoAmount": "",
+    "cryptoAmount": "加密金额",
     "enterAmount": "输入转账金额",
-    "mobileLabelDeposit": "",
-    "mobileLabelOnramp": "",
+    "mobileLabelDeposit": "请在Binance中完成您的交易，然后返回此处完成您的存款。",
+    "mobileLabelOnramp": "请在Binance中完成您的交易，然后返回此处完成入金流程。",
     "notSupported": "{{selectedIntegrationName}}不支持所请求的代币和/或网络的转账。",
-    "openBinance": "",
+    "openBinance": "打开Binance",
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
-    "returnToClient": "",
-    "scanText": "扫描二维码在您的移动设备上完成此过程。",
-    "scanTitle": "在币安完成您的存款",
+    "returnToClient": "打开{{selectedIntegrationName}}，用您的移动设备扫描QR码，然后返回这里继续。",
+    "scanText": "用手机相机扫描二维码或用Binance程序来完成您的交易。",
+    "scanTitle": "用Binance完成下一步",
     "selectAnotherAccount": "选择另一个账户",
     "selectAnotherExchange": "请另选其他交易所或钱包进行存款。",
     "selectAsset": "选择要转账的资产",
@@ -55,10 +55,10 @@
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "继续使用 Binance",
-    "descriptionDeposit": "在连接您的Binance移动应用程序后<1>返回此处充值</1>。",
-    "descriptionGeneral": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
-    "descriptionOnRamp": "在连接您的Binance移动应用程序后<1>返回此处继续</1>。",
-    "descriptionPay": "在连接您的Binance移动应用程序后<1>返回此处支付</1> 。",
+    "descriptionDeposit": "连接您的Binance后<0>返回此处充值</0>。",
+    "descriptionGeneral": "连接您的Binance后<0>返回此处继续</0>。",
+    "descriptionOnRamp": "连接您的Binance后<0>返回此处继续</0>。",
+    "descriptionPay": "连接您的Binance后<0>返回此处支付</0>。",
     "loginWithEmailButton": "使用邮箱/手机登录",
     "or": "或",
     "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
@@ -69,7 +69,7 @@
     "emailPhoneInput": "电子邮件/电话（不含国家代码）",
     "invalidEmail": "请输入有效的电子邮件或电话号码。填写电话号码时不允许输入空格或特殊字符。",
     "nextButton": "下一步",
-    "noPasswordCta1": "继续使用 Binance",
+    "noPasswordCta1": "用Binance中完成下一步",
     "noPasswordCta2": "重置密码",
     "noPasswordMessage": "您尚未为此账户设置密码。继续使用 Binance 应用程序或重置您的密码。",
     "noPasswordTitle": "此账户没有密码",
@@ -245,15 +245,20 @@
     "changeCurrency": "更改货币"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "返回{{clientName}}",
+    "depositSuccess": "成功！",
+    "depositTitle": "您将在<2></2>{{clientName}}中收到<1>{{amountCrypto}} ~ {{amountFiat}}</1>。",
+    "paymentSubtitle": "返回您的结账页面以完成交易",
+    "paymentSuccess": "支付成功！",
     "subtitle": "请返回至{{clientName}}完成您的交易。",
     "title": "在{{clientName}}中确认您的支付。"
   },
   "dappDoneTransferPageUI": {
-    "depositSubtitle": "",
-    "depositSuccess": "",
-    "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
-    "paymentSubtitle": "",
-    "paymentSuccess": ""
+    "depositSubtitle": "返回{{clientName}}",
+    "depositSuccess": "成功！",
+    "depositTitle": "您将在<5></5>{{clientName}}.中收到<2>{{amountCrypto}} ~ {{amountFiat}}</2>。",
+    "paymentSubtitle": "返回您的结账页面以完成交易",
+    "paymentSuccess": "支付成功！"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "您的连接请求被拒绝，或已有请求在处理中。如操作有误，请重试。",
@@ -428,7 +433,7 @@
     "configurationMismatch": "配置异常",
     "emptyWalletBalance": "清空钱包",
     "exceedsApplicationLimit": "超过应用程序限制",
-    "existingApiKey": "现有 API 密钥",
+    "existingApiKey": "现有 Api 密钥",
     "expiredSmartDeposit": "智能充值交易已过期",
     "faceVerificationFailed": "面部验证失败",
     "failedToGetFundingOptions": "充值选项错误",
@@ -532,7 +537,8 @@
     "incorrect2faCode": "双重验证代码错误。",
     "incorrectEmail": "您输入的电子邮件有误。",
     "incorrectPasswordChancesRemaining": "密码错误。您还有 {{count}} 次机会。",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "密码错误。您还有 {{count}} 次机会。",
+    "incorrectPasswordChancesRemaining_other": "密码错误。您还有 {{count}} 次机会。",
     "incorrectUsernameOrPassword": "用户名或密码错误。",
     "integrationNotAvailable": "该集成当前不可用。",
     "invalidCredentials": "登录凭证无效，请重试。",
@@ -645,7 +651,7 @@
     "title": "验证"
   },
   "feesDrawer": {
-    "automatedSwapFeeDescription": "用于自动交换您钱包中的资产到目标转账资产的手续费。",
+    "automatedSwapFeeDescription": "自动兑换目标资产所需手续费",
     "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
     "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
@@ -885,8 +891,8 @@
   },
   "inWalletBrowserVerifyPage": {
     "resend": "重新发送签名请求",
-    "subtitleAlreadyDenied": "看起来您拒绝了签名请求。没有签名，Revolut无法验证您钱包的所有权。",
-    "subtitleInitial": "通过签署消息确认您是此钱包的所有者。如果您未看到请求，请点击下方按钮。",
+    "subtitleAlreadyDenied": "检测到您已拒绝了钱包签名请求。由于缺少签名，Revolut无法验证该钱包所有权。",
+    "subtitleInitial": "请通过签名消息来确认您拥有此钱包。如果未看到签名请求，请点击下方按钮。",
     "titleAlreadyDenied": "哎哟，出了点问题！",
     "titleInitial": "验证您的钱包"
   },
@@ -997,12 +1003,11 @@
     "twoFactor": "输入您在 <1>{{selectedIntegrationName}}</1> 账户中配置的双因素认证方法提供的代码。"
   },
   "mfaPage": {
-    "codeSent": "已发送代码至 <0>{{emailOrPhone}}</0>",
-    "codeSentEmail": "",
-    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentEmail": "验证码已发送至您的电子邮件",
+    "codeSentEmailOrPhoneValue": "验证码已发送至<0>{{emailOrPhone}}</0>",
+    "codeSentPhone": "验证码通过短信发送至您的手机",
     "enterCode": "输入您的一次性代码以确认确实是您尝试登录。",
-    "enterCode2": "请输入您<0>身份验证器应用</0>中的代码",
+    "enterCode2": "请输入您<0>身份验证应用</0>中的验证码",
     "enterPin": "请输入您的交易 PIN码",
     "enterVerificationCode": "输入验证码",
     "title": "验证",
@@ -1211,20 +1216,20 @@
   "payManual": {
     "entry": {
       "depositWithQr": "使用二维码存款",
-      "depositWithWalletAddress": "",
-      "dontSeeYourAccount": "",
-      "needAnotherWay": ""
+      "depositWithWalletAddress": "使用钱包地址进行充值",
+      "dontSeeYourAccount": "没有看到你的账户？",
+      "needAnotherWay": "使用其他支付方式？"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "已复制",
       "copyWalletAddress": "复制钱包地址",
-      "depositToClient": "",
+      "depositToClient": "给{{clientName}}充值",
       "downloadQr": "下载二维码",
-      "headline": "遇到问题了？",
+      "headline": "在{{network}}上充值{{token}}",
       "networkLabel": "网络",
       "subtitle": "您仍可以手动完成您的存款。",
       "tokenLabel": "代币",
-      "warning": "仅在 Base 上转移 USDT 至此地址，否则您的资产可能会丢失。"
+      "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
     }
   },
   "paymentMethods": {
@@ -1279,7 +1284,7 @@
     "exitPage": {
       "continuePayment": "前往支付",
       "exit": "退出",
-      "exitAnyway": "",
+      "exitAnyway": "仍然退出",
       "subtitle": "您的进度将会丢失。",
       "title": "您确定要退出吗？"
     },
@@ -1448,7 +1453,7 @@
   "qrCodePassword": {
     "expired": "二维码已过期",
     "generateNew": "生成新的二维码",
-    "loading": "",
+    "loading": "正在加载二维码",
     "qrCodeLabel": "使用您的移动设备扫描二维码以建立连接",
     "scanText": "使用您的 {{appName}} 应用<1></1>扫描此二维码登录。"
   },
@@ -1480,6 +1485,7 @@
     "defaultTitle": "选择代币",
     "depositTitle": "选择充值代币",
     "ineligibleAssets": "无法使用的资产",
+    "link40Subtitle": "{{integrationName}} 钱包接受：",
     "link40Title": "选择一个代币",
     "loading": "正在加载您的资产……",
     "network": "{{networkName}} 网络",
@@ -1641,7 +1647,7 @@
     "title": "验证"
   },
   "transferInsufficientBalancePage": {
-    "depositInsufficientBalanceAndGas": "此交易需要非零 {{symbol}} 余额和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
+    "depositInsufficientBalanceAndGas": "此交易需要您在 {{network}} 网络上有{{symbol}} 余额并持有足够的 ETH 来支付约${{gasFee}} 的燃气费。",
     "depositNoBalance": "您在 {{network}} 网络上没有可以转账的 {{symbol}} 余额。",
     "gasAndBalanceTitle": "燃料费和余额均不足",
     "gasBody": "{{network}} 网络的燃料费用以 {{symbol}} 支付。请充值您的 {{symbol}} ，然后再次尝试此交易。",
@@ -1649,7 +1655,7 @@
     "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceTitle": "没有余额",
     "paymentBody": "您的余额不足以完成此交易。",
-    "paymentInsufficientBalance": "您的 {{balance}} {{symbol}} 余额在 {{network}} 网络上不足以进行此 {{amount}} {{symbol}} 付款。",
+    "paymentInsufficientBalance": "您在 {{network}} 网络上 {{balance}} {{symbol}}的余额不足以支付 {{amount}} {{symbol}}。",
     "paymentInsufficientBalanceAndGas": "此交易需要 {{amount}} {{symbol}} 和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",
     "title": "余额不足",
     "topUpAction": "请充值您的钱包后再试一次。",

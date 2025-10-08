@@ -21,20 +21,20 @@
     "amountMustBeWithin": "राशि {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} के भीतर होनी चाहिए",
     "amountMustBeWithinErrorMessage": "राशि USD $21 - $15,000 के भीतर होनी चाहिए",
     "buyCrypto": "Binance Connect का उपयोग करके क्रिप्टो खरीदें",
-    "cashEquivalent": "",
+    "cashEquivalent": "नकद समकक्ष",
     "closeButton": "बंद करें",
-    "continueInBinance": "",
+    "continueInBinance": "Binance ऐप में जारी रखें",
     "continueTo": "{{selectedIntegrationName}} पर जारी रखें",
-    "cryptoAmount": "",
+    "cryptoAmount": "क्रिप्टो राशि",
     "enterAmount": "स्थानांतरण राशि दर्ज करें",
-    "mobileLabelDeposit": "",
-    "mobileLabelOnramp": "",
+    "mobileLabelDeposit": "Binance में अपना लेन-देन पूरा करें, फिर अपनी जमा को अंतिम रूप देने के लिए यहां लौटें।",
+    "mobileLabelOnramp": "Binance में अपना लेन-देन पूरा करें, फिर अपने ऑन-रैंप को पूरा करने के लिए यहां लौटें।",
     "notSupported": "{{selectedIntegrationName}} अनुरोधित टोकन और/या नेटवर्क के लिए स्थानांतरण का समर्थन नहीं करता है।",
-    "openBinance": "",
+    "openBinance": "Binance खोलें",
     "receiveAmountInput": {
       "networkName": "{{networkName}} पर"
     },
-    "returnToClient": "",
+    "returnToClient": "{{selectedIntegrationName}} खोलें, अपने मोबाइल डिवाइस से QR कोड स्कैन करें, फिर जारी रखने के लिए यहाँ लौटें।",
     "scanText": "अपनी मोबाइल डिवाइस पर प्रक्रिया पूरी करने के लिए क्यूआर कोड को स्कैन करें।",
     "scanTitle": "अपने डिपॉज़िट को Binance में पूरा करें",
     "selectAnotherAccount": "अन्य खाता चुनें",
@@ -245,15 +245,20 @@
     "changeCurrency": "मुद्रा बदलें"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "{{clientName}} पर लौटें",
+    "depositSuccess": "सफलता!",
+    "depositTitle": "आप प्राप्त करेंगे <1>{{amountCrypto}} ~ {{amountFiat}}</1> <2></2>{{clientName}} में।",
+    "paymentSubtitle": "अपना ऑर्डर पूरा करने के लिए अपने चेकआउट पेज पर वापस लौटें।",
+    "paymentSuccess": "भुगतान सफल!",
     "subtitle": "कृपया अपने खरीद को अंतिम रूप देने के लिए {{clientName}} पर वापस जाएं।",
     "title": "{{clientName}} में अपने भुगतान की पुष्टि करें"
   },
   "dappDoneTransferPageUI": {
-    "depositSubtitle": "",
-    "depositSuccess": "",
+    "depositSubtitle": "{{clientName}} पर लौटें",
+    "depositSuccess": "सफलता!",
     "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
-    "paymentSubtitle": "",
-    "paymentSuccess": ""
+    "paymentSubtitle": "अपना ऑर्डर पूरा करने के लिए अपने चेकआउट पेज पर वापस लौटें।",
+    "paymentSuccess": "भुगतान सफल!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "ऐसा लगता है कि आपने कनेक्शन अनुरोध को मना कर दिया है, या कोई पूर्व अनुरोध अभी भी सक्रिय है। अगर यह एक गलती थी, तो पुनः प्रयास करें।",
@@ -532,8 +537,8 @@
     "incorrect2faCode": "गलत 2FA कोड।",
     "incorrectEmail": "आपने गलत ईमेल दर्ज किया है।",
     "incorrectPasswordChancesRemaining": "गलत पासवर्ड। आपके पास {{count}} मौके शेष हैं।",
-    "incorrectPasswordChancesRemaining_one": "",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "गलत पासवर्ड। आपके पास {{count}} मौका बचा है।",
+    "incorrectPasswordChancesRemaining_other": "गलत पासवर्ड। आपके पास {{count}} मौके शेष हैं।",
     "incorrectUsernameOrPassword": "गलत उपयोगकर्ता नाम या पासवर्ड।",
     "integrationNotAvailable": "एकीकरण वर्तमान में उपलब्ध नहीं है।",
     "invalidCredentials": "अमान्य क्रेडेंशियल्स। कृपया पुनः प्रयास करें।",
@@ -998,10 +1003,9 @@
     "twoFactor": "कृपया अपने <1>{{selectedIntegrationName}}</1> खाते में आपके द्वारा कॉन्फ़िगर की गई दो-कारक प्रमाणीकरण विधि द्वारा प्रदान किए गए कोड को दर्ज करें।"
   },
   "mfaPage": {
-    "codeSent": "<0>{{emailOrPhone}}</0> पर कोड भेजा गया",
-    "codeSentEmail": "",
+    "codeSentEmail": "कोड आपके ईमेल पर भेजा गया है",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "कोड आपके फोन पर एसएमएस के माध्यम से भेजा गया है",
     "enterCode": "अपने वन-टाइम कोड को दर्ज करें ताकि यह पुष्टि हो सके कि वास्तव में आप ही लॉग इन करने की कोशिश कर रहे हैं।<1></1>।",
     "enterCode2": "अपने <0>प्रमाणीकरण ऐप</0> से कोड दर्ज करें।",
     "enterPin": "अपना ट्रेडिंग पिन दर्ज करें",
@@ -1212,14 +1216,14 @@
   "payManual": {
     "entry": {
       "depositWithQr": "क्यूआर कोड के साथ जमा करें",
-      "depositWithWalletAddress": "",
-      "dontSeeYourAccount": "",
-      "needAnotherWay": ""
+      "depositWithWalletAddress": "वॉलेट एड्रेस के साथ जमा करें",
+      "dontSeeYourAccount": "क्या आपको अपना खाता नहीं दिख रहा है?",
+      "needAnotherWay": "दूसरे तरीका आज़माएं"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "कॉपी किया गया",
       "copyWalletAddress": "वॉलेट पता कॉपी करें",
-      "depositToClient": "",
+      "depositToClient": "{{clientName}} में जमा करें",
       "downloadQr": "क्यूआर कोड डाउनलोड करें",
       "headline": "कोई समस्या है?",
       "networkLabel": "नेटवर्क",
@@ -1280,7 +1284,7 @@
     "exitPage": {
       "continuePayment": "भुगतान जारी रखें",
       "exit": "निकास करें",
-      "exitAnyway": "",
+      "exitAnyway": "फिर भी बाहर निकलें",
       "subtitle": "आपकी प्रगति खो जाएगी।",
       "title": "क्या आप सुनिश्चित हैं कि आप बाहर जाना चाहते हैं?"
     },
@@ -1449,7 +1453,7 @@
   "qrCodePassword": {
     "expired": "क्यूआर कोड की समय सीमा समाप्त हो गई है",
     "generateNew": "एक नया क्यूआर कोड उत्पन्न करें",
-    "loading": "",
+    "loading": "QR कोड लोड हो रहा है",
     "qrCodeLabel": "आपके मोबाइल उपकरण पर कनेक्शन स्थापित करने के लिए क्यूआर कोड स्कैन किया जा सकता है।",
     "scanText": "तुरंत लॉग इन करने के लिए अपने {{appName}} ऐप <1></1> के साथ इस कोड को स्कैन करें।"
   },
@@ -1481,6 +1485,7 @@
     "defaultTitle": "टोकन चुनें",
     "depositTitle": "जमा टोकन चुनें",
     "ineligibleAssets": "अयोग्य संपत्तियाँ",
+    "link40Subtitle": "{{integrationName}} वॉलेट स्वीकार करता है:",
     "link40Title": "टोकन चुनें",
     "loading": "आपकी संपत्तियाँ लोड हो रही हैं...",
     "network": "{{networkName}} नेटवर्क",

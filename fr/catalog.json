@@ -21,20 +21,20 @@
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} {{selectedFiat}} - et {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Le montant doit être compris entre 21 USD et 15 000 USD",
     "buyCrypto": "Acheter des crypto-monnaies via Binance Connect",
-    "cashEquivalent": "",
+    "cashEquivalent": "Équivalent en espèces",
     "closeButton": "Fermer",
-    "continueInBinance": "",
+    "continueInBinance": "Continuer avec Binance",
     "continueTo": "Continuer sur {{selectedIntegrationName}}",
-    "cryptoAmount": "",
+    "cryptoAmount": "Montant en crypto",
     "enterAmount": "Entrez le montant à transférer",
-    "mobileLabelDeposit": "",
-    "mobileLabelOnramp": "",
+    "mobileLabelDeposit": "Complétez votre transaction sur Binance, puis revenez ici pour finaliser votre dépôt.",
+    "mobileLabelOnramp": "Complétez votre transaction sur Binance, puis revenez ici pour finaliser votre achat.",
     "notSupported": "{{selectedIntegrationName}} ne prend pas en charge les transferts pour les jetons ou réseaux sélectionnés.",
-    "openBinance": "",
+    "openBinance": "Ouvrir Binance",
     "receiveAmountInput": {
       "networkName": "sur {{networkName}}"
     },
-    "returnToClient": "",
+    "returnToClient": "Ouvrez {{selectedIntegrationName}}, scannez le code QR avec votre appareil mobile, puis revenez ici pour continuer.",
     "scanText": "Scannez le code QR pour terminer le processus sur votre appareil mobile.",
     "scanTitle": "Complétez votre dépôt sur Binance",
     "selectAnotherAccount": "Veuillez choisir un autre compte",
@@ -245,15 +245,20 @@
     "changeCurrency": "Changer de devise"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "Retourner à {{clientName}}",
+    "depositSuccess": "Action complétée avec succès !",
+    "depositTitle": "Vous recevrez <1>{{amountCrypto}} ~ {{amountFiat}}</1> dans <2>{{clientName}}</2>.",
+    "paymentSubtitle": "Retournez sur votre page de paiement pour finaliser votre commande",
+    "paymentSuccess": "Paiement réussi !",
     "subtitle": "Veuillez revenir à {{clientName}} pour finaliser votre achat.",
     "title": "Confirmez votre paiement dans {{clientName}}"
   },
   "dappDoneTransferPageUI": {
-    "depositSubtitle": "",
-    "depositSuccess": "",
+    "depositSubtitle": "Retourner à {{clientName}}",
+    "depositSuccess": "Action complétée avec succès !",
     "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
-    "paymentSubtitle": "",
-    "paymentSuccess": ""
+    "paymentSubtitle": "Retournez sur votre page de paiement pour finaliser votre commande",
+    "paymentSuccess": "Paiement réussi !"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Il semble que vous ayez refusé la demande de connexion ou qu'une demande précédente soit encore active. Si c'était une erreur, essayez à nouveau.",
@@ -532,9 +537,8 @@
     "incorrect2faCode": "Code 2FA incorrect.",
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
-    "incorrectPasswordChancesRemaining_one": "",
-    "incorrectPasswordChancesRemaining_many": "",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
+    "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
     "invalidCredentials": "Identifiants invalides. Veuillez réessayer.",
@@ -700,7 +704,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1000,10 +1003,9 @@
     "twoFactor": "Entrez le code fourni par la méthode d’authentification à deux facteurs que vous avez configurée sur votre compte <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
-    "codeSent": "Code envoyé à <0>{{emailOrPhone}}</0>",
-    "codeSentEmail": "",
+    "codeSentEmail": "Code envoyé à votre email",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "Code envoyé sur votre téléphone par SMS",
     "enterCode": "Saisissez votre code unique pour confirmer que c'est<1></1>bien vous qui essayez de vous connecter.",
     "enterCode2": "Entrez le code de votre <0>application d'authentification.</0>",
     "enterPin": "Entrez votre code PIN de trading",
@@ -1214,14 +1216,14 @@
   "payManual": {
     "entry": {
       "depositWithQr": "Dépôt avec code QR",
-      "depositWithWalletAddress": "",
-      "dontSeeYourAccount": "",
-      "needAnotherWay": ""
+      "depositWithWalletAddress": "Déposez avec l'adresse du portefeuille",
+      "dontSeeYourAccount": "Vous ne voyez pas votre compte?",
+      "needAnotherWay": "Besoin d'une autre méthode?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "Copié",
       "copyWalletAddress": "Copier l'adresse du portefeuille",
-      "depositToClient": "",
+      "depositToClient": "Dépôt à {{clientName}}",
       "downloadQr": "Télécharger le code QR",
       "headline": "Avez-vous des difficultés ?",
       "networkLabel": "Réseau",
@@ -1282,7 +1284,7 @@
     "exitPage": {
       "continuePayment": "Continuer avec le Paiement",
       "exit": "Quitter",
-      "exitAnyway": "",
+      "exitAnyway": "Quitter quand même",
       "subtitle": "Votre progression sera perdue.",
       "title": "Êtes-vous sûr de vouloir quitter ?"
     },
@@ -1451,7 +1453,7 @@
   "qrCodePassword": {
     "expired": "QR code expiré",
     "generateNew": "Générer un nouveau QR code",
-    "loading": "",
+    "loading": "Chargement du code QR",
     "qrCodeLabel": "Le code QR peut être scanné sur votre appareil mobile pour établir la connexion",
     "scanText": "Scannez ce code avec votre application {{appName}} <1></1> pour vous connecter instantanément."
   },
@@ -1483,6 +1485,7 @@
     "defaultTitle": "Sélectionner un jeton",
     "depositTitle": "Sélectionner un jeton de dépôt",
     "ineligibleAssets": "Actifs inéligibles",
+    "link40Subtitle": "Le portefeuille {{integrationName}} accepte:",
     "link40Title": "Choisissez un jeton",
     "loading": "Chargement de vos actifs...",
     "network": "Réseau {{networkName}}",
