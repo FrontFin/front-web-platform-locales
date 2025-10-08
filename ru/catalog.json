@@ -21,22 +21,22 @@
     "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15,000",
     "buyCrypto": "Купить криптовалюту с помощью Binance Connect",
-    "cashEquivalent": "",
+    "cashEquivalent": "Эквивалент наличности",
     "closeButton": "Закрыть",
-    "continueInBinance": "",
+    "continueInBinance": "Продолжить в Binance",
     "continueTo": "Перейти к  {{selectedIntegrationName}}",
-    "cryptoAmount": "",
+    "cryptoAmount": "Количество криптовалюты",
     "enterAmount": "Введите сумму перевода",
-    "mobileLabelDeposit": "",
-    "mobileLabelOnramp": "",
+    "mobileLabelDeposit": "Завершите транзакцию в Binance, затем вернитесь сюда, чтобы завершить свой депозит.",
+    "mobileLabelOnramp": "Завершите транзакцию в Binance, затем вернитесь сюда, чтобы завершить подключение.",
     "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
-    "openBinance": "",
+    "openBinance": "Открыть Binance",
     "receiveAmountInput": {
       "networkName": "на {{networkName}}"
     },
-    "returnToClient": "",
-    "scanText": "Сканируйте QR-код, чтобы завершить процесс на вашем мобильном устройстве.",
-    "scanTitle": "Завершите ваш депозит на Binance",
+    "returnToClient": "Откройте {{selectedIntegrationName}}, отсканируйте QR-код с помощью мобильного устройства, затем вернитесь сюда, чтобы продолжить.",
+    "scanText": "Отсканируйте QR-код с помощью камеры вашего телефона или приложения Binance, чтобы завершить ваш процесс.",
+    "scanTitle": "Завершите ваш депозит в Binance",
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
     "selectAsset": "Выберите актив для перевода",
@@ -245,15 +245,20 @@
     "changeCurrency": "Изменить валюту"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "Вернуться к {{clientName}}",
+    "depositSuccess": "Успешно!",
+    "depositTitle": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> в <2></2>{{clientName}}.",
+    "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ",
+    "paymentSuccess": "Платеж успешно выполнен!",
     "subtitle": "Пожалуйста, вернитесь в {{clientName}}, чтобы завершить покупку.",
     "title": "Подтвердите ваш платеж в {{clientName}}"
   },
   "dappDoneTransferPageUI": {
-    "depositSubtitle": "",
-    "depositSuccess": "",
+    "depositSubtitle": "Вернуться к {{clientName}}",
+    "depositSuccess": "Успешно!",
     "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
-    "paymentSubtitle": "",
-    "paymentSuccess": ""
+    "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ",
+    "paymentSuccess": "Платеж успешно выполнен!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
@@ -532,10 +537,8 @@
     "incorrect2faCode": "Неверный код 2FA.",
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
-    "incorrectPasswordChancesRemaining_one": "",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
+    "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
     "invalidCredentials": "Предоставленные учетные данные неверны. Пожалуйста, попробуйте снова.",
@@ -701,8 +704,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1002,10 +1003,9 @@
     "twoFactor": "Введите код, предоставленный двухфакторным методом аутентификации, который вы настроили в вашей учетной записи <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
-    "codeSent": "Код отправлен на <0>{{emailOrPhone}}</0>",
-    "codeSentEmail": "",
+    "codeSentEmail": "Код отправлен на вашу электронную почту",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "Код отправлен на ваш телефон по SMS",
     "enterCode": "Введите свой одноразовый код, чтобы подтвердить <1></1> вход в свой аккаунт.",
     "enterCode2": "Введите код из вашего <0>приложения-аутентификатора.</0>",
     "enterPin": "Введите ваш торговый PIN-код",
@@ -1216,14 +1216,14 @@
   "payManual": {
     "entry": {
       "depositWithQr": "Депозит через QR-код",
-      "depositWithWalletAddress": "",
-      "dontSeeYourAccount": "",
-      "needAnotherWay": ""
+      "depositWithWalletAddress": "Пополните с электронным кошельком",
+      "dontSeeYourAccount": "Не видите свой счет?",
+      "needAnotherWay": "Попробуйте другой способ?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "Скопировано",
       "copyWalletAddress": "Скопировать адрес электронного кошелька",
-      "depositToClient": "",
+      "depositToClient": "Депозит на {{clientName}}",
       "downloadQr": "Скачать QR-код",
       "headline": "Возникли проблемы?",
       "networkLabel": "Сеть",
@@ -1284,7 +1284,7 @@
     "exitPage": {
       "continuePayment": "Продолжить оплату",
       "exit": "Выйти",
-      "exitAnyway": "",
+      "exitAnyway": "Выйти в любом случае",
       "subtitle": "Ваш прогресс будет потерян.",
       "title": "Вы уверены, что хотите выйти?"
     },
@@ -1453,7 +1453,7 @@
   "qrCodePassword": {
     "expired": "QR-код истек",
     "generateNew": "Создать новый QR-код",
-    "loading": "",
+    "loading": "Загрузка QR-кода",
     "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
     "scanText": "Сканируйте этот код с помощью вашего приложения {{appName}} <1></1>, чтобы мгновенно войти в систему."
   },
@@ -1485,6 +1485,7 @@
     "defaultTitle": "Выберите токен",
     "depositTitle": "Выберите токен для депозита",
     "ineligibleAssets": "Неподходящие активы",
+    "link40Subtitle": "Электронный кошелек {{integrationName}} принимает:",
     "link40Title": "Выберите токен",
     "loading": "Загрузка ваших активов...",
     "network": "сеть {{networkName}}",
