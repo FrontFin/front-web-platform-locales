@@ -21,17 +21,20 @@
     "amountMustBeWithin": "Kwota musi mieścić się w przedziale {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Kwota musi mieścić się w przedziale od 21 do 15.000 USD",
     "buyCrypto": "Kup kryptowaluty za pomocą Binance Connect",
-    "cashEquivalent": "",
+    "cashEquivalent": "Równowartość Gotówki",
     "closeButton": "Zamknij",
+    "continueInBinance": "Kontynuuj w Binance",
     "continueTo": "Przejdź do {{selectedIntegrationName}}",
-    "cryptoAmount": "",
+    "cryptoAmount": "Kwota Kryptowaluty",
     "enterAmount": "Wprowadź kwotę transferu",
+    "mobileLabelDeposit": "Ukończ transakcję w Binance, a następnie wróć tutaj, aby zakończyć wpłatę.",
+    "mobileLabelOnramp": "Ukończ transakcję w Binance, a następnie wróć tutaj, aby zakończyć rozpoczęcie wpłaty.",
     "notSupported": "{{selectedIntegrationName}} nie obsługuje przelewów dla wybranych tokenów i/lub sieci.",
-    "openBinance": "",
+    "openBinance": "Otwórz Binance",
     "receiveAmountInput": {
       "networkName": "na {{networkName}}"
     },
-    "returnToClient": "",
+    "returnToClient": "Otwórz {{selectedIntegrationName}}, zeskanuj kod QR na swoim urządzeniu mobilnym, a następnie wróć tutaj, aby kontynuować.",
     "scanText": "Zeskanuj kod QR, aby zakończyć proces na swoim urządzeniu mobilnym.",
     "scanTitle": "Ukończ wpłatę na Binance",
     "selectAnotherAccount": "Wybierz inne konto",
@@ -52,10 +55,10 @@
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Kontynuuj w aplikacji Binance",
-    "descriptionDeposit": "<1>Wróć tutaj, aby wpłacić</1> po połączeniu się z aplikacją mobilną Binance.",
-    "descriptionGeneral": "<1>Wróć tutaj, aby kontynuować</1> po połączeniu z aplikacją mobilną Binance.",
+    "descriptionDeposit": "<0>Wróć tutaj, aby wpłacić</0> po połączeniu z aplikacją mobilną Binance.",
+    "descriptionGeneral": "<0>Wróć tutaj, aby kontynuować</0> po połączeniu z aplikacją mobilną Binance.",
     "descriptionOnRamp": "<1>Wróć tutaj, aby kontynuować</1> po połączeniu z aplikacją mobilną Binance.",
-    "descriptionPay": "<1>Wróć tutaj, aby zapłacić</1> po połączeniu z aplikacją mobilną Binance.",
+    "descriptionPay": "<0>Wróć tutaj, aby zapłacić</0> po połączeniu z aplikacją mobilną Binance.",
     "loginWithEmailButton": "Zaloguj się za pomocą e-maila/telefonu",
     "or": "lub",
     "scanText": "Zeskanuj kod za pomocą aparatu telefonu lub aplikacji Binance, aby zalogować się.",
@@ -211,7 +214,7 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zaakceptuj żądanie, aby kontynuować.",
-    "title": "Autoryzuj prośbę\u00a0o połączenie<1></1> w swoim portfelu",
+    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
@@ -242,8 +245,20 @@
     "changeCurrency": "Zmiana waluty"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "Wróć do {{clientName}}",
+    "depositSuccess": "Formularz został wysłany!",
+    "depositTitle": "Otrzymasz <1>{{amountCrypto}} ~ {{amountFiat}}</1> w <2></2>{{clientName}}.",
+    "paymentSubtitle": "Wróć do strony płatności, aby sfinalizować transakcję",
+    "paymentSuccess": "Płatność zakończona sukcesem!",
     "subtitle": "Proszę wrócić do {{clientName}}, aby sfinalizować zakup.",
     "title": "Potwierdź swoją płatność w {{clientName}}"
+  },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "Wróć do {{clientName}}",
+    "depositSuccess": "Formularz został wysłany!",
+    "depositTitle": "Otrzymasz <2>{{amountCrypto}} ~ {{amountFiat}}</2> za<5></5>{{clientName}}.",
+    "paymentSubtitle": "Wróć do strony płatności, aby sfinalizować transakcję",
+    "paymentSuccess": "Płatność zakończona sukcesem!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Wygląda na to, że odrzuciłeś żądanie połączenia lub wcześniejsze żądanie jest nadal aktywne. Jeśli to był błąd, spróbuj ponownie.",
@@ -522,10 +537,8 @@
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
-    "incorrectPasswordChancesRemaining_one": "",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Masz jeszcze {{count}} szansę.",
+    "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
     "invalidCredentials": "Nieprawidłowe dane logowania. Proszę spróbować ponownie.",
@@ -691,8 +704,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -992,10 +1003,9 @@
     "twoFactor": "Podaj kod wygenerowany przez metodę uwierzytelniania dwuskładnikowego, którą skonfigurowałeś na koncie <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
-    "codeSent": "Kod wysłany na <0>{{emailOrPhone}}</0>",
-    "codeSentEmail": "",
+    "codeSentEmail": "Kod wysłany na Twój e-mail",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "Kod wysłany na Twój telefon przez SMS",
     "enterCode": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty próbujesz się zalogować.<1></1>",
     "enterCode2": "Wprowadź kod z <0>aplikacji uwierzytelniającej.</0>",
     "enterPin": "Wpisz swój kod PIN do transakcji",
@@ -1205,12 +1215,15 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "Złóż depozyt za pomocą kodu QR"
+      "depositWithQr": "Złóż depozyt za pomocą kodu QR",
+      "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
+      "dontSeeYourAccount": "Nie widzisz swojego konta?",
+      "needAnotherWay": "Potrzebujesz innej metody?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "Skopiowano",
       "copyWalletAddress": "Skopiuj adres portfela",
-      "depositToClient": "",
+      "depositToClient": "Wpłata do {{clientName}}",
       "downloadQr": "Pobierz kod QR",
       "headline": "Masz problemy?",
       "networkLabel": "Sieć",
@@ -1271,6 +1284,7 @@
     "exitPage": {
       "continuePayment": "Dalej do płatności",
       "exit": "Wyjście",
+      "exitAnyway": "Opuść mimo to",
       "subtitle": "Twoje postępy zostaną utracone.",
       "title": "Czy na pewno chcesz wyjść?"
     },
@@ -1439,6 +1453,7 @@
   "qrCodePassword": {
     "expired": "Kod QR wygasł",
     "generateNew": "Generuj nowy kod QR",
+    "loading": "Ładowanie kodu QR",
     "qrCodeLabel": "Kod QR można zeskanować na urządzeniu mobilnym w celu ustanowienia połączenia",
     "scanText": "Zeskanuj ten kod aplikacją {{appName}} <1></1> aby zalogować się natychmiast."
   },
@@ -1470,6 +1485,7 @@
     "defaultTitle": "Wybierz token",
     "depositTitle": "Wybierz token wpłaty",
     "ineligibleAssets": "Niewłaściwe środki",
+    "link40Subtitle": "Portfel {{clientName}} akceptuje:",
     "link40Title": "Wybierz token",
     "loading": "Ładowanie twoich środków...",
     "network": "{{networkName}} sieć",

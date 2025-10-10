@@ -21,17 +21,20 @@
     "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Số tiền phải nằm trong khoảng 21 USD - 15.000 USD",
     "buyCrypto": "Mua tiền mã hoá bằng Binance Connect",
-    "cashEquivalent": "",
+    "cashEquivalent": "Giá trị tương đương tiền mặt",
     "closeButton": "Đóng",
+    "continueInBinance": "Tiếp tục với Binance",
     "continueTo": "Tiếp tục đến {{selectedIntegrationName}}",
-    "cryptoAmount": "",
+    "cryptoAmount": "Số lượng tiền điện tử",
     "enterAmount": "Nhập số tiền giao dịch",
+    "mobileLabelDeposit": "Hoàn tất giao dịch của bạn trong Binance, sau đó trở lại đây để hoàn tất tiền gửi của bạn.",
+    "mobileLabelOnramp": "Hoàn tất giao dịch của bạn trong Binance, sau đó trở lại đây để hoàn tất nền tảng khởi đầu của bạn.",
     "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
-    "openBinance": "",
+    "openBinance": "Mở Binance",
     "receiveAmountInput": {
       "networkName": "trên {{networkName}}"
     },
-    "returnToClient": "",
+    "returnToClient": "Mở {{selectedIntegrationName}}, quét mã QR bằng thiết bị di động của bạn, sau đó quay lại đây để tiếp tục.",
     "scanText": "Quét mã QR để hoàn tất quá trình trên thiết bị di động của bạn.",
     "scanTitle": "Hoàn thành khoản tiền gửi của bạn tại Binance",
     "selectAnotherAccount": "Chọn một tài khoản khác",
@@ -53,7 +56,7 @@
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Tiếp tục với ứng dụng Binance",
     "descriptionDeposit": "<1>Quay lại đây để nạp tiền</1> sau khi kết nối với ứng dụng Binance trên di động của bạn.",
-    "descriptionGeneral": "<1>Quay lại đây để tiếp tục</1> sau khi kết nối với ứng dụng Binance trên di động của bạn.",
+    "descriptionGeneral": "<0>Quay lại đây để tiếp tục</0> sau khi kết nối với ứng dụng Binance trên di động của bạn.",
     "descriptionOnRamp": "<1>Quay lại đây để tiếp tục</1> sau khi kết nối với ứng dụng Binance trên di động của bạn.",
     "descriptionPay": "<1>Quay lại đây để thanh toán</1> sau khi kết nối với ứng dụng Binance trên di động của bạn.",
     "loginWithEmailButton": "Đăng nhập bằng Email/Số điện thoại",
@@ -242,8 +245,20 @@
     "changeCurrency": "Thay đổi đơn vị tiền tệ"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "Quay lại {{clientName}}",
+    "depositSuccess": "Thành công!",
+    "depositTitle": "Bạn sẽ nhận <1>{{amountCrypto}} ~ {{amountFiat}}</1> tại {{clientName}}.",
+    "paymentSubtitle": "Quay lại trang thanh toán của bạn để hoàn tất đơn hàng của mình",
+    "paymentSuccess": "Thanh toán thành công!",
     "subtitle": "Vui lòng quay lại {{clientName}} để hoàn tất mua hàng của bạn.",
     "title": "Xác nhận thanh toán của bạn trong {{clientName}}"
+  },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "Quay lại {{clientName}}",
+    "depositSuccess": "Thành công!",
+    "depositTitle": "Bạn sẽ nhận được <2>{{amountCrypto}} ~ {{amountFiat}}</2> trong<5></5>{{clientName}}.",
+    "paymentSubtitle": "Quay lại trang thanh toán của bạn để hoàn tất đơn hàng của mình",
+    "paymentSuccess": "Thanh toán thành công!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Có vẻ bạn đã từ chối yêu cầu kết nối, hoặc một yêu cầu trước đó vẫn đang hoạt động. Nếu đó là một sai lầm, hãy thử lại.",
@@ -522,7 +537,8 @@
     "incorrect2faCode": "Mã 2FA không chính xác.",
     "incorrectEmail": "Bạn đã nhập sai email.",
     "incorrectPasswordChancesRemaining": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "Mật khẩu sai. Bạn còn lại {{count}} cơ hội.",
+    "incorrectPasswordChancesRemaining_other": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
     "incorrectUsernameOrPassword": "Tên đăng nhập hoặc mật khẩu không đúng.",
     "integrationNotAvailable": "Tích hợp này hiện không khả dụng.",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
@@ -987,10 +1003,9 @@
     "twoFactor": "Nhập mã do ứng dụng xác thực mà bạn đã cấu hình trong tài khoản <1>{{selectedIntegrationName}}</1> cung cấp."
   },
   "mfaPage": {
-    "codeSent": "Mã đã gửi tới <0>{{emailOrPhone}}</0>",
-    "codeSentEmail": "",
+    "codeSentEmail": "Mã đã được gửi đến email của bạn",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "Mã đã được gửi đến điện thoại của bạn qua SMS",
     "enterCode": "Nhập mã một lần của bạn để xác nhận đó<1></1> thực sự là bạn đang cố gắng đăng nhập.",
     "enterCode2": "Nhập mã từ <0>ứng dụng xác thực.</0>",
     "enterPin": "Nhập mã PIN giao dịch của bạn",
@@ -1200,12 +1215,15 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "Gửi tiền bằng mã QR"
+      "depositWithQr": "Gửi tiền bằng mã QR",
+      "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
+      "dontSeeYourAccount": "Không thấy tài khoản của bạn?",
+      "needAnotherWay": "Cần cách khác?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "Đã sao chép",
       "copyWalletAddress": "Sao chép địa chỉ ví",
-      "depositToClient": "",
+      "depositToClient": "Nạp tiền vào {{clientName}}",
       "downloadQr": "Tải xuống mã QR",
       "headline": "Gặp khó khăn?",
       "networkLabel": "Mạng",
@@ -1266,6 +1284,7 @@
     "exitPage": {
       "continuePayment": "Tiếp tục với thanh toán",
       "exit": "Thoát",
+      "exitAnyway": "Thoát dù sao đi nữa",
       "subtitle": "Tiến trình của bạn sẽ bị mất.",
       "title": "Bạn có chắc chắn muốn thoát không?"
     },
@@ -1434,6 +1453,7 @@
   "qrCodePassword": {
     "expired": "Mã QR đã hết hạn",
     "generateNew": "Tạo mã QR mới",
+    "loading": "Đang tải mã QR",
     "qrCodeLabel": "Mã QR có thể được quét trên thiết bị di động của bạn để thiết lập kết nối",
     "scanText": "Quét mã này với ứng dụng {{appName}} của bạn <1></1> để đăng nhập ngay."
   },
@@ -1465,6 +1485,7 @@
     "defaultTitle": "Chọn một token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
+    "link40Subtitle": "Ví {{clientName}} chấp nhận:",
     "link40Title": "Chọn một đồng tiền",
     "loading": "Đang tải tài sản của bạn...",
     "network": "mạng {{networkName}}",

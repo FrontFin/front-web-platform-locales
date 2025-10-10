@@ -21,17 +21,20 @@
     "amountMustBeWithin": "Miktar {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} arasında olmalıdır",
     "amountMustBeWithinErrorMessage": "Tutar $21 - $15,000 ABD Doları arasında olmalıdır",
     "buyCrypto": "Binance Connect kullanarak kripto satın al",
-    "cashEquivalent": "",
+    "cashEquivalent": "Nakit Eşdeğer",
     "closeButton": "Kapat",
+    "continueInBinance": "Binance ile devam et",
     "continueTo": "{{selectedIntegrationName}}'e devam et",
-    "cryptoAmount": "",
+    "cryptoAmount": "Kripto Miktarı",
     "enterAmount": "Transfer tutarını girin",
+    "mobileLabelDeposit": "İşleminizi Binance'de tamamlayın, ardından mevduatınızı tamamlamak için buraya dönün.",
+    "mobileLabelOnramp": "İşleminizi Binance'de tamamlayın, ardından on-ramp işleminizi tamamlamak için buraya dönün.",
     "notSupported": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
-    "openBinance": "",
+    "openBinance": "Binance'i aç",
     "receiveAmountInput": {
       "networkName": "{{networkName}} üzerinde"
     },
-    "returnToClient": "",
+    "returnToClient": "{{selectedIntegrationName}}'yı açın, mobil cihazınızla QR kodunu tarayın, sonra devam etmek için buraya geri dönün.",
     "scanText": "İşlemi mobil cihazınızda tamamlamak için QR kodunu tarayın.",
     "scanTitle": "Binance'ta mevduatınızı tamamlayın",
     "selectAnotherAccount": "Başka bir hesap seçin",
@@ -52,8 +55,8 @@
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Binance uygulaması ile devam et",
-    "descriptionDeposit": "<1>Buradan Binance mobil uygulamanızla bağlandıktan sonra para yatırmaya geri dönün</1>.",
-    "descriptionGeneral": "<1>Buraya dönerek devam edin</1> Binance mobil uygulamanıza bağlandıktan sonra.",
+    "descriptionDeposit": "<0>Buradan Binance mobil uygulamanızla bağlandıktan sonra para yatırmaya geri dönün</0>.",
+    "descriptionGeneral": "<0>Buraya dönerek devam edin</0> Binance mobil uygulamanıza bağlandıktan sonra.",
     "descriptionOnRamp": "<1>Buraya dönerek devam edin</1> Binance mobil uygulamanıza bağlandıktan sonra.",
     "descriptionPay": "<1>Buraya dönerek ödemeyi yapın</1> Binance mobil uygulamanıza bağlandıktan sonra.",
     "loginWithEmailButton": "E-posta/Telefon ile giriş yap",
@@ -242,8 +245,20 @@
     "changeCurrency": "Para birimini değiştir"
   },
   "dappDoneTransferPage": {
+    "depositSubtitle": "{{clientName}} dön",
+    "depositSuccess": "Başarılı!",
+    "depositTitle": "<2></2>{{clientName}}'de <1>{{amountCrypto}} ~ {{amountFiat}}</1> alacaksınız.",
+    "paymentSubtitle": "Siparişinizi tamamlamak için ödeme sayfanıza geri dönün",
+    "paymentSuccess": "Ödeme Başarılı!",
     "subtitle": "Lütfen satın alma işleminizi tamamlamak için {{clientName}}'a geri dönün.",
     "title": "Ödemenizi {{clientName}}'da onaylayın"
+  },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "{{clientName}} dön",
+    "depositSuccess": "Başarılı!",
+    "depositTitle": "<2>{{amountCrypto}} ~ {{amountFiat}}</2> olarak <5></5>{{clientName}} alacaksınız.",
+    "paymentSubtitle": "Siparişinizi tamamlamak için ödeme sayfanıza geri dönün",
+    "paymentSuccess": "Ödeme Başarılı!"
   },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Bağlantı isteğini reddetmiş gibi görünüyorsunuz veya önceki bir istek hâlâ aktif. Bu bir hataydıysa, tekrar deneyin.",
@@ -522,8 +537,8 @@
     "incorrect2faCode": "Yanlış 2FA kodu.",
     "incorrectEmail": "Yanlış e-posta adresi girdiniz.",
     "incorrectPasswordChancesRemaining": "Yanlış parola. {{count}} hakkınız kaldı.",
-    "incorrectPasswordChancesRemaining_one": "",
-    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectPasswordChancesRemaining_one": "Yanlış şifre. {{count}} hakkınız kaldı.",
+    "incorrectPasswordChancesRemaining_other": "Yanlış parola. {{count}} hakkınız kaldı.",
     "incorrectUsernameOrPassword": "Yanlış kullanıcı adı veya parola.",
     "integrationNotAvailable": "Entegrasyon şu anda mevcut değil.",
     "invalidCredentials": "Geçersiz giriş bilgileri. Lütfen tekrar deneyin.",
@@ -988,10 +1003,9 @@
     "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu girin."
   },
   "mfaPage": {
-    "codeSent": "Kod <0>{{emailOrPhone}}</0>'e gönderildi",
-    "codeSentEmail": "",
+    "codeSentEmail": "Kod e-postanıza gönderildi",
     "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "",
+    "codeSentPhone": "Kod telefonunuza SMS ile gönderildi",
     "enterCode": "Giriş yapan kişinin gerçekten siz olduğunuzu<1></1>onaylamak için tek seferlik kodunuzu girin.",
     "enterCode2": "<0>kimlik doğrulama uygulamanızdan</0> kodu girin.",
     "enterPin": "İşlem PIN'inizi girin",
@@ -1201,12 +1215,15 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "QR kod ile para yatırma"
+      "depositWithQr": "QR kod ile para yatırma",
+      "depositWithWalletAddress": "Cüzdan adresiyle yatırma",
+      "dontSeeYourAccount": "Hesabınızı göremiyor musunuz?",
+      "needAnotherWay": "Başka bir yöntem mi arıyorsunuz?"
     },
     "screen": {
-      "copiedWalletAddress": "",
+      "copiedWalletAddress": "Kopyalandı",
       "copyWalletAddress": "Cüzdan adresini kopyala",
-      "depositToClient": "",
+      "depositToClient": "{{clientName}}'e Para Yatır ",
       "downloadQr": "QR kodu indir",
       "headline": "Sorun mu yaşıyorsun?",
       "networkLabel": "Ağ test",
@@ -1267,6 +1284,7 @@
     "exitPage": {
       "continuePayment": "Ödemeye Devam Et",
       "exit": "Çık",
+      "exitAnyway": "Yine de çık",
       "subtitle": "İlerlemeniz kaybolacak.",
       "title": "Çıkmak istediğinizden emin misiniz?"
     },
@@ -1313,7 +1331,7 @@
       "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "title": "{{merchantName}} için ödeme yapın",
       "transactionBuffer": "İşlem tamponu",
@@ -1435,6 +1453,7 @@
   "qrCodePassword": {
     "expired": "QR kodu süresi doldu",
     "generateNew": "Yeni bir QR kodu oluştur",
+    "loading": "QR kodu yükleniyor",
     "qrCodeLabel": "QR kodu, bağlantı kurmak için mobil cihazınızda taranabilir",
     "scanText": "{{appName}} uygulamanızla bu kodu <1></1> tarayın ve anında giriş yapın."
   },
@@ -1466,6 +1485,7 @@
     "defaultTitle": "Bir jeton seçin",
     "depositTitle": "Yatırılacak token'ı seçin",
     "ineligibleAssets": "Uygun olmayan varlıklar",
+    "link40Subtitle": "{{clientName}} cüzdanı kabul ettikleridir:",
     "link40Title": "Bir token seçin",
     "loading": "Varlıklarınız yükleniyor...",
     "network": "{{networkName}} ağı",
