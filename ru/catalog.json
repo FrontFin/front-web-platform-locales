@@ -55,10 +55,10 @@
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Продолжить в приложении Binance",
-    "descriptionDeposit": "<1>Вернитесь сюда, чтобы внести депозит</1> после подключения в мобильном приложение Binance.",
+    "descriptionDeposit": "<0>Вернитесь сюда, чтобы внести депозит</0> после подключения в мобильном приложение Binance.",
     "descriptionGeneral": "<0>Вернитесь сюда, чтобы продолжить</0> после подключения в мобильном приложение Binance.",
-    "descriptionOnRamp": "<1>Вернитесь сюда, чтобы продолжить</1> после подключения в мобильном приложение Binance.",
-    "descriptionPay": "<1>Вернитесь сюда, чтобы оплатить</1> после подключения в мобильном приложение Binance.",
+    "descriptionOnRamp": "<0>Вернитесь сюда, чтобы продолжить</0> после подключения в мобильном приложение Binance.",
+    "descriptionPay": "<0>Вернитесь сюда, чтобы оплатить</0> после подключения в мобильном приложение Binance.",
     "loginWithEmailButton": "Войти с помощью почты/телефона",
     "or": "или",
     "scanText": "Сканируйте камерой телефона или приложением Binance для входа.",
@@ -187,6 +187,7 @@
     "availableForTransfer": "Доступно",
     "cancel": "Отмена",
     "chooseDifferentAccount": "Подключить другой аккаунт",
+    "chooseDifferentNetwork": "Выберите другую сеть",
     "closeCap": "Закрыть",
     "codeNotCorrent": "Предоставленный код неверен.",
     "connectAnotherAccount": "Подключить другой аккаунт",
@@ -1004,7 +1005,7 @@
   },
   "mfaPage": {
     "codeSentEmail": "Код отправлен на вашу электронную почту",
-    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
+    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>",
     "codeSentPhone": "Код отправлен на ваш телефон по SMS",
     "enterCode": "Введите свой одноразовый код, чтобы подтвердить <1></1> вход в свой аккаунт.",
     "enterCode2": "Введите код из вашего <0>приложения-аутентификатора.</0>",
@@ -1216,20 +1217,20 @@
   "payManual": {
     "entry": {
       "depositWithQr": "Депозит через QR-код",
-      "depositWithWalletAddress": "Пополните с электронным кошельком",
+      "depositWithWalletAddress": "Пополните по адресу электронного кошелька",
       "dontSeeYourAccount": "Не видите свой счет?",
-      "needAnotherWay": "Попробуйте другой способ?"
+      "needAnotherWay": "Попробуете другой способ?"
     },
     "screen": {
       "copiedWalletAddress": "Скопировано",
       "copyWalletAddress": "Скопировать адрес электронного кошелька",
       "depositToClient": "Депозит на {{clientName}}",
       "downloadQr": "Скачать QR-код",
-      "headline": "Возникли проблемы?",
+      "headline": "Депозит {{token}} по {{network}}",
       "networkLabel": "Сеть",
       "subtitle": "Вы можете завершить депозит вручную.",
       "tokenLabel": "Токен",
-      "warning": "Переводите только USDT в сети Base на этот адрес, иначе ваши средства могут быть утеряны"
+      "warning": "Переводите только {{token}} по сети {{network}} на этот адрес, иначе ваши средства могут быть утеряны"
     }
   },
   "paymentMethods": {
@@ -1284,7 +1285,7 @@
     "exitPage": {
       "continuePayment": "Продолжить оплату",
       "exit": "Выйти",
-      "exitAnyway": "Выйти в любом случае",
+      "exitAnyway": "Все равно выйти",
       "subtitle": "Ваш прогресс будет потерян.",
       "title": "Вы уверены, что хотите выйти?"
     },
@@ -1652,12 +1653,15 @@
     "gasAndBalanceTitle": "Недостаточный баланс газа и средств",
     "gasBody": "Комиссия за газ для сети {{network}} взимается в {{symbol}}. Пожалуйста, пополните баланс {{symbol}} и повторите эту транзакцию.",
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
+    "insufficientGasFeeDescription": "Эта транзакция требует {{gasFee}} в {{symbol}} для покрытия сетевых сборов.",
     "noBalanceBody": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noBalanceOnSpecificNetwork": "У вас нет {{symbol}} в сети {{network}}.",
     "noBalanceTitle": "Баланс недостаточен",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
     "paymentInsufficientBalance": "Ваш баланс {{balance}} {{symbol}} в сети {{network}} недостаточен для совершения этого платежа на сумму {{amount}} {{symbol}}.",
     "paymentInsufficientBalanceAndGas": "Эта транзакция требует {{amount}} {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
     "title": "Недостаточно средств",
+    "toppedUpWalletQuestion": "Вы пополнили ваш электронный кошелек?",
     "topUpAction": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз.",
     "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
   },
