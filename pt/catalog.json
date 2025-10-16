@@ -539,7 +539,6 @@
     "incorrectEmail": "Você digitou um email incorreto.",
     "incorrectPasswordChancesRemaining": "Senha incorreta. Você tem {{count}} tentativas restantes.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Você tem {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Você tem {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de usuário ou senha incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -706,7 +705,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1224,8 +1222,8 @@
       "needAnotherWay": "Precisa de outra maneira?"
     },
     "networkSelection": {
-      "subtitle": "",
-      "title": ""
+      "subtitle": "{{client}} suporta:",
+      "title": "Escolha uma rede"
     },
     "screen": {
       "copiedWalletAddress": "Copiado",
@@ -1236,11 +1234,11 @@
       "networkLabel": "Rede",
       "subtitle": "Você ainda pode completar seu depósito manualmente.",
       "tokenLabel": "Token",
-      "warning": "Transfira somente USDT na Base para este endereço, caso contrário, seus ativos podem ser perdidos."
+      "warning": "Transfira apenas {{token}} na {{network}} para este endereço - caso contrário, seus ativos poderão ser perdidos"
     },
     "tokenSelection": {
-      "subtitle": "",
-      "title": ""
+      "subtitle": "{{client}} aceita:",
+      "title": "Escolha um token"
     }
   },
   "paymentMethods": {
@@ -1598,7 +1596,7 @@
   "transferAmountInput": {
     "availableForDeposit": "{{amount}} disponível para depósito",
     "basedOnYourBalances": "Com base nos seus saldos",
-    "basedOnYourBalancesDepositsTooltip": ""
+    "basedOnYourBalancesDepositsTooltip": "Este total inclui o seu saldo existente de {{symbol}} mais saldos que podem ser automaticamente convertidos em {{symbol}} para este depósito."
   },
   "transferAmountPage": {
     "buttonTitle": {

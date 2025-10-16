@@ -539,7 +539,6 @@
     "incorrectEmail": "Ha ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} oportunidad restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -706,7 +705,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1224,8 +1222,8 @@
       "needAnotherWay": "¿Necesitas otra forma?"
     },
     "networkSelection": {
-      "subtitle": "",
-      "title": ""
+      "subtitle": "{{client}} soporta:",
+      "title": "Elige una red"
     },
     "screen": {
       "copiedWalletAddress": "Copiado",
@@ -1236,11 +1234,11 @@
       "networkLabel": "Red",
       "subtitle": "Todavía puedes completar tu depósito manualmente.",
       "tokenLabel": "Token",
-      "warning": "Solo transfiere USDT en Base a esta dirección, de lo contrario, tus activos pueden perderse"
+      "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse"
     },
     "tokenSelection": {
-      "subtitle": "",
-      "title": ""
+      "subtitle": "{{client}} acepta:",
+      "title": "Elija un token"
     }
   },
   "paymentMethods": {
@@ -1598,7 +1596,7 @@
   "transferAmountInput": {
     "availableForDeposit": "{{amount}} disponible para depósito",
     "basedOnYourBalances": "Basado en tus saldos",
-    "basedOnYourBalancesDepositsTooltip": ""
+    "basedOnYourBalancesDepositsTooltip": "Este total incluye tu saldo existente de {{symbol}} más los saldos que se pueden intercambiar automáticamente en {{symbol}} para este depósito."
   },
   "transferAmountPage": {
     "buttonTitle": {
