@@ -194,7 +194,7 @@
     "continueCap": "続行",
     "doneCap": "完了",
     "failedToLoadTrasferError": "転送情報の読み込みに失敗しました",
-    "freeCap": "",
+    "freeCap": "無料",
     "genericConnectErrorMessage": "連携先に接続できませんでした",
     "maxCap": "最大",
     "mesh": "Mesh",
@@ -1078,7 +1078,7 @@
     "description": "以下のネットワークは、すべてこの支払いに対応しており、安全にご利用いただけます。最も手数料が低いネットワークを自動で選択しています。",
     "estimatedGasFeeLabel": "概算ガス代：",
     "lowestFeeLabel": "最安手数料",
-    "subtitle": "",
+    "subtitle": "{{clientName}} は次のネットワークで支払いを受け付けます:",
     "title": "ネットワークを選択"
   },
   "nonOAuthPermissionsPage": {
@@ -1362,6 +1362,8 @@
       "pyusdDisclaimer": "トランザクションはPaxos Trust Company, LLCによって発行され、管理されている安定コインであるPayPal USD (PYUSD)で完了します。PYUSDはブロックチェーン上で動作します。",
       "refundDisclaimer": "払い戻しは{{settlementCurrency}}のみで支払われます。為替レートと手数料は頻繁に変動します。すべての暗号通貨の購入は最終的です。",
       "send": "送信",
+      "swapFee": "自動スワップ手数料",
+      "swapFeeHint": "ウォレット内の資産をターゲットの転送資産に自動的にスワップするための手数料です。",
       "title": "{{merchantName}} に支払う",
       "transactionBuffer": "トランザクションバッファ",
       "transactionBufferHint": "暗号通貨の価格が変動しても、購入が成功するようにこの額が追加されます。この結果、ウォレットにいくらかの{{settlementCurrency}}が残ることがあります。"
@@ -1537,12 +1539,12 @@
     "label": "{{text}}を選択"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} のサポート:",
+    "estFee": "概算料",
     "gasFeeDescription": "<0>推定ガス料金：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "送金対象外のネットワーク",
     "integrationFeeDescription": "<0>推定{{selectedIntegrationName}}料金：</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "送信方法",
     "title": "ネットワークを選択"
   },
   "selectNetworkScreen": {
