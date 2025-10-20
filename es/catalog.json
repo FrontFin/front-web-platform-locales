@@ -194,7 +194,7 @@
     "continueCap": "Continuar",
     "doneCap": "Terminar",
     "failedToLoadTrasferError": "Error al cargar la información sobre la transferencia",
-    "freeCap": "",
+    "freeCap": "Gratis",
     "genericConnectErrorMessage": "No se pudo conectar a su integración",
     "maxCap": "Máx",
     "mesh": "Mesh",
@@ -540,7 +540,6 @@
     "incorrectEmail": "Ha ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} oportunidad restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -707,7 +706,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1080,7 +1078,7 @@
     "description": "Las redes a continuación son todas opciones seguras y compatibles para este pago. Hemos seleccionado automáticamente la red de menor tarifa para ti.",
     "estimatedGasFeeLabel": "Est. tarifa de gas:",
     "lowestFeeLabel": "Menor tarifa",
-    "subtitle": "",
+    "subtitle": "{{clientName}} acepta pagos en las siguientes redes:",
     "title": "Selecciona una red"
   },
   "nonOAuthPermissionsPage": {
@@ -1364,6 +1362,8 @@
       "pyusdDisclaimer": "La transacción se completará usando PayPal USD (PYUSD), que es una stablecoin emitida y custodiada por Paxos Trust Company, LLC. PYUSD funciona en la blockchain.",
       "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian frecuentemente. Todas las compras con cripto son finales.",
       "send": "Enviar",
+      "swapFee": "Comisión automatizada de intercambio",
+      "swapFeeHint": "Una tarifa para facilitar un intercambio automatizado de activos en su wallet en el activo de transferencia objetivo.",
       "title": "Pagar a {{merchantName}}",
       "transactionBuffer": "Margen de transacción",
       "transactionBufferHint": "Esta cantidad se agrega para ayudar a que tu compra se realice, incluso si los precios de cripto cambian. Esto puede dejar algo de {{settlementCurrency}} en tu wallet."
@@ -1539,12 +1539,12 @@
     "label": "Selecciona {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} soporta:",
+    "estFee": "Cuota estimada",
     "gasFeeDescription": "<0>Est. tarifa de gas:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Redes inelegibles",
     "integrationFeeDescription": "<0>Est. tarifa de {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Enviar por",
     "title": "Elige una red"
   },
   "selectNetworkScreen": {

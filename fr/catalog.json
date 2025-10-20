@@ -194,7 +194,7 @@
     "continueCap": "Continuer",
     "doneCap": "Terminé",
     "failedToLoadTrasferError": "Échec du chargement des informations sur le transfert",
-    "freeCap": "",
+    "freeCap": "Gratuit",
     "genericConnectErrorMessage": "La connexion à votre intégration a échoué",
     "maxCap": "Max",
     "mesh": "Mesh",
@@ -540,7 +540,6 @@
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -707,7 +706,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1080,7 +1078,7 @@
     "description": "Les réseaux ci-dessous sont tous des options sécurisées et compatibles pour ce paiement. Nous avons sélectionné automatiquement le réseau avec les frais les plus bas pour vous.",
     "estimatedGasFeeLabel": "Estimation de frais de gaz :",
     "lowestFeeLabel": "Frais les plus bas",
-    "subtitle": "",
+    "subtitle": "{{clientName}} accepte les paiements sur les réseaux suivants:",
     "title": "Sélectionnez le réseau"
   },
   "nonOAuthPermissionsPage": {
@@ -1294,7 +1292,7 @@
       "title": "Terminez le paiement sur votre portefeuille {{walletName}}"
     },
     "doneTransferDetailsPage": {
-      "disclaimer": "Le taux de change a pu changer durant la transaction.",
+      "disclaimer": "Le taux de change peut avoir changé pendant la transaction.",
       "title": "Ce qui s'est passé"
     },
     "doneTransferPage": {
@@ -1341,7 +1339,7 @@
       "title": "Connectez-vous pour revoir les détails du paiement"
     },
     "inWalletBrowserInitialPage": {
-      "retry": "Réessayer",
+      "retry": "Veuillez réessayer",
       "title": "Approuvez la demande de connexion pour continuer avec votre paiement"
     },
     "inWalletDoneTransferPage": {
@@ -1364,6 +1362,8 @@
       "pyusdDisclaimer": "La transaction sera effectuée en utilisant le PayPal USD (PYUSD), qui est un stablecoin émis et détenu par Paxos Trust Company, LLC. Le PYUSD fonctionne sur la blockchain.",
       "refundDisclaimer": "Les remboursements seront émis uniquement en {{settlementCurrency}}. Le taux de change et les frais changent fréquemment. Tous les achats de crypto sont définitifs.",
       "send": "Envoyer",
+      "swapFee": "Frais d'échange automatisés",
+      "swapFeeHint": "Des frais pour faciliter un échange automatisé d'actifs dans votre portefeuille vers l'actif de transfert cible.",
       "title": "Payer {{merchantName}}",
       "transactionBuffer": "Tampon de transaction",
       "transactionBufferHint": "Ce montant est ajouté pour aider votre achat à passer, même si les prix des cryptos changent. Cela peut laisser des {{settlementCurrency}} dans votre portefeuille."
@@ -1539,12 +1539,12 @@
     "label": "Sélectionner {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} prend en charge :",
+    "estFee": "Frais estimé",
     "gasFeeDescription": "<0>Estimation des frais de gaz :</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Réseaux inéligibles",
     "integrationFeeDescription": "<0>Estimation des frais de {{selectedIntegrationName}} :</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Envoyer via",
     "title": "Choisissez un réseau"
   },
   "selectNetworkScreen": {

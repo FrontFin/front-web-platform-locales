@@ -194,7 +194,7 @@
     "continueCap": "Продолжить",
     "doneCap": "Готово",
     "failedToLoadTrasferError": "Не удалось загрузить информацию о переводе",
-    "freeCap": "",
+    "freeCap": "Бесплатно",
     "genericConnectErrorMessage": "Не удалось подключиться к вашему аккаунту",
     "maxCap": "Макс",
     "mesh": "Сетка",
@@ -540,8 +540,6 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -708,8 +706,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1082,7 +1078,7 @@
     "description": "Ниже указаны все безопасные и совместимые сети для этого платежа. Мы автоматически выбрали сеть с самой низкой комиссией для вас.",
     "estimatedGasFeeLabel": "Оценочная комиссия за газ:",
     "lowestFeeLabel": "Самая низкая комиссия",
-    "subtitle": "",
+    "subtitle": "{{clientName}} принимает платежи в следующих сетях:",
     "title": "Выберите сеть"
   },
   "nonOAuthPermissionsPage": {
@@ -1366,6 +1362,8 @@
       "pyusdDisclaimer": "Транзакция будет завершена с использованием PayPal USD (PYUSD), который является стейблкоином, выпущенным и хранимым компанией Paxos Trust Company, LLC. PYUSD работает на блокчейне.",
       "refundDisclaimer": "Возвраты будут выдаваться только в {{settlementCurrency}}. Курс обмена и комиссии часто меняются. Все крипто-покупки окончательны.",
       "send": "Отправить",
+      "swapFee": "Автоматическая комиссия за обмен",
+      "swapFeeHint": "Плата за автоматизированный обмен активов в вашем электронном кошельке на целевой актив перевода.",
       "title": "Оплата {{merchantName}}",
       "transactionBuffer": "Буфер транзакции",
       "transactionBufferHint": "Эта сумма добавляется, чтобы ваша покупка прошла, даже если курсы криптовалют изменяются. На вашем кошельке может остаться некоторая сумма {{settlementCurrency}}."
@@ -1541,12 +1539,12 @@
     "label": "Выбор {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} поддерживает:",
+    "estFee": "Оценочная комиссия",
     "gasFeeDescription": "<0>Примерная комиссия за газ:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Неподходящие сети",
     "integrationFeeDescription": "<0>Примерная комиссия {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Отправить через",
     "title": "Выберите сеть"
   },
   "selectNetworkScreen": {
