@@ -25,7 +25,9 @@
     "closeButton": "Schließen",
     "continueInBinance": "Weiter in Binance",
     "continueTo": "Weiter zu {{selectedIntegrationName}}",
+    "continueWithAppButton": "Weiter zu {{selectedIntegrationName}}-App",
     "cryptoAmount": "Kryptobetrag",
+    "descriptionDeposit": "<0>Kehren Sie hierher zurück</0>, nachdem Sie Ihre Transaktion auf Binance abgeschlossen haben.",
     "enterAmount": "Überweisungsbetrag eingeben",
     "mobileLabelDeposit": "Schließen Sie Ihre Transaktion bei Binance ab, und kehren Sie dann hierher zurück, um Ihre Einzahlung abzuschließen.",
     "mobileLabelOnramp": "Schließen Sie Ihre Transaktion bei Binance ab, und kehren Sie dann hierher zurück, um Ihren Onramp abzuschließen.",
@@ -42,6 +44,7 @@
     "selectAsset": "Asset zur Übertragung auswählen",
     "selectCurrency": "Währung auswählen",
     "selectNetwork": "Übertragungsnetzwerk auswählen",
+    "transactionRequest": "Transaktionsanforderung an Ihre Binance-App gesendet.",
     "youPay": "Du zahlst",
     "youReceive": "Du erhälst"
   },
@@ -1081,7 +1084,7 @@
     "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Dich automatisch ausgewählt.",
     "estimatedGasFeeLabel": "Geschätzte Gasgebühr:",
     "lowestFeeLabel": "Niedrigste Gebühr",
-    "mostPopular": "",
+    "mostPopular": "Am beliebtesten",
     "subtitle": "{{clientName}} akzeptiert Zahlungen in den folgenden Netzwerken:",
     "title": "Netzwerk auswählen"
   },
@@ -1228,8 +1231,8 @@
       "needAnotherWay": "Andere Möglichkeit ausprobieren?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Zurzeit stehen keine unterstützten Token für Einzahlungen zur Verfügung.",
+      "noTokensTitle": "Keine Token verfügbar"
     },
     "networkSelection": {
       "subtitle": "{{client}} unterstützt:",
@@ -1269,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Zahlungsdetails werden vorbereitet"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Betrag über dem Höchstbetrag",
+        "amountBelowMinimum": "Betrag unter dem Mindestbetrag",
+        "complianceRestriction": "Compliance-Eignungsbeschränkung",
+        "unavailable": "Nicht verfügbar",
+        "unavailableInRegion": "Nicht verfügbar in Ihrer Region",
+        "unsupportedOnDevice": "Nicht unterstützt auf diesem Gerät",
+        "unsupportedTokenAndNetwork": "Nicht unterstützter Token und Netzwerk"
+      }
     },
     "common": {
       "cancel": "Abbrechen",
