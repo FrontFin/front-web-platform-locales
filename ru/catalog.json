@@ -25,7 +25,9 @@
     "closeButton": "Закрыть",
     "continueInBinance": "Продолжить в Binance",
     "continueTo": "Перейти к  {{selectedIntegrationName}}",
+    "continueWithAppButton": "Перейти к приложению {{selectedIntegrationName}}",
     "cryptoAmount": "Количество криптовалюты",
+    "descriptionDeposit": "<0>Вернитесь сюда</0> после завершения транзакции в Binance.",
     "enterAmount": "Введите сумму перевода",
     "mobileLabelDeposit": "Завершите транзакцию в Binance, затем вернитесь сюда, чтобы завершить свой депозит.",
     "mobileLabelOnramp": "Завершите транзакцию в Binance, затем вернитесь сюда, чтобы завершить подключение.",
@@ -42,6 +44,7 @@
     "selectAsset": "Выберите актив для перевода",
     "selectCurrency": "Выберите валюту",
     "selectNetwork": "Выберите сеть для перевода",
+    "transactionRequest": "Запрос на транзакцию отправлен в ваше приложение Binance.",
     "youPay": "Вы платите",
     "youReceive": "Вы получаете"
   },
@@ -541,8 +544,6 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -711,8 +712,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1085,7 +1084,7 @@
     "description": "Ниже указаны все безопасные и совместимые сети для этого платежа. Мы автоматически выбрали сеть с самой низкой комиссией для вас.",
     "estimatedGasFeeLabel": "Оценочная комиссия за газ:",
     "lowestFeeLabel": "Самая низкая комиссия",
-    "mostPopular": "",
+    "mostPopular": "Самый популярный",
     "subtitle": "{{clientName}} принимает платежи в следующих сетях:",
     "title": "Выберите сеть"
   },
@@ -1232,8 +1231,8 @@
       "needAnotherWay": "Попробуете другой способ?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "В данный момент нет поддерживаемых токенов для депозита.",
+      "noTokensTitle": "Токены недоступны"
     },
     "networkSelection": {
       "subtitle": "{{client}} поддерживает:",
@@ -1273,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Подготовка деталей вашего платежа"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Сумма выше максимальной",
+        "amountBelowMinimum": "Сумма ниже минимальной",
+        "complianceRestriction": "Ограничение по соответствию требованиям",
+        "unavailable": "Недоступно",
+        "unavailableInRegion": "Недоступно в вашем регионе",
+        "unsupportedOnDevice": "Неподдерживается на этом устройстве",
+        "unsupportedTokenAndNetwork": "Неподдерживаемые токен и сеть"
+      }
     },
     "common": {
       "cancel": "Отмена",
