@@ -25,7 +25,9 @@
     "closeButton": "Fermer",
     "continueInBinance": "Continuer avec Binance",
     "continueTo": "Continuer sur {{selectedIntegrationName}}",
+    "continueWithAppButton": "Continuer avec l'application {{selectedIntegrationName}}",
     "cryptoAmount": "Montant en crypto",
+    "descriptionDeposit": "<0>Retournez ici</0> après avoir complété votre transaction sur Binance.",
     "enterAmount": "Entrez le montant à transférer",
     "mobileLabelDeposit": "Complétez votre transaction sur Binance, puis revenez ici pour finaliser votre dépôt.",
     "mobileLabelOnramp": "Complétez votre transaction sur Binance, puis revenez ici pour finaliser votre achat.",
@@ -42,6 +44,7 @@
     "selectAsset": "Choisissez l’actif que vous souhaitez transférer",
     "selectCurrency": "Choisissez une devise",
     "selectNetwork": "Choisissez le réseau pour le transfert",
+    "transactionRequest": "Notification de transaction envoyée à votre application Binance.",
     "youPay": "Montant à payer",
     "youReceive": "Montant à recevoir"
   },
@@ -541,7 +544,6 @@
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -710,7 +712,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1083,7 +1084,7 @@
     "description": "Les réseaux ci-dessous sont tous des options sécurisées et compatibles pour ce paiement. Nous avons sélectionné automatiquement le réseau avec les frais les plus bas pour vous.",
     "estimatedGasFeeLabel": "Estimation de frais de gaz :",
     "lowestFeeLabel": "Frais les plus bas",
-    "mostPopular": "",
+    "mostPopular": "Les plus populaires",
     "subtitle": "{{clientName}} accepte les paiements sur les réseaux suivants:",
     "title": "Sélectionnez le réseau"
   },
@@ -1230,8 +1231,8 @@
       "needAnotherWay": "Besoin d'une autre méthode?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Il n'y a pas de jetons pris en charge disponibles pour le dépôt pour le moment.",
+      "noTokensTitle": "Aucun jeton disponible"
     },
     "networkSelection": {
       "subtitle": "{{client}} prend en charge :",
@@ -1271,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Préparation des détails de votre paiement"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Montant au-dessus du maximum",
+        "amountBelowMinimum": "Montant en dessous du minimum",
+        "complianceRestriction": "Restriction d'éligibilité à la conformité",
+        "unavailable": "Indisponible",
+        "unavailableInRegion": "Indisponible dans votre région",
+        "unsupportedOnDevice": "Non pris en charge sur cet appareil",
+        "unsupportedTokenAndNetwork": "Jeton et réseau non pris en charge"
+      }
     },
     "common": {
       "cancel": "Annuler",
