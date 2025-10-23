@@ -25,7 +25,9 @@
     "closeButton": "Đóng",
     "continueInBinance": "Tiếp tục với Binance",
     "continueTo": "Tiếp tục đến {{selectedIntegrationName}}",
+    "continueWithAppButton": "Tiếp tục với ứng dụng {{selectedIntegrationName}}",
     "cryptoAmount": "Số lượng tiền điện tử",
+    "descriptionDeposit": "<0>Quay lại đây</0> sau khi hoàn tất giao dịch của bạn trong Binance.",
     "enterAmount": "Nhập số tiền giao dịch",
     "mobileLabelDeposit": "Hoàn tất giao dịch của bạn trong Binance, sau đó trở lại đây để hoàn tất tiền gửi của bạn.",
     "mobileLabelOnramp": "Hoàn tất giao dịch của bạn trong Binance, sau đó trở lại đây để hoàn tất nền tảng khởi đầu của bạn.",
@@ -42,6 +44,7 @@
     "selectAsset": "Chọn tài sản để giao dịch",
     "selectCurrency": "Chọn đơn vị tiền tệ",
     "selectNetwork": "Chọn mạng lưới chuyển tiền",
+    "transactionRequest": "Yêu cầu giao dịch đã được gửi tới ứng dụng Binance của bạn.",
     "youPay": "Bạn trả",
     "youReceive": "Bạn nhận được"
   },
@@ -1081,7 +1084,7 @@
     "description": "Các mạng dưới đây đều là những lựa chọn an toàn và tương thích cho khoản thanh toán này. Chúng tôi đã tự động chọn mạng có phí thấp nhất cho bạn.",
     "estimatedGasFeeLabel": "Phí gas ước tính:",
     "lowestFeeLabel": "Phí thấp nhất",
-    "mostPopular": "",
+    "mostPopular": "Phổ Biến Nhất",
     "subtitle": "{{clientName}} chấp nhận thanh toán trên các mạng sau:",
     "title": "Chọn mạng"
   },
@@ -1228,8 +1231,8 @@
       "needAnotherWay": "Cần cách khác?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Hiện không có token được hỗ trợ nào có sẵn để gửi vào lúc này.",
+      "noTokensTitle": "Không có token nào khả dụng"
     },
     "networkSelection": {
       "subtitle": "{{client}} hỗ trợ:",
@@ -1269,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Đang chuẩn bị chi tiết thanh toán của bạn"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Số tiền vượt quá mức tối đa",
+        "amountBelowMinimum": "Số tiền dưới mức tối thiểu",
+        "complianceRestriction": "Hạn chế khả năng đủ điều kiện tuân thủ",
+        "unavailable": "Không khả dụng",
+        "unavailableInRegion": "Không khả dụng trong khu vực của bạn",
+        "unsupportedOnDevice": "Không được hỗ trợ trên thiết bị này",
+        "unsupportedTokenAndNetwork": "Token và mạng không được hỗ trợ"
+      }
     },
     "common": {
       "cancel": "Hủy bỏ",
