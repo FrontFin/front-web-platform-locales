@@ -25,7 +25,9 @@
     "closeButton": "Kapat",
     "continueInBinance": "Binance ile devam et",
     "continueTo": "{{selectedIntegrationName}}'e devam et",
+    "continueWithAppButton": "{{selectedIntegrationName}} uygulamasıyla devam et",
     "cryptoAmount": "Kripto Miktarı",
+    "descriptionDeposit": "<0>Buraya dönün</0> işleminizi Binance'de tamamladıktan sonra.",
     "enterAmount": "Transfer tutarını girin",
     "mobileLabelDeposit": "İşleminizi Binance'de tamamlayın, ardından mevduatınızı tamamlamak için buraya dönün.",
     "mobileLabelOnramp": "İşleminizi Binance'de tamamlayın, ardından on-ramp işleminizi tamamlamak için buraya dönün.",
@@ -42,6 +44,7 @@
     "selectAsset": "Transfer edilecek varlığı seçin",
     "selectCurrency": "Bir para birimi seçin",
     "selectNetwork": "Transfer ağını seçin",
+    "transactionRequest": "İşlem isteği Binance uygulamanıza gönderildi.",
     "youPay": "Ödemeniz gereken tutar",
     "youReceive": "Alacağınız tutar"
   },
@@ -1081,7 +1084,7 @@
     "description": "Aşağıdaki ağlar, bu ödeme için güvenli ve uyumlu seçeneklerdir. Sizin için en düşük ücretli ağı otomatik olarak seçtik.",
     "estimatedGasFeeLabel": "Tahmini gaz ücreti:",
     "lowestFeeLabel": "En düşük ücret",
-    "mostPopular": "",
+    "mostPopular": "En Popüler",
     "subtitle": "{{clientName}} aşağıdaki ağlarda ödemeleri kabul etmektedir:",
     "title": "Ağ seçin"
   },
@@ -1228,8 +1231,8 @@
       "needAnotherWay": "Başka bir yöntem mi arıyorsunuz?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Bu zamanda yatırılabilecek desteklenen token yoktur.",
+      "noTokensTitle": "Token yok"
     },
     "networkSelection": {
       "subtitle": "{{client}} destekler:",
@@ -1269,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Ödeme detaylarınızı hazırlıyoruz"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Miktar, maksimumun üzerinde",
+        "amountBelowMinimum": "Miktar, minimumun altında",
+        "complianceRestriction": "Uyumluluk uygunluğu kısıtlaması",
+        "unavailable": "Kullanılamıyor",
+        "unavailableInRegion": "Bölgede kullanılamıyor",
+        "unsupportedOnDevice": "Bu cihazda desteklenmiyor",
+        "unsupportedTokenAndNetwork": "Desteklenmeyen jeton ve ağ"
+      }
     },
     "common": {
       "cancel": "İptal",
@@ -1368,7 +1382,7 @@
       "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "swapFee": "Otomatik değişim ücreti",
       "swapFeeHint": "Cüzdanınızda bulunan varlıkların hedef transfer varlığına otomatik dönüşümünü sağlamak için bir ücret.",

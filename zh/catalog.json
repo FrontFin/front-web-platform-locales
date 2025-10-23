@@ -25,7 +25,9 @@
     "closeButton": "关闭",
     "continueInBinance": "用Binance中完成下一步",
     "continueTo": "继续前往{{selectedIntegrationName}}",
+    "continueWithAppButton": "继续与{{selectedIntegrationName}}应用程序合作",
     "cryptoAmount": "加密金额",
+    "descriptionDeposit": "<0>完成您的交易后</0> ，在币安返回这里。",
     "enterAmount": "输入转账金额",
     "mobileLabelDeposit": "请在Binance中完成您的交易，然后返回此处完成您的存款。",
     "mobileLabelOnramp": "请在Binance中完成您的交易，然后返回此处完成入金流程。",
@@ -42,6 +44,7 @@
     "selectAsset": "选择要转账的资产",
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
+    "transactionRequest": "交易请求已发送至您的币安应用程序。",
     "youPay": "由您支付",
     "youReceive": "由您接收"
   },
@@ -1081,7 +1084,7 @@
     "description": "以下网络均为安全且兼容的支付方式。我们已为您自动选择手续费最低的网络。",
     "estimatedGasFeeLabel": "预估燃料费：",
     "lowestFeeLabel": "最低手续费",
-    "mostPopular": "",
+    "mostPopular": "最受欢迎",
     "subtitle": "{{clientName}} 接受以下网络的支付:",
     "title": "选择网络"
   },
@@ -1228,8 +1231,8 @@
       "needAnotherWay": "使用其他支付方式？"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "目前没有可存款的支持代币。",
+      "noTokensTitle": "无可用代币"
     },
     "networkSelection": {
       "subtitle": "{{client}} 支持：",
@@ -1269,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "正在生成您的支付详情"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "金额超出最高限额",
+        "amountBelowMinimum": "金额低于最低限额",
+        "complianceRestriction": "合规性资格限制",
+        "unavailable": "不可用",
+        "unavailableInRegion": "在您的地区不可用",
+        "unsupportedOnDevice": "此设备不支持",
+        "unsupportedTokenAndNetwork": "不支持此代币和网络"
+      }
     },
     "common": {
       "cancel": "取消",

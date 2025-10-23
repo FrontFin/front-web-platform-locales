@@ -25,7 +25,9 @@
     "closeButton": "Zamknij",
     "continueInBinance": "Kontynuuj w Binance",
     "continueTo": "Przejdź do {{selectedIntegrationName}}",
+    "continueWithAppButton": "Kontynuuj z aplikacją {{selectedIntegrationName}}",
     "cryptoAmount": "Kwota Kryptowaluty",
+    "descriptionDeposit": "<0>Wróć tutaj</0> po zakończeniu transakcji w Binance.",
     "enterAmount": "Wprowadź kwotę transferu",
     "mobileLabelDeposit": "Ukończ transakcję w Binance, a następnie wróć tutaj, aby zakończyć wpłatę.",
     "mobileLabelOnramp": "Ukończ transakcję w Binance, a następnie wróć tutaj, aby zakończyć rozpoczęcie wpłaty.",
@@ -42,6 +44,7 @@
     "selectAsset": "Wybierz aktywo do transferu",
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
+    "transactionRequest": "Wysłano żądanie transakcji do Twojej aplikacji Binance.",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz"
   },
@@ -216,7 +219,7 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zaakceptuj żądanie, aby kontynuować.",
-    "title": "Autoryzuj prośbę\u00a0o połączenie<1></1> w swoim portfelu",
+    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
@@ -541,8 +544,6 @@
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Masz jeszcze {{count}} szansę.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -711,8 +712,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1085,7 +1084,7 @@
     "description": "Poniższe sieci to wszystkie bezpieczne i kompatybilne opcje dla tej płatności. Automatycznie wybraliśmy dla Ciebie sieć z najniższą opłatą.",
     "estimatedGasFeeLabel": "Szacunkowa opłata za gaz:",
     "lowestFeeLabel": "Najniższa opłata",
-    "mostPopular": "",
+    "mostPopular": "Najbardziej popularny",
     "subtitle": "{{clientName}} akceptuje płatności w następujących sieciach:",
     "title": "Wybierz sieć"
   },
@@ -1232,8 +1231,8 @@
       "needAnotherWay": "Potrzebujesz innej metody?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Obecnie brak obsługiwanych tokenów dostępnych do wpłaty.",
+      "noTokensTitle": "Brak dostępnych tokenów"
     },
     "networkSelection": {
       "subtitle": "{{client}} wspiera:",
@@ -1273,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Przygotowywanie szczegółów płatności"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Kwota powyżej maksimum",
+        "amountBelowMinimum": "Kwota poniżej minimum",
+        "complianceRestriction": "Ograniczenie zgodności",
+        "unavailable": "Niedostępne",
+        "unavailableInRegion": "Niedostępne w Twoim regionie",
+        "unsupportedOnDevice": "Nieobsługiwane na tym urządzeniu",
+        "unsupportedTokenAndNetwork": "Nieobsługiwany token i sieć"
+      }
     },
     "common": {
       "cancel": "Anuluj",

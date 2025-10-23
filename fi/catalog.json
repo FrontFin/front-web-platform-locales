@@ -25,7 +25,9 @@
     "closeButton": "Sulje",
     "continueInBinance": "Jatka Binance-sovelluksella",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
+    "continueWithAppButton": "Jatka {{selectedIntegrationName}}-sovelluksessa",
     "cryptoAmount": "Kryptosumma",
+    "descriptionDeposit": "<0>Palaa tänne</0> suoritettuasi tapahtuman Binancessa.",
     "enterAmount": "Syötä siirron määrä",
     "mobileLabelDeposit": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään talletuksesi.",
     "mobileLabelOnramp": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään on-ramp-järjestelmäsi.",
@@ -42,6 +44,7 @@
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
+    "transactionRequest": "Tapahtumapyyntö lähetetty Binance-sovellukseesi.",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat"
   },
@@ -1081,7 +1084,7 @@
     "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja tälle maksulle. Olemme valinneet sinulle automaattisesti halvimman verkon.",
     "estimatedGasFeeLabel": "Arvioitu gas-maksu:",
     "lowestFeeLabel": "Alhaisin maksu",
-    "mostPopular": "",
+    "mostPopular": "Suosituin",
     "subtitle": "{{clientName}} hyväksyy maksut seuraavissa verkoissa:",
     "title": "Valitse verkko"
   },
@@ -1228,8 +1231,8 @@
       "needAnotherWay": "Tarvitsetko toisen tavan?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Tällä hetkellä ei ole talletettavissa tuettuja tokeneita.",
+      "noTokensTitle": "Ei saatavilla olevia tokeneita"
     },
     "networkSelection": {
       "subtitle": "{{client}} tukee:",
@@ -1269,6 +1272,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Valmistellaan maksutietojasi"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Määrä yli maksimirajan",
+        "amountBelowMinimum": "Määrä alle minimin",
+        "complianceRestriction": "Sääntelyn kelpoisuusrajoitus",
+        "unavailable": "Ei saatavilla",
+        "unavailableInRegion": "Ei saatavilla alueellasi",
+        "unsupportedOnDevice": "Ei tuettu tällä laitteella",
+        "unsupportedTokenAndNetwork": "Ei tuettu merkki ja verkko"
+      }
     },
     "common": {
       "cancel": "Peruuta",
