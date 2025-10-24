@@ -194,7 +194,7 @@
     "continueCap": "Tiếp tục",
     "doneCap": "Xong",
     "failedToLoadTrasferError": "Không tải được thông tin về giao dịch",
-    "freeCap": "",
+    "freeCap": "Miễn phí",
     "genericConnectErrorMessage": "Không thể kết nối với tích hợp của bạn",
     "maxCap": "Tối đa",
     "mesh": "Mesh",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "Nạp tiền không được hỗ trợ",
     "tooManyRequests": "Quá nhiều yêu cầu",
     "transferAlreadyRequested": "Yêu cầu chuyển khoản đã được gửi",
+    "travelRuleRestriction": "Quy tắc Giao dịch (Travel Rule)",
     "tryAgainAfterLogin": "Yêu Cầu Đăng Nhập",
     "twoFaFailed": "Mã 2FA không hợp lệ",
     "unableToSend": "Chuyển Khoản Thất Bại",
@@ -584,6 +585,8 @@
     "tooManyAttemptsOneMinute": "Quá nhiều lần thử. Vui lòng thử lại sau 1 phút.",
     "tooManyRequests": "Vui lòng thử lại sau.",
     "transferAlreadyRequested": "Giao dịch chuyển tiền đã được yêu cầu trước đó.",
+    "travelRuleRestriction": "{{integrationName}} hiện không hỗ trợ chuyển khoản từ quốc gia của bạn.",
+    "travelRuleRestrictionPayment": "{{integrationName}} hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
     "tryAgainAfterLogin": "Vui lòng thử lại sau khi đăng nhập.",
     "twoFaFailed": "Xác thực hai yếu tố đã thất bại. Vui lòng thử lại.",
     "unableToSend": "Không thể gửi giao dịch chuyển tiền. Vui lòng thử lại.",
@@ -658,7 +661,8 @@
     "institutionFeeDescription": "Phí này bao gồm chi phí mạng cho việc xử lý rút tiền của bạn. Nó thay đổi tùy thuộc vào tiền điện tử được chọn và điều kiện blockchain hiện tại.",
     "processingFee": "Phí xử lý {{clientName}}",
     "processingFeeDescription": "Phí {{clientName}} thu để hỗ trợ hoàn tất giao dịch này.",
-    "title": "Bao gồm phí"
+    "title": "Bao gồm phí",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "Khóa API",
@@ -1078,7 +1082,8 @@
     "description": "Các mạng dưới đây đều là những lựa chọn an toàn và tương thích cho khoản thanh toán này. Chúng tôi đã tự động chọn mạng có phí thấp nhất cho bạn.",
     "estimatedGasFeeLabel": "Phí gas ước tính:",
     "lowestFeeLabel": "Phí thấp nhất",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} chấp nhận thanh toán trên các mạng sau:",
     "title": "Chọn mạng"
   },
   "nonOAuthPermissionsPage": {
@@ -1223,6 +1228,10 @@
       "dontSeeYourAccount": "Không thấy tài khoản của bạn?",
       "needAnotherWay": "Cần cách khác?"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} hỗ trợ:",
       "title": "Chọn một mạng"
@@ -1362,6 +1371,8 @@
       "pyusdDisclaimer": "Giao dịch sẽ được hoàn thành bằng PayPal USD (PYUSD), là một loại tiền ổn định do Paxos Trust Company, LLC phát hành và lưu giữ. PYUSD chạy trên blockchain.",
       "refundDisclaimer": "Hoàn tiền chỉ được phát hành bằng {{settlementCurrency}}. Tỷ giá và phí thay đổi thường xuyên. Tất cả các giao dịch mua tiền mã hóa đều là cuối cùng.",
       "send": "Gửi",
+      "swapFee": "Phí trao đổi tự động",
+      "swapFeeHint": "Một khoản phí hỗ trợ hoán đổi tự động tài sản trong ví của bạn thành tài sản chuyển giao mục tiêu.",
       "title": "Thanh toán {{merchantName}}",
       "transactionBuffer": "Đệm giao dịch",
       "transactionBufferHint": "Số tiền này được thêm vào để giúp giao dịch của bạn được thực hiện, ngay cả khi giá tiền mã hoá thay đổi. Điều này có thể để lại một số {{settlementCurrency}} trong ví của bạn."
@@ -1467,13 +1478,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Nạp tiền từ {{integrationName}}",
+    "depositTo": "",
     "fee": "Bao gồm {{amount}} phí giao dịch",
     "fundingMethods": "Phương thức nạp tiền",
+    "network": "",
     "receive": "Nhận",
     "refreshing": "Làm mới sau {{seconds}} giây",
     "send": "Gửi",
+    "sendAmount": "",
     "title": "Xem trước giao dịch",
     "tokenOnNetwork": "{{token}} trên {{network}}",
+    "total": "",
     "transferToken": "Chuyển mã thông báo"
   },
   "privacyComponent": {
@@ -1537,12 +1552,12 @@
     "label": "Chọn {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} hỗ trợ:",
+    "estFee": "Phí ước tính",
     "gasFeeDescription": "<0>Ước tính phí gas:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Mạng không đủ điều kiện",
     "integrationFeeDescription": "<0>Ước tính phí {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Gửi thông qua",
     "title": "Chọn một mạng"
   },
   "selectNetworkScreen": {

@@ -194,7 +194,7 @@
     "continueCap": "Продолжить",
     "doneCap": "Готово",
     "failedToLoadTrasferError": "Не удалось загрузить информацию о переводе",
-    "freeCap": "",
+    "freeCap": "Бесплатно",
     "genericConnectErrorMessage": "Не удалось подключиться к вашему аккаунту",
     "maxCap": "Макс",
     "mesh": "Сетка",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "Депозит не поддерживается",
     "tooManyRequests": "Слишком много запросов",
     "transferAlreadyRequested": "Перевод уже запрошен",
+    "travelRuleRestriction": "Ограничение правила поездок",
     "tryAgainAfterLogin": "Требуется авторизация",
     "twoFaFailed": "Неправильный код 2FA",
     "unableToSend": "Не удалось выполнить перевод",
@@ -586,6 +587,8 @@
     "tooManyAttemptsOneMinute": "Слишком много попыток. Пожалуйста, повторите через 1 минуту.",
     "tooManyRequests": "Пожалуйста, повторите попытку позже.",
     "transferAlreadyRequested": "Перевод уже запрошен.",
+    "travelRuleRestriction": "{{integrationName}} в настоящее время не поддерживает переводы из вашей страны.",
+    "travelRuleRestrictionPayment": "{{integrationName}} в настоящее время не поддерживает платежи из вашей страны.",
     "tryAgainAfterLogin": "Пожалуйста, попробуйте снова после входа в систему.",
     "twoFaFailed": "Двухфакторная проверка не удалась. Пожалуйста, попробуйте ещё раз.",
     "unableToSend": "Не удается отправить перевод. Пожалуйста, попробуйте снова.",
@@ -660,7 +663,8 @@
     "institutionFeeDescription": "Эта комиссия покрывает стоимость сети за обработку вашего вывода. Она изменяется в зависимости от выбранной криптовалюты и текущих условий блокчейна.",
     "processingFee": "Комиссия за обработку {{clientName}}",
     "processingFeeDescription": "Комиссия, которую собирает {{clientName}}, чтобы совершить этот перевод.",
-    "title": "Включенные комиссии"
+    "title": "Включенные комиссии",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "Ключ API",
@@ -1082,7 +1086,8 @@
     "description": "Ниже указаны все безопасные и совместимые сети для этого платежа. Мы автоматически выбрали сеть с самой низкой комиссией для вас.",
     "estimatedGasFeeLabel": "Оценочная комиссия за газ:",
     "lowestFeeLabel": "Самая низкая комиссия",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} принимает платежи в следующих сетях:",
     "title": "Выберите сеть"
   },
   "nonOAuthPermissionsPage": {
@@ -1227,6 +1232,10 @@
       "dontSeeYourAccount": "Не видите свой счет?",
       "needAnotherWay": "Попробуете другой способ?"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} поддерживает:",
       "title": "Выберите сеть"
@@ -1366,6 +1375,8 @@
       "pyusdDisclaimer": "Транзакция будет завершена с использованием PayPal USD (PYUSD), который является стейблкоином, выпущенным и хранимым компанией Paxos Trust Company, LLC. PYUSD работает на блокчейне.",
       "refundDisclaimer": "Возвраты будут выдаваться только в {{settlementCurrency}}. Курс обмена и комиссии часто меняются. Все крипто-покупки окончательны.",
       "send": "Отправить",
+      "swapFee": "Автоматическая комиссия за обмен",
+      "swapFeeHint": "Плата за автоматизированный обмен активов в вашем электронном кошельке на целевой актив перевода.",
       "title": "Оплата {{merchantName}}",
       "transactionBuffer": "Буфер транзакции",
       "transactionBufferHint": "Эта сумма добавляется, чтобы ваша покупка прошла, даже если курсы криптовалют изменяются. На вашем кошельке может остаться некоторая сумма {{settlementCurrency}}."
@@ -1471,13 +1482,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Депозит из {{integrationName}}",
+    "depositTo": "",
     "fee": "Включает комиссию {{amount}}",
     "fundingMethods": "Методы обеспечения",
+    "network": "",
     "receive": "Получить",
     "refreshing": "Обновление через {{seconds}}с",
     "send": "Отправить",
+    "sendAmount": "",
     "title": "Предпросмотр трансфера",
     "tokenOnNetwork": "{{token}} через {{network}}",
+    "total": "",
     "transferToken": "Токен для трансфера"
   },
   "privacyComponent": {
@@ -1541,12 +1556,12 @@
     "label": "Выбор {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} поддерживает:",
+    "estFee": "Оценочная комиссия",
     "gasFeeDescription": "<0>Примерная комиссия за газ:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Неподходящие сети",
     "integrationFeeDescription": "<0>Примерная комиссия {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Отправить через",
     "title": "Выберите сеть"
   },
   "selectNetworkScreen": {

@@ -194,7 +194,7 @@
     "continueCap": "Continuar",
     "doneCap": "Terminar",
     "failedToLoadTrasferError": "Error al cargar la información sobre la transferencia",
-    "freeCap": "",
+    "freeCap": "Gratis",
     "genericConnectErrorMessage": "No se pudo conectar a su integración",
     "maxCap": "Máx",
     "mesh": "Mesh",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "Depósito no soportado",
     "tooManyRequests": "Demasiadas solicitudes",
     "transferAlreadyRequested": "La transferencia ya fue solicitada",
+    "travelRuleRestriction": "Restricción de la Norma de Viaje",
     "tryAgainAfterLogin": "Inicio de sesión requerido",
     "twoFaFailed": "Código 2FA no válido",
     "unableToSend": "Transferencia fallida",
@@ -585,6 +586,8 @@
     "tooManyAttemptsOneMinute": "Demasiados intentos. Por favor, inténtalo de nuevo en 1 minuto.",
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
     "transferAlreadyRequested": "La transferencia ya fue solicitada.",
+    "travelRuleRestriction": "{{integrationName}} actualmente no admite transferencias desde su país.",
+    "travelRuleRestrictionPayment": "{{integrationName}} actualmente no admite pagos desde su país.",
     "tryAgainAfterLogin": "Por favor, inténtelo de nuevo después de iniciar sesión.",
     "twoFaFailed": "La validación de dos factores falló. Por favor, inténtalo de nuevo.",
     "unableToSend": "No se puede enviar la transferencia. Por favor, inténtelo de nuevo.",
@@ -659,7 +662,8 @@
     "institutionFeeDescription": "Esta tarifa cubre el costo de la red para procesar su retiro. Varía según la criptomoneda seleccionada y las condiciones actuales de la blockchain.",
     "processingFee": "Cuota de procesamiento de {{clientName}}",
     "processingFeeDescription": "La tarifa que {{clientName}} cobra para facilitar la finalización de esta transacción.",
-    "title": "Tarifas incluidas"
+    "title": "Tarifas incluidas",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "Llaves de API",
@@ -1080,7 +1084,8 @@
     "description": "Las redes a continuación son todas opciones seguras y compatibles para este pago. Hemos seleccionado automáticamente la red de menor tarifa para ti.",
     "estimatedGasFeeLabel": "Est. tarifa de gas:",
     "lowestFeeLabel": "Menor tarifa",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} acepta pagos en las siguientes redes:",
     "title": "Selecciona una red"
   },
   "nonOAuthPermissionsPage": {
@@ -1225,6 +1230,10 @@
       "dontSeeYourAccount": "¿No ves tu cuenta?",
       "needAnotherWay": "¿Necesitas otra forma?"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} soporta:",
       "title": "Elige una red"
@@ -1364,6 +1373,8 @@
       "pyusdDisclaimer": "La transacción se completará usando PayPal USD (PYUSD), que es una stablecoin emitida y custodiada por Paxos Trust Company, LLC. PYUSD funciona en la blockchain.",
       "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian frecuentemente. Todas las compras con cripto son finales.",
       "send": "Enviar",
+      "swapFee": "Comisión automatizada de intercambio",
+      "swapFeeHint": "Una tarifa para facilitar un intercambio automatizado de activos en su wallet en el activo de transferencia objetivo.",
       "title": "Pagar a {{merchantName}}",
       "transactionBuffer": "Margen de transacción",
       "transactionBufferHint": "Esta cantidad se agrega para ayudar a que tu compra se realice, incluso si los precios de cripto cambian. Esto puede dejar algo de {{settlementCurrency}} en tu wallet."
@@ -1469,13 +1480,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Depósito desde {{integrationName}}",
+    "depositTo": "",
     "fee": "Incluye {{amount}} en tarifas",
     "fundingMethods": "Formas de pago",
+    "network": "",
     "receive": "Recibir",
     "refreshing": "Actualizar en {{seconds}}s",
     "send": "Enviar",
+    "sendAmount": "",
     "title": "Vista previa de la transferencia",
     "tokenOnNetwork": "{{token}} en {{network}}",
+    "total": "",
     "transferToken": "Transferir token"
   },
   "privacyComponent": {
@@ -1539,12 +1554,12 @@
     "label": "Selecciona {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} soporta:",
+    "estFee": "Cuota estimada",
     "gasFeeDescription": "<0>Est. tarifa de gas:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Redes inelegibles",
     "integrationFeeDescription": "<0>Est. tarifa de {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Enviar por",
     "title": "Elige una red"
   },
   "selectNetworkScreen": {

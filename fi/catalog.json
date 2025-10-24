@@ -194,7 +194,7 @@
     "continueCap": "Jatka",
     "doneCap": "Valmis",
     "failedToLoadTrasferError": "Siirtojen tietoja ei saatu ladattua",
-    "freeCap": "",
+    "freeCap": "Ilmainen",
     "genericConnectErrorMessage": "Yhteyttä integrointiin ei saatu muodostettua",
     "maxCap": "Maksimi",
     "mesh": "Mesh",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "Talletusta ei tueta",
     "tooManyRequests": "Liian monta pyyntöä",
     "transferAlreadyRequested": "Siirto on jo pyydetty",
+    "travelRuleRestriction": "Matkustusrajoitus",
     "tryAgainAfterLogin": "Kirjautuminen vaaditaan",
     "twoFaFailed": "Virheellinen 2FA-koodi",
     "unableToSend": "Siirto epäonnistui",
@@ -584,6 +585,8 @@
     "tooManyAttemptsOneMinute": "Liian monta yritystä. Yritä uudelleen 1 minuutin kuluttua.",
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",
+    "travelRuleRestriction": "{{integrationName}} ei tällä hetkellä tue siirtoja maastasi.",
+    "travelRuleRestrictionPayment": "{{integrationName}} ei tällä hetkellä tue maksuja maastasi.",
     "tryAgainAfterLogin": "Yritä uudelleen sisäänkirjautumisen jälkeen.",
     "twoFaFailed": "Kaksivaiheinen tunnistautuminen epäonnistui. Ole hyvä ja yritä uudelleen.",
     "unableToSend": "Siirtoa ei voida tehdä. Yritä uudelleen.",
@@ -658,7 +661,8 @@
     "institutionFeeDescription": "Tämä maksu kattaa verkon kustannukset nostosi käsittelystä. Se vaihtelee valitun kryptovaluutan ja nykyisten lohkoketjun olosuhteiden mukaan.",
     "processingFee": "{{clientName}} käsittelymaksu",
     "processingFeeDescription": "Maksu, jonka {{clientName}} perii tämän tapahtuman saattamiseksi loppuun.",
-    "title": "Sisältää maksut"
+    "title": "Sisältää maksut",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "API-avain",
@@ -1078,7 +1082,8 @@
     "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja tälle maksulle. Olemme valinneet sinulle automaattisesti halvimman verkon.",
     "estimatedGasFeeLabel": "Arvioitu gas-maksu:",
     "lowestFeeLabel": "Alhaisin maksu",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} hyväksyy maksut seuraavissa verkoissa:",
     "title": "Valitse verkko"
   },
   "nonOAuthPermissionsPage": {
@@ -1223,6 +1228,10 @@
       "dontSeeYourAccount": "Eikö tiliäsi näy?",
       "needAnotherWay": "Tarvitsetko toisen tavan?"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} tukee:",
       "title": "Valitse verkko"
@@ -1362,6 +1371,8 @@
       "pyusdDisclaimer": "Tapahtuma suoritetaan käyttäen PayPal USD (PYUSD), mikä on Paxos Trust Company, LLC:n liikkeeseen laskema ja hallinnoima vakaa kolikko. PYUSD toimii blockchainissa.",
       "refundDisclaimer": "Hyvitykset suoritetaan vain {{settlementCurrency}} valuutassa. Valuutanvaihtokurssi ja maksut muuttuvat usein. Kaikki kryptovaluuttaostokset ovat lopullisia.",
       "send": "Lähetä",
+      "swapFee": "Automaattinen vaihtomaksu",
+      "swapFeeHint": "Maksu, joka helpottaa automaattista varojen vaihtoasi lompakossasi tavoitevaraan.",
       "title": "Maksa {{merchantName}}",
       "transactionBuffer": "Tapahtumapuskuri",
       "transactionBufferHint": "Tämä summa lisätään, jotta osto menee läpi, vaikka krypton hinnat muuttuisivat. Tämä voi jättää lompakkoosi jonkin verran {{settlementCurrency}}."
@@ -1467,13 +1478,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Talletus {{integrationName}}:sta",
+    "depositTo": "",
     "fee": "Sisältää {{amount}} maksuina",
     "fundingMethods": "Talletustavat",
+    "network": "",
     "receive": "Vastaanota",
     "refreshing": "Päivitä {{seconds}} sekuntia",
     "send": "Lähetä",
+    "sendAmount": "",
     "title": "Siirron esikatselu",
     "tokenOnNetwork": "{{token}} {{network}} -verkossa",
+    "total": "",
     "transferToken": "Siirrä tunniste"
   },
   "privacyComponent": {
@@ -1537,12 +1552,12 @@
     "label": "Valitse {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} tukee:",
+    "estFee": "Arvioitu maksu",
     "gasFeeDescription": "<0>Arv. kaasumaksu:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Kelpaamattomat verkot",
     "integrationFeeDescription": "<0>Arv. {{selectedIntegrationName}} maksu:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Lähetä kautta",
     "title": "Valitse verkko"
   },
   "selectNetworkScreen": {

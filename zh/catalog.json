@@ -194,7 +194,7 @@
     "continueCap": "继续",
     "doneCap": "完成",
     "failedToLoadTrasferError": "加载转账信息失败",
-    "freeCap": "",
+    "freeCap": "免费",
     "genericConnectErrorMessage": "无法连接到您的集成服务",
     "maxCap": "最大",
     "mesh": "Mesh",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "不支持存款",
     "tooManyRequests": "操作请求过多",
     "transferAlreadyRequested": "转账请求已提交",
+    "travelRuleRestriction": "旅行规则限制",
     "tryAgainAfterLogin": "请先登录",
     "twoFaFailed": "无效双重认证",
     "unableToSend": "转账失败",
@@ -584,6 +585,8 @@
     "tooManyAttemptsOneMinute": "尝试次数过多。请在 1 分钟后重试。",
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
+    "travelRuleRestriction": "{{integrationName}}目前不支持您所在国家/地区的转账操作。",
+    "travelRuleRestrictionPayment": "{{integrationName}}目前不支持您所在国家/地区的支付操作。",
     "tryAgainAfterLogin": "请登录后再试。",
     "twoFaFailed": "双重验证失败。请重试。",
     "unableToSend": "无法发起转账。请重试。",
@@ -658,7 +661,8 @@
     "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
     "processingFeeDescription": "{{clientName}} 所付费用用于完成此交易。",
-    "title": "包含的费用"
+    "title": "包含的费用",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "API 密钥",
@@ -1078,7 +1082,8 @@
     "description": "以下网络均为安全且兼容的支付方式。我们已为您自动选择手续费最低的网络。",
     "estimatedGasFeeLabel": "预估燃料费：",
     "lowestFeeLabel": "最低手续费",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} 接受以下网络的支付:",
     "title": "选择网络"
   },
   "nonOAuthPermissionsPage": {
@@ -1223,6 +1228,10 @@
       "dontSeeYourAccount": "没有看到你的账户？",
       "needAnotherWay": "使用其他支付方式？"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} 支持：",
       "title": "选择一个网络"
@@ -1362,6 +1371,8 @@
       "pyusdDisclaimer": "交易将使用PayPal USD (PYUSD)完成，这是由Paxos Trust Company, LLC发行并托管的稳定币。PYUSD在区块链上运行。",
       "refundDisclaimer": "退款仅以{{settlementCurrency}}形式发放。汇率和费用会频繁变动。所有加密货币购买均为最终交易。",
       "send": "转账",
+      "swapFee": "自动兑换手续费",
+      "swapFeeHint": "自动兑换目标资产所需手续费",
       "title": "支付{{merchantName}}",
       "transactionBuffer": "交易缓冲额度",
       "transactionBufferHint": "该金额用于确保购买顺利完成，即使加密货币价格发生波动。可能会在您的钱包中留下部分{{settlementCurrency}}余额。"
@@ -1467,13 +1478,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "通过{{integrationName}} 充值",
+    "depositTo": "",
     "fee": "包含 {{amount}} 手续费",
     "fundingMethods": "充值方式",
+    "network": "",
     "receive": "收款",
     "refreshing": "{{seconds}} 秒后刷新",
     "send": "支付",
+    "sendAmount": "",
     "title": "转账预览",
     "tokenOnNetwork": "{{token}} 在 {{network}}",
+    "total": "",
     "transferToken": "转账代币"
   },
   "privacyComponent": {
@@ -1537,12 +1552,12 @@
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} 支持：",
+    "estFee": "预计费用",
     "gasFeeDescription": "<0>预计燃料费：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "无法使用的网络",
     "integrationFeeDescription": "<0>预计{{selectedIntegrationName}}费用：</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "通过发送",
     "title": "选择一个网络"
   },
   "selectNetworkScreen": {

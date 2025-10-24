@@ -194,7 +194,7 @@
     "continueCap": "जारी रखें",
     "doneCap": "हो गया",
     "failedToLoadTrasferError": "स्थानांतरण के बारे में जानकारी लोड करने में विफल",
-    "freeCap": "",
+    "freeCap": "नि: शुल्क",
     "genericConnectErrorMessage": "आपके इंटीग्रेशन से कनेक्ट होने में विफल",
     "maxCap": "अधिकतम",
     "mesh": "Mesh",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "जमा समर्थित नहीं है",
     "tooManyRequests": "बहुत अधिक अनुरोध",
     "transferAlreadyRequested": "स्थानांतरण पहले ही अनुरोध किया जा चुका है",
+    "travelRuleRestriction": "यात्रा नियम प्रतिबंध",
     "tryAgainAfterLogin": "लॉगिन आवश्यक",
     "twoFaFailed": "अमान्य 2FA कोड",
     "unableToSend": "हस्तांतरण असफल",
@@ -584,6 +585,8 @@
     "tooManyAttemptsOneMinute": "बहुत अधिक प्रयास। कृपया 1 मिनट में पुनः प्रयास करें।",
     "tooManyRequests": "कृपया बाद में पुनः प्रयास करें।",
     "transferAlreadyRequested": "स्थानांतरण पहले से अनुरोधित है।",
+    "travelRuleRestriction": "{{integrationName}} वर्तमान में आपके देश से स्थानांतरण का समर्थन नहीं करता है।",
+    "travelRuleRestrictionPayment": "{{integrationName}} वर्तमान में आपके देश से भुगतान का समर्थन नहीं करता है।",
     "tryAgainAfterLogin": "कृपया लॉग इन करने के बाद पुनः प्रयास करें।",
     "twoFaFailed": "द्वि-कारक सत्यापन विफल। कृपया पुनः प्रयास करें।",
     "unableToSend": "स्थानांतरण भेजने में असमर्थ। कृपया फिर से प्रयास करें।",
@@ -658,7 +661,8 @@
     "institutionFeeDescription": "यह शुल्क आपके निकासी के प्रसंस्करण के लिए नेटवर्क लागत को कवर करता है। यह चयनित क्रिप्टोक्यूरेंसी और मौजूदा ब्लॉकचेन स्थितियों के अनुसार भिन्न होता है।",
     "processingFee": "{{clientName}} प्रसंस्करण शुल्क",
     "processingFeeDescription": "{{clientName}} इस लेनदेन को संपन्न करने के लिए वसूली जाने वाली शुल्क।",
-    "title": "शुल्क शामिल"
+    "title": "शुल्क शामिल",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "एपीआई कुंजी",
@@ -1078,7 +1082,8 @@
     "description": "नीचे दिए गए नेटवर्क सभी सुरक्षित और इस भुगतान के लिए अनुकूल विकल्प हैं। हमने आपके लिए सबसे कम शुल्क वाला नेटवर्क स्वतः चयनित कर लिया है।",
     "estimatedGasFeeLabel": "अनुमानित गैस शुल्क:",
     "lowestFeeLabel": "सबसे कम शुल्क",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} निम्नलिखित नेटवर्क्स पर भुगतान स्वीकार करता है:",
     "title": "नेटवर्क चुनें"
   },
   "nonOAuthPermissionsPage": {
@@ -1223,6 +1228,10 @@
       "dontSeeYourAccount": "क्या आपको अपना खाता नहीं दिख रहा है?",
       "needAnotherWay": "दूसरे तरीका आज़माएं"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} समर्थन करता है:",
       "title": "नेटवर्क चुनें"
@@ -1362,6 +1371,8 @@
       "pyusdDisclaimer": "लेन-देन PayPal USD (PYUSD) का उपयोग करके पूरा किया जाएगा, जो Paxos Trust Company, LLC द्वारा जारी और संरक्षित एक स्थिर मुद्रानी है। PYUSD ब्लॉकचैन पर चलता है।",
       "refundDisclaimer": "रिफंड केवल {{settlementCurrency}} में जारी किए जाएंगे। विनिमय दर और शुल्क अक्सर बदलते रहते हैं। सभी क्रिप्टो खरीदारी अंतिम हैं।",
       "send": "भेजें",
+      "swapFee": "ऑटोमेटेड अदला-बदली शुल्क",
+      "swapFeeHint": "आपके वॉलेट में संपत्तियों के स्वचालित अदला-बदली की सुविधा के लिए एक शुल्क, लक्ष्य हस्तांतरण संपत्ति में।",
       "title": "{{merchantName}} को भुगतान करें",
       "transactionBuffer": "लेन-देन बफर",
       "transactionBufferHint": "यह राशि आपके खरीद को सुनिश्चित करने में सहायक होती है, भले ही क्रिप्टो मूल्य बदलें। इससे कुछ {{settlementCurrency}} आपके वॉलेट में रह सकता है।"
@@ -1467,13 +1478,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "{{integrationName}} से जमा करें",
+    "depositTo": "",
     "fee": "शुल्क में {{amount}} शामिल है",
     "fundingMethods": "फंडिंग विधियाँ",
+    "network": "",
     "receive": "प्राप्त करें",
     "refreshing": "{{seconds}} सेकंड में ताज़ा करें",
     "send": "भेजें",
+    "sendAmount": "",
     "title": "स्थानांतरण का पूर्वावलोकन",
     "tokenOnNetwork": "{{network}} पर {{token}}",
+    "total": "",
     "transferToken": "टोकन स्थानांतरित करें"
   },
   "privacyComponent": {
@@ -1537,12 +1552,12 @@
     "label": "{{text}} चुनें"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} समर्थन करता है:",
+    "estFee": "अनुमानित शुल्क",
     "gasFeeDescription": "<0>अनुमानित गैस शुल्क:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "अयोग्य नेटवर्क",
     "integrationFeeDescription": "<0>अनुमानित {{selectedIntegrationName}} शुल्क:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "के माध्यम से भेजें",
     "title": "नेटवर्क चुनें"
   },
   "selectNetworkScreen": {

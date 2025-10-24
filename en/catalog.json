@@ -25,7 +25,9 @@
     "closeButton": "Close",
     "continueInBinance": "Continue in Binance",
     "continueTo": "Continue to {{selectedIntegrationName}}",
+    "continueWithAppButton": "Continue with {{selectedIntegrationName}} app",
     "cryptoAmount": "Crypto Amount",
+    "descriptionDeposit": "<0>Return here</0> after completing your transaction in Binance.",
     "enterAmount": "Enter transfer amount",
     "mobileLabelDeposit": "Complete your transaction in Binance, then return here to finalize your deposit.",
     "mobileLabelOnramp": "Complete your transaction in Binance, then return here to complete your on-ramp.",
@@ -42,6 +44,7 @@
     "selectAsset": "Select asset to transfer",
     "selectCurrency": "Select a currency",
     "selectNetwork": "Select transfer network",
+    "transactionRequest": "Transaction request sent to your Binance app.",
     "youPay": "You pay",
     "youReceive": "You receive"
   },
@@ -484,6 +487,7 @@
     "toAccountNotSupported": "Deposit Not Supported",
     "tooManyRequests": "Too Many Requests",
     "transferAlreadyRequested": "Transfer Already Requested",
+    "travelRuleRestriction": "Travel Rule Restriction",
     "tryAgainAfterLogin": "Login Required",
     "twoFaFailed": "Invalid 2FA Code",
     "unableToSend": "Transfer Failed",
@@ -584,6 +588,8 @@
     "tooManyAttemptsOneMinute": "Too many attempts. Please try again in 1 minute.",
     "tooManyRequests": "Please try again later.",
     "transferAlreadyRequested": "The transfer is already requested.",
+    "travelRuleRestriction": "{{integrationName}} does not currently support transfers from your country.",
+    "travelRuleRestrictionPayment": "{{integrationName}} does not currently support payments from your country.",
     "tryAgainAfterLogin": "Please try again after logging in.",
     "twoFaFailed": "Two factor validation failed. Please try again.",
     "unableToSend": "Unable to send the transfer. Please try again.",
@@ -658,7 +664,8 @@
     "institutionFeeDescription": "This fee covers the network cost for processing your withdrawal. It varies depending on the selected cryptocurrency and current blockchain conditions.",
     "processingFee": "{{clientName}} processing fee",
     "processingFeeDescription": "The fee {{clientName}} collects to facilitate completion of this transaction.",
-    "title": "Included fees"
+    "title": "Included fees",
+    "totalDetails": "Total details"
   },
   "fields": {
     "apiKey": "API key",
@@ -1078,6 +1085,7 @@
     "description": "The networks below are all secure, compatible options for this payment. We’ve auto-selected the lowest fee network for you.",
     "estimatedGasFeeLabel": "Est. gas fee:",
     "lowestFeeLabel": "Lowest fee",
+    "mostPopular": "Most Popular",
     "subtitle": "{{clientName}} accepts payments on the following networks:",
     "title": "Select network"
   },
@@ -1223,6 +1231,10 @@
       "dontSeeYourAccount": "Don't see your account?",
       "needAnotherWay": "Need another way?"
     },
+    "error": {
+      "noTokensDescription": "There are no supported tokens available for deposit at this time.",
+      "noTokensTitle": "No tokens available"
+    },
     "networkSelection": {
       "subtitle": "{{client}} supports:",
       "title": "Choose a network"
@@ -1261,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Preparing your payment details"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Amount above the maximum",
+        "amountBelowMinimum": "Amount below the minimum",
+        "complianceRestriction": "Compliance eligibility restriction",
+        "unavailable": "Unavailable",
+        "unavailableInRegion": "Unavailable in your region",
+        "unsupportedOnDevice": "Unsupported on this device",
+        "unsupportedTokenAndNetwork": "Unsupported token and network"
+      }
     },
     "common": {
       "cancel": "Cancel",
@@ -1477,13 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Deposit from {{integrationName}}",
+    "depositTo": "Deposit to",
     "fee": "Includes {{amount}} in fees",
     "fundingMethods": "Funding methods",
+    "network": "Network",
     "receive": "Receive",
     "refreshing": "Refresh in {{seconds}}s",
     "send": "Send",
+    "sendAmount": "Send {{amount}}",
     "title": "Transfer preview",
     "tokenOnNetwork": "{{token}} on {{network}}",
+    "total": "Total",
     "transferToken": "Transfer token"
   },
   "privacyComponent": {
@@ -1524,7 +1551,7 @@
     "defaultTitle": "Select a token",
     "depositTitle": "Select deposit token",
     "ineligibleAssets": "Ineligible assets",
-    "link40Subtitle": "{{clientName}} wallet accepts:",
+    "link40Subtitle": "{{clientName}} accepts:",
     "link40Title": "Choose a token",
     "loading": "Loading your assets...",
     "network": "{{networkName}} network",

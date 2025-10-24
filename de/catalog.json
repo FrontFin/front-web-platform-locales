@@ -194,7 +194,7 @@
     "continueCap": "Fortfahren",
     "doneCap": "Fertig",
     "failedToLoadTrasferError": "Fehler beim Laden der Informationen über die Überweisung",
-    "freeCap": "",
+    "freeCap": "Kostenlos",
     "genericConnectErrorMessage": "Fehler beim Verbinden mit Deiner Integration",
     "maxCap": "Max",
     "mesh": "Mesh",
@@ -484,6 +484,7 @@
     "toAccountNotSupported": "Einzahlung nicht unterstützt",
     "tooManyRequests": "Zu viele Anfragen",
     "transferAlreadyRequested": "Überweisung bereits angefordert",
+    "travelRuleRestriction": "Reisebeschränkung",
     "tryAgainAfterLogin": "Anmeldung erforderlich",
     "twoFaFailed": "Ungültiger 2FA-Code",
     "unableToSend": "Überweisung fehlgeschlagen",
@@ -584,6 +585,8 @@
     "tooManyAttemptsOneMinute": "Zu viele Versuche. Bitte versuche es in 1 Minute erneut.",
     "tooManyRequests": "Bitte versuche es später noch einmal.",
     "transferAlreadyRequested": "Die Überweisung ist bereits angefordert.",
+    "travelRuleRestriction": "{{integrationName}} unterstützt derzeit keine Überweisungen aus Ihrem Land.",
+    "travelRuleRestrictionPayment": "{{integrationName}} unterstützt derzeit keine Zahlungen aus Ihrem Land.",
     "tryAgainAfterLogin": "Bitte versuche es erneut, nachdem Du Dich eingeloggt hast.",
     "twoFaFailed": "Zwei-Faktor-Validierung fehlgeschlagen. Bitte versuche es erneut.",
     "unableToSend": "Überweisung konnte nicht gesendet werden. Bitte versuche es erneut.",
@@ -658,7 +661,8 @@
     "institutionFeeDescription": "Diese Gebühr deckt die Netzwerkkosten für die Bearbeitung Ihrer Abhebung ab. Sie variiert je nach ausgewählter Kryptowährung und den aktuellen Blockchain-Bedingungen.",
     "processingFee": "{{clientName}} Bearbeitungsgebühr",
     "processingFeeDescription": "Die Gebühr, die {{clientName}} erhebt, um den Abschluss dieser Transaktion zu ermöglichen.",
-    "title": "Enthaltene Gebühren"
+    "title": "Enthaltene Gebühren",
+    "totalDetails": ""
   },
   "fields": {
     "apiKey": "API-Schlüssel",
@@ -1078,7 +1082,8 @@
     "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Dich automatisch ausgewählt.",
     "estimatedGasFeeLabel": "Geschätzte Gasgebühr:",
     "lowestFeeLabel": "Niedrigste Gebühr",
-    "subtitle": "",
+    "mostPopular": "",
+    "subtitle": "{{clientName}} akzeptiert Zahlungen in den folgenden Netzwerken:",
     "title": "Netzwerk auswählen"
   },
   "nonOAuthPermissionsPage": {
@@ -1223,6 +1228,10 @@
       "dontSeeYourAccount": "Konto nicht sichtbar?",
       "needAnotherWay": "Andere Möglichkeit ausprobieren?"
     },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
     "networkSelection": {
       "subtitle": "{{client}} unterstützt:",
       "title": "Wählen Sie ein Netzwerk"
@@ -1362,6 +1371,8 @@
       "pyusdDisclaimer": "Die Transaktion wird mit PayPal USD (PYUSD) durchgeführt, eine Stablecoin, die von der Paxos Trust Company, LLC ausgegeben und verwahrt wird. PYUSD läuft auf der Blockchain.",
       "refundDisclaimer": "Rückerstattungen werden nur in {{settlementCurrency}} ausgestellt. Der Wechselkurs und die Gebühren ändern sich häufig. Alle Kryptoeinkäufe sind endgültig.",
       "send": "Senden",
+      "swapFee": "Automatisierte Swap-Gebühr",
+      "swapFeeHint": "Eine Gebühr, um den automatisierten Tausch von Vermögenswerten in Ihrer Wallet in das Zieltransfer-Asset zu erleichtern.",
       "title": "Bezahle {{merchantName}}",
       "transactionBuffer": "Transaktionspuffer",
       "transactionBufferHint": "Dieser Betrag wird hinzugefügt, um deinem Kauf den Weg zu ebnen, selbst wenn Kryptowährungspreise sich ändern. Dies könnte etwas {{settlementCurrency}} in deinem Wallet belassen."
@@ -1467,13 +1478,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Einzahlung von {{integrationName}}",
+    "depositTo": "",
     "fee": "Beinhaltet {{amount}} an Gebühren",
     "fundingMethods": "Finanzierungsmethoden",
+    "network": "",
     "receive": "Erhalten",
     "refreshing": "Aktualisieren in {{seconds}}s",
     "send": "Senden",
+    "sendAmount": "",
     "title": "Überweisungsvorschau",
     "tokenOnNetwork": "{{token}} auf {{network}}",
+    "total": "",
     "transferToken": "Token übertragen"
   },
   "privacyComponent": {
@@ -1537,12 +1552,12 @@
     "label": "{{text}} auswählen"
   },
   "selectNetworkPage": {
-    "clientSupports": "",
-    "estFee": "",
+    "clientSupports": "{{clientName}} unterstützt:",
+    "estFee": "Geschätzte Gebühr",
     "gasFeeDescription": "<0>Geschätzte Gasgebühr:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Nicht berechtigte Netzwerke",
     "integrationFeeDescription": "<0>Geschätzte {{selectedIntegrationName}}-Gebühr:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "",
+    "sendVia": "Senden über",
     "title": "Wählen Sie ein Netzwerk"
   },
   "selectNetworkScreen": {
