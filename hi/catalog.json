@@ -25,7 +25,9 @@
     "closeButton": "बंद करें",
     "continueInBinance": "Binance ऐप में जारी रखें",
     "continueTo": "{{selectedIntegrationName}} पर जारी रखें",
+    "continueWithAppButton": "{{selectedIntegrationName}} ऐप के साथ जारी रखें",
     "cryptoAmount": "क्रिप्टो राशि",
+    "descriptionDeposit": "<0>यहाँ लौटें</0> जब आप Binance में अपना लेन-देन पूरा कर लें।",
     "enterAmount": "स्थानांतरण राशि दर्ज करें",
     "mobileLabelDeposit": "Binance में अपना लेन-देन पूरा करें, फिर अपनी जमा को अंतिम रूप देने के लिए यहां लौटें।",
     "mobileLabelOnramp": "Binance में अपना लेन-देन पूरा करें, फिर अपने ऑन-रैंप को पूरा करने के लिए यहां लौटें।",
@@ -42,6 +44,7 @@
     "selectAsset": "स्थानांतरण के लिए संपत्ति चुनें",
     "selectCurrency": "एक मुद्रा का चयन करें",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
+    "transactionRequest": "आपके Binance ऐप को लेन-देन अनुरोध भेजा गया है।",
     "youPay": "आप भुगतान करेंगे",
     "youReceive": "आप प्राप्त करेंगे"
   },
@@ -662,7 +665,7 @@
     "processingFee": "{{clientName}} प्रसंस्करण शुल्क",
     "processingFeeDescription": "{{clientName}} इस लेनदेन को संपन्न करने के लिए वसूली जाने वाली शुल्क।",
     "title": "शुल्क शामिल",
-    "totalDetails": ""
+    "totalDetails": "कुल विवरण"
   },
   "fields": {
     "apiKey": "एपीआई कुंजी",
@@ -1082,7 +1085,7 @@
     "description": "नीचे दिए गए नेटवर्क सभी सुरक्षित और इस भुगतान के लिए अनुकूल विकल्प हैं। हमने आपके लिए सबसे कम शुल्क वाला नेटवर्क स्वतः चयनित कर लिया है।",
     "estimatedGasFeeLabel": "अनुमानित गैस शुल्क:",
     "lowestFeeLabel": "सबसे कम शुल्क",
-    "mostPopular": "",
+    "mostPopular": "सबसे लोकप्रिय",
     "subtitle": "{{clientName}} निम्नलिखित नेटवर्क्स पर भुगतान स्वीकार करता है:",
     "title": "नेटवर्क चुनें"
   },
@@ -1229,8 +1232,8 @@
       "needAnotherWay": "दूसरे तरीका आज़माएं"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "इस समय किसी भी जमा के लिए समर्थित टोकन उपलब्ध नहीं हैं।",
+      "noTokensTitle": "कोई टोकन उपलब्ध नहीं हैं"
     },
     "networkSelection": {
       "subtitle": "{{client}} समर्थन करता है:",
@@ -1270,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "आपके भुगतान विवरण तैयार किए जा रहे हैं"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "राशि अधिकतम से ऊपर है",
+        "amountBelowMinimum": "राशि न्यूनतम से कम है",
+        "complianceRestriction": "अनुपालन पात्रता प्रतिबंध",
+        "unavailable": "उपलब्ध नहीं है",
+        "unavailableInRegion": "आपके क्षेत्र में उपलब्ध नहीं है",
+        "unsupportedOnDevice": "इस डिवाइस पर समर्थित नहीं है",
+        "unsupportedTokenAndNetwork": "गैर-समर्थित टोकन और नेटवर्क"
+      }
     },
     "common": {
       "cancel": "रद्द करें",
@@ -1346,6 +1360,14 @@
       "rule2": "अपना क्रिप्टो का उपयोग करें, विवरण की समीक्षा करें और भुगतान की स्वीकृति दें।",
       "rule3": "स्वचालित रूपांतरण चीजों को सरल बनाए रखता है।",
       "title": "भुगतान विवरण की समीक्षा करने के लिए लॉग इन करें"
+    },
+    "insufficientBalancePage": {
+      "chooseDifferent": "किसी भिन्न खाते का चयन करें",
+      "message": "आपका {{balanceAmount}} बैलेंस इस {{paymentAmount}} भुगतान के लिए अपर्याप्त है।",
+      "messageWithNetwork": "{{network}} नेटवर्क पर आपका {{balanceAmount}} बैलेंस इस {{paymentAmount}} भुगतान के लिए अपर्याप्त है।",
+      "title": "अपर्याप्त शेष राशि",
+      "topUpAccount": "कृपया अपना खाता भरें और पुनः प्रयास करें।",
+      "topUpWallet": "कृपया अपने वॉलेट को टॉप अप करें और फिर से प्रयास करें।"
     },
     "inWalletBrowserInitialPage": {
       "retry": "पुनः प्रयास करें",
@@ -1478,17 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "{{integrationName}} से जमा करें",
-    "depositTo": "",
+    "depositTo": "जमा करें",
     "fee": "शुल्क में {{amount}} शामिल है",
     "fundingMethods": "फंडिंग विधियाँ",
-    "network": "",
+    "network": "नेटवर्क",
     "receive": "प्राप्त करें",
     "refreshing": "{{seconds}} सेकंड में ताज़ा करें",
     "send": "भेजें",
-    "sendAmount": "",
+    "sendAmount": "भेजें {{amount}}",
     "title": "स्थानांतरण का पूर्वावलोकन",
     "tokenOnNetwork": "{{network}} पर {{token}}",
-    "total": "",
+    "total": "कुल",
     "transferToken": "टोकन स्थानांतरित करें"
   },
   "privacyComponent": {

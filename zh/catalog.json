@@ -25,7 +25,9 @@
     "closeButton": "关闭",
     "continueInBinance": "用Binance中完成下一步",
     "continueTo": "继续前往{{selectedIntegrationName}}",
+    "continueWithAppButton": "继续与{{selectedIntegrationName}}应用程序合作",
     "cryptoAmount": "加密金额",
+    "descriptionDeposit": "<0>完成您的交易后</0> ，在币安返回这里。",
     "enterAmount": "输入转账金额",
     "mobileLabelDeposit": "请在Binance中完成您的交易，然后返回此处完成您的存款。",
     "mobileLabelOnramp": "请在Binance中完成您的交易，然后返回此处完成入金流程。",
@@ -42,6 +44,7 @@
     "selectAsset": "选择要转账的资产",
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
+    "transactionRequest": "交易请求已发送至您的币安应用程序。",
     "youPay": "由您支付",
     "youReceive": "由您接收"
   },
@@ -662,7 +665,7 @@
     "processingFee": "{{clientName}} 手续费",
     "processingFeeDescription": "{{clientName}} 所付费用用于完成此交易。",
     "title": "包含的费用",
-    "totalDetails": ""
+    "totalDetails": "总详情"
   },
   "fields": {
     "apiKey": "API 密钥",
@@ -1082,7 +1085,7 @@
     "description": "以下网络均为安全且兼容的支付方式。我们已为您自动选择手续费最低的网络。",
     "estimatedGasFeeLabel": "预估燃料费：",
     "lowestFeeLabel": "最低手续费",
-    "mostPopular": "",
+    "mostPopular": "最受欢迎",
     "subtitle": "{{clientName}} 接受以下网络的支付:",
     "title": "选择网络"
   },
@@ -1229,8 +1232,8 @@
       "needAnotherWay": "使用其他支付方式？"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "目前没有可存款的支持代币。",
+      "noTokensTitle": "无可用代币"
     },
     "networkSelection": {
       "subtitle": "{{client}} 支持：",
@@ -1270,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "正在生成您的支付详情"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "金额超出最高限额",
+        "amountBelowMinimum": "金额低于最低限额",
+        "complianceRestriction": "合规性资格限制",
+        "unavailable": "不可用",
+        "unavailableInRegion": "在您的地区不可用",
+        "unsupportedOnDevice": "此设备不支持",
+        "unsupportedTokenAndNetwork": "不支持此代币和网络"
+      }
     },
     "common": {
       "cancel": "取消",
@@ -1346,6 +1360,14 @@
       "rule2": "用加密货币支付，请查看详情并批准付款。",
       "rule3": "自动兑换，简化您的操作。",
       "title": "登录以查看支付详情"
+    },
+    "insufficientBalancePage": {
+      "chooseDifferent": "选择其他账户",
+      "message": "您的 {{balanceAmount}} 余额不足以支付此次 {{paymentAmount}}。",
+      "messageWithNetwork": "您在 {{network}} 网络上的 {{balanceAmount}} 余额不足以支付此次 {{paymentAmount}}。",
+      "title": "余额不足",
+      "topUpAccount": "请充值您的账户后再试一次。",
+      "topUpWallet": "请充值您的钱包后再试一次。"
     },
     "inWalletBrowserInitialPage": {
       "retry": "重试",
@@ -1478,17 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "通过{{integrationName}} 充值",
-    "depositTo": "",
+    "depositTo": "存入",
     "fee": "包含 {{amount}} 手续费",
     "fundingMethods": "充值方式",
-    "network": "",
+    "network": "网络",
     "receive": "收款",
     "refreshing": "{{seconds}} 秒后刷新",
     "send": "支付",
-    "sendAmount": "",
+    "sendAmount": "发送 {{amount}}",
     "title": "转账预览",
     "tokenOnNetwork": "{{token}} 在 {{network}}",
-    "total": "",
+    "total": "总计",
     "transferToken": "转账代币"
   },
   "privacyComponent": {

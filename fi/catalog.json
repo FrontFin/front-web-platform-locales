@@ -25,7 +25,9 @@
     "closeButton": "Sulje",
     "continueInBinance": "Jatka Binance-sovelluksella",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
+    "continueWithAppButton": "Jatka {{selectedIntegrationName}}-sovelluksessa",
     "cryptoAmount": "Kryptosumma",
+    "descriptionDeposit": "<0>Palaa tänne</0> suoritettuasi tapahtuman Binancessa.",
     "enterAmount": "Syötä siirron määrä",
     "mobileLabelDeposit": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään talletuksesi.",
     "mobileLabelOnramp": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään on-ramp-järjestelmäsi.",
@@ -42,6 +44,7 @@
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
+    "transactionRequest": "Tapahtumapyyntö lähetetty Binance-sovellukseesi.",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat"
   },
@@ -662,7 +665,7 @@
     "processingFee": "{{clientName}} käsittelymaksu",
     "processingFeeDescription": "Maksu, jonka {{clientName}} perii tämän tapahtuman saattamiseksi loppuun.",
     "title": "Sisältää maksut",
-    "totalDetails": ""
+    "totalDetails": "Yhteensä tiedot"
   },
   "fields": {
     "apiKey": "API-avain",
@@ -1082,7 +1085,7 @@
     "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja tälle maksulle. Olemme valinneet sinulle automaattisesti halvimman verkon.",
     "estimatedGasFeeLabel": "Arvioitu gas-maksu:",
     "lowestFeeLabel": "Alhaisin maksu",
-    "mostPopular": "",
+    "mostPopular": "Suosituin",
     "subtitle": "{{clientName}} hyväksyy maksut seuraavissa verkoissa:",
     "title": "Valitse verkko"
   },
@@ -1229,8 +1232,8 @@
       "needAnotherWay": "Tarvitsetko toisen tavan?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Tällä hetkellä ei ole talletettavissa tuettuja tokeneita.",
+      "noTokensTitle": "Ei saatavilla olevia tokeneita"
     },
     "networkSelection": {
       "subtitle": "{{client}} tukee:",
@@ -1270,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Valmistellaan maksutietojasi"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Määrä yli maksimirajan",
+        "amountBelowMinimum": "Määrä alle minimin",
+        "complianceRestriction": "Sääntelyn kelpoisuusrajoitus",
+        "unavailable": "Ei saatavilla",
+        "unavailableInRegion": "Ei saatavilla alueellasi",
+        "unsupportedOnDevice": "Ei tuettu tällä laitteella",
+        "unsupportedTokenAndNetwork": "Ei tuettu merkki ja verkko"
+      }
     },
     "common": {
       "cancel": "Peruuta",
@@ -1346,6 +1360,14 @@
       "rule2": "Käytä kryptovaluuttaasi, tarkista tiedot ja hyväksy maksu.",
       "rule3": "Automaattinen muunnos pitää asiat yksinkertaisina.",
       "title": "Kirjaudu sisään tarkistaaksesi maksutiedot"
+    },
+    "insufficientBalancePage": {
+      "chooseDifferent": "Valitse toinen tili",
+      "message": "Sinun {{balanceAmount}} saldo ei riitä tekemään tätä {{paymentAmount}} maksua.",
+      "messageWithNetwork": "Sinun {{balanceAmount}} saldo {{network}} verkossa ei riitä tekemään tätä {{paymentAmount}} maksua.",
+      "title": "Riittämätön saldo",
+      "topUpAccount": "Ole hyvä ja lisää saldoa tilillesi ja yritä uudelleen.",
+      "topUpWallet": "Täydennä lompakkosi ja yritä uudelleen."
     },
     "inWalletBrowserInitialPage": {
       "retry": "Yritä uudelleen",
@@ -1478,17 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Talletus {{integrationName}}:sta",
-    "depositTo": "",
+    "depositTo": "Talletus kohteeseen",
     "fee": "Sisältää {{amount}} maksuina",
     "fundingMethods": "Talletustavat",
-    "network": "",
+    "network": "Verkko",
     "receive": "Vastaanota",
     "refreshing": "Päivitä {{seconds}} sekuntia",
     "send": "Lähetä",
-    "sendAmount": "",
+    "sendAmount": "Lähetä {{amount}}",
     "title": "Siirron esikatselu",
     "tokenOnNetwork": "{{token}} {{network}} -verkossa",
-    "total": "",
+    "total": "Yhteensä",
     "transferToken": "Siirrä tunniste"
   },
   "privacyComponent": {

@@ -25,7 +25,9 @@
     "closeButton": "閉じる",
     "continueInBinance": "Binanceで続行",
     "continueTo": "{{selectedIntegrationName}}へ進む",
+    "continueWithAppButton": "{{selectedIntegrationName}} アプリで続行",
     "cryptoAmount": "暗号通貨の量",
+    "descriptionDeposit": "Binanceで取引を完了した後、<0>ここに戻ってください</0>。",
     "enterAmount": "転送金額を入力",
     "mobileLabelDeposit": "Binanceで取引を完了し、ここに戻って入金を完了してください。",
     "mobileLabelOnramp": "Binanceで取引を完了し、ここに戻ってオンランプを完了してください。",
@@ -42,6 +44,7 @@
     "selectAsset": "転送する資産を選択",
     "selectCurrency": "通貨を選択",
     "selectNetwork": "転送ネットワークを選択",
+    "transactionRequest": "取引要求はBinanceアプリに送信されました。",
     "youPay": "支払う",
     "youReceive": "受け取る"
   },
@@ -662,7 +665,7 @@
     "processingFee": "{{clientName}} 処理手数料",
     "processingFeeDescription": "費用 {{clientName}} は、この取引の完了を促進するために徴収されます。",
     "title": "手数料を含む",
-    "totalDetails": ""
+    "totalDetails": "合計詳細"
   },
   "fields": {
     "apiKey": "APIキー",
@@ -1082,7 +1085,7 @@
     "description": "以下のネットワークは、すべてこの支払いに対応しており、安全にご利用いただけます。最も手数料が低いネットワークを自動で選択しています。",
     "estimatedGasFeeLabel": "概算ガス代：",
     "lowestFeeLabel": "最安手数料",
-    "mostPopular": "",
+    "mostPopular": "最も人気のある",
     "subtitle": "{{clientName}} は次のネットワークで支払いを受け付けます:",
     "title": "ネットワークを選択"
   },
@@ -1229,8 +1232,8 @@
       "needAnotherWay": "別の方法は必要ですか?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "現在、入金可能なサポートされているトークンはありません。",
+      "noTokensTitle": "利用可能なトークンはありません"
     },
     "networkSelection": {
       "subtitle": "{{client}}は以下をサポートします:",
@@ -1270,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "支払い内容を準備中"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "最大額を超えています",
+        "amountBelowMinimum": "最低額未満",
+        "complianceRestriction": "コンプライアンス資格制限",
+        "unavailable": "利用不可",
+        "unavailableInRegion": "地域で利用できません",
+        "unsupportedOnDevice": "このデバイスではサポートされていません",
+        "unsupportedTokenAndNetwork": "サポートされていないトークンとネットワーク"
+      }
     },
     "common": {
       "cancel": "キャンセル",
@@ -1346,6 +1360,14 @@
       "rule2": "暗号通貨を使用し、詳細を確認し承認して支払いをします。",
       "rule3": "自動変換で物事を簡単に保ちます。",
       "title": "支払い内容を確認するにはログインしてください"
+    },
+    "insufficientBalancePage": {
+      "chooseDifferent": "別のアカウントを選択する。",
+      "message": "{{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
+      "messageWithNetwork": "{{network}} ネットワークでの {{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
+      "title": "残高不足",
+      "topUpAccount": "アカウントにチャージして、もう一度お試しください。",
+      "topUpWallet": "ウォレットにチャージして、もう一度お試しください。"
     },
     "inWalletBrowserInitialPage": {
       "retry": "再試行",
@@ -1478,17 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "{{integrationName}}からの入金",
-    "depositTo": "",
+    "depositTo": "入金先",
     "fee": "手数料{{amount}}を含みます",
     "fundingMethods": "資金調達方法",
-    "network": "",
+    "network": "ネットワーク",
     "receive": "受取",
     "refreshing": "{{seconds}}秒後に更新",
     "send": "送信",
-    "sendAmount": "",
+    "sendAmount": "{{amount}} を送信",
     "title": "送金プレビュー",
     "tokenOnNetwork": "{{network}} 上の {{token}}",
-    "total": "",
+    "total": "合計",
     "transferToken": "トークンを移行"
   },
   "privacyComponent": {

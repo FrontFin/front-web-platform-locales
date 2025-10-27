@@ -25,7 +25,9 @@
     "closeButton": "Fechar",
     "continueInBinance": "Continuar no Binance",
     "continueTo": "Continuar para {{selectedIntegrationName}}",
+    "continueWithAppButton": "Continua com o app {{selectedIntegrationName}}",
     "cryptoAmount": "Quantia em Cripto",
+    "descriptionDeposit": "<0>Retorne aqui</0> após completar sua transação no Binance.",
     "enterAmount": "Insire o valor da transferência",
     "mobileLabelDeposit": "Complete sua transação no Binance, depois volte aqui para finalizar seu depósito.",
     "mobileLabelOnramp": "Complete sua transação no Binance, depois volte aqui para completar sua integração.",
@@ -42,6 +44,7 @@
     "selectAsset": "Seleciona o ativo para transferir",
     "selectCurrency": "Seleciona uma moeda",
     "selectNetwork": "Seleciona a rede de transferência",
+    "transactionRequest": "Pedido de transação enviado para o seu aplicativo Binance.",
     "youPay": "Tu pagas",
     "youReceive": "Tu recebes"
   },
@@ -541,7 +544,6 @@
     "incorrectEmail": "Você digitou um email incorreto.",
     "incorrectPasswordChancesRemaining": "Senha incorreta. Você tem {{count}} tentativas restantes.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Você tem {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Você tem {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de usuário ou senha incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -663,7 +665,7 @@
     "processingFee": "Taxa de processamento de {{clientName}}",
     "processingFeeDescription": "A taxa que {{clientName}} coleta para facilitar a conclusão desta transação.",
     "title": "Taxas incluídas",
-    "totalDetails": ""
+    "totalDetails": "Detalhes totais"
   },
   "fields": {
     "apiKey": "Chave API",
@@ -711,7 +713,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1084,7 +1085,7 @@
     "description": "As redes abaixo são todas opções seguras e compatíveis para este pagamento. Selecionamos automaticamente a rede com a menor taxa para ti.",
     "estimatedGasFeeLabel": "Estimativa da taxa de gás:",
     "lowestFeeLabel": "Menor taxa",
-    "mostPopular": "",
+    "mostPopular": "Mais Popular",
     "subtitle": "{{clientName}} aceita pagamentos nas seguintes redes:",
     "title": "Selecionar rede"
   },
@@ -1231,8 +1232,8 @@
       "needAnotherWay": "Precisa de outra maneira?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Não há tokens suportados disponíveis para depósito neste momento.",
+      "noTokensTitle": "Nenhum token disponível"
     },
     "networkSelection": {
       "subtitle": "{{client}} suporta:",
@@ -1272,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Preparando seus detalhes de pagamento"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Quantia acima do máximo",
+        "amountBelowMinimum": "Quantia abaixo do mínimo",
+        "complianceRestriction": "Restrição de elegibilidade de conformidade",
+        "unavailable": "Indisponível",
+        "unavailableInRegion": "Indisponível na sua região",
+        "unsupportedOnDevice": "Não suportado neste dispositivo",
+        "unsupportedTokenAndNetwork": "Token e rede não suportados"
+      }
     },
     "common": {
       "cancel": "Cancelar",
@@ -1348,6 +1360,14 @@
       "rule2": "Utilize o seu cripto, reveja os detalhes e aprove para pagar.",
       "rule3": "A conversão automática simplifica as coisas.",
       "title": "Fazer login para rever os detalhes do pagamento"
+    },
+    "insufficientBalancePage": {
+      "chooseDifferent": "Conectar uma conta diferente",
+      "message": "Seu saldo de {{balanceAmount}} é insuficiente para fazer este pagamento de {{paymentAmount}}.",
+      "messageWithNetwork": "Seu saldo de {{balanceAmount}} na rede {{network}} é insuficiente para fazer este pagamento de {{paymentAmount}}.",
+      "title": "Saldo insuficiente",
+      "topUpAccount": "Por favor, recarregue sua conta e tente novamente.",
+      "topUpWallet": "Por favor, recarregue sua carteira e tente novamente."
     },
     "inWalletBrowserInitialPage": {
       "retry": "Tentar novamente",
@@ -1480,17 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Depósito de {{integrationName}}",
-    "depositTo": "",
+    "depositTo": "Depositar em",
     "fee": "Inclui {{amount}} em taxas",
     "fundingMethods": "Métodos de financiamento",
-    "network": "",
+    "network": "Rede",
     "receive": "Receber",
     "refreshing": "Atualizar em {{seconds}}s",
     "send": "Enviar",
-    "sendAmount": "",
+    "sendAmount": "Enviar {{amount}}",
     "title": "Pré-visualização da transferência",
     "tokenOnNetwork": "{{token}} na {{network}}",
-    "total": "",
+    "total": "Total",
     "transferToken": "Transferir token"
   },
   "privacyComponent": {
