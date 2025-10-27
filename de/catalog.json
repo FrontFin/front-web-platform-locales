@@ -25,7 +25,9 @@
     "closeButton": "Schließen",
     "continueInBinance": "Weiter in Binance",
     "continueTo": "Weiter zu {{selectedIntegrationName}}",
+    "continueWithAppButton": "Weiter zu {{selectedIntegrationName}}-App",
     "cryptoAmount": "Kryptobetrag",
+    "descriptionDeposit": "<0>Kehren Sie hierher zurück</0>, nachdem Sie Ihre Transaktion auf Binance abgeschlossen haben.",
     "enterAmount": "Überweisungsbetrag eingeben",
     "mobileLabelDeposit": "Schließen Sie Ihre Transaktion bei Binance ab, und kehren Sie dann hierher zurück, um Ihre Einzahlung abzuschließen.",
     "mobileLabelOnramp": "Schließen Sie Ihre Transaktion bei Binance ab, und kehren Sie dann hierher zurück, um Ihren Onramp abzuschließen.",
@@ -42,6 +44,7 @@
     "selectAsset": "Asset zur Übertragung auswählen",
     "selectCurrency": "Währung auswählen",
     "selectNetwork": "Übertragungsnetzwerk auswählen",
+    "transactionRequest": "Transaktionsanforderung an Ihre Binance-App gesendet.",
     "youPay": "Du zahlst",
     "youReceive": "Du erhälst"
   },
@@ -662,7 +665,7 @@
     "processingFee": "{{clientName}} Bearbeitungsgebühr",
     "processingFeeDescription": "Die Gebühr, die {{clientName}} erhebt, um den Abschluss dieser Transaktion zu ermöglichen.",
     "title": "Enthaltene Gebühren",
-    "totalDetails": ""
+    "totalDetails": "Gesamtdetails"
   },
   "fields": {
     "apiKey": "API-Schlüssel",
@@ -1082,7 +1085,7 @@
     "description": "Die unten aufgeführten Netzwerke sind sichere und kompatible Optionen für diese Zahlung. Wir haben das Netzwerk mit den niedrigsten Gebühren für Dich automatisch ausgewählt.",
     "estimatedGasFeeLabel": "Geschätzte Gasgebühr:",
     "lowestFeeLabel": "Niedrigste Gebühr",
-    "mostPopular": "",
+    "mostPopular": "Am beliebtesten",
     "subtitle": "{{clientName}} akzeptiert Zahlungen in den folgenden Netzwerken:",
     "title": "Netzwerk auswählen"
   },
@@ -1229,8 +1232,8 @@
       "needAnotherWay": "Andere Möglichkeit ausprobieren?"
     },
     "error": {
-      "noTokensDescription": "",
-      "noTokensTitle": ""
+      "noTokensDescription": "Zurzeit stehen keine unterstützten Token für Einzahlungen zur Verfügung.",
+      "noTokensTitle": "Keine Token verfügbar"
     },
     "networkSelection": {
       "subtitle": "{{client}} unterstützt:",
@@ -1270,6 +1273,17 @@
   "paypal": {
     "brokerLoading": {
       "preparingPayment": "Zahlungsdetails werden vorbereitet"
+    },
+    "catalogPage": {
+      "integrationIneligibilityReason": {
+        "amountAboveMaximum": "Betrag über dem Höchstbetrag",
+        "amountBelowMinimum": "Betrag unter dem Mindestbetrag",
+        "complianceRestriction": "Compliance-Eignungsbeschränkung",
+        "unavailable": "Nicht verfügbar",
+        "unavailableInRegion": "Nicht verfügbar in Ihrer Region",
+        "unsupportedOnDevice": "Nicht unterstützt auf diesem Gerät",
+        "unsupportedTokenAndNetwork": "Nicht unterstützter Token und Netzwerk"
+      }
     },
     "common": {
       "cancel": "Abbrechen",
@@ -1346,6 +1360,14 @@
       "rule2": "Verwende deine Kryptowährung, überprüfe die Details und genehmige die Zahlung.",
       "rule3": "Automatische Konvertierung macht es einfach.",
       "title": "Logge dich ein, um Zahlungsdetails anzuzeigen"
+    },
+    "insufficientBalancePage": {
+      "chooseDifferent": "Anderes Konto auswählen",
+      "message": "Ihr Guthaben von {{balanceAmount}} reicht nicht aus, um diese Zahlung von {{paymentAmount}} zu tätigen.",
+      "messageWithNetwork": "Ihr Guthaben von {{balanceAmount}} im {{network}}-Netzwerk reicht nicht aus, um diese Zahlung von {{paymentAmount}} zu tätigen.",
+      "title": "Unzureichendes Guthaben",
+      "topUpAccount": "Bitte laden Sie Ihr Konto auf und versuchen Sie es erneut.",
+      "topUpWallet": "Bitte laden Sie Ihre Geldbörse auf und versuchen Sie es erneut."
     },
     "inWalletBrowserInitialPage": {
       "retry": "Erneut versuchen",
@@ -1478,17 +1500,17 @@
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Einzahlung von {{integrationName}}",
-    "depositTo": "",
+    "depositTo": "Einzahlen auf",
     "fee": "Beinhaltet {{amount}} an Gebühren",
     "fundingMethods": "Finanzierungsmethoden",
-    "network": "",
+    "network": "Netzwerk",
     "receive": "Erhalten",
     "refreshing": "Aktualisieren in {{seconds}}s",
     "send": "Senden",
-    "sendAmount": "",
+    "sendAmount": "Senden {{amount}}",
     "title": "Überweisungsvorschau",
     "tokenOnNetwork": "{{token}} auf {{network}}",
-    "total": "",
+    "total": "Gesamt",
     "transferToken": "Token übertragen"
   },
   "privacyComponent": {
