@@ -1261,7 +1261,7 @@
       "headline": "Onko sinulla ongelmia?",
       "infoLabel": "{{info}} (pakollinen)",
       "networkLabel": "Verkko",
-      "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti",
+      "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
       "tokenLabel": "Token",
       "warning": "Siirrä vain {{token}} {{network}}-verkossa tähän osoitteeseen, muuten omaisuutesi voivat kadota.",
       "warningWithTag": "Siirrä vain {{token}} {{network}} käyttöön tällä {{info}} tähän osoitteeseen - muuten omaisuutesi voivat kadota"
@@ -1287,6 +1287,10 @@
     "topUp": "Lataa {{token}} saldoa"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "This {{transferAmount}} payment is below Binance’s {{minAmount}} minimum (plus fees) to transfer {{symbol}} on {{networkName}}.",
+      "title": "Below Binance’s minimum"
+    },
     "brokerLoading": {
       "preparingPayment": "Valmistellaan maksutietojasi"
     },
@@ -1385,6 +1389,10 @@
       "topUpAccount": "Ole hyvä ja lisää saldoa tilillesi ja yritä uudelleen.",
       "topUpWallet": "Täydennä lompakkosi ja yritä uudelleen."
     },
+    "insufficientGasBalancePage": {
+      "message": "This transaction requires {{transferAmount}} and ~{{gasFiat}} worth of {{gasSymbol}} on the {{networkName}} network to pay gas fees.",
+      "title": "Riittämätön kaasusaldo"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Yritä uudelleen",
       "title": "Hyväksy yhteyspyyntö jatkaaksesi maksua"
@@ -1419,6 +1427,10 @@
       "description": "Tämä tapahtuu usein, jos kirjaudut tilillesi toisella alustalla samalla, kun tämä istunto on aktiivinen.",
       "retry": "Napsauta yritä uudelleen kirjautuaksesi ja yrittääksesi suorittaa tapahtuman uudelleen.",
       "title": "Istunto vanhentunut"
+    },
+    "somethingWentWrongPage": {
+      "message": "We’re having trouble processing this request right now",
+      "title": "Something went wrong"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (\"Yritys\") on teknologiatoimittaja, joka valmistaa viestintävälineen (\"Työkalu\"), joka auttaa edistämään käyttämäsi kolmannen osapuolen palvelun (\"Loppukäyttäjäpalvelu\") tiettyjä toimintoja. Tällaisen toiminnon tarkoitus on mahdollistaa viestintäsi kolmannen osapuolen tilien ja lompakkojen (\"Yhdistetyt tilit\") kautta Loppukäyttäjäpalvelun välityksellä, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa. Mesh tarjoaa tämän Työkalun sinulle palveluntarjoajana PayPal, Inc:lle (\"PayPal\")\n\nHyväksyt ja ymmärrät, että Loppukäyttäjäpalvelun tietty toiminnallisuus perustuu Työkaluun; että käytät tällaista toiminnallisuutta omasta aloitteestasi; että Yritys tai sen palveluntarjoajat eivät tarjoa välityspalveluja tai osallistu maksujen käsittelyyn; ja että Yritys tai sen palveluntarjoajat eivät ole vastuussa sen paremmin Loppukäyttäjäpalvelusta kuin mistään Yhdistetystä tilistäkään, tai niiden palveluntarjoajien ehdoista, käytännöistä, teoista tai laiminlyönneistä.\n\nVakuutat ja takaat, että sinulla on kaikki oikeudet ja suostumukset yhdistää ja käyttää kutakin Yhdistettyä tiliä tällaisen toiminnallisuuden kautta, mukaan lukien oikeus antaa Yhtiölle ja sen palveluntarjoajille tilillesi kirjautumistiedot, lompakkojen osoitteet ja/tai kaikki yhdistetyn tilin tai henkilökohtaiset tietosi. Täten valtuutat Yhtiön ja sen palveluntarjoajat siirtämään ohjeita sekä tietoja, dataa ja muita materiaaleja Loppukäyttäjäpalvelun ja kunkin Yhdistetyn tilin välillä, ja tunnustat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa mistään tällaisten ohjeiden suorittamisesta tai mistään tällaisista materiaaleista (mukaan lukien niiden paikkansapitävyys, ajantasaisuus tai täydellisyys).\n\nHyväksyt, että jos käytät Työkalua transaktioiden suorittamiseen kolmansien osapuolten kanssa, mukaan lukien mutta ei rajoittuen verkkokauppiaisiin tai sellaisten ostojen suorittamiseen millään tavalla (\"Kolmannen osapuolen Transaktiot\"), Yritys eikä PayPal ole vastuussa mistään tällaisten transaktioiden liittyvistä riidoista. Olet vastuussa ottamisesta suoraan yhteyttä mihin tahansa merkitykselliseen kolmanteen osapuoleen ratkaistaksesi riitoja, valituksia valtuuttamattomista tapahtumista, hyvitysvaatimuksia tai mahdollisia muita Kolmannen osapuolen transaktioihin liittyviä vaatimuksia."
