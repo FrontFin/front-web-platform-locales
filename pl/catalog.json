@@ -1261,7 +1261,7 @@
       "headline": "Masz problemy?",
       "infoLabel": "{{info}} (wymagane)",
       "networkLabel": "Sieć",
-      "subtitle": "Możesz jeszcze dokończyć swój depozyt ręcznie",
+      "subtitle": "Możesz nadal uzupełnić depozyt ręcznie.",
       "tokenLabel": "Token",
       "warning": "Przelewaj tylko {{token}} na {{network}} do tego adresu - w przeciwnym razie Twoje aktywa mogą zostać utracone",
       "warningWithTag": "Prześlij tylko {{token}} na {{network}} używając tego {{info}} na ten adres - w przeciwnym razie Twoje aktywa mogą zostać utracone"
@@ -1287,6 +1287,10 @@
     "topUp": "Doładuj saldo {{token}}"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "Ta płatność {{transferAmount}} jest poniżej minimalnego progu Binance’s {{minAmount}} (plus opłaty) do przesłania {{symbol}} w sieci {{networkName}}.",
+      "title": "Poniżej minimalnego limitu Binance's"
+    },
     "brokerLoading": {
       "preparingPayment": "Przygotowywanie szczegółów płatności"
     },
@@ -1385,6 +1389,10 @@
       "topUpAccount": "Proszę doładować konto i spróbować ponownie.",
       "topUpWallet": "Proszę doładować portfel i spróbować ponownie."
     },
+    "insufficientGasBalancePage": {
+      "message": "Ta transakcja wymaga {{transferAmount}} i ~{{gasFiat}} wartych {{gasSymbol}} na sieci {{networkName}} do opłacenia kosztów gazu.",
+      "title": "Niewystarczające saldo gazu"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Ponów próbę",
       "title": "Zatwierdź prośbę o połączenie, aby kontynuować płatność"
@@ -1419,6 +1427,10 @@
       "description": "Często dzieje się tak, jeśli zalogujesz się na swoje konto na innej platformie, gdy ta sesja jest aktywna.",
       "retry": "Kliknij Spróbuj ponownie, aby zalogować się i ponowić transakcję.",
       "title": "Sesja wygasła"
+    },
+    "somethingWentWrongPage": {
+      "message": "Mamy problem z przetworzeniem tej prośby w tej chwili",
+      "title": "Coś poszło nie tak"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje mają umożliwić komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") poprzez Usługę Końcowego Użytkownika, w tym przesyłanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Końcowego Użytkownika opierają się na Narzędziu; że korzystanie z takich funkcji odbywa się na twoje polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Końcowego Użytkownika lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że masz wszystkie niezbędne prawa i zgody na połączenie i dostęp do każdego Połączonego Konta poprzez takie funkcje, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub ciebie osobiście dla każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
