@@ -1261,7 +1261,7 @@
       "headline": "お困りですか？",
       "infoLabel": "{{info}}（必須）",
       "networkLabel": "ネットワーク",
-      "subtitle": "まだ手動で入金を完了できます",
+      "subtitle": "手動で入金を完了することができます。",
       "tokenLabel": "トークン",
       "warning": "このアドレスには{{network}}の{{token}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。",
       "warningWithTag": "このアドレスには{{network}}の{{token}} {{info}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。"
@@ -1287,6 +1287,10 @@
     "topUp": "{{token}}残高をチャージする\n\n"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "この {{transferAmount}} の支払いは、{{symbol}} を {{networkName}} で転送するための Binance の {{minAmount}} の最低額（および手数料）を下回っています。",
+      "title": "Binance の最低以下"
+    },
     "brokerLoading": {
       "preparingPayment": "支払い内容を準備中"
     },
@@ -1385,6 +1389,10 @@
       "topUpAccount": "アカウントにチャージして、もう一度お試しください。",
       "topUpWallet": "ウォレットにチャージして、もう一度お試しください。"
     },
+    "insufficientGasBalancePage": {
+      "message": "この取引には、ガス料金を支払うために {{networkName}} ネットワーク上で {{gasSymbol}} が約 {{gasFiat}} 分と {{transferAmount}} が必要です。",
+      "title": "ガス残高が不足しています"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "再試行",
       "title": "接続要求を承認して、支払いを続けてください。"
@@ -1419,6 +1427,10 @@
       "description": "他のプラットフォームでアカウントにログインした際にこのセッションがアクティブな場合、よく発生します。",
       "retry": "ログインし直してトランザクションを試すには「再試行」をクリックしてください。",
       "title": "セッションの期限が切れました"
+    },
+    "somethingWentWrongPage": {
+      "message": "現在、このリクエストの処理に問題が発生しています。",
+      "title": "問題が発生しました。"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
