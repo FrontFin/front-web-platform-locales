@@ -21,20 +21,55 @@
     "amountMustBeWithin": "Miktar {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} arasında olmalıdır",
     "amountMustBeWithinErrorMessage": "Tutar $21 - $15,000 ABD Doları arasında olmalıdır",
     "buyCrypto": "Binance Connect kullanarak kripto satın al",
+    "cashEquivalent": "",
     "closeButton": "Kapat",
+    "continueInBinance": "",
     "continueTo": "{{selectedIntegrationName}}'e devam et",
+    "cryptoAmount": "",
+    "descriptionDeposit": "<0>Return here to deposit</0> after connecting with your Binance mobile app.",
     "enterAmount": "Transfer tutarını girin",
+    "mobileLabelOnramp": "",
     "notSupported": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
+    "openBinance": "",
     "receiveAmountInput": {
       "networkName": "{{networkName}} üzerinde"
     },
+    "scanText": "",
     "selectAnotherAccount": "Başka bir hesap seçin",
     "selectAnotherExchange": "Lütfen para yatırmak için başka bir borsa veya cüzdan seçin.",
     "selectAsset": "Transfer edilecek varlığı seçin",
     "selectCurrency": "Bir para birimi seçin",
     "selectNetwork": "Transfer ağını seçin",
+    "transactionRequest": "",
     "youPay": "Ödemeniz gereken tutar",
     "youReceive": "Alacağınız tutar"
+  },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Görünüşe göre isteği onaylamadınız. Bu bir hata ise lütfen tekrar deneyin.",
+    "title": "Hata!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Zamanında yanıt alamadık. Lütfen tekrar deneyin.",
+    "title": "Talep süresi doldu."
+  },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Binance uygulaması ile devam et",
+    "descriptionDeposit": "<1>Buradan Binance mobil uygulamanızla bağlandıktan sonra para yatırmaya geri dönün</1>.",
+    "descriptionGeneral": "<1>Buraya dönerek devam edin</1> Binance mobil uygulamanıza bağlandıktan sonra.",
+    "descriptionOnRamp": "<1>Buraya dönerek devam edin</1> Binance mobil uygulamanıza bağlandıktan sonra.",
+    "descriptionPay": "<1>Buraya dönerek ödemeyi yapın</1> Binance mobil uygulamanıza bağlandıktan sonra.",
+    "loginWithEmailButton": "E-posta/Telefon ile giriş yap",
+    "or": "ya da",
+    "scanText": "Giriş yapmak için telefon kameranız veya Binance uygulaması ile tarayın.",
+    "title": "Giriş yap"
+  },
+  "binanceDirectPasswordPage": {
+    "emailPhoneInput": "",
+    "invalidEmail": "",
+    "nextButton": "",
+    "passwordInput": "",
+    "titleStep1": "",
+    "titleStep2": ""
   },
   "binanceMfaPage": {
     "add2fa": "Lütfen Binance'de gerekli İki Faktörlü Kimlik Doğrulama (2FA) yöntemlerini ekleyin",
@@ -60,25 +95,6 @@
     },
     "title": "Şifreyi sıfırla"
   },
-  "binanceDirectLoginPage": {
-    "continueWithAppButton": "Binance uygulaması ile devam et",
-    "descriptionDeposit": "<1>Buradan Binance mobil uygulamanızla bağlandıktan sonra para yatırmaya geri dönün</1>.",
-    "descriptionGeneral": "<1>Buraya dönerek devam edin</1> Binance mobil uygulamanıza bağlandıktan sonra.",
-    "descriptionOnRamp": "<1>Buraya dönerek devam edin</1> Binance mobil uygulamanıza bağlandıktan sonra.",
-    "descriptionPay": "<1>Buraya dönerek ödemeyi yapın</1> Binance mobil uygulamanıza bağlandıktan sonra.",
-    "loginWithEmailButton": "E-posta/Telefon ile giriş yap",
-    "or": "ya da",
-    "scanText": "Giriş yapmak için telefon kameranız veya Binance uygulaması ile tarayın.",
-    "title": "Giriş yap"
-  },
-  "binanceDirectLoginConnectionDeniedPage": {
-    "body": "Görünüşe göre isteği onaylamadınız. Bu bir hata ise lütfen tekrar deneyin.",
-    "title": "Hata!"
-  },
-  "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "Zamanında yanıt alamadık. Lütfen tekrar deneyin.",
-    "title": "Talep süresi doldu."
-  },
   "bindFacePage": {
     "completedButton": "Bunu telefonumda tamamladım",
     "linkText": "QR kodunu tarayamazsanız, lütfen bu <2><0>bağlantıyı</0></2> takip edin.",
@@ -100,32 +116,33 @@
     "select": "{{integrationName}}, {{badge}} seçin"
   },
   "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
-    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
-    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
+    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
     "lessThanIntegrationMinAmount": "Talep edilen miktar {{integrationName}}'nin minimum miktarının altında .",
     "moreThanIntegrationMaxAmount": "Talep edilen miktar, {{integrationName}} komisyoncusunun azami tutarının üzerinde.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} bu jeton ve ağı desteklemiyor.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}}, sağlanan token/ağ kombinasyonlarının hiçbiri için transferleri desteklemiyor.",
-    "integrationNotSupportedCountry": "{{integrationName}} bölgenizde mevcut değil."
+    "platformNotSupported": "{{integrationName}} bu cihaz türünde desteklenmemektedir.",
+    "sdkVersionNotSupported": "{{integrationName}}'in TrueAuth mekanizması bu SDK Bağlamı: {{sdkContext}} için desteklenmiyor.",
+    "travelRuleAmountLimit": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleVaspIdRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} uyumluluk uygunluk kısıtlamaları nedeniyle desteklenmemektedir."
   },
   "catalogList": {
     "badges": {
       "api": "API",
       "connected": "Bağlı",
       "installed": "Yüklendi",
+      "lastUsed": "",
       "linked": "Önceden bağlanmış"
     },
+    "emptyCatalogBody": "Bu, konumunuz, uyumluluk gereksinimleri veya cihaz uyumluluğu nedeniyle olabilir.",
+    "emptyCatalogTitle": "Mevcut cüzdanlar ve borsalar yok",
     "noResults": "Üzgünüz, sonuç bulunamadı",
     "paymentTitle": "Ödeme hesabını seçin",
     "prodOnly": "Sadece canlı",
     "search": "arama",
     "title": "Bağlantı yapmak için hesabınızı seçin",
-    "title40": "Hesabınızı seçin",
-    "emptyCatalogTitle": "Mevcut cüzdanlar ve borsalar yok",
-    "emptyCatalogBody": "Bu, konumunuz, uyumluluk gereksinimleri veya cihaz uyumluluğu nedeniyle olabilir."
+    "title40": "Hesabınızı seçin"
   },
   "catalogTile": {
     "select": "{{integrationName}}, {{badge}} seçin"
@@ -165,21 +182,23 @@
     "availableForTransfer": "Kullanılabilir",
     "cancel": "İptal",
     "chooseDifferentAccount": "Farklı bir hesap seçin",
+    "chooseDifferentNetwork": "",
     "closeCap": "Kapat",
     "codeNotCorrent": "Verilen kod doğru değil.",
     "connectAnotherAccount": "Başka bir hesap bağlayın",
     "continueCap": "Devam et",
     "doneCap": "Tamamlandı",
     "failedToLoadTrasferError": "Transfer hakkında bilgi yüklenemedi",
+    "freeCap": "",
     "genericConnectErrorMessage": "Entegrasyonunuza bağlanılamadı",
     "maxCap": "Maks",
     "mesh": "Mesh",
     "notFound": "Bulunamadı",
+    "processingCap": "İşleniyor",
     "reconnectYourAccount": "Hesabınızı yeniden bağlayın",
     "searchCap": "Arama",
     "securedBy": "Tarafından güvence altına alınmıştır",
     "sendingCap": "Gönderiliyor",
-    "processingCap": "İşleniyor",
     "somethingWentWrong": "Bir şeyler ters gitti...",
     "submitCap": "Gönder",
     "successTitle": "Başarılı!",
@@ -222,6 +241,13 @@
   "currencyBox": {
     "changeCurrency": "Para birimini değiştir"
   },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "",
+    "depositSuccess": "",
+    "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
+    "paymentSubtitle": "",
+    "paymentSuccess": ""
+  },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Bağlantı isteğini reddetmiş gibi görünüyorsunuz veya önceki bir istek hâlâ aktif. Bu bir hataydıysa, tekrar deneyin.",
     "title": "Hata!"
@@ -241,6 +267,16 @@
   },
   "deFiWalletInitialPage": {
     "continue": "{{walletName}}'e devam edin",
+    "dappPage": {
+      "continueButton": "",
+      "depositTitle": "",
+      "payTitle": "",
+      "qrSubtitle": "",
+      "spinnerTransactionText": "",
+      "spinnerVerifyText": "",
+      "subtitle": "",
+      "verifyWalletTitle": ""
+    },
     "previewButton": "Bağla",
     "previewTitle": "Hesabı bağlayın",
     "subtitle": "{{walletName}}'i açmak için aşağıya tıklayın. Ardından ödeme önizlemesini görmek için bağlantı isteğini onaylayın.",
@@ -251,6 +287,7 @@
     "declinedTitle": "Bağlantı reddedildi",
     "description": "{{selectedIntegrationName}}'ı açın ve bağlantı kurmak için <3></3>QR kodunu tarayın",
     "qrCodeLabel": "Bağlantı kurmak için mobil cihazınızdan QR kodu tarayabilirsiniz",
+    "scanInstruction": "",
     "title": "{{selectedIntegrationName}} ile bağlan"
   },
   "defiWalletSelectNetworkPage": {
@@ -264,6 +301,11 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "Bu cihazda {{integrationName}} yüklü değil. Lütfen {{integrationName}} uygulamasını yükleyin veya başka bir cüzdan bağlayın.",
     "title": "Bağlantı kullanılamıyor"
+  },
+  "depositFallback": {
+    "description": "Endişelenmeyin... İşleminizi alternatif {{integrationName}} para çekme yöntemi ile sonuçlandıracağız.",
+    "instruction": "İşleminizi incelemek ve tamamlamak için Önizleme transferine tıklayın.",
+    "previewButton": "Transfer ön izlemesi"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Mobil uygulamadan onay bekleniyor",
@@ -379,6 +421,7 @@
     "configurationMismatch": "Yapılandırma hatası",
     "emptyWalletBalance": "Boş cüzdan",
     "exceedsApplicationLimit": "Uygulama Limiti Aşıldı",
+    "existingApiKey": "",
     "expiredSmartDeposit": "İşlemin süresi doldu",
     "faceVerificationFailed": "Yüz Doğrulaması Başarısız Oldu",
     "failedToGetFundingOptions": "Fonlama seçenekleri hatası",
@@ -396,6 +439,7 @@
     "invalidToIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
     "kycRequired": "Kimlik doğrulaması gerekli",
     "locked": "Hesap kilitli",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "Çok Faktörlü Kimlik Doğrulama Desteklenmiyor",
     "missingField": "Bilgi eksikliği",
     "networkDisabled": "Ağ devre dışı",
@@ -427,6 +471,7 @@
     "toAccountNotSupported": "Para yatırma desteklenmiyor",
     "tooManyRequests": "Çok fazla istek",
     "transferAlreadyRequested": "Transfer zaten talep edildi",
+    "travelRuleRestriction": "",
     "tryAgainAfterLogin": "Oturum Açılması Gerekiyor",
     "twoFaFailed": "Geçersiz 2FA kodu",
     "unableToSend": "Transfer Başarısız Oldu",
@@ -445,6 +490,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Çekim Süresi Aşımı"
   },
   "errorMessages": {
+    "accountDisabled": "",
+    "accountLocked": "",
     "accountNotFound": "''''Hesabınızı alamadık.",
     "addressAllowlistPending": "Bu alıcı adresiniz İzin Listenize eklendi ve işlem bekliyor.",
     "addressNotAllowlisted": "Coinbase üzerinden çekim yapılamıyor. Bu alıcı adresini Buraya İzin Listesine eklemelisiniz: https://www.coinbase.com/settings/allowlist",
@@ -464,8 +511,10 @@
     "coinbaseUnavailable": "Coinbase bir hata yaptı. Transferin gerçekleşip gerçekleşmediğini kontrol etmek için CB hesabınızı kontrol edin.",
     "configurationMismatch": "Transfer başlatılamıyor. Hesap yapılandırması istenen transfer ile eşleşmiyor.",
     "default": "Bir hata oluştu.",
+    "emailCodeExpired": "",
     "emptyWalletBalance": "Kaynak cüzdan bakiyesi boş.",
     "exceedsApplicationLimit": "Transfer miktarı uygulama limitini aşıyor.",
+    "existingApiKey": "",
     "expiredSmartDeposit": "İşlemin süresi doldu",
     "expiredSmartDepositDeposit": "Para Yatırma Süresi Doldu",
     "expiredSmartOnramp": "Satın Alma Süresi Doldu",
@@ -475,13 +524,22 @@
     "failedToSaveFundingOptions": "Ödeme seçeneklerini kaydetme başarısız oldu",
     "feeAssetBalanceNotEnough": "Transfer ücretleri için yetersiz bakiye.",
     "fromAccountNotSupported": "Hesap şu anda kripto çekimlerini desteklemiyor.",
+    "incorrect2faCode": "",
+    "incorrectEmail": "",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "",
     "integrationNotAvailable": "Entegrasyon şu anda mevcut değil.",
     "invalidCredentials": "Geçersiz giriş bilgileri. Lütfen tekrar deneyin.",
     "invalidFromIntegrationToken": "Devam etmek için lütfen tekrar oturum açın.",
     "invalidIntegrationToken": "Devam etmek için lütfen tekrar oturum açın.",
+    "invalidPhoneNumber": "",
     "invalidToIntegrationToken": "Devam etmek için lütfen tekrar giriş yapın..",
     "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektiriyor.",
     "locked": "Hesabınız kilitlendi.",
+    "loginFirst": "",
+    "loginWithQrOrMobileLink": "",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "Çok faktörlü kimlik doğrulama bu işlem için desteklenmiyor.",
     "networkDisabled": "Ağ şu anda devre dışı ve kullanılamaz durumda.",
     "noAvailableSmartContract": "Akıllı Sözleşme Kullanılamıyor",
@@ -493,7 +551,11 @@
     "passKeyNotSupportedPayment": "Maalesef, Geçiş Anahtarı 2FA şu anda desteklenmiyor. Lütfen ek bir 2FA olarak Google Authenticator ekleyin ve ödeme işlemini tekrar deneyin.",
     "passKeyNotSupportedRedirect": "Alternatif bir Coinbase çekim yöntemine yönlendiriliyor...",
     "permissionDenied": "Bu uç noktaya erişmek için gerekli izinlere sahip değilsiniz, lütfen erişim talep etmek için Mesh ekibiyle iletişime geçin.",
+    "pleaseLogin": "",
+    "pleaseTryAgain": "",
+    "pleaseTryAgainIn1Hour": "",
     "previewExpired": "Önizleme süresi doldu.",
+    "qrOrMobileLinkIn24Hours": "",
     "refusedByIntegration": "Transfer başlatılamıyor.",
     "refusedByIntegrationDeposit": "Para yatırma başlatılamıyor.",
     "refusedByIntegrationOnramp": "Satın alma başlatılamıyor.",
@@ -507,14 +569,18 @@
     "symbolNotSupportedByTarget": "İstenen coin için para yatırma adresi bulunamadı.",
     "symbolNotSupportedInRegion": "Seçilen sembol, bölge kısıtlamaları nedeniyle Coinbase tarafından desteklenmemektedir.",
     "toAccountNotSupported": "Hedef hesap şu anda kripto para yatırımlarını desteklemiyor.",
+    "tooManyAttemptsOneMinute": "",
     "tooManyRequests": "Lütfen daha sonra tekrar deneyin.",
     "transferAlreadyRequested": "Transfer zaten talep edildi.",
+    "travelRuleRestriction": "",
+    "travelRuleRestrictionPayment": "",
     "tryAgainAfterLogin": "Giriş yaptıktan sonra lütfen tekrar deneyin.",
     "twoFaFailed": "İki faktörlü doğrulama başarısız oldu. Lütfen tekrar deneyin.",
     "unableToSend": "Transfer gönderilemiyor. Lütfen tekrar deneyin.",
     "unableToSendContactSupport": "Şu anda kripto gönderimi yapamıyorsunuz. Lütfen Coinbase destek ekibi ile iletişime geçin.",
     "unauthorizedToken": "Devam etmek için lütfen tekrar oturum açın.",
     "userInfoUnavailable": "Kullanıcı bilgileri alınamıyor. Lütfen tekrar deneyin.",
+    "verificationFailed": "",
     "webWithdrawalLimitExceeded": "Binance günlük maksimum çekim limitini aştınız.",
     "whitelistAddressRequired": "Hedef adres beyaz listede olmalı.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Varlıklarınızın güvenliği için, bazı C2C Para Yatırma varlıklarınız 24 saat boyunca dondurulacaktır. 24 saat sonra, dondurma durumu otomatik olarak kaldırılacak ve kriptonuzu çekebilirsiniz. Dondurma süresince yerinde işlemleriniz etkilenmeyecektir. Binance'in işlem hizmetlerini normal şekilde kullanabilirsiniz.",
@@ -577,6 +643,7 @@
     "title": "Doğrulama"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "",
     "gasFeeDescription": "İşlemi işlemek için ağ doğrulayıcılarına tazminat ödemek üzere tahmini maliyet.",
     "institutionFeeDescription": "Bu ücret, çekim işleminizi gerçekleştirmek için ağ maliyetlerini karşılar. Seçilen kripto para birimine ve güncel blok zinciri koşullarına bağlı olarak değişiklik gösterir.",
     "processingFee": "{{clientName}} İşlem ücreti",
@@ -741,6 +808,15 @@
     "body": "{{clientName}}, {{selectedIntegrationName}} ile güvenli bağlantıyı sağlamak için Mesh kullanıyor.",
     "connectAction": "{{selectedIntegrationName}} ile bağlan"
   },
+  "homePage": {
+    "guaranteed": "",
+    "noExtraFee": "",
+    "secureDeposit": "",
+    "sendFunds": "",
+    "sendUsingQR": "",
+    "standardDeposit": "",
+    "title": ""
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Talep edilen {{requestedAmount}} transfer tutarı, {{network}} ağı üzerindeki {{integrationName}}’in minimum {{minimumAmount}} transfer tutarından daha azdır.",
     "balanceBelowIntegrationMinimumDescription": "{{integrationName}} üzerindeki {{symbol}}'ü aktarmak için {{currentBalance}} bakiyeniz, {{minimumAmount}} {{integrationName}} minimumunun altında. Lütfen bakiyenizi yenileyin ve tekrar deneyin.",
@@ -769,8 +845,8 @@
     "notSupportedForTransferBySource": "{{integrationName}} tarafından desteklenmiyor",
     "nyCoinbaseUserRestrictions": "NY çoklu zincir destek sınırlamaları nedeniyle {{network}} üzerindeki {{symbol}} bu transfer için kabul edilmedi.",
     "symbolDoesNotMatch": "{{clientName}} tarafından desteklenmiyor",
-    "symbolDoesNotMatchNoClientName": "Bu uygulama tarafından desteklenmiyor",
-    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi."
+    "symbolDoesNotMatchDescription": "{{symbol}} bu transfer için kabul edilmedi.",
+    "symbolDoesNotMatchNoClientName": "Bu uygulama tarafından desteklenmiyor"
   },
   "initialLedgerScreen": {
     "title": "Cihazınızı açın ve kilidini açın"
@@ -789,6 +865,8 @@
     "thirdParty": "Varlıklarınız asla üçüncü taraflara temas etmez"
   },
   "initialVerifyPage": {
+    "approveSignature": "",
+    "approveSignatureStillThere": "",
     "content40": "Bu cüzdanın sahibi olduğunuzu doğrulayın",
     "drawerTitle": "Cüzdanınızdaki <1></1> imza isteğini onaylayın",
     "item1Body": "{{selectedIntegrationName}} içinde bu cüzdanın size ait olduğunu doğrulayan bir mesajı imzalamanız istenecek.",
@@ -800,6 +878,23 @@
     "title": "Neredeyse hazırız!",
     "verifyAction": "Adresi Doğrula",
     "verifyingLabel": "İmza doğrulanıyor..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "",
+    "paymentFlowSubtitle": "",
+    "title": "",
+    "verifyFlowSubtitle": ""
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "subtitle": "",
+    "title": ""
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "",
+    "subtitleAlreadyDenied": "",
+    "subtitleInitial": "",
+    "titleAlreadyDenied": "",
+    "titleInitial": ""
   },
   "ipWhiteListPage": {
     "addIp": "Aşağıdaki IP adresini Güvenilir IP olarak ekleyin",
@@ -908,8 +1003,13 @@
     "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu girin."
   },
   "mfaPage": {
+    "codeSentEmail": "",
+    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
+    "codeSentPhone": "",
     "enterCode": "Giriş yapan kişinin gerçekten siz olduğunuzu<1></1>onaylamak için tek seferlik kodunuzu girin.",
+    "enterCode2": "<0>Enter the code from your authenticator app.</0>",
     "enterPin": "İşlem PIN'inizi girin",
+    "enterVerificationCode": "",
     "title": "Doğrulama",
     "verify": "Doğrula"
   },
@@ -956,13 +1056,13 @@
     "returnToClient": "{{selectedIntegrationName}} bağlantı isteğini onayladıktan sonra {{clientName}}'a geri dönün.",
     "sendAgain": "Tekrar gönder",
     "sendNewRequest": "Yeni bir istek gönder",
-    "troubleshootTitle": "Talep ulaşmadı mı?",
-    "troubleshootExchangeMode": "Borsa modunda olduğunuzdan emin olun, Cüzdan modunda değil.",
     "steps": {
       "authorize": "Onay Sayfasında <1>Yetkilendir</1> üzerine tıklayın.",
       "openApp": "Aşağıda <1> {{selectedIntegrationName}} uygulamasını aç</1>'a tıklayın.",
       "return": "Hesabınızı bağlamayı tamamlamak için buraya geri dönün."
-    }
+    },
+    "troubleshootExchangeMode": "Borsa modunda olduğunuzdan emin olun, Cüzdan modunda değil.",
+    "troubleshootTitle": "Talep ulaşmadı mı?"
   },
   "mobileContent": {
     "actionButton": "{{integrationName}}'ı aç"
@@ -976,6 +1076,8 @@
     "description": "Aşağıdaki ağlar, bu ödeme için güvenli ve uyumlu seçeneklerdir. Sizin için en düşük ücretli ağı otomatik olarak seçtik.",
     "estimatedGasFeeLabel": "Tahmini gaz ücreti:",
     "lowestFeeLabel": "En düşük ücret",
+    "mostPopular": "",
+    "subtitle": "",
     "title": "Ağ seçin"
   },
   "nonOAuthPermissionsPage": {
@@ -1001,9 +1103,9 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "{{selectedIntegrationName}}'i yeniden aç",
+      "note": "Mevduatınızı tamamlamak için {{selectedIntegrationName}} üzerinde devam edin",
       "subtitle": "Lütfen tarayıcınızda oturum açmayı tamamlayın ve erişimi onaylayın.",
-      "title": "Bağlantı bekleniyor",
-      "note": "Mevduatınızı tamamlamak için {{selectedIntegrationName}} üzerinde devam edin"
+      "title": "Bağlantı bekleniyor"
     },
     "checking": {
       "message": "Varlıklarınız kontrol ediliyor..."
@@ -1073,11 +1175,13 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "Miktar {{minAmount}} - {{maxAmount}} arasında olmalıdır",
     "amountMustBeWithinErrorMessage": "Tutar $21 - $15,000 ABD Doları arasında olmalıdır",
+    "buildingYourPreview": "Önizlemeniz oluşturuluyor...",
     "buyCrypto": "Binance Connect kullanarak kripto satın al",
     "closeButton": "Kapat",
     "continueTo": "{{selectedIntegrationName}}'e devam et",
     "enterAmount": "Transfer tutarını girin",
     "notSupported": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
+    "Processing": "İşleniyor...",
     "receiveAmountInput": {
       "networkName": "{{networkName}} üzerinde"
     },
@@ -1087,22 +1191,17 @@
     "selectCurrency": "Bir para birimi seçin",
     "selectNetwork": "Transfer ağını seçin",
     "unsupportedCurrencyError": "Seçilen para birimi, ülkenizde onramp için desteklenmiyor.",
-    "buildingYourPreview": "Önizlemeniz oluşturuluyor...",
-    "Processing": "İşleniyor...",
+    "unsupportedPair": "Bu ağ/simge çifti şu anda desteklenmiyor. Lütfen başka bir tane seçin.",
     "youPay": "Ödemeniz gereken tutar",
-    "youReceive": "Alacağınız tutar",
-    "unsupportedPair": "Bu ağ/simge çifti şu anda desteklenmiyor. Lütfen başka bir tane seçin."
+    "youReceive": "Alacağınız tutar"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "",
+    "conversionFee": "",
     "merchantInfoName": "Satıcı: {{clientName}}",
+    "paymentToClient": "Ödeme {{clientName}}'e",
     "title": "Sipariş özeti",
-    "totalLabel": "Toplam",
-    "paymentToClient": "Ödeme {{clientName}}'e"
-  },
-  "depositFallback": {
-    "description": "Endişelenmeyin... İşleminizi alternatif {{integrationName}} para çekme yöntemi ile sonuçlandıracağız.",
-    "instruction": "İşleminizi incelemek ve tamamlamak için Önizleme transferine tıklayın.",
-    "previewButton": "Transfer ön izlemesi"
+    "totalLabel": "Toplam"
   },
   "passwordPage": {
     "fieldError": "Lütfen {{field}} giriniz",
@@ -1115,6 +1214,36 @@
       "qrCode": "QR Kod"
     },
     "title": "Giriş yap"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "",
+      "depositWithWalletAddress": "",
+      "dontSeeYourAccount": "",
+      "needAnotherWay": ""
+    },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
+    "networkSelection": {
+      "subtitle": "",
+      "title": ""
+    },
+    "screen": {
+      "copiedWalletAddress": "",
+      "copyWalletAddress": "",
+      "depositToClient": "",
+      "downloadQr": "",
+      "headline": "",
+      "networkLabel": "",
+      "tokenLabel": "",
+      "warning": ""
+    },
+    "tokenSelection": {
+      "subtitle": "",
+      "title": ""
+    }
   },
   "paymentMethods": {
     "bankAccount": "Banka hesabı",
@@ -1131,6 +1260,126 @@
     "title": "Ödeme güncellemesi",
     "topUp": "{{token}} bakiyesini artırın"
   },
+  "paypal": {
+    "brokerLoading": {
+      "preparingPayment": "Ödeme detaylarınızı hazırlıyoruz"
+    },
+    "common": {
+      "cancel": "İptal",
+      "change": "Değiştir",
+      "close": "Kapat",
+      "continue": "Devam et",
+      "done": "Tamamlandı",
+      "ok": "Tamam",
+      "order": "Sipariş",
+      "pay": "Ödeme Yap",
+      "save": "Kaydet",
+      "stillWorking": "Hâlâ çalışıyor...",
+      "total": "Toplam",
+      "tryAgain": "Tekrar deneyin"
+    },
+    "connectionPage": {
+      "approveConnection": "Bağlantı isteğini cüzdanınızda onaylayın",
+      "continueTo": "{{integrationName}}'e devam edin",
+      "oauthLogin": "Hesabınıza giriş yapın ve erişime izin verin"
+    },
+    "doneTransferPage": {
+      "description": "{{amount}} ödediniz. Tamamlandığında, {{clientName}} tarafından bir onay alacaksınız.",
+      "disclaimer": "Transferler, gerekli ağ onaylarını alana kadar tamamlanmaz.",
+      "seeDetails": "Ne olduğunu gör",
+      "title": "Ödeme yolda"
+    },
+    "exitPage": {
+      "continuePayment": "Ödemeye Devam Et",
+      "exit": "Çık",
+      "exitAnyway": "",
+      "subtitle": "İlerlemeniz kaybolacak.",
+      "title": "Çıkmak istediğinizden emin misiniz?"
+    },
+    "fundingOptions": {
+      "available": "{{amount}} mevcut",
+      "balances": "Bakiye(ler)",
+      "buyingPower": "Alım gücü",
+      "exchangeRateDisclaimer": "Döviz kuru bir marj içerebilir.",
+      "instantCashAvailable": "Anında kullanılabilir nakit: {{amount}}",
+      "linkedPaymentMethods": "Bağlantılı ödeme yöntemi/leri",
+      "paymentMethodTypes": {
+        "bankAccount": "Banka hesabı",
+        "card": "Kart",
+        "digitalWallet": "Cüzdan"
+      },
+      "title": "Ödeme seçenekleri",
+      "total": "Toplam {{amount}}"
+    },
+    "fundingSteps": {
+      "approval": "{{integrationName}} dışındaki transferinizin onayı",
+      "conversion": "{{amount}}'yi {{currency}}'ye dönüştürme",
+      "deposit": "{{amount}} {{paymentMethod}}'dan yatırılması",
+      "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin",
+      "purchase": "{{amount}} {{symbol}} satın alımı",
+      "transfer": "Satın alımınız için {{symbol}} transferini yapın"
+    },
+    "infoScreen": {
+      "rule1": "Bilgileriniz asla saklanmaz. Bu işlemden sonra erişim sona erecektir.",
+      "rule2": "Kriptonuzu kullanın, detayları gözden geçirin ve ödemeyi onaylayın.",
+      "rule3": "Otomatik dönüşüm işleri basit tutar.",
+      "title": "Ödeme bilgilerini gözden geçirmek için giriş yapın"
+    },
+    "previewPage": {
+      "bufferAndFees": "{{bufferAmount}} Tampon + {{feesAmount}} ücretler dahil",
+      "bufferDisclaimer": "Kullanılmayan tamponu koruyacaksınız.",
+      "conversionFee": "{{integrationName}} dönüşüm ücreti",
+      "conversionFeeHint": "Bu ücret {{integrationName}}'in dönüşüm yapması için toplanır.",
+      "estimatedNetworkFee": "Tahmini ağ ücreti",
+      "feeChangedNotice": "Ağ ücreti değişti. Lütfen toplamınızı kontrol edin ve onaylayın.",
+      "feesIncluded": "{{amount}} ücretler dahil",
+      "from": "{{integrationName}}'dan",
+      "howItWorks": "Nasıl çalışır",
+      "merchantPurchase": "{{merchantName}} satın alma",
+      "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
+      "payWith": "Ödeme yöntemi",
+      "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "send": "Gönder",
+      "title": "{{merchantName}} için ödeme yapın",
+      "transactionBuffer": "İşlem tamponu",
+      "transactionBufferHint": "Bu miktar, kripto fiyatları değişse bile satın alımınızın gerçekleşmesine yardımcı olmak için eklenir. Bu, cüzdanınızda biraz {{settlementCurrency}} bırakabilir."
+    },
+    "sessionExpiredPage": {
+      "description": "",
+      "retry": "",
+      "title": ""
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (\"Şirket\"), kullandığınız üçüncü taraf hizmetinin (\"Son Kullanıcı Hizmeti\") belirli işlevselliğini sağlamaya yardımcı olan bir iletişim aracı (\"Araç\") oluşturan bir teknoloji sağlayıcısıdır. Bu işlevsellik, Son Kullanıcı Hizmeti aracılığıyla üçüncü taraf hesaplarınız ve cüzdanlarınız (\"Bağlı Hesaplar\") ile iletişim kurmanıza olanak tanımak amacını taşır, bunlara gönderim talimatları dahil. Mesh, bu Aracı bir hizmet sağlayıcı olarak PayPal, Inc. (\"PayPal\") için size sağlamaktadır\n\nSon Kullanıcı Hizmetinin belirli bir işlevselliğinin Araç üzerine kurulu olduğunu kabul eder ve onaylarsınız; böyle bir işlevselliğin kullanımının sizin talimatınıza tabi olduğunu; Şirketin veya hizmet sağlayıcılarının broker hizmetleri sağlamadığını veya ödeme işleme hizmetlerinde bulunmadığını; hizmet sağlayıcılarının Son Kullanıcı Hizmeti veya herhangi bir Bağlı Hesap, veya onların sağlayıcılarının şartları, politikaları, işlemleri veya ihmalleri için herhangi bir sorumluluk veya yükümlülüğünün olmadığını kabul eder ve onaylarsınız.\n\nTüm Bağlı Hesaplara bağlantı ve erişim için gerekli tüm haklara ve onaylara sahip olduğunuzu, şirket ve hizmet sağlayıcılarına hesap giriş bilgilerinizi, cüzdan adreslerinizi ve/veya her Bağlı Hesapla ilgili her türlü bilgiler veya kişisel bilgiler vermek için yetkili olduğunuzu temin eder ve beyan edersiniz. Şirket ve hizmet sağlayıcıları Son Kullanıcı Hizmeti ve her Bağlı Hesap arasındaki talimatlar ve bilgi, veri ve diğer malzemelerin gönderilmesine yetki verir ve bu tür talimatların yerine getirilmesi veya bu tür malzemelerin doğruluğu, güncelliği veya eksiksizliği konusunda şirket ve hizmet sağlayıcılarının hiçbir sorumluluk veya yükümlülüğü olmadığını kabul eder ve onaylarsınız.\n\nAracı üçüncü şahıslarla, online satıcılar veya her türlü satın alma (\"Üçüncü Taraf İşlemleri\") dahil ama bunlarla sınırlı olmamak üzere işlem yapmak amacıyla kullanmanız durumunda, Şirket veya PayPal'ın bu tür işlemlerle ilgili herhangi bir anlaşmazlıkta sorumlu olmadığını kabul edersiniz. Herhangi bir anlaşmazlık, yetkisiz işlem itirazı, para iade talebi veya Üçüncü Taraf İşlemleri ile ilgili diğer herhangi bir talep veya sorun için doğrudan ilgili üçüncü şahıslarla iletişime geçmekle sorumlusunuz. Kriptopara birimi ile yapılan satın alımlar sınırlı olabilir."
+    },
+    "termsOfUse": {
+      "linkText": "kullanım koşulları",
+      "text": "Devam ederek şunları kabul edersiniz"
+    },
+    "topupPage": {
+      "assetsDescription": "{{targetSymbol}}'e dönüştürülen varlıkların değeri fiyat ve/veya ağ ücreti dalgalanmaları nedeniyle beklenenden daha düşüktür.",
+      "conversionDescription": "Dönüştürülen {{convertedSymbol}} değerinin {{targetSymbol}}'e göre beklenenden düşük çıkmasının sebebi fiyat ve/veya ağ ücreti dalgalanmalarıdır.",
+      "currentBalance": "Mevcut bakiye",
+      "disclaimer": "Eğer ödemeyi tamamlamazsanız, {{targetSymbol}} bakiyeniz {{integrationName}} hesabınızda kalacak.",
+      "required": "Gerekli",
+      "title": "Yükleme gerekli",
+      "viewTopUp": "Yükleme Görüntüle"
+    },
+    "transferErrorPage": {
+      "belowNetworkMinimumMessage": "Bu satın alma miktarı hesabınızın minimum değişim limitinin altında. Satın alma işleminizi tamamlamak için başka bir hesap bağlayın.",
+      "chooseDifferentAccount": "Farklı bir hesap seçin",
+      "defaultMessage": "Fonlarınız {{integrationName}} hesabınızda kalacaktır.",
+      "defaultTitle": "Bu ödemeyi işleyemiyoruz",
+      "insufficientFunds": "Yetersiz bakiye",
+      "insufficientFundsMessage": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
+      "requestDenied": "Talep reddedildi",
+      "requestDeniedMessage": "Görünüşe göre işlemi reddettiniz. Eğer bu bir hataysa, tekrar deneyip cüzdanınızda isteği onaylayın."
+    },
+    "walletConfirmation": {
+      "title": "Bu işlemi {{integrationName}} uygulamanızda onaylayınız"
+    }
+  },
   "payPalConnectOAuthPage": {
     "close": "Kapat",
     "continue": "{{selectedIntegrationName}}'e devam edin",
@@ -1140,120 +1389,6 @@
     "selectAnotherExchange": "Lütfen para yatırmak için başka bir borsa veya cüzdan seçin.",
     "selectNetwork": "Transfer ağını seçin",
     "title": "Transfer edilecek varlığı seçin"
-  },
-  "paypal": {
-    "common": {
-      "cancel": "İptal",
-      "done": "Tamamlandı",
-      "continue": "Devam et",
-      "save": "Kaydet",
-      "close": "Kapat",
-      "tryAgain": "Tekrar deneyin",
-      "ok": "Tamam",
-      "pay": "Ödeme Yap",
-      "total": "Toplam",
-      "order": "Sipariş",
-      "change": "Değiştir",
-      "stillWorking": "Hâlâ çalışıyor..."
-    },
-    "topupPage": {
-      "title": "Yükleme gerekli",
-      "currentBalance": "Mevcut bakiye",
-      "required": "Gerekli",
-      "viewTopUp": "Yükleme Görüntüle",
-      "disclaimer": "Eğer ödemeyi tamamlamazsanız, {{targetSymbol}} bakiyeniz {{integrationName}} hesabınızda kalacak.",
-      "conversionDescription": "Dönüştürülen {{convertedSymbol}} değerinin {{targetSymbol}}'e göre beklenenden düşük çıkmasının sebebi fiyat ve/veya ağ ücreti dalgalanmalarıdır.",
-      "assetsDescription": "{{targetSymbol}}'e dönüştürülen varlıkların değeri fiyat ve/veya ağ ücreti dalgalanmaları nedeniyle beklenenden daha düşüktür."
-    },
-    "doneTransferPage": {
-      "title": "Ödeme yolda",
-      "description": "{{amount}} ödediniz. Tamamlandığında, {{clientName}} tarafından bir onay alacaksınız.",
-      "seeDetails": "Ne olduğunu gör",
-      "disclaimer": "Transferler, gerekli ağ onaylarını alana kadar tamamlanmaz."
-    },
-    "exitPage": {
-      "title": "Çıkmak istediğinizden emin misiniz?",
-      "subtitle": "İlerlemeniz kaybolacak.",
-      "continuePayment": "Ödemeye Devam Et",
-      "exit": "Çık"
-    },
-    "infoScreen": {
-      "title": "Ödeme bilgilerini gözden geçirmek için giriş yapın",
-      "rule1": "Bilgileriniz asla saklanmaz. Bu işlemden sonra erişim sona erecektir.",
-      "rule2": "Kriptonuzu kullanın, detayları gözden geçirin ve ödemeyi onaylayın.",
-      "rule3": "Otomatik dönüşüm işleri basit tutar."
-    },
-    "transferErrorPage": {
-      "insufficientFunds": "Yetersiz bakiye",
-      "requestDenied": "Talep reddedildi",
-      "defaultTitle": "Bu ödemeyi işleyemiyoruz",
-      "insufficientFundsMessage": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
-      "belowNetworkMinimumMessage": "Bu satın alma miktarı hesabınızın minimum değişim limitinin altında. Satın alma işleminizi tamamlamak için başka bir hesap bağlayın.",
-      "requestDeniedMessage": "Görünüşe göre işlemi reddettiniz. Eğer bu bir hataysa, tekrar deneyip cüzdanınızda isteği onaylayın.",
-      "defaultMessage": "Fonlarınız {{integrationName}} hesabınızda kalacaktır.",
-      "chooseDifferentAccount": "Farklı bir hesap seçin"
-    },
-    "previewPage": {
-      "title": "{{merchantName}} için ödeme yapın",
-      "from": "{{integrationName}}'dan",
-      "payWith": "Ödeme yöntemi",
-      "send": "Gönder",
-      "merchantPurchase": "{{merchantName}} satın alma",
-      "estimatedNetworkFee": "Tahmini ağ ücreti",
-      "conversionFee": "{{integrationName}} dönüşüm ücreti",
-      "transactionBuffer": "İşlem tamponu",
-      "feesIncluded": "{{amount}} ücretler dahil",
-      "bufferAndFees": "{{bufferAmount}} Tampon + {{feesAmount}} ücretler dahil",
-      "bufferDisclaimer": "Kullanılmayan tamponu koruyacaksınız.",
-      "howItWorks": "Nasıl çalışır",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
-      "feeChangedNotice": "Ağ ücreti değişti. Lütfen toplamınızı kontrol edin ve onaylayın.",
-      "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
-      "conversionFeeHint": "Bu ücret {{integrationName}}'in dönüşüm yapması için toplanır.",
-      "transactionBufferHint": "Bu miktar, kripto fiyatları değişse bile satın alımınızın gerçekleşmesine yardımcı olmak için eklenir. Bu, cüzdanınızda biraz {{settlementCurrency}} bırakabilir.",
-      "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır."
-    },
-    "connectionPage": {
-      "approveConnection": "Bağlantı isteğini cüzdanınızda onaylayın",
-      "oauthLogin": "Hesabınıza giriş yapın ve erişime izin verin",
-      "continueTo": "{{integrationName}}'e devam edin"
-    },
-    "brokerLoading": {
-      "preparingPayment": "Ödeme detaylarınızı hazırlıyoruz"
-    },
-    "fundingOptions": {
-      "title": "Ödeme seçenekleri",
-      "total": "Toplam {{amount}}",
-      "balances": "Bakiye(ler)",
-      "linkedPaymentMethods": "Bağlantılı ödeme yöntemi/leri",
-      "buyingPower": "Alım gücü",
-      "instantCashAvailable": "Anında kullanılabilir nakit: {{amount}}",
-      "available": "{{amount}} mevcut",
-      "exchangeRateDisclaimer": "Döviz kuru bir marj içerebilir.",
-      "paymentMethodTypes": {
-        "card": "Kart",
-        "bankAccount": "Banka hesabı",
-        "digitalWallet": "Cüzdan"
-      }
-    },
-    "walletConfirmation": {
-      "title": "Bu işlemi {{integrationName}} uygulamanızda onaylayınız"
-    },
-    "fundingSteps": {
-      "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin",
-      "conversion": "{{amount}}'yi {{currency}}'ye dönüştürme",
-      "deposit": "{{amount}} {{paymentMethod}}'dan yatırılması",
-      "purchase": "{{amount}} {{symbol}} satın alımı",
-      "approval": "{{integrationName}} dışındaki transferinizin onayı",
-      "transfer": "Satın alımınız için {{symbol}} transferini yapın"
-    },
-    "termsOfUse": {
-      "text": "Devam ederek şunları kabul edersiniz",
-      "linkText": "kullanım koşulları"
-    },
-    "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Şirket\"), kullandığınız üçüncü taraf hizmetinin (\"Son Kullanıcı Hizmeti\") belirli işlevselliğini sağlamaya yardımcı olan bir iletişim aracı (\"Araç\") oluşturan bir teknoloji sağlayıcısıdır. Bu işlevsellik, Son Kullanıcı Hizmeti aracılığıyla üçüncü taraf hesaplarınız ve cüzdanlarınız (\"Bağlı Hesaplar\") ile iletişim kurmanıza olanak tanımak amacını taşır, bunlara gönderim talimatları dahil. Mesh, bu Aracı bir hizmet sağlayıcı olarak PayPal, Inc. (\"PayPal\") için size sağlamaktadır\n\nSon Kullanıcı Hizmetinin belirli bir işlevselliğinin Araç üzerine kurulu olduğunu kabul eder ve onaylarsınız; böyle bir işlevselliğin kullanımının sizin talimatınıza tabi olduğunu; Şirketin veya hizmet sağlayıcılarının broker hizmetleri sağlamadığını veya ödeme işleme hizmetlerinde bulunmadığını; hizmet sağlayıcılarının Son Kullanıcı Hizmeti veya herhangi bir Bağlı Hesap, veya onların sağlayıcılarının şartları, politikaları, işlemleri veya ihmalleri için herhangi bir sorumluluk veya yükümlülüğünün olmadığını kabul eder ve onaylarsınız.\n\nTüm Bağlı Hesaplara bağlantı ve erişim için gerekli tüm haklara ve onaylara sahip olduğunuzu, şirket ve hizmet sağlayıcılarına hesap giriş bilgilerinizi, cüzdan adreslerinizi ve/veya her Bağlı Hesapla ilgili her türlü bilgiler veya kişisel bilgiler vermek için yetkili olduğunuzu temin eder ve beyan edersiniz. Şirket ve hizmet sağlayıcıları Son Kullanıcı Hizmeti ve her Bağlı Hesap arasındaki talimatlar ve bilgi, veri ve diğer malzemelerin gönderilmesine yetki verir ve bu tür talimatların yerine getirilmesi veya bu tür malzemelerin doğruluğu, güncelliği veya eksiksizliği konusunda şirket ve hizmet sağlayıcılarının hiçbir sorumluluk veya yükümlülüğü olmadığını kabul eder ve onaylarsınız.\n\nAracı üçüncü şahıslarla, online satıcılar veya her türlü satın alma (\"Üçüncü Taraf İşlemleri\") dahil ama bunlarla sınırlı olmamak üzere işlem yapmak amacıyla kullanmanız durumunda, Şirket veya PayPal'ın bu tür işlemlerle ilgili herhangi bir anlaşmazlıkta sorumlu olmadığını kabul edersiniz. Herhangi bir anlaşmazlık, yetkisiz işlem itirazı, para iade talebi veya Üçüncü Taraf İşlemleri ile ilgili diğer herhangi bir talep veya sorun için doğrudan ilgili üçüncü şahıslarla iletişime geçmekle sorumlusunuz. Kriptopara birimi ile yapılan satın alımlar sınırlı olabilir."
-    }
   },
   "previewPageUI": {
     "accountLabel": "Hesap",
@@ -1268,6 +1403,7 @@
     "paymentTotalLabel": "Toplamı ödeyin",
     "payWithLabel": "Ödeme yöntemi",
     "payWithLabelWithName": "{{integrationName}} ile ödeme yapın",
+    "plusFees": "",
     "processingPayment": "Ödemeniz işleniyor"
   },
   "previewTransfer": {
@@ -1309,6 +1445,7 @@
     "youMayReceiveLess": "{{symbol}} fiyat hareketinden dolayı daha az alabilirsiniz."
   },
   "previewTransferPageUI": {
+    "depositFromIntegration": "{{integrationName}} ile yatır",
     "fee": "Ücretler dahil {{amount}}",
     "fundingMethods": "Ödeme yöntemleri",
     "receive": "Almak",
@@ -1316,15 +1453,20 @@
     "send": "Gönder",
     "title": "Transfer ön izlemesi",
     "tokenOnNetwork": "{{token}} üzerinde {{network}}",
-    "transferToken": "Jetonu transfer et",
-    "depositFromIntegration": "{{integrationName}} ile yatır"
+    "transferToken": "Jetonu transfer et"
   },
   "privacyComponent": {
     "content": "Verileriniz her zaman gizli ve şifrelenmiş olarak korunur."
   },
   "qrCodePassword": {
+    "bybit": {
+      "euNotSupported": "",
+      "loginTitle": "",
+      "scanInstruction": ""
+    },
     "expired": "QR kodu süresi doldu",
     "generateNew": "Yeni bir QR kodu oluştur",
+    "loading": "",
     "qrCodeLabel": "QR kodu, bağlantı kurmak için mobil cihazınızda taranabilir",
     "scanText": "{{appName}} uygulamanızla bu kodu <1></1> tarayın ve anında giriş yapın."
   },
@@ -1348,6 +1490,7 @@
     "title": "Varlık seçin"
   },
   "selectHoldingPage": {
+    "balance": "",
     "binanceDirectNoAssetsBody1": "Görünüşe göre bağlı hesabınızda hiçbir varlığınız yok.",
     "binanceDirectNoAssetsBody2": "Hesabınıza para ekleyebilir veya transferinize devam etmek için farklı bir hesap bağlayabilirsiniz.",
     "cannotFundBody": "Bu işlemi gerçekleştirmek için bu hesaptaki kripto veya fiat bakiyeniz yetersiz.",
@@ -1355,8 +1498,11 @@
     "defaultTitle": "Token seçin",
     "depositTitle": "Yatırılacak token'ı seçin",
     "ineligibleAssets": "Uygun olmayan varlıklar",
+    "link40Subtitle": "",
     "link40Title": "Bir token seçin",
     "loading": "Varlıklarınız yükleniyor...",
+    "network": "",
+    "networkTitle": "",
     "noAssetsTitle": "Bağlanan hesapta varlık tespit edilmedi",
     "noEligibleAssetsTitle": "Bu hesaptaki varlıklar bu çekim için uygun değil",
     "notEnoughtBody": "Hesabınıza daha fazla {{symbol}} ekleyin, ardından yeniden denemek için buraya geri dönün.",
@@ -1375,9 +1521,12 @@
     "label": "{{text}} seçin"
   },
   "selectNetworkPage": {
+    "clientSupports": "",
+    "estFee": "",
     "gasFeeDescription": "<0>Tahmini gaz ücreti:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Uygun olmayan ağlar",
     "integrationFeeDescription": "<0>Tahmini {{selectedIntegrationName}} ücreti:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "sendVia": "",
     "title": "Bir ağı seçin"
   },
   "selectNetworkScreen": {
@@ -1433,6 +1582,11 @@
     "subtitle": "Satın alınan {{symbol}} bakiyeniz, fiyat ve/veya gaz dalgalanmaları nedeniyle beklenenden daha düşük.",
     "title": "Yükleme gerekli"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "",
+    "basedOnYourBalances": "",
+    "basedOnYourBalancesDepositsTooltip": ""
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Para yatırma ön izlemesi",
@@ -1441,6 +1595,7 @@
     },
     "errorMessage": {
       "insufficientFunds": "Transfer ve gaz ücretlerini karşılamak için yetersiz bakiye. Maksimum transfer tutarı {{maxAmount}}.",
+      "maximumAmount": "",
       "minimumAmount": "Minimum transfer tutarı {{minAmount}}.",
       "zeroAmount": "Lütfen sıfırdan farklı bir tutar girin"
     },
@@ -1509,12 +1664,16 @@
     "title": "Doğrulama"
   },
   "transferInsufficientBalancePage": {
+    "gasAndBalanceTitle": "",
     "gasBody": "{{network}} ağı için gaz ücretleri {{symbol}} olarak ödenmektedir. Lütfen {{symbol}} bakiyenizi tamamlayın ve bu işlemi tekrar deneyin.",
     "gasTitle": "Yetersiz gaz bakiyesi",
+    "insufficientGasFeeDescription": "",
     "noBalanceBody": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi tamamlayın ve tekrar deneyin.",
+    "noBalanceOnSpecificNetwork": "",
     "noBalanceTitle": "Bakiye yok",
     "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
     "title": "Yetersiz bakiye",
+    "toppedUpWalletQuestion": "",
     "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz."
   },
   "transferMfaPage": {
@@ -1588,6 +1747,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}, <3>{{requestedNetworkName}}</3> adresinin <6>{{truncatedRequestedAddress}}</6> sahipliğini doğrulamanızı istiyor. Bu adres bağlı cüzdana ait değil. Lütfen başka bir cüzdan bağlayın.",
+    "body40": "",
     "connectAnotherAction": "Başka bir cüzdan bağla",
     "title": "Eyvah!"
   },
@@ -1597,6 +1757,8 @@
   },
   "verifyErrorPage": {
     "body": "Cüzdanınızdaki imza talebini reddettiniz veya önceki bir talep hâlâ aktif. {{clientName}}, bir imza olmadan cüzdanınızın sahipliğini doğrulayamıyor.",
+    "body40": "",
+    "timeout": "",
     "title": "Doğrulama reddedildi"
   },
   "wallectConnect": {
@@ -1605,6 +1767,7 @@
     "unknownError": "Bilinmeyen bir hata oluştu. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "",
     "completePaymentMessage": "{{clientName}} satın alımınızı tamamlamak için ödeme ekranınıza geri dönün.",
     "continueMessage": "Lütfen {{clientName}} uygulamanızda devam edin.",
     "successMessage": "{{walletName}} cüzdanınızın sahipliğini başarılı bir şekilde doğruladınız."

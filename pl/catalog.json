@@ -21,20 +21,55 @@
     "amountMustBeWithin": "Kwota musi mieścić się w przedziale {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Kwota musi mieścić się w przedziale od 21 do 15.000 USD",
     "buyCrypto": "Kup kryptowaluty za pomocą Binance Connect",
+    "cashEquivalent": "",
     "closeButton": "Zamknij",
+    "continueInBinance": "",
     "continueTo": "Przejdź do {{selectedIntegrationName}}",
+    "cryptoAmount": "",
+    "descriptionDeposit": "<0>Return here to deposit</0> after connecting with your Binance mobile app.",
     "enterAmount": "Wprowadź kwotę transferu",
+    "mobileLabelOnramp": "",
     "notSupported": "{{selectedIntegrationName}} nie obsługuje przelewów dla wybranych tokenów i/lub sieci.",
+    "openBinance": "",
     "receiveAmountInput": {
       "networkName": "na {{networkName}}"
     },
+    "scanText": "",
     "selectAnotherAccount": "Wybierz inne konto",
     "selectAnotherExchange": "Wybierz inną giełdę lub portfel do wpłaty.",
     "selectAsset": "Wybierz aktywo do transferu",
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
+    "transactionRequest": "",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz"
+  },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Wygląda na to, że nie zatwierdziłeś prośby. Jeśli to był błąd, spróbuj ponownie.",
+    "title": "Ups!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Nie otrzymaliśmy odpowiedzi na czas. Proszę spróbować ponownie",
+    "title": "Żądanie wygasło"
+  },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Kontynuuj w aplikacji Binance",
+    "descriptionDeposit": "<1>Wróć tutaj, aby wpłacić</1> po połączeniu się z aplikacją mobilną Binance.",
+    "descriptionGeneral": "<1>Wróć tutaj, aby kontynuować</1> po połączeniu z aplikacją mobilną Binance.",
+    "descriptionOnRamp": "<1>Wróć tutaj, aby kontynuować</1> po połączeniu z aplikacją mobilną Binance.",
+    "descriptionPay": "<1>Wróć tutaj, aby zapłacić</1> po połączeniu z aplikacją mobilną Binance.",
+    "loginWithEmailButton": "Zaloguj się za pomocą e-maila/telefonu",
+    "or": "lub",
+    "scanText": "Zeskanuj kod za pomocą aparatu telefonu lub aplikacji Binance, aby zalogować się.",
+    "title": "Zaloguj się"
+  },
+  "binanceDirectPasswordPage": {
+    "emailPhoneInput": "",
+    "invalidEmail": "",
+    "nextButton": "",
+    "passwordInput": "",
+    "titleStep1": "",
+    "titleStep2": ""
   },
   "binanceMfaPage": {
     "add2fa": "Proszę dodać wymagane metody uwierzytelniania dwuskładnikowego (2FA) w Binance",
@@ -60,25 +95,6 @@
     },
     "title": "Zresetuj hasło"
   },
-  "binanceDirectLoginPage": {
-    "continueWithAppButton": "Kontynuuj w aplikacji Binance",
-    "descriptionDeposit": "<1>Wróć tutaj, aby wpłacić</1> po połączeniu się z aplikacją mobilną Binance.",
-    "descriptionGeneral": "<1>Wróć tutaj, aby kontynuować</1> po połączeniu z aplikacją mobilną Binance.",
-    "descriptionOnRamp": "<1>Wróć tutaj, aby kontynuować</1> po połączeniu z aplikacją mobilną Binance.",
-    "descriptionPay": "<1>Wróć tutaj, aby zapłacić</1> po połączeniu z aplikacją mobilną Binance.",
-    "loginWithEmailButton": "Zaloguj się za pomocą e-maila/telefonu",
-    "or": "lub",
-    "scanText": "Zeskanuj kod za pomocą aparatu telefonu lub aplikacji Binance, aby zalogować się.",
-    "title": "Zaloguj się"
-  },
-  "binanceDirectLoginConnectionDeniedPage": {
-    "body": "Wygląda na to, że nie zatwierdziłeś prośby. Jeśli to był błąd, spróbuj ponownie.",
-    "title": "Ups!"
-  },
-  "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "Nie otrzymaliśmy odpowiedzi na czas. Proszę spróbować ponownie",
-    "title": "Żądanie wygasło"
-  },
   "bindFacePage": {
     "completedButton": "Ukończone na telefonie",
     "linkText": "Jeśli nie możesz zeskanować kodu QR, skorzystaj z tego <2><0>linku</0></2>.",
@@ -100,32 +116,33 @@
     "select": "Wybierz {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} nie jest obsługiwane na tym typie urządzenia.",
-    "sdkVersionNotSupported": "Mechanizm TrueAuth {{integrationName}} nie jest obsługiwany dla tego kontekstu SDK: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
-    "travelRuleVaspIdRequired": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
-    "travelRuleAmountLimit": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje transferów dla żadnej z danych kombinacji token/sieć.",
+    "integrationNotSupportedCountry": "{{integrationName}} nie jest dostępne w Twoim regionie.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje tego tokena ani sieci.",
     "lessThanIntegrationMinAmount": "Żądana kwota jest poniżej minimalnej kwoty {{integrationName}}.",
     "moreThanIntegrationMaxAmount": "Żądana kwota przekracza maksymalny próg brokera {{integrationName}}.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje tego tokena ani sieci.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje transferów dla żadnej z danych kombinacji token/sieć.",
-    "integrationNotSupportedCountry": "{{integrationName}} nie jest dostępne w Twoim regionie."
+    "platformNotSupported": "{{integrationName}} nie jest obsługiwane na tym typie urządzenia.",
+    "sdkVersionNotSupported": "Mechanizm TrueAuth {{integrationName}} nie jest obsługiwany dla tego kontekstu SDK: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
+    "travelRuleVaspIdRequired": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji."
   },
   "catalogList": {
     "badges": {
       "api": "API",
       "connected": "Połączono",
       "installed": "Zainstalowano",
+      "lastUsed": "",
       "linked": "Wcześniej powiązany"
     },
+    "emptyCatalogBody": "Może to wynikać z Twojej lokalizacji, wymagań zgodności lub kompatybilności urządzenia.",
+    "emptyCatalogTitle": "Brak dostępnych portfeli i giełd",
     "noResults": "Przykro nam, nie znaleźliśmy żadnych wyników",
     "paymentTitle": "Wybierz konto do płatności",
     "prodOnly": "Tylko produkcja",
     "search": "szukaj",
     "title": "Wybierz konto do połączenia",
-    "title40": "Wybierz swoje konto",
-    "emptyCatalogTitle": "Brak dostępnych portfeli i giełd",
-    "emptyCatalogBody": "Może to wynikać z Twojej lokalizacji, wymagań zgodności lub kompatybilności urządzenia."
+    "title40": "Wybierz swoje konto"
   },
   "catalogTile": {
     "select": "Wybierz {{integrationName}}, {{badge}}"
@@ -165,21 +182,23 @@
     "availableForTransfer": "Dostępne",
     "cancel": "Anuluj",
     "chooseDifferentAccount": "Wybierz inne konto",
+    "chooseDifferentNetwork": "",
     "closeCap": "Zamknij",
     "codeNotCorrent": "Podany kod jest niepoprawny.",
     "connectAnotherAccount": "Połącz inne konto",
     "continueCap": "Kontynuuj",
     "doneCap": "Gotowe",
     "failedToLoadTrasferError": "Nie udało się załadować informacji o transferze",
+    "freeCap": "",
     "genericConnectErrorMessage": "Nie udało się połączyć z twoją integracją",
     "maxCap": "Maks",
     "mesh": "Mesh",
     "notFound": "Nie znaleziono",
+    "processingCap": "Przetwarzanie",
     "reconnectYourAccount": "Połącz ponownie swoje konto",
     "searchCap": "Szukaj",
     "securedBy": "Zabezpieczone przez",
     "sendingCap": "Wysyłanie",
-    "processingCap": "Przetwarzanie",
     "somethingWentWrong": "Coś poszło nie tak...",
     "submitCap": "Wyślij",
     "successTitle": "Formularz został wysłany!",
@@ -192,7 +211,7 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zaakceptuj żądanie, aby kontynuować.",
-    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
+    "title": "Autoryzuj prośbę\u00a0o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
@@ -222,6 +241,13 @@
   "currencyBox": {
     "changeCurrency": "Zmiana waluty"
   },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "",
+    "depositSuccess": "",
+    "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
+    "paymentSubtitle": "",
+    "paymentSuccess": ""
+  },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Wygląda na to, że odrzuciłeś żądanie połączenia lub wcześniejsze żądanie jest nadal aktywne. Jeśli to był błąd, spróbuj ponownie.",
     "title": "Ups!"
@@ -241,6 +267,16 @@
   },
   "deFiWalletInitialPage": {
     "continue": "Kontynuuj do {{walletName}}",
+    "dappPage": {
+      "continueButton": "",
+      "depositTitle": "",
+      "payTitle": "",
+      "qrSubtitle": "",
+      "spinnerTransactionText": "",
+      "spinnerVerifyText": "",
+      "subtitle": "",
+      "verifyWalletTitle": ""
+    },
     "previewButton": "Połącz",
     "previewTitle": "Połącz konto",
     "subtitle": "Kliknij poniżej, aby otworzyć {{walletName}}. Następnie zatwierdź prośbę o połączenie, aby wyświetlić podgląd płatności.",
@@ -251,6 +287,7 @@
     "declinedTitle": "Połączenie odrzucone",
     "description": "Otwórz {{selectedIntegrationName}} i zeskanuj<3></3>kod QR, aby połączyć konto",
     "qrCodeLabel": "Kod QR można zeskanować na urządzeniu mobilnym, aby nawiązać połączenie",
+    "scanInstruction": "",
     "title": "Połącz się z {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -264,6 +301,11 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} nie jest zainstalowany na tym urządzeniu. Proszę zainstalować aplikację {{integrationName}} lub podłącz inny portfel.",
     "title": "Połączenie niedostępne"
+  },
+  "depositFallback": {
+    "description": "Nie martw się... sfinalizujemy twoją transakcję za pomocą alternatywnej metody wypłaty {{integrationName}}.",
+    "instruction": "Kliknij Podgląd transferu, aby przejrzeć i sfinalizować swoją transakcję.",
+    "previewButton": "Podgląd transferu"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Oczekiwanie na potwierdzenie z aplikacji mobilnej",
@@ -379,6 +421,7 @@
     "configurationMismatch": "Błąd konfiguracji",
     "emptyWalletBalance": "Pusty portfel",
     "exceedsApplicationLimit": "Przekroczono limit aplikacji",
+    "existingApiKey": "",
     "expiredSmartDeposit": "Transakcja wygasła",
     "faceVerificationFailed": "Weryfikacja twarzy nie powiodła się",
     "failedToGetFundingOptions": "Błąd przy pobieraniu dostępnych metod wpłaty",
@@ -396,6 +439,7 @@
     "invalidToIntegrationToken": "Uwierzytelnienie wygasło",
     "kycRequired": "Wymagane KYC",
     "locked": "Konto zablokowane",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "MFA nieobsługiwane",
     "missingField": "Brakujące pole",
     "networkDisabled": "Sieć jest wyłączona",
@@ -427,6 +471,7 @@
     "toAccountNotSupported": "Wpłaty na to konto nie są obsługiwane",
     "tooManyRequests": "Przekroczono limit żądań",
     "transferAlreadyRequested": "Transfer został już zlecony",
+    "travelRuleRestriction": "",
     "tryAgainAfterLogin": "Wymagane logowanie",
     "twoFaFailed": "Nieprawidłowy kod 2FA",
     "unableToSend": "Nie udało się wykonać transferu",
@@ -445,6 +490,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Wymagany czas oczekiwania na wypłatę"
   },
   "errorMessages": {
+    "accountDisabled": "",
+    "accountLocked": "",
     "accountNotFound": "Nie udało się odzyskać Twojego konta.",
     "addressAllowlistPending": "Adres odbiorcy został dodany do listy dozwolonych i oczekuje na zatwierdzenie.",
     "addressNotAllowlisted": "Nie udało się zainicjować wypłaty z Coinbase. Musisz dodać ten adres odbiorcy do listy dozwolonych tutaj: https://www.coinbase.com/settings/allowlist",
@@ -464,8 +511,10 @@
     "coinbaseUnavailable": "Wystąpił błąd Coinbase. Sprawdź swoje konto CB, aby sprawdzić, czy transfer został zrealizowany.",
     "configurationMismatch": "Nie można zainicjować transferu. Konfiguracja konta nie odpowiada żądanemu transferowi.",
     "default": "Wystąpił błąd.",
+    "emailCodeExpired": "",
     "emptyWalletBalance": "Brak środków na portfelu źródłowym.",
     "exceedsApplicationLimit": "Kwota transferu przekracza limit aplikacji.",
+    "existingApiKey": "",
     "expiredSmartDeposit": "Transakcja wygasła",
     "expiredSmartDepositDeposit": "Smart Deposit wygasł",
     "expiredSmartOnramp": "Zakup wygasł",
@@ -475,13 +524,24 @@
     "failedToSaveFundingOptions": "Nie udało się zapisać metod płatności",
     "feeAssetBalanceNotEnough": "Niewystarczające środki na opłaty transferowe.",
     "fromAccountNotSupported": "Konto nie obsługuje obecnie wypłat w kryptowalutach.",
+    "incorrect2faCode": "",
+    "incorrectEmail": "",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_few": "",
+    "incorrectPasswordChancesRemaining_many": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
     "invalidCredentials": "Nieprawidłowe dane logowania. Proszę spróbować ponownie.",
     "invalidFromIntegrationToken": "Proszę zalogować się ponownie, aby kontynuować.",
     "invalidIntegrationToken": "Proszę zalogować się ponownie, aby kontynuować.",
+    "invalidPhoneNumber": "",
     "invalidToIntegrationToken": "Proszę zalogować się ponownie, aby kontynuować.",
     "kycRequired": "Nie można zainicjować transferu. Integracja wymaga ukończenia weryfikacji KYC na koncie przed włączeniem transferów kryptowalut.",
     "locked": "Twoje konto jest zablokowane",
+    "loginFirst": "",
+    "loginWithQrOrMobileLink": "",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "Uwierzytelnianie wieloskładnikowe nie jest obsługiwane dla tej operacji.",
     "networkDisabled": "Sieć jest obecnie wyłączona i nie może być używana.",
     "noAvailableSmartContract": "Brak dostępnych Smart Contract'ów",
@@ -493,7 +553,11 @@
     "passKeyNotSupportedPayment": "Niestety, Passkey 2FA nie jest obecnie obsługiwane. Proszę dodać Google Authenticator jako dodatkowe 2FA i spróbować ponownie dokonać płatności.",
     "passKeyNotSupportedRedirect": "Przekierowywanie do alternatywnej metody wypłaty w Coinbase...",
     "permissionDenied": "Nie masz niezbędnych uprawnień do dostępu do tego punktu końcowego, proszę skontaktować się z zespołem Mesh, aby uzyskać dostęp.",
+    "pleaseLogin": "",
+    "pleaseTryAgain": "",
+    "pleaseTryAgainIn1Hour": "",
     "previewExpired": "Podgląd wygasł.",
+    "qrOrMobileLinkIn24Hours": "",
     "refusedByIntegration": "Nie można zainicjować transferu.",
     "refusedByIntegrationDeposit": "Nie można zainicjować depozytu.",
     "refusedByIntegrationOnramp": "Nie można zainicjować zakupu.",
@@ -507,14 +571,18 @@
     "symbolNotSupportedByTarget": "Nie udało się znaleźć adresu do wpłaty dla wybranej kryptowaluty.",
     "symbolNotSupportedInRegion": "Wybrany symbol nie jest obsługiwany przez Coinbase z powodu ograniczeń regionalnych.",
     "toAccountNotSupported": "Konto docelowe nie obsługuje obecnie wpłat w kryptowalutach.",
+    "tooManyAttemptsOneMinute": "",
     "tooManyRequests": "Proszę spróbować ponownie później.",
     "transferAlreadyRequested": "Transfer już jest zlecony.",
+    "travelRuleRestriction": "",
+    "travelRuleRestrictionPayment": "",
     "tryAgainAfterLogin": "Proszę spróbować ponownie po zalogowaniu.",
     "twoFaFailed": "Dwustopniowa weryfikacja się nie powiodła. Proszę spróbować ponownie.",
     "unableToSend": "Nie udało się wysłać transferu. Proszę spróbować ponownie.",
     "unableToSendContactSupport": "Obecnie nie możesz wysłać krypto. Proszę skontaktować się ze wsparciem Coinbase.",
     "unauthorizedToken": "Proszę zalogować się ponownie, aby kontynuować.",
     "userInfoUnavailable": "Nie udało się pobrać informacji o użytkowniku. Proszę spróbować ponownie.",
+    "verificationFailed": "",
     "webWithdrawalLimitExceeded": "Przekroczono maksymalny dzienny limit wypłat dla Binance.",
     "whitelistAddressRequired": "Adres docelowy musi być dodany do białej listy.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Dla bezpieczeństwa Twoich środków część wpłat C2C zostanie zamrożona na 24 godziny. Po 24 godzinach blokada zostanie automatycznie zniesiona i będzie można wypłacić kryptowaluty. W trakcie zamrożenia transakcje na platformie będą działać normalnie, więc możesz korzystać z usług Binance bez przeszkód.",
@@ -577,6 +645,7 @@
     "title": "Weryfikacja"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "",
     "gasFeeDescription": "Szacowany koszt kompensacji walidatorów sieci za przetworzenie transakcji.",
     "institutionFeeDescription": "Ta opłata pokrywa koszt sieciowy za przetwarzanie wypłaty. Zależy ona od wybranej kryptowaluty oraz aktualnych warunków blockchain.",
     "processingFee": "Opłata za przetwarzanie {{clientName}}",
@@ -629,6 +698,8 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -741,6 +812,15 @@
     "body": "{{clientName}} używa Mesh aby umożliwić bezpieczne połączenie z {{selectedIntegrationName}}.",
     "connectAction": "Połącz się z {{selectedIntegrationName}}"
   },
+  "homePage": {
+    "guaranteed": "",
+    "noExtraFee": "",
+    "secureDeposit": "",
+    "sendFunds": "",
+    "sendUsingQR": "",
+    "standardDeposit": "",
+    "title": ""
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Żądana kwota transferu {{requestedAmount}} jest niższa niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
     "balanceBelowIntegrationMinimumDescription": "Twój saldo w wysokości {{currentBalance}} jest poniżej minimalnej kwoty {{minimumAmount}} w {{integrationName}} dla transferu {{symbol}} w sieci {{network}}. Proszę doładować saldo i spróbować ponownie.",
@@ -769,8 +849,8 @@
     "notSupportedForTransferBySource": "Nieobsługiwane przez {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} w sieci {{network}} nie jest akceptowany do tego transferu z powodu ograniczeń wsparcia NY multi-chain.",
     "symbolDoesNotMatch": "Nieobsługiwane przez {{clientName}}",
-    "symbolDoesNotMatchNoClientName": "Nieobsługiwane przez tę aplikację",
-    "symbolDoesNotMatchDescription": "{{symbol}} nie jest akceptowany dla tego transferu."
+    "symbolDoesNotMatchDescription": "{{symbol}} nie jest akceptowany dla tego transferu.",
+    "symbolDoesNotMatchNoClientName": "Nieobsługiwane przez tę aplikację"
   },
   "initialLedgerScreen": {
     "title": "Włącz i odblokuj swoje urządzenie"
@@ -789,6 +869,8 @@
     "thirdParty": "Twoje środki nigdy nie trafiają do osób trzecich"
   },
   "initialVerifyPage": {
+    "approveSignature": "",
+    "approveSignatureStillThere": "",
     "content40": "Potwierdź, że jesteś właścicielem tego portfela",
     "drawerTitle": "Zatwierdź prośbę o podpis<1></1> w swoim portfelu",
     "item1Body": "Zostaniesz poproszony o podpisanie wiadomości w {{selectedIntegrationName}}, co potwierdzi, że jesteś właścicielem tego portfela.",
@@ -800,6 +882,23 @@
     "title": "Prawie gotowe!",
     "verifyAction": "Zweryfikuj adres",
     "verifyingLabel": "Weryfikowanie podpisu..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "",
+    "paymentFlowSubtitle": "",
+    "title": "",
+    "verifyFlowSubtitle": ""
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "subtitle": "",
+    "title": ""
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "",
+    "subtitleAlreadyDenied": "",
+    "subtitleInitial": "",
+    "titleAlreadyDenied": "",
+    "titleInitial": ""
   },
   "ipWhiteListPage": {
     "addIp": "Dodaj poniższy adres IP do listy zaufanych adresów IP",
@@ -908,8 +1007,13 @@
     "twoFactor": "Podaj kod wygenerowany przez metodę uwierzytelniania dwuskładnikowego, którą skonfigurowałeś na koncie <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
+    "codeSentEmail": "",
+    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
+    "codeSentPhone": "",
     "enterCode": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty próbujesz się zalogować.<1></1>",
+    "enterCode2": "<0>Enter the code from your authenticator app.</0>",
     "enterPin": "Wpisz swój kod PIN do transakcji",
+    "enterVerificationCode": "",
     "title": "Weryfikacja",
     "verify": "Zweryfikuj"
   },
@@ -956,13 +1060,13 @@
     "returnToClient": "Wróć do {{clientName}} po zatwierdzeniu prośby o połączenie w {{selectedIntegrationName}}.",
     "sendAgain": "Wyślij ponownie",
     "sendNewRequest": "Wyślij nową prośbę",
-    "troubleshootTitle": "Nie otrzymałeś żądania?",
-    "troubleshootExchangeMode": "Upewnij się, że jesteś w trybie wymiany, a nie w portfelu.",
     "steps": {
       "authorize": "Kliknij <1>Autoryzuj</1> na stronie potwierdzenia.",
       "openApp": "Kliknij poniżej <1>Otwórz aplikację {{selectedIntegrationName}}</1>.",
       "return": "Wróć tu, aby zakończyć powiązanie konta."
-    }
+    },
+    "troubleshootExchangeMode": "Upewnij się, że jesteś w trybie wymiany, a nie w portfelu.",
+    "troubleshootTitle": "Nie otrzymałeś żądania?"
   },
   "mobileContent": {
     "actionButton": "Otwórz {{integrationName}}"
@@ -976,6 +1080,8 @@
     "description": "Poniższe sieci to wszystkie bezpieczne i kompatybilne opcje dla tej płatności. Automatycznie wybraliśmy dla Ciebie sieć z najniższą opłatą.",
     "estimatedGasFeeLabel": "Szacunkowa opłata za gaz:",
     "lowestFeeLabel": "Najniższa opłata",
+    "mostPopular": "",
+    "subtitle": "",
     "title": "Wybierz sieć"
   },
   "nonOAuthPermissionsPage": {
@@ -1001,9 +1107,9 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Ponownie otwórz {{selectedIntegrationName}}",
+      "note": "Kontynuuj na {{selectedIntegrationName}}, aby zakończyć swój depozyt",
       "subtitle": "Proszę zakończyć logowanie i zatwierdzić dostęp w przeglądarce.",
-      "title": "Oczekiwanie na połączenie",
-      "note": "Kontynuuj na {{selectedIntegrationName}}, aby zakończyć swój depozyt"
+      "title": "Oczekiwanie na połączenie"
     },
     "checking": {
       "message": "Sprawdzanie twoich środków..."
@@ -1073,11 +1179,13 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "Kwota musi mieścić się w przedziale {{minAmount}} - {{maxAmount}}",
     "amountMustBeWithinErrorMessage": "Kwota musi mieścić się w przedziale od 21 do 15.000 USD",
+    "buildingYourPreview": "Tworzenie podglądu...",
     "buyCrypto": "Kup kryptowaluty za pomocą Binance Connect",
     "closeButton": "Zamknij",
     "continueTo": "Przejdź do {{selectedIntegrationName}}",
     "enterAmount": "Wprowadź kwotę transferu",
     "notSupported": "{{selectedIntegrationName}} nie obsługuje przelewów dla wybranych tokenów i/lub sieci.",
+    "Processing": "Przetwarzanie...",
     "receiveAmountInput": {
       "networkName": "na {{networkName}}"
     },
@@ -1087,22 +1195,17 @@
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
     "unsupportedCurrencyError": "Wybrana waluta jest nieobsługiwana dla onramp w Twoim kraju.",
-    "buildingYourPreview": "Tworzenie podglądu...",
-    "Processing": "Przetwarzanie...",
+    "unsupportedPair": "Ta para sieć/symbol nie jest obecnie obsługiwana. Proszę wybrać inny.",
     "youPay": "Płacisz",
-    "youReceive": "Otrzymujesz",
-    "unsupportedPair": "Ta para sieć/symbol nie jest obecnie obsługiwana. Proszę wybrać inny."
+    "youReceive": "Otrzymujesz"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "",
+    "conversionFee": "",
     "merchantInfoName": "Sprzedający: {{clientName}}",
+    "paymentToClient": "Płatność dla {{clientName}}",
     "title": "Podsumowanie zamówienia",
-    "totalLabel": "Całkowita suma",
-    "paymentToClient": "Płatność dla {{clientName}}"
-  },
-  "depositFallback": {
-    "description": "Nie martw się... sfinalizujemy twoją transakcję za pomocą alternatywnej metody wypłaty {{integrationName}}.",
-    "instruction": "Kliknij Podgląd transferu, aby przejrzeć i sfinalizować swoją transakcję.",
-    "previewButton": "Podgląd transferu"
+    "totalLabel": "Całkowita suma"
   },
   "passwordPage": {
     "fieldError": "Wprowadź swój {{field}}",
@@ -1115,6 +1218,36 @@
       "qrCode": "Kod QR"
     },
     "title": "Zaloguj się"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "",
+      "depositWithWalletAddress": "",
+      "dontSeeYourAccount": "",
+      "needAnotherWay": ""
+    },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
+    "networkSelection": {
+      "subtitle": "",
+      "title": ""
+    },
+    "screen": {
+      "copiedWalletAddress": "",
+      "copyWalletAddress": "",
+      "depositToClient": "",
+      "downloadQr": "",
+      "headline": "",
+      "networkLabel": "",
+      "tokenLabel": "",
+      "warning": ""
+    },
+    "tokenSelection": {
+      "subtitle": "",
+      "title": ""
+    }
   },
   "paymentMethods": {
     "bankAccount": "Konto bankowe",
@@ -1131,6 +1264,126 @@
     "title": "Aktualizacja statusu płatności",
     "topUp": "Doładuj saldo {{token}}"
   },
+  "paypal": {
+    "brokerLoading": {
+      "preparingPayment": "Przygotowywanie szczegółów płatności"
+    },
+    "common": {
+      "cancel": "Anuluj",
+      "change": "Zmień",
+      "close": "Zamknij",
+      "continue": "Kontynuuj",
+      "done": "Gotowe",
+      "ok": "OK",
+      "order": "Zamówienie",
+      "pay": "Zapłać",
+      "save": "Zapisz",
+      "stillWorking": "Przetwarzanie w toku...",
+      "total": "Łącznie",
+      "tryAgain": "Spróbuj ponownie"
+    },
+    "connectionPage": {
+      "approveConnection": "Zatwierdź prośbę o połączenie w swoim portfelu",
+      "continueTo": "Kontynuuj do {{integrationName}}",
+      "oauthLogin": "Zaloguj się na swoje konto i zezwól na dostęp"
+    },
+    "doneTransferPage": {
+      "description": "Właśnie zapłaciłeś {{amount}}. Otrzymasz potwierdzenie od {{clientName}} po jego zakończeniu.",
+      "disclaimer": "Transfery nie są zakończone, dopóki nie otrzymają wystarczającej liczby potwierdzeń w sieci.",
+      "seeDetails": "Dowiedz się, co się stało",
+      "title": "Płatność w drodze"
+    },
+    "exitPage": {
+      "continuePayment": "Dalej do płatności",
+      "exit": "Wyjście",
+      "exitAnyway": "",
+      "subtitle": "Twoje postępy zostaną utracone.",
+      "title": "Czy na pewno chcesz wyjść?"
+    },
+    "fundingOptions": {
+      "available": "Dostępne: {{amount}}",
+      "balances": "Salda",
+      "buyingPower": "Zdolność zakupowa",
+      "exchangeRateDisclaimer": "Kurs wymiany może zawierać marżę.",
+      "instantCashAvailable": "Dostępna natychmiastowa gotówka: {{amount}}",
+      "linkedPaymentMethods": "Połączone metody płatności",
+      "paymentMethodTypes": {
+        "bankAccount": "Konto bankowe",
+        "card": "Karta",
+        "digitalWallet": "Cyfrowy portfel"
+      },
+      "title": "Opcje finansowania",
+      "total": "Łącznie {{amount}}"
+    },
+    "fundingSteps": {
+      "approval": "Zatwierdzenie twojego transferu z {{integrationName}}",
+      "conversion": "Przeliczanie {{amount}} na {{currency}}",
+      "deposit": "Wpłata {{amount}} z {{paymentMethod}}",
+      "errorMessage": "Wystąpił błąd. Spróbuj ponownie",
+      "purchase": "Zakup {{amount}} {{symbol}}",
+      "transfer": "Przelew {{symbol}} na zakup"
+    },
+    "infoScreen": {
+      "rule1": "Twoje dane nigdy nie są przechowywane. Dostęp wygaśnie po tej płatności.",
+      "rule2": "Użyj swojego krypto, sprawdź szczegóły i zatwierdź płatność.",
+      "rule3": "Automatyczna konwersja ułatwia sprawę.",
+      "title": "Zaloguj się, aby przejrzeć szczegóły płatności"
+    },
+    "previewPage": {
+      "bufferAndFees": "{{bufferAmount}} Bufor + {{feesAmount}} opłat wliczonych",
+      "bufferDisclaimer": "Zachowasz niewykorzystany bufor.",
+      "conversionFee": "Opłata za konwersję w {{integrationName}}",
+      "conversionFeeHint": "Tę opłatę pobiera {{integrationName}} za konwersję.",
+      "estimatedNetworkFee": "Szacowana opłata sieciowa",
+      "feeChangedNotice": "Opłata sieciowa uległa zmianie. Sprawdź sumę i potwierdź.",
+      "feesIncluded": "{{amount}} opłat wliczonych",
+      "from": "Z {{integrationName}}",
+      "howItWorks": "Jak to działa",
+      "merchantPurchase": "Zakup od {{merchantName}}",
+      "networkFeeHint": "Pomaga przenieść transakcję na blockchain, pokrywając koszty dla walidatorów sieci, którzy ją przetwarzają",
+      "payWith": "Zapłać z",
+      "pyusdDisclaimer": "Transakcja zostanie zakończona za pomocą PayPal USD (PYUSD), który jest stablecoinem wydanym i nadzorowanym przez Paxos Trust Company, LLC. PYUSD działa na blockchain.",
+      "refundDisclaimer": "Zwroty zostaną zrealizowane tylko w {{settlementCurrency}}. Kurs wymiany i opłaty często się zmieniają. Wszystkie zakupy krypto są ostateczne.",
+      "send": "Wyślij",
+      "title": "Zapłać {{merchantName}}",
+      "transactionBuffer": "Bufor transakcji",
+      "transactionBufferHint": "Ta kwota jest dodawana, aby pomóc w realizacji zakupu, nawet jeśli ceny krypto się zmienią. Może to pozostawić trochę {{settlementCurrency}} w twoim portfelu."
+    },
+    "sessionExpiredPage": {
+      "description": "",
+      "retry": "",
+      "title": ""
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje mają umożliwić komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") poprzez Usługę Końcowego Użytkownika, w tym przesyłanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Końcowego Użytkownika opierają się na Narzędziu; że korzystanie z takich funkcji odbywa się na twoje polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Końcowego Użytkownika lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że masz wszystkie niezbędne prawa i zgody na połączenie i dostęp do każdego Połączonego Konta poprzez takie funkcje, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub ciebie osobiście dla każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
+    },
+    "termsOfUse": {
+      "linkText": "warunki użytkowania",
+      "text": "Kontynuując, akceptujesz"
+    },
+    "topupPage": {
+      "assetsDescription": "Wartość aktywów przeliczonych na {{targetSymbol}} jest niższa od oczekiwanej z powodu wahań cen i/lub opłat sieciowych.",
+      "conversionDescription": "Wartość konwersji z {{convertedSymbol}} na {{targetSymbol}} jest niższa od oczekiwanej z powodu wahań cen i/lub opłat sieciowych.",
+      "currentBalance": "Aktualne saldo",
+      "disclaimer": "Jeżeli nie zakończysz płatności, saldo {{targetSymbol}} pozostanie na Twoim koncie {{integrationName}}.",
+      "required": "Wymagane",
+      "title": "Doładowanie potrzebne",
+      "viewTopUp": "Zobacz doładowanie"
+    },
+    "transferErrorPage": {
+      "belowNetworkMinimumMessage": "Ta kwota zakupu jest poniżej minimalnego limitu wymiany na koncie. Połącz inne konto, aby dokończyć zakup.",
+      "chooseDifferentAccount": "Wybierz inne konto",
+      "defaultMessage": "Twoje fundusze pozostaną na twoim koncie {{integrationName}}.",
+      "defaultTitle": "Nie możemy przetworzyć tej płatności",
+      "insufficientFunds": "Niewystarczające środki",
+      "insufficientFundsMessage": "Twoje saldo jest zbyt niskie, aby dokończyć ten zakup.",
+      "requestDenied": "Żądanie odrzucone",
+      "requestDeniedMessage": "Wygląda na to, że odmówiłeś transakcji. Jeśli to błąd, spróbuj ponownie i zatwierdź prośbę w swoim portfelu."
+    },
+    "walletConfirmation": {
+      "title": "Potwierdź tę transakcję w aplikacji {{integrationName}}"
+    }
+  },
   "payPalConnectOAuthPage": {
     "close": "Zamknij",
     "continue": "Kontynuuj do {{selectedIntegrationName}}",
@@ -1140,120 +1393,6 @@
     "selectAnotherExchange": "Proszę wybrać inną giełdę lub portfel, z którego chcesz dokonać wpłaty.",
     "selectNetwork": "Wybierz sieć transferu",
     "title": "Wybierz aktywo do transferu"
-  },
-  "paypal": {
-    "common": {
-      "cancel": "Anuluj",
-      "done": "Gotowe",
-      "continue": "Kontynuuj",
-      "save": "Zapisz",
-      "close": "Zamknij",
-      "tryAgain": "Spróbuj ponownie",
-      "ok": "OK",
-      "pay": "Zapłać",
-      "total": "Łącznie",
-      "order": "Zamówienie",
-      "change": "Zmień",
-      "stillWorking": "Przetwarzanie w toku..."
-    },
-    "topupPage": {
-      "title": "Doładowanie potrzebne",
-      "currentBalance": "Aktualne saldo",
-      "required": "Wymagane",
-      "viewTopUp": "Zobacz doładowanie",
-      "disclaimer": "Jeżeli nie zakończysz płatności, saldo {{targetSymbol}} pozostanie na Twoim koncie {{integrationName}}.",
-      "conversionDescription": "Wartość konwersji z {{convertedSymbol}} na {{targetSymbol}} jest niższa od oczekiwanej z powodu wahań cen i/lub opłat sieciowych.",
-      "assetsDescription": "Wartość aktywów przeliczonych na {{targetSymbol}} jest niższa od oczekiwanej z powodu wahań cen i/lub opłat sieciowych."
-    },
-    "doneTransferPage": {
-      "title": "Płatność w drodze",
-      "description": "Właśnie zapłaciłeś {{amount}}. Otrzymasz potwierdzenie od {{clientName}} po jego zakończeniu.",
-      "seeDetails": "Dowiedz się, co się stało",
-      "disclaimer": "Transfery nie są zakończone, dopóki nie otrzymają wystarczającej liczby potwierdzeń w sieci."
-    },
-    "exitPage": {
-      "title": "Czy na pewno chcesz wyjść?",
-      "subtitle": "Twoje postępy zostaną utracone.",
-      "continuePayment": "Dalej do płatności",
-      "exit": "Wyjście"
-    },
-    "infoScreen": {
-      "title": "Zaloguj się, aby przejrzeć szczegóły płatności",
-      "rule1": "Twoje dane nigdy nie są przechowywane. Dostęp wygaśnie po tej płatności.",
-      "rule2": "Użyj swojego krypto, sprawdź szczegóły i zatwierdź płatność.",
-      "rule3": "Automatyczna konwersja ułatwia sprawę."
-    },
-    "transferErrorPage": {
-      "insufficientFunds": "Niewystarczające środki",
-      "requestDenied": "Żądanie odrzucone",
-      "defaultTitle": "Nie możemy przetworzyć tej płatności",
-      "insufficientFundsMessage": "Twoje saldo jest zbyt niskie, aby dokończyć ten zakup.",
-      "belowNetworkMinimumMessage": "Ta kwota zakupu jest poniżej minimalnego limitu wymiany na koncie. Połącz inne konto, aby dokończyć zakup.",
-      "requestDeniedMessage": "Wygląda na to, że odmówiłeś transakcji. Jeśli to błąd, spróbuj ponownie i zatwierdź prośbę w swoim portfelu.",
-      "defaultMessage": "Twoje fundusze pozostaną na twoim koncie {{integrationName}}.",
-      "chooseDifferentAccount": "Wybierz inne konto"
-    },
-    "previewPage": {
-      "title": "Zapłać {{merchantName}}",
-      "from": "Z {{integrationName}}",
-      "payWith": "Zapłać z",
-      "send": "Wyślij",
-      "merchantPurchase": "Zakup od {{merchantName}}",
-      "estimatedNetworkFee": "Szacowana opłata sieciowa",
-      "conversionFee": "Opłata za konwersję w {{integrationName}}",
-      "transactionBuffer": "Bufor transakcji",
-      "feesIncluded": "{{amount}} opłat wliczonych",
-      "bufferAndFees": "{{bufferAmount}} Bufor + {{feesAmount}} opłat wliczonych",
-      "bufferDisclaimer": "Zachowasz niewykorzystany bufor.",
-      "howItWorks": "Jak to działa",
-      "refundDisclaimer": "Zwroty zostaną zrealizowane tylko w {{settlementCurrency}}. Kurs wymiany i opłaty często się zmieniają. Wszystkie zakupy krypto są ostateczne.",
-      "feeChangedNotice": "Opłata sieciowa uległa zmianie. Sprawdź sumę i potwierdź.",
-      "networkFeeHint": "Pomaga przenieść transakcję na blockchain, pokrywając koszty dla walidatorów sieci, którzy ją przetwarzają",
-      "conversionFeeHint": "Tę opłatę pobiera {{integrationName}} za konwersję.",
-      "transactionBufferHint": "Ta kwota jest dodawana, aby pomóc w realizacji zakupu, nawet jeśli ceny krypto się zmienią. Może to pozostawić trochę {{settlementCurrency}} w twoim portfelu.",
-      "pyusdDisclaimer": "Transakcja zostanie zakończona za pomocą PayPal USD (PYUSD), który jest stablecoinem wydanym i nadzorowanym przez Paxos Trust Company, LLC. PYUSD działa na blockchain."
-    },
-    "connectionPage": {
-      "approveConnection": "Zatwierdź prośbę o połączenie w swoim portfelu",
-      "oauthLogin": "Zaloguj się na swoje konto i zezwól na dostęp",
-      "continueTo": "Kontynuuj do {{integrationName}}"
-    },
-    "brokerLoading": {
-      "preparingPayment": "Przygotowywanie szczegółów płatności"
-    },
-    "fundingOptions": {
-      "title": "Opcje finansowania",
-      "total": "Łącznie {{amount}}",
-      "balances": "Salda",
-      "linkedPaymentMethods": "Połączone metody płatności",
-      "buyingPower": "Zdolność zakupowa",
-      "instantCashAvailable": "Dostępna natychmiastowa gotówka: {{amount}}",
-      "available": "Dostępne: {{amount}}",
-      "exchangeRateDisclaimer": "Kurs wymiany może zawierać marżę.",
-      "paymentMethodTypes": {
-        "card": "Karta",
-        "bankAccount": "Konto bankowe",
-        "digitalWallet": "Cyfrowy portfel"
-      }
-    },
-    "walletConfirmation": {
-      "title": "Potwierdź tę transakcję w aplikacji {{integrationName}}"
-    },
-    "fundingSteps": {
-      "errorMessage": "Wystąpił błąd. Spróbuj ponownie",
-      "conversion": "Przeliczanie {{amount}} na {{currency}}",
-      "deposit": "Wpłata {{amount}} z {{paymentMethod}}",
-      "purchase": "Zakup {{amount}} {{symbol}}",
-      "approval": "Zatwierdzenie twojego transferu z {{integrationName}}",
-      "transfer": "Przelew {{symbol}} na zakup"
-    },
-    "termsOfUse": {
-      "text": "Kontynuując, akceptujesz",
-      "linkText": "warunki użytkowania"
-    },
-    "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje mają umożliwić komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") poprzez Usługę Końcowego Użytkownika, w tym przesyłanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Końcowego Użytkownika opierają się na Narzędziu; że korzystanie z takich funkcji odbywa się na twoje polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Końcowego Użytkownika lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że masz wszystkie niezbędne prawa i zgody na połączenie i dostęp do każdego Połączonego Konta poprzez takie funkcje, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub ciebie osobiście dla każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
-    }
   },
   "previewPageUI": {
     "accountLabel": "Konto",
@@ -1268,6 +1407,7 @@
     "paymentTotalLabel": "Zapłać całość",
     "payWithLabel": "Zapłać z",
     "payWithLabelWithName": "Zapłać z {{integrationName}}",
+    "plusFees": "",
     "processingPayment": "Przetwarzanie płatności"
   },
   "previewTransfer": {
@@ -1309,6 +1449,7 @@
     "youMayReceiveLess": "Możesz otrzymać mniej z powodu zmian w cenie {{symbol}}."
   },
   "previewTransferPageUI": {
+    "depositFromIntegration": "Wpłata z {{integrationName}}",
     "fee": "Zawiera {{amount}} w opłatach",
     "fundingMethods": "Metody płatności",
     "receive": "Otrzymasz",
@@ -1316,15 +1457,20 @@
     "send": "Wyślij",
     "title": "Podgląd transferu",
     "tokenOnNetwork": "{{token}} na {{network}}",
-    "transferToken": "Przelej token",
-    "depositFromIntegration": "Wpłata z {{integrationName}}"
+    "transferToken": "Przelej token"
   },
   "privacyComponent": {
     "content": "Twoje dane są zawsze prywatne i zaszyfrowane."
   },
   "qrCodePassword": {
+    "bybit": {
+      "euNotSupported": "",
+      "loginTitle": "",
+      "scanInstruction": ""
+    },
     "expired": "Kod QR wygasł",
     "generateNew": "Generuj nowy kod QR",
+    "loading": "",
     "qrCodeLabel": "Kod QR można zeskanować na urządzeniu mobilnym w celu ustanowienia połączenia",
     "scanText": "Zeskanuj ten kod aplikacją {{appName}} <1></1> aby zalogować się natychmiast."
   },
@@ -1348,6 +1494,7 @@
     "title": "Wybierz aktywa"
   },
   "selectHoldingPage": {
+    "balance": "",
     "binanceDirectNoAssetsBody1": "Wygląda na to, że nie masz żadnych aktywów na swoim połączonym koncie.",
     "binanceDirectNoAssetsBody2": "Możesz dodać środki do swojego konta lub połączyć inne, aby kontynuować transfer.",
     "cannotFundBody": "Nie masz wystarczającej ilości kryptowalut lub środków fiat na swoim koncie, aby zrealizować tę transakcję.",
@@ -1355,8 +1502,11 @@
     "defaultTitle": "Wybierz token",
     "depositTitle": "Wybierz token wpłaty",
     "ineligibleAssets": "Niewłaściwe środki",
+    "link40Subtitle": "",
     "link40Title": "Wybierz token",
     "loading": "Ładowanie twoich środków...",
+    "network": "",
+    "networkTitle": "",
     "noAssetsTitle": "Na połączonym koncie nie wykryto środków",
     "noEligibleAssetsTitle": "Na tym koncie nie ma aktywów, które kwalifikują się do tego transferu",
     "notEnoughtBody": "Dodaj więcej {{symbol}} do swojego konta, a następnie wróć tutaj, aby spróbować ponownie.",
@@ -1375,9 +1525,12 @@
     "label": "Wybierz {{text}}"
   },
   "selectNetworkPage": {
+    "clientSupports": "",
+    "estFee": "",
     "gasFeeDescription": "<0>Szac. opłata za gaz:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Niewłaściwe sieci",
     "integrationFeeDescription": "<0>Szac. opłata {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "sendVia": "",
     "title": "Wybierz sieć"
   },
   "selectNetworkScreen": {
@@ -1433,6 +1586,11 @@
     "subtitle": "Twoje zakupione saldo {{symbol}} jest niższe niż oczekiwano z powodu wahań cen i/lub kosztów gazu.",
     "title": "Doładowanie potrzebne"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "",
+    "basedOnYourBalances": "",
+    "basedOnYourBalancesDepositsTooltip": ""
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Podgląd wypłaty",
@@ -1441,6 +1599,7 @@
     },
     "errorMessage": {
       "insufficientFunds": "Niewystarczające środki na pokrycie transferu i opłat za gaz. Maksymalna kwota transferu to {{maxAmount}}.",
+      "maximumAmount": "",
       "minimumAmount": "Minimalna kwota transferu to {{minAmount}}.",
       "zeroAmount": "Wprowadź poprawną kwotę powyżej zera"
     },
@@ -1509,12 +1668,16 @@
     "title": "Weryfikacja"
   },
   "transferInsufficientBalancePage": {
+    "gasAndBalanceTitle": "",
     "gasBody": "Opłaty za gaz dla sieci {{network}} są opłacane w {{symbol}}. Proszę uzupełnić saldo {{symbol}}, a następnie spróbować ponownie.",
     "gasTitle": "Niewystarczające saldo gazu",
+    "insufficientGasFeeDescription": "",
     "noBalanceBody": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
+    "noBalanceOnSpecificNetwork": "",
     "noBalanceTitle": "Brak salda",
     "paymentBody": "Twoje saldo jest zbyt niskie, aby dokończyć ten zakup.",
     "title": "Niewystarczające saldo",
+    "toppedUpWalletQuestion": "",
     "transferBody": "Twoje saldo jest zbyt niskie, aby zakończyć ten transfer."
   },
   "transferMfaPage": {
@@ -1588,6 +1751,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} prosi, abyś zweryfikował własność adresu <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Ten adres nie jest powiązany z podłączonym portfelem. Proszę podłączyć inny portfel.",
+    "body40": "",
     "connectAnotherAction": "Podłącz inny portfel",
     "title": "Ups!"
   },
@@ -1597,6 +1761,8 @@
   },
   "verifyErrorPage": {
     "body": "Odrzuciłeś prośbę o podpis w swoim portfelu, lub wcześniejsza prośba jest nadal aktywna. {{clientName}} nie może zweryfikować własności twojego portfela bez podpisu.",
+    "body40": "",
+    "timeout": "",
     "title": "Weryfikacja odrzucona"
   },
   "wallectConnect": {
@@ -1605,6 +1771,7 @@
     "unknownError": "Wystąpił nieznany błąd. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "",
     "completePaymentMessage": "Wróć do procesu realizacji zakupu, aby dokończyć zakup {{clientName}}.",
     "continueMessage": "Proszę kontynuować w aplikacji {{clientName}}.",
     "successMessage": "Pomyślnie zweryfikowano własność twojego portfela {{walletName}}."

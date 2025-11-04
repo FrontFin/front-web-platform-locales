@@ -21,20 +21,55 @@
     "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15,000",
     "buyCrypto": "Купить криптовалюту с помощью Binance Connect",
+    "cashEquivalent": "",
     "closeButton": "Закрыть",
+    "continueInBinance": "",
     "continueTo": "Перейти к  {{selectedIntegrationName}}",
+    "cryptoAmount": "",
+    "descriptionDeposit": "<0>Return here to deposit</0> after connecting with your Binance mobile app.",
     "enterAmount": "Введите сумму перевода",
+    "mobileLabelOnramp": "",
     "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
+    "openBinance": "",
     "receiveAmountInput": {
       "networkName": "на {{networkName}}"
     },
+    "scanText": "",
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
     "selectAsset": "Выберите актив для перевода",
     "selectCurrency": "Выберите валюту",
     "selectNetwork": "Выберите сеть для перевода",
+    "transactionRequest": "",
     "youPay": "Вы платите",
     "youReceive": "Вы получаете"
+  },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Похоже, вы не одобрили запрос. Если это ошибка, пожалуйста, попробуйте снова.",
+    "title": "Ой!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Мы не получили ответ вовремя. Пожалуйста, попробуйте снова.",
+    "title": "Срок действия запроса истёк."
+  },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Продолжить с приложением Binance",
+    "descriptionDeposit": "<1>Вернитесь сюда, чтобы внести депозит</1> после подключения через мобильное приложение Binance.",
+    "descriptionGeneral": "<1>Вернитесь сюда, чтобы продолжить</1> после подключения через мобильное приложение Binance.",
+    "descriptionOnRamp": "<1>Вернитесь сюда, чтобы продолжить</1> после подключения через мобильное приложение Binance.",
+    "descriptionPay": "<1>Вернитесь сюда, чтобы оплатить</1> после подключения через мобильное приложение Binance.",
+    "loginWithEmailButton": "Войти с помощью Email/Телефон",
+    "or": "или",
+    "scanText": "Сканируйте камерой телефона или приложением Binance для входа.",
+    "title": "Вход"
+  },
+  "binanceDirectPasswordPage": {
+    "emailPhoneInput": "",
+    "invalidEmail": "",
+    "nextButton": "",
+    "passwordInput": "",
+    "titleStep1": "",
+    "titleStep2": ""
   },
   "binanceMfaPage": {
     "add2fa": "Пожалуйста, добавьте необходимые двухфакторные методы аутентификации (2FA) в Binance",
@@ -60,25 +95,6 @@
     },
     "title": "Сброс пароля"
   },
-  "binanceDirectLoginPage": {
-    "continueWithAppButton": "Продолжить с приложением Binance",
-    "descriptionDeposit": "<1>Вернитесь сюда, чтобы внести депозит</1> после подключения через мобильное приложение Binance.",
-    "descriptionGeneral": "<1>Вернитесь сюда, чтобы продолжить</1> после подключения через мобильное приложение Binance.",
-    "descriptionOnRamp": "<1>Вернитесь сюда, чтобы продолжить</1> после подключения через мобильное приложение Binance.",
-    "descriptionPay": "<1>Вернитесь сюда, чтобы оплатить</1> после подключения через мобильное приложение Binance.",
-    "loginWithEmailButton": "Войти с помощью Email/Телефон",
-    "or": "или",
-    "scanText": "Сканируйте камерой телефона или приложением Binance для входа.",
-    "title": "Вход"
-  },
-  "binanceDirectLoginConnectionDeniedPage": {
-    "body": "Похоже, вы не одобрили запрос. Если это ошибка, пожалуйста, попробуйте снова.",
-    "title": "Ой!"
-  },
-  "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "Мы не получили ответ вовремя. Пожалуйста, попробуйте снова.",
-    "title": "Срок действия запроса истёк."
-  },
   "bindFacePage": {
     "completedButton": "Я завершил это на своем телефоне",
     "linkText": "Если вы не можете отсканировать QR-код, перейдите по <2><0>ссылке</0></2>.",
@@ -100,32 +116,33 @@
     "select": "Выберите {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} не поддерживается на этом типе устройства.",
-    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
-    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
-    "travelRuleAmountLimit": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
+    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашем регионе.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает этот токен и сеть.",
     "lessThanIntegrationMinAmount": "Запрашиваемая сумма ниже минимальной суммы для {{integrationName}}.",
     "moreThanIntegrationMaxAmount": "Запрашиваемая сумма превышает максимальную сумму брокера {{integrationName}}.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} не поддерживает этот токен и сеть.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} не поддерживает переводы для любой из предоставленных комбинаций токенов/сетей.",
-    "integrationNotSupportedCountry": "{{integrationName}} недоступен в вашем регионе."
+    "platformNotSupported": "{{integrationName}} не поддерживается на этом типе устройства.",
+    "sdkVersionNotSupported": "Механизм TrueAuth {{integrationName}} не поддерживается для этой SDK: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleVaspIdRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} не поддерживается из-за ограничений по соблюдению требований."
   },
   "catalogList": {
     "badges": {
       "api": "API",
       "connected": "Подключено",
       "installed": "Установлено",
+      "lastUsed": "",
       "linked": "Ранее привязано"
     },
+    "emptyCatalogBody": "Это может быть связано с вашим местоположением, требованиями соблюдения или совместимостью устройства.",
+    "emptyCatalogTitle": "Нет доступных электронных кошельков и бирж",
     "noResults": "К сожалению, мы не смогли ничего найти",
     "paymentTitle": "Выберите платёжный аккаунт",
     "prodOnly": "Только продакшен",
     "search": "поиск",
     "title": "Выберите учетную запись для подключения",
-    "title40": "Подключить биржу или электронный кошелек",
-    "emptyCatalogTitle": "Нет доступных электронных кошельков и бирж",
-    "emptyCatalogBody": "Это может быть связано с вашим местоположением, требованиями соблюдения или совместимостью устройства."
+    "title40": "Подключить биржу или электронный кошелек"
   },
   "catalogTile": {
     "select": "Выберите {{integrationName}}, {{badge}}"
@@ -165,21 +182,23 @@
     "availableForTransfer": "Доступно",
     "cancel": "Отмена",
     "chooseDifferentAccount": "Подключить другой аккаунт",
+    "chooseDifferentNetwork": "",
     "closeCap": "Закрыть",
     "codeNotCorrent": "Предоставленный код неверен.",
     "connectAnotherAccount": "Подключить другой аккаунт",
     "continueCap": "Продолжить",
     "doneCap": "Готово",
     "failedToLoadTrasferError": "Не удалось загрузить информацию о переводе",
+    "freeCap": "",
     "genericConnectErrorMessage": "Не удалось подключиться к вашему аккаунту",
     "maxCap": "Макс",
     "mesh": "Сетка",
     "notFound": "Не найдено",
+    "processingCap": "Обработка",
     "reconnectYourAccount": "Подключите повторно ваш аккаунт",
     "searchCap": "Поиск",
     "securedBy": "Защищено",
     "sendingCap": "Отправляется",
-    "processingCap": "Обработка",
     "somethingWentWrong": "Что-то пошло не так...",
     "submitCap": "Отправить",
     "successTitle": "Успешно!",
@@ -222,6 +241,13 @@
   "currencyBox": {
     "changeCurrency": "Изменить валюту"
   },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "",
+    "depositSuccess": "",
+    "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
+    "paymentSubtitle": "",
+    "paymentSuccess": ""
+  },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Похоже, вы отклонили запрос на подключение, или предыдущий запрос все еще активен. Если это ошибка, попробуйте еще раз.",
     "title": "Ой!"
@@ -241,6 +267,16 @@
   },
   "deFiWalletInitialPage": {
     "continue": "Перейти к {{walletName}}",
+    "dappPage": {
+      "continueButton": "",
+      "depositTitle": "",
+      "payTitle": "",
+      "qrSubtitle": "",
+      "spinnerTransactionText": "",
+      "spinnerVerifyText": "",
+      "subtitle": "",
+      "verifyWalletTitle": ""
+    },
     "previewButton": "Подключить",
     "previewTitle": "Подключить аккаунт",
     "subtitle": "Нажмите ниже, чтобы открыть {{walletName}}. Затем одобрите запрос на подключение, чтобы просмотреть ваш платеж.",
@@ -251,6 +287,7 @@
     "declinedTitle": "Соединение отклонено",
     "description": "Откройте {{selectedIntegrationName}} и отсканируйте <3></3>QR-код, чтобы подключится",
     "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
+    "scanInstruction": "",
     "title": "Подключиться {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -264,6 +301,11 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}} не установлен на этом устройстве. Пожалуйста, установите приложение {{integrationName}} или подключите другой кошелек.",
     "title": "Подключение недоступно"
+  },
+  "depositFallback": {
+    "description": "Не волнуйтесь... мы завершим вашу транзакцию с помощью альтернативного метода снятия {{integrationName}}.",
+    "instruction": "Нажмите Предварительный просмотр для проверки и завершения вашей транзакции.",
+    "previewButton": "Предварительный просмотр перевода"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Ожидание подтверждения от мобильного приложения",
@@ -379,6 +421,7 @@
     "configurationMismatch": "Ошибка конфигурации",
     "emptyWalletBalance": "Пустой электронный кошелек",
     "exceedsApplicationLimit": "Превышен лимит",
+    "existingApiKey": "",
     "expiredSmartDeposit": "Срок действия транзакции истек",
     "faceVerificationFailed": "Проверка лица не удалась",
     "failedToGetFundingOptions": "Ошибка способов пополнения",
@@ -396,6 +439,7 @@
     "invalidToIntegrationToken": "Срок действия аутентификации истек",
     "kycRequired": "Требуется KYC",
     "locked": "Аккаунт заблокирован",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "MFA не поддерживается",
     "missingField": "Отсутствует информация",
     "networkDisabled": "Сеть отключена",
@@ -427,6 +471,7 @@
     "toAccountNotSupported": "Депозит не поддерживается",
     "tooManyRequests": "Слишком много запросов",
     "transferAlreadyRequested": "Перевод уже запрошен",
+    "travelRuleRestriction": "",
     "tryAgainAfterLogin": "Требуется авторизация",
     "twoFaFailed": "Неправильный код 2FA",
     "unableToSend": "Не удалось выполнить перевод",
@@ -445,6 +490,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Тайм-аут снятия средств"
   },
   "errorMessages": {
+    "accountDisabled": "",
+    "accountLocked": "",
     "accountNotFound": "Не удается получить информацию о вашей учетной записи.",
     "addressAllowlistPending": "Этот адрес получателя добавлен в ваш список разрешённых и ожидает разблокировки.",
     "addressNotAllowlisted": "Не удается начать вывод с Coinbase. Добавьте этот адрес получателя в свой список разрешённых адресов здесь: https://www.coinbase.com/settings/allowlist",
@@ -464,8 +511,10 @@
     "coinbaseUnavailable": "Произошла ошибка на Coinbase. Проверьте свой аккаунт, чтобы узнать, проведён ли перевод.",
     "configurationMismatch": "Не удается начать перевод. Конфигурация учетной записи не соответствует запрашиваемому переводу.",
     "default": "Произошла ошибка.",
+    "emailCodeExpired": "",
     "emptyWalletBalance": "Баланс исходного кошелька пуст.",
     "exceedsApplicationLimit": "Сумма перевода превышает лимит.",
+    "existingApiKey": "",
     "expiredSmartDeposit": "Срок действия транзакции истек",
     "expiredSmartDepositDeposit": "Срок действия смарт-депозита истек",
     "expiredSmartOnramp": "Срок действия покупки истек",
@@ -475,13 +524,24 @@
     "failedToSaveFundingOptions": "Не удалось сохранить варианты финансирования",
     "feeAssetBalanceNotEnough": "Недостаточно средств для оплаты комиссий за перевод.",
     "fromAccountNotSupported": "На данный момент учетная запись не поддерживает снятие криптовалюты.",
+    "incorrect2faCode": "",
+    "incorrectEmail": "",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_few": "",
+    "incorrectPasswordChancesRemaining_many": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
     "invalidCredentials": "Предоставленные учетные данные неверны. Пожалуйста, попробуйте снова.",
     "invalidFromIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "invalidIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
+    "invalidPhoneNumber": "",
     "invalidToIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "kycRequired": "Не удается начать перевод. Интеграция требует завершения KYC проверки аккаунтов, прежде чем разрешит крипто переводы.",
     "locked": "Ваш аккаунт заблокирован",
+    "loginFirst": "",
+    "loginWithQrOrMobileLink": "",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "Многофакторная аутентификация для этой операции не поддерживается.",
     "networkDisabled": "Сеть в настоящий момент отключена и не может быть использована.",
     "noAvailableSmartContract": "Смарт-контракт недоступен",
@@ -493,7 +553,11 @@
     "passKeyNotSupportedPayment": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку оплаты.",
     "passKeyNotSupportedRedirect": "Перенаправление на альтернативный метод вывода Coinbase...",
     "permissionDenied": "У вас нет необходимых разрешений для доступа к этой функциональности, пожалуйста, свяжитесь с командой Mesh, чтобы запросить доступ.",
+    "pleaseLogin": "",
+    "pleaseTryAgain": "",
+    "pleaseTryAgainIn1Hour": "",
     "previewExpired": "Предварительный просмотр истек.",
+    "qrOrMobileLinkIn24Hours": "",
     "refusedByIntegration": "Невозможно начать перевод.",
     "refusedByIntegrationDeposit": "Невозможно начать депозит.",
     "refusedByIntegrationOnramp": "Невозможно начать покупку.",
@@ -507,14 +571,18 @@
     "symbolNotSupportedByTarget": "Не удалось найти адрес для депозита по запрошенному токену.",
     "symbolNotSupportedInRegion": "Выбранный символ не поддерживается Coinbase из-за региональных ограничений",
     "toAccountNotSupported": "На данный момент учетная запись не поддерживает депозиты криптовалюты.",
+    "tooManyAttemptsOneMinute": "",
     "tooManyRequests": "Пожалуйста, повторите попытку позже.",
     "transferAlreadyRequested": "Перевод уже запрошен.",
+    "travelRuleRestriction": "",
+    "travelRuleRestrictionPayment": "",
     "tryAgainAfterLogin": "Пожалуйста, попробуйте снова после входа в систему.",
     "twoFaFailed": "Двухфакторная проверка не удалась. Пожалуйста, попробуйте ещё раз.",
     "unableToSend": "Не удается отправить перевод. Пожалуйста, попробуйте снова.",
     "unableToSendContactSupport": "В настоящее время вы не можете отправить криптовалюту. Пожалуйста, свяжитесь с поддержкой Coinbase.",
     "unauthorizedToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "userInfoUnavailable": "Не удается получить информацию о пользователе. Пожалуйста, попробуйте снова.",
+    "verificationFailed": "",
     "webWithdrawalLimitExceeded": "Вы превысили максимальный дневной лимит на вывод средств для Binance.",
     "whitelistAddressRequired": "Адрес назначения должен быть добавлен в белый список.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Для безопасности ваших активов, некоторые из ваших активов C2C-департамента должны быть заморожены на 24 часа. Через 24 часа заморозка будет автоматически снята, и вы сможете вывести криптовалюту. Во время заморозки ваши операции на сайте не будут затронуты, пожалуйста, пользуйтесь торговыми услугами Binance как обычно.",
@@ -577,6 +645,7 @@
     "title": "Верификация"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "",
     "gasFeeDescription": "Примерная стоимость компенсации валидаторам сети за обработку транзакции.",
     "institutionFeeDescription": "Эта комиссия покрывает стоимость сети за обработку вашего вывода. Она изменяется в зависимости от выбранной криптовалюты и текущих условий блокчейна.",
     "processingFee": "Комиссия за обработку {{clientName}}",
@@ -629,6 +698,8 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -741,6 +812,15 @@
     "body": "{{clientName}} использует Mesh для облегчения безопасного соединения с {{selectedIntegrationName}}.",
     "connectAction": "Подключиться к {{selectedIntegrationName}}"
   },
+  "homePage": {
+    "guaranteed": "",
+    "noExtraFee": "",
+    "secureDeposit": "",
+    "sendFunds": "",
+    "sendUsingQR": "",
+    "standardDeposit": "",
+    "title": ""
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Сумма запрошенного перевода {{requestedAmount}} меньше минимальной суммы {{integrationName}} {{minimumAmount}} для перевода в сети {{network}}.",
     "balanceBelowIntegrationMinimumDescription": "Ваш баланс {{currentBalance}} ниже минимального уровня {{minimumAmount}} для {{integrationName}} для перевода {{symbol}} на {{network}}. Пожалуйста, пополните свой баланс и попробуйте снова.",
@@ -769,8 +849,8 @@
     "notSupportedForTransferBySource": "Не поддерживается {{integrationName}}",
     "nyCoinbaseUserRestrictions": "{{symbol}} на {{network}} не доступен для этого перевода из-за ограничений поддержки многоцепочной сети в штате Нью-Йорк.",
     "symbolDoesNotMatch": "Не поддерживается {{clientName}}",
-    "symbolDoesNotMatchNoClientName": "Не поддерживается этим приложением",
-    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода."
+    "symbolDoesNotMatchDescription": "{{symbol}} не доступен для этого перевода.",
+    "symbolDoesNotMatchNoClientName": "Не поддерживается этим приложением"
   },
   "initialLedgerScreen": {
     "title": "Включите  и разблокируйте устройство"
@@ -789,6 +869,8 @@
     "thirdParty": "Ваши активы никогда не передаются третьим сторонам"
   },
   "initialVerifyPage": {
+    "approveSignature": "",
+    "approveSignatureStillThere": "",
     "content40": "Подтвердите, что вы владеете этим электронным кошельком",
     "drawerTitle": "Подтвердите запрос на подпись<1></1> в вашем кошельке",
     "item1Body": "Вам будет предложено подписать сообщение в {{selectedIntegrationName}}, которое подтверждает владение кошельком.",
@@ -800,6 +882,23 @@
     "title": "Почти готово!",
     "verifyAction": "Подтвердить адрес",
     "verifyingLabel": "Проверка подписи..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "",
+    "paymentFlowSubtitle": "",
+    "title": "",
+    "verifyFlowSubtitle": ""
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "subtitle": "",
+    "title": ""
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "",
+    "subtitleAlreadyDenied": "",
+    "subtitleInitial": "",
+    "titleAlreadyDenied": "",
+    "titleInitial": ""
   },
   "ipWhiteListPage": {
     "addIp": "Добавить IP адрес ниже в качестве доверенного",
@@ -908,8 +1007,13 @@
     "twoFactor": "Введите код, предоставленный двухфакторным методом аутентификации, который вы настроили в вашей учетной записи <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
+    "codeSentEmail": "",
+    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
+    "codeSentPhone": "",
     "enterCode": "Введите свой одноразовый код, чтобы подтвердить <1></1> вход в свой аккаунт.",
+    "enterCode2": "<0>Enter the code from your authenticator app.</0>",
     "enterPin": "Введите ваш торговый PIN-код",
+    "enterVerificationCode": "",
     "title": "Верификация",
     "verify": "Подтвердить"
   },
@@ -956,13 +1060,13 @@
     "returnToClient": "Вернитесь к {{clientName}} после подтверждения запроса на подключение в {{selectedIntegrationName}}.",
     "sendAgain": "Отправить снова",
     "sendNewRequest": "Отправить новый запрос",
-    "troubleshootTitle": "Запрос не пришел?",
-    "troubleshootExchangeMode": "Убедитесь, что вы находитесь в режиме биржи, а не в режиме электронного кошелька.",
     "steps": {
       "authorize": "Нажмите <1>Авторизовать</1> на странице подтверждения.",
       "openApp": "Нажмите <1>Открыть {{selectedIntegrationName}} приложение</1>.",
       "return": "Вернитесь сюда, чтобы завершить привязку вашего аккаунта."
-    }
+    },
+    "troubleshootExchangeMode": "Убедитесь, что вы находитесь в режиме биржи, а не в режиме электронного кошелька.",
+    "troubleshootTitle": "Запрос не пришел?"
   },
   "mobileContent": {
     "actionButton": "Открыть {{integrationName}}"
@@ -976,6 +1080,8 @@
     "description": "Ниже указаны все безопасные и совместимые сети для этого платежа. Мы автоматически выбрали сеть с самой низкой комиссией для вас.",
     "estimatedGasFeeLabel": "Оценочная комиссия за газ:",
     "lowestFeeLabel": "Самая низкая комиссия",
+    "mostPopular": "",
+    "subtitle": "",
     "title": "Выберите сеть"
   },
   "nonOAuthPermissionsPage": {
@@ -1001,9 +1107,9 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Открыть {{selectedIntegrationName}} снова",
+      "note": "Продолжите на {{selectedIntegrationName}}, чтобы завершить ваш депозит",
       "subtitle": "Пожалуйста, завершите вход в систему и подтвердите доступ в вашем браузере.",
-      "title": "Ожидание подключения",
-      "note": "Продолжите на {{selectedIntegrationName}}, чтобы завершить ваш депозит"
+      "title": "Ожидание подключения"
     },
     "checking": {
       "message": "Проверка ваших активов..."
@@ -1073,11 +1179,13 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "Сумма должна быть в пределах {{minAmount}} - {{maxAmount}}",
     "amountMustBeWithinErrorMessage": "Сумма должна быть в пределах USD 21 - $15,000",
+    "buildingYourPreview": "Создание вашего предварительного просмотра...",
     "buyCrypto": "Купить криптовалюту с помощью Binance Connect",
     "closeButton": "Закрыть",
     "continueTo": "Перейти к  {{selectedIntegrationName}}",
     "enterAmount": "Введите сумму перевода",
     "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
+    "Processing": "Обработка...",
     "receiveAmountInput": {
       "networkName": "на {{networkName}}"
     },
@@ -1087,22 +1195,17 @@
     "selectCurrency": "Выберите валюту",
     "selectNetwork": "Выберите сеть для перевода",
     "unsupportedCurrencyError": "Выбранная валюта не поддерживается для оплаты в вашей стране.",
-    "buildingYourPreview": "Создание вашего предварительного просмотра...",
-    "Processing": "Обработка...",
+    "unsupportedPair": "Эта пара сеть/токен в настоящее время не поддерживается. Пожалуйста, выберите другую.",
     "youPay": "Вы платите",
-    "youReceive": "Вы получаете",
-    "unsupportedPair": "Эта пара сеть/токен в настоящее время не поддерживается. Пожалуйста, выберите другую."
+    "youReceive": "Вы получаете"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "",
+    "conversionFee": "",
     "merchantInfoName": "Продавец: {{clientName}}",
+    "paymentToClient": "Платёж {{clientName}}",
     "title": "Итог заказа",
-    "totalLabel": "Итого",
-    "paymentToClient": "Платёж {{clientName}}"
-  },
-  "depositFallback": {
-    "description": "Не волнуйтесь... мы завершим вашу транзакцию с помощью альтернативного метода снятия {{integrationName}}.",
-    "instruction": "Нажмите Предварительный просмотр для проверки и завершения вашей транзакции.",
-    "previewButton": "Предварительный просмотр перевода"
+    "totalLabel": "Итого"
   },
   "passwordPage": {
     "fieldError": "Пожалуйста, введите {{field}}",
@@ -1115,6 +1218,36 @@
       "qrCode": "QR код"
     },
     "title": "Вход"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "",
+      "depositWithWalletAddress": "",
+      "dontSeeYourAccount": "",
+      "needAnotherWay": ""
+    },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
+    "networkSelection": {
+      "subtitle": "",
+      "title": ""
+    },
+    "screen": {
+      "copiedWalletAddress": "",
+      "copyWalletAddress": "",
+      "depositToClient": "",
+      "downloadQr": "",
+      "headline": "",
+      "networkLabel": "",
+      "tokenLabel": "",
+      "warning": ""
+    },
+    "tokenSelection": {
+      "subtitle": "",
+      "title": ""
+    }
   },
   "paymentMethods": {
     "bankAccount": "Банковский счет",
@@ -1131,6 +1264,126 @@
     "title": "Обновление платежа",
     "topUp": "Пополнить баланс {{token}}"
   },
+  "paypal": {
+    "brokerLoading": {
+      "preparingPayment": "Подготовка деталей вашего платежа"
+    },
+    "common": {
+      "cancel": "Отмена",
+      "change": "Изменить",
+      "close": "Закрыть",
+      "continue": "Продолжить",
+      "done": "Готово",
+      "ok": "ОК",
+      "order": "Заказ",
+      "pay": "Оплатить",
+      "save": "Сохранить",
+      "stillWorking": "Все еще работает...",
+      "total": "Итого",
+      "tryAgain": "Попробовать ещё раз"
+    },
+    "connectionPage": {
+      "approveConnection": "Подтвердите запрос на подключение в вашем кошельке",
+      "continueTo": "Перейти к {{integrationName}}",
+      "oauthLogin": "Войдите в свою учетную запись и разрешите доступ"
+    },
+    "doneTransferPage": {
+      "description": "Вы только что оплатили {{amount}}. Вы получите подтверждение от {{clientName}}, когда это будет завершено.",
+      "disclaimer": "Переводы не завершены, пока они не получат достаточно подтверждений сети.",
+      "seeDetails": "Посмотреть детали",
+      "title": "Платеж в процессе"
+    },
+    "exitPage": {
+      "continuePayment": "Продолжить оплату",
+      "exit": "Выйти",
+      "exitAnyway": "",
+      "subtitle": "Ваш прогресс будет потерян.",
+      "title": "Вы уверены, что хотите выйти?"
+    },
+    "fundingOptions": {
+      "available": "{{amount}} доступно",
+      "balances": "Баланс(ы)",
+      "buyingPower": "Доступные средства",
+      "exchangeRateDisclaimer": "Курс обмена может включать спред.",
+      "instantCashAvailable": "Доступные денежные средства: {{amount}}",
+      "linkedPaymentMethods": "Связанные способ(ы) оплаты",
+      "paymentMethodTypes": {
+        "bankAccount": "Банковский счет",
+        "card": "Карта",
+        "digitalWallet": "Кошелек"
+      },
+      "title": "Варианты финансирования",
+      "total": "Итого {{amount}}"
+    },
+    "fundingSteps": {
+      "approval": "Одобрение вашего перевода из {{integrationName}}",
+      "conversion": "Конвертация {{amount}} в {{currency}}",
+      "deposit": "Пополнение {{amount}} с {{paymentMethod}}",
+      "errorMessage": "Произошла ошибка. Попробуйте снова",
+      "purchase": "Покупка {{amount}} {{symbol}}",
+      "transfer": "Перевести {{symbol}} для вашей покупки"
+    },
+    "infoScreen": {
+      "rule1": "Ваша информация никогда не сохраняется. Доступ завершится после этой оплаты.",
+      "rule2": "Используйте свою криптовалюту, проверьте детали и одобрите оплату.",
+      "rule3": "Автоматическая конверсия упрощает процесс.",
+      "title": "Войдите, чтобы просмотреть данные по оплате"
+    },
+    "previewPage": {
+      "bufferAndFees": "{{bufferAmount}} буфер + {{feesAmount}} все сборы включены",
+      "bufferDisclaimer": "Вы сохраните любой неиспользованный буфер.",
+      "conversionFee": "Комиссия за конвертацию {{integrationName}}",
+      "conversionFeeHint": "Эту комиссию {{integrationName}} собирает за конвертацию.",
+      "estimatedNetworkFee": "Оценочная комиссия сети",
+      "feeChangedNotice": "Комиссия сети изменилась. Пожалуйста, проверьте вашу сумму и подтвердите.",
+      "feesIncluded": "{{amount}} все сборы включены",
+      "from": "Из {{integrationName}}",
+      "howItWorks": "Как это работает",
+      "merchantPurchase": "Покупка у {{merchantName}}",
+      "networkFeeHint": "Помогает провести вашу транзакцию в блокчейн, покрывая расходы на работу сетевых валидаторов, которые её обрабатывают",
+      "payWith": "Оплатить с помощью",
+      "pyusdDisclaimer": "Транзакция будет завершена с использованием PayPal USD (PYUSD), который является стейблкоином, выпущенным и хранимым компанией Paxos Trust Company, LLC. PYUSD работает на блокчейне.",
+      "refundDisclaimer": "Возвраты будут выдаваться только в {{settlementCurrency}}. Курс обмена и комиссии меняются часто. Все крипто-покупки окончательны.",
+      "send": "Отправить",
+      "title": "Оплата {{merchantName}}",
+      "transactionBuffer": "Буфер транзакции",
+      "transactionBufferHint": "Эта сумма добавляется, чтобы ваша покупка прошла, даже если курсы криптовалют изменяются. Это может оставить некоторую сумму {{settlementCurrency}} в вашем кошельке."
+    },
+    "sessionExpiredPage": {
+      "description": "",
+      "retry": "",
+      "title": ""
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (\"Компания\") является поставщиком технологий, который предоставляет коммуникационный инструмент (\"Инструмент\"), помогающий обеспечивать определенный функционал стороннего сервиса, которым вы пользуетесь (\"Сервис конечных пользователей\"). Такой функционал предназначен для того, чтобы вы могли взаимодействовать с вашими сторонними учетными записями и кошельками (\"Подключенные аккаунты\") через Сервис конечных пользователей, включая отправку инструкций, которые вы хотите выполнить. Mesh предоставляет этот Инструмент вам в качестве провайдера услуг для PayPal, Inc. (\"PayPal\")\n\nВы признаете и соглашаетесь с тем, что определенный функционал Сервиса конечных пользователей основан на Инструменте; что использование такого функционала осуществляется по вашему указанию; что ни Компания, ни ее поставщики услуг не предоставляют брокерские услуги или занимаютя обработкой платежей; и что ни Компания, ни ее поставщики услуг не несут ответственности или обязательств за Сервис конечных пользователей или любой Подключенный аккаунт, а также за условия, политику, действия или упущения их поставщиков.\n\nВы заявляете и гарантируете, что имеете все права и согласия, необходимые для подключения к каждому Подключенному аккаунту и доступа к ним через такой функционал, включая право предоставить Компании и ее поставщикам услуг свои учетные данные, адреса кошельков, и/или любую из ваших учетных данных или личной информации для каждого Подключенного аккаунта. Вы настоящим уполномочиваете Компанию и ее поставщиков услуг передавать инструкции, а также информацию, данные и другие материалы между Сервисом конечных пользователей и каждым Подключенным аккаунтом, и вы признаете и соглашаетесь с тем, что Компания и ее поставщики услуг не несут ответственности или обязательств за выполнение таких инструкций или таких материалов (включая их точность, своевременность или полноту).\n\nВы соглашаетесь с тем, что если вы используете Инструмент для целей транзакций с третьими сторонами, включая, но не ограничиваясь, онлайн-продавцами или проведением покупок любого рода (\"Транзакции с третьими сторонами\"), то ни Компания, ни PayPal не несут ответственности за споры по таким транзакциям. Вы несете ответственность за контакт с любыми соответствующими третьими лицами напрямую для разрешения любых споров, претензий об несанкционированных транзакциях, запросов на возврат, или любых других претензий или вопросов, касающихся Транзакций с третьими сторонами. Покупки, совершенные с использованием криптовалюты, могут быть предоставл"
+    },
+    "termsOfUse": {
+      "linkText": "условия использования",
+      "text": "Продолжая, вы принимаете условия использования"
+    },
+    "topupPage": {
+      "assetsDescription": "Стоимость активов, конвертированных в {{targetSymbol}}, ниже ожидаемой из-за колебаний цен и/или сетевых сборов.",
+      "conversionDescription": "Стоимость конвертированного {{convertedSymbol}} в {{targetSymbol}} ниже ожидаемой из-за колебаний цен и/или сетевых сборов.",
+      "currentBalance": "Текущий баланс",
+      "disclaimer": "Если Вы не завершите платеж, Ваш баланс {{targetSymbol}} останется на Вашем аккаунте {{integrationName}}.",
+      "required": "Требуется",
+      "title": "Необходимо пополнение",
+      "viewTopUp": "Посмотреть пополнение"
+    },
+    "transferErrorPage": {
+      "belowNetworkMinimumMessage": "Сумма этой покупки ниже минимального лимита обмена для вашего аккаунта. Подключите другой аккаунт, чтобы завершить покупку.",
+      "chooseDifferentAccount": "Подключить другой аккаунт",
+      "defaultMessage": "Ваши средства будут оставаться на вашем счету {{integrationName}}.",
+      "defaultTitle": "Не удается обработать этот платеж",
+      "insufficientFunds": "Недостаточно средств",
+      "insufficientFundsMessage": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
+      "requestDenied": "Запрос отклонён",
+      "requestDeniedMessage": "Похоже, вы отклонили транзакцию. Если это было ошибкой, попробуйте снова и одобрите запрос в вашем электронном кошельке."
+    },
+    "walletConfirmation": {
+      "title": "Подтвердите эту транзакцию в приложении {{integrationName}}"
+    }
+  },
   "payPalConnectOAuthPage": {
     "close": "Закрыть",
     "continue": "Перейти к {{selectedIntegrationName}}",
@@ -1140,120 +1393,6 @@
     "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
     "selectNetwork": "Выберите сеть для перевода",
     "title": "Выберите актив для перевода"
-  },
-  "paypal": {
-    "common": {
-      "cancel": "Отмена",
-      "done": "Готово",
-      "continue": "Продолжить",
-      "save": "Сохранить",
-      "close": "Закрыть",
-      "tryAgain": "Попробовать ещё раз",
-      "ok": "ОК",
-      "pay": "Оплатить",
-      "total": "Итого",
-      "order": "Заказ",
-      "change": "Изменить",
-      "stillWorking": "Все еще работает..."
-    },
-    "topupPage": {
-      "title": "Необходимо пополнение",
-      "currentBalance": "Текущий баланс",
-      "required": "Требуется",
-      "viewTopUp": "Посмотреть пополнение",
-      "disclaimer": "Если Вы не завершите платеж, Ваш баланс {{targetSymbol}} останется на Вашем аккаунте {{integrationName}}.",
-      "conversionDescription": "Стоимость конвертированного {{convertedSymbol}} в {{targetSymbol}} ниже ожидаемой из-за колебаний цен и/или сетевых сборов.",
-      "assetsDescription": "Стоимость активов, конвертированных в {{targetSymbol}}, ниже ожидаемой из-за колебаний цен и/или сетевых сборов."
-    },
-    "doneTransferPage": {
-      "title": "Платеж в процессе",
-      "description": "Вы только что оплатили {{amount}}. Вы получите подтверждение от {{clientName}}, когда это будет завершено.",
-      "seeDetails": "Посмотреть детали",
-      "disclaimer": "Переводы не завершены, пока они не получат достаточно подтверждений сети."
-    },
-    "exitPage": {
-      "title": "Вы уверены, что хотите выйти?",
-      "subtitle": "Ваш прогресс будет потерян.",
-      "continuePayment": "Продолжить оплату",
-      "exit": "Выйти"
-    },
-    "infoScreen": {
-      "title": "Войдите, чтобы просмотреть данные по оплате",
-      "rule1": "Ваша информация никогда не сохраняется. Доступ завершится после этой оплаты.",
-      "rule2": "Используйте свою криптовалюту, проверьте детали и одобрите оплату.",
-      "rule3": "Автоматическая конверсия упрощает процесс."
-    },
-    "transferErrorPage": {
-      "insufficientFunds": "Недостаточно средств",
-      "requestDenied": "Запрос отклонён",
-      "defaultTitle": "Не удается обработать этот платеж",
-      "insufficientFundsMessage": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
-      "belowNetworkMinimumMessage": "Сумма этой покупки ниже минимального лимита обмена для вашего аккаунта. Подключите другой аккаунт, чтобы завершить покупку.",
-      "requestDeniedMessage": "Похоже, вы отклонили транзакцию. Если это было ошибкой, попробуйте снова и одобрите запрос в вашем электронном кошельке.",
-      "defaultMessage": "Ваши средства будут оставаться на вашем счету {{integrationName}}.",
-      "chooseDifferentAccount": "Подключить другой аккаунт"
-    },
-    "previewPage": {
-      "title": "Оплата {{merchantName}}",
-      "from": "Из {{integrationName}}",
-      "payWith": "Оплатить с помощью",
-      "send": "Отправить",
-      "merchantPurchase": "Покупка у {{merchantName}}",
-      "estimatedNetworkFee": "Оценочная комиссия сети",
-      "conversionFee": "Комиссия за конвертацию {{integrationName}}",
-      "transactionBuffer": "Буфер транзакции",
-      "feesIncluded": "{{amount}} все сборы включены",
-      "bufferAndFees": "{{bufferAmount}} буфер + {{feesAmount}} все сборы включены",
-      "bufferDisclaimer": "Вы сохраните любой неиспользованный буфер.",
-      "howItWorks": "Как это работает",
-      "refundDisclaimer": "Возвраты будут выдаваться только в {{settlementCurrency}}. Курс обмена и комиссии меняются часто. Все крипто-покупки окончательны.",
-      "feeChangedNotice": "Комиссия сети изменилась. Пожалуйста, проверьте вашу сумму и подтвердите.",
-      "networkFeeHint": "Помогает провести вашу транзакцию в блокчейн, покрывая расходы на работу сетевых валидаторов, которые её обрабатывают",
-      "conversionFeeHint": "Эту комиссию {{integrationName}} собирает за конвертацию.",
-      "transactionBufferHint": "Эта сумма добавляется, чтобы ваша покупка прошла, даже если курсы криптовалют изменяются. Это может оставить некоторую сумму {{settlementCurrency}} в вашем кошельке.",
-      "pyusdDisclaimer": "Транзакция будет завершена с использованием PayPal USD (PYUSD), который является стейблкоином, выпущенным и хранимым компанией Paxos Trust Company, LLC. PYUSD работает на блокчейне."
-    },
-    "connectionPage": {
-      "approveConnection": "Подтвердите запрос на подключение в вашем кошельке",
-      "oauthLogin": "Войдите в свою учетную запись и разрешите доступ",
-      "continueTo": "Перейти к {{integrationName}}"
-    },
-    "brokerLoading": {
-      "preparingPayment": "Подготовка деталей вашего платежа"
-    },
-    "fundingOptions": {
-      "title": "Варианты финансирования",
-      "total": "Итого {{amount}}",
-      "balances": "Баланс(ы)",
-      "linkedPaymentMethods": "Связанные способ(ы) оплаты",
-      "buyingPower": "Доступные средства",
-      "instantCashAvailable": "Доступные денежные средства: {{amount}}",
-      "available": "{{amount}} доступно",
-      "exchangeRateDisclaimer": "Курс обмена может включать спред.",
-      "paymentMethodTypes": {
-        "card": "Карта",
-        "bankAccount": "Банковский счет",
-        "digitalWallet": "Кошелек"
-      }
-    },
-    "walletConfirmation": {
-      "title": "Подтвердите эту транзакцию в приложении {{integrationName}}"
-    },
-    "fundingSteps": {
-      "errorMessage": "Произошла ошибка. Попробуйте снова",
-      "conversion": "Конвертация {{amount}} в {{currency}}",
-      "deposit": "Пополнение {{amount}} с {{paymentMethod}}",
-      "purchase": "Покупка {{amount}} {{symbol}}",
-      "approval": "Одобрение вашего перевода из {{integrationName}}",
-      "transfer": "Перевести {{symbol}} для вашей покупки"
-    },
-    "termsOfUse": {
-      "text": "Продолжая, вы принимаете условия использования",
-      "linkText": "условия использования"
-    },
-    "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Компания\") является поставщиком технологий, который предоставляет коммуникационный инструмент (\"Инструмент\"), помогающий обеспечивать определенный функционал стороннего сервиса, которым вы пользуетесь (\"Сервис конечных пользователей\"). Такой функционал предназначен для того, чтобы вы могли взаимодействовать с вашими сторонними учетными записями и кошельками (\"Подключенные аккаунты\") через Сервис конечных пользователей, включая отправку инструкций, которые вы хотите выполнить. Mesh предоставляет этот Инструмент вам в качестве провайдера услуг для PayPal, Inc. (\"PayPal\")\n\nВы признаете и соглашаетесь с тем, что определенный функционал Сервиса конечных пользователей основан на Инструменте; что использование такого функционала осуществляется по вашему указанию; что ни Компания, ни ее поставщики услуг не предоставляют брокерские услуги или занимаютя обработкой платежей; и что ни Компания, ни ее поставщики услуг не несут ответственности или обязательств за Сервис конечных пользователей или любой Подключенный аккаунт, а также за условия, политику, действия или упущения их поставщиков.\n\nВы заявляете и гарантируете, что имеете все права и согласия, необходимые для подключения к каждому Подключенному аккаунту и доступа к ним через такой функционал, включая право предоставить Компании и ее поставщикам услуг свои учетные данные, адреса кошельков, и/или любую из ваших учетных данных или личной информации для каждого Подключенного аккаунта. Вы настоящим уполномочиваете Компанию и ее поставщиков услуг передавать инструкции, а также информацию, данные и другие материалы между Сервисом конечных пользователей и каждым Подключенным аккаунтом, и вы признаете и соглашаетесь с тем, что Компания и ее поставщики услуг не несут ответственности или обязательств за выполнение таких инструкций или таких материалов (включая их точность, своевременность или полноту).\n\nВы соглашаетесь с тем, что если вы используете Инструмент для целей транзакций с третьими сторонами, включая, но не ограничиваясь, онлайн-продавцами или проведением покупок любого рода (\"Транзакции с третьими сторонами\"), то ни Компания, ни PayPal не несут ответственности за споры по таким транзакциям. Вы несете ответственность за контакт с любыми соответствующими третьими лицами напрямую для разрешения любых споров, претензий об несанкционированных транзакциях, запросов на возврат, или любых других претензий или вопросов, касающихся Транзакций с третьими сторонами. Покупки, совершенные с использованием криптовалюты, могут быть предоставл"
-    }
   },
   "previewPageUI": {
     "accountLabel": "Аккаунт",
@@ -1268,6 +1407,7 @@
     "paymentTotalLabel": "Общая сумма к оплате",
     "payWithLabel": "Оплатить с помощью",
     "payWithLabelWithName": "Оплатить через {{integrationName}}",
+    "plusFees": "",
     "processingPayment": "Обработка вашего платежа"
   },
   "previewTransfer": {
@@ -1309,6 +1449,7 @@
     "youMayReceiveLess": "Вы можете получить меньше из-за изменения цены {{symbol}}."
   },
   "previewTransferPageUI": {
+    "depositFromIntegration": "Депозит из {{integrationName}}",
     "fee": "Включает комиссию {{amount}}",
     "fundingMethods": "Методы обеспечения",
     "receive": "Получить",
@@ -1316,15 +1457,20 @@
     "send": "Отправить",
     "title": "Предпросмотр трансфера",
     "tokenOnNetwork": "{{token}} через {{network}}",
-    "transferToken": "Токен для трансфера",
-    "depositFromIntegration": "Депозит из {{integrationName}}"
+    "transferToken": "Токен для трансфера"
   },
   "privacyComponent": {
     "content": "Ваши данные являются конфиденциальными и зашифрованы в любое время."
   },
   "qrCodePassword": {
+    "bybit": {
+      "euNotSupported": "",
+      "loginTitle": "",
+      "scanInstruction": ""
+    },
     "expired": "QR-код истек",
     "generateNew": "Создать новый QR-код",
+    "loading": "",
     "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
     "scanText": "Сканируйте этот код с помощью вашего приложения {{appName}} <1></1>, чтобы мгновенно войти в систему."
   },
@@ -1348,6 +1494,7 @@
     "title": "Выберите актив"
   },
   "selectHoldingPage": {
+    "balance": "",
     "binanceDirectNoAssetsBody1": "Похоже, у вас нет никаких активов на привязанном аккаунте.",
     "binanceDirectNoAssetsBody2": "Вы можете пополнить свой счет или подключить другой счет, чтобы продолжить перевод.",
     "cannotFundBody": "У вас недостаточно криптовалюты или баланса фиатных средств на этом счете для пополнения этой транзакции.",
@@ -1355,8 +1502,11 @@
     "defaultTitle": "Выбрать токен",
     "depositTitle": "Выберите токен для депозита",
     "ineligibleAssets": "Неподходящие активы",
+    "link40Subtitle": "",
     "link40Title": "Выберите токен",
     "loading": "Загрузка ваших активов...",
+    "network": "",
+    "networkTitle": "",
     "noAssetsTitle": "В привязанном аккаунте не обнаружены активы",
     "noEligibleAssetsTitle": "Ни один актив на этом счете не может использоваться для этого перевода",
     "notEnoughtBody": "Добавьте еще {{symbol}} в свою учетную запись, затем вернитесь сюда, чтобы попробовать снова.",
@@ -1375,9 +1525,12 @@
     "label": "Выбор {{text}}"
   },
   "selectNetworkPage": {
+    "clientSupports": "",
+    "estFee": "",
     "gasFeeDescription": "<0>Примерная комиссия за газ:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Неподходящие сети",
     "integrationFeeDescription": "<0>Примерная комиссия {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "sendVia": "",
     "title": "Выберите сеть"
   },
   "selectNetworkScreen": {
@@ -1433,6 +1586,11 @@
     "subtitle": "Ваш купленный баланс {{symbol}} ниже ожидаемого из-за колебаний цен и/или изменения цены за газ.",
     "title": "Необходимо пополнение"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "",
+    "basedOnYourBalances": "",
+    "basedOnYourBalancesDepositsTooltip": ""
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Просмотр депозита",
@@ -1441,6 +1599,7 @@
     },
     "errorMessage": {
       "insufficientFunds": "Недостаточно средств для покрытия комиссии за перевод и газа. Максимальная сумма перевода: {{maxAmount}}.",
+      "maximumAmount": "",
       "minimumAmount": "Минимальная сумма перевода - {{minAmount}}.",
       "zeroAmount": "Пожалуйста, введите ненулевую сумму"
     },
@@ -1509,12 +1668,16 @@
     "title": "Верификация"
   },
   "transferInsufficientBalancePage": {
+    "gasAndBalanceTitle": "",
     "gasBody": "Комиссия за газ для сети {{network}} взимается в {{symbol}}. Пожалуйста, пополните баланс {{symbol}} и повторите эту транзакцию.",
     "gasTitle": "Недостаточный баланс для оплаты комиссии за газ",
+    "insufficientGasFeeDescription": "",
     "noBalanceBody": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
+    "noBalanceOnSpecificNetwork": "",
     "noBalanceTitle": "Баланс недостаточен",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
     "title": "Недостаточный баланс",
+    "toppedUpWalletQuestion": "",
     "transferBody": "Ваш баланс слишком низкий, чтобы завершить этот перевод."
   },
   "transferMfaPage": {
@@ -1588,6 +1751,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} хочет проверить право собственности на <3>{{requestedNetworkName}}</3> адрес <6>{{truncatedRequestedAddress}}</6>. Этот адрес не связан с подключенным кошельком. Пожалуйста, подключите другой кошелек.",
+    "body40": "",
     "connectAnotherAction": "Подключить другой кошелек",
     "title": "Ой!"
   },
@@ -1597,6 +1761,8 @@
   },
   "verifyErrorPage": {
     "body": "Вы отклонили запрос на подпись в вашем кошельке, или предыдущий запрос по-прежнему активен. {{clientName}} не может подтвердить собственность вашего кошелька без подписи.",
+    "body40": "",
+    "timeout": "",
     "title": "Проверка отклонена"
   },
   "wallectConnect": {
@@ -1605,6 +1771,7 @@
     "unknownError": "Произошла неизвестная ошибка. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "",
     "completePaymentMessage": "Вернитесь к странице оплаты, чтобы продолжить покупку {{clientName}}.",
     "continueMessage": "Пожалуйста, продолжите в приложении {{clientName}}.",
     "successMessage": "Вы успешно подтвердили право собственности на ваш кошелек {{walletName}}."

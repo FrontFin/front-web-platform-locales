@@ -21,20 +21,55 @@
     "amountMustBeWithin": "Määrän on oltava välillä {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
     "amountMustBeWithinErrorMessage": "Määrän on oltava välillä 21 USD - 15 000 USD",
     "buyCrypto": "Osta kryptovaluuttaa Binance Connectilla",
+    "cashEquivalent": "",
     "closeButton": "Sulje",
+    "continueInBinance": "",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
+    "cryptoAmount": "",
+    "descriptionDeposit": "<0>Return here to deposit</0> after connecting with your Binance mobile app.",
     "enterAmount": "Syötä siirron määrä",
+    "mobileLabelOnramp": "",
     "notSupported": "{{selectedIntegrationName}} ei tue siirtoja pyydetyille tokeneille ja/tai verkoille.",
+    "openBinance": "",
     "receiveAmountInput": {
       "networkName": "{{networkName}} verkossa"
     },
+    "scanText": "",
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko talletukseen.",
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
+    "transactionRequest": "",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat"
+  },
+  "binanceDirectLoginConnectionDeniedPage": {
+    "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
+    "title": "Hups!"
+  },
+  "binanceDirectLoginConnectionTimeOutPage": {
+    "body": "Emme saaneet vastausta ajoissa. Yritä uudelleen.",
+    "title": "Pyyntö vanhentui"
+  },
+  "binanceDirectLoginPage": {
+    "continueWithAppButton": "Jatka Binance-sovelluksella",
+    "descriptionDeposit": "<1>Palaa tänne tallettamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksella.",
+    "descriptionGeneral": "<1>Palaa tänne jatkamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
+    "descriptionOnRamp": "<1>Palaa tänne jatkamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
+    "descriptionPay": "<1>Palaa tänne maksamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
+    "loginWithEmailButton": "Kirjaudu sisään sähköpostilla/puhelimella",
+    "or": "tai",
+    "scanText": "Skannaa puhelimesi kameralla tai Binance-sovelluksella kirjautuaksesi sisään.",
+    "title": "Sisäänkirjautuminen"
+  },
+  "binanceDirectPasswordPage": {
+    "emailPhoneInput": "",
+    "invalidEmail": "",
+    "nextButton": "",
+    "passwordInput": "",
+    "titleStep1": "",
+    "titleStep2": ""
   },
   "binanceMfaPage": {
     "add2fa": "Lisää vaaditut kaksivaiheisen tunnistautumisen (2FA) menetelmät Binanceen",
@@ -60,25 +95,6 @@
     },
     "title": "Palauta salasana"
   },
-  "binanceDirectLoginPage": {
-    "continueWithAppButton": "Jatka Binance-sovelluksella",
-    "descriptionDeposit": "<1>Palaa tänne tallettamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksella.",
-    "descriptionGeneral": "<1>Palaa tänne jatkamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
-    "descriptionOnRamp": "<1>Palaa tänne jatkamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
-    "descriptionPay": "<1>Palaa tänne maksamaan</1> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
-    "loginWithEmailButton": "Kirjaudu sisään sähköpostilla/puhelimella",
-    "or": "tai",
-    "scanText": "Skannaa puhelimesi kameralla tai Binance-sovelluksella kirjautuaksesi sisään.",
-    "title": "Sisäänkirjautuminen"
-  },
-  "binanceDirectLoginConnectionDeniedPage": {
-    "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
-    "title": "Hups!"
-  },
-  "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "Emme saaneet vastausta ajoissa. Yritä uudelleen.",
-    "title": "Pyyntö vanhentui"
-  },
   "bindFacePage": {
     "completedButton": "Olen suorittanut tämän puhelimellani",
     "linkText": "Jos et voi skannata QR-koodia, seuraa tätä <2><0>linkkiä</0></2>.",
@@ -100,32 +116,33 @@
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
-    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
-    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
     "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
     "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
-    "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi."
+    "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
   },
   "catalogList": {
     "badges": {
       "api": "API",
       "connected": "Yhdistetty",
       "installed": "Asennettu",
+      "lastUsed": "",
       "linked": "Aiemmin linkitetty"
     },
+    "emptyCatalogBody": "Tämä voi johtua sijainnistasi, säännösten noudattamisesta tai laitteen yhteensopivuudesta.",
+    "emptyCatalogTitle": "Ei saatavilla olevia lompakoita ja pörssejä",
     "noResults": "Pahoittelut, emme löytäneet tuloksia",
     "paymentTitle": "Valitse maksutili",
     "prodOnly": "Vain tuotanto",
     "search": "haku",
     "title": "Valitse linkitettävä tili",
-    "title40": "Valitse tilisi",
-    "emptyCatalogTitle": "Ei saatavilla olevia lompakoita ja pörssejä",
-    "emptyCatalogBody": "Tämä voi johtua sijainnistasi, säännösten noudattamisesta tai laitteen yhteensopivuudesta."
+    "title40": "Valitse tilisi"
   },
   "catalogTile": {
     "select": "Valitse {{integrationName}}, {{badge}}"
@@ -165,21 +182,23 @@
     "availableForTransfer": "Saatavilla",
     "cancel": "Peruuta",
     "chooseDifferentAccount": "Valitse toinen tili",
+    "chooseDifferentNetwork": "",
     "closeCap": "Sulje",
     "codeNotCorrent": "Annettu koodi ei ole oikea.",
     "connectAnotherAccount": "Yhdistä toinen tili",
     "continueCap": "Jatka",
     "doneCap": "Valmis",
     "failedToLoadTrasferError": "Siirtojen tietoja ei saatu ladattua",
+    "freeCap": "",
     "genericConnectErrorMessage": "Yhteyttä integrointiin ei saatu muodostettua",
     "maxCap": "Maksimi",
     "mesh": "Mesh",
     "notFound": "Ei löydetty",
+    "processingCap": "Käsittely",
     "reconnectYourAccount": "Yhdistä tilisi uudelleen",
     "searchCap": "Haku",
     "securedBy": "Suojattu",
     "sendingCap": "Lähetetään",
-    "processingCap": "Käsittely",
     "somethingWentWrong": "Jotain meni pieleen...",
     "submitCap": "Lähetä",
     "successTitle": "Onnistui!",
@@ -222,6 +241,13 @@
   "currencyBox": {
     "changeCurrency": "Vaihda valuutta"
   },
+  "dappDoneTransferPageUI": {
+    "depositSubtitle": "",
+    "depositSuccess": "",
+    "depositTitle": "You will receive <2>{amountCrypto} ~ {amountFiat}</2> in<5></5>{clientName}.",
+    "paymentSubtitle": "",
+    "paymentSuccess": ""
+  },
   "deFiWalletConnectionDeclinedPage": {
     "body": "Näyttää siltä, että hylkäsit yhdistämispyynnön tai edellinen pyyntö on edelleen aktiivinen. Jos tämä oli virhe, yritä uudelleen.",
     "title": "Hups!"
@@ -241,6 +267,16 @@
   },
   "deFiWalletInitialPage": {
     "continue": "Jatka siirtymällä {{walletName}}iin",
+    "dappPage": {
+      "continueButton": "",
+      "depositTitle": "",
+      "payTitle": "",
+      "qrSubtitle": "",
+      "spinnerTransactionText": "",
+      "spinnerVerifyText": "",
+      "subtitle": "",
+      "verifyWalletTitle": ""
+    },
     "previewButton": "Yhdistä",
     "previewTitle": "Yhdistä tili",
     "subtitle": "Napauta alta avataksesi {{walletName}}n. Hyväksy sitten yhteyspyyntö esikatsellaksesi maksusi.",
@@ -251,6 +287,7 @@
     "declinedTitle": "Yhteys hylätty",
     "description": "Avaa {{selectedIntegrationName}} ja skannaa<3></3>QR-koodi yhdistääksesi",
     "qrCodeLabel": "Voit skannata QR-koodin mobiililaitteellasi yhteyden muodostamiseksi",
+    "scanInstruction": "",
     "title": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
   "defiWalletSelectNetworkPage": {
@@ -264,6 +301,11 @@
   "defiWalletUnavaialbleConnectionPage": {
     "body": "{{integrationName}}-sovellusta ei ole asennettu tälle laitteelle. Asenna {{integrationName}} -sovellus, tai liitä toinen lompakko.",
     "title": "Yhteys ei ole saatavilla"
+  },
+  "depositFallback": {
+    "description": "Älä huoli... viimeistelemme tapahtumasi vaihtoehtoisella {{integrationName}}-nostomenetelmällä.",
+    "instruction": "Napsauta Esikatselu siirtoa tarkistaaksesi ja viimeistelläksesi tapahtumasi.",
+    "previewButton": "Siirron esikatselu"
   },
   "deviceConfirmationScreenPage": {
     "awaitingConfirmation": "Odotetaan vahvistusta mobiilisovelluksesta",
@@ -379,6 +421,7 @@
     "configurationMismatch": "Määritysvirhe",
     "emptyWalletBalance": "Tyhjä lompakko",
     "exceedsApplicationLimit": "Ylittää sovelluksen rajan",
+    "existingApiKey": "",
     "expiredSmartDeposit": "Tapahtuma vanhentunut",
     "faceVerificationFailed": "Kasvojentunnistus epäonnistui",
     "failedToGetFundingOptions": "Virhe rahoitustavoissa",
@@ -396,6 +439,7 @@
     "invalidToIntegrationToken": "Autentikointi vanhentunut",
     "kycRequired": "Asiakkaan tunnistus (KYC) vaaditaan",
     "locked": "Tili on lukittu",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "MFAta ei tueta",
     "missingField": "Tietoja puuttuu",
     "networkDisabled": "Verkko ei ole käytössä",
@@ -427,6 +471,7 @@
     "toAccountNotSupported": "Talletusta ei tueta",
     "tooManyRequests": "Liian monta pyyntöä",
     "transferAlreadyRequested": "Siirto on jo pyydetty",
+    "travelRuleRestriction": "",
     "tryAgainAfterLogin": "Kirjautuminen vaaditaan",
     "twoFaFailed": "Virheellinen 2FA-koodi",
     "unableToSend": "Siirto epäonnistui",
@@ -445,6 +490,8 @@
     "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot aikakatkaistu"
   },
   "errorMessages": {
+    "accountDisabled": "",
+    "accountLocked": "",
     "accountNotFound": "Tiläsi/tilejäsi ei voida hakea.",
     "addressAllowlistPending": "Tämä vastaanottajan osoite on lisätty sallittujen listalle ja odottaa käsittelyä.",
     "addressNotAllowlisted": "Nostoa Coinbasesta ei voida aloittaa. Sinun tulee lisätä tämä vastaanottajan osoite sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",
@@ -464,8 +511,10 @@
     "coinbaseUnavailable": "Coinbasessa tapahtui virhe. Tarkista CB-tilisi nähdäksesi, menikö siirto läpi.",
     "configurationMismatch": "Siirtoa ei voida aloittaa. Tilin määritys ei vastaa pyydettyä siirtoa.",
     "default": "Tapahtui virhe.",
+    "emailCodeExpired": "",
     "emptyWalletBalance": "Lähdelompakon saldo on tyhjä.",
     "exceedsApplicationLimit": "Siirtosumma ylittää sovelluksen rajan.",
+    "existingApiKey": "",
     "expiredSmartDeposit": "Tapahtuma vanhentunut",
     "expiredSmartDepositDeposit": "Älytalletus vanhentunut",
     "expiredSmartOnramp": "Osto vanhentunut",
@@ -475,13 +524,22 @@
     "failedToSaveFundingOptions": "Talletusvaihtoehtoja ei voitu tallentaa",
     "feeAssetBalanceNotEnough": "Ei riittävästi varoja siirtomaksuihin.",
     "fromAccountNotSupported": "Tili ei tue tällä hetkellä kryptonostoja.",
+    "incorrect2faCode": "",
+    "incorrectEmail": "",
+    "incorrectPasswordChancesRemaining_one": "",
+    "incorrectPasswordChancesRemaining_other": "",
+    "incorrectUsernameOrPassword": "",
     "integrationNotAvailable": "Integraatio ei ole tällä hetkellä käytettävissä.",
     "invalidCredentials": "Virheelliset kirjautumistiedot. Ole hyvä ja yritä uudelleen.",
     "invalidFromIntegrationToken": "Kirjaudu sisään uudelleen jatkaaksesi.",
     "invalidIntegrationToken": "Kirjaudu sisään uudelleen jatkaaksesi.",
+    "invalidPhoneNumber": "",
     "invalidToIntegrationToken": "Kirjaudu uudelleen jatkaaksesi..",
     "kycRequired": "Siirtoa ei voida käynnistää. Integraatio vaatii asiakkaan tunnistamisen (KYC) suorittamista ennen kryptosiirtojen sallimista.",
     "locked": "Tilisi on lukittu",
+    "loginFirst": "",
+    "loginWithQrOrMobileLink": "",
+    "mfaBindingRequired": "",
     "mfaNotSupported": "Monivaiheinen tunnistautuminen ei ole käytössä tässä operaatiossa.",
     "networkDisabled": "Verkko on tällä hetkellä poissa käytöstä eikä sitä voi käyttää.",
     "noAvailableSmartContract": "Älysopimusta ei ole saatavilla",
@@ -493,7 +551,11 @@
     "passKeyNotSupportedPayment": "Valitettavasti Passkey 2FA ei ole tällä hetkellä tuettu. Lisää Google Authenticator lisä 2FA:ksi ja yritä maksua uudelleen.",
     "passKeyNotSupportedRedirect": "Uudelleen ohjaus, valitse vaihtoehtoinen Coinbase-kotiutusmenetelmä...",
     "permissionDenied": "Sinulla ei ole tarvittavia käyttöoikeuksia tämän päätepisteen käyttämiseen, ota yhteyttä Mesh-tiimiin pyytääksesi käyttöoikeutta.",
+    "pleaseLogin": "",
+    "pleaseTryAgain": "",
+    "pleaseTryAgainIn1Hour": "",
     "previewExpired": "Esikatselu on vanhentunut.",
+    "qrOrMobileLinkIn24Hours": "",
     "refusedByIntegration": "Siirtoa ei ole mahdollista aloittaa.",
     "refusedByIntegrationDeposit": "Ei mahdollista aloittaa talletusta.",
     "refusedByIntegrationOnramp": "Ei mahdollista aloittaa ostoa.",
@@ -507,14 +569,18 @@
     "symbolNotSupportedByTarget": "Talletusosoitetta pyydetylle kolikolle ei löydy.",
     "symbolNotSupportedInRegion": "Valittua symbolia ei tueta Coinbasessa alueellisten rajoitusten vuoksi",
     "toAccountNotSupported": "Kohdetili ei tällä hetkellä hyväksy kryptotalletuksia.",
+    "tooManyAttemptsOneMinute": "",
     "tooManyRequests": "Yritä myöhemmin uudelleen.",
     "transferAlreadyRequested": "Siirtoa on jo pyydetty.",
+    "travelRuleRestriction": "",
+    "travelRuleRestrictionPayment": "",
     "tryAgainAfterLogin": "Yritä uudelleen sisäänkirjautumisen jälkeen.",
     "twoFaFailed": "Kaksivaiheinen tunnistautuminen epäonnistui. Ole hyvä ja yritä uudelleen.",
     "unableToSend": "Siirtoa ei voida tehdä. Yritä uudelleen.",
     "unableToSendContactSupport": "Et voi tällä hetkellä lähettää kryptoa. Ota yhteyttä Coinbasen tukeen.",
     "unauthorizedToken": "Kirjaudu sisään uudelleen jatkaaksesi.",
     "userInfoUnavailable": "Käyttäjätietoja ei voida hakea. Yritä uudelleen.",
+    "verificationFailed": "",
     "webWithdrawalLimitExceeded": "Olet ylittänyt selainversion päivittäisen nostorajan Binancessa.",
     "whitelistAddressRequired": "Kohdeosoitteen on oltava sallittujen osoitteiden listalla.",
     "withdrawalDisabledDueToC2CDepositFreeze": "Omaisuutesi turvallisuuden varmistamiseksi osa C2C-talletusvaroistasi jäädytetään 24 tunnin ajaksi.\n24 tunnin jälkeen jäädytys poistetaan automaattisesti, ja voit nostaa kryptovaluuttaa. Jäädytysjakson aikana paikan päällä tehtävät tapahtumat eivät ole vaikutuksen alaisia – voit käyttää Binancen kaupankäyntipalveluita normaalisti.",
@@ -577,6 +643,7 @@
     "title": "Varmistus"
   },
   "feesDrawer": {
+    "automatedSwapFeeDescription": "",
     "gasFeeDescription": "Arvioidut kustannukset verkon validoijien kompensoimiseksi tapahtuman käsittelystä.",
     "institutionFeeDescription": "Tämä maksu kattaa verkon kustannukset nostosi käsittelystä. Se vaihtelee valitun kryptovaluutan ja nykyisten lohkoketjun olosuhteiden mukaan.",
     "processingFee": "{{clientName}} Käsittelymaksu",
@@ -741,6 +808,15 @@
     "body": "{{clientName}} käyttää Meshiä turvallisen yhteyden muodostamiseen {{selectedIntegrationName}}:n kanssa.",
     "connectAction": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
+  "homePage": {
+    "guaranteed": "",
+    "noExtraFee": "",
+    "secureDeposit": "",
+    "sendFunds": "",
+    "sendUsingQR": "",
+    "standardDeposit": "",
+    "title": ""
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
     "balanceBelowIntegrationMinimumDescription": "Sinun {{currentBalance}} saldo on alle {{minimumAmount}} {{integrationName}} minimin siirtääksesi {{symbol}} verkossa {{network}}. Ole hyvä ja täydennä saldoasi ja yritä uudelleen.",
@@ -769,8 +845,8 @@
     "notSupportedForTransferBySource": "{{integrationName}} ei tue",
     "nyCoinbaseUserRestrictions": "{{symbol}} {{network}}:ssä ei hyväksytä tähän siirtoon NY:n moniketjutuen rajoitusten vuoksi.",
     "symbolDoesNotMatch": "{{clientName}} ei tue",
-    "symbolDoesNotMatchNoClientName": "Ei tuettu tässä sovelluksessa",
-    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon."
+    "symbolDoesNotMatchDescription": "{{symbol}} ei hyväksytä tähän siirtoon.",
+    "symbolDoesNotMatchNoClientName": "Ei tuettu tässä sovelluksessa"
   },
   "initialLedgerScreen": {
     "title": "Käynnistä ja avaa laitteesi"
@@ -789,6 +865,8 @@
     "thirdParty": "Omaisuutesi eivät koskaan kosketa kolmansia osapuolia"
   },
   "initialVerifyPage": {
+    "approveSignature": "",
+    "approveSignatureStillThere": "",
     "content40": "Vahvista, että omistat tämän lompakon",
     "drawerTitle": "Hyväksy allekirjoituspyyntö<1></1> kryptolompakossasi",
     "item1Body": "Sinua pyydetään allekirjoittamaan viesti {{selectedIntegrationName}}: ssä, joka vahvistaa, että omistat tämän kryptolompakon.",
@@ -800,6 +878,23 @@
     "title": "Melkein valmis!",
     "verifyAction": "Vahvista osoite",
     "verifyingLabel": "Allekirjoituksen tarkistaminen..."
+  },
+  "inWalletBrowserInitialPage": {
+    "depositFlowSubtitle": "",
+    "paymentFlowSubtitle": "",
+    "title": "",
+    "verifyFlowSubtitle": ""
+  },
+  "inWalletBrowserVerifyDonePage": {
+    "subtitle": "",
+    "title": ""
+  },
+  "inWalletBrowserVerifyPage": {
+    "resend": "",
+    "subtitleAlreadyDenied": "",
+    "subtitleInitial": "",
+    "titleAlreadyDenied": "",
+    "titleInitial": ""
   },
   "ipWhiteListPage": {
     "addIp": "Lisää alla oleva IP-osoite Luotetuiksi IP-osoitteiksi",
@@ -908,8 +1003,13 @@
     "twoFactor": "Syötä koodi, jonka <1>{{selectedIntegrationName}}</1> -tilillesi määritelty kaksivaiheinen tunnistautumistapa on antanut."
   },
   "mfaPage": {
+    "codeSentEmail": "",
+    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
+    "codeSentPhone": "",
     "enterCode": "Syötä kertakäyttökoodi varmistaaksesi, että<1></1>olet todella kirjatumassa sisään.",
+    "enterCode2": "<0>Enter the code from your authenticator app.</0>",
     "enterPin": "Syötä kaupankäynnin PIN-koodisi",
+    "enterVerificationCode": "",
     "title": "Varmistus",
     "verify": "Vahvista"
   },
@@ -956,13 +1056,13 @@
     "returnToClient": "Palaa sovellukseen {{clientName}} sen jälkeen, kun olet hyväksynyt yhteyspyynnön palvelussa {{selectedIntegrationName}}.",
     "sendAgain": "Lähetä uudelleen",
     "sendNewRequest": "Lähetä uusi pyyntö",
-    "troubleshootTitle": "Et saanut pyyntöä?",
-    "troubleshootExchangeMode": "Varmista, että olet vaihto-tilassa, et lompakossa.",
     "steps": {
       "authorize": "Klikkaa <1>Valtuuta</1> vahvistussivulla.",
       "openApp": "Klikkaa alta <1>Avaa {{selectedIntegrationName}} sovellus</1>.",
       "return": "Palaa tänne viimeistelläksesi tilisi linkityksen."
-    }
+    },
+    "troubleshootExchangeMode": "Varmista, että olet vaihto-tilassa, et lompakossa.",
+    "troubleshootTitle": "Et saanut pyyntöä?"
   },
   "mobileContent": {
     "actionButton": "Avaa {{integrationName}}"
@@ -976,6 +1076,8 @@
     "description": "Alla olevat verkot ovat kaikki turvallisia ja yhteensopivia maksuvaihtoehtoja tälle maksulle. Olemme valinneet sinulle automaattisesti halvimman verkon.",
     "estimatedGasFeeLabel": "Arvioitu gas-maksu:",
     "lowestFeeLabel": "Alhaisin maksu",
+    "mostPopular": "",
+    "subtitle": "",
     "title": "Valitse verkko"
   },
   "nonOAuthPermissionsPage": {
@@ -1001,9 +1103,9 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Avaa uudelleen {{selectedIntegrationName}}",
+      "note": "Jatka {{selectedIntegrationName}}-sovelluksessa talletuksen loppuunsaattamiseksi",
       "subtitle": "Ole hyvä ja viimeistele kirjautuminen ja salli pääsy selaimessasi.",
-      "title": "Odotetaan yhteyttä",
-      "note": "Jatka {{selectedIntegrationName}}-sovelluksessa talletuksen loppuunsaattamiseksi"
+      "title": "Odotetaan yhteyttä"
     },
     "checking": {
       "message": "Tarkistetaan omistuksiasi..."
@@ -1073,11 +1175,13 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "Määrän on oltava välillä {{minAmount}} - {{maxAmount}}",
     "amountMustBeWithinErrorMessage": "Määrän on oltava välillä 21 USD - 15 000 USD",
+    "buildingYourPreview": "Rakennetaan esikatselua...",
     "buyCrypto": "Osta kryptovaluuttaa Binance Connectilla",
     "closeButton": "Sulje",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
     "enterAmount": "Syötä siirron määrä",
     "notSupported": "{{selectedIntegrationName}} ei tue siirtoja pyydetyille tokeneille ja/tai verkoille.",
+    "Processing": "Käsitellään...",
     "receiveAmountInput": {
       "networkName": "{{networkName}} verkossa"
     },
@@ -1087,22 +1191,17 @@
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
     "unsupportedCurrencyError": "Valitsemaasi valuuttaa ei tueta maassasi.",
-    "buildingYourPreview": "Rakennetaan esikatselua...",
-    "Processing": "Käsitellään...",
+    "unsupportedPair": "Tämä verkko/symbolipari ei ole tällä hetkellä tuettu. Valitse toinen.",
     "youPay": "Sinä maksat",
-    "youReceive": "Sinä vastaanotat",
-    "unsupportedPair": "Tämä verkko/symbolipari ei ole tällä hetkellä tuettu. Valitse toinen."
+    "youReceive": "Sinä vastaanotat"
   },
   "orderSummaryDrawer": {
+    "automatedSwapFee": "",
+    "conversionFee": "",
     "merchantInfoName": "Kauppias: {{clientName}}",
+    "paymentToClient": "Maksu {{clientName}}ille",
     "title": "Tilauksen yhteenveto",
-    "totalLabel": "Yhteensä",
-    "paymentToClient": "Maksu {{clientName}}ille"
-  },
-  "depositFallback": {
-    "description": "Älä huoli... viimeistelemme tapahtumasi vaihtoehtoisella {{integrationName}}-nostomenetelmällä.",
-    "instruction": "Napsauta Esikatselu siirtoa tarkistaaksesi ja viimeistelläksesi tapahtumasi.",
-    "previewButton": "Siirron esikatselu"
+    "totalLabel": "Yhteensä"
   },
   "passwordPage": {
     "fieldError": "Ole hyvä ja syötä {{field}}",
@@ -1115,6 +1214,36 @@
       "qrCode": "QR-koodi"
     },
     "title": "Sisäänkirjautuminen"
+  },
+  "payManual": {
+    "entry": {
+      "depositWithQr": "",
+      "depositWithWalletAddress": "",
+      "dontSeeYourAccount": "",
+      "needAnotherWay": ""
+    },
+    "error": {
+      "noTokensDescription": "",
+      "noTokensTitle": ""
+    },
+    "networkSelection": {
+      "subtitle": "",
+      "title": ""
+    },
+    "screen": {
+      "copiedWalletAddress": "",
+      "copyWalletAddress": "",
+      "depositToClient": "",
+      "downloadQr": "",
+      "headline": "",
+      "networkLabel": "",
+      "tokenLabel": "",
+      "warning": ""
+    },
+    "tokenSelection": {
+      "subtitle": "",
+      "title": ""
+    }
   },
   "paymentMethods": {
     "bankAccount": "Pankkitili",
@@ -1131,6 +1260,126 @@
     "title": "Maksun päivitys",
     "topUp": "Lataa {{token}} saldoa"
   },
+  "paypal": {
+    "brokerLoading": {
+      "preparingPayment": "Valmistellaan maksutietojasi"
+    },
+    "common": {
+      "cancel": "Peruuta",
+      "change": "Vaihda",
+      "close": "Sulje",
+      "continue": "Jatka",
+      "done": "Valmis",
+      "ok": "OK",
+      "order": "Tilaa",
+      "pay": "Maksa",
+      "save": "Tallenna",
+      "stillWorking": "Työstetään edelleen...",
+      "total": "Yhteensä",
+      "tryAgain": "Yritä uudelleen"
+    },
+    "connectionPage": {
+      "approveConnection": "Hyväksy yhteyspyyntö lompakossasi",
+      "continueTo": "Jatka siirtymällä {{integrationName}}iin",
+      "oauthLogin": "Kirjaudu tilillesi ja salli pääsy"
+    },
+    "doneTransferPage": {
+      "description": "Maksoit juuri {{amount}}. Saat ilmoituksen {{clientName}} kun se on suoritettu.",
+      "disclaimer": "Siirtoja ei ole suoritettu loppuun, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia.",
+      "seeDetails": "Katso mitä tapahtui",
+      "title": "Maksu on tulossa"
+    },
+    "exitPage": {
+      "continuePayment": "Jatka maksamaan",
+      "exit": "Poistu",
+      "exitAnyway": "",
+      "subtitle": "Tekemäsi muutokset menetetään.",
+      "title": "Oletko varma, että haluat poistua?"
+    },
+    "fundingOptions": {
+      "available": "{{amount}} käytettävissä",
+      "balances": "Saldot",
+      "buyingPower": "Ostovoima",
+      "exchangeRateDisclaimer": "Vaihtokurssi voi sisältää hajontaa.",
+      "instantCashAvailable": "Välittömästi käytettävissä oleva raha: {{amount}}",
+      "linkedPaymentMethods": "Linkitetyt Maksutavat",
+      "paymentMethodTypes": {
+        "bankAccount": "Pankkitili",
+        "card": "Kortti",
+        "digitalWallet": "Lompakko"
+      },
+      "title": "Rahoitusvaihtoehdot",
+      "total": "Yhteensä {{amount}}"
+    },
+    "fundingSteps": {
+      "approval": "Hyväksy siirto pois {{integrationName}}",
+      "conversion": "Vaihda {{amount}} valuutaksi {{currency}}",
+      "deposit": "Talletus {{amount}} maksutavasta {{paymentMethod}}",
+      "errorMessage": "Virhe on tapahtunut. Yritä uudestaan",
+      "purchase": "Osto {{amount}} {{symbol}}",
+      "transfer": "Siirrä {{symbol}} ostoksesi maksuun"
+    },
+    "infoScreen": {
+      "rule1": "Tietojasi ei koskaan tallenneta. Pääsy päättyy tämän maksun jälkeen.",
+      "rule2": "Käytä kryptovaluuttaasi, tarkista tiedot ja hyväksy maksu.",
+      "rule3": "Automaattinen muunnos pitää asiat yksinkertaisina.",
+      "title": "Kirjaudu sisään tarkistaaksesi maksutiedot"
+    },
+    "previewPage": {
+      "bufferAndFees": "{{bufferAmount}} Puskuri + {{feesAmount}} maksut sisältyvät",
+      "bufferDisclaimer": "Säilytät mahdollisen käyttämättömän puskurin.",
+      "conversionFee": "{{integrationName}} vaihtomaksu",
+      "conversionFeeHint": "Tämän maksun perii {{integrationName}} konvertoinnista.",
+      "estimatedNetworkFee": "Arvioitu verkkomaksu",
+      "feeChangedNotice": "Verkkomaksu on muuttunut. Tarkista kokonaismaksu ja vahvista.",
+      "feesIncluded": "{{amount}} maksut sisältyvät",
+      "from": "From {{integrationName}}",
+      "howItWorks": "Miten se toimii",
+      "merchantPurchase": "{{merchantName}} osto",
+      "networkFeeHint": "Auttaa saamaan tapahtumasi blockchainiin kattamalla verkon validoijien kustannukset, jotka käsittelevät sen",
+      "payWith": "Maksa käyttäen",
+      "pyusdDisclaimer": "Tapahtuma suoritetaan käyttäen PayPal USD (PYUSD), mikä on Paxos Trust Company, LLC:n liikkeeseen laskema ja hallinnoima vakaa kolikko. PYUSD toimii blockchainissa.",
+      "refundDisclaimer": "Hyvitykset suoritetaan vain {{settlementCurrency}} valuutassa. Valuutanvaihtokurssi ja maksut muuttuvat usein. Kaikki kryptovaluuttaostokset ovat lopullisia.",
+      "send": "Lähetä",
+      "title": "Maksa {{merchantName}}",
+      "transactionBuffer": "Tapahtumapuskuri",
+      "transactionBufferHint": "Tämä summa lisätään, jotta osto menee läpi, vaikka krypton hinnat muuttuisivat. Tämä voi jättää lompakkoosi jonkin verran {{settlementCurrency}}."
+    },
+    "sessionExpiredPage": {
+      "description": "",
+      "retry": "",
+      "title": ""
+    },
+    "termsContent": {
+      "fullText": "Mesh Connect, Inc. (\"Yritys\") on teknologiatoimittaja, joka valmistaa viestintävälineen (\"Työkalu\"), joka auttaa edistämään käyttämäsi kolmannen osapuolen palvelun (\"Loppukäyttäjäpalvelu\") tiettyjä toimintoja. Tällaisen toiminnon tarkoitus on mahdollistaa viestintäsi kolmannen osapuolen tilien ja lompakkojen (\"Yhdistetyt tilit\") kautta Loppukäyttäjäpalvelun välityksellä, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa. Mesh tarjoaa tämän Työkalun sinulle palveluntarjoajana PayPal, Inc:lle (\"PayPal\")\n\nHyväksyt ja ymmärrät, että Loppukäyttäjäpalvelun tietty toiminnallisuus perustuu Työkaluun; että käytät tällaista toiminnallisuutta omasta aloitteestasi; että Yritys tai sen palveluntarjoajat eivät tarjoa välityspalveluja tai osallistu maksujen käsittelyyn; ja että Yritys tai sen palveluntarjoajat eivät ole vastuussa sen paremmin Loppukäyttäjäpalvelusta kuin mistään Yhdistetystä tilistäkään, tai niiden palveluntarjoajien ehdoista, käytännöistä, teoista tai laiminlyönneistä.\n\nVakuutat ja takaat, että sinulla on kaikki oikeudet ja suostumukset yhdistää ja käyttää kutakin Yhdistettyä tiliä tällaisen toiminnallisuuden kautta, mukaan lukien oikeus antaa Yhtiölle ja sen palveluntarjoajille tilillesi kirjautumistiedot, lompakkojen osoitteet ja/tai kaikki yhdistetyn tilin tai henkilökohtaiset tietosi. Täten valtuutat Yhtiön ja sen palveluntarjoajat siirtämään ohjeita sekä tietoja, dataa ja muita materiaaleja Loppukäyttäjäpalvelun ja kunkin Yhdistetyn tilin välillä, ja tunnustat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa mistään tällaisten ohjeiden suorittamisesta tai mistään tällaisista materiaaleista (mukaan lukien niiden paikkansapitävyys, ajantasaisuus tai täydellisyys).\n\nHyväksyt, että jos käytät Työkalua transaktioiden suorittamiseen kolmansien osapuolten kanssa, mukaan lukien mutta ei rajoittuen verkkokauppiaisiin tai sellaisten ostojen suorittamiseen millään tavalla (\"Kolmannen osapuolen Transaktiot\"), Yritys eikä PayPal ole vastuussa mistään tällaisten transaktioiden liittyvistä riidoista. Olet vastuussa ottamisesta suoraan yhteyttä mihin tahansa merkitykselliseen kolmanteen osapuoleen ratkaistaksesi riitoja, valituksia valtuuttamattomista tapahtumista, hyvitysvaatimuksia tai mahdollisia muita Kolmannen osapuolen transaktioihin liittyviä vaatimuksia."
+    },
+    "termsOfUse": {
+      "linkText": "käyttöehdot",
+      "text": "Jatkamalla hyväksyt"
+    },
+    "topupPage": {
+      "assetsDescription": "Omaisuuserien muunnoksen {{targetSymbol}} arvo on odotettua alempi hintojen ja/tai verkko maksujen vaihteluiden vuoksi.",
+      "conversionDescription": "Muunnetun {{convertedSymbol}} arvon {{targetSymbol}} on odotettua alempi hintojen ja/tai verkko maksujen vaihteluiden vuoksi.",
+      "currentBalance": "Nykyinen saldo",
+      "disclaimer": "Jos et suorita maksua, {{targetSymbol}} tilin saldo pysyy {{integrationName}} tililläsi.",
+      "required": "Vaaditaan",
+      "title": "Lisärahoitusta tarvitaan",
+      "viewTopUp": "Näytä ladattu summa"
+    },
+    "transferErrorPage": {
+      "belowNetworkMinimumMessage": "Tämä ostosumma on tilisi alhaisemman vaihtorajan alapuolella. Yhdistä toinen tili oston suorittamiseksi.",
+      "chooseDifferentAccount": "Valitse toinen tili",
+      "defaultMessage": "Varasi pysyvät {{integrationName}} tililläsi.",
+      "defaultTitle": "Emme voi käsitellä tätä maksua",
+      "insufficientFunds": "Riittämättömät varat",
+      "insufficientFundsMessage": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
+      "requestDenied": "Pyyntö evätty",
+      "requestDeniedMessage": "Näyttää siltä, että olet hylännyt tapahtuman. Jos tämä oli virhe, yritä uudelleen ja hyväksy pyyntö lompakossasi."
+    },
+    "walletConfirmation": {
+      "title": "Vahvista tämä tapahtuma {{integrationName}} sovelluksessa"
+    }
+  },
   "payPalConnectOAuthPage": {
     "close": "Sulje",
     "continue": "Jatka {{selectedIntegrationName}}iin",
@@ -1140,120 +1389,6 @@
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko talletusta varten.",
     "selectNetwork": "Valitse siirtoverkko",
     "title": "Valitse siirrettävä omaisuus"
-  },
-  "paypal": {
-    "common": {
-      "cancel": "Peruuta",
-      "done": "Valmis",
-      "continue": "Jatka",
-      "save": "Tallenna",
-      "close": "Sulje",
-      "tryAgain": "Yritä uudelleen",
-      "ok": "OK",
-      "pay": "Maksa",
-      "total": "Yhteensä",
-      "order": "Tilaa",
-      "change": "Vaihda",
-      "stillWorking": "Työstetään edelleen..."
-    },
-    "topupPage": {
-      "title": "Lisärahoitusta tarvitaan",
-      "currentBalance": "Nykyinen saldo",
-      "required": "Vaaditaan",
-      "viewTopUp": "Näytä ladattu summa",
-      "disclaimer": "Jos et suorita maksua, {{targetSymbol}} tilin saldo pysyy {{integrationName}} tililläsi.",
-      "conversionDescription": "Muunnetun {{convertedSymbol}} arvon {{targetSymbol}} on odotettua alempi hintojen ja/tai verkko maksujen vaihteluiden vuoksi.",
-      "assetsDescription": "Omaisuuserien muunnoksen {{targetSymbol}} arvo on odotettua alempi hintojen ja/tai verkko maksujen vaihteluiden vuoksi."
-    },
-    "doneTransferPage": {
-      "title": "Maksu on tulossa",
-      "description": "Maksoit juuri {{amount}}. Saat ilmoituksen {{clientName}} kun se on suoritettu.",
-      "seeDetails": "Katso mitä tapahtui",
-      "disclaimer": "Siirtoja ei ole suoritettu loppuun, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia."
-    },
-    "exitPage": {
-      "title": "Oletko varma, että haluat poistua?",
-      "subtitle": "Tekemäsi muutokset menetetään.",
-      "continuePayment": "Jatka maksamaan",
-      "exit": "Poistu"
-    },
-    "infoScreen": {
-      "title": "Kirjaudu sisään tarkistaaksesi maksutiedot",
-      "rule1": "Tietojasi ei koskaan tallenneta. Pääsy päättyy tämän maksun jälkeen.",
-      "rule2": "Käytä kryptovaluuttaasi, tarkista tiedot ja hyväksy maksu.",
-      "rule3": "Automaattinen muunnos pitää asiat yksinkertaisina."
-    },
-    "transferErrorPage": {
-      "insufficientFunds": "Riittämättömät varat",
-      "requestDenied": "Pyyntö evätty",
-      "defaultTitle": "Emme voi käsitellä tätä maksua",
-      "insufficientFundsMessage": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
-      "belowNetworkMinimumMessage": "Tämä ostosumma on tilisi alhaisemman vaihtorajan alapuolella. Yhdistä toinen tili oston suorittamiseksi.",
-      "requestDeniedMessage": "Näyttää siltä, että olet hylännyt tapahtuman. Jos tämä oli virhe, yritä uudelleen ja hyväksy pyyntö lompakossasi.",
-      "defaultMessage": "Varasi pysyvät {{integrationName}} tililläsi.",
-      "chooseDifferentAccount": "Valitse toinen tili"
-    },
-    "previewPage": {
-      "title": "Maksa {{merchantName}}",
-      "from": "From {{integrationName}}",
-      "payWith": "Maksa käyttäen",
-      "send": "Lähetä",
-      "merchantPurchase": "{{merchantName}} osto",
-      "estimatedNetworkFee": "Arvioitu verkkomaksu",
-      "conversionFee": "{{integrationName}} vaihtomaksu",
-      "transactionBuffer": "Tapahtumapuskuri",
-      "feesIncluded": "{{amount}} maksut sisältyvät",
-      "bufferAndFees": "{{bufferAmount}} Puskuri + {{feesAmount}} maksut sisältyvät",
-      "bufferDisclaimer": "Säilytät mahdollisen käyttämättömän puskurin.",
-      "howItWorks": "Miten se toimii",
-      "refundDisclaimer": "Hyvitykset suoritetaan vain {{settlementCurrency}} valuutassa. Valuutanvaihtokurssi ja maksut muuttuvat usein. Kaikki kryptovaluuttaostokset ovat lopullisia.",
-      "feeChangedNotice": "Verkkomaksu on muuttunut. Tarkista kokonaismaksu ja vahvista.",
-      "networkFeeHint": "Auttaa saamaan tapahtumasi blockchainiin kattamalla verkon validoijien kustannukset, jotka käsittelevät sen",
-      "conversionFeeHint": "Tämän maksun perii {{integrationName}} konvertoinnista.",
-      "transactionBufferHint": "Tämä summa lisätään, jotta osto menee läpi, vaikka krypton hinnat muuttuisivat. Tämä voi jättää lompakkoosi jonkin verran {{settlementCurrency}}.",
-      "pyusdDisclaimer": "Tapahtuma suoritetaan käyttäen PayPal USD (PYUSD), mikä on Paxos Trust Company, LLC:n liikkeeseen laskema ja hallinnoima vakaa kolikko. PYUSD toimii blockchainissa."
-    },
-    "connectionPage": {
-      "approveConnection": "Hyväksy yhteyspyyntö lompakossasi",
-      "oauthLogin": "Kirjaudu tilillesi ja salli pääsy",
-      "continueTo": "Jatka siirtymällä {{integrationName}}iin"
-    },
-    "brokerLoading": {
-      "preparingPayment": "Valmistellaan maksutietojasi"
-    },
-    "fundingOptions": {
-      "title": "Rahoitusvaihtoehdot",
-      "total": "Yhteensä {{amount}}",
-      "balances": "Saldot",
-      "linkedPaymentMethods": "Linkitetyt Maksutavat",
-      "buyingPower": "Ostovoima",
-      "instantCashAvailable": "Välittömästi käytettävissä oleva raha: {{amount}}",
-      "available": "{{amount}} käytettävissä",
-      "exchangeRateDisclaimer": "Vaihtokurssi voi sisältää hajontaa.",
-      "paymentMethodTypes": {
-        "card": "Kortti",
-        "bankAccount": "Pankkitili",
-        "digitalWallet": "Lompakko"
-      }
-    },
-    "walletConfirmation": {
-      "title": "Vahvista tämä tapahtuma {{integrationName}} sovelluksessa"
-    },
-    "fundingSteps": {
-      "errorMessage": "Virhe on tapahtunut. Yritä uudestaan",
-      "conversion": "Vaihda {{amount}} valuutaksi {{currency}}",
-      "deposit": "Talletus {{amount}} maksutavasta {{paymentMethod}}",
-      "purchase": "Osto {{amount}} {{symbol}}",
-      "approval": "Hyväksy siirto pois {{integrationName}}",
-      "transfer": "Siirrä {{symbol}} ostoksesi maksuun"
-    },
-    "termsOfUse": {
-      "text": "Jatkamalla hyväksyt",
-      "linkText": "käyttöehdot"
-    },
-    "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Yritys\") on teknologiatoimittaja, joka valmistaa viestintävälineen (\"Työkalu\"), joka auttaa edistämään käyttämäsi kolmannen osapuolen palvelun (\"Loppukäyttäjäpalvelu\") tiettyjä toimintoja. Tällaisen toiminnon tarkoitus on mahdollistaa viestintäsi kolmannen osapuolen tilien ja lompakkojen (\"Yhdistetyt tilit\") kautta Loppukäyttäjäpalvelun välityksellä, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa. Mesh tarjoaa tämän Työkalun sinulle palveluntarjoajana PayPal, Inc:lle (\"PayPal\")\n\nHyväksyt ja ymmärrät, että Loppukäyttäjäpalvelun tietty toiminnallisuus perustuu Työkaluun; että käytät tällaista toiminnallisuutta omasta aloitteestasi; että Yritys tai sen palveluntarjoajat eivät tarjoa välityspalveluja tai osallistu maksujen käsittelyyn; ja että Yritys tai sen palveluntarjoajat eivät ole vastuussa sen paremmin Loppukäyttäjäpalvelusta kuin mistään Yhdistetystä tilistäkään, tai niiden palveluntarjoajien ehdoista, käytännöistä, teoista tai laiminlyönneistä.\n\nVakuutat ja takaat, että sinulla on kaikki oikeudet ja suostumukset yhdistää ja käyttää kutakin Yhdistettyä tiliä tällaisen toiminnallisuuden kautta, mukaan lukien oikeus antaa Yhtiölle ja sen palveluntarjoajille tilillesi kirjautumistiedot, lompakkojen osoitteet ja/tai kaikki yhdistetyn tilin tai henkilökohtaiset tietosi. Täten valtuutat Yhtiön ja sen palveluntarjoajat siirtämään ohjeita sekä tietoja, dataa ja muita materiaaleja Loppukäyttäjäpalvelun ja kunkin Yhdistetyn tilin välillä, ja tunnustat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa mistään tällaisten ohjeiden suorittamisesta tai mistään tällaisista materiaaleista (mukaan lukien niiden paikkansapitävyys, ajantasaisuus tai täydellisyys).\n\nHyväksyt, että jos käytät Työkalua transaktioiden suorittamiseen kolmansien osapuolten kanssa, mukaan lukien mutta ei rajoittuen verkkokauppiaisiin tai sellaisten ostojen suorittamiseen millään tavalla (\"Kolmannen osapuolen Transaktiot\"), Yritys eikä PayPal ole vastuussa mistään tällaisten transaktioiden liittyvistä riidoista. Olet vastuussa ottamisesta suoraan yhteyttä mihin tahansa merkitykselliseen kolmanteen osapuoleen ratkaistaksesi riitoja, valituksia valtuuttamattomista tapahtumista, hyvitysvaatimuksia tai mahdollisia muita Kolmannen osapuolen transaktioihin liittyviä vaatimuksia."
-    }
   },
   "previewPageUI": {
     "accountLabel": "Tili",
@@ -1268,6 +1403,7 @@
     "paymentTotalLabel": "Maksa yhteensä",
     "payWithLabel": "Maksa käyttäen",
     "payWithLabelWithName": "Maksa käyttäen {{integrationName}}",
+    "plusFees": "",
     "processingPayment": "Maksuasi käsitellään"
   },
   "previewTransfer": {
@@ -1309,6 +1445,7 @@
     "youMayReceiveLess": "Saatat saadavähemmän johtuen {{symbol}} hinnan liikkeistä."
   },
   "previewTransferPageUI": {
+    "depositFromIntegration": "Talletus {{integrationName}}:sta",
     "fee": "Sisältää {{amount}} maksuina",
     "fundingMethods": "Talletustavat",
     "receive": "Vastaanota",
@@ -1316,15 +1453,20 @@
     "send": "Lähetä",
     "title": "Siirron esikatselu",
     "tokenOnNetwork": "{{token}} {{network}} -verkossa",
-    "transferToken": "Siirrä tunniste",
-    "depositFromIntegration": "Talletus {{integrationName}}:sta"
+    "transferToken": "Siirrä tunniste"
   },
   "privacyComponent": {
     "content": "Tietosi ovat aina yksityisiä ja salattuja."
   },
   "qrCodePassword": {
+    "bybit": {
+      "euNotSupported": "",
+      "loginTitle": "",
+      "scanInstruction": ""
+    },
     "expired": "QR-koodi on vanhentunut",
     "generateNew": "Luo uusi QR-koodi",
+    "loading": "",
     "qrCodeLabel": "QR-koodi voidaan skannata mobiililaitteellasi yhteyden muodostamiseksi",
     "scanText": "Skannaa tämä koodi {{appName}}-sovelluksellasi <1></1> kirjautuaksesi sisään välittömästi."
   },
@@ -1348,6 +1490,7 @@
     "title": "Valitse omaisuus"
   },
   "selectHoldingPage": {
+    "balance": "",
     "binanceDirectNoAssetsBody1": "Näyttää siltä, että sinulla ei ole omaisuuksia linkitetyssä tilissä.",
     "binanceDirectNoAssetsBody2": "Voit lisätä varoja tilillesi tai yhdistää toisen tilin jatkaaksesi siirtoa.",
     "cannotFundBody": "Sinulla ei ole riittävästi krypto- tai fiat-saldoa tällä tilillä rahoittaaksesi tätä tapahtumaa.",
@@ -1355,8 +1498,11 @@
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
     "ineligibleAssets": "Kelpaamattomat varat",
+    "link40Subtitle": "",
     "link40Title": "Valitse tunnus",
     "loading": "Ladataan omaisuuttasi...",
+    "network": "",
+    "networkTitle": "",
     "noAssetsTitle": "Liitetyltä tililtä ei löytynyt varoja",
     "noEligibleAssetsTitle": "Tällä tilillä ei ole varoja, joita voidaan käyttää tähän siirtoon",
     "notEnoughtBody": "Lisää {{symbol}} tilillesi ja palaa sitten takaisin kokeilemaan uudelleen.",
@@ -1375,9 +1521,12 @@
     "label": "Valitse {{text}}"
   },
   "selectNetworkPage": {
+    "clientSupports": "",
+    "estFee": "",
     "gasFeeDescription": "<0>Arv. kaasumaksu:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Kelpaamattomat verkot",
     "integrationFeeDescription": "<0>Arv. {{selectedIntegrationName}} maksu:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "sendVia": "",
     "title": "Valitse verkko"
   },
   "selectNetworkScreen": {
@@ -1433,6 +1582,11 @@
     "subtitle": "Ostamasi {{symbol}} saldo on odotettua pienempi johtuen hinnan ja/tai kaasun vaihteluista.",
     "title": "Lisärahoitusta tarvitaan"
   },
+  "transferAmountInput": {
+    "availableForDeposit": "",
+    "basedOnYourBalances": "",
+    "basedOnYourBalancesDepositsTooltip": ""
+  },
   "transferAmountPage": {
     "buttonTitle": {
       "deposit": "Talletuksen esikatselu",
@@ -1441,6 +1595,7 @@
     },
     "errorMessage": {
       "insufficientFunds": "Varat eivät riitä kattamaan siirtoa ja gas-maksua. Suurin mahdollinen siirtosumma on {{maxAmount}}.",
+      "maximumAmount": "",
       "minimumAmount": "Pienin mahdollinen siirtosumma on {{minAmount}}.",
       "zeroAmount": "Syötä ei nolla-arvoinen summa"
     },
@@ -1509,12 +1664,16 @@
     "title": "Varmistus"
   },
   "transferInsufficientBalancePage": {
+    "gasAndBalanceTitle": "",
     "gasBody": "Kaasukustannukset {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
     "gasTitle": "Riittämätön kaasusaldo",
+    "insufficientGasFeeDescription": "",
     "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "noBalanceOnSpecificNetwork": "",
     "noBalanceTitle": "Ei saldoa",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
     "title": "Riittämätön saldo",
+    "toppedUpWalletQuestion": "",
     "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
   },
   "transferMfaPage": {
@@ -1588,6 +1747,7 @@
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} haluaa, että vahvistat <3>{{requestedNetworkName}}</3> -osoitteen omistusoikeuden <6>{{truncatedRequestedAddress}}</6>. Tätä osoitetta ei ole liitetty yhdistettyyn lompakkoon. Ole hyvä ja liitä toinen lompakko.",
+    "body40": "",
     "connectAnotherAction": "Yhdistä toinen lompakko",
     "title": "Oho!"
   },
@@ -1597,6 +1757,8 @@
   },
   "verifyErrorPage": {
     "body": "Olet hylännyt allekirjoituspyynnön lompakossasi tai aiempi pyyntö on vielä aktiivinen. {{clientName}} ei voi vahvistaa lompakkosi omistusoikeutta ilman allekirjoitusta.",
+    "body40": "",
+    "timeout": "",
     "title": "Vahvistus hylätty"
   },
   "wallectConnect": {
@@ -1605,6 +1767,7 @@
     "unknownError": "Tapahtui tuntematon virhe. {{error}}"
   },
   "walletDoneScreen": {
+    "alreadyVerified": "",
     "completePaymentMessage": "Palaa takaisin kassalle viimeistelläksesi {{clientName}}-ostoksesi.",
     "continueMessage": "Jatka {{clientName}} -sovelluksessa.",
     "successMessage": "Olet vahvistanut onnistuneesti {{walletName}} lompakkosi omistusoikeuden."
