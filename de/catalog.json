@@ -141,7 +141,7 @@
       "api": "API",
       "connected": "Verbunden",
       "installed": "Installiert",
-      "lastUsed": "",
+      "lastUsed": "Zuletzt verwendet",
       "linked": "Zuvor verlinkt"
     },
     "emptyCatalogBody": "Dies könnte aufgrund Ihrer Standort, Compliance-Anforderungen oder Gerätekompatibilität sein.",
@@ -457,7 +457,7 @@
     "invalidToIntegrationToken": "Authentifizierung abgelaufen",
     "kycRequired": "KYC erforderlich",
     "locked": "Konto gesperrt",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "MFA erforderlich",
     "mfaNotSupported": "MFA wird nicht unterstützt",
     "missingField": "Fehlende Informationen",
     "networkDisabled": "Netzwerk deaktiviert",
@@ -558,7 +558,7 @@
     "locked": "Ihr Konto ist gesperrt",
     "loginFirst": "Bitte zuerst einloggen.",
     "loginWithQrOrMobileLink": "Bitte logge dich mit QR-Code oder Handy-Link ein.",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Bitte richten Sie die Zwei-Faktor-Authentifizierung (E-Mail oder Google Authenticator) ein, um Abhebungen zu ermöglichen.",
     "mfaNotSupported": "Mehrfaktor-Authentifizierung wird für diese Operation nicht unterstützt.",
     "networkDisabled": "Das Netzwerk ist derzeit deaktiviert und kann nicht verwendet werden.",
     "noAvailableSmartContract": "Kein Smart Contract verfügbar",
@@ -829,15 +829,15 @@
     "connectAction": "Mit {{selectedIntegrationName}} verbinden"
   },
   "homePage": {
-    "buy": "",
-    "buyDescription": "",
-    "guaranteed": "",
-    "noExtraFee": "",
-    "secureDeposit": "",
-    "sendFunds": "",
-    "sendUsingQR": "",
-    "standardDeposit": "",
-    "title": ""
+    "buy": "Kaufen",
+    "buyDescription": "Kaufen Sie Krypto sofort mit Ihrer Karte oder Bank.",
+    "guaranteed": "Garantiert",
+    "noExtraFee": "Keine zusätzliche Gebühren",
+    "secureDeposit": "Sichere Einzahlung",
+    "sendFunds": "Senden Sie Gelder sicher an die richtige Adresse und das richtige Netzwerk.",
+    "sendUsingQR": "Senden Sie Gelder manuell mit einem QR-Code.",
+    "standardDeposit": "Standard-Einzahlung",
+    "title": "Geld hinzufügen"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Der angeforderte Überweisungsbetrag von {{requestedAmount}} ist geringer als das {{minimumAmount}}-Minimum von {{integrationName}}, um im Netzwerk {{network}} zu überweisen.",
@@ -1254,15 +1254,19 @@
       "title": "Wählen Sie ein Netzwerk"
     },
     "screen": {
+      "addressLabel": "Adresse",
+      "beforeYouGo": "Bevor Sie gehen...",
       "copiedWalletAddress": "Kopiert",
       "copyWalletAddress": "Wallet-Adresse kopieren",
       "depositToClient": "Einzahlung bei {{clientName}}",
       "downloadQr": "QR-Code herunterladen",
       "headline": "Haben Sie Probleme?",
+      "infoLabel": "{{info}} (erforderlich)",
       "networkLabel": "Netzwerk",
       "subtitle": "Sie können Ihre Einzahlung trotzdem manuell abschließen.",
       "tokenLabel": "Token",
-      "warning": "Überweisen Sie nur {{token}} auf {{network}} an diese Adresse - andernfalls könnten Ihre Vermögenswerte verloren gehen"
+      "warning": "Überweisen Sie nur {{token}} auf {{network}} an diese Adresse - andernfalls könnten Ihre Vermögenswerte verloren gehen",
+      "warningWithTag": "Überweisen Sie nur {{token}} auf {{network}} mit diesem {{info}} an diese Adresse – andernfalls könnten Ihre Vermögenswerte verloren gehen."
     },
     "tokenSelection": {
       "subtitle": "{{client}} akzeptiert:",
@@ -1285,6 +1289,10 @@
     "topUp": "{{token}}-Guthaben aufladen"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "Diese Zahlung von {{transferAmount}} liegt unter dem Minimum (zuzüglich Gebühren) von Binance ({{minAmount}}), um {{symbol}} auf {{networkName}} zu übertragen.",
+      "title": "Unter Binances Minimum"
+    },
     "brokerLoading": {
       "preparingPayment": "Zahlungsdetails werden vorbereitet"
     },
@@ -1383,6 +1391,10 @@
       "topUpAccount": "Bitte laden Sie Ihr Konto auf und versuchen Sie es erneut.",
       "topUpWallet": "Bitte laden Sie Ihre Geldbörse auf und versuchen Sie es erneut."
     },
+    "insufficientGasBalancePage": {
+      "message": "Diese Transaktion erfordert {{transferAmount}} und ~{{gasFiat}} {{gasSymbol}} im Wert auf dem {{networkName}}-Netzwerk zur Bezahlung der Gasgebühren.",
+      "title": "Unzureichendes Gasguthaben"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Erneut versuchen",
       "title": "Genehmigen Sie die Verbindungsanfrage, um mit Ihrer Zahlung fortzufahren"
@@ -1390,6 +1402,11 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Gehen Sie zurück zur Checkout-Seite in Ihrem Webbrowser für Bestätigung und Bestelldetails.",
       "title": "Fast erledigt"
+    },
+    "oauthTimeoutPage": {
+      "reopen": "Öffne {{integrationName}}",
+      "subtitle": "Es scheint, dass Du die Anmeldung oder die Zugriffsgenehmigung nicht abgeschlossen hast. Bitte öffne {{integrationName}} erneut und schließe die Anmeldung ab.",
+      "title": "Konnte keine Verbindung zu {{integrationName}} herstellen"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Puffer + {{feesAmount}} Gebühren eingeschlossen",
@@ -1417,6 +1434,10 @@
       "description": "Dies passiert oft, wenn du dich bei einem anderen Gerät oder einer anderen Plattform anmeldest, während diese Sitzung aktiv ist.",
       "retry": "Bitte klicke auf \"Erneut versuchen\", um dich anzumelden und deine Transaktion erneut zu versuchen.",
       "title": "Sitzung abgelaufen"
+    },
+    "somethingWentWrongPage": {
+      "message": "Wir haben momentan Schwierigkeiten, diese Anfrage zu bearbeiten",
+      "title": "Etwas ist schiefgelaufen"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
@@ -1532,9 +1553,9 @@
   },
   "qrCodePassword": {
     "bybit": {
-      "euNotSupported": "",
-      "loginTitle": "",
-      "scanInstruction": ""
+      "euNotSupported": "Bybit EU-Konten werden noch nicht unterstützt.",
+      "loginTitle": "Bei Bybit Global anmelden.",
+      "scanInstruction": "Scannen Sie mit der Kamera Ihres Telefons oder mit der Bybit Global-App, um sich anzumelden."
     },
     "expired": "QR-Code abgelaufen",
     "generateNew": "Erstelle einen neuen QR-Code",
