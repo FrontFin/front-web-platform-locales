@@ -141,7 +141,7 @@
       "api": "API",
       "connected": "Bağlı",
       "installed": "Yüklendi",
-      "lastUsed": "",
+      "lastUsed": "Son kullanılan",
       "linked": "Önceden bağlanmış"
     },
     "emptyCatalogBody": "Bu, konumunuz, uyumluluk gereksinimleri veya cihaz uyumluluğu nedeniyle olabilir.",
@@ -457,7 +457,7 @@
     "invalidToIntegrationToken": "Kimlik Doğrulama Süresi Doldu",
     "kycRequired": "Kimlik doğrulaması gerekli",
     "locked": "Hesap kilitli",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "MFA Gerekli",
     "mfaNotSupported": "Çok Faktörlü Kimlik Doğrulama Desteklenmiyor",
     "missingField": "Bilgi eksikliği",
     "networkDisabled": "Ağ devre dışı",
@@ -558,7 +558,7 @@
     "locked": "Hesabınız kilitlendi.",
     "loginFirst": "Lütfen önce giriş yapın.",
     "loginWithQrOrMobileLink": "Lütfen QR kodu veya Mobil bağlantı ile giriş yapın.",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Para çekimlerini etkinleştirmek için lütfen iki faktörlü kimlik doğrulamasını (e-posta veya Google Authenticator) ayarlayın.",
     "mfaNotSupported": "Çok faktörlü kimlik doğrulama bu işlem için desteklenmiyor.",
     "networkDisabled": "Ağ şu anda devre dışı ve kullanılamaz durumda.",
     "noAvailableSmartContract": "Akıllı Sözleşme Kullanılamıyor",
@@ -829,15 +829,15 @@
     "connectAction": "{{selectedIntegrationName}} ile bağlan"
   },
   "homePage": {
-    "buy": "",
-    "buyDescription": "",
-    "guaranteed": "",
-    "noExtraFee": "",
-    "secureDeposit": "",
-    "sendFunds": "",
-    "sendUsingQR": "",
-    "standardDeposit": "",
-    "title": ""
+    "buy": "Satın Al",
+    "buyDescription": "Kartınızla veya bankanızla anında kripto satın alın.",
+    "guaranteed": "Garantili",
+    "noExtraFee": "Ek ücret yok",
+    "secureDeposit": "Güvenli depozito",
+    "sendFunds": "Fonları doğru adres ve ağa güvenle gönderin.",
+    "sendUsingQR": "QR kodu kullanarak fonları manuel olarak gönderin.",
+    "standardDeposit": "Standart depozito",
+    "title": "Fon ekle"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Talep edilen {{requestedAmount}} transfer tutarı, {{network}} ağı üzerindeki {{integrationName}}’in minimum {{minimumAmount}} transfer tutarından daha azdır.",
@@ -1254,15 +1254,19 @@
       "title": "Bir ağı seçin"
     },
     "screen": {
+      "addressLabel": "Adres",
+      "beforeYouGo": "Gitmeden önce...",
       "copiedWalletAddress": "Kopyalandı",
       "copyWalletAddress": "Cüzdan adresini kopyala",
       "depositToClient": "{{clientName}}'e Para Yatır ",
       "downloadQr": "QR kodu indir",
       "headline": "Sorun mu yaşıyorsun?",
+      "infoLabel": "{{info}} (gerekli)",
       "networkLabel": "Ağ test",
       "subtitle": "Para yatırma işleminizi manuel olarak tamamlayabilirsiniz.",
       "tokenLabel": "Jeton",
-      "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
+      "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir",
+      "warningWithTag": "Bu {{info}} ile sadece {{network}} üzerinde {{token}} transfer edin, aksi takdirde varlıklarınız kaybolabilir."
     },
     "tokenSelection": {
       "subtitle": "{{client}} kabul eder:",
@@ -1285,6 +1289,10 @@
     "topUp": "{{token}} bakiyesini artırın"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "Bu {{transferAmount}} ödeme, {{symbol}}'yi {{networkName}} üzerinde transfer etmek için Binance'ın {{minAmount}} minumum miktarının (artı ücretler) altında.",
+      "title": "Binance minumumunun altında"
+    },
     "brokerLoading": {
       "preparingPayment": "Ödeme detaylarınızı hazırlıyoruz"
     },
@@ -1383,6 +1391,10 @@
       "topUpAccount": "Lütfen hesabınızı doldurup tekrar deneyin.",
       "topUpWallet": "Lütfen cüzdanınızı doldurun ve tekrar deneyin."
     },
+    "insufficientGasBalancePage": {
+      "message": "Bu işlem, gaz ücretlerini ödemek için {{networkName}} ağında {{gasSymbol}} değerinde {{transferAmount}} ve ~{{gasFiat}} gerektirir.",
+      "title": "Yetersiz gaz bakiyesi"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Tekrar Dene",
       "title": "Ödemenize devam etmek için bağlantı isteğini onaylayın"
@@ -1390,6 +1402,11 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Onay ve sipariş detayları için web tarayıcınızdaki ödeme sayfasına geri dönün.",
       "title": "Neredeyse Tamam"
+    },
+    "oauthTimeoutPage": {
+      "reopen": "{{integrationName}}'ı tekrar aç",
+      "subtitle": "Görünüşe göre giriş yapmayı veya erişim izni vermeyi bitirmediniz. Devam etmek için {{integrationName}} uygulamasını tekrar açın ve oturum açmayı tamamlayın.",
+      "title": "{{integrationName}}'e bağlanılamadı"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Tampon + {{feesAmount}} ücretler dahil",
@@ -1405,7 +1422,7 @@
       "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "swapFee": "Otomatik değişim ücreti",
       "swapFeeHint": "Cüzdanınızda bulunan varlıkların hedef transfer varlığına otomatik dönüşümünü sağlamak için bir ücret.",
@@ -1417,6 +1434,10 @@
       "description": "Bu genellikle bu oturum aktifken başka bir platformda hesabınıza giriş yaptığınızda meydana gelir.",
       "retry": "Lütfen oturum açmak ve işleminizi yeniden denemek için Yeniden Dene\"yi tıklayın.",
       "title": "Oturum sona erdi"
+    },
+    "somethingWentWrongPage": {
+      "message": "Şu anda bu talebi işlerken sorun yaşadık.",
+      "title": "Bir şeyler ters gitti"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (\"Şirket\"), kullandığınız üçüncü taraf hizmetinin (\"Son Kullanıcı Hizmeti\") belirli işlevselliğini sağlamaya yardımcı olan bir iletişim aracı (\"Araç\") oluşturan bir teknoloji sağlayıcısıdır. Bu işlevsellik, Son Kullanıcı Hizmeti aracılığıyla üçüncü taraf hesaplarınız ve cüzdanlarınız (\"Bağlı Hesaplar\") ile iletişim kurmanıza olanak tanımak amacını taşır, bunlara gönderim talimatları dahil. Mesh, bu Aracı bir hizmet sağlayıcı olarak PayPal, Inc. (\"PayPal\") için size sağlamaktadır\n\nSon Kullanıcı Hizmetinin belirli bir işlevselliğinin Araç üzerine kurulu olduğunu kabul eder ve onaylarsınız; böyle bir işlevselliğin kullanımının sizin talimatınıza tabi olduğunu; Şirketin veya hizmet sağlayıcılarının broker hizmetleri sağlamadığını veya ödeme işleme hizmetlerinde bulunmadığını; hizmet sağlayıcılarının Son Kullanıcı Hizmeti veya herhangi bir Bağlı Hesap, veya onların sağlayıcılarının şartları, politikaları, işlemleri veya ihmalleri için herhangi bir sorumluluk veya yükümlülüğünün olmadığını kabul eder ve onaylarsınız.\n\nTüm Bağlı Hesaplara bağlantı ve erişim için gerekli tüm haklara ve onaylara sahip olduğunuzu, şirket ve hizmet sağlayıcılarına hesap giriş bilgilerinizi, cüzdan adreslerinizi ve/veya her Bağlı Hesapla ilgili her türlü bilgiler veya kişisel bilgiler vermek için yetkili olduğunuzu temin eder ve beyan edersiniz. Şirket ve hizmet sağlayıcıları Son Kullanıcı Hizmeti ve her Bağlı Hesap arasındaki talimatlar ve bilgi, veri ve diğer malzemelerin gönderilmesine yetki verir ve bu tür talimatların yerine getirilmesi veya bu tür malzemelerin doğruluğu, güncelliği veya eksiksizliği konusunda şirket ve hizmet sağlayıcılarının hiçbir sorumluluk veya yükümlülüğü olmadığını kabul eder ve onaylarsınız.\n\nAracı üçüncü şahıslarla, online satıcılar veya her türlü satın alma (\"Üçüncü Taraf İşlemleri\") dahil ama bunlarla sınırlı olmamak üzere işlem yapmak amacıyla kullanmanız durumunda, Şirket veya PayPal'ın bu tür işlemlerle ilgili herhangi bir anlaşmazlıkta sorumlu olmadığını kabul edersiniz. Herhangi bir anlaşmazlık, yetkisiz işlem itirazı, para iade talebi veya Üçüncü Taraf İşlemleri ile ilgili diğer herhangi bir talep veya sorun için doğrudan ilgili üçüncü şahıslarla iletişime geçmekle sorumlusunuz. Kriptopara birimi ile yapılan satın alımlar sınırlı olabilir."
@@ -1532,9 +1553,9 @@
   },
   "qrCodePassword": {
     "bybit": {
-      "euNotSupported": "",
-      "loginTitle": "",
-      "scanInstruction": ""
+      "euNotSupported": "Bybit AB hesapları henüz desteklenmiyor.",
+      "loginTitle": "Bybit Global'\u001da oturum aç",
+      "scanInstruction": "Giriş yapmak için telefon kameranızla veya Bybit Global uygulamasıyla tarayın."
     },
     "expired": "QR kodu süresi doldu",
     "generateNew": "Yeni bir QR kodu oluştur",
