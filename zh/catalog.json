@@ -141,7 +141,7 @@
       "api": "API",
       "connected": "已连接",
       "installed": "已安装",
-      "lastUsed": "",
+      "lastUsed": "上次使用",
       "linked": "之前已链接"
     },
     "emptyCatalogBody": "这可能是由于您的所在区域、合规要求或设备兼容性的问题。",
@@ -457,7 +457,7 @@
     "invalidToIntegrationToken": "身份验证已过期",
     "kycRequired": "需要进行KYC身份验证",
     "locked": "账户已被锁定",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "需要MFA认证",
     "mfaNotSupported": "不支持多重身份验证",
     "missingField": "信息缺失",
     "networkDisabled": "网络已被禁用",
@@ -558,7 +558,7 @@
     "locked": "您的帐户已被锁定",
     "loginFirst": "请先登录。",
     "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "请设置双重身份验证（邮箱或Google Authenticator）以启用提现功能。",
     "mfaNotSupported": "此操作不支持多重身份验证。",
     "networkDisabled": "网络当前已被禁用，无法使用。",
     "noAvailableSmartContract": "无可用的智能合约",
@@ -829,15 +829,15 @@
     "connectAction": "连接到{{selectedIntegrationName}}"
   },
   "homePage": {
-    "buy": "",
-    "buyDescription": "",
-    "guaranteed": "",
-    "noExtraFee": "",
-    "secureDeposit": "",
-    "sendFunds": "",
-    "sendUsingQR": "",
-    "standardDeposit": "",
-    "title": ""
+    "buy": "购买",
+    "buyDescription": "立即使用您的银行卡或银行购买加密货币。",
+    "guaranteed": "保证",
+    "noExtraFee": "无额外费用",
+    "secureDeposit": "安全押金",
+    "sendFunds": "安全地将资金发送到正确的地址和网络。",
+    "sendUsingQR": "使用二维码手动发送资金。",
+    "standardDeposit": "标准存款",
+    "title": "添加资金"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "该转账金额{{requestedAmount}}低于{{integrationName}}的网络最低转账要求{{minimumAmount}}。",
@@ -1254,15 +1254,19 @@
       "title": "选择一个网络"
     },
     "screen": {
+      "addressLabel": "地址",
+      "beforeYouGo": "在您离开之前...",
       "copiedWalletAddress": "已复制",
       "copyWalletAddress": "复制钱包地址",
       "depositToClient": "给{{clientName}}充值",
       "downloadQr": "下载二维码",
       "headline": "在{{network}}上充值{{token}}",
+      "infoLabel": "{{info}}（必填）",
       "networkLabel": "网络",
       "subtitle": "您仍可以手动完成您的存款。",
       "tokenLabel": "代币",
-      "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
+      "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失",
+      "warningWithTag": "仅在{{network}}上使用此{{info}}发送{{token}}到此地址，否则，您的资产可能会丢失"
     },
     "tokenSelection": {
       "subtitle": "{{client}} 接受：",
@@ -1285,6 +1289,10 @@
     "topUp": "充值{{token}}余额"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "此 {{transferAmount}} 付款低于 Binance 的 {{minAmount}} 最低限额（加上手续费），以在 {{networkName}} 上转账 {{symbol}}。",
+      "title": "低于 Binance 的最低限额"
+    },
     "brokerLoading": {
       "preparingPayment": "正在生成您的支付详情"
     },
@@ -1383,6 +1391,10 @@
       "topUpAccount": "请充值您的账户后再试一次。",
       "topUpWallet": "请充值您的钱包后再试一次。"
     },
+    "insufficientGasBalancePage": {
+      "message": "此交易需要 {{transferAmount}} 和 ~{{gasFiat}} 的 {{gasSymbol}}，以上 {{networkName}} 网络支付燃气费。",
+      "title": "燃料费余额不足"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "重试",
       "title": "批准连接请求以继续您的支付"
@@ -1390,6 +1402,11 @@
     "inWalletDoneTransferPage": {
       "subtitle": "返回至网页浏览器中的结账页面以确认并查看订单详情。",
       "title": "马上就好"
+    },
+    "oauthTimeoutPage": {
+      "reopen": "重新打开{{integrationName}}",
+      "subtitle": "您似乎未完成登录流程或未批准访问权限。要继续，请重新打开{{integrationName}}并完成登录。",
+      "title": "无法连接到{{integrationName}}"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}}缓冲金+{{feesAmount}}手续费用已包含",
@@ -1417,6 +1434,10 @@
       "description": "如果您在本次会话期间在其他平台上登录帐户，则通常会发生这种情况。",
       "retry": "请点击重试以登录并重试您的交易。",
       "title": "会话已过期"
+    },
+    "somethingWentWrongPage": {
+      "message": "我们当前处理此请求时遇到问题",
+      "title": "出了点问题"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc.（“公司”） 是一家技术提供商，提供一款通信工具（“工具”），用于协助您所使用的第三方服务（“终端用户服务”）的某些功能。该功能旨在使您能够通过终端用户服务与您的第三方账户和钱包（“已连接账户”）进行通信，包括发送您希望执行的指令。Mesh 作为 PayPal, Inc.（“PayPal”） 的服务提供商向您提供该工具。\n\n您承认并同意，终端用户服务的某些功能基于该工具；您使用这些功能是根据您的指示；公司及其服务提供商不提供经纪服务或支付处理服务；且公司及其服务提供商对终端用户服务或任何已连接账户，以及其提供商的条款、政策、行为或不作为不承担任何责任。\n\n您声明并保证，您拥有通过该功能连接并访问每个已连接账户所需的所有权利和同意，包括向公司及其服务提供商提供您的账户登录凭证、钱包地址及/或每个已连接账户的任何账户或个人信息的权利。您在此授权公司及其服务提供商在终端用户服务与每个已连接账户之间传输指令以及信息、数据和其他资料，且您承认并同意，公司及其服务提供商对任何此类指令的执行，或任何此类资料（包括其准确性、及时性或完整性）不承担任何责任。\n\n您同意，如果您使用该工具与第三方进行交易，包括但不限于在线商家或进行任何形式的购买（“第三方交易”），公司及 PayPal 对此类交易的任何争议不承担责任。您有责任直接联系相关第三方以解决任何争议、未经授权交易的索赔、退款请求或与第三方交易相关的任何其他索赔或问题。使用加密货币进行的购买可能会受到有限的保护"
@@ -1532,9 +1553,9 @@
   },
   "qrCodePassword": {
     "bybit": {
-      "euNotSupported": "",
-      "loginTitle": "",
-      "scanInstruction": ""
+      "euNotSupported": "Bybit EU帐户尚不支持。",
+      "loginTitle": "登录到Bybit Global",
+      "scanInstruction": "用手机摄像头或Bybit Global应用程序扫描以登录。"
     },
     "expired": "二维码已过期",
     "generateNew": "生成新的二维码",
