@@ -141,7 +141,7 @@
       "api": "API",
       "connected": "Yhdistetty",
       "installed": "Asennettu",
-      "lastUsed": "",
+      "lastUsed": "Viimeksi käytetty",
       "linked": "Aiemmin linkitetty"
     },
     "emptyCatalogBody": "Tämä voi johtua sijainnistasi, säännösten noudattamisesta tai laitteen yhteensopivuudesta.",
@@ -457,7 +457,7 @@
     "invalidToIntegrationToken": "Autentikointi vanhentunut",
     "kycRequired": "Asiakkaan tunnistus (KYC) vaaditaan",
     "locked": "Tili on lukittu",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Kaksivaiheinen tunnistus (MFA) vaaditaan",
     "mfaNotSupported": "MFAta ei tueta",
     "missingField": "Tietoja puuttuu",
     "networkDisabled": "Verkko ei ole käytössä",
@@ -558,7 +558,7 @@
     "locked": "Tilisi on lukittu",
     "loginFirst": "Kirjaudu ensin sisään.",
     "loginWithQrOrMobileLink": "Kirjaudu sisään käyttäen QR-koodia tai mobiililinkkiä.",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Määritä kaksivaiheinen tunnistus (sähköposti tai Google Authenticator) nostaaksesi varoja.",
     "mfaNotSupported": "Monivaiheinen tunnistautuminen ei ole käytössä tässä operaatiossa.",
     "networkDisabled": "Verkko on tällä hetkellä poissa käytöstä eikä sitä voi käyttää.",
     "noAvailableSmartContract": "Älysopimusta ei ole saatavilla",
@@ -829,15 +829,15 @@
     "connectAction": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
   "homePage": {
-    "buy": "",
-    "buyDescription": "",
-    "guaranteed": "",
-    "noExtraFee": "",
-    "secureDeposit": "",
-    "sendFunds": "",
-    "sendUsingQR": "",
-    "standardDeposit": "",
-    "title": ""
+    "buy": "Osta",
+    "buyDescription": "Osta kryptovaluuttaa heti maksukortillasi tai pankillasi.",
+    "guaranteed": "Taattu",
+    "noExtraFee": "Ei ylimääräisiä maksuja",
+    "secureDeposit": "Vakuudellinen talletus",
+    "sendFunds": "Lähetä varat turvallisesti oikeaan osoitteeseen ja verkkoon.",
+    "sendUsingQR": "Lähetä varat manuaalisesti QR-koodin avulla.",
+    "standardDeposit": "Vakio talletus",
+    "title": "Lisää varoja"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
@@ -1254,15 +1254,19 @@
       "title": "Valitse verkko"
     },
     "screen": {
+      "addressLabel": "Osoite",
+      "beforeYouGo": "Ennen kuin lähdet...",
       "copiedWalletAddress": "Kopioitu",
       "copyWalletAddress": "Kopioi lompakon osoite",
       "depositToClient": "Talleta {{clientName}}iin",
       "downloadQr": "Lataa QR-koodi",
       "headline": "Onko sinulla ongelmia?",
+      "infoLabel": "{{info}} (pakollinen)",
       "networkLabel": "Verkko",
       "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
       "tokenLabel": "Token",
-      "warning": "Siirrä vain {{token}} {{network}}-verkossa tähän osoitteeseen, muuten omaisuutesi voivat kadota."
+      "warning": "Siirrä vain {{token}} {{network}}-verkossa tähän osoitteeseen, muuten omaisuutesi voivat kadota.",
+      "warningWithTag": "Siirrä vain {{token}} {{network}} käyttöön tällä {{info}} tähän osoitteeseen - muuten omaisuutesi voivat kadota"
     },
     "tokenSelection": {
       "subtitle": "{{client}} hyväksyy:",
@@ -1285,6 +1289,10 @@
     "topUp": "Lataa {{token}} saldoa"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "Tämä {{transferAmount}} maksu on alle Binance:n {{minAmount}} vähimmäismäärän (plus kulut), jotta siirretään {{symbol}} verkossa {{networkName}}.",
+      "title": "Alle Binance:n vähimmäismäärän"
+    },
     "brokerLoading": {
       "preparingPayment": "Valmistellaan maksutietojasi"
     },
@@ -1383,6 +1391,10 @@
       "topUpAccount": "Ole hyvä ja lisää saldoa tilillesi ja yritä uudelleen.",
       "topUpWallet": "Täydennä lompakkosi ja yritä uudelleen."
     },
+    "insufficientGasBalancePage": {
+      "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} verkossa {{networkName}} kaasumaksujen maksamiseen.",
+      "title": "Riittämätön kaasusaldo"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Yritä uudelleen",
       "title": "Hyväksy yhteyspyyntö jatkaaksesi maksua"
@@ -1390,6 +1402,11 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Palaa kassasivulle verkkoselaimessasi vahvistusta ja tilauksen tietoja varten.",
       "title": "Melkein valmis"
+    },
+    "oauthTimeoutPage": {
+      "reopen": "Avaa {{integrationName}} uudelleen",
+      "subtitle": "Näyttää siltä, ettet ole suorittanut kirjautumista tai pääsyn sallimista loppuun. Jatkaaksesi, ole hyvä ja avaa {{integrationName}} uudelleen ja viimeistele kirjautuminen.",
+      "title": "Yhteyttä {{integrationName}}iin ei voitu muodostaa"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Puskuri + {{feesAmount}} maksut sisältyvät",
@@ -1417,6 +1434,10 @@
       "description": "Tämä tapahtuu usein, jos kirjaudut tilillesi toisella alustalla samalla, kun tämä istunto on aktiivinen.",
       "retry": "Napsauta yritä uudelleen kirjautuaksesi ja yrittääksesi suorittaa tapahtuman uudelleen.",
       "title": "Istunto vanhentunut"
+    },
+    "somethingWentWrongPage": {
+      "message": "Meillä on ongelmia tämän pyynnön käsittelyssä juuri nyt",
+      "title": "Jotain meni pieleen"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (\"Yritys\") on teknologiatoimittaja, joka valmistaa viestintävälineen (\"Työkalu\"), joka auttaa edistämään käyttämäsi kolmannen osapuolen palvelun (\"Loppukäyttäjäpalvelu\") tiettyjä toimintoja. Tällaisen toiminnon tarkoitus on mahdollistaa viestintäsi kolmannen osapuolen tilien ja lompakkojen (\"Yhdistetyt tilit\") kautta Loppukäyttäjäpalvelun välityksellä, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa. Mesh tarjoaa tämän Työkalun sinulle palveluntarjoajana PayPal, Inc:lle (\"PayPal\")\n\nHyväksyt ja ymmärrät, että Loppukäyttäjäpalvelun tietty toiminnallisuus perustuu Työkaluun; että käytät tällaista toiminnallisuutta omasta aloitteestasi; että Yritys tai sen palveluntarjoajat eivät tarjoa välityspalveluja tai osallistu maksujen käsittelyyn; ja että Yritys tai sen palveluntarjoajat eivät ole vastuussa sen paremmin Loppukäyttäjäpalvelusta kuin mistään Yhdistetystä tilistäkään, tai niiden palveluntarjoajien ehdoista, käytännöistä, teoista tai laiminlyönneistä.\n\nVakuutat ja takaat, että sinulla on kaikki oikeudet ja suostumukset yhdistää ja käyttää kutakin Yhdistettyä tiliä tällaisen toiminnallisuuden kautta, mukaan lukien oikeus antaa Yhtiölle ja sen palveluntarjoajille tilillesi kirjautumistiedot, lompakkojen osoitteet ja/tai kaikki yhdistetyn tilin tai henkilökohtaiset tietosi. Täten valtuutat Yhtiön ja sen palveluntarjoajat siirtämään ohjeita sekä tietoja, dataa ja muita materiaaleja Loppukäyttäjäpalvelun ja kunkin Yhdistetyn tilin välillä, ja tunnustat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa mistään tällaisten ohjeiden suorittamisesta tai mistään tällaisista materiaaleista (mukaan lukien niiden paikkansapitävyys, ajantasaisuus tai täydellisyys).\n\nHyväksyt, että jos käytät Työkalua transaktioiden suorittamiseen kolmansien osapuolten kanssa, mukaan lukien mutta ei rajoittuen verkkokauppiaisiin tai sellaisten ostojen suorittamiseen millään tavalla (\"Kolmannen osapuolen Transaktiot\"), Yritys eikä PayPal ole vastuussa mistään tällaisten transaktioiden liittyvistä riidoista. Olet vastuussa ottamisesta suoraan yhteyttä mihin tahansa merkitykselliseen kolmanteen osapuoleen ratkaistaksesi riitoja, valituksia valtuuttamattomista tapahtumista, hyvitysvaatimuksia tai mahdollisia muita Kolmannen osapuolen transaktioihin liittyviä vaatimuksia."
@@ -1532,9 +1553,9 @@
   },
   "qrCodePassword": {
     "bybit": {
-      "euNotSupported": "",
-      "loginTitle": "",
-      "scanInstruction": ""
+      "euNotSupported": "Bybit EU -tilejä ei vielä tueta.",
+      "loginTitle": "Kirjaudu sisään Bybit Global -tilille",
+      "scanInstruction": "Skannaa puhelimesi kameralla tai Bybit Global -sovelluksella kirjautuaksesi sisään."
     },
     "expired": "QR-koodi on vanhentunut",
     "generateNew": "Luo uusi QR-koodi",
