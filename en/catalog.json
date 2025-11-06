@@ -831,12 +831,12 @@
   },
   "homePage": {
     "buy": "Buy",
-    "buyDescription": "Buy crypto instantly with your card or bank.",
+    "buyDescription": "Buy with your card or bank.",
     "guaranteed": "Guaranteed",
     "noExtraFee": "No extra fee",
     "secureDeposit": "Secure deposit",
     "sendFunds": "Send funds safely to the correct address and network.",
-    "sendUsingQR": "Send funds manually using a QR code.",
+    "sendUsingQR": "Send manually using a QR code.",
     "standardDeposit": "Standard deposit",
     "title": "Add funds"
   },
@@ -1266,12 +1266,18 @@
       "networkLabel": "Network",
       "subtitle": "You can still complete your deposit manually",
       "tokenLabel": "Token",
-      "warning": "Only transfer {{token}} on {{network}} to this address - otherwise, your assets may be lost",
-      "warningWithTag": "Only transfer {{token}} on {{network}} with this {{info}} to this address - otherwise, your assets may be lost"
+      "warning": "Only transfer {{token}} on {{network}} to this address - otherwise, your assets may be lost"
     },
     "tokenSelection": {
       "subtitle": "{{client}} accepts:",
       "title": "Choose a token"
+    },
+    "warnings": {
+      "includeMemo": "Include this memo",
+      "includeTag": "Include this tag",
+      "onlySendTokenOnNetwork": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network",
+      "requiredForDeposit": "Required for this deposit",
+      "sendAboveMinimum": "Send above the minimum amount"
     }
   },
   "paymentMethods": {
@@ -1288,6 +1294,27 @@
     "onYourAccount": "On your account",
     "title": "Payment update",
     "topUp": "Top up {{token}} balance"
+  },
+  "payPage": {
+    "amountMustBeWithin": "Amount must be within {{minFiat}} - {{maxFiat}}",
+    "continueInPayApp": "Continue in {{integrationName}}",
+    "generateNewQr": "Generate new QR code",
+    "noTransferIdError": "Missing transfer ID. Please start over.",
+    "paymentDataMissing": "Payment data is unavailable. Please try again.",
+    "paymentFailed": "Payment failed. Please try again.",
+    "pollingError": "Unable to check payment status. Please try again.",
+    "processing": "Processing payment...",
+    "qrCodeLabel": "QR code can be scanned on your mobile device to establish connection",
+    "qrGenerationFailed": "Failed to generate QR code. Please try again.",
+    "receivedDetails": "You will receive <strong>{{amountStr}}</strong> in {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Scan the QR code to complete your payment",
+    "selectAsset": "Select asset to transfer",
+    "selectNetwork": "Select transfer network",
+    "transactionComplete": "Transaction complete",
+    "unsupportedCurrencyError": "This currency is not supported in your country.",
+    "updateFailed": "Failed to retrieve payment details. Please try again.",
+    "youPay": "You pay",
+    "youReceive": "You receive"
   },
   "paypal": {
     "belowBinanceMinimumPage": {
@@ -1853,6 +1880,16 @@
     "connectingLabel": "Connecting your wallet...",
     "secureLabel": "Fast, secure and free",
     "secureText": "Signing doesn’t in any way give {{clientName}} permission to perform any transactions with your wallet."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Authentication failed",
+    "connectionClosed": "Connection closed. Please try again.",
+    "connectionStatus": "Connection Status:",
+    "generatingSession": "Generating secure login session...",
+    "openMobileApp": "Open your Mesh mobile app and scan this QR code to continue.",
+    "qrCodeAlt": "QR Code for TrueAuth Login",
+    "scanToLogin": "Scan to Log In",
+    "somethingWentWrong": "Something went wrong"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} would like you to verify ownership of <3>{{requestedNetworkName}}</3> address <6>{{truncatedRequestedAddress}}</6>. That address is not associated with the connected wallet. Please connect another wallet.",
