@@ -1293,6 +1293,27 @@
     "title": "Обновление платежа",
     "topUp": "Пополнить баланс {{token}}"
   },
+  "payPage": {
+    "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} - {{maxFiat}}",
+    "continueInPayApp": "Продолжить в {{integrationName}}",
+    "generateNewQr": "Создать новый QR-код",
+    "noTransferIdError": "Отсутствует ID перевода. Пожалуйста, начните заново.",
+    "paymentDataMissing": "Данные платежа недоступны. Пожалуйста, попробуйте еще раз.",
+    "paymentFailed": "Оплата не удалась. Пожалуйста, попробуйте еще раз.",
+    "pollingError": "Не удается проверить статус платежа. Пожалуйста, попробуйте еще раз.",
+    "processing": "Обработка вашего платежа...",
+    "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
+    "qrGenerationFailed": "Не удалось создать QR-код. Пожалуйста, попробуйте еще раз.",
+    "receivedDetails": "Вы получите <strong>{{amountStr}}</strong> в {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Отсканируйте QR-код для завершения оплаты",
+    "selectAsset": "Выберите актив для перевода",
+    "selectNetwork": "Выберите сеть для перевода",
+    "transactionComplete": "Транзакция завершена",
+    "unsupportedCurrencyError": "Эта валюта не поддерживается в вашей стране.",
+    "updateFailed": "Не удалось получить данные об оплате. Пожалуйста, попробуйте ещё раз.",
+    "youPay": "Вы платите",
+    "youReceive": "Вы получаете"
+  },
   "paypal": {
     "belowBinanceMinimumPage": {
       "message": "Этот платёж на сумму {{transferAmount}} ниже минимального лимита Binance в {{minAmount}} (плюс сборы) для перевода {{symbol}} в сети {{networkName}}.",
@@ -1847,6 +1868,16 @@
     "connectingLabel": "Подключение вашего кошелька...",
     "secureLabel": "Быстро, безопасно и бесплатно",
     "secureText": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Ошибка аутентификации",
+    "connectionClosed": "Соединение закрыто. Пожалуйста, попробуйте ещё раз.",
+    "connectionStatus": "Статус соединения:",
+    "generatingSession": "Генерация защищённой сессии входа...",
+    "openMobileApp": "Откройте своё мобильное приложение Mesh и отсканируйте этот QR-код, чтобы продолжить.",
+    "qrCodeAlt": "QR-код для входа через TrueAuth",
+    "scanToLogin": "Сканируйте для входа",
+    "somethingWentWrong": "Что-то пошло не так"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} хочет проверить право собственности на <3>{{requestedNetworkName}}</3> адрес <6>{{truncatedRequestedAddress}}</6>. Этот адрес не связан с подключенным кошельком. Пожалуйста, подключите другой кошелек.",
