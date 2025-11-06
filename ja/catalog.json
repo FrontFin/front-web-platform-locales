@@ -1289,6 +1289,27 @@
     "title": "支払い情報の更新",
     "topUp": "{{token}}残高をチャージする\n\n"
   },
+  "payPage": {
+    "amountMustBeWithin": "金額は{{minFiat}} から {{maxFiat}} の範囲内である必要があります",
+    "continueInPayApp": "{{integrationName}}で続ける",
+    "generateNewQr": "新しいQRコードを生成する",
+    "noTransferIdError": "転送IDが見つかりません。最初からやり直してください。",
+    "paymentDataMissing": "支払いデータが利用できません。もう一度お試しください。",
+    "paymentFailed": "支払いに失敗しました。もう一度お試しください。",
+    "pollingError": "支払いステータスを確認できません。もう一度お試しください。",
+    "processing": "お支払いを処理しています...",
+    "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
+    "qrGenerationFailed": "QRコードの生成に失敗しました。もう一度お試しください。",
+    "receivedDetails": "<1>{{amountStr}}</1> を{{clientName}} ({{shortAddress}})で受け取ります",
+    "scanQrCode": "コードをスキャンしてお支払いを完了してください",
+    "selectAsset": "転送する資産を選択",
+    "selectNetwork": "転送ネットワークを選択",
+    "transactionComplete": "取引完了しました",
+    "unsupportedCurrencyError": "この通貨はお住まいの国でサポートされていません。",
+    "updateFailed": "お支払い情報の取得に失敗しました。もう一度お試しください。",
+    "youPay": "支払う",
+    "youReceive": "受け取る"
+  },
   "paypal": {
     "belowBinanceMinimumPage": {
       "message": "この {{transferAmount}} の支払いは、{{symbol}} を {{networkName}} で転送するための Binance の {{minAmount}} の最低額（および手数料）を下回っています。",
@@ -1843,6 +1864,16 @@
     "connectingLabel": "ウォレットを接続中です。。。",
     "secureLabel": "高速、安全、無料",
     "secureText": "署名は、{{clientName}}に対してお客様のウォレットで取引を行う権限を与えるものではありません。"
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "認証に失敗しました",
+    "connectionClosed": "接続が閉じられました。もう一度お試しください。",
+    "connectionStatus": "接続状況:",
+    "generatingSession": "安全なログインセッションを生成中...",
+    "openMobileApp": "ご使用のMeshモバイルアプリを開き、このQRコードをスキャンして続行してください。",
+    "qrCodeAlt": "TrueAuth ログイン用QRコード",
+    "scanToLogin": "スキャンしてログイン",
+    "somethingWentWrong": "問題が発生しました。"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
