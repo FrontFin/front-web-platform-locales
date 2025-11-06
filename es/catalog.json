@@ -141,7 +141,7 @@
       "api": "API",
       "connected": "Conectado",
       "installed": "Instalado",
-      "lastUsed": "",
+      "lastUsed": "Último uso",
       "linked": "Enlazado previamente"
     },
     "emptyCatalogBody": "Esto podría deberse a su ubicación, requisitos de cumplimiento, o compatibilidad del dispositivo.",
@@ -151,7 +151,8 @@
     "prodOnly": "Sólo producción",
     "search": "buscar",
     "title": "Selecciona una cuenta para vincular",
-    "title40": "Conectar a una plataforma o wallet"
+    "title40": "Conectar a una plataforma o wallet",
+    "titleOnramp": "Elige tu acceso"
   },
   "catalogTile": {
     "select": "Selecciona {{integrationName}}, {{badge}}"
@@ -457,7 +458,7 @@
     "invalidToIntegrationToken": "Autenticación Expirada",
     "kycRequired": "Se requiere KYC",
     "locked": "Cuenta bloqueada",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Se requiere MFA",
     "mfaNotSupported": "La MFA no es compatible",
     "missingField": "Información faltante",
     "networkDisabled": "Red deshabilitada",
@@ -546,7 +547,6 @@
     "incorrectEmail": "Ha ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} oportunidad restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -559,7 +559,7 @@
     "locked": "Su cuenta está bloqueada",
     "loginFirst": "Por favor, inicie sesión primero.",
     "loginWithQrOrMobileLink": "Por favor, inicie sesión usando el código QR o el enlace móvil.",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Por favor configure la autenticación de dos factores (correo electrónico o Google Authenticator) para habilitar retiros.",
     "mfaNotSupported": "La autenticación multifactor no está soportada para esta operación.",
     "networkDisabled": "La red está actualmente deshabilitada y no se puede usar.",
     "noAvailableSmartContract": "No hay contrato inteligente disponible",
@@ -717,7 +717,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -831,13 +830,15 @@
     "connectAction": "Conectar con {{selectedIntegrationName}}"
   },
   "homePage": {
-    "guaranteed": "",
-    "noExtraFee": "",
-    "secureDeposit": "",
-    "sendFunds": "",
-    "sendUsingQR": "",
-    "standardDeposit": "",
-    "title": ""
+    "buy": "Compra",
+    "buyDescription": "Compra criptomonedas al instante con tu tarjeta o banco.",
+    "guaranteed": "Garantizado",
+    "noExtraFee": "Sin tarifa adicional",
+    "secureDeposit": "Depósito seguro",
+    "sendFunds": "Envía fondos de manera segura a la dirección y red correctas.",
+    "sendUsingQR": "Envía fondos manualmente usando un código QR.",
+    "standardDeposit": "Depósito estándar",
+    "title": "Agregar fondos"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "La cantidad solicitada de {{requestedAmount}} es menor que el mínimo de {{integrationName}} de {{minimumAmount}} para transferir en la red {{network}}.",
@@ -1254,15 +1255,19 @@
       "title": "Elige una red"
     },
     "screen": {
+      "addressLabel": "Dirección",
+      "beforeYouGo": "Antes de irte...",
       "copiedWalletAddress": "Copiado",
       "copyWalletAddress": "Copiar dirección de wallet",
       "depositToClient": "Depósito en {{clientName}}",
       "downloadQr": "Descargar el código QR",
       "headline": "¿Tienes problemas?",
+      "infoLabel": "{{info}} (requerido)",
       "networkLabel": "Red",
       "subtitle": "Todavía puedes completar tu depósito manualmente.",
       "tokenLabel": "Token",
-      "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse"
+      "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse",
+      "warningWithTag": "Solo transfiere {{token}} en {{network}} con este {{info}} a esta dirección, de lo contrario, tus activos pueden perderse"
     },
     "tokenSelection": {
       "subtitle": "{{client}} acepta:",
@@ -1285,6 +1290,10 @@
     "topUp": "Recargar saldo {{token}}"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "Este pago de {{transferAmount}} está por debajo del mínimo de {{minAmount}} de Binance (más tarifas) para transferir {{symbol}} en {{networkName}}.",
+      "title": "Menor que el mínimo requerido por Binance"
+    },
     "brokerLoading": {
       "preparingPayment": "Preparando los detalles de tu pago"
     },
@@ -1383,6 +1392,10 @@
       "topUpAccount": "Por favor, recargue su cuenta e inténtelo de nuevo.",
       "topUpWallet": "Por favor, recarga tu wallet y vuelve a intentarlo."
     },
+    "insufficientGasBalancePage": {
+      "message": "Esta transacción requiere {{transferAmount}} y ~{{gasFiat}} en {{gasSymbol}} en la red {{networkName}} para pagar tarifas de gas.",
+      "title": "Saldo insuficiente de gas"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Reintentar",
       "title": "Aprueba la solicitud de conexión para continuar con tu pago"
@@ -1390,6 +1403,11 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Regresa a la página de pago en tu navegador web para la confirmación y detalles del pedido.",
       "title": "Ya casi"
+    },
+    "oauthTimeoutPage": {
+      "reopen": "Reabre {{integrationName}}",
+      "subtitle": "Parece que no terminaste de iniciar sesión o aprobar acceso. Para continuar, por favor vuelve a abrir {{integrationName}} y completa el inicio de sesión.",
+      "title": "No se pudo conectar a {{integrationName}}"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Margen + {{feesAmount}} comisiones incluidas",
@@ -1417,6 +1435,10 @@
       "description": "Esto suele suceder si inicias sesión en tu cuenta en otra plataforma mientras esta sesión está activa.",
       "retry": "Por favor, haz clic en Volver a intentar para iniciar sesión y reintentar tu transacción.",
       "title": "Sesión expirada"
+    },
+    "somethingWentWrongPage": {
+      "message": "Estamos teniendo problemas para procesar esta solicitud en este momento",
+      "title": "Algo salió mal"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (la \"Compañía\") es un proveedor de tecnología que hace una herramienta de comunicación (la \"Herramienta\") que ayuda a facilitar ciertas funcionalidades del servicio de terceros que estás usando (el \"Servicio de Usuario Final\"), tales funcionalidades están destinadas a permitirte comunicarte con tus cuentas y wallets de terceros (\"Cuentas Conectadas\") a través del Servicio de Usuario Final, incluyendo el envío de instrucciones que deseas ejecutar. Mesh te proporciona esta Herramienta como proveedor de servicios para PayPal, Inc. (\"PayPal\")\n\nReconoces y aceptas que ciertas funcionalidades del Servicio de Usuario Final se basan en la Herramienta; que tu uso de dichas funcionalidades es bajo tu instrucción; que ni la Compañía ni sus proveedores de servicios prestan servicios de corretaje ni se involucran en el procesamiento de pagos; y que ni la Compañía ni sus proveedores de servicios tienen ninguna responsabilidad o obligación por el Servicio de Usuario Final o cualquier Cuenta Conectada, o los términos, políticas, actos u omisiones de sus proveedores.\n\nDeclara y garantiza que tiene todos los derechos y consentimientos necesarios para conectar y acceder a cada Cuenta Conectada a través de tales funcionalidades, incluyendo el derecho de proporcionar a la Compañía y a sus proveedores de servicios con tus credenciales de inicio de sesión de cuenta, direcciones de wallet, y/o cualquier información de tu cuenta o tu información personal para cada Cuenta Conectada. Por la presente autorizas a la Compañía y a sus proveedores de servicios a transmitir instrucciones así como información, datos y otros materiales entre el Servicio de Usuario Final y cada Cuenta Conectada, y reconoces y aceptas que la Compañía y sus proveedores de servicios no tienen responsabilidad u obligación por la ejecución de dichas instrucciones, o por dichos materiales (incluyendo su exactitud, puntualidad o integridad).\n\nAcepta que si utiliza la Herramienta para fines de transacción con terceros, incluyendo pero no limitado a comerciantes online o realizar compras de cualquier tipo (\"Transacciones de Terceros\"), ni la Compañía ni PayPal serán responsables de ninguna disputa relacionada con dichas transacciones. Usted es responsable de contactar directamente a cualquier tercero relevante para resolver cualquier disputa, reclamo de transacciones no autorizadas, solicitudes de reembolso, o cualquier otro reclamo o problema relacionado con Transacciones de Terceros. Las compras realizadas con criptomoneda pueden tener limita"
@@ -1531,6 +1553,11 @@
     "content": "Tus datos se mantienen privados y cifrados en todo momento."
   },
   "qrCodePassword": {
+    "bybit": {
+      "euNotSupported": "Las cuentas de Bybit EU aún no son compatibles.",
+      "loginTitle": "Iniciar sesión en Bybit Global",
+      "scanInstruction": "Escanea con tu aplicación Bybit Global para iniciar sesión."
+    },
     "expired": "El código QR caducó",
     "generateNew": "Generar un nuevo código QR",
     "loading": "Cargando código QR",

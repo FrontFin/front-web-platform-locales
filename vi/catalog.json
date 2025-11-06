@@ -141,7 +141,7 @@
       "api": "API",
       "connected": "Đã kết nối",
       "installed": "Đã cài đặt",
-      "lastUsed": "",
+      "lastUsed": "Lần sử dụng cuối",
       "linked": "Đã liên kết trước đó"
     },
     "emptyCatalogBody": "Điều này có thể là do vị trí của bạn, yêu cầu tuân thủ hoặc khả năng tương thích của thiết bị.",
@@ -151,7 +151,8 @@
     "prodOnly": "Chỉ dành cho sản xuất",
     "search": "Tìm kiếm",
     "title": "Chọn tài khoản để liên kết",
-    "title40": "Chọn tài khoản của bạn"
+    "title40": "Chọn tài khoản của bạn",
+    "titleOnramp": "Chọn điểm truy cập của bạn"
   },
   "catalogTile": {
     "select": "Chọn {{integrationName}}, {{badge}}"
@@ -457,7 +458,7 @@
     "invalidToIntegrationToken": "Xác thực đã hết hạn",
     "kycRequired": "Cần KYC",
     "locked": "Tài khoản bị khóa",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Cần MFA",
     "mfaNotSupported": "Xác thực hai lớp không được hỗ trợ",
     "missingField": "Thiếu thông tin",
     "networkDisabled": "Mạng đã bị vô hiệu hóa",
@@ -558,7 +559,7 @@
     "locked": "Tài khoản của bạn bị khóa",
     "loginFirst": "Vui lòng đăng nhập trước.",
     "loginWithQrOrMobileLink": "Vui lòng đăng nhập bằng mã QR hoặc liên kết di động.",
-    "mfaBindingRequired": "",
+    "mfaBindingRequired": "Vui lòng thiết lập xác thực hai yếu tố (email hoặc Google Authenticator) để kích hoạt rút tiền.",
     "mfaNotSupported": "Xác thực đa yếu tố không được hỗ trợ cho hoạt động này.",
     "networkDisabled": "Mạng hiện bị vô hiệu hóa và không thể sử dụng.",
     "noAvailableSmartContract": "Không có Hợp đồng Thông minh khả dụng",
@@ -829,13 +830,15 @@
     "connectAction": "Kết nối với {{selectedIntegrationName}}"
   },
   "homePage": {
-    "guaranteed": "",
-    "noExtraFee": "",
-    "secureDeposit": "",
-    "sendFunds": "",
-    "sendUsingQR": "",
-    "standardDeposit": "",
-    "title": ""
+    "buy": "Mua",
+    "buyDescription": "Mua tiền điện tử ngay lập tức bằng thẻ hoặc ngân hàng của bạn.",
+    "guaranteed": "Đảm bảo",
+    "noExtraFee": "Không tính thêm phí",
+    "secureDeposit": "Đặt cọc an toàn",
+    "sendFunds": "Gửi tiền an toàn đến đúng địa chỉ và mạng lưới.",
+    "sendUsingQR": "Gửi tiền thủ công bằng mã QR.",
+    "standardDeposit": "Đặt cọc tiêu chuẩn",
+    "title": "Thêm tiền"
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Số tiền chuyển khoản yêu cầu {{requestedAmount}} thấp hơn mức tối thiểu {{minimumAmount}} của {{integrationName}} đối với mạng {{network}}.",
@@ -1252,15 +1255,19 @@
       "title": "Chọn một mạng"
     },
     "screen": {
+      "addressLabel": "Địa chỉ",
+      "beforeYouGo": "Trước khi bạn đi...",
       "copiedWalletAddress": "Đã sao chép",
       "copyWalletAddress": "Sao chép địa chỉ ví",
       "depositToClient": "Nạp tiền vào {{clientName}}",
       "downloadQr": "Tải xuống mã QR",
       "headline": "Gặp khó khăn?",
+      "infoLabel": "{{info}} (bắt buộc)",
       "networkLabel": "Mạng",
       "subtitle": "Bạn vẫn có thể hoàn thành gửi tiền của mình bằng cách thủ công.",
       "tokenLabel": "Token",
-      "warning": "Chỉ chuyển {{token}} trên {{network}} đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất"
+      "warning": "Chỉ chuyển {{token}} trên {{network}} đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất",
+      "warningWithTag": "Chỉ chuyển {{token}} trên {{network}} cùng với thông tin này đến địa chỉ này - nếu không, tài sản của bạn có thể bị mất"
     },
     "tokenSelection": {
       "subtitle": "{{client}} chấp nhận:",
@@ -1283,6 +1290,10 @@
     "topUp": "Nạp thêm số dư {{token}}"
   },
   "paypal": {
+    "belowBinanceMinimumPage": {
+      "message": "Khoản thanh toán {{transferAmount}} này nằm dưới mức tối thiểu {{minAmount}} của Binance (cộng với phí) để chuyển {{symbol}} trên mạng {{networkName}}.",
+      "title": "Dưới mức tối thiểu của Binance"
+    },
     "brokerLoading": {
       "preparingPayment": "Đang chuẩn bị chi tiết thanh toán của bạn"
     },
@@ -1381,6 +1392,10 @@
       "topUpAccount": "Vui lòng nạp thêm tiền vào tài khoản của bạn và thử lại.",
       "topUpWallet": "Vui lòng nạp thêm vào ví của bạn và thử lại."
     },
+    "insufficientGasBalancePage": {
+      "message": "Giao dịch này yêu cầu {{transferAmount}} và ~{{gasFiat}} giá trị {{gasSymbol}} trên mạng {{networkName}} để trả phí gas.",
+      "title": "Không đủ số dư để trả phí gas"
+    },
     "inWalletBrowserInitialPage": {
       "retry": "Thử lại",
       "title": "Chấp nhận yêu cầu kết nối để tiếp tục thanh toán của bạn"
@@ -1388,6 +1403,11 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Quay lại trang thanh toán trong trình duyệt web của bạn để xác nhận và xem chi tiết đơn hàng.",
       "title": "Sắp xong"
+    },
+    "oauthTimeoutPage": {
+      "reopen": "Mở lại {{integrationName}}",
+      "subtitle": "Có vẻ như bạn chưa hoàn tất việc đăng nhập hoặc cấp quyền truy cập. Để tiếp tục, vui lòng mở lại {{integrationName}} và hoàn tất đăng nhập.",
+      "title": "Không thể kết nối tới {{integrationName}}"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Đệm + {{feesAmount}} bao gồm tất cả các khoản phí",
@@ -1415,6 +1435,10 @@
       "description": "Điều này thường xảy ra nếu bạn đăng nhập tài khoản trên một nền tảng khác trong khi phiên này vẫn đang hoạt động.",
       "retry": "Vui lòng nhấp vào Thử lại để đăng nhập và thử lại giao dịch của bạn.",
       "title": "Phiên đã hết hạn"
+    },
+    "somethingWentWrongPage": {
+      "message": "Chúng tôi đang gặp khó khăn khi xử lý yêu cầu này ngay bây giờ",
+      "title": "Có gì đó sai"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
@@ -1529,6 +1553,11 @@
     "content": "Dữ liệu của bạn luôn được giữ kín và mã hóa."
   },
   "qrCodePassword": {
+    "bybit": {
+      "euNotSupported": "Tài khoản Bybit EU chưa được hỗ trợ.",
+      "loginTitle": "Đăng nhập vào Bybit Global",
+      "scanInstruction": "Quét bằng ứng dụng Bybit Global của bạn để đăng nhập."
+    },
     "expired": "Mã QR đã hết hạn",
     "generateNew": "Tạo mã QR mới",
     "loading": "Đang tải mã QR",
