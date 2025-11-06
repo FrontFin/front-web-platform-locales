@@ -1289,6 +1289,27 @@
     "title": "支付状态更新",
     "topUp": "充值{{token}}余额"
   },
+  "payPage": {
+    "amountMustBeWithin": "金额必须在{{minFiat}} - {{maxFiat}}之间",
+    "continueInPayApp": "继续前往 {{integrationName}}",
+    "generateNewQr": "生成新的二维码",
+    "noTransferIdError": "转账ID缺失。请重新开始。",
+    "paymentDataMissing": "支付数据不可用。请重试。",
+    "paymentFailed": "支付失败。请重试。",
+    "pollingError": "无法检查支付状态。请重试。",
+    "processing": "处理付款中...",
+    "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立关联",
+    "qrGenerationFailed": "生成二维码失败。请重试。",
+    "receivedDetails": "您将在{{clientName}} ({{shortAddress}})中收到<strong>{{amountStr}}</strong>",
+    "scanQrCode": "扫描二维码以完成您的付款",
+    "selectAsset": "选择要转账的资产",
+    "selectNetwork": "选择转账网络",
+    "transactionComplete": "交易完成",
+    "unsupportedCurrencyError": "您所在国家/地区不支持此种货币。",
+    "updateFailed": "无法获取付款详情。请重试。",
+    "youPay": "由您支付",
+    "youReceive": "由您接收"
+  },
   "paypal": {
     "belowBinanceMinimumPage": {
       "message": "此 {{transferAmount}} 付款低于 Binance 的 {{minAmount}} 最低限额（加上手续费），以在 {{networkName}} 上转账 {{symbol}}。",
@@ -1843,6 +1864,16 @@
     "connectingLabel": "连接您的钱包...",
     "secureLabel": "快速、安全且免费",
     "secureText": "此次签名并不能以任何形式授予{{clientName}}执行您的钱包交易的权限。"
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "身份验证失败",
+    "connectionClosed": "连接已关闭。请重试。",
+    "connectionStatus": "连接状态：",
+    "generatingSession": "正在生成安全登录会话...",
+    "openMobileApp": "打开您的 Mesh 移动应用程序并扫描此二维码以继续。",
+    "qrCodeAlt": "TrueAuth 登录二维码",
+    "scanToLogin": "扫描以登录",
+    "somethingWentWrong": "出了点问题"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} 希望您验证对 <3>{{requestedNetworkName}}</3> 地址 <6>{{truncatedRequestedAddress}}</6> 的所有权。该地址与已连接的钱包并无关联。请连接另一个钱包。",
