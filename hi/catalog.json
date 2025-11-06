@@ -1289,6 +1289,27 @@
     "title": "भुगतान अपडेट",
     "topUp": "{{token}} शेष राशि टॉप अप करें"
   },
+  "payPage": {
+    "amountMustBeWithin": "राशि {{minFiat}} - {{maxFiat}} के बीच होनी चाहिए",
+    "continueInPayApp": "{{integrationName}} में जारी रखें",
+    "generateNewQr": "एक नया क्यूआर कोड उत्पन्न करें",
+    "noTransferIdError": "स्थानांतरण आईडी गायब है। कृपया पुनः आरंभ करें।",
+    "paymentDataMissing": "भुगतान डेटा अनुपलब्ध है। कृपया पुनः प्रयास करें।",
+    "paymentFailed": "भुगतान विफल हो गया। कृपया पुनः प्रयास करें।",
+    "pollingError": "भुगतान स्थिति की जाँच नहीं कर सकते। कृपया पुनः प्रयास करें।",
+    "processing": "भुगतान संसाधित किया जा रहा है...",
+    "qrCodeLabel": "कनेक्शन स्थापित करने के लिए क्यूआर कोड को आपके मोबाइल डिवाइस पर स्कैन किया जा सकता है",
+    "qrGenerationFailed": "क्यूआर कोड उत्पन्न करने में विफल। कृपया पुनः प्रयास करें।",
+    "receivedDetails": "आपको <strong>{{amountStr}}</strong> {{clientName}} ({{shortAddress}}) में प्राप्त होंगे",
+    "scanQrCode": "अपना भुगतान पूरा करने के लिए QR कोड स्कैन करें",
+    "selectAsset": "स्थानांतरण के लिए संपत्ति चुनें",
+    "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
+    "transactionComplete": "लेन-देन पूरा हुआ",
+    "unsupportedCurrencyError": "यह मुद्रा आपके देश में समर्थित नहीं है।",
+    "updateFailed": "भुगतान विवरण प्राप्त करने में विफल रहा। कृपया पुनः प्रयास करें।",
+    "youPay": "आप भुगतान करेंगे",
+    "youReceive": "आप प्राप्त करेंगे"
+  },
   "paypal": {
     "belowBinanceMinimumPage": {
       "message": "यह {{transferAmount}} भुगतान बायनेन्स के {{minAmount}} न्यूनतम से कम (साथ ही शुल्क) है {{symbol}} को {{networkName}} पर स्थानांतरित करने के लिए।",
@@ -1843,6 +1864,16 @@
     "connectingLabel": "आपके वॉलेट को जोड़ने की प्रक्रिया चल रही है...",
     "secureLabel": "तेज़, सुरक्षित और मुफ्त",
     "secureText": "हस्ताक्षर करने से किसी भी तरह से {{clientName}} को आपके वॉलेट के साथ लेन-देन करने की अनुमति नहीं मिलती है।"
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "प्रमाणीकरण असफल",
+    "connectionClosed": "कनेक्शन बंद हो गया। कृपया पुनः प्रयास करें।",
+    "connectionStatus": "कनेक्शन स्थिति:",
+    "generatingSession": "सुरक्षित लॉगिन सत्र उत्पन्न किया जा रहा है...",
+    "openMobileApp": "अपना Mesh मोबाइल ऐप खोलें और आगे बढ़ने के लिए इस QR कोड को स्कैन करें।",
+    "qrCodeAlt": "TrueAuth लॉगिन के लिए QR कोड",
+    "scanToLogin": "लॉग इन करने के लिए स्कैन करें",
+    "somethingWentWrong": "कुछ गलत हो गया।"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} आपसे <3>{{requestedNetworkName}}</3> पते <6>{{truncatedRequestedAddress}}</6> का स्वामित्व सत्यापित करने का अनुरोध कर रहा है। यह पता जुड़े हुए वॉलेट से संबद्ध नहीं है। कृपया कोई अन्य वॉलेट कनेक्ट करें।",
