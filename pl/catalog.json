@@ -1293,6 +1293,27 @@
     "title": "Aktualizacja statusu płatności",
     "topUp": "Doładuj saldo {{token}}"
   },
+  "payPage": {
+    "amountMustBeWithin": "Kwota musi mieścić się w przedziale {{minFiat}} - {{maxFiat}}",
+    "continueInPayApp": "Kontynuuj do {{integrationName}}",
+    "generateNewQr": "Generuj nowy kod QR",
+    "noTransferIdError": "Brak identyfikatora przelewu. Proszę rozpocząć od nowa.",
+    "paymentDataMissing": "Dane płatności są niedostępne. Proszę spróbować ponownie.",
+    "paymentFailed": "Płatność nie powiodła się. Proszę spróbować ponownie.",
+    "pollingError": "Nie można sprawdzić statusu płatności. Proszę spróbować ponownie.",
+    "processing": "Przetwarzanie płatności...",
+    "qrCodeLabel": "Kod QR można zeskanować na urządzeniu mobilnym, aby nawiązać połączenie",
+    "qrGenerationFailed": "Nie udało się wygenerować kodu QR. Proszę spróbować ponownie.",
+    "receivedDetails": "Otrzymasz <strong>{{amountStr}}</strong> w {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Zeskanuj kod QR, aby dokończyć płatność",
+    "selectAsset": "Wybierz aktywo do transferu",
+    "selectNetwork": "Wybierz sieć transferu",
+    "transactionComplete": "Transakcja zakończona",
+    "unsupportedCurrencyError": "Ta waluta nie jest obsługiwana w twoim kraju.",
+    "updateFailed": "Nie udało się pobrać szczegółów płatności. Spróbuj ponownie.",
+    "youPay": "Płacisz",
+    "youReceive": "Otrzymujesz"
+  },
   "paypal": {
     "belowBinanceMinimumPage": {
       "message": "Ta płatność {{transferAmount}} jest poniżej minimalnego progu Binance’s {{minAmount}} (plus opłaty) do przesłania {{symbol}} w sieci {{networkName}}.",
@@ -1847,6 +1868,16 @@
     "connectingLabel": "Łączenie twojego portfela...",
     "secureLabel": "Szybko, bezpiecznie i bezpłatnie",
     "secureText": "Złożenie podpisu nie daje {{clientName}} żadnych uprawnień do wykonywania transferów na twoim portfelu."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Błąd uwierzytelnienia",
+    "connectionClosed": "Połączenie zamknięte. Proszę spróbować ponownie.",
+    "connectionStatus": "Status połączenia:",
+    "generatingSession": "Generowanie bezpiecznej sesji logowania...",
+    "openMobileApp": "Otwórz swoją aplikację mobilną Mesh i zeskanuj ten kod QR, aby kontynuować.",
+    "qrCodeAlt": "Kod QR do logowania TrueAuth",
+    "scanToLogin": "Zeskanuj, aby zalogować się",
+    "somethingWentWrong": "Coś poszło nie tak"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} prosi, abyś zweryfikował własność adresu <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Ten adres nie jest powiązany z podłączonym portfelem. Proszę podłączyć inny portfel.",
