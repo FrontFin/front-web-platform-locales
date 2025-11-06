@@ -1289,6 +1289,27 @@
     "title": "Zahlungsaktualisierung",
     "topUp": "{{token}}-Guthaben aufladen"
   },
+  "payPage": {
+    "amountMustBeWithin": "Der Betrag muss zwischen {{minFiat}} - {{maxFiat}} liegen",
+    "continueInPayApp": "Weiter zu {{integrationName}}",
+    "generateNewQr": "Erstelle einen neuen QR-Code",
+    "noTransferIdError": "Überweisungs-ID fehlt. Bitte beginnen Sie von neuem.",
+    "paymentDataMissing": "Zahlungsdaten sind nicht verfügbar. Bitte versuchen Sie es erneut.",
+    "paymentFailed": "Zahlung fehlgeschlagen. Bitte versuchen Sie es erneut.",
+    "pollingError": "Zahlungsstatus kann nicht überprüft werden. Bitte versuchen Sie es erneut.",
+    "processing": "Bearbeitung der Zahlung...",
+    "qrCodeLabel": "Der QR-Code kann auf Deinem Mobilgerät gescannt werden, um die Verbindung herzustellen",
+    "qrGenerationFailed": "QR-Code konnte nicht erstellt werden. Bitte versuchen Sie es erneut.",
+    "receivedDetails": "Du erhälst <strong>{{amountStr}}</strong> in {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Scannen Sie den QR-Code, um Ihre Zahlung abzuschließen",
+    "selectAsset": "Asset zur Übertragung auswählen",
+    "selectNetwork": "Übertragungsnetzwerk auswählen",
+    "transactionComplete": "Überweisung abgeschlossen",
+    "unsupportedCurrencyError": "Diese Währung wird in Ihrem Land nicht unterstützt.",
+    "updateFailed": "Fehler beim Abrufen der Zahlungsdetails. Bitte versuche es erneut.",
+    "youPay": "Du zahlst",
+    "youReceive": "Du erhälst"
+  },
   "paypal": {
     "belowBinanceMinimumPage": {
       "message": "Diese Zahlung von {{transferAmount}} liegt unter dem Minimum (zuzüglich Gebühren) von Binance ({{minAmount}}), um {{symbol}} auf {{networkName}} zu übertragen.",
@@ -1843,6 +1864,16 @@
     "connectingLabel": "Verbinde Deine Wallet ...",
     "secureLabel": "Schnell, sicher und kostenlos",
     "secureText": "Das Unterzeichnen gibt {{clientName}} in keiner Weise die Erlaubnis, Überweisungen mit Deiner Wallet durchzuführen."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Authentifizierung fehlgeschlagen",
+    "connectionClosed": "Verbindung geschlossen. Bitte versuche es erneut.",
+    "connectionStatus": "Verbindungsstatus:",
+    "generatingSession": "Sichere Anmeldesitzung wird erstellt...",
+    "openMobileApp": "Öffnen Sie Ihre Mesh-Mobile-App und scannen Sie diesen QR-Code, um fortzufahren.",
+    "qrCodeAlt": "QR-Code für TrueAuth-Anmeldung",
+    "scanToLogin": "Zum Einloggen scannen",
+    "somethingWentWrong": "Etwas ist schiefgelaufen"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} möchte, dass Du den Besitz der Adresse <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6> bestätigst. Diese Adresse ist nicht mit dem verbundenen Wallet assoziiert. Bitte verbinde eine andere Wallet.",
