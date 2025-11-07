@@ -1266,12 +1266,18 @@
       "networkLabel": "Ağ test",
       "subtitle": "Para yatırma işleminizi manuel olarak tamamlayabilirsiniz.",
       "tokenLabel": "Jeton",
-      "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir",
-      "warningWithTag": "Bu {{info}} ile sadece {{network}} üzerinde {{token}} transfer edin, aksi takdirde varlıklarınız kaybolabilir."
+      "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
     },
     "tokenSelection": {
       "subtitle": "{{client}} kabul eder:",
       "title": "Bir token seçin"
+    },
+    "warnings": {
+      "includeMemo": "Bu notu ekleyin",
+      "includeTag": "Bu etiketi ekleyin",
+      "onlySendTokenOnNetwork": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin",
+      "requiredForDeposit": "Bu depozito için gereklidir",
+      "sendAboveMinimum": "Minimum tutarın üzerinde gönderin"
     }
   },
   "paymentMethods": {
@@ -1289,7 +1295,32 @@
     "title": "Ödeme güncellemesi",
     "topUp": "{{token}} bakiyesini artırın"
   },
+  "payPage": {
+    "amountMustBeWithin": "Miktar {{minFiat}} - {{maxFiat}} arasında olmalıdır",
+    "continueInPayApp": "{{integrationName}}'e devam edin",
+    "generateNewQr": "Yeni bir QR kodu oluştur",
+    "noTransferIdError": "Eksik transfer ID’si. Lütfen baştan başlayın.",
+    "paymentDataMissing": "Ödeme verileri mevcut değil. Lütfen tekrar deneyin.",
+    "paymentFailed": "Ödeme başarısız oldu. Lütfen tekrar deneyin.",
+    "pollingError": "Ödeme durumu kontrol edilemiyor. Lütfen tekrar deneyin.",
+    "processing": "Ödeme işleniyor...",
+    "qrCodeLabel": "Bağlantı kurmak için mobil cihazınızdan QR kodu tarayabilirsiniz",
+    "qrGenerationFailed": "QR kodu oluşturulamadı. Lütfen tekrar deneyin.",
+    "receivedDetails": "{{clientName}} ({{shortAddress}}) için <strong>{{amountStr}}</strong> alacaksınız",
+    "scanQrCode": "Ödemenizi tamamlamak için QR kodunu tarayın",
+    "selectAsset": "Transfer edilecek varlığı seçin",
+    "selectNetwork": "Transfer ağını seçin",
+    "transactionComplete": "İşlem tamamlandı",
+    "unsupportedCurrencyError": "Bu para birimi ülkenizde desteklenmemektedir.",
+    "updateFailed": "Ödeme bilgileri alınamadı. Lütfen tekrar deneyin.",
+    "youPay": "Ödemeniz gereken tutar",
+    "youReceive": "Alacağınız tutar"
+  },
   "paypal": {
+    "accessDeniedPage": {
+      "subtitle": "Maalesef, bulunduğunuz ülkeden faaliyete şu anda izin verilmemektedir.",
+      "title": "Erişim reddedildi"
+    },
     "belowBinanceMinimumPage": {
       "message": "Bu {{transferAmount}} ödeme, {{symbol}}'yi {{networkName}} üzerinde transfer etmek için Binance'ın {{minAmount}} minumum miktarının (artı ücretler) altında.",
       "title": "Binance minumumunun altında"
@@ -1388,9 +1419,11 @@
       "chooseDifferent": "Farklı bir hesap seçin",
       "message": "{{balanceAmount}} bakiyeniz bu {{paymentAmount}} ödemesini yapmak için yetersizdir.",
       "messageWithNetwork": "{{network}} ağı üzerindeki {{balanceAmount}} bakiyeniz bu {{paymentAmount}} ödemesini yapmak için yetersizdir.",
+      "network": "Ağ test",
       "title": "Yetersiz bakiye",
       "topUpAccount": "Lütfen hesabınızı doldurup tekrar deneyin.",
-      "topUpWallet": "Lütfen cüzdanınızı doldurun ve tekrar deneyin."
+      "topUpWallet": "Lütfen cüzdanınızı doldurun ve tekrar deneyin.",
+      "topUpWalletTryOtherNetwork": "Lütfen cüzdanınızı doldurun ve tekrar deneyin ya da başka bir ağ ile deneyin."
     },
     "insufficientGasBalancePage": {
       "message": "Bu işlem, gaz ücretlerini ödemek için {{networkName}} ağında {{gasSymbol}} değerinde {{transferAmount}} ve ~{{gasFiat}} gerektirir.",
@@ -1403,6 +1436,14 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Onay ve sipariş detayları için web tarayıcınızdaki ödeme sayfasına geri dönün.",
       "title": "Neredeyse Tamam"
+    },
+    "networkButton": {
+      "balance": "Bakiye:",
+      "balanceAmountFiat": "{{amount}} ({{fiat}})",
+      "change": "Değiştir"
+    },
+    "networkDrawer": {
+      "choose": "Bir ağı seçin"
     },
     "oauthTimeoutPage": {
       "reopen": "{{integrationName}}'ı tekrar aç",
@@ -1843,6 +1884,16 @@
     "connectingLabel": "Cüzdanınız bağlanıyor...",
     "secureLabel": "Hızlı, güvenli ve ücretsiz",
     "secureText": "İmzalama işlemi, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma yetkisi vermez."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Kimlik Doğrulama Başarısız",
+    "connectionClosed": "Bağlantı kapatıldı. Lütfen tekrar deneyin.",
+    "connectionStatus": "Bağlantı Durumu:",
+    "generatingSession": "Güvenli oturum oluşturuluyor...",
+    "openMobileApp": "Devam etmek için Mesh mobil uygulamanızı açın ve bu QR kodunu tarayın.",
+    "qrCodeAlt": "TrueAuth Giriş için QR Kodu",
+    "scanToLogin": "Giriş Yapmak İçin Taramasını Yap",
+    "somethingWentWrong": "Bir şeyler ters gitti"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}, <3>{{requestedNetworkName}}</3> adresinin <6>{{truncatedRequestedAddress}}</6> sahipliğini doğrulamanızı istiyor. Bu adres bağlı cüzdana ait değil. Lütfen başka bir cüzdan bağlayın.",

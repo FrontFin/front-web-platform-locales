@@ -831,12 +831,12 @@
   },
   "homePage": {
     "buy": "購入",
-    "buyDescription": "カードまたは銀行で暗号通貨を即座に購入します。",
+    "buyDescription": "カードまたは銀行で購入します。",
     "guaranteed": "保証済み",
     "noExtraFee": "追加料金なし",
     "secureDeposit": "安全な預金",
     "sendFunds": "資金を安全に正しい住所とネットワークに送付します。",
-    "sendUsingQR": "QRコードを使用して手動で資金を送ります。",
+    "sendUsingQR": "QRコードを使用して手動で送信します。",
     "standardDeposit": "標準預金",
     "title": "資金を追加"
   },
@@ -1266,12 +1266,18 @@
       "networkLabel": "ネットワーク",
       "subtitle": "手動で入金を完了することができます。",
       "tokenLabel": "トークン",
-      "warning": "このアドレスには{{network}}の{{token}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。",
-      "warningWithTag": "このアドレスには{{network}}の{{token}} {{info}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。"
+      "warning": "このアドレスには{{network}}の{{token}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。"
     },
     "tokenSelection": {
       "subtitle": "{{client}}は以下を受け入れます:",
       "title": "トークンを選択"
+    },
+    "warnings": {
+      "includeMemo": "このメモを含める",
+      "includeTag": "このタグを含める",
+      "onlySendTokenOnNetwork": "<3>{{network}}</3> ネットワークでのみ <1>{{token}}</1> を送信する",
+      "requiredForDeposit": "この入金には必須です",
+      "sendAboveMinimum": "最低金額を超えて送信する"
     }
   },
   "paymentMethods": {
@@ -1289,7 +1295,32 @@
     "title": "支払い情報の更新",
     "topUp": "{{token}}残高をチャージする\n\n"
   },
+  "payPage": {
+    "amountMustBeWithin": "金額は{{minFiat}} から {{maxFiat}} の範囲内である必要があります",
+    "continueInPayApp": "{{integrationName}}で続ける",
+    "generateNewQr": "新しいQRコードを生成する",
+    "noTransferIdError": "転送IDが見つかりません。最初からやり直してください。",
+    "paymentDataMissing": "支払いデータが利用できません。もう一度お試しください。",
+    "paymentFailed": "支払いに失敗しました。もう一度お試しください。",
+    "pollingError": "支払いステータスを確認できません。もう一度お試しください。",
+    "processing": "お支払いを処理しています...",
+    "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
+    "qrGenerationFailed": "QRコードの生成に失敗しました。もう一度お試しください。",
+    "receivedDetails": "<1>{{amountStr}}</1> を{{clientName}} ({{shortAddress}})で受け取ります",
+    "scanQrCode": "コードをスキャンしてお支払いを完了してください",
+    "selectAsset": "転送する資産を選択",
+    "selectNetwork": "転送ネットワークを選択",
+    "transactionComplete": "取引完了しました",
+    "unsupportedCurrencyError": "この通貨はお住まいの国でサポートされていません。",
+    "updateFailed": "お支払い情報の取得に失敗しました。もう一度お試しください。",
+    "youPay": "支払う",
+    "youReceive": "受け取る"
+  },
   "paypal": {
+    "accessDeniedPage": {
+      "subtitle": "現在、お客様の国からのアクセスは許可されておりません。",
+      "title": "アクセスが拒否されました"
+    },
     "belowBinanceMinimumPage": {
       "message": "この {{transferAmount}} の支払いは、{{symbol}} を {{networkName}} で転送するための Binance の {{minAmount}} の最低額（および手数料）を下回っています。",
       "title": "Binance の最低以下"
@@ -1388,9 +1419,11 @@
       "chooseDifferent": "別のアカウントを選択する。",
       "message": "{{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
       "messageWithNetwork": "{{network}} ネットワークでの {{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
+      "network": "ネットワーク",
       "title": "残高不足",
       "topUpAccount": "アカウントにチャージして、もう一度お試しください。",
-      "topUpWallet": "ウォレットにチャージして、もう一度お試しください。"
+      "topUpWallet": "ウォレットにチャージして、もう一度お試しください。",
+      "topUpWalletTryOtherNetwork": "ウォレットをチャージして再試行するか、他のネットワークを試してください。"
     },
     "insufficientGasBalancePage": {
       "message": "この取引には、ガス料金を支払うために {{networkName}} ネットワーク上で {{gasSymbol}} が約 {{gasFiat}} 分と {{transferAmount}} が必要です。",
@@ -1403,6 +1436,14 @@
     "inWalletDoneTransferPage": {
       "subtitle": "ウェブブラウザーで決済ページに戻って、確認や注文詳細を確認してください。",
       "title": "もう少しで完了です"
+    },
+    "networkButton": {
+      "balance": "残高:",
+      "balanceAmountFiat": "{{amount}} ({{fiat}})",
+      "change": "変更"
+    },
+    "networkDrawer": {
+      "choose": "ネットワークを選択"
     },
     "oauthTimeoutPage": {
       "reopen": "{{integrationName}} を再度開く",
@@ -1843,6 +1884,16 @@
     "connectingLabel": "ウォレットを接続中です。。。",
     "secureLabel": "高速、安全、無料",
     "secureText": "署名は、{{clientName}}に対してお客様のウォレットで取引を行う権限を与えるものではありません。"
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "認証に失敗しました",
+    "connectionClosed": "接続が閉じられました。もう一度お試しください。",
+    "connectionStatus": "接続状況:",
+    "generatingSession": "安全なログインセッションを生成中...",
+    "openMobileApp": "ご使用のMeshモバイルアプリを開き、このQRコードをスキャンして続行してください。",
+    "qrCodeAlt": "TrueAuth ログイン用QRコード",
+    "scanToLogin": "スキャンしてログイン",
+    "somethingWentWrong": "問題が発生しました。"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",

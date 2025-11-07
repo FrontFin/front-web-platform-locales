@@ -831,12 +831,12 @@
   },
   "homePage": {
     "buy": "购买",
-    "buyDescription": "立即使用您的银行卡或银行购买加密货币。",
+    "buyDescription": "用卡或银行卡购买。",
     "guaranteed": "保证",
     "noExtraFee": "无额外费用",
     "secureDeposit": "安全押金",
     "sendFunds": "安全地将资金发送到正确的地址和网络。",
-    "sendUsingQR": "使用二维码手动发送资金。",
+    "sendUsingQR": "使用二维码手动发送。",
     "standardDeposit": "标准存款",
     "title": "添加资金"
   },
@@ -1266,12 +1266,18 @@
       "networkLabel": "网络",
       "subtitle": "您仍可以手动完成您的存款。",
       "tokenLabel": "代币",
-      "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失",
-      "warningWithTag": "仅在{{network}}上使用此{{info}}发送{{token}}到此地址，否则，您的资产可能会丢失"
+      "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
     },
     "tokenSelection": {
       "subtitle": "{{client}} 接受：",
       "title": "选择一个代币"
+    },
+    "warnings": {
+      "includeMemo": "包含此备注",
+      "includeTag": "包含此标签",
+      "onlySendTokenOnNetwork": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>",
+      "requiredForDeposit": "此存款所需",
+      "sendAboveMinimum": "发送高于最低金额"
     }
   },
   "paymentMethods": {
@@ -1289,7 +1295,32 @@
     "title": "支付状态更新",
     "topUp": "充值{{token}}余额"
   },
+  "payPage": {
+    "amountMustBeWithin": "金额必须在{{minFiat}} - {{maxFiat}}之间",
+    "continueInPayApp": "继续前往 {{integrationName}}",
+    "generateNewQr": "生成新的二维码",
+    "noTransferIdError": "转账ID缺失。请重新开始。",
+    "paymentDataMissing": "支付数据不可用。请重试。",
+    "paymentFailed": "支付失败。请重试。",
+    "pollingError": "无法检查支付状态。请重试。",
+    "processing": "处理付款中...",
+    "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立关联",
+    "qrGenerationFailed": "生成二维码失败。请重试。",
+    "receivedDetails": "您将在{{clientName}} ({{shortAddress}})中收到<strong>{{amountStr}}</strong>",
+    "scanQrCode": "扫描二维码以完成您的付款",
+    "selectAsset": "选择要转账的资产",
+    "selectNetwork": "选择转账网络",
+    "transactionComplete": "交易完成",
+    "unsupportedCurrencyError": "您所在国家/地区不支持此种货币。",
+    "updateFailed": "无法获取付款详情。请重试。",
+    "youPay": "由您支付",
+    "youReceive": "由您接收"
+  },
   "paypal": {
+    "accessDeniedPage": {
+      "subtitle": "很遗憾，您所在国家暂不支持该服务。",
+      "title": "访问被拒绝"
+    },
     "belowBinanceMinimumPage": {
       "message": "此 {{transferAmount}} 付款低于 Binance 的 {{minAmount}} 最低限额（加上手续费），以在 {{networkName}} 上转账 {{symbol}}。",
       "title": "低于 Binance 的最低限额"
@@ -1388,9 +1419,11 @@
       "chooseDifferent": "选择其他账户",
       "message": "您的 {{balanceAmount}} 余额不足以支付此次 {{paymentAmount}}。",
       "messageWithNetwork": "您在 {{network}} 网络上的 {{balanceAmount}} 余额不足以支付此次 {{paymentAmount}}。",
+      "network": "网络",
       "title": "余额不足",
       "topUpAccount": "请充值您的账户后再试一次。",
-      "topUpWallet": "请充值您的钱包后再试一次。"
+      "topUpWallet": "请充值您的钱包后再试一次。",
+      "topUpWalletTryOtherNetwork": "请充值您的钱包，然后重试或尝试其他网络。"
     },
     "insufficientGasBalancePage": {
       "message": "此交易需要 {{transferAmount}} 和 ~{{gasFiat}} 的 {{gasSymbol}}，以上 {{networkName}} 网络支付燃气费。",
@@ -1403,6 +1436,14 @@
     "inWalletDoneTransferPage": {
       "subtitle": "返回至网页浏览器中的结账页面以确认并查看订单详情。",
       "title": "马上就好"
+    },
+    "networkButton": {
+      "balance": "余额:",
+      "balanceAmountFiat": "{{amount}} ({{fiat}})",
+      "change": "更改"
+    },
+    "networkDrawer": {
+      "choose": "选择一个网络"
     },
     "oauthTimeoutPage": {
       "reopen": "重新打开{{integrationName}}",
@@ -1843,6 +1884,16 @@
     "connectingLabel": "连接您的钱包...",
     "secureLabel": "快速、安全且免费",
     "secureText": "此次签名并不能以任何形式授予{{clientName}}执行您的钱包交易的权限。"
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "身份验证失败",
+    "connectionClosed": "连接已关闭。请重试。",
+    "connectionStatus": "连接状态：",
+    "generatingSession": "正在生成安全登录会话...",
+    "openMobileApp": "打开您的 Mesh 移动应用程序并扫描此二维码以继续。",
+    "qrCodeAlt": "TrueAuth 登录二维码",
+    "scanToLogin": "扫描以登录",
+    "somethingWentWrong": "出了点问题"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} 希望您验证对 <3>{{requestedNetworkName}}</3> 地址 <6>{{truncatedRequestedAddress}}</6> 的所有权。该地址与已连接的钱包并无关联。请连接另一个钱包。",

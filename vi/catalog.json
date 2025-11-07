@@ -831,12 +831,12 @@
   },
   "homePage": {
     "buy": "Mua",
-    "buyDescription": "Mua tiền điện tử ngay lập tức bằng thẻ hoặc ngân hàng của bạn.",
+    "buyDescription": "Mua bằng thẻ của bạn hoặc ngân hàng.",
     "guaranteed": "Đảm bảo",
     "noExtraFee": "Không tính thêm phí",
     "secureDeposit": "Đặt cọc an toàn",
     "sendFunds": "Gửi tiền an toàn đến đúng địa chỉ và mạng lưới.",
-    "sendUsingQR": "Gửi tiền thủ công bằng mã QR.",
+    "sendUsingQR": "Gửi thủ công bằng mã QR.",
     "standardDeposit": "Đặt cọc tiêu chuẩn",
     "title": "Thêm tiền"
   },
@@ -1266,12 +1266,18 @@
       "networkLabel": "Mạng",
       "subtitle": "Bạn vẫn có thể hoàn thành gửi tiền của mình bằng cách thủ công.",
       "tokenLabel": "Token",
-      "warning": "Chỉ chuyển {{token}} trên {{network}} đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất",
-      "warningWithTag": "Chỉ chuyển {{token}} trên {{network}} cùng với thông tin này đến địa chỉ này - nếu không, tài sản của bạn có thể bị mất"
+      "warning": "Chỉ chuyển {{token}} trên {{network}} đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất"
     },
     "tokenSelection": {
       "subtitle": "{{client}} chấp nhận:",
       "title": "Chọn một đồng tiền"
+    },
+    "warnings": {
+      "includeMemo": "Bao gồm ghi chú này",
+      "includeTag": "Thêm nhãn này",
+      "onlySendTokenOnNetwork": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>",
+      "requiredForDeposit": "Cần thiết cho khoản nạp này",
+      "sendAboveMinimum": "Gửi trên mức tối thiểu"
     }
   },
   "paymentMethods": {
@@ -1289,7 +1295,32 @@
     "title": "Cập nhật thanh toán",
     "topUp": "Nạp thêm số dư {{token}}"
   },
+  "payPage": {
+    "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} - {{maxFiat}}",
+    "continueInPayApp": "Tiếp tục đến {{integrationName}}",
+    "generateNewQr": "Tạo mã QR mới",
+    "noTransferIdError": "Thiếu mã giao dịch. Vui lòng bắt đầu lại.",
+    "paymentDataMissing": "Dữ liệu thanh toán không khả dụng. Vui lòng thử lại.",
+    "paymentFailed": "Thanh toán không thành công. Vui lòng thử lại.",
+    "pollingError": "Không thể kiểm tra trạng thái thanh toán. Vui lòng thử lại.",
+    "processing": "Đang xử lý thanh toán...",
+    "qrCodeLabel": "Mã QR có thể được quét trên thiết bị di động của bạn để thiết lập kết nối",
+    "qrGenerationFailed": "Không thể tạo mã QR. Vui lòng thử lại.",
+    "receivedDetails": "Bạn sẽ nhận được <strong>{{amountStr}}</strong> tại {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Quét mã QR để hoàn thành thanh toán của bạn",
+    "selectAsset": "Chọn tài sản để giao dịch",
+    "selectNetwork": "Chọn mạng lưới chuyển tiền",
+    "transactionComplete": "Giao dịch hoàn tất",
+    "unsupportedCurrencyError": "Đồng tiền này không được hỗ trợ ở quốc gia của bạn.",
+    "updateFailed": "Không thể lấy thông tin chi tiết thanh toán. Vui lòng thử lại.",
+    "youPay": "Bạn trả",
+    "youReceive": "Bạn nhận được"
+  },
   "paypal": {
+    "accessDeniedPage": {
+      "subtitle": "Rất tiếc, hoạt động từ quốc gia của bạn hiện không được phép.",
+      "title": "Truy cập bị từ chối"
+    },
     "belowBinanceMinimumPage": {
       "message": "Khoản thanh toán {{transferAmount}} này nằm dưới mức tối thiểu {{minAmount}} của Binance (cộng với phí) để chuyển {{symbol}} trên mạng {{networkName}}.",
       "title": "Dưới mức tối thiểu của Binance"
@@ -1388,9 +1419,11 @@
       "chooseDifferent": "Kết nối với tài khoản khác",
       "message": "Số dư {{balanceAmount}} của bạn không đủ để thực hiện thanh toán {{paymentAmount}} này.",
       "messageWithNetwork": "Số dư {{balanceAmount}} của bạn trên mạng {{network}} không đủ để thực hiện thanh toán {{paymentAmount}} này.",
+      "network": "Mạng",
       "title": "Số dư không đủ",
       "topUpAccount": "Vui lòng nạp thêm tiền vào tài khoản của bạn và thử lại.",
-      "topUpWallet": "Vui lòng nạp thêm vào ví của bạn và thử lại."
+      "topUpWallet": "Vui lòng nạp thêm vào ví của bạn và thử lại.",
+      "topUpWalletTryOtherNetwork": "Vui lòng nạp tiền vào ví của bạn và thử lại hoặc thử với mạng khác."
     },
     "insufficientGasBalancePage": {
       "message": "Giao dịch này yêu cầu {{transferAmount}} và ~{{gasFiat}} giá trị {{gasSymbol}} trên mạng {{networkName}} để trả phí gas.",
@@ -1403,6 +1436,14 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Quay lại trang thanh toán trong trình duyệt web của bạn để xác nhận và xem chi tiết đơn hàng.",
       "title": "Sắp xong"
+    },
+    "networkButton": {
+      "balance": "Số dư:",
+      "balanceAmountFiat": "{{amount}} ({{fiat}})",
+      "change": "Thay đổi"
+    },
+    "networkDrawer": {
+      "choose": "Chọn một mạng"
     },
     "oauthTimeoutPage": {
       "reopen": "Mở lại {{integrationName}}",
@@ -1843,6 +1884,16 @@
     "connectingLabel": "Đang kết nối với ví của bạn...",
     "secureLabel": "Nhanh chóng, an toàn và miễn phí",
     "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Xác Thực Thất Bại",
+    "connectionClosed": "Kết nối đã đóng. Vui lòng thử lại.",
+    "connectionStatus": "Trạng thái Kết Nối:",
+    "generatingSession": "Đang tạo phiên đăng nhập an toàn...",
+    "openMobileApp": "Mở ứng dụng di động Mesh của bạn và quét mã QR này để tiếp tục.",
+    "qrCodeAlt": "Mã QR cho Đăng Nhập TrueAuth",
+    "scanToLogin": "Quét để Đăng Nhập",
+    "somethingWentWrong": "Có gì đó sai"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} muốn bạn xác minh quyền sở hữu địa chỉ <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Địa chỉ này không kết nối với ví đã kết nối. Vui lòng kết nối một ví khác.",

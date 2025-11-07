@@ -1268,12 +1268,18 @@
       "networkLabel": "Réseau",
       "subtitle": "Vous pouvez toujours compléter votre dépôt manuellement.",
       "tokenLabel": "Jeton",
-      "warning": "Transférez uniquement du {{token}} sur le réseau {{network}} vers cette adresse — dans le cas contraire, vos actifs pourraient être perdus",
-      "warningWithTag": "Transférez uniquement {{token}} sur {{network}} avec cet(te) {{info}} à cette adresse - sinon, vos actifs risquent d'être perdus"
+      "warning": "Transférez uniquement du {{token}} sur le réseau {{network}} vers cette adresse — dans le cas contraire, vos actifs pourraient être perdus"
     },
     "tokenSelection": {
       "subtitle": "{{client}} accepte :",
       "title": "Choisissez un jeton"
+    },
+    "warnings": {
+      "includeMemo": "Incluez ce mémo",
+      "includeTag": "Incluez cette étiquette",
+      "onlySendTokenOnNetwork": "Envoyez seulement <1>{{token}}</1> sur le réseau <3>{{network}}</3>",
+      "requiredForDeposit": "Requis pour ce dépôt",
+      "sendAboveMinimum": "Envoyez au-dessus du montant minimum"
     }
   },
   "paymentMethods": {
@@ -1291,7 +1297,32 @@
     "title": "Mise à jour du paiement",
     "topUp": "Recharger le solde {{token}}"
   },
+  "payPage": {
+    "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
+    "continueInPayApp": "Continuez dans {{integrationName}}",
+    "generateNewQr": "Générer un nouveau QR code",
+    "noTransferIdError": "ID de transfert manquant. Veuillez recommencer.",
+    "paymentDataMissing": "Les données de paiement ne sont pas disponibles. Veuillez réessayer.",
+    "paymentFailed": "Échec du paiement. Veuillez réessayer.",
+    "pollingError": "Impossible de vérifier le statut du paiement. Veuillez réessayer.",
+    "processing": "Paiement en cours de traitement...",
+    "qrCodeLabel": "Le code QR peut être scanné sur votre appareil mobile pour établir la connexion",
+    "qrGenerationFailed": "Échec de la génération du QR code. Veuillez réessayer.",
+    "receivedDetails": "Vous recevrez <strong>{{amountStr}}</strong> dans {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Scannez le code QR pour compléter votre paiement",
+    "selectAsset": "Choisissez l’actif que vous souhaitez transférer",
+    "selectNetwork": "Choisissez le réseau pour le transfert",
+    "transactionComplete": "Transaction terminée",
+    "unsupportedCurrencyError": "Cette devise n'est pas prise en charge dans votre pays.",
+    "updateFailed": "Échec de la récupération des détails de paiement. Veuillez réessayer.",
+    "youPay": "Montant à payer",
+    "youReceive": "Montant à recevoir"
+  },
   "paypal": {
+    "accessDeniedPage": {
+      "subtitle": "Malheureusement, l’activité dans votre pays n’est actuellement pas autorisée.",
+      "title": "Accès refusé"
+    },
     "belowBinanceMinimumPage": {
       "message": "Ce paiement de {{transferAmount}} est inférieur au minimum requis par Binance ({{minAmount}} + frais) pour transférer {{symbol}} sur {{networkName}}.",
       "title": "Inférieur au minimum requis par Binance"
@@ -1390,9 +1421,11 @@
       "chooseDifferent": "Choisissez un autre compte",
       "message": "Votre solde de {{balanceAmount}} est insuffisant pour effectuer ce paiement de {{paymentAmount}}.",
       "messageWithNetwork": "Votre solde de {{balanceAmount}} sur le réseau {{network}} est insuffisant pour effectuer ce paiement de {{paymentAmount}}.",
+      "network": "Réseau",
       "title": "Solde insuffisant",
       "topUpAccount": "Veuillez recharger votre compte et réessayer.",
-      "topUpWallet": "Veuillez recharger votre portefeuille et réessayer."
+      "topUpWallet": "Veuillez recharger votre portefeuille et réessayer.",
+      "topUpWalletTryOtherNetwork": "Veuillez recharger votre portefeuille et réessayer ou essayez avec un autre réseau."
     },
     "insufficientGasBalancePage": {
       "message": "Cette transaction nécessite {{transferAmount}} ainsi qu’environ {{gasFiat}} en {{gasSymbol}} sur le réseau {{networkName}} pour couvrir les frais de gaz.",
@@ -1405,6 +1438,14 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Retournez à la page de paiement dans votre navigateur Web pour obtenir la confirmation et les détails de commande.",
       "title": "Presque terminé"
+    },
+    "networkButton": {
+      "balance": "Solde:",
+      "balanceAmountFiat": "{{amount}} ({{fiat}})",
+      "change": "Changer"
+    },
+    "networkDrawer": {
+      "choose": "Choisissez un réseau"
     },
     "oauthTimeoutPage": {
       "reopen": "Rouvrir {{integrationName}}",
@@ -1845,6 +1886,16 @@
     "connectingLabel": "Connexion à votre portefeuille...",
     "secureLabel": "Rapide, sécurisé et gratuit",
     "secureText": "La signature n'autorise en aucun cas {{clientName}} à effectuer des transactions avec votre portefeuille."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Échec de l'authentification",
+    "connectionClosed": "Connexion fermée. Veuillez réessayer.",
+    "connectionStatus": "Statut de la connexion :",
+    "generatingSession": "Génération d'une session de connexion sécurisée...",
+    "openMobileApp": "Ouvrez votre application mobile Mesh et scannez ce code QR pour continuer.",
+    "qrCodeAlt": "Code QR pour la connexion TrueAuth",
+    "scanToLogin": "Scannez pour vous connecter",
+    "somethingWentWrong": "Une erreur s’est produite"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} souhaite que vous vérifiiez la propriété de l'adresse <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Cette adresse n'est pas associée au portefeuille connecté. Veuillez connecter un autre portefeuille.",

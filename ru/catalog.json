@@ -1270,12 +1270,18 @@
       "networkLabel": "Сеть",
       "subtitle": "Вы можете завершить депозит вручную.",
       "tokenLabel": "Токен",
-      "warning": "Переводите только {{token}} по сети {{network}} на этот адрес, иначе ваши средства могут быть утеряны",
-      "warningWithTag": "Переводите только {{token}} по сети {{network}} с этой {{info}} на этот адрес, иначе ваши средства могут быть утеряны"
+      "warning": "Переводите только {{token}} по сети {{network}} на этот адрес, иначе ваши средства могут быть утеряны"
     },
     "tokenSelection": {
       "subtitle": "{{client}} принимает:",
       "title": "Выберите токен"
+    },
+    "warnings": {
+      "includeMemo": "Включите эту записку",
+      "includeTag": "Включите этот тег",
+      "onlySendTokenOnNetwork": "Отправляйте только <1>{{token}}</1> в сети <3>{{network}}</3>",
+      "requiredForDeposit": "Требуется для этого депозита",
+      "sendAboveMinimum": "Отправляйте выше минимальной суммы"
     }
   },
   "paymentMethods": {
@@ -1293,7 +1299,32 @@
     "title": "Обновление платежа",
     "topUp": "Пополнить баланс {{token}}"
   },
+  "payPage": {
+    "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} - {{maxFiat}}",
+    "continueInPayApp": "Продолжить в {{integrationName}}",
+    "generateNewQr": "Создать новый QR-код",
+    "noTransferIdError": "Отсутствует ID перевода. Пожалуйста, начните заново.",
+    "paymentDataMissing": "Данные платежа недоступны. Пожалуйста, попробуйте еще раз.",
+    "paymentFailed": "Оплата не удалась. Пожалуйста, попробуйте еще раз.",
+    "pollingError": "Не удается проверить статус платежа. Пожалуйста, попробуйте еще раз.",
+    "processing": "Обработка вашего платежа...",
+    "qrCodeLabel": "QR-код можно отсканировать на вашем мобильном устройстве для установления соединения",
+    "qrGenerationFailed": "Не удалось создать QR-код. Пожалуйста, попробуйте еще раз.",
+    "receivedDetails": "Вы получите <strong>{{amountStr}}</strong> в {{clientName}} ({{shortAddress}})",
+    "scanQrCode": "Отсканируйте QR-код для завершения оплаты",
+    "selectAsset": "Выберите актив для перевода",
+    "selectNetwork": "Выберите сеть для перевода",
+    "transactionComplete": "Транзакция завершена",
+    "unsupportedCurrencyError": "Эта валюта не поддерживается в вашей стране.",
+    "updateFailed": "Не удалось получить данные об оплате. Пожалуйста, попробуйте ещё раз.",
+    "youPay": "Вы платите",
+    "youReceive": "Вы получаете"
+  },
   "paypal": {
+    "accessDeniedPage": {
+      "subtitle": "К сожалению, доступ из вашей страны в настоящий момент запрещён.",
+      "title": "Доступ запрещён"
+    },
     "belowBinanceMinimumPage": {
       "message": "Этот платёж на сумму {{transferAmount}} ниже минимального лимита Binance в {{minAmount}} (плюс сборы) для перевода {{symbol}} в сети {{networkName}}.",
       "title": "Ниже минимального лимита Binance"
@@ -1392,9 +1423,11 @@
       "chooseDifferent": "Подключить другой аккаунт",
       "message": "Ваш {{balanceAmount}} баланс недостаточен для совершения этого {{paymentAmount}} платежа.",
       "messageWithNetwork": "Ваш баланс {{balanceAmount}} в сети {{network}} недостаточен для совершения этого {{paymentAmount}} платежа.",
+      "network": "Сеть",
       "title": "Недостаточный баланс",
       "topUpAccount": "Пожалуйста, пополните свой счет и попробуйте еще раз.",
-      "topUpWallet": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз."
+      "topUpWallet": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз.",
+      "topUpWalletTryOtherNetwork": "Пополните свой электронный кошелек и попробуйте снова, либо используйте другую сеть."
     },
     "insufficientGasBalancePage": {
       "message": "Эта транзакция требует {{transferAmount}} и ~{{gasFiat}} стоимости в {{gasSymbol}} в сети {{networkName}} для оплаты за газ.",
@@ -1407,6 +1440,14 @@
     "inWalletDoneTransferPage": {
       "subtitle": "Вернитесь на страницу оформления заказа в вашем веб-браузере для подтверждения и получения деталей заказа.",
       "title": "Почти готово"
+    },
+    "networkButton": {
+      "balance": "Баланс:",
+      "balanceAmountFiat": "{{amount}} ({{fiat}})",
+      "change": "Изменить"
+    },
+    "networkDrawer": {
+      "choose": "Выберите сеть"
     },
     "oauthTimeoutPage": {
       "reopen": "Снова открыть {{integrationName}}",
@@ -1847,6 +1888,16 @@
     "connectingLabel": "Подключение вашего кошелька...",
     "secureLabel": "Быстро, безопасно и бесплатно",
     "secureText": "Подписание никоим образом не дает {{clientName}} разрешения на выполнение операций с вашим кошельком."
+  },
+  "trueAuthPage": {
+    "authenticationFailed": "Ошибка аутентификации",
+    "connectionClosed": "Соединение закрыто. Пожалуйста, попробуйте ещё раз.",
+    "connectionStatus": "Статус соединения:",
+    "generatingSession": "Генерация защищённой сессии входа...",
+    "openMobileApp": "Откройте своё мобильное приложение Mesh и отсканируйте этот QR-код, чтобы продолжить.",
+    "qrCodeAlt": "QR-код для входа через TrueAuth",
+    "scanToLogin": "Сканируйте для входа",
+    "somethingWentWrong": "Что-то пошло не так"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} хочет проверить право собственности на <3>{{requestedNetworkName}}</3> адрес <6>{{truncatedRequestedAddress}}</6>. Этот адрес не связан с подключенным кошельком. Пожалуйста, подключите другой кошелек.",
