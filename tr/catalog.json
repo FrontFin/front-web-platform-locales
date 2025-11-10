@@ -1273,11 +1273,11 @@
       "title": "Bir token seçin"
     },
     "warnings": {
-      "includeMemo": "Bu notu ekleyin",
-      "includeTag": "Bu etiketi ekleyin",
+      "includeMemo": "Bu notu dahil et: <1>{{memo}}</1>",
+      "includeTag": "Bu etiketi dahil et: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin",
       "requiredForDeposit": "Bu depozito için gereklidir",
-      "sendAboveMinimum": "Minimum tutarın üzerinde gönderin"
+      "sendAboveMinimum": "Minimum tutarın üzerinde gönder: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1416,7 +1416,7 @@
       "title": "Ödeme bilgilerini gözden geçirmek için giriş yapın"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal bu satıcı için kripto ödemelerini etkinleştirir. Devam ederek, ödeme için hesabınızdan PayPal'a bir transfer talebi göndermesine izin verirsiniz.<1>Mesh'in Şartları geçerlidir.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Farklı bir hesap seçin",
@@ -1429,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "Lütfen cüzdanınızı doldurun ve tekrar deneyin ya da başka bir ağ ile deneyin."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "Bu işlem, gaz ücretlerini ödemek için {{transferAmount}} ve ~{{gasFiat}} değerinde {{gasSymbol}} gerektirir."
     },
     "insufficientGasBalancePage": {
       "message": "Bu işlem, gaz ücretlerini ödemek için {{networkName}} ağında {{gasSymbol}} değerinde {{transferAmount}} ve ~{{gasFiat}} gerektirir.",
@@ -1470,7 +1470,7 @@
       "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "swapFee": "Otomatik değişim ücreti",
       "swapFeeHint": "Cüzdanınızda bulunan varlıkların hedef transfer varlığına otomatik dönüşümünü sağlamak için bir ücret.",
