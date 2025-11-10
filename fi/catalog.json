@@ -1273,11 +1273,11 @@
       "title": "Valitse tunnus"
     },
     "warnings": {
-      "includeMemo": "Sisällytä tämä muistio",
-      "includeTag": "Sisällytä tämä tunniste",
+      "includeMemo": "Lisää tämä muistio: <1>{{memo}}</1>",
+      "includeTag": "Lisää tämä tunniste: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Lähetä <1>{{token}}</1> vain <3>{{network}}</3> -verkossa",
       "requiredForDeposit": "Tarvitaan tätä talletusta varten",
-      "sendAboveMinimum": "Lähetä yli vähimmäismäärä"
+      "sendAboveMinimum": "Lähetä yli minimimäärän: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1416,7 +1416,7 @@
       "title": "Kirjaudu sisään tarkistaaksesi maksutiedot"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal mahdollistaa kryptomaksut tälle myyjälle. Jatkamalla sallit Meshin pyytää siirtoa PayPal-tililtäsi maksun suorittamiseksi.<1>Meshin ehdot koskevat.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Valitse toinen tili",
@@ -1429,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "Ole hyvä ja täydennä lompakkosi saldoa ja yritä uudelleen tai kokeile toista verkkoa."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} kaasumaksuihin."
     },
     "insufficientGasBalancePage": {
       "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} verkossa {{networkName}} kaasumaksujen maksamiseen.",
