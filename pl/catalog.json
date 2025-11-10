@@ -221,7 +221,7 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zaakceptuj żądanie, aby kontynuować.",
-    "title": "Autoryzuj prośbę\u00a0o połączenie<1></1> w swoim portfelu",
+    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
@@ -547,8 +547,6 @@
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Masz jeszcze {{count}} szansę.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -719,8 +717,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1277,11 +1273,11 @@
       "title": "Wybierz token"
     },
     "warnings": {
-      "includeMemo": "Dołącz tę notatkę",
-      "includeTag": "Dołącz ten znacznik",
+      "includeMemo": "Dołącz tę notatkę: <1>{{memo}}</1>",
+      "includeTag": "Dołącz ten tag: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Tylko wyślij <1>{{token}}</1> w sieci <3>{{network}}</3>",
       "requiredForDeposit": "Wymagane dla tego depozytu",
-      "sendAboveMinimum": "Wyślij powyżej minimalnej kwoty"
+      "sendAboveMinimum": "Wyślij powyżej minimalnej kwoty: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1420,7 +1416,7 @@
       "title": "Zaloguj się, aby przejrzeć szczegóły płatności"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal umożliwia kryptopłatności dla tego sprzedawcy. Kontynuując, pozwalasz serwisowi Mesh zażądać transferu z Twojego konta do PayPal na potrzeby płatności. <1>Obowiązują warunki Mesh.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Wybierz inne konto",
@@ -1433,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "Proszę doładuj swój portfel i spróbuj ponownie lub spróbuj z inną siecią."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "Ta transakcja wymaga {{transferAmount}} oraz ~{{gasFiat}}, wartych {{gasSymbol}}, aby opłacić prowizję gazową."
     },
     "insufficientGasBalancePage": {
       "message": "Ta transakcja wymaga {{transferAmount}} i ~{{gasFiat}} wartych {{gasSymbol}} na sieci {{networkName}} do opłacenia kosztów gazu.",
