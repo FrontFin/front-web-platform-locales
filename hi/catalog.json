@@ -1273,11 +1273,11 @@
       "title": "टोकन चुनें"
     },
     "warnings": {
-      "includeMemo": "इस मेमो को शामिल करें",
-      "includeTag": "इस टैग को शामिल करें",
+      "includeMemo": "इस ज्ञापन को शामिल करें: <1>{{memo}}</1>",
+      "includeTag": "इस टैग को शामिल करें: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "केवल <1>{{token}}</1> <3>{{network}}</3> नेटवर्क पर भेजें",
       "requiredForDeposit": "इस जमा के लिए आवश्यक है",
-      "sendAboveMinimum": "न्यूनतम राशि से अधिक भेजें"
+      "sendAboveMinimum": "न्यूनतम राशि से ऊपर भेजें: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1416,7 +1416,7 @@
       "title": "भुगतान विवरण की समीक्षा करने के लिए लॉग इन करें"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal इस व्यापारी के लिए क्रिप्टो भुगतान सक्षम करता है। जारी रखने पर, आप meeght से PayPal को भुगतान के लिए खाते से स्थानांतरण का अनुरोध करने की अनुमति देते हैं।<1>Mesh की शर्तें लागू होती हैं।</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "किसी भिन्न खाते का चयन करें",
@@ -1429,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "कृपया अपनी वॉलेट भरें और पुनः प्रयास करें या किसी अन्य नेटवर्क के साथ प्रयास करें।"
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "इस लेन-देन के लिए {{transferAmount}} और गैस शुल्क का भुगतान करने के लिए लगभग {{gasFiat}} मूल्य के {{gasSymbol}} की आवश्यकता है।"
     },
     "insufficientGasBalancePage": {
       "message": "इस लेन-देन के लिए {{networkName}} नेटवर्क पर गैस शुल्क का भुगतान करने के लिए {{transferAmount}} और ~{{gasFiat}} मूल्य के {{gasSymbol}} की आवश्यकता है।",
