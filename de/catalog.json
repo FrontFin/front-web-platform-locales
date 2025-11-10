@@ -1273,11 +1273,11 @@
       "title": "Wählen Sie ein Token"
     },
     "warnings": {
-      "includeMemo": "Diesen Vermerk einschließen",
-      "includeTag": "Diesen Tag einschließen",
+      "includeMemo": "Fügen Sie dieses Memo ein: <1>{{memo}}</1>",
+      "includeTag": "Fügen Sie dieses Etikett ein: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Nur <1>{{token}}</1> im <3>{{network}}</3>-Netzwerk senden",
       "requiredForDeposit": "Für diese Einzahlung erforderlich",
-      "sendAboveMinimum": "Über dem Mindestbetrag senden"
+      "sendAboveMinimum": "Senden Sie über den Mindestbetrag: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1416,7 +1416,7 @@
       "title": "Logge dich ein, um Zahlungsdetails anzuzeigen"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal ermöglicht Krypto-Zahlungen für diesen Händler. Indem Sie fortfahren, erlauben Sie Mesh, eine Überweisung von Ihrem Konto zu PayPal für Ihre Zahlung anzufordern.<1>Es gelten Mesh's Bedingungen.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Anderes Konto auswählen",
@@ -1429,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "Bitte laden Sie Ihr Wallet auf und versuchen Sie es erneut oder probieren Sie es mit einem anderen Netzwerk."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "Diese Transaktion erfordert {{transferAmount}} und ~{{gasFiat}} in Höhe von {{gasSymbol}}, um die Gasgebühren zu bezahlen."
     },
     "insufficientGasBalancePage": {
       "message": "Diese Transaktion erfordert {{transferAmount}} und ~{{gasFiat}} {{gasSymbol}} im Wert auf dem {{networkName}}-Netzwerk zur Bezahlung der Gasgebühren.",
