@@ -547,7 +547,6 @@
     "incorrectEmail": "Ha ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} oportunidad restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Le quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -718,7 +717,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1275,11 +1273,11 @@
       "title": "Elija un token"
     },
     "warnings": {
-      "includeMemo": "Incluir este memo",
-      "includeTag": "Incluir esta etiqueta",
+      "includeMemo": "Incluir este memo: <1>{{memo}}</1>",
+      "includeTag": "Incluir esta etiqueta: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>",
       "requiredForDeposit": "Requerido para este depósito",
-      "sendAboveMinimum": "Enviar por encima del monto mínimo"
+      "sendAboveMinimum": "Enviar por encima de la cantidad mínima: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1418,7 +1416,7 @@
       "title": "Inicia sesión para revisar los detalles del pago"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal habilita pagos con criptomonedas para este comerciante. Al continuar, permites que Mesh solicite una transferencia de tu cuenta a PayPal para tu pago.<1> Se aplican los Términos de Mesh.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Elige una cuenta diferente",
@@ -1431,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "Por favor, recarga tu wallet y vuelve a intentarlo o intenta con otra red."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "Esta transacción requiere {{transferAmount}} y aproximadamente ~{{gasFiat}} en {{gasSymbol}} para pagar las tarifas de gas."
     },
     "insufficientGasBalancePage": {
       "message": "Esta transacción requiere {{transferAmount}} y ~{{gasFiat}} en {{gasSymbol}} en la red {{networkName}} para pagar tarifas de gas.",

@@ -547,8 +547,6 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -719,8 +717,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -835,12 +831,12 @@
   },
   "homePage": {
     "buy": "Купить",
-    "buyDescription": "Покупайте криптовалюту мгновенно с помощью карты или банка.",
+    "buyDescription": "Купите криптовалюту мгновенно с помощью карты или банка.",
     "guaranteed": "Гарантия",
     "noExtraFee": "Без дополнительных сборов",
     "secureDeposit": "Безопасный депозит",
     "sendFunds": "Отправьте средства безопасно на правильный адрес и сеть.",
-    "sendUsingQR": "Отправляйте средства вручную, используя QR-код.",
+    "sendUsingQR": "Отправить средства вручную, используя QR-код.",
     "standardDeposit": "Стандартный депозит",
     "title": "Добавить средства"
   },
@@ -1277,11 +1273,11 @@
       "title": "Выберите токен"
     },
     "warnings": {
-      "includeMemo": "Включите эту записку",
-      "includeTag": "Включите этот тег",
+      "includeMemo": "Добавьте эту памятку: <1>{{memo}}</1>",
+      "includeTag": "Добавьте этот тег: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Отправляйте только <1>{{token}}</1> в сети <3>{{network}}</3>",
       "requiredForDeposit": "Требуется для этого депозита",
-      "sendAboveMinimum": "Отправляйте выше минимальной суммы"
+      "sendAboveMinimum": "Отправьте сумму выше минимальной: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1420,7 +1416,7 @@
       "title": "Войдите, чтобы просмотреть данные по оплате"
     },
     "initialSteps": {
-      "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
+      "terms": "PayPal позволяет производить платежи в криптовалюте для этого продавца. Продолжая, вы разрешаете Mesh запрашивать перевод с вашего счёта в PayPal для оплаты.<1>Применяются условия Mesh.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Подключить другой аккаунт",
@@ -1433,7 +1429,7 @@
       "topUpWalletTryOtherNetwork": "Пополните свой электронный кошелек и попробуйте снова, либо используйте другую сеть."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": ""
+      "message": "Эта транзакция требует {{transferAmount}} и ~{{gasFiat}} в {{gasSymbol}} для оплаты комиссий за газ."
     },
     "insufficientGasBalancePage": {
       "message": "Эта транзакция требует {{transferAmount}} и ~{{gasFiat}} стоимости в {{gasSymbol}} в сети {{networkName}} для оплаты за газ.",
