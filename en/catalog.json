@@ -15,7 +15,8 @@
     "code": "6 digit code"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Switch Fiat/Crypto"
+    "switchFiatCrypto": "Switch Fiat/Crypto",
+    "minimumAmount": "Minimum amount is {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Amount must be within {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
@@ -516,6 +517,7 @@
     "addressNotAllowlisted": "Unable to initiate withdrawal from Coinbase. You must add this recipient address to your Allow List here: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Requested amount is below the minimum allowable transfer amount on this network.",
     "amountExceedsMaximum": "Requested amount exceeds the maximum allowable transfer amount on this network.",
+    "appUpdateRequired": "The app version needs to be updated to continue. Please update your app and try again.",
     "authenticationFailed": "Unable to authenticate with the selected integration.",
     "balanceNotEnough": "Your account shows sufficient balance, but some funds may be pending, reserved, or required for fees. Please try sending a smaller amount.",
     "belowMinimumFiatDeposit": "Amount is below the minimum fiat deposit limit.",
@@ -1330,14 +1332,18 @@
       "preparingPayment": "Preparing your payment details"
     },
     "catalogPage": {
+      "unavailableAccounts": "Unavailable accounts",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Amount above the maximum",
-        "amountBelowMinimum": "Amount below the minimum",
-        "complianceRestriction": "Compliance eligibility restriction",
-        "unavailable": "Unavailable",
-        "unavailableInRegion": "Unavailable in your region",
-        "unsupportedOnDevice": "Unsupported on this device",
-        "unsupportedTokenAndNetwork": "Unsupported token and network"
+        "integrationMultipleTokenNetworkCompatibility": "Unsupported token and network",
+        "integrationNotSupportedCountry": "Unavailable in your region",
+        "integrationSingleTokenNetworkCompatibility": "Unsupported token and network",
+        "lessThanIntegrationMinAmount": "Amount below the minimum",
+        "moreThanIntegrationMaxAmount": "Amount above the maximum",
+        "platformNotSupported": "Unsupported on this device",
+        "sdkVersionNotSupported": "Ineligible",
+        "travelRuleAmountLimit": "Compliance eligibility restriction",
+        "travelRuleVaspIdRequired": "Compliance eligibility restriction",
+        "travelRuleWalletOwnershipRequired": "Compliance eligibility restriction"
       }
     },
     "common": {
