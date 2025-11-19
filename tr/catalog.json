@@ -15,7 +15,8 @@
     "code": "6 haneli kod"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Fiat/Kripto değiştir"
+    "switchFiatCrypto": "Fiat/Kripto değiştir",
+    "minimumAmount": "Minimum tutar {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Miktar {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} arasında olmalıdır",
@@ -691,6 +692,7 @@
     "username": "Kullanıcı adı"
   },
   "fullScreenSpinner": {
+    "almostThere": "Neredeyse bitti — sadece detayları netleştiriyoruz.",
     "linking": "Hesabınız bağlanıyor...",
     "loading": "Hâlâ çalışıyor..."
   },
@@ -1329,14 +1331,18 @@
       "preparingPayment": "Ödeme detaylarınızı hazırlıyoruz"
     },
     "catalogPage": {
+      "unavailableAccounts": "Kullanılamayan hesaplar",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Miktar, maksimumun üzerinde",
-        "amountBelowMinimum": "Miktar, minimumun altında",
-        "complianceRestriction": "Uyumluluk uygunluğu kısıtlaması",
-        "unavailable": "Kullanılamıyor",
-        "unavailableInRegion": "Bölgede kullanılamıyor",
-        "unsupportedOnDevice": "Bu cihazda desteklenmiyor",
-        "unsupportedTokenAndNetwork": "Desteklenmeyen jeton ve ağ"
+        "integrationMultipleTokenNetworkCompatibility": "Desteklenmeyen jeton ve ağ",
+        "integrationNotSupportedCountry": "Bölgenizde kullanılamıyor",
+        "integrationSingleTokenNetworkCompatibility": "Desteklenmeyen jeton ve ağ",
+        "lessThanIntegrationMinAmount": "Tutar minimumdan düşük",
+        "moreThanIntegrationMaxAmount": "Tutar maksimumdan yüksek",
+        "platformNotSupported": "Bu cihazda desteklenmiyor",
+        "sdkVersionNotSupported": "Uygun değil",
+        "travelRuleAmountLimit": "Uyum uygunluk kısıtlaması",
+        "travelRuleVaspIdRequired": "Uyum uygunluk kısıtlaması",
+        "travelRuleWalletOwnershipRequired": "Uyum uygunluk kısıtlaması"
       }
     },
     "common": {
@@ -1529,6 +1535,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Hesap",
+    "buildingPreviewDeposit": "Mevduat önizlemenizi oluşturuluyor...",
     "buildingPreviewPayment": "Ödeme önizlemenizi oluşturuluyor...",
     "buildingPreviewTransfer": "Transfer önizlemeniz oluşturuluyor...",
     "confirmTransaction": "Bu işlemi {{selectedIntegrationName}} uygulamanızda onaylayınız.",
@@ -1541,6 +1548,7 @@
     "payWithLabel": "Ödeme yöntemi",
     "payWithLabelWithName": "{{integrationName}} ile ödeme yapın",
     "plusFees": "{{amount}} + ücretler",
+    "processingDeposit": "İşleniyor",
     "processingPayment": "Ödemeniz işleniyor"
   },
   "previewTransfer": {

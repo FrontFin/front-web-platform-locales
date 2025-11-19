@@ -15,7 +15,8 @@
     "code": "Код из 6 цифр"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Переключить Валюта/Крипто"
+    "switchFiatCrypto": "Переключить Валюта/Крипто",
+    "minimumAmount": "Минимальная сумма - {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
@@ -691,6 +692,7 @@
     "username": "Имя пользователя"
   },
   "fullScreenSpinner": {
+    "almostThere": "Почти закончено — осталось всего лишь закончить детали.",
     "linking": "Привязка учетной записи...",
     "loading": "Все еще работает..."
   },
@@ -1329,14 +1331,18 @@
       "preparingPayment": "Подготовка деталей вашего платежа"
     },
     "catalogPage": {
+      "unavailableAccounts": "Недоступные учетные записи",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Сумма выше максимальной",
-        "amountBelowMinimum": "Сумма ниже минимальной",
-        "complianceRestriction": "Ограничение по соответствию требованиям",
-        "unavailable": "Недоступно",
-        "unavailableInRegion": "Недоступно в вашем регионе",
-        "unsupportedOnDevice": "Неподдерживается на этом устройстве",
-        "unsupportedTokenAndNetwork": "Неподдерживаемые токен и сеть"
+        "integrationMultipleTokenNetworkCompatibility": "Неподдерживаемые токен и сеть",
+        "integrationNotSupportedCountry": "Недоступно в вашем регионе",
+        "integrationSingleTokenNetworkCompatibility": "Неподдерживаемые токен и сеть",
+        "lessThanIntegrationMinAmount": "Сумма ниже минимальной",
+        "moreThanIntegrationMaxAmount": "Сумма выше максимальной",
+        "platformNotSupported": "Неподдерживается на этом устройстве",
+        "sdkVersionNotSupported": "Неприемлемо",
+        "travelRuleAmountLimit": "Ограничение по соответствию требованиям",
+        "travelRuleVaspIdRequired": "Ограничение по соответствию требованиям",
+        "travelRuleWalletOwnershipRequired": "Ограничение по соответствию требованиям"
       }
     },
     "common": {
@@ -1529,6 +1535,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Аккаунт",
+    "buildingPreviewDeposit": "Создание предварительного просмотра вашего депозита...",
     "buildingPreviewPayment": "Создание предварительного просмотра вашего платежа...",
     "buildingPreviewTransfer": "Создание предварительного просмотра вашего перевода...",
     "confirmTransaction": "Подтвердите эту транзакцию в приложении {{selectedIntegrationName}}.",
@@ -1541,6 +1548,7 @@
     "payWithLabel": "Оплатить с помощью",
     "payWithLabelWithName": "Оплатить через {{integrationName}}",
     "plusFees": "{{amount}} + комиссии",
+    "processingDeposit": "Обработка",
     "processingPayment": "Обработка вашего платежа"
   },
   "previewTransfer": {

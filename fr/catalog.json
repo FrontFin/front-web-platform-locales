@@ -15,7 +15,8 @@
     "code": "Veuillez saisir votre code de vérification à 6 chiffres"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Afficher en : fiat / crypto"
+    "switchFiatCrypto": "Afficher en : fiat / crypto",
+    "minimumAmount": "Le montant minimum est {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} {{selectedFiat}} - et {{maxFiat}} {{selectedFiat}}",
@@ -691,6 +692,7 @@
     "username": "Nom d'utilisateur"
   },
   "fullScreenSpinner": {
+    "almostThere": "Presque là — en train de finaliser les détails.",
     "linking": "Liaison de votre compte...",
     "loading": "Toujours en cours..."
   },
@@ -1329,14 +1331,18 @@
       "preparingPayment": "Préparation des détails de votre paiement"
     },
     "catalogPage": {
+      "unavailableAccounts": "Comptes indisponibles",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Montant au-dessus du maximum",
-        "amountBelowMinimum": "Montant en dessous du minimum",
-        "complianceRestriction": "Restriction d'éligibilité à la conformité",
-        "unavailable": "Indisponible",
-        "unavailableInRegion": "Indisponible dans votre région",
-        "unsupportedOnDevice": "Non pris en charge sur cet appareil",
-        "unsupportedTokenAndNetwork": "Jeton et réseau non pris en charge"
+        "integrationMultipleTokenNetworkCompatibility": "Jeton et réseau non pris en charge",
+        "integrationNotSupportedCountry": "Indisponible dans votre région",
+        "integrationSingleTokenNetworkCompatibility": "Jeton et réseau non pris en charge",
+        "lessThanIntegrationMinAmount": "Montant en dessous du minimum",
+        "moreThanIntegrationMaxAmount": "Montant au-dessus du maximum",
+        "platformNotSupported": "Non pris en charge sur cet appareil",
+        "sdkVersionNotSupported": "Inéligible",
+        "travelRuleAmountLimit": "Restriction d'éligibilité à la conformité",
+        "travelRuleVaspIdRequired": "Restriction d'éligibilité à la conformité",
+        "travelRuleWalletOwnershipRequired": "Restriction d'éligibilité à la conformité"
       }
     },
     "common": {
@@ -1529,6 +1535,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Compte",
+    "buildingPreviewDeposit": "Création de l’aperçu de votre dépôt...",
     "buildingPreviewPayment": "Création de l’aperçu de votre paiement...",
     "buildingPreviewTransfer": "Création de l’aperçu de votre transfert...",
     "confirmTransaction": "Confirmez cette transaction dans votre application {{selectedIntegrationName}}.",
@@ -1541,6 +1548,7 @@
     "payWithLabel": "Payer avec",
     "payWithLabelWithName": "Payer avec {{integrationName}}",
     "plusFees": "{{amount}} + frais",
+    "processingDeposit": "Traitement en cours",
     "processingPayment": "Paiement en cours de traitement"
   },
   "previewTransfer": {

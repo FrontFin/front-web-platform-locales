@@ -15,7 +15,8 @@
     "code": "6-numeroinen koodi"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta"
+    "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta",
+    "minimumAmount": "Pienin mahdollinen summa on {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Määrän on oltava välillä {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
@@ -691,6 +692,7 @@
     "username": "Käyttäjänimi"
   },
   "fullScreenSpinner": {
+    "almostThere": "Melkein valmis — vielä viimeistellään yksityiskohtia.",
     "linking": "Linkitetään tiliäsi...",
     "loading": "Työstetään edelleen..."
   },
@@ -1329,14 +1331,18 @@
       "preparingPayment": "Valmistellaan maksutietojasi"
     },
     "catalogPage": {
+      "unavailableAccounts": "Käyttäjätilit eivät ole käytettävissä",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Määrä yli maksimirajan",
-        "amountBelowMinimum": "Määrä alle minimin",
-        "complianceRestriction": "Sääntelyn kelpoisuusrajoitus",
-        "unavailable": "Ei saatavilla",
-        "unavailableInRegion": "Ei saatavilla alueellasi",
-        "unsupportedOnDevice": "Ei tuettu tällä laitteella",
-        "unsupportedTokenAndNetwork": "Ei tuettu merkki ja verkko"
+        "integrationMultipleTokenNetworkCompatibility": "Ei tuettu tunniste tai verkko",
+        "integrationNotSupportedCountry": "Ei saatavilla alueellasi",
+        "integrationSingleTokenNetworkCompatibility": "Ei tuettu tunniste tai verkko",
+        "lessThanIntegrationMinAmount": "Määrä on alle minimirajan",
+        "moreThanIntegrationMaxAmount": "Määrä ylittää maksimirajan",
+        "platformNotSupported": "Ei tuettu tällä laitteella",
+        "sdkVersionNotSupported": "Ei oikeutettu",
+        "travelRuleAmountLimit": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi",
+        "travelRuleVaspIdRequired": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi",
+        "travelRuleWalletOwnershipRequired": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi"
       }
     },
     "common": {
@@ -1529,6 +1535,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Tili",
+    "buildingPreviewDeposit": "Valmistellaan talletuksen esikatselua...",
     "buildingPreviewPayment": "Valmistellaan maksun esikatselua...",
     "buildingPreviewTransfer": "Valmistellaan siirron esikatselua...",
     "confirmTransaction": "Vahvista tämä tapahtuma {{selectedIntegrationName}} sovelluksessa.",
@@ -1541,6 +1548,7 @@
     "payWithLabel": "Maksa käyttäen",
     "payWithLabelWithName": "Maksa käyttäen {{integrationName}}",
     "plusFees": "{{amount}} + maksut",
+    "processingDeposit": "Käsittely",
     "processingPayment": "Maksuasi käsitellään"
   },
   "previewTransfer": {

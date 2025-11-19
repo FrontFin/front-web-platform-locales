@@ -15,7 +15,8 @@
     "code": "Código de 6 dígitos"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Trocar Fiat/Cripto"
+    "switchFiatCrypto": "Trocar Fiat/Cripto",
+    "minimumAmount": "A quantidade mínima é {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "O valor deve estar entre {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
@@ -691,6 +692,7 @@
     "username": "Nome de utilizador"
   },
   "fullScreenSpinner": {
+    "almostThere": "Quase lá — apenas finalizando os detalhes.",
     "linking": "A ligar a tua conta...",
     "loading": "Ainda a processar..."
   },
@@ -1329,14 +1331,18 @@
       "preparingPayment": "Preparando seus detalhes de pagamento"
     },
     "catalogPage": {
+      "unavailableAccounts": "Contas indisponíveis",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Quantia acima do máximo",
-        "amountBelowMinimum": "Quantia abaixo do mínimo",
-        "complianceRestriction": "Restrição de elegibilidade de conformidade",
-        "unavailable": "Indisponível",
-        "unavailableInRegion": "Indisponível na sua região",
-        "unsupportedOnDevice": "Não suportado neste dispositivo",
-        "unsupportedTokenAndNetwork": "Token e rede não suportados"
+        "integrationMultipleTokenNetworkCompatibility": "Token e rede não suportados",
+        "integrationNotSupportedCountry": "Indisponível na sua região",
+        "integrationSingleTokenNetworkCompatibility": "Token e rede não suportados",
+        "lessThanIntegrationMinAmount": "Valor abaixo do mínimo",
+        "moreThanIntegrationMaxAmount": "Valor acima do máximo",
+        "platformNotSupported": "Não suportado neste dispositivo",
+        "sdkVersionNotSupported": "Inelegível",
+        "travelRuleAmountLimit": "Restrições de elegibilidade de conformidade",
+        "travelRuleVaspIdRequired": "Restrições de elegibilidade de conformidade",
+        "travelRuleWalletOwnershipRequired": "Restrições de elegibilidade de conformidade"
       }
     },
     "common": {
@@ -1529,6 +1535,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Conta",
+    "buildingPreviewDeposit": "Construindo a pré-visualização do depósito...",
     "buildingPreviewPayment": "Construindo a pré-visualização de pagamento...",
     "buildingPreviewTransfer": "Construindo a pré-visualização de transferência...",
     "confirmTransaction": "Confirma esta transação na app {{selectedIntegrationName}}.",
@@ -1541,6 +1548,7 @@
     "payWithLabel": "Pagar com",
     "payWithLabelWithName": "Pagar com {{integrationName}}",
     "plusFees": "{{amount}} + taxas",
+    "processingDeposit": "Processando",
     "processingPayment": "A processar o teu pagamento"
   },
   "previewTransfer": {

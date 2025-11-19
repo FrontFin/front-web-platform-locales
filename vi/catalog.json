@@ -15,7 +15,8 @@
     "code": "Mã 6 chữ số"
   },
   "binanceConnectAmountInput": {
-    "switchFiatCrypto": "Chuyển đổi Tiền pháp định/Mã hoá"
+    "switchFiatCrypto": "Chuyển đổi Tiền pháp định/Mã hoá",
+    "minimumAmount": "Số tiền tối thiểu là {{minAmount}}"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
@@ -691,6 +692,7 @@
     "username": "Tên người dùng"
   },
   "fullScreenSpinner": {
+    "almostThere": "Gần xong — chỉ còn hoàn thiện các chi tiết.",
     "linking": "Đang liên kết tài khoản của bạn...",
     "loading": "Đang xử lý..."
   },
@@ -1329,14 +1331,18 @@
       "preparingPayment": "Đang chuẩn bị chi tiết thanh toán của bạn"
     },
     "catalogPage": {
+      "unavailableAccounts": "Tài khoản không khả dụng",
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Số tiền vượt quá mức tối đa",
-        "amountBelowMinimum": "Số tiền dưới mức tối thiểu",
-        "complianceRestriction": "Hạn chế khả năng đủ điều kiện tuân thủ",
-        "unavailable": "Không khả dụng",
-        "unavailableInRegion": "Không khả dụng trong khu vực của bạn",
-        "unsupportedOnDevice": "Không được hỗ trợ trên thiết bị này",
-        "unsupportedTokenAndNetwork": "Token và mạng không được hỗ trợ"
+        "integrationMultipleTokenNetworkCompatibility": "Token và mạng không được hỗ trợ",
+        "integrationNotSupportedCountry": "Không có sẵn tại khu vực của bạn",
+        "integrationSingleTokenNetworkCompatibility": "Token và mạng không được hỗ trợ",
+        "lessThanIntegrationMinAmount": "Số tiền dưới mức tối thiểu",
+        "moreThanIntegrationMaxAmount": "Số tiền vượt quá mức tối đa",
+        "platformNotSupported": "Không được hỗ trợ trên thiết bị này",
+        "sdkVersionNotSupported": "Không đủ điều kiện",
+        "travelRuleAmountLimit": "Hạn chế điều kiện tuân thủ",
+        "travelRuleVaspIdRequired": "Hạn chế điều kiện tuân thủ",
+        "travelRuleWalletOwnershipRequired": "Hạn chế điều kiện tuân thủ"
       }
     },
     "common": {
@@ -1529,6 +1535,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",
+    "buildingPreviewDeposit": "Đang tạo bản xem trước khoản tiền gửi của bạn...",
     "buildingPreviewPayment": "Đang tạo bản xem trước thanh toán của bạn...",
     "buildingPreviewTransfer": "Đang tạo bản xem trước chuyển khoản của bạn...",
     "confirmTransaction": "Xác nhận giao dịch này trong ứng dụng {{selectedIntegrationName}} của bạn.",
@@ -1541,6 +1548,7 @@
     "payWithLabel": "Thanh toán bằng",
     "payWithLabelWithName": "Thanh toán bằng {{integrationName}}",
     "plusFees": "{{amount}} + phí",
+    "processingDeposit": "Đang xử lý",
     "processingPayment": "Đang xử lý thanh toán của bạn"
   },
   "previewTransfer": {
