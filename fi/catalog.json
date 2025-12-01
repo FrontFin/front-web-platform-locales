@@ -15,7 +15,7 @@
     "code": "6-numeroinen koodi"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "Pienin mahdollinen summa on {{minAmount}}",
     "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "Valmis",
     "linkAnother": "Liitä toinen tili",
     "linkedToClient": "</1><</1>Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}n</2> <5>{{clientName}}</5>iin.",
+    "inWalletLinkedToClient": "Lompakko yhdistetty!<1></1>Palaa takaisin <2>{{clientName}}</2>",
     "linkedToThisApp": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}n</2> <5>tähän sovellukseen</5>."
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Nostoa Coinbasesta ei voida aloittaa. Sinun tulee lisätä tämä vastaanottajan osoite sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
     "amountExceedsMaximum": "Pyydetty summa ylittää verkon suurimman sallitun siirtosumman.",
+    "appUpdateRequired": "Sovelluksen versiota on päivitettävä jatkaaksesi. Päivitä sovellus ja yritä uudelleen.",
     "authenticationFailed": "Tunnistautuminen valitun integraation kanssa ei onnistunut.",
     "balanceNotEnough": "Tililläsi on riittävä saldo, mutta rahaa voi olla odottamassa, varattu tai niillä saatetaan kattaa maksuja. Yritä lähettää pienempi summa.",
     "belowMinimumFiatDeposit": "Summa on alle vähimmäis Fiat-talletuksen rajan.",
@@ -692,6 +694,7 @@
     "username": "Käyttäjänimi"
   },
   "fullScreenSpinner": {
+    "almostThere": "Melkein valmis — vielä viimeistellään yksityiskohtia.",
     "linking": "Linkitetään tiliäsi...",
     "loading": "Työstetään edelleen..."
   },
@@ -1331,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Määrä yli maksimirajan",
-        "amountBelowMinimum": "Määrä alle minimin",
-        "complianceRestriction": "Sääntelyn kelpoisuusrajoitus",
-        "unavailable": "Ei saatavilla",
-        "unavailableInRegion": "Ei saatavilla alueellasi",
-        "unsupportedOnDevice": "Ei tuettu tällä laitteella",
-        "unsupportedTokenAndNetwork": "Ei tuettu merkki ja verkko"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "Ei tuettu tunniste tai verkko",
+        "integrationNotSupportedCountry": "Ei saatavilla alueellasi",
+        "integrationSingleTokenNetworkCompatibility": "Ei tuettu tunniste tai verkko",
+        "lessThanIntegrationMinAmount": "Määrä on alle minimirajan",
+        "moreThanIntegrationMaxAmount": "Määrä ylittää maksimirajan",
+        "platformNotSupported": "Ei tuettu tällä laitteella",
+        "sdkVersionNotSupported": "Ei oikeutettu",
+        "travelRuleAmountLimit": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi",
+        "travelRuleVaspIdRequired": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi",
+        "travelRuleWalletOwnershipRequired": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi"
+      },
+      "unavailableAccounts": "Käyttäjätilit eivät ole käytettävissä"
     },
     "common": {
       "cancel": "Peruuta",
@@ -1530,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Tili",
+    "buildingPreviewDeposit": "Valmistellaan talletuksen esikatselua...",
     "buildingPreviewPayment": "Valmistellaan maksun esikatselua...",
     "buildingPreviewTransfer": "Valmistellaan siirron esikatselua...",
     "confirmTransaction": "Vahvista tämä tapahtuma {{selectedIntegrationName}} sovelluksessa.",
@@ -1542,6 +1550,7 @@
     "payWithLabel": "Maksa käyttäen",
     "payWithLabelWithName": "Maksa käyttäen {{integrationName}}",
     "plusFees": "{{amount}} + maksut",
+    "processingDeposit": "Käsittely",
     "processingPayment": "Maksuasi käsitellään"
   },
   "previewTransfer": {
@@ -1680,7 +1689,8 @@
     "title": "Miten haluat yhdistyä {{selectedIntegrationName}}-järjestelmään?"
   },
   "sessionExpired": {
-    "title": "Istuntosi on vanhentunut."
+    "title": "Istuntosi on vanhentunut.",
+    "closeTabMessage": "Istuntosi on vanhentunut. Sulje tämä välilehti ja yritä uudelleen."
   },
   "sessionInfo": {
     "text": "Jos sinulla on kysyttävää, ilmoita siitä käyttäen istuntotunnusta <2>{{sessionId}}</2>."
