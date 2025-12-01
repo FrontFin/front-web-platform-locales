@@ -15,7 +15,7 @@
     "code": "6 अंक कोड"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "न्यूनतम राशि {{minAmount}} है।",
     "switchFiatCrypto": "फिएट/क्रिप्टो स्विच करें"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "हो गया",
     "linkAnother": "अन्य खाता जोड़ें",
     "linkedToClient": "आपने<1></1><2>{{integrationName}}</2> को सफलतापूर्वक <5>{{clientName}}</5> से जोड़ दिया है।",
+    "inWalletLinkedToClient": "वॉलेट जुड़ा!<1></1><2>{{clientName}}</2> पर लौटें",
     "linkedToThisApp": "आपने सफलतापूर्वक<1></1><2>{{integrationName}}</2> को <5>इस एप्लिकेशन</5> से जोड़ दिया है।"
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Coinbase से निकासी शुरू करने में असमर्थ। आपको इस प्राप्तकर्ता पते को अपनी अनुमति सूची में जोड़ना होगा: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "अनुरोधित राशि इस नेटवर्क पर न्यूनतम अनुमत हस्तांतरण राशि से कम है।",
     "amountExceedsMaximum": "अनुरोधित राशि इस नेटवर्क पर अधिकतम अनुमत हस्तांतरण राशि से अधिक है।",
+    "appUpdateRequired": "एप्लिकेशन संस्करण को अपडेट करने की आवश्यकता है। कृपया अपनी ऐप अपडेट करें और पुनः प्रयास करें।",
     "authenticationFailed": "चयनित एकीकरण के साथ प्रमाणीकरण में असमर्थ।",
     "balanceNotEnough": "आपके खाते में पर्याप्त शेष राशि दिख रही है, लेकिन कुछ धनराशि लंबित, आरक्षित, या शुल्क के लिए आवश्यक हो सकती हैं। कृपया कम राशि भेजने का प्रयास करें।",
     "belowMinimumFiatDeposit": "राशि न्यूनतम फिएट जमा सीमा से कम है।",
@@ -692,6 +694,7 @@
     "username": "उपयोगकर्ता नाम"
   },
   "fullScreenSpinner": {
+    "almostThere": "लगभग हो गया — बस विवरण को अंतिम रूप दे रहे हैं।",
     "linking": "आपका खाता लिंक किया जा रहा है...",
     "loading": "अभी भी काम कर रहा है..."
   },
@@ -1331,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "राशि अधिकतम से ऊपर है",
-        "amountBelowMinimum": "राशि न्यूनतम से कम है",
-        "complianceRestriction": "अनुपालन पात्रता प्रतिबंध",
-        "unavailable": "उपलब्ध नहीं है",
-        "unavailableInRegion": "आपके क्षेत्र में उपलब्ध नहीं है",
-        "unsupportedOnDevice": "इस डिवाइस पर समर्थित नहीं है",
-        "unsupportedTokenAndNetwork": "गैर-समर्थित टोकन और नेटवर्क"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "असमर्थित टोकन और नेटवर्क",
+        "integrationNotSupportedCountry": "यह आपके क्षेत्र में उपलब्ध नहीं है",
+        "integrationSingleTokenNetworkCompatibility": "असमर्थित टोकन और नेटवर्क",
+        "lessThanIntegrationMinAmount": "राशि न्यूनतम से कम है",
+        "moreThanIntegrationMaxAmount": "राशि अधिकतम से अधिक है",
+        "platformNotSupported": "यह डिवाइस पर असमर्थित है",
+        "sdkVersionNotSupported": "अयोग्य",
+        "travelRuleAmountLimit": "अनुपालन पात्रता का प्रतिबंध",
+        "travelRuleVaspIdRequired": "अनुपालन पात्रता का प्रतिबंध",
+        "travelRuleWalletOwnershipRequired": "अनुपालन पात्रता का प्रतिबंध"
+      },
+      "unavailableAccounts": "अनुपलब्ध खाते"
     },
     "common": {
       "cancel": "रद्द करें",
@@ -1530,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "खाता",
+    "buildingPreviewDeposit": "आपकी जमा पूर्वावलोकन का निर्माण हो रहा है...",
     "buildingPreviewPayment": "आपके भुगतान पूर्वावलोकन का निर्माण हो रहा है...",
     "buildingPreviewTransfer": "आपके स्थानांतरण पूर्वावलोकन का निर्माण हो रहा है...",
     "confirmTransaction": "अपने {{selectedIntegrationName}} ऐप में इस लेन-देन की पुष्टि करें।",
@@ -1542,6 +1550,7 @@
     "payWithLabel": "इसके साथ भुगतान करें",
     "payWithLabelWithName": "{{integrationName}} के साथ भुगतान करें",
     "plusFees": "{{amount}} + शुल्क",
+    "processingDeposit": "प्रसंस्करण",
     "processingPayment": "आपका भुगतान संसाधित हो रहा है"
   },
   "previewTransfer": {
@@ -1680,7 +1689,8 @@
     "title": "आप कैसे {{selectedIntegrationName}} से कनेक्ट करना चाहेंगे?"
   },
   "sessionExpired": {
-    "title": "आपका सत्र समाप्त हो गया है।"
+    "title": "आपका सत्र समाप्त हो गया है।",
+    "closeTabMessage": "आपका सत्र समाप्त हो गया है। कृपया इस टैब को बंद करें और पुनः प्रयास करें।"
   },
   "sessionInfo": {
     "text": "यदि आपके कोई प्रश्न हैं, कृपया इसे सत्र आईडी <2>{{sessionId}}</2> के साथ रिपोर्ट करें।"
