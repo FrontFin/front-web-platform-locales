@@ -15,7 +15,7 @@
     "code": "6-cyfrowy kod"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "Minimalna kwota to {{minAmount}}",
     "switchFiatCrypto": "Przełącz Fiat/Krypto"
   },
   "binanceConnectOAuthPage": {
@@ -222,7 +222,7 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zaakceptuj żądanie, aby kontynuować.",
-    "title": "Autoryzuj prośbę\u00a0o połączenie<1></1> w swoim portfelu",
+    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
@@ -353,6 +353,7 @@
     "done": "Gotowe",
     "linkAnother": "Połącz inne konto",
     "linkedToClient": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>{{clientName}}</5>.",
+    "inWalletLinkedToClient": "Portfel powiązany!<1></1>Wróć do <2>{{clientName}}</2>",
     "linkedToThisApp": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>tą aplikacją</5>."
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Nie udało się zainicjować wypłaty z Coinbase. Musisz dodać ten adres odbiorcy do listy dozwolonych tutaj: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Żądana kwota jest poniżej minimalnej dopuszczalnej kwoty transferu w tej sieci.",
     "amountExceedsMaximum": "Żądana kwota przekracza maksymalną dopuszczalną kwotę transferu w tej sieci.",
+    "appUpdateRequired": "Wersja aplikacji musi zostać zaktualizowana, aby kontynuować. Zaktualizuj aplikację i spróbuj ponownie.",
     "authenticationFailed": "Uwierzytelnienie integracji nie powiodło się.",
     "balanceNotEnough": "Twoje konto wykazuje wystarczające saldo, ale niektóre środki mogą być oczekujące, zarezerwowane lub wymagane na opłaty. Spróbuj wysłać mniejszą kwotę.",
     "belowMinimumFiatDeposit": "Kwota jest poniżej minimalnej wpłaty w walucie fiat.",
@@ -548,8 +550,6 @@
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Masz jeszcze {{count}} szansę.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -694,6 +694,7 @@
     "username": "Nazwa użytkownika"
   },
   "fullScreenSpinner": {
+    "almostThere": "Prawie gotowe — trwa finalizacja szczegółów.",
     "linking": "Podłączanie Twojego konta...",
     "loading": "Przetwarzanie w toku..."
   },
@@ -720,8 +721,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1335,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Kwota powyżej maksimum",
-        "amountBelowMinimum": "Kwota poniżej minimum",
-        "complianceRestriction": "Ograniczenie zgodności",
-        "unavailable": "Niedostępne",
-        "unavailableInRegion": "Niedostępne w Twoim regionie",
-        "unsupportedOnDevice": "Nieobsługiwane na tym urządzeniu",
-        "unsupportedTokenAndNetwork": "Nieobsługiwany token i sieć"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "Nieobsługiwany token i sieć",
+        "integrationNotSupportedCountry": "Niedostępne w Twoim regionie",
+        "integrationSingleTokenNetworkCompatibility": "Nieobsługiwany token i sieć",
+        "lessThanIntegrationMinAmount": "Kwota poniżej minimum",
+        "moreThanIntegrationMaxAmount": "Kwota powyżej maksimum",
+        "platformNotSupported": "Nieobsługiwane na tym urządzeniu",
+        "sdkVersionNotSupported": "Niekwalifikowalny",
+        "travelRuleAmountLimit": "Ograniczenia kwalifikacji na zgodność",
+        "travelRuleVaspIdRequired": "Ograniczenia kwalifikacji na zgodność",
+        "travelRuleWalletOwnershipRequired": "Ograniczenia kwalifikacji na zgodność"
+      },
+      "unavailableAccounts": "Niedostępne konta"
     },
     "common": {
       "cancel": "Anuluj",
@@ -1534,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Konto",
+    "buildingPreviewDeposit": "Tworzenie podglądu wpłaty...",
     "buildingPreviewPayment": "Tworzenie podglądu płatności...",
     "buildingPreviewTransfer": "Tworzenie podglądu transferu...",
     "confirmTransaction": "Potwierdź tę transakcję w aplikacji {{selectedIntegrationName}}.",
@@ -1546,6 +1550,7 @@
     "payWithLabel": "Zapłać z",
     "payWithLabelWithName": "Zapłać z {{integrationName}}",
     "plusFees": "{{amount}} + opłaty",
+    "processingDeposit": "Przetwarzanie",
     "processingPayment": "Przetwarzanie płatności"
   },
   "previewTransfer": {
@@ -1684,7 +1689,8 @@
     "title": "Jak chcesz połączyć się z {{selectedIntegrationName}}?"
   },
   "sessionExpired": {
-    "title": "Twoja sesja wygasła."
+    "title": "Twoja sesja wygasła.",
+    "closeTabMessage": "Twoja sesja wygasła. Zamknij tę kartę i spróbuj ponownie."
   },
   "sessionInfo": {
     "text": "Jeśli masz pytania, zgłoś to, podając identyfikator sesji <2>{{sessionId}}</2>."
