@@ -15,7 +15,7 @@
     "code": "Mã 6 chữ số"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "Số tiền tối thiểu là {{minAmount}}",
     "switchFiatCrypto": "Chuyển đổi Tiền pháp định/Mã hoá"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "Xong",
     "linkAnother": "Liên kết tài khoản khác",
     "linkedToClient": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>{{clientName}}</5>.",
+    "inWalletLinkedToClient": "Ví đã được liên kết!<1></1> Quay lại <2>{{clientName}}</2>",
     "linkedToThisApp": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>ứng dụng này</5>."
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Không thể thực hiện rút tiền từ Coinbase. Bạn cần thêm địa chỉ người nhận này vào Danh sách an toàn Tại đây: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Số tiền yêu cầu thấp hơn mức tối thiểu cho phép trên mạng lưới này.",
     "amountExceedsMaximum": "Số tiền yêu cầu vượt quá mức tối đa cho phép trên mạng lưới này.",
+    "appUpdateRequired": "Phiên bản ứng dụng cần được cập nhật để tiếp tục. Vui lòng cập nhật ứng dụng của bạn và thử lại.",
     "authenticationFailed": "Không thể xác thực với tích hợp đã chọn.",
     "balanceNotEnough": "Tài khoản của bạn thể hiện số dư đủ, nhưng một số tiền có thể đang chờ xử lý, được giữ lại hoặc được yêu cầu cho phí. Vui lòng thử gửi một số tiền nhỏ hơn.",
     "belowMinimumFiatDeposit": "Số tiền thấp hơn mức nạp tiền tối thiểu.",
@@ -692,6 +694,7 @@
     "username": "Tên người dùng"
   },
   "fullScreenSpinner": {
+    "almostThere": "Gần xong — chỉ còn hoàn thiện các chi tiết.",
     "linking": "Đang liên kết tài khoản của bạn...",
     "loading": "Đang xử lý..."
   },
@@ -1331,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Số tiền vượt quá mức tối đa",
-        "amountBelowMinimum": "Số tiền dưới mức tối thiểu",
-        "complianceRestriction": "Hạn chế khả năng đủ điều kiện tuân thủ",
-        "unavailable": "Không khả dụng",
-        "unavailableInRegion": "Không khả dụng trong khu vực của bạn",
-        "unsupportedOnDevice": "Không được hỗ trợ trên thiết bị này",
-        "unsupportedTokenAndNetwork": "Token và mạng không được hỗ trợ"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "Token và mạng không được hỗ trợ",
+        "integrationNotSupportedCountry": "Không có sẵn tại khu vực của bạn",
+        "integrationSingleTokenNetworkCompatibility": "Token và mạng không được hỗ trợ",
+        "lessThanIntegrationMinAmount": "Số tiền dưới mức tối thiểu",
+        "moreThanIntegrationMaxAmount": "Số tiền vượt quá mức tối đa",
+        "platformNotSupported": "Không được hỗ trợ trên thiết bị này",
+        "sdkVersionNotSupported": "Không đủ điều kiện",
+        "travelRuleAmountLimit": "Hạn chế điều kiện tuân thủ",
+        "travelRuleVaspIdRequired": "Hạn chế điều kiện tuân thủ",
+        "travelRuleWalletOwnershipRequired": "Hạn chế điều kiện tuân thủ"
+      },
+      "unavailableAccounts": "Tài khoản không khả dụng"
     },
     "common": {
       "cancel": "Hủy bỏ",
@@ -1530,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",
+    "buildingPreviewDeposit": "Đang tạo bản xem trước khoản tiền gửi của bạn...",
     "buildingPreviewPayment": "Đang tạo bản xem trước thanh toán của bạn...",
     "buildingPreviewTransfer": "Đang tạo bản xem trước chuyển khoản của bạn...",
     "confirmTransaction": "Xác nhận giao dịch này trong ứng dụng {{selectedIntegrationName}} của bạn.",
@@ -1542,6 +1550,7 @@
     "payWithLabel": "Thanh toán bằng",
     "payWithLabelWithName": "Thanh toán bằng {{integrationName}}",
     "plusFees": "{{amount}} + phí",
+    "processingDeposit": "Đang xử lý",
     "processingPayment": "Đang xử lý thanh toán của bạn"
   },
   "previewTransfer": {
@@ -1680,7 +1689,8 @@
     "title": "Bạn muốn kết nối với {{selectedIntegrationName}} bằng cách nào?"
   },
   "sessionExpired": {
-    "title": "Phiên làm việc của bạn đã hết hạn."
+    "title": "Phiên làm việc của bạn đã hết hạn.",
+    "closeTabMessage": "Phiên của bạn đã hết hạn. Vui lòng đóng thẻ này và thử lại."
   },
   "sessionInfo": {
     "text": "Nếu bạn có thắc mắc, vui lòng gửi báo cáo kèm theo ID phiên làm việc <2>{{sessionId}}</2>."

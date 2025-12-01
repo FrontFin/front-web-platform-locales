@@ -15,7 +15,7 @@
     "code": "Código de 6 dígitos"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "A quantidade mínima é {{minAmount}}",
     "switchFiatCrypto": "Trocar Fiat/Cripto"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "Concluído",
     "linkAnother": "Adicionar outra conta",
     "linkedToClient": "Adicionaste com sucesso <1></1><2>{{integrationName}}</2> ao <5>{{clientName}}</5>.",
+    "inWalletLinkedToClient": "Carteira ligada!<1></1>Retornar para <2>{{clientName}}</2>",
     "linkedToThisApp": "Adicionaste com sucesso<1></1><2>{{integrationName}}</2> a <5>esta aplicação</5>."
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Não foi possível iniciar o levantamento na Coinbase. Deves adicionar este endereço de destino à tua Lista de Edereços Autorizados aqui: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "A quantidade solicitada está abaixo da quantidade mínima permitida para transferência nesta rede.",
     "amountExceedsMaximum": "A quantidade solicitada excede a quantidade máxima permitida para transferência nesta rede.",
+    "appUpdateRequired": "A versão do aplicativo precisa ser atualizada para continuar. Por favor, atualize seu aplicativo e tente novamente.",
     "authenticationFailed": "Não foi possível autenticar com a integração selecionada.",
     "balanceNotEnough": "Sua conta mostra saldo suficiente, mas alguns fundos podem estar pendentes, reservados ou exigidos para taxas. Tente enviar um valor menor.",
     "belowMinimumFiatDeposit": "O valor está abaixo do limite mínimo de depósito fiduciário.",
@@ -548,7 +550,6 @@
     "incorrectEmail": "Você digitou um email incorreto.",
     "incorrectPasswordChancesRemaining": "Senha incorreta. Você tem {{count}} tentativas restantes.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Você tem {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Você tem {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de usuário ou senha incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -693,6 +694,7 @@
     "username": "Nome de utilizador"
   },
   "fullScreenSpinner": {
+    "almostThere": "Quase lá — apenas finalizando os detalhes.",
     "linking": "A ligar a tua conta...",
     "loading": "Ainda a processar..."
   },
@@ -719,7 +721,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1333,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Quantia acima do máximo",
-        "amountBelowMinimum": "Quantia abaixo do mínimo",
-        "complianceRestriction": "Restrição de elegibilidade de conformidade",
-        "unavailable": "Indisponível",
-        "unavailableInRegion": "Indisponível na sua região",
-        "unsupportedOnDevice": "Não suportado neste dispositivo",
-        "unsupportedTokenAndNetwork": "Token e rede não suportados"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "Token e rede não suportados",
+        "integrationNotSupportedCountry": "Indisponível na sua região",
+        "integrationSingleTokenNetworkCompatibility": "Token e rede não suportados",
+        "lessThanIntegrationMinAmount": "Valor abaixo do mínimo",
+        "moreThanIntegrationMaxAmount": "Valor acima do máximo",
+        "platformNotSupported": "Não suportado neste dispositivo",
+        "sdkVersionNotSupported": "Inelegível",
+        "travelRuleAmountLimit": "Restrições de elegibilidade de conformidade",
+        "travelRuleVaspIdRequired": "Restrições de elegibilidade de conformidade",
+        "travelRuleWalletOwnershipRequired": "Restrições de elegibilidade de conformidade"
+      },
+      "unavailableAccounts": "Contas indisponíveis"
     },
     "common": {
       "cancel": "Cancelar",
@@ -1532,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Conta",
+    "buildingPreviewDeposit": "Construindo a pré-visualização do depósito...",
     "buildingPreviewPayment": "Construindo a pré-visualização de pagamento...",
     "buildingPreviewTransfer": "Construindo a pré-visualização de transferência...",
     "confirmTransaction": "Confirma esta transação na app {{selectedIntegrationName}}.",
@@ -1544,6 +1550,7 @@
     "payWithLabel": "Pagar com",
     "payWithLabelWithName": "Pagar com {{integrationName}}",
     "plusFees": "{{amount}} + taxas",
+    "processingDeposit": "Processando",
     "processingPayment": "A processar o teu pagamento"
   },
   "previewTransfer": {
@@ -1682,7 +1689,8 @@
     "title": "Como desejas conectar-te à {{selectedIntegrationName}}?"
   },
   "sessionExpired": {
-    "title": "A tua sessão expirou."
+    "title": "A tua sessão expirou.",
+    "closeTabMessage": "A sua sessão expirou. Por favor, feche esta aba e tente novamente."
   },
   "sessionInfo": {
     "text": "Se tiveres dúvidas, reporta a situação com o ID da sessão <2>{{sessionId}}</2>."

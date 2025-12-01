@@ -15,7 +15,7 @@
     "code": "6位数代码"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "最小金额为 {{minAmount}}",
     "switchFiatCrypto": "切换法币/加密货币"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "完成",
     "linkAnother": "连接另一个帐户",
     "linkedToClient": "您已将<1></1><2>{{integrationName}}</2>成功连接至<5>{{clientName}}</5>。",
+    "inWalletLinkedToClient": "钱包已链接！<1></1>返回到<2>{{clientName}}</2>",
     "linkedToThisApp": "您已将<1></1><2>{{integrationName}}</2>成功连接到<5>该应用程序</5>。"
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "无法从 Coinbase 发起提币，您必须先将该地址添加到您的白名单：https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "转账金额低于此网络的最低转账金额要求。",
     "amountExceedsMaximum": "转账金额超过此网络的最高转账金额限制。",
+    "appUpdateRequired": "需要更新应用程序版本才能继续。请更新您的应用程序，然后重试。",
     "authenticationFailed": "无法认证所选的集成服务。",
     "balanceNotEnough": "账户余额充足，但部分资金可能正在处理中、受限或用于手续费。请减少转账金额再尝试。",
     "belowMinimumFiatDeposit": "金额低于最低法币起充金额。",
@@ -692,6 +694,7 @@
     "username": "用户名"
   },
   "fullScreenSpinner": {
+    "almostThere": "快好了——只是最后敲定细节。",
     "linking": "正在关联您的账户...",
     "loading": "处理中..."
   },
@@ -1331,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "金额超出最高限额",
-        "amountBelowMinimum": "金额低于最低限额",
-        "complianceRestriction": "合规性资格限制",
-        "unavailable": "不可用",
-        "unavailableInRegion": "在您的地区不可用",
-        "unsupportedOnDevice": "此设备不支持",
-        "unsupportedTokenAndNetwork": "不支持此代币和网络"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "不支持的代币和网络",
+        "integrationNotSupportedCountry": "在您的地区不可用",
+        "integrationSingleTokenNetworkCompatibility": "不支持的代币和网络",
+        "lessThanIntegrationMinAmount": "低于最低金额",
+        "moreThanIntegrationMaxAmount": "高于最高金额",
+        "platformNotSupported": "在此设备上不支持",
+        "sdkVersionNotSupported": "不符合条件",
+        "travelRuleAmountLimit": "合规性资格限制",
+        "travelRuleVaspIdRequired": "合规性资格限制",
+        "travelRuleWalletOwnershipRequired": "合规性资格限制"
+      },
+      "unavailableAccounts": "不可用账户"
     },
     "common": {
       "cancel": "取消",
@@ -1530,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "账户",
+    "buildingPreviewDeposit": "正在生成您的存款预览……",
     "buildingPreviewPayment": "正在生成您的付款预览……",
     "buildingPreviewTransfer": "正在生成您的转账预览……",
     "confirmTransaction": "在您的 {{selectedIntegrationName}} 应用中确认此交易。",
@@ -1542,6 +1550,7 @@
     "payWithLabel": "使用...支付",
     "payWithLabelWithName": "使用 {{integrationName}} 支付",
     "plusFees": "{{amount}} +手续费",
+    "processingDeposit": "处理中",
     "processingPayment": "正在处理您的付款"
   },
   "previewTransfer": {
@@ -1680,7 +1689,8 @@
     "title": "您想如何连接到{{selectedIntegrationName}}？"
   },
   "sessionExpired": {
-    "title": "您的会话已过期。"
+    "title": "您的会话已过期。",
+    "closeTabMessage": "您的会话已过期。请关闭此选项卡并重试。"
   },
   "sessionInfo": {
     "text": "如果您有任何疑问，请提供会话ID<2>{{sessionId}}</2>以报告此问题。"

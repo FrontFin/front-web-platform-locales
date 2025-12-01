@@ -15,7 +15,7 @@
     "code": "Код из 6 цифр"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "Минимальная сумма - {{minAmount}}",
     "switchFiatCrypto": "Переключить Валюта/Крипто"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "Готово",
     "linkAnother": "Привязать другой аккаунт",
     "linkedToClient": "Вы успешно подключили <1></1><2>{{integrationName}}</2> к <5>{{clientName}}</5>.",
+    "inWalletLinkedToClient": "Электронный кошелек подключен!<1></1>Вернуться к <2>{{clientName}}</2>",
     "linkedToThisApp": "Вы успешно подключили <1></1><2>{{integrationName}}</2> к <5>этому приложению</5>."
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Не удается начать вывод с Coinbase. Добавьте этот адрес получателя в свой список разрешённых адресов здесь: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Запрашиваемая сумма ниже минимально допустимой для перевода в этой сети.",
     "amountExceedsMaximum": "Запрашиваемая сумма превышает максимально допустимую для перевода в этой сети.",
+    "appUpdateRequired": "Версия приложения должна быть обновлена для продолжения. Пожалуйста, обновите ваше приложение и попробуйте снова.",
     "authenticationFailed": "Не удается выполнить аутентификацию с выбранной интеграцией.",
     "balanceNotEnough": "На вашем счете отображается достаточный баланс, но некоторые средства могут быть в ожидании, зарезервированы или требоваться для оплаты комиссии. Пожалуйста, попробуйте отправить меньшую сумму.",
     "belowMinimumFiatDeposit": "Сумма ниже минимального лимита депозита.",
@@ -548,8 +550,6 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -694,6 +694,7 @@
     "username": "Имя пользователя"
   },
   "fullScreenSpinner": {
+    "almostThere": "Почти готово — остаётся лишь уточнить детали.",
     "linking": "Привязка учетной записи...",
     "loading": "Все еще работает..."
   },
@@ -720,8 +721,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1281,7 +1280,7 @@
       "includeMemo": "Добавьте эту памятку: <1>{{memo}}</1>",
       "includeTag": "Добавьте этот тег: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Отправляйте только <1>{{token}}</1> в сети <3>{{network}}</3>",
-      "requiredForDeposit": "Требуется для этого депозита",
+      "requiredForDeposit": "Требуется для этого перевода",
       "sendAboveMinimum": "Отправьте сумму выше минимальной: <1>{{amount}}</1>"
     }
   },
@@ -1335,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Сумма выше максимальной",
-        "amountBelowMinimum": "Сумма ниже минимальной",
-        "complianceRestriction": "Ограничение по соответствию требованиям",
-        "unavailable": "Недоступно",
-        "unavailableInRegion": "Недоступно в вашем регионе",
-        "unsupportedOnDevice": "Неподдерживается на этом устройстве",
-        "unsupportedTokenAndNetwork": "Неподдерживаемые токен и сеть"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "Неподдерживаемые токен и сеть",
+        "integrationNotSupportedCountry": "Недоступно в вашем регионе",
+        "integrationSingleTokenNetworkCompatibility": "Неподдерживаемые токен и сеть",
+        "lessThanIntegrationMinAmount": "Сумма ниже минимальной",
+        "moreThanIntegrationMaxAmount": "Сумма выше максимальной",
+        "platformNotSupported": "Неподдерживается на этом устройстве",
+        "sdkVersionNotSupported": "Неприемлемо",
+        "travelRuleAmountLimit": "Ограничение по соответствию требованиям",
+        "travelRuleVaspIdRequired": "Ограничение по соответствию требованиям",
+        "travelRuleWalletOwnershipRequired": "Ограничение по соответствию требованиям"
+      },
+      "unavailableAccounts": "Недоступные учетные записи"
     },
     "common": {
       "cancel": "Отмена",
@@ -1534,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Аккаунт",
+    "buildingPreviewDeposit": "Создание предварительного просмотра вашего депозита...",
     "buildingPreviewPayment": "Создание предварительного просмотра вашего платежа...",
     "buildingPreviewTransfer": "Создание предварительного просмотра вашего перевода...",
     "confirmTransaction": "Подтвердите эту транзакцию в приложении {{selectedIntegrationName}}.",
@@ -1546,6 +1550,7 @@
     "payWithLabel": "Оплатить с помощью",
     "payWithLabelWithName": "Оплатить через {{integrationName}}",
     "plusFees": "{{amount}} + комиссии",
+    "processingDeposit": "Обработка",
     "processingPayment": "Обработка вашего платежа"
   },
   "previewTransfer": {
@@ -1684,7 +1689,8 @@
     "title": "Как вы хотите подключиться к {{selectedIntegrationName}}?"
   },
   "sessionExpired": {
-    "title": "Ваша сессия истекла."
+    "title": "Ваша сессия истекла.",
+    "closeTabMessage": "Ваша сессия истекла. Пожалуйста, закройте эту вкладку и попробуйте снова."
   },
   "sessionInfo": {
     "text": "Если у вас есть вопросы, пожалуйста, сообщите, указав ID сессии <2>{{sessionId}}</2>."
