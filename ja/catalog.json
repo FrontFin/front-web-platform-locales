@@ -15,7 +15,7 @@
     "code": "6桁のコード"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "最小金額は {{minAmount}} です。",
     "switchFiatCrypto": "法定通貨／暗号通貨を切り替える"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "完了",
     "linkAnother": "別のアカウントをリンク",
     "linkedToClient": "<1></1><2>{{integrationName}}</2>が<5>{{clientName}}</5>に正常に連携されました。",
+    "inWalletLinkedToClient": "ウォレットがリンクされました！<1></1><2>{{clientName}}</2>に戻る",
     "linkedToThisApp": "<1></1><2>{{integrationName}}</2>が<5>本アプリ</5>に正常に連携されました。"
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Coinbaseからの出金を開始できません。受取人のアドレスを以下の許可リストに追加してください：\nhttps://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "要求された金額は、このネットワークでの最小許容振り込み額を下回っています。",
     "amountExceedsMaximum": "要求された金額は、このネットワークでの最大許容振り込み額を超えています。",
+    "appUpdateRequired": "アプリのバージョンを更新する必要があります。アプリをアップデートして、もう一度お試しください。",
     "authenticationFailed": "選択した連携先での認証に失敗しました。",
     "balanceNotEnough": "アカウントに十分な残高があると表示される場合でも、一部の資金が保留中、予約済み、または手数料として必要なことがあります。少額で再度お試しください。",
     "belowMinimumFiatDeposit": "金額が法定通貨の最低入金額に満たしていません。",
@@ -692,6 +694,7 @@
     "username": "ユーザー名"
   },
   "fullScreenSpinner": {
+    "almostThere": "もう少しで完了します—詳細を確定しています。",
     "linking": "アカウントを連携しています。。。",
     "loading": "まだ作業中です。。。"
   },
@@ -1331,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "最大額を超えています",
-        "amountBelowMinimum": "最低額未満",
-        "complianceRestriction": "コンプライアンス資格制限",
-        "unavailable": "利用不可",
-        "unavailableInRegion": "地域で利用できません",
-        "unsupportedOnDevice": "このデバイスではサポートされていません",
-        "unsupportedTokenAndNetwork": "サポートされていないトークンとネットワーク"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "サポートされていないトークンとネットワーク",
+        "integrationNotSupportedCountry": "この地域では利用できません",
+        "integrationSingleTokenNetworkCompatibility": "サポートされていないトークンとネットワーク",
+        "lessThanIntegrationMinAmount": "金額が最小額以下です",
+        "moreThanIntegrationMaxAmount": "金額が最大額を超えています",
+        "platformNotSupported": "このデバイスではサポートされていません",
+        "sdkVersionNotSupported": "対象外",
+        "travelRuleAmountLimit": "適格性制限の遵守",
+        "travelRuleVaspIdRequired": "適格性制限の遵守",
+        "travelRuleWalletOwnershipRequired": "適格性制限の遵守"
+      },
+      "unavailableAccounts": "利用できないアカウント"
     },
     "common": {
       "cancel": "キャンセル",
@@ -1530,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "アカウント",
+    "buildingPreviewDeposit": "預金プレビューを作成しています。。。",
     "buildingPreviewPayment": "お支払いプレビューを作成しています。。。",
     "buildingPreviewTransfer": "転送プレビューを作成しています。。。",
     "confirmTransaction": "{{selectedIntegrationName}}アプリでこの取引を確認してください。",
@@ -1542,6 +1550,7 @@
     "payWithLabel": "支払い方法",
     "payWithLabelWithName": "{{integrationName}}で支払う",
     "plusFees": "{{amount}} + 手数料",
+    "processingDeposit": "処理中",
     "processingPayment": "お支払いを処理しています"
   },
   "previewTransfer": {
@@ -1680,7 +1689,8 @@
     "title": "{{selectedIntegrationName}}への接続方法を選択しますか"
   },
   "sessionExpired": {
-    "title": "セッションの有効期限が切れました。"
+    "title": "セッションの有効期限が切れました。",
+    "closeTabMessage": "セッションが期限切れになりました。このタブを閉じて、再度お試しください。"
   },
   "sessionInfo": {
     "text": "ご不明な点がある場合は、セッションID <2>{{sessionId}}</2> とともにお問い合わせください。"
