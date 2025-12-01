@@ -15,7 +15,7 @@
     "code": "6 haneli kod"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "",
+    "minimumAmount": "Minimum tutar {{minAmount}}",
     "switchFiatCrypto": "Fiat/Kripto değiştir"
   },
   "binanceConnectOAuthPage": {
@@ -353,6 +353,7 @@
     "done": "Tamamlandı",
     "linkAnother": "Başka bir hesap bağla",
     "linkedToClient": "<1></1><2>{{integrationName}}</2> ile <5>{{clientName}}</5> bağlantısını başarıyla yaptınız.",
+    "inWalletLinkedToClient": "Cüzdan bağlandı!<1></1><2>{{clientName}}</2> adresine dön",
     "linkedToThisApp": "<1></1><2>{{integrationName}}</2> başarılı bir şekilde <5>bu uygulamaya</5> bağlandı."
   },
   "doneTransferDetails": {
@@ -517,6 +518,7 @@
     "addressNotAllowlisted": "Coinbase üzerinden çekim yapılamıyor. Bu alıcı adresini Buraya İzin Listesine eklemelisiniz: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
     "amountExceedsMaximum": "Talep edilen miktar, bu ağdaki maksimum izin verilen transfer miktarını aşıyor.",
+    "appUpdateRequired": "Uygulamayı kullanmaya devam etmek için uygulama sürümünün güncellenmesi gerekir. Lütfen uygulamanızı güncelleyin ve tekrar deneyin.",
     "authenticationFailed": "Seçilen entegrasyon ile kimlik doğrulama başarısız oldu.",
     "balanceNotEnough": "Hesabınız yeterli bakiye gösteriyor, ancak bazı fonlar beklemede olabilir, rezerve edilebilir veya ücretler için gerekli olabilir. Lütfen daha küçük bir miktar göndermeyi deneyin.",
     "belowMinimumFiatDeposit": "Miktar bu ödeme yönteminin minimum para yatırma limitinin altında.",
@@ -692,6 +694,7 @@
     "username": "Kullanıcı adı"
   },
   "fullScreenSpinner": {
+    "almostThere": "Neredeyse bitti — sadece detayları netleştiriyoruz.",
     "linking": "Hesabınız bağlanıyor...",
     "loading": "Hâlâ çalışıyor..."
   },
@@ -1331,14 +1334,18 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "amountAboveMaximum": "Miktar, maksimumun üzerinde",
-        "amountBelowMinimum": "Miktar, minimumun altında",
-        "complianceRestriction": "Uyumluluk uygunluğu kısıtlaması",
-        "unavailable": "Kullanılamıyor",
-        "unavailableInRegion": "Bölgede kullanılamıyor",
-        "unsupportedOnDevice": "Bu cihazda desteklenmiyor",
-        "unsupportedTokenAndNetwork": "Desteklenmeyen jeton ve ağ"
-      }
+        "integrationMultipleTokenNetworkCompatibility": "Desteklenmeyen jeton ve ağ",
+        "integrationNotSupportedCountry": "Bölgenizde kullanılamıyor",
+        "integrationSingleTokenNetworkCompatibility": "Desteklenmeyen jeton ve ağ",
+        "lessThanIntegrationMinAmount": "Tutar minimumdan düşük",
+        "moreThanIntegrationMaxAmount": "Tutar maksimumdan yüksek",
+        "platformNotSupported": "Bu cihazda desteklenmiyor",
+        "sdkVersionNotSupported": "Uygun değil",
+        "travelRuleAmountLimit": "Uyum uygunluk kısıtlaması",
+        "travelRuleVaspIdRequired": "Uyum uygunluk kısıtlaması",
+        "travelRuleWalletOwnershipRequired": "Uyum uygunluk kısıtlaması"
+      },
+      "unavailableAccounts": "Kullanılamayan hesaplar"
     },
     "common": {
       "cancel": "İptal",
@@ -1471,7 +1478,7 @@
       "networkFeeHint": "Bu işlem ağ doğrulayıcılarının maliyetlerini karşılayarak işleminizi blockchain'e ulaştırmaya yardımcı olur",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "swapFee": "Otomatik değişim ücreti",
       "swapFeeHint": "Cüzdanınızda bulunan varlıkların hedef transfer varlığına otomatik dönüşümünü sağlamak için bir ücret.",
@@ -1530,6 +1537,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Hesap",
+    "buildingPreviewDeposit": "Mevduat önizlemenizi oluşturuluyor...",
     "buildingPreviewPayment": "Ödeme önizlemenizi oluşturuluyor...",
     "buildingPreviewTransfer": "Transfer önizlemeniz oluşturuluyor...",
     "confirmTransaction": "Bu işlemi {{selectedIntegrationName}} uygulamanızda onaylayınız.",
@@ -1542,6 +1550,7 @@
     "payWithLabel": "Ödeme yöntemi",
     "payWithLabelWithName": "{{integrationName}} ile ödeme yapın",
     "plusFees": "{{amount}} + ücretler",
+    "processingDeposit": "İşleniyor",
     "processingPayment": "Ödemeniz işleniyor"
   },
   "previewTransfer": {
@@ -1680,7 +1689,8 @@
     "title": "{{selectedIntegrationName}}'e nasıl bağlanmak istersiniz?"
   },
   "sessionExpired": {
-    "title": "Oturumunuzun süresi doldu."
+    "title": "Oturumunuzun süresi doldu.",
+    "closeTabMessage": "Oturumunuz sona erdi. Lütfen bu sekmeyi kapatın ve tekrar deneyin."
   },
   "sessionInfo": {
     "text": "Sorularınız varsa, lütfen bu durumu oturum kimliği <2>{{sessionId}}</2> ile bildirin."
