@@ -15,7 +15,7 @@
     "code": "6位数代码"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "最小金额为 {{minAmount}}",
+    "minimumAmount": "最小转账金额为 {{minAmount}}",
     "switchFiatCrypto": "切换法币/加密货币"
   },
   "binanceConnectOAuthPage": {
@@ -24,6 +24,10 @@
     "buyCrypto": "使用Binance Connect购买加密货币",
     "cashEquivalent": "现金等价物",
     "closeButton": "关闭",
+    "completeActionInstruction": "在您的 Binance 应用中完成此操作...",
+    "completeDepositInApp": "请在您的 Binance 应用中完成此存款",
+    "completeDepositInstruction": "在您的 Binance 应用中完成存款...",
+    "completeTransferInApp": "请在您的 Binance 应用中完成此转账",
     "continueInBinance": "用Binance中完成下一步",
     "continueTo": "继续前往{{selectedIntegrationName}}",
     "continueWithAppButton": "继续与{{selectedIntegrationName}}应用程序合作",
@@ -47,11 +51,7 @@
     "selectNetwork": "选择转账网络",
     "transactionRequest": "交易请求已发送至您的币安应用程序。",
     "youPay": "由您支付",
-    "youReceive": "由您接收",
-    "completeDepositInApp": "请在您的 Binance 应用中完成此存款",
-    "completeTransferInApp": "请在您的 Binance 应用中完成此转账",
-    "completeDepositInstruction": "在您的 Binance 应用中完成存款...",
-    "completeActionInstruction": "在您的 Binance 应用中完成此操作..."
+    "youReceive": "由您接收"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "请求未被批准。如果是错误，请重试。",
@@ -355,9 +355,9 @@
     "continueToPurchase": "继续购买",
     "continueToTransfer": "继续转账",
     "done": "完成",
+    "inWalletLinkedToClient": "钱包已链接！<1></1>返回到<2>{{clientName}}</2>",
     "linkAnother": "连接另一个帐户",
     "linkedToClient": "您已将<1></1><2>{{integrationName}}</2>成功连接至<5>{{clientName}}</5>。",
-    "inWalletLinkedToClient": "钱包已链接！<1></1>返回到<2>{{clientName}}</2>",
     "linkedToThisApp": "您已将<1></1><2>{{integrationName}}</2>成功连接到<5>该应用程序</5>。"
   },
   "doneTransferDetails": {
@@ -1693,8 +1693,8 @@
     "title": "您想如何连接到{{selectedIntegrationName}}？"
   },
   "sessionExpired": {
-    "title": "您的会话已过期。",
-    "closeTabMessage": "您的会话已过期。请关闭此选项卡并重试。"
+    "closeTabMessage": "您的会话已过期。请关闭此选项卡并重试。",
+    "title": "您的会话已过期。"
   },
   "sessionInfo": {
     "text": "如果您有任何疑问，请提供会话ID<2>{{sessionId}}</2>以报告此问题。"
