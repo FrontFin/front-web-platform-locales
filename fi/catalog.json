@@ -24,6 +24,10 @@
     "buyCrypto": "Osta kryptovaluuttaa Binance Connectilla",
     "cashEquivalent": "Raha-arvo",
     "closeButton": "Sulje",
+    "completeActionInstruction": "Viimeistele tämä toimenpide Binance-sovelluksessasi...",
+    "completeDepositInApp": "Teet talletuksen valmiiksi Binance-sovelluksessasi",
+    "completeDepositInstruction": "Viimeistele talletus Binance-sovelluksessasi...",
+    "completeTransferInApp": "Teet siirron valmiiksi Binance-sovelluksessasi",
     "continueInBinance": "Jatka Binance-sovelluksella",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
     "continueWithAppButton": "Jatka {{selectedIntegrationName}}-sovelluksessa",
@@ -47,11 +51,7 @@
     "selectNetwork": "Valitse siirtoverkko",
     "transactionRequest": "Tapahtumapyyntö lähetetty Binance-sovellukseesi.",
     "youPay": "Sinä maksat",
-    "youReceive": "Sinä vastaanotat",
-    "completeDepositInApp": "Teet talletuksen valmiiksi Binance-sovelluksessasi",
-    "completeTransferInApp": "Teet siirron valmiiksi Binance-sovelluksessasi",
-    "completeDepositInstruction": "Viimeistele talletus Binance-sovelluksessasi...",
-    "completeActionInstruction": "Viimeistele tämä toimenpide Binance-sovelluksessasi..."
+    "youReceive": "Sinä vastaanotat"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Näyttää siltä, ettet hyväksynyt pyyntöä. Jos se oli virhe, yritä uudelleen.",
@@ -355,9 +355,9 @@
     "continueToPurchase": "Jatka ostamaan",
     "continueToTransfer": "Jatka siirtoon",
     "done": "Valmis",
+    "inWalletLinkedToClient": "Lompakko yhdistetty!<1></1>Palaa takaisin <2>{{clientName}}</2>",
     "linkAnother": "Liitä toinen tili",
     "linkedToClient": "</1><</1>Olet liittänyt onnistuneesti <1></1><2>{{integrationName}}n</2> <5>{{clientName}}</5>iin.",
-    "inWalletLinkedToClient": "Lompakko yhdistetty!<1></1>Palaa takaisin <2>{{clientName}}</2>",
     "linkedToThisApp": "Olet onnistuneesti liittänyt <1></1><2>{{integrationName}}n</2> <5>tähän sovellukseen</5>."
   },
   "doneTransferDetails": {
@@ -1693,8 +1693,8 @@
     "title": "Miten haluat yhdistyä {{selectedIntegrationName}}-järjestelmään?"
   },
   "sessionExpired": {
-    "title": "Istuntosi on vanhentunut.",
-    "closeTabMessage": "Istuntosi on vanhentunut. Sulje tämä välilehti ja yritä uudelleen."
+    "closeTabMessage": "Istuntosi on vanhentunut. Sulje tämä välilehti ja yritä uudelleen.",
+    "title": "Istuntosi on vanhentunut."
   },
   "sessionInfo": {
     "text": "Jos sinulla on kysyttävää, ilmoita siitä käyttäen istuntotunnusta <2>{{sessionId}}</2>."
@@ -1907,10 +1907,15 @@
     "secureText": "Allekirjoitus ei millään tavalla anna {{clientName}}:lle lupaa suorittaa mitään tapahtumia lompakollasi."
   },
   "trueAuthPage": {
+    "androidNotSupported": "Tätä integraatiota ei vielä tueta Android-laitteilla.",
     "authenticationFailed": "Tunnistus epäonnistui",
+    "changeBrowserDescription": "Vaihdathan oletusselaimesi Safariin jatkaaksesi.",
+    "changeBrowserHeading": "Vaihda selain",
     "connectionClosed": "Yhteys suljettu. Yritä uudelleen.",
     "connectionStatus": "Yhteyden tila:",
     "generatingSession": "Luodaan turvallista kirjautumisistuntoa...",
+    "notSupportedHeading": "Ei tueta",
+    "openAppClip": "Avaa sovelluksen leikepätkä jatkaaksesi",
     "openMobileApp": "Avaa Mesh-sovellus puhelimellasi ja skannaa tämä QR-koodi jatkaaksesi.",
     "qrCodeAlt": "QR-koodi TrueAuth-kirjautumista varten",
     "scanToLogin": "Skannaa kirjautuaksesi",
