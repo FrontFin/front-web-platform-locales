@@ -24,6 +24,10 @@
     "buyCrypto": "Binance Connect का उपयोग करके क्रिप्टो खरीदें",
     "cashEquivalent": "नकद समकक्ष",
     "closeButton": "बंद करें",
+    "completeActionInstruction": "अपने बिनेंस ऐप में इस क्रिया को पूरा करें...",
+    "completeDepositInApp": "आप इस जमा को अपने बिनेंस ऐप में पूरा करेंगे",
+    "completeDepositInstruction": "अपने बिनेंस ऐप में जमा को पूरा करें...",
+    "completeTransferInApp": "आप इस ट्रांसफर को अपने बिनेंस ऐप में पूरा करेंगे",
     "continueInBinance": "Binance ऐप में जारी रखें",
     "continueTo": "{{selectedIntegrationName}} पर जारी रखें",
     "continueWithAppButton": "{{selectedIntegrationName}} ऐप के साथ जारी रखें",
@@ -47,11 +51,7 @@
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
     "transactionRequest": "आपके Binance ऐप को लेन-देन अनुरोध भेजा गया है।",
     "youPay": "आप भुगतान करेंगे",
-    "youReceive": "आप प्राप्त करेंगे",
-    "completeDepositInApp": "आप इस जमा को अपने बिनेंस ऐप में पूरा करेंगे",
-    "completeTransferInApp": "आप इस ट्रांसफर को अपने बिनेंस ऐप में पूरा करेंगे",
-    "completeDepositInstruction": "अपने बिनेंस ऐप में जमा को पूरा करें...",
-    "completeActionInstruction": "अपने बिनेंस ऐप में इस क्रिया को पूरा करें..."
+    "youReceive": "आप प्राप्त करेंगे"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "ऐसा लगता है कि आपने अनुरोध को स्वीकृति नहीं दी। यदि यह गलती से हुआ है, तो कृपया पुनः प्रयास करें।",
@@ -355,9 +355,9 @@
     "continueToPurchase": "खरीद जारी रखें",
     "continueToTransfer": "स्थानांतरण जारी रखें",
     "done": "हो गया",
+    "inWalletLinkedToClient": "वॉलेट जुड़ा!<1></1><2>{{clientName}}</2> पर लौटें",
     "linkAnother": "अन्य खाता जोड़ें",
     "linkedToClient": "आपने<1></1><2>{{integrationName}}</2> को सफलतापूर्वक <5>{{clientName}}</5> से जोड़ दिया है।",
-    "inWalletLinkedToClient": "वॉलेट जुड़ा!<1></1><2>{{clientName}}</2> पर लौटें",
     "linkedToThisApp": "आपने सफलतापूर्वक<1></1><2>{{integrationName}}</2> को <5>इस एप्लिकेशन</5> से जोड़ दिया है।"
   },
   "doneTransferDetails": {
@@ -1693,8 +1693,8 @@
     "title": "आप कैसे {{selectedIntegrationName}} से कनेक्ट करना चाहेंगे?"
   },
   "sessionExpired": {
-    "title": "आपका सत्र समाप्त हो गया है।",
-    "closeTabMessage": "आपका सत्र समाप्त हो गया है। कृपया इस टैब को बंद करें और पुनः प्रयास करें।"
+    "closeTabMessage": "आपका सत्र समाप्त हो गया है। कृपया इस टैब को बंद करें और पुनः प्रयास करें।",
+    "title": "आपका सत्र समाप्त हो गया है।"
   },
   "sessionInfo": {
     "text": "यदि आपके कोई प्रश्न हैं, कृपया इसे सत्र आईडी <2>{{sessionId}}</2> के साथ रिपोर्ट करें।"
@@ -1907,10 +1907,15 @@
     "secureText": "हस्ताक्षर करने से किसी भी तरह से {{clientName}} को आपके वॉलेट के साथ लेन-देन करने की अनुमति नहीं मिलती है।"
   },
   "trueAuthPage": {
+    "androidNotSupported": "यह एकीकरण अभी तक Android उपकरणों पर समर्थित नहीं है।",
     "authenticationFailed": "प्रमाणीकरण असफल",
+    "changeBrowserDescription": "कृपया जारी रखने के लिए अपने डिफ़ॉल्ट ब्राउज़र को Safari में बदलें।",
+    "changeBrowserHeading": "ब्राउज़र बदलें",
     "connectionClosed": "कनेक्शन बंद हो गया। कृपया पुनः प्रयास करें।",
     "connectionStatus": "कनेक्शन स्थिति:",
     "generatingSession": "सुरक्षित लॉगिन सत्र उत्पन्न किया जा रहा है...",
+    "notSupportedHeading": "समर्थित नहीं है",
+    "openAppClip": "कृपया जारी रखने के लिए ऐप क्लिप खोलें।",
     "openMobileApp": "अपना Mesh मोबाइल ऐप खोलें और आगे बढ़ने के लिए इस QR कोड को स्कैन करें।",
     "qrCodeAlt": "TrueAuth लॉगिन के लिए QR कोड",
     "scanToLogin": "लॉग इन करने के लिए स्कैन करें",
