@@ -24,6 +24,10 @@
     "buyCrypto": "Binance Connect kullanarak kripto satın al",
     "cashEquivalent": "Nakit Eşdeğer",
     "closeButton": "Kapat",
+    "completeActionInstruction": "Binance uygulamanızda bu işlemi tamamlayın...",
+    "completeDepositInApp": "Binance uygulamanızda bu mevduatı tamamlayacaksınız",
+    "completeDepositInstruction": "Binance uygulamanızda mevduatı tamamlayın...",
+    "completeTransferInApp": "Binance uygulamanızda bu transferi tamamlayacaksınız",
     "continueInBinance": "Binance ile devam et",
     "continueTo": "{{selectedIntegrationName}}'e devam et",
     "continueWithAppButton": "{{selectedIntegrationName}} uygulamasıyla devam et",
@@ -47,11 +51,7 @@
     "selectNetwork": "Transfer ağını seçin",
     "transactionRequest": "İşlem isteği Binance uygulamanıza gönderildi.",
     "youPay": "Ödemeniz gereken tutar",
-    "youReceive": "Alacağınız tutar",
-    "completeDepositInApp": "Binance uygulamanızda bu mevduatı tamamlayacaksınız",
-    "completeTransferInApp": "Binance uygulamanızda bu transferi tamamlayacaksınız",
-    "completeDepositInstruction": "Binance uygulamanızda mevduatı tamamlayın...",
-    "completeActionInstruction": "Binance uygulamanızda bu işlemi tamamlayın..."
+    "youReceive": "Alacağınız tutar"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Görünüşe göre isteği onaylamadınız. Bu bir hata ise lütfen tekrar deneyin.",
@@ -355,9 +355,9 @@
     "continueToPurchase": "Satın almaya devam et",
     "continueToTransfer": "Transfer etmeye devam et",
     "done": "Tamamlandı",
+    "inWalletLinkedToClient": "Cüzdan bağlandı!<1></1><2>{{clientName}}</2> adresine dön",
     "linkAnother": "Başka bir hesap bağla",
     "linkedToClient": "<1></1><2>{{integrationName}}</2> ile <5>{{clientName}}</5> bağlantısını başarıyla yaptınız.",
-    "inWalletLinkedToClient": "Cüzdan bağlandı!<1></1><2>{{clientName}}</2> adresine dön",
     "linkedToThisApp": "<1></1><2>{{integrationName}}</2> başarılı bir şekilde <5>bu uygulamaya</5> bağlandı."
   },
   "doneTransferDetails": {
@@ -1693,8 +1693,8 @@
     "title": "{{selectedIntegrationName}}'e nasıl bağlanmak istersiniz?"
   },
   "sessionExpired": {
-    "title": "Oturumunuzun süresi doldu.",
-    "closeTabMessage": "Oturumunuz sona erdi. Lütfen bu sekmeyi kapatın ve tekrar deneyin."
+    "closeTabMessage": "Oturumunuz sona erdi. Lütfen bu sekmeyi kapatın ve tekrar deneyin.",
+    "title": "Oturumunuzun süresi doldu."
   },
   "sessionInfo": {
     "text": "Sorularınız varsa, lütfen bu durumu oturum kimliği <2>{{sessionId}}</2> ile bildirin."
@@ -1907,10 +1907,15 @@
     "secureText": "İmzalama işlemi, {{clientName}}'e cüzdanınızla herhangi bir işlem yapma yetkisi vermez."
   },
   "trueAuthPage": {
+    "androidNotSupported": "Bu entegrasyon henüz Android cihazlarda desteklenmiyor.",
     "authenticationFailed": "Kimlik Doğrulama Başarısız",
+    "changeBrowserDescription": "Devam etmek için varsayılan tarayıcınızı Safari olarak değiştirin.",
+    "changeBrowserHeading": "Tarayıcıyı Değiştir",
     "connectionClosed": "Bağlantı kapatıldı. Lütfen tekrar deneyin.",
     "connectionStatus": "Bağlantı Durumu:",
     "generatingSession": "Güvenli oturum oluşturuluyor...",
+    "notSupportedHeading": "Desteklenmiyor",
+    "openAppClip": "Devam etmek için lütfen uygulama klibini açın",
     "openMobileApp": "Devam etmek için Mesh mobil uygulamanızı açın ve bu QR kodunu tarayın.",
     "qrCodeAlt": "TrueAuth Giriş için QR Kodu",
     "scanToLogin": "Giriş Yapmak İçin Taramasını Yap",
