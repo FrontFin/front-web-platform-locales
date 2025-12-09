@@ -24,6 +24,10 @@
     "buyCrypto": "Kup kryptowaluty za pomocą Binance Connect",
     "cashEquivalent": "Równowartość Gotówki",
     "closeButton": "Zamknij",
+    "completeActionInstruction": "Dokończ tę czynność w aplikacji Binance...",
+    "completeDepositInApp": "Dokończ wpłatę w aplikacji Binance",
+    "completeDepositInstruction": "Dokończ wpłatę w aplikacji Binance...",
+    "completeTransferInApp": "Dokończ przelew w aplikacji Binance",
     "continueInBinance": "Kontynuuj w Binance",
     "continueTo": "Przejdź do {{selectedIntegrationName}}",
     "continueWithAppButton": "Kontynuuj z aplikacją {{selectedIntegrationName}}",
@@ -47,11 +51,7 @@
     "selectNetwork": "Wybierz sieć transferu",
     "transactionRequest": "Wysłano żądanie transakcji do Twojej aplikacji Binance.",
     "youPay": "Płacisz",
-    "youReceive": "Otrzymujesz",
-    "completeDepositInApp": "Dokończ wpłatę w aplikacji Binance",
-    "completeTransferInApp": "Dokończ przelew w aplikacji Binance",
-    "completeDepositInstruction": "Dokończ wpłatę w aplikacji Binance...",
-    "completeActionInstruction": "Dokończ tę czynność w aplikacji Binance..."
+    "youReceive": "Otrzymujesz"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Wygląda na to, że nie zatwierdziłeś prośby. Jeśli to był błąd, spróbuj ponownie.",
@@ -355,9 +355,9 @@
     "continueToPurchase": "Dalej do zakupu",
     "continueToTransfer": "Dalej do transferu",
     "done": "Gotowe",
+    "inWalletLinkedToClient": "Portfel powiązany!<1></1>Wróć do <2>{{clientName}}</2>",
     "linkAnother": "Połącz inne konto",
     "linkedToClient": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>{{clientName}}</5>.",
-    "inWalletLinkedToClient": "Portfel powiązany!<1></1>Wróć do <2>{{clientName}}</2>",
     "linkedToThisApp": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>tą aplikacją</5>."
   },
   "doneTransferDetails": {
@@ -1693,8 +1693,8 @@
     "title": "Jak chcesz połączyć się z {{selectedIntegrationName}}?"
   },
   "sessionExpired": {
-    "title": "Twoja sesja wygasła.",
-    "closeTabMessage": "Twoja sesja wygasła. Zamknij tę kartę i spróbuj ponownie."
+    "closeTabMessage": "Twoja sesja wygasła. Zamknij tę kartę i spróbuj ponownie.",
+    "title": "Twoja sesja wygasła."
   },
   "sessionInfo": {
     "text": "Jeśli masz pytania, zgłoś to, podając identyfikator sesji <2>{{sessionId}}</2>."
@@ -1907,10 +1907,15 @@
     "secureText": "Złożenie podpisu nie daje {{clientName}} żadnych uprawnień do wykonywania transferów na twoim portfelu."
   },
   "trueAuthPage": {
+    "androidNotSupported": "Ta integracja nie jest jeszcze obsługiwana na urządzeniach z Androidem.",
     "authenticationFailed": "Błąd uwierzytelnienia",
+    "changeBrowserDescription": "Proszę zmienić domyślną przeglądarkę na Safari, aby kontynuować.",
+    "changeBrowserHeading": "Zmień przeglądarkę",
     "connectionClosed": "Połączenie zamknięte. Proszę spróbować ponownie.",
     "connectionStatus": "Status połączenia:",
     "generatingSession": "Generowanie bezpiecznej sesji logowania...",
+    "notSupportedHeading": "Nieobsługiwany",
+    "openAppClip": "Proszę otworzyć klip aplikacji, aby kontynuować",
     "openMobileApp": "Otwórz swoją aplikację mobilną Mesh i zeskanuj ten kod QR, aby kontynuować.",
     "qrCodeAlt": "Kod QR do logowania TrueAuth",
     "scanToLogin": "Zeskanuj, aby zalogować się",
