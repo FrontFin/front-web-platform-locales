@@ -24,6 +24,10 @@
     "buyCrypto": "Mua tiền mã hoá bằng Binance Connect",
     "cashEquivalent": "Giá trị tương đương tiền mặt",
     "closeButton": "Đóng",
+    "completeActionInstruction": "Hoàn tất hành động này trong ứng dụng Binance của bạn...",
+    "completeDepositInApp": "Bạn sẽ hoàn tất khoản nạp này trong ứng dụng Binance của mình",
+    "completeDepositInstruction": "Hoàn tất khoản nạp trong ứng dụng Binance của bạn...",
+    "completeTransferInApp": "Bạn sẽ hoàn tất chuyển khoản này trong ứng dụng Binance của mình",
     "continueInBinance": "Tiếp tục với Binance",
     "continueTo": "Tiếp tục đến {{selectedIntegrationName}}",
     "continueWithAppButton": "Tiếp tục với ứng dụng {{selectedIntegrationName}}",
@@ -47,11 +51,7 @@
     "selectNetwork": "Chọn mạng lưới chuyển tiền",
     "transactionRequest": "Yêu cầu giao dịch đã được gửi tới ứng dụng Binance của bạn.",
     "youPay": "Bạn trả",
-    "youReceive": "Bạn nhận được",
-    "completeDepositInApp": "Bạn sẽ hoàn tất khoản nạp này trong ứng dụng Binance của mình",
-    "completeTransferInApp": "Bạn sẽ hoàn tất chuyển khoản này trong ứng dụng Binance của mình",
-    "completeDepositInstruction": "Hoàn tất khoản nạp trong ứng dụng Binance của bạn...",
-    "completeActionInstruction": "Hoàn tất hành động này trong ứng dụng Binance của bạn..."
+    "youReceive": "Bạn nhận được"
   },
   "binanceDirectLoginConnectionDeniedPage": {
     "body": "Có vẻ như bạn đã không phê duyệt yêu cầu. Nếu đó là một sai lầm, xin vui lòng thử lại.",
@@ -355,9 +355,9 @@
     "continueToPurchase": "Tiếp tục mua hàng",
     "continueToTransfer": "Tiếp tục giao dịch",
     "done": "Xong",
+    "inWalletLinkedToClient": "Ví đã được liên kết!<1></1> Quay lại <2>{{clientName}}</2>",
     "linkAnother": "Liên kết tài khoản khác",
     "linkedToClient": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>{{clientName}}</5>.",
-    "inWalletLinkedToClient": "Ví đã được liên kết!<1></1> Quay lại <2>{{clientName}}</2>",
     "linkedToThisApp": "Bạn đã liên kết thành công<1></1><2>{{integrationName}}</2> với <5>ứng dụng này</5>."
   },
   "doneTransferDetails": {
@@ -1693,8 +1693,8 @@
     "title": "Bạn muốn kết nối với {{selectedIntegrationName}} bằng cách nào?"
   },
   "sessionExpired": {
-    "title": "Phiên làm việc của bạn đã hết hạn.",
-    "closeTabMessage": "Phiên của bạn đã hết hạn. Vui lòng đóng thẻ này và thử lại."
+    "closeTabMessage": "Phiên của bạn đã hết hạn. Vui lòng đóng thẻ này và thử lại.",
+    "title": "Phiên làm việc của bạn đã hết hạn."
   },
   "sessionInfo": {
     "text": "Nếu bạn có thắc mắc, vui lòng gửi báo cáo kèm theo ID phiên làm việc <2>{{sessionId}}</2>."
@@ -1907,10 +1907,15 @@
     "secureText": "Việc ký xác nhận không đồng nghĩa với việc cấp cho {{clientName}} quyền thực hiện bất kỳ giao dịch nào với ví của bạn."
   },
   "trueAuthPage": {
+    "androidNotSupported": "Tích hợp này hiện chưa được hỗ trợ trên các thiết bị Android.",
     "authenticationFailed": "Xác Thực Thất Bại",
+    "changeBrowserDescription": "Vui lòng thay đổi trình duyệt mặc định của bạn sang Safari để tiếp tục.",
+    "changeBrowserHeading": "Thay đổi trình duyệt",
     "connectionClosed": "Kết nối đã đóng. Vui lòng thử lại.",
     "connectionStatus": "Trạng thái Kết Nối:",
     "generatingSession": "Đang tạo phiên đăng nhập an toàn...",
+    "notSupportedHeading": "Không được hỗ trợ",
+    "openAppClip": "Vui lòng mở app clip để tiếp tục",
     "openMobileApp": "Mở ứng dụng di động Mesh của bạn và quét mã QR này để tiếp tục.",
     "qrCodeAlt": "Mã QR cho Đăng Nhập TrueAuth",
     "scanToLogin": "Quét để Đăng Nhập",
