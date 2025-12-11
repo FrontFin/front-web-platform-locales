@@ -15,29 +15,29 @@
     "code": "6位数代码"
   },
   "binanceConnectAmountInput": {
-    "minimumAmount": "最小金额为 {{minAmount}}",
+    "minimumAmount": "最小转账金额为 {{minAmount}}",
     "switchFiatCrypto": "切换法币/加密货币"
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "金额必须在{{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}之间",
     "amountMustBeWithinErrorMessage": "金额必须在$21 - $15,000之间",
     "buyCrypto": "使用Binance Connect购买加密货币",
-    "cashEquivalent": "现金等价物",
+    "cashEquivalent": "金额",
     "closeButton": "关闭",
-    "completeActionInstruction": "",
-    "completeDepositInApp": "",
-    "completeDepositInstruction": "",
-    "completeTransferInApp": "",
-    "continueInBinance": "用Binance中完成下一步",
+    "completeActionInstruction": "在您的币安应用中完成此操作",
+    "completeDepositInApp": "请在您的 Binance 应用中完成此存款",
+    "completeDepositInstruction": "在您的 Binance 应用中完成存款...",
+    "completeTransferInApp": "请在您的币安应用中完成此转账",
+    "continueInBinance": "打开币安应用并继续",
     "continueTo": "继续前往{{selectedIntegrationName}}",
     "continueWithAppButton": "继续与{{selectedIntegrationName}}应用程序合作",
-    "cryptoAmount": "加密金额",
+    "cryptoAmount": "金额",
     "descriptionDeposit": "<0>完成您的交易后</0> ，在币安返回这里。",
     "enterAmount": "输入转账金额",
-    "mobileLabelDeposit": "请在Binance中完成您的交易，然后返回此处完成您的存款。",
+    "mobileLabelDeposit": "请在币安应用中完成您的交易，然后返回此处完成您的存款。",
     "mobileLabelOnramp": "请在Binance中完成您的交易，然后返回此处完成入金流程。",
     "notSupported": "{{selectedIntegrationName}}不支持所请求的代币和/或网络的转账。",
-    "openBinance": "打开Binance",
+    "openBinance": "打开币安应用",
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
@@ -157,7 +157,7 @@
     "search": "搜索",
     "title": "选择要关联的账户",
     "title40": "选择你的账户",
-    "titleOnramp": "选择你的入门类选项"
+    "titleOnramp": "选择你的入金选项"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -370,6 +370,8 @@
       "approvedFromCeFiToClient": "您批准从{{selectedIntegrationName}}到{{clientName}}的转账。",
       "approvedFromCeFiToDestination": "您批准从{{selectedIntegrationName}}转账到目标账户。",
       "approvedFromDeFi": "您已在{{selectedIntegrationName}}上批准了转账。",
+      "bridgingConversion": "我们已自动将您的资金转换为目标网络<1>{{destinationNetwork}}</1>。",
+      "bridgingDelivery": "您的转换资金已交付给<3>{{shortBridgingTargetAddress}}</3>的{{clientName}}。",
       "conversion": "将<1>{{amount}}</1>转换为<4>{{currency}}</4>。",
       "deposit": "从{{paymentMethod}}将<1>{{amount}}</1>存款至{{selectedIntegrationName}}。",
       "purchase": "从{{selectedIntegrationName}}购买价值<1>{{amount}}</1>的{{symbol}}。",
@@ -670,7 +672,11 @@
     "title": "验证"
   },
   "feesDrawer": {
+    "autoConvertBridgingFeeDescription": "包括所有转换费用和一个小的滑点缓冲。您支付的费用不会超过显示的金额。",
+    "autoConvertBridgingFeeTooltipDescription": "此费用涵盖使用我们的桥接合作伙伴在网络之间转换和转移资金的成本。它包括中继器费用、路由成本以及完成转账所需的任何跨网络执行费用。包含小的滑点缓冲以保护您的转账在执行期间免受价格变化的影响。您支付的费金额不会超过显示的金额——若未用完全部缓冲，您会自动支付更少费用。",
     "automatedSwapFeeDescription": "自动兑换目标资产所需手续费",
+    "bridgingTotalDiscription": "这是您此次转账的最高费用。您可能支付更少。",
+    "bridgingTotalTooltipDiscription": "这是您可能支付的总金额，其中包括燃气费和自动转换费（包含滑点缓冲）。如果未使用全部滑点缓冲，实际收费可能会更少，但绝不会高于此费用。",
     "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
     "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
@@ -842,7 +848,7 @@
     "buyDescription": "用卡或银行卡购买。",
     "guaranteed": "保证",
     "noExtraFee": "无额外费用",
-    "secureDeposit": "安全押金",
+    "secureDeposit": "安全转账",
     "sendFunds": "安全地将资金发送到正确的地址和网络。",
     "sendUsingQR": "使用二维码手动发送。",
     "standardDeposit": "标准存款",
@@ -1263,7 +1269,7 @@
       "title": "选择一个网络"
     },
     "screen": {
-      "addressLabel": "地址",
+      "addressLabel": "钱包地址",
       "beforeYouGo": "在您离开之前...",
       "copiedWalletAddress": "已复制",
       "copyWalletAddress": "复制钱包地址",
@@ -1561,6 +1567,7 @@
     "allFeesIncluded": "所有费用已包含在内",
     "amountWithFiat": "{{cryptoAmount}} ~{{fiatAmount}}",
     "approveTransferRequest": "在您的钱包中批准转账请求<1></1>",
+    "autoConvertFee": "自动转换费",
     "changeAmount": "更改金额",
     "depositTitle": "存款预览",
     "dustLeft": "您可能会有一些多余的{{symbol}}。",
@@ -1599,6 +1606,7 @@
     "depositFromIntegration": "通过{{integrationName}} 充值",
     "depositTo": "存入",
     "fee": "包含 {{amount}} 手续费",
+    "feeInBridging": "包括{{conversionFee}}的转换费和{{gasFee}}的燃气费。",
     "fundingMethods": "充值方式",
     "network": "网络",
     "receive": "收款",
@@ -1907,15 +1915,15 @@
     "secureText": "此次签名并不能以任何形式授予{{clientName}}执行您的钱包交易的权限。"
   },
   "trueAuthPage": {
-    "androidNotSupported": "",
+    "androidNotSupported": "此集成尚未在安卓设备上支持。",
     "authenticationFailed": "身份验证失败",
-    "changeBrowserDescription": "",
-    "changeBrowserHeading": "",
+    "changeBrowserDescription": "请将您的默认浏览器更改为 Safari 以继续。",
+    "changeBrowserHeading": "更换浏览器",
     "connectionClosed": "连接已关闭。请重试。",
     "connectionStatus": "连接状态：",
     "generatingSession": "正在生成安全登录会话...",
-    "notSupportedHeading": "",
-    "openAppClip": "",
+    "notSupportedHeading": "不支持",
+    "openAppClip": "请打开应用程序剪辑以继续",
     "openMobileApp": "打开您的 Mesh 移动应用程序并扫描此二维码以继续。",
     "qrCodeAlt": "TrueAuth 登录二维码",
     "scanToLogin": "扫描以登录",
