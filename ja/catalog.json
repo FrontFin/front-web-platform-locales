@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "{{selectedIntegrationName}}からの送金を承認しました。",
       "approvedFromDeFi": "{{selectedIntegrationName}}で送金を承認しました。",
       "bridgingConversion": "<1>{{destinationNetwork}}</1> に送信ネットワークを自動で変換しました。",
-      "bridgingDelivery": "あなたの変換された資金は、<4>{{shortBridgingTargetAddress}}</4> の {{clientName}} に配達されました。",
+      "bridgingDelivery": "変換された資金は、<3>{{shortBridgingTargetAddress}}</3> にある {{clientName}} に配信されました。",
       "conversion": "<1>{{amount}}</1>を<4>{{currency}}</4>に換算します。",
       "deposit": "<1>{{amount}}</1>を{{paymentMethod}}から{{selectedIntegrationName}}に入金。",
       "purchase": "{{selectedIntegrationName}}で{{symbol}}の<1>{{amount}}</1>相当を購入。",
@@ -1634,6 +1634,7 @@
     "scanText": "このコードを {{appName}} アプリでスキャン <1></1> すると、すぐにログインできます。"
   },
   "receiveAmountInput": {
+    "amountLabel": "",
     "onNetwork": "{{network}} 上で"
   },
   "revolutConnectOAuthPage": {
@@ -1918,17 +1919,17 @@
     "androidNotSupported": "この統合はAndroidデバイスではまだサポートされていません。",
     "authenticationFailed": "認証に失敗しました",
     "changeBrowserDescription": "続行するには、デフォルトのブラウザをSafariに変更してください。",
-    "changeBrowserHeading": "ブラウザを変更",
+    "changeBrowserHeading": "ブラウザを変更する",
     "connectionClosed": "接続が閉じられました。もう一度お試しください。",
     "connectionStatus": "接続状況:",
     "generatingSession": "安全なログインセッションを生成中...",
+    "iosOnlyText": "注意: このQRログインはiOSデバイスのみで利用可能です。",
     "notSupportedHeading": "サポートされていません",
     "openAppClip": "続行するにはアプリアイコンを開いてください。",
-    "openMobileApp": "ログインするために電話カメラでスキャンしてください。",
+    "openMobileApp": "ご使用のMeshモバイルアプリを開き、このQRコードをスキャンして続行してください。",
     "qrCodeAlt": "TrueAuth ログイン用QRコード",
-    "scanToLogin": "ログイン",
-    "somethingWentWrong": "問題が発生しました。",
-    "iosOnlyText": "Note: This QR login works only on iOS devices."
+    "scanToLogin": "スキャンしてログイン",
+    "somethingWentWrong": "問題が発生しました。"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
