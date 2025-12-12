@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "您批准从{{selectedIntegrationName}}转账到目标账户。",
       "approvedFromDeFi": "您已在{{selectedIntegrationName}}上批准了转账。",
       "bridgingConversion": "我们已自动将您的资金转换为目标网络<1>{{destinationNetwork}}</1>。",
-      "bridgingDelivery": "您的转换资金已交付给{{clientName}}于<4>{{shortBridgingTargetAddress}}</4>。",
+      "bridgingDelivery": "您的转换资金已交付给<3>{{shortBridgingTargetAddress}}</3>的{{clientName}}。",
       "conversion": "将<1>{{amount}}</1>转换为<4>{{currency}}</4>。",
       "deposit": "从{{paymentMethod}}将<1>{{amount}}</1>存款至{{selectedIntegrationName}}。",
       "purchase": "从{{selectedIntegrationName}}购买价值<1>{{amount}}</1>的{{symbol}}。",
@@ -1634,6 +1634,7 @@
     "scanText": "使用您的 {{appName}} 应用<1></1>扫描此二维码登录。"
   },
   "receiveAmountInput": {
+    "amountLabel": "",
     "onNetwork": "在{{network}}上"
   },
   "revolutConnectOAuthPage": {
@@ -1918,17 +1919,17 @@
     "androidNotSupported": "此集成尚未在安卓设备上支持。",
     "authenticationFailed": "身份验证失败",
     "changeBrowserDescription": "请将您的默认浏览器更改为 Safari 以继续。",
-    "changeBrowserHeading": "更换您的浏览器",
+    "changeBrowserHeading": "更换浏览器",
     "connectionClosed": "连接已关闭。请重试。",
     "connectionStatus": "连接状态：",
     "generatingSession": "正在生成安全登录会话...",
+    "iosOnlyText": "注意：此二维码登录仅适用于 iOS 设备。",
     "notSupportedHeading": "不支持",
     "openAppClip": "请打开应用程序剪辑以继续",
-    "openMobileApp": "用手机摄像头扫描以登录。",
+    "openMobileApp": "打开您的 Mesh 移动应用程序并扫描此二维码以继续。",
     "qrCodeAlt": "TrueAuth 登录二维码",
-    "scanToLogin": "登录",
-    "somethingWentWrong": "出了点问题",
-    "iosOnlyText": "Note: This QR login works only on iOS devices."
+    "scanToLogin": "扫描以登录",
+    "somethingWentWrong": "出了点问题"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} 希望您验证对 <3>{{requestedNetworkName}}</3> 地址 <6>{{truncatedRequestedAddress}}</6> 的所有权。该地址与已连接的钱包并无关联。请连接另一个钱包。",
