@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "Bạn chấp thuận chuyển từ {{selectedIntegrationName}} đến địa chỉ đích.",
       "approvedFromDeFi": "Bạn đã phê duyệt chuyển trên {{selectedIntegrationName}}.",
       "bridgingConversion": "Chúng tôi tự động chuyển đổi quỹ của bạn cho mạng đích <1>{{destinationNetwork}}</1>.",
-      "bridgingDelivery": "Số tiền chuyển đổi của bạn đã được giao cho {{clientName}} tại <4>{{shortBridgingTargetAddress}}</4>.",
+      "bridgingDelivery": "Số tiền đã chuyển đổi của bạn đã được gửi đến {{clientName}} tại <3>{{shortBridgingTargetAddress}}</3>.",
       "conversion": "Chuyển đổi <1>{{amount}}</1> thành <4>{{currency}}</4>.",
       "deposit": "Gửi tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
       "purchase": "Mua <1>{{amount}}</1> trị giá {{symbol}} tại {{selectedIntegrationName}}.",
@@ -1634,6 +1634,7 @@
     "scanText": "Quét mã này với ứng dụng {{appName}} của bạn <1></1> để đăng nhập ngay."
   },
   "receiveAmountInput": {
+    "amountLabel": "",
     "onNetwork": "trên {{network}}"
   },
   "revolutConnectOAuthPage": {
@@ -1918,17 +1919,17 @@
     "androidNotSupported": "Tích hợp này hiện chưa được hỗ trợ trên các thiết bị Android.",
     "authenticationFailed": "Xác Thực Thất Bại",
     "changeBrowserDescription": "Vui lòng thay đổi trình duyệt mặc định của bạn sang Safari để tiếp tục.",
-    "changeBrowserHeading": "Đổi trình duyệt của bạn",
+    "changeBrowserHeading": "Thay đổi trình duyệt",
     "connectionClosed": "Kết nối đã đóng. Vui lòng thử lại.",
     "connectionStatus": "Trạng thái Kết Nối:",
     "generatingSession": "Đang tạo phiên đăng nhập an toàn...",
+    "iosOnlyText": "Lưu ý: Đăng nhập bằng mã QR này chỉ hoạt động trên các thiết bị iOS.",
     "notSupportedHeading": "Không được hỗ trợ",
     "openAppClip": "Vui lòng mở app clip để tiếp tục",
-    "openMobileApp": "Quét bằng camera điện thoại của bạn để đăng nhập.",
+    "openMobileApp": "Mở ứng dụng di động Mesh của bạn và quét mã QR này để tiếp tục.",
     "qrCodeAlt": "Mã QR cho Đăng Nhập TrueAuth",
-    "scanToLogin": "Đăng nhập",
-    "somethingWentWrong": "Có gì đó sai",
-    "iosOnlyText": "Note: This QR login works only on iOS devices."
+    "scanToLogin": "Quét để Đăng Nhập",
+    "somethingWentWrong": "Có gì đó sai"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} muốn bạn xác minh quyền sở hữu địa chỉ <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Địa chỉ này không kết nối với ví đã kết nối. Vui lòng kết nối một ví khác.",
