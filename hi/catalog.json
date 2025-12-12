@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "आपने {{selectedIntegrationName}} से गंतव्य तक स्थानांतरण को स्वीकृति दी है।",
       "approvedFromDeFi": "आपने {{selectedIntegrationName}} पर स्थानांतरण को स्वीकृति दी है।",
       "bridgingConversion": "हमने स्वचालित रूप से आपके फंड को गंतव्य नेटवर्क <1>{{destinationNetwork}}</1> के लिए रूपांतरित किया।",
-      "bridgingDelivery": "आपकी बदली गई राशि {{clientName}} को <4>{{shortBridgingTargetAddress}}</4> पर भेज दी गई।",
+      "bridgingDelivery": "आपके रूपांतरित फंड को <3>{{shortBridgingTargetAddress}}</3> पर {{clientName}} को भेज दिया गया है।",
       "conversion": "<1>{{amount}}</1> को <4>{{currency}}</4> में रूपांतरित किया जा रहा है।",
       "deposit": "{{paymentMethod}} से {{selectedIntegrationName}} तक <1>{{amount}}</1> का जमा।",
       "purchase": "{{selectedIntegrationName}} में <1>{{amount}}</1> मूल्य का {{symbol}} की खरीद।",
@@ -1634,6 +1634,7 @@
     "scanText": "तुरंत लॉग इन करने के लिए अपने {{appName}} ऐप <1></1> के साथ इस कोड को स्कैन करें।"
   },
   "receiveAmountInput": {
+    "amountLabel": "",
     "onNetwork": "{{network}} पर"
   },
   "revolutConnectOAuthPage": {
@@ -1918,17 +1919,17 @@
     "androidNotSupported": "यह एकीकरण अभी तक Android उपकरणों पर समर्थित नहीं है।",
     "authenticationFailed": "प्रमाणीकरण असफल",
     "changeBrowserDescription": "कृपया जारी रखने के लिए अपने डिफ़ॉल्ट ब्राउज़र को Safari में बदलें।",
-    "changeBrowserHeading": "अपने ब्राउज़र को बदलें",
+    "changeBrowserHeading": "ब्राउज़र बदलें",
     "connectionClosed": "कनेक्शन बंद हो गया। कृपया पुनः प्रयास करें।",
     "connectionStatus": "कनेक्शन स्थिति:",
     "generatingSession": "सुरक्षित लॉगिन सत्र उत्पन्न किया जा रहा है...",
+    "iosOnlyText": "नोट: यह QR लॉगिन केवल iOS उपकरणों पर कार्य करता है।",
     "notSupportedHeading": "समर्थित नहीं है",
     "openAppClip": "कृपया जारी रखने के लिए ऐप क्लिप खोलें।",
-    "openMobileApp": "लॉग इन करने के लिए अपने फोन के कैमरा से स्कैन करें।",
+    "openMobileApp": "अपना Mesh मोबाइल ऐप खोलें और आगे बढ़ने के लिए इस QR कोड को स्कैन करें।",
     "qrCodeAlt": "TrueAuth लॉगिन के लिए QR कोड",
-    "scanToLogin": "लॉग इन करें",
-    "somethingWentWrong": "कुछ गलत हो गया।",
-    "iosOnlyText": "Note: This QR login works only on iOS devices."
+    "scanToLogin": "लॉग इन करने के लिए स्कैन करें",
+    "somethingWentWrong": "कुछ गलत हो गया।"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} आपसे <3>{{requestedNetworkName}}</3> पते <6>{{truncatedRequestedAddress}}</6> का स्वामित्व सत्यापित करने का अनुरोध कर रहा है। यह पता जुड़े हुए वॉलेट से संबद्ध नहीं है। कृपया कोई अन्य वॉलेट कनेक्ट करें।",
