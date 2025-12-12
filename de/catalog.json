@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "Du genehmigst die Überweisung von {{selectedIntegrationName}} zum Ziel.",
       "approvedFromDeFi": "Du hast die Überweisung auf {{selectedIntegrationName}} genehmigt.",
       "bridgingConversion": "Wir haben Ihre Gelder automatisch für das Zielnetzwerk <1>{{destinationNetwork}}</1> umgewandelt.",
-      "bridgingDelivery": "Ihre konvertierten Beträge wurden an {{clientName}} unter <4>{{shortBridgingTargetAddress}}</4> geliefert.",
+      "bridgingDelivery": "Ihre umgewandelten Gelder wurden an {{clientName}} an <3>{{shortBridgingTargetAddress}}</3> geliefert.",
       "conversion": "Umrechnung von <1>{{amount}}</1> in <4>{{currency}}</4>.",
       "deposit": "Einzahlung von <1>{{amount}}</1> von {{paymentMethod}} zu {{selectedIntegrationName}}.",
       "purchase": "Kauf von <1>{{amount}}</1> im Wert von {{symbol}} in {{selectedIntegrationName}}.",
@@ -1634,6 +1634,7 @@
     "scanText": "Scanne diesen Code mit Deiner {{appName}}-App <1></1> um Dich sofort einzuloggen."
   },
   "receiveAmountInput": {
+    "amountLabel": "",
     "onNetwork": "auf {{network}}"
   },
   "revolutConnectOAuthPage": {
@@ -1918,17 +1919,17 @@
     "androidNotSupported": "Diese Integration wird auf Android-Geräten noch nicht unterstützt.",
     "authenticationFailed": "Authentifizierung fehlgeschlagen",
     "changeBrowserDescription": "Bitte ändern Sie Ihren Standardbrowser zu Safari, um fortzufahren.",
-    "changeBrowserHeading": "Ändern Sie Ihren Browser",
+    "changeBrowserHeading": "Browser ändern",
     "connectionClosed": "Verbindung geschlossen. Bitte versuche es erneut.",
     "connectionStatus": "Verbindungsstatus:",
     "generatingSession": "Sichere Anmeldesitzung wird erstellt...",
+    "iosOnlyText": "Hinweis: Dieser QR-Login funktioniert nur auf iOS-Geräten.",
     "notSupportedHeading": "Nicht unterstützt",
     "openAppClip": "Bitte öffnen Sie den App-Clip, um fortzufahren.",
-    "openMobileApp": "Scannen Sie mit Ihrer Handykamera, um sich anzumelden.",
+    "openMobileApp": "Öffnen Sie Ihre Mesh-Mobile-App und scannen Sie diesen QR-Code, um fortzufahren.",
     "qrCodeAlt": "QR-Code für TrueAuth-Anmeldung",
-    "scanToLogin": "Anmelden",
-    "somethingWentWrong": "Etwas ist schiefgelaufen",
-    "iosOnlyText": "Note: This QR login works only on iOS devices."
+    "scanToLogin": "Zum Einloggen scannen",
+    "somethingWentWrong": "Etwas ist schiefgelaufen"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} möchte, dass Du den Besitz der Adresse <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6> bestätigst. Diese Adresse ist nicht mit dem verbundenen Wallet assoziiert. Bitte verbinde eine andere Wallet.",
