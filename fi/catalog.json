@@ -34,22 +34,22 @@
     "cryptoAmount": "Kryptosumma",
     "descriptionDeposit": "<0>Palaa tänne</0> suoritettuasi tapahtuman Binance-sovelluksessa.",
     "enterAmount": "Syötä siirron määrä",
-    "mobileLabelDeposit": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään talletuksesi.",
-    "mobileLabelOnramp": "Vie tapahtumasi päätökseen Binancessa ja palaa tänne viimeistelemään on-ramp-järjestelmäsi.",
+    "mobileLabelDeposit": "Suorita tapahtuma Binancessa ja palaa sitten tänne viimeistelemään talletuksesi.",
+    "mobileLabelOnramp": "Suorita tapahtuma Binancessa ja palaa sitten tänne viimeistelemään on-ramp prosessisi.",
     "notSupported": "{{selectedIntegrationName}} ei tue siirtoja pyydetyille tokeneille ja/tai verkoille.",
     "openBinance": "Avaa Binance",
     "receiveAmountInput": {
       "networkName": "{{networkName}} verkossa"
     },
-    "returnToClient": "Avaa {{selectedIntegrationName}}, skannaa QR-koodi mobiililaitteellasi ja palaa sitten tähän jatkaaksesi.",
-    "scanText": "Skannaa QR-koodi suorittaaksesi prosessin päätökseen mobiililaitteellasi.",
-    "scanTitle": "Viimeistele talletuksesi Binancessa",
+    "returnToClient": "Avaa {{selectedIntegrationName}}, skannaa QR-koodi mobiililaitteellasi ja palaa sitten tänne jatkaaksesi.",
+    "scanText": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi tapahtuman.",
+    "scanTitle": "Viimeistele Binancessa",
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko talletukseen.",
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectCurrency": "Valitse valuutta",
     "selectNetwork": "Valitse siirtoverkko",
-    "transactionRequest": "Tapahtumapyyntö lähetetty Binance-sovellukseesi.",
+    "transactionRequest": "Tapahtumapyyntö on lähetetty Binance-sovellukseesi.",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat"
   },
@@ -59,7 +59,7 @@
   },
   "binanceDirectLoginConnectionTimeOutPage": {
     "body": "Emme saaneet vastausta ajoissa. Yritä uudelleen.",
-    "title": "Pyyntö vanhentui"
+    "title": "Pyyntö on vanhentunut"
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Jatka Binance-sovelluksella",
@@ -75,7 +75,7 @@
   "binanceDirectPasswordPage": {
     "accountNotFound": "Binance-tiliä ei löytynyt.",
     "emailPhoneInput": "Sähköposti/Puhelin (ilman maatunnusta)",
-    "invalidEmail": "Anna kelvollinen sähköposti tai puhelinnumero. Puhelinnumeron kohdalla välilyönnit ja erikoismerkit eivät ole sallittuja.",
+    "invalidEmail": "Anna kelvollinen sähköposti tai puhelinnumero. Puhelinnumerossa ei sallita välilyöntejä tai erikoismerkkejä.",
     "nextButton": "Seuraava",
     "noPasswordCta1": "Jatka Binance-sovelluksella",
     "noPasswordCta2": "Palauta salasana",
@@ -130,13 +130,13 @@
     "select": "Valitse {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään toimitetulle token/verkkoyhdistelmille.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} ei tue siirtoja millekään annetuista token-/verkkoyhdistelmistä.",
     "integrationNotSupportedCountry": "{{integrationName}} ei ole saatavilla alueellasi.",
     "integrationSingleTokenNetworkCompatibility": "{{integrationName}} ei tue tätä tokenia ja verkkoa.",
-    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n vähimmäisvaatimuksen.",
-    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan.",
+    "lessThanIntegrationMinAmount": "Pyydetty summa on alle {{integrationName}}:n minimirajan.",
+    "moreThanIntegrationMaxAmount": "Pyydetty summa ylittää {{integrationName}}-välittäjän maksimirajan",
     "platformNotSupported": "{{integrationName}} ei ole tuettu tällä laitteella.",
-    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismia ei tueta tässä SDK-kontekstissa: {{sdkContext}}.",
+    "sdkVersionNotSupported": "{{integrationName}}:n TrueAuth-mekanismi ei ole tuettu tässä SDK-kontekstissa: {{sdkContext}}.",
     "travelRuleAmountLimit": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
     "travelRuleVaspIdRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi.",
     "travelRuleWalletOwnershipRequired": "{{integrationName}} ei ole tuettu säädöksiin liittyvien kelpoisuusrajoitusten vuoksi."
@@ -146,10 +146,10 @@
       "api": "API",
       "connected": "Yhdistetty",
       "installed": "Asennettu",
-      "lastUsed": "Viimeksi käytetty",
+      "lastUsed": "Käytetty viimeksi",
       "linked": "Aiemmin linkitetty"
     },
-    "emptyCatalogBody": "Tämä voi johtua sijainnistasi, säännösten noudattamisesta tai laitteen yhteensopivuudesta.",
+    "emptyCatalogBody": "Tämä saattaa johtua sijainnistasi, vaatimustenmukaisuusvaatimuksista tai laitteen yhteensopivuudesta.",
     "emptyCatalogTitle": "Ei saatavilla olevia lompakoita ja pörssejä",
     "noResults": "Pahoittelut, emme löytäneet tuloksia",
     "paymentTitle": "Valitse maksutili",
