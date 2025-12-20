@@ -1041,11 +1041,11 @@
     "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
-    "codeSentEmail": "コードがメールに送信されました",
-    "codeSentEmailOrPhoneValue": "We sent a code to <0>{{emailOrPhone}}</0>.",
-    "codeSentPhone": "コードが電話にSMSで送信されました",
+    "codeSentEmail": "確認コードをメールで送信しました",
+    "codeSentEmailOrPhoneValue": "確認コードを <0>{{emailOrPhone}}</0> に送信しました",
+    "codeSentPhone": "確認コードを SMS で送信しました",
     "enterCode": "ログインしようとしているのが本当にご本人であることを確認するために、<1></1>ワンタイムコードを入力してください。",
-    "enterCode2": "認証アプリの<0>コードを入力してください。</0>",
+    "enterCode2": "<0>認証アプリ</0>に表示されたコードを入力する",
     "enterPin": "取引PINコードを入力してください",
     "enterVerificationCode": "確認コードを入力",
     "title": "確認",
@@ -1088,10 +1088,10 @@
   },
   "mobileAppLink": {
     "awaitingConfirmation": "モバイルアプリでの確認をお待ちしています",
-    "awaitingConfirmationShort": "確認を待っています...",
-    "loginRequestSent": "ログイン要求が{{selectedIntegrationName}}アプリに送信されました。",
+    "awaitingConfirmationShort": "確認中…",
+    "loginRequestSent": "{{selectedIntegrationName}} アプリにログインリクエストを送信しました。",
     "openAppButton": "{{selectedIntegrationName}}アプリを開く",
-    "returnToClient": "{{selectedIntegrationName}}での接続リクエスト承認後、{{clientName}}に戻ります。",
+    "returnToClient": "{{selectedIntegrationName}} で接続リクエストを承認後、{{clientName}} に戻ってください。",
     "sendAgain": "再送信",
     "sendNewRequest": "新しいリクエストを送信する",
     "steps": {
@@ -1099,8 +1099,8 @@
       "openApp": "以下の<1>{{selectedIntegrationName}}アプリを開く</1>をクリックしてください。",
       "return": "アカウントの連携を完了するには、こちらに戻ってください。"
     },
-    "troubleshootExchangeMode": "ウォレットモードではなく、交換モードになっていることを確認してください。",
-    "troubleshootTitle": "リクエストが届いていませんか？"
+    "troubleshootExchangeMode": "ウォレットではなく、取引所モードになっていることをご確認ください。",
+    "troubleshootTitle": "リクエストが届きませんか？"
   },
   "mobileContent": {
     "actionButton": "{{integrationName}}を開く"
@@ -1114,8 +1114,8 @@
     "description": "以下のネットワークは、すべてこの支払いに対応しており、安全にご利用いただけます。最も手数料が低いネットワークを自動で選択しています。",
     "estimatedGasFeeLabel": "概算ガス代：",
     "lowestFeeLabel": "最安手数料",
-    "mostPopular": "最も人気のある",
-    "subtitle": "{{clientName}} は次のネットワークで支払いを受け付けます:",
+    "mostPopular": "人気",
+    "subtitle": "{{clientName}} は以下のネットワークでの支払いに対応しています：",
     "title": "ネットワークを選択"
   },
   "nonOAuthPermissionsPage": {
@@ -1141,9 +1141,9 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "{{selectedIntegrationName}}を再度開く",
-      "note": "{{selectedIntegrationName}}で続行して、入金を完了してください",
+      "note": "{{selectedIntegrationName}} で続行し、入金を完了してください",
       "subtitle": "ブラウザでログインとアクセス許可を完了してください。",
-      "title": "接続を待機しています"
+      "title": "接続待機中"
     },
     "checking": {
       "message": "資産を確認しています。。。"
@@ -1211,33 +1211,33 @@
     "tryAgain": "もう一度お試しください"
   },
   "onRampOAuthPage": {
-    "amountMustBeWithin": "金額は{{minAmount}} - {{maxAmount}} の範囲内である必要があります",
-    "amountMustBeWithinErrorMessage": "金額は＄21〜＄15,000の範囲内で指定してください",
-    "buildingYourPreview": "プレビューを作成しています。。。",
-    "buyCrypto": "Binance Connectを使用して暗号通貨を購入",
+    "amountMustBeWithin": "金額は {{minAmount}} ～ {{maxAmount}} の範囲で入力してください",
+    "amountMustBeWithinErrorMessage": "金額は USD $21 ～ $15,000 の範囲で入力してください",
+    "buildingYourPreview": "プレビューを作成しています…",
+    "buyCrypto": "Binance Connect を使って暗号資産を購入",
     "closeButton": "閉じる",
-    "continueTo": "{{selectedIntegrationName}}へ進む",
-    "enterAmount": "転送金額を入力",
-    "notSupported": "{{selectedIntegrationName}}は要求されたトークンまたはネットワークの転送をサポートしていません。",
-    "Processing": "処理中。。。",
+    "continueTo": "{{selectedIntegrationName}} に進む",
+    "enterAmount": "送金金額を入力",
+    "notSupported": "{{selectedIntegrationName}} は、指定されたトークンおよび／またはネットワークでの送金をサポートしていません。",
+    "Processing": "処理中…",
     "receiveAmountInput": {
       "networkName": "{{networkName}} 上で"
     },
     "selectAnotherAccount": "別のアカウントを選択",
-    "selectAnotherExchange": "入金元として別の取引所またはウォレットを選択してください。",
-    "selectAsset": "転送する資産を選択",
+    "selectAnotherExchange": "入金元として、別の取引所またはウォレットを選択してください。",
+    "selectAsset": "送金する資産を選択",
     "selectCurrency": "通貨を選択",
-    "selectNetwork": "転送ネットワークを選択",
-    "unsupportedCurrencyError": "選択された通貨は、あなたの国のオンランプに対応していません。",
-    "unsupportedPair": "このネットワーク/シンボルペアは現在サポートされていません。別のものを選択してください。",
-    "youPay": "支払う",
-    "youReceive": "受け取る"
+    "selectNetwork": "送金ネットワークを選択",
+    "unsupportedCurrencyError": "選択した通貨は、お住まいの国ではオンランプに対応していません。",
+    "unsupportedPair": "このネットワーク／シンボルの組み合わせは現在サポートされていません。別のものを選択してください。",
+    "youPay": "お支払い",
+    "youReceive": "受取額"
   },
   "orderSummaryDrawer": {
     "automatedSwapFee": "自動スワップ手数料",
-    "conversionFee": "{{integrationName}}換算手数料",
+    "conversionFee": "{{integrationName}} 換算手数料",
     "merchantInfoName": "マーチャント: {{clientName}}",
-    "paymentToClient": "{{clientName}}への支払い",
+    "paymentToClient": "{{clientName}} への支払い",
     "title": "注文概要",
     "totalLabel": "合計"
   },
@@ -1255,25 +1255,25 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "QRコードで入金",
+      "depositWithQr": "QR コードで入金",
       "depositWithWalletAddress": "ウォレットアドレスで入金",
-      "dontSeeYourAccount": "アカウントが見つかりませんか?",
-      "havingTrouble": "問題がありますか？",
-      "needAnotherWay": "別の方法は必要ですか?",
+      "dontSeeYourAccount": "アカウントが表示されませんか？",
+      "havingTrouble": "お困りですか？",
+      "needAnotherWay": "別の方法が必要ですか？",
       "tryAgain": "もう一度試してください",
-      "tryWithQr": "代わりにQRコードで入金を試してください。"
+      "tryWithQr": "代わりに QR コードで入金してみてください。"
     },
     "error": {
-      "noTokensDescription": "現在、入金可能なサポートされているトークンはありません。",
-      "noTokensTitle": "利用可能なトークンはありません"
+      "noTokensDescription": "現在、入金可能なトークンがありません。",
+      "noTokensTitle": "利用可能なトークンがありません"
     },
     "networkSelection": {
-      "subtitle": "{{client}}は以下をサポートします:",
+      "subtitle": "{{client}} の対応内容：",
       "title": "ネットワークを選択"
     },
     "screen": {
       "addressLabel": "住所",
-      "beforeYouGo": "行く前に...",
+      "beforeYouGo": "続行する前に…",
       "copiedWalletAddress": "コピーしました",
       "copyWalletAddress": "ウォレットアドレスをコピーする",
       "depositToClient": "{{clientName}}への入金",
