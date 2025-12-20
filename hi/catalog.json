@@ -788,15 +788,15 @@
     "disclaimerSecondLineOtherBalancesDeposit": "आपके पास पर्याप्त {{symbol}} नहीं है, इसलिए हम आपकी जमा राशि को पूरा करने के लिए आपके खाते की अन्य शेष राशियों का उपयोग करेंगे।",
     "disclaimerSecondLineOtherBalancesPayment": "आपके पास पर्याप्त {{symbol}} नहीं है, इसलिए हम आपके भुगतान को पूरा करने के लिए आपके खाते की अन्य शेष राशियों का उपयोग करेंगे।",
     "disclaimerSecondLineOtherBalancesTransfer": "आपके पास पर्याप्त {{symbol}} नहीं है, इसलिए हम आपके स्थानांतरण को पूरा करने के लिए आपके खाते की अन्य शेष राशियों का उपयोग करेंगे।",
-    "disclaimerTransferFirstLine": "लक्ष्य {{symbol}} टोकन में स्थानांतरण स्वीकार करता है।",
-    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} स्थिर मुद्रा {{symbol}} में जमा स्वीकार करता है।",
-    "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} स्थिर मुद्रा {{symbol}} में भुगतान स्वीकार करता है।",
-    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} स्थिरमुद्रा {{symbol}} में अंतरण स्वीकार करता है।",
-    "stablecoinDepositDisclaimerFirstLine": "लक्ष्य स्थिर मुद्रा {{symbol}} में जमा स्वीकार करता है।",
-    "stablecoinPaymentDisclaimerFirstLine": "लक्ष्य स्थिर मुद्रा {{symbol}} में भुगतान स्वीकार करता है।",
-    "stablecoinTransferDisclaimerFirstLine": "लक्ष्य स्थिर मुद्रा {{symbol}} में स्थानांतरण स्वीकार करता है।",
+    "disclaimerTransferFirstLine": "टारगेट {{symbol}} टोकन में स्थानांतरण स्वीकार करता है।",
+    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} स्टेबलकॉइन {{symbol}} में जमा स्वीकार करता है।",
+    "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} स्टेबलकॉइन {{symbol}} में भुगतान स्वीकार करता है।",
+    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} स्टेबलकॉइन {{symbol}} में स्थानांतरण स्वीकार करता है।",
+    "stablecoinDepositDisclaimerFirstLine": "टारगेट स्टेबलकॉइन {{symbol}} में जमा स्वीकार करता है।",
+    "stablecoinPaymentDisclaimerFirstLine": "टारगेट स्टेबलकॉइन {{symbol}} में भुगतान स्वीकार करता है।",
+    "stablecoinTransferDisclaimerFirstLine": "टारगेट स्टेबलकॉइन {{symbol}} में स्थानांतरण स्वीकार करता है।",
     "thisMerchant": "यह व्यापारी",
-    "title": "फंडिंग विधियाँ",
+    "title": "भुगतान विधियाँ",
     "total": "कुल: {{amountInFiat}}"
   },
   "gasFeeUpdateDrawerContent": {
@@ -846,7 +846,7 @@
   "homePage": {
     "buy": "खरीदें",
     "buyDescription": "अपने कार्ड या बैंक से खरीदें।",
-    "guaranteed": "गारंटीशुदा",
+    "guaranteed": "गारंटीड",
     "noExtraFee": "कोई अतिरिक्त शुल्क नहीं",
     "secureDeposit": "सुरक्षित जमा",
     "sendFunds": "धनराशि को सही पते और नेटवर्क पर सुरक्षित रूप से भेजें।",
@@ -856,7 +856,7 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "{{requestedAmount}} की अनुरोधित स्थानांतरण राशि {{integrationName}} द्वारा {{minimumAmount}} के न्यूनतम से कम है {{network}} नेटवर्क पर स्थानांतरण के लिए।",
-    "balanceBelowIntegrationMinimumDescription": "आपका {{currentBalance}} शेष {{integrationName}} पर {{symbol}} स्थानांतरित करने के लिए {{minimumAmount}} न्यूनतम से नीचे है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "balanceBelowIntegrationMinimumDescription": "आपकी {{currentBalance}} शेष राशि {{network}} पर {{symbol}} स्थानांतरित करने के लिए {{integrationName}} न्यूनतम {{minimumAmount}} से कम है। कृपया अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
     "balanceBelowMinimumDescription": "आपकी {{currentBalance}} शेष राशि {{network}} नेटवर्क पर स्थानांतरित करने के लिए {{integrationName}} की {{minimumAmount}} न्यूनतम राशि से कम है।",
     "belowMinimum": "{{integrationName}} के न्यूनतम से कम",
     "belowRequestedAmountDescription": "आपका {{balance}} शेष राशि अनुरोधित स्थानांतरण राशि + शुल्क को कवर करने के लिए {{amount}} से कम है।",
@@ -864,10 +864,10 @@
     "insufficientBalance": "अपर्याप्त शेष राशि",
     "insufficientBalanceDescription": "आपका {{currentBalance}} शेष राशि इस स्थानांतरण के लिए न्यूनतम से कम है।",
     "noBalance": "कोई बैलेंस नहीं",
-    "noBalancePaymentDescription": "आपका {{balance}} शेष इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancePaymentSelectNetworkDescription": "आपका {{balance}} शेष इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancesPaymentDescription": "आपकी शेष राशि इस भुगतान करने के लिए अपर्याप्त हैं। कृपया एक अलग नेटवर्क चुनें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
-    "noBalancesTransferkDescription": "स्थानांतरण करने के लिए आपके पास कोई शेष राशि नहीं है। कृपया एक शेष राशि बढ़ाएं और पुनः प्रयास करें।",
+    "noBalancePaymentDescription": "आपकी {{balance}} शेष राशि इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
+    "noBalancePaymentSelectNetworkDescription": "आपकी {{balance}} शेष राशि इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
+    "noBalancesPaymentDescription": "आपकी शेष राशि इस भुगतान को करने के लिए अपर्याप्त है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
+    "noBalancesTransferkDescription": "आपके पास स्थानांतरित करने के लिए कोई बैलेंस नहीं है। कृपया एक बैलेंस टॉप अप करें और पुनः प्रयास करें।",
     "noBalancesTransferSelectNetworkDescription": "स्थानांतरण करने के लिए आपके पास कोई शेष राशि नहीं है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
     "noBalanceTransferDescription": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
     "noBalanceTransferSelectNetworkDescription": "स्थानांतरण करने के लिए आपके पास कोई {{symbol}} शेष राशि नहीं है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएं और पुनः प्रयास करें।",
@@ -1228,7 +1228,7 @@
     "selectAsset": "स्थानांतरण के लिए संपत्ति चुनें",
     "selectCurrency": "एक मुद्रा का चयन करें",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
-    "unsupportedCurrencyError": "आपके देश में चयनित मुद्रा को ऑनरैंप के लिए समर्थन नहीं दिया गया है।",
+    "unsupportedCurrencyError": "चयनित मुद्रा आपके देश में ऑन-रैम्प के लिए समर्थित नहीं है।",
     "unsupportedPair": "यह नेटवर्क/प्रतीक जोड़ी इस समय समर्थित नहीं है। कृपया दूसरा चुनें।",
     "youPay": "आप भुगतान करेंगे",
     "youReceive": "आप प्राप्त करेंगे"
@@ -1255,16 +1255,16 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "क्यूआर कोड के साथ जमा करें",
+      "depositWithQr": "क्यूआर कोड से जमा करें",
       "depositWithWalletAddress": "वॉलेट एड्रेस के साथ जमा करें",
       "dontSeeYourAccount": "क्या आपको अपना खाता नहीं दिख रहा है?",
       "havingTrouble": "कोई समस्या हो रही है?",
-      "needAnotherWay": "दूसरे तरीका आज़माएं",
+      "needAnotherWay": "कोई दूसरा तरीका चाहिए?",
       "tryAgain": "पुनः प्रयास करें",
-      "tryWithQr": "इसके बजाय QR कोड के साथ जमा करें।"
+      "tryWithQr": "इसके बजाय क्यूआर कोड के साथ जमा करें।"
     },
     "error": {
-      "noTokensDescription": "इस समय किसी भी जमा के लिए समर्थित टोकन उपलब्ध नहीं हैं।",
+      "noTokensDescription": "इस समय जमा करने के लिए कोई समर्थित टोकन उपलब्ध नहीं हैं।",
       "noTokensTitle": "कोई टोकन उपलब्ध नहीं हैं"
     },
     "networkSelection": {
@@ -1278,12 +1278,12 @@
       "copyWalletAddress": "वॉलेट पता कॉपी करें",
       "depositToClient": "{{clientName}} में जमा करें",
       "downloadQr": "क्यूआर कोड डाउनलोड करें",
-      "headline": "कोई समस्या है?",
+      "headline": "{{token}} को {{network}} पर जमा करें",
       "infoLabel": "{{info}} (आवश्यक)",
       "networkLabel": "नेटवर्क",
-      "subtitle": "आप अभी भी अपना जमा मैन्युअल रूप से पूरा कर सकते हैं।",
+      "subtitle": "आप अभी भी अपना जमा मैन्युअल रूप से पूरा कर सकते हैं",
       "tokenLabel": "टोकन",
-      "warning": "सिर्फ {{network}} पर {{token}} को इस पते पर ट्रांसफर करें - अन्यथा, आपकी संपत्तियां खो सकती हैं"
+      "warning": "केवल {{network}} पर {{token}} का ही इस पते पर स्थानांतरण करें - अन्यथा आपकी संपत्तियाँ खो सकती हैं"
     },
     "tokenSelection": {
       "subtitle": "{{client}} स्वीकार करता है:",
@@ -1292,9 +1292,9 @@
     "warnings": {
       "includeMemo": "इस ज्ञापन को शामिल करें: <1>{{memo}}</1>",
       "includeTag": "इस टैग को शामिल करें: <1>{{tag}}</1>",
-      "onlySendTokenOnNetwork": "केवल <1>{{token}}</1> <3>{{network}}</3> नेटवर्क पर भेजें",
+      "onlySendTokenOnNetwork": "केवल <1>{{token}}</1> को <3>{{network}}</3> नेटवर्क पर भेजें",
       "requiredForDeposit": "इस जमा के लिए आवश्यक है",
-      "sendAboveMinimum": "न्यूनतम राशि से ऊपर भेजें: <1>{{amount}}</1>"
+      "sendAboveMinimum": "न्यूनतम राशि से अधिक भेजें: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1319,19 +1319,19 @@
     },
     "continueInPayApp": "{{integrationName}} में जारी रखें",
     "cryptoCom": {
-      "scanQRWithAppText": "अपने crypto.com ऐप के साथ QR कोड स्कैन करें और लेनदेन पूरा करें"
+      "scanQRWithAppText": "अपने crypto.com ऐप के साथ क्यूआर कोड स्कैन करें और लेनदेन पूरा करें"
     },
-    "generateNewQr": "एक नया क्यूआर कोड उत्पन्न करें",
+    "generateNewQr": "नया क्यूआर कोड उत्पन्न करें",
     "noTransferIdError": "स्थानांतरण आईडी गायब है। कृपया पुनः आरंभ करें।",
     "paidConfirmation": "आपने <strong>{{amountStr}}</strong> का भुगतान {{clientName}} को किया है",
     "paymentDataMissing": "भुगतान डेटा अनुपलब्ध है। कृपया पुनः प्रयास करें।",
     "paymentFailed": "भुगतान विफल हो गया। कृपया पुनः प्रयास करें।",
-    "pollingError": "भुगतान स्थिति की जाँच नहीं कर सकते। कृपया पुनः प्रयास करें।",
+    "pollingError": "भुगतान स्थिति की जांच करने में असमर्थ। कृपया पुनः प्रयास करें।",
     "processing": "भुगतान संसाधित किया जा रहा है...",
-    "qrCodeLabel": "कनेक्शन स्थापित करने के लिए क्यूआर कोड को आपके मोबाइल डिवाइस पर स्कैन किया जा सकता है",
+    "qrCodeLabel": "आपके मोबाइल उपकरण पर कनेक्शन स्थापित करने के लिए क्यूआर कोड स्कैन किया जा सकता है",
     "qrGenerationFailed": "क्यूआर कोड उत्पन्न करने में विफल। कृपया पुनः प्रयास करें।",
     "receivedDetails": "आपको <strong>{{amountStr}}</strong> {{clientName}} ({{shortAddress}}) में प्राप्त होंगे",
-    "scanQrCode": "अपना भुगतान पूरा करने के लिए QR कोड स्कैन करें",
+    "scanQrCode": "अपना भुगतान पूरा करने के लिए क्यूआर कोड स्कैन करें",
     "selectAsset": "स्थानांतरण के लिए संपत्ति चुनें",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
     "transactionComplete": "लेन-देन पूरा हुआ",
@@ -1355,11 +1355,11 @@
     "catalogPage": {
       "integrationIneligibilityReason": {
         "integrationMultipleTokenNetworkCompatibility": "असमर्थित टोकन और नेटवर्क",
-        "integrationNotSupportedCountry": "यह आपके क्षेत्र में उपलब्ध नहीं है",
+        "integrationNotSupportedCountry": "आपके क्षेत्र में उपलब्ध नहीं है",
         "integrationSingleTokenNetworkCompatibility": "असमर्थित टोकन और नेटवर्क",
         "lessThanIntegrationMinAmount": "राशि न्यूनतम से कम है",
         "moreThanIntegrationMaxAmount": "राशि अधिकतम से अधिक है",
-        "platformNotSupported": "यह डिवाइस पर असमर्थित है",
+        "platformNotSupported": "इस डिवाइस पर असमर्थित है",
         "sdkVersionNotSupported": "अयोग्य",
         "travelRuleAmountLimit": "अनुपालन पात्रता का प्रतिबंध",
         "travelRuleVaspIdRequired": "अनुपालन पात्रता का प्रतिबंध",
@@ -1380,7 +1380,7 @@
       "save": "सहेजें",
       "stillWorking": "अभी भी काम कर रहा है...",
       "total": "कुल",
-      "tryAgain": "फिर से प्रयास करें"
+      "tryAgain": "पुनः प्रयास करें"
     },
     "connectionPage": {
       "approveConnection": "अपनी वॉलेट में कनेक्शन अनुरोध को स्वीकृति दें",
@@ -1389,26 +1389,26 @@
       "oauthLogin": "अपने खाते में लॉगिन करें और अनुमति दें"
     },
     "dappInfoScreen": {
-      "rule3": "स्वचालित विनिमय इसे सरल रखता है।",
+      "rule3": "स्वचालित स्वैप चीजों को सरल रखता है।",
       "title": "आपके वॉलेट में भुगतान करें"
     },
     "dappSpinner": {
       "retry": "पुनः प्रयास करें",
-      "title": "अपना भुगतान पूरा करने के लिए अपने {{walletName}} वॉलेट पर जाएं"
+      "title": "अपने {{walletName}} वॉलेट पर भुगतान पूरा करें"
     },
     "doneTransferDetailsPage": {
       "disclaimer": "लेन-देन के दौरान विनिमय दर बदल गई हो सकती है।",
       "title": "क्या हुआ"
     },
     "doneTransferPage": {
-      "checkOrderDetails": "आदेश विवरण की जाँच करें",
-      "description": "आपने अभी {{amount}} का भुगतान किया है। जब यह पूरा हो जाएगा, {{clientName}} से पुष्टि प्राप्त होगी।",
+      "checkOrderDetails": "ऑर्डर विवरण जाँचें",
+      "description": "आपने अभी-अभी {{amount}} का भुगतान किया है। इसे पूरा होने पर आपको {{clientName}} से पुष्टि मिल जाएगी।",
       "disclaimer": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।",
       "seeDetails": "देखें क्या हुआ",
-      "title": "भुगतान प्रारंभ हो गया है"
+      "title": "भुगतान हो रहा है"
     },
     "exitPage": {
-      "continuePayment": "भुगतान जारी रखें",
+      "continuePayment": "भुगतान के साथ जारी रखें",
       "exit": "निकास करें",
       "exitAnyway": "फिर भी बाहर निकलें",
       "subtitle": "आपकी प्रगति खो जाएगी।",
@@ -1418,7 +1418,7 @@
       "available": "{{amount}} उपलब्ध",
       "balances": "शेष राशि",
       "buyingPower": "खरीदने की क्षमता",
-      "exchangeRateDisclaimer": "विनिमय दर में एक प्रसार शामिल हो सकता है।",
+      "exchangeRateDisclaimer": "विनिमय दर में स्प्रेड शामिल हो सकता है।",
       "instantCashAvailable": "तत्काल नकद उपलब्ध: {{amount}}",
       "linkedPaymentMethods": "लिंक की गई भुगतान विधि(एं)",
       "paymentMethodTypes": {
@@ -1438,13 +1438,13 @@
       "transfer": "अपनी खरीद के लिए {{symbol}} स्थानांतरण करें"
     },
     "infoScreen": {
-      "rule1": "आपकी जानकारी कभी संग्रहीत नहीं की जाती। इस भुगतान के बाद पहुंच समाप्त हो जाएगी।",
+      "rule1": "आपकी जानकारी कभी संग्रहीत नहीं की जाती। इस भुगतान के बाद पहुँच समाप्त हो जाएगी।",
       "rule2": "अपना क्रिप्टो का उपयोग करें, विवरण की समीक्षा करें और भुगतान की स्वीकृति दें।",
       "rule3": "स्वचालित रूपांतरण चीजों को सरल बनाए रखता है।",
       "title": "भुगतान विवरण की समीक्षा करने के लिए लॉग इन करें"
     },
     "initialSteps": {
-      "terms": "PayPal इस व्यापारी के लिए क्रिप्टो भुगतान सक्षम करता है। जारी रखने पर, आप meeght से PayPal को भुगतान के लिए खाते से स्थानांतरण का अनुरोध करने की अनुमति देते हैं।<1>Mesh की शर्तें लागू होती हैं।</1>"
+      "terms": "PayPal इस व्यापारी के लिए क्रिप्टो भुगतान सक्षम करता है। जारी रखने पर, आप Mesh को आपके भुगतान के लिए आपके खाते से PayPal में स्थानांतरण का अनुरोध करने की अनुमति देते हैं।<1>Mesh की शर्तें लागू होती हैं।</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "किसी भिन्न खाते का चयन करें",
@@ -1452,9 +1452,9 @@
       "messageWithNetwork": "{{network}} नेटवर्क पर आपका {{balanceAmount}} बैलेंस इस {{paymentAmount}} भुगतान के लिए अपर्याप्त है।",
       "network": "नेटवर्क",
       "title": "अपर्याप्त शेष राशि",
-      "topUpAccount": "कृपया अपना खाता भरें और पुनः प्रयास करें।",
+      "topUpAccount": "कृपया अपने खाते को टॉप अप करें और फिर से प्रयास करें।",
       "topUpWallet": "कृपया अपने वॉलेट को टॉप अप करें और फिर से प्रयास करें।",
-      "topUpWalletTryOtherNetwork": "कृपया अपनी वॉलेट भरें और पुनः प्रयास करें या किसी अन्य नेटवर्क के साथ प्रयास करें।"
+      "topUpWalletTryOtherNetwork": "कृपया अपने वॉलेट को टॉप अप करें और फिर से प्रयास करें या किसी अन्य नेटवर्क के साथ प्रयास करें।"
     },
     "insufficientGasBalanceNetworksPage": {
       "message": "इस लेन-देन के लिए {{transferAmount}} और गैस शुल्क का भुगतान करने के लिए लगभग {{gasFiat}} मूल्य के {{gasSymbol}} की आवश्यकता है।"
@@ -1465,10 +1465,10 @@
     },
     "inWalletBrowserInitialPage": {
       "retry": "पुनः प्रयास करें",
-      "title": "अपने भुगतान के साथ आगे बढ़ने के लिए कनेक्शन अनुरोध को स्वीकृत करें"
+      "title": "अपने भुगतान के साथ जारी रखने के लिए कनेक्शन अनुरोध को स्वीकृति दें"
     },
     "inWalletDoneTransferPage": {
-      "subtitle": "पुष्टिकरण और आदेश विवरण के लिए अपने वेब ब्राउज़र में चेकआउट पेज पर वापस जाएं।",
+      "subtitle": "पुष्टिकरण और ऑर्डर विवरण के लिए अपने वेब ब्राउज़र में चेकआउट पेज पर वापस जाएँ।",
       "title": "लगभग हो गया"
     },
     "networkButton": {
@@ -1566,7 +1566,7 @@
     "includeFeesMessage": "शुल्क में {{amount}} शामिल है",
     "networkLabel": "नेटवर्क",
     "paymentTitle": "{{clientName}} को भुगतान करें",
-    "paymentTotalLabel": "कुल भुगतान करें",
+    "paymentTotalLabel": "कुल",
     "payWithLabel": "इसके साथ भुगतान करें",
     "payWithLabelWithName": "{{integrationName}} के साथ भुगतान करें",
     "plusFees": "{{amount}} + शुल्क",
@@ -1606,7 +1606,7 @@
     "transferDeclined": "स्थानांतरण अस्वीकार किया गया",
     "transferDeclined40": "अनुरोध अस्वीकृत",
     "transferDeclinedBody": "आपने अपने वॉलेट में स्थानांतरण अनुरोध को अस्वीकार कर दिया है।",
-    "transferDeclinedBody40": "ऐसा लगता है कि आपने लेनदेन को मना कर दिया। यदि यह एक गलती थी, फिर से प्रयास करें और अपने वॉलेट में अनुरोध को स्वीकृति दें।",
+    "transferDeclinedBody40": "ऐसा लगता है कि आपने लेनदेन को मना कर दिया। यदि यह एक गलती थी, तो फिर से प्रयास करें और अपने वॉलेट में अनुरोध को स्वीकृति दें",
     "transferTimeout": "हमें समय पर प्रतिक्रिया नहीं मिली",
     "transferTimeoutBody": "कृपया फिर से प्रयास करें और लेनदेन अनुरोध को स्वीकृत करें।",
     "transferTitle": "स्थानांतरण का पूर्वावलोकन",
@@ -1620,7 +1620,7 @@
     "fundingMethods": "फंडिंग विधियाँ",
     "network": "नेटवर्क",
     "receive": "प्राप्त करें",
-    "refreshing": "{{seconds}} सेकंड में ताज़ा करें",
+    "refreshing": "{{seconds}} सेकंड्स में रीफ्रेश करें",
     "send": "भेजें",
     "sendAmount": "भेजें {{amount}}",
     "title": "स्थानांतरण का पूर्वावलोकन",
