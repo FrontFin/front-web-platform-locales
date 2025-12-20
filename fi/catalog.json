@@ -788,13 +788,13 @@
     "disclaimerSecondLineOtherBalancesDeposit": "Sinulla ei ole tarpeeksi {{symbol}}, joten lisäämme saldoasi muilla tilisi varoilla talletuksen suorittamiseksi.",
     "disclaimerSecondLineOtherBalancesPayment": "Sinulla ei ole tarpeeksi {{symbol}}, joten lisäämme saldoasi muilla tilisi varoilla maksun suorittamiseksi.",
     "disclaimerSecondLineOtherBalancesTransfer": "Sinulla ei ole tarpeeksi {{symbol}}, joten lisäämme saldoasi muilla tilisi varoilla siirron suorittamiseksi.",
-    "disclaimerTransferFirstLine": "Target hyväksyy siirrot tokenissa {{symbol}}.",
+    "disclaimerTransferFirstLine": "Kohde hyväksyy siirrot {{symbol}}-tokenissa.",
     "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} hyväksyy talletukset {{symbol}}-stablecoinilla.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} hyväksyy maksun {{symbol}}-stablecoinilla.",
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} hyväksyy siirrot {{symbol}}-stablecoinilla.",
-    "stablecoinDepositDisclaimerFirstLine": "Target hyväksyy talletukset vakiovaluutassa {{symbol}}.",
-    "stablecoinPaymentDisclaimerFirstLine": "Target hyväksyy maksut vakiovaluutassa {{symbol}}.",
-    "stablecoinTransferDisclaimerFirstLine": "Target hyväksyy siirrot vakiovaluutassa {{symbol}}.",
+    "stablecoinDepositDisclaimerFirstLine": "Kohde hyväksyy talletukset {{symbol}}-stablecoinilla.",
+    "stablecoinPaymentDisclaimerFirstLine": "Kohde hyväksyy maksut {{symbol}}-stablecoinilla.",
+    "stablecoinTransferDisclaimerFirstLine": "Kohde hyväksyy sirrot {{symbol}}-stablecoinilla.",
     "thisMerchant": "Tämä myyjä",
     "title": "Maksutavat",
     "total": "Yhteensä: {{amountInFiat}}"
@@ -856,7 +856,7 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Pyydetty siirtomäärä {{requestedAmount}} on alle vähimmäismäärän {{minimumAmount}} joka voidaan siirtää verkossa {{network}} {{integrationName}}.",
-    "balanceBelowIntegrationMinimumDescription": "Sinun {{currentBalance}} saldosi on alle {{minimumAmount}} {{integrationName}} minimin siirtääksesi {{symbol}} verkossa {{network}}. Ole hyvä lisää saldoasi ja yritä uudelleen.",
+    "balanceBelowIntegrationMinimumDescription": "{{currentBalance}} saldosi on alle {{minimumAmount}} {{integrationName}} minimin siirtääksesi {{symbol}} verkossa {{network}}. Ole hyvä lisää saldoasi ja yritä uudelleen.",
     "balanceBelowMinimumDescription": "Nykyinen saldosi {{currentBalance}} on vähemmän kuin {{integrationName}}:n vähimmäismäärä{{minimumAmount}} joka voidaan siirtää verkossa {{network}}.",
     "belowMinimum": "Alle {{integrationName}}:n vähimmäismäärän",
     "belowRequestedAmountDescription": "Saldosi {{balance}} on pienempi kuin {{amount}}, joka vaaditaan kattamaan pyydetty siirtomäärä + palkkiot.",
@@ -1100,7 +1100,7 @@
       "return": "Palaa tänne viimeistelläksesi tilisi linkityksen."
     },
     "troubleshootExchangeMode": "Varmista, että olet vaihto-tilassa, et lompakossa.",
-    "troubleshootTitle": "Et saanut pyyntöä?"
+    "troubleshootTitle": "Etkö saanut pyyntöä?"
   },
   "mobileContent": {
     "actionButton": "Avaa {{integrationName}}"
@@ -1141,7 +1141,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Avaa uudelleen {{selectedIntegrationName}}",
-      "note": "Jatka {{selectedIntegrationName}}-sovelluksessa talletuksen loppuunsaattamiseksi",
+      "note": "Jatka {{selectedIntegrationName}}-sovelluksessa viimeistelläksesi talletuksen",
       "subtitle": "Ole hyvä ja viimeistele kirjautuminen ja salli pääsy selaimessasi.",
       "title": "Odotetaan yhteyttä"
     },
@@ -1213,7 +1213,7 @@
   "onRampOAuthPage": {
     "amountMustBeWithin": "Määrän on oltava välillä {{minAmount}} - {{maxAmount}}",
     "amountMustBeWithinErrorMessage": "Määrän on oltava välillä 21 USD - 15 000 USD",
-    "buildingYourPreview": "Rakennetaan esikatselua...",
+    "buildingYourPreview": "Luodaan esikatselua...",
     "buyCrypto": "Osta kryptovaluuttaa Binance Connectilla",
     "closeButton": "Sulje",
     "continueTo": "Jatka {{selectedIntegrationName}} iin",
