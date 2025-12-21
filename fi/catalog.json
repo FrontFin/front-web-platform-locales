@@ -1331,12 +1331,12 @@
     "qrCodeLabel": "Voit skannata QR-koodin mobiililaitteellasi yhteyden muodostamiseksi",
     "qrGenerationFailed": "QR-koodin luominen epäonnistui. Yritä uudelleen.",
     "receivedDetails": "Saat <strong>{{amountStr}}</strong> tilille {{clientName}} ({{shortAddress}})",
-    "scanQrCode": "Skannaa QR-koodi saadaksesi maksusi valmiiksi",
+    "scanQrCode": "Skannaa QR-koodi viimeistelläksesi maksun",
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectNetwork": "Valitse siirtoverkko",
     "transactionComplete": "Tapahtuma valmis",
     "unsupportedCurrencyError": "Tätä valuuttaa ei tueta maassasi.",
-    "updateFailed": "Maksutietojen hakeminen epäonnistui. Yritä uudelleen.",
+    "updateFailed": "Maksutietojen haku epäonnistui. Yritä uudelleen.",
     "youPay": "Sinä maksat",
     "youReceive": "Sinä vastaanotat"
   },
@@ -1346,7 +1346,7 @@
       "title": "Pääsy estetty"
     },
     "belowBinanceMinimumPage": {
-      "message": "Tämä {{transferAmount}} maksu on alle Binance:n {{minAmount}} vähimmäismäärän (plus kulut), jotta siirretään {{symbol}} verkossa {{networkName}}.",
+      "message": "Tämä {{transferAmount}} maksu on alle Binancen {{minAmount}} vähimmäismäärän (maksut mukaan lukien) {{symbol}}-siirrolle {{networkName}}-verkossa.",
       "title": "Alle Binance:n vähimmäismäärän"
     },
     "brokerLoading": {
@@ -1354,16 +1354,16 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "integrationMultipleTokenNetworkCompatibility": "Ei tuettu tunniste tai verkko",
+        "integrationMultipleTokenNetworkCompatibility": "Ei tuettu token tai verkko",
         "integrationNotSupportedCountry": "Ei saatavilla alueellasi",
-        "integrationSingleTokenNetworkCompatibility": "Ei tuettu tunniste tai verkko",
+        "integrationSingleTokenNetworkCompatibility": "Ei tuettu token tai verkko",
         "lessThanIntegrationMinAmount": "Määrä on alle minimirajan",
         "moreThanIntegrationMaxAmount": "Määrä ylittää maksimirajan",
         "platformNotSupported": "Ei tuettu tällä laitteella",
         "sdkVersionNotSupported": "Ei oikeutettu",
-        "travelRuleAmountLimit": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi",
-        "travelRuleVaspIdRequired": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi",
-        "travelRuleWalletOwnershipRequired": "Oikeutusrajoitus sääntöjenmukaisuuden vuoksi"
+        "travelRuleAmountLimit": "Vaatimustenmukaisuuteen liittyvä kelpoisuusrajoitus",
+        "travelRuleVaspIdRequired": "Vaatimustenmukaisuuteen liittyvä kelpoisuusrajoitus",
+        "travelRuleWalletOwnershipRequired": "Vaatimustenmukaisuuteen liittyvä kelpoisuusrajoitus"
       },
       "unavailableAccounts": "Käyttäjätilit eivät ole käytettävissä"
     },
@@ -1378,13 +1378,13 @@
       "order": "Tilaa",
       "pay": "Maksa",
       "save": "Tallenna",
-      "stillWorking": "Työstetään edelleen...",
+      "stillWorking": "Käsitellään yhä...",
       "total": "Yhteensä",
       "tryAgain": "Yritä uudelleen"
     },
     "connectionPage": {
       "approveConnection": "Hyväksy yhteyspyyntö lompakossasi",
-      "continueIn": "Jatka siirtymällä {{integrationName}}iin",
+      "continueIn": "Jatka {{integrationName}}issa",
       "continueTo": "Jatka siirtymällä {{integrationName}}iin",
       "oauthLogin": "Kirjaudu tilillesi ja salli pääsy"
     },
@@ -1394,7 +1394,7 @@
     },
     "dappSpinner": {
       "retry": "Yritä uudelleen",
-      "title": "Suorita maksu {{walletName}}-lompakossasi loppuun"
+      "title": "Suorita maksu loppuun {{walletName}}-lompakossasi"
     },
     "doneTransferDetailsPage": {
       "disclaimer": "Valuuttakurssi on saattanut muuttua tapahtuman aikana.",
@@ -1402,7 +1402,7 @@
     },
     "doneTransferPage": {
       "checkOrderDetails": "Tarkista tilauksen tiedot",
-      "description": "Maksoit juuri {{amount}}. Saat ilmoituksen {{clientName}} kun se on suoritettu.",
+      "description": "Maksoit juuri {{amount}}. Saat ilmoituksen {{clientName}}:sta kun maksu on suoritettu loppuun.",
       "disclaimer": "Siirtoja ei ole suoritettu loppuun, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia.",
       "seeDetails": "Katso mitä tapahtui",
       "title": "Maksu on tulossa"
@@ -1492,31 +1492,31 @@
       "estimatedNetworkFee": "Arvioitu verkkomaksu",
       "feeChangedNotice": "Verkkomaksu on muuttunut. Tarkista kokonaismaksu ja vahvista.",
       "feesIncluded": "{{amount}} maksut sisältyvät",
-      "from": "From {{integrationName}}",
+      "from": "{{integrationName}}:sta",
       "howItWorks": "Miten se toimii",
       "merchantPurchase": "{{merchantName}} osto",
-      "networkFeeHint": "Auttaa saamaan tapahtumasi blockchainiin kattamalla verkon validoijien kustannukset, jotka käsittelevät sen",
+      "networkFeeHint": "Auttaa saamaan tapahtumasi lohkoketjuun kattamalla sen käsitteleville verkon validoijille maksettavat kustannukset",
       "payWith": "Maksa käyttäen",
-      "pyusdDisclaimer": "Tapahtuma suoritetaan käyttäen PayPal USD (PYUSD), mikä on Paxos Trust Company, LLC:n liikkeeseen laskema ja hallinnoima vakaa kolikko. PYUSD toimii blockchainissa.",
+      "pyusdDisclaimer": "Tapahtuma suoritetaan PayPal USD (PYUSD) -stablecoinilla, jonka on liikkeeseen laskenut ja jota säilyttää Paxos Trust Company, LLC. PYUSD toimii lohkoketjussa.",
       "refundDisclaimer": "Hyvitykset suoritetaan vain {{settlementCurrency}} valuutassa. Valuutanvaihtokurssi ja maksut muuttuvat usein. Kaikki kryptovaluuttaostokset ovat lopullisia.",
       "send": "Lähetä",
       "swapFee": "Automaattinen vaihtomaksu",
-      "swapFeeHint": "Maksu, joka helpottaa automaattista varojen vaihtoasi lompakossasi tavoitevaraan.",
+      "swapFeeHint": "Maksu, joka mahdollistaa lompakossasi olevien varojen automaattisen vaihdon siirron kohde-etuudeksi.",
       "title": "Maksa {{merchantName}}",
       "transactionBuffer": "Tapahtumapuskuri",
-      "transactionBufferHint": "Tämä summa lisätään, jotta osto menee läpi, vaikka krypton hinnat muuttuisivat. Tämä voi jättää lompakkoosi jonkin verran {{settlementCurrency}}."
+      "transactionBufferHint": "Tämä summa lisätään, jotta ostos onnistuu, vaikka kryptohinnat vaihtelisivat. Tämä saattaa jättää osan {{settlementCurrency}}-varoistasi lompakkoon."
     },
     "sessionExpiredPage": {
-      "description": "Tämä tapahtuu usein, jos kirjaudut tilillesi toisella alustalla samalla, kun tämä istunto on aktiivinen.",
-      "retry": "Napsauta yritä uudelleen kirjautuaksesi ja yrittääksesi suorittaa tapahtuman uudelleen.",
+      "description": "Tämä tapahtuu usein, jos kirjaudut tilillesi toisella alustalla samalla kun tämä istunto on aktiivinen.",
+      "retry": "Napsauta yritä uudelleen kirjautuaksesi sisään ja yrittääksesi suorittaa tapahtuman uudelleen.",
       "title": "Istunto vanhentunut"
     },
     "somethingWentWrongPage": {
-      "message": "Meillä on ongelmia tämän pyynnön käsittelyssä juuri nyt",
+      "message": "Tämän pyynnön käsittelyssä on parhaillaan ongelmia",
       "title": "Jotain meni pieleen"
     },
     "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Yritys\") on teknologiatoimittaja, joka valmistaa viestintävälineen (\"Työkalu\"), joka auttaa edistämään käyttämäsi kolmannen osapuolen palvelun (\"Loppukäyttäjäpalvelu\") tiettyjä toimintoja. Tällaisen toiminnon tarkoitus on mahdollistaa viestintäsi kolmannen osapuolen tilien ja lompakkojen (\"Yhdistetyt tilit\") kautta Loppukäyttäjäpalvelun välityksellä, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa. Mesh tarjoaa tämän Työkalun sinulle palveluntarjoajana PayPal, Inc:lle (\"PayPal\")\n\nHyväksyt ja ymmärrät, että Loppukäyttäjäpalvelun tietty toiminnallisuus perustuu Työkaluun; että käytät tällaista toiminnallisuutta omasta aloitteestasi; että Yritys tai sen palveluntarjoajat eivät tarjoa välityspalveluja tai osallistu maksujen käsittelyyn; ja että Yritys tai sen palveluntarjoajat eivät ole vastuussa sen paremmin Loppukäyttäjäpalvelusta kuin mistään Yhdistetystä tilistäkään, tai niiden palveluntarjoajien ehdoista, käytännöistä, teoista tai laiminlyönneistä.\n\nVakuutat ja takaat, että sinulla on kaikki oikeudet ja suostumukset yhdistää ja käyttää kutakin Yhdistettyä tiliä tällaisen toiminnallisuuden kautta, mukaan lukien oikeus antaa Yhtiölle ja sen palveluntarjoajille tilillesi kirjautumistiedot, lompakkojen osoitteet ja/tai kaikki yhdistetyn tilin tai henkilökohtaiset tietosi. Täten valtuutat Yhtiön ja sen palveluntarjoajat siirtämään ohjeita sekä tietoja, dataa ja muita materiaaleja Loppukäyttäjäpalvelun ja kunkin Yhdistetyn tilin välillä, ja tunnustat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa mistään tällaisten ohjeiden suorittamisesta tai mistään tällaisista materiaaleista (mukaan lukien niiden paikkansapitävyys, ajantasaisuus tai täydellisyys).\n\nHyväksyt, että jos käytät Työkalua transaktioiden suorittamiseen kolmansien osapuolten kanssa, mukaan lukien mutta ei rajoittuen verkkokauppiaisiin tai sellaisten ostojen suorittamiseen millään tavalla (\"Kolmannen osapuolen Transaktiot\"), Yritys eikä PayPal ole vastuussa mistään tällaisten transaktioiden liittyvistä riidoista. Olet vastuussa ottamisesta suoraan yhteyttä mihin tahansa merkitykselliseen kolmanteen osapuoleen ratkaistaksesi riitoja, valituksia valtuuttamattomista tapahtumista, hyvitysvaatimuksia tai mahdollisia muita Kolmannen osapuolen transaktioihin liittyviä vaatimuksia."
+      "fullText": "Mesh Connect, Inc. (\"Yritys\") on teknologiatoimittaja, joka valmistaa viestintävälineen (\"Työkalu\"). Työkalu auttaa mahdollistamaan tietyn kolmannen osapuolen palvelun (“Loppukäyttäjäpalvelu”), jota käytät, toiminnon. Tämän toiminnon tarkoituksena on mahdollistaa viestintä kolmannen osapuolen tiliesi ja lompakoidesi (“Yhdistetyt tilit”) kanssa Loppukäyttäjäpalvelun kautta, mukaan lukien ohjeiden lähettäminen, joita haluat suorittaa. Mesh tarjoaa tämän Työkalun sinulle PayPal, Inc.:n (“PayPal”) palveluntarjoajana\n\nHyväksyt ja ymmärrät, että Loppukäyttäjäpalvelun tietty toiminto perustuu Työkaluun; että käytät tällaista toimintoa omasta aloitteestasi; että Yritys tai sen palveluntarjoajat eivät tarjoa välityspalveluja tai osallistu maksujen käsittelyyn; sekä että Yhtiöllä tai sen palveluntarjoajilla ei ole vastuuta Loppukäyttäjäpalvelusta, yhdistetyistä tileistä, tai niiden palveluntarjoajien ehdoista, käytännöistä, toimista tai laiminlyönneistä.\n\nVakuutat ja takaat, että sinulla on kaikki oikeudet ja suostumukset yhdistää ja käyttää kutakin Yhdistettyä tiliä tällaisen toiminnallisuuden kautta, mukaan lukien oikeus antaa Yhtiölle ja sen palveluntarjoajille tilillesi kirjautumistiedot, lompakkojen osoitteet ja/tai kaikki yhdistetyn tilin tai henkilökohtaiset tietosi. Täten valtuutat Yhtiön ja sen palveluntarjoajat siirtämään ohjeita sekä tietoja, dataa ja muita materiaaleja Loppukäyttäjäpalvelun ja kunkin Yhdistetyn tilin välillä, ja tunnustat ja hyväksyt, että Yhtiö ja sen palveluntarjoajat eivät ole vastuussa mistään tällaisten ohjeiden suorittamisesta tai mistään tällaisista materiaaleista (mukaan lukien niiden paikkansapitävyys, ajantasaisuus tai täydellisyys).\n\nHyväksyt, että jos käytät Työkalua transaktioiden suorittamiseen kolmansien osapuolten kanssa, mukaan lukien mutta ei rajoittuen verkkokauppiaisiin tai sellaisten ostojen suorittamiseen millään tavalla (\"Kolmannen osapuolen Transaktiot\"), Yritys eikä PayPal ole vastuussa mistään tällaisten transaktioiden liittyvistä riidoista. Olet vastuussa ottamisesta suoraan yhteyttä mihin tahansa merkitykselliseen kolmanteen osapuoleen ratkaistaksesi riitoja, valituksia valtuuttamattomista tapahtumista, hyvitysvaatimuksia tai mahdollisia muita Kolmannen osapuolen transaktioihin liittyviä vaatimuksia"
     },
     "termsOfUse": {
       "linkText": "käyttöehdot",
