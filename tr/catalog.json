@@ -1256,15 +1256,15 @@
   "payManual": {
     "entry": {
       "depositWithQr": "QR kod ile para yatırma",
-      "depositWithWalletAddress": "Cüzdan adresiyle yatırma",
+      "depositWithWalletAddress": "Cüzdan adresi ile para yatırma",
       "dontSeeYourAccount": "Hesabınızı göremiyor musunuz?",
       "havingTrouble": "Sorun mu yaşıyorsunuz?",
       "needAnotherWay": "Başka bir yöntem mi arıyorsunuz?",
       "tryAgain": "Tekrar deneyin",
-      "tryWithQr": "Bunun yerine QR kodu ile yatırmayı deneyin."
+      "tryWithQr": "Bunun yerine QR kodu ile para yatırmayı deneyin."
     },
     "error": {
-      "noTokensDescription": "Bu zamanda yatırılabilecek desteklenen token yoktur.",
+      "noTokensDescription": "Şu anda yatırma işlemi için desteklenen herhangi bir token bulunmuyor.",
       "noTokensTitle": "Token yok"
     },
     "networkSelection": {
@@ -1276,11 +1276,11 @@
       "beforeYouGo": "Gitmeden önce...",
       "copiedWalletAddress": "Kopyalandı",
       "copyWalletAddress": "Cüzdan adresini kopyala",
-      "depositToClient": "{{clientName}}'e Para Yatır ",
-      "downloadQr": "QR kodu indir",
+      "depositToClient": "{{clientName}}'e para yatır ",
+      "downloadQr": "QR kodunu indir",
       "headline": "Sorun mu yaşıyorsun?",
       "infoLabel": "{{info}} (gerekli)",
-      "networkLabel": "Ağ test",
+      "networkLabel": "Ağ",
       "subtitle": "Para yatırma işleminizi manuel olarak tamamlayabilirsiniz.",
       "tokenLabel": "Jeton",
       "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
@@ -1293,7 +1293,7 @@
       "includeMemo": "Bu notu dahil et: <1>{{memo}}</1>",
       "includeTag": "Bu etiketi dahil et: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin",
-      "requiredForDeposit": "Bu depozito için gereklidir",
+      "requiredForDeposit": "Bu para yatırmak için gerekli",
       "sendAboveMinimum": "Minimum tutarın üzerinde gönder: <1>{{amount}}</1>"
     }
   },
@@ -1321,9 +1321,9 @@
     "cryptoCom": {
       "scanQRWithAppText": "Crypto.com uygulamanızla QR kodunu tarayın ve işlemi tamamlayın"
     },
-    "generateNewQr": "Yeni bir QR kodu oluştur",
-    "noTransferIdError": "Eksik transfer ID’si. Lütfen baştan başlayın.",
-    "paidConfirmation": "<strong>{{amountStr}}</strong> kadar ödeme yaptınız {{clientName}}'a",
+    "generateNewQr": "Yeni QR kodu oluştur",
+    "noTransferIdError": "Eksik transfer kimliği. Lütfen baştan başlayın.",
+    "paidConfirmation": "{{clientName}}'a <strong>{{amountStr}}</strong> tutarında ödeme yaptınız ",
     "paymentDataMissing": "Ödeme verileri mevcut değil. Lütfen tekrar deneyin.",
     "paymentFailed": "Ödeme başarısız oldu. Lütfen tekrar deneyin.",
     "pollingError": "Ödeme durumu kontrol edilemiyor. Lütfen tekrar deneyin.",
@@ -1440,21 +1440,21 @@
     "infoScreen": {
       "rule1": "Bilgileriniz asla saklanmaz. Bu işlemden sonra erişim sona erecektir.",
       "rule2": "Kriptonuzu kullanın, detayları gözden geçirin ve ödemeyi onaylayın.",
-      "rule3": "Otomatik dönüşüm işleri basit tutar.",
+      "rule3": "Otomatik takas işleri kolaylaştırır.",
       "title": "Ödeme bilgilerini gözden geçirmek için giriş yapın"
     },
     "initialSteps": {
-      "terms": "PayPal bu satıcı için kripto ödemelerini etkinleştirir. Devam ederek, ödeme için hesabınızdan PayPal'a bir transfer talebi göndermesine izin verirsiniz.<1>Mesh'in Şartları geçerlidir.</1>"
+      "terms": "PayPal bu satıcı için kripto ödemelerini etkinleştirir. Devam ederek, Mesh'e ödemeniz için hesabınızdan PayPal'a bir transfer talep etme izni verirsiniz.<1>Mesh'in Şartları geçerlidir.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Farklı bir hesap seçin",
       "message": "{{balanceAmount}} bakiyeniz bu {{paymentAmount}} ödemesini yapmak için yetersizdir.",
       "messageWithNetwork": "{{network}} ağı üzerindeki {{balanceAmount}} bakiyeniz bu {{paymentAmount}} ödemesini yapmak için yetersizdir.",
-      "network": "Ağ test",
+      "network": "Ağ",
       "title": "Yetersiz bakiye",
-      "topUpAccount": "Lütfen hesabınızı doldurup tekrar deneyin.",
-      "topUpWallet": "Lütfen cüzdanınızı doldurun ve tekrar deneyin.",
-      "topUpWalletTryOtherNetwork": "Lütfen cüzdanınızı doldurun ve tekrar deneyin ya da başka bir ağ ile deneyin."
+      "topUpAccount": "Lütfen hesabınıza bakiye yükleyin ve tekrar deneyin.",
+      "topUpWallet": "Lütfen cüzdanınıza bakiye yükleyin ve tekrar deneyin.",
+      "topUpWalletTryOtherNetwork": "Lütfen cüzdanınıza bakiye yükleyin ve tekrar deneyin ya da başka bir ağ ile deneyin."
     },
     "insufficientGasBalanceNetworksPage": {
       "message": "Bu işlem, gaz ücretlerini ödemek için {{transferAmount}} ve ~{{gasFiat}} değerinde {{gasSymbol}} gerektirir."
@@ -1469,7 +1469,7 @@
     },
     "inWalletDoneTransferPage": {
       "subtitle": "Onay ve sipariş detayları için web tarayıcınızdaki ödeme sayfasına geri dönün.",
-      "title": "Neredeyse Tamam"
+      "title": "Neredeyse bitti"
     },
     "networkButton": {
       "balance": "Bakiye:",
@@ -1606,7 +1606,7 @@
     "transferDeclined": "Transfer reddedildi",
     "transferDeclined40": "Talep reddedildi",
     "transferDeclinedBody": "Cüzdanınızdaki transfer isteğini reddettiniz.",
-    "transferDeclinedBody40": "Görünüşe göre işlemi reddettiniz. Eğer bu bir hataydıysa, tekrar deneyin ve isteği cüzdanınızda onaylayın",
+    "transferDeclinedBody40": "Görünüşe göre işlemi reddettiniz. Eğer bu bir hataysa, tekrar deneyip cüzdanınızda isteği onaylayın",
     "transferTimeout": "Zamanında yanıt alamadık",
     "transferTimeoutBody": "Lütfen tekrar deneyin ve işlem talebini onaylayın.",
     "transferTitle": "Transfer ön izlemesi",
@@ -1618,15 +1618,15 @@
     "fee": "Ücretler dahil {{amount}}",
     "feeInBridging": "{{gasFee}} gaz ücretlerini ve {{conversionFee}} dönüşüm ücretlerini içerir.",
     "fundingMethods": "Ödeme yöntemleri",
-    "network": "Ağ test",
+    "network": "Ağ",
     "receive": "Almak",
     "refreshing": "{{seconds}} sn içinde yenile",
     "send": "Gönder",
     "sendAmount": "{{amount}} gönder",
     "title": "Transfer ön izlemesi",
-    "tokenOnNetwork": "{{token}} üzerinde {{network}}",
+    "tokenOnNetwork": "{{network}} ağındaki {{token}}",
     "total": "Toplam",
-    "transferToken": "Jetonu transfer et"
+    "transferToken": "Token transfer et"
   },
   "privacyComponent": {
     "content": "Verileriniz her zaman gizli ve şifrelenmiş olarak korunur."
@@ -1634,7 +1634,7 @@
   "qrCodePassword": {
     "bybit": {
       "euNotSupported": "Bybit AB hesapları henüz desteklenmiyor.",
-      "loginTitle": "Bybit Global'\u001da oturum aç",
+      "loginTitle": "Bybit Global'a giriş yap",
       "scanInstruction": "Giriş yapmak için Bybit Global uygulamanızla tarayın."
     },
     "expired": "QR kodu süresi doldu",
@@ -1669,7 +1669,7 @@
     "binanceDirectNoAssetsBody2": "Hesabınıza para ekleyebilir veya transferinize devam etmek için farklı bir hesap bağlayabilirsiniz.",
     "cannotFundBody": "Bu işlemi gerçekleştirmek için bu hesaptaki kripto veya fiat bakiyeniz yetersiz.",
     "cannotFundTitle": "İşlem finanse edilemiyor",
-    "defaultTitle": "Bir jeton seçin",
+    "defaultTitle": "Bir token seçin",
     "depositTitle": "Yatırılacak token'ı seçin",
     "ineligibleAssets": "Uygun olmayan varlıklar",
     "link40Title": "Bir token seçin",
@@ -1694,11 +1694,11 @@
     "label": "{{text}} seçin"
   },
   "selectNetworkPage": {
-    "estFee": "Tah.min ücret",
+    "estFee": "Tahmini ücret",
     "gasFeeDescription": "<0>Tahmini gaz ücreti:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Uygun olmayan ağlar",
     "integrationFeeDescription": "<0>Tahmini {{selectedIntegrationName}} ücreti:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "Gönderim yöntemi",
+    "sendVia": "ile gönder",
     "title": "Bir ağı seçin"
   },
   "selectNetworkScreen": {
@@ -1732,7 +1732,7 @@
     "title": "E-postayı Ayarla"
   },
   "termsAndConditionsPage": {
-    "englishDisclaimer": "Bu sadece bilgilendirme amaçlı bir nezaket çevirisidir. <2>Mesh Son Kullanıcı Şartlar ve Koşullarının İngilizce versiyonu</2> yasal olarak bağlayıcı versiyondur.",
+    "englishDisclaimer": "Bu çeviri yalnızca bilgilendirme amaçlı olarak sunulmuştur. Yasal açıdan bağlayıcı olan metin, <2>Mesh Son Kullanıcı Hüküm ve Koşulları’nın İngilizce versiyonudur</2>.",
     "paragraph1": "Mesh Connect, Inc. (<1>“Şirket”</1>), kullandığınız üçüncü taraf hizmetin (<5>“Son Kullanıcı Hizmeti”</5>) belirli işlevlerini kolaylaştırmaya yardımcı olan bir iletişim aracı (<3>“Araç”</3>) sağlayan bir teknoloji şirketidir. Bu işlevsellik, Son Kullanıcı Hizmeti aracılığıyla üçüncü taraf hesaplarınız ve cüzdanlarınızla (<7>“Bağlı Hesaplar”</7>) iletişim kurmanıza, ayrıca gerçekleştirmek istediğiniz talimatları göndermenize olanak tanımayı amaçlamaktadır.",
     "paragraph10": "Tahkim süreci, Amerikan Tahkim Derneği (American Arbitration Association - AAA) tarafından, bu koşullarla değiştirilen Tüketici Tahkim Kuralları uyarınca yürütülecektir. Tüketici Tahkim Kuralları çevrim içi olarak şu adreste mevcuttur: <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Hakem, eğer gerekli görülürse duruşmaları şahsen yerine telekonferans veya görüntülü konferans yoluyla gerçekleştirecektir. Ancak siz veya biz talep edersek ve hakem uygun görürse, yüz yüze duruşma yapılabilir. Yüz yüze duruşmalar, her iki taraf için seyahat imkanları ve diğer ilgili koşullar dikkate alınarak makul bir yerde yapılacaktır. Taraflar duruşma yeri konusunda anlaşamazsa, yer seçimi AAA veya hakem tarafından yapılacaktır. Hakemin kararı, bu şartlara uygun olacak şekilde nihai ve bağlayıcı nitelikte olacaktır. Hakem, bu koşulların geçici, ara ya da kalıcı olarak uygulanması için ihtiyati tedbir ya da özel ifa kararı verebilir; ancak yalnızca hakem önündeki bireysel talebin gerektirdiği ölçüde.\nHakemin verdiği karar, yetkili bir mahkemede onaylatılıp icra ettirilebilir. Yukarıdakilere rağmen, bu şartlar sizi, federal, eyalet veya yerel kamu kurumlarına başvurarak bir konuda şikayette bulunmaktan alıkoymaz. Yasaların izin verdiği durumlarda, bu kurumlar sizin adınıza Şirket’e karşı yaptırım uygulayabilir.",
     "paragraph11": "Bu şartlar, sizinle Şirket arasında ilgili konuya ilişkin tam ve nihai sözleşmeyi oluşturur ve bu konularla ilgili olarak daha önce yapılmış tüm sözlü veya yazılı beyan ve anlaşmaların yerine geçer. Herhangi bir hükmün yürürlükteki yasalar uyarınca uygulanamaz olması durumunda, o hüküm yasaya uygun hale gelecek şekilde değiştirilmiş kabul edilir; bu yapılırken mümkün olan en geniş ölçüde orijinal hükmün amacı korunur. Böyle bir değişiklik mümkün değilse, ilgili hüküm metinden ayrılır ve kalan tüm hükümler geçerliliğini korur. Bu şartları kabul ederek, Şirket’in hizmet sağlayıcılarının da bu şartların üçüncü taraf lehtarları olduğunu kabul ve beyan etmiş olursunuz. Bu hüküm ve koşulları kabul ederek ya da Aracı (Tool) kullanarak, bu sözleşmenin tüm şart ve koşullarına bağlı kalmayı kabul etmiş olursunuz. ",
@@ -1750,14 +1750,14 @@
     "cancel": "İptal",
     "currentBalance": "Mevcut bakiye",
     "disclaimer": "Eğer ödemeyi tamamlamazsanız, {{symbol}} bakiyeniz {{integrationName}} hesabınızda kalacak.",
-    "previewTopup": "Ön izleme yüklemesi",
+    "previewTopup": "Bakiye yüklemesini önizle",
     "required": "Gerekli",
     "subtitle": "Satın alınan {{symbol}} bakiyeniz, fiyat ve/veya gaz dalgalanmaları nedeniyle beklenenden daha düşük.",
-    "title": "Yükleme gerekli"
+    "title": "Bakiye yüklemesi gerekli"
   },
   "transferAmountInput": {
-    "availableForDeposit": "{{amount}} depozit için kullanılabilir",
-    "basedOnYourBalances": "Hesap bakiyelerinize göre",
+    "availableForDeposit": "{{amount}} para yatırmak için kullanılabilir",
+    "basedOnYourBalances": "Bakiyelerinize göre",
     "basedOnYourBalancesDepositsTooltip": "Bu toplam, mevcut {{symbol}} bakiyeniz artı bu para yatırma işlemi için otomatik olarak {{symbol}}'e dönüştürülebilecek bakiyeleri içerir."
   },
   "transferAmountPage": {
@@ -1837,21 +1837,21 @@
     "title": "Doğrulama"
   },
   "transferInsufficientBalancePage": {
-    "depositInsufficientBalanceAndGas": "Bu işlem, sıfır olmayan bir {{symbol}} bakiyesi ve gaz masraflarını ödemek için {{network}} ağında ~${{gasFee}} değerinde ETH gerektirir.",
+    "depositInsufficientBalanceAndGas": "Bu işlemin gerçekleştirilebilmesi için cüzdanınızda sıfır olmayan bir {{symbol}} bakiyesi ve {{network}} ağında gaz ücretlerini ödemek üzere yaklaşık ${{gasFee}} değerinde ETH bulunmalıdır.",
     "depositNoBalance": "{{network}} ağı üzerinde aktaracak {{symbol}} bakiyeniz yok.",
     "gasAndBalanceTitle": "Yetersiz gas ve bakiye",
-    "gasBody": "{{network}} ağı için gaz ücretleri {{symbol}} olarak ödenmektedir. Lütfen {{symbol}} bakiyenizi tamamlayın ve bu işlemi tekrar deneyin.",
+    "gasBody": "{{network}} ağı için gaz ücretleri {{symbol}} olarak ödenmektedir. Lütfen {{symbol}} bakiyenizi artırın ve bu işlemi tekrar deneyin.",
     "gasTitle": "Yetersiz gaz bakiyesi",
-    "insufficientGasFeeDescription": "Bu transfer, ağ ücretlerini karşılamak için {{symbol}} üzerinden {{gasFee}} gerektirir.",
-    "noBalanceBody": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi tamamlayın ve tekrar deneyin.",
-    "noBalanceOnSpecificNetwork": "{{network}} ağında {{symbol}} yok.",
+    "insufficientGasFeeDescription": "Bu transfer, ağ ücretlerini karşılamak için {{symbol}} cinsinden {{gasFee}} gerektirir.",
+    "noBalanceBody": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi artırın ve tekrar deneyin.",
+    "noBalanceOnSpecificNetwork": "{{network}} ağı üzerinde hiç {{symbol}} bakiyeniz yok.",
     "noBalanceTitle": "Bakiye yok",
     "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
     "paymentInsufficientBalance": "{{network}} ağı üzerindeki {{symbol}} bakiyeniz {{amount}} {{symbol}} ödemesi yapmak için yetersiz.",
-    "paymentInsufficientBalanceAndGas": "Bu işlem {{amount}} {{symbol}} ve gaz ücretlerini ödemek için {{network}} ağında ~${{gasFee}} değerinde ETH gerektirir.",
+    "paymentInsufficientBalanceAndGas": "Bu işlem, gaz ücretlerini ödemek için {{network}} ağı üzerinde yaklaşık ${{gasFee}} değerinde ETH ve {{amount}} {{symbol}} bakiyesi gerektirir.",
     "title": "Yetersiz bakiye",
-    "toppedUpWalletQuestion": "Cüzdanınızı doldurdunuz mu?",
-    "topUpAction": "Lütfen cüzdanınızı doldurun ve tekrar deneyin.",
+    "toppedUpWalletQuestion": "Cüzdanınıza bakiye yüklediniz mi?",
+    "topUpAction": "Lütfen cüzdanınıza bakiye yükleyin ve tekrar deneyin.",
     "transferBody": "Bu transferi tamamlamak için bakiyeniz yetersiz."
   },
   "transferMfaPage": {
@@ -1930,13 +1930,13 @@
     "changeBrowserHeading": "Tarayıcıyı Değiştir",
     "connectionClosed": "Bağlantı kapatıldı. Lütfen tekrar deneyin.",
     "connectionStatus": "Bağlantı Durumu:",
-    "generatingSession": "Güvenli oturum oluşturuluyor...",
-    "iosOnlyText": "Not: Bu QR oturumu sadece iOS cihazlarında çalışır.",
+    "generatingSession": "Güvenli giriş oturumu oluşturuluyor...",
+    "iosOnlyText": "Not: Bu QR giriş sadece iOS cihazlarında çalışır.",
     "notSupportedHeading": "Desteklenmiyor",
-    "openAppClip": "Devam etmek için lütfen uygulama klibini açın",
-    "openMobileApp": "Devam etmek için Mesh mobil uygulamanızı açın ve bu QR kodunu tarayın.",
-    "qrCodeAlt": "TrueAuth Giriş için QR Kodu",
-    "scanToLogin": "Giriş Yapmak İçin Taramasını Yap",
+    "openAppClip": "Devam etmek için lütfen App Clip'i açın",
+    "openMobileApp": "Giriş yapmak için telefon kameranız ile tarayın.",
+    "qrCodeAlt": "TrueAuth Giriş için QR kodu",
+    "scanToLogin": "Giriş yap",
     "somethingWentWrong": "Bir şeyler ters gitti"
   },
   "verifyAddressAndNetworkErrorPage": {
