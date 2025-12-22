@@ -24,7 +24,7 @@
     "buyCrypto": "Mua tiền mã hoá bằng Binance Connect",
     "cashEquivalent": "Giá trị tương đương tiền mặt",
     "closeButton": "Đóng",
-    "completeActionInstruction": "Hoàn tất hành động này trong ứng dụng Binance của bạn...",
+    "completeActionInstruction": "Vui lòng hoàn tất thao tác này trong ứng dụng Binance của bạn...",
     "completeDepositInApp": "Bạn sẽ hoàn tất khoản nạp này trong ứng dụng Binance của mình",
     "completeDepositInstruction": "Hoàn tất khoản nạp trong ứng dụng Binance của bạn...",
     "completeTransferInApp": "Bạn sẽ hoàn tất chuyển khoản này trong ứng dụng Binance của mình",
@@ -34,7 +34,7 @@
     "cryptoAmount": "Số lượng tiền điện tử",
     "descriptionDeposit": "<0>Quay lại đây</0> sau khi hoàn tất giao dịch của bạn trong Binance.",
     "enterAmount": "Nhập số tiền giao dịch",
-    "mobileLabelDeposit": "Hoàn tất giao dịch của bạn trong Binance, sau đó trở lại đây để hoàn tất tiền gửi của bạn.",
+    "mobileLabelDeposit": "Hãy hoàn tất giao dịch trong Binance, sau đó quay lại đây để hoàn tất việc nạp tiền.",
     "mobileLabelOnramp": "Hoàn tất giao dịch của bạn trong Binance, sau đó trở lại đây để hoàn tất nền tảng khởi đầu của bạn.",
     "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "openBinance": "Mở Binance",
@@ -75,7 +75,7 @@
   "binanceDirectPasswordPage": {
     "accountNotFound": "Không tìm thấy tài khoản Binance.",
     "emailPhoneInput": "Email/Điện thoại (không kèm mã quốc gia)",
-    "invalidEmail": "Vui lòng nhập một email hoặc số điện thoại hợp lệ. Không được phép có khoảng trắng hoặc ký tự đặc biệt cho số điện thoại.",
+    "invalidEmail": "Vui lòng nhập email hoặc số điện thoại hợp lệ. Số điện thoại không được chứa khoảng trắng hoặc ký tự đặc biệt.",
     "nextButton": "Tiếp theo",
     "noPasswordCta1": "Tiếp tục với ứng dụng Binance",
     "noPasswordCta2": "Đặt lại mật khẩu",
@@ -134,12 +134,12 @@
     "integrationNotSupportedCountry": "{{integrationName}} không khả dụng ở khu vực của bạn.",
     "integrationSingleTokenNetworkCompatibility": "{{integrationName}} không hỗ trợ token và mạng này.",
     "lessThanIntegrationMinAmount": "Số tiền yêu cầu thấp hơn mức tối thiểu của {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối đa của nhà môi giới {{integrationName}}",
+    "moreThanIntegrationMaxAmount": "Số tiền yêu cầu cao hơn mức tối thiểu của {{integrationName}}",
     "platformNotSupported": "{{integrationName}} không được hỗ trợ trên loại thiết bị này.",
     "sdkVersionNotSupported": "Cơ chế TrueAuth của {{integrationName}} không được hỗ trợ cho SDK bối cảnh: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
-    "travelRuleVaspIdRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do không đáp ứng các hạn chế về tính hợp lệ đợ"
+    "travelRuleAmountLimit": "{{integrationName}} không được hỗ trợ do các quy định hiện hành.",
+    "travelRuleVaspIdRequired": "{{integrationName}} không được hỗ trợ do các quy định hiện hành.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} không được hỗ trợ do các quy định hiện hành."
   },
   "catalogList": {
     "badges": {
@@ -149,7 +149,7 @@
       "lastUsed": "Lần sử dụng cuối",
       "linked": "Đã liên kết trước đó"
     },
-    "emptyCatalogBody": "Điều này có thể là do vị trí của bạn, yêu cầu tuân thủ hoặc khả năng tương thích của thiết bị.",
+    "emptyCatalogBody": "Điều này có thể là do vị trí của bạn, quy định hoặc khả năng tương thích của thiết bị.",
     "emptyCatalogTitle": "Không có ví và sàn giao dịch nào khả dụng",
     "noResults": "Xin lỗi, chúng tôi không tìm thấy kết quả nào",
     "paymentTitle": "Chọn tài khoản thanh toán",
@@ -259,7 +259,7 @@
   "dappDoneTransferPage": {
     "depositSubtitle": "Quay lại {{clientName}}",
     "depositSuccess": "Thành công!",
-    "depositTitle": "Bạn sẽ nhận <1>{{amountCrypto}} ~ {{amountFiat}}</1> tại {{clientName}}.",
+    "depositTitle": "Quỹ của bạn đang được chuyển đi.",
     "paymentSubtitle": "Quay lại trang thanh toán của bạn để hoàn tất đơn hàng của mình",
     "paymentSuccess": "Thanh toán thành công!",
     "subtitle": "Vui lòng quay lại {{clientName}} để hoàn tất mua hàng của bạn.",
@@ -268,7 +268,7 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "Quay lại {{clientName}}",
     "depositSuccess": "Thành công!",
-    "depositTitle": "Bạn sẽ nhận được <2>{{amountCrypto}} ~ {{amountFiat}}</2> trong<5></5>{{clientName}}.",
+    "depositTitle": "Quỹ của bạn đang được chuyển đi.",
     "paymentSubtitle": "Quay lại trang thanh toán của bạn để hoàn tất đơn hàng của mình",
     "paymentSuccess": "Thanh toán thành công!"
   },
@@ -292,7 +292,7 @@
   "deFiWalletInitialPage": {
     "continue": "Tiếp tục đến {{walletName}}",
     "dappPage": {
-      "continueButton": "Tiếp tục trong {{walletName}}",
+      "continueButton": "Tiếp tục trên {{walletName}}",
       "depositTitle": "Nạp tiền từ ví của bạn",
       "payTitle": "Thanh toán từ ví của bạn",
       "qrSubtitle": "Mở ứng dụng máy ảnh trên điện thoại của bạn và quét mã QR để kết nối",
@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "Bạn chấp thuận chuyển từ {{selectedIntegrationName}} đến địa chỉ đích.",
       "approvedFromDeFi": "Bạn đã phê duyệt chuyển trên {{selectedIntegrationName}}.",
       "bridgingConversion": "Chúng tôi tự động chuyển đổi quỹ của bạn cho mạng đích <1>{{destinationNetwork}}</1>.",
-      "bridgingDelivery": "Số tiền đã chuyển đổi của bạn đã được gửi đến {{clientName}} tại <3>{{shortBridgingTargetAddress}}</3>.",
+      "bridgingDelivery": "Số tiền đã chuyển đổi của bạn đã được gửi đến {{clientName}} tại <4>{{shortBridgingTargetAddress}}</4>.",
       "conversion": "Chuyển đổi <1>{{amount}}</1> thành <4>{{currency}}</4>.",
       "deposit": "Gửi tiền <1>{{amount}}</1> từ {{paymentMethod}} đến {{selectedIntegrationName}}.",
       "purchase": "Mua <1>{{amount}}</1> trị giá {{symbol}} tại {{selectedIntegrationName}}.",
@@ -398,7 +398,7 @@
     "checkDetails": "Xem điều gì đã xảy ra",
     "checkDetails40": "Xem chi tiết giao dịch",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1> sẽ được nhận tại {{shortAddress}}",
-    "depositClient": "Bạn sẽ nhận <2>{{amountCrypto}} ~ {{amountFiat}}</2> tại {{clientName}} ({{shortAddress}})",
+    "depositClient": "Quỹ của bạn đang được chuyển đi.",
     "directMobileBody": "Quay lại trang thanh toán TAO của bạn để hoàn tất việc thanh toán.",
     "directMobileTitle": "Thanh toán đã được bắt đầu",
     "goBackToShift4": "← Quay lại Shift4",
@@ -528,14 +528,14 @@
     "authenticationFailed": "Không thể xác thực với tích hợp đã chọn.",
     "balanceNotEnough": "Tài khoản của bạn thể hiện số dư đủ, nhưng một số tiền có thể đang chờ xử lý, được giữ lại hoặc được yêu cầu cho phí. Vui lòng thử gửi một số tiền nhỏ hơn.",
     "belowMinimumFiatDeposit": "Số tiền thấp hơn mức nạp tiền tối thiểu.",
-    "binanceTravelRuleRestriction": "Binance hiện không hỗ trợ chuyển tiền từ quốc gia của bạn.",
-    "binanceTravelRuleRestrictionDeposit": "Binance hiện không hỗ trợ nạp tiền từ quốc gia của bạn.",
-    "binanceTravelRuleRestrictionOnramp": "Binance hiện không hỗ trợ mua từ quốc gia của bạn.",
-    "binanceTravelRuleRestrictionPayment": "Binance hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestriction": "Coinbase hiện không hỗ trợ chuyển tiền từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestrictionDeposit": "Coinbase hiện không hỗ trợ nạp tiền từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestrictionOnramp": "Coinbase hiện không hỗ trợ mua từ quốc gia của bạn.",
-    "coinbaseTravelRuleRestrictionPayment": "Coinbase hiện không hỗ trợ thanh toán từ quốc gia của bạn.",
+    "binanceTravelRuleRestriction": "Hiện tại Binance chưa hỗ trợ chuyển tiền từ quốc gia của bạn.",
+    "binanceTravelRuleRestrictionDeposit": "Hiện tại Binance chưa hỗ trợ nạp tiền từ quốc gia của bạn.",
+    "binanceTravelRuleRestrictionOnramp": "Hiện tại Binance chưa hỗ trợ mua hàng từ quốc gia của bạn.",
+    "binanceTravelRuleRestrictionPayment": "Hiện tại Binance chưa hỗ trợ thanh toan từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestriction": "Hiện tại Coinbase chưa hỗ trợ chuyển tiền từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionDeposit": "Hiện tại Coinbase chưa hỗ trợ nạp tiền từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionOnramp": "Hiện tại Coinbase chưa hỗ trợ mua hàng từ quốc gia của bạn.",
+    "coinbaseTravelRuleRestrictionPayment": "Hiện tại Coinbase chưa hỗ trợ thanh toán từ quốc gia của bạn.",
     "coinbaseUnavailable": "Đã xảy ra lỗi với Coinbase. Vui lòng kiểm tra tài khoản Coinbase của bạn để xem giao dịch có được thực hiện thành chưa.",
     "configurationMismatch": "Không thể khởi tạo chuyển khoản. Cấu hình tài khoản không phù hợp với yêu cầu chuyển tiền.",
     "default": "Đã xảy ra lỗi.",
@@ -555,7 +555,7 @@
     "incorrect2faCode": "Mã 2FA không chính xác.",
     "incorrectEmail": "Bạn đã nhập sai email.",
     "incorrectPasswordChancesRemaining": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
-    "incorrectPasswordChancesRemaining_one": "Mật khẩu sai. Bạn còn lại {{count}} cơ hội.",
+    "incorrectPasswordChancesRemaining_one": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
     "incorrectPasswordChancesRemaining_other": "Mật khẩu không đúng. Bạn còn lại {{count}} cơ hội.",
     "incorrectUsernameOrPassword": "Tên đăng nhập hoặc mật khẩu không đúng.",
     "integrationNotAvailable": "Tích hợp này hiện không khả dụng.",
@@ -566,7 +566,7 @@
     "invalidToIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
     "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
     "locked": "Tài khoản của bạn bị khóa",
-    "loginFirst": "Vui lòng đăng nhập trước.",
+    "loginFirst": "Vui lòng đăng nhập.",
     "loginWithQrOrMobileLink": "Vui lòng đăng nhập bằng mã QR hoặc liên kết di động.",
     "mfaBindingRequired": "Vui lòng thiết lập xác thực hai yếu tố (email hoặc Google Authenticator) để kích hoạt rút tiền.",
     "mfaNotSupported": "Xác thực đa yếu tố không được hỗ trợ cho hoạt động này.",
@@ -1106,6 +1106,7 @@
     "actionButton": "Mở {{integrationName}}"
   },
   "navHeader": {
+    "alternativeDepositTitle": "Nạp tiền vào {{clientName}}",
     "close": "Đóng cửa sổ",
     "goBack": "Quay lại",
     "title": "Thanh toán bằng tiền điện tử"
@@ -1143,7 +1144,7 @@
       "action": "Mở lại {{selectedIntegrationName}}",
       "note": "Tiếp tục trên {{selectedIntegrationName}} để hoàn tất nạp tiền của bạn",
       "subtitle": "Vui lòng đăng nhập và phê duyệt quyền truy cập trong trình duyệt của bạn.",
-      "title": "Đang chờ kết nối"
+      "title": "Chờ kết nối"
     },
     "checking": {
       "message": "Đang kiểm tra tài sản của bạn..."
@@ -1255,10 +1256,13 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "Gửi tiền bằng mã QR",
+      "depositWithQr": "Nạp tiền bằng mã QR",
       "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
       "dontSeeYourAccount": "Không thấy tài khoản của bạn?",
-      "needAnotherWay": "Cần cách khác?"
+      "havingTrouble": "Gặp rắc rối?",
+      "needAnotherWay": "Cần cách khác?",
+      "tryAgain": "Thử lại",
+      "tryWithQr": "Hãy thử gửi tiền bằng mã QR thay thế."
     },
     "error": {
       "noTokensDescription": "Hiện không có token được hỗ trợ nào có sẵn để gửi vào lúc này.",
@@ -1311,13 +1315,16 @@
   },
   "payPage": {
     "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} - {{maxFiat}}",
+    "bybit": {
+      "fee": "Phí: {{fee}}"
+    },
     "continueInPayApp": "Tiếp tục đến {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": ""
+      "scanQRWithAppText": "Quét mã QR bằng ứng dụng crypto.com của bạn và hoàn tất giao dịch"
     },
     "generateNewQr": "Tạo mã QR mới",
     "noTransferIdError": "Thiếu mã giao dịch. Vui lòng bắt đầu lại.",
-    "paidConfirmation": "",
+    "paidConfirmation": "Bạn đã thanh toán <strong>{{amountStr}}</strong> cho {{clientName}}",
     "paymentDataMissing": "Dữ liệu thanh toán không khả dụng. Vui lòng thử lại.",
     "paymentFailed": "Thanh toán không thành công. Vui lòng thử lại.",
     "pollingError": "Không thể kiểm tra trạng thái thanh toán. Vui lòng thử lại.",
@@ -1666,7 +1673,6 @@
     "defaultTitle": "Chọn một token",
     "depositTitle": "Chọn token nạp",
     "ineligibleAssets": "Tài sản không đủ điều kiện",
-    "link40Subtitle": "Ví {{clientName}} chấp nhận:",
     "link40Title": "Chọn một đồng tiền",
     "loading": "Đang tải tài sản của bạn...",
     "network": "mạng {{networkName}}",
@@ -1689,7 +1695,6 @@
     "label": "Chọn {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "{{clientName}} hỗ trợ:",
     "estFee": "Phí ước tính",
     "gasFeeDescription": "<0>Ước tính phí gas:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Mạng không đủ điều kiện",
@@ -1927,7 +1932,7 @@
     "connectionClosed": "Kết nối đã đóng. Vui lòng thử lại.",
     "connectionStatus": "Trạng thái Kết Nối:",
     "generatingSession": "Đang tạo phiên đăng nhập an toàn...",
-    "iosOnlyText": "",
+    "iosOnlyText": "Lưu ý: Đăng nhập bằng mã QR này chỉ hoạt động trên các thiết bị iOS.",
     "notSupportedHeading": "Không được hỗ trợ",
     "openAppClip": "Vui lòng mở app clip để tiếp tục",
     "openMobileApp": "Mở ứng dụng di động Mesh của bạn và quét mã QR này để tiếp tục.",

@@ -259,7 +259,7 @@
   "dappDoneTransferPage": {
     "depositSubtitle": "Вернуться к {{clientName}}",
     "depositSuccess": "Успешно!",
-    "depositTitle": "Вы получите <1>{{amountCrypto}} ~ {{amountFiat}}</1> в <2></2>{{clientName}}.",
+    "depositTitle": "Ваши средства в пути.",
     "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ",
     "paymentSuccess": "Платеж успешно выполнен!",
     "subtitle": "Пожалуйста, вернитесь в {{clientName}}, чтобы завершить покупку.",
@@ -268,7 +268,7 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "Вернуться к {{clientName}}",
     "depositSuccess": "Успешно!",
-    "depositTitle": "Вы получите <2>{{amountCrypto}} ~ {{amountFiat}}</2> в<5></5>{{clientName}}.",
+    "depositTitle": "Ваши средства в пути.",
     "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ",
     "paymentSuccess": "Платеж успешно выполнен!"
   },
@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "Вы одобряете перевод из {{selectedIntegrationName}}.",
       "approvedFromDeFi": "Вы подтвердили перевод на {{selectedIntegrationName}}.",
       "bridgingConversion": "Мы автоматически конвертировали ваши средства для сети назначения <1>{{destinationNetwork}}</1>.",
-      "bridgingDelivery": "Ваши конвертированные средства были отправлены клиенту {{clientName}} на адрес <3>{{shortBridgingTargetAddress}}</3>.",
+      "bridgingDelivery": "Ваши конвертированные средства были отправлены клиенту {{clientName}} на адрес <4>{{shortBridgingTargetAddress}}</4>.",
       "conversion": "Конвертирование <1>{{amount}}</1> в <4>{{currency}}</4>.",
       "deposit": "Пополнение <1>{{amount}}</1> с {{paymentMethod}} на {{selectedIntegrationName}}.",
       "purchase": "Покупка {{symbol}} стоимостью <1>{{amount}}</1> в {{selectedIntegrationName}}.",
@@ -398,7 +398,7 @@
     "checkDetails": "Посмотреть детали",
     "checkDetails40": "Просмотреть детали транзакции",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>будут получены на {{shortAddress}}",
-    "depositClient": "Вы получите <2>{{amountCrypto}} ~ {{amountFiat}}</2> на {{clientName}} ({{shortAddress}})",
+    "depositClient": "Ваши средства в пути.",
     "directMobileBody": "Вернитесь на страницу оформления заказа TAO, чтобы завершить оплату.",
     "directMobileTitle": "Платеж инициирован",
     "goBackToShift4": "← Вернуться к Shift4",
@@ -556,8 +556,6 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -733,8 +731,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1110,6 +1106,7 @@
     "actionButton": "Открыть {{integrationName}}"
   },
   "navHeader": {
+    "alternativeDepositTitle": "Депозит на {{clientName}}",
     "close": "Закрыть окно",
     "goBack": "Назад",
     "title": "Оплатить криптовалютой"
@@ -1262,7 +1259,10 @@
       "depositWithQr": "Депозит через QR-код",
       "depositWithWalletAddress": "Пополните по адресу электронного кошелька",
       "dontSeeYourAccount": "Не видите свой счет?",
-      "needAnotherWay": "Попробуете другой способ?"
+      "havingTrouble": "Возникли проблемы?",
+      "needAnotherWay": "Попробуете другой способ?",
+      "tryAgain": "Попробовать еще раз",
+      "tryWithQr": "Попробуйте внести депозит с помощью QR-кода вместо этого."
     },
     "error": {
       "noTokensDescription": "В данный момент нет поддерживаемых токенов для депозита.",
@@ -1315,13 +1315,16 @@
   },
   "payPage": {
     "amountMustBeWithin": "Сумма должна быть в пределах {{minFiat}} - {{maxFiat}}",
+    "bybit": {
+      "fee": "Комиссия: {{fee}}"
+    },
     "continueInPayApp": "Продолжить в {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": ""
+      "scanQRWithAppText": "Отсканируйте QR-код с помощью вашего приложения crypto.com и завершите транзакцию"
     },
     "generateNewQr": "Создать новый QR-код",
     "noTransferIdError": "Отсутствует ID перевода. Пожалуйста, начните заново.",
-    "paidConfirmation": "",
+    "paidConfirmation": "Вы оплатили <strong>{{amountStr}}</strong> {{clientName}}",
     "paymentDataMissing": "Данные платежа недоступны. Пожалуйста, попробуйте еще раз.",
     "paymentFailed": "Оплата не удалась. Пожалуйста, попробуйте еще раз.",
     "pollingError": "Не удается проверить статус платежа. Пожалуйста, попробуйте еще раз.",
@@ -1670,7 +1673,6 @@
     "defaultTitle": "Выберите токен",
     "depositTitle": "Выберите токен для депозита",
     "ineligibleAssets": "Неподходящие активы",
-    "link40Subtitle": "Кошелек {{clientName}} принимает:",
     "link40Title": "Выберите токен",
     "loading": "Загрузка ваших активов...",
     "network": "сеть {{networkName}}",
@@ -1693,7 +1695,6 @@
     "label": "Выбор {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "{{clientName}} поддерживает:",
     "estFee": "Оценочная комиссия",
     "gasFeeDescription": "<0>Примерная комиссия за газ:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Неподходящие сети",
@@ -1931,10 +1932,10 @@
     "connectionClosed": "Соединение закрыто. Пожалуйста, попробуйте ещё раз.",
     "connectionStatus": "Статус соединения:",
     "generatingSession": "Генерация защищённой сессии входа...",
-    "iosOnlyText": "",
+    "iosOnlyText": "Примечание: этот QR-код для входа работает только на устройствах iOS.",
     "notSupportedHeading": "Не поддерживается",
     "openAppClip": "Пожалуйста, откройте App Clip, чтобы продолжить",
-    "openMobileApp": "Откройте своё мобильное приложение Mesh и отсканируйте этот QR-код, чтобы продолжить.",
+    "openMobileApp": "Отсканируйте с камерой телефона для входа.",
     "qrCodeAlt": "QR-код для входа через TrueAuth",
     "scanToLogin": "Сканируйте для входа",
     "somethingWentWrong": "Что-то пошло не так"

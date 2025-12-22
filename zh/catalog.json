@@ -12,7 +12,7 @@
     "token": "代币"
   },
   "authCodeInput": {
-    "code": "6位数代码"
+    "code": "6位数字"
   },
   "binanceConnectAmountInput": {
     "minimumAmount": "最小转账金额为 {{minAmount}}",
@@ -24,24 +24,24 @@
     "buyCrypto": "使用Binance Connect购买加密货币",
     "cashEquivalent": "金额",
     "closeButton": "关闭",
-    "completeActionInstruction": "在您的币安应用中完成此操作",
-    "completeDepositInApp": "请在您的 Binance 应用中完成此存款",
-    "completeDepositInstruction": "在您的 Binance 应用中完成存款...",
+    "completeActionInstruction": "在您的币安应用中完成此步骤...",
+    "completeDepositInApp": "您将在的币安中完成充值",
+    "completeDepositInstruction": "请在您的币安应用中完成充值...",
     "completeTransferInApp": "请在您的币安应用中完成此转账",
-    "continueInBinance": "打开币安应用并继续",
+    "continueInBinance": "打开币安以继续",
     "continueTo": "继续前往{{selectedIntegrationName}}",
-    "continueWithAppButton": "继续与{{selectedIntegrationName}}应用程序合作",
-    "cryptoAmount": "金额",
-    "descriptionDeposit": "<0>完成您的交易后</0> ，在币安返回这里。",
+    "continueWithAppButton": "用{{selectedIntegrationName}}继续操作",
+    "cryptoAmount": "虚拟货币金额",
+    "descriptionDeposit": "在币安完成您的交易后 返回这里<0></0>。",
     "enterAmount": "输入转账金额",
-    "mobileLabelDeposit": "请在币安应用中完成您的交易，然后返回此处完成您的存款。",
-    "mobileLabelOnramp": "请在Binance中完成您的交易，然后返回此处完成入金流程。",
+    "mobileLabelDeposit": "请在币安完成您的交易，然后返回此处完成充值",
+    "mobileLabelOnramp": "请在币安中完成交易，然后返回此处完成入金流程。",
     "notSupported": "{{selectedIntegrationName}}不支持所请求的代币和/或网络的转账。",
-    "openBinance": "打开币安应用",
+    "openBinance": "打开币安",
     "receiveAmountInput": {
       "networkName": "在{{networkName}}"
     },
-    "returnToClient": "打开{{selectedIntegrationName}}，用您的移动设备扫描QR码，然后返回这里继续。",
+    "returnToClient": "打开{{selectedIntegrationName}}，用您的移动设备扫描二维码，然后返回此处继续。",
     "scanText": "用手机相机扫描二维码或用Binance程序来完成您的交易。",
     "scanTitle": "用Binance完成下一步",
     "selectAnotherAccount": "选择另一个账户",
@@ -49,7 +49,7 @@
     "selectAsset": "选择要转账的资产",
     "selectCurrency": "选择货币",
     "selectNetwork": "选择转账网络",
-    "transactionRequest": "交易请求已发送至您的币安应用程序。",
+    "transactionRequest": "交易请求已发送至您的币安应用。",
     "youPay": "由您支付",
     "youReceive": "由您接收"
   },
@@ -157,7 +157,7 @@
     "search": "搜索",
     "title": "选择要关联的账户",
     "title40": "选择你的账户",
-    "titleOnramp": "选择你的入金选项"
+    "titleOnramp": "选择您的入金渠道"
   },
   "catalogTile": {
     "select": "选择{{integrationName}}, {{badge}}"
@@ -259,7 +259,7 @@
   "dappDoneTransferPage": {
     "depositSubtitle": "返回{{clientName}}",
     "depositSuccess": "成功！",
-    "depositTitle": "您将在<2></2>{{clientName}}中收到<1>{{amountCrypto}} ~ {{amountFiat}}</1>。",
+    "depositTitle": "您的资金正在路上。",
     "paymentSubtitle": "返回您的结账页面以完成交易",
     "paymentSuccess": "支付成功！",
     "subtitle": "请返回至{{clientName}}完成您的交易。",
@@ -268,8 +268,8 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "返回{{clientName}}",
     "depositSuccess": "成功！",
-    "depositTitle": "您将在<5></5>{{clientName}}.中收到<2>{{amountCrypto}} ~ {{amountFiat}}</2>。",
-    "paymentSubtitle": "返回您的结账页面以完成交易",
+    "depositTitle": "您的资金正在路上。",
+    "paymentSubtitle": "请返回结账页面以完成交易",
     "paymentSuccess": "支付成功！"
   },
   "deFiWalletConnectionDeclinedPage": {
@@ -370,8 +370,8 @@
       "approvedFromCeFiToClient": "您批准从{{selectedIntegrationName}}到{{clientName}}的转账。",
       "approvedFromCeFiToDestination": "您批准从{{selectedIntegrationName}}转账到目标账户。",
       "approvedFromDeFi": "您已在{{selectedIntegrationName}}上批准了转账。",
-      "bridgingConversion": "我们已自动将您的资金转换为目标网络<1>{{destinationNetwork}}</1>。",
-      "bridgingDelivery": "您的转换资金已交付给<3>{{shortBridgingTargetAddress}}</3>的{{clientName}}。",
+      "bridgingConversion": "我们已自动将您的资金转换为目标网络所需资产<1>{{destinationNetwork}}</1>。",
+      "bridgingDelivery": "您转换后的资金已交付至<4>{{shortBridgingTargetAddress}}</4>的{{clientName}}。",
       "conversion": "将<1>{{amount}}</1>转换为<4>{{currency}}</4>。",
       "deposit": "从{{paymentMethod}}将<1>{{amount}}</1>存款至{{selectedIntegrationName}}。",
       "purchase": "从{{selectedIntegrationName}}购买价值<1>{{amount}}</1>的{{symbol}}。",
@@ -398,7 +398,7 @@
     "checkDetails": "查看原因",
     "checkDetails40": "查看交易详情",
     "depositAddress": "{{shortAddress}}该地址将收到<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>",
-    "depositClient": "您{{clientName}}({{shortAddress}}）将收到<2>{{amountCrypto}} ~{{amountFiat}}</2>",
+    "depositClient": "您的资金正在路上。",
     "directMobileBody": "返回 TAO 结账页面以完成您的支付。",
     "directMobileTitle": "支付已发起",
     "goBackToShift4": "返回Shift4",
@@ -435,7 +435,7 @@
     "accountNotFound": "未找到账户",
     "accountTypeNotSupported": "不支持该账户类型",
     "addressAllowlistPending": "地址白名单待审核",
-    "addressNotAllowlisted": "改地址未在白名单中",
+    "addressNotAllowlisted": "地址未在白名单中",
     "amountBelowMinimum": "金额过低",
     "amountExceedsMaximum": "金额过高",
     "authenticationFailed": "身份验证失败",
@@ -460,13 +460,13 @@
     "integrationNotAvailable": "钱包集成暂不可用",
     "integrationNotAvailableTitle": "{{integrationName}} 不可用",
     "invalidCredentials": "账号或密码错误",
-    "invalidField": "信息无效",
+    "invalidField": "无效信息",
     "invalidFromIntegrationToken": "身份验证已过期",
     "invalidIntegrationToken": "登录已过期",
     "invalidToIntegrationToken": "身份验证已过期",
     "kycRequired": "需要进行KYC身份验证",
     "locked": "账户已被锁定",
-    "mfaBindingRequired": "需要MFA认证",
+    "mfaBindingRequired": "需要MFA多重身份验证",
     "mfaNotSupported": "不支持多重身份验证",
     "missingField": "信息缺失",
     "networkDisabled": "网络已被禁用",
@@ -524,7 +524,7 @@
     "addressNotAllowlisted": "无法从 Coinbase 发起提币，您必须先将该地址添加到您的白名单：https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "转账金额低于此网络的最低转账金额要求。",
     "amountExceedsMaximum": "转账金额超过此网络的最高转账金额限制。",
-    "appUpdateRequired": "需要更新应用程序版本才能继续。请更新您的应用程序，然后重试。",
+    "appUpdateRequired": "该应用程序需要升级以继续。请更新您的应用后重试。 ",
     "authenticationFailed": "无法认证所选的集成服务。",
     "balanceNotEnough": "账户余额充足，但部分资金可能正在处理中、受限或用于手续费。请减少转账金额再尝试。",
     "belowMinimumFiatDeposit": "金额低于最低法币起充金额。",
@@ -563,12 +563,12 @@
     "invalidFromIntegrationToken": "请重新登录以继续。",
     "invalidIntegrationToken": "请重新登录以继续。",
     "invalidPhoneNumber": "请输入有效的电话号码。",
-    "invalidToIntegrationToken": "请重新登录以继续...步骤",
+    "invalidToIntegrationToken": "请重新登录以继续",
     "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
     "locked": "您的帐户已被锁定",
     "loginFirst": "请先登录。",
     "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
-    "mfaBindingRequired": "请设置双重身份验证（邮箱或Google Authenticator）以启用提现功能。",
+    "mfaBindingRequired": "请设置双重身份验证（邮箱或谷歌验证）以启用提现功能。",
     "mfaNotSupported": "此操作不支持多重身份验证。",
     "networkDisabled": "网络当前已被禁用，无法使用。",
     "noAvailableSmartContract": "无可用的智能合约",
@@ -601,8 +601,8 @@
     "tooManyAttemptsOneMinute": "尝试次数过多。请在 1 分钟后重试。",
     "tooManyRequests": "请稍后再试。",
     "transferAlreadyRequested": "已提交转账请求。",
-    "travelRuleRestriction": "{{integrationName}}目前不支持您所在国家/地区的转账操作。",
-    "travelRuleRestrictionPayment": "{{integrationName}}目前不支持您所在国家/地区的支付操作。",
+    "travelRuleRestriction": "{{integrationName}}目前不支持您所在国家/地区的转账功能。",
+    "travelRuleRestrictionPayment": "{{integrationName}}目前不支持您所在国家/地区的支付功能。",
     "tryAgainAfterLogin": "请登录后再试。",
     "twoFaFailed": "双重验证失败。请重试。",
     "unableToSend": "无法发起转账。请重试。",
@@ -615,11 +615,11 @@
     "withdrawalDisabledDueToC2CDepositFreeze": "为保障您的资产安全，部分 C2C 充值资产将被冻结 24 小时。24 小时后，冻结状态将自动解除，您仍可提取加密货币。在冻结期间，其他交易不受影响，请正常使用 Binance 的交易服务。",
     "withdrawalDisabledDueToScamRisk": "您的提币操作被识别为高风险。为了保障您的资金，您的账户提币功能已被暂时禁用 1 小时。",
     "withdrawalDisabledDueToSecurityReset": "由于您最近重置了安全验证，账户提币功能已被暂时停用。",
-    "withdrawalDisabledDueToSuspiciousActivity": "由于检测到可疑活动，您的提币功能已被禁用。请在 Binance 完成验证流程。如无法完成验证，请联系客服。如果您已完成验证，请稍等片刻重试。",
+    "withdrawalDisabledDueToSuspiciousActivity": "由于检测到可疑活动，您的提现功能已被禁用。请在 Binance 完成验证流程。如无法完成验证，请联系客服。如果您已完成验证，请稍等片刻重试。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
-    "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提币，请稍后再试。",
-    "withdrawalPendingDepositConfirmation": "您的充值尚未达到提币所需的锁定确认数。请查看交易记录获取更多详情。",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提币。"
+    "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提现，请稍后再试。",
+    "withdrawalPendingDepositConfirmation": "您的充值尚未达到提现所需的锁定确认数。请查看交易记录获取更多详情。",
+    "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提现。"
   },
   "errorPage": {
     "title": "出现错误。"
@@ -673,16 +673,16 @@
   },
   "feesDrawer": {
     "autoConvertBridgingFeeDescription": "包括所有转换费用和一个小的滑点缓冲。您支付的费用不会超过显示的金额。",
-    "autoConvertBridgingFeeTooltipDescription": "此费用涵盖使用我们的桥接合作伙伴在网络之间转换和转移资金的成本。它包括中继器费用、路由成本以及完成转账所需的任何跨网络执行费用。包含小的滑点缓冲以保护您的转账在执行期间免受价格变化的影响。您支付的费金额不会超过显示的金额——若未用完全部缓冲，您会自动支付更少费用。",
+    "autoConvertBridgingFeeTooltipDescription": "此费用涵盖使用我们的桥接合作伙伴在网络之间转换和转移资金的成本。它包括中继费用、路由成本以及完成转账所需的任何跨网络执行费用。包含小的滑点缓冲以保护您的转账在执行期间免受价格变化的影响。您支付的费金额不会超过显示的金额——若未用完全部缓冲，您会自动支付更少费用。",
     "automatedSwapFeeDescription": "自动兑换目标资产所需手续费",
-    "bridgingTotalDiscription": "这是您此次转账的最高费用。您可能支付更少。",
+    "bridgingTotalDiscription": "这是您此次转账的最高费用。您可能支付更少费用。",
     "bridgingTotalTooltipDiscription": "这是您可能支付的总金额，其中包括燃气费和自动转换费（包含滑点缓冲）。如果未使用全部滑点缓冲，实际收费可能会更少，但绝不会高于此费用。",
     "gasFeeDescription": "预计支付给网络验证者的交易手续费。",
     "institutionFeeDescription": "此费用用于覆盖提现网络手续费，具体金额会根据所选加密货币和当前区块链状况波动。",
     "processingFee": "{{clientName}} 手续费",
     "processingFeeDescription": "{{clientName}} 所付费用用于完成此交易。",
     "title": "包含的费用",
-    "totalDetails": "总详情"
+    "totalDetails": "总览"
   },
   "fields": {
     "apiKey": "API 密钥",
@@ -704,7 +704,7 @@
     "username": "用户名"
   },
   "fullScreenSpinner": {
-    "almostThere": "快好了——只是最后敲定细节。",
+    "almostThere": "快好了——正在确认最后细节。",
     "linking": "正在关联您的账户...",
     "loading": "处理中..."
   },
@@ -1106,6 +1106,7 @@
     "actionButton": "打开{{integrationName}}"
   },
   "navHeader": {
+    "alternativeDepositTitle": "给{{clientName}}充值",
     "close": "关闭对话框",
     "goBack": "返回上一步",
     "title": "使用加密货币支付"
@@ -1258,7 +1259,10 @@
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址进行充值",
       "dontSeeYourAccount": "没有看到你的账户？",
-      "needAnotherWay": "使用其他支付方式？"
+      "havingTrouble": "遇到问题了？",
+      "needAnotherWay": "使用其他支付方式？",
+      "tryAgain": "再次尝试",
+      "tryWithQr": "尝试使用二维码存款。"
     },
     "error": {
       "noTokensDescription": "目前没有可存款的支持代币。",
@@ -1311,18 +1315,21 @@
   },
   "payPage": {
     "amountMustBeWithin": "金额必须在{{minFiat}} - {{maxFiat}}之间",
+    "bybit": {
+      "fee": "费用：{{fee}}"
+    },
     "continueInPayApp": "继续前往 {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": ""
+      "scanQRWithAppText": "用您的crypto.com应用程序扫描二维码并完成交易"
     },
     "generateNewQr": "生成新的二维码",
     "noTransferIdError": "转账ID缺失。请重新开始。",
-    "paidConfirmation": "",
+    "paidConfirmation": "您已支付 <strong>{{amountStr}}</strong> 给 {{clientName}}",
     "paymentDataMissing": "支付数据不可用。请重试。",
     "paymentFailed": "支付失败。请重试。",
     "pollingError": "无法检查支付状态。请重试。",
-    "processing": "处理付款中...",
-    "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立关联",
+    "processing": "付款处理中...",
+    "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立连接",
     "qrGenerationFailed": "生成二维码失败。请重试。",
     "receivedDetails": "您将在{{clientName}} ({{shortAddress}})中收到<strong>{{amountStr}}</strong>",
     "scanQrCode": "扫描二维码以完成您的付款",
@@ -1455,7 +1462,7 @@
     },
     "insufficientGasBalancePage": {
       "message": "此交易需要 {{transferAmount}} 和 ~{{gasFiat}} 的 {{gasSymbol}}，以上 {{networkName}} 网络支付燃气费。",
-      "title": "燃料费余额不足"
+      "title": "燃气费余额不足"
     },
     "inWalletBrowserInitialPage": {
       "retry": "重试",
@@ -1475,7 +1482,7 @@
     },
     "oauthTimeoutPage": {
       "reopen": "重新打开{{integrationName}}",
-      "subtitle": "您似乎未完成登录流程或未批准访问权限。要继续，请重新打开{{integrationName}}并完成登录。",
+      "subtitle": "您似乎未完成登录流程或未获准访问权限。要继续，请重新打开{{integrationName}}并完成登录。",
       "title": "无法连接到{{integrationName}}"
     },
     "previewPage": {
@@ -1506,7 +1513,7 @@
       "title": "会话已过期"
     },
     "somethingWentWrongPage": {
-      "message": "我们当前处理此请求时遇到问题",
+      "message": "我们处理此请求时遇到问题",
       "title": "出了点问题"
     },
     "termsContent": {
@@ -1666,7 +1673,6 @@
     "defaultTitle": "选择代币",
     "depositTitle": "选择充值代币",
     "ineligibleAssets": "无法使用的资产",
-    "link40Subtitle": "{{clientName}} 钱包接受：",
     "link40Title": "选择一个代币",
     "loading": "正在加载您的资产……",
     "network": "{{networkName}} 网络",
@@ -1689,12 +1695,11 @@
     "label": "选择{{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "{{clientName}} 支持：",
     "estFee": "预计费用",
     "gasFeeDescription": "<0>预计燃料费：</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "无法使用的网络",
     "integrationFeeDescription": "<0>预计{{selectedIntegrationName}}费用：</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "sendVia": "通过发送",
+    "sendVia": "发送通过",
     "title": "选择一个网络"
   },
   "selectNetworkScreen": {
@@ -1923,11 +1928,11 @@
     "androidNotSupported": "此集成尚未在安卓设备上支持。",
     "authenticationFailed": "身份验证失败",
     "changeBrowserDescription": "请将您的默认浏览器更改为 Safari 以继续。",
-    "changeBrowserHeading": "更换浏览器",
+    "changeBrowserHeading": "请更换浏览器",
     "connectionClosed": "连接已关闭。请重试。",
     "connectionStatus": "连接状态：",
     "generatingSession": "正在生成安全登录会话...",
-    "iosOnlyText": "",
+    "iosOnlyText": "注意：此二维码登录仅适用于 iOS 设备。",
     "notSupportedHeading": "不支持",
     "openAppClip": "请打开应用程序剪辑以继续",
     "openMobileApp": "打开您的 Mesh 移动应用程序并扫描此二维码以继续。",
