@@ -1261,7 +1261,7 @@
       "dontSeeYourAccount": "アカウントが表示されませんか？",
       "havingTrouble": "お困りですか？",
       "needAnotherWay": "別の方法が必要ですか？",
-      "tryAgain": "もう一度試してください",
+      "tryAgain": "再度お試しください",
       "tryWithQr": "代わりに QR コードで入金してみてください。"
     },
     "error": {
@@ -1276,26 +1276,26 @@
       "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
       "copiedWalletAddress": "コピーしました",
-      "copyWalletAddress": "ウォレットアドレスをコピーする",
+      "copyWalletAddress": "ウォレットアドレスをコピー",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
-      "headline": "お困りですか？",
+      "headline": "{{network}}で{{token}}を入金",
       "infoLabel": "{{info}}（必須）",
       "networkLabel": "ネットワーク",
-      "subtitle": "手動で入金を完了することができます。",
+      "subtitle": "手動でも入金を完了できます",
       "tokenLabel": "トークン",
-      "warning": "このアドレスには{{network}}の{{token}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。"
+      "warning": "このアドレスには{{network}}上の{{token}}のみを送金してください。誤って送金した場合、資産が失われる可能性があります"
     },
     "tokenSelection": {
-      "subtitle": "{{client}}は以下を受け入れます:",
+      "subtitle": "{{client}}で利用可能：",
       "title": "トークンを選択"
     },
     "warnings": {
-      "includeMemo": "このメモを含める: <1>{{memo}}</1>",
-      "includeTag": "このタグを含める: <1>{{tag}}</1>",
-      "onlySendTokenOnNetwork": "<3>{{network}}</3> ネットワークでのみ <1>{{token}}</1> を送信する",
+      "includeMemo": "次のメモを入力してください：<1>{{memo}}</1>",
+      "includeTag": "次のタグを入力してください：<1>{{tag}}</1>",
+      "onlySendTokenOnNetwork": "<3>{{network}}</3> ネットワークで  <1>{{token}}</1> のみを送信してください",
       "requiredForDeposit": "この入金には必須です",
-      "sendAboveMinimum": "最小金額以上を送信する: <1>{{amount}}</1>"
+      "sendAboveMinimum": "最小金額 <1>{{amount}}</1> 以上を送金してください"
     }
   },
   "paymentMethods": {
@@ -1314,52 +1314,52 @@
     "topUp": "{{token}}残高をチャージする\n\n"
   },
   "payPage": {
-    "amountMustBeWithin": "金額は{{minFiat}} から {{maxFiat}} の範囲内である必要があります",
+    "amountMustBeWithin": "金額は{{minFiat}}～{{maxFiat}}の範囲内である必要があります",
     "bybit": {
-      "fee": "料金: {{fee}}"
+      "fee": "手数料：{{fee}}"
     },
-    "continueInPayApp": "{{integrationName}}で続ける",
+    "continueInPayApp": "{{integrationName}}で続行する",
     "cryptoCom": {
-      "scanQRWithAppText": "Crypto.com アプリでQRコードをスキャンし、取引を完了してください。"
+      "scanQRWithAppText": "Crypto.comアプリでQRコードをスキャンし、取引を完了してください"
     },
-    "generateNewQr": "新しいQRコードを生成する",
-    "noTransferIdError": "転送IDが見つかりません。最初からやり直してください。",
-    "paidConfirmation": "あなたは<strong>{{amountStr}}</strong>を{{clientName}}に支払いました。",
-    "paymentDataMissing": "支払いデータが利用できません。もう一度お試しください。",
-    "paymentFailed": "支払いに失敗しました。もう一度お試しください。",
-    "pollingError": "支払いステータスを確認できません。もう一度お試しください。",
-    "processing": "お支払いを処理しています...",
-    "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
-    "qrGenerationFailed": "QRコードの生成に失敗しました。もう一度お試しください。",
-    "receivedDetails": "<1>{{amountStr}}</1> を{{clientName}} ({{shortAddress}})で受け取ります",
-    "scanQrCode": "コードをスキャンしてお支払いを完了してください",
-    "selectAsset": "転送する資産を選択",
-    "selectNetwork": "転送ネットワークを選択",
-    "transactionComplete": "取引完了しました",
-    "unsupportedCurrencyError": "この通貨はお住まいの国でサポートされていません。",
-    "updateFailed": "お支払い情報の取得に失敗しました。もう一度お試しください。",
+    "generateNewQr": "新しいQRコードを生成",
+    "noTransferIdError": "送金IDが見つかりません。最初からやり直してください。",
+    "paidConfirmation": "{{clientName}}に<strong>{{amountStr}}</strong>を支払いました",
+    "paymentDataMissing": "支払いデータを取得できません。再度お試しください。",
+    "paymentFailed": "支払いに失敗しました。再度お試しください。",
+    "pollingError": "支払い状況を確認できません。再度お試しください。",
+    "processing": "支払いを処理中です…",
+    "qrCodeLabel": "モバイル端末でQRコードをスキャンして接続できます",
+    "qrGenerationFailed": "QRコードの生成に失敗しました。再度お試しください。",
+    "receivedDetails": "{{clientName}}（{{shortAddress}}）で<strong>{{amountStr}}</strong>を受け取ります",
+    "scanQrCode": "QRコードをスキャンして支払いを完了してください",
+    "selectAsset": "送金する資産を選択",
+    "selectNetwork": "送金ネットワークを選択",
+    "transactionComplete": "取引が完了しました",
+    "unsupportedCurrencyError": "この通貨はお住まいの国ではご利用いただけません。",
+    "updateFailed": "支払い情報の取得に失敗しました。再度お試しください。",
     "youPay": "支払う",
     "youReceive": "受け取る"
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "現在、お客様の国からのアクセスは許可されておりません。",
+      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。 ",
       "title": "アクセスが拒否されました"
     },
     "belowBinanceMinimumPage": {
-      "message": "この {{transferAmount}} の支払いは、{{symbol}} を {{networkName}} で転送するための Binance の {{minAmount}} の最低額（および手数料）を下回っています。",
-      "title": "Binance の最低以下"
+      "message": "この{{transferAmount}}の支払いは、{{networkName}}で{{symbol}}を送金するためのBinanceの最小金額（{{minAmount}}＋手数料）を下回っています。",
+      "title": "Binanceの最小金額未満"
     },
     "brokerLoading": {
-      "preparingPayment": "支払い内容を準備中"
+      "preparingPayment": "支払い情報を準備しています"
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "integrationMultipleTokenNetworkCompatibility": "サポートされていないトークンとネットワーク",
-        "integrationNotSupportedCountry": "この地域では利用できません",
-        "integrationSingleTokenNetworkCompatibility": "サポートされていないトークンとネットワーク",
-        "lessThanIntegrationMinAmount": "金額が最小額以下です",
-        "moreThanIntegrationMaxAmount": "金額が最大額を超えています",
+        "integrationMultipleTokenNetworkCompatibility": "対応していないトークンおよびネットワークです",
+        "integrationNotSupportedCountry": "このサービスはお客様の地域ではご利用いただけません",
+        "integrationSingleTokenNetworkCompatibility": "対応していないトークンおよびネットワークです",
+        "lessThanIntegrationMinAmount": "最小金額を下回っています",
+        "moreThanIntegrationMaxAmount": "最大金額を超えています",
         "platformNotSupported": "このデバイスではサポートされていません",
         "sdkVersionNotSupported": "対象外",
         "travelRuleAmountLimit": "適格性制限の遵守",
