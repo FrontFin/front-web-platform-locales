@@ -667,8 +667,8 @@
     "mobileStep1": "Completa la verificación facial para confirmar tu identidad e iniciar sesión.",
     "mobileStep2": "Haz clic en <1>Abrir {{integrationName}} aplicación</1> para abrir tu aplicación y completar la verificación facial.",
     "mobileStep3": "Vuelve aquí para terminar de vincular tu cuenta.",
-    "openApp": "Abrir aplicación de {{integrationName}}",
-    "reopenApp": "Volver a abrir aplicación de {{integrationName}}",
+    "openApp": "Abrir la aplicación de {{integrationName}}",
+    "reopenApp": "Volver a abrir la aplicación de {{integrationName}}",
     "title": "Verificación"
   },
   "feesDrawer": {
@@ -691,7 +691,7 @@
     "challengeCode": "Código de desafío",
     "clientId": "ID de cliente",
     "clientSecret": "Secreto del cliente",
-    "email": "E-mail",
+    "email": "Correo electrónico",
     "emailOrUsername": "Correo electrónico o nombre de usuario",
     "mfaCode": "Código MFA",
     "passphrase": "Frase de acceso",
@@ -706,7 +706,7 @@
   "fullScreenSpinner": {
     "almostThere": "Casi listo — solo finalizando los detalles.",
     "linking": "Vinculando tu cuenta...",
-    "loading": "Espere por favor..."
+    "loading": "Espera por favor..."
   },
   "fundingLoadingOverlay": {
     "loading": "Cargando..."
@@ -715,13 +715,13 @@
     "fee": {
       "conversion": "Comisión de Conversión de {{integrationName}} {{conversionFromCurrency}} a {{conversionToCurrency}} ",
       "deposit": "Comisión de depósito {{integrationName}}",
-      "purchase": "{{integrationName}} {{fiatSymbol}} a {{cryptocurrencySymbol}} Comisión de Compra",
+      "purchase": "Comisión de Compra de{{integrationName}} {{fiatSymbol}} a {{cryptocurrencySymbol}}",
       "withdrawal": "Comisión por retiro desde {{integrationName}}"
     },
     "info": {
-      "conversion": "La comisión que {{integrationName}} cobrará para convertir tu {{conversionFromSymbol}} en {{conversionToSymbol}}.",
+      "conversion": "La comisión que {{integrationName}} cobrará para convertir tu {{conversionFromSymbol}} a {{conversionToSymbol}}.",
       "purchase": "La comisión que {{integrationName}} cobrará por facilitar tu compra de {{symbol}}.",
-      "withdrawal": "La comisión que {{integrationName}} cobrará para facilitar tu transferencia de {{symbol}}."
+      "withdrawal": "La comisión que {{integrationName}} cobrará para facilitar tu transferencia desde {{symbol}}."
     }
   },
   "fundingMethodsList": {
@@ -736,16 +736,16 @@
   "fundingOptionUnavailabilityReason": {
     "buyingPowerUsageNotSupported": "{{integrationName}} no soporta el uso de esta forma de pago para comprar {{assetName}}.",
     "coveredByExistingCryptocurrencyBalance": "Tienes suficiente saldo en {{assetName}} para esta compra sin necesidad de utilizar otras formas de pago adicionales.",
-    "coveredByOtherFundingOptions": "No está disponible la forma de pago para esta transacción.",
+    "coveredByOtherFundingOptions": "Esta forma de pago no está disponible para esta transacción.",
     "currencyNotSupported": "Aún no se admite la compra de criptomonedas con una forma de pago que no esté basado en USD.",
     "depositAmountLimitExceeded": "La compra superaría tu límite máximo de depósito de {{integrationName}} para el día de hoy con esta forma de pago.",
     "depositCountLimitReached": "Esta forma de pago ya ha alcanzado el número máximo de depósito de {{integrationName}} el día de hoy.",
-    "depositsNotSupported": "Esta forma de pago no está habilitada para esta transacción.",
+    "depositsNotSupported": "Esta forma de pago no está disponible para esta transacción.",
     "instantDepositLimitExceeded": "El límite de depósitos instantáneos para esta forma de pago es insuficiente para la compra",
     "instantDepositsNotSupported": "Esa forma de pago no soporta depósitos instantáneos, por lo que no puede ser utilizada para esta compra.",
     "insufficientBalance": "Saldo insuficiente para realizar esta compra.",
-    "maximumDepositLimitViolated": "La cantidad está por encima del límite máximo de depósito de ésta forma de pago.",
-    "minimumDepositLimitViolated": "La cantidad está por debajo del límite mínimo de depósito de este método de financiación.",
+    "maximumDepositLimitViolated": "El monto está por encima del límite máximo de depósito de esta forma de pago.",
+    "minimumDepositLimitViolated": "El monto está por debajo del límite mínimo de depósito de este forma de pago.",
     "paymentMethodTypeNotSupported": "Esta forma de pago aún no está disponible.",
     "unknown": "Esta forma de pago no está disponible."
   },
@@ -757,19 +757,19 @@
     "balances": "Saldos",
     "balanceWithAproximateFiat": "Saldo: {{amount}} ~ {{amountInFiat}}",
     "buyingPower": "Poder de compra",
-    "changeAmount": "O cambia la cantidad para transferir a {{availableAmount}}.",
+    "changeAmount": "O cambia el monto a transferir a {{availableAmount}}.",
     "changePreferredPaymentMethod": "Cambiar la forma de pago predeterminada",
     "changePreferredToken": "Cambiar el token preferido",
-    "cryptoConversion": "Cambio de criptomonedas",
+    "cryptoConversion": "Conversión de criptomonedas",
     "description": "Total: {{amount}} ~ {{amountInFiat}}",
     "instantCashAvailable": "(Dinero inmediato disponible: {{amountInFiat}})",
     "insufficientFunds": "Saldo insuficiente",
     "linkedPaymentMethods": "Formas de pago vinculadas",
     "noPaymentMethods": "No hay formas de pago vinculadas.",
-    "noTokensAvailableForConversion": "No hay tokens disponibles para la conversión",
+    "noTokensAvailableForConversion": "No hay tokens disponibles para conversión",
     "save": "Guardar",
-    "selectFundingMethodAvailablity": "Tus formas de pago seleccionadas tienen {{selectedAvailableAmount}} disponible. Por favor, selecciona otras formas de pago adicionales para completar {{neededAmount}}.",
-    "selectFundingMethods": "Por favor, selecciona formas de pago para transferir <2>{{amount}} ~ {{amountInFiat}}</2>.",
+    "selectFundingMethodAvailablity": "Las formas de pago seleccionadas tienen {{selectedAvailableAmount}} disponible. Por favor, selecciona otras formas de pago adicionales para completar {{neededAmount}}.",
+    "selectFundingMethods": "Por favor, selecciona la(s) forma(s) de pago para transferir <2>{{amount}} ~ {{amountInFiat}}</2>.",
     "selectFundingMethodsTitle": "No se ha seleccionado un método de financiamiento",
     "selectOtherHoldings": "Seleccionar otros recursos",
     "symbolBalance": "Saldo {{symbol}}",
@@ -811,16 +811,16 @@
   "generateKeyPage": {
     "establishedInClient": "Has establecido con éxito actualizaciones ininterrumpidas en<1></1><2>{{clientName}}</2>.",
     "establishedInThisApp": "Ha establecido con éxito actualizaciones ininterrumpidas en<1></1><2>esta aplicación</2>.",
-    "linkedToInClient": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>{{clientName}}</5>.",
-    "linkedToThisApp": "Has enlazado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>esta aplicación</5>.",
-    "nextStep": "A continuación crearemos una llave para <2>actualizaciones ininterrumpidas</2> para que no tenga que volver a iniciar sesión",
-    "tempAccess": "Sólo quiero acceso temporal"
+    "linkedToInClient": "Has vinculado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>{{clientName}}</5>.",
+    "linkedToThisApp": "Has vinculado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>esta aplicación</5>.",
+    "nextStep": "A continuación crearemos una llave para <2>actualizaciones ininterrumpidas</2> para que no tengas que volver a iniciar sesión",
+    "tempAccess": "Solo quiero acceso temporal"
   },
   "getBrokerAccessTokenErrors": {
     "add2FA": "Por favor, conecta la aplicación para 2FA. E intenta de nuevo.",
     "identityVerificationRequired": "Necesitas completar la verificación de identidad para usar la función de llaves de API. Por favor, completa la verificación de identidad para continuar.",
     "invalidCredentials": "Credenciales de inicio de sesión inválidas. Por favor, inténtalo de nuevo.",
-    "maximumApiKeyLimitExceeded": "Se alcanzó la limitación máxima permitida para la llave del API. Por favor, elimina una llave no utilizada para continuar.",
+    "maximumApiKeyLimitExceeded": "Se alcanzó el límite máximo permitido de llaves API. Por favor, elimina una llave no utilizada para continuar.",
     "unsupportedCountryErrorMessage": "Actualmente no soportamos tu cuenta",
     "wrongEmailCode": "Código de correo electrónico incorrecto, por favor intenta de nuevo",
     "wrongTotpCode": "Código de autenticación incorrecto, por favor intenta de nuevo"
@@ -855,14 +855,14 @@
     "title": "Agregar fondos"
   },
   "ineligibleReason": {
-    "amountBelowMinimumDescription": "La cantidad solicitada de {{requestedAmount}} es menor que el mínimo de {{integrationName}} de {{minimumAmount}} para transferir en la red {{network}}.",
+    "amountBelowMinimumDescription": "El monto solicitado de {{requestedAmount}} es menor que el mínimo de {{integrationName}} de {{minimumAmount}} para transferir en la red {{network}}.",
     "balanceBelowIntegrationMinimumDescription": "Tu saldo de {{currentBalance}} es menor que el mínimo de {{minimumAmount}} para transferir {{symbol}} en {{network}} de {{integrationName}}. Por favor, recarga tu saldo e intenta de nuevo.",
     "balanceBelowMinimumDescription": "Tu saldo de {{currentBalance}} es menor que el mínimo requerido por {{integrationName}} de {{minimumAmount}} para transferir en la red {{network}}.",
     "belowMinimum": "Menor que el mínimo requerido por {{integrationName}}",
     "belowRequestedAmountDescription": "Tu saldo de {{balance}} es menor que los {{amount}} necesarios para cubrir el monto de la transferencia solicitada + las comisiones.",
     "gasFeeAssetBalanceNotEnoughDescription": "Tu saldo de {{balance}} es insuficiente para cubrir las comisiones de red estimadas de {{gasFee}} en la red {{network}}.",
     "insufficientBalance": "Saldo insuficiente",
-    "insufficientBalanceDescription": "Tu saldo en {{currentBalance}} es menor que el mínimo para esta transferencia.",
+    "insufficientBalanceDescription": "Tu saldo en {{currentBalance}} es menor que el mínimo requerido para esta transferencia.",
     "noBalance": "Sin saldo",
     "noBalancePaymentDescription": "Tu saldo de {{balance}} es insuficiente para realizar este pago de {{amount}}. Por favor, recarga tu saldo e intenta de nuevo.",
     "noBalancePaymentSelectNetworkDescription": "Tu saldo de {{balance}} es insuficiente para realizar este pago de {{amount}}. Por favor, selecciona otra red o recarga tu saldo e intenta de nuevo.",
@@ -876,12 +876,12 @@
     "noGasBalancePaymentSelectNetworkDescription": "Esta transacción requiere {{amount}} y {{feeInFiat}} de {{feeSymbol}} para pagar las comisiones de la red. Por favor, selecciona otra red o recarga tus saldos e intenta de nuevo.",
     "noGasBalanceTransferDescription": "Esta transacción requiere un saldo disponible de {{symbol}} y {{feeInFiat}} de {{feeSymbol}} para pagar las comisiones de la red. Por favor, recarga tus saldos e intenta de nuevo.",
     "noGasBalanceTransferSelectNetworkDescription": "Esta transacción requiere un saldo disponible de {{symbol}} y {{feeInFiat}} de {{feeSymbol}} para pagar las comisiones de la red. Por favor, selecciona otra red o recarga tus saldos e intenta de nuevo.",
-    "notEligible": "No permitido para esta transferencia",
+    "notEligible": "No elegible para esta transferencia",
     "notEligibleDescription": "{{symbol}} no es aceptado para esta transferencia.",
     "notSupportedByInstitution": "No es soportado por {{integrationName}} en este momento.",
     "notSupportedForTransferBySource": "No es soportado por {{integrationName}}",
-    "nyCoinbaseUserRestrictions": "{{symbol}} en {{network}} no es aceptado para esta transferencia debido a las restricciones de multicadena de NY.",
-    "symbolDoesNotMatch": "No es soportado por {{clientName}}",
+    "nyCoinbaseUserRestrictions": "{{symbol}} en {{network}} no es aceptado para esta transferencia debido a las restricciones de soporte multicadena de NY.",
+    "symbolDoesNotMatch": "No está soportado por {{clientName}}",
     "symbolDoesNotMatchDescription": "{{symbol}} no es aceptado para esta transferencia.",
     "symbolDoesNotMatchNoClientName": "No compatible con esta aplicación"
   },
@@ -889,17 +889,17 @@
     "title": "Enciende y desbloquea tu dispositivo"
   },
   "initialScreen": {
-    "accountTitle": "Esta aplicación se enlazará de forma segura su cuenta",
-    "clientNameAccountTitle": "{{clientName}} enlazará su cuenta de forma segura",
+    "accountTitle": "Esta aplicación se vinculará de forma segura tu cuenta",
+    "clientNameAccountTitle": "{{clientName}} vinculará tu cuenta de forma segura",
     "clientNameWalletTitle": "{{clientName}} conectará tu wallet de forma segura",
     "walletTitle": "Esta aplicación se conectará de forma segura a tu wallet"
   },
   "initialSteps": {
-    "agreement": "Al seleccionar \"Continuar\" usted acepta los <1></1><2>Términos y Condiciones</2>",
-    "credentials": "Sus credenciales de inicio de sesión nunca se almacenan",
-    "encryption": "Sus datos están cifrados en todo momento",
+    "agreement": "Al seleccionar \"Continuar\" aceptas los <1></1><2>Términos y Condiciones</2>",
+    "credentials": "Tus credenciales de inicio de sesión nunca se almacenan",
+    "encryption": "Tus datos están cifrados en todo momento",
     "explicitApproval": "Tu aprobación explícita siempre es necesaria para iniciar una transferencia",
-    "thirdParty": "Tus activos nunca tocan a un tercero"
+    "thirdParty": "Tus activos nunca entran en contacto con terceros"
   },
   "initialVerifyPage": {
     "approveSignature": "Aprueba la solicitud de firma en tu aplicación {{walletName}}.",
@@ -907,7 +907,7 @@
     "content40": "Confirma que posees esta wallet",
     "drawerTitle": "Aprueba la solicitud de firma<1></1> en tu wallet",
     "item1Body": "Se te pedirá que firmes un mensaje en {{selectedIntegrationName}} que confirma la propiedad esta wallet.",
-    "item1Title": "{{clientName}} debe validar la dirección",
+    "item1Title": "{{clientName}} debe verificar tu dirección",
     "item2Body": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu wallet.",
     "item2Title": "Rápido, seguro y gratuito",
     "monitoringLabel": "Esperando la firma...",
