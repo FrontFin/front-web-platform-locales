@@ -554,7 +554,7 @@
     "fromAccountNotSupported": "Konto nie obsługuje obecnie wypłat w kryptowalutach.",
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
-    "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Masz jeszcze {{count}} szanse.",
+    "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
@@ -567,7 +567,7 @@
     "kycRequired": "Nie można zainicjować transferu. Integracja wymaga ukończenia weryfikacji KYC na koncie przed włączeniem transferów kryptowalut.",
     "locked": "Twoje konto jest zablokowane",
     "loginFirst": "Proszę najpierw się zalogować.",
-    "loginWithQrOrMobileLink": "Zaloguj się za pomocą kodu QR lub łącza mobilnego.",
+    "loginWithQrOrMobileLink": "Zaloguj się za pomocą kodu QR lub linku mobilnego.",
     "mfaBindingRequired": "Proszę ustawić uwierzytelnianie dwuskładnikowe (e-mail lub Google Authenticator), aby umożliwić wypłaty.",
     "mfaNotSupported": "Uwierzytelnianie wieloskładnikowe nie jest obsługiwane dla tej operacji.",
     "networkDisabled": "Sieć jest obecnie wyłączona i nie może być używana.",
@@ -584,11 +584,11 @@
     "pleaseTryAgain": "Proszę spróbować ponownie.",
     "pleaseTryAgainIn1Hour": "Proszę spróbować ponownie za 1 godzinę.",
     "previewExpired": "Podgląd wygasł.",
-    "qrOrMobileLinkIn24Hours": "Proszę spróbować ponownie za 24 godzin, używając kodu QR lub łącza mobilnego.",
-    "refusedByIntegration": "Nie można zainicjować transferu.",
-    "refusedByIntegrationDeposit": "Nie można zainicjować depozytu.",
-    "refusedByIntegrationOnramp": "Nie można zainicjować zakupu.",
-    "refusedByIntegrationPayment": "Nie można zainicjować płatności.",
+    "qrOrMobileLinkIn24Hours": "Proszę spróbować ponownie za 24 godziny, używając kodu QR lub linku mobilnego.",
+    "refusedByIntegration": "Nie można rozpocząć transferu.",
+    "refusedByIntegrationDeposit": "Nie można rozpocząć wpłaty.",
+    "refusedByIntegrationOnramp": "Nie można rozpocząć zakupu.",
+    "refusedByIntegrationPayment": "Nie można rozpocząć płatności.",
     "reLogInFaceRecognitionDueToScamRisk": "Dla twojego bezpieczeństwa, prosimy o ponowne zalogowanie i dokończenie rozpoznawania twarzy.",
     "satoshiTestRequired": "Coinbase nie wspiera transferów powyżej 1000 euro. Proszę spróbować ponownie z niższą kwotą.",
     "selfTransferNotAllowed": "Nie możesz wysłać transferu z konta na to samo konto.",
@@ -795,7 +795,7 @@
     "stablecoinDepositDisclaimerFirstLine": "Target akceptuje depozyty w stablecoinie {{symbol}}.",
     "stablecoinPaymentDisclaimerFirstLine": "Target akceptuje płatności w stablecoinie {{symbol}}.",
     "stablecoinTransferDisclaimerFirstLine": "Target akceptuje transfery w stablecoinie {{symbol}}.",
-    "thisMerchant": "Ten handlowiec",
+    "thisMerchant": "Ten sprzedawca",
     "title": "Metody płatności",
     "total": "Razem: {{amountInFiat}}"
   },
@@ -844,12 +844,12 @@
     "connectAction": "Połącz się z {{selectedIntegrationName}}"
   },
   "homePage": {
-    "buy": "Kupić",
+    "buy": "Kup",
     "buyDescription": "Kup kryptowalutę natychmiast za pomocą karty lub banku.",
     "guaranteed": "Gwarantowane",
     "noExtraFee": "Bez dodatkowej opłaty",
     "secureDeposit": "Bezpieczna wpłata",
-    "sendFunds": "Prześlij środki bezpiecznie na poprawny adres i sieć.",
+    "sendFunds": "Wysyłaj środki bezpiecznie na właściwy adres i sieć.",
     "sendUsingQR": "Prześlij środki ręcznie, używając kodu QR.",
     "standardDeposit": "Standardowa wpłata",
     "title": "Dodaj środki"
@@ -930,7 +930,7 @@
   "inWalletBrowserVerifyPage": {
     "resend": "Wyślij ponownie prośbę o podpis",
     "subtitleAlreadyDenied": "Wygląda na to, że odrzuciłeś prośbę o podpis. Revolut nie może zweryfikować własności Twojego portfela bez podpisu.",
-    "subtitleInitial": "Potwierdź, że posiadasz ten portfel, podpisując wiadomość. Jeśli nie widzisz żądania, kliknij przycisk poniżej.",
+    "subtitleInitial": "Potwierdź, że jesteś właścicielem tego portfela, podpisując wiadomość. Jeśli nie widzisz żądania, kliknij przycisk poniżej.",
     "titleAlreadyDenied": "Ups!",
     "titleInitial": "Zweryfikuj swój portfel"
   },
@@ -1262,10 +1262,10 @@
       "havingTrouble": "Masz problemy?",
       "needAnotherWay": "Potrzebujesz innej metody?",
       "tryAgain": "Spróbuj ponownie",
-      "tryWithQr": "Spróbuj wpłacić za pomocą kodu QR."
+      "tryWithQr": "Spróbuj wpłacić środki za pomocą kodu QR."
     },
     "error": {
-      "noTokensDescription": "Obecnie brak obsługiwanych tokenów dostępnych do wpłaty.",
+      "noTokensDescription": "Obecnie nie ma dostępnych obsługiwanych tokenów do wpłaty.",
       "noTokensTitle": "Brak dostępnych tokenów"
     },
     "networkSelection": {
@@ -1361,7 +1361,7 @@
         "lessThanIntegrationMinAmount": "Kwota poniżej minimum",
         "moreThanIntegrationMaxAmount": "Kwota powyżej maksimum",
         "platformNotSupported": "Nieobsługiwane na tym urządzeniu",
-        "sdkVersionNotSupported": "Niekwalifikowalny",
+        "sdkVersionNotSupported": "Nieobsługiwana wersja SDK",
         "travelRuleAmountLimit": "Ograniczenia kwalifikacji na zgodność",
         "travelRuleVaspIdRequired": "Ograniczenia kwalifikacji na zgodność",
         "travelRuleWalletOwnershipRequired": "Ograniczenia kwalifikacji na zgodność"
@@ -1390,12 +1390,12 @@
       "oauthLogin": "Zaloguj się na swoje konto i zezwól na dostęp"
     },
     "dappInfoScreen": {
-      "rule3": "Automatyczna wymiana utrzymuje prostotę.",
-      "title": "Opłać w swoim portfelu"
+      "rule3": "Automatyczna wymiana ułatwia cały proces.",
+      "title": "Zapłać w swoim portfelu"
     },
     "dappSpinner": {
       "retry": "Ponów",
-      "title": "Dokończ płatność w swoim portfelu {{walletName}}"
+      "title": "Sfinalizuj płatność w swoim portfelu {{walletName}}"
     },
     "doneTransferDetailsPage": {
       "disclaimer": "Kurs wymiany mógł się zmienić podczas transakcji.",
@@ -1846,7 +1846,7 @@
     "insufficientGasFeeDescription": "Ten przelew wymaga {{gasFee}} w {{symbol}} na pokrycie opłat za sieć.",
     "noBalanceBody": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
     "noBalanceOnSpecificNetwork": "Nie posiadasz {{symbol}} w sieci {{network}}.",
-    "noBalanceTitle": "Brak salda",
+    "noBalanceTitle": "Brak środków",
     "paymentBody": "Twoje saldo jest zbyt niskie, aby zrealizować ten zakup.",
     "paymentInsufficientBalance": "Twój {{balance}} {{symbol}} na sieci {{network}} jest niewystarczający, aby dokonać tej płatności w wysokości {{amount}} {{symbol}}.",
     "paymentInsufficientBalanceAndGas": "Ta transakcja wymaga {{amount}} {{symbol}} oraz ~${{gasFee}} w ETH na sieci {{network}}, aby opłacić koszty gazu.",
@@ -1934,10 +1934,10 @@
     "generatingSession": "Generowanie bezpiecznej sesji logowania...",
     "iosOnlyText": "Uwaga: Ten login QR działa tylko na urządzeniach z systemem iOS.",
     "notSupportedHeading": "Nieobsługiwany",
-    "openAppClip": "Proszę otworzyć klip aplikacji, aby kontynuować",
+    "openAppClip": "Proszę otworzyć App Clip, aby kontynuować",
     "openMobileApp": "Otwórz swoją aplikację mobilną Mesh i zeskanuj ten kod QR, aby kontynuować.",
     "qrCodeAlt": "Kod QR do logowania TrueAuth",
-    "scanToLogin": "Zeskanuj, aby zalogować się",
+    "scanToLogin": "Zeskanuj, aby się zalogować",
     "somethingWentWrong": "Coś poszło nie tak"
   },
   "verifyAddressAndNetworkErrorPage": {
