@@ -268,7 +268,7 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "Palaa {{clientName}}iin",
     "depositSuccess": "Onnistui!",
-    "depositTitle": "Rahasi on lähetetty.",
+    "depositTitle": "Varojen siirto on käynnissä.",
     "paymentSubtitle": "Palaa kassalle viimeistelläksesi tilauksesi",
     "paymentSuccess": "Maksu onnistui!"
   },
@@ -398,7 +398,7 @@
     "checkDetails": "Katso mitä tapahtui",
     "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>vastaanotetaan osoitteeseen {{shortAddress}}",
-    "depositClient": "Rahasi on lähetetty.",
+    "depositClient": "Varojen siirto on käynnissä.",
     "directMobileBody": "Palaa TAO-maksusivullesi viimeistelläksesi maksusi.",
     "directMobileTitle": "Maksu aloitettu",
     "goBackToShift4": "← Palaa Shift4:ään",
@@ -1417,11 +1417,11 @@
     },
     "fundingOptions": {
       "available": "{{amount}} käytettävissä",
-      "balances": "Saldot",
+      "balances": "Saldo(t)",
       "buyingPower": "Ostovoima",
-      "exchangeRateDisclaimer": "Vaihtokurssi voi sisältää hajontaa.",
-      "instantCashAvailable": "Välittömästi käytettävissä oleva raha: {{amount}}",
-      "linkedPaymentMethods": "Linkitetyt Maksutavat",
+      "exchangeRateDisclaimer": "Vaihtokurssi voi sisältää spreadin.",
+      "instantCashAvailable": "Välittömästi käytettävissä olevat käteisvarat: {{amount}}",
+      "linkedPaymentMethods": "Linkitetyt maksutavat",
       "paymentMethodTypes": {
         "bankAccount": "Pankkitili",
         "card": "Kortti",
@@ -1431,37 +1431,37 @@
       "total": "Yhteensä {{amount}}"
     },
     "fundingSteps": {
-      "approval": "Hyväksy siirto pois {{integrationName}}",
-      "conversion": "Vaihda {{amount}} valuutaksi {{currency}}",
-      "deposit": "Talletus {{amount}} maksutavasta {{paymentMethod}}",
-      "errorMessage": "Virhe on tapahtunut. Yritä uudestaan",
-      "purchase": "Osto {{amount}} {{symbol}}",
-      "transfer": "Siirrä {{symbol}} ostoksesi maksuun"
+      "approval": "Hyväksyntä varojen siirrolle {{integrationName}}sta",
+      "conversion": "{{amount}} muunto valuutaksi {{currency}}",
+      "deposit": "{{amount}} talletus maksutavasta {{paymentMethod}}",
+      "errorMessage": "Tapahtui virhe. Yritä uudestaan",
+      "purchase": "{{amount}} {{symbol}} osto",
+      "transfer": "Siirrä {{symbol}} ostostasi varten"
     },
     "infoScreen": {
-      "rule1": "Tietojasi ei koskaan tallenneta. Pääsy päättyy tämän maksun jälkeen.",
+      "rule1": "Tietojasi ei koskaan tallenneta. Käyttöoikeus päättyy tämän maksun jälkeen.",
       "rule2": "Käytä kryptovaluuttaasi, tarkista tiedot ja hyväksy maksu.",
       "rule3": "Automaattinen muunnos pitää asiat yksinkertaisina.",
-      "title": "Kirjaudu sisään tarkistaaksesi maksutiedot"
+      "title": "Kirjaudu sisään tarkistaaksesi maksun tiedot"
     },
     "initialSteps": {
-      "terms": "PayPal mahdollistaa kryptomaksut tälle myyjälle. Jatkamalla sallit Meshin pyytää siirtoa PayPal-tililtäsi maksun suorittamiseksi.<1>Meshin ehdot koskevat.</1>"
+      "terms": "PayPal mahdollistaa kryptomaksut tälle myyjälle. Jatkamalla annat Meshille luvan pyytää siirtoa tililtäsi PayPalille maksua varten.<1>Meshin käyttöehdot ovat voimassat.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Valitse toinen tili",
-      "message": "Sinun {{balanceAmount}} saldo ei riitä tekemään tätä {{paymentAmount}} maksua.",
-      "messageWithNetwork": "Sinun {{balanceAmount}} saldo {{network}} verkossa ei riitä tekemään tätä {{paymentAmount}} maksua.",
+      "message": "Sinun {{balanceAmount}} saldo ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
+      "messageWithNetwork": "Sinun {{balanceAmount}} saldo {{network}} verkossa ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
       "network": "Verkko",
       "title": "Riittämätön saldo",
       "topUpAccount": "Ole hyvä ja lisää saldoa tilillesi ja yritä uudelleen.",
-      "topUpWallet": "Täydennä lompakkosi ja yritä uudelleen.",
-      "topUpWalletTryOtherNetwork": "Ole hyvä ja täydennä lompakkosi saldoa ja yritä uudelleen tai kokeile toista verkkoa."
+      "topUpWallet": "Lisää varoja lompakkoosi ja yritä uudelleen.",
+      "topUpWalletTryOtherNetwork": "Ole hyvä ja lisää varoja lompakkoosi ja yritä uudelleen tai kokeile toista verkkoa."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} kaasumaksuihin."
+      "message": "Tämä tapahtuma vaatii {{transferAmount}} sekä ~{{gasFiat}} arvosta {{gasSymbol}} kaasumaksuihin."
     },
     "insufficientGasBalancePage": {
-      "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} verkossa {{networkName}} kaasumaksujen maksamiseen.",
+      "message": "Tämä tapahtuma vaatii {{transferAmount}} sekä ~{{gasFiat}} arvosta {{gasSymbol}} verkossa {{networkName}} kaasumaksujen maksamiseen.",
       "title": "Riittämätön kaasusaldo"
     },
     "inWalletBrowserInitialPage": {
@@ -1469,7 +1469,7 @@
       "title": "Hyväksy yhteyspyyntö jatkaaksesi maksua"
     },
     "inWalletDoneTransferPage": {
-      "subtitle": "Palaa kassasivulle verkkoselaimessasi vahvistusta ja tilauksen tietoja varten.",
+      "subtitle": "Palaa kassalle verkkoselaimessasi tilauksen vahvistusta varten sekä tarkistaaksesi tilauksen.",
       "title": "Melkein valmis"
     },
     "networkButton": {
