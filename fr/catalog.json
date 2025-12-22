@@ -24,10 +24,10 @@
     "buyCrypto": "Acheter des crypto-monnaies via Binance Connect",
     "cashEquivalent": "Équivalent en espèces",
     "closeButton": "Fermer",
-    "completeActionInstruction": "Terminez cette action dans votre application Binance...",
-    "completeDepositInApp": "Vous allez terminer ce dépôt dans votre application Binance",
+    "completeActionInstruction": "Complétez cette action dans votre application Binance...",
+    "completeDepositInApp": "Vous allez compléter ce dépôt dans votre application Binance",
     "completeDepositInstruction": "Complétez le dépôt dans votre application Binance...",
-    "completeTransferInApp": "Vous allez terminer ce transfert dans votre application Binance",
+    "completeTransferInApp": "Vous allez compléter ce dépôt dans votre application Binance",
     "continueInBinance": "Continuer avec Binance",
     "continueTo": "Continuer sur {{selectedIntegrationName}}",
     "continueWithAppButton": "Continuer avec l'application {{selectedIntegrationName}}",
@@ -259,7 +259,7 @@
   "dappDoneTransferPage": {
     "depositSubtitle": "Retourner à {{clientName}}",
     "depositSuccess": "Action complétée avec succès !",
-    "depositTitle": "Vous recevrez <1>{{amountCrypto}} ~ {{amountFiat}}</1> dans <2>{{clientName}}</2>.",
+    "depositTitle": "Vos fonds sont en chemin.",
     "paymentSubtitle": "Retournez sur votre page de paiement pour finaliser votre commande",
     "paymentSuccess": "Paiement réussi !",
     "subtitle": "Veuillez revenir à {{clientName}} pour finaliser votre achat.",
@@ -268,7 +268,7 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "Retourner à {{clientName}}",
     "depositSuccess": "Action complétée avec succès !",
-    "depositTitle": "Vous recevrez <2>{{amountCrypto}} ~ {{amountFiat}}</2>dans <5></5> {{clientName}}.",
+    "depositTitle": "Vos fonds sont en chemin.",
     "paymentSubtitle": "Retournez sur votre page de paiement pour finaliser votre commande",
     "paymentSuccess": "Paiement réussi !"
   },
@@ -371,7 +371,7 @@
       "approvedFromCeFiToDestination": "Vous approuvez le transfert de {{selectedIntegrationName}} vers la destination.",
       "approvedFromDeFi": "Vous avez approuvé le transfert sur {{selectedIntegrationName}}.",
       "bridgingConversion": "Nous avons automatiquement converti vos fonds pour le réseau de destination <1>{{destinationNetwork}}</1>.",
-      "bridgingDelivery": "Vos fonds convertis ont été livrés à {{clientName}} à l'adresse <3>{{shortBridgingTargetAddress}}</3>.",
+      "bridgingDelivery": "Vos fonds convertis ont été livrés à {{clientName}} à l'adresse <4>{{shortBridgingTargetAddress}}</4>.",
       "conversion": "Conversion de <1>{{amount}}</1> en <4>{{currency}}</4>.",
       "deposit": "Dépôt de <1>{{amount}}</1> depuis {{paymentMethod}} vers {{selectedIntegrationName}}.",
       "purchase": "Achat de <1>{{amount}}</1> d'une valeur de {{symbol}} dans {{selectedIntegrationName}}.",
@@ -398,7 +398,7 @@
     "checkDetails": "Voir ce qui s'est passé",
     "checkDetails40": "Voir les détails de la transaction",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>seront reçu à {{shortAddress}}",
-    "depositClient": "Vous recevrez<1></1><2>{{amountCrypto}} ~ {{amountFiat}}</2><3></3> dans {{clientName}} ({{shortAddress}})",
+    "depositClient": "Vos fonds sont en chemin.",
     "directMobileBody": "Retournez sur votre page de paiement TAO pour finaliser votre paiement.",
     "directMobileTitle": "Paiement initié",
     "goBackToShift4": "← Retourner à Shift4",
@@ -556,7 +556,6 @@
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -569,7 +568,7 @@
     "locked": "Votre compte est verrouillé",
     "loginFirst": "Veuillez vous connecter d'abord.",
     "loginWithQrOrMobileLink": "Veuillez vous connecter en utilisant le code QR ou le lien mobile.",
-    "mfaBindingRequired": "Veuillez configurer l\u000027authentification \u0000e deux facteurs (e-mail ou Google Authenticator) pour activer les retraits.",
+    "mfaBindingRequired": "Veuillez configurer l'authentification à deux facteurs (e-mail ou Google Authenticator) pour activer les retraits.",
     "mfaNotSupported": "L'authentification multifacteur n'est pas prise en charge pour cette opération.",
     "networkDisabled": "Le réseau est actuellement désactivé et ne peut pas être utilisé.",
     "noAvailableSmartContract": "Contrat intelligent indisponible",
@@ -673,8 +672,8 @@
     "title": "Vérification"
   },
   "feesDrawer": {
-    "autoConvertBridgingFeeDescription": "Inclut tous les frais de conversion et une petite marge de glissement. Vous ne paierez jamais plus que le montant indiqué.",
-    "autoConvertBridgingFeeTooltipDescription": "Ces frais couvrent le coût de conversion et de transfert de vos fonds sur différents réseaux en utilisant notre partenaire de pontage. Ils incluent les frais de relais, les coûts de routage et tous les frais d'exécution inter-réseaux nécessaires pour finaliser votre transfert. Une petite marge de glissement est incluse pour protéger votre transfert des variations de prix pendant l'exécution. Vous ne paierez jamais plus que le montant des frais indiqués — si la marge complète n'est pas utilisée, vous serez automatiquement facturé moins.",
+    "autoConvertBridgingFeeDescription": "Inclut tous les frais de conversion ainsi qu’une légère marge de glissement. Vous ne paierez jamais plus que le montant indiqué.",
+    "autoConvertBridgingFeeTooltipDescription": "Ces frais couvrent les coûts de conversion et de transfert de vos fonds entre différents réseaux via notre partenaire de pontage. Ils incluent les frais de relais, les coûts de routage ainsi que l’ensemble des frais d’exécution inter-réseaux nécessaires à la finalisation de votre transfert.\nUne légère marge de glissement est incluse afin de protéger votre transfert contre les variations de prix pendant son exécution. Vous ne paierez jamais plus que le montant des frais indiqué : si la marge complète n’est pas utilisée, le montant facturé sera automatiquement inférieur.",
     "automatedSwapFeeDescription": "Des frais pour faciliter un échange automatisé d'actifs dans votre portefeuille vers l'actif de transfert cible.",
     "bridgingTotalDiscription": "Le montant maximum que vous paierez pour ce transfert. Vous pourriez payer moins.",
     "bridgingTotalTooltipDiscription": "Ceci est le montant total que vous pourriez payer, incluant le gaz et les frais d'auto-conversion (avec marge de glissement incluse). Le montant réellement facturé pourrait être inférieur si la marge complète n'est pas utilisée, mais il ne sera jamais supérieur.",
@@ -705,7 +704,7 @@
     "username": "Nom d'utilisateur"
   },
   "fullScreenSpinner": {
-    "almostThere": "Presque là — en train de finaliser les détails.",
+    "almostThere": "Presque terminé — nous finalisons les détails.",
     "linking": "Liaison de votre compte...",
     "loading": "Toujours en cours..."
   },
@@ -732,7 +731,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1108,6 +1106,7 @@
     "actionButton": "Ouvrir {{integrationName}}"
   },
   "navHeader": {
+    "alternativeDepositTitle": "Dépôt à {{clientName}}",
     "close": "Fermer la fenêtre",
     "goBack": "Revenir en arrière",
     "title": "Payer en crypto-monnaie"
@@ -1260,7 +1259,10 @@
       "depositWithQr": "Dépôt avec code QR",
       "depositWithWalletAddress": "Déposez avec l'adresse du portefeuille",
       "dontSeeYourAccount": "Vous ne voyez pas votre compte?",
-      "needAnotherWay": "Besoin d'une autre méthode?"
+      "havingTrouble": "Avez-vous des difficultés ?",
+      "needAnotherWay": "Besoin d'une autre méthode?",
+      "tryAgain": "Réessayer",
+      "tryWithQr": "Essayez de déposer à l’aide d’un code QR."
     },
     "error": {
       "noTokensDescription": "Il n'y a pas de jetons pris en charge disponibles pour le dépôt pour le moment.",
@@ -1313,13 +1315,16 @@
   },
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
+    "bybit": {
+      "fee": "Frais : {{fee}}"
+    },
     "continueInPayApp": "Continuez dans {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": ""
+      "scanQRWithAppText": "Scannez le code QR avec votre application crypto.com et complétez la transaction"
     },
     "generateNewQr": "Générer un nouveau QR code",
     "noTransferIdError": "ID de transfert manquant. Veuillez recommencer.",
-    "paidConfirmation": "",
+    "paidConfirmation": "Vous avez payé <strong>{{amountStr}}</strong> à {{clientName}}",
     "paymentDataMissing": "Les données de paiement ne sont pas disponibles. Veuillez réessayer.",
     "paymentFailed": "Échec du paiement. Veuillez réessayer.",
     "pollingError": "Impossible de vérifier le statut du paiement. Veuillez réessayer.",
@@ -1440,7 +1445,7 @@
       "title": "Connectez-vous pour revoir les détails du paiement"
     },
     "initialSteps": {
-      "terms": "PayPal permet les paiements en crypto pour ce commerçant. En continuant, vous autorisez Mesh à demander un transfert de votre compte vers PayPal pour votre paiement.<1>Les conditions de Mesh s'appliquent.</1>"
+      "terms": "PayPal permet les paiements en cryptomonnaies pour ce commerçant. En continuant, vous autorisez Mesh à demander un transfert depuis votre compte vers PayPal afin d’effectuer votre paiement.\n<1>Les conditions de Mesh s’appliquent.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Choisissez un autre compte",
@@ -1668,7 +1673,6 @@
     "defaultTitle": "Sélectionner un jeton",
     "depositTitle": "Sélectionner un jeton de dépôt",
     "ineligibleAssets": "Actifs inéligibles",
-    "link40Subtitle": "Le portefeuille de {{clientName}} accepte :",
     "link40Title": "Choisissez un jeton",
     "loading": "Chargement de vos actifs...",
     "network": "Réseau {{networkName}}",
@@ -1691,7 +1695,6 @@
     "label": "Sélectionner {{text}}"
   },
   "selectNetworkPage": {
-    "clientSupports": "{{clientName}} prend en charge :",
     "estFee": "Frais estimé",
     "gasFeeDescription": "<0>Estimation des frais de gaz :</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Réseaux inéligibles",
@@ -1925,16 +1928,16 @@
     "androidNotSupported": "Cette intégration n'est pas encore prise en charge sur les appareils Android.",
     "authenticationFailed": "Échec de l'authentification",
     "changeBrowserDescription": "Veuillez changer votre navigateur par défaut pour Safari afin de continuer.",
-    "changeBrowserHeading": "Changer le navigateur",
+    "changeBrowserHeading": "Changez votre navigateur",
     "connectionClosed": "Connexion fermée. Veuillez réessayer.",
     "connectionStatus": "Statut de la connexion :",
     "generatingSession": "Génération d'une session de connexion sécurisée...",
-    "iosOnlyText": "",
+    "iosOnlyText": "Remarque : Cette connexion QR fonctionne uniquement sur les appareils iOS.",
     "notSupportedHeading": "Non pris en charge",
     "openAppClip": "Veuillez ouvrir le clip de l'application pour continuer.",
-    "openMobileApp": "Ouvrez votre application mobile Mesh et scannez ce code QR pour continuer.",
+    "openMobileApp": "Scannez avec la caméra de votre téléphone pour vous connecter.",
     "qrCodeAlt": "Code QR pour la connexion TrueAuth",
-    "scanToLogin": "Scannez pour vous connecter",
+    "scanToLogin": "Se connecter",
     "somethingWentWrong": "Une erreur s’est produite"
   },
   "verifyAddressAndNetworkErrorPage": {
