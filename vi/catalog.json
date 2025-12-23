@@ -405,7 +405,7 @@
     "goToIntegrationToApprove": "Vui lòng truy cập <1>{{selectedIntegrationName}}</1> để phê duyệt giao dịch này.",
     "paymentInitiated": "Bạn đã khởi tạo một khoản thanh toán <1></1><2>{{amountCrypto}}</2><4></4> đến {{clientName}}",
     "paymentSuccessful": "Thanh toán thành công!",
-    "waiting": "Các giao dịch không hoàn tất cho đến khi chúng nhận đủ số xác nhận từ mạng lưới."
+    "waiting": "Giao dịch chưa hoàn tất cho đến khi có đủ xác nhận từ mạng lưới."
   },
   "doneVerifyPage": {
     "alreadyVerifiedBody": "Quyền sở hữu địa chỉ {{address}} đã được xác minh cho <4>{{clientName}}</4>.",
@@ -725,7 +725,7 @@
     }
   },
   "fundingMethodsList": {
-    "buyingPower": "Mua sắm sức mạnh",
+    "buyingPower": "Sức mua",
     "cryptocurrencyBalance": "Số dư {{symbol}}",
     "noneSelected": "chưa chọn",
     "paymentMethodDepositUsage": "Phương thức thanh toán đã liên kết",
@@ -829,7 +829,7 @@
     "detailButton": "Xem chi tiết lý do",
     "error": "Không thể thực hiện giao dịch",
     "loadingLabel": "Đang xác minh giao dịch của bạn...",
-    "networkConfirmations": "Giao dịch chưa hoàn thành cho đến khi nhận được đủ xác nhận từ mạng lưới.",
+    "networkConfirmations": "Giao dịch chưa hoàn tất cho đến khi có đủ xác nhận từ mạng lưới.",
     "notInitiatedUntilApproved": "Giao dịch này sẽ không được bắt đầu cho đến khi nó được chấp nhận trong {{selectedIntegrationName}}.",
     "recievedDetails": "Bạn sẽ nhận được <1>{{amountStr}}</1> tại {{clientName}} ({{shortAddress}})",
     "requestRecieved": "Yêu cầu giao dịch đến {{destination}} của bạn đã được {{selectedIntegrationName}} nhận",
@@ -869,8 +869,8 @@
     "noBalancesPaymentDescription": "Số dư của bạn không đủ để thực hiện thanh toán này. Vui lòng chọn mạng khác hoặc nạp thêm vào số dư của bạn và thử lại.",
     "noBalancesTransferkDescription": "Bạn không có số dư để chuyển. Vui lòng nạp thêm vào số dư và thử lại.",
     "noBalancesTransferSelectNetworkDescription": "Bạn không có số dư nào để chuyển. Vui lòng chọn một mạng khác, hoặc nạp thêm số dư và thử lại.",
-    "noBalanceTransferDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
-    "noBalanceTransferSelectNetworkDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng chọn một mạng khác, hoặc nạp thêm số dư và thử lại.",
+    "noBalanceTransferDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp thêm và thử lại.",
+    "noBalanceTransferSelectNetworkDescription": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng chọn một mạng khác, hoặc nạp thêm và thử lại.",
     "noGasAvailableBalanceTransferSelectNetworkDescription": "Giao dịch này yêu cầu một số dư khả dụng để chuyển, cộng thêm {{feeInFiat}} bằng {{feeSymbol}} để trả phí gas. Vui lòng chọn một mạng khác, hoặc nạp thêm số dư và thử lại.",
     "noGasBalancePaymentDescription": "Giao dịch này yêu cầu {{amount}} và {{feeInFiat}} trị giá {{feeSymbol}} để đóng phí gas. Vui lòng nạp thêm vào số dư của bạn và thử lại.",
     "noGasBalancePaymentSelectNetworkDescription": "Giao dịch này yêu cầu {{amount}} và {{feeInFiat}} trị giá {{feeSymbol}} để đóng phí gas. Vui lòng chọn mạng khác hoặc nạp thêm vào số dư của bạn và thử lại.",
@@ -1404,7 +1404,7 @@
     "doneTransferPage": {
       "checkOrderDetails": "Kiểm tra chi tiết đơn hàng",
       "description": "Bạn vừa thanh toán {{amount}}. Bạn sẽ nhận được xác nhận từ {{clientName}} khi hoàn tất.",
-      "disclaimer": "Các giao dịch không hoàn tất cho đến khi chúng nhận đủ số xác nhận từ mạng lưới.",
+      "disclaimer": "Giao dịch chưa hoàn tất cho đến khi có đủ xác nhận từ mạng lưới.",
       "seeDetails": "Xem chi tiết lý do",
       "title": "Thanh toán đang trên đường đến"
     },
@@ -1458,11 +1458,11 @@
       "topUpWalletTryOtherNetwork": "Vui lòng nạp tiền vào ví của bạn và thử lại hoặc thử với mạng khác."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": "Giao dịch này yêu cầu {{transferAmount}} và ~{{gasFiat}} trị giá {{gasSymbol}} để trả phí gas."
+      "message": "Giao dịch này yêu cầu {{transferAmount}} và khoảng {{gasFiat}} {{gasSymbol}} để thanh toán phí gas."
     },
     "insufficientGasBalancePage": {
       "message": "Giao dịch này yêu cầu {{transferAmount}} và ~{{gasFiat}} giá trị {{gasSymbol}} trên mạng {{networkName}} để trả phí gas.",
-      "title": "Không đủ số dư để trả phí gas"
+      "title": "Số dư không đủ để trả phí gas"
     },
     "inWalletBrowserInitialPage": {
       "retry": "Thử lại",
@@ -1489,7 +1489,7 @@
       "bufferAndFees": "{{bufferAmount}} Đệm + {{feesAmount}} bao gồm tất cả các khoản phí",
       "bufferDisclaimer": "Bạn sẽ giữ bất kỳ phần dư đệm nào không sử dụng.",
       "conversionFee": "Phí chuyển đổi {{integrationName}}",
-      "conversionFeeHint": "Phí này {{integrationName}} thu để chuyển đổi.",
+      "conversionFeeHint": "Phí phí {{integrationName}} thu để thực hiện chuyển đổi tài sản.",
       "estimatedNetworkFee": "Phí mạng ước tính",
       "feeChangedNotice": "Phí mạng đã thay đổi. Vui lòng kiểm tra tổng số của bạn và xác nhận.",
       "feesIncluded": "{{amount}} bao gồm tất cả các khoản phí",
@@ -1842,9 +1842,9 @@
     "depositNoBalance": "Bạn không có đủ số dư {{symbol}} trên mạng {{network}} để chuyển tiền.",
     "gasAndBalanceTitle": "Không đủ phí gas và số dư",
     "gasBody": "Phí gas cho mạng {{network}} được trả bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào số dư của bạn và thử giao dịch này một lần nữa.",
-    "gasTitle": "Không đủ số dư để trả phí gas",
+    "gasTitle": "Số dư không đủ để trả phí gas",
     "insufficientGasFeeDescription": "Sự chuyển tiền này đòi hỏi {{gasFee}} trong {{symbol}} để trang trải phí mạng.",
-    "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp tiền vào số dư của bạn và thử lại.",
+    "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp thêm và thử lại.",
     "noBalanceOnSpecificNetwork": "Bạn chưa có {{symbol}} trên mạng {{network}}.",
     "noBalanceTitle": "Không có số dư",
     "paymentBody": "Số dư của bạn không đủ để hoàn tất giao dịch mua này.",
