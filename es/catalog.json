@@ -1331,7 +1331,7 @@
     "processing": "Procesando pago...",
     "qrCodeLabel": "El código QR puede escanearse en tu dispositivo móvil para establecer una conexión",
     "qrGenerationFailed": "Falló la generación del código QR. Por favor intente nuevamente.",
-    "receivedDetails": "Recibirás <strong>{{amountStr}}</strong> en {{clientName}} ({{shortAddress}})",
+    "receivedDetails": "Recibirás <strong>{{amountStr}}</strong> en {{clientName}} {{shortAddress}}",
     "scanQrCode": "Escanea el código QR para completar tu pago",
     "selectAsset": "Selecciona un recurso a transferir",
     "selectNetwork": "Selecciona una red",
@@ -1499,7 +1499,7 @@
       "networkFeeHint": "Ayuda a que tu transacción se conecte a la blockchain cubriendo los costos para los validadores de la red que la procesan",
       "payWith": "Pagar con",
       "pyusdDisclaimer": "La transacción se completará usando PayPal USD (PYUSD), que es una stablecoin emitida y custodiada por Paxos Trust Company, LLC. PYUSD se ejecuta en la blockchain.",
-      "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian frecuentemente. Todas las compras con cripto son finales.",
+      "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian con frecuencia. Todas las compras con cripto son finales.",
       "send": "Enviar",
       "swapFee": "Comisión de intercambio automatizado",
       "swapFeeHint": "Una comisión para facilitar el intercambio automatizado de activos en tu wallet al activo de transferencia objetivo.",
@@ -1549,12 +1549,12 @@
   "payPalConnectOAuthPage": {
     "close": "Cerrar",
     "continue": "Continuar en {{selectedIntegrationName}}",
-    "enterAmount": "Introduzca el monto de la transferencia",
-    "notSupported": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitadas.",
-    "selectAnotherAccount": "Seleccione otra cuenta",
+    "enterAmount": "Introduce el monto de la transferencia",
+    "notSupported": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitados.",
+    "selectAnotherAccount": "Selecciona otra cuenta",
     "selectAnotherExchange": "Por favor, selecciona otro exchange o wallet desde el cual depositar.",
     "selectNetwork": "Seleccionar red de transferencia",
-    "title": "Seleccionar recurso a transferir"
+    "title": "Seleccionar activo a transferir"
   },
   "previewPageUI": {
     "accountLabel": "Cuenta",
@@ -1651,18 +1651,18 @@
   "revolutConnectOAuthPage": {
     "amountMustBeAtLeast": "El monto debe ser de al menos $8",
     "continue": "Continuar en {{selectedIntegrationName}}",
-    "enterAmount": "Introduzca el monto de la transferencia",
-    "selectAsset": "Selecciona el recurso a transferir",
+    "enterAmount": "Introduce el monto de la transferencia",
+    "selectAsset": "Selecciona el activo a transferir",
     "selectNetwork": "Selecciona la red de transferencia"
   },
   "robinhoodConnectOAuthPage": {
     "continue": "Continúa en {{selectedIntegrationName}}",
-    "enterAmount": "Introduzca el monto de la transferencia",
-    "selectAsset": "Seleccionar recurso a transferir",
+    "enterAmount": "Introduce el monto de la transferencia",
+    "selectAsset": "Selecciona el activo a transferir",
     "selectNetwork": "Selecciona la red de transferencia"
   },
   "selectCryptoFundingPage": {
-    "title": "Selecciona el recurso"
+    "title": "Selecciona el activo"
   },
   "selectHoldingPage": {
     "balance": "Saldo",
@@ -1671,10 +1671,10 @@
     "cannotFundBody": "No tienes suficiente saldo cripto o fiat en esta cuenta para financiar esta transacción.",
     "cannotFundTitle": "No se puede financiar la transacción",
     "defaultTitle": "Selecciona un token",
-    "depositTitle": "Selecciona una cripto para el depósito",
+    "depositTitle": "Selecciona el token de depósito",
     "ineligibleAssets": "Activos no elegibles",
     "link40Title": "Elige un token",
-    "loading": "Cargando sus activos...",
+    "loading": "Cargando tus activos...",
     "network": "Red {{networkName}}",
     "networkTitle": "Elige una red",
     "noAssetsTitle": "Ningún activo detectado en la cuenta vinculada",
@@ -1682,10 +1682,10 @@
     "notEnoughtBody": "Añade más {{symbol}} a tu cuenta, luego vuelve aquí para intentarlo de nuevo.",
     "notEnoughtTitle": "No hay suficiente {{symbol}}",
     "otherEligible": "Otros activos elegibles",
-    "paymentTitle": "Seleccionar una cripto para el pago",
+    "paymentTitle": "Selecciona el token de pago",
     "returnToAppButton": "Regresar a la aplicación",
     "returnToClientButton": "Regresar a {{clientName}}",
-    "spotAccountsBody": "Solo las cuentas spot son soportadas. No se detectarán activos en otros apartados.",
+    "spotAccountsBody": "Solo las cuentas spot son soportadas actualmente. Los activos en otros tipos de cuentas, como margin, no serán detectados.",
     "topUpButton": "Recargar saldo",
     "topUpUSDCInstruction": "Recarga tu saldo de USDC en tu wallet de Phantom.",
     "tryAgainFromTaoInstruction": "Inténtalo de nuevo desde tu página de pago de TAO.",
@@ -1697,7 +1697,7 @@
   "selectNetworkPage": {
     "estFee": "Comisión estimada",
     "gasFeeDescription": "<0>Comisión de red estimada:</0> {{cryptoFee}} ~ {{fiatFee}}",
-    "ineligibleNetwork": "Redes inelegibles",
+    "ineligibleNetwork": "Redes no elegibles",
     "integrationFeeDescription": "<0>Comisión de {{selectedIntegrationName}} estimada:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "sendVia": "Enviar por",
     "title": "Elige una red"
@@ -1735,15 +1735,15 @@
   "termsAndConditionsPage": {
     "englishDisclaimer": "Esta es una traducción de cortesía solo para fines informativos. La <2>versión en inglés de los Términos y Condiciones para Usuarios Finales de Mesh</2> es la versión legalmente vinculante.",
     "paragraph1": "Mesh Connect, Inc. (la <1>“Compañía”</1>) es un proveedor de tecnología que hace una herramienta de comunicaciones (la <3>“Herramienta”</3>) que ayuda a facilitar ciertas funcionalidades del servicio de terceros que estás utilizando (el <5>“Servicio de Usuario Final”</5>). Esta funcionalidad está destinada a permitirte comunicarte con tus cuentas y wallets de terceros (<7>“Cuentas conectadas”</7>) a través del Servicio de Usuario Final, incluyendo el envío de instrucciones que deseas ejecutar.",
-    "paragraph10": "El arbitraje será administrado por la Asociación Americana de Arbitraje en virtud de sus Reglas de Arbitraje de Consumidor, enmendadas por estos términos. Las Reglas de Arbitraje del Consumidor están disponibles en línea en <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. El árbitro realizará audiencias, si las hubiera, por teleconferencia o videoconferencia, en lugar de presencialmente, a menos que el arbitrador determine a petición suya o por nuestra parte que una audiencia en persona es apropiada. Cualquier aparición en persona se llevará a cabo en un lugar que sea razonablemente conveniente para ambas partes teniendo en cuenta su capacidad de viajar y otras circunstancias pertinentes. Si usted y la Compañía no son capaces de ponerse de acuerdo sobre una localización, dicha determinación debe ser tomada por la AAA o por el árbitro. La decisión del árbitro seguirá estos términos y será definitiva y vinculante. El árbitro tendrá autoridad para conceder ayuda o asistencia judicial temporal, provisional o permanente que prevea el desempeño específico de estos términos. pero sólo en la medida necesaria para proporcionar un alivio garantizado por la demanda individual ante el arbitrario. El monto otorgado por el árbitro podrá ser confirmado y ejecutado en cualquier tribunal que tenga jurisdicción sobre el mismo. A pesar de cualquiera de los preparativos, nada en estos términos le impedirá llevar cuestiones a la atención de la federal, agencias estatales o locales y, si la ley lo permite, pueden buscar ayuda contra nosotros por usted.",
-    "paragraph11": "Estos términos constituyen el acuerdo completo entre usted y la Compañía en relación con su materia, y reemplazar todas las representaciones o acuerdos previos, ya sean orales o escritos, con respecto a tales asuntos. Si cualquier término no se puede aplicar en virtud de la legislación aplicable, entonces ese término se modifica para cumplir con la ley. preservando al máximo posible la intención del término original. Cualquier término que no se pueda modificar así será interrumpido y todos los términos restantes permanecerán en vigor. Usted reconoce y acepta que los proveedores de servicios de Compay están destinados a terceros beneficiarios de estos términos. Al aceptar estos términos y condiciones o utilizar la Herramienta, usted acepta que está obligado por los términos y condiciones de este acuerdo.",
-    "paragraph2": "Usted reconoce y acepta que ciertas funcionalidades del Servicio del Usuario Final se basan en la Herramienta; que su uso de tal funcionalidad está a su disposición; que ni la Compañía ni sus proveedores de servicios pongan a disposición servicios de corretaje o se involucren en el procesamiento de pagos; y que ni la Compañía ni sus proveedores de servicios tienen ninguna responsabilidad o responsabilidad por el Servicio del Usuario Final o ninguna cuenta conectada, o los términos, políticas, actos o omisiones de sus proveedores.",
+    "paragraph10": "El arbitraje será administrado por la Asociación Americana de Arbitraje bajo sus Reglas de Arbitraje de Consumidor, enmendadas por estos términos. Las Reglas de Arbitraje del Consumidor están disponibles en línea en <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. El arbitrador realizará audiencias, si las hubiera, por teleconferencia o videoconferencia, en lugar de presencialmente, a menos que el arbitrador determine a petición tuya o por nuestra parte que una audiencia presencial es apropiada. Cualquier aparición presencial se llevará a cabo en un lugar que sea razonablemente conveniente para ambas partes teniendo en cuenta tu capacidad de viajar y otras circunstancias pertinentes. Si tú y la Compañía no somos capaces de acordar una ubicación, dicha determinación debe ser tomada por la AAA o por el arbitrador. La decisión del arbitrador seguirá estos términos y será definitiva y vinculante. El arbitrador tendrá autoridad para determinar medidas cautelares temporales, provisionales o permanentes o medidas que prevean el cumplimiento específico de estos términos, pero sólo en la medida necesaria para proporcionar la mitigación justificado por la reclamación individual ante el arbitrador. El monto otorgado por el arbitrador podrá ser confirmado y ejecutado en cualquier tribunal que tenga jurisdicción sobre el mismo. No obstante lo anterior, nada de lo dispuesto en estos términos te impedirá llevar los problemas a la atención de las agencial federales, estatales o locales y, si la ley lo permite, éstas pueden buscar mitigaciones en contra de nosotros en tu representación.",
+    "paragraph11": "Estos términos constituyen el acuerdo completo entre tú y la Compañía en relación con su asunto, y reemplazan todas las representaciones o acuerdos previos, ya sean orales o escritos, con respecto a tales asuntos. Si alguno de los términos no se puede aplicar en virtud de la legislación aplicable, entonces ese término se modificará para cumplir con la ley, preservando al máximo posible la intención del término original. Cualquier término que no pueda modificarse de esta manera será eliminado y todos los términos restantes permanecerán en vigor. Reconoces y aceptas que los proveedores de servicios de la Compañía están destinados a los terceros beneficiarios de estos términos. Al aceptar estos términos y condiciones o utilizar la Herramienta, aceptas que estás obligado por los términos y condiciones de este acuerdo.",
+    "paragraph2": "Declaras y aceptas que ciertas funcionalidades del Servicio de Usuario Final se basan en la Herramienta; que el uso de tal funcionalidad está a tu disposición; que ni la Compañía ni sus proveedores de servicios ponen a disposición servicios de corretaje o se involucran en el procesamiento de pagos; y que ni la Compañía ni sus proveedores de servicios tienen ninguna responsabilidad o responsabilidad por el Servicio de Usuario Final o ninguna cuenta conectada, o los términos, políticas, actos u omisiones de sus proveedores.",
     "paragraph3": "Declaras y garantizas que tienes todos los derechos y consentimientos necesarios para conectar y acceder a cada Cuenta Conectada mediante dicha funcionalidad, incluyendo el derecho de proporcionar a la Compañía y a sus proveedores de servicios tus credenciales de inicio de sesión de cuenta, direcciones de wallet, y/o cualquier información de tu cuenta o tu información personal para cada Cuenta Conectada. Por la presente autorizas a la Compañía y a sus proveedores de servicios a transmitir instrucciones así como información, datos y otros materiales entre el Servicio de Usuario Final y cada Cuenta Conectada, y reconoces y aceptas que la Compañía y sus proveedores de servicios no tienen responsabilidad u obligación por la ejecución de dichas instrucciones, o por dichos materiales (incluyendo su exactitud, puntualidad o integridad).",
-    "paragraph4": "Usted reconoce que ha leído la Política de Privacidad de la Compañía, que está disponible en <2>https://meshconnect.com/privacy-policy</2>, y acepta eso, usando la herramienta, usted da su consentimiento para el uso por parte de la Compañía de su Información Personal tal y como se define y establece en la Política de Privacidad.",
-    "paragraph5": "La Herramienta se pone a disposición “TAL CUAL” y “SEGÚN DISPONIBILIDAD”, con todos sus defectos y sin ningún tipo de declaración ni garantía. La Empresa no realiza ninguna declaración ni otorga garantía alguna con respecto a la Herramienta, ya sea expresa o implícita, incluyendo, entre otras, garantías de comerciabilidad, idoneidad para un propósito particular o no infracción.",
-    "paragraph6": "EN NINGÚN CASO LA EMPRESA NI SUS PROVEEDORES DE SERVICIOS SERÁN RESPONSABLES, YA SEA POR CONTRATO, GARANTÍA, AGRAVIO (INCLUIDA NEGLIGENCIA), RESPONSABILIDAD POR PRODUCTOS, RESPONSABILIDAD OBJETIVA U OTRA TEORÍA, POR NINGÚN DAÑO INDIRECTO, INCIDENTAL, ESPECIAL O CONSECUENTE RELACIONADO CON EL USO (O LA IMPOSIBILIDAD DE USO) DE LA HERRAMIENTA, EL SERVICIO PARA USUARIOS FINALES O CUALQUIER CUENTA CONECTADA, INCLUIDAS CUALESQUIERA INSTRUCCIONES O MATERIALES TRANSMITIDOS MEDIANTE FUNCIONALIDADES HABILITADAS POR LA HERRAMIENTA. LAS LIMITACIONES, EXCLUSIONES Y RENUNCIAS ANTERIORES SE APLICARÁN EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEGISLACIÓN APLICABLE, AUN CUANDO ALGÚN RECURSO NO CUMPLA SU PROPÓSITO ESENCIAL. SIN PERJUICIO DE LO ANTERIOR, LA RESPONSABILIDAD AGREGADA DE LA EMPRESA Y SUS PROVEEDORES DE SERVICIOS EN RELACIÓN CON LA HERRAMIENTA NO EXCEDERÁ LOS DIEZ DÓLARES.",
-    "paragraph7": "Usted defenderá, indemnizará y mantendrá indemne a la Empresa y a sus directores, funcionarios, empleados, licenciantes, contratistas y representantes de y contra cualquier reclamación, acción, demanda, investigación o procedimiento de terceros, así como de cualquier pérdida, responsabilidad, daño, costo y gasto que surja de o esté relacionado con su uso (o uso indebido) de la Herramienta, el Servicio para Usuarios Finales y/o cualquier Cuenta Conectada.",
-    "paragraph8": "La Empresa podrá modificar estos términos en cualquier momento. Su uso continuo de cualquier funcionalidad habilitada por la Herramienta después de dichos cambios constituye su aceptación de los términos actualizados.",
+    "paragraph4": "Declaras que has leído la Política de Privacidad de la Compañía, que está disponible en <2>https://meshconnect.com/privacy-policy</2>, y aceptas que, usando la herramienta, das tu consentimiento para el uso por parte de la Compañía de tu Información Personal tal y como se define y establece en la Política de Privacidad.",
+    "paragraph5": "La Herramienta se pone a disposición “TAL CUAL” y “SEGÚN DISPONIBILIDAD”, con todos sus defectos y sin ningún tipo de declaración ni garantía. La Compañía no realiza ninguna declaración ni otorga garantía alguna con respecto a la Herramienta, ya sea expresa o implícita, incluyendo, entre otras, garantías de comerciabilidad, idoneidad para un propósito particular o no infracción.",
+    "paragraph6": "EN NINGÚN CASO LA COMPAÑÍA O SUS PROVEEDORES DE SERVICIOS SERÁN RESPONSABLES, YA SEA POR CONTRATO, GARANTÍA, AGRAVIO (INCLUIDA NEGLIGENCIA), RESPONSABILIDAD POR PRODUCTOS, RESPONSABILIDAD OBJETIVA U OTRA TEORÍA, POR NINGÚN DAÑO INDIRECTO, INCIDENTAL, ESPECIAL O CONSECUENTE RELACIONADO CON EL USO (O LA IMPOSIBILIDAD DE USO) DE LA HERRAMIENTA, EL SERVICIO PARA USUARIOS FINALES O CUALQUIER CUENTA CONECTADA, INCLUIDAS CUALESQUIERA INSTRUCCIONES O MATERIALES TRANSMITIDOS MEDIANTE FUNCIONALIDADES HABILITADAS POR LA HERRAMIENTA. LAS LIMITACIONES, EXCLUSIONES Y RENUNCIAS ANTERIORES SE APLICARÁN EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEGISLACIÓN APLICABLE, AUN CUANDO ALGÚN RECURSO NO CUMPLA SU PROPÓSITO ESENCIAL. SIN PERJUICIO DE LO ANTERIOR, LA RESPONSABILIDAD AGREGADA DE LA EMPRESA Y SUS PROVEEDORES DE SERVICIOS EN RELACIÓN CON LA HERRAMIENTA NO EXCEDERÁ LOS DIEZ DÓLARES.",
+    "paragraph7": "Defenderás, indemnizarás y eximirás de responsabilidad a la Compañía y a sus directores, funcionarios, empleados, otorgantes, contratistas y representantes de y contra cualquier reclamación, acción, demanda, investigación o procedimiento de terceros, así como de cualquier pérdida, responsabilidad, daño, costo y gasto que surja de o esté relacionado con tu uso (o uso indebido) de la Herramienta, el Servicio para Usuarios Finales y/o cualquier Cuenta Conectada.",
+    "paragraph8": "La Empresa podrá modificar estos términos en cualquier momento. El uso continuado de cualquier funcionalidad proporcionada por la Herramienta después de dichos cambios constituye tu aceptación de los términos actualizados.",
     "paragraph9": "Estos términos se regirán por las leyes del Estado de Delaware, excluyendo su elección de principios de ley. Excepto por disputas que reúnan los requisitos para un tribunal de demandas pequeñas, todas las disputas que surjan o estén relacionadas con estos términos o cualquier aspecto de la relación entre usted y la empresa, si se basa en contrato, agravio, estatua, fraude, tergiversación o cualquier otra teoría legal, será resuelto mediante arbitraje final y vinculante ante un arbitrador neutral en lugar de ante un tribunal por un juez o jurado, y usted acepta que la Compañía y usted están renunciando al derecho de juicio por un jurado. Tales disputas incluyen, sin limitación, disputas que surgen de o relacionadas con la interpretación o aplicación de esta disposición de arbitraje, incluyendo la vigencia, revocabilidad o validez de la disposición de arbitraje o de cualquier parte de la disposición de arbitraje. Todas estas cuestiones serán decididas por un árbitro y no por un tribunal o juez. Usted acepta que cualquier arbitraje bajo estas condiciones tendrá lugar de forma individual; los arbitrajes de clase y las acciones de clase no están permitidos, y usted está aceptando renunciar a la capacidad de participar en una acción de clase.",
     "title": "Términos y Condiciones del usuario final de {{shortName}}<2></2>"
   },
