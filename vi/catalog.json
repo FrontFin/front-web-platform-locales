@@ -507,7 +507,7 @@
     "userInfoUnavailable": "Thông tin người dùng không khả dụng",
     "webWithdrawalLimitExceeded": "Vượt quá giới hạn rút tiền",
     "whitelistAddressRequired": "Yêu cầu địa chỉ nằm trong danh sách an toàn",
-    "withdrawalDisabledDueToC2CDepositFreeze": "Chức năng rút tiền tạm thời bị vô hiệu hóa.\\",
+    "withdrawalDisabledDueToC2CDepositFreeze": "Chức năng rút tiền tạm thời bị vô hiệu hóa",
     "withdrawalDisabledDueToScamRisk": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
     "withdrawalDisabledDueToSecurityReset": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
     "withdrawalDisabledDueToSuspiciousActivity": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
@@ -1229,7 +1229,7 @@
     "selectAsset": "Chọn tài sản để giao dịch",
     "selectCurrency": "Chọn đơn vị tiền tệ",
     "selectNetwork": "Chọn mạng chuyển tiền",
-    "unsupportedCurrencyError": "Đồng tiền đã chọn không được hỗ trợ để nạp tiền trong quốc gia của bạn.",
+    "unsupportedCurrencyError": "Loại tiền bạn đã chọn không được hỗ trợ nạp tiền tại quốc gia của bạn.",
     "unsupportedPair": "Cặp mạng/kí hiệu này hiện không được hỗ trợ. Vui lòng chọn một mục khác.",
     "youPay": "Bạn trả",
     "youReceive": "Bạn nhận được"
@@ -1274,17 +1274,17 @@
     },
     "screen": {
       "addressLabel": "Địa chỉ",
-      "beforeYouGo": "Trước khi bạn đi...",
+      "beforeYouGo": "Trước khi bạn rời đi...",
       "copiedWalletAddress": "Đã sao chép",
       "copyWalletAddress": "Sao chép địa chỉ ví",
       "depositToClient": "Nạp tiền vào {{clientName}}",
       "downloadQr": "Tải xuống mã QR",
-      "headline": "Gặp khó khăn?",
+      "headline": "Nạp {{token}} trên {{network}}",
       "infoLabel": "{{info}} (bắt buộc)",
       "networkLabel": "Mạng",
-      "subtitle": "Bạn vẫn có thể hoàn thành gửi tiền của mình bằng cách thủ công.",
+      "subtitle": "Bạn vẫn có thể hoàn tất việc nạp tiền theo cách thủ công",
       "tokenLabel": "Token",
-      "warning": "Chỉ chuyển {{token}} trên {{network}} đến địa chỉ này, nếu không, tài sản của bạn có thể bị mất"
+      "warning": "Chỉ chuyển {{token}} trên {{network}} tới địa chỉ này. Nếu không, tài sản của bạn có thể bị mất"
     },
     "tokenSelection": {
       "subtitle": "{{client}} chấp nhận:",
@@ -1294,8 +1294,8 @@
       "includeMemo": "Bao gồm ghi chú này: <1>{{memo}}</1>",
       "includeTag": "Bao gồm thẻ này: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>",
-      "requiredForDeposit": "Cần thiết cho khoản nạp này",
-      "sendAboveMinimum": "G\u000019i ph\u00001ai tr\u00001en gi\u00001a tr\u001b1 \u00001anggung: <1>{{amount}}</1>"
+      "requiredForDeposit": "Thông tin bắt buộc cho lần nạp tiền  này",
+      "sendAboveMinimum": "Vui lòng gửi số tiền lớn hơn mức tối thiểu: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1314,13 +1314,13 @@
     "topUp": "Nạp thêm số dư {{token}}"
   },
   "payPage": {
-    "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} - {{maxFiat}}",
+    "amountMustBeWithin": "Số tiền phải nằm trong khoảng {{minFiat}} – {{maxFiat}}",
     "bybit": {
       "fee": "Phí: {{fee}}"
     },
     "continueInPayApp": "Tiếp tục đến {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": "Quét mã QR bằng ứng dụng crypto.com của bạn và hoàn tất giao dịch"
+      "scanQRWithAppText": "Quét mã QR bằng ứng dụng Crypto.com và hoàn tất giao dịch"
     },
     "generateNewQr": "Tạo mã QR mới",
     "noTransferIdError": "Thiếu mã giao dịch. Vui lòng bắt đầu lại.",
@@ -1331,13 +1331,13 @@
     "processing": "Đang xử lý thanh toán...",
     "qrCodeLabel": "Mã QR có thể được quét trên thiết bị di động của bạn để thiết lập kết nối",
     "qrGenerationFailed": "Không thể tạo mã QR. Vui lòng thử lại.",
-    "receivedDetails": "Bạn sẽ nhận được <strong>{{amountStr}}</strong> tại {{clientName}} ({{shortAddress}})",
+    "receivedDetails": "Bạn sẽ nhận được <strong>{{amountStr}}</strong> tại {{clientName}} {{shortAddress}}",
     "scanQrCode": "Quét mã QR để hoàn thành thanh toán của bạn",
     "selectAsset": "Chọn tài sản để giao dịch",
     "selectNetwork": "Chọn mạng chuyển tiền",
     "transactionComplete": "Giao dịch hoàn thành",
     "unsupportedCurrencyError": "Đồng tiền này không được hỗ trợ ở quốc gia của bạn.",
-    "updateFailed": "Không thể lấy thông tin chi tiết thanh toán. Vui lòng thử lại.",
+    "updateFailed": "Không thể lấy thông tin thanh toán. Vui lòng thử lại.",
     "youPay": "Bạn trả",
     "youReceive": "Bạn nhận được"
   },
@@ -1347,11 +1347,11 @@
       "title": "Truy cập bị từ chối"
     },
     "belowBinanceMinimumPage": {
-      "message": "Khoản thanh toán {{transferAmount}} này nằm dưới mức tối thiểu {{minAmount}} của Binance (cộng với phí) để chuyển {{symbol}} trên mạng {{networkName}}.",
-      "title": "Dưới mức tối thiểu của Binance"
+      "message": "Khoản thanh toán {{transferAmount}} này thấp hơn mức tối thiểu {{minAmount}} của Binance (chưa bao gồm phí) để chuyển {{symbol}} trên {{networkName}}.",
+      "title": "Thấp hơn mức tối thiểu của Binance"
     },
     "brokerLoading": {
-      "preparingPayment": "Đang chuẩn bị chi tiết thanh toán của bạn"
+      "preparingPayment": "Đang chuẩn bị thông tin thanh toán…"
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
@@ -1395,18 +1395,18 @@
     },
     "dappSpinner": {
       "retry": "Retry",
-      "title": "Hoàn thành thanh toán trên ví {{walletName}} của bạn"
+      "title": "Hoàn tất thanh toán trên ví {{walletName}} của bạn"
     },
     "doneTransferDetailsPage": {
-      "disclaimer": "Tỷ giá hối đoái có thể đã thay đổi trong quá trình giao dịch.",
+      "disclaimer": "Tỷ giá có thể đã thay đổi trong quá trình giao dịch.",
       "title": "Điều gì đã xảy ra"
     },
     "doneTransferPage": {
       "checkOrderDetails": "Kiểm tra chi tiết đơn hàng",
-      "description": "Bạn vừa thanh toán {{amount}}. Bạn sẽ nhận được xác nhận từ {{clientName}} khi hoàn tất.",
+      "description": "Bạn vừa thanh toán {{amount}}. Bạn sẽ nhận được xác nhận từ {{clientName}} khi giao dịch hoàn tất.",
       "disclaimer": "Giao dịch chưa hoàn tất cho đến khi có đủ xác nhận từ mạng lưới.",
       "seeDetails": "Xem chi tiết lý do",
-      "title": "Thanh toán đang trên đường đến"
+      "title": "Thanh toán đang được xử lý"
     },
     "exitPage": {
       "continuePayment": "Tiếp tục với thanh toán",
@@ -1427,11 +1427,11 @@
         "card": "Thẻ",
         "digitalWallet": "Ví"
       },
-      "title": "Lựa chọn nguồn tài trợ",
+      "title": "Các phương thức nạp tiền",
       "total": "Tổng {{amount}}"
     },
     "fundingSteps": {
-      "approval": "Phê duyệt việc chuyển ra từ {{integrationName}} của bạn",
+      "approval": "Xác nhận chuyển tiền ra khỏi {{integrationName}}",
       "conversion": "Chuyển đổi {{amount}} sang {{currency}}",
       "deposit": "Nạp {{amount}} từ {{paymentMethod}}",
       "errorMessage": "Đã xảy ra lỗi. Vui lòng thử lại",
@@ -1439,8 +1439,8 @@
       "transfer": "Chuyển {{symbol}} cho giao dịch mua của bạn"
     },
     "infoScreen": {
-      "rule1": "Thông tin của bạn không bao giờ được lưu trữ. Quyền truy cập sẽ chấm dứt sau thanh toán này.",
-      "rule2": "Sử dụng tiền mã hoá của bạn, xem lại chi tiết và duyệt để thanh toán.",
+      "rule1": "Thông tin của bạn sẽ không bao giờ được lưu trữ. Quyền truy cập sẽ kết thúc sau khi thanh toán này hoàn tất.",
+      "rule2": "Sử dụng tiền mã hoá của bạn, kiểm tra thông tin và xác nhận để thanh toán.",
       "rule3": "Chuyển đổi tự động giúp đơn giản hóa mọi thứ.",
       "title": "Đăng nhập để xem lại chi tiết thanh toán"
     },
