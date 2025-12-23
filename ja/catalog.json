@@ -1433,47 +1433,47 @@
     "fundingSteps": {
       "approval": "{{integrationName}}からの送金の承認",
       "conversion": "{{amount}}を{{currency}}に換算",
-      "deposit": "{{paymentMethod}}からへの{{amount}}の入金",
+      "deposit": "{{paymentMethod}} から {{amount}} を入金",
       "errorMessage": "エラーが発生しました。もう一度お試しください",
       "purchase": "{{amount}} {{symbol}}の購入",
-      "transfer": "購入のために{{symbol}}を転送する"
+      "transfer": "購入のため {{symbol}} を送金"
     },
     "infoScreen": {
-      "rule1": "あなたの情報は保存されません。この支払い後にアクセスが終了します。",
-      "rule2": "暗号通貨を使用し、詳細を確認し承認して支払いをします。",
-      "rule3": "自動変換で物事を簡単に保ちます。",
-      "title": "支払い内容を確認するにはログインしてください"
+      "rule1": "お客様の情報は保存されません。この支払い完了後、アクセスは終了します。",
+      "rule2": "暗号資産を使用し、内容を確認のうえ支払いを承認してください。",
+      "rule3": "自動換算で手続きを簡単にします。",
+      "title": "ログインして支払い内容を確認してください"
     },
     "initialSteps": {
-      "terms": "PayPalはこの商人のために暗号支払いを可能にします。続行することで、ご自身のアカウントからPayPalへの支払要求をMeshに許可します。<1>Meshの規約が適用されます。</1>"
+      "terms": "PayPal は本加盟店での暗号資産決済に対応しています。続行すると、支払いのために Mesh が PayPal へお客様のアカウントからの送金をリクエストすることを許可したことになります。<1>Mesh の利用規約が適用されます。</1>"
     },
     "insufficientBalancePage": {
-      "chooseDifferent": "別のアカウントを選択する。",
-      "message": "{{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
-      "messageWithNetwork": "{{network}} ネットワークでの {{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
+      "chooseDifferent": "別のアカウントを選択",
+      "message": "{{balanceAmount}} の残高では、この {{paymentAmount}} の支払いはできません。",
+      "messageWithNetwork": "{{network}} ネットワーク上の {{balanceAmount}} 残高では、この {{paymentAmount}} の支払いはできません。",
       "network": "ネットワーク",
       "title": "残高不足",
-      "topUpAccount": "アカウントにチャージして、もう一度お試しください。",
-      "topUpWallet": "ウォレットにチャージして、もう一度お試しください。",
-      "topUpWalletTryOtherNetwork": "ウォレットをチャージして再試行するか、他のネットワークを試してください。"
+      "topUpAccount": "アカウントに入金してから、もう一度お試しください。",
+      "topUpWallet": "ウォレットに入金してから、もう一度お試しください。",
+      "topUpWalletTryOtherNetwork": "ウォレットに入金するか、別のネットワークでお試しください。"
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": "このトランザクションには、ガス手数料を支払うために{{transferAmount}}と{{gasSymbol}}相当の~{{gasFiat}}が必要です。"
+      "message": "本取引には {{transferAmount}} に加え、ガス代として {{gasSymbol}} 約 {{gasFiat}} 相当が必要です。"
     },
     "insufficientGasBalancePage": {
-      "message": "この取引には、ガス料金を支払うために {{networkName}} ネットワーク上で {{gasSymbol}} が約 {{gasFiat}} 分と {{transferAmount}} が必要です。",
-      "title": "ガス残高が不足しています"
+      "message": "本取引には {{networkName}} ネットワーク上で、{{transferAmount}} に加え、ガス代として {{gasSymbol}} 約 {{gasFiat}} 相当が必要です。",
+      "title": "ガス代残高が不足しています"
     },
     "inWalletBrowserInitialPage": {
       "retry": "再試行",
-      "title": "接続要求を承認して、支払いを続けてください。"
+      "title": "支払いを続行するには、接続リクエストを承認してください"
     },
     "inWalletDoneTransferPage": {
-      "subtitle": "ウェブブラウザーで決済ページに戻って、確認や注文詳細を確認してください。",
-      "title": "もう少しで完了です"
+      "subtitle": "確認および注文内容の詳細については、Web ブラウザの決済ページに戻ってください。",
+      "title": "もうすぐ完了です"
     },
     "networkButton": {
-      "balance": "残高:",
+      "balance": "残高 :",
       "balanceAmountFiat": "{{amount}} ({{fiat}})",
       "change": "変更"
     },
@@ -1482,27 +1482,27 @@
     },
     "oauthTimeoutPage": {
       "reopen": "{{integrationName}} を再度開く",
-      "subtitle": "ログインまたはアクセス許可が完了していないようです。続行するには、{{integrationName}} を再度開いてサインインを完了してください。",
+      "subtitle": "ログインまたはアクセス承認が完了していないようです。続行するには、{{integrationName}} を再度開き、サインインを完了してください。",
       "title": "{{integrationName}} へ接続できませんでした"
     },
     "previewPage": {
-      "bufferAndFees": "{{bufferAmount}}バッファ+ {{feesAmount}}手数料を含む",
-      "bufferDisclaimer": "未使用のバッファはそのままになります。",
-      "conversionFee": "{{integrationName}}換算手数料",
-      "conversionFeeHint": "{{integrationName}}が集めるこの手数料は変換のため",
+      "bufferAndFees": "{{bufferAmount}} のバッファ＋{{feesAmount}} の手数料を含みます",
+      "bufferDisclaimer": "未使用のバッファ分は返却されます。",
+      "conversionFee": "{{integrationName}} 換算手数料",
+      "conversionFeeHint": "本手数料は、換算のために {{integrationName}} が徴収するものです。",
       "estimatedNetworkFee": "推定ネットワーク手数料",
-      "feeChangedNotice": "ネットワーク料金が変更されました。合計を確認して確認してください。",
-      "feesIncluded": "含まれる{{amount}}手数料",
+      "feeChangedNotice": "ネットワーク手数料が変更されました。合計金額を確認し、承認してください。",
+      "feesIncluded": "{{amount}} の手数料を含みます",
       "from": "{{integrationName}}から",
-      "howItWorks": "仕組み",
+      "howItWorks": "仕組みについて",
       "merchantPurchase": "{{merchantName}}購入",
-      "networkFeeHint": "ネットワークで検証するためのコストをカバーして、トランザクションをブロックチェーンに記録するのを助けます",
+      "networkFeeHint": "ネットワーク上で取引を処理するバリデーターのコストをカバーし、トランザクションをブロックチェーンに反映させるためのものです",
       "payWith": "支払い方法",
-      "pyusdDisclaimer": "トランザクションはPaxos Trust Company, LLCによって発行され、管理されている安定コインであるPayPal USD (PYUSD)で完了します。PYUSDはブロックチェーン上で動作します。",
-      "refundDisclaimer": "払い戻しは{{settlementCurrency}}のみで支払われます。為替レートと手数料は頻繁に変動します。すべての暗号通貨の購入は最終的です。",
+      "pyusdDisclaimer": "本取引は、Paxos Trust Company, LLC が発行・管理するステーブルコイン PayPal USD（PYUSD）を使用して完了します。PYUSD はブロックチェーン上で動作します。",
+      "refundDisclaimer": "返金は {{settlementCurrency}} のみで行われます。為替レートおよび手数料は頻繁に変動します。暗号資産の購入はすべて最終確定となります。",
       "send": "送信",
       "swapFee": "自動スワップ手数料",
-      "swapFeeHint": "ウォレット内の資産をターゲットの転送資産に自動的にスワップするための手数料です。",
+      "swapFeeHint": "ウォレット内の資産を、送金対象の資産へ自動的に交換するための手数料です。",
       "title": "{{merchantName}} に支払う",
       "transactionBuffer": "トランザクションバッファ",
       "transactionBufferHint": "暗号通貨の価格が変動しても、購入が成功するようにこの額が追加されます。この結果、ウォレットにいくらかの{{settlementCurrency}}が残ることがあります。"
