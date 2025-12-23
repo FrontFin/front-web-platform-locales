@@ -1291,8 +1291,8 @@
       "title": "Chọn một đồng tiền"
     },
     "warnings": {
-      "includeMemo": "G\u0019m bao g\u00001fm ghi ch\u000000 \u001auc: <1>{{memo}}</1>",
-      "includeTag": "G\u000019m bao g\u00001fm nh\u00001f \u001auc: <1>{{tag}}</1>",
+      "includeMemo": "Bao gồm ghi chú này: <1>{{memo}}</1>",
+      "includeTag": "Bao gồm thẻ này: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>",
       "requiredForDeposit": "Cần thiết cho khoản nạp này",
       "sendAboveMinimum": "G\u000019i ph\u00001ai tr\u00001en gi\u00001a tr\u001b1 \u00001anggung: <1>{{amount}}</1>"
@@ -1445,12 +1445,12 @@
       "title": "Đăng nhập để xem lại chi tiết thanh toán"
     },
     "initialSteps": {
-      "terms": "PayPal cho phép thanh toán bằng tiền mã hoá cho thương gia này. Bằng cách tiếp tục, bạn cho phép Mesh yêu cầu chuyển khoản từ tài khoản của bạn sang PayPal cho thanh toán của bạn.<1>Điều khoản của Mesh được áp dụng.</1>"
+      "terms": "PayPal cho phép thanh toán bằng tiền mã hóa cho người bán này. Khi tiếp tục, bạn cho phép Mesh yêu cầu chuyển tiền từ tài khoản của bạn sang PayPal để thực hiện thanh toán.<1>Áp dụng Điều khoản của Mesh.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Kết nối với tài khoản khác",
       "message": "Số dư {{balanceAmount}} của bạn không đủ để thực hiện thanh toán {{paymentAmount}} này.",
-      "messageWithNetwork": "Số dư {{balanceAmount}} của bạn trên mạng {{network}} không đủ để thực hiện thanh toán {{paymentAmount}} này.",
+      "messageWithNetwork": "Số dư {{balanceAmount}} của bạn trên mạng {{network}} không đủ để thực hiện khoản thanh toán {{paymentAmount}} này.",
       "network": "Mạng",
       "title": "Số dư không đủ",
       "topUpAccount": "Vui lòng nạp thêm tiền vào tài khoản của bạn và thử lại.",
@@ -1461,7 +1461,7 @@
       "message": "Giao dịch này yêu cầu {{transferAmount}} và khoảng {{gasFiat}} {{gasSymbol}} để thanh toán phí gas."
     },
     "insufficientGasBalancePage": {
-      "message": "Giao dịch này yêu cầu {{transferAmount}} và ~{{gasFiat}} giá trị {{gasSymbol}} trên mạng {{networkName}} để trả phí gas.",
+      "message": "Giao dịch này yêu cầu {{transferAmount}} và khoảng {{gasFiat}} {{gasSymbol}} trên mạng {{networkName}} để thanh toán phí gas.",
       "title": "Số dư không đủ để trả phí gas"
     },
     "inWalletBrowserInitialPage": {
@@ -1469,8 +1469,8 @@
       "title": "Chấp nhận yêu cầu kết nối để tiếp tục thanh toán của bạn"
     },
     "inWalletDoneTransferPage": {
-      "subtitle": "Quay lại trang thanh toán trong trình duyệt web của bạn để xác nhận và xem chi tiết đơn hàng.",
-      "title": "Sắp xong"
+      "subtitle": "Quay lại trang thanh toán trên trình duyệt của bạn để xác nhận và xem chi tiết đơn hàng.",
+      "title": "Sắp hoàn tất"
     },
     "networkButton": {
       "balance": "Số dư:",
@@ -1486,16 +1486,16 @@
       "title": "Không thể kết nối tới {{integrationName}}"
     },
     "previewPage": {
-      "bufferAndFees": "{{bufferAmount}} Đệm + {{feesAmount}} bao gồm tất cả các khoản phí",
-      "bufferDisclaimer": "Bạn sẽ giữ bất kỳ phần dư đệm nào không sử dụng.",
+      "bufferAndFees": "Đã bao gồm {{bufferAmount}} dự phòng + {{feesAmount}} phí",
+      "bufferDisclaimer": "Phần dự phòng không dùng hết sẽ được hoàn lại cho bạn.",
       "conversionFee": "Phí chuyển đổi {{integrationName}}",
       "conversionFeeHint": "Phí phí {{integrationName}} thu để thực hiện chuyển đổi tài sản.",
-      "estimatedNetworkFee": "Phí mạng ước tính",
-      "feeChangedNotice": "Phí mạng đã thay đổi. Vui lòng kiểm tra tổng số của bạn và xác nhận.",
+      "estimatedNetworkFee": "Phí mạng lưới ước tính",
+      "feeChangedNotice": "Phí mạng lưới đã thay đổi. Vui lòng kiểm tra lại tổng số tiền và xác nhận.",
       "feesIncluded": "{{amount}} bao gồm tất cả các khoản phí",
       "from": "Từ {{integrationName}}",
-      "howItWorks": "Cách nó hoạt động",
-      "merchantPurchase": "Mua sắm {{merchantName}}",
+      "howItWorks": "Cách hoạt động",
+      "merchantPurchase": "Mua hàng tại {{merchantName}}",
       "networkFeeHint": "Giúp đưa giao dịch của bạn lên blockchain bằng cách chi trả chi phí cho các validator mạng xử lý nó",
       "payWith": "Thanh toán bằng",
       "pyusdDisclaimer": "Giao dịch sẽ được hoàn thành bằng PayPal USD (PYUSD), là một loại tiền ổn định do Paxos Trust Company, LLC phát hành và lưu giữ. PYUSD chạy trên blockchain.",
@@ -1504,16 +1504,16 @@
       "swapFee": "Phí trao đổi tự động",
       "swapFeeHint": "Một khoản phí hỗ trợ trao đổi tự động tài sản trong ví của bạn thành tài sản chuyển giao mục tiêu.",
       "title": "Thanh toán {{merchantName}}",
-      "transactionBuffer": "Đệm giao dịch",
-      "transactionBufferHint": "Số tiền này được thêm vào để giúp giao dịch của bạn được thực hiện, ngay cả khi giá tiền mã hoá thay đổi. Điều này có thể để lại một số {{settlementCurrency}} trong ví của bạn."
+      "transactionBuffer": "Dự phòng giao dịch",
+      "transactionBufferHint": "Khoản tiền này được cộng thêm để giúp giao dịch của bạn hoàn tất, ngay cả khi giá tiền mã hóa biến động. Phần {{settlementCurrency}} dư có thể vẫn còn trong ví của bạn."
     },
     "sessionExpiredPage": {
-      "description": "Điều này thường xảy ra nếu bạn đăng nhập tài khoản trên một nền tảng khác trong khi phiên này vẫn đang hoạt động.",
+      "description": "Điều này thường xảy ra khi bạn đăng nhập vào tài khoản trên một nền tảng khác trong khi phiên hiện tại vẫn đang hoạt động.",
       "retry": "Vui lòng nhấn Thử lại để đăng nhập và thực hiện lại giao dịch.",
-      "title": "Phiên đã hết hạn"
+      "title": "Phiên làm việc đã hết hạn"
     },
     "somethingWentWrongPage": {
-      "message": "Chúng tôi đang gặp khó khăn khi xử lý yêu cầu này ngay bây giờ",
+      "message": "Hiện tại chúng tôi đang gặp sự cố khi xử lý yêu cầu này",
       "title": "Có gì đó sai"
     },
     "termsContent": {
@@ -1524,18 +1524,18 @@
       "text": "Bằng cách tiếp tục, bạn đồng ý với"
     },
     "topupPage": {
-      "assetsDescription": "Giá trị của tài sản đã chuyển đổi sang {{targetSymbol}} thấp hơn do biến động giá và/hoặc phí mạng.",
-      "conversionDescription": "Giá trị của {{convertedSymbol}} đã chuyển đổi sang {{targetSymbol}} thấp hơn do biến động giá và/hoặc phí mạng.",
+      "assetsDescription": "Giá trị tài sản được chuyển đổi sang {{targetSymbol}} thấp hơn dự kiến do biến động giá và/hoặc phí mạng lưới.",
+      "conversionDescription": "Giá trị của {{convertedSymbol}} sau khi chuyển đổi sang {{targetSymbol}} thấp hơn dự kiến do biến động giá và/hoặc phí mạng lưới.",
       "currentBalance": "Số dư hiện tại",
-      "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{targetSymbol}} sẽ vẫn nằm trong tài khoản {{integrationName}} của bạn.",
+      "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{targetSymbol}} của bạn sẽ vẫn nằm trong tài khoản {{integrationName}}.",
       "required": "Bắt buộc",
-      "title": "Cần nạp tiền",
-      "viewTopUp": "Xem Top-Up"
+      "title": "Cần nạp thêm tiền",
+      "viewTopUp": "Xem giao dịch nạp"
     },
     "transferErrorPage": {
-      "belowNetworkMinimumMessage": "Số tiền mua này dưới giới hạn trao đổi tối thiểu của tài khoản của bạn. Kết nối với tài khoản khác để hoàn tất giao dịch mua của bạn.",
+      "belowNetworkMinimumMessage": "Số tiền mua này thấp hơn mức giao dịch tối thiểu của tài khoản bạn. Vui lòng kết nối thêm một tài khoản khác để hoàn tất giao dịch.",
       "chooseDifferentAccount": "Kết nối với tài khoản khác",
-      "defaultMessage": "sẽ vẫn ở trong tài khoản {{integrationName}} của bạn.",
+      "defaultMessage": "Số tiền của bạn sẽ vẫn nằm trong tài khoản {{integrationName}}.",
       "defaultTitle": "Chúng tôi không thể xử lý thanh toán này",
       "insufficientFunds": "Không đủ tiền",
       "insufficientFundsMessage": "Số dư của bạn không đủ để hoàn tất giao dịch mua này.",
@@ -1543,7 +1543,7 @@
       "requestDeniedMessage": "Có vẻ như bạn đã từ chối giao dịch. Nếu đó là nhầm lẫn, hãy thử lại và phê duyệt yêu cầu trong ví của bạn."
     },
     "walletConfirmation": {
-      "title": "Xác nhận giao dịch này trong ứng dụng {{integrationName}} của bạn"
+      "title": "Xác nhận giao dịch này trong ứng dụng {{integrationName}}"
     }
   },
   "payPalConnectOAuthPage": {
@@ -1558,16 +1558,16 @@
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",
-    "buildingPreviewDeposit": "Đang tạo bản xem trước khoản tiền gửi của bạn...",
+    "buildingPreviewDeposit": "Đang tạo bản xem trước nạp tiền…",
     "buildingPreviewPayment": "Đang tạo bản xem trước thanh toán của bạn...",
-    "buildingPreviewTransfer": "Đang tạo bản xem trước chuyển khoản của bạn...",
+    "buildingPreviewTransfer": "Đang tạo bản xem trước giao dịch chuyển…",
     "confirmTransaction": "Xác nhận giao dịch này trong ứng dụng {{selectedIntegrationName}} của bạn.",
     "fewSeconds": "Quá trình này có thể mất vài giây",
     "fewSecondsWithDots": "Quá trình này có thể mất vài giây...",
     "includeFeesMessage": "Bao gồm {{amount}} phí giao dịch",
     "networkLabel": "Mạng",
     "paymentTitle": "Thanh toán {{clientName}}",
-    "paymentTotalLabel": "Tổng thanh toán",
+    "paymentTotalLabel": "Tổng cộng",
     "payWithLabel": "Thanh toán bằng",
     "payWithLabelWithName": "Thanh toán bằng {{integrationName}}",
     "plusFees": "{{amount}} + phí",
@@ -1711,7 +1711,7 @@
     "title": "Bạn muốn kết nối với {{selectedIntegrationName}} bằng cách nào?"
   },
   "sessionExpired": {
-    "closeTabMessage": "Phiên của bạn đã hết hạn. Vui lòng đóng thẻ này và thử lại.",
+    "closeTabMessage": "Phiên làm việc của bạn đã hết hạn. Vui lòng đóng tab này và thử lại.",
     "title": "Phiên làm việc của bạn đã hết hạn."
   },
   "sessionInfo": {
@@ -1751,15 +1751,15 @@
     "cancel": "Hủy bỏ",
     "currentBalance": "Số dư hiện tại",
     "disclaimer": "Nếu bạn không hoàn tất thanh toán, số dư {{symbol}} sẽ vẫn nằm trong tài khoản {{integrationName}} của bạn.",
-    "previewTopup": "Xem trước nạp tiền",
+    "previewTopup": "Xem trước nạp",
     "required": "Bắt buộc",
     "subtitle": "Lượng {{symbol}} bạn nhận được thấp hơn dự kiến do biến động giá và/hoặc phí gas.",
-    "title": "Cần nạp tiền"
+    "title": "Cần nạp thêm tiền"
   },
   "transferAmountInput": {
     "availableForDeposit": "{{amount}} có sẵn để gửi tiền",
     "basedOnYourBalances": "Dựa trên số dư của bạn",
-    "basedOnYourBalancesDepositsTooltip": "Tổng số này bao gồm số dư {{symbol}} hiện có của bạn cộng với số dư có thể được tự động hoán đổi sang {{symbol}} cho tiền gửi này."
+    "basedOnYourBalancesDepositsTooltip": "Tổng số này bao gồm số dư {{symbol}} hiện có của bạn và các số dư có thể được tự động hoán đổi sang {{symbol}} cho lần nạp này."
   },
   "transferAmountPage": {
     "buttonTitle": {
@@ -1841,15 +1841,15 @@
     "depositInsufficientBalanceAndGas": "Để thực hiện giao dịch này, bạn cần có số dư {{symbol}} lớn hơn 0 và khoảng ${{gasFee}} ETH trên mạng {{network}} để trả phí gas.",
     "depositNoBalance": "Bạn không có đủ số dư {{symbol}} trên mạng {{network}} để chuyển tiền.",
     "gasAndBalanceTitle": "Không đủ phí gas và số dư",
-    "gasBody": "Phí gas cho mạng {{network}} được trả bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào số dư của bạn và thử giao dịch này một lần nữa.",
+    "gasBody": "Phí gas trên mạng {{network}} được thanh toán bằng {{symbol}}. Vui lòng nạp thêm {{symbol}} vào ví rồi thử lại giao dịch này.",
     "gasTitle": "Số dư không đủ để trả phí gas",
-    "insufficientGasFeeDescription": "Sự chuyển tiền này đòi hỏi {{gasFee}} trong {{symbol}} để trang trải phí mạng.",
+    "insufficientGasFeeDescription": "Giao dịch chuyển này cần {{gasFee}} {{symbol}} để chi trả phí mạng lưới.",
     "noBalanceBody": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp thêm và thử lại.",
     "noBalanceOnSpecificNetwork": "Bạn chưa có {{symbol}} trên mạng {{network}}.",
     "noBalanceTitle": "Không có số dư",
     "paymentBody": "Số dư của bạn không đủ để hoàn tất giao dịch mua này.",
     "paymentInsufficientBalance": "Số dư {{balance}} {{symbol}} của bạn trên mạng {{network}} không đủ để thực hiện thanh toán {{amount}} {{symbol}} này.",
-    "paymentInsufficientBalanceAndGas": "Giao dịch này yêu cầu {{amount}} {{symbol}} và ~${{gasFee}} giá trị ETH trên mạng {{network}} để trả phí gas.",
+    "paymentInsufficientBalanceAndGas": "Giao dịch này yêu cầu {{amount}} {{symbol}} và khoảng ${{gasFee}} ETH trên mạng {{network}} để thanh toán phí gas.",
     "title": "Không đủ tiền",
     "toppedUpWalletQuestion": "Đã nạp tiền vào ví của bạn chưa?",
     "topUpAction": "Vui lòng nạp thêm vào ví của bạn và thử lại.",
