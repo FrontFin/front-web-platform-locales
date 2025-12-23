@@ -1037,14 +1037,14 @@
     "phone": "Introduce el código de un solo uso que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
     "totp": "Introduce el código proporcionado por la aplicación de autenticación que has vinculado a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Introduce el código PIN asociado a tu cuenta <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Introduce tu código para confirmar tu identidad.",
-    "twoFactor": "Introduzca el código proporcionado por el método de autenticación de dos factores que ha configurado en su cuenta <1>{{selectedIntegrationName}}</1>."
+    "transferFlow": "Introduce tu código de un solo uso para confirmar tu identidad.",
+    "twoFactor": "Introduce el código proporcionado por el método de autenticación de dos factores que configuraste en tu cuenta <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
     "codeSentEmail": "Código enviado a tu correo electrónico",
     "codeSentEmailOrPhoneValue": "Código enviado a <0>{{emailOrPhone}}</0>",
     "codeSentPhone": "Código enviado a tu teléfono por SMS",
-    "enterCode": "Introduce tu código para confirmar tu identidad al iniciar sesión.",
+    "enterCode": "Introduce tu código de un solo uso para confirmar que eres<1></1>realmente tú tratando de iniciar sesión.",
     "enterCode2": "Introduce el código de <0>authenticator app.</0>",
     "enterPin": "Introduce tu PIN de trading",
     "enterVerificationCode": "Introduce el código de verificación",
@@ -1052,14 +1052,14 @@
     "verify": "Verificar"
   },
   "mfaSetupPage": {
-    "emailButton": "Configurar verificación de email",
+    "emailButton": "Configurar verificación de correo electrónico",
     "emailSubtitle": "Haz clic en el botón de abajo para agregar un correo electrónico a tu cuenta <2>{{selectedIntegrationName}}</2>.",
     "keyGenerationBody": "Por seguridad, <1>{{selectedIntegrationName}} </1> requiere que los usuarios tengan habilitados un correo electrónico y una aplicación de autenticación MFA como métodos de autenticación dos factores para generar claves",
     "keyGenerationTitle": "Habilita la generación de claves API desde tu cuenta {{selectedIntegrationName}}",
     "totpButton": "Configura la aplicación de autenticación",
     "totpSubtitle": "Haz clic en el botón de abajo para añadir una aplicación de autenticación a tu cuenta <2>{{selectedIntegrationName}}</2>.",
     "withdrawalBody": "Por seguridad, <1>{{selectedIntegrationName}} </1> requiere que los usuarios tengan habilitados un correo electrónico y una aplicación de autenticación MFA como métodos de autenticación dos factores para retirar activos",
-    "withdrawalTitle": "Habilitar retiros de tu cuenta de {{selectedIntegrationName}}"
+    "withdrawalTitle": "Habilitar retiros desde tu cuenta de {{selectedIntegrationName}}"
   },
   "mfaSuccessPage": {
     "addAuthApp": "Haz clic en el botón de abajo para añadir una aplicación de autenticación a tu cuenta <2>{{selectedIntegrationName}}</2>.",
@@ -1072,12 +1072,12 @@
   },
   "mfaTitle": {
     "default": "Código de verificación",
-    "email": "Código de verificación de email",
+    "email": "Código de verificación por correo electrónico",
     "phone": "Código de verificación por SMS"
   },
   "mfaVerificationPage": {
-    "checkEmail": "Primero, verificaremos tu identidad.<1></1>Por favor, revisa tu correo electrónico si hay un código de verificación enviado desde <4>{{selectedIntegrationName}}</4>.",
-    "checkSms": "Primero, verificaremos tu identidad.<1></1>Por favor, revisa tu teléfono si hay un código de verificación enviado por <4>{{selectedIntegrationName}}</4> enviado por SMS.",
+    "checkEmail": "Primero, verifiquemos tu identidad.<1></1>Por favor, revisa si en tu correo electrónico hay un código de verificación de un solo uso enviado desde <4>{{selectedIntegrationName}}</4>.",
+    "checkSms": "Primero, verifiquemos tu identidad.<1></1>Por favor, revisa si en tu teléfono hay un código de verificación de un solo uso enviado por <4>{{selectedIntegrationName}}</4> por SMS.",
     "confirmApp": "Confirmar la aplicación de autenticación",
     "confirmEmail": "Confirmar correo electrónico",
     "enterCode": "Por favor, introduce el código de verificación",
@@ -1096,7 +1096,7 @@
     "sendNewRequest": "Enviar una nueva solicitud de vinculación",
     "steps": {
       "authorize": "Haz clic en <1>Autorizar</1> en la página de confirmación.",
-      "openApp": "Haz clic en <1>Abrir {{selectedIntegrationName}} app</1> a continuación.",
+      "openApp": "Haz clic en <1>Abrir la aplicación de {{selectedIntegrationName}} </1> a continuación.",
       "return": "Vuelve aquí para terminar de vincular tu cuenta."
     },
     "troubleshootExchangeMode": "Asegúrate de que estás en modo de Exchange, no en wallet.",
@@ -1122,11 +1122,11 @@
   "nonOAuthPermissionsPage": {
     "allow": "Permitir",
     "movingFunds": "mover tus fondos sin tu permiso",
-    "titleWithClient": "Permisos en {{clientName}} <2></2>",
+    "titleWithClient": "Permisos de {{clientName}} <2></2>",
     "titleWithoutClient": "Permisos de esta aplicación <1></1>",
     "transactionRequest": "enviando las solicitudes para transacciones",
     "viewActivity": "ver saldos, actividad y datos del perfil",
-    "wontAllow": "No permitirá"
+    "wontAllow": "No otorgará el permiso"
   },
   "oAuthBrokerPage": {
     "monitoring": "Esperando la aprobación...",
@@ -1135,8 +1135,8 @@
     "title": "Continuar en la ventana de <1></1> {{selectedIntegrationName}}"
   },
   "oauthErrorPage": {
-    "description": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitadas.",
-    "selectAnotherAccount": "Seleccione otra cuenta",
+    "description": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitados.",
+    "selectAnotherAccount": "Selecciona otra cuenta",
     "selectAnotherDescription": "Por favor, selecciona otro exchange o wallet desde el cual depositar."
   },
   "oauthExternalPage": {
@@ -1178,7 +1178,7 @@
     "description": "Inicia sesión en tu cuenta y permite el acceso",
     "monitoring": "Esperando la aprobación...",
     "open": "Abrir {{selectedIntegrationName}}",
-    "reopen": "Reabrir {{selectedIntegrationName}}",
+    "reopen": "Volver a abrir {{selectedIntegrationName}}",
     "title": "Continuar en la ventana de {{selectedIntegrationName}}",
     "willFacilitate": "facilitará la conexión segura con {{selectedIntegrationName}}."
   },
@@ -1227,16 +1227,16 @@
     "selectAnotherAccount": "Selecciona otra cuenta",
     "selectAnotherExchange": "Por favor, selecciona otro exchange o wallet desde el cual depositar.",
     "selectAsset": "Selecciona el activo a transferir",
-    "selectCurrency": "Selecciona una moneda",
+    "selectCurrency": "Selecciona una divisa",
     "selectNetwork": "Selecciona una red",
-    "unsupportedCurrencyError": "La moneda seleccionada no es compatible para el procesamiento en tu país.",
+    "unsupportedCurrencyError": "La divisa seleccionada no es compatible para el procesamiento en tu país.",
     "unsupportedPair": "Este conjunto red/símbolo no está soportado actualmente. Por favor, elige otro.",
-    "youPay": "Pagarás",
-    "youReceive": "Recibirás"
+    "youPay": "Pagas",
+    "youReceive": "Recibes"
   },
   "orderSummaryDrawer": {
     "automatedSwapFee": "Comisión de intercambio automatizada",
-    "conversionFee": "Comisión de conversión de {{integrationName}}",
+    "conversionFee": "Comisión por conversión de {{integrationName}}",
     "merchantInfoName": "Comerciante: {{clientName}}",
     "paymentToClient": "Pago a {{clientName}}",
     "title": "Resumen del pedido",
@@ -1247,7 +1247,7 @@
     "fieldErrorWithIntegration": "Por favor, captura tu {{integrationName}} {{field}}",
     "forgotPassword": "Olvidé mi contraseña",
     "tabs": {
-      "email": "E-mail",
+      "email": "Correo electrónico",
       "mobileApp": "Aplicación móvil",
       "phone": "Teléfono",
       "qrCode": "Código QR"
@@ -1307,11 +1307,11 @@
   "paymentUpdateDrawerContent": {
     "cancel": "Cancelar",
     "clickToPay": "Haz clic abajo para recargar tu saldo de {{token}} y realizar este pago.",
-    "description": "Tu saldo de {{token}} después de comprar es menor de lo esperado debido a los cambios en el precio de {{token}} y/o las comisiones de la red.",
+    "description": "Tu saldo de {{token}} después de la compra es menor de lo esperado debido a los cambios en el precio de {{token}} y/o las comisiones de la red.",
     "ifDontComplete": "Si no completas el pago, el saldo de {{token}} permanecerá en tu cuenta de {{selectedIntegrationName}}.",
     "onYourAccount": "En tu cuenta",
     "title": "Actualización de pago",
-    "topUp": "Recargar saldo {{token}}"
+    "topUp": "Recargar saldo en {{token}}"
   },
   "payPage": {
     "amountMustBeWithin": "La cantidad debe estar dentro de {{minFiat}} - {{maxFiat}}",
@@ -1339,11 +1339,11 @@
     "unsupportedCurrencyError": "Esta divisa no está soportada en tu país.",
     "updateFailed": "No se pudieron recuperar los detalles del pago. Por favor intenta de nuevo.",
     "youPay": "Pagarás",
-    "youReceive": "Recibirás"
+    "youReceive": "Recibes"
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "Desafortunadamente, la actividad desde tu país actualmente no está permitida.",
+      "subtitle": "Desafortunadamente, la actividad desde tu país no está permitida actualmente.",
       "title": "Acceso denegado"
     },
     "belowBinanceMinimumPage": {
@@ -1355,9 +1355,9 @@
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "integrationMultipleTokenNetworkCompatibility": "Token y red no están soportados",
+        "integrationMultipleTokenNetworkCompatibility": "Token y red no soportados",
         "integrationNotSupportedCountry": "No disponible en tu región",
-        "integrationSingleTokenNetworkCompatibility": "Token y red no están soportados",
+        "integrationSingleTokenNetworkCompatibility": "Token y red no soportados",
         "lessThanIntegrationMinAmount": "Monto por debajo del mínimo",
         "moreThanIntegrationMaxAmount": "Monto por encima del máximo",
         "platformNotSupported": "No compatible con este dispositivo",
@@ -1482,7 +1482,7 @@
     },
     "oauthTimeoutPage": {
       "reopen": "Vuelve a abrir {{integrationName}}",
-      "subtitle": "Parece que no terminaste de iniciar sesión o aprobar acceso. Para continuar, por favor vuelve a abrir {{integrationName}} y completa el inicio de sesión.",
+      "subtitle": "Parece que no terminaste de iniciar sesión o aprobar el acceso. Para continuar, por favor vuelve a abrir {{integrationName}} y completa el inicio de sesión.",
       "title": "No se pudo conectar a {{integrationName}}"
     },
     "previewPage": {
