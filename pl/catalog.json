@@ -43,13 +43,13 @@
     },
     "returnToClient": "Otwórz {{selectedIntegrationName}}, zeskanuj kod QR na swoim urządzeniu mobilnym, a następnie wróć tutaj, aby kontynuować.",
     "scanText": "Zeskanuj używając aparatu lub aplikacji Binance, aby zakończyć transakcje.",
-    "scanTitle": "Ukończ wpłatę na Binance",
+    "scanTitle": "Dokończ wpłatę w Binance",
     "selectAnotherAccount": "Wybierz inne konto",
     "selectAnotherExchange": "Wybierz inną giełdę lub portfel do wpłaty.",
     "selectAsset": "Wybierz aktywo do transferu",
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
-    "transactionRequest": "Wysłano żądanie transakcji do Twojej aplikacji Binance.",
+    "transactionRequest": "Wysłano żądanie transakcji do aplikacji Binance.",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz"
   },
@@ -58,12 +58,12 @@
     "title": "Ups!"
   },
   "binanceDirectLoginConnectionTimeOutPage": {
-    "body": "Nie otrzymaliśmy odpowiedzi na czas. Proszę spróbować ponownie",
+    "body": "Nie otrzymaliśmy odpowiedzi na czas. Spróbuj ponownie",
     "title": "Żądanie wygasło"
   },
   "binanceDirectLoginPage": {
     "continueWithAppButton": "Kontynuuj w aplikacji Binance",
-    "descriptionDeposit": "<0>Wróć tutaj, aby wpłacić</0> po połączeniu z aplikacją mobilną Binance.",
+    "descriptionDeposit": "<0>Wróć tutaj, aby dokonać wpłaty</0> po połączeniu z aplikacją mobilną Binance.",
     "descriptionGeneral": "<0>Wróć tutaj, aby kontynuować</0> po połączeniu z aplikacją mobilną Binance.",
     "descriptionOnRamp": "<0>Wróć tutaj, aby kontynuować</0> po połączeniu z aplikacją mobilną Binance.",
     "descriptionPay": "<0>Wróć tutaj, aby zapłacić</0> po połączeniu z aplikacją mobilną Binance.",
@@ -74,8 +74,8 @@
   },
   "binanceDirectPasswordPage": {
     "accountNotFound": "Nie znaleziono konta Binance.",
-    "emailPhoneInput": "Email/Telefon (bez kodu kraju)",
-    "invalidEmail": "Proszę wprowadzić prawidłowy adres email lub numer telefonu. Spacje oraz znaki specjalne nie są dozwolone w numerze telefonu.",
+    "emailPhoneInput": "E-mail/Telefon (bez kodu kraju)",
+    "invalidEmail": "Proszę wprowadzić prawidłowy adres e-mail lub numer telefonu. Spacje oraz znaki specjalne nie są dozwolone w numerze telefonu.",
     "nextButton": "Dalej",
     "noPasswordCta1": "Kontynuuj w aplikacji Binance",
     "noPasswordCta2": "Zresetuj hasło",
@@ -130,16 +130,16 @@
     "select": "Wybierz {{integrationName}}, {{badge}}"
   },
   "catalogFilterIneligibilityReasons": {
-    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje transferów dla żadnej z danych kombinacji token/sieć.",
+    "integrationMultipleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje transferów dla żadnej z podanych kombinacji tokenów i sieci.",
     "integrationNotSupportedCountry": "{{integrationName}} nie jest dostępne w Twoim regionie.",
-    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje tego tokena ani sieci.",
-    "lessThanIntegrationMinAmount": "Żądana kwota jest poniżej minimalnej kwoty {{integrationName}}.",
-    "moreThanIntegrationMaxAmount": "Żądana kwota przekracza maksymalny próg brokera {{integrationName}}.",
+    "integrationSingleTokenNetworkCompatibility": "{{integrationName}} nie obsługuje tego tokena ani tej sieci.",
+    "lessThanIntegrationMinAmount": "Żądana kwota jest niższa niż minimalna kwota {{integrationName}}.",
+    "moreThanIntegrationMaxAmount": "Żądana kwota przekracza maksymalną kwotę brokera {{integrationName}}",
     "platformNotSupported": "{{integrationName}} nie jest obsługiwane na tym typie urządzenia.",
     "sdkVersionNotSupported": "Mechanizm TrueAuth {{integrationName}} nie jest obsługiwany dla tego kontekstu SDK: {{sdkContext}}.",
-    "travelRuleAmountLimit": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
-    "travelRuleVaspIdRequired": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji.",
-    "travelRuleWalletOwnershipRequired": "{{integrationName}} nie jest obsługiwany z powodu ograniczeń w zakresie zgodności kwalifikacji."
+    "travelRuleAmountLimit": "{{integrationName}} nie jest obsługiwany ze względu na ograniczenia regulacyjne.",
+    "travelRuleVaspIdRequired": "{{integrationName}} nie jest obsługiwany ze względu na ograniczenia regulacyjne.",
+    "travelRuleWalletOwnershipRequired": "{{integrationName}} nie jest obsługiwany ze względu na ograniczenia regulacyjne."
   },
   "catalogList": {
     "badges": {
@@ -149,7 +149,7 @@
       "lastUsed": "Ostatnio używane",
       "linked": "Wcześniej powiązany"
     },
-    "emptyCatalogBody": "Może to wynikać z Twojej lokalizacji, wymagań zgodności lub kompatybilności urządzenia.",
+    "emptyCatalogBody": "Może to wynikać z Twojej lokalizacji, wymogów regulacyjnych lub kompatybilności urządzenia.",
     "emptyCatalogTitle": "Brak dostępnych portfeli i giełd",
     "noResults": "Przykro nam, nie znaleźliśmy żadnych wyników",
     "paymentTitle": "Wybierz konto do płatności",
@@ -157,7 +157,7 @@
     "search": "szukaj",
     "title": "Wybierz konto do połączenia",
     "title40": "Wybierz swoje konto",
-    "titleOnramp": "Wybierz swoją rampę"
+    "titleOnramp": "Wybierz on-ramp"
   },
   "catalogTile": {
     "select": "Wybierz {{integrationName}}, {{badge}}"
@@ -225,7 +225,7 @@
     "description": "umożliwi bezpieczne połączenie z {{integrationName}}.",
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
-    "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zaakceptuj żądanie, aby kontynuować.",
+    "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zatwierdź żądanie, aby kontynuować.",
     "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
@@ -258,16 +258,16 @@
   },
   "dappDoneTransferPage": {
     "depositSubtitle": "Wróć do {{clientName}}",
-    "depositSuccess": "Formularz został wysłany!",
+    "depositSuccess": "Sukces!",
     "depositTitle": "Twoje środki są w drodze.",
-    "paymentSubtitle": "Wróć do strony płatności, aby sfinalizować transakcję",
+    "paymentSubtitle": "Wróć do strony płatności, aby sfinalizować zamówienie",
     "paymentSuccess": "Płatność zakończona sukcesem!",
     "subtitle": "Proszę wrócić do {{clientName}}, aby sfinalizować zakup.",
     "title": "Potwierdź swoją płatność w {{clientName}}"
   },
   "dappDoneTransferPageUI": {
     "depositSubtitle": "Wróć do {{clientName}}",
-    "depositSuccess": "Formularz został wysłany!",
+    "depositSuccess": "Sukces!",
     "depositTitle": "Twoje środki są w drodze.",
     "paymentSubtitle": "Wróć do strony płatności, aby sfinalizować transakcję",
     "paymentSuccess": "Płatność zakończona sukcesem!"
@@ -293,12 +293,12 @@
     "continue": "Kontynuuj do {{walletName}}",
     "dappPage": {
       "continueButton": "Kontynuuj w {{walletName}}",
-      "depositTitle": "Wpłać z swojego portfela",
+      "depositTitle": "Wpłać ze swojego portfela",
       "payTitle": "Zapłać w swoim portfelu",
       "qrSubtitle": "Otwórz aplikację aparatu w telefonie i zeskanuj kod QR, aby połączyć",
       "spinnerTransactionText": "Zakończ tę transakcję w aplikacji {{walletName}}",
-      "spinnerVerifyText": "Zakończ weryfikację własności w aplikacji {{walletName}}",
-      "subtitle": "Kontynuuj w {{walletName}}. Wracaj tutaj, gdy skończysz.",
+      "spinnerVerifyText": "Dokończ weryfikację własności w aplikacji {{walletName}}",
+      "subtitle": "Kontynuuj w {{walletName}}. Wróć tutaj po zakończeniu.",
       "verifyWalletTitle": "Zweryfikuj swój portfel"
     },
     "previewButton": "Połącz",
@@ -311,7 +311,7 @@
     "declinedTitle": "Połączenie odrzucone",
     "description": "Otwórz {{selectedIntegrationName}} i zeskanuj<3></3>kod QR, aby połączyć konto",
     "qrCodeLabel": "Kod QR można zeskanować na urządzeniu mobilnym, aby nawiązać połączenie",
-    "scanInstruction": "Otwórz aplikację {{walletName}} na telefonie i zeskanuj kod QR, aby połączyć się",
+    "scanInstruction": "Otwórz aplikację {{walletName}} na telefonie i zeskanuj kod QR, aby się połączyć",
     "title": "Połącz się z {{selectedIntegrationName}}"
   },
   "defiWalletSelectNetworkPage": {
@@ -327,8 +327,8 @@
     "title": "Połączenie niedostępne"
   },
   "depositFallback": {
-    "description": "Nie martw się... sfinalizujemy twoją transakcję za pomocą alternatywnej metody wypłaty {{integrationName}}.",
-    "instruction": "Kliknij Podgląd transferu, aby przejrzeć i sfinalizować swoją transakcję.",
+    "description": "Bez obaw... sfinalizujemy Twoją transakcję za pomocą alternatywnej metody wypłaty {{integrationName}}.",
+    "instruction": "Kliknij \"Podgląd transferu\", aby sprawdzić i sfinalizować transakcję.",
     "previewButton": "Podgląd transferu"
   },
   "deviceConfirmationScreenPage": {
@@ -355,7 +355,7 @@
     "continueToPurchase": "Dalej do zakupu",
     "continueToTransfer": "Dalej do transferu",
     "done": "Gotowe",
-    "inWalletLinkedToClient": "Portfel powiązany!<1></1>Wróć do <2>{{clientName}}</2>",
+    "inWalletLinkedToClient": "Portfel połączony!<1></1>Wróć do <2>{{clientName}}</2>",
     "linkAnother": "Połącz inne konto",
     "linkedToClient": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>{{clientName}}</5>.",
     "linkedToThisApp": "Pomyślnie połączyłeś<1></1><2>{{integrationName}}</2> z <5>tą aplikacją</5>."
@@ -370,7 +370,7 @@
       "approvedFromCeFiToClient": "Zatwierdzasz transfer z {{selectedIntegrationName}} do {{clientName}}.",
       "approvedFromCeFiToDestination": "Zatwierdzasz transfer z {{selectedIntegrationName}} do wybranego odbiorcy.",
       "approvedFromDeFi": "Zatwierdziłeś transfer w {{selectedIntegrationName}}.",
-      "bridgingConversion": "Automatycznie przeliczyliśmy Twoje środki na sieć docelową <1>{{destinationNetwork}}</1>.",
+      "bridgingConversion": "Automatycznie przekonwertowaliśmy Twoje środki na sieć docelową <1>{{destinationNetwork}}</1>.",
       "bridgingDelivery": "Twoje przeliczone środki zostały dostarczone do {{clientName}} na adres <4>{{shortBridgingTargetAddress}}</4>.",
       "conversion": "Przeliczenie <1>{{amount}}</1> na <4>{{currency}}</4>.",
       "deposit": "Wpłata <1>{{amount}}</1> z {{paymentMethod}} do {{selectedIntegrationName}}.",
