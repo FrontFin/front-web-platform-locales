@@ -556,7 +556,6 @@
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -732,7 +731,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1318,7 +1316,7 @@
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
     "bybit": {
-      "fee": "Frais\u00a0: {{fee}}"
+      "fee": "Frais : {{fee}}"
     },
     "continueInPayApp": "Continuez dans {{integrationName}}",
     "cryptoCom": {
@@ -1560,6 +1558,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Compte",
+    "autoConvertNetworkLabel": "Conversion automatique en {{symbol}}, envoyé sur <4>{{networkName}}</4>.",
     "buildingPreviewDeposit": "Création de l’aperçu de votre dépôt...",
     "buildingPreviewPayment": "Création de l’aperçu de votre paiement...",
     "buildingPreviewTransfer": "Création de l’aperçu de votre transfert...",
@@ -1574,7 +1573,8 @@
     "payWithLabelWithName": "Payer avec {{integrationName}}",
     "plusFees": "{{amount}} + frais",
     "processingDeposit": "Traitement en cours",
-    "processingPayment": "Paiement en cours de traitement"
+    "processingPayment": "Paiement en cours de traitement",
+    "simpleNetworkLabel": "Envoyer sur <2>{{networkName}}</2>."
   },
   "previewTransfer": {
     "allFeesIncluded": "Tous frais inclus",
@@ -1849,6 +1849,7 @@
     "noBalanceBody": "Vous n'avez pas de solde {{symbol}} à transférer. Veuillez recharger votre solde et réessayer.",
     "noBalanceOnSpecificNetwork": "Vous n'avez pas de {{symbol}} sur le réseau {{network}}.",
     "noBalanceTitle": "Pas de solde",
+    "noSupportedAssetsOnNetwork": "Aucun actif pris en charge sur ce réseau.",
     "paymentBody": "Votre solde est trop bas pour réaliser cet achat.",
     "paymentInsufficientBalance": "Votre solde de {{balance}} {{symbol}} sur le réseau {{network}} est insuffisant pour effectuer ce paiement de {{amount}} {{symbol}}.",
     "paymentInsufficientBalanceAndGas": "Cette transaction nécessite {{amount}} {{symbol}} et environ ${{gasFee}} en ETH sur le réseau {{network}} pour payer les frais de gaz.",
