@@ -556,8 +556,6 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -733,8 +731,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1562,6 +1558,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Аккаунт",
+    "autoConvertNetworkLabel": "Авто-конвертировать в {{symbol}}, отправить на <4>{{networkName}}</4>.",
     "buildingPreviewDeposit": "Создание предварительного просмотра вашего депозита...",
     "buildingPreviewPayment": "Создание предварительного просмотра вашего платежа...",
     "buildingPreviewTransfer": "Создание предварительного просмотра вашего перевода...",
@@ -1576,7 +1573,8 @@
     "payWithLabelWithName": "Оплатить через {{integrationName}}",
     "plusFees": "{{amount}} + комиссии",
     "processingDeposit": "Обрабатываем",
-    "processingPayment": "Обработка вашего платежа"
+    "processingPayment": "Обработка вашего платежа",
+    "simpleNetworkLabel": "Send on <2>{{networkName}}</2>."
   },
   "previewTransfer": {
     "allFeesIncluded": "Все сборы включены",
@@ -1851,6 +1849,7 @@
     "noBalanceBody": "У вас нет {{symbol}} для перевода. Пожалуйста, пополните свой баланс и попробуйте снова.",
     "noBalanceOnSpecificNetwork": "У вас нет {{symbol}} в сети {{network}}.",
     "noBalanceTitle": "Баланс недостаточен",
+    "noSupportedAssetsOnNetwork": "\n\nНа этой сети нет поддерживаемых активов.",
     "paymentBody": "Ваш баланс слишком низкий, чтобы завершить эту покупку.",
     "paymentInsufficientBalance": "Ваш баланс {{balance}} {{symbol}} в сети {{network}} недостаточен для совершения этого платежа на сумму {{amount}} {{symbol}}.",
     "paymentInsufficientBalanceAndGas": "Эта транзакция требует {{amount}} {{symbol}} и ~{{gasFee}} долларов в ETH в сети {{network}} для оплаты транзакционных издержек.",
