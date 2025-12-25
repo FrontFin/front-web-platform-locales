@@ -1331,7 +1331,7 @@
     "processing": "भुगतान संसाधित किया जा रहा है...",
     "qrCodeLabel": "आपके मोबाइल उपकरण पर कनेक्शन स्थापित करने के लिए क्यूआर कोड स्कैन किया जा सकता है",
     "qrGenerationFailed": "क्यूआर कोड उत्पन्न करने में विफल। कृपया पुनः प्रयास करें।",
-    "receivedDetails": "आपको <strong>{{amountStr}}</strong> {{clientName}} ({{shortAddress}}) में प्राप्त होंगे",
+    "receivedDetails": "आपको <strong>{{amountStr}}</strong> {{clientName}} {{shortAddress}} में प्राप्त होंगे",
     "scanQrCode": "अपना भुगतान पूरा करने के लिए क्यूआर कोड स्कैन करें",
     "selectAsset": "स्थानांतरण के लिए संपत्ति चुनें",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
@@ -1558,6 +1558,7 @@
   },
   "previewPageUI": {
     "accountLabel": "खाता",
+    "autoConvertNetworkLabel": "{{symbol}} में ऑटो-कन्वर्ट करें, <4>{{networkName}}</4> पर भेजें।",
     "buildingPreviewDeposit": "आपके जमा पूर्वावलोकन को तैयार किया जा रहा है...",
     "buildingPreviewPayment": "आपके भुगतान पूर्वावलोकन का निर्माण हो रहा है...",
     "buildingPreviewTransfer": "आपके स्थानांतरण पूर्वावलोकन को तैयार किया जा रहा है…",
@@ -1572,7 +1573,8 @@
     "payWithLabelWithName": "{{integrationName}} के साथ भुगतान करें",
     "plusFees": "{{amount}} + शुल्क",
     "processingDeposit": "प्रसंस्करण",
-    "processingPayment": "आपका भुगतान संसाधित हो रहा है"
+    "processingPayment": "आपका भुगतान संसाधित हो रहा है",
+    "simpleNetworkLabel": "Send on <2>{{networkName}}</2>."
   },
   "previewTransfer": {
     "allFeesIncluded": "सभी शुल्क शामिल हैं",
@@ -1847,6 +1849,7 @@
     "noBalanceBody": "आपके पास स्थानांतरित करने के लिए कोई {{symbol}} बैलेंस नहीं है। कृपया अपना बैलेंस टॉप अप करें और पुनः प्रयास करें।",
     "noBalanceOnSpecificNetwork": "आपके पास {{network}} नेटवर्क पर कोई {{symbol}} नहीं है।",
     "noBalanceTitle": "कोई बैलेंस नहीं",
+    "noSupportedAssetsOnNetwork": "इस नेटवर्क पर कोई समर्थित संपत्तियां नहीं हैं।",
     "paymentBody": "आपकी शेष राशि इस खरीदारी को पूरा करने के लिए बहुत कम है।",
     "paymentInsufficientBalance": "{{network}} नेटवर्क पर आपका {{balance}} {{symbol}} का बैलेंस इस {{amount}} {{symbol}} भुगतान के लिए पर्याप्त नहीं है।",
     "paymentInsufficientBalanceAndGas": "इस लेन-देन के लिए {{network}} नेटवर्क पर गैस शुल्क का भुगतान करने के लिए {{amount}} {{symbol}} और ~${{gasFee}} मूल्य का ETH आवश्यक है।",
