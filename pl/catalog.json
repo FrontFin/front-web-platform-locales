@@ -673,7 +673,7 @@
   },
   "feesDrawer": {
     "autoConvertBridgingFeeDescription": "Obejmuje wszystkie opłaty za konwersję oraz niewielki bufor na poślizg cenowy. Nigdy nie zapłacisz więcej niż pokazana kwota.",
-    "autoConvertBridgingFeeTooltipDescription": "Ta opłata obejmuje koszt przeliczania i przekazywania środków między sieciami za pomocą naszego partnera transferowego. Zawiera opłaty relayerów, koszty routingu i ewentualne opłaty za realizację między sieciami potrzebne do pełnego wykonania transferu. Wprowadzono małą bufrową zmienność, aby chronić Twój transfer przed zmianami cenowymi podczas realizacji. Nigdy nie zapłacisz więcej niż przedstawiona kwota opłat — jeśli pełen bufor nie zostanie użyty, pobierana jest automatycznie mniejsza kwota.",
+    "autoConvertBridgingFeeTooltipDescription": "Ta opłata obejmuje koszty konwersji i transferu Twoich środków między sieciami z wykorzystaniem naszego partnera transferowego. Zawiera opłaty relayerów, koszty routingu oraz wszelkie opłaty wykonawcze między sieciami wymagane do zrealizowania transferu. Uwzględniono niewielki bufor na poślizg cenowy, aby chronić transfer przed zmianami cen w trakcie realizacji. Nigdy nie zapłacisz więcej niż wyświetlona kwota opłaty — jeśli pełny bufor nie zostanie wykorzystany, automatycznie zostanie naliczona niższa kwota.",
     "automatedSwapFeeDescription": "Opłata umożliwiająca automatyczną konwersję aktywów w Twoim portfelu na docelowy aktyw transferu.",
     "bridgingTotalDiscription": "Maksymalna kwota, jaką zapłacisz za ten transfer. Możesz zapłacić mniej.",
     "bridgingTotalTooltipDiscription": "To łączna kwota, jaką możesz zapłacić, obejmująca opłaty sieciowe oraz opłatę za automatyczną konwersję (z uwzględnionym buforem na poślizg cenowy). Rzeczywista naliczona kwota może być niższa, jeśli pełny bufor poślizgu nie zostanie wykorzystany, ale nigdy nie będzie wyższa.",
@@ -789,10 +789,10 @@
     "disclaimerSecondLineOtherBalancesPayment": "Nie masz wystarczającej ilości {{symbol}}, dlatego doładujemy Twoje saldo, wykorzystując inne środki na Twoim koncie, aby zrealizować tę płatność.",
     "disclaimerSecondLineOtherBalancesTransfer": "Nie masz wystarczającej ilości {{symbol}}, dlatego doładujemy Twoje saldo, wykorzystując inne środki na Twoim koncie, aby zrealizować ten transfer.",
     "disclaimerTransferFirstLine": "Target akceptuje transfery w tokenie {{symbol}}.",
-    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} akceptuje depozyty w stablecoinie {{symbol}}.",
+    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} akceptuje wpłaty w stablecoinie {{symbol}}.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} akceptuje płatności w stablecoinie {{symbol}}.",
-    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akceptuje przelewy w stablecoin {{symbol}}.",
-    "stablecoinDepositDisclaimerFirstLine": "Target akceptuje depozyty w stablecoinie {{symbol}}.",
+    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akceptuje transfery w stablecoin {{symbol}}.",
+    "stablecoinDepositDisclaimerFirstLine": "Target akceptuje wpłaty w stablecoinie {{symbol}}.",
     "stablecoinPaymentDisclaimerFirstLine": "Target akceptuje płatności w stablecoinie {{symbol}}.",
     "stablecoinTransferDisclaimerFirstLine": "Target akceptuje transfery w stablecoinie {{symbol}}.",
     "thisMerchant": "Ten sprzedawca",
@@ -845,9 +845,9 @@
   },
   "homePage": {
     "buy": "Kup",
-    "buyDescription": "Kup kryptowalutę natychmiast za pomocą karty lub banku.",
+    "buyDescription": "Kup za pomocą karty lub przelewu bankowego.",
     "guaranteed": "Gwarantowane",
-    "noExtraFee": "Bez dodatkowej opłaty",
+    "noExtraFee": "Brak dodatkowych opłat",
     "secureDeposit": "Bezpieczna wpłata",
     "sendFunds": "Wysyłaj środki bezpiecznie na właściwy adres i sieć.",
     "sendUsingQR": "Prześlij środki ręcznie, używając kodu QR.",
@@ -856,7 +856,7 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Żądana kwota transferu {{requestedAmount}} jest niższa niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
-    "balanceBelowIntegrationMinimumDescription": "Twój saldo w wysokości {{currentBalance}} jest poniżej minimalnej kwoty {{minimumAmount}} w {{integrationName}} dla transferu {{symbol}} w sieci {{network}}. Proszę doładować saldo i spróbować ponownie.",
+    "balanceBelowIntegrationMinimumDescription": "Twoje saldo {{currentBalance}} jest niższe niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do wykonania transferu {{symbol}} w sieci {{network}}. Doładuj saldo i spróbuj ponownie.",
     "balanceBelowMinimumDescription": "Twoje saldo {{currentBalance}} jest niższe niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
     "belowMinimum": "Poniżej minimalnego limitu {{integrationName}}",
     "belowRequestedAmountDescription": "Twoje saldo {{balance}} jest mniejsze niż {{amount}}. Ta kwota jest wymagana do pokrycia wybranej kwoty transferu wraz z opłatami.",
@@ -864,18 +864,18 @@
     "insufficientBalance": "Niewystarczające saldo",
     "insufficientBalanceDescription": "Twoje saldo {{currentBalance}} jest mniejsze niż minimalny wymóg dla tego transferu.",
     "noBalance": "Brak salda",
-    "noBalancePaymentDescription": "Twoje saldo w wysokości {{balance}} jest niewystarczające do wykonania tej płatności {{amount}}. Proszę doładować saldo i spróbować ponownie.",
-    "noBalancePaymentSelectNetworkDescription": "Twoje saldo w wysokości {{balance}} jest niewystarczające do wykonania tej płatności {{amount}}. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
-    "noBalancesPaymentDescription": "Twoje salda są niewystarczające do wykonania tej płatności. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
-    "noBalancesTransferkDescription": "Nie posiadasz żadnych sald do transferu. Proszę doładować saldo i spróbować ponownie.",
-    "noBalancesTransferSelectNetworkDescription": "\"Nie masz salda do przeniesienia. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.\"",
-    "noBalanceTransferDescription": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
-    "noBalanceTransferSelectNetworkDescription": "\"Nie masz salda {{symbol}} do przeniesienia. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.\"",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "\"Ta transakcja wymaga dostępnego salda do przeniesienia plus {{feeInFiat}} wartości {{feeSymbol}}, aby opłacić opłaty za gaz. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.\"",
-    "noGasBalancePaymentDescription": "Ta transakcja wymaga {{amount}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę doładować saldo i spróbować ponownie.",
-    "noGasBalancePaymentSelectNetworkDescription": "Ta transakcja wymaga {{amount}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
-    "noGasBalanceTransferDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę doładować saldo i spróbować ponownie.",
-    "noGasBalanceTransferSelectNetworkDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
+    "noBalancePaymentDescription": "Twoje saldo {{balance}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}}. Doładuj saldo i spróbuj ponownie.",
+    "noBalancePaymentSelectNetworkDescription": "Twoje saldo {{balance}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}}. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noBalancesPaymentDescription": "Twoje salda są niewystarczające, aby zrealizować tę płatność. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noBalancesTransferkDescription": "Nie posiadasz żadnych sald do wykonania transferu. Doładuj saldo i spróbuj ponownie.",
+    "noBalancesTransferSelectNetworkDescription": "Nie masz żadnych sald do wykonania transferu. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noBalanceTransferDescription": "Nie masz salda {{symbol}} do wykonania transferu. Doładuj saldo i spróbuj ponownie.",
+    "noBalanceTransferSelectNetworkDescription": "Nie masz salda {{symbol}} do wykonania transferu. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Ta transakcja wymaga dostępnego salda do wykonania transferu oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noGasBalancePaymentDescription": "Ta transakcja wymaga {{amount}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Doładuj saldo i spróbuj ponownie.",
+    "noGasBalancePaymentSelectNetworkDescription": "Ta transakcja wymaga {{amount}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noGasBalanceTransferDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Doładuj saldo i spróbuj ponownie.",
+    "noGasBalanceTransferSelectNetworkDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
     "notEligible": "Nie kwalifikuje się do tego transferu",
     "notEligibleDescription": "{{symbol}} nie jest akceptowany dla tego transferu.",
     "notSupportedByInstitution": "Obecnie nieobsługiwane przez {{integrationName}}",
@@ -903,7 +903,7 @@
   },
   "initialVerifyPage": {
     "approveSignature": "Zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
-    "approveSignatureStillThere": "Czy nadal jesteś tam?… Proszę zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
+    "approveSignatureStillThere": "Nadal tu jesteś?… Zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
     "content40": "Potwierdź, że jesteś właścicielem tego portfela",
     "drawerTitle": "Zatwierdź prośbę o podpis<1></1> w swoim portfelu",
     "item1Body": "Zostaniesz poproszony o podpisanie wiadomości w {{selectedIntegrationName}}, co potwierdzi, że jesteś właścicielem tego portfela.",
@@ -1142,7 +1142,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Ponownie otwórz {{selectedIntegrationName}}",
-      "note": "Kontynuuj na {{selectedIntegrationName}}, aby zakończyć swój depozyt",
+      "note": "Kontynuuj w {{selectedIntegrationName}}, aby zakończyć wpłatę",
       "subtitle": "Proszę zakończyć logowanie i zatwierdzić dostęp w przeglądarce.",
       "title": "Oczekiwanie na połączenie"
     },
@@ -1229,13 +1229,13 @@
     "selectAsset": "Wybierz aktywo do transferu",
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
-    "unsupportedCurrencyError": "Wybrana waluta jest nieobsługiwana dla onramp w Twoim kraju.",
-    "unsupportedPair": "Ta para sieć/symbol nie jest obecnie obsługiwana. Proszę wybrać inny.",
+    "unsupportedCurrencyError": "Wybrana waluta nie jest obsługiwana dla on-rampu w Twoim kraju.",
+    "unsupportedPair": "Ta para sieć-symbol nie jest obecnie obsługiwana. Wybierz inną.",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz"
   },
   "orderSummaryDrawer": {
-    "automatedSwapFee": "Automatyczna opłata za zamianę",
+    "automatedSwapFee": "Opłata za automatyczną konwersję",
     "conversionFee": "Opłata za konwersję w {{integrationName}}",
     "merchantInfoName": "Sprzedający: {{clientName}}",
     "paymentToClient": "Płatność dla {{clientName}}",
@@ -1295,7 +1295,7 @@
       "includeTag": "Dołącz ten tag: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>",
       "requiredForDeposit": "Wymagane dla tej wpłaty",
-      "sendAboveMinimum": "Wyślij powyżej minimalnej kwoty: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Wyślij kwotę powyżej minimum: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1320,11 +1320,11 @@
     },
     "continueInPayApp": "Kontynuuj w {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": "Zeskanuj kod QR za pomocą aplikacji crypto.com i zakończ transakcję"
+      "scanQRWithAppText": "Zeskanuj kod QR za pomocą aplikacji crypto.com aby sfinalizować transakcję"
     },
     "generateNewQr": "Wygeneruj nowy kod QR",
     "noTransferIdError": "Brak identyfikatora przelewu. Proszę rozpocząć od nowa.",
-    "paidConfirmation": "Zapłaciłeś <strong>{{amountStr}}</strong> dla {{clientName}}",
+    "paidConfirmation": "Zapłaciłeś <strong>{{amountStr}}</strong> na rzecz {{clientName}}",
     "paymentDataMissing": "Dane płatności są niedostępne. Proszę spróbować ponownie.",
     "paymentFailed": "Płatność nie powiodła się. Proszę spróbować ponownie.",
     "pollingError": "Sprawdzenie statusu płatności nie powiodło się. Proszę spróbować ponownie.",
@@ -1517,7 +1517,7 @@
       "title": "Coś poszło nie tak"
     },
     "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje mają umożliwić komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") poprzez Usługę Końcowego Użytkownika, w tym przesyłanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Końcowego Użytkownika opierają się na Narzędziu; że korzystanie z takich funkcji odbywa się na twoje polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Końcowego Użytkownika lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że masz wszystkie niezbędne prawa i zgody na połączenie i dostęp do każdego Połączonego Konta poprzez takie funkcje, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub ciebie osobiście dla każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
+      "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje umożliwiają komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") za pośrednictwem Usługi Użytkownika Końcowego, w tym przekazywanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Użytkownika Końcowego opierają się na Narzędziu; że korzystasz z tych funkcji na własne polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Użytkownika Końcowego lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że posiadasz wszelkie niezbędne prawa i zgody do połączenia się z każdym Połączonym Kontem oraz uzyskania do niego dostępu za pośrednictwem tych funkcji, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub Twoich danych osobistych w odniesieniu do każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
     },
     "termsOfUse": {
       "linkText": "warunki użytkowania",
