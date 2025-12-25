@@ -556,7 +556,6 @@
     "incorrectEmail": "Inseriste um email incorreto.",
     "incorrectPasswordChancesRemaining": "Senha incorreta. Tens {{count}} tentativas restantes.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Tens {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Tens {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de utilizador ou palavra-passe incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -732,7 +731,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1560,6 +1558,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Conta",
+    "autoConvertNetworkLabel": "Conversão automática para {{symbol}}, enviar em <4>{{networkName}}</4>.",
     "buildingPreviewDeposit": "Construindo a pré-visualização do depósito...",
     "buildingPreviewPayment": "Construindo a pré-visualização de pagamento...",
     "buildingPreviewTransfer": "Construindo a pré-visualização de transferência...",
@@ -1574,7 +1573,8 @@
     "payWithLabelWithName": "Pagar com {{integrationName}}",
     "plusFees": "{{amount}} + taxas",
     "processingDeposit": "A processar",
-    "processingPayment": "A processar o teu pagamento"
+    "processingPayment": "A processar o teu pagamento",
+    "simpleNetworkLabel": "Send on <2>{{networkName}}</2>."
   },
   "previewTransfer": {
     "allFeesIncluded": "Todas as taxas incluídas",
@@ -1849,6 +1849,7 @@
     "noBalanceBody": "Não tens saldo de {{symbol}} para transferir. Por favor, carrega o teu saldo e tenta novamente.",
     "noBalanceOnSpecificNetwork": "Não tens {{symbol}} na rede {{network}}.",
     "noBalanceTitle": "Sem saldo",
+    "noSupportedAssetsOnNetwork": "Nenhum ativo suportado nesta rede.",
     "paymentBody": "O teu saldo é muito baixo para concluir esta compra.",
     "paymentInsufficientBalance": "O teu saldo de {{balance}} {{symbol}} na rede {{network}} é insuficiente para efetuar este pagamento de {{amount}} {{symbol}}.",
     "paymentInsufficientBalanceAndGas": "Esta transação requer {{amount}} {{symbol}} e ~${{gasFee}} em ETH na rede {{network}} para pagar as taxas de gás.",
