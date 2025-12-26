@@ -1228,8 +1228,8 @@
     "selectAnotherExchange": "Por favor, selecciona otro exchange o wallet desde el cual depositar.",
     "selectAsset": "Selecciona el activo a transferir",
     "selectCurrency": "Selecciona una divisa",
-    "selectNetwork": "Selecciona una red",
-    "unsupportedCurrencyError": "La divisa seleccionada no es compatible para el procesamiento en tu país.",
+    "selectNetwork": "Selecciona una red de transferencia",
+    "unsupportedCurrencyError": "La divisa seleccionada no es compatible para la conversión a cripto en tu país.",
     "unsupportedPair": "Este conjunto red/símbolo no está soportado actualmente. Por favor, elige otro.",
     "youPay": "Pagas",
     "youReceive": "Recibes"
@@ -1279,7 +1279,7 @@
       "copyWalletAddress": "Copiar dirección de wallet",
       "depositToClient": "Depósito en {{clientName}}",
       "downloadQr": "Descargar el código QR",
-      "headline": "¿Tienes problemas?",
+      "headline": "Depositar {{token}} en {{network}}",
       "infoLabel": "{{info}} (requerido)",
       "networkLabel": "Red",
       "subtitle": "Todavía puedes completar tu depósito manualmente.",
@@ -1288,7 +1288,7 @@
     },
     "tokenSelection": {
       "subtitle": "{{client}} acepta:",
-      "title": "Elija un token"
+      "title": "Elige un token"
     },
     "warnings": {
       "includeMemo": "Incluir este memo: <1>{{memo}}</1>",
@@ -1320,25 +1320,25 @@
     },
     "continueInPayApp": "Continuar en {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": "Escanee el código QR con su aplicación crypto.com y complete la transacción"
+      "scanQRWithAppText": "Escanea el código QR con tu app de crypto.com y completa la transacción"
     },
     "generateNewQr": "Generar un nuevo código QR",
-    "noTransferIdError": "Falta el ID de transferencia. Por favor, comience de nuevo.",
+    "noTransferIdError": "Falta el ID de transferencia. Por favor, comienza de nuevo.",
     "paidConfirmation": "Has pagado <strong>{{amountStr}}</strong> a {{clientName}}",
-    "paymentDataMissing": "Los datos de pago no están disponibles. Por favor intente nuevamente.",
-    "paymentFailed": "El pago falló. Por favor intente nuevamente.",
-    "pollingError": "No se puede verificar el estado del pago. Por favor intente nuevamente.",
+    "paymentDataMissing": "Los datos de pago no están disponibles. Por favor intenta nuevamente.",
+    "paymentFailed": "El pago falló. Por favor intenta nuevamente.",
+    "pollingError": "No se puede verificar el estado del pago. Por favor intenta nuevamente.",
     "processing": "Procesando pago...",
     "qrCodeLabel": "El código QR puede escanearse en tu dispositivo móvil para establecer una conexión",
-    "qrGenerationFailed": "Falló la generación del código QR. Por favor intente nuevamente.",
+    "qrGenerationFailed": "Falló la generación del código QR. Por favor intenta nuevamente.",
     "receivedDetails": "Recibirás <strong>{{amountStr}}</strong> en {{clientName}} {{shortAddress}}",
     "scanQrCode": "Escanea el código QR para completar tu pago",
-    "selectAsset": "Selecciona un recurso a transferir",
-    "selectNetwork": "Selecciona una red",
+    "selectAsset": "Selecciona el activo a transferir",
+    "selectNetwork": "Selecciona una red de transferencia",
     "transactionComplete": "Transacción completada",
     "unsupportedCurrencyError": "Esta divisa no está soportada en tu país.",
     "updateFailed": "No se pudieron recuperar los detalles del pago. Por favor intenta de nuevo.",
-    "youPay": "Pagarás",
+    "youPay": "Pagas",
     "youReceive": "Recibes"
   },
   "paypal": {
@@ -1412,7 +1412,7 @@
       "continuePayment": "Continuar con el pago",
       "exit": "Salir",
       "exitAnyway": "Salir de todos modos",
-      "subtitle": "Vas a perder tu progreso.",
+      "subtitle": "Tu progreso se perderá.",
       "title": "¿Estás seguro de que quieres salir?"
     },
     "fundingOptions": {
@@ -1421,13 +1421,13 @@
       "buyingPower": "Poder de compra",
       "exchangeRateDisclaimer": "La tasa de cambio puede incluir un margen.",
       "instantCashAvailable": "Dinero inmediato disponible: {{amount}}",
-      "linkedPaymentMethods": "Formas de pago vinculadas",
+      "linkedPaymentMethods": "Forma(s) de pago vinculada(s)",
       "paymentMethodTypes": {
         "bankAccount": "Cuenta bancaria",
         "card": "Tarjeta",
         "digitalWallet": "Wallet"
       },
-      "title": "Opciones de financiación",
+      "title": "Opciones de financiamiento",
       "total": "Total {{amount}}"
     },
     "fundingSteps": {
@@ -1441,7 +1441,7 @@
     "infoScreen": {
       "rule1": "Tu información nunca se almacena. El acceso terminará después de este pago.",
       "rule2": "Usa tu cripto, revisa los detalles y aprueba para pagar.",
-      "rule3": "La conversión automática simplifica las cosas.",
+      "rule3": "La conversión automática mantiene las cosas simples.",
       "title": "Inicia sesión para revisar los detalles del pago"
     },
     "initialSteps": {
@@ -1449,19 +1449,19 @@
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Elige una cuenta diferente",
-      "message": "Su saldo de {{balanceAmount}} es insuficiente para realizar este pago de {{paymentAmount}}.",
-      "messageWithNetwork": "Su saldo de {{balanceAmount}} en la red {{network}} es insuficiente para realizar este pago de {{paymentAmount}}.",
+      "message": "Tu saldo de {{balanceAmount}} es insuficiente para realizar este pago de {{paymentAmount}}.",
+      "messageWithNetwork": "Tu saldo de {{balanceAmount}} en la red {{network}} es insuficiente para realizar este pago de {{paymentAmount}}.",
       "network": "Red",
       "title": "Saldo insuficiente",
-      "topUpAccount": "Por favor, recargue su cuenta e inténtelo de nuevo.",
+      "topUpAccount": "Por favor, recarga tu cuenta y vuelve a intentarlo.",
       "topUpWallet": "Por favor, recarga tu wallet e intenta de nuevo.",
       "topUpWalletTryOtherNetwork": "Por favor, recarga tu wallet y vuelve a intentarlo o intenta con otra red."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": "Esta transacción requiere {{transferAmount}} y aproximadamente ~{{gasFiat}} en {{gasSymbol}} para pagar las comisiones."
+      "message": "Esta transacción requiere {{transferAmount}} y aproximadamente ~{{gasFiat}} en {{gasSymbol}} para pagar las comisiones de la red."
     },
     "insufficientGasBalancePage": {
-      "message": "Esta transacción requiere {{transferAmount}} y ~{{gasFiat}} en {{gasSymbol}} en la red {{networkName}} para pagar las comisiones.",
+      "message": "Esta transacción requiere {{transferAmount}} y ~{{gasFiat}} en {{gasSymbol}} en la red {{networkName}} para pagar las comisiones de la red.",
       "title": "Saldo de comisiones insuficiente"
     },
     "inWalletBrowserInitialPage": {
@@ -1481,7 +1481,7 @@
       "choose": "Elige una red"
     },
     "oauthTimeoutPage": {
-      "reopen": "Vuelve a abrir {{integrationName}}",
+      "reopen": "Volver a abrir {{integrationName}}",
       "subtitle": "Parece que no terminaste de iniciar sesión o aprobar el acceso. Para continuar, por favor vuelve a abrir {{integrationName}} y completa el inicio de sesión.",
       "title": "No se pudo conectar a {{integrationName}}"
     },
@@ -1489,7 +1489,7 @@
       "bufferAndFees": "{{bufferAmount}} Margen + {{feesAmount}} comisiones incluidas",
       "bufferDisclaimer": "Conservarás cualquier margen no utilizado.",
       "conversionFee": "Comisión de conversión de {{integrationName}}",
-      "conversionFeeHint": "Esta tarifa que {{integrationName}} cobra para convertir.",
+      "conversionFeeHint": "Esta comisión que {{integrationName}} cobra para convertir.",
       "estimatedNetworkFee": "Comisión de red estimada",
       "feeChangedNotice": "La comisión de red ha cambiado. Revisa tu total y confirma.",
       "feesIncluded": "{{amount}} comisiones incluidas",
@@ -1499,13 +1499,13 @@
       "networkFeeHint": "Ayuda a que tu transacción se conecte a la blockchain cubriendo los costos para los validadores de la red que la procesan",
       "payWith": "Pagar con",
       "pyusdDisclaimer": "La transacción se completará usando PayPal USD (PYUSD), que es una stablecoin emitida y custodiada por Paxos Trust Company, LLC. PYUSD se ejecuta en la blockchain.",
-      "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian con frecuencia. Todas las compras con cripto son finales.",
+      "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian con frecuencia. Todas las compras cripto son finales.",
       "send": "Enviar",
       "swapFee": "Comisión de intercambio automatizado",
       "swapFeeHint": "Una comisión para facilitar el intercambio automatizado de activos en tu wallet al activo de transferencia objetivo.",
       "title": "Pagar a {{merchantName}}",
       "transactionBuffer": "Margen de transacción",
-      "transactionBufferHint": "Este monto se agrega para ayudar a que tu compra se realice, incluso si los precios de cripto cambian. Esto puede dejar algo de {{settlementCurrency}} en tu wallet."
+      "transactionBufferHint": "Este monto se agrega para ayudar a que tu compra se realice, incluso si los precios de cripto cambian. Esto podría dejar algo de {{settlementCurrency}} en tu wallet."
     },
     "sessionExpiredPage": {
       "description": "Esto suele suceder si inicias sesión en tu cuenta en otra plataforma mientras esta sesión está activa.",
@@ -1537,7 +1537,7 @@
       "chooseDifferentAccount": "Elige una cuenta diferente",
       "defaultMessage": "Tus fondos permanecerán en tu cuenta de {{integrationName}}.",
       "defaultTitle": "No podemos procesar este pago",
-      "insufficientFunds": "Saldo insuficiente",
+      "insufficientFunds": "Fondos insuficientes",
       "insufficientFundsMessage": "Tu saldo es demasiado bajo para completar esta compra.",
       "requestDenied": "Solicitud denegada",
       "requestDeniedMessage": "Parece que rechazaste la transacción. Si fue un error, inténtalo de nuevo y aprueba la solicitud en tu wallet."
@@ -1558,7 +1558,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Cuenta",
-    "autoConvertNetworkLabel": "Auto-convertir a {{symbol}}, enviar en <4>{{networkName}}</4>.",
+    "autoConvertNetworkLabel": "Conversión automática a {{symbol}}, enviar en <4>{{networkName}}</4>.",
     "buildingPreviewDeposit": "Generando la vista previa de tu depósito...",
     "buildingPreviewPayment": "Generando la vista previa de tu pago...",
     "buildingPreviewTransfer": "Generando la vista previa de tu transferencia...",
@@ -1590,8 +1590,8 @@
     "fundingWith": "Financiar con",
     "institutionTransferFee": "Comisión de retiro de {{selectedIntegrationName}}",
     "institutionTransferFeeHint": "La comisión que {{selectedIntegrationName}} cobrará para facilitar tu transferencia de {{symbol}}.",
-    "insufficientFunds": "Saldo insuficiente",
-    "maxAmount": "Tu cuenta puede depositar un máximo de <2>{{networkMaxAmount}}</2>. ¿Quieres ajustar tu transferencia a esta cantidad?",
+    "insufficientFunds": "Fondos insuficientes",
+    "maxAmount": "Tu cuenta puede financiar un máximo de <2>{{networkMaxAmount}}</2>. ¿Quieres ajustar tu transferencia a esta cantidad?",
     "monitoring": "Esperando la aprobación...",
     "network": "Red",
     "onrampTitle": "Vista previa de la compra",
@@ -1613,14 +1613,14 @@
     "transferTimeout": "No recibimos una respuesta a tiempo",
     "transferTimeoutBody": "Por favor, inténtalo de nuevo y aprueba la solicitud de la transacción.",
     "transferTitle": "Vista previa de la transferencia",
-    "youMayReceiveLess": "Puedes recibir menos debido la volatilidad de {{symbol}}."
+    "youMayReceiveLess": "Puedes recibir menos debido al movimiento del precio de {{symbol}}."
   },
   "previewTransferPageUI": {
     "depositFromIntegration": "Depósito desde {{integrationName}}",
     "depositTo": "Depositar en",
     "fee": "Incluye {{amount}} en comisiones",
     "feeInBridging": "Incluye {{gasFee}} en comisiones de red y {{conversionFee}} en comisiones de conversión",
-    "fundingMethods": "Formas de pago",
+    "fundingMethods": "Métodos de financiamiento",
     "network": "Red",
     "receive": "Recibir",
     "refreshing": "Actualizar en {{seconds}}s",
