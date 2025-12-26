@@ -685,7 +685,7 @@
     "totalDetails": "Detalles del total"
   },
   "fields": {
-    "apiKey": "Llave de API",
+    "apiKey": "Clave API",
     "apiSecret": "Secreto de API",
     "authToken": "Token de autorización",
     "challengeCode": "Código de desafío",
@@ -813,14 +813,14 @@
     "establishedInThisApp": "Ha establecido con éxito actualizaciones ininterrumpidas en<1></1><2>esta aplicación</2>.",
     "linkedToInClient": "Has vinculado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>{{clientName}}</5>.",
     "linkedToThisApp": "Has vinculado con éxito<1></1><2>{{selectedIntegrationName}}</2> a <5>esta aplicación</5>.",
-    "nextStep": "A continuación crearemos una llave para <2>actualizaciones ininterrumpidas</2> para que no tengas que volver a iniciar sesión",
+    "nextStep": "A continuación crearemos una clave para <2>actualizaciones ininterrumpidas</2> para que no tengas que volver a iniciar sesión",
     "tempAccess": "Solo quiero acceso temporal"
   },
   "getBrokerAccessTokenErrors": {
     "add2FA": "Por favor, conecta la aplicación para 2FA. E intenta de nuevo.",
-    "identityVerificationRequired": "Necesitas completar la verificación de identidad para usar la función de llaves de API. Por favor, completa la verificación de identidad para continuar.",
+    "identityVerificationRequired": "Necesitas completar la verificación de identidad para usar la función de claves API. Por favor, completa la verificación de identidad para continuar.",
     "invalidCredentials": "Credenciales de inicio de sesión inválidas. Por favor, inténtalo de nuevo.",
-    "maximumApiKeyLimitExceeded": "Se alcanzó el límite máximo permitido de llaves API. Por favor, elimina una llave no utilizada para continuar.",
+    "maximumApiKeyLimitExceeded": "Se alcanzó el límite máximo permitido de claves API. Por favor, elimina una clave no utilizada para continuar.",
     "unsupportedCountryErrorMessage": "Actualmente no soportamos tu cuenta",
     "wrongEmailCode": "Código de correo electrónico incorrecto, por favor intenta de nuevo",
     "wrongTotpCode": "Código de autenticación incorrecto, por favor intenta de nuevo"
@@ -939,7 +939,7 @@
     "clickOnEdit": "Haz clic en editar restricciones",
     "copyIpTitle": "Dirección IP",
     "description": "<0>Binance</0> requiere que los usuarios de la API agreguen las direcciones IP a la lista de permitidos para asegurar la legitimidad de las solicitudes de comercio y transferencia.",
-    "findKey": "Encuentra la llave usada para esta conexión",
+    "findKey": "Encuentra la clave usada para esta conexión",
     "openLink": "Abrir <2><0>Gestión de API de Binance</0></2>",
     "requirementsTitle": "Si planeas operar o transferir a través de esta conexión:",
     "title": "Antes de continuar agrega esta dirección IP a la lista de permitidos"
@@ -951,7 +951,7 @@
     "description": "Por tu seguridad, {{integrationName}} requiere que verifiques tu identidad antes de poder transferir criptomonedas.",
     "steps": {
       "completeVerification": "Completa el proceso para verificar tu identidad y permitir transferencias desde tu cuenta",
-      "navigateCrypto": "Vea la pestaña Crypto, abre el recurso que deseas transferir y haz clic en \"Enviar\"",
+      "navigateCrypto": "Vea la pestaña Crypto, abre el activo que deseas transferir y haz clic en \"Enviar\"",
       "openAccount": "Abre tu cuenta de {{integrationName}}",
       "returnToScreen": "Vuelve a esta pantalla"
     },
@@ -985,14 +985,14 @@
     "clientVerifyLabel": "{{clientName}} debe verificar tu wallet",
     "clientVerifyText": "Se te pedirá que firmes un mensaje en tu dispositivo Ledger que confirma que eres dueño de esta wallet.",
     "secureLabel": "Rápido, seguro y gratuito",
-    "secureText": "Firmar no otorga permiso a {{clientName}} para realizar ninguna transacción con tu wallet.",
+    "secureText": "Firmar de ninguna manera otorga permiso a {{clientName}} para realizar ninguna transacción con tu wallet.",
     "title": "¡Ya casi!"
   },
   "ledgerError": {
     "incorrectAppError": "La aplicación incorrecta está abierta en tu dispositivo. Por favor, abre la aplicación correcta e inténtalo de nuevo.",
     "lockedError": "Tu dispositivo está bloqueado. Por favor, desbloquéalo e inténtalo de nuevo.",
     "noDeviceError": "Ningún dispositivo seleccionado. Por favor, selecciona un dispositivo e inténtalo de nuevo.",
-    "notSelectedError": "Ninguna aplicación seleccionada. Por favor, seleccione una aplicación e inténtelo de nuevo.",
+    "notSelectedError": "Ninguna aplicación seleccionada. Por favor, selecciona una aplicación e inténtalo de nuevo.",
     "rejectError": "El usuario ha rechazado la operación. Por favor, inténtalo de nuevo.",
     "title": "Conexión fallida",
     "transportError": "Se ha producido un error de conexión con tu dispositivo Ledger.",
@@ -1033,11 +1033,11 @@
   "mfaInstructionsText": {
     "email": "Introduce el código de un solo uso que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
     "newPaymentFlow": "Ingresa tu código de un solo uso de <2>{{selectedIntegrationName}}</2> para confirmar esta transacción.",
-    "paymentFlow": "Introduce tu código de un solo uso para confirmar tu identidad.",
+    "paymentFlow": "Introduce tu código de un solo uso para confirmar que eres tú quien inicia este pago.",
     "phone": "Introduce el código de un solo uso que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
-    "totp": "Introduce el código proporcionado por la aplicación de autenticación que has vinculado a <1>{{selectedIntegrationName}}</1>.",
+    "totp": "Introduce el código de un solo uso proporcionado por la aplicación de autenticación que has vinculado a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Introduce el código PIN asociado a tu cuenta <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Introduce tu código de un solo uso para confirmar tu identidad.",
+    "transferFlow": "Introduce tu código de un solo uso para confirmar que realmente eres tú quien inicia esta transferencia.",
     "twoFactor": "Introduce el código proporcionado por el método de autenticación de dos factores que configuraste en tu cuenta <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
@@ -1054,11 +1054,11 @@
   "mfaSetupPage": {
     "emailButton": "Configurar verificación de correo electrónico",
     "emailSubtitle": "Haz clic en el botón de abajo para agregar un correo electrónico a tu cuenta <2>{{selectedIntegrationName}}</2>.",
-    "keyGenerationBody": "Por seguridad, <1>{{selectedIntegrationName}} </1> requiere que los usuarios tengan habilitados un correo electrónico y una aplicación de autenticación MFA como métodos de autenticación dos factores para generar claves",
+    "keyGenerationBody": "Por tu seguridad, <1>{{selectedIntegrationName}} </1> requiere que los usuarios tengan habilitados un correo electrónico y una aplicación de autenticación MFA como métodos de autenticación dos factores para generar claves",
     "keyGenerationTitle": "Habilita la generación de claves API desde tu cuenta {{selectedIntegrationName}}",
     "totpButton": "Configura la aplicación de autenticación",
     "totpSubtitle": "Haz clic en el botón de abajo para añadir una aplicación de autenticación a tu cuenta <2>{{selectedIntegrationName}}</2>.",
-    "withdrawalBody": "Por seguridad, <1>{{selectedIntegrationName}} </1> requiere que los usuarios tengan habilitados un correo electrónico y una aplicación de autenticación MFA como métodos de autenticación dos factores para retirar activos",
+    "withdrawalBody": "Por tu seguridad, <1>{{selectedIntegrationName}} </1> requiere que los usuarios tengan habilitados un correo electrónico y una aplicación de autenticación MFA como métodos de autenticación dos factores para retirar activos",
     "withdrawalTitle": "Habilitar retiros desde tu cuenta de {{selectedIntegrationName}}"
   },
   "mfaSuccessPage": {
@@ -1066,7 +1066,7 @@
     "emailTitle": "Has vinculado correctamente tu correo electrónico a tu cuenta <2>{{selectedIntegrationName}}</2>.",
     "proceed": "Continuar",
     "proceedKey": "Haz clic a continuación para proceder a la generación de claves",
-    "proceedTransfer": "Haga clic abajo para proceder a la transferencia",
+    "proceedTransfer": "Haz clic abajo para proceder a la transferencia",
     "setUpApp": "Configura la aplicación de autenticación",
     "totpTitle": "Has vinculado con éxito una aplicación de autenticación a tu cuenta <2>{{selectedIntegrationName}}</2>."
   },
