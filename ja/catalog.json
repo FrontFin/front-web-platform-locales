@@ -1269,7 +1269,7 @@
       "dontSeeYourAccount": "アカウントが表示されませんか？",
       "havingTrouble": "お困りですか？",
       "needAnotherWay": "別の方法が必要ですか？",
-      "tryAgain": "もう一度試してください",
+      "tryAgain": "再度お試しください",
       "tryWithQr": "代わりに QR コードで入金してみてください。"
     },
     "error": {
@@ -1284,26 +1284,26 @@
       "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
       "copiedWalletAddress": "コピーしました",
-      "copyWalletAddress": "ウォレットアドレスをコピーする",
+      "copyWalletAddress": "ウォレットアドレスをコピー",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
-      "headline": "お困りですか？",
+      "headline": "{{network}}で{{token}}を入金",
       "infoLabel": "{{info}}（必須）",
       "networkLabel": "ネットワーク",
-      "subtitle": "手動で入金を完了することができます。",
+      "subtitle": "手動でも入金を完了できます",
       "tokenLabel": "トークン",
-      "warning": "このアドレスには{{network}}の{{token}}のみを送金してください。それ以外の場合、資産が失われる可能性があります。"
+      "warning": "このアドレスには{{network}}上の{{token}}のみを送金してください。誤って送金した場合、資産が失われる可能性があります"
     },
     "tokenSelection": {
-      "subtitle": "{{client}}は以下を受け入れます:",
+      "subtitle": "{{client}}で利用可能：",
       "title": "トークンを選択"
     },
     "warnings": {
-      "includeMemo": "このメモを含める: <1>{{memo}}</1>",
-      "includeTag": "このタグを含める: <1>{{tag}}</1>",
-      "onlySendTokenOnNetwork": "<3>{{network}}</3> ネットワークでのみ <1>{{token}}</1> を送信する",
+      "includeMemo": "次のメモを入力してください：<1>{{memo}}</1>",
+      "includeTag": "次のタグを入力してください：<1>{{tag}}</1>",
+      "onlySendTokenOnNetwork": "<3>{{network}}</3> ネットワークで  <1>{{token}}</1> のみを送信してください",
       "requiredForDeposit": "この入金には必須です",
-      "sendAboveMinimum": "最小金額以上を送信する: <1>{{amount}}</1>"
+      "sendAboveMinimum": "最小金額 <1>{{amount}}</1> 以上を送金してください"
     }
   },
   "paymentMethods": {
@@ -1322,57 +1322,57 @@
     "topUp": "{{token}}残高をチャージする\n\n"
   },
   "payPage": {
-    "amountMustBeWithin": "金額は{{minFiat}} から {{maxFiat}} の範囲内である必要があります",
+    "amountMustBeWithin": "金額は{{minFiat}}～{{maxFiat}}の範囲内である必要があります",
     "bybit": {
-      "fee": "料金: {{fee}}"
+      "fee": "手数料：{{fee}}"
     },
-    "continueInPayApp": "{{integrationName}}で続ける",
+    "continueInPayApp": "{{integrationName}}で続行する",
     "cryptoCom": {
-      "scanQRWithAppText": "Crypto.com アプリでQRコードをスキャンし、取引を完了してください。"
+      "scanQRWithAppText": "Crypto.comアプリでQRコードをスキャンし、取引を完了してください"
     },
-    "generateNewQr": "新しいQRコードを生成する",
-    "noTransferIdError": "転送IDが見つかりません。最初からやり直してください。",
-    "paidConfirmation": "あなたは<strong>{{amountStr}}</strong>を{{clientName}}に支払いました。",
-    "paymentDataMissing": "支払いデータが利用できません。もう一度お試しください。",
-    "paymentFailed": "支払いに失敗しました。もう一度お試しください。",
-    "pollingError": "支払いステータスを確認できません。もう一度お試しください。",
-    "processing": "お支払いを処理しています...",
-    "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
-    "qrGenerationFailed": "QRコードの生成に失敗しました。もう一度お試しください。",
-    "receivedDetails": "<1>{{amountStr}}</1> を{{clientName}} ({{shortAddress}})で受け取ります",
-    "scanQrCode": "コードをスキャンしてお支払いを完了してください",
-    "selectAsset": "転送する資産を選択",
-    "selectNetwork": "転送ネットワークを選択",
-    "transactionComplete": "取引完了しました",
-    "unsupportedCurrencyError": "この通貨はお住まいの国でサポートされていません。",
-    "updateFailed": "お支払い情報の取得に失敗しました。もう一度お試しください。",
+    "generateNewQr": "新しいQRコードを生成",
+    "noTransferIdError": "送金IDが見つかりません。最初からやり直してください。",
+    "paidConfirmation": "{{clientName}}に<strong>{{amountStr}}</strong>を支払いました",
+    "paymentDataMissing": "支払いデータを取得できません。再度お試しください。",
+    "paymentFailed": "支払いに失敗しました。再度お試しください。",
+    "pollingError": "支払い状況を確認できません。再度お試しください。",
+    "processing": "支払いを処理中です…",
+    "qrCodeLabel": "モバイル端末でQRコードをスキャンして接続できます",
+    "qrGenerationFailed": "QRコードの生成に失敗しました。再度お試しください。",
+    "receivedDetails": "{{clientName}} {{shortAddress}}で<strong>{{amountStr}}</strong>を受け取ります",
+    "scanQrCode": "QRコードをスキャンして支払いを完了してください",
+    "selectAsset": "送金する資産を選択",
+    "selectNetwork": "送金ネットワークを選択",
+    "transactionComplete": "取引が完了しました",
+    "unsupportedCurrencyError": "この通貨はお住まいの国ではご利用いただけません。",
+    "updateFailed": "支払い情報の取得に失敗しました。再度お試しください。",
     "youPay": "支払う",
     "youReceive": "受け取る"
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "現在、お客様の国からのアクセスは許可されておりません。",
+      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。 ",
       "title": "アクセスが拒否されました"
     },
     "belowBinanceMinimumPage": {
-      "message": "この {{transferAmount}} の支払いは、{{symbol}} を {{networkName}} で転送するための Binance の {{minAmount}} の最低額（および手数料）を下回っています。",
-      "title": "Binance の最低以下"
+      "message": "この{{transferAmount}}の支払いは、{{networkName}}で{{symbol}}を送金するためのBinanceの最小金額（{{minAmount}}＋手数料）を下回っています。",
+      "title": "Binanceの最小金額未満"
     },
     "brokerLoading": {
-      "preparingPayment": "支払い内容を準備中"
+      "preparingPayment": "支払い情報を準備しています"
     },
     "catalogPage": {
       "integrationIneligibilityReason": {
-        "integrationMultipleTokenNetworkCompatibility": "サポートされていないトークンとネットワーク",
-        "integrationNotSupportedCountry": "この地域では利用できません",
-        "integrationSingleTokenNetworkCompatibility": "サポートされていないトークンとネットワーク",
-        "lessThanIntegrationMinAmount": "金額が最小額以下です",
-        "moreThanIntegrationMaxAmount": "金額が最大額を超えています",
+        "integrationMultipleTokenNetworkCompatibility": "対応していないトークンおよびネットワークです",
+        "integrationNotSupportedCountry": "このサービスはお客様の地域ではご利用いただけません",
+        "integrationSingleTokenNetworkCompatibility": "対応していないトークンおよびネットワークです",
+        "lessThanIntegrationMinAmount": "最小金額を下回っています",
+        "moreThanIntegrationMaxAmount": "最大金額を超えています",
         "platformNotSupported": "このデバイスではサポートされていません",
         "sdkVersionNotSupported": "対象外",
-        "travelRuleAmountLimit": "適格性制限の遵守",
-        "travelRuleVaspIdRequired": "適格性制限の遵守",
-        "travelRuleWalletOwnershipRequired": "適格性制限の遵守"
+        "travelRuleAmountLimit": "コンプライアンス上の利用制限",
+        "travelRuleVaspIdRequired": "コンプライアンス上の利用制限",
+        "travelRuleWalletOwnershipRequired": "コンプライアンス上の利用制限"
       },
       "unavailableAccounts": "利用できないアカウント"
     },
@@ -1387,101 +1387,101 @@
       "order": "注文",
       "pay": "支払う",
       "save": "保存",
-      "stillWorking": "まだ作業中です。。。",
+      "stillWorking": "処理中です…",
       "total": "合計",
       "tryAgain": "もう一度お試しください"
     },
     "connectionPage": {
-      "approveConnection": "ウォレットで接続<></>要求を承認",
+      "approveConnection": "ウォレットで接続リクエストを承認してください",
       "continueIn": "{{integrationName}}で続ける",
       "continueTo": "{{integrationName}}へ進む",
-      "oauthLogin": "アカウントにログインし、アクセス許可を行ってください"
+      "oauthLogin": "アカウントにログインしてアクセスを許可してください"
     },
     "dappInfoScreen": {
-      "rule3": "自動スワップでシンプルに。",
-      "title": "お財布で支払う"
+      "rule3": "自動スワップで手続きを簡単に。",
+      "title": "ウォレットで支払う"
     },
     "dappSpinner": {
       "retry": "再試行",
       "title": "{{walletName}}ウォレットで支払いを完了してください"
     },
     "doneTransferDetailsPage": {
-      "disclaimer": "取引中に為替レートが変わることがあります。",
-      "title": "詳細を確認する"
+      "disclaimer": "取引中に為替レートが変動した可能性があります。",
+      "title": "何が起きましたか"
     },
     "doneTransferPage": {
-      "checkOrderDetails": "注文詳細を確認する",
-      "description": "{{amount}}を支払いました。完了すると、{{clientName}} から確認が届きます。",
-      "disclaimer": "ネットワークの確認が十分に行われるまで、振込みは完了しません。",
-      "seeDetails": "状況をご確認ください",
-      "title": "支払いが進行中"
+      "checkOrderDetails": "注文内容を確認",
+      "description": "{{amount}}を支払いました。完了すると{{clientName}}から確認が届きます。",
+      "disclaimer": "十分なネットワーク承認が完了するまで、送金は完了しません。",
+      "seeDetails": "詳細を確認",
+      "title": "支払いを処理中です"
     },
     "exitPage": {
-      "continuePayment": "お支払いに進む",
+      "continuePayment": "支払いを続行",
       "exit": "終了",
-      "exitAnyway": "とにかく終了",
-      "subtitle": "進行状況が失われます。",
+      "exitAnyway": "このまま終了",
+      "subtitle": "進行状況は失われます。",
       "title": "本当に終了しますか？"
     },
     "fundingOptions": {
-      "available": "{{amount}}が利用可能",
-      "balances": "残高(s)",
+      "available": "{{amount}}利用可能",
+      "balances": "残高",
       "buyingPower": "購入可能額",
-      "exchangeRateDisclaimer": "為替レートにはスプレッドが含まれている場合があります。",
-      "instantCashAvailable": "（利用可能な即時現金：{{amount}}）",
-      "linkedPaymentMethods": "リンクされた支払方法",
+      "exchangeRateDisclaimer": "為替レートにはスプレッドが含まれる場合があります。",
+      "instantCashAvailable": "即時利用可能額：{{amount}}",
+      "linkedPaymentMethods": "連携済みの支払い方法(s)",
       "paymentMethodTypes": {
         "bankAccount": "銀行口座",
         "card": "カード",
         "digitalWallet": "ウォレット"
       },
-      "title": "資金オプション",
+      "title": "入金方法",
       "total": "合計 {{amount}}"
     },
     "fundingSteps": {
       "approval": "{{integrationName}}からの送金の承認",
       "conversion": "{{amount}}を{{currency}}に換算",
-      "deposit": "{{paymentMethod}}からへの{{amount}}の入金",
+      "deposit": "{{paymentMethod}} から {{amount}} を入金",
       "errorMessage": "エラーが発生しました。もう一度お試しください",
       "purchase": "{{amount}} {{symbol}}の購入",
-      "transfer": "購入のために{{symbol}}を転送する"
+      "transfer": "購入のため {{symbol}} を送金"
     },
     "infoScreen": {
-      "rule1": "あなたの情報は保存されません。この支払い後にアクセスが終了します。",
-      "rule2": "暗号通貨を使用し、詳細を確認し承認して支払いをします。",
-      "rule3": "自動変換で物事を簡単に保ちます。",
-      "title": "支払い内容を確認するにはログインしてください"
+      "rule1": "お客様の情報は保存されません。この支払い完了後、アクセスは終了します。",
+      "rule2": "暗号資産を使用し、内容を確認のうえ支払いを承認してください。",
+      "rule3": "自動換算で手続きを簡単にします。",
+      "title": "ログインして支払い内容を確認してください"
     },
     "initialSteps": {
-      "terms": "PayPalはこの商人のために暗号支払いを可能にします。続行することで、ご自身のアカウントからPayPalへの支払要求をMeshに許可します。<1>Meshの規約が適用されます。</1>"
+      "terms": "PayPal は本加盟店での暗号資産決済に対応しています。続行すると、支払いのために Mesh が PayPal へお客様のアカウントからの送金をリクエストすることを許可したことになります。<1>Mesh の利用規約が適用されます。</1>"
     },
     "insufficientBalancePage": {
-      "chooseDifferent": "別のアカウントを選択する。",
-      "message": "{{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
-      "messageWithNetwork": "{{network}} ネットワークでの {{balanceAmount}} の残高が不足しているため、この {{paymentAmount}} の支払いを行うことができません。",
+      "chooseDifferent": "別のアカウントを選択",
+      "message": "{{balanceAmount}} の残高では、この {{paymentAmount}} の支払いはできません。",
+      "messageWithNetwork": "{{network}} ネットワーク上の {{balanceAmount}} 残高では、この {{paymentAmount}} の支払いはできません。",
       "network": "ネットワーク",
       "title": "残高不足",
-      "topUpAccount": "アカウントにチャージして、もう一度お試しください。",
-      "topUpWallet": "ウォレットにチャージして、もう一度お試しください。",
-      "topUpWalletTryOtherNetwork": "ウォレットをチャージして再試行するか、他のネットワークを試してください。"
+      "topUpAccount": "アカウントに入金してから、もう一度お試しください。",
+      "topUpWallet": "ウォレットに入金してから、もう一度お試しください。",
+      "topUpWalletTryOtherNetwork": "ウォレットに入金するか、別のネットワークでお試しください。"
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": "このトランザクションには、ガス手数料を支払うために{{transferAmount}}と{{gasSymbol}}相当の~{{gasFiat}}が必要です。"
+      "message": "本取引には {{transferAmount}} に加え、ガス代として {{gasSymbol}} 約 {{gasFiat}} 相当が必要です。"
     },
     "insufficientGasBalancePage": {
-      "message": "この取引には、ガス料金を支払うために {{networkName}} ネットワーク上で {{gasSymbol}} が約 {{gasFiat}} 分と {{transferAmount}} が必要です。",
-      "title": "ガス残高が不足しています"
+      "message": "本取引には {{networkName}} ネットワーク上で、{{transferAmount}} に加え、ガス代として {{gasSymbol}} 約 {{gasFiat}} 相当が必要です。",
+      "title": "ガス代残高が不足しています"
     },
     "inWalletBrowserInitialPage": {
       "retry": "再試行",
-      "title": "接続要求を承認して、支払いを続けてください。"
+      "title": "支払いを続行するには、接続リクエストを承認してください"
     },
     "inWalletDoneTransferPage": {
-      "subtitle": "ウェブブラウザーで決済ページに戻って、確認や注文詳細を確認してください。",
-      "title": "もう少しで完了です"
+      "subtitle": "確認および注文内容の詳細については、Web ブラウザの決済ページに戻ってください。",
+      "title": "もうすぐ完了です"
     },
     "networkButton": {
-      "balance": "残高:",
+      "balance": "残高 :",
       "balanceAmountFiat": "{{amount}} ({{fiat}})",
       "change": "変更"
     },
@@ -1490,39 +1490,39 @@
     },
     "oauthTimeoutPage": {
       "reopen": "{{integrationName}} を再度開く",
-      "subtitle": "ログインまたはアクセス許可が完了していないようです。続行するには、{{integrationName}} を再度開いてサインインを完了してください。",
+      "subtitle": "ログインまたはアクセス承認が完了していないようです。続行するには、{{integrationName}} を再度開き、サインインを完了してください。",
       "title": "{{integrationName}} へ接続できませんでした"
     },
     "previewPage": {
-      "bufferAndFees": "{{bufferAmount}}バッファ+ {{feesAmount}}手数料を含む",
-      "bufferDisclaimer": "未使用のバッファはそのままになります。",
-      "conversionFee": "{{integrationName}}換算手数料",
-      "conversionFeeHint": "{{integrationName}}が集めるこの手数料は変換のため",
+      "bufferAndFees": "{{bufferAmount}} のバッファ＋{{feesAmount}} の手数料を含みます",
+      "bufferDisclaimer": "未使用のバッファ分は返却されます。",
+      "conversionFee": "{{integrationName}} 換算手数料",
+      "conversionFeeHint": "本手数料は、換算のために {{integrationName}} が徴収するものです。",
       "estimatedNetworkFee": "推定ネットワーク手数料",
-      "feeChangedNotice": "ネットワーク料金が変更されました。合計を確認して確認してください。",
-      "feesIncluded": "含まれる{{amount}}手数料",
+      "feeChangedNotice": "ネットワーク手数料が変更されました。合計金額を確認し、承認してください。",
+      "feesIncluded": "{{amount}} の手数料を含みます",
       "from": "{{integrationName}}から",
-      "howItWorks": "仕組み",
+      "howItWorks": "仕組みについて",
       "merchantPurchase": "{{merchantName}}購入",
-      "networkFeeHint": "ネットワークで検証するためのコストをカバーして、トランザクションをブロックチェーンに記録するのを助けます",
+      "networkFeeHint": "ネットワーク上で取引を処理するバリデーターのコストをカバーし、トランザクションをブロックチェーンに反映させるためのものです",
       "payWith": "支払い方法",
-      "pyusdDisclaimer": "トランザクションはPaxos Trust Company, LLCによって発行され、管理されている安定コインであるPayPal USD (PYUSD)で完了します。PYUSDはブロックチェーン上で動作します。",
-      "refundDisclaimer": "払い戻しは{{settlementCurrency}}のみで支払われます。為替レートと手数料は頻繁に変動します。すべての暗号通貨の購入は最終的です。",
+      "pyusdDisclaimer": "本取引は、Paxos Trust Company, LLC が発行・管理するステーブルコイン PayPal USD（PYUSD）を使用して完了します。PYUSD はブロックチェーン上で動作します。",
+      "refundDisclaimer": "返金は {{settlementCurrency}} のみで行われます。為替レートおよび手数料は頻繁に変動します。暗号資産の購入はすべて最終確定となります。",
       "send": "送信",
       "swapFee": "自動スワップ手数料",
-      "swapFeeHint": "ウォレット内の資産をターゲットの転送資産に自動的にスワップするための手数料です。",
+      "swapFeeHint": "ウォレット内の資産を、送金対象の資産へ自動的に交換するための手数料です。",
       "title": "{{merchantName}} に支払う",
-      "transactionBuffer": "トランザクションバッファ",
-      "transactionBufferHint": "暗号通貨の価格が変動しても、購入が成功するようにこの額が追加されます。この結果、ウォレットにいくらかの{{settlementCurrency}}が残ることがあります。"
+      "transactionBuffer": "取引バッファ",
+      "transactionBufferHint": "暗号資産の価格が変動しても購入が成立するよう、この金額が追加されています。取引後、{{settlementCurrency}} がウォレットに残る場合があります。"
     },
     "sessionExpiredPage": {
-      "description": "他のプラットフォームでアカウントにログインした際にこのセッションがアクティブな場合、よく発生します。",
-      "retry": "ログインし直してトランザクションを試すには「再試行」をクリックしてください。",
-      "title": "セッションの期限が切れました"
+      "description": "このセッションが有効な間に、他のプラットフォームからアカウントにログインすると、よく発生します。",
+      "retry": "［再試行］をタップしてログインし、取引をやり直してください。",
+      "title": "セッションの有効期限が切れました"
     },
     "somethingWentWrongPage": {
-      "message": "現在、このリクエストの処理に問題が発生しています。",
-      "title": "問題が発生しました。"
+      "message": "現在、このリクエストを処理できません",
+      "title": "問題が発生しました"
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"
@@ -1532,26 +1532,26 @@
       "text": "続行することにより"
     },
     "topupPage": {
-      "assetsDescription": "{{targetSymbol}}に変換された資産の価値は、価格またはネットワーク手数料の変動により予想より低くなっています。",
-      "conversionDescription": "変換された{{convertedSymbol}}から{{targetSymbol}}への価値は、価格またはネットワーク手数料の変動により予想より低くなっています。",
+      "assetsDescription": "価格変動やネットワーク手数料の影響により、{{targetSymbol}} に換算された資産の価値が想定より低くなっています。",
+      "conversionDescription": "価格および／またはネットワーク手数料の変動により、{{convertedSymbol}} から {{targetSymbol}} に変換された金額が想定より少なくなっています。",
       "currentBalance": "現在の残高",
-      "disclaimer": "支払いを完了しない場合、{{targetSymbol}}残高は{{integrationName}}アカウントに残ります。",
+      "disclaimer": "支払いを完了しない場合、{{targetSymbol}} の残高は {{integrationName}} アカウントに保持されます。",
       "required": "必須",
-      "title": "チャージが必要です",
-      "viewTopUp": "チャージを表示"
+      "title": "入金が必要です",
+      "viewTopUp": "入金を確認"
     },
     "transferErrorPage": {
-      "belowNetworkMinimumMessage": "この購入額はあなたのアカウントの最小交換制限以下です。他のアカウントを接続して購入を完了してください。",
-      "chooseDifferentAccount": "別のアカウントを選択する。",
-      "defaultMessage": "は{{integrationName}}アカウントに残ります。",
-      "defaultTitle": "この支払いを処理できませんでした",
+      "belowNetworkMinimumMessage": "この購入金額は、アカウントの最小交換額を下回っています。別のアカウントを接続して購入を完了してください。",
+      "chooseDifferentAccount": "別のアカウントを選択",
+      "defaultMessage": "資金は {{integrationName}} アカウントに保持されます。",
+      "defaultTitle": "この支払いを処理できません",
       "insufficientFunds": "残高不足",
-      "insufficientFundsMessage": "残高不足のため、この購入を完了できません。",
+      "insufficientFundsMessage": "残高が不足しているため、この購入を完了できません。",
       "requestDenied": "リクエストが拒否されました",
-      "requestDeniedMessage": "トランザクションを拒否したようです。もし間違いであれば、もう一度試してウォレットでリクエストを承認してください。"
+      "requestDeniedMessage": "取引を拒否したようです。誤って拒否した場合は、再試行し、ウォレットでリクエストを承認してください。"
     },
     "walletConfirmation": {
-      "title": "{{integrationName}}アプリでこの取引を確認してください。"
+      "title": "{{integrationName}} アプリでこの取引を承認してください"
     }
   },
   "payPalConnectOAuthPage": {
@@ -1566,21 +1566,23 @@
   },
   "previewPageUI": {
     "accountLabel": "アカウント",
-    "buildingPreviewDeposit": "預金プレビューを作成しています。。。",
+    "autoConvertNetworkLabel": "{{symbol}}に自動変換し、<4>{{networkName}}</4>で送信。",
+    "buildingPreviewDeposit": "入金プレビューを作成中…",
     "buildingPreviewPayment": "お支払いプレビューを作成しています。。。",
-    "buildingPreviewTransfer": "転送プレビューを作成しています。。。",
+    "buildingPreviewTransfer": "送金プレビューを作成中…",
     "confirmTransaction": "{{selectedIntegrationName}}アプリでこの取引を確認してください。",
-    "fewSeconds": "数秒ほどかかる場合があります。",
-    "fewSecondsWithDots": "数秒ほどお時間をいただく場合があります...",
+    "fewSeconds": "数秒かかる場合があります",
+    "fewSecondsWithDots": "数秒かかる場合があります…",
     "includeFeesMessage": "手数料{{amount}}を含みます",
     "networkLabel": "ネットワーク",
     "paymentTitle": "{{clientName}} に支払う",
-    "paymentTotalLabel": "合計を支払う",
+    "paymentTotalLabel": "合計",
     "payWithLabel": "支払い方法",
     "payWithLabelWithName": "{{integrationName}}で支払う",
     "plusFees": "{{amount}} + 手数料",
     "processingDeposit": "処理中",
-    "processingPayment": "お支払いを処理しています"
+    "processingPayment": "お支払いを処理しています",
+    "simpleNetworkLabel": "<2>{{networkName}}</2>に送信する。"
   },
   "previewTransfer": {
     "allFeesIncluded": "手数料すべて込み",
@@ -1615,9 +1617,9 @@
     "transferDeclined": "送金が拒否されました",
     "transferDeclined40": "リクエストが拒否されました",
     "transferDeclinedBody": "ウォレットで送金リクエストを拒否しました。",
-    "transferDeclinedBody40": "トランザクションを拒否したようです。間違いだった場合は、もう一度試して、ウォレットでリクエストを承認してください。",
-    "transferTimeout": "時間内に応答がありませんでした。",
-    "transferTimeoutBody": "再試行し、取引リクエストを承認してください。",
+    "transferDeclinedBody40": "取引を拒否したようです。誤って拒否した場合は、再試行し、ウォレットでリクエストを承認してください",
+    "transferTimeout": "一定時間内に応答がありませんでした",
+    "transferTimeoutBody": "もう一度お試しのうえ、取引リクエストを承認してください。",
     "transferTitle": "送金プレビュー",
     "youMayReceiveLess": "{{symbol}}の価格変動により、受取額が少なくなる可能性があります。"
   },
@@ -1625,30 +1627,30 @@
     "depositFromIntegration": "{{integrationName}}からの入金",
     "depositTo": "入金先",
     "fee": "手数料{{amount}}を含みます",
-    "feeInBridging": "ガス料金に{{gasFee}}、換算手数料に{{conversionFee}}が含まれます",
+    "feeInBridging": "ガス代 {{gasFee}} と換算手数料 {{conversionFee}} を含みます",
     "fundingMethods": "資金調達方法",
     "network": "ネットワーク",
     "receive": "受取",
     "refreshing": "{{seconds}}秒後に更新",
     "send": "送信",
     "sendAmount": "{{amount}} を送信",
-    "title": "送金プレビュー",
+    "title": "送金内容の確認",
     "tokenOnNetwork": "{{network}} 上の {{token}}",
     "total": "合計",
-    "transferToken": "トークンを移行"
+    "transferToken": "トークンを送金"
   },
   "privacyComponent": {
     "content": "お客様のデータは常に暗号化され、安全に保護されています。"
   },
   "qrCodePassword": {
     "bybit": {
-      "euNotSupported": "バイビットEUアカウントはまだサポートされていません。",
-      "loginTitle": "バイビットグローバルにログイン",
+      "euNotSupported": "Bybit EUアカウントは現在サポートされていません。",
+      "loginTitle": "Bybit Globalにログイン",
       "scanInstruction": "Bybit Globalアプリでスキャンしてログインしてください。"
     },
     "expired": "QRコードの有効期限が切れました",
     "generateNew": "新しいQRコードを生成する",
-    "loading": "QRコードの読み込み",
+    "loading": "QRコードを読み込み中",
     "qrCodeLabel": "モバイル端末でQRコードをスキャンして接続を確立します",
     "scanText": "このコードを {{appName}} アプリでスキャン <1></1> すると、すぐにログインできます。"
   },
@@ -1703,10 +1705,10 @@
     "label": "{{text}}を選択"
   },
   "selectNetworkPage": {
-    "estFee": "概算料",
-    "gasFeeDescription": "<0>推定ガス料金：</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "estFee": "推定手数料",
+    "gasFeeDescription": "<0>推定ガス代：</0> {{cryptoFee}} ～ {{fiatFee}}",
     "ineligibleNetwork": "送金対象外のネットワーク",
-    "integrationFeeDescription": "<0>推定{{selectedIntegrationName}}料金：</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "integrationFeeDescription": "<0>推定{{selectedIntegrationName}}手数料：</0> {{cryptoFee}} ～ {{fiatFee}}",
     "sendVia": "送信方法",
     "title": "ネットワークを選択"
   },
@@ -1719,7 +1721,7 @@
     "title": "{{selectedIntegrationName}}への接続方法を選択しますか"
   },
   "sessionExpired": {
-    "closeTabMessage": "セッションが期限切れになりました。このタブを閉じて、再度お試しください。",
+    "closeTabMessage": "セッションの有効期限が切れました。このタブを閉じて、再度お試しください。",
     "title": "セッションの有効期限が切れました。"
   },
   "sessionInfo": {
@@ -1741,7 +1743,7 @@
     "title": "メールを設定"
   },
   "termsAndConditionsPage": {
-    "englishDisclaimer": "これは情報提供のみを目的とした便宜的な翻訳です。法的拘束力を持つのは、Meshエンドユーザー規約の<2>英語版</2>です。",
+    "englishDisclaimer": "本翻訳は情報提供のみを目的とした参考訳です。法的拘束力を持つのは、<2>Meshエンドユーザー利用規約の英語版</2>のみです。",
     "paragraph1": "Mesh Connect, Inc. (the <1>“Company”</1>)は、通信ツール(the <3>“Tool”</3>) を提供する技術プロバイダーであり、お客様がご利用の第三者サービス(the <5>“End User Service”</5>)の特定機能を支援します。本機能は、エンドユーザーサービスを介して、お客様の第三者アカウントおよびウォレット(<7>“Connected Accounts”</7>)と通信し、実行したい指示を送信することを目的としています。",
     "paragraph10": "本仲裁は、本規約により修正された消費者仲裁規則に基づき、米国仲裁協会「AAA」によって管理されます。消費者仲裁規則は以下のURLでご覧いただけます：<2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>。仲裁人は、必要に応じて、テレビ会議やビデオ会議により審理を行い、個別出席を求める場合は、お客様または当社の要請に基づいて判断します。個別出席が必要な場合、双方の移動の便宜等を考慮し、合理的な場所で行われます。場所について双方が合意できない場合、AAAまたは仲裁人が決定します。仲裁人の決定は本規約に従い、最終かつ拘束力を持ちます。仲裁人は、暫定的・仮的・恒久的な差止救済または特定の履行を命じる権限を有しますが、これらは仲裁人の前にある個別請求の救済に必要な範囲に限られます。仲裁判断は、管轄裁判所において確認・執行される場合があります。これらの規定にもかかわらず、連邦、州、地方の機関に問題を報告し、法令により許される範囲で当社に対する救済を求めることは妨げられません。",
     "paragraph11": "本規約は、お客様と当社間の本件に関する完全な合意を構成し、口頭または書面による従前のすべての表明や合意に優先します。適用法により無効または執行不能な条項があった場合、その条項は法令に適合するよう修正され、原意図を最大限維持します。修正できない場合は当該条項を切り離し、残存条項は有効に存続します。お客様は、当社のサービスプロバイダーが本規約の意図された第三者受益者であることに同意します。本規約を承諾または本ツールを利用することで、本規約に拘束されることに同意したものとみなされます。",
@@ -1758,16 +1760,16 @@
   "topupNeeded": {
     "cancel": "キャンセル",
     "currentBalance": "現在の残高",
-    "disclaimer": "支払いを完了しない場合、{{symbol}}残高は{{integrationName}}アカウントに残ります。",
-    "previewTopup": "トップアップのプレビュー",
+    "disclaimer": "支払いを完了しない場合、{{symbol}}の残高は{{integrationName}}アカウントに残ります。",
+    "previewTopup": "入金内容の確認",
     "required": "必須",
-    "subtitle": "購入した{{symbol}}の残高は、価格やガスの変動により予想よりも低くなっています。",
-    "title": "チャージが必要です"
+    "subtitle": "価格および／またはガス代の変動により、購入した{{symbol}}の残高が想定より少なくなっています。",
+    "title": "入金が必要です"
   },
   "transferAmountInput": {
-    "availableForDeposit": "{{amount}} は預金可能",
-    "basedOnYourBalances": "あなたの残高に基づいて",
-    "basedOnYourBalancesDepositsTooltip": "この合計金額には、現在の{{symbol}}残高に加えて、この入金のために{{symbol}}に自動的に交換できる残高が含まれます。"
+    "availableForDeposit": "入金可能額：{{amount}}",
+    "basedOnYourBalances": "現在の残高に基づいています",
+    "basedOnYourBalancesDepositsTooltip": "この合計には、現在の{{symbol}}残高および、この入金のために自動的に{{symbol}}へスワップ可能な残高が含まれます。"
   },
   "transferAmountPage": {
     "buttonTitle": {
@@ -1777,7 +1779,7 @@
     },
     "errorMessage": {
       "insufficientFunds": "残高が不足しています「ガス代を含む」。最大送金額は {{maxAmount}} です。",
-      "maximumAmount": "最大送金額は {{maxAmount}} です。",
+      "maximumAmount": "最大送金額は{{maxAmount}}です。",
       "minimumAmount": "最小送金額は {{minAmount}} です。",
       "zeroAmount": "ゼロ以外の金額を入力してください"
     },
@@ -1846,23 +1848,23 @@
     "title": "確認"
   },
   "transferInsufficientBalancePage": {
-    "depositInsufficientBalanceAndGas": "このトランザクションには、正の{{symbol}}残高とガス料金を支払うために{{network}}ネットワーク上で約{{gasFee}}ドル相当のETHが必要です。",
-    "depositNoBalance": "{{network}}ネットワーク上に転送する{{symbol}}の残高がありません。",
-    "gasAndBalanceTitle": "ガスと残高が不足しています",
-    "gasBody": "{{network}}ネットワークのガス料金は{{symbol}}で支払われます。{{symbol}}残高を補充して、もう一度このトランザクションをお試しください。",
-    "gasTitle": "ガス残高が不足しています",
-    "insufficientGasFeeDescription": "この移行にはネットワーク手数料をカバーするために {{symbol}} の{{gasFee}} が必要です。",
-    "noBalanceBody": "{{symbol}} 残高を転送することができません。残高をチャージして再試行してください。",
-    "noBalanceOnSpecificNetwork": "{{network}}ネットワークに{{symbol}}がありません。",
+    "depositInsufficientBalanceAndGas": "この取引には、{{symbol}}の残高と、ガス代支払いのために{{network}}ネットワーク上で約${{gasFee}}相当のETHが必要です。",
+    "depositNoBalance": "{{network}}ネットワーク上に送金可能な{{symbol}}残高がありません。",
+    "gasAndBalanceTitle": "ガス代および残高が不足しています",
+    "gasBody": "{{network}}ネットワークのガス代は{{symbol}}で支払われます。{{symbol}}を入金してから、再度お試しください。",
+    "gasTitle": "ガス代残高が不足しています",
+    "insufficientGasFeeDescription": "この送金には、ネットワーク手数料として{{symbol}}で{{gasFee}}が必要です。",
+    "noBalanceBody": "送金可能な{{symbol}}残高がありません。残高を入金して、再度お試しください。",
+    "noBalanceOnSpecificNetwork": "{{network}}ネットワーク上に{{symbol}}がありません。",
     "noBalanceTitle": "残高なし",
-    "noSupportedAssetsOnNetwork": "",
-    "paymentBody": "残高不足のため、この購入を完了できません。",
-    "paymentInsufficientBalance": "{{network}}ネットワークの残高が{{balance}}{{symbol}}では、この{{amount}}{{symbol}}の支払いを行うのに不十分です。",
-    "paymentInsufficientBalanceAndGas": "このトランザクションには、ガス料金を支払うために{{network}}ネットワークで{{amount}}{{symbol}}と約{{gasFee}}ドル相当のETHが必要です。",
+    "noSupportedAssetsOnNetwork": "このネットワークでは対応している資産がありません。",
+    "paymentBody": "この購入を完了するには残高が不足しています。",
+    "paymentInsufficientBalance": "{{network}}ネットワーク上の{{symbol}}残高 {{balance}}では、この{{amount}} {{symbol}}の支払いを行うには不足しています。",
+    "paymentInsufficientBalanceAndGas": "この取引には、{{amount}} {{symbol}}と、ガス代支払いのために{{network}}ネットワーク上で約${{gasFee}}相当のETHが必要です。",
     "title": "残高不足",
-    "toppedUpWalletQuestion": "お財布をチャージしましたか？",
-    "topUpAction": "ウォレットにチャージして、もう一度お試しください。",
-    "transferBody": "この振込を完了するには残高が不足しています。"
+    "toppedUpWalletQuestion": "ウォレットに入金しましたか？",
+    "topUpAction": "ウォレットに入金してから、再度お試しください。",
+    "transferBody": "この送金を完了するには残高が不足しています。"
   },
   "transferMfaPage": {
     "title": "確認",
@@ -1934,24 +1936,24 @@
     "secureText": "署名は、{{clientName}}に対してお客様のウォレットで取引を行う権限を与えるものではありません。"
   },
   "trueAuthPage": {
-    "androidNotSupported": "この統合はAndroidデバイスではまだサポートされていません。",
+    "androidNotSupported": "この連携は現在Android端末ではサポートされていません。",
     "authenticationFailed": "認証に失敗しました",
-    "changeBrowserDescription": "続行するには、デフォルトのブラウザをSafariに変更してください。",
+    "changeBrowserDescription": "続行するには、既定のブラウザを Safari に変更してください。",
     "changeBrowserHeading": "ブラウザを変更する",
-    "connectionClosed": "接続が閉じられました。もう一度お試しください。",
-    "connectionStatus": "接続状況:",
-    "generatingSession": "安全なログインセッションを生成中...",
-    "iosOnlyText": "注意: このQRログインはiOSデバイスのみで利用可能です。",
+    "connectionClosed": "接続が切断されました。もう一度お試しください。",
+    "connectionStatus": "接続状況 :",
+    "generatingSession": "安全なログインセッションを作成しています…",
+    "iosOnlyText": "注意: この QR ログインは iOS 端末のみ対応しています。",
     "notSupportedHeading": "サポートされていません",
-    "openAppClip": "続行するにはアプリアイコンを開いてください。",
-    "openMobileApp": "ご使用のMeshモバイルアプリを開き、このQRコードをスキャンして続行してください。",
+    "openAppClip": "続行するには、App Clip を開いてください",
+    "openMobileApp": "スマートフォンのカメラでスキャンしてログインしてください。",
     "qrCodeAlt": "TrueAuth ログイン用QRコード",
     "scanToLogin": "スキャンしてログイン",
-    "somethingWentWrong": "問題が発生しました。"
+    "somethingWentWrong": "問題が発生しました"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}}は、<3>{{requestedNetworkName}}</3>のアドレス<6>{{truncatedRequestedAddress}}</6>の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
-    "body40": "{{clientName}}は、{{address}}のアドレス の所有権確認を求めています。しかし、そのアドレスは接続中のウォレットに紐づいていません。別のウォレットを接続してください。",
+    "body40": "{{clientName}} は、アドレス {{address}} の所有確認を求めています。このアドレスは現在接続中のウォレットに関連付けられていません。別のウォレットを接続してください。",
     "connectAnotherAction": "別のウォレットを接続する",
     "title": "あれ？"
   },
@@ -1961,8 +1963,8 @@
   },
   "verifyErrorPage": {
     "body": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。署名がないため、{{clientName}}はウォレットの所有権を確認できません。",
-    "body40": "ウォレットで署名リクエストを拒否されたか、または前回のリクエストがまだ処理中です。{{clientName}}は署名がないため、ウォレットの所有権を確認できません。",
-    "timeout": "ウォレットを確認し、{{walletName}}アプリで署名リクエストを承認してください。",
+    "body40": "ウォレットで署名リクエストを拒否したか、以前のリクエストがまだ有効なようです。署名が完了しないと、{{clientName}} はウォレットの所有確認を行えません。",
+    "timeout": "{{walletName}} アプリを開き、署名リクエストを承認してください。",
     "title": "確認が拒否されました"
   },
   "wallectConnect": {
@@ -1971,7 +1973,7 @@
     "unknownError": "不明なエラーが発生しました。{{error}}"
   },
   "walletDoneScreen": {
-    "alreadyVerified": "{{walletName}}ウォレットの所有権はすでに確認されています。",
+    "alreadyVerified": "{{walletName}} ウォレットの所有確認はすでに完了しています。",
     "completePaymentMessage": "{{clientName}}での購入を完了するには、チェックアウト画面に戻ってください。",
     "continueMessage": "{{clientName}}アプリで操作を続けてください。",
     "successMessage": "{{walletName}}ウォレットの所有権が正常に確認されました。"

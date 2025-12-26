@@ -1339,7 +1339,7 @@
     "processing": "付款处理中...",
     "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立连接",
     "qrGenerationFailed": "生成二维码失败。请重试。",
-    "receivedDetails": "您将在{{clientName}} ({{shortAddress}})中收到<strong>{{amountStr}}</strong>",
+    "receivedDetails": "您将在{{clientName}} {{shortAddress}}中收到<strong>{{amountStr}}</strong>",
     "scanQrCode": "扫描二维码以完成您的付款",
     "selectAsset": "选择要转账的资产",
     "selectNetwork": "选择转账网络",
@@ -1566,6 +1566,7 @@
   },
   "previewPageUI": {
     "accountLabel": "账户",
+    "autoConvertNetworkLabel": "自动转换为{{symbol}}，在<4>{{networkName}}</4>上发送。",
     "buildingPreviewDeposit": "正在生成您的存款预览……",
     "buildingPreviewPayment": "正在生成您的付款预览……",
     "buildingPreviewTransfer": "正在生成您的转账预览……",
@@ -1580,7 +1581,8 @@
     "payWithLabelWithName": "使用 {{integrationName}} 支付",
     "plusFees": "{{amount}} +手续费",
     "processingDeposit": "处理中",
-    "processingPayment": "正在处理您的付款"
+    "processingPayment": "正在处理您的付款",
+    "simpleNetworkLabel": "发送到<2>{{networkName}}</2>。"
   },
   "previewTransfer": {
     "allFeesIncluded": "所有费用已包含在内",
@@ -1855,7 +1857,7 @@
     "noBalanceBody": "无可用{{symbol}}余额。请充值后重试。",
     "noBalanceOnSpecificNetwork": "您在 {{network}} 网络上没有 {{symbol}}。",
     "noBalanceTitle": "没有余额",
-    "noSupportedAssetsOnNetwork": "",
+    "noSupportedAssetsOnNetwork": "该网络上不支持的资产。",
     "paymentBody": "您的余额不足以完成此交易。",
     "paymentInsufficientBalance": "您在 {{network}} 网络上 {{balance}} {{symbol}}的余额不足以支付 {{amount}} {{symbol}}。",
     "paymentInsufficientBalanceAndGas": "此交易需要 {{amount}} {{symbol}} 和约${{gasFee}} 的 ETH 在 {{network}} 网络上支付燃气费。",

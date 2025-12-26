@@ -1339,7 +1339,7 @@
     "processing": "Ödeme işleniyor...",
     "qrCodeLabel": "Bağlantı kurmak için mobil cihazınızdan QR kodu tarayabilirsiniz",
     "qrGenerationFailed": "QR kodu oluşturulamadı. Lütfen tekrar deneyin.",
-    "receivedDetails": "{{clientName}} ({{shortAddress}}) için <strong>{{amountStr}}</strong> alacaksınız",
+    "receivedDetails": "{{clientName}} {{shortAddress}} adresine <strong>{{amountStr}}</strong> alacaksınız",
     "scanQrCode": "Ödemenizi tamamlamak için QR kodunu tarayın",
     "selectAsset": "Transfer edilecek varlığı seçin",
     "selectNetwork": "Transfer ağını seçin",
@@ -1507,7 +1507,7 @@
       "networkFeeHint": "Bu ücret, işleminizin blockchainde doğrulanmasını ve tamamlanmasını sağlayan doğrulayıcılara yapılan ödemeyi içerir",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "swapFee": "Otomatik değişim ücreti",
       "swapFeeHint": "Cüzdanınızdaki varlıkların hedef transfer varlığına otomatik olarak dönüştürülmesini sağlamak için alınan bir işlem ücreti.",
@@ -1566,6 +1566,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Hesap",
+    "autoConvertNetworkLabel": "Otomatik dönüştürme {{symbol}}, <4>{{networkName}}</4> üzerinde gönder.",
     "buildingPreviewDeposit": "Para yatırma önizlemeniz oluşturuluyor...",
     "buildingPreviewPayment": "Ödeme önizlemenizi oluşturuluyor...",
     "buildingPreviewTransfer": "Transfer önizlemeniz oluşturuluyor...",
@@ -1580,7 +1581,8 @@
     "payWithLabelWithName": "{{integrationName}} ile ödeme yapın",
     "plusFees": "{{amount}} + ücretler",
     "processingDeposit": "İşleniyor",
-    "processingPayment": "Ödemeniz işleniyor"
+    "processingPayment": "Ödemeniz işleniyor",
+    "simpleNetworkLabel": "<2>{{networkName}}</2> üzerinden gönder."
   },
   "previewTransfer": {
     "allFeesIncluded": "Tüm ücretler dahil",
@@ -1855,7 +1857,7 @@
     "noBalanceBody": "Aktaracak {{symbol}} bakiyeniz yok. Lütfen bakiyenizi artırın ve tekrar deneyin.",
     "noBalanceOnSpecificNetwork": "{{network}} ağı üzerinde hiç {{symbol}} bakiyeniz yok.",
     "noBalanceTitle": "Bakiye yok",
-    "noSupportedAssetsOnNetwork": "",
+    "noSupportedAssetsOnNetwork": "Bu ağda desteklenen varlık yok.",
     "paymentBody": "Bu satın alma işlemini tamamlamak için bakiyeniz çok düşük.",
     "paymentInsufficientBalance": "{{network}} ağı üzerindeki {{symbol}} bakiyeniz {{amount}} {{symbol}} ödemesi yapmak için yetersiz.",
     "paymentInsufficientBalanceAndGas": "Bu işlem, gaz ücretlerini ödemek için {{network}} ağı üzerinde yaklaşık ${{gasFee}} değerinde ETH ve {{amount}} {{symbol}} bakiyesi gerektirir.",

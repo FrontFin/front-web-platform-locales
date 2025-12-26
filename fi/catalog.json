@@ -268,7 +268,7 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "Palaa {{clientName}}iin",
     "depositSuccess": "Onnistui!",
-    "depositTitle": "Rahasi on lähetetty.",
+    "depositTitle": "Varojen siirto on käynnissä.",
     "paymentSubtitle": "Palaa kassalle viimeistelläksesi tilauksesi",
     "paymentSuccess": "Maksu onnistui!"
   },
@@ -398,7 +398,7 @@
     "checkDetails": "Katso mitä tapahtui",
     "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositAddress": "<0>{{amountCrypto}} ~ {{amountFiat}}</0><1></1>vastaanotetaan osoitteeseen {{shortAddress}}",
-    "depositClient": "Rahasi on lähetetty.",
+    "depositClient": "Varojen siirto on käynnissä.",
     "directMobileBody": "Palaa TAO-maksusivullesi viimeistelläksesi maksusi.",
     "directMobileTitle": "Maksu aloitettu",
     "goBackToShift4": "← Palaa Shift4:ään",
@@ -1339,7 +1339,7 @@
     "processing": "Maksu käsittelyssä...",
     "qrCodeLabel": "Voit skannata QR-koodin mobiililaitteellasi yhteyden muodostamiseksi",
     "qrGenerationFailed": "QR-koodin luominen epäonnistui. Yritä uudelleen.",
-    "receivedDetails": "Saat <strong>{{amountStr}}</strong> tilille {{clientName}} ({{shortAddress}})",
+    "receivedDetails": "Saat <strong>{{amountStr}}</strong> tilille {{clientName}} {{shortAddress}}",
     "scanQrCode": "Skannaa QR-koodi viimeistelläksesi maksun",
     "selectAsset": "Valitse siirrettävä omaisuus",
     "selectNetwork": "Valitse siirtoverkko",
@@ -1425,11 +1425,11 @@
     },
     "fundingOptions": {
       "available": "{{amount}} käytettävissä",
-      "balances": "Saldot",
+      "balances": "Saldo(t)",
       "buyingPower": "Ostovoima",
-      "exchangeRateDisclaimer": "Vaihtokurssi voi sisältää hajontaa.",
-      "instantCashAvailable": "Välittömästi käytettävissä oleva raha: {{amount}}",
-      "linkedPaymentMethods": "Linkitetyt Maksutavat",
+      "exchangeRateDisclaimer": "Vaihtokurssi voi sisältää spreadin.",
+      "instantCashAvailable": "Välittömästi käytettävissä olevat käteisvarat: {{amount}}",
+      "linkedPaymentMethods": "Linkitetyt maksutavat",
       "paymentMethodTypes": {
         "bankAccount": "Pankkitili",
         "card": "Kortti",
@@ -1439,37 +1439,37 @@
       "total": "Yhteensä {{amount}}"
     },
     "fundingSteps": {
-      "approval": "Hyväksy siirto pois {{integrationName}}",
-      "conversion": "Vaihda {{amount}} valuutaksi {{currency}}",
-      "deposit": "Talletus {{amount}} maksutavasta {{paymentMethod}}",
-      "errorMessage": "Virhe on tapahtunut. Yritä uudestaan",
-      "purchase": "Osto {{amount}} {{symbol}}",
-      "transfer": "Siirrä {{symbol}} ostoksesi maksuun"
+      "approval": "Hyväksyntä varojen siirrolle {{integrationName}}sta",
+      "conversion": "{{amount}} muunto valuutaksi {{currency}}",
+      "deposit": "{{amount}} talletus maksutavasta {{paymentMethod}}",
+      "errorMessage": "Tapahtui virhe. Yritä uudestaan",
+      "purchase": "{{amount}} {{symbol}} osto",
+      "transfer": "Siirrä {{symbol}} ostostasi varten"
     },
     "infoScreen": {
-      "rule1": "Tietojasi ei koskaan tallenneta. Pääsy päättyy tämän maksun jälkeen.",
+      "rule1": "Tietojasi ei koskaan tallenneta. Käyttöoikeus päättyy tämän maksun jälkeen.",
       "rule2": "Käytä kryptovaluuttaasi, tarkista tiedot ja hyväksy maksu.",
       "rule3": "Automaattinen muunnos pitää asiat yksinkertaisina.",
-      "title": "Kirjaudu sisään tarkistaaksesi maksutiedot"
+      "title": "Kirjaudu sisään tarkistaaksesi maksun tiedot"
     },
     "initialSteps": {
-      "terms": "PayPal mahdollistaa kryptomaksut tälle myyjälle. Jatkamalla sallit Meshin pyytää siirtoa PayPal-tililtäsi maksun suorittamiseksi.<1>Meshin ehdot koskevat.</1>"
+      "terms": "PayPal mahdollistaa kryptomaksut tälle myyjälle. Jatkamalla annat Meshille luvan pyytää siirtoa tililtäsi PayPalille maksua varten.<1>Meshin käyttöehdot ovat voimassat.</1>"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Valitse toinen tili",
-      "message": "Sinun {{balanceAmount}} saldo ei riitä tekemään tätä {{paymentAmount}} maksua.",
-      "messageWithNetwork": "Sinun {{balanceAmount}} saldo {{network}} verkossa ei riitä tekemään tätä {{paymentAmount}} maksua.",
+      "message": "Sinun {{balanceAmount}} saldo ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
+      "messageWithNetwork": "Sinun {{balanceAmount}} saldo {{network}} verkossa ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
       "network": "Verkko",
       "title": "Riittämätön saldo",
       "topUpAccount": "Ole hyvä ja lisää saldoa tilillesi ja yritä uudelleen.",
-      "topUpWallet": "Täydennä lompakkosi ja yritä uudelleen.",
-      "topUpWalletTryOtherNetwork": "Ole hyvä ja täydennä lompakkosi saldoa ja yritä uudelleen tai kokeile toista verkkoa."
+      "topUpWallet": "Lisää varoja lompakkoosi ja yritä uudelleen.",
+      "topUpWalletTryOtherNetwork": "Ole hyvä ja lisää varoja lompakkoosi ja yritä uudelleen tai kokeile toista verkkoa."
     },
     "insufficientGasBalanceNetworksPage": {
-      "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} kaasumaksuihin."
+      "message": "Tämä tapahtuma vaatii {{transferAmount}} sekä ~{{gasFiat}} arvosta {{gasSymbol}} kaasumaksuihin."
     },
     "insufficientGasBalancePage": {
-      "message": "Tämä tapahtuma vaatii {{transferAmount}} ja ~{{gasFiat}} arvosta {{gasSymbol}} verkossa {{networkName}} kaasumaksujen maksamiseen.",
+      "message": "Tämä tapahtuma vaatii {{transferAmount}} sekä ~{{gasFiat}} arvosta {{gasSymbol}} verkossa {{networkName}} kaasumaksujen maksamiseen.",
       "title": "Riittämätön kaasusaldo"
     },
     "inWalletBrowserInitialPage": {
@@ -1477,7 +1477,7 @@
       "title": "Hyväksy yhteyspyyntö jatkaaksesi maksua"
     },
     "inWalletDoneTransferPage": {
-      "subtitle": "Palaa kassasivulle verkkoselaimessasi vahvistusta ja tilauksen tietoja varten.",
+      "subtitle": "Palaa kassalle verkkoselaimessasi tilauksen vahvistusta varten sekä tarkistaaksesi tilauksen.",
       "title": "Melkein valmis"
     },
     "networkButton": {
@@ -1497,7 +1497,7 @@
       "bufferAndFees": "{{bufferAmount}} Puskuri + {{feesAmount}} maksut sisältyvät",
       "bufferDisclaimer": "Säilytät mahdollisen käyttämättömän puskurin.",
       "conversionFee": "{{integrationName}} vaihtomaksu",
-      "conversionFeeHint": "Tämän maksun perii {{integrationName}} konvertoinnista.",
+      "conversionFeeHint": "Tämän maksun {{integrationName}} veloittaa muuntamisesta.",
       "estimatedNetworkFee": "Arvioitu verkkomaksu",
       "feeChangedNotice": "Verkkomaksu on muuttunut. Tarkista kokonaismaksu ja vahvista.",
       "feesIncluded": "{{amount}} maksut sisältyvät",
@@ -1566,6 +1566,7 @@
   },
   "previewPageUI": {
     "accountLabel": "Tili",
+    "autoConvertNetworkLabel": "Automaattinen muunto kohteeseen {{symbol}}, lähetä <4>{{networkName}}</4>.",
     "buildingPreviewDeposit": "Valmistellaan talletuksen esikatselua...",
     "buildingPreviewPayment": "Valmistellaan maksun esikatselua...",
     "buildingPreviewTransfer": "Valmistellaan siirron esikatselua...",
@@ -1580,7 +1581,8 @@
     "payWithLabelWithName": "Maksa käyttäen {{integrationName}}",
     "plusFees": "{{amount}} + maksut",
     "processingDeposit": "Käsittely",
-    "processingPayment": "Maksuasi käsitellään"
+    "processingPayment": "Maksuasi käsitellään",
+    "simpleNetworkLabel": "Lähetä verkostoon <2>{{networkName}}</2>."
   },
   "previewTransfer": {
     "allFeesIncluded": "Kaikki maksut sisältyvät",
@@ -1644,11 +1646,11 @@
     "bybit": {
       "euNotSupported": "Bybitin EU-tilit eivät ole vielä tuettuja.",
       "loginTitle": "Kirjaudu sisään Bybit Global -tilille",
-      "scanInstruction": "Skannaa kirjautua Bybit Global -sovelluksella."
+      "scanInstruction": "Kirjaudu sisään skannaamalla Bybit Global -sovelluksella."
     },
     "expired": "QR-koodi on vanhentunut",
     "generateNew": "Luo uusi QR-koodi",
-    "loading": "QR-koodin lataus",
+    "loading": "QR-koodin latautuu",
     "qrCodeLabel": "QR-koodi voidaan skannata mobiililaitteellasi yhteyden muodostamiseksi",
     "scanText": "Skannaa tämä koodi {{appName}}-sovelluksellasi <1></1> kirjautuaksesi sisään välittömästi."
   },
@@ -1681,7 +1683,7 @@
     "defaultTitle": "Valitse token",
     "depositTitle": "Valitse talletustoken",
     "ineligibleAssets": "Kelpaamattomat varat",
-    "link40Title": "Valitse tunnus",
+    "link40Title": "Valitse token",
     "loading": "Ladataan omaisuuttasi...",
     "network": "{{networkName}} verkko",
     "networkTitle": "Valitse verkko",
@@ -1741,7 +1743,7 @@
     "title": "Määritä sähköposti"
   },
   "termsAndConditionsPage": {
-    "englishDisclaimer": "Tämä on kohteliaisuuskäännös vain tiedoksi. <2>Mesh-päätekäyttöehdot</2> englanninkielinen versio on laillisesti sitova versio.",
+    "englishDisclaimer": "Tämä on ystävällinen käännös ainoastaan tiedotustarkoituksiin. <2>Meshin loppukäyttäjän käyttöehdot englanniksi</2> ovat oikeudellisesti sitova versio.",
     "paragraph1": "Mesh Connect, Inc. (<1> \"Yhtiö\"</1>) on teknologiatoimittaja, joka tuottaa viestintävälineen (<3>\"Työkalu\"</3>), joka madollistaa kolmannen osapuolen palvelun (<5>\"Loppukäyttäjän Palvelu\"</5>) tiettyjen toimintojen käytön. Tämä toiminnallisuus on tarkoitettu mahdollistamaan viestintäsi kolmannen osapuolen tileihisi ja lompakkoihisi (<7>”Yhdistetyt tilit”</7>) Loppukäyttäjä -palvelun kautta, mukaan lukien ohjeiden lähettäminen, jotka haluat suorittaa.",
     "paragraph10": "Välimiesmenettelyn järjestää American Arbitration Association sen kuluttajavälimiesmenettelysääntöjen mukaisesti, sovellettuna näissä ehdoissa määritetyin muutoksin. Kuluttajavälimiesmenettelysäännöt ovat saatavilla verkossa osoitteessa <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Välimies järjestää kuulemiset, mikäli niitä pidetään, puhelin- tai videoyhteyden välityksellä henkilökohtaisten tapaamisten sijaan, ellei välimies sinun tai meidän pyynnöstä katso, että henkilökohtainen kuuleminen on tarkoituksenmukainen. Mahdolliset henkilökohtaiset tapaamiset järjestetään paikassa, joka on molemmille osapuolille kohtuullisen sopiva, ottaen asianmukaisesti huomioon heidän matkustusmahdollisuutensa ja muut olennaiset olosuhteet. Jos sinä ja Yhtiö ette pääse yhteisymmärrykseen sijainnista, paikan määrittää AAA tai välimies. Välimiehen päätös noudattaa näitä ehtoja ja on lopullinen sekä sitova. Välimiehellä on valtuudet myöntää tilapäinen, väliaikainen tai pysyvä kieltomääräys taikka muu erityistä suoritusta koskeva oikeuskeino näiden ehtojen nojalla, mutta vain siinä määrin kuin yksittäinen väite välimiehen käsiteltävänä sitä edellyttää. Välimiehen antama ratkaisu voidaan vahvistaa ja panna täytäntöön missä tahansa toimivaltaisessa tuomioistuimessa. Edellä mainituista huolimatta mikään näissä ehdoissa ei estä sinua ottamasta yhteyttä liittovaltion, osavaltion tai paikallisiin viranomaisiin, jotka lain sallimissa rajoissa voivat puolestasi hakea oikeussuojaa meitä vastaan.",
     "paragraph11": "Nämä ehdot muodostavat täydellisen sopimuksen sinun ja Yhtiön välillä koskien niiden sisältöä, ja ne korvaavat kaikki aiemmat suulliset tai kirjalliset esitykset tai sopimukset kyseisistä asioista. Jos jokin ehto on sovellettavan lain mukaan täytäntöönpanokelvoton, kyseistä ehtoa muutetaan tässä siten, että se on lain mukainen, säilyttäen kuitenkin mahdollisimman laajasti alkuperäisen ehdon tarkoituksen. Mikäli jotain ehtoa ei voida tällaisella tavalla muuttaa, se poistetaan sopimuksesta, ja kaikki muut ehdot pysyvät voimassa. Tiedostat ja hyväksyt, että Yhtiön palveluntarjoajat ovat näissä ehdoissa tarkoitettuja kolmansien osapuolien edunsaajia. Hyväksymällä nämä ehdot tai käyttämällä Työkalua, sitoudut noudattamaan tämän sopimuksen ehtoja.",
@@ -1758,16 +1760,16 @@
   "topupNeeded": {
     "cancel": "Peruuta",
     "currentBalance": "Nykyinen saldo",
-    "disclaimer": "Jos et suorita maksua, {{symbol}} tilin saldo pysyy {{integrationName}} tililläsi.",
+    "disclaimer": "Jos et suorita maksua, {{symbol}}-saldo jää {{integrationName}}-tilillesi.",
     "previewTopup": "Esikatselu lisäystä varten",
     "required": "Vaaditaan",
     "subtitle": "Ostamasi {{symbol}} saldo on odotettua pienempi johtuen hinnan ja/tai kaasun vaihteluista.",
     "title": "Lisärahoitusta tarvitaan"
   },
   "transferAmountInput": {
-    "availableForDeposit": "{{amount}} saatavilla talletukseen",
+    "availableForDeposit": "{{amount}} käyttettävissä talletukseen",
     "basedOnYourBalances": "Saldojesi perusteella",
-    "basedOnYourBalancesDepositsTooltip": "Tämä summa sisältää nykyisen {{symbol}} saldosi sekä saldot, jotka voidaan automaattisesti vaihtaa {{symbol}} tähän talletukseen."
+    "basedOnYourBalancesDepositsTooltip": "Tämä summa sisältää nykyisen {{symbol}} saldosi sekä saldot, jotka voidaan automaattisesti vaihtaa {{symbol}} tätä talletusta varten."
   },
   "transferAmountPage": {
     "buttonTitle": {
@@ -1846,22 +1848,22 @@
     "title": "Varmistus"
   },
   "transferInsufficientBalancePage": {
-    "depositInsufficientBalanceAndGas": "Tämä transaktio vaatii ei-nollan {{symbol}} saldon ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
+    "depositInsufficientBalanceAndGas": "Tämä tapahtuma vaatii {{symbol}}-saldoa ja ~${{gasFee}} ETH:ta {{network}}-verkossa kaasumaksuja varten.",
     "depositNoBalance": "Sinulla ei ole {{symbol}} saldoa {{network}} verkossa siirtämiseen.",
     "gasAndBalanceTitle": "Riittämätön kaasu ja saldo",
-    "gasBody": "Kaasukustannukset {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
+    "gasBody": "Kaasumaksut {{network}}-verkossa maksetaan {{symbol}}-valuutassa. Lisää {{symbol}} saldoasi ja yritä sitten uudelleen.",
     "gasTitle": "Riittämätön kaasusaldo",
-    "insufficientGasFeeDescription": "Tämä siirto vaatii {{gasFee}} {{symbol}} kattaakseen verkkomaksut.",
-    "noBalanceBody": "Teillä ei ole {{symbol}} saldoa siirtoa varten. Suorita saldon lisäys ja yritä uudelleen.",
+    "insufficientGasFeeDescription": "Tämä siirto vaatii {{gasFee}} {{symbol}} kattaamaan verkkomaksut.",
+    "noBalanceBody": "Sinulla ei ole {{symbol}} saldoa siirtoa varten. Lisää saldoa ja yritä uudelleen.",
     "noBalanceOnSpecificNetwork": "Sinulla ei ole yhtään {{symbol}} {{network}} verkossa.",
     "noBalanceTitle": "Ei saldoa",
-    "noSupportedAssetsOnNetwork": "",
+    "noSupportedAssetsOnNetwork": "Ei tuettuja varoja tässä verkossa.",
     "paymentBody": "Tilisi saldo on liian alhainen tämän ostoksen suorittamiseen.",
     "paymentInsufficientBalance": "Sinun {{balance}} {{symbol}} saldosi {{network}} verkossa on riittämätön suorittamaan tätä {{amount}} {{symbol}} maksua.",
-    "paymentInsufficientBalanceAndGas": "Tämä transaktio vaatii {{amount}} {{symbol}} ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
+    "paymentInsufficientBalanceAndGas": "Tämä tapahtuma vaatii {{amount}} {{symbol}} ja noin ~${{gasFee}}:n arvosta ETH:ta {{network}} verkossa kaasumaksujen maksamiseen.",
     "title": "Riittämättömät varat",
     "toppedUpWalletQuestion": "Lisäsitkö saldoasi?",
-    "topUpAction": "Täydennä lompakkosi ja yritä uudelleen.",
+    "topUpAction": "Lisää lompakkosi saldoa ja yritä uudelleen.",
     "transferBody": "Tilisi saldo on liian alhainen tämän siirron suorittamiseen."
   },
   "transferMfaPage": {
@@ -1936,14 +1938,14 @@
   "trueAuthPage": {
     "androidNotSupported": "Tätä integraatiota ei vielä tueta Android-laitteilla.",
     "authenticationFailed": "Tunnistus epäonnistui",
-    "changeBrowserDescription": "Vaihdathan oletusselaimesi Safariin jatkaaksesi.",
+    "changeBrowserDescription": "Vaihda Safari oletusselaimeksi jatkaaksesi.",
     "changeBrowserHeading": "Vaihda selain",
-    "connectionClosed": "Yhteys suljettu. Yritä uudelleen.",
+    "connectionClosed": "Yhteys katkaistu. Yritä uudelleen.",
     "connectionStatus": "Yhteyden tila:",
     "generatingSession": "Luodaan turvallista kirjautumisistuntoa...",
     "iosOnlyText": "Huomautus: Tämä QR-kirjautuminen toimii vain iOS-laitteilla.",
     "notSupportedHeading": "Ei tueta",
-    "openAppClip": "Avaa sovelluksen leikepätkä jatkaaksesi",
+    "openAppClip": "Avaa sovellusosa jatkaaksesi",
     "openMobileApp": "Avaa Mesh-sovellus puhelimellasi ja skannaa tämä QR-koodi jatkaaksesi.",
     "qrCodeAlt": "QR-koodi TrueAuth-kirjautumista varten",
     "scanToLogin": "Skannaa kirjautuaksesi",
