@@ -1376,6 +1376,10 @@
       },
       "unavailableAccounts": "Unavailable accounts"
     },
+    "collapsableButton": {
+      "collapse": "Collapse",
+      "expand": "Expand"
+    },
     "common": {
       "cancel": "Cancel",
       "change": "Change",
@@ -1496,9 +1500,14 @@
       "subtitle": "It looks like you didn’t finish logging in or approving access. To continue, please reopen {{integrationName}} and complete sign-in.",
       "title": "Couldn’t connect to {{integrationName}}"
     },
+    "poweredBy": {
+      "caption": "Powered by",
+      "iconAriaLabel": "PayPal"
+    },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Buffer + {{feesAmount}} fees included",
       "bufferDisclaimer": "You'll keep any unused buffer.",
+      "closeAriaLabel": "close",
       "conversionFee": "{{integrationName}} conversion fee",
       "conversionFeeHint": "This fee {{integrationName}} collects to convert.",
       "estimatedNetworkFee": "Estimated network fee",
@@ -1512,14 +1521,13 @@
       "pyusdDisclaimer": "The transaction will be completed using PayPal USD (PYUSD), which is a stablecoin issued and custodied by Paxos Trust Company, LLC. PYUSD runs on the blockchain.",
       "refundDisclaimer": "Refunds will be issued in {{settlementCurrency}} only. The exchange rate and fees change frequently. All crypto purchases are final.",
       "send": "Send",
+      "showFundingMethodsAriaLabel": "show funding methods",
       "swapFee": "Automated swap fee",
       "swapFeeHint": "A fee to facilitate an automated swap of assets in your wallet into the target transfer asset.",
       "title": "Pay {{merchantName}}",
+      "tokenOnNetwork": "{{token}} on {{network}}",
       "transactionBuffer": "Transaction buffer",
-      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet.",
-      "closeAriaLabel": "close",
-      "showFundingMethodsAriaLabel": "show funding methods",
-      "tokenOnNetwork": "{{token}} on {{network}}"
+      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet."
     },
     "sessionExpiredPage": {
       "description": "This often happens if you log into your account on another platform while this session is active.",
@@ -1604,14 +1612,6 @@
     },
     "walletConfirmation": {
       "title": "Confirm this transaction in your {{integrationName}} app"
-    },
-    "poweredBy": {
-      "caption": "Powered by",
-      "iconAriaLabel": "PayPal"
-    },
-    "collapsableButton": {
-      "expand": "Expand",
-      "collapse": "Collapse"
     }
   },
   "payPalConnectOAuthPage": {

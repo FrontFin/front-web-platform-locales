@@ -855,6 +855,7 @@
     "max500": "",
     "maxVaries": "",
     "noExtraFee": "Không tính thêm phí",
+    "otherMethods": "",
     "secureDeposit": "Nạp tiền an toàn",
     "sendFunds": "Gửi tiền đến địa chỉ và mạng chính xác một cách an toàn.",
     "sendUsingQR": "Gửi thủ công bằng mã QR.",
@@ -1375,6 +1376,10 @@
       },
       "unavailableAccounts": "Tài khoản không khả dụng"
     },
+    "collapsableButton": {
+      "collapse": "",
+      "expand": ""
+    },
     "common": {
       "cancel": "Hủy bỏ",
       "change": "Thay đổi",
@@ -1421,6 +1426,9 @@
       "exitAnyway": "Thoát dù sao đi nữa",
       "subtitle": "Tiến trình của bạn sẽ bị mất.",
       "title": "Bạn có chắc chắn muốn thoát không?"
+    },
+    "fundingLoading": {
+      "stepOrder": ""
     },
     "fundingOptions": {
       "available": "{{amount}} có sẵn",
@@ -1492,9 +1500,14 @@
       "subtitle": "Có vẻ như bạn chưa hoàn tất việc đăng nhập hoặc cấp quyền truy cập. Để tiếp tục, vui lòng mở lại {{integrationName}} và hoàn tất đăng nhập.",
       "title": "Không thể kết nối tới {{integrationName}}"
     },
+    "poweredBy": {
+      "caption": "",
+      "iconAriaLabel": ""
+    },
     "previewPage": {
       "bufferAndFees": "Đã bao gồm {{bufferAmount}} dự phòng + {{feesAmount}} phí",
       "bufferDisclaimer": "Phần dự phòng không dùng hết sẽ được hoàn lại cho bạn.",
+      "closeAriaLabel": "",
       "conversionFee": "Phí chuyển đổi {{integrationName}}",
       "conversionFeeHint": "Phí phí {{integrationName}} thu để thực hiện chuyển đổi tài sản.",
       "estimatedNetworkFee": "Phí mạng lưới ước tính",
@@ -1508,9 +1521,11 @@
       "pyusdDisclaimer": "Giao dịch sẽ được hoàn tất bằng PayPal USD (PYUSD), một stablecoin do Paxos Trust Company, LLC phát hành và lưu ký. PYUSD hoạt động trên blockchain.",
       "refundDisclaimer": "Hoàn tiền chỉ được thực hiện bằng {{settlementCurrency}}. Tỷ giá và phí có thể thay đổi thường xuyên. Mọi giao dịch mua tiền mã hóa đều là cuối cùng.",
       "send": "Gửi",
+      "showFundingMethodsAriaLabel": "",
       "swapFee": "Phí trao đổi tự động",
       "swapFeeHint": "Một khoản phí hỗ trợ trao đổi tự động tài sản trong ví của bạn thành tài sản chuyển giao mục tiêu.",
       "title": "Thanh toán {{merchantName}}",
+      "tokenOnNetwork": "",
       "transactionBuffer": "Dự phòng giao dịch",
       "transactionBufferHint": "Khoản tiền này được cộng thêm để giúp giao dịch của bạn hoàn tất, ngay cả khi giá tiền mã hóa biến động. Phần {{settlementCurrency}} dư có thể vẫn còn trong ví của bạn."
     },
