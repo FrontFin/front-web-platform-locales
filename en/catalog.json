@@ -1423,6 +1423,9 @@
       "subtitle": "Your progress will be lost.",
       "title": "Are you sure you want to exit?"
     },
+    "fundingLoading": {
+      "stepOrder": "{{current}} of {{total}}"
+    },
     "fundingOptions": {
       "available": "{{amount}} available",
       "balances": "Balance(s)",
@@ -1513,7 +1516,10 @@
       "swapFeeHint": "A fee to facilitate an automated swap of assets in your wallet into the target transfer asset.",
       "title": "Pay {{merchantName}}",
       "transactionBuffer": "Transaction buffer",
-      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet."
+      "transactionBufferHint": "This amount is added to help your purchase go through, even if crypto prices shift. This may leave some {{settlementCurrency}} in your wallet.",
+      "closeAriaLabel": "close",
+      "showFundingMethodsAriaLabel": "show funding methods",
+      "tokenOnNetwork": "{{token}} on {{network}}"
     },
     "sessionExpiredPage": {
       "description": "This often happens if you log into your account on another platform while this session is active.",
@@ -1598,6 +1604,14 @@
     },
     "walletConfirmation": {
       "title": "Confirm this transaction in your {{integrationName}} app"
+    },
+    "poweredBy": {
+      "caption": "Powered by",
+      "iconAriaLabel": "PayPal"
+    },
+    "collapsableButton": {
+      "expand": "Expand",
+      "collapse": "Collapse"
     }
   },
   "payPalConnectOAuthPage": {
