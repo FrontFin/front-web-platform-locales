@@ -1351,7 +1351,7 @@
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。 ",
+      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。",
       "title": "アクセスが拒否されました"
     },
     "belowBinanceMinimumPage": {
@@ -1375,6 +1375,10 @@
         "travelRuleWalletOwnershipRequired": "コンプライアンス上の利用制限"
       },
       "unavailableAccounts": "利用できないアカウント"
+    },
+    "collapsableButton": {
+      "collapse": "",
+      "expand": ""
     },
     "common": {
       "cancel": "キャンセル",
@@ -1422,6 +1426,9 @@
       "exitAnyway": "このまま終了",
       "subtitle": "進行状況は失われます。",
       "title": "本当に終了しますか？"
+    },
+    "fundingLoading": {
+      "stepOrder": ""
     },
     "fundingOptions": {
       "available": "{{amount}}利用可能",
@@ -1493,9 +1500,14 @@
       "subtitle": "ログインまたはアクセス承認が完了していないようです。続行するには、{{integrationName}} を再度開き、サインインを完了してください。",
       "title": "{{integrationName}} へ接続できませんでした"
     },
+    "poweredBy": {
+      "caption": "",
+      "iconAriaLabel": ""
+    },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} のバッファ＋{{feesAmount}} の手数料を含みます",
       "bufferDisclaimer": "未使用のバッファ分は返却されます。",
+      "closeAriaLabel": "",
       "conversionFee": "{{integrationName}} 換算手数料",
       "conversionFeeHint": "本手数料は、換算のために {{integrationName}} が徴収するものです。",
       "estimatedNetworkFee": "推定ネットワーク手数料",
@@ -1509,9 +1521,11 @@
       "pyusdDisclaimer": "本取引は、Paxos Trust Company, LLC が発行・管理するステーブルコイン PayPal USD（PYUSD）を使用して完了します。PYUSD はブロックチェーン上で動作します。",
       "refundDisclaimer": "返金は {{settlementCurrency}} のみで行われます。為替レートおよび手数料は頻繁に変動します。暗号資産の購入はすべて最終確定となります。",
       "send": "送信",
+      "showFundingMethodsAriaLabel": "",
       "swapFee": "自動スワップ手数料",
       "swapFeeHint": "ウォレット内の資産を、送金対象の資産へ自動的に交換するための手数料です。",
       "title": "{{merchantName}} に支払う",
+      "tokenOnNetwork": "",
       "transactionBuffer": "取引バッファ",
       "transactionBufferHint": "暗号資産の価格が変動しても購入が成立するよう、この金額が追加されています。取引後、{{settlementCurrency}} がウォレットに残る場合があります。"
     },
@@ -1523,6 +1537,52 @@
     "somethingWentWrongPage": {
       "message": "現在、このリクエストを処理できません",
       "title": "問題が発生しました"
+    },
+    "terms": {
+      "paragraph01": "",
+      "paragraph02": "",
+      "paragraph03": "",
+      "paragraph04": "",
+      "paragraph05": "",
+      "paragraph06": "",
+      "paragraph07": "",
+      "paragraph08": "",
+      "paragraph09": "",
+      "paragraph10": "",
+      "paragraph11": "",
+      "paragraph12": "",
+      "paragraph13": "",
+      "paragraph14": "",
+      "paragraph15": "",
+      "paragraph16": "",
+      "paragraph17": "",
+      "paragraph18": "",
+      "paragraph19": "",
+      "paragraph20": "",
+      "section": {
+        "businessCustomers": "",
+        "contacting": "",
+        "cookies": "",
+        "dataIntegrity": "",
+        "disclosureOfPersonalInformation": "",
+        "endUser": "",
+        "hyperlinks": "",
+        "informationFromChildren": "",
+        "informationFromTeens": "",
+        "jurisdiction": "",
+        "newsletter": "",
+        "newsletterPersonalInformation": "",
+        "otherPersonalInformation": "",
+        "privacyPolicy": "",
+        "protectInformation": "",
+        "retentionPeriod": "",
+        "rightsUnderGDPR": "",
+        "sensitiveInformation": "",
+        "thirdPartyPaymentServices": "",
+        "thirdPartyServices": "",
+        "updatesToPrivacyPolicy": "",
+        "websiteVisitors": ""
+      }
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (the \"Company\") is a technology provider that makes a communications tool (the \"Tool\") which helps facilitate certain functionality of the third-party service you are using (the \"End User Service\"). Such functionality is intended to enable you to communicate with your third-party accounts and wallets (\"Connected Accounts\") through the End User Service, including sending instructions that you wish to execute. Mesh is providing this Tool to you as a service provider for PayPal, Inc. (\"PayPal\")\n\nYou acknowledge and agree that certain functionality of the End User Service is based upon the Tool; that your use of such functionality is at your instruction; that neither the Company nor its service providers make available brokerage services or engage in payment processing; and that neither the Company nor its service providers have any responsibility or liability for the End User Service or any Connected Account, or the terms, policies, acts or omissions of their providers.\n\nYou represent and warrant that you have all rights and consents necessary to connect to and access each Connected Account through such functionality, including the right to provide the Company and its service providers with your account login credentials, wallet addresses, and/or any of your account or your personal information for each Connected Account. You hereby authorize the Company and its service providers to transmit instructions as well as information, data and other materials between the End User Service and each Connected Account, and you acknowledge and agree that the Company and its service providers have no responsibility or liability for the execution of any such instructions, or for any such materials (including their accuracy, timeliness or completeness).\n\nYou agree that if you use the Tool for purposes of transacting with third-parties, including but not limited to online merchants or conducting purchases of any kind (\"Third-party Transactions\"), that neither the Company nor PayPal shall be responsible for any disputes regarding such transactions. You are responsible for contacting any relevant third-parties directly to resolve any disputes, claims of unauthorized transactions, requests for refunds, or any other claim or issue regarding Third-party Transactions. Purchases made with cryptocurrency may be afforded lim"

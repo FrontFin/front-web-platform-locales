@@ -556,6 +556,7 @@
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -731,6 +732,7 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1376,6 +1378,10 @@
       },
       "unavailableAccounts": "Cuentas no disponibles"
     },
+    "collapsableButton": {
+      "collapse": "",
+      "expand": ""
+    },
     "common": {
       "cancel": "Cancelar",
       "change": "Cambiar",
@@ -1422,6 +1428,9 @@
       "exitAnyway": "Salir de todos modos",
       "subtitle": "Vas a perder tu progreso.",
       "title": "¿Estás seguro de que quieres salir?"
+    },
+    "fundingLoading": {
+      "stepOrder": ""
     },
     "fundingOptions": {
       "available": "{{amount}} disponible",
@@ -1493,9 +1502,14 @@
       "subtitle": "Parece que no terminaste de iniciar sesión o aprobar el acceso. Para continuar, por favor vuelve a abrir {{integrationName}} y completa el inicio de sesión.",
       "title": "No se pudo conectar a {{integrationName}}"
     },
+    "poweredBy": {
+      "caption": "",
+      "iconAriaLabel": ""
+    },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} Margen + {{feesAmount}} comisiones incluidas",
       "bufferDisclaimer": "Conservarás cualquier margen no utilizado.",
+      "closeAriaLabel": "",
       "conversionFee": "Comisión de conversión de {{integrationName}}",
       "conversionFeeHint": "Esta tarifa que {{integrationName}} cobra para convertir.",
       "estimatedNetworkFee": "Comisión de red estimada",
@@ -1509,9 +1523,11 @@
       "pyusdDisclaimer": "La transacción se completará usando PayPal USD (PYUSD), que es una stablecoin emitida y custodiada por Paxos Trust Company, LLC. PYUSD se ejecuta en la blockchain.",
       "refundDisclaimer": "Los reembolsos se emitirán solo en {{settlementCurrency}}. La tasa de cambio y las comisiones cambian con frecuencia. Todas las compras con cripto son finales.",
       "send": "Enviar",
+      "showFundingMethodsAriaLabel": "",
       "swapFee": "Comisión de intercambio automatizado",
       "swapFeeHint": "Una comisión para facilitar el intercambio automatizado de activos en tu wallet al activo de transferencia objetivo.",
       "title": "Pagar a {{merchantName}}",
+      "tokenOnNetwork": "",
       "transactionBuffer": "Margen de transacción",
       "transactionBufferHint": "Este monto se agrega para ayudar a que tu compra se realice, incluso si los precios de cripto cambian. Esto puede dejar algo de {{settlementCurrency}} en tu wallet."
     },
@@ -1523,6 +1539,52 @@
     "somethingWentWrongPage": {
       "message": "Estamos teniendo problemas para procesar esta solicitud en este momento",
       "title": "Algo salió mal"
+    },
+    "terms": {
+      "paragraph01": "",
+      "paragraph02": "",
+      "paragraph03": "",
+      "paragraph04": "",
+      "paragraph05": "",
+      "paragraph06": "",
+      "paragraph07": "",
+      "paragraph08": "",
+      "paragraph09": "",
+      "paragraph10": "",
+      "paragraph11": "",
+      "paragraph12": "",
+      "paragraph13": "",
+      "paragraph14": "",
+      "paragraph15": "",
+      "paragraph16": "",
+      "paragraph17": "",
+      "paragraph18": "",
+      "paragraph19": "",
+      "paragraph20": "",
+      "section": {
+        "businessCustomers": "",
+        "contacting": "",
+        "cookies": "",
+        "dataIntegrity": "",
+        "disclosureOfPersonalInformation": "",
+        "endUser": "",
+        "hyperlinks": "",
+        "informationFromChildren": "",
+        "informationFromTeens": "",
+        "jurisdiction": "",
+        "newsletter": "",
+        "newsletterPersonalInformation": "",
+        "otherPersonalInformation": "",
+        "privacyPolicy": "",
+        "protectInformation": "",
+        "retentionPeriod": "",
+        "rightsUnderGDPR": "",
+        "sensitiveInformation": "",
+        "thirdPartyPaymentServices": "",
+        "thirdPartyServices": "",
+        "updatesToPrivacyPolicy": "",
+        "websiteVisitors": ""
+      }
     },
     "termsContent": {
       "fullText": "Mesh Connect, Inc. (la \"Compañía\") es un proveedor de tecnología que hace una herramienta de comunicación (la \"Herramienta\") que ayuda a facilitar ciertas funcionalidades del servicio de terceros que estás usando (el \"Servicio de Usuario Final\"), tales funcionalidades están destinadas a permitirte comunicarte con tus cuentas y wallets de terceros (\"Cuentas Conectadas\") a través del Servicio de Usuario Final, incluyendo el envío de instrucciones que deseas ejecutar. Mesh te proporciona esta herramienta como proveedor de servicios para PayPal, Inc. (\"PayPal\")\n\nReconoces y aceptas que ciertas funcionalidades del Servicio de Usuario Final se basan en la Herramienta; que tu uso de dichas funcionalidades es bajo tu instrucción; que ni la Compañía ni sus proveedores de servicios prestan servicios de corretaje ni se involucran en el procesamiento de pagos; y que ni la Compañía ni sus proveedores de servicios tienen ninguna responsabilidad o obligación por el Servicio de Usuario Final o cualquier Cuenta Conectada, o los términos, políticas, actos u omisiones de sus proveedores.\n\nDeclaras y garantizas que tienes todos los derechos y consentimientos necesarios para conectar y acceder a cada Cuenta Conectada a través de tales funcionalidades, incluyendo el derecho de proporcionar a la Compañía y a sus proveedores de servicios tus credenciales de inicio de sesión de cuenta, direcciones de wallet, y/o cualquier información de tu cuenta o tu información personal para cada Cuenta Conectada. Por la presente autorizas a la Compañía y a sus proveedores de servicios a transmitir instrucciones así como información, datos y otros materiales entre el Servicio de Usuario Final y cada Cuenta Conectada, y reconoces y aceptas que la Compañía y sus proveedores de servicios no tienen responsabilidad u obligación por la ejecución de dichas instrucciones, o por dichos materiales (incluyendo su exactitud, puntualidad o integridad).\n\nAceptas que si utilizas la Herramienta para fines de transacción con terceros, incluyendo pero no limitado a comerciantes en línea o realizas compras de cualquier tipo (\"Transacciones de Terceros\"), ni la Compañía ni PayPal serán responsables de ninguna disputa relacionada con dichas transacciones. Tú eres responsable de contactar directamente a cualquier tercero relevante para resolver cualquier disputa, reclamo de transacciones no autorizadas, solicitudes de reembolso, o cualquier otro reclamo o problema relacionado con Transacciones de Terceros."
