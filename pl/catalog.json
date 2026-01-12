@@ -226,7 +226,7 @@
     "monitoring": "Trwa oczekiwanie na zatwierdzenie...",
     "resend": "Wyślij ponownie prośbę o połączenie",
     "takingLongerTitle": "Jesteś tam?… Sprawdź swój portfel i zatwierdź żądanie, aby kontynuować.",
-    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
+    "title": "Autoryzuj prośbę o połączenie<1></1> w swoim portfelu",
     "title40": "Zatwierdź prośbę o połączenie w aplikacji <1></1> {{walletName}}."
   },
   "connectExternalPageScreen": {
@@ -556,8 +556,6 @@
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -580,8 +578,8 @@
     "passKeyNotSupportedDeposit": "Niestety uwierzytelnianie Passkey 2FA nie jest obecnie obsługiwane. Dodaj Google Authenticator jako dodatkowe 2FA i spróbuj ponownie wykonać wpłatę.",
     "passKeyNotSupportedOnramp": "Niestety uwierzytelnianie Passkey 2FA nie jest obecnie obsługiwane. Dodaj Google Authenticator jako dodatkowe 2FA i spróbuj ponownie dokonać zakupu.",
     "passKeyNotSupportedPayment": "Niestety uwierzytelnianie Passkey 2FA nie jest obecnie obsługiwane. Dodaj Google Authenticator jako dodatkowe 2FA i spróbuj ponownie dokonać płatności.",
-    "passKeyNotSupportedRedirect": "Przekierowywanie do alternatywnej metody wypłaty w Coinbase...",
-    "permissionDenied": "Nie masz niezbędnych uprawnień do dostępu do tego punktu końcowego, proszę skontaktować się z zespołem Mesh, aby uzyskać dostęp.",
+    "passKeyNotSupportedRedirect": "Przekierowywanie do alternatywnej metody wypłaty Coinbase...",
+    "permissionDenied": "Nie masz wymaganych uprawnień do dostępu do tego punktu końcowego. Skontaktuj się z zespołem Mesh, aby uzyskać dostęp.",
     "pleaseLogin": "Proszę się zalogować.",
     "pleaseTryAgain": "Proszę spróbować ponownie.",
     "pleaseTryAgainIn1Hour": "Proszę spróbować ponownie za 1 godzinę.",
@@ -591,8 +589,8 @@
     "refusedByIntegrationDeposit": "Nie można rozpocząć wpłaty.",
     "refusedByIntegrationOnramp": "Nie można rozpocząć zakupu.",
     "refusedByIntegrationPayment": "Nie można rozpocząć płatności.",
-    "reLogInFaceRecognitionDueToScamRisk": "Dla twojego bezpieczeństwa, prosimy o ponowne zalogowanie i dokończenie rozpoznawania twarzy.",
-    "satoshiTestRequired": "Coinbase nie wspiera transferów powyżej 1000 euro. Proszę spróbować ponownie z niższą kwotą.",
+    "reLogInFaceRecognitionDueToScamRisk": "Dla Twojego bezpieczeństwa zaloguj się ponownie i dokończ rozpoznawanie twarzy.",
+    "satoshiTestRequired": "Coinbase nie obsługuje transferów powyżej 1000 euro. Spróbuj ponownie z niższą kwotą.",
     "selfTransferNotAllowed": "Nie możesz wysłać transferu z konta na to samo konto.",
     "sendAccessDisabled": "Nie udało się zainicjować wypłaty, ponieważ dostęp do wysyłania został wyłączony dla tego konta.",
     "symbolNotSupported": "Waluta nie jest obsługiwana przez integrację.",
@@ -619,9 +617,9 @@
     "withdrawalDisabledDueToSecurityReset": "Funkcja wypłat na twoim koncie została tymczasowo wyłączona z powodu niedawnego resetu metod zabezpieczeń.",
     "withdrawalDisabledDueToSuspiciousActivity": "Funkcja wypłaty została wyłączona z powodu podejrzanej aktywności. Proszę ukończyć proces weryfikacji na Binance. Jeśli nie możesz zweryfikować, skontaktuj się z pomocą techniczną. Jeśli niedawno ukończyłeś weryfikację, proszę chwilę poczekać i spróbować ponownie.",
     "withdrawalLocked": "Dla twojego bezpieczeństwa, wypłaty są zablokowane na 24 godziny po zmianie ustawień konta. Proszę spróbować ponownie później.",
-    "withdrawalLockedP2P": "Dla twojego bezpieczeństwa, wypłaty są zablokowane na 24 godziny po zakupie P2P. Proszę spróbować ponownie później.",
+    "withdrawalLockedP2P": "Dla Twojego bezpieczeństwa wypłaty są zablokowane przez 24 godziny po zakupie P2P. Spróbuj ponownie później.",
     "withdrawalPendingDepositConfirmation": "Wpłata nie jest możliwa, ponieważ nie spełniła ona wymaganego minimalnego progu potwierdzeń. Szczegóły znajdziesz w historii transakcji.",
-    "withdrawalTimeoutDueToRecentFundsManipulation": "Wypłaty mogą być dokonane co najmniej 48 godzin po zakupie lub dokonaniu wpłaty."
+    "withdrawalTimeoutDueToRecentFundsManipulation": "Wypłaty są możliwe co najmniej 48 godzin po transakcji zakupu lub wpłaty."
   },
   "errorPage": {
     "title": "Wystąpił błąd."
@@ -674,17 +672,17 @@
     "title": "Weryfikacja"
   },
   "feesDrawer": {
-    "autoConvertBridgingFeeDescription": "Obejmuje wszystkie opłaty za konwersję i małą buforowe przesunięcie cenowe. Nigdy nie zapłacisz więcej niż pokazana kwota.",
-    "autoConvertBridgingFeeTooltipDescription": "Ta opłata obejmuje koszt przeliczania i przekazywania środków między sieciami za pomocą naszego partnera transferowego. Zawiera opłaty relayerów, koszty routingu i ewentualne opłaty za realizację między sieciami potrzebne do pełnego wykonania transferu. Wprowadzono małą bufrową zmienność, aby chronić Twój transfer przed zmianami cenowymi podczas realizacji. Nigdy nie zapłacisz więcej niż przedstawiona kwota opłat — jeśli pełen bufor nie zostanie użyty, pobierana jest automatycznie mniejsza kwota.",
-    "automatedSwapFeeDescription": "Opłata ułatwiająca automatyczną zamianę aktywów w twoim portfelu na docelowy aktyw transferu.",
+    "autoConvertBridgingFeeDescription": "Obejmuje wszystkie opłaty za konwersję oraz niewielki bufor na poślizg cenowy. Nigdy nie zapłacisz więcej niż pokazana kwota.",
+    "autoConvertBridgingFeeTooltipDescription": "Ta opłata obejmuje koszty konwersji i transferu Twoich środków między sieciami z wykorzystaniem naszego partnera transferowego. Zawiera opłaty relayerów, koszty routingu oraz wszelkie opłaty wykonawcze między sieciami wymagane do zrealizowania transferu. Uwzględniono niewielki bufor na poślizg cenowy, aby chronić transfer przed zmianami cen w trakcie realizacji. Nigdy nie zapłacisz więcej niż wyświetlona kwota opłaty — jeśli pełny bufor nie zostanie wykorzystany, automatycznie zostanie naliczona niższa kwota.",
+    "automatedSwapFeeDescription": "Opłata umożliwiająca automatyczną konwersję aktywów w Twoim portfelu na docelowy aktyw transferu.",
     "bridgingTotalDiscription": "Maksymalna kwota, jaką zapłacisz za ten transfer. Możesz zapłacić mniej.",
-    "bridgingTotalTooltipDiscription": "To całkowita kwota, którą możesz zapłacić, uwzględniając gaz i opłatę za automatyczną konwersję (wraz z buforem przesunięcia cenowego). Rzeczywista naliczona kwota może być niższa, jeśli pełen bufor nie zostanie użyty, ale nigdy nie będzie wyższa.",
-    "gasFeeDescription": "Szacowany koszt kompensacji walidatorów sieci za przetworzenie transakcji.",
-    "institutionFeeDescription": "Ta opłata pokrywa koszt sieciowy za przetwarzanie wypłaty. Zależy ona od wybranej kryptowaluty oraz aktualnych warunków blockchain.",
+    "bridgingTotalTooltipDiscription": "To łączna kwota, jaką możesz zapłacić, obejmująca opłaty sieciowe oraz opłatę za automatyczną konwersję (z uwzględnionym buforem na poślizg cenowy). Rzeczywista naliczona kwota może być niższa, jeśli pełny bufor poślizgu nie zostanie wykorzystany, ale nigdy nie będzie wyższa.",
+    "gasFeeDescription": "Szacowany koszt wynagrodzenia walidatorów sieci za przetworzenie transakcji.",
+    "institutionFeeDescription": "Ta opłata pokrywa koszty sieciowe przetwarzania wypłaty. Jej wysokość zależy od wybranej kryptowaluty oraz aktualnych warunków sieci blockchain.",
     "processingFee": "opłata za przetwarzanie {{clientName}}",
-    "processingFeeDescription": "Opłata, którą {{clientName}} pobiera w celu ułatwienia realizacji tej transakcji.",
+    "processingFeeDescription": "Opłata pobierana przez {{clientName}} w celu realizacji tej transakcji.",
     "title": "Wliczone opłaty",
-    "totalDetails": "Szczegóły całkowite"
+    "totalDetails": "Szczegóły łączne"
   },
   "fields": {
     "apiKey": "Klucz API",
@@ -706,7 +704,7 @@
     "username": "Nazwa użytkownika"
   },
   "fullScreenSpinner": {
-    "almostThere": "Prawie gotowe — trwa finalizacja szczegółów.",
+    "almostThere": "Prawie gotowe — finalizujemy szczegóły.",
     "linking": "Podłączanie Twojego konta...",
     "loading": "Przetwarzanie w toku..."
   },
@@ -733,8 +731,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -781,22 +777,22 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Salda",
-    "disclaimerClientDepositFirstLine": "{{clientName}} akceptuje depozyty w tokenie {{symbol}}.",
+    "disclaimerClientDepositFirstLine": "{{clientName}} akceptuje wpłaty w tokenie {{symbol}}.",
     "disclaimerClientPaymentFirstLine": "{{clientName}} akceptuje płatności w tokenie {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} akceptuje przekazy w tokenie {{symbol}}.",
-    "disclaimerDepositFirstLine": "Target akceptuje depozyty w tokenie {{symbol}}.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} akceptuje transfery w tokenie {{symbol}}.",
+    "disclaimerDepositFirstLine": "Target akceptuje wpłaty w tokenie {{symbol}}.",
     "disclaimerPaymentFirstLine": "Target akceptuje płatności w tokenie {{symbol}}.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "Będziemy musieli doładować Twój bilans {{symbol}}, dlatego dokonamy automatycznej wymiany innego tokena w Twoim koncie na {{symbol}} w celu wykonania tej wpłaty.",
-    "disclaimerSecondLineAutomatedSwapPayment": "Będziemy musieli doładować Twoje saldo {{symbol}}, więc dokonamy automatycznej zamiany innego tokena na Twoim koncie na {{symbol}}, aby dokonać tej płatności.",
-    "disclaimerSecondLineAutomatedSwapTransfer": "Będziemy musieli doładować Twój bilans {{symbol}}, dlatego dokonamy automatycznej wymiany innego tokena w Twoim koncie na {{symbol}} w celu wykonania tego transferu.",
-    "disclaimerSecondLineOtherBalancesDeposit": "Nie masz wystarczającej ilości {{symbol}}, więc doładujemy Cię korzystając z innych sald na Twoim koncie, aby zakończyć depozyt.",
-    "disclaimerSecondLineOtherBalancesPayment": "Nie masz wystarczającej ilości {{symbol}}, więc doładujemy Cię korzystając z innych sald na Twoim koncie, aby zakończyć płatność.",
-    "disclaimerSecondLineOtherBalancesTransfer": "Nie masz wystarczającej ilości {{symbol}}, więc doładujemy Cię korzystając z innych sald na Twoim koncie, aby zakończyć przelew.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "Będziemy musieli doładować Twoje saldo {{symbol}}, dlatego automatycznie wymienimy inny token z Twojego konta na {{symbol}}, aby zrealizować tę wpłatę.",
+    "disclaimerSecondLineAutomatedSwapPayment": "Będziemy musieli doładować Twoje saldo {{symbol}}, dlatego automatycznie wymienimy inny token z Twojego konta na {{symbol}}, aby zrealizować tę płatność.",
+    "disclaimerSecondLineAutomatedSwapTransfer": "Będziemy musieli doładować Twoje saldo {{symbol}}, dlatego automatycznie wymienimy inny token z Twojego konta na {{symbol}}, aby zrealizować ten transfer.",
+    "disclaimerSecondLineOtherBalancesDeposit": "Nie masz wystarczającej ilości {{symbol}}, dlatego doładujemy Twoje saldo, wykorzystując inne środki na Twoim koncie, aby zrealizować tę wpłatę.",
+    "disclaimerSecondLineOtherBalancesPayment": "Nie masz wystarczającej ilości {{symbol}}, dlatego doładujemy Twoje saldo, wykorzystując inne środki na Twoim koncie, aby zrealizować tę płatność.",
+    "disclaimerSecondLineOtherBalancesTransfer": "Nie masz wystarczającej ilości {{symbol}}, dlatego doładujemy Twoje saldo, wykorzystując inne środki na Twoim koncie, aby zrealizować ten transfer.",
     "disclaimerTransferFirstLine": "Target akceptuje transfery w tokenie {{symbol}}.",
-    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} akceptuje depozyty w stablecoinie {{symbol}}.",
+    "stablecoinClientDepositDisclaimerFirstLine": "{{clientName}} akceptuje wpłaty w stablecoinie {{symbol}}.",
     "stablecoinClientPaymentDisclaimerFirstLine": "{{clientName}} akceptuje płatności w stablecoinie {{symbol}}.",
-    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akceptuje przelewy w stablecoin {{symbol}}.",
-    "stablecoinDepositDisclaimerFirstLine": "Target akceptuje depozyty w stablecoinie {{symbol}}.",
+    "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akceptuje transfery w stablecoin {{symbol}}.",
+    "stablecoinDepositDisclaimerFirstLine": "Target akceptuje wpłaty w stablecoinie {{symbol}}.",
     "stablecoinPaymentDisclaimerFirstLine": "Target akceptuje płatności w stablecoinie {{symbol}}.",
     "stablecoinTransferDisclaimerFirstLine": "Target akceptuje transfery w stablecoinie {{symbol}}.",
     "thisMerchant": "Ten sprzedawca",
@@ -849,17 +845,17 @@
   },
   "homePage": {
     "buy": "Kup",
-    "buyCrypto": "",
-    "buyDescription": "Kup kryptowalutę natychmiast za pomocą karty lub banku.",
-    "chooseHow": "",
-    "connectToWallet": "Connect to<1></1>wallet or exchange",
-    "connectToWalletLabel": "",
+    "buyCrypto": "Kup kryptowaluty",
+    "buyDescription": "Kup za pomocą karty lub przelewu bankowego.",
+    "chooseHow": "Wybierz, w jaki sposób dodać środki",
+    "connectToWallet": "Podłącz do<1></1>portfela lub giełdy",
+    "connectToWalletLabel": "Podłącz do portfela lub giełdy",
     "guaranteed": "Gwarantowane",
-    "manualDeposit": "",
-    "max500": "",
-    "maxVaries": "",
-    "noExtraFee": "Bez dodatkowej opłaty",
-    "otherMethods": "",
+    "manualDeposit": "Wpłata ręczna",
+    "max500": "500 000 $ maks. • Natychmiastowo",
+    "maxVaries": "Maksymalna wpłata się różni • 3 minuty",
+    "noExtraFee": "Brak dodatkowych opłat",
+    "otherMethods": "Inne metody",
     "secureDeposit": "Bezpieczna wpłata",
     "sendFunds": "Wysyłaj środki bezpiecznie na właściwy adres i sieć.",
     "sendUsingQR": "Prześlij środki ręcznie, używając kodu QR.",
@@ -868,7 +864,7 @@
   },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "Żądana kwota transferu {{requestedAmount}} jest niższa niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
-    "balanceBelowIntegrationMinimumDescription": "Twój saldo w wysokości {{currentBalance}} jest poniżej minimalnej kwoty {{minimumAmount}} w {{integrationName}} dla transferu {{symbol}} w sieci {{network}}. Proszę doładować saldo i spróbować ponownie.",
+    "balanceBelowIntegrationMinimumDescription": "Twoje saldo {{currentBalance}} jest niższe niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do wykonania transferu {{symbol}} w sieci {{network}}. Doładuj saldo i spróbuj ponownie.",
     "balanceBelowMinimumDescription": "Twoje saldo {{currentBalance}} jest niższe niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do transferu w sieci {{network}}.",
     "belowMinimum": "Poniżej minimalnego limitu {{integrationName}}",
     "belowRequestedAmountDescription": "Twoje saldo {{balance}} jest mniejsze niż {{amount}}. Ta kwota jest wymagana do pokrycia wybranej kwoty transferu wraz z opłatami.",
@@ -876,18 +872,18 @@
     "insufficientBalance": "Niewystarczające saldo",
     "insufficientBalanceDescription": "Twoje saldo {{currentBalance}} jest mniejsze niż minimalny wymóg dla tego transferu.",
     "noBalance": "Brak salda",
-    "noBalancePaymentDescription": "Twoje saldo w wysokości {{balance}} jest niewystarczające do wykonania tej płatności {{amount}}. Proszę doładować saldo i spróbować ponownie.",
-    "noBalancePaymentSelectNetworkDescription": "Twoje saldo w wysokości {{balance}} jest niewystarczające do wykonania tej płatności {{amount}}. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
-    "noBalancesPaymentDescription": "Twoje salda są niewystarczające do wykonania tej płatności. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
-    "noBalancesTransferkDescription": "Nie posiadasz żadnych sald do transferu. Proszę doładować saldo i spróbować ponownie.",
-    "noBalancesTransferSelectNetworkDescription": "\"Nie masz salda do przeniesienia. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.\"",
-    "noBalanceTransferDescription": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
-    "noBalanceTransferSelectNetworkDescription": "\"Nie masz salda {{symbol}} do przeniesienia. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.\"",
-    "noGasAvailableBalanceTransferSelectNetworkDescription": "\"Ta transakcja wymaga dostępnego salda do przeniesienia plus {{feeInFiat}} wartości {{feeSymbol}}, aby opłacić opłaty za gaz. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.\"",
-    "noGasBalancePaymentDescription": "Ta transakcja wymaga {{amount}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę doładować saldo i spróbować ponownie.",
-    "noGasBalancePaymentSelectNetworkDescription": "Ta transakcja wymaga {{amount}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
-    "noGasBalanceTransferDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę doładować saldo i spróbować ponownie.",
-    "noGasBalanceTransferSelectNetworkDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} i {{feeInFiat}} wartego {{feeSymbol}} na opłaty transakcyjne. Proszę wybrać inną sieć lub doładować saldo i spróbować ponownie.",
+    "noBalancePaymentDescription": "Twoje saldo {{balance}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}}. Doładuj saldo i spróbuj ponownie.",
+    "noBalancePaymentSelectNetworkDescription": "Twoje saldo {{balance}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}}. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noBalancesPaymentDescription": "Twoje salda są niewystarczające, aby zrealizować tę płatność. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noBalancesTransferkDescription": "Nie posiadasz żadnych sald do wykonania transferu. Doładuj saldo i spróbuj ponownie.",
+    "noBalancesTransferSelectNetworkDescription": "Nie masz żadnych sald do wykonania transferu. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noBalanceTransferDescription": "Nie masz salda {{symbol}} do wykonania transferu. Doładuj saldo i spróbuj ponownie.",
+    "noBalanceTransferSelectNetworkDescription": "Nie masz salda {{symbol}} do wykonania transferu. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noGasAvailableBalanceTransferSelectNetworkDescription": "Ta transakcja wymaga dostępnego salda do wykonania transferu oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noGasBalancePaymentDescription": "Ta transakcja wymaga {{amount}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Doładuj saldo i spróbuj ponownie.",
+    "noGasBalancePaymentSelectNetworkDescription": "Ta transakcja wymaga {{amount}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
+    "noGasBalanceTransferDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Doładuj saldo i spróbuj ponownie.",
+    "noGasBalanceTransferSelectNetworkDescription": "Ta transakcja wymaga dostępnego salda {{symbol}} oraz {{feeInFiat}} w {{feeSymbol}} na opłaty sieciowe. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
     "notEligible": "Nie kwalifikuje się do tego transferu",
     "notEligibleDescription": "{{symbol}} nie jest akceptowany dla tego transferu.",
     "notSupportedByInstitution": "Obecnie nieobsługiwane przez {{integrationName}}",
@@ -915,7 +911,7 @@
   },
   "initialVerifyPage": {
     "approveSignature": "Zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
-    "approveSignatureStillThere": "Czy nadal jesteś tam?… Proszę zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
+    "approveSignatureStillThere": "Nadal tu jesteś?… Zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
     "content40": "Potwierdź, że jesteś właścicielem tego portfela",
     "drawerTitle": "Zatwierdź prośbę o podpis<1></1> w swoim portfelu",
     "item1Body": "Zostaniesz poproszony o podpisanie wiadomości w {{selectedIntegrationName}}, co potwierdzi, że jesteś właścicielem tego portfela.",
@@ -929,9 +925,16 @@
     "verifyingLabel": "Weryfikowanie podpisu..."
   },
   "inWalletBrowserInitialPage": {
+    "checkingAssets": "Sprawdzanie twoich środków...",
+    "connectingWallet": "Łączenie twojego portfela...",
+    "couldNotConnect": "Nie udało się połączyć z portfelem",
+    "couldNotVerify": "Nie udało się zweryfikować portfela",
     "depositFlowSubtitle": "Zaakceptuj połączenie, aby rozpocząć przelew",
     "paymentFlowSubtitle": "Zaakceptuj połączenie, aby rozpocząć płatność",
+    "retry": "Ponów",
     "title": "Połącz konto",
+    "tryAgain": "Spróbuj ponownie",
+    "tryAgainSubtitle": "Proszę spróbować ponownie",
     "verifyFlowSubtitle": "Zaakceptuj połączenie, aby zweryfikować swój portfel"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1111,7 +1114,7 @@
       "openApp": "Kliknij poniżej <1>Otwórz aplikację {{selectedIntegrationName}}</1>.",
       "return": "Wróć tu, aby zakończyć powiązanie konta."
     },
-    "troubleshootExchangeMode": "Upewnij się, że jesteś w trybie wymiany, a nie w portfelu.",
+    "troubleshootExchangeMode": "Upewnij się, że jesteś w trybie Exchange, a nie Wallet.",
     "troubleshootTitle": "Nie otrzymałeś żądania?"
   },
   "mobileContent": {
@@ -1127,7 +1130,7 @@
     "description": "Poniższe sieci to wszystkie bezpieczne i kompatybilne opcje dla tej płatności. Automatycznie wybraliśmy dla Ciebie sieć z najniższą opłatą.",
     "estimatedGasFeeLabel": "Szacunkowa opłata za gaz:",
     "lowestFeeLabel": "Najniższa opłata",
-    "mostPopular": "Najbardziej popularny",
+    "mostPopular": "Najpopularniejszy",
     "subtitle": "{{clientName}} akceptuje płatności w następujących sieciach:",
     "title": "Wybierz sieć"
   },
@@ -1154,7 +1157,7 @@
   "oauthExternalPage": {
     "awaitingConnection": {
       "action": "Ponownie otwórz {{selectedIntegrationName}}",
-      "note": "Kontynuuj na {{selectedIntegrationName}}, aby zakończyć swój depozyt",
+      "note": "Kontynuuj w {{selectedIntegrationName}}, aby zakończyć wpłatę",
       "subtitle": "Proszę zakończyć logowanie i zatwierdzić dostęp w przeglądarce.",
       "title": "Oczekiwanie na połączenie"
     },
@@ -1241,13 +1244,13 @@
     "selectAsset": "Wybierz aktywo do transferu",
     "selectCurrency": "Wybierz walutę",
     "selectNetwork": "Wybierz sieć transferu",
-    "unsupportedCurrencyError": "Wybrana waluta jest nieobsługiwana dla onramp w Twoim kraju.",
-    "unsupportedPair": "Ta para sieć/symbol nie jest obecnie obsługiwana. Proszę wybrać inny.",
+    "unsupportedCurrencyError": "Wybrana waluta nie jest obsługiwana dla on-rampu w Twoim kraju.",
+    "unsupportedPair": "Ta para sieć-symbol nie jest obecnie obsługiwana. Wybierz inną.",
     "youPay": "Płacisz",
     "youReceive": "Otrzymujesz"
   },
   "orderSummaryDrawer": {
-    "automatedSwapFee": "Automatyczna opłata za zamianę",
+    "automatedSwapFee": "Opłata za automatyczną konwersję",
     "conversionFee": "Opłata za konwersję w {{integrationName}}",
     "merchantInfoName": "Sprzedający: {{clientName}}",
     "paymentToClient": "Płatność dla {{clientName}}",
@@ -1268,10 +1271,10 @@
   },
   "payManual": {
     "entry": {
-      "depositWithQr": "Złóż depozyt za pomocą kodu QR",
+      "depositWithQr": "Wpłać za pomocą kodu QR",
       "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
       "dontSeeYourAccount": "Nie widzisz swojego konta?",
-      "havingTrouble": "Masz problemy?",
+      "havingTrouble": "Potrzebujesz pomocy?",
       "needAnotherWay": "Potrzebujesz innej metody?",
       "tryAgain": "Spróbuj ponownie",
       "tryWithQr": "Spróbuj wpłacić środki za pomocą kodu QR."
@@ -1286,28 +1289,29 @@
     },
     "screen": {
       "addressLabel": "Adres",
-      "beforeYouGo": "Zanim odejdziesz...",
+      "beforeYouGo": "Zanim wyjdziesz...",
       "copiedWalletAddress": "Skopiowano",
       "copyWalletAddress": "Skopiuj adres portfela",
       "depositToClient": "Wpłata do {{clientName}}",
       "downloadQr": "Pobierz kod QR",
-      "headline": "Masz problemy?",
+      "headline": "Wpłać {{token}} w sieci {{network}}",
       "infoLabel": "{{info}} (wymagane)",
       "networkLabel": "Sieć",
-      "subtitle": "Możesz nadal uzupełnić depozyt ręcznie.",
+      "subtitle": "Możesz nadal dokończyć wpłatę ręcznie",
       "tokenLabel": "Token",
-      "warning": "Przelewaj tylko {{token}} na {{network}} do tego adresu - w przeciwnym razie Twoje aktywa mogą zostać utracone"
+      "warning": "Przelewaj wyłącznie {{token}} w sieci {{network}} na ten adres - w przeciwnym razie Twoje środki mogą zostać utracone"
     },
     "tokenSelection": {
       "subtitle": "{{client}} akceptuje:",
       "title": "Wybierz token"
     },
     "warnings": {
-      "includeMemo": "Dołącz tę notatkę: <1>{{memo}}</1>",
+      "includeMemo": "Dołącz to memo: <1>{{memo}}</1>",
       "includeTag": "Dołącz ten tag: <1>{{tag}}</1>",
-      "onlySendTokenOnNetwork": "Tylko wyślij <1>{{token}}</1> w sieci <3>{{network}}</3>",
-      "requiredForDeposit": "Wymagane dla tego depozytu",
-      "sendAboveMinimum": "Wyślij powyżej minimalnej kwoty: <1>{{amount}}</1>"
+      "onlySendTokenOnNetwork": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>",
+      "onlySendTokenOnNetworkExtended": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network to this address. Any other asset or network combination will be unrecoverable.",
+      "requiredForDeposit": "Wymagane dla tej wpłaty",
+      "sendAboveMinimum": "Wyślij kwotę powyżej minimum: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1332,11 +1336,11 @@
     },
     "continueInPayApp": "Kontynuuj w {{integrationName}}",
     "cryptoCom": {
-      "scanQRWithAppText": "Zeskanuj kod QR za pomocą aplikacji crypto.com i zakończ transakcję"
+      "scanQRWithAppText": "Zeskanuj kod QR za pomocą aplikacji crypto.com aby sfinalizować transakcję"
     },
     "generateNewQr": "Wygeneruj nowy kod QR",
     "noTransferIdError": "Brak identyfikatora przelewu. Proszę rozpocząć od nowa.",
-    "paidConfirmation": "Zapłaciłeś <strong>{{amountStr}}</strong> dla {{clientName}}",
+    "paidConfirmation": "Zapłaciłeś <strong>{{amountStr}}</strong> na rzecz {{clientName}}",
     "paymentDataMissing": "Dane płatności są niedostępne. Proszę spróbować ponownie.",
     "paymentFailed": "Płatność nie powiodła się. Proszę spróbować ponownie.",
     "pollingError": "Sprawdzenie statusu płatności nie powiodło się. Proszę spróbować ponownie.",
@@ -1381,8 +1385,8 @@
       "unavailableAccounts": "Niedostępne konta"
     },
     "collapsableButton": {
-      "collapse": "",
-      "expand": ""
+      "collapse": "Zwiń",
+      "expand": "Rozwiń"
     },
     "common": {
       "cancel": "Anuluj",
@@ -1432,7 +1436,7 @@
       "title": "Czy na pewno chcesz wyjść?"
     },
     "fundingLoading": {
-      "stepOrder": ""
+      "stepOrder": "{{current}} z {{total}}"
     },
     "fundingOptions": {
       "available": "Dostępne: {{amount}}",
@@ -1505,13 +1509,13 @@
       "title": "Nie udało się połączyć z {{integrationName}}"
     },
     "poweredBy": {
-      "caption": "",
-      "iconAriaLabel": ""
+      "caption": "Napędzane przez",
+      "iconAriaLabel": "PayPal"
     },
     "previewPage": {
       "bufferAndFees": "{{bufferAmount}} bufor + {{feesAmount}} opłat wliczonych",
       "bufferDisclaimer": "Zachowasz niewykorzystany bufor.",
-      "closeAriaLabel": "",
+      "closeAriaLabel": "zamknij",
       "conversionFee": "Opłata za konwersję w {{integrationName}}",
       "conversionFeeHint": "Tę opłatę pobiera {{integrationName}} za konwersję.",
       "estimatedNetworkFee": "Szacowana opłata sieciowa",
@@ -1520,100 +1524,100 @@
       "from": "Z {{integrationName}}",
       "howItWorks": "Jak to działa",
       "merchantPurchase": "Zakup od {{merchantName}}",
-      "networkFeeHint": "Pomaga przenieść transakcję na blockchain, pokrywając koszty dla walidatorów sieci, którzy ją przetwarzają",
+      "networkFeeHint": "Pomaga umieścić transakcję w blockchainie, pokrywając koszty walidatorów sieci, którzy ją przetwarzają",
       "payWith": "Zapłać za pomocą",
-      "pyusdDisclaimer": "Transakcja zostanie zakończona za pomocą PayPal USD (PYUSD), który jest stablecoinem wydanym i nadzorowanym przez Paxos Trust Company, LLC. PYUSD działa na blockchain.",
-      "refundDisclaimer": "Zwroty zostaną zrealizowane tylko w {{settlementCurrency}}. Kurs wymiany i opłaty często się zmieniają. Wszystkie zakupy krypto są ostateczne.",
+      "pyusdDisclaimer": "Transakcja zostanie zrealizowana z użyciem PayPal USD (PYUSD), który jest stablecoinem emitowanym i przechowywanym przez Paxos Trust Company, LLC. PYUSD działa w sieci blockchain.",
+      "refundDisclaimer": "Zwroty będą realizowane wyłącznie w {{settlementCurrency}}. Kurs wymiany oraz opłaty często się zmieniają. Wszystkie zakupy kryptowalut są ostateczne.",
       "send": "Wyślij",
-      "showFundingMethodsAriaLabel": "",
-      "swapFee": "Automatyczna opłata za zamianę",
-      "swapFeeHint": "Opłata ułatwiająca automatyczną zamianę aktywów w twoim portfelu na docelowy aktyw transferu.",
+      "showFundingMethodsAriaLabel": "pokaż metody płatności",
+      "swapFee": "Opłata za automatyczną konwersję",
+      "swapFeeHint": "Opłata umożliwiająca automatyczną konwersję aktywów w Twoim portfelu na docelowy aktyw transferu.",
       "title": "Zapłać {{merchantName}}",
-      "tokenOnNetwork": "",
+      "tokenOnNetwork": "{{token}} w sieci {{network}}",
       "transactionBuffer": "Bufor transakcji",
-      "transactionBufferHint": "Ta kwota jest dodawana, aby pomóc w realizacji zakupu, nawet jeśli ceny krypto się zmienią. Może to pozostawić trochę {{settlementCurrency}} w twoim portfelu."
+      "transactionBufferHint": "Ta kwota jest dodawana, aby zapewnić realizację zakupu, nawet jeśli ceny kryptowalut ulegną zmianie. Może to spowodować pozostawienie niewielkiej ilości {{settlementCurrency}} w Twoim portfelu."
     },
     "sessionExpiredPage": {
-      "description": "Często dzieje się tak, jeśli zalogujesz się na swoje konto na innej platformie, gdy ta sesja jest aktywna.",
-      "retry": "Kliknij Spróbuj ponownie, aby zalogować się i ponowić transakcję.",
+      "description": "Często dzieje się tak, gdy zalogujesz się na swoje konto na innej platformie, gdy ta sesja jest aktywna.",
+      "retry": "Kliknij \"Spróbuj ponownie\", aby zalogować się i ponowić transakcję.",
       "title": "Sesja wygasła"
     },
     "somethingWentWrongPage": {
-      "message": "Mamy problem z przetworzeniem tej prośby w tej chwili",
+      "message": "Mamy obecnie problem z przetworzeniem tego żądania",
       "title": "Coś poszło nie tak"
     },
     "terms": {
-      "header": "",
-      "paragraph01": "",
-      "paragraph02": "",
-      "paragraph03": "",
-      "paragraph04": "",
-      "paragraph05": "",
-      "paragraph06": "",
-      "paragraph07": "",
-      "paragraph08": "",
-      "paragraph09": "",
-      "paragraph10": "",
-      "paragraph11": "",
-      "paragraph12": "",
-      "paragraph13": "",
-      "paragraph14": "",
-      "paragraph15": "",
-      "paragraph16": "",
-      "paragraph17": "",
-      "paragraph18": "",
-      "paragraph19": "",
-      "paragraph20": "",
+      "header": "Warunki i zasady użytkowania końcowego Mesh",
+      "paragraph01": "Warunki użytkowania końcowego usługi Mesh Mesh Connect, Inc. (\"Mesh\") jest dostawcą technologii, która umożliwia komunikację w Twoim imieniu z określonymi zewnętrznymi kontami kryptowalutowymi i portfelami (\"Połączone Konta\"), w tym przesyłanie instrukcji, które chcesz wykonać, używać wybranej przez Ciebie kryptowaluty na Połączonym Koncie, aby dokonywać zakupów towarów i usług u uprawnionych sprzedawców internetowych (każdy z nich, „Kupiec”), którzy oferują „płatność kryptowalutą” jako obsługiwaną opcję przy kasie. W związku z każdym zakupem przez Ciebie towaru lub usługi od Kupca, Mesh uzyska dostęp do kryptowaluty na Twoim Połączonym Koncie, przeniesie kryptowalutę z Połączonego Konta, zleci zamianę kryptowaluty na stablecoiny według potrzeby i przekaże odpowiednią kwotę w stablecoinach denominowanych w dolarach amerykańskich do PayPal, Inc. i/lub jego podmiotów powiązanych (\"PayPal\"), które z kolei obsłużą takie zakupy z Kupcem.",
+      "paragraph02": "Korzystając z Narzędzia, potwierdzasz i zgadzasz się, że:\n• funkcjonalność opisana w niniejszym dokumencie, oparta na Narzędziu (\"Usługa Użytkownika Końcowego\"), będzie używana na Twoje polecenie, a wszelkie transakcje realizowane z Twoim zleceniem za pośrednictwem Narzędzia są dokonywane za Twoją zgodą;\n• Ani Mesh, ani jego dostawcy usług nie oferują usług maklerskich ani nie angażują się w przetwarzanie płatności; oraz\n• Mesh, PayPal oraz dostawcy usług Mesh nie ponoszą żadnej odpowiedzialności za jakiekolwiek Połączone Konto, ani za warunki, polityki, działania czy zaniechania dostawcy Połączonych Kont.",
+      "paragraph03": "Oświadczasz i zapewniasz, że posiadasz wszelkie prawa i zgody niezbędne do połączenia się i uzyskania dostępu do każdego Połączonego Konta za pośrednictwem Usługi Użytkownika Końcowego, włączając w to prawo do udostępnienia Mesh i jego dostawcom usług danych logowania do Twojego Połączonego Konta, adresów portfela i/lub wszelkich informacji dotyczących Twoich kont lub danych osobowych związanych z każdym Połączonym Kontem.",
+      "paragraph04": "Korzystając z Narzędzia, upoważniasz Mesh do dostępu do Twojego Połączonego Konta oraz złożenia określonych transakcji według Twoich instrukcji. Niniejszym upoważniasz Mesh oraz jego dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów między Usługą Użytkownika Końcowego a każdym Połączonym Kontem i potwierdzasz oraz zgadzasz się, że Mesh i jego dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).",
+      "paragraph05": "Narzędzie zaprojektowano w celu umożliwienia finansowania zakupów u Kupców za pomocą kwalifikujących się aktywów kryptowalutowych w Połączonym Koncie (takie zakupy będą dalej określane jako „Transakcje Zewnętrzne”). Aby zrealizować Transakcję Zewnętrzną w Twoim imieniu:\n• Jeśli Twoje Połączone Konto obsługuje PYUSD, Mesh:\n◦ zleci Twojemu Połączonemu Kontu przeniesienie PYUSD z Połączonego Konta albo, jeśli saldo PYUSD jest niewystarczające, kupi PYUSD, używając zapisanej wybranej przez Ciebie metody płatności powiązanej z Połączonym Kontem, lub zamieni inną kwalifikującą się wybraną przez Ciebie kryptowalutę, którą przechowujesz na Połączonym Koncie, na PYUSD, w kwocie potrzebnej do zrealizowania Transakcji Zewnętrznej wraz z wszelkimi opłatami i przeniesie PYUSD do PayPal, który to zatwierdzi płatność na rzecz Kupca; albo\n◦ zleci Twojemu Połączonemu Kontu przetransferowanie innej kwalifikującej się kryptowaluty, którą wybierzesz, z Połączonego Konta, w kwocie potrzebnej do zrealizowania Transakcji Zewnętrznej wraz z wszelkimi opłatami, do inteligentnego kontraktu Mesh, który zostanie przekształcony na PYUSD, i dla tego inteligentnego kontraktu przetransferowane zostanie PYUSD do PayPal, który to zatwierdzi płatność na rzecz Kupca. W przypadku takich transakcji konwersja z kwalifikującej się kryptowaluty na PYUSD zostanie przeprowadzona przez zdecentralizowany protokół dostawcy płynności.\n• Jeśli Twoje Połączone Konto nie obsługuje PYUSD, Mesh zleci Twojemu Połączonemu Kontu przeniesienie innego obsługiwanego stablecoina, USDC, z Połączonego Konta, lub, jeśli saldo USDC jest niewystarczające, zakupi USDC, używając zapisanej wybranej przez Ciebie metody płatności powiązanej z Połączonym Kontem czy też zleci Połączonemu Kontu zamianę innej wybranej przez Ciebie kryptowaluty na USDC. Następnie Mesh zleci Twojemu Połączonemu Kontu transfer tego USDC do dostawcy płynności współpracującego z Mesh, przekształcającego tego USDC na PYUSD i przetransferowania tego PYUSD do PayPal, który zatwierdzi płatność na rzecz Kupca.",
+      "paragraph06": "Twój dostawca Połączonego Konta może naliczać opłatę sieciową lub inną za przetransferowanie PYUSD lub USDC. Ujawnienie, obliczenie i pobranie wszelkich takich opłat lub należności jest określone między Tobą a Twoim dostawcą Połączonego Konta i nie jest odpowiedzialnością Mesh. Pomimo że przekażemy Ci informacje o opłatach, które otrzymujemy od Twojego Połączonego Konta w zakresie racjonalnie możliwym, co może oznaczać oszacowanie opłat, a nie rzeczywiste należności opłat, nie kontrolujemy kwot faktycznie naliczanych przez dostawcę Połączonego Konta, które mogą być większe lub mniejsze niż kwoty, które Ci ujawniamy.",
+      "paragraph07": "Jeśli potrzebujesz zamienić inną kwalifikującą się kryptowalutę na PYUSD w swoim Połączonym Koncie, Twój dostawca Połączonego Konta może naliczać opłatę sieciową lub inną za konwersję. Dostawca Połączonego Konta może również uwzględniać „spread” w kursie konwersji z innej kryptowaluty na PYUSD, co oznacza różnicę między ceną hurtową, po której można sprzedać swoją kryptowalutę, a niższym kursem, po którym Twój Połączony Konto dokonuje konwersji. Ujawnienie, obliczenie i pobranie wszelkich takich opłat, należności czy spreadu jest określone między Tobą a Twoim dostawcą Połączonego Konta i nie jest odpowiedzialnością Mesh. Pomimo że przekażemy Ci informacje o opłatach, które otrzymujemy od Twojego Połączonego Konta w zakresie racjonalnie możliwym, co może oznaczać oszacowanie opłat, a nie rzeczywiste należności opłat, nie kontrolujemy kwot faktycznie naliczanych przez dostawcę Połączonego Konta, które mogą być większe lub mniejsze niż kwoty, które Ci ujawniamy.",
+      "paragraph08": "Jeśli Mesh musi zlecić Twojemu Połączonemu Kontu zamianę innej kwalifikującej się kryptowaluty na PYUSD lub USDC, Mesh uwzględni w łącznej sumie transakcji wartość buforową, w zależności od wielkości Twojej Transakcji Zewnętrznej, aby ułatwić rozliczenie konwersji. Bufor to dodatkowa kwota wybranej przez Ciebie kryptowaluty, która zostanie uwzględniona przy konwersji na PYUSD lub USDC. Bufor jest zaprojektowany tak, aby umożliwić przetworzenie konwersji przez blockchain w przypadku wahań w opłacie sieciowej wymaganej do ukończenia konwersji. Jeśli bufor jest niewystarczający, aby uwzględnić wahnięcie opłaty sieciowej między czasem wyświetlania Ci łącznej sumy transakcji a momentem, w którym zatwierdzisz konwersję, zostanie Ci przedstawiona nowa łączna suma transakcji, uwzględniająca zaktualizowaną kwotę transakcji (w tym kwotę bufora) i zostaniesz poproszony o zatwierdzenie tej kwoty. Jeśli jakaś część bufora nie zostanie wykorzystana po zrealizowaniu Transakcji Zewnętrznej, pozostała część bufora:\n• Jeśli Mesh przenosi PYUSD lub USDC bezpośrednio z Twojego Połączonego Konta, pozostanie na Twoim Połączonym Koncie jako PYUSD lub USDC, jeśli Twoje Połączone Konto nie obsługuje PYUSD czy też\n• Jeśli Mesh zamienia Twoją kwalifikującą się kryptowalutę na PYUSD za pośrednictwem inteligentnego kontraktu lub dostawców płynności Mesh, pozostała część wybranej przez Ciebie kryptowaluty zostanie zwrócona na Twoje Połączone Konto.",
+      "paragraph09": "Możesz zażądać zwrotu za swoja Transakcję Zewnętrzną bezpośrednio u Kupca. Wszelkie zwroty zostaną przetworzone przez PayPal, Mesh lub dostawcę płynności współpracującego z Mesh i wydane w formie PYUSD, lub jeśli Twoje Połączone Konto nie obsługuje PYUSD, w formie USDC. Nie można wykonać zwrotu jakichkolwiek opłat naliczonych przez Twojego dostawcę Połączonego Konta ani jakiegokolwiek dostawcę płynności współpracującego z Mesh lub poprzez inteligentny kontrakt Mesh w celu zrealizowania pierwotnej Transakcji Zewnętrznej.",
+      "paragraph10": "Zgadzasz się, że jeśli korzystasz z Narzędzia do celów Transakcji Zewnętrznych z Kupcami, ani Mesh, ani PayPal nie ponoszą odpowiedzialności za żadne spory dotyczące tych transakcji. To Ty jesteś odpowiedzialny za bezpośrednie kontaktowanie się z odpowiednimi Kupcami w celu rozwiązania jakichkolwiek sporów, roszczeń dotyczących nieautoryzowanych transakcji, żądań zwrotów lub jakichkolwiek innych roszczeń lub problemów dotyczących Transakcji Zewnętrznych. Potwierdzasz, że Transakcje Zewnętrzne nie są transakcjami z konta PayPal i że program Ochrony Zakupów PayPal nie ma zastosowania do Twoich Transakcji Zewnętrznych ani korzystania z Narzędzia. Ty jesteś odpowiedzialny za wszelkie konsekwencje podatkowe wynikające z korzystania z tego Narzędzia lub Twojego Połączonego Konta do Transakcji Zewnętrznych.",
+      "paragraph11": "Narzędzie oraz za jego pośrednictwem Mesh uzyska dostęp do informacji dotyczących Twoich Połączonych Kont, Kupców oraz każdej Transakcji Zewnętrznej, którą zamierzasz zrealizować przy użyciu Narzędzia. Potwierdzasz, że zapoznałeś się z Polityką Prywatności Firmy, która jest dostępna pod adresem <0>https://meshconnect.com/privacy-policy</0>, i zgadzasz się, że korzystając z Narzędzia, wyrażasz zgodę na wykorzystanie przez Firmę Twoich Danych Osobowych zgodnie z definicją i postanowieniami zawartymi w Polityce Prywatności.",
+      "paragraph12": "Usługi Mesh są dostępne podczas dokonywania zakupów od Kupców obsługiwanych przez PayPal. Mesh nie ujawni Twojego nazwiska PayPal. Mesh przekaże PayPal nazwę i adres Twojego Połączonego Konta, nazwę sieci, hash transferu, adres otrzymania portfela i inne informacje związane z daną transakcją, których PayPal racjonalnie zażąda, przy czym wszystkie te dane będą powiązane z unikalnym anonimowym ID transakcji utworzonym przez PayPal. PayPal w zamian może używać takiego ID do przekazywania Mesh informacji o każdej Transakcji Zewnętrznej, w tym datę i czas transakcji, kwotę w dolarach amerykańskich lub PYUSD oczekiwanych przez każdego Kupca oraz inne informacje związane z transakcją, których Mesh racjonalnie zażąda. Korzystając z Narzędzia, wyrażasz również zgodę na Politykę Prywatności PayPal, która jest dostępna pod adresem <0>https://www.paypal.com/us/legalhub/paypal/privacy-full</0>.",
+      "paragraph13": "Oddane jest to narzędzie na zasadzie „JAK JEST” i „W MIARĘ DOSTĘPNOŚCI”, ze wszystkimi wadami i bez jakichkolwiek oświadczeń ani gwarancji, niezależnie od ich rodzaju. Mesh nie składa żadnych oświadczeń ani nie udziela żadnych gwarancji dotyczących Narzędzia, wyraźnych ani dorozumianych, w tym gwarancji przydatności handlowej, przydatności do określonego celu ani nienaruszania praw.",
+      "paragraph14": "W ŻADNYM WYPADKU ANI MESH, ANI PAYPAL, ANI DOSTAWCY USŁUG MESH NIE BĘDĄ PONOSIĆ ODPOWIEDZIALNOŚCI – CZY TO NA PODSTAWIE UMOWY, GWARANCJI, CZYNÓW NIEDOZWOLONYCH (W TYM ZANIEDBANIA), ODPOWIEDZIALNOŚCI ZA PRODUKT, ODPOWIEDZIALNOŚCI OBIEKTYWNEJ LUB INNEJ PODSTAWY PRAWNEJ – ZA JAKIEKOLWIEK SZKODY POŚREDNIE, UBOCZNE, SZCZEGÓLNE LUB WYNIKOWE W ZWIĄZKU Z KORZYSTANIEM (LUB NIEMOŻNOŚCIĄ KORZYSTANIA) Z NARZĘDZIA, USŁUGI UŻYTKOWNIKA KOŃCOWEGO LUB JAKIEGOKOLWIEK POŁĄCZONEGO KONTA, W TYM Z JAKICHKOLWIEK INSTRUKCJI LUB MATERIAŁÓW PRZESYŁANYCH ZA POŚREDNICTWEM FUNKCJONALNOŚCI WŁĄCZONEJ PRZEZ NARZĘDZIE. POWYŻSZE OGRANICZENIA, WYŁĄCZENIA I ZRZECZENIA SIĘ ODPOWIEDZIALNOŚCI MAJĄ ZASTOSOWANIE W NAJSZERSZYM ZAKRESIE DOZWOLONYM PRZEZ OBOWIĄZUJĄCE PRAWO, NAWET JEŚLI JAKIKOLWIEK ŚRODEK ZARADCZY NIE SPEŁNI SWOJEGO ZASADNICZEGO CELU. BEZ USZCZERBKU DLA POWYŻSZEGO, ŁĄCZNA ODPOWIEDZIALNOŚĆ FIRMY ORAZ JEJ DOSTAWCÓW USŁUG W ZWIĄZKU Z NARZĘDZIEM NIE PRZEKROCZY KWOTY DZIESIĘCIU DOLARÓW.",
+      "paragraph15": "Zobowiązujesz się bronić, zabezpieczać i chronić Mesh, PayPal oraz ich dyrektorów, członków zarządu, pracowników, licencjodawców, kontrahentów i przedstawicieli przed wszelkimi roszczeniami, działaniami, powództwami, dochodzeniami lub postępowaniami wszczętymi przez osoby trzecie, a także przed wszelkimi stratami, zobowiązaniami, szkodami, kosztami i wydatkami wynikającymi z lub związanymi z Twoim korzystaniem (bądź niewłaściwym korzystaniem) z Narzędzia, Usługi Końcowego Użytkownika i/lub jakiegokolwiek Połączonego Konta.",
+      "paragraph16": "Mesh może zmienić te warunki w dowolnym momencie. Dalsze korzystanie z jakiejkolwiek funkcjonalności włączonej przez Narzędzie po tych zmianach oznacza Twoją akceptację zaktualizowanych warunków.",
+      "paragraph17": "Te warunki podlegają prawu stanu Delaware, z wyłączeniem jego zasad kolizji praw. Z wyjątkiem sporów kwalifikujących się do rozpatrzenia w sądzie ds. drobnych roszczeń, wszelkie spory wynikające z niniejszych warunków lub związane z nimi oraz dotyczące jakiegokolwiek aspektu relacji między Tobą a Firmą lub PayPal, niezależnie od tego, czy opierają się na umowie, delikcie, przepisach prawa, oszustwie, wprowadzeniu w błąd czy innej podstawie prawnej, będą rozstrzygane w drodze ostatecznego i wiążącego arbitrażu przed neutralnym arbitrem, zamiast przed sądem, sędzią lub ławą przysięgłych, a Ty zgadzasz się, że zarówno Mesh, jak i Ty zrzekacie się prawa do procesu przed ławą przysięgłych. Do takich sporów zalicza się między innymi kwestie związane z interpretacją lub stosowaniem niniejszego postanowienia arbitrażowego, w tym jego wykonalnością, odwoływalnością lub ważnością — w całości lub w części. Wszystkie takie sprawy rozstrzygane będą przez arbitra, a nie przez sąd lub sędziego. Zgadzasz się, że arbitraż na podstawie tych warunków będzie prowadzony indywidualnie; arbitraże grupowe i powództwa zbiorowe nie są dozwolone, a Ty rezygnujesz z prawa do udziału w powództwie zbiorowym.",
+      "paragraph18": "Arbitraż będzie prowadzony przez American Arbitration Association zgodnie z jej Zasadami Arbitrażu Konsumenckiego, zmienionymi na podstawie niniejszych warunków. Zasady Arbitrażu Konsumenckiego są dostępne online pod adresem <0>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</0>. Arbiter będzie prowadził przesłuchania, jeśli takie się odbędą, za pośrednictwem telekonferencji lub wideokonferencji, zamiast osobiście, chyba że arbiter na wniosek Twój lub nasz uzna, że przesłuchanie osobiste jest stosowne. Wszelkie osobiste spotkania będą odbywać się w miejscu rozsądnie dogodnym dla obu stron, z uwzględnieniem ich możliwości podróży oraz innych istotnych okoliczności. Jeśli Ty i Mesh nie będziecie mogli uzgodnić lokalizacji, decyzję taką podejmie AAA lub arbiter. Decyzja arbitra będzie zgodna z niniejszymi warunkami i będzie ostateczna oraz wiążąca. Arbiter będzie miał uprawnienia do przyznania tymczasowego, natychmiastowego lub stałego nakazu sądowego lub świadczenia konkretnego wykonania tych warunków, ale tylko w zakresie niezbędnym do zapewnienia ulgi uzasadnionej indywidualnym roszczeniem przed arbitrem. Orzeczenie arbitra może być potwierdzone i wyegzekwowane w każdym sądzie posiadającym odpowiednią jurysdykcję. Niezależnie od powyższego, nic w niniejszych warunkach nie uniemożliwia Ci zgłaszania kwestii do agencji federalnych, stanowych lub lokalnych, które – jeśli prawo na to zezwala – mogą dochodzić od nas odpowiednich środków ochrony w Twoim imieniu.",
+      "paragraph19": "W zależności od Twojego miejsca zamieszkania, możesz mieć prawo do rezygnacji z arbitrażu. Aby zrezygnować z arbitrażu i pod warunkiem, że mieszkasz w stanie lub jurysdykcji, która daje Ci takie prawo, musisz w ciągu 30 dni od akceptacji niniejszych warunków wysłać list na adres: Mesh Connect, Inc.; 2325 3rd Street, Suite 210, San Francisco, CA; Attn: Legal Department - Arbitration Opt-Out.",
+      "paragraph20": "Te warunki stanowią pełną umowę pomiędzy Tobą a Mesh w odniesieniu do ich przedmiotu i zastępują wszelkie wcześniejsze oświadczenia lub umowy, zarówno ustne, jak i pisemne, dotyczące tych kwestii. Jeżeli jakikolwiek warunek okaże się niewykonalny zgodnie z obowiązującym prawem, zostaje on niniejszym zmodyfikowany w taki sposób, aby  zachować w możliwie największym stopniu pierwotny zamiar. Każdy warunek, którego nie można w ten sposób zmienić, zostanie oddzielony, a wszystkie pozostałe warunki pozostaną w mocy. Uznajesz i zgadzasz się, że PayPal i dostawcy usług Mesh są zamierzonymi beneficjentami będącymi stronami trzecimi tych warunków. Akceptując niniejsze warunki lub korzystając z Narzędzia, wyrażasz zgodę na związanie się postanowieniami niniejszej umowy.",
       "section": {
-        "businessCustomers": "",
-        "contacting": "",
-        "cookies": "",
-        "dataIntegrity": "",
-        "disclosureOfPersonalInformation": "",
-        "endUser": "",
-        "hyperlinks": "",
-        "informationFromChildren": "",
-        "informationFromTeens": "",
-        "jurisdiction": "",
-        "newsletter": "",
-        "newsletterPersonalInformation": "",
-        "otherPersonalInformation": "",
-        "privacyPolicy": "",
-        "protectInformation": "",
-        "retentionPeriod": "",
-        "rightsUnderGDPR": "",
-        "sensitiveInformation": "",
-        "thirdPartyPaymentServices": "",
-        "thirdPartyServices": "",
-        "updatesToPrivacyPolicy": "",
-        "websiteVisitors": ""
+        "businessCustomers": "Klienci biznesowi \n \n Jeśli reprezentujesz naszego Klienta Biznesowego, przetworzymy Twoje Dane Osobowe, takie jak: \n • Imię i nazwisko; \n • Dane kontaktowe; \n • Nazwa pracodawcy; \n • Tytuł i funkcję zawodową; \n • Informacje finansowe, takie jak metoda płatności, szczegóły dotyczące rozliczeń i historia faktur. \n \n Przetwarzamy te Dane Osobowe w celu zawarcia umowy i zarządzania naszą relacją umowną z Klientem Biznesowym oraz do innych uzasadnionych celów biznesowych, które obejmują: \n • Świadczenie naszych Usług; \n • Organizowanie dostępu do Twojego konta dewelopera; \n • Dostarczanie obsługi klienta i odpowiedzi na inne zapytania oraz prośby; \n • Komunikację z Tobą w sprawie naszych Usług i umowy z Tobą; \n • Realizację transakcji, weryfikację Twoich informacji, wysyłkę faktur i przetwarzanie płatności od Ciebie; \n\n Możesz przeglądać i aktualizować te informacje, uzyskując dostęp do swojego konta dewelopera na stronie (<0>https://dashboard.meshconnect.com/login</0>). \n \n Jeśli ujawnisz nam jakiekolwiek Dane Osobowe dotyczące innych osób, takich jak Twoi współpracownicy lub koleżanki, oświadczasz, że masz na to upoważnienie i zezwalasz nam na ich wykorzystanie.",
+        "contacting": "Kontakt z nami lub naszym Inspektorem Ochrony Danych \n \n Aby skontaktować się z naszym Inspektorem Ochrony Danych lub jeśli masz ogólne pytania lub komentarze dotyczące naszej polityki prywatności i praktyk, prosimy o kontakt mailowy na adres privacy@MeshConnect.com lub korzystając z danych kontaktowych poniżej: \n \n Kontakt w Stanach Zjednoczonych: \n Mesh Connect, Inc. \n Attn: dpo@meshconnect.com \n 2325 3rd Street, Suite 210 San Francisco, CA 94107 \n \n Przedstawiciel UE: \n Nazwa firmy: Instant EU GDPR Representative Ltd \n Imię i nazwisko: Adam Brogden \n Email: contact@gdprlocal.com \n Tel: +353 15 549 700 \n Twój link raportowy: <0>https://meshconnectinc.gdprlocal.com/eu</0>\n Adres w UE w Dublinie: INSTANT EU GDPR REPRESENTATIVE LIMITED Office 2 12A Lower Main Street, Lucan Co. \n Dublin K78 X5P8 Irlandia \n \n Przedstawiciel w Wielkiej Brytanii: \n Nazwa firmy: GDPR Local Ltd \n Imię i nazwisko: Adam Brogden \n Email: contact@gdprlocal.com \n Tel: +441 772 217 800 \n Twój link raportowy: <0> https://meshconnectinc.gdprlocal.com/uk</0>\n Adres w Wielkiej Brytanii: GDPR Local Ltd 1st Floor Front Suite 27-29 North Street, Brighton England BN1 1EB \n \n Ponieważ komunikacja e-mail nie zawsze jest zabezpieczona, prosimy nie wysyłać danych dotyczących karty kredytowej ani innych wrażliwych informacji w e-mailach do nas.",
+        "cookies": "Ciasteczka i podobne technologie \n \n Na stronie mogą również być zbierane informacje za pomocą ciasteczek i/lub innych podobnych technologii. Obejmuje to informacje zebrane za pośrednictwem: \n • Twojej przeglądarki lub urządzenia. \n • - Większość przeglądarek automatycznie zbiera określone informacje poprzez urządzenie, takie jak adres MAC, typ komputera (Windows lub Mac), rozdzielczość ekranu, nazwa systemu operacyjnego i wersja, producent urządzenia i model, język, typ i wersja przeglądarki internetowej. Używamy tej informacji, aby zapewnić prawidłowe funkcjonowanie strony. \n • Ciasteczka. \n • - Ciasteczka to fragmenty informacji przechowywane bezpośrednio na komputerze, z którego korzystasz. Ciasteczka pozwalają nam zbierać takie informacje, jak typ przeglądarki, czas spędzony na stronie, odwiedzane strony, preferencje językowe i inne dane dotyczące ruchu. Używamy tych informacji w celach bezpieczeństwa, w celu usprawnienia nawigacji, wyświetlania informacji skuteczniej i personalizacji Twojego doświadczenia. \n \n Gromadzimy również dane statystyczne dotyczące korzystania ze strony w celu ciągłego poprawiania ich designu i funkcjonalności, zrozumienia, jak są używane oraz pomocy w rozwiązywaniu pytań dotyczących ich. Aktywność na stronie jest śledzona za pomocą Google Analytics w celu identyfikowania trendów i analizy ruchu na stronie, ale w żaden sposób, by identyfikować indywidualne użytkowanie strony. Obecnie nie odpowiadamy na sygnały przeglądarki \"do not track\". Jeśli nie chcesz, aby informacje były zbierane przez użycie ciasteczek, większość przeglądarek pozwala automatycznie odrzucać ciasteczka lub zostać wybranym do odrzucenia lub zaakceptowania danego ciasteczka (lub ciasteczek) z danej strony. Możesz również chcieć spojrzeć na <0>https://www.allaboutcookies.org/manage-cookies/index.html</0>. Jednakże, jeśli nie akceptujesz ciasteczek, możesz napotkać pewne niedogodności w korzystaniu ze strony. \n • Tagi pikselowe i inne podobne technologie. \n • - Tagi pikselowe. Tagi pikselowe (znane również jako web beacons i czyste GIFy) mogą być używane między innymi do śledzenia działań użytkowników naszych usług (w tym odbiorców e-maili), pomiaru sukcesu naszych kampanii marketingowych i kompilowania statystyk dotyczących użytkowania naszych usług i wskaźników odpowiedzi. \n \n - Analytics. Korzystamy z dostawców analitycznych, w tym z Google Analytics, które używają ciasteczek i podobnych technologii do zbierania i analizy informacji o użytkowaniu strony i raportowania działalności i trendów. Ta usługa może również zbierać informacje dotyczące korzystania z innych stron internetowych, aplikacji i źródeł online. Możesz dowiedzieć się o praktykach Google odwiedzając <1>https://policies.google.com/privacy</1> i skorzystać z dostępnej opcji rezygnacji wtyczki do przeglądarki Google Analytics, dostępnej na <2>https://tools.google.com/dlpage/gaoptout</2>.",
+        "dataIntegrity": "Integralność danych i ograniczenie celu \n \n Podejmujemy rozsądne kroki, aby zapewnić, że przetwarzane dane osobowe są: (i) odpowiednie dla celów, dla których mają być użyte, (ii) wiarygodne dla ich zamierzonego stosowania i (iii) dokładne, kompletne i aktualne.",
+        "disclosureOfPersonalInformation": "Ujawnienie danych osobowych \n \n Nie sprzedajemy twoich danych osobowych stronom trzecim. Możemy udostępniać twoje informacje z dostawcami usług działającymi na podstawie umowy i porozumienia o poufności, które pomagają nam w prowadzeniu naszej działalności. Możemy również udostępniać Twoje informacje naszym Klientom Biznesowym w związku z korzystaniem z naszych Usług przez Ciebie i naszych Klientów Biznesowych. W rzadkich okolicznościach możemy używać i/lub ujawniać Twoje informacje, w tym Twoje dane umożliwiające identyfikację osoby, w następujących przypadkach: \n• Aby wymusić i/lub zbadać naruszenia naszych warunków użytkowania strony i/lub tej Polityki. \n • Choć mało prawdopodobne, Twoje dane osobowe mogą być ujawnione rządom, sądom, organom ścigania lub agencjom regulacyjnym na podstawie uchwalonego prawa w jurysdykcji, w której znajdujesz się i/lub gdzie Twoje dane osobowe są przechowywane i/lub przetwarzane. Nie możesz zrezygnować z ujawnienia swoich danych osobowych, jeśli wymaga tego prawna decyzja. \n \n Angażujemy poddostawców zewnętrznych do zapewnienia infrastruktury, która pomaga w dostarczaniu naszych usług, na przykład usług przechowywania. Przed użyciem dowolnego poddostawcy zewnętrznego, oceniamy ich praktyki dotyczące prywatności, bezpieczeństwa i poufności, aby zapewnić zgodność z naszymi certyfikatami bezpieczeństwa. Dodatkowe informacje o poddostawcach, których używamy, można znaleźć w naszej liście poddostawców.",
+        "endUser": "Użytkownik końcowy \n \n Niniejsza Polityka Prywatności nie dotyczy przetwarzania danych osobowych użytkowników końcowych produktów lub usług naszych Klientów Biznesowych („Użytkownik końcowy”). Jeśli jesteś Użytkownikiem końcowym, przetwarzamy Twoje dane osobowe wyłącznie na podstawie instrukcji naszego Klienta Biznesowego, gdzie jest to wymagane do świadczenia naszych Usług (np. w celu ułatwienia transakcji). Klient Biznesowy jest odpowiedzialny za przetwarzanie Twoich Danych Osobowych, a my działamy jako dostawca usług w tym kontekście. Oznacza to, że będziemy przetwarzać Twoje dane osobowe wyłącznie na podstawie instrukcji naszego Klienta Biznesowego. Prosimy skonsultować się z polityką prywatności właściwego Klienta Biznesowego, aby uzyskać informacje na temat tego, jak przetwarzają Twoje Dane Osobowe. Jeśli masz pytania lub chcesz skorzystać z praw związanych z Twoimi danymi osobowymi, prosimy o kontakt z odpowiednim Klientem Biznesowym.\n \n Co robimy z Twoimi informacjami, gdy zakończysz relację z nami? \n \n Zasadniczo będziemy przechowywać Twoje informacje tylko tak długo, jak to konieczne do zrealizowania naszych uzasadnionych celów biznesowych i zgodnie z prawem. Niemniej jednak, możemy nadal przechowywać anonimowe lub zanonimizowane informacje, takie jak odwiedziny strony, bez identyfikatorów, w celu poprawy naszych usług.",
+        "hyperlinks": "Hiperłącza i inne strony internetowe \n \n Nasza strona może zawierać linki do stron internetowych zarządzanych przez inne podmioty. Niniejsza Polityka Prywatności dotyczy wyłącznie tej Strony. Polityki prywatności tych stron trzecich mogą się różnić od naszej Polityki Prywatności. Korzystasz z tych stron trzecich i usług na własne ryzyko, więc kiedy łączysz się z innymi stronami, powinieneś przeczytać ich polityki prywatności.",
+        "informationFromChildren": "Informacje o dzieciach \n Usługi nie są skierowane do dzieci poniżej 13 roku życia. Osoba, która dostarcza Dane Osobowe za pośrednictwem strony, oświadcza nam, że ma co najmniej 13 lat. Jeśli uzyskamy rzeczywiste informacje, że zebraliśmy dane osobowe od dziecka poniżej 13 roku życia, usuniemy je niezwłocznie, chyba że jesteśmy prawnie zobowiązani do zachowania takich danych.",
+        "informationFromTeens": "Informacje o nastolatkach \n Nie kierujemy usług do osób poniżej 18 roku życia. Nie zbieramy ani nie przechowujemy świadomie danych osobowych od osób poniżej 18 roku życia.",
+        "jurisdiction": "Jurysdykcja i transfer międzynarodowy \n \n Twoje Dane Osobowe mogą być przechowywane i przetwarzane w dowolnym kraju, w którym mamy obiekty, lub w którym zatrudniamy dostawców usług, a korzystając z Usług lub w innych przypadkach wchodząc w interakcję z nami, rozumiesz, że Twoje informacje zostaną przekazane do krajów znajdujących się poza Twoim miejscem zamieszkania, w tym do Stanów Zjednoczonych, które mogą mieć zasady ochrony danych różniące się od zasad Twojego kraju. W określonych okolicznościach sądy, agencje ds. egzekwowania prawa, organy regulacyjne lub władze bezpieczeństwa w tych innych krajach mogą mieć prawo dostępu do Twoich Danych Osobowych.",
+        "newsletter": "Newsletter, marketing i reklama zewnętrzna \n \n Możemy przetwarzać Twoje Dane Osobowe, w tym dane marketingowe (np. Twoje preferencje dotyczące otrzymywania od nas komunikacji marketingowej i szczegóły dotyczące Twojego zaangażowania w nie), do celów promocyjnych. Obejmuje to między innymi: \n • Dostarczanie Ci naszego newslettera i/lub innych materiałów marketingowych. \n • - Aby wysyłać Ci e-maile związane z marketingiem z informacjami o naszych Usługach, nowych produktach i innych wiadomościach o naszej Firmie. \n • - Aby umożliwić funkcje dzielenia się społecznościowego, które wybierzesz do użycia. \n • Analizowanie Danych Osobowych do raportowania biznesowego i oferowania usług personalizowanych. \n • - Aby analizować lub przewidywać Twoje preferencje w celu przygotowania agregowanych raportów trendów dotyczących sposobu, w jaki używana jest nasza treść cyfrowa, abyśmy mogli poprawić nasze Usługi. \n • - Aby lepiej zrozumieć Twoje zainteresowania i preferencje, abyśmy mogli personalizować nasze interakcje z Tobą i dostarczać Ci informacji i/lub ofert dostosowanych do Twoich zainteresowań. \n • - Aby lepiej zrozumieć Twoje preferencje, abyśmy mogli dostarczać treści, które uważamy za odpowiednie i interesujące dla Ciebie. \n • Umożliwianie Ci uczestnictwa w losowaniu nagród, konkursach lub innych promocjach. \n • - Możemy oferować Ci możliwość uczestnictwa w losowaniu nagród, konkursach lub innych promocjach. \n • - Niektóre z tych promocji mają dodatkowe zasady zawierające informacje o tym, jak wykorzystamy i ujawnimy Twoje Dane Osobowe. Proszę przeczytać te dodatkowe zasady przed wyborem uczestnictwa. \n • Umożliwianie Ci uczestnictwa w naszych wydarzeniach. \n • - W celu planowania i organizowania wydarzeń lub webinarów, na które się zarejestrowałeś lub w których uczestniczysz, w tym wysyłanie związanych z nimi komunikatów.",
+        "newsletterPersonalInformation": "Możemy ujawnić twoje Dane Osobowe: \n • Stronom trzecim sponsorującym konkursy, loterie i inne podobne promocje. \n \n Dajemy Ci wybór dotyczący wykorzystania i ujawnienia Twoich Danych Osobowych do celów promocyjnych. Możesz zrezygnować z uczestnictwa w: \n 1. Otrzymywaniu e-maili związanych z marketingiem od nas. Jeśli nie chcesz już otrzymywać od nas e-maili związanych z marketingiem w przyszłości, możesz zrezygnować, kontaktując się z nami zgodnie z sekcją „Kontaktuj się z nami” poniżej. \n 2. Otrzymywaniu wiadomości tekstowych/SMS/wiadomości na urządzenia mobilne. Jeśli nie chcesz już w przyszłości otrzymywać od nas wiadomości tekstowych/SMS/wiadomości na urządzenia mobilne związanych z marketingiem, możesz zrezygnować, postępując zgodnie z instrukcjami zawartymi w odpowiednich wiadomościach tekstowych/SMS/wiadomościach na urządzenia mobilne. \n \n Staramy się w miarę możliwości spełniać Twoje żądanie(i) tak szybko, jak to możliwe. Należy pamiętać, że jeśli zrezygnujesz z otrzymywania od nas e-maili dotyczących marketingu, możemy nadal wysyłać Ci ważne wiadomości administracyjne, których nie możesz anulować. \n \n Używamy zewnętrznych firm reklamowych, aby służyć reklamami dotyczącymi towarów i usług, które mogą Cię zainteresować, gdy uzyskasz dostęp do strony lub z niej skorzystasz i gdy korzystasz z innych stron lub usług online. \n • Możesz otrzymywać reklamy na podstawie informacji dotyczących twojego dostępu do lub korzystania z Usług i innych stron lub usług online na dowolnym z Twoich urządzeń, a także na podstawie informacji otrzymanych od stron trzecich. Te firmy umieszczają lub rozpoznają unikalne ciasteczko w twojej przeglądarce (w tym za pośrednictwem tagów pikselowych). Używają również tych technologii, wraz z informacjami, które zbierają o twoim użyciu online, aby rozpoznać cię na urządzeniach, z których korzystasz, takich jak telefon komórkowy i laptop. Jeśli chcesz uzyskać więcej informacji na temat tej praktyki i dowiedzieć się, jak się z niej zrezygnować na przeglądarkach stacjonarnych i mobilnych na urządzeniu, z którego uzyskujesz dostęp do tej Polityki Privatyzacji, odwiedź <0>https://optout.aboutads.info/</0>, <1>https://optout.networkadvertising.org/</1>, i <2>https://allaboutcookies.org/</2>.",
+        "otherPersonalInformation": "Inne cele przetwarzania danych osobowych \n Możemy również przetwarzać dane osobowe w celach ogólnych, wymienionych poniżej. Gdy to robimy, staramy się przetwarzać wyłącznie dane osobowe w formie zanonimizowanej lub pseudonimizowanej, gdzie to możliwe: \n • Agregacja i/lub anonimizacja danych osobowych.\n • - Możemy zbierać i/lub anonimizować dane osobowe, tak aby nie były już uważane za dane osobowe. Robimy to, aby wygenerować inne dane do naszego użytku, które możemy wykorzystać i ujawniać w dowolnym celu, jako że nie identyfikują cię ani żadnej innej osoby. \n • Realizacja naszych celów biznesowych. \n • - Na przykład do analizy danych w celu zwiększenia efektywności naszych Usług i strony; \n • - Do audytów, aby zweryfikować, czy nasze procesy wewnętrzne działają zgodnie z zamierzeniami i odpowiadają wymaganiom prawnym, regulacyjnym lub kontraktowym; \n • - W celach monitoringu bezpieczeństwa i zapobiegania oszustwom, na przykład do wykrywania i zapobiegania cyberatakom lub próbom kradzieży tożsamości; \n • - Do rozwijania nowych produktów i usług; \n • - Do poprawy, treningu, naprawy, konserwacji lub modyfikacji naszych obecnych produktów i usług oraz działań związanych z zapewnieniem jakości i bezpieczeństwem; \n • - Do identyfikacji trendów użytkowania, na przykład do zrozumienia, które części naszych Usług są najbardziej interesujące dla Klientów Biznesowych; \n • - Do określania skuteczności naszych kampanii promocyjnych, aby móc dostosować nasze kampanie do potrzeb i zainteresowań naszych Klientów Biznesowych; oraz \n • - Do operacyjnego i rozwojowego rozwoju naszych działań biznesowych, na przykład zrozumienia, które części naszych Usług są najbardziej interesujące dla naszych Klientów Biznesowych, abyśmy mogli skoncentrować nasze wysiłki na spełnianiu ich zainteresowań. \n • W celu zapewnienia zgodności z obowiązującym prawem i regulacjami. \n • - To może obejmować prawa spoza kraju twojego zamieszkania. \n • Do współpracy z organami publicznymi i rządowymi.\n • - Aby odpowiedzieć na prośbę lub dostarczyć informacje, które uważamy za niezbędne lub stosowne. \n • - Może to obejmować organy spoza kraju twojego zamieszkania. \n • Do współpracy z organami ścigania. \n • - Na przykład, gdy odpowiadamy na prośby i nakazy organów ścigania lub dostarczamy informacje, które uważamy za ważne. \n • Z innych powodów prawnych. \n • - Aby egzekwować nasze warunki i postanowienia; \n • - Aby chronić nasze prawa, prywatność, bezpieczeństwo lub własność oraz te naszych partnerów biznesowych, ciebie lub innych osób. \n • W związku ze sprzedażą lub transakcją biznesową. \n • - Mamy uzasadniony interes w ujawnieniu lub przekazaniu twoich danych osobowych stronie trzeciej w przypadku jakiejkolwiek reorganizacji, fuzji, sprzedaży, joint venture, zlecenia, transferu lub innej dyspozycji całości lub jakiejkolwiek części naszej działalności, aktywów lub akcji (w tym w przypadku bankructwa lub podobnych postępowań).",
+        "privacyPolicy": "<0>Polityka prywatności</0> \n Mesh Connect, Inc. („Firma”, „my” lub „nam”) dostarcza infrastrukturę finansową umożliwiającą dostarczanie opcji odczytu, zapisu i transferu niezależnych od aktywów („Usługi”) dla deweloperów aplikacji („Klientów Biznesowych”). \n \n Niezależnie od tego, czy wchodzisz z nami w interakcję jako przedstawiciel Klienta Biznesowego, jako odwiedzający stronę internetową, czy jako użytkownik naszych Usług, chcemy, abyś wiedział, w jaki sposób zbieramy, wykorzystujemy i ujawniamy (łącznie również określane jako „przetwarzać”) informacje, w tym informacje identyfikujące cię jako osobę fizyczną lub odnoszące się do osoby, którą można zidentyfikować. Nazywamy to „Dane Osobowe”. \n \n Celem tej polityki jest dostarczenie Tobie i naszym Klientom Biznesowym informacji o tym, jakie dane osobowe zbiera Mesh Connect, w jaki sposób używamy danych oraz prawa jednostki do dostępu do danych i zezwolenia na ich użycie. \n \n „Strona” w niniejszym oznacza naszą stronę internetową pod adresem <1>meshconnect.com</1>.",
+        "protectInformation": "Jak chronimy Twoje informacje \n \n Dążymy do stosowania rozsądnych środków organizacyjnych, technicznych, fizycznych i administracyjnych, aby chronić dane osobowe w naszej organizacji przed utratą, niewłaściwym wykorzystaniem i nieuprawnionym dostępem, ujawnieniem, zmianą i zniszczeniem. \n \n Przestrzegamy powszechnie akceptowanych standardów branżowych w celu ochrony informacji przesłanych do nas, zarówno w trakcie transmisji, jak i po ich otrzymaniu. Niestety, żaden system transmisji danych lub ich przechowywania nie może być gwarantowany jako w 100% bezpieczny. Jeśli masz powód, aby sądzić, że Twoja interakcja z nami nie jest już bezpieczna, prosimy o natychmiastowe poinformowanie nas zgodnie z sekcją „Kontaktuj się z nami” poniżej.",
+        "retentionPeriod": "Okres przechowywania \n \n Bezpiecznie przechowujemy Twoje dane w usłudze Azure. Dane są logicznie oddzielone między klientami, włącznie z szyfrowaniem danych w spoczynku i podczas transmisji. Zachowujemy Dane Osobowe tak długo, jak to konieczne lub dozwolone w świetle celu zebraniowej i zgodnie z obowiązującym prawem. \n \n Kryteria używane do określenia naszych okresów przechowywania obejmują: \n• ​​Długość czasu, przez który utrzymujemy z Tobą relację i świadczymy Ci Usługi (na przykład tak długo, jak masz u nas konto lub korzystasz z Usług); \n• ​​Czy istnieje obowiązek prawny, któremu podlegamy (na przykład niektóre przepisy wymagają od nas przechowywania zapisów z twoimi transakcjami przez określony czas, zanim możemy je usunąć); \n• Czy przechowywanie jest wskazane w świetle naszych aspektów prawnych (takich jak odniesienie do obowiązujących przedawnienia prawa cywilnoprocesowego, sporów sądowych lub dochodzeń regulacyjnych). \n \n Po upływie okresu przechowywania usuniemy Twoje dane.",
+        "rightsUnderGDPR": "Prawa wynikające z RODO \n \n Oferujemy możliwość dostępu do, sprostowania, usunięcia, ograniczenia przetwarzania, pozyskania lub wniesienia sprzeciwu wobec danych, które zgromadziliśmy. Masz prawo do: \n • Wycofania zgody na przetwarzanie swoich Danych Osobowych w dowolnym momencie \n • Dostępu do swoich Danych Osobowych oraz ich sprostowania, zmiany lub usunięcia \n • Otrzymania kopii swoich danych osobowych \n • Wniesienia sprzeciwu wobec naszego przetwarzania Danych Osobowych, który zostanie uwzględniony, chyba że wykażemy istnienie nadrzędnych prawnie uzasadnionych podstaw do przetwarzania danych \n • Jeśli uważasz, że Twoje Dane Osobowe są nieprawidłowe, niezgodne z prawem, lub nie są już potrzebne do naszych celów biznesowych, lub sprzeciwiasz się przetwarzaniu Danych Osobowych, masz również prawo do żądania ograniczenia przetwarzania tych danych, dopóki nie zbadamy i/lub nie zweryfikujemy Twojego roszczenia. \n \n W każdej chwili możesz skontaktować się z nami w sprawie wykorzystania lub ujawnienia swoich danych osobowych przez firmę. Odbiorcy naszych komunikacji mogą zrezygnować z subskrypcji lub zarządzać preferencjami komunikacyjnymi, wysyłając nam e-mail na adres privacy@MeshConnect.com. Jeśli chcesz złożyć skargę i rozpocząć dochodzenie w sprawie przetwarzania Twoich danych osobowych lub zażądać kopii swoich Danych Osobowych, prosimy o wysłanie e-maila na adres privacy@MeshConnect.com.",
+        "sensitiveInformation": "Informacje wrażliwe \n \n Chyba że o to poprosimy, prosimy nie wysyłać ani nie ujawniać żadnych wrażliwych Danych Osobowych (np. numerów ubezpieczenia społecznego, informacji dotyczących pochodzenia rasowego lub etnicznego, poglądów politycznych, religii lub innych przekonań, zdrowia, cech biometrycznych lub genetycznych, pochodzenia kryminalnego lub przynależności do związków zawodowych) za pośrednictwem Usług ani w inny sposób.",
+        "thirdPartyPaymentServices": "Usługi Płatności Zewnętrznych \n \n Strona dewelopera może zapewniać możliwość dokonywania płatności na rzecz Firmy przy użyciu zewnętrznych usług płatniczych, z którymi posiadasz własne konto. Gdy korzystasz z takiej usługi do dokonania płatności na naszą rzecz, Twoje Dane Osobowe będą zbierane przez tę stronę trzecią, a nie przez nas i będą podlegały polityce prywatności tej strony trzeciej, a nie tej Polityce Prywatności. Nie mamy kontroli nad zbieraniem, wykorzystywaniem ani ujawnianiem Twoich Danych Osobowych przez tę stronę trzecią i nie ponosimy za to odpowiedzialności.",
+        "thirdPartyServices": "Usługi stron trzecich \n \n Niniejsza Polityka Prywatności nie obejmuje i nie ponosimy odpowiedzialności za kwestie dotyczące prywatności, informacji ani inne praktyki stron trzecich, w tym każdej strony trzeciej obsługującej dowolną stronę internetową lub usługę, do której odsyłają Usługi. Umieszczenie linku na Stronie nie oznacza naszego poparcia dla tej połączonej strony lub usługi. Ponadto nie ponosimy odpowiedzialności za praktyki dotyczące zbierania, wykorzystywania, ujawniania ani bezpieczeństwa informacji przez inne organizacje, takie jak Klienci Biznesowi, Meta, Apple, Google, Microsoft, RIM czy jakiegokolwiek innego dewelopera aplikacji, dostawcę aplikacji, dostawcę platform mediów społecznościowych, dostawcę systemu operacyjnego, dostawcę usług bezprzewodowych lub producenta urządzeń.",
+        "updatesToPrivacyPolicy": "Aktualizacje niniejszej Polityki Prywatności \n \n Legenda „OSTATNIO ZAKTUALIZOWANO” na górze niniejszej Polityki Prywatności wskazuje, kiedy została ona ostatnio zaktualizowana. Wszelkie zmiany wchodzą w życie w momencie opublikowania zmienionej Polityki Prywatności na Stronie.",
+        "websiteVisitors": "Odwiedzający stronę \n \n Jeśli odwiedzasz Stronę pod adresem <0>https://www.meshconnect.com/</0>, przetwarzamy takie informacje, jak dane z logów, adres IP, przybliżona lokalizacja oraz inne informacje zbierane przez nasze pliki cookie lub podobne technologie. \n \n Przetwarzamy te informacje w następujących celach: \n • Analizowanie Danych Osobowych w celu raportowania biznesowego i zapewnienia spersonalizowanych usług. \n • - Analizowanie lub przewidywanie preferencji naszych użytkowników w celu opracowania zebranych raportów trendów na temat wykorzystania naszej zawartości cyfrowej, abyśmy mogli ulepszać nasze Usługi i Stronę. \n • - Lepsze zrozumienie Twoich zainteresowań i preferencji, abyśmy mogli personalizować nasze interakcje z Tobą i dostarczać Ci informacje i/lub oferty dostosowane do Twoich zainteresowań. \n • - Lepsze zrozumienie Twoich preferencji, abyśmy mogli dostarczać treści, które według nas będą dla Ciebie istotne i interesujące. \n \n Aby uzyskać więcej informacji na temat naszego wykorzystania plików cookie lub podobnych technologii, zapoznaj się z sekcją dotyczącą plików cookie w tej polityce."
       }
     },
     "termsContent": {
-      "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje mają umożliwić komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") poprzez Usługę Końcowego Użytkownika, w tym przesyłanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Końcowego Użytkownika opierają się na Narzędziu; że korzystanie z takich funkcji odbywa się na twoje polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Końcowego Użytkownika lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że masz wszystkie niezbędne prawa i zgody na połączenie i dostęp do każdego Połączonego Konta poprzez takie funkcje, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub ciebie osobiście dla każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
+      "fullText": "Mesh Connect, Inc. (\"Firma\") jest dostawcą technologii, który udostępnia narzędzie komunikacyjne (\"Narzędzie\"), ułatwiające niektóre funkcje usługi zewnętrznej, z której korzystasz (\"Usługa Końcowego Użytkownika\"). Takie funkcje umożliwiają komunikację z twoimi zewnętrznymi kontami i portfelami (\"Połączone Konta\") za pośrednictwem Usługi Użytkownika Końcowego, w tym przekazywanie instrukcji, które chcesz wykonać. Mesh zapewnia ci to Narzędzie jako dostawca usług dla PayPal, Inc. (\"PayPal\")\n\nUznajesz i zgadzasz się, że niektóre funkcje Usługi Użytkownika Końcowego opierają się na Narzędziu; że korzystasz z tych funkcji na własne polecenie; że ani Firma, ani jej dostawcy usług nie udostępniają usług brokerskich ani nie uczestniczą w przetwarzaniu płatności; oraz że ani Firma, ani jej dostawcy usług nie ponoszą żadnej odpowiedzialności za Usługę Użytkownika Końcowego lub jakiekolwiek Połączone Konto, ani za warunki, polityki, działania lub zaniechania ich dostawców.\n\nOświadczasz i gwarantujesz, że posiadasz wszelkie niezbędne prawa i zgody do połączenia się z każdym Połączonym Kontem oraz uzyskania do niego dostępu za pośrednictwem tych funkcji, w tym prawo do przekazywania Firmie i jej dostawcom usług swoich danych logowania do konta, adresów portfeli i/lub jakiejkolwiek informacji dotyczącej twoich kont lub Twoich danych osobistych w odniesieniu do każdego Połączonego Konta. Upoważniasz niniejszym Firmę i jej dostawców usług do przesyłania instrukcji oraz informacji, danych i innych materiałów pomiędzy Usługą Końcowego Użytkownika a każdym Połączonym Kontem, i uznajesz oraz zgadzasz się, że Firma i jej dostawcy usług nie ponoszą odpowiedzialności za wykonanie jakichkolwiek takich instrukcji ani za jakiekolwiek takie materiały (w tym ich dokładność, aktualność czy kompletność).\n\nZgadzasz się, że jeśli używasz Narzędzia do transakcji z osobami trzecimi, w tym, ale nie ograniczając się do internetowych sprzedawców lub zakupów jakiegokolwiek rodzaju (\"Transakcje z Osobami Trzecimi\"), ani Firma, ani PayPal nie ponoszą odpowiedzialności za jakiekolwiek spory w związku z takimi transakcjami. Jesteś odpowiedzialny za bezpośredni kontakt z odpowiednimi osobami trzecimi, aby rozwiązać jakiekolwiek spory, roszczenia o nieautoryzowane transakcje, prośby o zwrot pieniędzy, lub jakiekolwiek inne roszczenia lub problemy związane z Transakcjami z Osobami Trzecimi. Zakupy dokonane przy użyciu kryptowaluty mogą być objęte ograniczeniami"
     },
     "termsOfUse": {
       "linkText": "warunki użytkowania",
       "text": "Kontynuując, akceptujesz"
     },
     "topupPage": {
-      "assetsDescription": "Wartość aktywów przeliczonych na {{targetSymbol}} jest niższa od oczekiwanej z powodu wahań cen i/lub opłat sieciowych.",
-      "conversionDescription": "Wartość konwersji z {{convertedSymbol}} na {{targetSymbol}} jest niższa od oczekiwanej z powodu wahań cen i/lub opłat sieciowych.",
+      "assetsDescription": "Wartość aktywów przeliczonych na {{targetSymbol}} jest niższa niż oczekiwano z powodu wahań cen i/lub opłat sieciowych.",
+      "conversionDescription": "Wartość konwersji z {{convertedSymbol}} na {{targetSymbol}} jest niższa niż oczekiwano z powodu wahań cen i/lub opłat sieciowych.",
       "currentBalance": "Aktualne saldo",
       "disclaimer": "Jeżeli nie zakończysz płatności, saldo {{targetSymbol}} pozostanie na Twoim koncie {{integrationName}}.",
       "required": "Wymagane",
-      "title": "Doładowanie potrzebne",
+      "title": "Wymagane doładowanie",
       "viewTopUp": "Zobacz doładowanie"
     },
     "transferErrorPage": {
-      "belowNetworkMinimumMessage": "Ta kwota zakupu jest poniżej minimalnego limitu wymiany na koncie. Połącz inne konto, aby dokończyć zakup.",
+      "belowNetworkMinimumMessage": "Ta kwota zakupu jest niższa niż minimalny limit wymiany na Twoim koncie. Połącz inne konto, aby dokończyć zakup.",
       "chooseDifferentAccount": "Wybierz inne konto",
-      "defaultMessage": "Twoje fundusze pozostaną na twoim koncie {{integrationName}}.",
+      "defaultMessage": "Twoje środki pozostaną na Twoim koncie {{integrationName}}.",
       "defaultTitle": "Nie możemy przetworzyć tej płatności",
       "insufficientFunds": "Niewystarczające środki",
       "insufficientFundsMessage": "Twoje saldo jest zbyt niskie, aby zrealizować ten zakup.",
-      "requestDenied": "Żądanie odrzucone",
-      "requestDeniedMessage": "Wygląda na to, że odmówiłeś transakcji. Jeśli to błąd, spróbuj ponownie i zatwierdź prośbę w swoim portfelu."
+      "requestDenied": "Odrzucono żądanie",
+      "requestDeniedMessage": "Wygląda na to, że odrzuciłeś transakcję. Jeśli to była pomyłka, spróbuj ponownie i zatwierdź żądanie w swoim portfelu."
     },
     "walletConfirmation": {
       "title": "Potwierdź tę transakcję w aplikacji {{integrationName}}"
@@ -1631,23 +1635,23 @@
   },
   "previewPageUI": {
     "accountLabel": "Konto",
-    "autoConvertNetworkLabel": "Auto-konwertuj do {{symbol}}, wysyłaj przez <4>{{networkName}}</4>.",
-    "buildingPreviewDeposit": "Tworzenie podglądu wpłaty...",
+    "autoConvertNetworkLabel": "Automatycznie konwertuj na {{symbol}}, wyślij w sieci <4>{{networkName}}</4>.",
+    "buildingPreviewDeposit": "Trwa przygotowywanie podglądu wpłaty...",
     "buildingPreviewPayment": "Tworzenie podglądu płatności...",
-    "buildingPreviewTransfer": "Tworzenie podglądu transferu...",
+    "buildingPreviewTransfer": "Trwa przygotowywanie podglądu transferu...",
     "confirmTransaction": "Potwierdź tę transakcję w aplikacji {{selectedIntegrationName}}.",
     "fewSeconds": "To może potrwać kilka sekund",
     "fewSecondsWithDots": "To może potrwać kilka sekund...",
     "includeFeesMessage": "Zawiera {{amount}} w opłatach",
     "networkLabel": "Sieć",
     "paymentTitle": "Zapłać {{clientName}}",
-    "paymentTotalLabel": "Zapłać całość",
+    "paymentTotalLabel": "Razem",
     "payWithLabel": "Zapłać z",
     "payWithLabelWithName": "Zapłać z {{integrationName}}",
     "plusFees": "{{amount}} + opłaty",
     "processingDeposit": "Przetwarzanie",
     "processingPayment": "Przetwarzanie płatności",
-    "simpleNetworkLabel": "Wyślij na <2>{{networkName}}</2>."
+    "simpleNetworkLabel": "Wyślij w sieci <2>{{networkName}}</2>."
   },
   "previewTransfer": {
     "allFeesIncluded": "Wszystkie opłaty wliczone w cenę",
@@ -1657,7 +1661,7 @@
     "changeAmount": "Zmień kwotę",
     "depositTitle": "Podgląd wpłaty",
     "dustLeft": "Może pozostać trochę resztek {{symbol}}.",
-    "estimatedGasFee": "Szacowana opłata za gaz",
+    "estimatedGasFee": "Szacowana opłata sieciowa",
     "estimatedGasFeeHint": "Szacowane opłaty, które zostaną zapłacone walidatorom sieci jako wynagrodzenie za moc obliczeniową wykorzystaną do przetworzenia tej transakcji.",
     "from": "Od",
     "fundingWith": "Wpłata przez",
@@ -1691,16 +1695,16 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "Wpłata z {{integrationName}}",
     "depositTo": "Wpłata do",
-    "fee": "Zawiera {{amount}} w opłatach",
-    "feeInBridging": "Obejmuje {{gasFee}} w opłatach za gaz i {{conversionFee}} w opłatach za konwersję",
+    "fee": "Zawiera {{amount}} opłat",
+    "feeInBridging": "Obejmuje {{gasFee}} opłat sieciowych oraz {{conversionFee}} opłat za konwersję",
     "fundingMethods": "Metody płatności",
     "network": "Sieć",
     "receive": "Otrzymasz",
-    "refreshing": "Odświeżenie za {{seconds}}s",
+    "refreshing": "Odświeżenie za {{seconds}} s",
     "send": "Wyślij",
     "sendAmount": "Wyślij {{amount}}",
     "title": "Podgląd transferu",
-    "tokenOnNetwork": "{{token}} na {{network}}",
+    "tokenOnNetwork": "{{token}} w sieci {{network}}",
     "total": "Łącznie",
     "transferToken": "Przelej token"
   },
@@ -1710,8 +1714,8 @@
   "qrCodePassword": {
     "bybit": {
       "euNotSupported": "Konta Bybit EU nie są jeszcze obsługiwane.",
-      "loginTitle": "Zaloguj się do Bybit Global.",
-      "scanInstruction": "Zeskanuj aplikacją Bybit Global, aby się zalogować."
+      "loginTitle": "Zaloguj się do Bybit Global",
+      "scanInstruction": "Zeskanuj kod w aplikacji Bybit Global, aby się zalogować."
     },
     "expired": "Kod QR wygasł",
     "generateNew": "Generuj nowy kod QR",
@@ -1750,7 +1754,7 @@
     "ineligibleAssets": "Niewłaściwe środki",
     "link40Title": "Wybierz token",
     "loading": "Ładowanie twoich środków...",
-    "network": "{{networkName}} sieć",
+    "network": "sieć {{networkName}}",
     "networkTitle": "Wybierz sieć",
     "noAssetsTitle": "Na połączonym koncie nie wykryto środków",
     "noEligibleAssetsTitle": "Na tym koncie nie ma aktywów, które kwalifikują się do tego transferu",
@@ -1771,7 +1775,7 @@
   },
   "selectNetworkPage": {
     "estFee": "Szacowana opłata",
-    "gasFeeDescription": "<0>Szac. opłata za gaz:</0> {{cryptoFee}} ~ {{fiatFee}}",
+    "gasFeeDescription": "<0>Szac. opłata sieciowa:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "ineligibleNetwork": "Niewłaściwe sieci",
     "integrationFeeDescription": "<0>Szac. opłata {{selectedIntegrationName}}:</0> {{cryptoFee}} ~ {{fiatFee}}",
     "sendVia": "Wyślij przez",
@@ -1808,7 +1812,7 @@
     "title": "Skonfiguruj e-mail"
   },
   "termsAndConditionsPage": {
-    "englishDisclaimer": "To jest tłumaczenie grzecznościowe, mające wyłącznie charakter informacyjny. <2>Angielska wersja Warunków Użytkownika Końcowego Mesh</2> stanowi prawnie wiążącą wersję.",
+    "englishDisclaimer": "To jest tłumaczenie grzecznościowe o charakterze wyłącznie informacyjnym. <2>Angielska wersja Warunków Użytkownika Końcowego Mesh</2> jest wersją prawnie wiążącą.",
     "paragraph1": "Mesh Connect, Inc. (<1>„Firma”</1>) jest dostawcą technologii, który tworzy narzędzie komunikacyjne (<3>„Narzędzie”</3>), umożliwiające określoną funkcjonalność usługi zewnętrznej, z której korzystasz (<5>„Usługa Użytkownika Końcowego”</5>). Taka funkcjonalność ma na celu umożliwienie Ci komunikacji z Twoimi zewnętrznymi kontami i portfelami (<7>„Połączone Konta”</7>) poprzez Usługę Użytkownika Końcowego, w tym wysyłanie instrukcji, które chcesz wykonać.",
     "paragraph10": "Arbitraż będzie prowadzony przez American Arbitration Association zgodnie z jej Zasadami Arbitrażu Konsumenckiego, zmienionymi na podstawie niniejszych warunków. Zasady Arbitrażu Konsumenckiego są dostępne online pod adresem <2>https://www.adr.org/sites/default/files/Consumer%20Rules.pdf</2>. Arbiter będzie prowadził przesłuchania, jeśli takie się odbędą, za pośrednictwem telekonferencji lub wideokonferencji, zamiast osobiście, chyba że arbiter na wniosek Twojego lub naszego uzna, że przesłuchanie osobiste jest stosowne. Wszelkie osobiste spotkania będą odbywać się w miejscu rozsądnie dogodnym dla obu stron, z uwzględnieniem ich możliwości podróży oraz innych istotnych okoliczności. Jeśli Ty i Firma nie będziecie mogli uzgodnić lokalizacji, decyzję taką podejmie AAA lub arbiter. Decyzja arbitra będzie zgodna z niniejszymi warunkami i będzie ostateczna oraz wiążąca. Arbiter będzie miał uprawnienia do przyznania tymczasowego, natychmiastowego lub stałego nakazu sądowego lub świadczenia konkretnego wykonania tych warunków, ale tylko w zakresie niezbędnym do zapewnienia ulgi uzasadnionej indywidualnym roszczeniem przed arbitrem. Orzeczenie arbitra może być potwierdzone i wyegzekwowane w każdym sądzie posiadającym odpowiednią jurysdykcję. Niezależnie od powyższego, nic w niniejszych warunkach nie uniemożliwia Ci zgłaszania kwestii do agencji federalnych, stanowych lub lokalnych, które – jeśli prawo na to zezwala – mogą dochodzić od nas odpowiednich środków ochrony w Twoim imieniu.",
     "paragraph11": "Te warunki stanowią pełną umowę pomiędzy tobą a Firmą w odniesieniu do jej przedmiotu i zastępują wszelkie wcześniejsze oświadczenia lub umowy — zarówno ustne, jak i pisemne — dotyczące tych kwestii. Jeżeli jakikolwiek warunek okaże się niewykonalny zgodnie z obowiązującym prawem, zostaje on niniejszym zmodyfikowany w taki sposób, aby był z nim zgodny, przy jednoczesnym zachowaniu w możliwie największym stopniu pierwotnego zamiaru. Każdy warunek, którego nie można w ten sposób zmienić, zostanie oddzielony, a wszystkie pozostałe warunki pozostaną w mocy. Uznajesz i zgadzasz się, że dostawcy usług Firmy są zamierzonymi beneficjentami będącymi stronami trzecimi tych warunków. Akceptując niniejsze warunki lub korzystając z Narzędzia, wyrażasz zgodę na związanie się postanowieniami niniejszej umowy.",
@@ -1825,16 +1829,16 @@
   "topupNeeded": {
     "cancel": "Anuluj",
     "currentBalance": "Aktualne saldo",
-    "disclaimer": "Jeżeli nie zakończysz płatności, saldo {{symbol}} pozostanie na Twoim koncie {{integrationName}}.",
+    "disclaimer": "Jeżeli nie zakończysz płatności, Twoje saldo {{symbol}} pozostanie na koncie {{integrationName}}.",
     "previewTopup": "Podgląd doładowania",
     "required": "Wymagane",
-    "subtitle": "Twoje zakupione saldo {{symbol}} jest niższe niż oczekiwano z powodu wahań cen i/lub kosztów gazu.",
-    "title": "Doładowanie potrzebne"
+    "subtitle": "Twoje zakupione saldo {{symbol}} jest niższe niż oczekiwano z powodu wahań cen i/lub opłat sieciowych.",
+    "title": "Wymagane doładowanie"
   },
   "transferAmountInput": {
-    "availableForDeposit": "{{amount}} dostępne na depozyt",
-    "basedOnYourBalances": "Na podstawie Twojego salda",
-    "basedOnYourBalancesDepositsTooltip": "Całkowita suma obejmuje Twoje istniejące saldo {{symbol}}, a także salda, które mogą zostać automatycznie zamienione na {{symbol}} dla tego depozytu."
+    "availableForDeposit": "{{amount}} dostępne do wpłaty",
+    "basedOnYourBalances": "Na podstawie Twoich sald",
+    "basedOnYourBalancesDepositsTooltip": "Ta suma obejmuje Twoje istniejące saldo {{symbol}} oraz salda, które mogą zostać automatycznie wymienione na {{symbol}} na potrzeby tej wpłaty."
   },
   "transferAmountPage": {
     "buttonTitle": {
@@ -1913,19 +1917,19 @@
     "title": "Weryfikacja"
   },
   "transferInsufficientBalancePage": {
-    "depositInsufficientBalanceAndGas": "Ta transakcja wymaga salda różnego od zera w {{symbol}} oraz ~${{gasFee}} w ETH na sieci {{network}}, aby opłacić koszty gazu.",
-    "depositNoBalance": "Nie masz salda {{symbol}} na sieci {{network}}, aby dokonać transferu.",
-    "gasAndBalanceTitle": "Niewystarczająca ilość gazu i brak środków na koncie",
-    "gasBody": "Opłaty za gaz dla sieci {{network}} są opłacane w {{symbol}}. Proszę uzupełnić saldo {{symbol}}, a następnie spróbować ponownie.",
-    "gasTitle": "Niewystarczające saldo gazu",
-    "insufficientGasFeeDescription": "Ten przelew wymaga {{gasFee}} w {{symbol}} na pokrycie opłat za sieć.",
-    "noBalanceBody": "Nie masz żadnego salda {{symbol}} do przekazania. Proszę doładuj swoje saldo i spróbuj ponownie.",
+    "depositInsufficientBalanceAndGas": "Ta transakcja wymaga niezerowego salda {{symbol}} oraz około {{gasFee}}$ w ETH na opłaty sieciowe w sieci {{network}}.",
+    "depositNoBalance": "Nie masz salda {{symbol}} w sieci {{network}} do wykonania transferu.",
+    "gasAndBalanceTitle": "Niewystarczające saldo opłat sieciowych oraz brak wystarczających środków",
+    "gasBody": "Opłaty sieciowe dla sieci {{network}} są opłacane w {{symbol}}. Proszę doładować saldo {{symbol}}, a następnie spróbować ponownie.",
+    "gasTitle": "Niewystarczające saldo opłat sieciowych",
+    "insufficientGasFeeDescription": "Ten przelew wymaga {{gasFee}} w {{symbol}} na pokrycie opłat sieciowych.",
+    "noBalanceBody": "Nie masz salda {{symbol}} do wykonania transferu. Doładuj saldo i spróbuj ponownie.",
     "noBalanceOnSpecificNetwork": "Nie posiadasz {{symbol}} w sieci {{network}}.",
     "noBalanceTitle": "Brak środków",
     "noSupportedAssetsOnNetwork": "Brak obsługiwanych aktywów w tej sieci.",
     "paymentBody": "Twoje saldo jest zbyt niskie, aby zrealizować ten zakup.",
-    "paymentInsufficientBalance": "Twój {{balance}} {{symbol}} na sieci {{network}} jest niewystarczający, aby dokonać tej płatności w wysokości {{amount}} {{symbol}}.",
-    "paymentInsufficientBalanceAndGas": "Ta transakcja wymaga {{amount}} {{symbol}} oraz ~${{gasFee}} w ETH na sieci {{network}}, aby opłacić koszty gazu.",
+    "paymentInsufficientBalance": "Twoje saldo {{balance}} {{symbol}} w sieci {{network}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}} {{symbol}}.",
+    "paymentInsufficientBalanceAndGas": "Ta transakcja wymaga {{amount}} {{symbol}} oraz około {{gasFee}}$ w ETH na opłaty sieciowe w sieci {{network}}.",
     "title": "Niewystarczające środki",
     "toppedUpWalletQuestion": "Doładowałeś swój portfel?",
     "topUpAction": "Proszę doładować portfel i spróbować ponownie.",
@@ -2011,14 +2015,14 @@
     "iosOnlyText": "Uwaga: Ten login QR działa tylko na urządzeniach z systemem iOS.",
     "notSupportedHeading": "Nieobsługiwany",
     "openAppClip": "Proszę otworzyć App Clip, aby kontynuować",
-    "openMobileApp": "Otwórz swoją aplikację mobilną Mesh i zeskanuj ten kod QR, aby kontynuować.",
+    "openMobileApp": "Zeskanuj kod aparatem w telefonie, aby się zalogować.",
     "qrCodeAlt": "Kod QR do logowania TrueAuth",
     "scanToLogin": "Zeskanuj, aby się zalogować",
     "somethingWentWrong": "Coś poszło nie tak"
   },
   "verifyAddressAndNetworkErrorPage": {
     "body": "{{clientName}} prosi, abyś zweryfikował własność adresu <3>{{requestedNetworkName}}</3> <6>{{truncatedRequestedAddress}}</6>. Ten adres nie jest powiązany z podłączonym portfelem. Proszę podłączyć inny portfel.",
-    "body40": "{{clientName}} prosi, abyś zweryfikował własność adresu {{address}}. Ten adres nie jest powiązany z podłączonym portfelem. Proszę podłączyć inny portfel.",
+    "body40": "{{clientName}} prosi o weryfikację własności adresu {{address}}. Ten adres nie jest powiązany z podłączonym portfelem. Podłącz inny portfel.",
     "connectAnotherAction": "Podłącz inny portfel",
     "title": "Ups!"
   },
@@ -2028,8 +2032,8 @@
   },
   "verifyErrorPage": {
     "body": "Odrzuciłeś prośbę o podpis w swoim portfelu, lub wcześniejsza prośba jest nadal aktywna. {{clientName}} nie może zweryfikować własności twojego portfela bez podpisu.",
-    "body40": "Wygląda na to, że odrzuciłeś prośbę o podpis w swoim portfelu, lub wcześniejsza prośba jest nadal aktywna. {{clientName}} nie może zweryfikować własności twojego portfela bez podpisu.",
-    "timeout": "Proszę sprawdzić swój portfel i zatwierdzić prośbę o podpis w aplikacji {{walletName}}.",
+    "body40": "Wygląda na to, że odrzuciłeś prośbę o podpis w swoim portfelu lub wcześniejsza prośba jest nadal aktywna. {{clientName}} nie może zweryfikować własności Twojego portfela bez podpisu.",
+    "timeout": "Sprawdź swój portfel i zatwierdź prośbę o podpis w aplikacji {{walletName}}.",
     "title": "Weryfikacja odrzucona"
   },
   "wallectConnect": {
