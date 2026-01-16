@@ -854,6 +854,7 @@
     "manualDeposit": "Depósito manual",
     "max500": "$500,000 máx • Instantáneo",
     "maxVaries": "Máximo varía • 3 minutos",
+    "minMax": "${{min}} min - ${{max}} max • Instant",
     "noExtraFee": "Sin comisiones adicionales",
     "otherMethods": "Otros métodos",
     "secureDeposit": "Depósito seguro",
@@ -1281,7 +1282,8 @@
     },
     "error": {
       "noTokensDescription": "No hay tokens compatibles disponibles para el depósito en este momento.",
-      "noTokensTitle": "No hay tokens disponibles"
+      "noTokensTitle": "No hay tokens disponibles",
+      "addressNotFound": "No pudimos cargar una dirección de depósito, intente con otro token o red."
     },
     "networkSelection": {
       "subtitle": "{{client}} soporta:",
@@ -1309,6 +1311,7 @@
       "includeMemo": "Incluir este memo: <1>{{memo}}</1>",
       "includeTag": "Incluir esta etiqueta: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>",
+      "onlySendTokenOnNetworkBridging": "Solo envía <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es de un solo uso. Cualquier otra combinación de activo o red, reutilización de esta dirección, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no serán recuperables. <7>El depósito mínimo es de $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Solo envíe <1>{{token}}</1> en la red <3>{{network}}</3> a esta dirección. Cualquier otra combinación de activo o red será irrecuperable.",
       "requiredForDeposit": "Requerido para este depósito",
       "sendAboveMinimum": "Enviar por encima de la cantidad mínima: <1>{{amount}}</1>"
