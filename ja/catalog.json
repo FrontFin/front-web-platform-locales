@@ -821,7 +821,12 @@
     "identityVerificationRequired": "APIキー機能を利用するには、本人確認を完了する必要があります。続行するには、本人確認を完了してください。",
     "invalidCredentials": "ログイン情報が正しくありません。もう一度お試しください。",
     "maximumApiKeyLimitExceeded": "APIキーの最大許容量に達しました。使用していないキーを削除して続行してください。",
-    "unsupportedCountryErrorMessage": "現在、お客様のアカウントはサポートされていません",
+    "twoFactorAuthRequired": {
+      "title": "2FA required",
+      "message": "For security reasons, you must set up two-factor authentication before generating API keys.",
+      "linkText": "Please complete your 2FA setup here: <1>{{twoFactorSetupUrl}}</1>"
+    },
+    "unsupportedCountryErrorMessage": "We currently don't support your account",
     "wrongEmailCode": "メールコードが正しくありません。もう一度お試しください",
     "wrongTotpCode": "認証コードが正しくありません。もう一度お試しください"
   },
@@ -854,6 +859,7 @@
     "manualDeposit": "手動入金",
     "max500": "最大 $500,000 • 即時",
     "maxVaries": "最大数は異なる • 3 分",
+    "minMax": "${{min}} 分 - ${{max}} 分 • 即時",
     "noExtraFee": "追加手数料なし",
     "otherMethods": "他の方法",
     "secureDeposit": "安全な預金",
@@ -1281,7 +1287,8 @@
     },
     "error": {
       "noTokensDescription": "現在、入金可能なトークンがありません。",
-      "noTokensTitle": "利用可能なトークンがありません"
+      "noTokensTitle": "利用可能なトークンがありません",
+      "addressNotFound": "入金先アドレスを読み込めませんでした。別のトークンまたはネットワークを試してください。"
     },
     "networkSelection": {
       "subtitle": "{{client}} の対応内容：",
@@ -1309,6 +1316,7 @@
       "includeMemo": "次のメモを入力してください：<1>{{memo}}</1>",
       "includeTag": "次のタグを入力してください：<1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "<3>{{network}}</3> ネットワークで  <1>{{token}}</1> のみを送信してください",
+      "onlySendTokenOnNetworkBridging": "このアドレスには<1>{{token}}</1>を<3>{{network}}</3>でのみ送信してください。このアドレスは一回限りの使用です。他の資産またはネットワークの組み合わせ、このアドレスの再使用、や異なるアドレスへの<5>送信</5>は、資金の損失を招き、回復不能です。<7>最低入金額は2ドルUSDです。</7>",
       "onlySendTokenOnNetworkExtended": "このアドレスには、<3>{{network}}</3> のネットワークでのみ <1>{{token}}</1> を送信してください。他の資産やネットワークの組み合わせは回復できません。",
       "requiredForDeposit": "この入金には必須です",
       "sendAboveMinimum": "最小金額 <1>{{amount}}</1> 以上を送金してください"
