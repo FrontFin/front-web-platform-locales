@@ -821,7 +821,12 @@
     "identityVerificationRequired": "Um die API-Schlüsselfunktion nutzen zu können, musst du die Identitätsprüfung abschließen. Bitte vervollständige die Identitätsprüfung, um fortzufahren.",
     "invalidCredentials": "Ungültige Anmeldedaten. Bitte versuche es erneut.",
     "maximumApiKeyLimitExceeded": "Das maximale API-Schlüssel-Limit wurde erreicht. Bitte lösche einen unbenutzten Schlüssel, um fortzufahren.",
-    "unsupportedCountryErrorMessage": "Wir unterstützen dein Konto derzeit nicht",
+    "twoFactorAuthRequired": {
+      "title": "2FA required",
+      "message": "For security reasons, you must set up two-factor authentication before generating API keys.",
+      "linkText": "Please complete your 2FA setup here: <1>{{twoFactorSetupUrl}}</1>"
+    },
+    "unsupportedCountryErrorMessage": "We currently don't support your account",
     "wrongEmailCode": "Falscher E-Mail-Code, bitte versuche es erneut",
     "wrongTotpCode": "Falscher Authentifizierungscode, bitte versuche es erneut"
   },
@@ -854,6 +859,7 @@
     "manualDeposit": "Manuelle Einzahlung",
     "max500": "500.000 $ max • Sofort",
     "maxVaries": "Maximale variiert • 3 Min.",
+    "minMax": "${{min}} Min. - ${{max}} Max. • Sofort",
     "noExtraFee": "Keine zusätzliche Gebühr",
     "otherMethods": "Andere Methoden",
     "secureDeposit": "Sichere Einzahlung",
@@ -1281,7 +1287,8 @@
     },
     "error": {
       "noTokensDescription": "Zurzeit stehen keine unterstützten Token für Einzahlungen zur Verfügung.",
-      "noTokensTitle": "Keine Token verfügbar"
+      "noTokensTitle": "Keine Token verfügbar",
+      "addressNotFound": "Wir konnten keine Einzahlungsadresse laden, bitte versuchen Sie es mit einem anderen Token oder Netzwerk."
     },
     "networkSelection": {
       "subtitle": "{{client}} unterstützt:",
@@ -1309,6 +1316,7 @@
       "includeMemo": "Füge dieses Memo ein: <1>{{memo}}</1>",
       "includeTag": "Füge dieses Tag ein: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Nur <1>{{token}}</1> im <3>{{network}}</3>-Netzwerk senden",
+      "onlySendTokenOnNetworkBridging": "Senden Sie nur <1>{{token}}</1> im <3>{{network}}</3> Netzwerk an diese Adresse. Diese Adresse ist zur einmaligen Verwendung. Jegliche andere Kombination aus Asset oder Netzwerk, die Wiederverwendung dieser Adresse oder <5>das Senden von Assets an eine andere Adresse</5> wird zum Verlust von Mitteln führen und ist nicht wiederherstellbar. <7>Die Mindesteinzahlung beträgt 2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Senden Sie nur <1>{{token}}</1> im Netzwerk <3>{{network}}</3> zu dieser Adresse. Jede andere Kombination aus Asset oder Netzwerk ist nicht wiederherstellbar.",
       "requiredForDeposit": "Für diese Einzahlung erforderlich",
       "sendAboveMinimum": "Sende über den Mindestbetrag: <1>{{amount}}</1>"
