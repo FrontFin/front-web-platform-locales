@@ -821,6 +821,11 @@
     "identityVerificationRequired": "Bạn cần hoàn thành xác minh danh tính (KYC) để sử dụng tính năng khóa API. Vui lòng thực hiện xác minh danh tính (KYC) để tiếp tục.",
     "invalidCredentials": "Thông tin đăng nhập không hợp lệ. Vui lòng thử lại.",
     "maximumApiKeyLimitExceeded": "Đã đạt đến giới hạn khóa API cho phép tối đa. Vui lòng xóa khóa không sử dụng để tiếp tục.",
+    "twoFactorAuthRequired": {
+      "title": "Yêu cầu 2FA",
+      "message": "Vì lý do bảo mật, bạn phải thiết lập xác thực hai yếu tố trước khi tạo mã API.",
+      "linkText": "Vui lòng hoàn tất thiết lập 2FA của bạn tại đây: <1>{{twoFactorSetupUrl}}</1>"
+    },
     "unsupportedCountryErrorMessage": "Chúng tôi hiện không hỗ trợ tài khoản của bạn",
     "wrongEmailCode": "Mã email không đúng, vui lòng thử lại",
     "wrongTotpCode": "Mã xác thực không đúng, vui lòng thử lại"
@@ -854,6 +859,7 @@
     "manualDeposit": "Nạp tiền thủ công",
     "max500": "Tối đa $500,000 • Nhanh chóng",
     "maxVaries": "Tối đa thay đổi • 3 phút",
+    "minMax": "${{min}} phút - ${{max}} phút • Ngay lập tức",
     "noExtraFee": "Không tính thêm phí",
     "otherMethods": "Phương pháp khác",
     "secureDeposit": "Nạp tiền an toàn",
@@ -1281,7 +1287,8 @@
     },
     "error": {
       "noTokensDescription": "Hiện không có token nào được hỗ trợ để nạp.",
-      "noTokensTitle": "Không có token nào khả dụng"
+      "noTokensTitle": "Không có token nào khả dụng",
+      "addressNotFound": "Chúng tôi không thể tải địa chỉ gửi tiền, vui lòng thử token hoặc mạng khác."
     },
     "networkSelection": {
       "subtitle": "{{client}} hỗ trợ:",
@@ -1309,6 +1316,7 @@
       "includeMemo": "Bao gồm ghi chú này: <1>{{memo}}</1>",
       "includeTag": "Bao gồm thẻ này: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>",
+      "onlySendTokenOnNetworkBridging": "Chỉ gửi <1>{{token}}</1> trên <3>{{network}}</3> đến địa chỉ này. Địa chỉ này chỉ sử dụng một lần. Bất kỳ tài sản hoặc kết hợp mạng nào khác, tái sử dụng địa chỉ này, hoặc <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể khôi phục. <7>Khoản tiền gửi tối thiểu là $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3> tới địa chỉ này. Bất kỳ tổ hợp tài sản hoặc mạng nào khác sẽ không thể khôi phục được.",
       "requiredForDeposit": "Thông tin bắt buộc cho lần nạp tiền  này",
       "sendAboveMinimum": "Vui lòng gửi số tiền lớn hơn mức tối thiểu: <1>{{amount}}</1>"
