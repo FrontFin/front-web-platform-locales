@@ -821,7 +821,12 @@
     "identityVerificationRequired": "Precisas completar a verificação de identidade para usar o recurso de chave API. Por favor, completa a verificação de identidade para continuar.",
     "invalidCredentials": "Credenciais de login inválidas. Por favor, tenta novamente.",
     "maximumApiKeyLimitExceeded": "Limite máximo de chave API alcançado. Por favor, apaga uma chave não utilizada para continuar.",
-    "unsupportedCountryErrorMessage": "Atualmente não suportamos a tua conta",
+    "twoFactorAuthRequired": {
+      "title": "2FA required",
+      "message": "For security reasons, you must set up two-factor authentication before generating API keys.",
+      "linkText": "Please complete your 2FA setup here: <1>{{twoFactorSetupUrl}}</1>"
+    },
+    "unsupportedCountryErrorMessage": "We currently don't support your account",
     "wrongEmailCode": "Código de email incorreto, por favor, tenta novamente",
     "wrongTotpCode": "Código de autenticação incorreto, por favor, tenta novamente"
   },
@@ -854,6 +859,7 @@
     "manualDeposit": "Depósito manual",
     "max500": "Máx $500,000 • Instantâneo",
     "maxVaries": "Máximo varia • 3 mins",
+    "minMax": "${{min}} min - ${{max}} máx • Instantâneo",
     "noExtraFee": "Sem taxas adicionais",
     "otherMethods": "Outros métodos",
     "secureDeposit": "Depósito seguro",
@@ -1281,7 +1287,8 @@
     },
     "error": {
       "noTokensDescription": "Não há tokens suportados disponíveis para depósito neste momento.",
-      "noTokensTitle": "Nenhum token disponível"
+      "noTokensTitle": "Nenhum token disponível",
+      "addressNotFound": "Não conseguimos carregar um endereço de depósito, tente outro token ou rede."
     },
     "networkSelection": {
       "subtitle": "{{client}} suporta:",
@@ -1309,6 +1316,7 @@
       "includeMemo": "Inclui este memorando: <1>{{memo}}</1>",
       "includeTag": "Inclui esta etiqueta: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Envie apenas <1>{{token}}</1> na rede <3>{{network}}</3>",
+      "onlySendTokenOnNetworkBridging": "Somente envie <1>{{token}}</1> na <3>{{network}}</3> para este endereço. Este endereço é de uso único. Qualquer outra combinação de ativos ou redes, reutilização deste endereço, ou <5>envio de ativos para um endereço diferente</5>, resultará em perda de fundos e não serão recuperáveis. <7>O depósito mínimo é de $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Envie apenas <1>{{token}}</1> na rede <3>{{network}}</3> para este endereço. Qualquer outra combinação de ativo ou rede será irrecuperável.",
       "requiredForDeposit": "Necessário para este depósito",
       "sendAboveMinimum": "Envia acima do valor mínimo: <1>{{amount}}</1>"
