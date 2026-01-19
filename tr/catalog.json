@@ -821,7 +821,12 @@
     "identityVerificationRequired": "API anahtarı özelliğini kullanabilmek için kimlik doğrulamasını tamamlamanız gerekiyor. Devam etmek için lütfen kimlik doğrulamasını tamamlayın.",
     "invalidCredentials": "Geçersiz giriş bilgileri. Lütfen tekrar deneyin.",
     "maximumApiKeyLimitExceeded": "Maksimum izin verilen API anahtar sınırına ulaşıldı. Devam etmek için kullanılmayan bir anahtarı silin.",
-    "unsupportedCountryErrorMessage": "Şu anda hesabınızı desteklemiyoruz",
+    "twoFactorAuthRequired": {
+      "title": "2FA required",
+      "message": "For security reasons, you must set up two-factor authentication before generating API keys.",
+      "linkText": "Please complete your 2FA setup here: <1>{{twoFactorSetupUrl}}</1>"
+    },
+    "unsupportedCountryErrorMessage": "We currently don't support your account",
     "wrongEmailCode": "Yanlış e-posta kodu, lütfen tekrar deneyin",
     "wrongTotpCode": "Yanlış kimlik doğrulama kodu, lütfen tekrar deneyin"
   },
@@ -854,6 +859,7 @@
     "manualDeposit": "Manuel para yatırma",
     "max500": "$500,000 maksimum • Anında",
     "maxVaries": "Maksimum değişir • 3 dakika",
+    "minMax": "${{min}} dak - ${{max}} maks • Anında",
     "noExtraFee": "Ek ücret yok",
     "otherMethods": "Diğer yöntemler",
     "secureDeposit": "Güvenli para yatırma",
@@ -1281,7 +1287,8 @@
     },
     "error": {
       "noTokensDescription": "Şu anda yatırma işlemi için desteklenen herhangi bir token bulunmuyor.",
-      "noTokensTitle": "Token yok"
+      "noTokensTitle": "Token yok",
+      "addressNotFound": "Bir depozito adresi yükleyemedik, lütfen başka bir token veya ağ deneyin."
     },
     "networkSelection": {
       "subtitle": "{{client}} destekler:",
@@ -1309,6 +1316,7 @@
       "includeMemo": "Bu notu dahil et: <1>{{memo}}</1>",
       "includeTag": "Bu etiketi dahil et: <1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin",
+      "onlySendTokenOnNetworkBridging": "Yalnızca <1>{{token}}</1>'i <3>{{network}}</3> ağı üzerinden bu adrese gönderebilirsiniz. Bu adres tek kullanımlıktır. Herhangi bir başka varlık veya ağ kombinasyonu, bu adresin yeniden kullanımı veya <5>varlıkların farklı bir adrese gönderilmesi</5>, fonların kaybına ve geri alınamaz duruma gelmesine neden olacaktır. <7>Minimum depozito 2 ABD dolaridir.</7>",
       "onlySendTokenOnNetworkExtended": "<1>{{token}}</1> yalnızca <3>{{network}}</3> ağı üzerinde bu adrese gönderin. Herhangi bir başka varlık veya ağ kombinasyonu kurtarılamaz.",
       "requiredForDeposit": "Bu para yatırmak için gerekli",
       "sendAboveMinimum": "Minimum tutarın üzerinde gönder: <1>{{amount}}</1>"
