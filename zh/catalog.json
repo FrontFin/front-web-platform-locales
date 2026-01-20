@@ -821,6 +821,11 @@
     "identityVerificationRequired": "您需完成身份验证以使用 API 密钥功能。请完成身份验证以继续。",
     "invalidCredentials": "登录凭证无效。请重试。",
     "maximumApiKeyLimitExceeded": "API 密钥限制已达到最大允许个数。请删除任一未使用的密钥以继续。",
+    "twoFactorAuthRequired": {
+      "title": "需要 2FA",
+      "message": "出于安全原因，您必须设置两因素认证才能生成 API 密钥。",
+      "linkText": "请在此完成您的 2FA 设置：<1>{{twoFactorSetupUrl}}</1>"
+    },
     "unsupportedCountryErrorMessage": "我们目前不支持您的帐户",
     "wrongEmailCode": "电子邮件代码错误，请重试",
     "wrongTotpCode": "身份验证代码错误，请重试"
@@ -854,6 +859,7 @@
     "manualDeposit": "手动存款",
     "max500": "$500,000限额 • 即时",
     "maxVaries": "限额不一 • 需3分钟",
+    "minMax": "${{min}} 最小 - ${{max}} 最大 • 即时",
     "noExtraFee": "无额外费用",
     "otherMethods": "其他方式",
     "secureDeposit": "安全转账",
@@ -1281,7 +1287,8 @@
     },
     "error": {
       "noTokensDescription": "目前没有可存款的支持代币。",
-      "noTokensTitle": "无可用代币"
+      "noTokensTitle": "无可用代币",
+      "addressNotFound": "我们无法加载存款地址，请尝试其他代币或网络。"
     },
     "networkSelection": {
       "subtitle": "{{client}} 支持：",
@@ -1309,6 +1316,7 @@
       "includeMemo": "请包含此备忘录：<1>{{memo}}</1>",
       "includeTag": "请包含此标签：<1>{{tag}}</1>",
       "onlySendTokenOnNetwork": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>",
+      "onlySendTokenOnNetworkBridging": "只在<3>{{network}}</3>网络上发送<1>{{token}}</1>到此地址。此地址为一次性使用。发送其他资产或网络组合、重复使用此地址，或<5>将资产发送到不同的地址</5>，将导致资金丢失且无法恢复。<7>最低存款为2美元。</7>",
       "onlySendTokenOnNetworkExtended": "仅在 <3>{{network}}</3> 网络上发送 <1>{{token}}</1> 到此地址。其他资产或网络的组合将无法恢复。",
       "requiredForDeposit": "此存款所需",
       "sendAboveMinimum": "发送超过最低金额：<1>{{amount}}</1>"
