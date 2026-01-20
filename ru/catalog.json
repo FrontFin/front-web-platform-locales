@@ -556,6 +556,8 @@
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
+    "incorrectPasswordChancesRemaining_few": "",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -731,6 +733,8 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -822,9 +826,9 @@
     "invalidCredentials": "Неверные данные для входа. Пожалуйста, попробуйте еще раз.",
     "maximumApiKeyLimitExceeded": "Достигнуто максимальное разрешенное количество ключей API. Пожалуйста, удалите неиспользуемый ключ, чтобы продолжить.",
     "twoFactorAuthRequired": {
-      "title": "Требуется двухфакторная аутентификация",
+      "linkText": "Пожалуйста, завершите настройку 2FA здесь: <1>{{twoFactorSetupUrl}}</1>",
       "message": "По соображениям безопасности, вы должны настроить двухфакторную аутентификацию перед созданием API ключей.",
-      "linkText": "Пожалуйста, завершите настройку 2FA здесь: <1>{{twoFactorSetupUrl}}</1>"
+      "title": "Требуется двухфакторная аутентификация"
     },
     "unsupportedCountryErrorMessage": "В данный момент мы не поддерживаем ваш аккаунт",
     "wrongEmailCode": "Неверный код электронной почты, попробуйте еще раз",
@@ -1286,9 +1290,9 @@
       "tryWithQr": "Попробуйте внести депозит с помощью QR-кода вместо этого."
     },
     "error": {
+      "addressNotFound": "Не удалось загрузить адрес для вклада, попробуйте другую монету или сеть.",
       "noTokensDescription": "В данный момент нет поддерживаемых токенов для депозита.",
-      "noTokensTitle": "Токены недоступны",
-      "addressNotFound": "Не удалось загрузить адрес для вклада, попробуйте другую монету или сеть."
+      "noTokensTitle": "Токены недоступны"
     },
     "networkSelection": {
       "subtitle": "{{client}} поддерживает:",

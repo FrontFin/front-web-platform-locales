@@ -556,6 +556,7 @@
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -731,6 +732,7 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -822,9 +824,9 @@
     "invalidCredentials": "Credenciales de inicio de sesión inválidas. Por favor, inténtalo de nuevo.",
     "maximumApiKeyLimitExceeded": "Se alcanzó el límite máximo permitido de claves API. Por favor, elimina una clave no utilizada para continuar.",
     "twoFactorAuthRequired": {
-      "title": "Se requiere 2FA",
+      "linkText": "Por favor, complete su configuración de 2FA aquí: <1>{{twoFactorSetupUrl}}</1>",
       "message": "Por razones de seguridad, debe configurar la autenticación de dos factores antes de generar claves de API.",
-      "linkText": "Por favor, complete su configuración de 2FA aquí: <1>{{twoFactorSetupUrl}}</1>"
+      "title": "Se requiere 2FA"
     },
     "unsupportedCountryErrorMessage": "Actualmente no soportamos tu cuenta",
     "wrongEmailCode": "Código de correo electrónico incorrecto, por favor intenta de nuevo",
@@ -1286,9 +1288,9 @@
       "tryWithQr": "Intenta depositar con un código QR en su lugar."
     },
     "error": {
+      "addressNotFound": "No pudimos cargar una dirección de depósito, intente con otro token o red.",
       "noTokensDescription": "No hay tokens compatibles disponibles para el depósito en este momento.",
-      "noTokensTitle": "No hay tokens disponibles",
-      "addressNotFound": "No pudimos cargar una dirección de depósito, intente con otro token o red."
+      "noTokensTitle": "No hay tokens disponibles"
     },
     "networkSelection": {
       "subtitle": "{{client}} soporta:",

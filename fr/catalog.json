@@ -556,6 +556,7 @@
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -731,6 +732,7 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -822,9 +824,9 @@
     "invalidCredentials": "Identifiants de connexion invalides. Veuillez réessayer.",
     "maximumApiKeyLimitExceeded": "Limitation maximale de clé API autorisée atteinte. Veuillez supprimer une clé inutilisée pour continuer.",
     "twoFactorAuthRequired": {
-      "title": "2FA requis",
+      "linkText": "Veuillez compléter votre configuration 2FA ici : <1>{{twoFactorSetupUrl}}</1>",
       "message": "Pour des raisons de sécurité, vous devez configurer l’authentification à deux facteurs avant de générer des clés API.",
-      "linkText": "Veuillez compléter votre configuration 2FA ici : <1>{{twoFactorSetupUrl}}</1>"
+      "title": "2FA requis"
     },
     "unsupportedCountryErrorMessage": "Votre compte n'est actuellement pas pris en charge",
     "wrongEmailCode": "Code e-mail incorrect, veuillez réessayer",
@@ -1286,9 +1288,9 @@
       "tryWithQr": "Essayez de déposer à l’aide d’un code QR."
     },
     "error": {
+      "addressNotFound": "Nous n'avons pas pu charger une adresse de dépôt, veuillez essayer un autre jeton ou réseau.",
       "noTokensDescription": "Il n'y a pas de jetons pris en charge disponibles pour le dépôt pour le moment.",
-      "noTokensTitle": "Aucun jeton disponible",
-      "addressNotFound": "Nous n'avons pas pu charger une adresse de dépôt, veuillez essayer un autre jeton ou réseau."
+      "noTokensTitle": "Aucun jeton disponible"
     },
     "networkSelection": {
       "subtitle": "{{client}} prend en charge :",
@@ -1340,7 +1342,7 @@
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
     "bybit": {
-      "fee": "Frais : {{fee}}"
+      "fee": "Frais\u00a0: {{fee}}"
     },
     "continueInPayApp": "Continuez dans {{integrationName}}",
     "cryptoCom": {
