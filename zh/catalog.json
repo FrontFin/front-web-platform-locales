@@ -180,7 +180,7 @@
   "dappDoneTransferPageUI": {
     "depositSubtitle": "返回{{clientName}}",
     "depositSuccess": "成功！",
-    "depositTitle": "您的资金正在路上。",
+    "depositTitle": "您的资金正在处理中。",
     "paymentSubtitle": "请返回结账页面以完成交易",
     "paymentSuccess": "支付成功！"
   },
@@ -269,7 +269,7 @@
   },
   "doneTransferPage": {
     "checkDetails40": "查看交易详情",
-    "depositClient": "您的资金正在路上。",
+    "depositClient": "您的资金正在处理中。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><4></4>的支付至{{clientName}}",
     "paymentSuccessful": "支付成功！",
     "waiting": "在收到足够的网络认证之前，转账不会完成。"
@@ -288,7 +288,7 @@
     "sendEmailButton": "我已发送邮件",
     "steps": {
       "checkInbox": "我们已发送一封电子邮件至您的收件箱，请打开以确认您正从新设备登录。",
-      "doNotClick": "<0>请勿</0>点击电子邮件中的确认键。",
+      "doNotClick": "<0>请勿</0>点击邮件中的确认键。",
       "forwardEmail": "请将邮件转发到该安全收件箱，它将自动确认以匹配登录请求。"
     },
     "stillWaitingLoading": "仍在等待电子邮件...",
@@ -298,7 +298,7 @@
   "errorHeadlines": {
     "accountNotFound": "未找到账户",
     "addressAllowlistPending": "地址白名单待审核",
-    "addressNotAllowlisted": "地址未在白名单中",
+    "addressNotAllowlisted": "该地址未被列入白名单",
     "amountBelowMinimum": "金额过低",
     "amountExceedsMaximum": "金额过高",
     "authenticationFailed": "身份验证失败",
@@ -399,7 +399,7 @@
     "invalidIntegrationToken": "请重新登录以继续。",
     "invalidPhoneNumber": "请输入有效的电话号码。",
     "invalidToIntegrationToken": "请重新登录以继续",
-    "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
+    "kycRequired": "无法发起转账。根据集成要求，帐户需先完成 KYC 身份验证后才能启用加密货币转账功能。",
     "locked": "您的帐户已被锁定",
     "loginFirst": "请先登录。",
     "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
@@ -613,7 +613,7 @@
     "identityVerificationRequired": "您需完成身份验证以使用 API 密钥功能。请完成身份验证以继续。",
     "invalidCredentials": "登录凭证无效。请重试。",
     "maximumApiKeyLimitExceeded": "API 密钥限制已达到最大允许个数。请删除任一未使用的密钥以继续。",
-    "unsupportedCountryErrorMessage": "我们目前不支持您的帐户",
+    "unsupportedCountryErrorMessage": "目前暂不支持您的帐户",
     "wrongEmailCode": "电子邮件代码错误，请重试",
     "wrongTotpCode": "身份验证代码错误，请重试"
   },
@@ -639,14 +639,14 @@
     "buy": "购买",
     "buyCrypto": "购买加密货币",
     "buyDescription": "用卡或银行卡购买。",
-    "chooseHow": "选择添加资金的方式",
-    "connectToWallet": "连接到<1></1>钱包或交易所",
+    "chooseHow": "选择入金方式",
+    "connectToWallet": "连接至<1></1>钱包或交易所",
     "connectToWalletLabel": "连接到钱包或交易所",
     "guaranteed": "保证",
-    "manualDeposit": "手动存款",
-    "max500": "$500,000限额 • 即时",
-    "maxVaries": "限额不一 • 需3分钟",
-    "minMax": "${{min}} 最小 - ${{max}} 最大 • 即时",
+    "manualDeposit": "人工充值",
+    "max500": "$500,000最高 • 即时",
+    "maxVaries": "最高限额变更新• 需3分钟",
+    "minMax": "${{min}} 最低 - ${{max}} 最高 • 即时",
     "noExtraFee": "无额外费用",
     "otherMethods": "其他方式",
     "secureDeposit": "安全转账",
@@ -994,7 +994,7 @@
       "tryWithQr": "尝试使用二维码存款。"
     },
     "error": {
-      "addressNotFound": "我们无法加载存款地址，请尝试其他代币或网络。",
+      "addressNotFound": "无法加载存款地址，请尝试其他代币或网络。",
       "noTokensDescription": "目前没有可存款的支持代币。",
       "noTokensTitle": "无可用代币"
     },
