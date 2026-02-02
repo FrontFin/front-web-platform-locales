@@ -178,9 +178,12 @@
     "changeCurrency": "更改货币"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "马上就好",
+    "depositInstructions": "返回至您的网页浏览器中的{{clientName}}，以确认并查看订单详情。",
     "depositSubtitle": "返回{{clientName}}",
     "depositSuccess": "成功！",
-    "depositTitle": "您的资金正在路上。",
+    "depositTitle": "您的资金正在处理中。",
+    "paymentInstructions": "返回至网页浏览器中的结账页面以确认并查看订单详情。",
     "paymentSubtitle": "请返回结账页面以完成交易",
     "paymentSuccess": "支付成功！"
   },
@@ -269,7 +272,7 @@
   },
   "doneTransferPage": {
     "checkDetails40": "查看交易详情",
-    "depositClient": "您的资金正在路上。",
+    "depositClient": "您的资金正在处理中。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><4></4>的支付至{{clientName}}",
     "paymentSuccessful": "支付成功！",
     "waiting": "在收到足够的网络认证之前，转账不会完成。"
@@ -288,7 +291,7 @@
     "sendEmailButton": "我已发送邮件",
     "steps": {
       "checkInbox": "我们已发送一封电子邮件至您的收件箱，请打开以确认您正从新设备登录。",
-      "doNotClick": "<0>请勿</0>点击电子邮件中的确认键。",
+      "doNotClick": "<0>请勿</0>点击邮件中的确认键。",
       "forwardEmail": "请将邮件转发到该安全收件箱，它将自动确认以匹配登录请求。"
     },
     "stillWaitingLoading": "仍在等待电子邮件...",
@@ -298,7 +301,7 @@
   "errorHeadlines": {
     "accountNotFound": "未找到账户",
     "addressAllowlistPending": "地址白名单待审核",
-    "addressNotAllowlisted": "地址未在白名单中",
+    "addressNotAllowlisted": "该地址未被列入白名单",
     "amountBelowMinimum": "金额过低",
     "amountExceedsMaximum": "金额过高",
     "authenticationFailed": "身份验证失败",
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "登录已过期",
     "invalidToIntegrationToken": "身份验证已过期",
     "kycRequired": "需要进行KYC身份验证",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "需要活跃性检查",
     "locked": "账户已被锁定",
     "mfaBindingRequired": "需要MFA多重身份验证",
     "mfaNotSupported": "不支持多重身份验证",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "因存在异常操作，提现暂时关闭",
     "withdrawalLocked": "提现已被锁定",
     "withdrawalLockedP2P": "提现已被锁定",
-    "withdrawalPendingDepositConfirmation": "提现待确认",
+    "withdrawalPendingDepositConfirmation": "无法完成取款",
     "withdrawalTimeoutDueToRecentFundsManipulation": "提币请求超时"
   },
   "errorMessages": {
@@ -400,8 +403,8 @@
     "invalidIntegrationToken": "请重新登录以继续。",
     "invalidPhoneNumber": "请输入有效的电话号码。",
     "invalidToIntegrationToken": "请重新登录以继续",
-    "kycRequired": "无法发起转账。因集成要求，帐户须在启用加密货币转账前完成 KYC 验证。",
-    "livenessCheckRequired": "",
+    "kycRequired": "无法发起转账。根据集成要求，帐户需先完成 KYC 身份验证后才能启用加密货币转账功能。",
+    "livenessCheckRequired": "需要在兑换应用程序上进行活跃性检查才能完成此转账。",
     "locked": "您的帐户已被锁定",
     "loginFirst": "请先登录。",
     "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
@@ -453,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "由于检测到可疑活动，您的提现功能已被禁用。请在 Binance 完成验证流程。如无法完成验证，请联系客服。如果您已完成验证，请稍等片刻重试。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提现，请稍后再试。",
-    "withdrawalPendingDepositConfirmation": "您的充值尚未达到提现所需的锁定确认数。请查看交易记录获取更多详情。",
+    "withdrawalPendingDepositConfirmation": "您最近存入到您的 {{integrationName}} 账户的款项尚未完全结算，因此无法提取。请稍后再试。",
     "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提现。"
   },
   "errorPage": {
@@ -615,7 +618,7 @@
     "identityVerificationRequired": "您需完成身份验证以使用 API 密钥功能。请完成身份验证以继续。",
     "invalidCredentials": "登录凭证无效。请重试。",
     "maximumApiKeyLimitExceeded": "API 密钥限制已达到最大允许个数。请删除任一未使用的密钥以继续。",
-    "unsupportedCountryErrorMessage": "我们目前不支持您的帐户",
+    "unsupportedCountryErrorMessage": "目前暂不支持您的帐户",
     "wrongEmailCode": "电子邮件代码错误，请重试",
     "wrongTotpCode": "身份验证代码错误，请重试"
   },
@@ -641,14 +644,14 @@
     "buy": "购买",
     "buyCrypto": "购买加密货币",
     "buyDescription": "用卡或银行卡购买。",
-    "chooseHow": "选择添加资金的方式",
-    "connectToWallet": "连接到<1></1>钱包或交易所",
+    "chooseHow": "选择入金方式",
+    "connectToWallet": "连接至<1></1>钱包或交易所",
     "connectToWalletLabel": "连接到钱包或交易所",
     "guaranteed": "保证",
-    "manualDeposit": "手动存款",
-    "max500": "$500,000限额 • 即时",
-    "maxVaries": "限额不一 • 需3分钟",
-    "minMax": "${{min}} 最小 - ${{max}} 最大 • 即时",
+    "manualDeposit": "人工充值",
+    "max500": "$500,000最高 • 即时",
+    "maxVaries": "最高限额变更新• 需3分钟",
+    "minMax": "${{min}} 最低 - ${{max}} 最高 • 即时",
     "noExtraFee": "无额外费用",
     "otherMethods": "其他方式",
     "secureDeposit": "安全转账",
@@ -990,12 +993,13 @@
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址进行充值",
       "dontSeeYourAccount": "没有看到你的账户？",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "遇到问题了？",
+      "needAnotherWay": "使用其他支付方式？",
+      "tryAgain": "再试一次",
+      "tryWithQr": "尝试使用二维码存款。"
     },
     "error": {
-      "addressNotFound": "我们无法加载存款地址，请尝试其他代币或网络。",
+      "addressNotFound": "无法加载存款地址，请尝试其他代币或网络。",
       "noTokensDescription": "目前没有可存款的支持代币。",
       "noTokensTitle": "无可用代币"
     },
@@ -1018,7 +1022,7 @@
     "warnings": {
       "includeMemo": "请包含此备忘录：<1>{{memo}}</1>",
       "includeTag": "请包含此标签：<1>{{tag}}</1>",
-      "onlySendTokenOnNetworkBridging": "只在<3>{{network}}</3>网络上发送<1>{{token}}</1>到此地址。此地址为一次性使用。发送其他资产或网络组合、重复使用此地址，或<5>将资产发送到不同的地址</5>，将导致资金丢失且无法恢复。<7>最低存款为2美元。</7>",
+      "onlySendTokenOnNetworkBridging": "仅通过<3>{{network}}</3>网络向该地址发送<1>{{token}}</1>。此地址为一次性使用地址。若向该地址发送其他资产或使用其他网络组合、或重复使用该地址<5>资产发送到不同的地址</5>, 均将导致资金丢失且无法恢复。<7>最低存款为2美元。</7>",
       "onlySendTokenOnNetworkExtended": "仅在 <3>{{network}}</3> 网络上发送 <1>{{token}}</1> 到此地址。其他资产或网络的组合将无法恢复。",
       "requiredForDeposit": "此存款所需",
       "sendAboveMinimum": "发送超过最低金额：<1>{{amount}}</1>"
@@ -1046,7 +1050,7 @@
     "scanQrCode": "扫描二维码以完成您的付款",
     "transactionComplete": "交易完成",
     "unsupportedCurrencyError": "您所在国家/地区不支持此种货币。",
-    "youDeposit": ""
+    "youDeposit": "您存入"
   },
   "paypal": {
     "accessDeniedPage": {
