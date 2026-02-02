@@ -989,6 +989,10 @@
     "title": "Entrar"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limite: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Desvio: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Depósito com código QR",
       "depositWithWalletAddress": "Depositar com endereço de carteira",
@@ -1003,8 +1007,24 @@
       "noTokensDescription": "Não há tokens suportados disponíveis para depósito neste momento.",
       "noTokensTitle": "Nenhum token disponível"
     },
+    "ImportantInformationModel": {
+      "confirm": "Confirmo que li as instruções",
+      "cta": "Eu entendo",
+      "title": "Informações importantes"
+    },
     "networkSelection": {
       "title": "Escolha uma rede"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "O depósito mínimo é <9>{{minimumDeposit}}</9>.",
+      "instruction": "Envie apenas <1>{{token}}</1> na <3>{{network}}</3> para este endereço. Este endereço é de <5>uso único</5>.",
+      "merged": "Envie apenas <1>{{token}}</1> na <3>{{network}}</3> para este endereço. Este endereço é de <5>uso único</5>. Qualquer outra combinação de ativos ou redes, reutilização deste endereço ou <7>envio de ativos para um endereço diferente</7>, resultará em perda de fundos e será irrecuperável. O depósito mínimo é <9>{{minimumDeposit}}</9>.",
+      "warning": "Qualquer outra combinação de ativos ou redes, reutilização deste endereço ou <7>envio de ativos para um endereço diferente</7>, resultará em perda de fundos e será irrecuperável."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Envie apenas <1>{{token}}</1> na rede <3>{{network}}</3>.",
+      "merged": "Envie apenas <1>{{token}}</1> na rede <3>{{network}}</3>. Qualquer outra combinação de ativos ou redes, ou <5>envio de ativos para um endereço diferente</5>, resultará em perda de fundos e será irrecuperável.",
+      "warning": "Qualquer outra combinação de ativos ou redes, ou <5>envio de ativos para um endereço diferente</5>, resultará em perda de fundos e será irrecuperável."
     },
     "screen": {
       "beforeYouGo": "Antes de ires...",
@@ -1016,6 +1036,7 @@
       "tokenLabel": "Token",
       "warning": "Transfire apenas {{token}} na {{network}} para este endereço - caso contrário, os teus ativos poderão perder-se"
     },
+    "showAddress": "Show address",
     "tokenSelection": {
       "title": "Escolhe um token"
     },
