@@ -989,6 +989,10 @@
     "title": "Iniciar sesión"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Límite: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Deslizamiento: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Depósito con código QR",
       "depositWithWalletAddress": "Depósito con dirección de wallet",
@@ -1003,8 +1007,24 @@
       "noTokensDescription": "No hay tokens compatibles disponibles para el depósito en este momento.",
       "noTokensTitle": "No hay tokens disponibles"
     },
+    "ImportantInformationModel": {
+      "confirm": "Confirmo que he leído las instrucciones",
+      "cta": "Entiendo",
+      "title": "Información importante"
+    },
     "networkSelection": {
       "title": "Elige una red"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "El depósito mínimo es de <9>{{minimumDeposit}}</9>.",
+      "instruction": "Enviar solo <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es para <5>usos únicos</5>.",
+      "merged": "Enviar solo <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es para <5>usos únicos</5>. Cualquier otra combinación de activos o redes, reutilización de esta dirección, o <7>envío de activos a una dirección diferente</7>, resultará en la pérdida de fondos y no se podrá recuperar. El depósito mínimo es de <9>{{minimumDeposit}}</9>.",
+      "warning": "Cualquier otra combinación de activos o redes, reutilización de esta dirección, o <7>envío de activos a una dirección diferente</7>, resultará en la pérdida de fondos y no se podrá recuperar."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>.",
+      "merged": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>. Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar.",
+      "warning": "Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar."
     },
     "screen": {
       "beforeYouGo": "Antes de que te vayas...",
@@ -1016,6 +1036,7 @@
       "tokenLabel": "Token",
       "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse"
     },
+    "showAddress": "Show address",
     "tokenSelection": {
       "title": "Elige un token"
     },
