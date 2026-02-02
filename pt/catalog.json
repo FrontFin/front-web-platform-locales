@@ -178,9 +178,12 @@
     "changeCurrency": "Mudar moeda"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Quase lá",
+    "depositInstructions": "Volta a {{clientName}} no teu navegador para confirmação e detalhes do pedido.",
     "depositSubtitle": "Volta a {{clientName}}",
     "depositSuccess": "Sucesso!",
     "depositTitle": "Os teus fundos estão a caminho.",
+    "paymentInstructions": "Regressa à página de checkout no teu browser para confirmação e detalhes da encomenda.",
     "paymentSubtitle": "Voltar para a tua página de checkout para finalizar o pedido",
     "paymentSuccess": "Pagamento bem-sucedido!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Login Expirado",
     "invalidToIntegrationToken": "Autenticação Expirada",
     "kycRequired": "KYC Necessário",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Verificação de vivacidade necessária",
     "locked": "Conta Bloqueada",
     "mfaBindingRequired": "MFA Obrigatório",
     "mfaNotSupported": "MFA Não Suportado",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Levantamento Temporariamente Desativada",
     "withdrawalLocked": "Levantamentos Bloqueados",
     "withdrawalLockedP2P": "Levantamentos Desativados",
-    "withdrawalPendingDepositConfirmation": "Levantamento Aguarda Confirmação",
+    "withdrawalPendingDepositConfirmation": "Incapaz de completar a retirada",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Tempo de Espera para Levantamentos"
   },
   "errorMessages": {
@@ -392,7 +395,6 @@
     "incorrect2faCode": "Código 2FA incorreto.",
     "incorrectEmail": "Inseriste um email incorreto.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Tens {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Tens {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de utilizador ou palavra-passe incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -402,7 +404,7 @@
     "invalidPhoneNumber": "Por favor, insire um número de telefone válido.",
     "invalidToIntegrationToken": "Por favor, faz login novamente para continuar.",
     "kycRequired": "Não foi possível iniciar a transferência. A integração requer que as contas completem a verificação KYC antes de habilitar transferências de criptomoedas.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "É necessária uma verificação de vivacidade no aplicativo de câmbio para concluir esta transferência.",
     "locked": "A tua conta está bloqueada",
     "loginFirst": "Por favor, faz login primeiro.",
     "loginWithQrOrMobileLink": "Por favor, faz login através de código QR ou link móvel.",
@@ -454,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "A função de levantamentos foi desativada devido a atividade suspeita. Por favor, completa o processo de verificação na Binance. Se não conseguires verificar, entra em contato com o Suporte ao Cliente. Se recentemente completaste a verificação, por favor, aguarda um momento e tenta novamente.",
     "withdrawalLocked": "Para tua segurança, levantamentos são desabilitadas por 24 horas após uma alteração nas configurações da conta. Por favor, tenta novamente mais tarde.",
     "withdrawalLockedP2P": "Para tua segurança, levantamentos são desabilitados por 24 horas após uma compra P2P. Por favor, tenta novamente mais tarde.",
-    "withdrawalPendingDepositConfirmation": "O teu depósito não atendeu às confirmações de desbloqueio necessárias para levantamento. Por favor, verifica o Histórico de Transações para mais detalhes.",
+    "withdrawalPendingDepositConfirmation": "Um depósito recente na sua conta {{integrationName}} ainda não foi totalmente liquidado e, portanto, não está elegível para retirada. Por favor, tente novamente em breve.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Os levantamentos podem ser efectuados no mínimo 48 horas após uma transacção de compra ou depósito."
   },
   "errorPage": {
@@ -546,7 +548,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -992,9 +993,10 @@
       "depositWithQr": "Depósito com código QR",
       "depositWithWalletAddress": "Depositar com endereço de carteira",
       "dontSeeYourAccount": "Não vês a tua conta?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Estás com problemas?",
+      "needAnotherWay": "Precisas de outra forma?",
+      "tryAgain": "Tenta novamente",
+      "tryWithQr": "Tenta depositar com um código QR em vez disso."
     },
     "error": {
       "addressNotFound": "Não conseguimos carregar um endereço de depósito, tente outro token ou rede.",
@@ -1048,7 +1050,7 @@
     "scanQrCode": "Lê o código QR para concluir o pagamento",
     "transactionComplete": "Transação completa",
     "unsupportedCurrencyError": "Esta moeda não é suportada no teu país.",
-    "youDeposit": ""
+    "youDeposit": "Você deposita"
   },
   "paypal": {
     "accessDeniedPage": {
