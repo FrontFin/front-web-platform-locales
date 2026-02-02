@@ -989,6 +989,10 @@
     "title": "Zaloguj się"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Poślizg: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Wpłać za pomocą kodu QR",
       "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
@@ -1003,8 +1007,24 @@
       "noTokensDescription": "Obecnie nie ma dostępnych obsługiwanych tokenów do wpłaty.",
       "noTokensTitle": "Brak dostępnych tokenów"
     },
+    "ImportantInformationModel": {
+      "confirm": "Potwierdzam, że przeczytałem instrukcje",
+      "cta": "Rozumiem",
+      "title": "Ważne informacje"
+    },
     "networkSelection": {
       "title": "Wybierz sieć"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimalna wpłata to <9>{{minimumDeposit}}</9>.",
+      "instruction": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3> na ten adres. Ten adres jest <5>jednorazowy</5>.",
+      "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3> na ten adres. Ten adres jest <5>jednorazowy</5>. Wszelkie inne połączenie aktywów lub sieci, ponowne użycie tego adresu lub <7>wysyłanie aktywów na inny adres</7>, spowoduje utratę środków i będzie nie do odzyskania. Minimalna wpłata to <9>{{minimumDeposit}}</9>.",
+      "warning": "Wszelkie inne połączenie aktywów lub sieci, ponowne użycie tego adresu lub <7>wysyłanie aktywów na inny adres</7>, spowoduje utratę środków i będzie nie do odzyskania."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>.",
+      "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>. Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania.",
+      "warning": "Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania."
     },
     "screen": {
       "beforeYouGo": "Zanim wyjdziesz...",
@@ -1016,6 +1036,7 @@
       "tokenLabel": "Token",
       "warning": "Przelewaj wyłącznie {{token}} w sieci {{network}} na ten adres - w przeciwnym razie Twoje środki mogą zostać utracone"
     },
+    "showAddress": "Show address",
     "tokenSelection": {
       "title": "Wybierz token"
     },
