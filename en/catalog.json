@@ -989,6 +989,10 @@
     "title": "Log in"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Deposit with QR code",
       "depositWithWalletAddress": "Deposit with wallet address",
@@ -1003,8 +1007,24 @@
       "noTokensDescription": "There are no supported tokens available for deposit at this time.",
       "noTokensTitle": "No tokens available"
     },
+    "ImportantInformationModel": {
+      "confirm": "I confirm that I have read the instructions",
+      "cta": "I understand",
+      "title": "Important information"
+    },
     "networkSelection": {
       "title": "Choose a network"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimum deposit is <9>{{minimumDeposit}}</9>.",
+      "instruction": "Only send <1>{{token}}</1> on <3>{{network}}</3> to this address. This address is <5>single-use</5>.",
+      "merged": "Only send <1>{{token}}</1> on <3>{{network}}</3> to this address. This address is <5>single-use</5>. Any other asset or network combination, reuse of this address, or <7>sending assets to a different address</7>, will result in loss of funds and will be unrecoverable. Minimum deposit is <9>{{minimumDeposit}}</9>.",
+      "warning": "Any other asset or network combination, reuse of this address, or <7>sending assets to a different address</7>, will result in loss of funds and will be unrecoverable."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network.",
+      "merged": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network. Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable.",
+      "warning": "Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable."
     },
     "screen": {
       "beforeYouGo": "Before you go...",
@@ -1016,6 +1036,7 @@
       "tokenLabel": "Token",
       "warning": "Only transfer {{token}} on {{network}} to this address - otherwise, your assets may be lost"
     },
+    "showAddress": "Show address",
     "tokenSelection": {
       "title": "Choose a token"
     },
@@ -1026,27 +1047,7 @@
       "onlySendTokenOnNetworkExtended": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network to this address. Any other asset or network combination will be unrecoverable.",
       "requiredForDeposit": "Required for this deposit",
       "sendAboveMinimum": "Send above the minimum amount: <1>{{amount}}</1>"
-    },
-    "ImportantInformationModel": {
-      "title": "Important information",
-      "confirm": "I confirm that I have read the instructions",
-      "cta": "I understand"
-    },
-    "onlySendTokenOnNetworkVanilla": {
-      "instruction": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network.",
-      "warning": "Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable.",
-      "merged": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network. Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable."
-    },"onlySendTokenOnNetworkBridged": {
-      "instruction": "Only send <1>{{token}}</1> on <3>{{network}}</3> to this address. This address is <5>single-use</5>.",
-      "warning": "Any other asset or network combination, reuse of this address, or <7>sending assets to a different address</7>, will result in loss of funds and will be unrecoverable.",
-      "extra": "Minimum deposit is <9>{{minimumDeposit}}</9>.",
-      "merged": "Only send <1>{{token}}</1> on <3>{{network}}</3> to this address. This address is <5>single-use</5>. Any other asset or network combination, reuse of this address, or <7>sending assets to a different address</7>, will result in loss of funds and will be unrecoverable. Minimum deposit is <9>{{minimumDeposit}}</9>."
-    },
-    "bridgingConstraints": {
-      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
-      "slippage": "Slippage: {{slippage}}"
-    },    
-    "showAddress": "Show address"
+    }
   },
   "paymentMethods": {
     "bankAccount": "Bank account",
