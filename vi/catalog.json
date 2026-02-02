@@ -989,6 +989,10 @@
     "title": "Đăng nhập"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Giới hạn: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Độ trượt: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Nạp tiền bằng mã QR",
       "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
@@ -1003,8 +1007,24 @@
       "noTokensDescription": "Hiện không có token nào được hỗ trợ để nạp.",
       "noTokensTitle": "Không có token nào khả dụng"
     },
+    "ImportantInformationModel": {
+      "confirm": "Tôi xác nhận rằng tôi đã đọc hướng dẫn",
+      "cta": "Tôi đã hiểu",
+      "title": "Thông tin quan trọng"
+    },
     "networkSelection": {
       "title": "Chọn một mạng"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Số tiền nạp tối thiểu là <9>{{minimumDeposit}}</9>.",
+      "instruction": "Chỉ gửi <1>{{token}}</1> trên <3>{{network}}</3> tới địa chỉ này. Địa chỉ này là <5>dùng một lần</5>.",
+      "merged": "Chỉ gửi <1>{{token}}</1> trên <3>{{network}}</3> tới địa chỉ này. Địa chỉ này là <5>dùng một lần</5>. Bất kỳ sự kết hợp tài sản hoặc mạng khác, tái sử dụng địa chỉ này, hay <7>gửi tài sản đến địa chỉ khác</7>, sẽ dẫn đến mất tiền và không thể thu hồi. Số tiền nạp tối thiểu là <9>{{minimumDeposit}}</9>.",
+      "warning": "Bất kỳ sự kết hợp tài sản hoặc mạng khác, tái sử dụng địa chỉ này, hay <7>gửi tài sản đến địa chỉ khác</7>, sẽ dẫn đến mất tiền và không thể thu hồi."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>.",
+      "merged": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>. Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi.",
+      "warning": "Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi."
     },
     "screen": {
       "beforeYouGo": "Trước khi bạn rời đi...",
@@ -1016,6 +1036,7 @@
       "tokenLabel": "Token",
       "warning": "Chỉ chuyển {{token}} trên {{network}} tới địa chỉ này. Nếu không, tài sản của bạn có thể bị mất"
     },
+    "showAddress": "Show address",
     "tokenSelection": {
       "title": "Chọn một đồng tiền"
     },
