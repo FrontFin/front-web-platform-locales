@@ -395,8 +395,6 @@
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -550,8 +548,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -609,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akceptuje transfery w stablecoin {{symbol}}.",
     "thisMerchant": "Ten sprzedawca",
     "title": "Metody płatności",
-    "total": "Razem: {{amountInFiat}}"
+    "total": "Razem: {{amountInFiat}}",
+    "titleDeposit": "Metody płatności",
+    "titlePayment": "Metody płatności"
   },
   "generateKeyPage": {
     "establishedInClient": "Pomyślnie nawiązano stałe aktualizacje w<1></1><2>{{clientName}}</2>.",
@@ -993,6 +991,10 @@
     "title": "Zaloguj się"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Poślizg: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Wpłać za pomocą kodu QR",
       "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
@@ -1007,8 +1009,24 @@
       "noTokensDescription": "Obecnie nie ma dostępnych obsługiwanych tokenów do wpłaty.",
       "noTokensTitle": "Brak dostępnych tokenów"
     },
+    "ImportantInformationModel": {
+      "confirm": "Potwierdzam, że przeczytałem instrukcje",
+      "cta": "Rozumiem",
+      "title": "Ważne informacje"
+    },
     "networkSelection": {
       "title": "Wybierz sieć"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimalna wpłata to <9>{{minimumDeposit}}</9>.",
+      "instruction": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3> na ten adres. Ten adres jest <5>jednorazowy</5>.",
+      "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3> na ten adres. Ten adres jest <5>jednorazowy</5>. Wszelkie inne połączenie aktywów lub sieci, ponowne użycie tego adresu lub <7>wysyłanie aktywów na inny adres</7>, spowoduje utratę środków i będzie nie do odzyskania. Minimalna wpłata to <9>{{minimumDeposit}}</9>.",
+      "warning": "Wszelkie inne połączenie aktywów lub sieci, ponowne użycie tego adresu lub <7>wysyłanie aktywów na inny adres</7>, spowoduje utratę środków i będzie nie do odzyskania."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>.",
+      "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>. Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania.",
+      "warning": "Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania."
     },
     "screen": {
       "beforeYouGo": "Zanim wyjdziesz...",
@@ -1020,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Przelewaj wyłącznie {{token}} w sieci {{network}} na ten adres - w przeciwnym razie Twoje środki mogą zostać utracone"
     },
+    "showAddress": "Pokaż adres",
     "tokenSelection": {
       "title": "Wybierz token"
     },
@@ -1333,6 +1352,7 @@
     "includeFeesMessage": "Zawiera {{amount}} w opłatach",
     "networkLabel": "Sieć",
     "paymentTitle": "Zapłać {{clientName}}",
+    "pay": "Zapłać",
     "paymentTotalLabel": "Razem",
     "payWithLabel": "Zapłać z",
     "payWithLabelWithName": "Zapłać z {{integrationName}}",
@@ -1351,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "Wpłata z {{integrationName}}",
     "depositTo": "Wpłata do",
+    "deposit": "Wpłata",
     "fee": "Zawiera {{amount}} opłat",
     "feeInBridging": "Obejmuje {{gasFee}} opłat sieciowych oraz {{conversionFee}} opłat za konwersję",
     "fundingMethods": "Metody płatności",
