@@ -605,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} स्टेबलकॉइन {{symbol}} में स्थानांतरण स्वीकार करता है।",
     "thisMerchant": "यह व्यापारी",
     "title": "भुगतान विधियाँ",
-    "total": "कुल: {{amountInFiat}}"
+    "total": "कुल: {{amountInFiat}}",
+    "titleDeposit": "फंडिंग विधियाँ",
+    "titlePayment": "भुगतान विधियाँ"
   },
   "generateKeyPage": {
     "establishedInClient": "आपने<1></1><2>{{clientName}}</2> में सफलतापूर्वक निर्बाध अपडेट स्थापित कर दिए हैं।",
@@ -989,6 +991,10 @@
     "title": "लॉग इन करें"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "सीमा: {{minLimit}} – {{maxLimit}}",
+      "slippage": "फिसलन: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "क्यूआर कोड से जमा करें",
       "depositWithWalletAddress": "वॉलेट एड्रेस के साथ जमा करें",
@@ -1003,8 +1009,24 @@
       "noTokensDescription": "इस समय जमा करने के लिए कोई समर्थित टोकन उपलब्ध नहीं हैं।",
       "noTokensTitle": "कोई टोकन उपलब्ध नहीं हैं"
     },
+    "ImportantInformationModel": {
+      "confirm": "मैं पुष्टि करता हूँ कि मैंने निर्देश पढ़ लिए हैं",
+      "cta": "मैं समझता हूँ",
+      "title": "महत्वपूर्ण सूचना"
+    },
     "networkSelection": {
       "title": "नेटवर्क चुनें"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "न्यूनतम जमा <9>{{minimumDeposit}}</9> है।",
+      "instruction": "केवल <1>{{token}}</1> को <3>{{network}}</3> पर इस पते पर भेजें। यह पता <5>एकल-उपयोगीय</5> है।",
+      "merged": "केवल <1>{{token}}</1> को <3>{{network}}</3> पर इस पते पर भेजें। यह पता <5>एकल-उपयोगीय</5> है। किसी अन्य संपत्ति या नेटवर्क संयोजन, इस पते का पुन: उपयोग या <7>किसी अन्य पते पर संपत्ति भेजने</7> से धन का नुकसान हो सकता है और यह पुनर्प्राप्त नहीं किया जा सकेगा। न्यूनतम जमा <9>{{minimumDeposit}}</9> है।",
+      "warning": "किसी अन्य संपत्ति या नेटवर्क संयोजन, इस पते का पुन: उपयोग या <7>किसी अन्य पते पर संपत्ति भेजना</7> से धन का नुकसान हो सकता है और यह पुनर्प्राप्त नहीं किए जाने योग्य होगा।"
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "केवल <1>{{token}}</1> को <3>{{network}}</3> नेटवर्क पर भेजें।",
+      "merged": "केवल <1>{{token}}</1> को <3>{{network}}</3> नेटवर्क पर भेजें। किसी अन्य संपत्ति या नेटवर्क संयोजन, या <5>किसी अन्य पते पर संपत्ति भेजने</5> से धन का नुकसान हो सकता है और यह पुनर्प्राप्त नहीं किया जा सकेगा।",
+      "warning": "किसी अन्य संपत्ति या नेटवर्क संयोजन, या <5>किसी अन्य पते पर संपत्ति भेजने</5> से धन का नुकसान होगा और इसे पुनर्प्राप्त नहीं किया जा सकेगा।"
     },
     "screen": {
       "beforeYouGo": "जाने से पहले...",
@@ -1016,6 +1038,7 @@
       "tokenLabel": "टोकन",
       "warning": "केवल {{network}} पर {{token}} का ही इस पते पर स्थानांतरण करें - अन्यथा आपकी संपत्तियाँ खो सकती हैं"
     },
+    "showAddress": "पता दिखाएँ",
     "tokenSelection": {
       "title": "टोकन चुनें"
     },
@@ -1329,6 +1352,7 @@
     "includeFeesMessage": "शुल्क में {{amount}} शामिल है",
     "networkLabel": "नेटवर्क",
     "paymentTitle": "{{clientName}} को भुगतान करें",
+    "pay": "भुगतान करें",
     "paymentTotalLabel": "कुल",
     "payWithLabel": "इसके साथ भुगतान करें",
     "payWithLabelWithName": "{{integrationName}} के साथ भुगतान करें",
@@ -1347,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "{{integrationName}} से जमा करें",
     "depositTo": "जमा करें",
+    "deposit": "जमा",
     "fee": "शुल्क में {{amount}} शामिल है",
     "feeInBridging": "इसमें {{gasFee}} गैस शुल्क और {{conversionFee}} रूपांतरण शुल्क शामिल हैं",
     "fundingMethods": "फंडिंग विधियाँ",
