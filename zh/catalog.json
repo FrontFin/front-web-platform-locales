@@ -605,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}}支持稳定币{{symbol}}转账。",
     "thisMerchant": "此商户",
     "title": "充值方式",
-    "total": "总金额: {{amountInFiat}}"
+    "total": "总金额: {{amountInFiat}}",
+    "titleDeposit": "充值方式",
+    "titlePayment": "充值方式"
   },
   "generateKeyPage": {
     "establishedInClient": "您已成功在<1></1><2>{{clientName}}</2>完成不间断更新。",
@@ -989,6 +991,10 @@
     "title": "登录"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "限制：{{minLimit}} – {{maxLimit}}",
+      "slippage": "滑点：{{slippage}}"
+    },
     "entry": {
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址进行充值",
@@ -1003,8 +1009,24 @@
       "noTokensDescription": "目前没有可存款的支持代币。",
       "noTokensTitle": "无可用代币"
     },
+    "ImportantInformationModel": {
+      "confirm": "我确认我已阅读说明",
+      "cta": "我明白",
+      "title": "重要信息"
+    },
     "networkSelection": {
       "title": "选择一个网络"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "最低存款是<9>{{minimumDeposit}}</9>。",
+      "instruction": "仅通过<3>{{network}}</3>向该地址发送<1>{{token}}</1>。此地址为<5>一次性使用</5>。",
+      "merged": "仅通过<3>{{network}}</3>向该地址发送<1>{{token}}</1>。此地址为<5>一次性使用</5>。若使用其他资产或网络组合、重复使用此地址，或<7>向不同地址发送资产</7>，将导致资金丢失且不可恢复。最低存款为<9>{{minimumDeposit}}</9>。",
+      "warning": "若使用其他资产或网络组合、重复使用此地址，或<7>向不同地址发送资产</7>，将导致资金丢失且不可恢复。"
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。",
+      "merged": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。",
+      "warning": "若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。"
     },
     "screen": {
       "beforeYouGo": "在您离开之前...",
@@ -1016,6 +1038,7 @@
       "tokenLabel": "代币",
       "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
     },
+    "showAddress": "显示地址",
     "tokenSelection": {
       "title": "选择一个代币"
     },
@@ -1329,6 +1352,7 @@
     "includeFeesMessage": "包含 {{amount}} 手续费",
     "networkLabel": "网络",
     "paymentTitle": "支付 {{clientName}}",
+    "pay": "支付",
     "paymentTotalLabel": "支付总额",
     "payWithLabel": "使用...支付",
     "payWithLabelWithName": "使用 {{integrationName}} 支付",
@@ -1347,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "通过{{integrationName}} 充值",
     "depositTo": "存入",
+    "deposit": "存款",
     "fee": "包含 {{amount}} 手续费",
     "feeInBridging": "包括{{conversionFee}}的转换费和{{gasFee}}的燃气费。",
     "fundingMethods": "充值方式",
