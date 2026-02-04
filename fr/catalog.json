@@ -395,7 +395,6 @@
     "incorrect2faCode": "Code 2FA incorrect.",
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -549,7 +548,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -607,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} accepte les transferts en stablecoin {{symbol}}.",
     "thisMerchant": "Ce marchand",
     "title": "Méthodes de financement",
-    "total": "Total : {{amountInFiat}}"
+    "total": "Total : {{amountInFiat}}",
+    "titleDeposit": "Méthodes de financement",
+    "titlePayment": "Méthodes de financement"
   },
   "generateKeyPage": {
     "establishedInClient": "Vous avez établi avec succès des mises à jour ininterrompues dans <1></1><2>{{clientName}}</2>.",
@@ -991,6 +991,10 @@
     "title": "Se connecter"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limite : {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage : {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Dépôt avec code QR",
       "depositWithWalletAddress": "Déposez avec l'adresse du portefeuille",
@@ -1005,8 +1009,24 @@
       "noTokensDescription": "Il n'y a pas de jetons pris en charge disponibles pour le dépôt pour le moment.",
       "noTokensTitle": "Aucun jeton disponible"
     },
+    "ImportantInformationModel": {
+      "confirm": "Je confirme avoir lu les instructions",
+      "cta": "Je comprends",
+      "title": "Informations importantes"
+    },
     "networkSelection": {
       "title": "Choisissez un réseau"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Le dépôt minimum est de <9>{{minimumDeposit}}</9>.",
+      "instruction": "Envoyez seulement <1>{{token}}</1> sur <3>{{network}}</3> à cette adresse. Cette adresse est à <5>usage unique</5>.",
+      "merged": "Envoyez seulement <1>{{token}}</1> sur <3>{{network}}</3> à cette adresse. Cette adresse est à <5>usage unique</5>. Toute autre combinaison d'actifs ou de réseaux, la réutilisation de cette adresse, ou <7>l'envoi d'actifs à une autre adresse</7> entraînera la perte de fonds et sera irréparable. Le dépôt minimum est de <9>{{minimumDeposit}}</9>.",
+      "warning": "Toute autre combinaison d'actifs ou de réseaux, la réutilisation de cette adresse, ou <7>l'envoi d'actifs à une autre adresse</7> entraînera la perte de fonds et sera irréparable."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Envoyez seulement <1>{{token}}</1> sur le réseau <3>{{network}}</3>.",
+      "merged": "Envoyez seulement <1>{{token}}</1> sur le réseau <3>{{network}}</3>. Toute autre combinaison d'actifs ou de réseaux, ou <5>l'envoi d'actifs à une autre adresse</5> entraînera la perte de fonds et sera irréparable.",
+      "warning": "Toute autre combinaison d'actifs ou de réseaux, ou <5>l'envoi d'actifs à une autre adresse</5> entraînera la perte de fonds et sera irréparable."
     },
     "screen": {
       "beforeYouGo": "Avant de partir...",
@@ -1018,6 +1038,7 @@
       "tokenLabel": "Jeton",
       "warning": "Transférez uniquement du {{token}} sur le réseau {{network}} vers cette adresse — dans le cas contraire, vos actifs pourraient être perdus"
     },
+    "showAddress": "Afficher l'adresse",
     "tokenSelection": {
       "title": "Choisissez un jeton"
     },
@@ -1039,7 +1060,7 @@
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
     "bybit": {
-      "fee": "Frais\u00a0: {{fee}}"
+      "fee": "Frais : {{fee}}"
     },
     "cryptoCom": {
       "scanQRWithAppText": "Scannez le code QR avec votre application crypto.com et complétez la transaction"
@@ -1331,6 +1352,7 @@
     "includeFeesMessage": "Inclut {{amount}} de frais",
     "networkLabel": "Réseau",
     "paymentTitle": "Payer {{clientName}}",
+    "pay": "Payer",
     "paymentTotalLabel": "Payer le total",
     "payWithLabel": "Payer avec",
     "payWithLabelWithName": "Payer avec {{integrationName}}",
@@ -1349,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "Dépôt de {{integrationName}}",
     "depositTo": "Déposer à",
+    "deposit": "Dépôt",
     "fee": "Inclut {{amount}} de frais",
     "feeInBridging": "Inclut {{gasFee}} en frais de gaz et {{conversionFee}} en frais de conversion.",
     "fundingMethods": "Méthodes de financement",
