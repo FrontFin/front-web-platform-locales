@@ -395,7 +395,6 @@
     "incorrect2faCode": "Código de 2FA incorrecto.",
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -549,7 +548,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -607,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} acepta transferencias en la stablecoin {{symbol}}.",
     "thisMerchant": "Este comerciante",
     "title": "Formas de pago",
-    "total": "Total: {{amountInFiat}}"
+    "total": "Total: {{amountInFiat}}",
+    "titleDeposit": "Métodos de financiamiento",
+    "titlePayment": "Formas de pago"
   },
   "generateKeyPage": {
     "establishedInClient": "Has establecido con éxito actualizaciones ininterrumpidas en<1></1><2>{{clientName}}</2>.",
@@ -991,6 +991,10 @@
     "title": "Iniciar sesión"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Límite: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Deslizamiento: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Depósito con código QR",
       "depositWithWalletAddress": "Depósito con dirección de wallet",
@@ -1005,8 +1009,24 @@
       "noTokensDescription": "No hay tokens compatibles disponibles para el depósito en este momento.",
       "noTokensTitle": "No hay tokens disponibles"
     },
+    "ImportantInformationModel": {
+      "confirm": "Confirmo que he leído las instrucciones",
+      "cta": "Entiendo",
+      "title": "Información importante"
+    },
     "networkSelection": {
       "title": "Elige una red"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "El depósito mínimo es de <9>{{minimumDeposit}}</9>.",
+      "instruction": "Enviar solo <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es para <5>usos únicos</5>.",
+      "merged": "Enviar solo <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es para <5>usos únicos</5>. Cualquier otra combinación de activos o redes, reutilización de esta dirección, o <7>envío de activos a una dirección diferente</7>, resultará en la pérdida de fondos y no se podrá recuperar. El depósito mínimo es de <9>{{minimumDeposit}}</9>.",
+      "warning": "Cualquier otra combinación de activos o redes, reutilización de esta dirección, o <7>envío de activos a una dirección diferente</7>, resultará en la pérdida de fondos y no se podrá recuperar."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>.",
+      "merged": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>. Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar.",
+      "warning": "Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar."
     },
     "screen": {
       "beforeYouGo": "Antes de que te vayas...",
@@ -1018,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse"
     },
+    "showAddress": "Mostrar dirección",
     "tokenSelection": {
       "title": "Elige un token"
     },
@@ -1331,6 +1352,7 @@
     "includeFeesMessage": "Incluye {{amount}} en comisiones",
     "networkLabel": "Red",
     "paymentTitle": "Pagar a {{clientName}}",
+    "pay": "Pagar",
     "paymentTotalLabel": "Total",
     "payWithLabel": "Pagar con",
     "payWithLabelWithName": "Pagar con {{integrationName}}",
@@ -1349,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "Depósito desde {{integrationName}}",
     "depositTo": "Depositar en",
+    "deposit": "Depositar",
     "fee": "Incluye {{amount}} en comisiones",
     "feeInBridging": "Incluye {{gasFee}} en comisiones de red y {{conversionFee}} en comisiones de conversión",
     "fundingMethods": "Métodos de financiamiento",

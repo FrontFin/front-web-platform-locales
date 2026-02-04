@@ -605,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} {{symbol}} stabilcoin ile transferleri kabul ediyor.",
     "thisMerchant": "Bu satıcı",
     "title": "Ödeme yöntemleri",
-    "total": "Toplam: {{amountInFiat}}"
+    "total": "Toplam: {{amountInFiat}}",
+    "titleDeposit": "Ödeme yöntemleri",
+    "titlePayment": "Ödeme yöntemleri"
   },
   "generateKeyPage": {
     "establishedInClient": "<1></1><2>{{clientName}}</2> üzerinde kesintisiz güncellemeleri başarıyla ayarladınız.",
@@ -989,6 +991,10 @@
     "title": "Giriş yap"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "QR kod ile para yatırma",
       "depositWithWalletAddress": "Cüzdan adresi ile para yatırma",
@@ -1003,8 +1009,24 @@
       "noTokensDescription": "Şu anda yatırma işlemi için desteklenen herhangi bir token bulunmuyor.",
       "noTokensTitle": "Token yok"
     },
+    "ImportantInformationModel": {
+      "confirm": "Talimatları okuduğumu onaylıyorum",
+      "cta": "Anladım",
+      "title": "Önemli bilgi"
+    },
     "networkSelection": {
       "title": "Bir ağı seçin"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimum yatırma miktarı <9>{{minimumDeposit}}</9>.",
+      "instruction": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde bu adrese gönderin. Bu adres <5>tek kullanımlık</5>.",
+      "merged": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde bu adrese gönderin. Bu adres <5>tek kullanımlık</5>. Herhangi başka bir varlık veya ağ kombinasyonu, bu adresin tekrar kullanılması veya <7>varlıkların farklı bir adrese gönderilmesi</7> fon kaybına yol açacaktır ve geri alınamaz. Minimum yatırma miktarı <9>{{minimumDeposit}}</9>.",
+      "warning": "Herhangi başka bir varlık veya ağ kombinasyonu, bu adresin tekrar kullanılması veya <7>varlıkların farklı bir adrese gönderilmesi</7> fon kaybına yol açacaktır ve geri alınamaz."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin.",
+      "merged": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin. Herhangi başka bir varlık veya ağ kombinasyonu, veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz.",
+      "warning": "Herhangi başka bir varlık veya ağ kombinasyonu veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz."
     },
     "screen": {
       "beforeYouGo": "Gitmeden önce...",
@@ -1016,6 +1038,7 @@
       "tokenLabel": "Jeton",
       "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
     },
+    "showAddress": "Adresi göster",
     "tokenSelection": {
       "title": "Bir token seçin"
     },
@@ -1217,7 +1240,7 @@
       "networkFeeHint": "Bu ücret, işleminizin blockchainde doğrulanmasını ve tamamlanmasını sağlayan doğrulayıcılara yapılan ödemeyi içerir",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "showFundingMethodsAriaLabel": "ödeme yöntemlerini göster",
       "swapFee": "Otomatik değişim ücreti",
@@ -1329,6 +1352,7 @@
     "includeFeesMessage": "Ücretler dahil {{amount}}",
     "networkLabel": "Ağ",
     "paymentTitle": "{{clientName}} için ödeme yapın",
+    "pay": "Ödeme Yap",
     "paymentTotalLabel": "Toplam",
     "payWithLabel": "Ödeme yöntemi",
     "payWithLabelWithName": "{{integrationName}} ile ödeme yapın",
@@ -1347,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "{{integrationName}} ile yatır",
     "depositTo": "Şuraya yatir:",
+    "deposit": "Yatırma",
     "fee": "Ücretler dahil {{amount}}",
     "feeInBridging": "{{gasFee}} gaz ücretlerini ve {{conversionFee}} dönüşüm ücretlerini içerir.",
     "fundingMethods": "Ödeme yöntemleri",
