@@ -605,7 +605,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} はステーブルコイン {{symbol}} での送金に対応しています。",
     "thisMerchant": "この加盟店",
     "title": "お支払い方法",
-    "total": "合計: {{amountInFiat}}"
+    "total": "合計: {{amountInFiat}}",
+    "titleDeposit": "資金調達方法",
+    "titlePayment": "お支払い方法"
   },
   "generateKeyPage": {
     "establishedInClient": "<1></1><2>{{clientName}}</2>との継続的な更新が正常に確立されました。",
@@ -989,6 +991,10 @@
     "title": "ログイン"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "制限: {{minLimit}} から {{maxLimit}} まで",
+      "slippage": "スリッページ: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "QR コードで入金",
       "depositWithWalletAddress": "ウォレットアドレスで入金",
@@ -1003,8 +1009,24 @@
       "noTokensDescription": "現在、入金可能なトークンがありません。",
       "noTokensTitle": "利用可能なトークンがありません"
     },
+    "ImportantInformationModel": {
+      "confirm": "指示を確認しました",
+      "cta": "理解しました",
+      "title": "重要なお知らせ"
+    },
     "networkSelection": {
       "title": "ネットワークを選択"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "最小入金額は <9>{{minimumDeposit}}</9> です。",
+      "instruction": "<1>{{token}}</1> を <3>{{network}}</3> に送信してください。このアドレスは<5>一時使用</5>です。",
+      "merged": "<1>{{token}}</1> を <3>{{network}}</3> に送信してください。このアドレスは<5>一時使用</5>です。その他の資産またはネットワークの組み合わせ、このアドレスの再利用、もしくは<7>異なるアドレスへの送信</7>は、資産の損失を招き復旧できません。最小入金額は <9>{{minimumDeposit}}</9> です。",
+      "warning": "その他の資産またはネットワークの組み合わせ、このアドレスの再利用、もしくは<7>異なるアドレスへの送信</7>は、資産の損失を招き復旧できません。"
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "<3>{{network}}</3> ネットワークで <1>{{token}}</1> のみを送信してください。",
+      "merged": "<3>{{network}}</3> ネットワークで <1>{{token}}</1> のみを送信してください。その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。",
+      "warning": "その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。"
     },
     "screen": {
       "beforeYouGo": "続行する前に…",
@@ -1016,6 +1038,7 @@
       "tokenLabel": "トークン",
       "warning": "このアドレスには{{network}}上の{{token}}のみを送金してください。誤って送金した場合、資産が失われる可能性があります"
     },
+    "showAddress": "住所を表示",
     "tokenSelection": {
       "title": "トークンを選択"
     },
@@ -1054,7 +1077,7 @@
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。\u00a0",
+      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。 ",
       "title": "アクセスが拒否されました"
     },
     "belowBinanceMinimumPage": {
@@ -1329,6 +1352,7 @@
     "includeFeesMessage": "手数料{{amount}}を含みます",
     "networkLabel": "ネットワーク",
     "paymentTitle": "{{clientName}} に支払う",
+    "pay": "支払う",
     "paymentTotalLabel": "合計",
     "payWithLabel": "支払い方法",
     "payWithLabelWithName": "{{integrationName}}で支払う",
@@ -1347,6 +1371,7 @@
   "previewTransferPageUI": {
     "depositFromIntegration": "{{integrationName}}からの入金",
     "depositTo": "入金先",
+    "deposit": "入金",
     "fee": "手数料{{amount}}を含みます",
     "feeInBridging": "ガス代 {{gasFee}} と換算手数料 {{conversionFee}} を含みます",
     "fundingMethods": "資金調達方法",
