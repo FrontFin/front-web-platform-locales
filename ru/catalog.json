@@ -395,6 +395,8 @@
     "incorrect2faCode": "Неверный код 2FA.",
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
+    "incorrectPasswordChancesRemaining_few": "",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -548,6 +550,8 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -605,9 +609,9 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} принимает переводы в стейблкойне {{symbol}}.",
     "thisMerchant": "Этот торговец",
     "title": "Методы оплаты",
-    "total": "Итого: {{amountInFiat}}",
     "titleDeposit": "Методы обеспечения",
-    "titlePayment": "Методы оплаты"
+    "titlePayment": "Методы оплаты",
+    "total": "Итого: {{amountInFiat}}"
   },
   "generateKeyPage": {
     "establishedInClient": "Вы успешно настроили непрерывные обновления в<1></1><2>{{clientName}}</2>.",
@@ -1351,8 +1355,8 @@
     "confirmTransaction": "Подтвердите эту транзакцию в приложении {{selectedIntegrationName}}.",
     "includeFeesMessage": "Включает {{amount}} в виде сборов",
     "networkLabel": "Сеть",
-    "paymentTitle": "Оплата {{clientName}}",
     "pay": "Оплатить",
+    "paymentTitle": "Оплата {{clientName}}",
     "paymentTotalLabel": "Общая сумма к оплате",
     "payWithLabel": "Оплатить с помощью",
     "payWithLabelWithName": "Оплатить через {{integrationName}}",
@@ -1369,9 +1373,9 @@
     "transferTimeoutBody": "Пожалуйста, попробуйте снова и одобрите запрос на транзакцию."
   },
   "previewTransferPageUI": {
+    "deposit": "Депозит",
     "depositFromIntegration": "Депозит из {{integrationName}}",
     "depositTo": "Депозит в",
-    "deposit": "Депозит",
     "fee": "Включает комиссию {{amount}}",
     "feeInBridging": "Включает {{gasFee}} за комиссию за газ и {{conversionFee}} за конвертацию",
     "fundingMethods": "Методы обеспечения",
