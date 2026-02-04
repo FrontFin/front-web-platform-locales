@@ -178,9 +178,12 @@
     "changeCurrency": "Cambiar divisa"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Casi listo",
+    "depositInstructions": "Regresa a {{clientName}} en tu navegador web para la confirmación y los detalles del pedido.",
     "depositSubtitle": "Regresa a {{clientName}}",
     "depositSuccess": "¡Éxito!",
     "depositTitle": "Tus fondos están en camino.",
+    "paymentInstructions": "Regresa a la página de pago en tu navegador web para la confirmación y detalles del pedido.",
     "paymentSubtitle": "Regresa a tu página de pago para finalizar tu pedido",
     "paymentSuccess": "¡Pago exitoso!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Inicio de sesión caducado",
     "invalidToIntegrationToken": "Autenticación Expirada",
     "kycRequired": "Se requiere KYC",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Se requiere verificación de vitalidad",
     "locked": "Cuenta bloqueada",
     "mfaBindingRequired": "Se requiere autenticación multifactor MFA",
     "mfaNotSupported": "La autenticación multifactor MFA no es compatible",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Retiros deshabilitados temporalmente",
     "withdrawalLocked": "Retiros bloqueados",
     "withdrawalLockedP2P": "Retiros deshabilitados",
-    "withdrawalPendingDepositConfirmation": "Retiro pendiente de confirmación",
+    "withdrawalPendingDepositConfirmation": "No se puede completar el retiro",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Tiempo de espera para retiros"
   },
   "errorMessages": {
@@ -392,7 +395,6 @@
     "incorrect2faCode": "Código de 2FA incorrecto.",
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -402,7 +404,7 @@
     "invalidPhoneNumber": "Por favor, introduce un número de teléfono válido.",
     "invalidToIntegrationToken": "Por favor, inicia sesión nuevamente para continuar...",
     "kycRequired": "No se puede iniciar la transferencia. La integración requiere que las cuentas completen la verificación KYC antes de habilitar las transferencias de criptomonedas.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Se necesita una verificación de vitalidad en la aplicación de intercambio para completar esta transferencia.",
     "locked": "Su cuenta está bloqueada",
     "loginFirst": "Por favor, inicia sesión primero.",
     "loginWithQrOrMobileLink": "Por favor, inicia sesión usando el código QR o el enlace móvil.",
@@ -436,7 +438,7 @@
     "toAccountNotSupported": "La cuenta de destino no admite actualmente depósitos de criptomonedas.",
     "tooManyAttemptsOneMinute": "Demasiados intentos. Por favor, inténtalo de nuevo en 1 minuto.",
     "tooManyRequests": "Inténtalo de nuevo más tarde.",
-    "transferAlreadyRequested": "La transferencia ya fue solicitada.",
+    "transferAlreadyRequested": "Esta transferencia parece ser un duplicado de una solicitud de transferencia existente.",
     "travelRuleRestriction": "{{integrationName}} actualmente no admite transferencias desde tu país.",
     "travelRuleRestrictionPayment": "{{integrationName}} actualmente no admite pagos desde tu país.",
     "tryAgainAfterLogin": "Por favor, inténtalo de nuevo después de iniciar sesión.",
@@ -454,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Tu función de retiro ha sido deshabilitada debido a actividad sospechosa. Por favor, completa el proceso de verificación en Binance. Si no puedes verificar, contacta al Soporte al Cliente. Si recientemente completaste la verificación, por favor espera un momento e inténtalo de nuevo.",
     "withdrawalLocked": "Por seguridad, los retiros se deshabilitan durante 24 horas después de un cambio en la configuración de la cuenta. Por favor inténtalo de nuevo más tarde.",
     "withdrawalLockedP2P": "Por tu seguridad, los retiros están deshabilitados durante 24 horas después de una compra P2P. Por favor, inténtalo de nuevo más tarde.",
-    "withdrawalPendingDepositConfirmation": "Tu depósito no ha cumplido con las confirmaciones de desbloqueo requeridas para el retiro. Por favor, revisa el Historial de Transacciones para más detalles.",
+    "withdrawalPendingDepositConfirmation": "Un depósito reciente en tu cuenta de {{integrationName}} aún no se ha asentado por completo y, por lo tanto, no es elegible para retiro. Por favor intenta nuevamente pronto.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Los retiros se pueden realizar por lo menos 48 horas después de una transacción de compra o depósito."
   },
   "errorPage": {
@@ -546,7 +548,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -604,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} acepta transferencias en la stablecoin {{symbol}}.",
     "thisMerchant": "Este comerciante",
     "title": "Formas de pago",
+    "titleDeposit": "Métodos de financiamiento",
+    "titlePayment": "Formas de pago",
     "total": "Total: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -988,21 +991,42 @@
     "title": "Iniciar sesión"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Límite: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Deslizamiento: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Depósito con código QR",
       "depositWithWalletAddress": "Depósito con dirección de wallet",
       "dontSeeYourAccount": "¿No ves tu cuenta?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "¿Tienes problemas?",
+      "needAnotherWay": "¿Necesitas otra forma?",
+      "tryAgain": "Inténtalo de nuevo",
+      "tryWithQr": "Intenta depositar con un código QR en su lugar."
     },
     "error": {
       "addressNotFound": "No pudimos cargar una dirección de depósito, intente con otro token o red.",
       "noTokensDescription": "No hay tokens compatibles disponibles para el depósito en este momento.",
       "noTokensTitle": "No hay tokens disponibles"
     },
+    "ImportantInformationModel": {
+      "confirm": "Confirmo que he leído las instrucciones",
+      "cta": "Entiendo",
+      "title": "Información importante"
+    },
     "networkSelection": {
       "title": "Elige una red"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "El depósito mínimo es de <9>{{minimumDeposit}}</9>.",
+      "instruction": "Enviar solo <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es para <5>usos únicos</5>.",
+      "merged": "Enviar solo <1>{{token}}</1> en <3>{{network}}</3> a esta dirección. Esta dirección es para <5>usos únicos</5>. Cualquier otra combinación de activos o redes, reutilización de esta dirección, o <7>envío de activos a una dirección diferente</7>, resultará en la pérdida de fondos y no se podrá recuperar. El depósito mínimo es de <9>{{minimumDeposit}}</9>.",
+      "warning": "Cualquier otra combinación de activos o redes, reutilización de esta dirección, o <7>envío de activos a una dirección diferente</7>, resultará en la pérdida de fondos y no se podrá recuperar."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>.",
+      "merged": "Enviar solo <1>{{token}}</1> en la red <3>{{network}}</3>. Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar.",
+      "warning": "Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar."
     },
     "screen": {
       "beforeYouGo": "Antes de que te vayas...",
@@ -1014,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse"
     },
+    "showAddress": "Mostrar dirección",
     "tokenSelection": {
       "title": "Elige un token"
     },
@@ -1048,7 +1073,7 @@
     "scanQrCode": "Escanea el código QR para completar tu pago",
     "transactionComplete": "Transacción completada",
     "unsupportedCurrencyError": "Esta divisa no está soportada en tu país.",
-    "youDeposit": ""
+    "youDeposit": "Tú depositas"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1326,6 +1351,7 @@
     "confirmTransaction": "Confirma esta transacción en tu aplicación de {{selectedIntegrationName}}.",
     "includeFeesMessage": "Incluye {{amount}} en comisiones",
     "networkLabel": "Red",
+    "pay": "Pagar",
     "paymentTitle": "Pagar a {{clientName}}",
     "paymentTotalLabel": "Total",
     "payWithLabel": "Pagar con",
@@ -1343,6 +1369,7 @@
     "transferTimeoutBody": "Por favor, inténtalo de nuevo y aprueba la solicitud de la transacción."
   },
   "previewTransferPageUI": {
+    "deposit": "Depositar",
     "depositFromIntegration": "Depósito desde {{integrationName}}",
     "depositTo": "Depositar en",
     "fee": "Incluye {{amount}} en comisiones",

@@ -178,9 +178,12 @@
     "changeCurrency": "Zmiana waluty"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Prawie gotowe",
+    "depositInstructions": "Wróć do {{clientName}} w przeglądarce, aby potwierdzić i sprawdzić szczegóły zamówienia.",
     "depositSubtitle": "Wróć do {{clientName}}",
     "depositSuccess": "Sukces!",
     "depositTitle": "Twoje środki są w drodze.",
+    "paymentInstructions": "Wróć do strony płatności w przeglądarce, aby potwierdzić i sprawdzić szczegóły zamówienia.",
     "paymentSubtitle": "Wróć do strony płatności, aby sfinalizować transakcję",
     "paymentSuccess": "Płatność zakończona sukcesem!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Logowanie wygasło",
     "invalidToIntegrationToken": "Sesja uwierzytelnienia wygasła",
     "kycRequired": "Wymagane KYC",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Wymagane sprawdzenie żywotności",
     "locked": "Konto zablokowane",
     "mfaBindingRequired": "Wymaga weryfikacja wieloskładnikowa",
     "mfaNotSupported": "MFA nieobsługiwane",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Wypłaty tymczasowo wyłączone",
     "withdrawalLocked": "Wypłaty zablokowane",
     "withdrawalLockedP2P": "Wypłaty zablokowane",
-    "withdrawalPendingDepositConfirmation": "Wypłata oczekuje na potwierdzenie",
+    "withdrawalPendingDepositConfirmation": "Nie można zakończyć wypłaty",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Limit czasowy wypłaty"
   },
   "errorMessages": {
@@ -392,8 +395,6 @@
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -403,7 +404,7 @@
     "invalidPhoneNumber": "Proszę wprowadzić prawidłowy numer telefonu.",
     "invalidToIntegrationToken": "Proszę zalogować się ponownie, aby kontynuować.",
     "kycRequired": "Nie można zainicjować transferu. Integracja wymaga ukończenia weryfikacji KYC na koncie przed włączeniem transferów kryptowalut.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Na aplikacji wymiany wymagane jest sprawdzenie żywotności w celu ukończenia tego transferu.",
     "locked": "Twoje konto jest zablokowane",
     "loginFirst": "Proszę najpierw się zalogować.",
     "loginWithQrOrMobileLink": "Zaloguj się za pomocą kodu QR lub linku mobilnego.",
@@ -455,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Funkcja wypłaty została wyłączona z powodu podejrzanej aktywności. Proszę ukończyć proces weryfikacji na Binance. Jeśli nie możesz zweryfikować, skontaktuj się z pomocą techniczną. Jeśli niedawno ukończyłeś weryfikację, proszę chwilę poczekać i spróbować ponownie.",
     "withdrawalLocked": "Dla twojego bezpieczeństwa, wypłaty są zablokowane na 24 godziny po zmianie ustawień konta. Proszę spróbować ponownie później.",
     "withdrawalLockedP2P": "Dla Twojego bezpieczeństwa wypłaty są zablokowane przez 24 godziny po zakupie P2P. Spróbuj ponownie później.",
-    "withdrawalPendingDepositConfirmation": "Wpłata nie jest możliwa, ponieważ nie spełniła ona wymaganego minimalnego progu potwierdzeń. Szczegóły znajdziesz w historii transakcji.",
+    "withdrawalPendingDepositConfirmation": "Niedawny wpłata na konto {{integrationName}} jeszcze się nie zakończyła i dlatego nie kwalifikuje się do wypłaty. Proszę spróbować ponownie wkrótce.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Wypłaty są możliwe co najmniej 48 godzin po transakcji zakupu lub wpłaty."
   },
   "errorPage": {
@@ -547,8 +548,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -606,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akceptuje transfery w stablecoin {{symbol}}.",
     "thisMerchant": "Ten sprzedawca",
     "title": "Metody płatności",
+    "titleDeposit": "Metody płatności",
+    "titlePayment": "Metody płatności",
     "total": "Razem: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -990,21 +991,42 @@
     "title": "Zaloguj się"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Poślizg: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Wpłać za pomocą kodu QR",
       "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
       "dontSeeYourAccount": "Nie widzisz swojego konta?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Potrzebujesz pomocy?",
+      "needAnotherWay": "Potrzebujesz innej metody?",
+      "tryAgain": "Spróbuj ponownie",
+      "tryWithQr": "Spróbuj wpłacić środki za pomocą kodu QR."
     },
     "error": {
       "addressNotFound": "Nie mogliśmy załadować adresu do depozytu, spróbuj innego tokena lub sieci.",
       "noTokensDescription": "Obecnie nie ma dostępnych obsługiwanych tokenów do wpłaty.",
       "noTokensTitle": "Brak dostępnych tokenów"
     },
+    "ImportantInformationModel": {
+      "confirm": "Potwierdzam, że przeczytałem instrukcje",
+      "cta": "Rozumiem",
+      "title": "Ważne informacje"
+    },
     "networkSelection": {
       "title": "Wybierz sieć"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimalna wpłata to <9>{{minimumDeposit}}</9>.",
+      "instruction": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3> na ten adres. Ten adres jest <5>jednorazowy</5>.",
+      "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3> na ten adres. Ten adres jest <5>jednorazowy</5>. Wszelkie inne połączenie aktywów lub sieci, ponowne użycie tego adresu lub <7>wysyłanie aktywów na inny adres</7>, spowoduje utratę środków i będzie nie do odzyskania. Minimalna wpłata to <9>{{minimumDeposit}}</9>.",
+      "warning": "Wszelkie inne połączenie aktywów lub sieci, ponowne użycie tego adresu lub <7>wysyłanie aktywów na inny adres</7>, spowoduje utratę środków i będzie nie do odzyskania."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>.",
+      "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>. Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania.",
+      "warning": "Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania."
     },
     "screen": {
       "beforeYouGo": "Zanim wyjdziesz...",
@@ -1016,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Przelewaj wyłącznie {{token}} w sieci {{network}} na ten adres - w przeciwnym razie Twoje środki mogą zostać utracone"
     },
+    "showAddress": "Pokaż adres",
     "tokenSelection": {
       "title": "Wybierz token"
     },
@@ -1050,7 +1073,7 @@
     "scanQrCode": "Zeskanuj kod QR, aby dokończyć płatność",
     "transactionComplete": "Transakcja zakończona",
     "unsupportedCurrencyError": "Ta waluta nie jest obsługiwana w twoim kraju.",
-    "youDeposit": ""
+    "youDeposit": "Wpłaciłeś"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1328,6 +1351,7 @@
     "confirmTransaction": "Potwierdź tę transakcję w aplikacji {{selectedIntegrationName}}.",
     "includeFeesMessage": "Zawiera {{amount}} w opłatach",
     "networkLabel": "Sieć",
+    "pay": "Zapłać",
     "paymentTitle": "Zapłać {{clientName}}",
     "paymentTotalLabel": "Razem",
     "payWithLabel": "Zapłać z",
@@ -1345,6 +1369,7 @@
     "transferTimeoutBody": "Spróbuj ponownie i zatwierdź żądanie transakcji."
   },
   "previewTransferPageUI": {
+    "deposit": "Wpłata",
     "depositFromIntegration": "Wpłata z {{integrationName}}",
     "depositTo": "Wpłata do",
     "fee": "Zawiera {{amount}} opłat",

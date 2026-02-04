@@ -178,9 +178,12 @@
     "changeCurrency": "Währung ändern"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Fast erledigt",
+    "depositInstructions": "Gehe zurück zu {{clientName}} in deinem Webbrowser für Bestätigung und Bestelldetails.",
     "depositSubtitle": "Zurück zu {{clientName}}",
     "depositSuccess": "Erfolgreich!",
     "depositTitle": "Deine Gelder sind unterwegs.",
+    "paymentInstructions": "Gehe zurück zur Checkout-Seite in deinem Webbrowser für Bestätigung und Bestelldetails.",
     "paymentSubtitle": "Kehre zu deiner Kassenseite zurück, um deine Bestellung abzuschließen",
     "paymentSuccess": "Zahlung erfolgreich!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Anmeldung abgelaufen",
     "invalidToIntegrationToken": "Authentifizierung abgelaufen",
     "kycRequired": "KYC erforderlich",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Lebendigkeitsprüfung erforderlich",
     "locked": "Konto gesperrt",
     "mfaBindingRequired": "MFA erforderlich",
     "mfaNotSupported": "MFA wird nicht unterstützt",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Abhebung vorübergehend deaktiviert",
     "withdrawalLocked": "Abhebungen gesperrt",
     "withdrawalLockedP2P": "Abhebungen deaktiviert",
-    "withdrawalPendingDepositConfirmation": "Ausstehende Abhebung-Bestätigung",
+    "withdrawalPendingDepositConfirmation": "Abhebung nicht möglich",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Abhebungen Zeitüberschreitung"
   },
   "errorMessages": {
@@ -401,7 +404,7 @@
     "invalidPhoneNumber": "Bitte eine gültige Telefonnummer eingeben.",
     "invalidToIntegrationToken": "Bitte melde dich erneut an, um fortzufahren.",
     "kycRequired": "Überweisung nicht möglich. Für die Integration ist die KYC-Verifizierung der Konten erforderlich, bevor Krypto-Überweisungen aktiviert werden können.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Eine Lebendigkeitsprüfung ist in der Austausch-App erforderlich, um diese Übertragung abzuschließen.",
     "locked": "Dein Konto ist gesperrt",
     "loginFirst": "Bitte zuerst einloggen.",
     "loginWithQrOrMobileLink": "Bitte logge Dich mit QR-Code oder Handy-Link ein.",
@@ -453,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Deine Abhebefunktion wurde aufgrund verdächtiger Aktivitäten deaktiviert. Bitte vervollständige den Verifizierungsprozess auf Binance. Wenn du nicht verifizieren kannst, kontaktiere den Kundensupport. Wenn du kürzlich die Verifizierung abgeschlossen hast, warte bitte einen Moment und versuche es erneut.",
     "withdrawalLocked": "Zu deiner Sicherheit sind Abhebungen 24 Stunden nach einer Änderung der Konto-Einstellungen deaktiviert. Bitte versuche es später erneut.",
     "withdrawalLockedP2P": "Zu deiner Sicherheit sind Abhebungen 24 Stunden nach einem P2P-Kauf deaktiviert. Bitte versuche es später erneut.",
-    "withdrawalPendingDepositConfirmation": "Deine Einzahlung hat nicht die erforderlichen Bestätigungen zur Entsperrung für die Abhebung erfüllt. Bitte überprüfe das Überweisungshistorie für weitere Details.",
+    "withdrawalPendingDepositConfirmation": "Eine kürzliche Einzahlung auf Ihr {{integrationName}}-Konto wurde noch nicht vollständig abgewickelt und ist daher nicht für eine Abhebung berechtigt. Bitte versuchen Sie es in Kürze erneut.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Abhebungen können frühestens 48 Stunden nach einem Kauf- oder Einzahlvorgang durchgeführt werden."
   },
   "errorPage": {
@@ -602,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} akzeptiert Überweisungen in der Stablecoin {{symbol}}.",
     "thisMerchant": "Dieser Händler",
     "title": "Zahlungsmethoden",
+    "titleDeposit": "Finanzierungsmethoden",
+    "titlePayment": "Zahlungsmethoden",
     "total": "Gesamt: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -986,21 +991,42 @@
     "title": "Anmelden"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Einzahlen mit QR-Code",
       "depositWithWalletAddress": "Mit Wallet-Adresse einzahlen",
       "dontSeeYourAccount": "Konto nicht sichtbar?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Hast du Probleme?",
+      "needAnotherWay": "Andere Möglichkeit ausprobieren?",
+      "tryAgain": "Erneut versuchen",
+      "tryWithQr": "Versuche, stattdessen mit einem QR-Code einzuzahlen."
     },
     "error": {
       "addressNotFound": "Wir konnten keine Einzahlungsadresse laden, bitte versuchen Sie es mit einem anderen Token oder Netzwerk.",
       "noTokensDescription": "Zurzeit stehen keine unterstützten Token für Einzahlungen zur Verfügung.",
       "noTokensTitle": "Keine Token verfügbar"
     },
+    "ImportantInformationModel": {
+      "confirm": "Ich bestätige, dass ich die Anweisungen gelesen habe.",
+      "cta": "Ich verstehe",
+      "title": "Wichtige Informationen"
+    },
     "networkSelection": {
       "title": "Wähle ein Netzwerk"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Der Mindesteinzahlungsbetrag beträgt <9>{{minimumDeposit}}</9>.",
+      "instruction": "Senden Sie nur <1>{{token}}</1> im <3>{{network}}</3> an diese Adresse. Diese Adresse ist <5>einmalig verwendbar</5>.",
+      "merged": "Senden Sie nur <1>{{token}}</1> im <3>{{network}}</3> an diese Adresse. Diese Adresse ist <5>einmalig verwendbar</5>. Jede andere Kombination von Asset oder Netzwerk, die erneute Nutzung dieser Adresse oder das <7>Versenden von Assets an eine andere Adresse</7> führt zum Verlust von Geldern und ist nicht rückholbar. Der Mindesteinzahlungsbetrag beträgt <9>{{minimumDeposit}}</9>.",
+      "warning": "Jede andere Kombination von Asset oder Netzwerk, die erneute Nutzung dieser Adresse, oder das <7>Versenden von Assets an eine andere Adresse</7> führt zum Verlust von Geldern und ist nicht rückholbar."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Nur <1>{{token}}</1> im <3>{{network}}</3>-Netzwerk senden.",
+      "merged": "Nur <1>{{token}}</1> im <3>{{network}}</3>-Netzwerk senden. Jede andere Kombination von Asset oder Netzwerk oder das <5>Versenden von Assets an eine andere Adresse</5> führt zum Verlust von Geldern und ist nicht rückholbar.",
+      "warning": "Jede andere Kombination von Asset oder Netzwerk oder das <5>Versenden von Assets an eine andere Adresse</5> führt zum Verlust von Geldern und ist nicht rückholbar."
     },
     "screen": {
       "beforeYouGo": "Bevor du gehst ...",
@@ -1012,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Überweise nur {{token}} auf {{network}} an diese Adresse - andernfalls könnten deine Vermögenswerte verloren gehen"
     },
+    "showAddress": "Adresse anzeigen",
     "tokenSelection": {
       "title": "Wähle ein Token"
     },
@@ -1046,7 +1073,7 @@
     "scanQrCode": "Scanne den QR-Code, um deine Zahlung abzuschließen",
     "transactionComplete": "Überweisung abgeschlossen",
     "unsupportedCurrencyError": "Diese Währung wird in deinem Land nicht unterstützt.",
-    "youDeposit": ""
+    "youDeposit": "Sie zahlen ein"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1324,6 +1351,7 @@
     "confirmTransaction": "Bestätige diese Überweisung in deiner {{selectedIntegrationName}}-App.",
     "includeFeesMessage": "Beinhaltet {{amount}} an Gebühren",
     "networkLabel": "Netzwerk",
+    "pay": "Bezahlen",
     "paymentTitle": "Bezahle {{clientName}}",
     "paymentTotalLabel": "Gesamtbetrag bezahlen",
     "payWithLabel": "Bezahlen mit",
@@ -1341,6 +1369,7 @@
     "transferTimeoutBody": "Bitte versuche es erneut und genehmige die Transaktionsanfrage."
   },
   "previewTransferPageUI": {
+    "deposit": "Einzahlen",
     "depositFromIntegration": "Einzahlung von {{integrationName}}",
     "depositTo": "Einzahlen auf",
     "fee": "Beinhaltet {{amount}} an Gebühren",

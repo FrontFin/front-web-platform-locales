@@ -607,6 +607,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} accepts transfers in the stablecoin {{symbol}}.",
     "thisMerchant": "This merchant",
     "title": "Payment methods",
+    "titleDeposit": "Funding methods",
+    "titlePayment": "Payment methods",
     "total": "Total: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -991,6 +993,10 @@
     "title": "Log in"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Deposit with QR code",
       "depositWithWalletAddress": "Deposit with wallet address",
@@ -1005,8 +1011,24 @@
       "noTokensDescription": "There are no supported tokens available for deposit at this time.",
       "noTokensTitle": "No tokens available"
     },
+    "ImportantInformationModel": {
+      "confirm": "I confirm that I have read the instructions",
+      "cta": "I understand",
+      "title": "Important information"
+    },
     "networkSelection": {
       "title": "Choose a network"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimum deposit is <9>{{minimumDeposit}}</9>.",
+      "instruction": "Only send <1>{{token}}</1> on <3>{{network}}</3> to this address. This address is <5>single-use</5>.",
+      "merged": "Only send <1>{{token}}</1> on <3>{{network}}</3> to this address. This address is <5>single-use</5>. Any other asset or network combination, reuse of this address, or <7>sending assets to a different address</7>, will result in loss of funds and will be unrecoverable. Minimum deposit is <9>{{minimumDeposit}}</9>.",
+      "warning": "Any other asset or network combination, reuse of this address, or <7>sending assets to a different address</7>, will result in loss of funds and will be unrecoverable."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network.",
+      "merged": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network. Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable.",
+      "warning": "Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable."
     },
     "screen": {
       "beforeYouGo": "Before you go...",
@@ -1018,6 +1040,7 @@
       "tokenLabel": "Token",
       "warning": "Only transfer {{token}} on {{network}} to this address - otherwise, your assets may be lost"
     },
+    "showAddress": "Show address",
     "tokenSelection": {
       "title": "Choose a token"
     },
@@ -1330,6 +1353,7 @@
     "confirmTransaction": "Confirm this transaction in your {{selectedIntegrationName}} app.",
     "includeFeesMessage": "Includes {{amount}} in fees",
     "networkLabel": "Network",
+    "pay": "Pay",
     "paymentTitle": "Pay {{clientName}}",
     "paymentTotalLabel": "Total",
     "payWithLabel": "Pay with",
@@ -1347,6 +1371,7 @@
     "transferTimeoutBody": "Please try again and approve the transaction request."
   },
   "previewTransferPageUI": {
+    "deposit": "Deposit",
     "depositFromIntegration": "Deposit from {{integrationName}}",
     "depositTo": "Deposit to",
     "fee": "Includes {{amount}} in fees",

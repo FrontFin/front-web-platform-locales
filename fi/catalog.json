@@ -178,9 +178,12 @@
     "changeCurrency": "Vaihda valuutta"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Melkein valmis",
+    "depositInstructions": "Palaa {{clientName}} -sivulle verkkoselaimessasi tilauksen vahvistusta ja lisätietoja varten.",
     "depositSubtitle": "Palaa {{clientName}}iin",
     "depositSuccess": "Onnistui!",
     "depositTitle": "Varojen siirto on käynnissä.",
+    "paymentInstructions": "Palaa kassalle verkkoselaimessasi tilauksen vahvistusta varten sekä tarkistaaksesi tilauksen.",
     "paymentSubtitle": "Palaa kassalle viimeistelläksesi tilauksesi",
     "paymentSuccess": "Maksu onnistui!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Kirjautuminen on vanhentunut",
     "invalidToIntegrationToken": "Tunnistautuminen on vanhentunut",
     "kycRequired": "Asiakkaan tunnistus (KYC) vaaditaan",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Elävyyden tarkistus vaaditaan",
     "locked": "Tili on lukittu",
     "mfaBindingRequired": "Kaksivaiheinen tunnistus (MFA) vaaditaan",
     "mfaNotSupported": "MFAta ei tueta",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Nosto on väliaikaisesti estetty",
     "withdrawalLocked": "Nostot lukittu",
     "withdrawalLockedP2P": "Nostot ei käytössä",
-    "withdrawalPendingDepositConfirmation": "Noston vahvistus käynnissä",
+    "withdrawalPendingDepositConfirmation": "Ei voi suorittaa nostoa",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Nostot aikakatkaistu"
   },
   "errorMessages": {
@@ -401,7 +404,7 @@
     "invalidPhoneNumber": "Syötä kelvollinen puhelinnumero.",
     "invalidToIntegrationToken": "Kirjaudu sisään uudelleen jatkaaksesi..",
     "kycRequired": "Siirtoa ei voida käynnistää. Integraatio vaatii asiakkaan tunnistamisen (KYC) suorittamista ennen kryptosiirtojen sallimista.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Siirron suorittamiseksi pörssisovelluksessa vaaditaan elävyyden tarkistus.",
     "locked": "Tilisi on lukittu",
     "loginFirst": "Kirjaudu ensin sisään.",
     "loginWithQrOrMobileLink": "Kirjaudu sisään käyttäen QR-koodia tai mobiililinkkiä.",
@@ -453,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Nostotoimintosi on poistettu käytöstä epäilyttävän toiminnan vuoksi. Käy läpi varmistusprosessi Binancessa. Jos et voi suorittaa varmistusta, ota yhteyttä asiakastukeen. Jos olet äskettäin suorittanut varmistuksen, odota hetki ja yritä uudelleen.",
     "withdrawalLocked": "Turvallisuutesi vuoksi nostot on estetty 24 tunnin ajaksi tilin asetusten muutoksen jälkeen. Yritä myöhemmin uudelleen.",
     "withdrawalLockedP2P": "Turvallisuussyistä nostot on estetty 24 tunnin ajaksi P2P-ostoksen jälkeen. Yritä myöhemmin uudelleen.",
-    "withdrawalPendingDepositConfirmation": "Talletuksesi ei ole täyttänyt vaadittuja vahvistuksia nostoa varten. Katso lisätietoja tapahtumahistoriasta.",
+    "withdrawalPendingDepositConfirmation": "Äskettäinen talletus {{integrationName}}-tilillesi ei ole vielä täysin selvitetty, joten se ei ole kelvollinen nostoon. Yritä uudelleen pian.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Nostoja voidaan tehdä vähintään 48 tuntia oston tai talletuksen jälkeen."
   },
   "errorPage": {
@@ -602,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} hyväksyy siirrot {{symbol}}-stablecoinilla.",
     "thisMerchant": "Tämä myyjä",
     "title": "Maksutavat",
+    "titleDeposit": "Talletustavat",
+    "titlePayment": "Maksutavat",
     "total": "Yhteensä: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -986,21 +991,42 @@
     "title": "Sisäänkirjautuminen"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Raja: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Talleta QR-koodilla",
       "depositWithWalletAddress": "Talleta lompakon osoitteella",
       "dontSeeYourAccount": "Eikö tiliäsi näy?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Ongelmia?",
+      "needAnotherWay": "Tarvitsetko toisen tavan?",
+      "tryAgain": "Yritä uudelleen",
+      "tryWithQr": "Yritä tallettaa QR-koodilla."
     },
     "error": {
       "addressNotFound": "Emme voineet ladata talletusosoitetta, yritä toista tokenia tai verkkoa.",
       "noTokensDescription": "Tällä hetkellä ei ole tuettuja tokeneita talletettavissa.",
       "noTokensTitle": "Ei saatavilla olevia tokeneita"
     },
+    "ImportantInformationModel": {
+      "confirm": "Vahvistan, että olen lukenut ohjeet",
+      "cta": "Ymmärrän",
+      "title": "Tärkeää tietoa"
+    },
     "networkSelection": {
       "title": "Valitse verkko"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Vähimmäistalletus on <9>{{minimumDeposit}}</9>.",
+      "instruction": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkossa tähän osoitteeseen. Tämä osoite on <5>kertakäyttöinen</5>.",
+      "merged": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkossa tähän osoitteeseen. Tämä osoite on <5>kertakäyttöinen</5>. Mikä tahansa muu omaisuuserä tai verkkoyhdistelmä, tämän osoitteen uudelleenkäyttö tai <7>omaisuuden lähettäminen eri osoitteeseen</7> johtaa varojen menettämiseen, ja ne ovat palautumattomia. Vähimmäistalletus on <9>{{minimumDeposit}}</9>.",
+      "warning": "Mikä tahansa muu omaisuuserä tai verkkoyhdistelmä, tämän osoitteen uudelleenkäyttö tai <7>omaisuuden lähettäminen eri osoitteeseen</7> johtaa varojen menettämiseen, ja ne ovat palautumattomia."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkossa.",
+      "merged": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkossa. Mikä tahansa muu omaisuuserä tai verkkoyhdistelmä, tai <5>omaisuuden lähettäminen eri osoitteeseen</5>, johtaa varojen menettämiseen, ja ne ovat palautumattomia.",
+      "warning": "Mikä tahansa muu omaisuuserä tai verkkoyhdistelmä, tai <5>omaisuuden lähettäminen eri osoitteeseen</5>, johtaa varojen menettämiseen, ja ne ovat palautumattomia."
     },
     "screen": {
       "beforeYouGo": "Ennen kuin menet...",
@@ -1012,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Siirrä tähän osoitteeseen vain {{token}} {{network}} verkossa, muutoin varasi voivat kadota"
     },
+    "showAddress": "Näytä osoite",
     "tokenSelection": {
       "title": "Valitse token"
     },
@@ -1046,7 +1073,7 @@
     "scanQrCode": "Skannaa QR-koodi viimeistelläksesi maksun",
     "transactionComplete": "Tapahtuma valmis",
     "unsupportedCurrencyError": "Tätä valuuttaa ei tueta maassasi.",
-    "youDeposit": ""
+    "youDeposit": "Kun talletat"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1324,6 +1351,7 @@
     "confirmTransaction": "Vahvista tämä tapahtuma {{selectedIntegrationName}} sovelluksessa.",
     "includeFeesMessage": "Sisältää {{amount}} maksuina",
     "networkLabel": "Verkko",
+    "pay": "Maksa",
     "paymentTitle": "Maksa {{clientName}}",
     "paymentTotalLabel": "Yhteensä",
     "payWithLabel": "Maksa käyttäen",
@@ -1341,6 +1369,7 @@
     "transferTimeoutBody": "Yritä uudelleen ja hyväksy tapahtumapyyntö."
   },
   "previewTransferPageUI": {
+    "deposit": "Talletus",
     "depositFromIntegration": "Talletus {{integrationName}}:sta",
     "depositTo": "Talletus kohteeseen",
     "fee": "Sisältää {{amount}} maksut",

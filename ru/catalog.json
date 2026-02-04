@@ -112,7 +112,7 @@
     "emptyCatalogTitle": "Нет доступных электронных кошельков и бирж",
     "noResults": "К сожалению, мы не смогли ничего найти",
     "search": "поиск",
-    "title40": "Подключить биржу или электронный кошелек",
+    "title40": "Выберите вашу учетную запись",
     "titleOnramp": "Выберите свою стартовую точку"
   },
   "chainSwitch": {
@@ -178,9 +178,12 @@
     "changeCurrency": "Изменить валюту"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Почти готово",
+    "depositInstructions": "Вернитесь к {{clientName}} в вашем веб-браузере для подтверждения и получения деталей заказа.",
     "depositSubtitle": "Вернуться к {{clientName}}",
     "depositSuccess": "Успешно!",
     "depositTitle": "Ваши средства в пути.",
+    "paymentInstructions": "Вернитесь на страницу оформления заказа в вашем веб-браузере для подтверждения и получения деталей заказа.",
     "paymentSubtitle": "Вернитесь на страницу оформления заказа, чтобы завершить ваш заказ",
     "paymentSuccess": "Платеж успешно выполнен!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Время сессии вышло",
     "invalidToIntegrationToken": "Срок действия аутентификации истек",
     "kycRequired": "Требуется KYC",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Требуется проверка подлинности живого человека",
     "locked": "Аккаунт заблокирован",
     "mfaBindingRequired": "Требуется MFA",
     "mfaNotSupported": "MFA не поддерживается",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Переводы временно отключены",
     "withdrawalLocked": "Выводы заблокированы",
     "withdrawalLockedP2P": "Вывод средств отключен",
-    "withdrawalPendingDepositConfirmation": "Перевод ожидает подтверждения",
+    "withdrawalPendingDepositConfirmation": "Невозможно завершить вывод средств",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Тайм-аут снятия средств"
   },
   "errorMessages": {
@@ -392,8 +395,6 @@
     "incorrect2faCode": "Неверный код 2FA.",
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -403,7 +404,7 @@
     "invalidPhoneNumber": "Пожалуйста, введите правильный номер телефона.",
     "invalidToIntegrationToken": "Пожалуйста, войдите снова, чтобы продолжить.",
     "kycRequired": "Не удается начать перевод. Интеграция требует завершения KYC проверки аккаунта, прежде чем разрешит крипто переводы.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Для завершения этого перевода требуется проверка подлинности в приложении для обмена.",
     "locked": "Ваш аккаунт заблокирован",
     "loginFirst": "Пожалуйста, сначала войдите в систему.",
     "loginWithQrOrMobileLink": "Пожалуйста, войдите, используя QR-код или мобильную ссылку.",
@@ -437,7 +438,7 @@
     "toAccountNotSupported": "На данный момент учетная запись не поддерживает депозиты криптовалюты.",
     "tooManyAttemptsOneMinute": "Слишком много попыток. Пожалуйста, повторите через 1 минуту.",
     "tooManyRequests": "Пожалуйста, повторите попытку позже.",
-    "transferAlreadyRequested": "Перевод уже запрошен.",
+    "transferAlreadyRequested": "Этот перевод, по-видимому, является дублированием существующего запроса на перевод.",
     "travelRuleRestriction": "{{integrationName}} в настоящее время не поддерживает переводы из вашей страны.",
     "travelRuleRestrictionPayment": "{{integrationName}} в настоящее время не поддерживает платежи из вашей страны.",
     "tryAgainAfterLogin": "Пожалуйста, попробуйте снова после входа в систему.",
@@ -455,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Функция вывода средств отключена из-за подозрительной активности. Пожалуйста, завершите процесс проверки на Binance. Если вы не можете пройти проверку, свяжитесь со Службой поддержки. Если вы недавно завершили проверку, подождите немного и попробуйте снова.",
     "withdrawalLocked": "Для вашей безопасности вывод средств отключён на 24 часа после изменения настроек аккаунта. Пожалуйста, попробуйте позже.",
     "withdrawalLockedP2P": "Для вашей безопасности вывод средств отключен на 24 часа после P2P покупки. Пожалуйста, попробуйте позже.",
-    "withdrawalPendingDepositConfirmation": "Ваш депозит не достиг требуемого количества подтверждений для разблокировки вывода. Проверьте Историю транзакций для деталей.",
+    "withdrawalPendingDepositConfirmation": "Недавний депозит на ваш аккаунт {{integrationName}} еще не завершен, поэтому не подлежит снятию. Пожалуйста, попробуйте снова позже.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Вывод средств возможен не ранее чем через 48 часов после покупки или депозита."
   },
   "errorPage": {
@@ -547,8 +548,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -606,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} принимает переводы в стейблкойне {{symbol}}.",
     "thisMerchant": "Этот торговец",
     "title": "Методы оплаты",
+    "titleDeposit": "Методы обеспечения",
+    "titlePayment": "Методы оплаты",
     "total": "Итого: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -990,21 +991,42 @@
     "title": "Вход"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Предел: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Скользящий: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Депозит через QR-код",
       "depositWithWalletAddress": "Пополните по адресу электронного кошелька",
       "dontSeeYourAccount": "Не видите свой счет?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Возникли проблемы?",
+      "needAnotherWay": "Попробуете другой способ?",
+      "tryAgain": "Попробовать снова",
+      "tryWithQr": "Попробуйте внести депозит с помощью QR-кода вместо этого."
     },
     "error": {
       "addressNotFound": "Не удалось загрузить адрес для вклада, попробуйте другую монету или сеть.",
       "noTokensDescription": "В данный момент нет поддерживаемых токенов для депозита.",
       "noTokensTitle": "Токены недоступны"
     },
+    "ImportantInformationModel": {
+      "confirm": "Я подтверждаю, что прочитал инструкции",
+      "cta": "Я понимаю",
+      "title": "Важная информация"
+    },
     "networkSelection": {
       "title": "Выберите сеть"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Минимальный депозит <9>{{minimumDeposit}}</9>.",
+      "instruction": "Отправляйте <1>{{token}}</1> только в сети <3>{{network}}</3> на этот адрес. Этот адрес <5>предназначен для одноразового использования</5>.",
+      "merged": "Отправляйте <1>{{token}}</1> только в сети <3>{{network}}</3> на этот адрес. Этот адрес <5>предназначен для одноразового использования</5>. Любое другое сочетание актива или сети, повторное использование этого адреса или <7>отправка активов на другой адрес</7>, приведет к потере средств и будет невосстановимо. Минимальный депозит <9>{{minimumDeposit}}</9>.",
+      "warning": "Любое другое сочетание актива или сети, повторное использование этого адреса или <7>отправка активов на другой адрес</7>, приведет к потере средств и будет невосстановимо."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Отправляйте только <1>{{token}}</1> в сети <3>{{network}}</3>.",
+      "merged": "Отправляйте только <1>{{token}}</1> в сети <3>{{network}}</3>. Любое другое сочетание актива или сети, или <5>отправка активов на другой адрес</5>, приведет к потере средств и будет невосстановимо.",
+      "warning": "Любое другое сочетание актива или сети, или <5>отправка активов на другой адрес</5>, приведет к потере средств и будет невосстановимо."
     },
     "screen": {
       "beforeYouGo": "Прежде чем уйти...",
@@ -1016,6 +1038,7 @@
       "tokenLabel": "Токен",
       "warning": "Переводите только {{token}} по сети {{network}} на этот адрес, иначе ваши средства могут быть утеряны"
     },
+    "showAddress": "Показать адрес",
     "tokenSelection": {
       "title": "Выберите токен"
     },
@@ -1050,7 +1073,7 @@
     "scanQrCode": "Отсканируйте QR-код для завершения оплаты",
     "transactionComplete": "Транзакция завершена",
     "unsupportedCurrencyError": "Эта валюта не поддерживается в вашей стране.",
-    "youDeposit": ""
+    "youDeposit": "Вы вносите депозит"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1328,6 +1351,7 @@
     "confirmTransaction": "Подтвердите эту транзакцию в приложении {{selectedIntegrationName}}.",
     "includeFeesMessage": "Включает {{amount}} в виде сборов",
     "networkLabel": "Сеть",
+    "pay": "Оплатить",
     "paymentTitle": "Оплата {{clientName}}",
     "paymentTotalLabel": "Общая сумма к оплате",
     "payWithLabel": "Оплатить с помощью",
@@ -1345,6 +1369,7 @@
     "transferTimeoutBody": "Пожалуйста, попробуйте снова и одобрите запрос на транзакцию."
   },
   "previewTransferPageUI": {
+    "deposit": "Депозит",
     "depositFromIntegration": "Депозит из {{integrationName}}",
     "depositTo": "Депозит в",
     "fee": "Включает комиссию {{amount}}",

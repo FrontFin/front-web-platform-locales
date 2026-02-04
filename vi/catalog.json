@@ -178,9 +178,12 @@
     "changeCurrency": "Thay đổi đơn vị tiền tệ"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Sắp hoàn tất",
+    "depositInstructions": "Quay lại {{clientName}} trên trình duyệt web của bạn để xác nhận và xem chi tiết đơn hàng.",
     "depositSubtitle": "Quay lại {{clientName}}",
     "depositSuccess": "Thành công!",
     "depositTitle": "Tiền của bạn đang được chuyển.",
+    "paymentInstructions": "Quay lại trang thanh toán trên trình duyệt của bạn để xác nhận và xem chi tiết đơn hàng.",
     "paymentSubtitle": "Quay lại trang thanh toán để hoàn tất đơn hàng của bạn",
     "paymentSuccess": "Thanh toán thành công!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Thời gian đăng nhập đã hết hạn",
     "invalidToIntegrationToken": "Xác thực đã hết hạn",
     "kycRequired": "Cần KYC",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Yêu cầu kiểm tra tính sống động",
     "locked": "Tài khoản bị khóa",
     "mfaBindingRequired": "Yêu cầu Xác thực Đa yếu tố (MFA)",
     "mfaNotSupported": "Xác thực hai lớp không được hỗ trợ",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Tính năng rút tiền tạm thời bị vô hiệu hóa.",
     "withdrawalLocked": "Rút tiền bị khóa",
     "withdrawalLockedP2P": "Rút tiền bị vô hiệu hóa",
-    "withdrawalPendingDepositConfirmation": "Rút Tiền Đang Chờ Xác Nhận",
+    "withdrawalPendingDepositConfirmation": "Không thể hoàn tất rút tiền",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Giao dịch rút tiền đã hết thời gian"
   },
   "errorMessages": {
@@ -401,7 +404,7 @@
     "invalidPhoneNumber": "Vui lòng nhập số điện thoại hợp lệ.",
     "invalidToIntegrationToken": "Vui lòng đăng nhập lại để tiếp tục.",
     "kycRequired": "Không thể bắt đầu chuyển khoản. Ứng dụng yêu cầu tài khoản phải hoàn tất xác minh danh tính (KYC) trước khi bật chức năng chuyển tiền điện tử.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Cần kiểm tra tính sống động trên ứng dụng trao đổi để hoàn tất giao dịch này.",
     "locked": "Tài khoản của bạn bị khóa",
     "loginFirst": "Vui lòng đăng nhập.",
     "loginWithQrOrMobileLink": "Vui lòng đăng nhập bằng mã QR hoặc liên kết di động.",
@@ -453,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Chức năng rút tiền của bạn đã bị vô hiệu hóa do phát hiện hoạt động đáng ngờ. Vui lòng hoàn tất quá trình xác minh trên Binance. Nếu bạn không thể xác minh, hãy liên hệ Bộ phận Hỗ trợ Khách hàng. Nếu bạn vừa hoàn tất xác minh gần đây, vui lòng chờ trong giây lát và thử lại.",
     "withdrawalLocked": "Vì lý do bảo mật, việc rút tiền bị vô hiệu hóa trong 24 giờ sau khi thay đổi cài đặt tài khoản. Vui lòng thử lại sau.",
     "withdrawalLockedP2P": "Vì lý do an toàn, rút tiền sẽ bị tạm khóa trong 24 giờ sau giao dịch P2P. Vui lòng thử lại sau.",
-    "withdrawalPendingDepositConfirmation": "Số lần nạp tiền của bạn chưa đáp ứng đủ điều kiện để mớ khóa chức năng rút tiền. Vui lòng kiểm tra lịch sử giao dịch để biết thêm chi tiết.",
+    "withdrawalPendingDepositConfirmation": "Một khoản tiền gửi gần đây đến tài khoản {{integrationName}} của bạn chưa được hoàn thành hoàn toàn, do đó không đủ điều kiện để rút tiền. Vui lòng thử lại sau.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Rút tiền chỉ khả dụng sau 48 giờ kể từ khi mua hoặc nạp tiền."
   },
   "errorPage": {
@@ -602,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} chấp nhận chuyển tiền bằng {{symbol}}.",
     "thisMerchant": "Người bán",
     "title": "Phương thức thanh toán",
+    "titleDeposit": "Phương thức nạp tiền",
+    "titlePayment": "Phương thức thanh toán",
     "total": "Tổng cộng: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -986,21 +991,42 @@
     "title": "Đăng nhập"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Giới hạn: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Độ trượt: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "Nạp tiền bằng mã QR",
       "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
       "dontSeeYourAccount": "Không thấy tài khoản của bạn?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Gặp sự cố?",
+      "needAnotherWay": "Cần phương thức khác?",
+      "tryAgain": "Thử lại",
+      "tryWithQr": "Hãy thử nạp tiền bằng mã QR."
     },
     "error": {
       "addressNotFound": "Chúng tôi không thể tải địa chỉ gửi tiền, vui lòng thử token hoặc mạng khác.",
       "noTokensDescription": "Hiện không có token nào được hỗ trợ để nạp.",
       "noTokensTitle": "Không có token nào khả dụng"
     },
+    "ImportantInformationModel": {
+      "confirm": "Tôi xác nhận rằng tôi đã đọc hướng dẫn",
+      "cta": "Tôi đã hiểu",
+      "title": "Thông tin quan trọng"
+    },
     "networkSelection": {
       "title": "Chọn một mạng"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Số tiền nạp tối thiểu là <9>{{minimumDeposit}}</9>.",
+      "instruction": "Chỉ gửi <1>{{token}}</1> trên <3>{{network}}</3> tới địa chỉ này. Địa chỉ này là <5>dùng một lần</5>.",
+      "merged": "Chỉ gửi <1>{{token}}</1> trên <3>{{network}}</3> tới địa chỉ này. Địa chỉ này là <5>dùng một lần</5>. Bất kỳ sự kết hợp tài sản hoặc mạng khác, tái sử dụng địa chỉ này, hay <7>gửi tài sản đến địa chỉ khác</7>, sẽ dẫn đến mất tiền và không thể thu hồi. Số tiền nạp tối thiểu là <9>{{minimumDeposit}}</9>.",
+      "warning": "Bất kỳ sự kết hợp tài sản hoặc mạng khác, tái sử dụng địa chỉ này, hay <7>gửi tài sản đến địa chỉ khác</7>, sẽ dẫn đến mất tiền và không thể thu hồi."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>.",
+      "merged": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>. Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi.",
+      "warning": "Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi."
     },
     "screen": {
       "beforeYouGo": "Trước khi bạn rời đi...",
@@ -1012,6 +1038,7 @@
       "tokenLabel": "Token",
       "warning": "Chỉ chuyển {{token}} trên {{network}} tới địa chỉ này. Nếu không, tài sản của bạn có thể bị mất"
     },
+    "showAddress": "Hiển thị địa chỉ",
     "tokenSelection": {
       "title": "Chọn một đồng tiền"
     },
@@ -1046,7 +1073,7 @@
     "scanQrCode": "Quét mã QR để hoàn thành thanh toán của bạn",
     "transactionComplete": "Giao dịch hoàn thành",
     "unsupportedCurrencyError": "Đồng tiền này không được hỗ trợ ở quốc gia của bạn.",
-    "youDeposit": ""
+    "youDeposit": "Bạn nạp tiền"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1324,6 +1351,7 @@
     "confirmTransaction": "Xác nhận giao dịch này trong ứng dụng {{selectedIntegrationName}} của bạn.",
     "includeFeesMessage": "Bao gồm {{amount}} phí giao dịch",
     "networkLabel": "Mạng",
+    "pay": "Thanh toán",
     "paymentTitle": "Thanh toán {{clientName}}",
     "paymentTotalLabel": "Tổng cộng",
     "payWithLabel": "Thanh toán bằng",
@@ -1341,6 +1369,7 @@
     "transferTimeoutBody": "Vui lòng thử lại và phê duyệt yêu cầu giao dịch."
   },
   "previewTransferPageUI": {
+    "deposit": "Nạp tiền",
     "depositFromIntegration": "Nạp tiền từ {{integrationName}}",
     "depositTo": "Nạp tiền vào",
     "fee": "Bao gồm {{amount}} phí giao dịch",

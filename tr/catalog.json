@@ -178,9 +178,12 @@
     "changeCurrency": "Para birimini değiştir"
   },
   "dappDoneTransferPageUI": {
+    "almostDone": "Neredeyse bitti",
+    "depositInstructions": "Onay ve sipariş detayları için web tarayıcınızdaki {{clientName}} sayfasına geri dönün.",
     "depositSubtitle": "{{clientName}} dön",
     "depositSuccess": "Başarılı!",
     "depositTitle": "Fonlarınız yolda.",
+    "paymentInstructions": "Onay ve sipariş detayları için web tarayıcınızdaki ödeme sayfasına geri dönün.",
     "paymentSubtitle": "Siparişinizi tamamlamak için ödeme sayfanıza geri dönün",
     "paymentSuccess": "Ödeme Başarılı!"
   },
@@ -321,7 +324,7 @@
     "invalidIntegrationToken": "Oturum süresi doldu",
     "invalidToIntegrationToken": "Kimlik doğrulama süresi doldu",
     "kycRequired": "Kimlik doğrulaması gerekli",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Canlılık kontrolü gerekli",
     "locked": "Hesap kilitli",
     "mfaBindingRequired": "Çok Faktörlü Kimlik Doğrulama gerekli",
     "mfaNotSupported": "Çok Faktörlü Kimlik Doğrulama desteklenmiyor",
@@ -360,7 +363,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Para çekme geçici olarak devre dışı",
     "withdrawalLocked": "Çekim kilitli",
     "withdrawalLockedP2P": "Çekimler işlemleri devre dışı bırakıldı",
-    "withdrawalPendingDepositConfirmation": "Para çekme onay bekliyor",
+    "withdrawalPendingDepositConfirmation": "Çekme İşlemi Tamamlanamadı",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Çekim işlemi zaman aşımına uğradı"
   },
   "errorMessages": {
@@ -401,7 +404,7 @@
     "invalidPhoneNumber": "Lütfen geçerli bir telefon numarası girin.",
     "invalidToIntegrationToken": "Devam etmek için lütfen tekrar giriş yapın.",
     "kycRequired": "Transfer başlatılamıyor. Entegrasyon, kripto transferlerini etkinleştirmeden önce hesapların KYC doğrulamasını tamamlamasını gerektiriyor.",
-    "livenessCheckRequired": "",
+    "livenessCheckRequired": "Bu transferin tamamlanması için değişim uygulamasında bir canlılık kontrolü gereklidir.",
     "locked": "Hesabınız kilitlendi.",
     "loginFirst": "Lütfen önce giriş yapın.",
     "loginWithQrOrMobileLink": "Lütfen QR kodu veya Mobil bağlantı kullanarak giriş yapın.",
@@ -453,7 +456,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "Şüpheli aktivite nedeniyle çekim fonksiyonunuz devre dışı bırakıldı. Lütfen Binance'de doğrulama sürecini tamamlayın. Eğer doğrulama yapamıyorsanız, Müşteri Desteği ile iletişime geçin. Yakın zamanda doğrulama yaptıysanız lütfen bir an bekleyin ve tekrar deneyin.",
     "withdrawalLocked": "Güvenliğiniz için, hesap ayarlarında yapılan bir değişiklikten sonra 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
     "withdrawalLockedP2P": "Güvenliğiniz için, P2P alımının ardından 24 saat boyunca para çekme işlemleri devre dışı bırakılır. Lütfen daha sonra tekrar deneyin.",
-    "withdrawalPendingDepositConfirmation": "Yatırdığınız para, çekim için gerekli kilit açma onaylarını karşılamadı. Daha fazla ayrıntı için İşlem Geçmişini kontrol edin.",
+    "withdrawalPendingDepositConfirmation": "{{integrationName}} hesabınıza yapılan son para yatırma işlemi henüz tamamen yerleşmemiştir ve bu nedenle çekim için uygun değildir. Lütfen kısa bir süre sonra tekrar deneyin.",
     "withdrawalTimeoutDueToRecentFundsManipulation": "Para çekme işlemi, satın alınan veya yatırılan bir işlemden en az 48 saat sonra yapılabilir."
   },
   "errorPage": {
@@ -602,6 +605,8 @@
     "stablecoinClientTransferDisclaimerFirstLine": "{{clientName}} {{symbol}} stabilcoin ile transferleri kabul ediyor.",
     "thisMerchant": "Bu satıcı",
     "title": "Ödeme yöntemleri",
+    "titleDeposit": "Ödeme yöntemleri",
+    "titlePayment": "Ödeme yöntemleri",
     "total": "Toplam: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -986,21 +991,42 @@
     "title": "Giriş yap"
   },
   "payManual": {
+    "bridgingConstraints": {
+      "limit": "Limit: {{minLimit}} – {{maxLimit}}",
+      "slippage": "Slippage: {{slippage}}"
+    },
     "entry": {
       "depositWithQr": "QR kod ile para yatırma",
       "depositWithWalletAddress": "Cüzdan adresi ile para yatırma",
       "dontSeeYourAccount": "Hesabınızı göremiyor musunuz?",
-      "havingTrouble": "",
-      "tryAgain": "",
-      "tryWithQr": ""
+      "havingTrouble": "Sorun mu yaşıyorsunuz?",
+      "needAnotherWay": "Başka bir yöntem mi arıyorsunuz?",
+      "tryAgain": "Tekrar deneyin",
+      "tryWithQr": "Bunun yerine QR kodu ile para yatırmayı deneyin."
     },
     "error": {
       "addressNotFound": "Bir depozito adresi yükleyemedik, lütfen başka bir token veya ağ deneyin.",
       "noTokensDescription": "Şu anda yatırma işlemi için desteklenen herhangi bir token bulunmuyor.",
       "noTokensTitle": "Token yok"
     },
+    "ImportantInformationModel": {
+      "confirm": "Talimatları okuduğumu onaylıyorum",
+      "cta": "Anladım",
+      "title": "Önemli bilgi"
+    },
     "networkSelection": {
       "title": "Bir ağı seçin"
+    },
+    "onlySendTokenOnNetworkBridged": {
+      "extra": "Minimum yatırma miktarı <9>{{minimumDeposit}}</9>.",
+      "instruction": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde bu adrese gönderin. Bu adres <5>tek kullanımlık</5>.",
+      "merged": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde bu adrese gönderin. Bu adres <5>tek kullanımlık</5>. Herhangi başka bir varlık veya ağ kombinasyonu, bu adresin tekrar kullanılması veya <7>varlıkların farklı bir adrese gönderilmesi</7> fon kaybına yol açacaktır ve geri alınamaz. Minimum yatırma miktarı <9>{{minimumDeposit}}</9>.",
+      "warning": "Herhangi başka bir varlık veya ağ kombinasyonu, bu adresin tekrar kullanılması veya <7>varlıkların farklı bir adrese gönderilmesi</7> fon kaybına yol açacaktır ve geri alınamaz."
+    },
+    "onlySendTokenOnNetworkVanilla": {
+      "instruction": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin.",
+      "merged": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin. Herhangi başka bir varlık veya ağ kombinasyonu, veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz.",
+      "warning": "Herhangi başka bir varlık veya ağ kombinasyonu veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz."
     },
     "screen": {
       "beforeYouGo": "Gitmeden önce...",
@@ -1012,6 +1038,7 @@
       "tokenLabel": "Jeton",
       "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
     },
+    "showAddress": "Adresi göster",
     "tokenSelection": {
       "title": "Bir token seçin"
     },
@@ -1046,7 +1073,7 @@
     "scanQrCode": "Ödemenizi tamamlamak için QR kodunu tarayın",
     "transactionComplete": "İşlem tamamlandı",
     "unsupportedCurrencyError": "Bu para birimi ülkenizde desteklenmemektedir.",
-    "youDeposit": ""
+    "youDeposit": "Para yatırıyorsunuz"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1213,7 +1240,7 @@
       "networkFeeHint": "Bu ücret, işleminizin blockchainde doğrulanmasını ve tamamlanmasını sağlayan doğrulayıcılara yapılan ödemeyi içerir",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "showFundingMethodsAriaLabel": "ödeme yöntemlerini göster",
       "swapFee": "Otomatik değişim ücreti",
@@ -1324,6 +1351,7 @@
     "confirmTransaction": "Bu işlemi {{selectedIntegrationName}} uygulamanızda onaylayınız.",
     "includeFeesMessage": "Ücretler dahil {{amount}}",
     "networkLabel": "Ağ",
+    "pay": "Ödeme Yap",
     "paymentTitle": "{{clientName}} için ödeme yapın",
     "paymentTotalLabel": "Toplam",
     "payWithLabel": "Ödeme yöntemi",
@@ -1341,6 +1369,7 @@
     "transferTimeoutBody": "Lütfen tekrar deneyin ve işlem talebini onaylayın."
   },
   "previewTransferPageUI": {
+    "deposit": "Yatırma",
     "depositFromIntegration": "{{integrationName}} ile yatır",
     "depositTo": "Şuraya yatir:",
     "fee": "Ücretler dahil {{amount}}",
