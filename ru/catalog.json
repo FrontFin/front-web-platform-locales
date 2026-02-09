@@ -667,7 +667,7 @@
     "balanceBelowIntegrationMinimumDescription": "Ваш баланс {{currentBalance}} ниже минимального уровня {{minimumAmount}} для {{integrationName}} для перевода {{symbol}} на {{network}}. Пожалуйста, пополните свой баланс и попробуйте снова.",
     "belowMinimum": "Ниже минимального лимита {{integrationName}}",
     "insufficientBalance": "Недостаточный баланс",
-    "insufficientBalanceDescription": "Ваш баланс в {{currentBalance}} меньше, чем минимальный для этого перевода.",
+    "insufficientBalanceDescription": "Ваш баланс {{currentBalance}} меньше минимально допустимого для этой транзакции.",
     "noBalance": "Баланс недостаточен",
     "noBalancePaymentDescription": "Ваш баланс {{balance}} недостаточен для осуществления этого платежа на сумму {{amount}}. Пожалуйста, пополните баланс и попробуйте снова.",
     "noBalancePaymentSelectNetworkDescription": "Ваш баланс {{balance}} недостаточен для осуществления этого платежа на сумму {{amount}}. Пожалуйста, выберите другую сеть или пополните баланс и попробуйте снова.",
@@ -818,11 +818,13 @@
   },
   "mfaInstructionsText": {
     "email": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш email.",
-    "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот платеж.",
+    "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот платёж.",
+    "paymentFlowCoinbase": "Введите свой Coinbase одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот платёж.",
     "phone": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш телефон.",
     "totp": "Введите одноразовый код, предоставленный приложением-аутентификатором, на которое вы использовали для <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Пожалуйста, введите торговый PIN-код, связанный с вашим счетом <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот перевод.",
+    "transferFlow": "Введите свой одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот перевод.",
+    "transferFlowCoinbase": "Введите свой Coinbase одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот перевод.",
     "twoFactor": "Введите код, предоставленный двухфакторным методом аутентификации, который вы настроили в вашей учетной записи <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
@@ -1334,13 +1336,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Закрыть",
+    "completeDepositInApp": "Завершите этот депозит в приложении PayPal",
+    "completeTransferInApp": "Завершите этот перевод в приложении PayPal",
     "continue": "Перейти к {{selectedIntegrationName}}",
     "enterAmount": "Введите сумму перевода",
+    "maxAmountError": "Максимальная сумма - {{maxAmount}}",
+    "minAmountError": "Минимальная сумма - {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} не поддерживает переводы для запрошенных токенов и/или сетей.",
     "selectAnotherAccount": "Выберите другой аккаунт",
     "selectAnotherExchange": "Пожалуйста, выберите другой аккаунт или кошелек для перевода.",
     "selectNetwork": "Выберите сеть для перевода",
     "title": "Выберите актив для перевода"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "title": "Продолжите в окне PayPal",
+    "reopenButton": "Откройте снова PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Аккаунт",

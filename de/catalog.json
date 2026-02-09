@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "Gib den Einmalcode ein, den <2>{{selectedIntegrationName}}</2> dir per E-Mail gesendet hat.",
     "paymentFlow": "Gib deinen Einmalcode ein, um zu bestätigen, dass es wirklich du bist, der diese Zahlung initiieren will.",
+    "paymentFlowCoinbase": "Gib deinen CoinBase-Einmalcode ein, um zu bestätigen, dass es wirklich du bist, der diese Zahlung initiieren will.",
     "phone": "Gib den Einmalcode ein, den <2>{{selectedIntegrationName}}</2> dir per SMS an dein Telefon gesendet hat.",
     "totp": "Gib den Einmalcode ein, der von der Authentifizierungs-App bereitgestellt wurde, die du mit <1>{{selectedIntegrationName}}</1> verknüpft hast.",
     "tradingPin": "Bitte gib den Handels-PIN-Code ein, der mit deinem <2>{{selectedIntegrationName}}</2>-Konto verknüpft ist.",
     "transferFlow": "Gib den Einmalcode ein, um zu bestätigen, dass es wirklich du bist, der diese Überweisung initiieren will.",
+    "transferFlowCoinbase": "Gib den CoinBase-Einmalcode ein, um zu bestätigen, dass es wirklich du bist, der diese Überweisung initiieren will.",
     "twoFactor": "Gib den bereitgestellten Code der Zwei-Faktor-Authentifizierungsmethode ein, die du in deinem <1>{{selectedIntegrationName}}</1>-Konto konfiguriert hast."
   },
   "mfaPage": {
@@ -1334,13 +1336,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Schließen",
+    "completeDepositInApp": "Du wirst diese Einzahlung in deiner PayPal-App abschließen",
+    "completeTransferInApp": "Du wirst diese Überweisung in deiner PayPal-App abschließen",
     "continue": "Weiter zu {{selectedIntegrationName}}",
     "enterAmount": "Überweisungsbetrag eingeben",
+    "maxAmountError": "Der Höchstbetrag beträgt {{maxAmount}}",
+    "minAmountError": "Der Mindestbetrag beträgt {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} unterstützt keine Überweisungen für die Tokens und/oder angeforderten Netzwerke.",
     "selectAnotherAccount": "Wähle ein anderes Konto aus",
     "selectAnotherExchange": "Bitte wähle eine andere Börse oder Wallet, für die Einzahlung.",
     "selectNetwork": "Überweisungsnetzwerk wählen",
     "title": "Zu übertragendes Asset auswählen"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "title": "Fahre im PayPal-Fenster fort",
+    "reopenButton": "PayPal erneut öffnen"
   },
   "previewPageUI": {
     "accountLabel": "Konto",

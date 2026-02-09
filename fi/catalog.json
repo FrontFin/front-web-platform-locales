@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "Syötä kertakäyttökoodi, jonka <2>{{selectedIntegrationName}}</2> on lähettänyt sähköpostiisi.",
     "paymentFlow": "Syötä kertakäyttökoodi varmistaaksesi, että olet todella aloittamassa tätä maksua.",
+    "paymentFlowCoinbase": "Syötä Coinbase-kertakäyttökoodi varmistaaksesi, että olet todella aloittamassa tätä maksua.",
     "phone": "Syötä kertakäyttökoodi, jonka <2>{{selectedIntegrationName}}</2> on lähettänyt puhelimeesi.",
     "totp": "Syötä kertakäyttökoodi, jonka <1>{{selectedIntegrationName}}</1>iin liitetty todennussovellus on antanut.",
     "tradingPin": "Syötä <2>{{selectedIntegrationName}}</2> -tiliisi liittetty kaupankäynnin PIN-koodi.",
     "transferFlow": "Syötä kertakäyttökoodi varmistaaksesi, että olet todella aloittamassa tätä siirtoa.",
+    "transferFlowCoinbase": "Syötä Coinbase-kertakäyttökoodi varmistaaksesi, että olet todella aloittamassa tätä siirtoa.",
     "twoFactor": "Syötä koodi, jonka <1>{{selectedIntegrationName}}</1> -tilillesi määritelty kaksivaiheinen tunnistautumistapa on antanut."
   },
   "mfaPage": {
@@ -1334,13 +1336,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Sulje",
+    "completeDepositInApp": "Viimeistelet talletuksen PayPal-sovelluksessasi",
+    "completeTransferInApp": "Viimeistelet siirron PayPal-sovelluksessasi",
     "continue": "Jatka {{selectedIntegrationName}}iin",
     "enterAmount": "Syötä siirron määrä",
+    "maxAmountError": "Suurin sallittu summa on {{maxAmount}}",
+    "minAmountError": "Pienin sallittu summa on {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} ei tue pyydettyjen tokenien ja/tai verkkojen siirtoja.",
     "selectAnotherAccount": "Valitse toinen tili",
     "selectAnotherExchange": "Valitse toinen pörssi tai lompakko talletusta varten.",
     "selectNetwork": "Valitse siirtoverkko",
     "title": "Valitse siirrettävä omaisuus"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "title": "Jatka PayPal-ikkunassa",
+    "reopenButton": "Avaa PayPal uudelleen"
   },
   "previewPageUI": {
     "accountLabel": "Tili",

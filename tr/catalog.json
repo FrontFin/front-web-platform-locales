@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "<2>{{selectedIntegrationName}}</2> tarafından e-postanıza gönderilen tek seferlik kodu girin.",
     "paymentFlow": "Bu ödemeyi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
+    "paymentFlowCoinbase": "Bu ödemeyi gerçekten sizin başlattığınızı doğrulamak için Coinbase tek seferlik kodunuzu girin.",
     "phone": "<2>{{selectedIntegrationName}}</2> tarafından telefonunuza gönderilen tek seferlik kodu girin.",
     "totp": "<1>{{selectedIntegrationName}}</1> ile bağladığınız doğrulayıcı uygulamanın sağladığı tek seferlik kodu girin.",
     "tradingPin": "Lütfen <2>{{selectedIntegrationName}}</2> hesabınızla ilişkili işlem PIN kodunu giriniz.",
     "transferFlow": "Bu transferi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
+    "transferFlowCoinbase": "Bu transferi gerçekten sizin başlattığınızı doğrulamak için Coinbase tek seferlik kodunuzu girin.",
     "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu girin."
   },
   "mfaPage": {
@@ -1240,7 +1242,7 @@
       "networkFeeHint": "Bu ücret, işleminizin blockchainde doğrulanmasını ve tamamlanmasını sağlayan doğrulayıcılara yapılan ödemeyi içerir",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık sık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "showFundingMethodsAriaLabel": "ödeme yöntemlerini göster",
       "swapFee": "Otomatik değişim ücreti",
@@ -1334,13 +1336,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Kapat",
+    "completeDepositInApp": "Bu para yatırma işlemini PayPal uygulamanızda tamamlayacaksınız",
+    "completeTransferInApp": "Bu transfer işlemini PayPal uygulamanızda tamamlayacaksınız",
     "continue": "{{selectedIntegrationName}}'e devam edin",
     "enterAmount": "Transfer tutarını girin",
+    "maxAmountError": "Maksimum tutar {{maxAmount}}",
+    "minAmountError": "Minimum tutar {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
     "selectAnotherAccount": "Başka bir hesap seçin",
     "selectAnotherExchange": "Lütfen para yatırmak için başka bir borsa veya cüzdan seçin.",
     "selectNetwork": "Transfer ağını seçin",
     "title": "Transfer edilecek varlığı seçin"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "title": "PayPal penceresinde devam edin",
+    "reopenButton": "PayPal'ı tekrar aç"
   },
   "previewPageUI": {
     "accountLabel": "Hesap",

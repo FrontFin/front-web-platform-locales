@@ -818,11 +818,13 @@
   },
   "mfaInstructionsText": {
     "email": "Digita o código único que <2>{{selectedIntegrationName}}</2> enviou para o seu e-mail.",
-    "paymentFlow": "Insire o teu código único para confirmar que realmente és tu a iniciar este pagamento.",
+    "paymentFlow": "Digite o seu código único para confirmar que realmente é você iniciando este pagamento.",
+    "paymentFlowCoinbase": "Digite o seu código único Coinbase para confirmar que realmente é você iniciando este pagamento.",
     "phone": "Insere o código único que <2>{{selectedIntegrationName}}</2> enviamos para o teu telefone.",
     "totp": "Insere o código único fornecido pela app autenticador que vinculaste a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Por favor, introduz o teu PIN de negociação associado à tua conta <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Insire o teu código único para confirmar que realmente é você iniciando esta transferência.",
+    "transferFlow": "Digite o seu código único para confirmar que realmente é você iniciando esta transferência.",
+    "transferFlowCoinbase": "Digite o seu código único Coinbase para confirmar que realmente é você iniciando esta transferência.",
     "twoFactor": "Digita o código fornecido pelo método de autenticação de dois fatores configurado na tua conta <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
@@ -1334,13 +1336,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Fechar",
+    "completeDepositInApp": "Vai completar este depósito na sua aplicação do PayPal",
+    "completeTransferInApp": "Vai completar esta transferência na sua aplicação do PayPal",
     "continue": "Continuar para {{selectedIntegrationName}}",
     "enterAmount": "Inserir o valor da transferência",
+    "maxAmountError": "A quantidade máxima é {{maxAmount}}",
+    "minAmountError": "A quantidade mínima é {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} não suporta transferências para os tokens e/ou redes solicitadas.",
     "selectAnotherAccount": "Seleciona outra conta",
     "selectAnotherExchange": "Por favor, seleciona outro câmbio ou carteira para depósito.",
     "selectNetwork": "Seleciona a rede de transferência",
     "title": "Seleciona o ativo a ser transferido"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "title": "Continuar na janela do PayPal",
+    "reopenButton": "Reabrir o PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Conta",

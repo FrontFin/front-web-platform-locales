@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "Nhập mã dùng một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến email của bạn.",
     "paymentFlow": "Nhập mã dùng một lần để xác nhận chính bạn đang thực hiện thanh toán.",
+    "paymentFlowCoinbase": "Nhập mã Coinbase dùng một lần để xác nhận chính bạn đang thực hiện thanh toán.",
     "phone": "Nhập mã một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến điện thoại của bạn.",
     "totp": "Nhập mã một lần do ứng dụng xác thực mà bạn đã liên kết với <1>{{selectedIntegrationName}}</1> cung cấp.",
     "tradingPin": "Vui lòng nhập mã PIN giao dịch liên kết với tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
     "transferFlow": "Nhập mã xác thực một lần để xác nhận bạn là người thực hiện giao dịch này.",
+    "transferFlowCoinbase": "Nhập mã Coinbase xác thực một lần để xác nhận bạn là người thực hiện giao dịch này.",
     "twoFactor": "Nhập mã do ứng dụng xác thực mà bạn đã cấu hình trong tài khoản <1>{{selectedIntegrationName}}</1> cung cấp."
   },
   "mfaPage": {
@@ -1334,13 +1336,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Đóng",
+    "completeDepositInApp": "Bạn sẽ hoàn tất khoản nạp này trong ứng dụng PayPal của mình",
+    "completeTransferInApp": "Bạn sẽ hoàn tất chuyển khoản này trong ứng dụng PayPal của mình",
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
+    "maxAmountError": "Số tiền tối đa là {{maxAmount}}",
+    "minAmountError": "Số tiền tối thiểu là {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherExchange": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền.",
     "selectNetwork": "Chọn mạng chuyển tiền",
     "title": "Chọn tài sản để giao dịch"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "title": "Tiếp tục trên cửa sổ PayPal",
+    "reopenButton": "Mở lại PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",
