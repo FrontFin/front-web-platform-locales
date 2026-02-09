@@ -667,7 +667,7 @@
     "balanceBelowIntegrationMinimumDescription": "आपकी {{currentBalance}} शेष राशि {{network}} पर {{symbol}} स्थानांतरित करने के लिए {{integrationName}} न्यूनतम {{minimumAmount}} से कम है। कृपया अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
     "belowMinimum": "{{integrationName}} के न्यूनतम से कम",
     "insufficientBalance": "अपर्याप्त शेष राशि",
-    "insufficientBalanceDescription": "Your {{currentBalance}} balance is less than the minimum for this transfer.",
+    "insufficientBalanceDescription": "आपका {{currentBalance}} शेष राशि इस स्थानांतरण के लिए न्यूनतम से कम है।",
     "noBalance": "कोई बैलेंस नहीं",
     "noBalancePaymentDescription": "आपकी {{balance}} शेष राशि इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
     "noBalancePaymentSelectNetworkDescription": "आपकी {{balance}} शेष राशि इस {{amount}} का भुगतान करने के लिए अपर्याप्त है। कृपया एक अलग नेटवर्क का चयन करें, या अपनी शेष राशि बढ़ाएँ और पुनः प्रयास करें।",
@@ -818,11 +818,13 @@
   },
   "mfaInstructionsText": {
     "email": "एक-बार उपयोग करने वाला कोड दर्ज करें जो <2>{{selectedIntegrationName}}</2> ने आपके ईमेल पर भेजा है।",
-    "paymentFlow": "इस भुगतान की पुष्टि के लिए अपना वन-टाइम कोड दर्ज करें ताकि यह सुनिश्चित किया जा सके कि वास्तव में आप ही इसे प्रारंभ कर रहे हैं।",
+    "paymentFlow": "अपना एक-बार कोड दर्ज करें ताकि यह पुष्टि हो सके कि यह आप ही हैं जो इस भुगतान की प्रक्रिया शुरू कर रहे हैं।",
+    "paymentFlowCoinbase": "अपना एक-बार Coinbase कोड दर्ज करें ताकि यह पुष्टि हो सके कि यह आप ही हैं जो इस भुगतान की प्रक्रिया शुरू कर रहे हैं।",
     "phone": "अपने फोन पर <2>{{selectedIntegrationName}}</2> से भेजे गए वन-टाइम कोड को दर्ज करें।",
     "totp": "अपने <1>{{selectedIntegrationName}}</1> से लिंक किए गए प्रमाणक ऐप द्वारा प्रदान किए गए वन-टाइम कोड को दर्ज करें।",
     "tradingPin": "कृपया अपने <2>{{selectedIntegrationName}}</2> खाते से जुड़े ट्रेडिंग पिन कोड दर्ज करें।",
-    "transferFlow": "इस हस्तांतरण की पुष्टि के लिए अपना वन-टाइम कोड दर्ज करें ताकि यह सुनिश्चित किया जा सके कि वास्तव में आप ही इसे प्रारंभ कर रहे हैं।",
+    "transferFlow": "कृपया अपना एक-बार कोड दर्ज करें यह पुष्टि करने के लिए कि आप ही हैं जो इस हस्तांतरण को शुरू कर रहे हैं।",
+    "transferFlowCoinbase": "कृपया अपना एक-बार Coinbase कोड दर्ज करें यह पुष्टि करने के लिए कि आप ही हैं जो इस हस्तांतरण को शुरू कर रहे हैं।",
     "twoFactor": "कृपया अपने <1>{{selectedIntegrationName}}</1> खाते में आपके द्वारा कॉन्फ़िगर की गई दो-कारक प्रमाणीकरण विधि द्वारा प्रदान किए गए कोड को दर्ज करें।"
   },
   "mfaPage": {
