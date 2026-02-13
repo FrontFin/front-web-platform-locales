@@ -997,6 +997,19 @@
       "limit": "制限: {{minLimit}} から {{maxLimit}} まで",
       "slippage": "スリッページ: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "橋の通行料:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "スリッページ最大 0.5% • かかる時間 < 1 分",
+      "collapsedVanilla": "コスト 0.0%; かかる時間 < 1 分",
+      "networkFee": "ネットワーク料金:",
+      "networkFeeValue": "可変",
+      "processingTime": "処理時間:",
+      "processingTimeValue": "< 1 分",
+      "slippage": "スリッページ:",
+      "slippageValue": "最大 0.5%",
+      "title": "詳細"
+    },
     "entry": {
       "depositWithQr": "QR コードで入金",
       "depositWithWalletAddress": "ウォレットアドレスで入金",
@@ -1030,14 +1043,34 @@
       "merged": "<3>{{network}}</3> ネットワークで <1>{{token}}</1> のみを送信してください。その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。",
       "warning": "その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。"
     },
+    "requirements": {
+      "addressOneTimeUse": "Single-use address",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Send only {{token}} on {{network}} • Address is single-use • Limit: $2 - $500,000",
+      "collapsedFallback": "Ensure all requirements are met.",
+      "collapsedWithoutTag": "Send only {{token}} on {{network}}; Address is single-use",
+      "collapsedWithTag": "Send only {{token}} on {{network}}; Address is single-use; Include transfer {{tagLabel}}",
+      "includeInTransaction": "Include transfer {{tagLabel}} with deposit",
+      "sendOnlyTokenOnNetwork": "Send only {{token}} on {{network}}",
+      "title": "Requirements",
+      "warningText": "Ensure all requirements are met or your funds may be permanently lost."
+    },
     "screen": {
+      "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
+      "chooseOne": "Choose one",
       "copyWalletAddress": "ウォレットアドレスをコピー",
+      "depositTitle": "Deposit {{token}} on {{network}}",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
+      "memoLabel": "Memo",
       "networkLabel": "ネットワーク",
+      "stepChooseNetwork": "2. Choose a network",
+      "stepChooseToken": "1. Choose a token",
       "subtitle": "手動でも入金を完了できます",
+      "tagLabel": "Tag",
       "tokenLabel": "トークン",
+      "tokenPlaceholder": "トークン",
       "warning": "このアドレスには{{network}}上の{{token}}のみを送金してください。誤って送金した場合、資産が失われる可能性があります"
     },
     "showAddress": "住所を表示",
@@ -1349,8 +1382,8 @@
     "title": "送金する資産を選択"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "PayPal ウィンドウで続行してください",
-    "reopenButton": "PayPal を再度開く"
+    "reopenButton": "PayPal を再度開く",
+    "title": "PayPal ウィンドウで続行してください"
   },
   "previewPageUI": {
     "accountLabel": "アカウント",
