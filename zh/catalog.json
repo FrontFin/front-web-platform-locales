@@ -997,6 +997,19 @@
       "limit": "限制：{{minLimit}} – {{maxLimit}}",
       "slippage": "滑点：{{slippage}}"
     },
+    "details": {
+      "bridgeFee": "桥梁费用：",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "最大滑点 0.5% • 用时 < 1 分钟",
+      "collapsedVanilla": "费用 0.0%; 用时 < 1 分钟",
+      "networkFee": "网络费用：",
+      "networkFeeValue": "浮动",
+      "processingTime": "处理时间：",
+      "processingTimeValue": "< 1 分钟",
+      "slippage": "滑点：",
+      "slippageValue": "最多 0.5%",
+      "title": "详情"
+    },
     "entry": {
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址进行充值",
@@ -1030,14 +1043,34 @@
       "merged": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。",
       "warning": "若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。"
     },
+    "requirements": {
+      "addressOneTimeUse": "一次性使用地址",
+      "bridgingLimit": "限额: $2 - $500,000",
+      "collapsedBridging": "仅发送 {{token}} 于 {{network}} • 地址为一次性使用 • 限额: $2 - $500,000",
+      "collapsedFallback": "确保满足所有要求。",
+      "collapsedWithoutTag": "仅发送 {{token}} 于 {{network}}; 地址为一次性使用",
+      "collapsedWithTag": "仅发送 {{token}} 于 {{network}}; 地址为一次性使用; 包含传输 {{tagLabel}}",
+      "includeInTransaction": "随存款一起包含转账 {{tagLabel}}",
+      "sendOnlyTokenOnNetwork": "仅发送 {{token}} 于 {{network}}",
+      "title": "要求",
+      "warningText": "确保满足所有要求，否则资金可能会永久丢失。"
+    },
     "screen": {
+      "addressLabel": "钱包地址",
       "beforeYouGo": "在您离开之前...",
+      "chooseOne": "选择一个",
       "copyWalletAddress": "复制钱包地址",
+      "depositTitle": "在{{network}}上充值{{token}}",
       "depositToClient": "给{{clientName}}充值",
       "downloadQr": "下载二维码",
+      "memoLabel": "备注",
       "networkLabel": "网络",
+      "stepChooseNetwork": "2. 选择一个网络",
+      "stepChooseToken": "1. 选择一个代币",
       "subtitle": "您仍可以手动完成您的存款。",
+      "tagLabel": "标签",
       "tokenLabel": "代币",
+      "tokenPlaceholder": "代币",
       "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
     },
     "showAddress": "显示地址",
@@ -1349,8 +1382,8 @@
     "title": "选择要转账的资产"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "前往PayPal窗口继续",
-    "reopenButton": "重新打开PayPal"
+    "reopenButton": "重新打开PayPal",
+    "title": "前往PayPal窗口继续"
   },
   "previewPageUI": {
     "accountLabel": "账户",
