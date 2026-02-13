@@ -818,12 +818,12 @@
   },
   "mfaInstructionsText": {
     "email": "एक-बार उपयोग करने वाला कोड दर्ज करें जो <2>{{selectedIntegrationName}}</2> ने आपके ईमेल पर भेजा है।",
-    "paymentFlow": "अपना एक-बार कोड दर्ज करें ताकि यह पुष्टि हो सके कि यह आप ही हैं जो इस भुगतान की प्रक्रिया शुरू कर रहे हैं।",
+    "paymentFlow": "इस भुगतान की पुष्टि के लिए अपना वन-टाइम कोड दर्ज करें ताकि यह सुनिश्चित किया जा सके कि वास्तव में आप ही इसे प्रारंभ कर रहे हैं।",
     "paymentFlowCoinbase": "अपना एक-बार Coinbase कोड दर्ज करें ताकि यह पुष्टि हो सके कि यह आप ही हैं जो इस भुगतान की प्रक्रिया शुरू कर रहे हैं।",
     "phone": "अपने फोन पर <2>{{selectedIntegrationName}}</2> से भेजे गए वन-टाइम कोड को दर्ज करें।",
     "totp": "अपने <1>{{selectedIntegrationName}}</1> से लिंक किए गए प्रमाणक ऐप द्वारा प्रदान किए गए वन-टाइम कोड को दर्ज करें।",
     "tradingPin": "कृपया अपने <2>{{selectedIntegrationName}}</2> खाते से जुड़े ट्रेडिंग पिन कोड दर्ज करें।",
-    "transferFlow": "कृपया अपना एक-बार कोड दर्ज करें यह पुष्टि करने के लिए कि आप ही हैं जो इस हस्तांतरण को शुरू कर रहे हैं।",
+    "transferFlow": "इस हस्तांतरण की पुष्टि के लिए अपना वन-टाइम कोड दर्ज करें ताकि यह सुनिश्चित किया जा सके कि वास्तव में आप ही इसे प्रारंभ कर रहे हैं।",
     "transferFlowCoinbase": "कृपया अपना एक-बार Coinbase कोड दर्ज करें यह पुष्टि करने के लिए कि आप ही हैं जो इस हस्तांतरण को शुरू कर रहे हैं।",
     "twoFactor": "कृपया अपने <1>{{selectedIntegrationName}}</1> खाते में आपके द्वारा कॉन्फ़िगर की गई दो-कारक प्रमाणीकरण विधि द्वारा प्रदान किए गए कोड को दर्ज करें।"
   },
@@ -997,6 +997,19 @@
       "limit": "सीमा: {{minLimit}} – {{maxLimit}}",
       "slippage": "फिसलन: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "पुल शुल्क:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "अधिकतम फिसलन 0.5% • < 1 मिनट लगते हैं",
+      "collapsedVanilla": "लागत 0.0%; < 1 मिनट में लेता है",
+      "networkFee": "नेटवर्क शुल्क:",
+      "networkFeeValue": "चर",
+      "processingTime": "प्रसंस्करण समय:",
+      "processingTimeValue": "< 1 मिनट",
+      "slippage": "फिसलन:",
+      "slippageValue": "0.5% तक",
+      "title": "विवरण"
+    },
     "entry": {
       "depositWithQr": "क्यूआर कोड से जमा करें",
       "depositWithWalletAddress": "वॉलेट एड्रेस के साथ जमा करें",
@@ -1030,14 +1043,34 @@
       "merged": "केवल <1>{{token}}</1> को <3>{{network}}</3> नेटवर्क पर भेजें। किसी अन्य संपत्ति या नेटवर्क संयोजन, या <5>किसी अन्य पते पर संपत्ति भेजने</5> से धन का नुकसान हो सकता है और यह पुनर्प्राप्त नहीं किया जा सकेगा।",
       "warning": "किसी अन्य संपत्ति या नेटवर्क संयोजन, या <5>किसी अन्य पते पर संपत्ति भेजने</5> से धन का नुकसान होगा और इसे पुनर्प्राप्त नहीं किया जा सकेगा।"
     },
+    "requirements": {
+      "addressOneTimeUse": "एक बार उपयोग के लिए पता",
+      "bridgingLimit": "सीमा: $2 - $500,000",
+      "collapsedBridging": "केवल {{token}} को {{network}} पर भेजें • पता एक बार उपयोग का है • सीमा: $2 - $500,000",
+      "collapsedFallback": "सुनिश्चित करें कि सभी आवश्यकताएँ पूरी हो गई हैं।",
+      "collapsedWithoutTag": "केवल {{token}} को {{network}} पर भेजें; पता एक बार उपयोग का है",
+      "collapsedWithTag": "केवल {{token}} को {{network}} पर भेजें; पता एक बार उपयोग का है; ट्रांसफर में {{tagLabel}} शामिल करें",
+      "includeInTransaction": "जमा के साथ ट्रांसफर {{tagLabel}} शामिल करें",
+      "sendOnlyTokenOnNetwork": "केवल {{token}} को {{network}} पर भेजें",
+      "title": "आवश्यकताएं",
+      "warningText": "सुनिश्चित करें कि सभी आवश्यकताएँ पूरी हो चुकी हैं या आपके फंड स्थायी रूप से खो सकते हैं।"
+    },
     "screen": {
+      "addressLabel": "पता",
       "beforeYouGo": "जाने से पहले...",
+      "chooseOne": "एक चुनें",
       "copyWalletAddress": "वॉलेट पता कॉपी करें",
+      "depositTitle": "{{token}} को {{network}} पर जमा करें",
       "depositToClient": "{{clientName}} में जमा करें",
       "downloadQr": "क्यूआर कोड डाउनलोड करें",
+      "memoLabel": "ज्ञापन",
       "networkLabel": "नेटवर्क",
+      "stepChooseNetwork": "2. नेटवर्क चुनें",
+      "stepChooseToken": "1. एक टोकन चुनें",
       "subtitle": "आप अभी भी अपना जमा मैन्युअल रूप से पूरा कर सकते हैं",
+      "tagLabel": "टैग",
       "tokenLabel": "टोकन",
+      "tokenPlaceholder": "टोकन",
       "warning": "केवल {{network}} पर {{token}} का ही इस पते पर स्थानांतरण करें - अन्यथा आपकी संपत्तियाँ खो सकती हैं"
     },
     "showAddress": "पता दिखाएँ",
@@ -1349,8 +1382,8 @@
     "title": "स्थानांतरण के लिए संपत्ति चुनें"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "PayPal विंडो पर जारी रखें",
-    "reopenButton": "PayPal को फिर से खोलें"
+    "reopenButton": "PayPal को फिर से खोलें",
+    "title": "PayPal विंडो पर जारी रखें"
   },
   "previewPageUI": {
     "accountLabel": "खाता",
