@@ -997,6 +997,19 @@
       "limit": "Limit: {{minLimit}} – {{maxLimit}}",
       "slippage": "Slippage: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Köprü ücreti:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "Maksimum kayma 0.5% • < 1 dk sürer",
+      "collapsedVanilla": "Maliyet 0.0%; < 1 dk sürer",
+      "networkFee": "Ağ ücreti:",
+      "networkFeeValue": "değişken",
+      "processingTime": "İşlem süresi:",
+      "processingTimeValue": "< 1 dk",
+      "slippage": "Kayma:",
+      "slippageValue": "0.5%'e kadar",
+      "title": "Ayrıntılar"
+    },
     "entry": {
       "depositWithQr": "QR kod ile para yatırma",
       "depositWithWalletAddress": "Cüzdan adresi ile para yatırma",
@@ -1030,14 +1043,34 @@
       "merged": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin. Herhangi başka bir varlık veya ağ kombinasyonu, veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz.",
       "warning": "Herhangi başka bir varlık veya ağ kombinasyonu veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz."
     },
+    "requirements": {
+      "addressOneTimeUse": "Tek kullanımlık adres",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Sadece {{token}} {{network}} üzerinde gönderin • Adres tek seferlik kullanılacaktır • Limit: $2 - $500,000",
+      "collapsedFallback": "Tüm gereksinimlerin karşılandığından emin olun.",
+      "collapsedWithoutTag": "Sadece {{token}} {{network}} üzerinde gönderin; Adres tek seferlik kullanılacaktır",
+      "collapsedWithTag": "Sadece {{token}} {{network}} üzerinde gönderin; Adres tek seferlik kullanılacaktır; Transfer {{tagLabel}} dahil edin",
+      "includeInTransaction": "Transfer ile birlikte {{tagLabel}}'i dahil edin",
+      "sendOnlyTokenOnNetwork": "Sadece {{token}} {{network}} üzerinde gönderin",
+      "title": "Gereksinimler",
+      "warningText": "Tüm gereksinimlerin karşılandığından emin olun, aksi takdirde fonlarınız kalıcı olarak kaybolabilir."
+    },
     "screen": {
+      "addressLabel": "Adres",
       "beforeYouGo": "Gitmeden önce...",
+      "chooseOne": "Birini seçin",
       "copyWalletAddress": "Cüzdan adresini kopyala",
+      "depositTitle": "Sorun mu yaşıyorsun?",
       "depositToClient": "{{clientName}}'e para yatır ",
       "downloadQr": "QR kodunu indir",
+      "memoLabel": "Not",
       "networkLabel": "Ağ",
+      "stepChooseNetwork": "2. Bir ağı seçin",
+      "stepChooseToken": "1. Bir token seçin",
       "subtitle": "Para yatırma işleminizi manuel olarak tamamlayabilirsiniz.",
+      "tagLabel": "Etiket",
       "tokenLabel": "Jeton",
+      "tokenPlaceholder": "Jeton",
       "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
     },
     "showAddress": "Adresi göster",
@@ -1349,8 +1382,8 @@
     "title": "Transfer edilecek varlığı seçin"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "PayPal penceresinde devam edin",
-    "reopenButton": "PayPal'ı tekrar aç"
+    "reopenButton": "PayPal'ı tekrar aç",
+    "title": "PayPal penceresinde devam edin"
   },
   "previewPageUI": {
     "accountLabel": "Hesap",
