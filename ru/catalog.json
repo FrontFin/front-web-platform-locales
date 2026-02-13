@@ -667,7 +667,7 @@
     "balanceBelowIntegrationMinimumDescription": "Ваш баланс {{currentBalance}} ниже минимального уровня {{minimumAmount}} для {{integrationName}} для перевода {{symbol}} на {{network}}. Пожалуйста, пополните свой баланс и попробуйте снова.",
     "belowMinimum": "Ниже минимального лимита {{integrationName}}",
     "insufficientBalance": "Недостаточный баланс",
-    "insufficientBalanceDescription": "Ваш баланс {{currentBalance}} меньше минимально допустимого для этой транзакции.",
+    "insufficientBalanceDescription": "Ваш баланс в {{currentBalance}} меньше, чем минимальный для этого перевода.",
     "noBalance": "Баланс недостаточен",
     "noBalancePaymentDescription": "Ваш баланс {{balance}} недостаточен для осуществления этого платежа на сумму {{amount}}. Пожалуйста, пополните баланс и попробуйте снова.",
     "noBalancePaymentSelectNetworkDescription": "Ваш баланс {{balance}} недостаточен для осуществления этого платежа на сумму {{amount}}. Пожалуйста, выберите другую сеть или пополните баланс и попробуйте снова.",
@@ -818,12 +818,12 @@
   },
   "mfaInstructionsText": {
     "email": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш email.",
-    "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот платёж.",
+    "paymentFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот платеж.",
     "paymentFlowCoinbase": "Введите свой Coinbase одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот платёж.",
     "phone": "Введите одноразовый код, который <2>{{selectedIntegrationName}}</2> отправил на ваш телефон.",
     "totp": "Введите одноразовый код, предоставленный приложением-аутентификатором, на которое вы использовали для <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Пожалуйста, введите торговый PIN-код, связанный с вашим счетом <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Введите свой одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот перевод.",
+    "transferFlow": "Введите свой одноразовый код, чтобы подтвердить, что вы действительно инициировали этот перевод.",
     "transferFlowCoinbase": "Введите свой Coinbase одноразовый код, чтобы подтвердить, что это действительно вы инициируете этот перевод.",
     "twoFactor": "Введите код, предоставленный двухфакторным методом аутентификации, который вы настроили в вашей учетной записи <1>{{selectedIntegrationName}}</1>."
   },
@@ -997,6 +997,19 @@
       "limit": "Предел: {{minLimit}} – {{maxLimit}}",
       "slippage": "Скользящий: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Плата за мост:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "Максимальное проскальзывание 0.5% • Занимает менее 1 мин",
+      "collapsedVanilla": "Стоимость 0.0%; Занимает менее 1 мин",
+      "networkFee": "Плата за сеть:",
+      "networkFeeValue": "переменная",
+      "processingTime": "Время обработки:",
+      "processingTimeValue": "< 1 мин",
+      "slippage": "Проскальзывание:",
+      "slippageValue": "до 0.5%",
+      "title": "Подробности"
+    },
     "entry": {
       "depositWithQr": "Депозит через QR-код",
       "depositWithWalletAddress": "Пополните по адресу электронного кошелька",
@@ -1030,14 +1043,34 @@
       "merged": "Отправляйте только <1>{{token}}</1> в сети <3>{{network}}</3>. Любое другое сочетание актива или сети, или <5>отправка активов на другой адрес</5>, приведет к потере средств и будет невосстановимо.",
       "warning": "Любое другое сочетание актива или сети, или <5>отправка активов на другой адрес</5>, приведет к потере средств и будет невосстановимо."
     },
+    "requirements": {
+      "addressOneTimeUse": "Одноразовый адрес",
+      "bridgingLimit": "Лимит: $2 - $500,000",
+      "collapsedBridging": "Отправляйте только {{token}} через {{network}} • Адрес одноразовый • Лимит: $2 - $500,000",
+      "collapsedFallback": "Убедитесь, что все требования выполнены.",
+      "collapsedWithoutTag": "Отправляйте только {{token}} через {{network}}; адрес одноразовый",
+      "collapsedWithTag": "Отправляйте только {{token}} через {{network}}; адрес одноразовый; Укажите передачу {{tagLabel}}",
+      "includeInTransaction": "Укажите передачу {{tagLabel}} с депозитом",
+      "sendOnlyTokenOnNetwork": "Отправляйте только {{token}} через {{network}}",
+      "title": "Требования",
+      "warningText": "Убедитесь, что все требования выполнены, иначе ваши средства могут быть безвозвратно утеряны."
+    },
     "screen": {
+      "addressLabel": "Адрес",
       "beforeYouGo": "Прежде чем уйти...",
+      "chooseOne": "Выберите один",
       "copyWalletAddress": "Скопировать адрес электронного кошелька",
+      "depositTitle": "Депозит {{token}} через {{network}}",
       "depositToClient": "Депозит на {{clientName}}",
       "downloadQr": "Скачать QR-код",
+      "memoLabel": "Примечание",
       "networkLabel": "Сеть",
+      "stepChooseNetwork": "2. Выберите сеть",
+      "stepChooseToken": "1. Выберите токен",
       "subtitle": "Вы можете завершить депозит вручную.",
+      "tagLabel": "Тег",
       "tokenLabel": "Токен",
+      "tokenPlaceholder": "Токен",
       "warning": "Переводите только {{token}} по сети {{network}} на этот адрес, иначе ваши средства могут быть утеряны"
     },
     "showAddress": "Показать адрес",
@@ -1349,8 +1382,8 @@
     "title": "Выберите актив для перевода"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Продолжите в окне PayPal",
-    "reopenButton": "Откройте снова PayPal"
+    "reopenButton": "Откройте снова PayPal",
+    "title": "Продолжите в окне PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Аккаунт",
