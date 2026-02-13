@@ -997,6 +997,19 @@
       "limit": "Giới hạn: {{minLimit}} – {{maxLimit}}",
       "slippage": "Độ trượt: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Phí cầu:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "Độ trượt tối đa 0.5% • Mất < 1 phút",
+      "collapsedVanilla": "Chi phí 0.0%; Mất < 1 phút",
+      "networkFee": "Phí mạng:",
+      "networkFeeValue": "biến đổi",
+      "processingTime": "Thời gian xử lý:",
+      "processingTimeValue": "< 1 phút",
+      "slippage": "Độ trượt giá:",
+      "slippageValue": "tối đa 0.5%",
+      "title": "Chi tiết"
+    },
     "entry": {
       "depositWithQr": "Nạp tiền bằng mã QR",
       "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
@@ -1030,14 +1043,34 @@
       "merged": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>. Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi.",
       "warning": "Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi."
     },
+    "requirements": {
+      "addressOneTimeUse": "Địa chỉ sử dụng một lần",
+      "bridgingLimit": "Giới hạn: $2 - $500,000",
+      "collapsedBridging": "Chỉ gửi {{token}} trên {{network}} • Địa chỉ sử dụng một lần • Giới hạn: $2 - $500,000",
+      "collapsedFallback": "Đảm bảo tất cả các yêu cầu được đáp ứng.",
+      "collapsedWithoutTag": "Chỉ gửi {{token}} trên {{network}}; Địa chỉ sử dụng một lần",
+      "collapsedWithTag": "Chỉ gửi {{token}} trên {{network}}; Địa chỉ sử dụng một lần; Bao gồm {{tagLabel}} chuyển khoản",
+      "includeInTransaction": "Bao gồm {{tagLabel}} chuyển khoản cùng với tiền gửi",
+      "sendOnlyTokenOnNetwork": "Chỉ gửi {{token}} trên {{network}}",
+      "title": "Yêu cầu",
+      "warningText": "Đảm bảo tất cả các yêu cầu được đáp ứng hoặc tiền của bạn có thể bị mất vĩnh viễn."
+    },
     "screen": {
+      "addressLabel": "Địa chỉ",
       "beforeYouGo": "Trước khi bạn rời đi...",
+      "chooseOne": "Chọn một",
       "copyWalletAddress": "Sao chép địa chỉ ví",
+      "depositTitle": "Nạp {{token}} trên {{network}}",
       "depositToClient": "Nạp tiền vào {{clientName}}",
       "downloadQr": "Tải xuống mã QR",
+      "memoLabel": "Thông báo",
       "networkLabel": "Mạng",
+      "stepChooseNetwork": "2. Chọn một mạng",
+      "stepChooseToken": "1. Chọn một đồng tiền",
       "subtitle": "Bạn vẫn có thể hoàn tất việc nạp tiền theo cách thủ công",
+      "tagLabel": "Thẻ",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "Token",
       "warning": "Chỉ chuyển {{token}} trên {{network}} tới địa chỉ này. Nếu không, tài sản của bạn có thể bị mất"
     },
     "showAddress": "Hiển thị địa chỉ",
@@ -1349,8 +1382,8 @@
     "title": "Chọn tài sản để giao dịch"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Tiếp tục trên cửa sổ PayPal",
-    "reopenButton": "Mở lại PayPal"
+    "reopenButton": "Mở lại PayPal",
+    "title": "Tiếp tục trên cửa sổ PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",
