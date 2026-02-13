@@ -997,6 +997,19 @@
       "limit": "Limite : {{minLimit}} – {{maxLimit}}",
       "slippage": "Slippage : {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Frais de pont :",
+      "bridgeFeeValue": "$0,02",
+      "collapsedBridging": "Glissement max 0,5 % • Prend < 1 min",
+      "collapsedVanilla": "Coût 0,0 %; Prend < 1 min",
+      "networkFee": "Frais de réseau :",
+      "networkFeeValue": "variable",
+      "processingTime": "Temps de traitement :",
+      "processingTimeValue": "< 1 min",
+      "slippage": "Glissement :",
+      "slippageValue": "jusqu'à 0,5 %",
+      "title": "Détails"
+    },
     "entry": {
       "depositWithQr": "Dépôt avec code QR",
       "depositWithWalletAddress": "Déposez avec l'adresse du portefeuille",
@@ -1030,14 +1043,34 @@
       "merged": "Envoyez seulement <1>{{token}}</1> sur le réseau <3>{{network}}</3>. Toute autre combinaison d'actifs ou de réseaux, ou <5>l'envoi d'actifs à une autre adresse</5> entraînera la perte de fonds et sera irréparable.",
       "warning": "Toute autre combinaison d'actifs ou de réseaux, ou <5>l'envoi d'actifs à une autre adresse</5> entraînera la perte de fonds et sera irréparable."
     },
+    "requirements": {
+      "addressOneTimeUse": "Single-use address",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Send only {{token}} on {{network}} • Address is single-use • Limit: $2 - $500,000",
+      "collapsedFallback": "Ensure all requirements are met.",
+      "collapsedWithoutTag": "Send only {{token}} on {{network}}; Address is single-use",
+      "collapsedWithTag": "Send only {{token}} on {{network}}; Address is single-use; Include transfer {{tagLabel}}",
+      "includeInTransaction": "Include transfer {{tagLabel}} with deposit",
+      "sendOnlyTokenOnNetwork": "Send only {{token}} on {{network}}",
+      "title": "Requirements",
+      "warningText": "Ensure all requirements are met or your funds may be permanently lost."
+    },
     "screen": {
+      "addressLabel": "Adresse",
       "beforeYouGo": "Avant de partir...",
+      "chooseOne": "Choose one",
       "copyWalletAddress": "Copier l'adresse du portefeuille",
+      "depositTitle": "Deposit {{token}} on {{network}}",
       "depositToClient": "Dépôt à {{clientName}}",
       "downloadQr": "Télécharger le code QR",
+      "memoLabel": "Memo",
       "networkLabel": "Réseau",
+      "stepChooseNetwork": "2. Choose a network",
+      "stepChooseToken": "1. Choose a token",
       "subtitle": "Vous pouvez toujours compléter votre dépôt manuellement.",
+      "tagLabel": "Tag",
       "tokenLabel": "Jeton",
+      "tokenPlaceholder": "Jeton",
       "warning": "Transférez uniquement du {{token}} sur le réseau {{network}} vers cette adresse — dans le cas contraire, vos actifs pourraient être perdus"
     },
     "showAddress": "Afficher l'adresse",
@@ -1349,8 +1382,8 @@
     "title": "Sélectionner l'actif à transférer"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Continuer sur la fenêtre PayPal",
-    "reopenButton": "Rouvrir PayPal"
+    "reopenButton": "Rouvrir PayPal",
+    "title": "Continuer sur la fenêtre PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Compte",
