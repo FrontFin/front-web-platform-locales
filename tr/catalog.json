@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "<2>{{selectedIntegrationName}}</2> tarafından e-postanıza gönderilen tek seferlik kodu girin.",
     "paymentFlow": "Bu ödemeyi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
+    "paymentFlowCoinbase": "",
     "phone": "<2>{{selectedIntegrationName}}</2> tarafından telefonunuza gönderilen tek seferlik kodu girin.",
     "totp": "<1>{{selectedIntegrationName}}</1> ile bağladığınız doğrulayıcı uygulamanın sağladığı tek seferlik kodu girin.",
     "tradingPin": "Lütfen <2>{{selectedIntegrationName}}</2> hesabınızla ilişkili işlem PIN kodunu giriniz.",
     "transferFlow": "Bu transferi gerçekten sizin başlattığınızı doğrulamak için tek seferlik kodunuzu girin.",
+    "transferFlowCoinbase": "",
     "twoFactor": "<1>{{selectedIntegrationName}}</1> hesabınızda yapılandırdığınız iki faktörlü kimlik doğrulama yöntemi tarafından sağlanan kodu girin."
   },
   "mfaPage": {
@@ -995,6 +997,19 @@
       "limit": "Limit: {{minLimit}} – {{maxLimit}}",
       "slippage": "Slippage: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "QR kod ile para yatırma",
       "depositWithWalletAddress": "Cüzdan adresi ile para yatırma",
@@ -1028,14 +1043,34 @@
       "merged": "Yalnızca <1>{{token}}</1> tokenını <3>{{network}}</3> ağı üzerinde gönderin. Herhangi başka bir varlık veya ağ kombinasyonu, veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz.",
       "warning": "Herhangi başka bir varlık veya ağ kombinasyonu veya <5>varlıkların farklı bir adrese gönderilmesi</5> fon kaybına yol açacaktır ve geri alınamaz."
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "Gitmeden önce...",
+      "chooseOne": "",
       "copyWalletAddress": "Cüzdan adresini kopyala",
+      "depositTitle": "",
       "depositToClient": "{{clientName}}'e para yatır ",
       "downloadQr": "QR kodunu indir",
+      "memoLabel": "",
       "networkLabel": "Ağ",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "Para yatırma işleminizi manuel olarak tamamlayabilirsiniz.",
+      "tagLabel": "",
       "tokenLabel": "Jeton",
+      "tokenPlaceholder": "",
       "warning": "Bu adrese sadece {{network}} üzerinde {{token}} transfer edin - aksi takdirde varlıklarınız kaybolabilir"
     },
     "showAddress": "Adresi göster",
@@ -1240,7 +1275,7 @@
       "networkFeeHint": "Bu ücret, işleminizin blockchainde doğrulanmasını ve tamamlanmasını sağlayan doğrulayıcılara yapılan ödemeyi içerir",
       "payWith": "Ödeme yöntemi",
       "pyusdDisclaimer": "İşlem, Paxos Trust Company, LLC tarafından çıkarılan ve saklanan bir stablecoin olan PayPal USD (PYUSD) kullanılarak tamamlanacaktır. PYUSD, blockchain üzerinde çalışır.",
-      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık ​​sık değişir. Tüm kripto alımları kesindir.",
+      "refundDisclaimer": "İadeler yalnızca {{settlementCurrency}} cinsinden yapılacaktır. Döviz kuru ve ücretler sık \u200b\u200bsık değişir. Tüm kripto alımları kesindir.",
       "send": "Gönder",
       "showFundingMethodsAriaLabel": "ödeme yöntemlerini göster",
       "swapFee": "Otomatik değişim ücreti",
@@ -1334,13 +1369,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Kapat",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "{{selectedIntegrationName}}'e devam edin",
     "enterAmount": "Transfer tutarını girin",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}}, talep edilen tokenler ve/veya ağlar için transferleri desteklemiyor.",
     "selectAnotherAccount": "Başka bir hesap seçin",
     "selectAnotherExchange": "Lütfen para yatırmak için başka bir borsa veya cüzdan seçin.",
     "selectNetwork": "Transfer ağını seçin",
     "title": "Transfer edilecek varlığı seçin"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "Hesap",

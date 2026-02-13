@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "输入 <2>{{selectedIntegrationName}}</2> 已发送至您邮箱的一次性验证码。",
     "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
+    "paymentFlowCoinbase": "",
     "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性验证码。",
     "totp": "请输入由您绑定 <1>{{selectedIntegrationName}}</1> 相关身份验证器提供的一次性验证码。",
     "tradingPin": "请输入与您的 <2>{{selectedIntegrationName}}</2> 账户绑定的交易 PIN 码。",
     "transferFlow": "输入您的一次性代码以确认确实是您发起此次转账。",
+    "transferFlowCoinbase": "",
     "twoFactor": "输入您在 <1>{{selectedIntegrationName}}</1> 账户中配置的双因素认证方法提供的代码。"
   },
   "mfaPage": {
@@ -995,6 +997,19 @@
       "limit": "限制：{{minLimit}} – {{maxLimit}}",
       "slippage": "滑点：{{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址进行充值",
@@ -1028,14 +1043,34 @@
       "merged": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。",
       "warning": "若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。"
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "在您离开之前...",
+      "chooseOne": "",
       "copyWalletAddress": "复制钱包地址",
+      "depositTitle": "",
       "depositToClient": "给{{clientName}}充值",
       "downloadQr": "下载二维码",
+      "memoLabel": "",
       "networkLabel": "网络",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "您仍可以手动完成您的存款。",
+      "tagLabel": "",
       "tokenLabel": "代币",
+      "tokenPlaceholder": "",
       "warning": "仅向此地址转入{{network}}网络上的{{token}}，否则您的资产可能会丢失"
     },
     "showAddress": "显示地址",
@@ -1334,13 +1369,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "关闭",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}} 不支持所请求的代币或网络的转账。",
     "selectAnotherAccount": "选择另一个账户",
     "selectAnotherExchange": "请选择另一个可以进行充值的交易所或钱包。",
     "selectNetwork": "选择转账网络",
     "title": "选择要转账的资产"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "账户",

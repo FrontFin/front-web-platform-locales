@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "Gib den Einmalcode ein, den <2>{{selectedIntegrationName}}</2> dir per E-Mail gesendet hat.",
     "paymentFlow": "Gib deinen Einmalcode ein, um zu bestätigen, dass es wirklich du bist, der diese Zahlung initiieren will.",
+    "paymentFlowCoinbase": "",
     "phone": "Gib den Einmalcode ein, den <2>{{selectedIntegrationName}}</2> dir per SMS an dein Telefon gesendet hat.",
     "totp": "Gib den Einmalcode ein, der von der Authentifizierungs-App bereitgestellt wurde, die du mit <1>{{selectedIntegrationName}}</1> verknüpft hast.",
     "tradingPin": "Bitte gib den Handels-PIN-Code ein, der mit deinem <2>{{selectedIntegrationName}}</2>-Konto verknüpft ist.",
     "transferFlow": "Gib den Einmalcode ein, um zu bestätigen, dass es wirklich du bist, der diese Überweisung initiieren will.",
+    "transferFlowCoinbase": "",
     "twoFactor": "Gib den bereitgestellten Code der Zwei-Faktor-Authentifizierungsmethode ein, die du in deinem <1>{{selectedIntegrationName}}</1>-Konto konfiguriert hast."
   },
   "mfaPage": {
@@ -995,6 +997,19 @@
       "limit": "Limit: {{minLimit}} – {{maxLimit}}",
       "slippage": "Slippage: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "Einzahlen mit QR-Code",
       "depositWithWalletAddress": "Mit Wallet-Adresse einzahlen",
@@ -1028,14 +1043,34 @@
       "merged": "Nur <1>{{token}}</1> im <3>{{network}}</3>-Netzwerk senden. Jede andere Kombination von Asset oder Netzwerk oder das <5>Versenden von Assets an eine andere Adresse</5> führt zum Verlust von Geldern und ist nicht rückholbar.",
       "warning": "Jede andere Kombination von Asset oder Netzwerk oder das <5>Versenden von Assets an eine andere Adresse</5> führt zum Verlust von Geldern und ist nicht rückholbar."
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "Bevor du gehst ...",
+      "chooseOne": "",
       "copyWalletAddress": "Wallet-Adresse kopieren",
+      "depositTitle": "",
       "depositToClient": "Einzahlung bei {{clientName}}",
       "downloadQr": "QR-Code herunterladen",
+      "memoLabel": "",
       "networkLabel": "Netzwerk",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "Du kannst deine Einzahlung trotzdem manuell abschließen",
+      "tagLabel": "",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "",
       "warning": "Überweise nur {{token}} auf {{network}} an diese Adresse - andernfalls könnten deine Vermögenswerte verloren gehen"
     },
     "showAddress": "Adresse anzeigen",
@@ -1334,13 +1369,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Schließen",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "Weiter zu {{selectedIntegrationName}}",
     "enterAmount": "Überweisungsbetrag eingeben",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}} unterstützt keine Überweisungen für die Tokens und/oder angeforderten Netzwerke.",
     "selectAnotherAccount": "Wähle ein anderes Konto aus",
     "selectAnotherExchange": "Bitte wähle eine andere Börse oder Wallet, für die Einzahlung.",
     "selectNetwork": "Überweisungsnetzwerk wählen",
     "title": "Zu übertragendes Asset auswählen"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "Konto",

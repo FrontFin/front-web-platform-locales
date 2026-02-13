@@ -395,6 +395,8 @@
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
+    "incorrectPasswordChancesRemaining_few": "",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -548,6 +550,8 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
+    "withAdditional_few": "",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -819,10 +823,12 @@
   "mfaInstructionsText": {
     "email": "Wprowadź jednorazowy kod przesłany na twój e-mail przez <2>{{selectedIntegrationName}}</2>.",
     "paymentFlow": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty inicjujesz tę płatność.",
+    "paymentFlowCoinbase": "",
     "phone": "Wprowadź jednorazowy kod przesłany na twój telefon przez <2>{{selectedIntegrationName}}</2>.",
     "totp": "Wprowadź jednorazowy kod wygenerowany przez aplikację uwierzytelniającą, którą połączyłeś z <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Podaj kod PIN do zatwierdzania transakcji powiązany z kontem <2>{{selectedIntegrationName}}</2>.",
     "transferFlow": "Wprowadź swój jednorazowy kod, aby potwierdzić, że to ty inicjujesz ten transfer.",
+    "transferFlowCoinbase": "",
     "twoFactor": "Podaj kod wygenerowany przez metodę uwierzytelniania dwuskładnikowego, którą skonfigurowałeś na koncie <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
@@ -995,6 +1001,19 @@
       "limit": "Limit: {{minLimit}} – {{maxLimit}}",
       "slippage": "Poślizg: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "Wpłać za pomocą kodu QR",
       "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
@@ -1028,14 +1047,34 @@
       "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>. Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania.",
       "warning": "Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania."
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "Zanim wyjdziesz...",
+      "chooseOne": "",
       "copyWalletAddress": "Skopiuj adres portfela",
+      "depositTitle": "",
       "depositToClient": "Wpłata do {{clientName}}",
       "downloadQr": "Pobierz kod QR",
+      "memoLabel": "",
       "networkLabel": "Sieć",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "Możesz nadal dokończyć wpłatę ręcznie",
+      "tagLabel": "",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "",
       "warning": "Przelewaj wyłącznie {{token}} w sieci {{network}} na ten adres - w przeciwnym razie Twoje środki mogą zostać utracone"
     },
     "showAddress": "Pokaż adres",
@@ -1334,13 +1373,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Zamknij",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "Kontynuuj do {{selectedIntegrationName}}",
     "enterAmount": "Wprowadź kwotę transferu",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}} nie obsługuje transferów dla żądanych tokenów i/lub sieci.",
     "selectAnotherAccount": "Wybierz inne konto",
     "selectAnotherExchange": "Proszę wybrać inną giełdę lub portfel, z którego chcesz dokonać wpłaty.",
     "selectNetwork": "Wybierz sieć transferu",
     "title": "Wybierz aktywo do transferu"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "Konto",
