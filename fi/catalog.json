@@ -997,6 +997,19 @@
       "limit": "Raja: {{minLimit}} – {{maxLimit}}",
       "slippage": "Slippage: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Siltamaksu:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "Maks. lipsahdus 0,5% • Kestää < 1 min",
+      "collapsedVanilla": "Kustannus 0,0%; Kestää < 1 min",
+      "networkFee": "Verkkomaksu:",
+      "networkFeeValue": "vaihteleva",
+      "processingTime": "Käsittelyaika:",
+      "processingTimeValue": "< 1 min",
+      "slippage": "Lipsahdus:",
+      "slippageValue": "jopa 0,5%",
+      "title": "Tiedot"
+    },
     "entry": {
       "depositWithQr": "Talleta QR-koodilla",
       "depositWithWalletAddress": "Talleta lompakon osoitteella",
@@ -1030,14 +1043,34 @@
       "merged": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkossa. Mikä tahansa muu omaisuuserä tai verkkoyhdistelmä, tai <5>omaisuuden lähettäminen eri osoitteeseen</5>, johtaa varojen menettämiseen, ja ne ovat palautumattomia.",
       "warning": "Mikä tahansa muu omaisuuserä tai verkkoyhdistelmä, tai <5>omaisuuden lähettäminen eri osoitteeseen</5>, johtaa varojen menettämiseen, ja ne ovat palautumattomia."
     },
+    "requirements": {
+      "addressOneTimeUse": "Single-use address",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Send only {{token}} on {{network}} • Address is single-use • Limit: $2 - $500,000",
+      "collapsedFallback": "Ensure all requirements are met.",
+      "collapsedWithoutTag": "Send only {{token}} on {{network}}; Address is single-use",
+      "collapsedWithTag": "Send only {{token}} on {{network}}; Address is single-use; Include transfer {{tagLabel}}",
+      "includeInTransaction": "Include transfer {{tagLabel}} with deposit",
+      "sendOnlyTokenOnNetwork": "Send only {{token}} on {{network}}",
+      "title": "Requirements",
+      "warningText": "Ensure all requirements are met or your funds may be permanently lost."
+    },
     "screen": {
+      "addressLabel": "Osoite",
       "beforeYouGo": "Ennen kuin menet...",
+      "chooseOne": "Choose one",
       "copyWalletAddress": "Kopioi lompakon osoite",
+      "depositTitle": "Deposit {{token}} on {{network}}",
       "depositToClient": "Talleta {{clientName}}iin",
       "downloadQr": "Lataa QR-koodi",
+      "memoLabel": "Memo",
       "networkLabel": "Verkko",
+      "stepChooseNetwork": "2. Choose a network",
+      "stepChooseToken": "1. Choose a token",
       "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
+      "tagLabel": "Tag",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "Token",
       "warning": "Siirrä tähän osoitteeseen vain {{token}} {{network}} verkossa, muutoin varasi voivat kadota"
     },
     "showAddress": "Näytä osoite",
@@ -1349,8 +1382,8 @@
     "title": "Valitse siirrettävä omaisuus"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Jatka PayPal-ikkunassa",
-    "reopenButton": "Avaa PayPal uudelleen"
+    "reopenButton": "Avaa PayPal uudelleen",
+    "title": "Jatka PayPal-ikkunassa"
   },
   "previewPageUI": {
     "accountLabel": "Tili",
