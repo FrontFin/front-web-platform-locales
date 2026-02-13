@@ -818,12 +818,12 @@
   },
   "mfaInstructionsText": {
     "email": "Digita o código único que <2>{{selectedIntegrationName}}</2> enviou para o seu e-mail.",
-    "paymentFlow": "Digite o seu código único para confirmar que realmente é você iniciando este pagamento.",
+    "paymentFlow": "Insire o teu código único para confirmar que realmente és tu a iniciar este pagamento.",
     "paymentFlowCoinbase": "Digite o seu código único Coinbase para confirmar que realmente é você iniciando este pagamento.",
     "phone": "Insere o código único que <2>{{selectedIntegrationName}}</2> enviamos para o teu telefone.",
     "totp": "Insere o código único fornecido pela app autenticador que vinculaste a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Por favor, introduz o teu PIN de negociação associado à tua conta <2>{{selectedIntegrationName}}</2>.",
-    "transferFlow": "Digite o seu código único para confirmar que realmente é você iniciando esta transferência.",
+    "transferFlow": "Insire o teu código único para confirmar que realmente é você iniciando esta transferência.",
     "transferFlowCoinbase": "Digite o seu código único Coinbase para confirmar que realmente é você iniciando esta transferência.",
     "twoFactor": "Digita o código fornecido pelo método de autenticação de dois fatores configurado na tua conta <1>{{selectedIntegrationName}}</1>."
   },
@@ -997,6 +997,19 @@
       "limit": "Limite: {{minLimit}} – {{maxLimit}}",
       "slippage": "Desvio: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Taxa da ponte:",
+      "bridgeFeeValue": "$0,02",
+      "collapsedBridging": "Desvio máximo 0,5% • Leva < 1 min",
+      "collapsedVanilla": "Custo 0,0%; Leva < 1 min",
+      "networkFee": "Taxa de rede:",
+      "networkFeeValue": "variável",
+      "processingTime": "Tempo de processamento:",
+      "processingTimeValue": "< 1 min",
+      "slippage": "Deriva:",
+      "slippageValue": "até 0,5%",
+      "title": "Detalhes"
+    },
     "entry": {
       "depositWithQr": "Depósito com código QR",
       "depositWithWalletAddress": "Depositar com endereço de carteira",
@@ -1030,14 +1043,34 @@
       "merged": "Envie apenas <1>{{token}}</1> na rede <3>{{network}}</3>. Qualquer outra combinação de ativos ou redes, ou <5>envio de ativos para um endereço diferente</5>, resultará em perda de fundos e será irrecuperável.",
       "warning": "Qualquer outra combinação de ativos ou redes, ou <5>envio de ativos para um endereço diferente</5>, resultará em perda de fundos e será irrecuperável."
     },
+    "requirements": {
+      "addressOneTimeUse": "Single-use address",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Send only {{token}} on {{network}} • Address is single-use • Limit: $2 - $500,000",
+      "collapsedFallback": "Ensure all requirements are met.",
+      "collapsedWithoutTag": "Send only {{token}} on {{network}}; Address is single-use",
+      "collapsedWithTag": "Send only {{token}} on {{network}}; Address is single-use; Include transfer {{tagLabel}}",
+      "includeInTransaction": "Include transfer {{tagLabel}} with deposit",
+      "sendOnlyTokenOnNetwork": "Send only {{token}} on {{network}}",
+      "title": "Requirements",
+      "warningText": "Ensure all requirements are met or your funds may be permanently lost."
+    },
     "screen": {
+      "addressLabel": "Morada",
       "beforeYouGo": "Antes de ires...",
+      "chooseOne": "Choose one",
       "copyWalletAddress": "Copiar endereço da carteira",
+      "depositTitle": "Deposit {{token}} on {{network}}",
       "depositToClient": "Depósito para {{clientName}}",
       "downloadQr": "Baixar o código QR",
+      "memoLabel": "Memo",
       "networkLabel": "Rede",
+      "stepChooseNetwork": "2. Choose a network",
+      "stepChooseToken": "1. Choose a token",
       "subtitle": "Ainda podes concluir o teu depósito manualmente.",
+      "tagLabel": "Tag",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "Token",
       "warning": "Transfire apenas {{token}} na {{network}} para este endereço - caso contrário, os teus ativos poderão perder-se"
     },
     "showAddress": "Mostrar endereço",
@@ -1349,8 +1382,8 @@
     "title": "Seleciona o ativo a ser transferido"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Continuar na janela do PayPal",
-    "reopenButton": "Reabrir o PayPal"
+    "reopenButton": "Reabrir o PayPal",
+    "title": "Continuar na janela do PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Conta",
