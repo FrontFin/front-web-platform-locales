@@ -667,7 +667,7 @@
     "balanceBelowIntegrationMinimumDescription": "Twoje saldo {{currentBalance}} jest niższe niż minimalna kwota {{minimumAmount}} wymagana przez {{integrationName}} do wykonania transferu {{symbol}} w sieci {{network}}. Doładuj saldo i spróbuj ponownie.",
     "belowMinimum": "Poniżej minimalnego limitu {{integrationName}}",
     "insufficientBalance": "Niewystarczające saldo",
-    "insufficientBalanceDescription": "Twoje saldo {{currentBalance}} jest mniejsze niż minimalny wymóg dla tego przelewu.",
+    "insufficientBalanceDescription": "Twoje saldo {{currentBalance}} jest mniejsze niż minimalny wymóg dla tego transferu.",
     "noBalance": "Brak salda",
     "noBalancePaymentDescription": "Twoje saldo {{balance}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}}. Doładuj saldo i spróbuj ponownie.",
     "noBalancePaymentSelectNetworkDescription": "Twoje saldo {{balance}} jest niewystarczające, aby zrealizować tę płatność w wysokości {{amount}}. Wybierz inną sieć lub doładuj saldo i spróbuj ponownie.",
@@ -997,6 +997,19 @@
       "limit": "Limit: {{minLimit}} – {{maxLimit}}",
       "slippage": "Poślizg: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Opłata za most:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "Maksymalne poślizgnięcie 0,5% • < 1 min",
+      "collapsedVanilla": "Koszt 0,0%; < 1 min",
+      "networkFee": "Opłata sieciowa:",
+      "networkFeeValue": "zmienna",
+      "processingTime": "Czas przetwarzania:",
+      "processingTimeValue": "< 1 min",
+      "slippage": "Poślizgnięcie:",
+      "slippageValue": "do 0,5%",
+      "title": "Szczegóły"
+    },
     "entry": {
       "depositWithQr": "Wpłać za pomocą kodu QR",
       "depositWithWalletAddress": "Wpłata za pomocą adresu portfela",
@@ -1030,14 +1043,34 @@
       "merged": "Wysyłaj wyłącznie <1>{{token}}</1> w sieci <3>{{network}}</3>. Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania.",
       "warning": "Wszelkie inne połączenie aktywów lub sieci, czy <5>wysyłanie aktywów na inny adres</5>, spowoduje utratę środków i będzie nie do odzyskania."
     },
+    "requirements": {
+      "addressOneTimeUse": "Single-use address",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Send only {{token}} on {{network}} • Address is single-use • Limit: $2 - $500,000",
+      "collapsedFallback": "Ensure all requirements are met.",
+      "collapsedWithoutTag": "Send only {{token}} on {{network}}; Address is single-use",
+      "collapsedWithTag": "Send only {{token}} on {{network}}; Address is single-use; Include transfer {{tagLabel}}",
+      "includeInTransaction": "Include transfer {{tagLabel}} with deposit",
+      "sendOnlyTokenOnNetwork": "Send only {{token}} on {{network}}",
+      "title": "Requirements",
+      "warningText": "Ensure all requirements are met or your funds may be permanently lost."
+    },
     "screen": {
+      "addressLabel": "Adres",
       "beforeYouGo": "Zanim wyjdziesz...",
+      "chooseOne": "Choose one",
       "copyWalletAddress": "Skopiuj adres portfela",
+      "depositTitle": "Deposit {{token}} on {{network}}",
       "depositToClient": "Wpłata do {{clientName}}",
       "downloadQr": "Pobierz kod QR",
+      "memoLabel": "Memo",
       "networkLabel": "Sieć",
+      "stepChooseNetwork": "2. Choose a network",
+      "stepChooseToken": "1. Choose a token",
       "subtitle": "Możesz nadal dokończyć wpłatę ręcznie",
+      "tagLabel": "Tag",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "Token",
       "warning": "Przelewaj wyłącznie {{token}} w sieci {{network}} na ten adres - w przeciwnym razie Twoje środki mogą zostać utracone"
     },
     "showAddress": "Pokaż adres",
@@ -1349,8 +1382,8 @@
     "title": "Wybierz aktywo do transferu"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Kontynuuj w oknie PayPal",
-    "reopenButton": "Ponownie otwórz PayPal"
+    "reopenButton": "Ponownie otwórz PayPal",
+    "title": "Kontynuuj w oknie PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Konto",
