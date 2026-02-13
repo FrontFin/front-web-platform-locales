@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "<2>{{selectedIntegrationName}}</2>から送信されたメールのワンタイムコードを入力してください。",
     "paymentFlow": "この支払いを開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
+    "paymentFlowCoinbase": "",
     "phone": "<2>{{selectedIntegrationName}}</2>から携帯電話に送信されたワンタイムコードを入力してください。",
     "totp": "<1>{{selectedIntegrationName}}</1>に連携している認証アプリから発行されたワンタイムコードを入力してください。",
     "tradingPin": "<2>{{selectedIntegrationName}}</2>アカウントに関連付けられている取引用PINコードを入力してください。",
     "transferFlow": "この送金を開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
+    "transferFlowCoinbase": "",
     "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
@@ -995,6 +997,19 @@
       "limit": "制限: {{minLimit}} から {{maxLimit}} まで",
       "slippage": "スリッページ: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "QR コードで入金",
       "depositWithWalletAddress": "ウォレットアドレスで入金",
@@ -1028,14 +1043,34 @@
       "merged": "<3>{{network}}</3> ネットワークで <1>{{token}}</1> のみを送信してください。その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。",
       "warning": "その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。"
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "続行する前に…",
+      "chooseOne": "",
       "copyWalletAddress": "ウォレットアドレスをコピー",
+      "depositTitle": "",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
+      "memoLabel": "",
       "networkLabel": "ネットワーク",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "手動でも入金を完了できます",
+      "tagLabel": "",
       "tokenLabel": "トークン",
+      "tokenPlaceholder": "",
       "warning": "このアドレスには{{network}}上の{{token}}のみを送金してください。誤って送金した場合、資産が失われる可能性があります"
     },
     "showAddress": "住所を表示",
@@ -1077,7 +1112,7 @@
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。 ",
+      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。\u00a0",
       "title": "アクセスが拒否されました"
     },
     "belowBinanceMinimumPage": {
@@ -1334,13 +1369,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "閉じる",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "{{selectedIntegrationName}}へ進む",
     "enterAmount": "送金金額を入力してください",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}}は指定されたトークンまたはネットワークでの送金に対応していません。",
     "selectAnotherAccount": "別のアカウントを選択してください",
     "selectAnotherExchange": "他の取引所またはウォレットを選択して入金してください。",
     "selectNetwork": "送金ネットワークを選択",
     "title": "送金する資産を選択"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "アカウント",

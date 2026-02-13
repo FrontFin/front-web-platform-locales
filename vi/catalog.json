@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "Nhập mã dùng một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến email của bạn.",
     "paymentFlow": "Nhập mã dùng một lần để xác nhận chính bạn đang thực hiện thanh toán.",
+    "paymentFlowCoinbase": "",
     "phone": "Nhập mã một lần mà <2>{{selectedIntegrationName}}</2> đã gửi đến điện thoại của bạn.",
     "totp": "Nhập mã một lần do ứng dụng xác thực mà bạn đã liên kết với <1>{{selectedIntegrationName}}</1> cung cấp.",
     "tradingPin": "Vui lòng nhập mã PIN giao dịch liên kết với tài khoản <2>{{selectedIntegrationName}}</2> của bạn.",
     "transferFlow": "Nhập mã xác thực một lần để xác nhận bạn là người thực hiện giao dịch này.",
+    "transferFlowCoinbase": "",
     "twoFactor": "Nhập mã do ứng dụng xác thực mà bạn đã cấu hình trong tài khoản <1>{{selectedIntegrationName}}</1> cung cấp."
   },
   "mfaPage": {
@@ -995,6 +997,19 @@
       "limit": "Giới hạn: {{minLimit}} – {{maxLimit}}",
       "slippage": "Độ trượt: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "Nạp tiền bằng mã QR",
       "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
@@ -1028,14 +1043,34 @@
       "merged": "Chỉ gửi <1>{{token}}</1> trên mạng <3>{{network}}</3>. Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi.",
       "warning": "Bất kỳ sự kết hợp tài sản hoặc mạng khác, hay <5>gửi tài sản đến địa chỉ khác</5>, sẽ dẫn đến mất tiền và không thể thu hồi."
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "Trước khi bạn rời đi...",
+      "chooseOne": "",
       "copyWalletAddress": "Sao chép địa chỉ ví",
+      "depositTitle": "",
       "depositToClient": "Nạp tiền vào {{clientName}}",
       "downloadQr": "Tải xuống mã QR",
+      "memoLabel": "",
       "networkLabel": "Mạng",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "Bạn vẫn có thể hoàn tất việc nạp tiền theo cách thủ công",
+      "tagLabel": "",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "",
       "warning": "Chỉ chuyển {{token}} trên {{network}} tới địa chỉ này. Nếu không, tài sản của bạn có thể bị mất"
     },
     "showAddress": "Hiển thị địa chỉ",
@@ -1334,13 +1369,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Đóng",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "Tiếp tục tới {{selectedIntegrationName}}",
     "enterAmount": "Nhập số tiền giao dịch",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}} không hỗ trợ chuyển tiền cho các token hoặc mạng được yêu cầu.",
     "selectAnotherAccount": "Chọn một tài khoản khác",
     "selectAnotherExchange": "Vui lòng chọn một sàn giao dịch hoặc ví khác để nạp tiền.",
     "selectNetwork": "Chọn mạng chuyển tiền",
     "title": "Chọn tài sản để giao dịch"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "Tài khoản",

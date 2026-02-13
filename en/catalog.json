@@ -997,6 +997,19 @@
       "limit": "Limit: {{minLimit}} – {{maxLimit}}",
       "slippage": "Slippage: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "Bridge fee:",
+      "bridgeFeeValue": "$0.02",
+      "collapsedBridging": "Max slippage 0.5% • Takes < 1 min",
+      "collapsedVanilla": "Cost 0.0%; Takes < 1 min",
+      "networkFee": "Network fee:",
+      "networkFeeValue": "variable",
+      "processingTime": "Processing time:",
+      "processingTimeValue": "< 1 min",
+      "slippage": "Slippage:",
+      "slippageValue": "up to 0.5%",
+      "title": "Details"
+    },
     "entry": {
       "depositWithQr": "Deposit with QR code",
       "depositWithWalletAddress": "Deposit with wallet address",
@@ -1030,14 +1043,34 @@
       "merged": "Only send <1>{{token}}</1> on the <3>{{network}}</3> network. Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable.",
       "warning": "Any other asset or network combination, or <5>sending assets to a different address</5>, will result in loss of funds and will be unrecoverable."
     },
+    "requirements": {
+      "addressOneTimeUse": "Single-use address",
+      "bridgingLimit": "Limit: $2 - $500,000",
+      "collapsedBridging": "Send only {{token}} on {{network}} • Address is single-use • Limit: $2 - $500,000",
+      "collapsedFallback": "Ensure all requirements are met.",
+      "collapsedWithoutTag": "Send only {{token}} on {{network}}; Address is single-use",
+      "collapsedWithTag": "Send only {{token}} on {{network}}; Address is single-use; Include transfer {{tagLabel}}",
+      "includeInTransaction": "Include transfer {{tagLabel}} with deposit",
+      "sendOnlyTokenOnNetwork": "Send only {{token}} on {{network}}",
+      "title": "Requirements",
+      "warningText": "Ensure all requirements are met or your funds may be permanently lost."
+    },
     "screen": {
+      "addressLabel": "Address",
       "beforeYouGo": "Before you go...",
+      "chooseOne": "Choose one",
       "copyWalletAddress": "Copy wallet address",
+      "depositTitle": "Deposit {{token}} on {{network}}",
       "depositToClient": "Deposit to {{clientName}}",
       "downloadQr": "Download the QR code",
+      "memoLabel": "Memo",
       "networkLabel": "Network",
+      "stepChooseNetwork": "2. Choose a network",
+      "stepChooseToken": "1. Choose a token",
       "subtitle": "You can still complete your deposit manually",
+      "tagLabel": "Tag",
       "tokenLabel": "Token",
+      "tokenPlaceholder": "Token",
       "warning": "Only transfer {{token}} on {{network}} to this address - otherwise, your assets may be lost"
     },
     "showAddress": "Show address",
@@ -1349,8 +1382,8 @@
     "title": "Select asset to transfer"
   },
   "paypalConnectOAuthStatusPage": {
-    "title": "Continue on PayPal window",
-    "reopenButton": "Re-open PayPal"
+    "reopenButton": "Re-open PayPal",
+    "title": "Continue on PayPal window"
   },
   "previewPageUI": {
     "accountLabel": "Account",

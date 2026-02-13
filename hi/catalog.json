@@ -819,10 +819,12 @@
   "mfaInstructionsText": {
     "email": "एक-बार उपयोग करने वाला कोड दर्ज करें जो <2>{{selectedIntegrationName}}</2> ने आपके ईमेल पर भेजा है।",
     "paymentFlow": "इस भुगतान की पुष्टि के लिए अपना वन-टाइम कोड दर्ज करें ताकि यह सुनिश्चित किया जा सके कि वास्तव में आप ही इसे प्रारंभ कर रहे हैं।",
+    "paymentFlowCoinbase": "",
     "phone": "अपने फोन पर <2>{{selectedIntegrationName}}</2> से भेजे गए वन-टाइम कोड को दर्ज करें।",
     "totp": "अपने <1>{{selectedIntegrationName}}</1> से लिंक किए गए प्रमाणक ऐप द्वारा प्रदान किए गए वन-टाइम कोड को दर्ज करें।",
     "tradingPin": "कृपया अपने <2>{{selectedIntegrationName}}</2> खाते से जुड़े ट्रेडिंग पिन कोड दर्ज करें।",
     "transferFlow": "इस हस्तांतरण की पुष्टि के लिए अपना वन-टाइम कोड दर्ज करें ताकि यह सुनिश्चित किया जा सके कि वास्तव में आप ही इसे प्रारंभ कर रहे हैं।",
+    "transferFlowCoinbase": "",
     "twoFactor": "कृपया अपने <1>{{selectedIntegrationName}}</1> खाते में आपके द्वारा कॉन्फ़िगर की गई दो-कारक प्रमाणीकरण विधि द्वारा प्रदान किए गए कोड को दर्ज करें।"
   },
   "mfaPage": {
@@ -995,6 +997,19 @@
       "limit": "सीमा: {{minLimit}} – {{maxLimit}}",
       "slippage": "फिसलन: {{slippage}}"
     },
+    "details": {
+      "bridgeFee": "",
+      "bridgeFeeValue": "",
+      "collapsedBridging": "",
+      "collapsedVanilla": "",
+      "networkFee": "",
+      "networkFeeValue": "",
+      "processingTime": "",
+      "processingTimeValue": "",
+      "slippage": "",
+      "slippageValue": "",
+      "title": ""
+    },
     "entry": {
       "depositWithQr": "क्यूआर कोड से जमा करें",
       "depositWithWalletAddress": "वॉलेट एड्रेस के साथ जमा करें",
@@ -1028,14 +1043,34 @@
       "merged": "केवल <1>{{token}}</1> को <3>{{network}}</3> नेटवर्क पर भेजें। किसी अन्य संपत्ति या नेटवर्क संयोजन, या <5>किसी अन्य पते पर संपत्ति भेजने</5> से धन का नुकसान हो सकता है और यह पुनर्प्राप्त नहीं किया जा सकेगा।",
       "warning": "किसी अन्य संपत्ति या नेटवर्क संयोजन, या <5>किसी अन्य पते पर संपत्ति भेजने</5> से धन का नुकसान होगा और इसे पुनर्प्राप्त नहीं किया जा सकेगा।"
     },
+    "requirements": {
+      "addressOneTimeUse": "",
+      "bridgingLimit": "",
+      "collapsedBridging": "",
+      "collapsedFallback": "",
+      "collapsedWithoutTag": "",
+      "collapsedWithTag": "",
+      "includeInTransaction": "",
+      "sendOnlyTokenOnNetwork": "",
+      "title": "",
+      "warningText": ""
+    },
     "screen": {
+      "addressLabel": "",
       "beforeYouGo": "जाने से पहले...",
+      "chooseOne": "",
       "copyWalletAddress": "वॉलेट पता कॉपी करें",
+      "depositTitle": "",
       "depositToClient": "{{clientName}} में जमा करें",
       "downloadQr": "क्यूआर कोड डाउनलोड करें",
+      "memoLabel": "",
       "networkLabel": "नेटवर्क",
+      "stepChooseNetwork": "",
+      "stepChooseToken": "",
       "subtitle": "आप अभी भी अपना जमा मैन्युअल रूप से पूरा कर सकते हैं",
+      "tagLabel": "",
       "tokenLabel": "टोकन",
+      "tokenPlaceholder": "",
       "warning": "केवल {{network}} पर {{token}} का ही इस पते पर स्थानांतरण करें - अन्यथा आपकी संपत्तियाँ खो सकती हैं"
     },
     "showAddress": "पता दिखाएँ",
@@ -1334,13 +1369,21 @@
   },
   "payPalConnectOAuthPage": {
     "close": "बंद करें",
+    "completeDepositInApp": "",
+    "completeTransferInApp": "",
     "continue": "{{selectedIntegrationName}} पर जारी रखें",
     "enterAmount": "स्थानांतरण राशि दर्ज करें",
+    "maxAmountError": "",
+    "minAmountError": "",
     "notSupported": "{{selectedIntegrationName}} अनुरोधित टोकन और/या नेटवर्क के लिए स्थानांतरण को समर्थन नहीं करता है।",
     "selectAnotherAccount": "अन्य खाता चुनें",
     "selectAnotherExchange": "जमा करने के लिए कृपया अन्य एक्सचेंज या वॉलेट का चयन करें।",
     "selectNetwork": "स्थानांतरण नेटवर्क चुनें",
     "title": "स्थानांतरण के लिए संपत्ति चुनें"
+  },
+  "paypalConnectOAuthStatusPage": {
+    "reopenButton": "",
+    "title": ""
   },
   "previewPageUI": {
     "accountLabel": "खाता",
