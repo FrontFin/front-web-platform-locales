@@ -407,6 +407,7 @@
     "incorrect2faCode": "Code 2FA incorrect.",
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
+    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -561,6 +562,7 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
+    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1011,16 +1013,18 @@
       "slippage": "Slippage : {{slippage}}"
     },
     "details": {
-      "bridgeFee": "Frais de pont :",
+      "bridgeFee": "Frais de pont\u00a0:",
       "bridgeFeeValue": "variable",
       "collapsedBridging": "Slippage maximal 0,5 % ; ~{{processingTime}} temps de transfert",
       "collapsedVanilla": "Aucun frais ; ~1 min temps de transfert",
-      "networkFee": "Frais de réseau :",
+      "networkFee": "Frais de réseau\u00a0:",
       "networkFeeValue": "variable",
-      "processingTime": "Temps de traitement :",
+      "processingTime": "Temps de traitement\u00a0:",
       "processingTimeBtc": "30 min",
+      "processingTimeBtcValue": "",
       "processingTimeDefault": "1 min",
-      "slippage": "Glissement :",
+      "processingTimeDefaultValue": "",
+      "slippage": "Glissement\u00a0:",
       "slippageValue": "jusqu'à 0,5 %",
       "title": "Détails"
     },
@@ -1059,12 +1063,15 @@
     },
     "requirements": {
       "addressOneTimeUse": "Adresse à usage unique",
-      "bridgingLimit": "Limite : 2 $ - 500 000 $",
+      "bridgingLimit": "Limite : 2 $ - 500\u00a0000 $",
       "collapsedBridging": "Envoyez {{token}} sur {{network}} ; adresse à usage unique ; limite de 2 $ à 500 000 $.",
       "collapsedFallback": "Assurez-vous que toutes les exigences sont respectées.",
+      "collapsedWithMemo": "",
       "collapsedWithoutTag": "Envoyez {{token}} sur {{network}} ; adresse à usage unique.",
       "collapsedWithTag": "Envoyez uniquement {{token}} sur {{network}}; Adresse à usage unique; Inclure le transfert {{tagLabel}}",
       "includeInTransaction": "Inclure le transfert {{tagLabel}} avec le dépôt",
+      "includeInTransactionWithMemo": "",
+      "includeInTransactionWithTag": "",
       "sendOnlyTokenOnNetwork": "Envoyez uniquement {{token}} sur {{network}}",
       "title": "Exigences",
       "warningText": "Assurez-vous que toutes les exigences sont respectées sinon vos fonds pourraient être perdus définitivement."
@@ -1110,7 +1117,7 @@
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
     "bybit": {
-      "fee": "Frais : {{fee}}"
+      "fee": "Frais\u00a0: {{fee}}"
     },
     "cryptoCom": {
       "scanQRWithAppText": "Scannez le code QR avec votre application crypto.com et complétez la transaction"
