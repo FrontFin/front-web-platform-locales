@@ -201,6 +201,7 @@
       "continueButton": "Continúa en {{walletName}}",
       "depositTitle": "Depositar desde tu wallet",
       "payTitle": "Paga en tu wallet",
+      "qrNewSubtitle": "Escanea con la aplicación de cámara de tu<1></1><2>teléfono</2>",
       "qrSubtitle": "Abre la aplicación de cámara en tu teléfono y escanea el código QR para vincular",
       "spinnerTransactionText": "Completa esta transacción en tu aplicación de {{walletName}}",
       "spinnerVerifyText": "Completa la verificación de propiedad en tu aplicación de {{walletName}}",
@@ -210,6 +211,17 @@
     "title": "Conectar tu wallet"
   },
   "defiWalletQrPage": {
+    "instructionsLedgerConnect": "Haz clic en el botón \"Conectar\" ",
+    "instructionsLedgerScan": "Haz clic en el botón \"Escanear código QR\" ",
+    "instructionsStep1": "Abre la aplicación de {{walletName}}",
+    "instructionsStep2": "Toca <2></2> en la esquina superior derecha de la pantalla de inicio",
+    "instructionsStep2Left": "Toca <2></2> en la esquina superior izquierda de la pantalla de inicio",
+    "instructionsStep3": "Escanea el código QR",
+    "instructionsStepCryptoOnchainConnect": "Haz clic en la pestaña wallet en la esquina inferior derecha",
+    "instructionsStepCryptoOnchainTap": "Haz clic en el icono <2></2> en la esquina superior derecha",
+    "instructionsStepExodusConnect": "Haz clic en el azulejo \"Web3\" en la <1></1> pantalla de inicio",
+    "instructionsStepExodusTap": "Toca <2></2> en la esquina superior derecha",
+    "instructionsStepLedgerConnect": "Haz clic en el icono <2></2> cerca de la esquina superior derecha",
     "qrCodeLabel": "El código QR puede escanearse en tu dispositivo móvil para establecer una conexión",
     "scanInstruction": "Abre la aplicación {{walletName}} en tu teléfono y escanea el código QR para vincular"
   },
@@ -395,7 +407,6 @@
     "incorrect2faCode": "Código de 2FA incorrecto.",
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -417,6 +428,7 @@
     "notAuthorizedToIntegrationToken": "Por favor, inicia sesión nuevamente para continuar.",
     "passKeyNotSupported": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta la transferencia de nuevo.",
     "passKeyNotSupportedDeposit": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta el depósito de nuevo.",
+    "passKeyNotSupportedDescription": "Por favor, active la verificación por SMS o aplicación de autenticación en la configuración de seguridad de su {{selectedIntegrationName}}, luego intente de nuevo.",
     "passKeyNotSupportedOnramp": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta la compra de nuevo.",
     "passKeyNotSupportedPayment": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta el pago de nuevo.",
     "passKeyNotSupportedRedirect": "Redirigiendo a un método alternativo de retiro de Coinbase...",
@@ -549,7 +561,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -821,12 +832,12 @@
   "mfaInstructionsText": {
     "email": "Introduce el código de un solo uso que <2>{{selectedIntegrationName}}</2> ha enviado a tu correo electrónico.",
     "paymentFlow": "Introduce tu código de un solo uso para confirmar que eres tú quien inicia este pago.",
-    "paymentFlowCoinbase": "",
+    "paymentFlowCoinbase": "Introduce tu código de Coinbase de un solo uso para confirmar que eres tú quien inicia este pago.",
     "phone": "Introduce el código de un solo uso que <2>{{selectedIntegrationName}}</2> ha enviado a tu teléfono.",
     "totp": "Introduce el código de un solo uso proporcionado por la aplicación de autenticación que has vinculado a <1>{{selectedIntegrationName}}</1>.",
     "tradingPin": "Introduce el código PIN asociado a tu cuenta <2>{{selectedIntegrationName}}</2>.",
     "transferFlow": "Introduce tu código de un solo uso para confirmar que realmente eres tú quien inicia esta transferencia.",
-    "transferFlowCoinbase": "",
+    "transferFlowCoinbase": "Introduce tu código de Coinbase de un solo uso para confirmar que realmente eres tú quien inicia esta transferencia.",
     "twoFactor": "Introduce el código proporcionado por el método de autenticación de dos factores que configuraste en tu cuenta <1>{{selectedIntegrationName}}</1>."
   },
   "mfaPage": {
@@ -1000,19 +1011,18 @@
       "slippage": "Deslizamiento: {{slippage}}"
     },
     "details": {
-      "bridgeFee": "",
-      "bridgeFeeValue": "",
-      "collapsedBridging": "",
-      "collapsedVanilla": "",
-      "networkFee": "",
-      "networkFeeValue": "",
-      "processingTime": "",
-      "processingTimeBtc": "",
-      "processingTimeDefault": "",
-      "processingTimeValue": "",
-      "slippage": "",
-      "slippageValue": "",
-      "title": ""
+      "bridgeFee": "Tasa de puente:",
+      "bridgeFeeValue": "variable",
+      "collapsedBridging": "Deslizamiento máximo 0,5 %; ~{{processingTime}} tiempo de transferencia",
+      "collapsedVanilla": "Sin tarifas; ~1 min tiempo de transferencia",
+      "networkFee": "Tarifa de red:",
+      "networkFeeValue": "variable",
+      "processingTime": "Tiempo de procesamiento:",
+      "processingTimeBtc": "30 min",
+      "processingTimeDefault": "1 min",
+      "slippage": "Desviación:",
+      "slippageValue": "hasta 0,5%",
+      "title": "Detalles"
     },
     "entry": {
       "depositWithQr": "Depósito con código QR",
@@ -1048,34 +1058,34 @@
       "warning": "Cualquier otra combinación de activos o redes, o <5>envío de activos a una dirección diferente</5>, resultará en la pérdida de fondos y no se podrá recuperar."
     },
     "requirements": {
-      "addressOneTimeUse": "",
-      "bridgingLimit": "",
-      "collapsedBridging": "",
-      "collapsedFallback": "",
-      "collapsedWithoutTag": "",
-      "collapsedWithTag": "",
-      "includeInTransaction": "",
-      "sendOnlyTokenOnNetwork": "",
-      "title": "",
-      "warningText": ""
+      "addressOneTimeUse": "Dirección de un solo uso",
+      "bridgingLimit": "Límite: $2 - $500,000",
+      "collapsedBridging": "Enviar {{token}} en {{network}}; dirección de un solo uso; límite de $2 a $500,000.",
+      "collapsedFallback": "Garantiza que se cumplan todos los requisitos.",
+      "collapsedWithoutTag": "Enviar {{token}} en {{network}}; dirección de un solo uso.",
+      "collapsedWithTag": "Envía solo {{token}} en {{network}}; La dirección es de un solo uso; Incluye transferencia de {{tagLabel}}",
+      "includeInTransaction": "Incluye transferencia {{tagLabel}} con el depósito",
+      "sendOnlyTokenOnNetwork": "Envía solo {{token}} en {{network}}",
+      "title": "Requisitos",
+      "warningText": "Asegúrate de que se cumplan todos los requisitos o tus fondos podrían perderse permanentemente."
     },
     "screen": {
-      "addressLabel": "",
+      "addressLabel": "Dirección",
       "beforeYouGo": "Antes de que te vayas...",
-      "chooseOne": "",
+      "chooseOne": "Elige uno",
       "copyAriaLabel": "",
       "copyWalletAddress": "Copiar dirección de wallet",
-      "depositTitle": "",
+      "depositTitle": "Depositar {{token}} en {{network}}",
       "depositToClient": "Depósito en {{clientName}}",
       "downloadQr": "Descargar el código QR",
-      "memoLabel": "",
+      "memoLabel": "Memo",
       "networkLabel": "Red",
-      "stepChooseNetwork": "",
-      "stepChooseToken": "",
+      "stepChooseNetwork": "2. Elige una red",
+      "stepChooseToken": "1. Elige un token",
       "subtitle": "Todavía puedes completar tu depósito manualmente.",
-      "tagLabel": "",
+      "tagLabel": "Etiqueta",
       "tokenLabel": "Token",
-      "tokenPlaceholder": "",
+      "tokenPlaceholder": "Token",
       "warning": "Solo transfiere {{token}} en {{network}} a esta dirección - de lo contrario, tus activos pueden perderse"
     },
     "showAddress": "Mostrar dirección",
@@ -1374,12 +1384,12 @@
   },
   "payPalConnectOAuthPage": {
     "close": "Cerrar",
-    "completeDepositInApp": "",
-    "completeTransferInApp": "",
+    "completeDepositInApp": "Completarás este depósito en tu aplicación de PayPal",
+    "completeTransferInApp": "Completarás esta transferencia en tu aplicación de PayPal",
     "continue": "Continuar en {{selectedIntegrationName}}",
     "enterAmount": "Introduce el monto de la transferencia",
-    "maxAmountError": "",
-    "minAmountError": "",
+    "maxAmountError": "El monto máximo es de {{maxAmount}}",
+    "minAmountError": "El monto mínimo es de {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} no soporta transferencias para los tokens y/o redes solicitados.",
     "selectAnotherAccount": "Selecciona otra cuenta",
     "selectAnotherExchange": "Por favor, selecciona otro exchange o wallet desde el cual depositar.",
@@ -1387,8 +1397,8 @@
     "title": "Seleccionar activo a transferir"
   },
   "paypalConnectOAuthStatusPage": {
-    "reopenButton": "",
-    "title": ""
+    "reopenButton": "Reabrir PayPal",
+    "title": "Continuar en la ventana de PayPal"
   },
   "previewPageUI": {
     "accountLabel": "Cuenta",

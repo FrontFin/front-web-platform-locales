@@ -201,6 +201,7 @@
       "continueButton": "{{walletName}}で続行",
       "depositTitle": "ウォレットから入金",
       "payTitle": "ウォレットで支払う",
+      "qrNewSubtitle": "<1></1><2>スマートフォンのカメラアプリ</2>でスキャン",
       "qrSubtitle": "スマートフォンのカメラアプリを開き、QR コードをスキャンして連携してください。",
       "spinnerTransactionText": "{{walletName}} アプリで取引を完了してください",
       "spinnerVerifyText": "{{walletName}} アプリで所有権の確認を完了してください",
@@ -210,6 +211,17 @@
     "title": "ウォレットを接続"
   },
   "defiWalletQrPage": {
+    "instructionsLedgerConnect": "「接続」ボタンをクリック",
+    "instructionsLedgerScan": "「QRコードをスキャン」ボタンをクリック",
+    "instructionsStep1": "{{walletName}}アプリを開く",
+    "instructionsStep2": "ホーム画面の右上隅の<2></2>をタップ",
+    "instructionsStep2Left": "ホーム画面の左上隅の<2></2>をタップ",
+    "instructionsStep3": "QRコードをスキャン",
+    "instructionsStepCryptoOnchainConnect": "右下のウォレットタブをクリック",
+    "instructionsStepCryptoOnchainTap": "右上隅の<2></2>アイコンをクリック",
+    "instructionsStepExodusConnect": "<1></1>ホーム画面で「Web3」タイルをクリック",
+    "instructionsStepExodusTap": "右上隅の<2></2>をタップ",
+    "instructionsStepLedgerConnect": "右上隅にある<2></2>アイコンをクリックします",
     "qrCodeLabel": "QRコードはモバイルデバイスでスキャンして接続を確立できます。",
     "scanInstruction": "スマートフォンで {{walletName}} アプリを開き、QR コードをスキャンして連携してください。"
   },
@@ -416,6 +428,7 @@
     "notAuthorizedToIntegrationToken": "続行するには再度ログインしてください。",
     "passKeyNotSupported": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、送金を再度お試しください。",
     "passKeyNotSupportedDeposit": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、入金を再度お試しください。",
+    "passKeyNotSupportedDescription": "SMSまたは認証アプリの確認を{{selectedIntegrationName}}のセキュリティ設定で有効にしてから、もう一度お試しください。",
     "passKeyNotSupportedOnramp": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、購入を再度お試しください。",
     "passKeyNotSupportedPayment": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、支払いを再度お試しください。",
     "passKeyNotSupportedRedirect": "別の Coinbase 出金方法に切り替えています…",
@@ -819,12 +832,12 @@
   "mfaInstructionsText": {
     "email": "<2>{{selectedIntegrationName}}</2>から送信されたメールのワンタイムコードを入力してください。",
     "paymentFlow": "この支払いを開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
-    "paymentFlowCoinbase": "",
+    "paymentFlowCoinbase": "この支払いを開始しているのがご本人であることを確認するために、Coinbaseのワンタイムコードを入力してください。",
     "phone": "<2>{{selectedIntegrationName}}</2>から携帯電話に送信されたワンタイムコードを入力してください。",
     "totp": "<1>{{selectedIntegrationName}}</1>に連携している認証アプリから発行されたワンタイムコードを入力してください。",
     "tradingPin": "<2>{{selectedIntegrationName}}</2>アカウントに関連付けられている取引用PINコードを入力してください。",
     "transferFlow": "この送金を開始しているのがご本人であることを確認するために、ワンタイムコードを入力してください。",
-    "transferFlowCoinbase": "",
+    "transferFlowCoinbase": "この送金を開始しているのがご本人であることを確認するために、Coinbaseのワンタイムコードを入力してください。",
     "twoFactor": "<1>{{selectedIntegrationName}}</1>アカウントで設定した二要素認証のコードを入力してください。"
   },
   "mfaPage": {
@@ -998,19 +1011,18 @@
       "slippage": "スリッページ: {{slippage}}"
     },
     "details": {
-      "bridgeFee": "",
-      "bridgeFeeValue": "",
-      "collapsedBridging": "",
-      "collapsedVanilla": "",
-      "networkFee": "",
-      "networkFeeValue": "",
-      "processingTime": "",
-      "processingTimeBtc": "",
-      "processingTimeDefault": "",
-      "processingTimeValue": "",
-      "slippage": "",
-      "slippageValue": "",
-      "title": ""
+      "bridgeFee": "橋の通行料:",
+      "bridgeFeeValue": "可変",
+      "collapsedBridging": "最大スリッページ0.5%；~{{processingTime}}の転送時間",
+      "collapsedVanilla": "手数料なし；~1分の転送時間",
+      "networkFee": "ネットワーク料金:",
+      "networkFeeValue": "可変",
+      "processingTime": "処理時間:",
+      "processingTimeBtc": "30分",
+      "processingTimeDefault": "1分",
+      "slippage": "スリッページ:",
+      "slippageValue": "最大 0.5%",
+      "title": "詳細"
     },
     "entry": {
       "depositWithQr": "QR コードで入金",
@@ -1046,34 +1058,34 @@
       "warning": "その他の資産またはネットワークの組み合わせ、もしくは<5>異なるアドレスへの送信</5>は、資産の損失を招き復旧できません。"
     },
     "requirements": {
-      "addressOneTimeUse": "",
-      "bridgingLimit": "",
-      "collapsedBridging": "",
-      "collapsedFallback": "",
-      "collapsedWithoutTag": "",
-      "collapsedWithTag": "",
-      "includeInTransaction": "",
-      "sendOnlyTokenOnNetwork": "",
-      "title": "",
-      "warningText": ""
+      "addressOneTimeUse": "使い捨てアドレス",
+      "bridgingLimit": "制限: $2 - $500,000",
+      "collapsedBridging": "{{network}}で{{token}}を送る；1回使い切りアドレス；$2〜$500,000の制限。",
+      "collapsedFallback": "すべての要件が満たされていることを確認してください。",
+      "collapsedWithoutTag": "{{network}}で{{token}}を送る；1回使い切りアドレス。",
+      "collapsedWithTag": "{{network}}で{{token}}のみを送信; アドレスは使い捨て; 転送{{tagLabel}}を含める",
+      "includeInTransaction": "入金に転送{{tagLabel}}を含める",
+      "sendOnlyTokenOnNetwork": "{{network}}で{{token}}のみを送信",
+      "title": "要件",
+      "warningText": "すべての要件が満たされていることを確認するか、資金が永久に失われる可能性があります。"
     },
     "screen": {
-      "addressLabel": "",
+      "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
-      "chooseOne": "",
+      "chooseOne": "1つを選択",
       "copyAriaLabel": "",
       "copyWalletAddress": "ウォレットアドレスをコピー",
-      "depositTitle": "",
+      "depositTitle": "{{network}}で{{token}}を入金",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
-      "memoLabel": "",
+      "memoLabel": "メモ",
       "networkLabel": "ネットワーク",
-      "stepChooseNetwork": "",
-      "stepChooseToken": "",
+      "stepChooseNetwork": "2. ネットワークを選択",
+      "stepChooseToken": "1. トークンを選択",
       "subtitle": "手動でも入金を完了できます",
-      "tagLabel": "",
+      "tagLabel": "タグ",
       "tokenLabel": "トークン",
-      "tokenPlaceholder": "",
+      "tokenPlaceholder": "トークン",
       "warning": "このアドレスには{{network}}上の{{token}}のみを送金してください。誤って送金した場合、資産が失われる可能性があります"
     },
     "showAddress": "住所を表示",
@@ -1115,7 +1127,7 @@
   },
   "paypal": {
     "accessDeniedPage": {
-      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。\u00a0",
+      "subtitle": "申し訳ありませんが、現在お住まいの国からのご利用はできません。",
       "title": "アクセスが拒否されました"
     },
     "belowBinanceMinimumPage": {
@@ -1372,12 +1384,12 @@
   },
   "payPalConnectOAuthPage": {
     "close": "閉じる",
-    "completeDepositInApp": "",
-    "completeTransferInApp": "",
+    "completeDepositInApp": "PayPal アプリで入金手続きを完了してください",
+    "completeTransferInApp": "PayPal アプリで送金手続きを完了してください",
     "continue": "{{selectedIntegrationName}}へ進む",
     "enterAmount": "送金金額を入力してください",
-    "maxAmountError": "",
-    "minAmountError": "",
+    "maxAmountError": "最大金額は {{maxAmount}} です",
+    "minAmountError": "最小金額は {{minAmount}} です",
     "notSupported": "{{selectedIntegrationName}}は指定されたトークンまたはネットワークでの送金に対応していません。",
     "selectAnotherAccount": "別のアカウントを選択してください",
     "selectAnotherExchange": "他の取引所またはウォレットを選択して入金してください。",
@@ -1385,8 +1397,8 @@
     "title": "送金する資産を選択"
   },
   "paypalConnectOAuthStatusPage": {
-    "reopenButton": "",
-    "title": ""
+    "reopenButton": "PayPal を再度開く",
+    "title": "PayPal ウィンドウで続行してください"
   },
   "previewPageUI": {
     "accountLabel": "アカウント",
