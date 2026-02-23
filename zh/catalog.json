@@ -655,6 +655,73 @@
     "body": "{{clientName}}使用Mesh来促进与{{selectedIntegrationName}}的安全连接。",
     "connectAction": "连接到{{selectedIntegrationName}}"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "您将在您的 {{integrationName}} 应用程序中完成此存款",
+      "qrPageTitle": "从您的应用程序充值",
+      "connectionFailed": "连接失败",
+      "connectionFailedBody": "我们无法连接到 {{integrationName}}。 请重试。",
+      "error": "出了点问题",
+      "noDestinationAddresses": "此集成没有可用的目标地址。",
+      "deposit": {
+        "subText": "您的资金正在处理中。",
+        "successTitle": "成功！",
+        "viewTransactionDetails": "查看交易详情"
+      },
+      "pay": {
+        "successTitle": "支付成功！",
+        "viewTransactionDetails": "查看交易详情"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "从您的应用程序充值",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "继续使用 Binance"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "通过{{integrationName}} 充值",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "使用 {{integrationName}} 支付",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "继续前往 {{integrationName}}"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "购买",
     "buyCrypto": "购买加密货币",
@@ -1017,7 +1084,7 @@
       "networkFee": "网络费用：",
       "processingTimeBtcValue": "30 分钟",
       "processingTimeDefaultValue": "1 分钟",
-      "processingTimeLabel": "处理时间:",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "滑点：",
       "title": "详情"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "钱包地址",
       "beforeYouGo": "在您离开之前...",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "复制钱包地址",
       "depositTitle": "在{{network}}上充值{{token}}",
       "depositToClient": "给{{clientName}}充值",
