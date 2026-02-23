@@ -655,6 +655,73 @@
     "body": "{{clientName}} käyttää Meshiä turvallisen yhteyden muodostamiseen {{selectedIntegrationName}}:n kanssa.",
     "connectAction": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "You'll complete this deposit in your {{integrationName}} app",
+      "qrPageTitle": "Deposit from your app",
+      "connectionFailed": "Yhteys epäonnistui",
+      "connectionFailedBody": "We were unable to connect to {{integrationName}}. Please try again.",
+      "error": "Jotain meni pieleen",
+      "noDestinationAddresses": "No destination addresses are available for this integration.",
+      "deposit": {
+        "subText": "Varojen siirto on käynnissä.",
+        "successTitle": "Onnistui!",
+        "viewTransactionDetails": "Tarkastele tapahtuman tietoja"
+      },
+      "pay": {
+        "successTitle": "Maksu onnistui!",
+        "viewTransactionDetails": "Tarkastele tapahtuman tietoja"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "Deposit from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "Jatka Binance-sovelluksella"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "Talletus {{integrationName}}:sta",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "Maksa käyttäen {{integrationName}}",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "Jatka {{integrationName}}issa"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "Osta",
     "buyCrypto": "Osta krypto",
@@ -1017,7 +1084,7 @@
       "networkFee": "Verkkomaksu:",
       "processingTimeBtcValue": "30 min",
       "processingTimeDefaultValue": "1 min",
-      "processingTimeLabel": "Käsittelyaika:",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "Lipsahdus:",
       "title": "Tiedot"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "Osoite",
       "beforeYouGo": "Ennen kuin menet...",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "Kopioi lompakon osoite",
       "depositTitle": "Tallenna {{token}} {{network}} verkossa",
       "depositToClient": "Talleta {{clientName}}iin",
