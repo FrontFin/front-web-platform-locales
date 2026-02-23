@@ -655,6 +655,73 @@
     "body": "{{clientName}} utilise Mesh pour faciliter la connexion sécurisée avec {{selectedIntegrationName}}.",
     "connectAction": "Connectez-vous avec {{selectedIntegrationName}}"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "You'll complete this deposit in your {{integrationName}} app",
+      "qrPageTitle": "Deposit from your app",
+      "connectionFailed": "Échec de la connexion",
+      "connectionFailedBody": "We were unable to connect to {{integrationName}}. Please try again.",
+      "error": "Une erreur s’est produite",
+      "noDestinationAddresses": "No destination addresses are available for this integration.",
+      "deposit": {
+        "subText": "Vos fonds sont en chemin.",
+        "successTitle": "Action complétée avec succès !",
+        "viewTransactionDetails": "Voir les détails de la transaction"
+      },
+      "pay": {
+        "successTitle": "Paiement réussi !",
+        "viewTransactionDetails": "Voir les détails de la transaction"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "Deposit from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "Continuer avec l'application Binance"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "Dépôt de {{integrationName}}",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "Payer avec {{integrationName}}",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "Continuez dans {{integrationName}}"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "Acheter",
     "buyCrypto": "Acheter des cryptos",
@@ -1017,7 +1084,7 @@
       "networkFee": "Frais de réseau :",
       "processingTimeBtcValue": "30 min",
       "processingTimeDefaultValue": "1 min",
-      "processingTimeLabel": "Temps de traitement :",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "Glissement :",
       "title": "Détails"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "Adresse",
       "beforeYouGo": "Avant de partir...",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "Copier l'adresse du portefeuille",
       "depositTitle": "Déposer {{token}} sur {{network}}",
       "depositToClient": "Dépôt à {{clientName}}",
