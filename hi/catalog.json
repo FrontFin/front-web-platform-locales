@@ -655,6 +655,73 @@
     "body": "{{clientName}} सुरक्षित कनेक्शन सुविधा के लिए {{selectedIntegrationName}} के साथ Mesh का उपयोग करता है।",
     "connectAction": "{{selectedIntegrationName}} के साथ जुड़े"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "आप इस जमा प्रक्रिया को अपने {{integrationName}} ऐप में पूरा करेंगे",
+      "qrPageTitle": "अपने ऐप से जमा करें",
+      "connectionFailed": "कनेक्शन असफल रहा",
+      "connectionFailedBody": "हम {{integrationName}} से जुड़ने में असमर्थ हैं। कृपया पुनः प्रयास करें।",
+      "error": "कुछ गलत हो गया।",
+      "noDestinationAddresses": "इस एकीकरण के लिए कोई गंतव्य पता उपलब्ध नहीं है।",
+      "deposit": {
+        "subText": "आपकी राशि रास्ते में है।",
+        "successTitle": "सफलता!",
+        "viewTransactionDetails": "लेनदेन विवरण देखें"
+      },
+      "pay": {
+        "successTitle": "भुगतान सफल!",
+        "viewTransactionDetails": "लेनदेन विवरण देखें"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "अपने ऐप से जमा करें",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "Binance ऐप के साथ जारी रखें"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "{{integrationName}} से जमा करें",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "{{integrationName}} के साथ भुगतान करें",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "{{integrationName}} में जारी रखें"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "खरीदें",
     "buyCrypto": "क्रिप्टो खरीदें",
@@ -1017,7 +1084,7 @@
       "networkFee": "नेटवर्क शुल्क:",
       "processingTimeBtcValue": "30 मिनट",
       "processingTimeDefaultValue": "1 मिनट",
-      "processingTimeLabel": "प्रसंस्करण का समय:",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "फिसलन:",
       "title": "विवरण"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "पता",
       "beforeYouGo": "जाने से पहले...",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "वॉलेट पता कॉपी करें",
       "depositTitle": "{{token}} को {{network}} पर जमा करें",
       "depositToClient": "{{clientName}} में जमा करें",
