@@ -655,6 +655,73 @@
     "body": "{{clientName}}, {{selectedIntegrationName}} ile güvenli bağlantıyı sağlamak için Mesh kullanıyor.",
     "connectAction": "{{selectedIntegrationName}} ile bağlan"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "Bu para yatırma işlemini {{integrationName}} uygulamanızda tamamlayacaksınız",
+      "qrPageTitle": "Uygulamanızdan para yatırın",
+      "connectionFailed": "Bağlantı başarısız",
+      "connectionFailedBody": "{{integrationName}} ile bağlantı kurulamadı. Lütfen tekrar deneyin.",
+      "error": "Bir şeyler ters gitti",
+      "noDestinationAddresses": "Bu entegrasyon için müsait bir hedef adres yok.",
+      "deposit": {
+        "subText": "Fonlarınız yolda.",
+        "successTitle": "Başarılı!",
+        "viewTransactionDetails": "İşlem ayrıntılarını görüntüle"
+      },
+      "pay": {
+        "successTitle": "Ödeme başarılı!",
+        "viewTransactionDetails": "İşlem ayrıntılarını görüntüle"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "Uygulamanızdan para yatırın",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "Binance uygulaması ile devam et"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "{{integrationName}} ile yatır",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "{{integrationName}} ile ödeme yapın",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "{{integrationName}}'e devam edin"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "Satın Al",
     "buyCrypto": "Kripto satın al",
@@ -1017,7 +1084,7 @@
       "networkFee": "Ağ ücreti:",
       "processingTimeBtcValue": "30 dk",
       "processingTimeDefaultValue": "1 dk",
-      "processingTimeLabel": "İşlem süresi:",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "Kayma: <value>%0,5'e kadar</value>",
       "title": "Ayrıntılar"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "Adres",
       "beforeYouGo": "Gitmeden önce...",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "Cüzdan adresini kopyala",
       "depositTitle": "Sorun mu yaşıyorsun?",
       "depositToClient": "{{clientName}}'e para yatır ",
