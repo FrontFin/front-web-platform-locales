@@ -655,6 +655,73 @@
     "body": "{{clientName}} sử dụng Mesh để thiết lập kết nối an toàn với {{selectedIntegrationName}}.",
     "connectAction": "Kết nối với {{selectedIntegrationName}}"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "Bạn sẽ hoàn tất khoản nạp này trong ứng dụng {{integrationName}} của mình",
+      "qrPageTitle": "Nạp tiền từ ứng dụng của bạn",
+      "connectionFailed": "Kết nối thất bại",
+      "connectionFailedBody": "Chúng tôi không thể kết nối với {{integrationName}}. Vui lòng thử lại.",
+      "error": "Có gì đó sai",
+      "noDestinationAddresses": "Không có địa chỉ đích nào khả dụng cho tích hợp này.",
+      "deposit": {
+        "subText": "Tiền của bạn đang được chuyển.",
+        "successTitle": "Thành công!",
+        "viewTransactionDetails": "Xem chi tiết giao dịch"
+      },
+      "pay": {
+        "successTitle": "Thanh toán thành công!",
+        "viewTransactionDetails": "Xem chi tiết giao dịch"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "Nạp tiền từ ứng dụng của bạn",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "Tiếp tục với ứng dụng Binance"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "Nạp tiền từ {{integrationName}}",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "Thanh toán bằng {{integrationName}}",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "Tiếp tục đến {{integrationName}}"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "Mua",
     "buyCrypto": "Mua tiền mã hóa",
@@ -1017,7 +1084,7 @@
       "networkFee": "Phí mạng:",
       "processingTimeBtcValue": "30 phút",
       "processingTimeDefaultValue": "1 phút",
-      "processingTimeLabel": "Thời gian xử lý:",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "Độ trượt giá:",
       "title": "Chi tiết"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "Địa chỉ",
       "beforeYouGo": "Trước khi bạn rời đi...",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "Sao chép địa chỉ ví",
       "depositTitle": "Nạp {{token}} trên {{network}}",
       "depositToClient": "Nạp tiền vào {{clientName}}",
