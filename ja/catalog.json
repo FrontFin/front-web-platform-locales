@@ -657,12 +657,12 @@
   },
   "hostedIntegrations": {
     "common": {
-      "footerText": "You'll complete this deposit in your {{integrationName}} app",
-      "qrPageTitle": "Deposit from your app",
+      "footerText": "お使いの{{integrationName}}アプリでこの入金を完了してください。",
+      "qrPageTitle": "アプリから入金",
       "connectionFailed": "接続に失敗しました",
-      "connectionFailedBody": "We were unable to connect to {{integrationName}}. Please try again.",
+      "connectionFailedBody": "{{integrationName}}に接続できませんでした。もう一度お試しください。",
       "error": "問題が発生しました",
-      "noDestinationAddresses": "No destination addresses are available for this integration.",
+      "noDestinationAddresses": "このインテグレーションでは宛先アドレスが利用できません。",
       "deposit": {
         "subText": "資金を送信中です。",
         "successTitle": "成功しました！",
@@ -675,50 +675,50 @@
     },
     "bybit": {
       "pay": {
-        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして支払いを完了してください。"
       },
       "deposit": {
-        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして入金を完了してください。"
       }
     },
     "cryptoCom": {
       "pay": {
-        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。"
       },
       "deposit": {
-        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして入金を完了してください。"
       }
     },
     "binance": {
       "pay": {
-        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
-        "mobileTitle": "Pay from your app",
-        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして支払いを完了してください。",
+        "mobileTitle": "アプリで支払う",
+        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで支払いを完了した後。"
       },
       "deposit": {
-        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
-        "mobileTitle": "Deposit from your app",
-        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして入金を完了してください。",
+        "mobileTitle": "アプリから入金",
+        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで入金を完了した後。"
       },
       "continueWithApp": "Binanceアプリで続行"
     },
     "externalAppInitiation": {
       "deposit": {
         "title": "{{integrationName}}からの入金",
-        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で入金が完了した後。"
       },
       "pay": {
         "title": "{{integrationName}}で支払う",
-        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で支払いが完了した後。"
       },
       "continueButton": "{{integrationName}}で続ける"
     },
     "oauthLoading": {
       "deposit": {
-        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+        "message": "<br/>{{integrationName}}ウィンドウで入金を完了します…"
       },
       "pay": {
-        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+        "message": "<br/>{{integrationName}}ウィンドウで支払いを完了します…"
       }
     }
   },
@@ -1084,7 +1084,7 @@
       "networkFee": "ネットワーク料金:",
       "processingTimeBtcValue": "30 分",
       "processingTimeDefaultValue": "1 分",
-      "processingTimeLabel": "Processing time: <{{processingTime}}",
+      "processingTimeLabel": "処理時間: <{{processingTime}}",
       "slippage": "スリッページ:",
       "title": "詳細"
     },
@@ -1139,7 +1139,7 @@
     "screen": {
       "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
-      "copyAriaLabel": "Copy {{label}}",
+      "copyAriaLabel": "{{label}}をコピー",
       "copyWalletAddress": "ウォレットアドレスをコピー",
       "depositTitle": "{{network}}で{{token}}を入金",
       "depositToClient": "{{clientName}}への入金",
