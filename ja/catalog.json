@@ -655,6 +655,73 @@
     "body": "{{clientName}}は、{{selectedIntegrationName}}との安全な接続を実現するためにMeshを利用しています。",
     "connectAction": "{{selectedIntegrationName}}に接続する"
   },
+  "hostedIntegrations": {
+    "common": {
+      "footerText": "You'll complete this deposit in your {{integrationName}} app",
+      "qrPageTitle": "Deposit from your app",
+      "connectionFailed": "接続に失敗しました",
+      "connectionFailedBody": "We were unable to connect to {{integrationName}}. Please try again.",
+      "error": "問題が発生しました",
+      "noDestinationAddresses": "No destination addresses are available for this integration.",
+      "deposit": {
+        "subText": "資金を送信中です。",
+        "successTitle": "成功しました！",
+        "viewTransactionDetails": "取引の詳細を表示"
+      },
+      "pay": {
+        "successTitle": "お支払いが完了しました",
+        "viewTransactionDetails": "取引の詳細を表示"
+      }
+    },
+    "bybit": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      }
+    },
+    "cryptoCom": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      }
+    },
+    "binance": {
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment.",
+        "mobileTitle": "Pay from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app."
+      },
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit.",
+        "mobileTitle": "Deposit from your app",
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app."
+      },
+      "continueWithApp": "Binanceアプリで続行"
+    },
+    "externalAppInitiation": {
+      "deposit": {
+        "title": "{{integrationName}}からの入金",
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}."
+      },
+      "pay": {
+        "title": "{{integrationName}}で支払う",
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}."
+      },
+      "continueButton": "{{integrationName}}で続ける"
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "homePage": {
     "buy": "購入",
     "buyCrypto": "暗号通貨を購入する",
@@ -1017,7 +1084,7 @@
       "networkFee": "ネットワーク料金:",
       "processingTimeBtcValue": "30 分",
       "processingTimeDefaultValue": "1 分",
-      "processingTimeLabel": "処理時間:",
+      "processingTimeLabel": "Processing time: <{{processingTime}}",
       "slippage": "スリッページ:",
       "title": "詳細"
     },
@@ -1072,7 +1139,7 @@
     "screen": {
       "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copy {{label}}",
       "copyWalletAddress": "ウォレットアドレスをコピー",
       "depositTitle": "{{network}}で{{token}}を入金",
       "depositToClient": "{{clientName}}への入金",
