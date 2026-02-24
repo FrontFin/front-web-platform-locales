@@ -656,62 +656,62 @@
     "connectAction": "{{selectedIntegrationName}}に接続する"
   },
   "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "Binanceアプリで続行",
+      "deposit": {
+        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで入金を完了した後。",
+        "mobileTitle": "アプリから入金",
+        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして入金を完了してください。"
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで支払いを完了した後。",
+        "mobileTitle": "アプリで支払う",
+        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして支払いを完了してください。"
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして入金を完了してください。"
+      },
+      "pay": {
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして支払いを完了してください。"
+      }
+    },
     "common": {
-      "footerText": "お使いの{{integrationName}}アプリでこの入金を完了してください。",
-      "qrPageTitle": "アプリから入金",
       "connectionFailed": "接続に失敗しました",
       "connectionFailedBody": "{{integrationName}}に接続できませんでした。もう一度お試しください。",
-      "error": "問題が発生しました",
-      "noDestinationAddresses": "このインテグレーションでは宛先アドレスが利用できません。",
       "deposit": {
         "subText": "資金を送信中です。",
         "successTitle": "成功しました！",
         "viewTransactionDetails": "取引の詳細を表示"
       },
+      "error": "問題が発生しました",
+      "footerText": "お使いの{{integrationName}}アプリでこの入金を完了してください。",
+      "noDestinationAddresses": "このインテグレーションでは宛先アドレスが利用できません。",
       "pay": {
         "successTitle": "お支払いが完了しました",
         "viewTransactionDetails": "取引の詳細を表示"
-      }
-    },
-    "bybit": {
-      "pay": {
-        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして支払いを完了してください。"
       },
-      "deposit": {
-        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして入金を完了してください。"
-      }
+      "qrPageTitle": "アプリから入金"
     },
     "cryptoCom": {
-      "pay": {
-        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。"
-      },
       "deposit": {
         "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして入金を完了してください。"
+      },
+      "pay": {
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。"
       }
     },
-    "binance": {
-      "pay": {
-        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして支払いを完了してください。",
-        "mobileTitle": "アプリで支払う",
-        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで支払いを完了した後。"
-      },
-      "deposit": {
-        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして入金を完了してください。",
-        "mobileTitle": "アプリから入金",
-        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで入金を完了した後。"
-      },
-      "continueWithApp": "Binanceアプリで続行"
-    },
     "externalAppInitiation": {
+      "continueButton": "{{integrationName}}で続ける",
       "deposit": {
-        "title": "{{integrationName}}からの入金",
-        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で入金が完了した後。"
+        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で入金が完了した後。",
+        "title": "{{integrationName}}からの入金"
       },
       "pay": {
-        "title": "{{integrationName}}で支払う",
-        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で支払いが完了した後。"
-      },
-      "continueButton": "{{integrationName}}で続ける"
+        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で支払いが完了した後。",
+        "title": "{{integrationName}}で支払う"
+      }
     },
     "oauthLoading": {
       "deposit": {
@@ -1179,6 +1179,7 @@
     "bybit": {
       "fee": "手数料：{{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "Crypto.comアプリでQRコードをスキャンし、取引を完了してください"
     },
