@@ -656,62 +656,62 @@
     "connectAction": "{{selectedIntegrationName}} ile bağlan"
   },
   "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "Binance uygulaması ile devam et",
+      "deposit": {
+        "mobileSubtitle": "<bold>Yatırma işleminizi tamamladıktan sonra</bold> Binance mobil uygulamanızdan buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan para yatırın",
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Binance uygulamasıyla tarayın."
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>Ödemenizi tamamladıktan sonra</bold> Binance mobil uygulamanızdan buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan ödeme yapın",
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Binance uygulamasıyla tarayın."
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
+      },
+      "pay": {
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
+      }
+    },
     "common": {
-      "footerText": "Bu para yatırma işlemini {{integrationName}} uygulamanızda tamamlayacaksınız",
-      "qrPageTitle": "Uygulamanızdan para yatırın",
       "connectionFailed": "Bağlantı başarısız",
       "connectionFailedBody": "{{integrationName}} ile bağlantı kurulamadı. Lütfen tekrar deneyin.",
-      "error": "Bir şeyler ters gitti",
-      "noDestinationAddresses": "Bu entegrasyon için müsait bir hedef adres yok.",
       "deposit": {
         "subText": "Fonlarınız yolda.",
         "successTitle": "Başarılı!",
         "viewTransactionDetails": "İşlem ayrıntılarını görüntüle"
       },
+      "error": "Bir şeyler ters gitti",
+      "footerText": "Bu para yatırma işlemini {{integrationName}} uygulamanızda tamamlayacaksınız",
+      "noDestinationAddresses": "Bu entegrasyon için müsait bir hedef adres yok.",
       "pay": {
         "successTitle": "Ödeme başarılı!",
         "viewTransactionDetails": "İşlem ayrıntılarını görüntüle"
-      }
-    },
-    "bybit": {
-      "pay": {
-        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
       },
-      "deposit": {
-        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
-      }
+      "qrPageTitle": "Uygulamanızdan para yatırın"
     },
     "cryptoCom": {
-      "pay": {
-        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
-      },
       "deposit": {
         "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
+      },
+      "pay": {
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
       }
     },
-    "binance": {
-      "pay": {
-        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Binance uygulamasıyla tarayın.",
-        "mobileTitle": "Uygulamanızdan ödeme yapın",
-        "mobileSubtitle": "<bold>Ödemenizi tamamladıktan sonra</bold> Binance mobil uygulamanızdan buraya geri dönün."
-      },
-      "deposit": {
-        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Binance uygulamasıyla tarayın.",
-        "mobileTitle": "Uygulamanızdan para yatırın",
-        "mobileSubtitle": "<bold>Yatırma işleminizi tamamladıktan sonra</bold> Binance mobil uygulamanızdan buraya geri dönün."
-      },
-      "continueWithApp": "Binance uygulaması ile devam et"
-    },
     "externalAppInitiation": {
+      "continueButton": "{{integrationName}}'e devam edin",
       "deposit": {
-        "title": "{{integrationName}} ile yatır",
-        "subtitle": "<bold>{{integrationName}} işleminizi tamamladıktan sonra buraya geri dönün</bold>."
+        "subtitle": "<bold>{{integrationName}} işleminizi tamamladıktan sonra buraya geri dönün</bold>.",
+        "title": "{{integrationName}} ile yatır"
       },
       "pay": {
-        "title": "{{integrationName}} ile ödeme yapın",
-        "subtitle": "<bold>{{integrationName}} ödemenizi tamamladıktan sonra buraya geri dönün</bold>."
-      },
-      "continueButton": "{{integrationName}}'e devam edin"
+        "subtitle": "<bold>{{integrationName}} ödemenizi tamamladıktan sonra buraya geri dönün</bold>.",
+        "title": "{{integrationName}} ile ödeme yapın"
+      }
     },
     "oauthLoading": {
       "deposit": {
@@ -1179,6 +1179,7 @@
     "bybit": {
       "fee": "Ücret: {{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "Crypto.com uygulamanızla QR kodunu tarayın ve işlemi tamamlayın"
     },
