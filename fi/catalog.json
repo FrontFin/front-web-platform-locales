@@ -656,62 +656,62 @@
     "connectAction": "Yhdistä {{selectedIntegrationName}}:n kanssa"
   },
   "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "Jatka Binance-sovelluksella",
+      "deposit": {
+        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen Binance-mobiilisovelluksessasi.",
+        "mobileTitle": "Talletus sovelluksestasi",
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi talletuksesi."
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun Binance-mobiilisovelluksessasi.",
+        "mobileTitle": "Maksa sovelluksestasi",
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi maksusi."
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi talletuksesi."
+      },
+      "pay": {
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi maksusi."
+      }
+    },
     "common": {
-      "footerText": "Viimeistelet talletuksen {{integrationName}}-sovelluksessasi",
-      "qrPageTitle": "Talletus sovelluksestasi",
       "connectionFailed": "Yhteys epäonnistui",
       "connectionFailedBody": "Emme voineet muodostaa yhteyttä {{integrationName}}. Yritä uudelleen.",
-      "error": "Jotain meni pieleen",
-      "noDestinationAddresses": "Tälle integraatiolle ei ole saatavilla määränpääosoitteita.",
       "deposit": {
         "subText": "Varojen siirto on käynnissä.",
         "successTitle": "Onnistui!",
         "viewTransactionDetails": "Tarkastele tapahtuman tietoja"
       },
+      "error": "Jotain meni pieleen",
+      "footerText": "Viimeistelet talletuksen {{integrationName}}-sovelluksessasi",
+      "noDestinationAddresses": "Tälle integraatiolle ei ole saatavilla määränpääosoitteita.",
       "pay": {
         "successTitle": "Maksu onnistui!",
         "viewTransactionDetails": "Tarkastele tapahtuman tietoja"
-      }
-    },
-    "bybit": {
-      "pay": {
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi maksusi."
       },
-      "deposit": {
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi talletuksesi."
-      }
+      "qrPageTitle": "Talletus sovelluksestasi"
     },
     "cryptoCom": {
-      "pay": {
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi maksusi."
-      },
       "deposit": {
         "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi talletuksesi."
+      },
+      "pay": {
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi maksusi."
       }
     },
-    "binance": {
-      "pay": {
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi maksusi.",
-        "mobileTitle": "Maksa sovelluksestasi",
-        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun Binance-mobiilisovelluksessasi."
-      },
-      "deposit": {
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi talletuksesi.",
-        "mobileTitle": "Talletus sovelluksestasi",
-        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen Binance-mobiilisovelluksessasi."
-      },
-      "continueWithApp": "Jatka Binance-sovelluksella"
-    },
     "externalAppInitiation": {
+      "continueButton": "Jatka {{integrationName}}issa",
       "deposit": {
-        "title": "Talletus {{integrationName}}:sta",
-        "subtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen {{integrationName}}-sovelluksessa."
+        "subtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen {{integrationName}}-sovelluksessa.",
+        "title": "Talletus {{integrationName}}:sta"
       },
       "pay": {
-        "title": "Maksa käyttäen {{integrationName}}",
-        "subtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun {{integrationName}}-sovelluksessa."
-      },
-      "continueButton": "Jatka {{integrationName}}issa"
+        "subtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun {{integrationName}}-sovelluksessa.",
+        "title": "Maksa käyttäen {{integrationName}}"
+      }
     },
     "oauthLoading": {
       "deposit": {
@@ -1179,6 +1179,7 @@
     "bybit": {
       "fee": "Maksu: {{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "Skannaa QR-koodi crypto.com-sovelluksellasi ja viimeistele tapahtuma"
     },
