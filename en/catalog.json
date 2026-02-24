@@ -742,6 +742,73 @@
     "standardDeposit": "Standard deposit",
     "title": "Add funds"
   },
+  "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "Continue with Binance app",
+      "deposit": {
+        "mobileSubtitle": "<bold>Return here</bold> after completing the deposit in your Binance mobile app.",
+        "mobileTitle": "Deposit from your app",
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your deposit."
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>Return here</bold> after completing the payment in your Binance mobile app.",
+        "mobileTitle": "Pay from your app",
+        "qrPageTitle": "Scan with your phone camera or the Binance app to finish your payment."
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your deposit."
+      },
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Bybit app to finish your payment."
+      }
+    },
+    "common": {
+      "connectionFailed": "Connection failed",
+      "connectionFailedBody": "We were unable to connect to {{integrationName}}. Please try again.",
+      "deposit": {
+        "subText": "Your funds are on the way.",
+        "successTitle": "Success!",
+        "viewTransactionDetails": "View transaction details"
+      },
+      "error": "Something went wrong",
+      "footerText": "You'll complete this deposit in your {{integrationName}} app",
+      "noDestinationAddresses": "No destination addresses are available for this integration.",
+      "pay": {
+        "successTitle": "Payment successful!",
+        "viewTransactionDetails": "View transaction details"
+      },
+      "qrPageTitle": "Deposit from your app"
+    },
+    "cryptoCom": {
+      "deposit": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your deposit."
+      },
+      "pay": {
+        "qrPageTitle": "Scan with your phone camera or the Crypto.com app to finish your payment."
+      }
+    },
+    "externalAppInitiation": {
+      "continueButton": "Continue in {{integrationName}}",
+      "deposit": {
+        "subtitle": "<bold>Return here</bold> after completing the deposit in {{integrationName}}.",
+        "title": "Deposit from {{integrationName}}"
+      },
+      "pay": {
+        "subtitle": "<bold>Return here</bold> after completing the payment in {{integrationName}}.",
+        "title": "Pay with {{integrationName}}"
+      }
+    },
+    "oauthLoading": {
+      "deposit": {
+        "message": "Complete the deposit in <br/>the {{integrationName}} window..."
+      },
+      "pay": {
+        "message": "Complete the payment in <br/>the {{integrationName}} window..."
+      }
+    }
+  },
   "ineligibleReason": {
     "amountBelowMinimumDescription": "The requested transfer amount of {{requestedAmount}} is less than {{integrationName}}’s minimum of {{minimumAmount}} to transfer on the {{network}} network.",
     "balanceBelowIntegrationMinimumDescription": "Your {{currentBalance}} balance is below the {{minimumAmount}} {{integrationName}} minimum to transfer {{symbol}} on {{network}}. Please top up your balance and try again.",
@@ -1179,6 +1246,7 @@
     "bybit": {
       "fee": "Fee: {{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "Scan the QR code with your crypto.com app and complete the transaction"
     },
