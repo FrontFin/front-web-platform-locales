@@ -656,62 +656,62 @@
     "connectAction": "Подключиться к {{selectedIntegrationName}}"
   },
   "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "Продолжить в приложении Binance",
+      "deposit": {
+        "mobileSubtitle": "<bold>Вернитесь сюда</bold> после завершения депозита в мобильном приложении Binance.",
+        "mobileTitle": "Пополните через ваше приложение",
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Binance, чтобы завершить депозит."
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>Вернитесь сюда</bold> после завершения оплаты в мобильном приложении Binance.",
+        "mobileTitle": "Оплатите через ваше приложение",
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Binance, чтобы завершить оплату."
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Bybit, чтобы завершить депозит."
+      },
+      "pay": {
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Bybit, чтобы завершить оплату."
+      }
+    },
     "common": {
-      "footerText": "Завершите этот депозит в вашем приложении {{integrationName}}",
-      "qrPageTitle": "Пополните через ваше приложение",
       "connectionFailed": "Не удалось подключиться",
       "connectionFailedBody": "Не удалось подключиться к {{integrationName}}. Пожалуйста, попробуйте снова.",
-      "error": "Что-то пошло не так",
-      "noDestinationAddresses": "Для этой интеграции нет доступных адресов назначения.",
       "deposit": {
         "subText": "Ваши средства в пути.",
         "successTitle": "Успешно!",
         "viewTransactionDetails": "Просмотреть детали транзакции"
       },
+      "error": "Что-то пошло не так",
+      "footerText": "Завершите этот депозит в вашем приложении {{integrationName}}",
+      "noDestinationAddresses": "Для этой интеграции нет доступных адресов назначения.",
       "pay": {
         "successTitle": "Платеж успешно выполнен!",
         "viewTransactionDetails": "Просмотреть детали транзакции"
-      }
-    },
-    "bybit": {
-      "pay": {
-        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Bybit, чтобы завершить оплату."
       },
-      "deposit": {
-        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Bybit, чтобы завершить депозит."
-      }
+      "qrPageTitle": "Пополните через ваше приложение"
     },
     "cryptoCom": {
-      "pay": {
-        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Crypto.com, чтобы завершить оплату."
-      },
       "deposit": {
         "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Crypto.com, чтобы завершить депозит."
+      },
+      "pay": {
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Crypto.com, чтобы завершить оплату."
       }
     },
-    "binance": {
-      "pay": {
-        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Binance, чтобы завершить оплату.",
-        "mobileTitle": "Оплатите через ваше приложение",
-        "mobileSubtitle": "<bold>Вернитесь сюда</bold> после завершения оплаты в мобильном приложении Binance."
-      },
-      "deposit": {
-        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Binance, чтобы завершить депозит.",
-        "mobileTitle": "Пополните через ваше приложение",
-        "mobileSubtitle": "<bold>Вернитесь сюда</bold> после завершения депозита в мобильном приложении Binance."
-      },
-      "continueWithApp": "Продолжить в приложении Binance"
-    },
     "externalAppInitiation": {
+      "continueButton": "Продолжить в {{integrationName}}",
       "deposit": {
-        "title": "Депозит из {{integrationName}}",
-        "subtitle": "<bold>Вернитесь сюда</bold> после завершения депозита в {{integrationName}}."
+        "subtitle": "<bold>Вернитесь сюда</bold> после завершения депозита в {{integrationName}}.",
+        "title": "Депозит из {{integrationName}}"
       },
       "pay": {
-        "title": "Оплатить через {{integrationName}}",
-        "subtitle": "<bold>Вернитесь сюда</bold> после завершения оплаты в {{integrationName}}."
-      },
-      "continueButton": "Продолжить в {{integrationName}}"
+        "subtitle": "<bold>Вернитесь сюда</bold> после завершения оплаты в {{integrationName}}.",
+        "title": "Оплатить через {{integrationName}}"
+      }
     },
     "oauthLoading": {
       "deposit": {
@@ -1179,6 +1179,7 @@
     "bybit": {
       "fee": "Комиссия: {{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "Отсканируйте QR-код с помощью вашего приложения crypto.com и завершите транзакцию"
     },
