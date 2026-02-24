@@ -656,62 +656,62 @@
     "connectAction": "连接到{{selectedIntegrationName}}"
   },
   "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "继续使用 Binance",
+      "deposit": {
+        "mobileSubtitle": "<bold>完成存款后返回此处</bold>，以在您的Binance移动应用中完成该过程。",
+        "mobileTitle": "从您的应用程序充值",
+        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的存款。"
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>完成付款后返回此处</bold>，以在您的Binance移动应用中完成该过程。",
+        "mobileTitle": "从您的程序付款",
+        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的支付。"
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的存款。"
+      },
+      "pay": {
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的支付。"
+      }
+    },
     "common": {
-      "footerText": "您将在您的 {{integrationName}} 应用程序中完成此存款",
-      "qrPageTitle": "从您的应用程序充值",
       "connectionFailed": "连接失败",
       "connectionFailedBody": "我们无法连接到 {{integrationName}}。 请重试。",
-      "error": "出了点问题",
-      "noDestinationAddresses": "此集成没有可用的目标地址。",
       "deposit": {
         "subText": "您的资金正在处理中。",
         "successTitle": "成功！",
         "viewTransactionDetails": "查看交易详情"
       },
+      "error": "出了点问题",
+      "footerText": "您将在您的 {{integrationName}} 应用程序中完成此存款",
+      "noDestinationAddresses": "此集成没有可用的目标地址。",
       "pay": {
         "successTitle": "支付成功！",
         "viewTransactionDetails": "查看交易详情"
-      }
-    },
-    "bybit": {
-      "pay": {
-        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的支付。"
       },
-      "deposit": {
-        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的存款。"
-      }
+      "qrPageTitle": "从您的应用程序充值"
     },
     "cryptoCom": {
-      "pay": {
-        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的支付。"
-      },
       "deposit": {
         "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的存款。"
+      },
+      "pay": {
+        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的支付。"
       }
     },
-    "binance": {
-      "pay": {
-        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的支付。",
-        "mobileTitle": "从您的程序付款",
-        "mobileSubtitle": "<bold>完成付款后返回此处</bold>，以在您的Binance移动应用中完成该过程。"
-      },
-      "deposit": {
-        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的存款。",
-        "mobileTitle": "从您的应用程序充值",
-        "mobileSubtitle": "<bold>完成存款后返回此处</bold>，以在您的Binance移动应用中完成该过程。"
-      },
-      "continueWithApp": "继续使用 Binance"
-    },
     "externalAppInitiation": {
+      "continueButton": "继续前往 {{integrationName}}",
       "deposit": {
-        "title": "通过{{integrationName}} 充值",
-        "subtitle": "在{{integrationName}}完成存款后<bold>返回这里</bold>。"
+        "subtitle": "在{{integrationName}}完成存款后<bold>返回这里</bold>。",
+        "title": "通过{{integrationName}} 充值"
       },
       "pay": {
-        "title": "使用 {{integrationName}} 支付",
-        "subtitle": "在{{integrationName}}完成支付后<bold>返回这里</bold>。"
-      },
-      "continueButton": "继续前往 {{integrationName}}"
+        "subtitle": "在{{integrationName}}完成支付后<bold>返回这里</bold>。",
+        "title": "使用 {{integrationName}} 支付"
+      }
     },
     "oauthLoading": {
       "deposit": {
@@ -1179,6 +1179,7 @@
     "bybit": {
       "fee": "费用：{{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "用您的crypto.com应用程序扫描二维码并完成交易"
     },
