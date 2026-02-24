@@ -656,62 +656,62 @@
     "connectAction": "Połącz się z {{selectedIntegrationName}}"
   },
   "hostedIntegrations": {
+    "binance": {
+      "continueWithApp": "Kontynuuj w aplikacji Binance",
+      "deposit": {
+        "mobileSubtitle": "<bold>Wróć tutaj</bold> po zakończeniu wpłaty w mobilnej aplikacji Binance.",
+        "mobileTitle": "Wpłać z poziomu swojej aplikacji",
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Binance, aby zakończyć wpłatę."
+      },
+      "pay": {
+        "mobileSubtitle": "<bold>Wróć tutaj</bold> po zakończeniu płatności w mobilnej aplikacji Binance.",
+        "mobileTitle": "Zapłać przez aplikację",
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Binance, aby zakończyć płatność."
+      }
+    },
+    "bybit": {
+      "deposit": {
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Bybit, aby zakończyć wpłatę."
+      },
+      "pay": {
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Bybit, aby zakończyć płatność."
+      }
+    },
     "common": {
-      "footerText": "Dokończysz tę wpłatę w swojej aplikacji {{integrationName}}.",
-      "qrPageTitle": "Wpłać z poziomu swojej aplikacji",
       "connectionFailed": "Połączenie nie powiodło się",
       "connectionFailedBody": "Nie udało się połączyć z {{integrationName}}. Proszę spróbuj ponownie.",
-      "error": "Coś poszło nie tak",
-      "noDestinationAddresses": "Brak dostępnych adresów docelowych dla tej integracji.",
       "deposit": {
         "subText": "Twoje środki są w drodze.",
         "successTitle": "Formularz został wysłany!",
         "viewTransactionDetails": "Zobacz szczegóły transakcji"
       },
+      "error": "Coś poszło nie tak",
+      "footerText": "Dokończysz tę wpłatę w swojej aplikacji {{integrationName}}.",
+      "noDestinationAddresses": "Brak dostępnych adresów docelowych dla tej integracji.",
       "pay": {
         "successTitle": "Płatność zakończona sukcesem!",
         "viewTransactionDetails": "Zobacz szczegóły transakcji"
-      }
-    },
-    "bybit": {
-      "pay": {
-        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Bybit, aby zakończyć płatność."
       },
-      "deposit": {
-        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Bybit, aby zakończyć wpłatę."
-      }
+      "qrPageTitle": "Wpłać z poziomu swojej aplikacji"
     },
     "cryptoCom": {
-      "pay": {
-        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Crypto.com, aby zakończyć płatność."
-      },
       "deposit": {
         "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Crypto.com, aby zakończyć wpłatę."
+      },
+      "pay": {
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Crypto.com, aby zakończyć płatność."
       }
     },
-    "binance": {
-      "pay": {
-        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Binance, aby zakończyć płatność.",
-        "mobileTitle": "Zapłać przez aplikację",
-        "mobileSubtitle": "<bold>Wróć tutaj</bold> po zakończeniu płatności w mobilnej aplikacji Binance."
-      },
-      "deposit": {
-        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Binance, aby zakończyć wpłatę.",
-        "mobileTitle": "Wpłać z poziomu swojej aplikacji",
-        "mobileSubtitle": "<bold>Wróć tutaj</bold> po zakończeniu wpłaty w mobilnej aplikacji Binance."
-      },
-      "continueWithApp": "Kontynuuj w aplikacji Binance"
-    },
     "externalAppInitiation": {
+      "continueButton": "Kontynuuj w {{integrationName}}",
       "deposit": {
-        "title": "Wpłata z {{integrationName}}",
-        "subtitle": "<bold>Wróć tutaj</bold> po zakończeniu wpłaty w {{integrationName}}."
+        "subtitle": "<bold>Wróć tutaj</bold> po zakończeniu wpłaty w {{integrationName}}.",
+        "title": "Wpłata z {{integrationName}}"
       },
       "pay": {
-        "title": "Zapłać z {{integrationName}}",
-        "subtitle": "<bold>Wróć tutaj</bold> po zakończeniu płatności w {{integrationName}}."
-      },
-      "continueButton": "Kontynuuj w {{integrationName}}"
+        "subtitle": "<bold>Wróć tutaj</bold> po zakończeniu płatności w {{integrationName}}.",
+        "title": "Zapłać z {{integrationName}}"
+      }
     },
     "oauthLoading": {
       "deposit": {
@@ -1179,6 +1179,7 @@
     "bybit": {
       "fee": "Opłata: {{fee}}"
     },
+    "continueInPayApp": "",
     "cryptoCom": {
       "scanQRWithAppText": "Zeskanuj kod QR za pomocą aplikacji crypto.com aby sfinalizować transakcję"
     },
