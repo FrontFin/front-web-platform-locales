@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "继续使用 Binance",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>完成存款后返回此处</bold>，以在您的Binance移动应用中完成该过程。",
+        "mobileTitle": "从应用程序充值",
+        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的存款。",
+        "transferProcessing": "请在您的币安应用中完成充值..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>完成付款后返回此处</bold>，以在您的Binance移动应用中完成该过程。",
+        "mobileTitle": "从您的程序付款",
+        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的支付。",
+        "transferProcessing": "请在您的币安应用中完成付款..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的存款。"
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的支付。"
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "连接失败",
+      "connectionFailedBody": "我们无法连接到 {{integrationName}}。 请重试。",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "从应用程序充值",
+        "subText": "您的资金正在处理中。",
+        "successTitle": "成功！",
+        "viewTransactionDetails": "查看交易详情"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "出了点问题",
+      "footerText": "您将在您的 {{integrationName}} 应用程序中完成此存款",
+      "noDestinationAddresses": "此集成没有可用的目标地址。",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "从您的程序付款",
+        "successTitle": "支付成功！",
+        "viewTransactionDetails": "查看交易详情"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "选择充值代币"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的存款。"
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的支付。"
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "继续前往 {{integrationName}}",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "在{{integrationName}}完成存款后<bold>返回这里</bold>。",
+        "title": "通过{{integrationName}} 充值"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "在{{integrationName}}完成支付后<bold>返回这里</bold>。",
+        "title": "使用 {{integrationName}} 支付"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "在<br/>{{integrationName}}窗口中完成存款..."
       },
       "pay": {
-        "message": ""
+        "message": "在<br/>{{integrationName}}窗口中完成支付..."
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "桥梁费用：",
-      "bridgeFeeValue": "浮动",
       "collapsedBridging": "最大滑点 0.5%；约{{processingTime}}转账时间",
       "collapsedVanilla": "无费用；约1分钟转账时间",
       "networkFee": "网络费用：",
-      "networkFeeValue": "浮动",
-      "processingTime": "处理时间：",
-      "processingTimeBtc": "30 分钟",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 分钟",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 分钟",
+      "processingTimeDefaultValue": "1 分钟",
+      "processingTimeLabel": "处理时长：<{{processingTime}}",
       "slippage": "滑点：",
-      "slippageValue": "最多 0.5%",
       "title": "详情"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "一次性使用地址",
       "bridgingLimit": "限额: $2 - $500,000",
       "collapsedBridging": "在 {{network}} 上发送 {{token}}；一次性使用的地址；限额 $2–$500,000。",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "确保满足所有要求。",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "从{{network}}发送{{token}}；一次性地址；包含备忘录。",
+      "collapsedWithMemoNew": "发送 {{token}} 于 {{network}}; 包含备注。",
       "collapsedWithoutTag": "在 {{network}} 上发送 {{token}}；一次性使用的地址。",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "发送 {{token}} 于 {{network}}。",
       "collapsedWithTag": "仅发送 {{token}} 于 {{network}}; 地址为一次性使用; 包含传输 {{tagLabel}}",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "发送 {{token}} 于 {{network}}; 包含标签。",
       "includeInTransaction": "随存款一起包含转账 {{tagLabel}}",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "存款时包含转账备忘录。",
+      "includeInTransactionWithTag": "存款时包含转账标签。",
       "sendOnlyTokenOnNetwork": "仅发送 {{token}} 于 {{network}}",
       "title": "要求",
       "warningText": "确保满足所有要求，否则资金可能会永久丢失。"
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "钱包地址",
       "beforeYouGo": "在您离开之前...",
-      "chooseOne": "选择一个",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "复制 {{label}}",
       "copyWalletAddress": "复制钱包地址",
       "depositTitle": "在{{network}}上充值{{token}}",
       "depositToClient": "给{{clientName}}充值",
       "downloadQr": "下载二维码",
       "memoLabel": "备注",
       "networkLabel": "网络",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "网络",
       "stepChooseNetwork": "2. 选择一个网络",
       "stepChooseToken": "1. 选择一个代币",
       "subtitle": "您仍可以手动完成您的存款。",

@@ -407,8 +407,6 @@
     "incorrect2faCode": "Неверный код 2FA.",
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -563,8 +561,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -681,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Продолжить в приложении Binance",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Вернитесь сюда</bold> после завершения депозита в мобильном приложении Binance.",
+        "mobileTitle": "Пополните из вашего приложения",
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Binance, чтобы завершить депозит.",
+        "transferProcessing": "Завершите депозит в приложении Binance..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Вернитесь сюда</bold> после завершения оплаты в мобильном приложении Binance.",
+        "mobileTitle": "Оплатите через ваше приложение",
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Binance, чтобы завершить оплату.",
+        "transferProcessing": "Завершите оплату в приложении Binance..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Bybit, чтобы завершить депозит."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Bybit, чтобы завершить оплату."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Не удалось подключиться",
+      "connectionFailedBody": "Не удалось подключиться к {{integrationName}}. Пожалуйста, попробуйте снова.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Пополните из вашего приложения",
+        "subText": "Ваши средства в пути.",
+        "successTitle": "Успешно!",
+        "viewTransactionDetails": "Просмотреть детали транзакции"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Что-то пошло не так",
+      "footerText": "Завершите этот депозит в вашем приложении {{integrationName}}",
+      "noDestinationAddresses": "Для этой интеграции нет доступных адресов назначения.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Оплатите через ваше приложение",
+        "successTitle": "Платеж успешно выполнен!",
+        "viewTransactionDetails": "Просмотреть детали транзакции"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Выберите токен для депозита"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Crypto.com, чтобы завершить депозит."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Сканируйте с помощью камеры телефона или приложения Crypto.com, чтобы завершить оплату."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "Продолжить в {{integrationName}}",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Вернитесь сюда</bold> после завершения депозита в {{integrationName}}.",
+        "title": "Депозит из {{integrationName}}"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Вернитесь сюда</bold> после завершения оплаты в {{integrationName}}.",
+        "title": "Оплатить через {{integrationName}}"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "Завершите депозит в <br/>окне {{integrationName}}..."
       },
       "pay": {
-        "message": ""
+        "message": "Завершите оплату в <br/>окне {{integrationName}}..."
       }
     }
   },
@@ -1085,20 +1082,14 @@
       "slippage": "Скользящий: {{slippage}}"
     },
     "details": {
-      "bridgeFee": "Плата за перенос активов между сетями:",
-      "bridgeFeeValue": "переменная",
+      "bridgeFee": "Плата за перенос: <value>переменная</value>",
       "collapsedBridging": "Максимальное проскальзывание 0,5%; ~{{processingTime}} время перевода",
-      "collapsedVanilla": "Без комиссии; ~1 минута время перевода",
-      "networkFee": "Комиссия сети:",
-      "networkFeeValue": "переменная",
-      "processingTime": "Время обработки:",
-      "processingTimeBtc": "30 минут",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 минута",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
-      "slippage": "Проскальзывание:",
-      "slippageValue": "до 0.5%",
+      "collapsedVanilla": "Без комиссии; <1 минуты время перевода.",
+      "networkFee": "Комиссия сети: <value>переменная</value>",
+      "processingTimeBtcValue": "30 минут",
+      "processingTimeDefaultValue": "1 минута",
+      "processingTimeLabel": "Время обработки: <{{processingTime}}",
+      "slippage": "Проскальзывание: <value>до 0,5%</value>",
       "title": "Подробности"
     },
     "entry": {
@@ -1136,20 +1127,18 @@
     },
     "requirements": {
       "addressOneTimeUse": "Одноразовый адрес",
-      "bridgingLimit": "Лимит: $2 - $500,000",
-      "collapsedBridging": "Отправьте {{token}} через {{network}}; адрес для одноразового использования; лимит $2–$500,000.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
+      "bridgingLimit": "Лимит: ${{min}} - ${{max}}",
+      "collapsedBridging": "Отправьте {{token}} через {{network}}; адрес для одноразового использования;\nлимит ${{min}}–${{max}}.",
       "collapsedFallback": "Убедитесь, что все требования выполнены.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "Отправьте {{token}} через {{network}}; адрес для одноразового использования; добавьте мемо.",
+      "collapsedWithMemoNew": "Отправьте {{token}} через {{network}}; добавьте мемо.",
       "collapsedWithoutTag": "Отправьте {{token}} через {{network}}; адрес для одноразового использования.",
-      "collapsedWithoutTagNew": "",
-      "collapsedWithTag": "Отправляйте только {{token}} через {{network}}; адрес одноразовый; Укажите передачу {{tagLabel}}",
-      "collapsedWithTagNew": "",
+      "collapsedWithoutTagNew": "Отправьте {{token}} через {{network}}.",
+      "collapsedWithTag": "Отправляйте только {{token}} через {{network}}; адрес одноразовый; укажите тег.",
+      "collapsedWithTagNew": "Отправьте {{token}} через {{network}}; укажите тег.",
       "includeInTransaction": "Укажите передачу {{tagLabel}} с депозитом",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Укажите мемо перевода для депозита",
+      "includeInTransactionWithTag": "Укажите тег перевода для депозита",
       "sendOnlyTokenOnNetwork": "Отправляйте только {{token}} через {{network}}",
       "title": "Требования",
       "warningText": "Убедитесь, что все требования выполнены, иначе ваши средства могут быть безвозвратно утеряны."
@@ -1157,15 +1146,14 @@
     "screen": {
       "addressLabel": "Адрес",
       "beforeYouGo": "Прежде чем уйти...",
-      "chooseOne": "Выберите один",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Скопировать {{label}}",
       "copyWalletAddress": "Скопировать адрес электронного кошелька",
       "depositTitle": "Депозит {{token}} через {{network}}",
       "depositToClient": "Депозит на {{clientName}}",
       "downloadQr": "Скачать QR-код",
       "memoLabel": "Примечание",
       "networkLabel": "Сеть",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Сеть",
       "stepChooseNetwork": "2. Выберите сеть",
       "stepChooseToken": "1. Выберите токен",
       "subtitle": "Вы можете завершить депозит вручную.",

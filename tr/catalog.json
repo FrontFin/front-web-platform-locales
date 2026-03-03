@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Binance uygulaması ile devam et",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Yatırma işleminizi tamamladıktan sonra</bold> Binance mobil uygulamanızdan buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan para yatırın",
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Binance uygulamasıyla tarayın.",
+        "transferProcessing": "Binance uygulamanızda yatırma işlemini tamamlayın..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Ödemenizi tamamladıktan sonra</bold> Binance mobil uygulamanızdan buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan ödeme yapın",
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Binance uygulamasıyla tarayın.",
+        "transferProcessing": "Binance uygulamanızda ödeme işlemini tamamlayın..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Bağlantı başarısız",
+      "connectionFailedBody": "{{integrationName}} ile bağlantı kurulamadı. Lütfen tekrar deneyin.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Uygulamanızdan para yatırın",
+        "subText": "Fonlarınız yolda.",
+        "successTitle": "Başarılı!",
+        "viewTransactionDetails": "İşlem ayrıntılarını görüntüle"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Bir şeyler ters gitti",
+      "footerText": "Bu para yatırma işlemini {{integrationName}} uygulamanızda tamamlayacaksınız",
+      "noDestinationAddresses": "Bu entegrasyon için müsait bir hedef adres yok.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Uygulamanızdan ödeme yapın",
+        "successTitle": "Ödeme başarılı!",
+        "viewTransactionDetails": "İşlem ayrıntılarını görüntüle"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Yatırılacak token'ı seçin"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "{{integrationName}}'e devam edin",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>{{integrationName}} işleminizi tamamladıktan sonra buraya geri dönün</bold>.",
+        "title": "{{integrationName}} ile yatır"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>{{integrationName}} ödemenizi tamamladıktan sonra buraya geri dönün</bold>.",
+        "title": "{{integrationName}} ile ödeme yapın"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "<br/>{{integrationName}} penceresinde yatırma işlemini tamamlayın..."
       },
       "pay": {
-        "message": ""
+        "message": "<br/>{{integrationName}} penceresinde ödemeyi tamamlayın..."
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "Köprü ücreti:",
-      "bridgeFeeValue": "değişken",
       "collapsedBridging": "Maksimum kayma 0.5%; ~{{processingTime}} transfer süresi",
       "collapsedVanilla": "Ücret yok; ~1 dak transfer süresi",
       "networkFee": "Ağ ücreti:",
-      "networkFeeValue": "değişken",
-      "processingTime": "İşlem süresi:",
-      "processingTimeBtc": "30 dk",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 dk",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
-      "slippage": "Kayma:",
-      "slippageValue": "0.5%'e kadar",
+      "processingTimeBtcValue": "30 dk",
+      "processingTimeDefaultValue": "1 dk",
+      "processingTimeLabel": "İşlem süresi: <{{processingTime}}",
+      "slippage": "Kayma: <value>%0,5'e kadar</value>",
       "title": "Ayrıntılar"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "Tek kullanımlık adres",
       "bridgingLimit": "Limit: $2 - $500,000",
       "collapsedBridging": "{{token}}'u {{network}}'a gönder; tek kullanımlık adres; $2–$500,000 limit.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "Tüm gereksinimlerin karşılandığından emin olun.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "{{network}} üzerine {{token}} gönder; tek kullanımlık adres; not ekleyin.",
+      "collapsedWithMemoNew": "{{token}} {{network}} üzerinde gönderin; memo ekleyin.",
       "collapsedWithoutTag": "{{token}}'u {{network}}'a gönder; tek kullanımlık adres.",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "{{network}} ağındaki {{token}} gönderin.",
       "collapsedWithTag": "Sadece {{token}} {{network}} üzerinde gönderin; Adres tek seferlik kullanılacaktır; Transfer {{tagLabel}} dahil edin",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "{{token}} {{network}} üzerinde gönderin; tag ekleyin.",
       "includeInTransaction": "Transfer ile birlikte {{tagLabel}}'i dahil edin",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Transfer notunu para yatırma ile ekleyin.",
+      "includeInTransactionWithTag": "Transfer etiketini para yatırma ile ekleyin.",
       "sendOnlyTokenOnNetwork": "Sadece {{token}} {{network}} üzerinde gönderin",
       "title": "Gereksinimler",
       "warningText": "Tüm gereksinimlerin karşılandığından emin olun, aksi takdirde fonlarınız kalıcı olarak kaybolabilir."
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "Adres",
       "beforeYouGo": "Gitmeden önce...",
-      "chooseOne": "Birini seçin",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "{{label}} Kopyala",
       "copyWalletAddress": "Cüzdan adresini kopyala",
       "depositTitle": "Sorun mu yaşıyorsun?",
       "depositToClient": "{{clientName}}'e para yatır ",
       "downloadQr": "QR kodunu indir",
       "memoLabel": "Not",
       "networkLabel": "Ağ",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Ağ test",
       "stepChooseNetwork": "2. Bir ağı seçin",
       "stepChooseToken": "1. Bir token seçin",
       "subtitle": "Para yatırma işleminizi manuel olarak tamamlayabilirsiniz.",

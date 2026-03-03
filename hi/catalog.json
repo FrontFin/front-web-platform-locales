@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Binance ऐप के साथ जारी रखें",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>यहाँ वापस आएँ</bold> जब आपने अपने Binance मोबाइल ऐप में जमा प्रक्रिया पूरी कर ली हो।",
+        "mobileTitle": "अपने ऐप से जमा करें",
+        "qrPageTitle": "अपने फोन के कैमरा या Binance ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।",
+        "transferProcessing": "अपने Binance ऐप में जमा प्रक्रिया पूरी करें…"
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>यहाँ वापस आएँ</bold> जब आपने अपने Binance मोबाइल ऐप में भुगतान पूरा कर लिया हो।",
+        "mobileTitle": "अपने ऐप से भुगतान करें",
+        "qrPageTitle": "अपने फोन के कैमरा या Binance ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।",
+        "transferProcessing": "अपने Binance ऐप में भुगतान प्रक्रिया पूरी करें…"
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।"
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।"
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "कनेक्शन असफल रहा",
+      "connectionFailedBody": "हम {{integrationName}} से जुड़ने में असमर्थ हैं। कृपया पुनः प्रयास करें।",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "अपने ऐप से जमा करें",
+        "subText": "आपकी राशि रास्ते में है।",
+        "successTitle": "सफलता!",
+        "viewTransactionDetails": "लेनदेन विवरण देखें"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "कुछ गलत हो गया।",
+      "footerText": "आप इस जमा प्रक्रिया को अपने {{integrationName}} ऐप में पूरा करेंगे",
+      "noDestinationAddresses": "इस एकीकरण के लिए कोई गंतव्य पता उपलब्ध नहीं है।",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "अपने ऐप से भुगतान करें",
+        "successTitle": "भुगतान सफल!",
+        "viewTransactionDetails": "लेनदेन विवरण देखें"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "जमा टोकन चुनें"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "अपने फोन के कैमरा या Crypto.com ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।"
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "अपने फोन के कैमरा या Crypto.com ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।"
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "{{integrationName}} में जारी रखें",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>यहाँ वापस आएँ</bold> जब आपने {{integrationName}} में जमा प्रक्रिया पूरी कर ली हो।",
+        "title": "{{integrationName}} से जमा करें"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>यहाँ वापस आएँ</bold> जब आपने {{integrationName}} में भुगतान पूरा कर लिया हो।",
+        "title": "{{integrationName}} के साथ भुगतान करें"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "{{integrationName}} विंडो में जमा प्रक्रिया पूरी करें..."
       },
       "pay": {
-        "message": ""
+        "message": "{{integrationName}} विंडो में भुगतान प्रक्रिया पूरी करें..."
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "पुल शुल्क:",
-      "bridgeFeeValue": "चर",
       "collapsedBridging": "अधिकतम स्लिपेज 0.5%; ~{{processingTime}} स्थानांतरण समय",
       "collapsedVanilla": "कोई शुल्क नहीं; ~1 मिनट स्थानांतरण समय",
       "networkFee": "नेटवर्क शुल्क:",
-      "networkFeeValue": "चर",
-      "processingTime": "प्रसंस्करण समय:",
-      "processingTimeBtc": "30 मिनट",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 मिनट",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 मिनट",
+      "processingTimeDefaultValue": "1 मिनट",
+      "processingTimeLabel": "प्रसंस्करण समय: <{{processingTime}}",
       "slippage": "फिसलन:",
-      "slippageValue": "0.5% तक",
       "title": "विवरण"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "एक बार उपयोग के लिए पता",
       "bridgingLimit": "सीमा: $2 - $500,000",
       "collapsedBridging": "{{network}} पर {{token}} भेजें; एक बार के उपयोग का पता; $2–$500,000 की सीमा।",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "सुनिश्चित करें कि सभी आवश्यकताएँ पूरी हो गई हैं।",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "{{network}} पर {{token}} भेजें; एकल-उपयोग का पता; नोट शामिल करें।",
+      "collapsedWithMemoNew": "{{token}} को {{network}} पर भेजें; मेमो शामिल करें।",
       "collapsedWithoutTag": "{{network}} पर {{token}} भेजें; एक बार के उपयोग का पता।",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "{{token}} को {{network}} पर भेजें।",
       "collapsedWithTag": "केवल {{token}} को {{network}} पर भेजें; पता एक बार उपयोग का है; ट्रांसफर में {{tagLabel}} शामिल करें",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "{{token}} को {{network}} पर भेजें; टैग शामिल करें।",
       "includeInTransaction": "जमा के साथ ट्रांसफर {{tagLabel}} शामिल करें",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "जमा के साथ हस्तांतरण का नोट शामिल करें",
+      "includeInTransactionWithTag": "जमा के साथ हस्तांतरण का टैग शामिल करें",
       "sendOnlyTokenOnNetwork": "केवल {{token}} को {{network}} पर भेजें",
       "title": "आवश्यकताएं",
       "warningText": "सुनिश्चित करें कि सभी आवश्यकताएँ पूरी हो चुकी हैं या आपके फंड स्थायी रूप से खो सकते हैं।"
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "पता",
       "beforeYouGo": "जाने से पहले...",
-      "chooseOne": "एक चुनें",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "{{label}} कॉपी करें",
       "copyWalletAddress": "वॉलेट पता कॉपी करें",
       "depositTitle": "{{token}} को {{network}} पर जमा करें",
       "depositToClient": "{{clientName}} में जमा करें",
       "downloadQr": "क्यूआर कोड डाउनलोड करें",
       "memoLabel": "ज्ञापन",
       "networkLabel": "नेटवर्क",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "नेटवर्क",
       "stepChooseNetwork": "2. नेटवर्क चुनें",
       "stepChooseToken": "1. एक टोकन चुनें",
       "subtitle": "आप अभी भी अपना जमा मैन्युअल रूप से पूरा कर सकते हैं",
