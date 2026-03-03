@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Tiếp tục với ứng dụng Binance",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Quay lại đây</bold> sau khi hoàn tất nạp tiền trong ứng dụng Binance trên di động của bạn.",
+        "mobileTitle": "Nạp tiền từ ứng dụng của bạn",
+        "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Binance để hoàn tất việc nạp tiền của bạn.",
+        "transferProcessing": "Hoàn tất khoản nạp trong ứng dụng Binance của bạn..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Quay lại đây</bold> sau khi hoàn tất thanh toán trong ứng dụng Binance trên di động của bạn.",
+        "mobileTitle": "Thanh toán từ ứng dụng của bạn",
+        "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Binance để hoàn tất thanh toán của bạn.",
+        "transferProcessing": "Hoàn tất khoản thanh toán trong ứng dụng Binance của bạn..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Bybit để hoàn tất việc nạp tiền của bạn."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Bybit để hoàn tất thanh toán của bạn."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Kết nối thất bại",
+      "connectionFailedBody": "Chúng tôi không thể kết nối với {{integrationName}}. Vui lòng thử lại.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Nạp tiền từ ứng dụng của bạn",
+        "subText": "Tiền của bạn đang được chuyển.",
+        "successTitle": "Thành công!",
+        "viewTransactionDetails": "Xem chi tiết giao dịch"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Có gì đó sai",
+      "footerText": "Bạn sẽ hoàn tất khoản nạp này trong ứng dụng {{integrationName}} của mình",
+      "noDestinationAddresses": "Không có địa chỉ đích nào khả dụng cho tích hợp này.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Thanh toán từ ứng dụng của bạn",
+        "successTitle": "Thanh toán thành công!",
+        "viewTransactionDetails": "Xem chi tiết giao dịch"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Chọn token nạp"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Crypto.com để hoàn tất việc nạp tiền của bạn."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Crypto.com để hoàn tất thanh toán của bạn."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "Tiếp tục đến {{integrationName}}",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Quay lại đây</bold> sau khi hoàn tất nạp tiền trong {{integrationName}}.",
+        "title": "Nạp tiền từ {{integrationName}}"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Quay lại đây</bold> sau khi hoàn tất thanh toán trong {{integrationName}}.",
+        "title": "Thanh toán bằng {{integrationName}}"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "Hoàn tất việc nạp tiền trong <br/>cửa sổ {{integrationName}}..."
       },
       "pay": {
-        "message": ""
+        "message": "Hoàn tất thanh toán trong <br/>cửa sổ {{integrationName}}..."
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "Phí cầu:",
-      "bridgeFeeValue": "biến đổi",
       "collapsedBridging": "Trượt giá tối đa 0.5%; thời gian chuyển ~{{processingTime}}",
       "collapsedVanilla": "Không có phí; thời gian chuyển ~1 phút",
       "networkFee": "Phí mạng:",
-      "networkFeeValue": "biến đổi",
-      "processingTime": "Thời gian xử lý:",
-      "processingTimeBtc": "30 phút",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 phút",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 phút",
+      "processingTimeDefaultValue": "1 phút",
+      "processingTimeLabel": "Thời gian xử lý: <{{processingTime}}",
       "slippage": "Độ trượt giá:",
-      "slippageValue": "tối đa 0.5%",
       "title": "Chi tiết"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "Địa chỉ sử dụng một lần",
       "bridgingLimit": "Giới hạn: $2 - $500,000",
       "collapsedBridging": "Gửi {{token}} trên {{network}}; địa chỉ dùng một lần; giới hạn $2–$500,000.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "Đảm bảo tất cả các yêu cầu được đáp ứng.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "Gửi {{token}} trên {{network}}; địa chỉ sử dụng một lần; bao gồm memo.",
+      "collapsedWithMemoNew": "Gửi {{token}} trên {{network}}; bao gồm memo.",
       "collapsedWithoutTag": "Gửi {{token}} trên {{network}}; địa chỉ dùng một lần.",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "Gửi {{token}} trên {{network}}.",
       "collapsedWithTag": "Chỉ gửi {{token}} trên {{network}}; Địa chỉ sử dụng một lần; Bao gồm {{tagLabel}} chuyển khoản",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "Gửi {{token}} trên {{network}}; bao gồm tag.",
       "includeInTransaction": "Bao gồm {{tagLabel}} chuyển khoản cùng với tiền gửi",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Bao gồm memo chuyển khoản với tiền gửi",
+      "includeInTransactionWithTag": "Bao gồm thẻ chuyển khoản với tiền gửi",
       "sendOnlyTokenOnNetwork": "Chỉ gửi {{token}} trên {{network}}",
       "title": "Yêu cầu",
       "warningText": "Đảm bảo tất cả các yêu cầu được đáp ứng hoặc tiền của bạn có thể bị mất vĩnh viễn."
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "Địa chỉ",
       "beforeYouGo": "Trước khi bạn rời đi...",
-      "chooseOne": "Chọn một",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Sao chép {{label}}",
       "copyWalletAddress": "Sao chép địa chỉ ví",
       "depositTitle": "Nạp {{token}} trên {{network}}",
       "depositToClient": "Nạp tiền vào {{clientName}}",
       "downloadQr": "Tải xuống mã QR",
       "memoLabel": "Thông báo",
       "networkLabel": "Mạng",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Mạng",
       "stepChooseNetwork": "2. Chọn một mạng",
       "stepChooseToken": "1. Chọn một đồng tiền",
       "subtitle": "Bạn vẫn có thể hoàn tất việc nạp tiền theo cách thủ công",
