@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Weiter mit der Binance-App",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Einzahlung in deiner Binance-App abgeschlossen hast.",
+        "mobileTitle": "Von deiner App einzahlen",
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Binance-App, um deine Einzahlung abzuschließen.",
+        "transferProcessing": "Schließe die Einzahlung in deiner Binance-App ab ..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Zahlung in deiner Binance-App abgeschlossen hast.",
+        "mobileTitle": "Zahle über deine App",
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Binance-App, um deine Zahlung abzuschließen.",
+        "transferProcessing": "Schließe die Zahlung in deiner Binance-App ab ..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Einzahlung abzuschließen."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Zahlung abzuschließen."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Verbindung fehlgeschlagen",
+      "connectionFailedBody": "Wir konnten keine Verbindung zu {{integrationName}} herstellen. Bitte versuche es erneut.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Von deiner App einzahlen",
+        "subText": "Deine Gelder sind unterwegs.",
+        "successTitle": "Erfolgreich!",
+        "viewTransactionDetails": "Überweisungsdetails anzeigen"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Etwas ist schiefgelaufen",
+      "footerText": "Du wirst diese Einzahlung in deiner {{integrationName}}-App abschließen",
+      "noDestinationAddresses": "Für diese Integration sind keine Zieladressen verfügbar.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Zahle über deine App",
+        "successTitle": "Zahlung erfolgreich!",
+        "viewTransactionDetails": "Überweisungsdetails anzeigen"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Einzahlungstoken auswählen"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Crypto.com-App, um deine Einzahlung abzuschließen."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Crypto.com-App, um deine Zahlung abzuschließen."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "Weiter zu {{integrationName}}",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Einzahlung in {{integrationName}} abgeschlossen hast.",
+        "title": "Einzahlung von {{integrationName}}"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Zahlung in {{integrationName}} abgeschlossen hast.",
+        "title": "Bezahlen mit {{integrationName}}"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "Schließe die Einzahlung im <br/>{{integrationName}}-Fenster ab..."
       },
       "pay": {
-        "message": ""
+        "message": "Schließe die Zahlung im <br/>{{integrationName}}-Fenster ab..."
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "Brückengebühr:",
-      "bridgeFeeValue": "variabel",
       "collapsedBridging": "Maximaler Slippage 0,5 %; ~{{processingTime}} Übertragungszeit",
       "collapsedVanilla": "Keine Gebühren; ~1 Min. Übertragungszeit",
       "networkFee": "Netzwerkgebühr:",
-      "networkFeeValue": "variabel",
-      "processingTime": "Bearbeitungszeit:",
-      "processingTimeBtc": "30 Min.",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 Min.",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 Min.",
+      "processingTimeDefaultValue": "1 Min.",
+      "processingTimeLabel": "Bearbeitungszeit: <{{processingTime}}",
       "slippage": "Rutschung:",
-      "slippageValue": "bis zu 0,5%",
       "title": "Einzelheiten"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "Einmalig verwendbare Adresse",
       "bridgingLimit": "Limit: $2 - $500.000",
       "collapsedBridging": "Senden Sie {{token}} über {{network}}; Einmal-Adresse; $2–$500.000 Limit.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "Stellen Sie sicher, dass alle Anforderungen erfüllt sind.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "Senden Sie {{token}} auf {{network}}; Adresse einmalig verwendbar; Memo beifügen.",
+      "collapsedWithMemoNew": "Senden Sie {{token}} auf {{network}}; Fügen Sie die Notiz bei.",
       "collapsedWithoutTag": "Senden Sie {{token}} über {{network}}; Einmal-Adresse.",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "Senden Sie {{token}} auf {{network}}.",
       "collapsedWithTag": "Senden Sie nur {{token}} auf {{network}}; Adresse ist einmalig verwendbar; Fügen Sie den Transfer {{tagLabel}} bei",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "Senden Sie {{token}} auf {{network}}; Fügen Sie den Transfer {{tagLabel}} bei.",
       "includeInTransaction": "Transfer {{tagLabel}} bei Einzahlung einfügen",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Überweisungsnotiz mit Einzahlung einfügen",
+      "includeInTransactionWithTag": "Überweisungstag mit Einzahlung einfügen",
       "sendOnlyTokenOnNetwork": "Senden Sie nur {{token}} auf {{network}}",
       "title": "Anforderungen",
       "warningText": "Stellen Sie sicher, dass alle Anforderungen erfüllt sind oder Ihre Gelder dauerhaft verloren gehen können."
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "Adresse",
       "beforeYouGo": "Bevor du gehst ...",
-      "chooseOne": "Wählen Sie eine aus",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Kopiere {{label}}",
       "copyWalletAddress": "Wallet-Adresse kopieren",
       "depositTitle": "Einzahlung von {{token}} auf {{network}}",
       "depositToClient": "Einzahlung bei {{clientName}}",
       "downloadQr": "QR-Code herunterladen",
       "memoLabel": "Notiz",
       "networkLabel": "Netzwerk",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Netzwerk",
       "stepChooseNetwork": "2. Wählen Sie ein Netzwerk",
       "stepChooseToken": "1. Wählen Sie ein Token",
       "subtitle": "Du kannst deine Einzahlung trotzdem manuell abschließen",
