@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Jatka Binance-sovelluksella",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen Binance-mobiilisovelluksessasi.",
+        "mobileTitle": "Talleta sovelluksestasi",
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi talletuksesi.",
+        "transferProcessing": "Viimeistele talletus Binance-sovelluksessasi..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun Binance-mobiilisovelluksessasi.",
+        "mobileTitle": "Maksa sovelluksestasi",
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Binance-sovelluksella viimeistelläksesi maksusi.",
+        "transferProcessing": "Viimeistele maksu Binance-sovelluksessasi..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi talletuksesi."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi maksusi."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Yhteys epäonnistui",
+      "connectionFailedBody": "Emme voineet muodostaa yhteyttä {{integrationName}}. Yritä uudelleen.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Talleta sovelluksestasi",
+        "subText": "Varojen siirto on käynnissä.",
+        "successTitle": "Onnistui!",
+        "viewTransactionDetails": "Tarkastele tapahtuman tietoja"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Jotain meni pieleen",
+      "footerText": "Viimeistelet talletuksen {{integrationName}}-sovelluksessasi",
+      "noDestinationAddresses": "Tälle integraatiolle ei ole saatavilla määränpääosoitteita.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Maksa sovelluksestasi",
+        "successTitle": "Maksu onnistui!",
+        "viewTransactionDetails": "Tarkastele tapahtuman tietoja"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Valitse talletustoken"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi talletuksesi."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi maksusi."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "Jatka {{integrationName}}issa",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen {{integrationName}}-sovelluksessa.",
+        "title": "Talletus {{integrationName}}:sta"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun {{integrationName}}-sovelluksessa.",
+        "title": "Maksa käyttäen {{integrationName}}"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "Suorita talletus loppuun <br/>{{integrationName}}-ikkunassa..."
       },
       "pay": {
-        "message": ""
+        "message": "Suorita maksu loppuun <br/>{{integrationName}}-ikkunassa..."
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "Siltamaksu:",
-      "bridgeFeeValue": "vaihteleva",
       "collapsedBridging": "Maksimi liukuma 0,5 %; ~{{processingTime}} siirtoaika",
       "collapsedVanilla": "Ei maksuja; ~1 min siirtoaika",
       "networkFee": "Verkkomaksu:",
-      "networkFeeValue": "vaihteleva",
-      "processingTime": "Käsittelyaika:",
-      "processingTimeBtc": "30 min",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 min",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 min",
+      "processingTimeDefaultValue": "1 min",
+      "processingTimeLabel": "Käsittelyaika: <{{processingTime}}",
       "slippage": "Lipsahdus:",
-      "slippageValue": "jopa 0,5%",
       "title": "Tiedot"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "Kertakäyttöinen osoite",
       "bridgingLimit": "Rajoitus: $2 - $500,000",
       "collapsedBridging": "Lähetä {{token}} verkossa {{network}}; kertakäyttöosoite; $2–$500,000 rajoitus.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "Varmista, että kaikki vaatimukset täyttyvät.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "Lähetä {{token}} verkossa {{network}}; yksittäiskäyttöinen osoite; sisällytä muistio.",
+      "collapsedWithMemoNew": "Lähetä {{token}} verkossa {{network}}; sisällytä muistiinpanot.",
       "collapsedWithoutTag": "Lähetä {{token}} verkossa {{network}}; kertakäyttöosoite.",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "Lähetä {{token}} {{network}}-verkossa.",
       "collapsedWithTag": "Lähetä vain {{token}} verkossa {{network}}; Osoite on kertakäyttöinen; Sisällytä siirtoon {{tagLabel}}",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "Lähetä {{token}} verkossa {{network}}; sisällytä tunniste.",
       "includeInTransaction": "Sisällytä siirtoon {{tagLabel}} talletuksen yhteydessä",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Sisällytä siirtomuistio talletukseen",
+      "includeInTransactionWithTag": "Sisällytä siirtotunniste talletukseen",
       "sendOnlyTokenOnNetwork": "Lähetä vain {{token}} verkossa {{network}}",
       "title": "Vaatimukset",
       "warningText": "Varmista, että kaikki vaatimukset täyttyvät tai varasi voivat kadota pysyvästi."
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "Osoite",
       "beforeYouGo": "Ennen kuin menet...",
-      "chooseOne": "Valitse yksi",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Kopioi {{label}}",
       "copyWalletAddress": "Kopioi lompakon osoite",
       "depositTitle": "Tallenna {{token}} {{network}} verkossa",
       "depositToClient": "Talleta {{clientName}}iin",
       "downloadQr": "Lataa QR-koodi",
       "memoLabel": "Muistio",
       "networkLabel": "Verkko",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Verkko",
       "stepChooseNetwork": "2. Valitse verkko",
       "stepChooseToken": "1. Valitse token",
       "subtitle": "Voit silti suorittaa talletuksesi manuaalisesti.",
