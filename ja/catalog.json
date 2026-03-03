@@ -677,71 +677,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Binanceアプリで続行",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで入金を完了した後。",
+        "mobileTitle": "アプリから入金",
+        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして入金を完了してください。",
+        "transferProcessing": "Binance アプリで入金を完了してください..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>こちらに戻ってください</bold> Binanceモバイルアプリで支払いを完了した後。",
+        "mobileTitle": "アプリで支払う",
+        "qrPageTitle": "スマートフォンのカメラ、またはBinanceアプリでスキャンして支払いを完了してください。",
+        "transferProcessing": "Binance アプリで決済を完了してください..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして入金を完了してください。"
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして支払いを完了してください。"
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "接続に失敗しました",
+      "connectionFailedBody": "{{integrationName}}に接続できませんでした。もう一度お試しください。",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "アプリから入金",
+        "subText": "資金を送信中です。",
+        "successTitle": "成功しました！",
+        "viewTransactionDetails": "取引の詳細を表示"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "問題が発生しました",
+      "footerText": "お使いの{{integrationName}}アプリでこの入金を完了してください。",
+      "noDestinationAddresses": "このインテグレーションでは宛先アドレスが利用できません。",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "アプリで支払う",
+        "successTitle": "お支払いが完了しました",
+        "viewTransactionDetails": "取引の詳細を表示"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "入金用のトークンを選択"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして入金を完了してください。"
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。"
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "{{integrationName}}で続ける",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で入金が完了した後。",
+        "title": "{{integrationName}}からの入金"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>こちらに戻ってください</bold> {{integrationName}}で支払いが完了した後。",
+        "title": "{{integrationName}}で支払う"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "<br/>{{integrationName}}ウィンドウで入金を完了します…"
       },
       "pay": {
-        "message": ""
+        "message": "<br/>{{integrationName}}ウィンドウで支払いを完了します…"
       }
     }
   },
@@ -1082,19 +1083,13 @@
     },
     "details": {
       "bridgeFee": "橋の通行料:",
-      "bridgeFeeValue": "可変",
       "collapsedBridging": "最大スリッページ0.5%；~{{processingTime}}の転送時間",
       "collapsedVanilla": "手数料なし；~1分の転送時間",
       "networkFee": "ネットワーク料金:",
-      "networkFeeValue": "可変",
-      "processingTime": "処理時間:",
-      "processingTimeBtc": "30分",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1分",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 分",
+      "processingTimeDefaultValue": "1 分",
+      "processingTimeLabel": "処理時間: <{{processingTime}}",
       "slippage": "スリッページ:",
-      "slippageValue": "最大 0.5%",
       "title": "詳細"
     },
     "entry": {
@@ -1134,18 +1129,16 @@
       "addressOneTimeUse": "使い捨てアドレス",
       "bridgingLimit": "制限: $2 - $500,000",
       "collapsedBridging": "{{network}}で{{token}}を送る；1回使い切りアドレス；$2〜$500,000の制限。",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "すべての要件が満たされていることを確認してください。",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "{{network}}で{{token}}を送信; 使い捨てアドレス; メモを含む。",
+      "collapsedWithMemoNew": "{{network}}で{{token}}を送信; メモを含める。",
       "collapsedWithoutTag": "{{network}}で{{token}}を送る；1回使い切りアドレス。",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "{{network}}で{{token}}を送信。",
       "collapsedWithTag": "{{network}}で{{token}}のみを送信; アドレスは使い捨て; 転送{{tagLabel}}を含める",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "{{network}}で{{token}}を送信; タグを含める。",
       "includeInTransaction": "入金に転送{{tagLabel}}を含める",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "入金にメモを含める",
+      "includeInTransactionWithTag": "入金にタグを含める",
       "sendOnlyTokenOnNetwork": "{{network}}で{{token}}のみを送信",
       "title": "要件",
       "warningText": "すべての要件が満たされていることを確認するか、資金が永久に失われる可能性があります。"
@@ -1153,15 +1146,14 @@
     "screen": {
       "addressLabel": "住所",
       "beforeYouGo": "続行する前に…",
-      "chooseOne": "1つを選択",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "{{label}}をコピー",
       "copyWalletAddress": "ウォレットアドレスをコピー",
       "depositTitle": "{{network}}で{{token}}を入金",
       "depositToClient": "{{clientName}}への入金",
       "downloadQr": "QRコードをダウンロード",
       "memoLabel": "メモ",
       "networkLabel": "ネットワーク",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "ネットワーク",
       "stepChooseNetwork": "2. ネットワークを選択",
       "stepChooseToken": "1. トークンを選択",
       "subtitle": "手動でも入金を完了できます",
