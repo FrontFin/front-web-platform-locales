@@ -409,7 +409,6 @@
     "incorrect2faCode": "Code 2FA incorrect.",
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -564,7 +563,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -681,71 +679,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Continuer avec l'application Binance",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Revenez ici</bold> après avoir complété le dépôt dans votre application mobile Binance.",
+        "mobileTitle": "Dépôt depuis votre application",
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Binance pour terminer votre dépôt.",
+        "transferProcessing": "Complétez le dépôt dans votre application Binance..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Revenez ici</bold> après avoir complété le paiement dans votre application mobile Binance.",
+        "mobileTitle": "Payer depuis votre application",
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Binance pour terminer votre paiement.",
+        "transferProcessing": "Complétez le paiement dans votre application Binance..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre dépôt."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre paiement."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Échec de la connexion",
+      "connectionFailedBody": "Nous n'avons pas pu nous connecter à {{integrationName}}. Veuillez réessayer.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Dépôt depuis votre application",
+        "subText": "Vos fonds sont en chemin.",
+        "successTitle": "Action complétée avec succès !",
+        "viewTransactionDetails": "Voir les détails de la transaction"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Une erreur s’est produite",
+      "footerText": "Vous allez compléter ce dépôt dans votre application {{integrationName}}",
+      "noDestinationAddresses": "Aucune adresse de destination n'est disponible pour cette intégration.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Payer depuis votre application",
+        "successTitle": "Paiement réussi !",
+        "viewTransactionDetails": "Voir les détails de la transaction"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Sélectionner un jeton de dépôt"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre dépôt."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre paiement."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "Continuez dans {{integrationName}}",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Retournez ici</bold> après avoir complété le dépôt dans {{integrationName}}.",
+        "title": "Dépôt de {{integrationName}}"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Retournez ici</bold> après avoir complété le paiement dans {{integrationName}}.",
+        "title": "Payer avec {{integrationName}}"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "Complétez le dépôt dans la fenêtre <br/>de {{integrationName}}..."
       },
       "pay": {
-        "message": ""
+        "message": "Complétez le paiement dans la fenêtre <br/>de {{integrationName}}..."
       }
     }
   },
@@ -1085,20 +1084,14 @@
       "slippage": "Slippage : {{slippage}}"
     },
     "details": {
-      "bridgeFee": "Frais de pont\u00a0:",
-      "bridgeFeeValue": "variable",
+      "bridgeFee": "Frais de pont :",
       "collapsedBridging": "Slippage maximal 0,5 % ; ~{{processingTime}} temps de transfert",
       "collapsedVanilla": "Aucun frais ; ~1 min temps de transfert",
-      "networkFee": "Frais de réseau\u00a0:",
-      "networkFeeValue": "variable",
-      "processingTime": "Temps de traitement\u00a0:",
-      "processingTimeBtc": "30 min",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 min",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
-      "slippage": "Glissement\u00a0:",
-      "slippageValue": "jusqu'à 0,5 %",
+      "networkFee": "Frais de réseau :",
+      "processingTimeBtcValue": "30 min",
+      "processingTimeDefaultValue": "1 min",
+      "processingTimeLabel": "Temps de traitement: <{{processingTime}}",
+      "slippage": "Glissement :",
       "title": "Détails"
     },
     "entry": {
@@ -1136,20 +1129,18 @@
     },
     "requirements": {
       "addressOneTimeUse": "Adresse à usage unique",
-      "bridgingLimit": "Limite : 2 $ - 500\u00a0000 $",
+      "bridgingLimit": "Limite : 2 $ - 500 000 $",
       "collapsedBridging": "Envoyez {{token}} sur {{network}} ; adresse à usage unique ; limite de 2 $ à 500 000 $.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "Assurez-vous que toutes les exigences sont respectées.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "Envoyez {{token}} sur {{network}}; adresse à usage unique; inclure le mémo.",
+      "collapsedWithMemoNew": "Envoyez {{token}} sur {{network}}; inclure une note.",
       "collapsedWithoutTag": "Envoyez {{token}} sur {{network}} ; adresse à usage unique.",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "Envoyez {{token}} sur {{network}}.",
       "collapsedWithTag": "Envoyez uniquement {{token}} sur {{network}}; Adresse à usage unique; Inclure le transfert {{tagLabel}}",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "Envoyez {{token}} sur {{network}}; inclure un tag.",
       "includeInTransaction": "Inclure le transfert {{tagLabel}} avec le dépôt",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Inclure le mémo de transfert avec le dépôt",
+      "includeInTransactionWithTag": "Inclure l'étiquette de transfert avec le dépôt",
       "sendOnlyTokenOnNetwork": "Envoyez uniquement {{token}} sur {{network}}",
       "title": "Exigences",
       "warningText": "Assurez-vous que toutes les exigences sont respectées sinon vos fonds pourraient être perdus définitivement."
@@ -1157,15 +1148,14 @@
     "screen": {
       "addressLabel": "Adresse",
       "beforeYouGo": "Avant de partir...",
-      "chooseOne": "Choisissez-en un",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Copier {{label}}",
       "copyWalletAddress": "Copier l'adresse du portefeuille",
       "depositTitle": "Déposer {{token}} sur {{network}}",
       "depositToClient": "Dépôt à {{clientName}}",
       "downloadQr": "Télécharger le code QR",
       "memoLabel": "Mémo",
       "networkLabel": "Réseau",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Réseau",
       "stepChooseNetwork": "2. Choisissez un réseau",
       "stepChooseToken": "1. Choisissez un jeton",
       "subtitle": "Vous pouvez toujours compléter votre dépôt manuellement.",
@@ -1196,7 +1186,7 @@
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
     "bybit": {
-      "fee": "Frais\u00a0: {{fee}}"
+      "fee": "Frais : {{fee}}"
     },
     "continueInPayApp": "",
     "cryptoCom": {

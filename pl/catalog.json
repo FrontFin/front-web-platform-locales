@@ -409,8 +409,6 @@
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -565,8 +563,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -683,71 +679,72 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "",
+      "continueWithApp": "Kontynuuj w aplikacji Binance",
       "deposit": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Wróć tutaj</bold> po zakończeniu wpłaty w mobilnej aplikacji Binance.",
+        "mobileTitle": "Wpłać z aplikacji",
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Binance, aby zakończyć wpłatę.",
+        "transferProcessing": "Dokończ wpłatę w aplikacji Binance..."
       },
       "pay": {
-        "mobileSubtitle": "",
-        "mobileTitle": "",
-        "qrPageTitle": "",
-        "transferProcessing": ""
+        "mobileSubtitle": "<bold>Wróć tutaj</bold> po zakończeniu płatności w mobilnej aplikacji Binance.",
+        "mobileTitle": "Zapłać przez aplikację",
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Binance, aby zakończyć płatność.",
+        "transferProcessing": "Dokończ płatność w aplikacji Binance..."
       }
     },
     "bybit": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Bybit, aby zakończyć wpłatę."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Bybit, aby zakończyć płatność."
       }
     },
     "common": {
-      "connectionFailed": "",
-      "connectionFailedBody": "",
+      "connectionFailed": "Połączenie nie powiodło się",
+      "connectionFailedBody": "Nie udało się połączyć z {{integrationName}}. Proszę spróbuj ponownie.",
       "deposit": {
-        "subText": "",
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Wpłać z aplikacji",
+        "subText": "Twoje środki są w drodze.",
+        "successTitle": "Formularz został wysłany!",
+        "viewTransactionDetails": "Zobacz szczegóły transakcji"
       },
-      "error": "",
-      "footerText": "",
-      "noDestinationAddresses": "",
+      "error": "Coś poszło nie tak",
+      "footerText": "Dokończysz tę wpłatę w swojej aplikacji {{integrationName}}.",
+      "noDestinationAddresses": "Brak dostępnych adresów docelowych dla tej integracji.",
       "pay": {
-        "successTitle": "",
-        "viewTransactionDetails": ""
+        "qrPageTitle": "Zapłać przez aplikację",
+        "successTitle": "Płatność zakończona sukcesem!",
+        "viewTransactionDetails": "Zobacz szczegóły transakcji"
       },
-      "qrPageTitle": "",
-      "selectToken": ""
+      "selectToken": "Wybierz token wpłaty"
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Crypto.com, aby zakończyć wpłatę."
       },
       "pay": {
-        "qrPageTitle": ""
+        "qrPageTitle": "Zeskanuj używając aparatu telefonu lub aplikacji Crypto.com, aby zakończyć płatność."
       }
     },
     "externalAppInitiation": {
-      "continueButton": "",
+      "continueButton": "Kontynuuj w {{integrationName}}",
       "deposit": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Wróć tutaj</bold> po zakończeniu wpłaty w {{integrationName}}.",
+        "title": "Wpłata z {{integrationName}}"
       },
       "pay": {
-        "subtitle": "",
-        "title": ""
+        "subtitle": "<bold>Wróć tutaj</bold> po zakończeniu płatności w {{integrationName}}.",
+        "title": "Zapłać z {{integrationName}}"
       }
     },
     "oauthLoading": {
       "deposit": {
-        "message": ""
+        "message": "Dokończ wpłatę w oknie <br/>{{integrationName}}..."
       },
       "pay": {
-        "message": ""
+        "message": "Dokończ płatność w oknie <br/>{{integrationName}}..."
       }
     }
   },
@@ -1088,19 +1085,13 @@
     },
     "details": {
       "bridgeFee": "Opłata za most:",
-      "bridgeFeeValue": "zmienna",
       "collapsedBridging": "Maksymalne poślizg 0.5%; ~{{processingTime}} czas transferu",
       "collapsedVanilla": "Brak opłat; ~1 min czas transferu",
       "networkFee": "Opłata sieciowa:",
-      "networkFeeValue": "zmienna",
-      "processingTime": "Czas przetwarzania:",
-      "processingTimeBtc": "30 min",
-      "processingTimeBtcValue": "",
-      "processingTimeDefault": "1 min",
-      "processingTimeDefaultValue": "",
-      "processingTimeLabel": "",
+      "processingTimeBtcValue": "30 min",
+      "processingTimeDefaultValue": "1 min",
+      "processingTimeLabel": "Czas przetwarzania: <{{processingTime}}",
       "slippage": "Poślizgnięcie:",
-      "slippageValue": "do 0,5%",
       "title": "Szczegóły"
     },
     "entry": {
@@ -1140,18 +1131,16 @@
       "addressOneTimeUse": "Jednorazowy adres",
       "bridgingLimit": "Limit: 2 USD - 500 000 USD",
       "collapsedBridging": "Wyślij {{token}} na {{network}}; adres jednorazowy; limit od $2 do $500,000.",
-      "collapsedBridgingLine1": "",
-      "collapsedBridgingLine2": "",
       "collapsedFallback": "Upewnij się, że wszystkie wymagania są spełnione.",
-      "collapsedWithMemo": "",
-      "collapsedWithMemoNew": "",
+      "collapsedWithMemo": "Wyślij {{token}} w sieci {{network}}; jednorazowy adres; dodaj memo.",
+      "collapsedWithMemoNew": "Wyślij {{token}} w sieci {{network}}; dołącz notatkę.",
       "collapsedWithoutTag": "Wyślij {{token}} na {{network}}; adres jednorazowy.",
-      "collapsedWithoutTagNew": "",
+      "collapsedWithoutTagNew": "Wyślij {{token}} w sieci {{network}}.",
       "collapsedWithTag": "Wyślij tylko {{token}} na {{network}}; Adres jednorazowego użytku; Dodaj transfer {{tagLabel}}",
-      "collapsedWithTagNew": "",
+      "collapsedWithTagNew": "Wyślij {{token}} w sieci {{network}}; dołącz etykietę.",
       "includeInTransaction": "Uwzględnij transfer {{tagLabel}} przy wpłacie",
-      "includeInTransactionWithMemo": "",
-      "includeInTransactionWithTag": "",
+      "includeInTransactionWithMemo": "Dołącz memo transferu przy wpłacie",
+      "includeInTransactionWithTag": "Dołącz etykietę transferu przy wpłacie",
       "sendOnlyTokenOnNetwork": "Wyślij tylko {{token}} na {{network}}",
       "title": "Wymagania",
       "warningText": "Upewnij się, że wszystkie wymagania są spełnione, inaczej Twoje środki mogą zostać trwale utracone."
@@ -1159,15 +1148,14 @@
     "screen": {
       "addressLabel": "Adres",
       "beforeYouGo": "Zanim wyjdziesz...",
-      "chooseOne": "Wybierz jeden",
-      "copyAriaLabel": "",
+      "copyAriaLabel": "Skopiuj {{label}}",
       "copyWalletAddress": "Skopiuj adres portfela",
       "depositTitle": "Wpłać {{token}} w sieci {{network}}",
       "depositToClient": "Wpłata do {{clientName}}",
       "downloadQr": "Pobierz kod QR",
       "memoLabel": "Nota",
       "networkLabel": "Sieć",
-      "networkPlaceholder": "",
+      "networkPlaceholder": "Sieć",
       "stepChooseNetwork": "2. Wybierz sieć",
       "stepChooseToken": "1. Wybierz token",
       "subtitle": "Możesz nadal dokończyć wpłatę ręcznie",
