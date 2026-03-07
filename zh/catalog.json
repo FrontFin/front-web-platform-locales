@@ -904,13 +904,13 @@
   },
   "mfaInstructionsText": {
     "email": "输入 <2>{{selectedIntegrationName}}</2> 已发送至您邮箱的一次性验证码。",
-    "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
-    "paymentFlowCoinbase": "请输入您的Coinbase一次性验证码，以确认是由本人发起该支付。",
+    "paymentFlow": "请输入一次性验证码，以确认是由您本人发起该支付。",
+    "paymentFlowCoinbase": "请输入您的Coinbase一次性验证码，以确认是由您本人发起该支付。",
     "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性验证码。",
     "totp": "请输入由您绑定 <1>{{selectedIntegrationName}}</1> 相关身份验证器提供的一次性验证码。",
     "tradingPin": "请输入与您的 <2>{{selectedIntegrationName}}</2> 账户绑定的交易 PIN 码。",
-    "transferFlow": "输入您的一次性代码以确认确实是您发起此次转账。",
-    "transferFlowCoinbase": "输入您的Coinbase一次性代码以确认确实是您发起此次转账。",
+    "transferFlow": "输入您的一次性验证码以确认确实是您发起此次转账。",
+    "transferFlowCoinbase": "输入您的Coinbase一次性验证码以确认确实是您发起此次转账。",
     "twoFactor": "输入您在 <1>{{selectedIntegrationName}}</1> 账户中配置的双因素认证方法提供的代码。"
   },
   "mfaPage": {
@@ -1084,11 +1084,11 @@
       "slippage": "滑点：{{slippage}}"
     },
     "details": {
-      "bridgeFee": "桥梁费用：",
-      "collapsedBridging": "最大滑点 0.5%；约{{processingTime}}转账时间",
-      "collapsedBtcVanilla": "无费用；约30分钟转账时间",
-      "collapsedVanilla": "无费用；约1分钟转账时间",
-      "networkFee": "网络费用：",
+      "bridgeFee": "跨链费用: <value>浮动区间</value>",
+      "collapsedBridging": "最大滑点 0.5%；约{{processingTime}}转账时间。",
+      "collapsedBtcVanilla": "无费用；30分钟内转账。",
+      "collapsedVanilla": "无费用；约1分钟转账。",
+      "networkFee": "网络费用: <value>浮动区间</value>",
       "processingTimeBtcValue": "30 分钟",
       "processingTimeDefaultValue": "1 分钟",
       "processingTimeLabel": "处理时长：<{{processingTime}}",
@@ -1118,20 +1118,20 @@
       "title": "选择一个网络"
     },
     "onlySendTokenOnNetworkBridged": {
-      "extra": "最低存款是<9>{{minimumDeposit}}</9>。",
-      "instruction": "仅通过<3>{{network}}</3>向该地址发送<1>{{token}}</1>。此地址为<5>一次性使用</5>。",
-      "merged": "仅通过<3>{{network}}</3>向该地址发送<1>{{token}}</1>。此地址为<5>一次性使用</5>。若使用其他资产或网络组合、重复使用此地址，或<7>向不同地址发送资产</7>，将导致资金丢失且不可恢复。最低存款为<9>{{minimumDeposit}}</9>。",
-      "warning": "若使用其他资产或网络组合、重复使用此地址，或<7>向不同地址发送资产</7>，将导致资金丢失且不可恢复。"
+      "extra": "最低充值金额<9>{{minimumDeposit}}</9>。",
+      "instruction": "只发送 <1>{{token}}</1> 到网络上 <3>{{network}}</3> 到该地址. 该地址为 <5>一次性使用</5>.",
+      "merged": "只发送 <1>{{token}}</1> 到网络上 <3>{{network}}</3> 到该地址. 该地址为 <5>一次性使用</5>。任何其他资产或网络组合、重复使用此地址，或 <7>向不同地址发送资产</7>，都将导致资金丢失且无法找回。最低充值金额为 <9>{{minimumDeposit}}</9>。",
+      "warning": "任何其他资产或网络组合、重复使用此地址，或 <7>向不同地址发送资产</7>，都将导致资金丢失且无法找回。最低充值金额为 <9>{{minimumDeposit}}</9>。"
     },
     "onlySendTokenOnNetworkVanilla": {
-      "instruction": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。",
-      "merged": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。",
-      "warning": "若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。"
+      "instruction": "只通过 <3>{{network}}</3> 网络发送 <1>{{token}}</1>。",
+      "merged": "只通过 <3>{{network}}</3> 网络发送 <1>{{token}}</1>。任何其他资产或网络组合，或 <5>向不同地址发送资产</5>，都将导致资金丢失且无法找回。",
+      "warning": "任何其他资产或网络组合，或 <5>向不同地址发送资产</5>，都将导致资金丢失且无法找回。"
     },
     "requirements": {
       "addressOneTimeUse": "一次性使用地址",
-      "bridgingLimit": "限额: $2 - $500,000",
-      "collapsedBridging": "在 {{network}} 上发送 {{token}}；一次性使用的地址；限额 $2–$500,000。",
+      "bridgingLimit": "限额: ${{min}} - ${{max}}",
+      "collapsedBridging": "发送 {{token}}在 {{network}} 上；一次性使用的地址；限额: ${{min}} - ${{max}}",
       "collapsedFallback": "确保满足所有要求。",
       "collapsedWithMemo": "从{{network}}发送{{token}}；一次性地址；包含备忘录。",
       "collapsedWithMemoNew": "发送 {{token}} 于 {{network}}; 包含备注。",
