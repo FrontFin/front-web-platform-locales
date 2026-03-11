@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Dies könnte aufgrund deines Standorts, Compliance-Anforderungen oder Gerätekompatibilität sein.",
     "emptyCatalogTitle": "Keine verfügbaren Wallets und Börsen",
     "noResults": "Leider konnten wir keine Ergebnisse finden",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "Keine Ergebnisse für '{{searchTerm}}'. Sie können manuell einzahlen.",
     "search": "Suche",
     "title40": "Wähle dein Konto",
     "titleOnramp": "Wähle deine On-Ramp"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "Alles erledigt!",
     "checkDetails40": "Überweisungsdetails anzeigen",
     "depositClient": "Deine Gelder sind unterwegs.",
     "paymentInitiated": "Du hast eine Zahlung von <1></1><2>{{amountCrypto}}</2> <4></4>an {{clientName}} eingeleitet",
     "paymentSuccessful": "Zahlung erfolgreich!",
-    "requestProcessing": "",
+    "requestProcessing": "Ihre Anfrage wird bearbeitet.",
     "waiting": "Überweisungen sind nicht abgeschlossen, bis sie genügend Netzwerkbestätigungen erhalten haben."
   },
   "doneVerifyPage": {
@@ -695,10 +695,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Weiter mit der Bybit-App.",
       "deposit": {
+        "mobileSubtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Einzahlung in deiner Bybit-App abgeschlossen hast.",
+        "mobileTitle": "Von deiner App einzahlen",
         "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Einzahlung abzuschließen."
       },
       "pay": {
+        "mobileSubtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Zahlung in deiner Bybit-App abgeschlossen hast.",
+        "mobileTitle": "Zahle über deine App",
         "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Zahlung abzuschließen."
       }
     },
@@ -1100,7 +1105,7 @@
       "depositWithQr": "Einzahlen mit QR-Code",
       "depositWithWalletAddress": "Mit Wallet-Adresse einzahlen",
       "dontSeeYourAccount": "Konto nicht sichtbar?",
-      "exitAnyway": "",
+      "exitAnyway": "Trotzdem beenden",
       "havingTrouble": "Hast du Probleme?",
       "needAnotherWay": "Andere Möglichkeit ausprobieren?",
       "tryAgain": "Erneut versuchen",
@@ -1347,8 +1352,8 @@
       "choose": "Wähle ein Netzwerk"
     },
     "noBalancePage": {
-      "message": "",
-      "title": ""
+      "message": "***Du hast kein {{symbol}}-Guthaben, um es zu überweisen***",
+      "title": "***Kein Guthaben***"
     },
     "oauthTimeoutPage": {
       "reopen": "Öffne {{integrationName}} erneut",

@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Isso pode ser devido à tua localização, requisitos de conformidade ou compatibilidade do dispositivo.",
     "emptyCatalogTitle": "Nenhuma carteira e troca disponível",
     "noResults": "Desculpa, não encontramos nenhum resultado",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "Nenhum resultado para '{{searchTerm}}'. Você pode depositar manualmente.",
     "search": "procurar",
     "title40": "Escolhe a tua conta",
     "titleOnramp": "Escolhe a tua rampa de acesso"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "Tudo pronto!",
     "checkDetails40": "Ver detalhes da transação",
     "depositClient": "Os teus fundos estão a caminho.",
     "paymentInitiated": "Você iniciou um pagamento de<1></1><2>{{amountCrypto}}</2><3></3>para {{clientName}}",
     "paymentSuccessful": "Pagamento bem-sucedido!",
-    "requestProcessing": "",
+    "requestProcessing": "Sua solicitação está sendo processada.",
     "waiting": "As transferências não são concluídas até receberem confirmações suficientes da rede."
   },
   "doneVerifyPage": {
@@ -410,7 +410,6 @@
     "incorrect2faCode": "Código 2FA incorreto.",
     "incorrectEmail": "Inseriste um email incorreto.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Tens {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Tens {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de utilizador ou palavra-passe incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -565,7 +564,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -697,10 +695,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Continue com a aplicação Bybit",
       "deposit": {
+        "mobileSubtitle": "<bold>Voltar aqui</bold> após completares o depósito na tua aplicação móvel Bybit.",
+        "mobileTitle": "Depositar do seu aplicativo",
         "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Bybit para finalizar o seu depósito."
       },
       "pay": {
+        "mobileSubtitle": "<bold>Voltar aqui</bold> após completares o pagamento na tua aplicação móvel Bybit.",
+        "mobileTitle": "Pague com seu aplicativo",
         "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Bybit para finalizar o seu pagamento."
       }
     },
@@ -1102,7 +1105,7 @@
       "depositWithQr": "Depósito com código QR",
       "depositWithWalletAddress": "Depositar com endereço de carteira",
       "dontSeeYourAccount": "Não vês a tua conta?",
-      "exitAnyway": "",
+      "exitAnyway": "Sair mesmo assim",
       "havingTrouble": "Estás com problemas?",
       "needAnotherWay": "Precisas de outra forma?",
       "tryAgain": "Tenta novamente",
@@ -1349,8 +1352,8 @@
       "choose": "Escolhe uma rede"
     },
     "noBalancePage": {
-      "message": "",
-      "title": ""
+      "message": "***Tu não tens saldo de {{symbol}} para transferir***",
+      "title": "***Sem saldo***"
     },
     "oauthTimeoutPage": {
       "reopen": "Reabrir {{integrationName}}",

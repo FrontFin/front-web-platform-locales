@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Bu, konumunuz, uyumluluk gereklilikleri veya cihaz uyumluluğundan kaynaklanabilir.",
     "emptyCatalogTitle": "Kullanılabilir cüzdan ve borsa yok",
     "noResults": "Üzgünüz, sonuç bulunamadı",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": " '{{searchTerm}}' için sonuç bulunamadı. Manuel olarak yatırabilirsiniz.",
     "search": "arama",
     "title40": "Hesabınızı seçin",
     "titleOnramp": "Satın alma yöntemini seçin"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "Her şey hazır!",
     "checkDetails40": "İşlem ayrıntılarını görüntüle",
     "depositClient": "Fonlarınız yolda.",
     "paymentInitiated": "{{clientName}} hesabına <1></1><2>{{amountCrypto}}</2><4></4> tutarında bir ödeme başlattınız",
     "paymentSuccessful": "Ödeme başarılı!",
-    "requestProcessing": "",
+    "requestProcessing": "Talebiniz işleniyor.",
     "waiting": "Transferler, gerekli ağ onaylarını alana kadar tamamlanmaz."
   },
   "doneVerifyPage": {
@@ -695,10 +695,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Bybit uygulamasıyla devam et",
       "deposit": {
+        "mobileSubtitle": "<bold>Depozitonuzu tamamladıktan sonra</bold> Bybit mobil uygulamanızda buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan para yatırın",
         "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
       },
       "pay": {
+        "mobileSubtitle": "<bold>Ödemenizi tamamladıktan sonra</bold> Bybit mobil uygulamanızda buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan ödeme yapın",
         "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
       }
     },
@@ -1100,7 +1105,7 @@
       "depositWithQr": "QR kod ile para yatırma",
       "depositWithWalletAddress": "Cüzdan adresi ile para yatırma",
       "dontSeeYourAccount": "Hesabınızı göremiyor musunuz?",
-      "exitAnyway": "",
+      "exitAnyway": "Yine de çık",
       "havingTrouble": "Sorun mu yaşıyorsunuz?",
       "needAnotherWay": "Başka bir yöntem mi arıyorsunuz?",
       "tryAgain": "Tekrar deneyin",
@@ -1347,8 +1352,8 @@
       "choose": "Bir ağı seçin"
     },
     "noBalancePage": {
-      "message": "",
-      "title": ""
+      "message": "***Aktaracak {{symbol}} bakiyeniz yok***",
+      "title": "***Bakiye yok***"
     },
     "oauthTimeoutPage": {
       "reopen": "{{integrationName}}'ı tekrar aç",
