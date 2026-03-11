@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Tämä saattaa johtua sijainnistasi, vaatimustenmukaisuusvaatimuksista tai laitteen yhteensopivuudesta.",
     "emptyCatalogTitle": "Ei saatavilla olevia lompakoita ja pörssejä",
     "noResults": "Pahoittelut, emme löytäneet tuloksia",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "Ei tuloksia hakusanalle '{{searchTerm}}'. Voit lisätä manuaalisesti.",
     "search": "haku",
     "title40": "Valitse tilisi",
     "titleOnramp": "Valitse talletustapa"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "Olet valmis!",
     "checkDetails40": "Tarkastele tapahtuman tietoja",
     "depositClient": "Varojen siirto on käynnissä.",
     "paymentInitiated": "Olet aloittanut maksun<1></1><2>{{amountCrypto}}</2><3></3>kohteeseen {{clientName}}",
     "paymentSuccessful": "Maksu onnistui!",
-    "requestProcessing": "",
+    "requestProcessing": "Pyyntöäsi käsitellään.",
     "waiting": "Siirtoja ei ole suoritettu loppuun, ennen kuin ne ovat saaneet riittävän määrän verkon vahvistuksia."
   },
   "doneVerifyPage": {
@@ -695,10 +695,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Jatka Bybit-sovelluksessa",
       "deposit": {
+        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen Bybit mobiilisovelluksessa.",
+        "mobileTitle": "Talleta sovelluksestasi",
         "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi talletuksesi."
       },
       "pay": {
+        "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun Bybit mobiilisovelluksessa.",
+        "mobileTitle": "Maksa sovelluksestasi",
         "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi maksusi."
       }
     },
@@ -1100,7 +1105,7 @@
       "depositWithQr": "Talleta QR-koodilla",
       "depositWithWalletAddress": "Talleta lompakon osoitteella",
       "dontSeeYourAccount": "Eikö tiliäsi näy?",
-      "exitAnyway": "",
+      "exitAnyway": "Poistu silti",
       "havingTrouble": "Ongelmia?",
       "needAnotherWay": "Tarvitsetko toisen tavan?",
       "tryAgain": "Yritä uudelleen",
@@ -1347,8 +1352,8 @@
       "choose": "Valitse verkko"
     },
     "noBalancePage": {
-      "message": "",
-      "title": ""
+      "message": "***Sinulla ei ole {{symbol}} saldoa siirrettäväksi***",
+      "title": "***Ei saldoa***"
     },
     "oauthTimeoutPage": {
       "reopen": "Avaa {{integrationName}} uudelleen",
