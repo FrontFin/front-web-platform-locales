@@ -111,7 +111,7 @@
     "emptyCatalogBody": "यह आपके स्थान, अनुपालन आवश्यकताओं, या डिवाइस संगतता के कारण हो सकता है।",
     "emptyCatalogTitle": "कोई उपलब्ध वालेट और एक्सचेंज नहीं है",
     "noResults": "माफ़ कीजिए, हमें कोई परिणाम नहीं मिला",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "'{{searchTerm}}' के लिए कोई परिणाम नहीं। आप मैन्युअली जमा कर सकते हैं।",
     "search": "खोज",
     "title40": "अपना खाता चुनें",
     "titleOnramp": "अपना ऑन-रैंप चुनें"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "आप पूरी तरह तैयार हैं!",
     "checkDetails40": "लेनदेन विवरण देखें",
     "depositClient": "आपकी राशि रास्ते में है।",
     "paymentInitiated": "आपने {{clientName}} को<1></1><2>{{amountCrypto}}</2> <4></4> का भुगतान आरंभ किया है",
     "paymentSuccessful": "भुगतान सफल!",
-    "requestProcessing": "",
+    "requestProcessing": "आपका अनुरोध प्रगति पर है।",
     "waiting": "स्थानांतरण तब तक पूर्ण नहीं होते जब तक उन्हें पर्याप्त नेटवर्क पुष्टि नहीं मिलती।"
   },
   "doneVerifyPage": {
@@ -695,10 +695,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Bybit ऐप के साथ जारी रखें",
       "deposit": {
+        "mobileSubtitle": "<bold>यहाँ वापस आएं</bold> जब आपने अपने Bybit मोबाइल ऐप में जमा पूरा कर लिया हो।",
+        "mobileTitle": "अपने ऐप से जमा करें",
         "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।"
       },
       "pay": {
+        "mobileSubtitle": "<bold>यहाँ वापस आएं</bold> जब आपने अपने Bybit मोबाइल ऐप में भुगतान पूरा कर लिया हो।",
+        "mobileTitle": "अपने ऐप से भुगतान करें",
         "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।"
       }
     },
@@ -1100,7 +1105,7 @@
       "depositWithQr": "क्यूआर कोड से जमा करें",
       "depositWithWalletAddress": "वॉलेट एड्रेस के साथ जमा करें",
       "dontSeeYourAccount": "क्या आपको अपना खाता नहीं दिख रहा है?",
-      "exitAnyway": "",
+      "exitAnyway": "फिर भी बाहर निकलें",
       "havingTrouble": "कोई समस्या हो रही है?",
       "needAnotherWay": "कोई दूसरा तरीका चाहिए?",
       "tryAgain": "पुनः प्रयास करें",
@@ -1347,8 +1352,8 @@
       "choose": "नेटवर्क चुनें"
     },
     "noBalancePage": {
-      "message": "",
-      "title": ""
+      "message": "***आपके पास कोई {{symbol}} बैलेंस ट्रांसफर करने के लिए नहीं है***",
+      "title": "***कोई बैलेंस नहीं***"
     },
     "oauthTimeoutPage": {
       "reopen": "{{integrationName}} को फिर से खोलें",
