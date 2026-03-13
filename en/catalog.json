@@ -1242,6 +1242,7 @@
     "common": {
       "cancel": "Cancel",
       "change": "Change",
+      "changeNetwork": "Change Network",
       "close": "Close",
       "continue": "Continue",
       "goBack": "Go Back",
@@ -1318,17 +1319,27 @@
     "initialSteps": {
       "terms": "PayPal enables crypto payments for this merchant. By continuing, you allow Mesh to request a transfer from your account to PayPal for your payment.<1>Mesh's Terms apply.</1>"
     },
+    "insufficientBalanceNetworksPage": {
+      "changeNetwork": "Change Network",
+      "hint": "Choose a different network, or add {{symbol}} to your wallet and try again.",
+      "message": "Your {{balanceAmount}} balance on the {{networkName}} network isn't enough for this {{paymentAmount}} payment.",
+      "title": "Not enough {{symbol}}"
+    },
     "insufficientBalancePage": {
       "chooseDifferent": "Choose a different account",
+      "chooseDifferentNetwork": "Choose a different network",
       "message": "Your {{balanceAmount}} balance is insufficient to make this {{paymentAmount}} payment.",
       "messageWithNetwork": "Your {{balanceAmount}} balance on the {{network}} network is insufficient to make this {{paymentAmount}} payment.",
+      "minimumBalanceMessage": "You need at least {{minimumBalance}} in your wallet to complete this payment.",
       "network": "Network",
       "title": "Insufficient balance",
+      "toppedUpWalletQuestion": "Have you topped up your wallet?",
       "topUpAccount": "Please top up your account and try again.",
       "topUpWallet": "Please top up your wallet and try again.",
       "topUpWalletTryOtherNetwork": "Please top up your wallet and try again or try with another network."
     },
     "insufficientGasBalanceNetworksPage": {
+      "hint": "Choose a different network or add {{gasSymbol}} to your wallet and try again.",
       "message": "This transaction requires {{transferAmount}} and ~{{gasFiat}} worth of {{gasSymbol}} to pay gas fees."
     },
     "insufficientGasBalancePage": {
