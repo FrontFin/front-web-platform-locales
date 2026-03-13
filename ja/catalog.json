@@ -1242,6 +1242,7 @@
     "common": {
       "cancel": "キャンセル",
       "change": "変更",
+      "changeNetwork": "ネットワークを変更",
       "close": "閉じる",
       "continue": "続行",
       "goBack": "戻る",
@@ -1318,17 +1319,27 @@
     "initialSteps": {
       "terms": "PayPal は本加盟店での暗号資産決済に対応しています。続行すると、支払いのために Mesh が PayPal へお客様のアカウントからの送金をリクエストすることを許可したことになります。<1>Mesh の利用規約が適用されます。</1>"
     },
+    "insufficientBalanceNetworksPage": {
+      "changeNetwork": "ネットワークを変更",
+      "hint": "他のネットワークを選択するか、{{symbol}} をあなたのウォレットに追加して再試行してください。",
+      "message": "{{networkName}} ネットワーク上の {{balanceAmount}} 残高では、この {{paymentAmount}} の支払いはできません。",
+      "title": "{{symbol}}の残高が不足しています"
+    },
     "insufficientBalancePage": {
       "chooseDifferent": "別のアカウントを選択",
+      "chooseDifferentNetwork": "別のネットワークを選択してください",
       "message": "{{balanceAmount}} の残高では、この {{paymentAmount}} の支払いはできません。",
       "messageWithNetwork": "{{network}} ネットワーク上の {{balanceAmount}} 残高では、この {{paymentAmount}} の支払いはできません。",
+      "minimumBalanceMessage": "この支払いを完了するには、ウォレットに最低 {{minimumBalance}} が必要です。",
       "network": "ネットワーク",
       "title": "残高不足",
+      "toppedUpWalletQuestion": "ウォレットに入金しましたか？",
       "topUpAccount": "アカウントに入金してから、もう一度お試しください。",
       "topUpWallet": "ウォレットに入金してから、もう一度お試しください。",
       "topUpWalletTryOtherNetwork": "ウォレットに入金するか、別のネットワークでお試しください。"
     },
     "insufficientGasBalanceNetworksPage": {
+      "hint": "別のネットワークを選択するか、ウォレットに{{gasSymbol}}を追加してもう一度お試しください。",
       "message": "本取引には {{transferAmount}} に加え、ガス代として {{gasSymbol}} 約 {{gasFiat}} 相当が必要です。"
     },
     "insufficientGasBalancePage": {
