@@ -1242,6 +1242,7 @@
     "common": {
       "cancel": "ยกเลิก",
       "change": "เปลี่ยนแปลง",
+      "changeNetwork": "เปลี่ยนเครือข่าย",
       "close": "ปิด",
       "continue": "ดำเนินต่อ",
       "goBack": "ย้อนกลับ",
@@ -1318,17 +1319,27 @@
     "initialSteps": {
       "terms": "PayPal เปิดใช้งานการชำระเงินด้วยคริปโตสำหรับร้านค้านี้ การดำเนินการต่อคือการอนุญาตให้ Mesh ร้องขอโอนเงินจากบัญชีของคุณไปยัง PayPal สำหรับการชำระเงินของคุณ <1>เงื่อนไขของ Mesh มีผลบังคับใช้</1>"
     },
+    "insufficientBalanceNetworksPage": {
+      "changeNetwork": "เปลี่ยนเครือข่าย",
+      "hint": "เลือกเครือข่ายอื่น, หรือเพิ่ม {{symbol}} ไปยังวอลเล็ทของคุณแล้วลองอีกครั้ง",
+      "message": "ยอดเงินในเครือข่าย {{networkName}} ของคุณไม่พอสำหรับการชำระเงินอันนี้ {{paymentAmount}}",
+      "title": "{{symbol}} ไม่เพียงพอ"
+    },
     "insufficientBalancePage": {
       "chooseDifferent": "เลือกบัญชีที่ต่างออกไป",
+      "chooseDifferentNetwork": "เลือกเครือข่ายที่แตกต่างกัน",
       "message": "ยอดคงเหลือ {{balanceAmount}} ของคุณไม่เพียงพอที่จะชำระเงิน {{paymentAmount}} นี้.",
       "messageWithNetwork": "ยอดคงเหลือ {{balanceAmount}} ของคุณบนเครือข่าย {{network}} ไม่เพียงพอที่จะชำระเงิน {{paymentAmount}} นี้.",
+      "minimumBalanceMessage": "คุณต้องมีอย่างน้อย {{minimumBalance}} ในกระเป๋าเงินของคุณเพื่อดำเนินการชำระเงินนี้ให้เสร็จสิ้น",
       "network": "เครือข่าย",
       "title": "ยอดคงเหลือไม่เพียงพอ",
+      "toppedUpWalletQuestion": "คุณได้เติมเงินในกระเป๋าเงินของคุณแล้วหรือยัง?",
       "topUpAccount": "กรุณาเติมเงินในบัญชีของคุณแล้วลองอีกครั้ง.",
       "topUpWallet": "กรุณาเติมเงินในวอลเล็ตของคุณแล้วลองอีกครั้ง.",
       "topUpWalletTryOtherNetwork": "กรุณาเติมเงินกระเป๋าของคุณและลองใหม่อีกครั้งหรือใช้เครือข่ายอื่น"
     },
     "insufficientGasBalanceNetworksPage": {
+      "hint": "เลือกเครือข่ายอื่นหรือเพิ่ม {{gasSymbol}} ในกระเป๋าเงินของคุณและลองอีกครั้ง",
       "message": "ธุรกรรมนี้ต้องการ {{transferAmount}} และมูลค่า {{gasFiat}} ของ {{gasSymbol}} เพื่อชำระค่าธรรมเนียม gas"
     },
     "insufficientGasBalancePage": {
