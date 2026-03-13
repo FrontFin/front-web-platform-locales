@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Cela peut être dû à votre localisation, aux exigences de conformité ou à la compatibilité de l'appareil.",
     "emptyCatalogTitle": "Pas de portefeuilles et d'échanges disponibles",
     "noResults": "Désolé, nous n'avons trouvé aucun résultat",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "Aucun résultat pour '{{searchTerm}}'. Vous pouvez déposer manuellement.",
     "search": "recherche",
     "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter",
     "titleOnramp": "Choisissez votre rampe d’accès"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "Tout est prêt\u00a0!",
     "checkDetails40": "Voir les détails de la transaction",
     "depositClient": "Vos fonds sont en chemin.",
     "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3> à {{clientName}}",
     "paymentSuccessful": "Paiement réussi !",
-    "requestProcessing": "",
+    "requestProcessing": "Votre demande est en cours de traitement.",
     "waiting": "Les transferts ne sont considérés comme complets qu’une fois qu’ils ont reçu un nombre suffisant de confirmations réseau."
   },
   "doneVerifyPage": {
@@ -697,10 +697,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Continuer avec l'application Bybit",
       "deposit": {
+        "mobileSubtitle": "<bold>Retournez ici</bold> après avoir complété le dépôt dans votre application mobile Bybit.",
+        "mobileTitle": "Dépôt depuis votre application",
         "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre dépôt."
       },
       "pay": {
+        "mobileSubtitle": "<bold>Retournez ici</bold> après avoir complété le paiement dans votre application mobile Bybit.",
+        "mobileTitle": "Payer depuis votre application",
         "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre paiement."
       }
     },
@@ -1102,7 +1107,7 @@
       "depositWithQr": "Dépôt avec code QR",
       "depositWithWalletAddress": "Déposez avec l'adresse du portefeuille",
       "dontSeeYourAccount": "Vous ne voyez pas votre compte?",
-      "exitAnyway": "",
+      "exitAnyway": "Quitter quand même",
       "havingTrouble": "Avez-vous des difficultés ?",
       "needAnotherWay": "Besoin d'une autre méthode?",
       "tryAgain": "Réessayez",
@@ -1357,6 +1362,10 @@
     },
     "networkDrawer": {
       "choose": "Choisissez un réseau"
+    },
+    "noBalancePage": {
+      "message": "***Vous n'avez pas de solde {{symbol}} à transférer***",
+      "title": "***Pas de solde***"
     },
     "oauthTimeoutPage": {
       "reopen": "Rouvrir {{integrationName}}",

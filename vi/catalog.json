@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Điều này có thể là do vị trí của bạn, quy định hoặc khả năng tương thích của thiết bị.",
     "emptyCatalogTitle": "Không có ví và sàn giao dịch nào khả dụng",
     "noResults": "Xin lỗi, chúng tôi không tìm thấy kết quả nào",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "Không có kết quả nào cho '{{searchTerm}}'. Bạn có thể gửi tiền thủ công.",
     "search": "Tìm kiếm",
     "title40": "Chọn tài khoản của bạn",
     "titleOnramp": "Chọn phương thức nạp tiền"
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "Tất cả đã sẵn sàng!",
     "checkDetails40": "Xem chi tiết giao dịch",
     "depositClient": "Tiền của bạn đang được chuyển.",
     "paymentInitiated": "Bạn đã khởi tạo một khoản thanh toán <1></1><2>{{amountCrypto}}</2><4></4> đến {{clientName}}",
     "paymentSuccessful": "Thanh toán thành công!",
-    "requestProcessing": "",
+    "requestProcessing": "Yêu cầu của bạn đang được xử lý.",
     "waiting": "Giao dịch chưa hoàn tất cho đến khi có đủ xác nhận từ mạng lưới."
   },
   "doneVerifyPage": {
@@ -695,10 +695,15 @@
       }
     },
     "bybit": {
+      "continueWithApp": "Tiếp tục với ứng dụng Bybit",
       "deposit": {
+        "mobileSubtitle": "<bold>Quay lại đây</bold> sau khi hoàn tất nạp tiền trong ứng dụng di động Bybit.",
+        "mobileTitle": "Nạp tiền từ ứng dụng của bạn",
         "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Bybit để hoàn tất việc nạp tiền của bạn."
       },
       "pay": {
+        "mobileSubtitle": "<bold>Quay lại đây</bold> sau khi hoàn tất thanh toán trong ứng dụng di động Bybit.",
+        "mobileTitle": "Thanh toán từ ứng dụng của bạn",
         "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Bybit để hoàn tất thanh toán của bạn."
       }
     },
@@ -1100,7 +1105,7 @@
       "depositWithQr": "Nạp tiền bằng mã QR",
       "depositWithWalletAddress": "Nạp tiền bằng địa chỉ {{wallet}}",
       "dontSeeYourAccount": "Không thấy tài khoản của bạn?",
-      "exitAnyway": "",
+      "exitAnyway": "Thoát dù sao đi nữa",
       "havingTrouble": "Gặp sự cố?",
       "needAnotherWay": "Cần phương thức khác?",
       "tryAgain": "Thử lại",
@@ -1355,6 +1360,10 @@
     },
     "networkDrawer": {
       "choose": "Chọn một mạng"
+    },
+    "noBalancePage": {
+      "message": "Bạn không có số dư {{symbol}} để chuyển. Vui lòng nạp thêm và thử lại.",
+      "title": "Không có số dư"
     },
     "oauthTimeoutPage": {
       "reopen": "Mở lại {{integrationName}}",

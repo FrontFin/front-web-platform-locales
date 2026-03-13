@@ -111,7 +111,7 @@
     "emptyCatalogBody": "这可能是由于您的所在区域、合规要求或设备兼容性的问题。",
     "emptyCatalogTitle": "暂无可用钱包和交易所",
     "noResults": "抱歉，未找到相关结果",
-    "noResultsWithDeposit": "",
+    "noResultsWithDeposit": "{{searchTerm}} 没有结果。您可以手动存款。",
     "search": "搜索",
     "title40": "选择你的账户",
     "titleOnramp": "选择您的入金渠道"
@@ -179,12 +179,12 @@
     "changeCurrency": "更改货币"
   },
   "dappDoneTransferPageUI": {
-    "almostDone": "马上就好",
+    "almostDone": "马上完成",
     "depositInstructions": "返回至您的网页浏览器中的{{clientName}}，以确认并查看订单详情。",
     "depositSubtitle": "返回{{clientName}}",
     "depositSuccess": "成功！",
     "depositTitle": "您的资金正在处理中。",
-    "paymentInstructions": "返回至网页浏览器中的结账页面以确认并查看订单详情。",
+    "paymentInstructions": "返回至您浏览器中的结账页面以确定并查看订单详情。",
     "paymentSubtitle": "请返回结账页面以完成交易",
     "paymentSuccess": "支付成功！"
   },
@@ -202,7 +202,7 @@
       "continueButton": "继续前往 {{walletName}}",
       "depositTitle": "用您的钱包充值",
       "payTitle": "用您的钱包支付",
-      "qrNewSubtitle": "用你的<1></1><2>手机相机应用</2>进行扫描",
+      "qrNewSubtitle": "使用您<1></1><2>手机相机扫描</2>",
       "qrSubtitle": "在手机上打开相机并扫描二维码开始链接",
       "spinnerTransactionText": "在您的{{walletName}}应用中完成此次交易",
       "spinnerVerifyText": "在您的{{walletName}}应用中完成所有权验证",
@@ -212,15 +212,15 @@
     "title": "关联您的钱包"
   },
   "defiWalletQrPage": {
-    "instructionsLedgerConnect": "点击“连接”按钮",
-    "instructionsLedgerScan": "点击“扫描二维码”按钮",
-    "instructionsStep1": "打开{{walletName}}应用程序",
-    "instructionsStep2": "轻触主屏幕右上角的<2></2>",
-    "instructionsStep2Left": "轻触主屏幕左上角的<2></2>",
-    "instructionsStep3": "扫描二维码",
-    "instructionsStepCryptoOnchainConnect": "点击右下角的钱包标签",
-    "instructionsStepCryptoOnchainTap": "点击右上角的<2></2>图标",
-    "instructionsStepExodusConnect": "点击<1></1>主屏幕上的“Web3”图块",
+    "instructionsLedgerConnect": "点击“连接”按钮 ",
+    "instructionsLedgerScan": "点击“扫描二维码”按钮 ",
+    "instructionsStep1": "打开您的钱包 {{walletName}} 应用",
+    "instructionsStep2": "点击 主页中右上角的<2></2>",
+    "instructionsStep2Left": "点击 主页中左上角的<2></2>",
+    "instructionsStep3": "Scan the QR code",
+    "instructionsStepCryptoOnchainConnect": "Click on the wallet tab in the bottom right corner",
+    "instructionsStepCryptoOnchainTap": "点击右上角的 <2></2> 按键",
+    "instructionsStepExodusConnect": "点击 <1></1> 主页中\"Web3\"图标",
     "instructionsStepExodusTap": "点击右上角的<2></2>",
     "instructionsStepLedgerConnect": "点击右上角附近的<2></2>图标",
     "qrCodeLabel": "可以在您的移动设备上扫描二维码以建立关联",
@@ -284,12 +284,12 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "",
+    "allSet": "一切就绪！",
     "checkDetails40": "查看交易详情",
     "depositClient": "您的资金正在处理中。",
     "paymentInitiated": "您已发起一笔<1></1><2>{{amountCrypto}}</2><4></4>的支付至{{clientName}}",
     "paymentSuccessful": "支付成功！",
-    "requestProcessing": "",
+    "requestProcessing": "您的请求正在处理中。",
     "waiting": "在收到足够的网络认证之前，转账不会完成。"
   },
   "doneVerifyPage": {
@@ -339,7 +339,7 @@
     "invalidIntegrationToken": "登录已过期",
     "invalidToIntegrationToken": "身份验证已过期",
     "kycRequired": "需要进行KYC身份验证",
-    "livenessCheckRequired": "需要活跃性检查",
+    "livenessCheckRequired": "需要真人验证",
     "locked": "账户已被锁定",
     "mfaBindingRequired": "需要MFA多重身份验证",
     "mfaNotSupported": "不支持多重身份验证",
@@ -378,7 +378,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "因存在异常操作，提现暂时关闭",
     "withdrawalLocked": "提现已被锁定",
     "withdrawalLockedP2P": "提现已被锁定",
-    "withdrawalPendingDepositConfirmation": "无法完成取款",
+    "withdrawalPendingDepositConfirmation": "无法完成提现",
     "withdrawalTimeoutDueToRecentFundsManipulation": "提币请求超时"
   },
   "errorMessages": {
@@ -419,7 +419,7 @@
     "invalidPhoneNumber": "请输入有效的电话号码。",
     "invalidToIntegrationToken": "请重新登录以继续",
     "kycRequired": "无法发起转账。根据集成要求，帐户需先完成 KYC 身份验证后才能启用加密货币转账功能。",
-    "livenessCheckRequired": "需要在兑换应用程序上进行活跃性检查才能完成此转账。",
+    "livenessCheckRequired": "需要在交易所软件上进行真人验证才能完成此转账。",
     "locked": "您的帐户已被锁定",
     "loginFirst": "请先登录。",
     "loginWithQrOrMobileLink": "请使用二维码或移动端链接登录。",
@@ -431,7 +431,7 @@
     "notAuthorizedToIntegrationToken": "请重新登录以继续。",
     "passKeyNotSupported": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证，并重新尝试转账。",
     "passKeyNotSupportedDeposit": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试充值。",
-    "passKeyNotSupportedDescription": "请在{{selectedIntegrationName}}的安全设置中启用短信或身份验证器应用程序验证，然后重试。",
+    "passKeyNotSupportedDescription": "请在{{selectedIntegrationName}}的安全设置中启用短信或身份验证程序验证，然后重试。",
     "passKeyNotSupportedOnramp": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试购买。",
     "passKeyNotSupportedPayment": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试支付。",
     "passKeyNotSupportedRedirect": "系统正在切换至其他 Coinbase 提现方法……",
@@ -454,7 +454,7 @@
     "toAccountNotSupported": "目标账户目前不支持加密货币入金。",
     "tooManyAttemptsOneMinute": "尝试次数过多。请在 1 分钟后重试。",
     "tooManyRequests": "请稍后再试。",
-    "transferAlreadyRequested": "已提交转账请求。",
+    "transferAlreadyRequested": "此转账似乎有重复请求。",
     "travelRuleRestriction": "{{integrationName}}目前不支持您所在国家/地区的转账功能。",
     "travelRuleRestrictionPayment": "{{integrationName}}目前不支持您所在国家/地区的支付功能。",
     "tryAgainAfterLogin": "请登录后再试。",
@@ -472,7 +472,7 @@
     "withdrawalDisabledDueToSuspiciousActivity": "由于检测到可疑活动，您的提现功能已被禁用。请在 Binance 完成验证流程。如无法完成验证，请联系客服。如果您已完成验证，请稍等片刻重试。",
     "withdrawalLocked": "出于安全考虑，更改帐户设置后的24小时内不可提现。请稍后再试。",
     "withdrawalLockedP2P": "为保障您的账户安全，P2P购买后24小时内暂不可提现，请稍后再试。",
-    "withdrawalPendingDepositConfirmation": "您最近存入到您的 {{integrationName}} 账户的款项尚未完全结算，因此无法提取。请稍后再试。",
+    "withdrawalPendingDepositConfirmation": "您最近存入 {{integrationName}} 账户的款项尚未完全结算，因此无法提现。请稍后再试。",
     "withdrawalTimeoutDueToRecentFundsManipulation": "买入或充值完成后，至少需等待48小时方可提现。"
   },
   "errorPage": {
@@ -622,7 +622,7 @@
     "thisMerchant": "此商户",
     "title": "充值方式",
     "titleDeposit": "充值方式",
-    "titlePayment": "充值方式",
+    "titlePayment": "付款方式",
     "total": "总金额: {{amountInFiat}}"
   },
   "generateKeyPage": {
@@ -680,25 +680,30 @@
   },
   "hostedIntegrations": {
     "binance": {
-      "continueWithApp": "继续使用 Binance",
+      "continueWithApp": "继续使用币安",
       "deposit": {
-        "mobileSubtitle": "<bold>完成存款后返回此处</bold>，以在您的Binance移动应用中完成该过程。",
-        "mobileTitle": "从应用程序充值",
-        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的存款。",
-        "transferProcessing": "请在您的币安应用中完成充值..."
+        "mobileSubtitle": "您的币安应用中完成充值后<bold>返回此处</bold>。",
+        "mobileTitle": "从应用程序中充值",
+        "qrPageTitle": "用手机相机或币安扫描以完成充值。",
+        "transferProcessing": "请在您的币安应用中完成充值......"
       },
       "pay": {
-        "mobileSubtitle": "<bold>完成付款后返回此处</bold>，以在您的Binance移动应用中完成该过程。",
-        "mobileTitle": "从您的程序付款",
-        "qrPageTitle": "用手机相机或Binance程序扫描以完成您的支付。",
-        "transferProcessing": "请在您的币安应用中完成付款..."
+        "mobileSubtitle": "在您的币安中完成支付后<bold>返回此处</bold>。",
+        "mobileTitle": "用你的app支付",
+        "qrPageTitle": "用手机相机或币安扫描以完成您的支付。",
+        "transferProcessing": "请在您的币安应用中完成支付……"
       }
     },
     "bybit": {
+      "continueWithApp": "用Bybit继续操作",
       "deposit": {
-        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的存款。"
+        "mobileSubtitle": "在您的Bybit应用中完成充值后<bold>返回此处</bold>。",
+        "mobileTitle": "从应用程序充值",
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的充值。"
       },
       "pay": {
+        "mobileSubtitle": "在您的Bybit中完成支付后<bold>返回此处</bold>。",
+        "mobileTitle": "用你的app支付",
         "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的支付。"
       }
     },
@@ -712,10 +717,10 @@
         "viewTransactionDetails": "查看交易详情"
       },
       "error": "出了点问题",
-      "footerText": "您将在您的 {{integrationName}} 应用程序中完成此存款",
+      "footerText": "您将在您的 {{integrationName}} 应用中完成此充值",
       "noDestinationAddresses": "此集成没有可用的目标地址。",
       "pay": {
-        "qrPageTitle": "从您的程序付款",
+        "qrPageTitle": "用您的程序支付",
         "successTitle": "支付成功！",
         "viewTransactionDetails": "查看交易详情"
       },
@@ -723,7 +728,7 @@
     },
     "cryptoCom": {
       "deposit": {
-        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的存款。"
+        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的充值。"
       },
       "pay": {
         "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的支付。"
@@ -742,10 +747,10 @@
     },
     "oauthLoading": {
       "deposit": {
-        "message": "在<br/>{{integrationName}}窗口中完成存款..."
+        "message": "在<br/>{{integrationName}}窗口中完成存充值……"
       },
       "pay": {
-        "message": "在<br/>{{integrationName}}窗口中完成支付..."
+        "message": "在<br/>{{integrationName}}窗口中完成支付……"
       }
     }
   },
@@ -905,13 +910,13 @@
   },
   "mfaInstructionsText": {
     "email": "输入 <2>{{selectedIntegrationName}}</2> 已发送至您邮箱的一次性验证码。",
-    "paymentFlow": "请输入一次性验证码，以确认是由本人发起该支付。",
-    "paymentFlowCoinbase": "请输入您的Coinbase一次性验证码，以确认是由本人发起该支付。",
+    "paymentFlow": "请输入一次性验证码，以确认是由您本人发起该支付。",
+    "paymentFlowCoinbase": "请输入您的Coinbase一次性验证码，以确认是由您本人发起该支付。",
     "phone": "输入 <2>{{selectedIntegrationName}}</2> 发送到您手机上的一次性验证码。",
     "totp": "请输入由您绑定 <1>{{selectedIntegrationName}}</1> 相关身份验证器提供的一次性验证码。",
     "tradingPin": "请输入与您的 <2>{{selectedIntegrationName}}</2> 账户绑定的交易 PIN 码。",
-    "transferFlow": "输入您的一次性代码以确认确实是您发起此次转账。",
-    "transferFlowCoinbase": "输入您的Coinbase一次性代码以确认确实是您发起此次转账。",
+    "transferFlow": "输入您的一次性验证码以确认确实是您发起此次转账。",
+    "transferFlowCoinbase": "输入您的Coinbase一次性验证码以确认确实是您发起此次转账。",
     "twoFactor": "输入您在 <1>{{selectedIntegrationName}}</1> 账户中配置的双因素认证方法提供的代码。"
   },
   "mfaPage": {
@@ -1085,11 +1090,11 @@
       "slippage": "滑点：{{slippage}}"
     },
     "details": {
-      "bridgeFee": "桥梁费用：",
-      "collapsedBridging": "最大滑点 0.5%；约{{processingTime}}转账时间",
-      "collapsedBtcVanilla": "无费用；约30分钟转账时间",
-      "collapsedVanilla": "无费用；约1分钟转账时间",
-      "networkFee": "网络费用：",
+      "bridgeFee": "跨链费用: <value>浮动区间</value>",
+      "collapsedBridging": "最大滑点 0.5%；约{{processingTime}}转账时间。",
+      "collapsedBtcVanilla": "无费用；30分钟内转账。",
+      "collapsedVanilla": "无费用；约1分钟转账。",
+      "networkFee": "网络费用: <value>浮动区间</value>",
       "processingTimeBtcValue": "30 分钟",
       "processingTimeDefaultValue": "1 分钟",
       "processingTimeLabel": "处理时长：<{{processingTime}}",
@@ -1100,7 +1105,7 @@
       "depositWithQr": "使用二维码存款",
       "depositWithWalletAddress": "使用钱包地址进行充值",
       "dontSeeYourAccount": "没有看到你的账户？",
-      "exitAnyway": "",
+      "exitAnyway": "仍然退出",
       "havingTrouble": "遇到问题了？",
       "needAnotherWay": "使用其他支付方式？",
       "tryAgain": "再试一次",
@@ -1120,30 +1125,30 @@
       "title": "选择一个网络"
     },
     "onlySendTokenOnNetworkBridged": {
-      "extra": "最低存款是<9>{{minimumDeposit}}</9>。",
-      "instruction": "仅通过<3>{{network}}</3>向该地址发送<1>{{token}}</1>。此地址为<5>一次性使用</5>。",
-      "merged": "仅通过<3>{{network}}</3>向该地址发送<1>{{token}}</1>。此地址为<5>一次性使用</5>。若使用其他资产或网络组合、重复使用此地址，或<7>向不同地址发送资产</7>，将导致资金丢失且不可恢复。最低存款为<9>{{minimumDeposit}}</9>。",
-      "warning": "若使用其他资产或网络组合、重复使用此地址，或<7>向不同地址发送资产</7>，将导致资金丢失且不可恢复。"
+      "extra": "最低充值金额<9>{{minimumDeposit}}</9>。",
+      "instruction": "只发送 <1>{{token}}</1> 到网络上 <3>{{network}}</3> 到该地址. 该地址为 <5>一次性使用</5>.",
+      "merged": "只发送 <1>{{token}}</1> 到网络上 <3>{{network}}</3> 到该地址. 该地址为 <5>一次性使用</5>。任何其他资产或网络组合、重复使用此地址，或 <7>向不同地址发送资产</7>，都将导致资金丢失且无法找回。最低充值金额为 <9>{{minimumDeposit}}</9>。",
+      "warning": "任何其他资产或网络组合、重复使用此地址，或 <7>向不同地址发送资产</7>，都将导致资金丢失且无法找回。最低充值金额为 <9>{{minimumDeposit}}</9>。"
     },
     "onlySendTokenOnNetworkVanilla": {
-      "instruction": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。",
-      "merged": "仅在<3>{{network}}</3>网络上发送<1>{{token}}</1>。若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。",
-      "warning": "若使用其他资产或网络组合，或<5>将资产发送到不同地址</5>，将导致资金丢失且无法恢复。"
+      "instruction": "只通过 <3>{{network}}</3> 网络发送 <1>{{token}}</1>。",
+      "merged": "只发送 <1>{{token}}</1>在 <3>{{network}}</3> 上。任何其他资产或网络组合，或 <5>向不同地址发送资产</5>，都将导致资金丢失且无法找回。",
+      "warning": "任何其他资产或网络组合，或 <5>向不同地址发送资产</5>，都将导致资金丢失且无法找回。"
     },
     "requirements": {
       "addressOneTimeUse": "一次性使用地址",
-      "bridgingLimit": "限额: $2 - $500,000",
-      "collapsedBridging": "在 {{network}} 上发送 {{token}}；一次性使用的地址；限额 $2–$500,000。",
+      "bridgingLimit": "限额: ${{min}} - ${{max}}",
+      "collapsedBridging": "发送 {{token}}在 {{network}} 上；一次性使用的地址；限额: ${{min}} - ${{max}}。",
       "collapsedFallback": "确保满足所有要求。",
       "collapsedWithMemo": "从{{network}}发送{{token}}；一次性地址；包含备忘录。",
       "collapsedWithMemoNew": "发送 {{token}} 于 {{network}}; 包含备注。",
       "collapsedWithoutTag": "在 {{network}} 上发送 {{token}}；一次性使用的地址。",
       "collapsedWithoutTagNew": "发送 {{token}} 于 {{network}}。",
-      "collapsedWithTag": "仅发送 {{token}} 于 {{network}}; 地址为一次性使用; 包含传输 {{tagLabel}}",
+      "collapsedWithTag": "仅发送 {{token}} 于 {{network}}; 地址为一次性使用; 包含标签。",
       "collapsedWithTagNew": "发送 {{token}} 于 {{network}}; 包含标签。",
-      "includeInTransaction": "随存款一起包含转账 {{tagLabel}}",
-      "includeInTransactionWithMemo": "存款时包含转账备忘录。",
-      "includeInTransactionWithTag": "存款时包含转账标签。",
+      "includeInTransaction": "充值时请包含转账 {{tagLabel}}",
+      "includeInTransactionWithMemo": "充值时请包含转账备忘录",
+      "includeInTransactionWithTag": "存款时请包含转账标签",
       "sendOnlyTokenOnNetwork": "仅发送 {{token}} 于 {{network}}",
       "title": "要求",
       "warningText": "确保满足所有要求，否则资金可能会永久丢失。"
@@ -1175,7 +1180,7 @@
       "includeMemo": "请包含此备忘录：<1>{{memo}}</1>",
       "includeTag": "请包含此标签：<1>{{tag}}</1>",
       "onlySendTokenOnNetworkBridging": "仅通过<3>{{network}}</3>网络向该地址发送<1>{{token}}</1>。此地址为一次性使用地址。若向该地址发送其他资产或使用其他网络组合、或重复使用该地址<5>资产发送到不同的地址</5>, 均将导致资金丢失且无法恢复。<7>最低存款为2美元。</7>",
-      "onlySendTokenOnNetworkExtended": "仅在 <3>{{network}}</3> 网络上发送 <1>{{token}}</1> 到此地址。其他资产或网络的组合将无法恢复。",
+      "onlySendTokenOnNetworkExtended": "仅在 <3>{{network}}</3> 网络上发送 <1>{{token}}</1> 到此地址。其他资产或网络组合将无法恢复。",
       "requiredForDeposit": "此存款所需",
       "sendAboveMinimum": "发送超过最低金额：<1>{{amount}}</1>"
     }
@@ -1203,7 +1208,7 @@
     "scanQrCode": "扫描二维码以完成您的付款",
     "transactionComplete": "交易完成",
     "unsupportedCurrencyError": "您所在国家/地区不支持此种货币。",
-    "youDeposit": "您存入"
+    "youDeposit": "您充值"
   },
   "paypal": {
     "accessDeniedPage": {
@@ -1279,7 +1284,7 @@
       "title": "您确定要退出吗？"
     },
     "fundingLoading": {
-      "stepOrder": "{{current}}/{{total}}"
+      "stepOrder": "{{current}}占{{total}}"
     },
     "fundingOptions": {
       "available": "{{amount}} 可用余额",
@@ -1356,6 +1361,10 @@
     "networkDrawer": {
       "choose": "选择一个网络"
     },
+    "noBalancePage": {
+      "message": "无可用{{symbol}}余额。请充值后重试。",
+      "title": "没有余额"
+    },
     "oauthTimeoutPage": {
       "reopen": "重新打开{{integrationName}}",
       "subtitle": "您似乎未完成登录流程或未获准访问权限。要继续，请重新打开{{integrationName}}并完成登录。",
@@ -1401,12 +1410,12 @@
     },
     "terms": {
       "header": "Mesh 终端用户 条款与条件",
-      "paragraph01": "Mesh终端用户条款和条件\nMesh Connect, Inc.（\"Mesh\"）是一家技术供应商，提供一款通讯工具（\"工具\"），能够代表您通过该工具与某些第三方加密货币账户和钱包（\"连接账户\"），包括发送您希望执行的指令，用您选择的加密货币在连接账户中购买符合条件的网上商家（每个，均为\"商家\"）提供的商品和服务。在您每次向商家购买商品或服务时，Mesh将访问您的连接账户中的加密货币，将其转出，并如有必要，将加密货币转换为稳定币并转移相应数量的美元计价稳定币给PayPal, Inc.及/或其关联公司（\"PayPal\"），以便之后与商家结算。",
-      "paragraph02": "使用工具时，您承认并同意：\n• 本文所述的基于工具的功能（\"终端用户服务\"）将按您的指示使用，且通过工具进行的任何交易均得到您的授权；\n• Mesh及其服务提供商不提供经纪服务或进行支付处理；\n• Mesh、PayPal及Mesh的服务提供商不对任何连接账户或其提供者的条款、政策、行为或不作为承担任何责任。",
-      "paragraph03": "您声明并保证，您拥有通过终端用户服务连接和访问每个连接账户所需的所有权利和许可，包括向Mesh及其服务提供商提供您的连接账户登录凭证、钱包地址和/或与每个连接账户相关的任何账户或个人信息的权利。",
-      "paragraph04": "通过使用该工具，您授权Mesh访问您的连接账户并指示在您的指令下进行某些交易。在此，您授权Mesh及其服务提供商传递指令以及信息、数据和其他材料在终端用户服务和每个连接账户之间传输，您承认并同意，Mesh和Mesh的服务提供商对任何此类指令的执行或对任何此类材料（包括其准确性、及时性或完备性）不承担任何责任。",
-      "paragraph05": "本工具旨在使您能够利用连接账户中的合格加密货币资产为商家进行资金支付（此类购买在此被称为\"第三方交易\"）。为了代表您完成第三方交易：\n• 如果您的连接账户支持PYUSD，Mesh将通过以下操作之一：\n  指示您的连接账户将PYUSD转出，或如果您的PYUSD余额不足，则购买PYUSD，使用您选择的已保存付款方法从连接账户中购买，或将您在连接账户中持有的另一种合格的加密货币转换为PYUSD，以完成第三方交易（包括任何适用费用），并将PYUSD转移到PayPal上以代表您与商家结算；\n  或指示您的连接账户将所选的另一种合格加密货币转出连接账户，以完成第三方交易的金额（包括适用费用），并将其转移到Mesh智能合约以转换为PYUSD，并通过该智能合约将PYUSD转移到PayPal以进行付款结算。对于此类交易，通过去中心化流动性提供者协议进行从一种合格加密货币到PYUSD的转换。\n• 如果连接账户不支持PYUSD，Mesh将指示连接账户转移另一种支持的稳定币USDC，或者如果USDC余额不足，则使用您选择的支持连接账户的方法购买USDC或转换您选择的另一种加密货币为USDC。Mesh将指示连接账户转移这个USDC到与Mesh合作的流动性提供者，以将USDC转换为PYUSD并转移至PayPal，PayPal将为商家结算付款。",
-      "paragraph06": "您的连接账户提供商可能会收取转账PYUSD或USDC的网络或其他费用。披露、计算和收取此类费用或收费的责任在您与连接账户提供商之间，而不在Mesh的责任范畴内。虽然我们将在合理可能的范围内向您披露我们从连接账户获得的费用信息，这些信息可能是费用预估而非实际费用金额，我们并不控制您的连接账户提供商实际收取的金额，这些金额可能高于或低于我们披露给您的金额。",
+      "paragraph01": "Mesh最终用户条款和条件\nMesh Connect, Inc.（以下简称“Mesh”）是一家技术服务提供商，提供一种通信工具（以下简称“该工具”）。该工具使 Mesh 能够代表您与您的某些第三方加密货币账户和钱包（以下简称“已连接账户”）进行通信，包括发送您希望执行的指令，以便使用您在已连接账户中的加密货币，从支持在结算时使用“加密货币支付”的合格在线商家（以下简称“商家”）处购买商品和服务。在您每次从商家购买商品或服务时，Mesh 将访问您已连接账户中的加密货币，从您的已连接账户中转出相应的加密货币，并在必要时指示将该加密货币转换为稳定币。随后，Mesh 会将等值的、以美元计价的稳定币转移至 PayPal, Inc. 及/或其关联公司（以下简称“PayPal”）。PayPal 随后将代表您与该商家完成相应交易的结算。",
+      "paragraph02": "通过使用该工具，您确认并同意：\n\n• 本文所述基于该工具提供的功能及服务（以下简称“最终用户服务”）均在您的指示下使用；通过该工具按照您的指示发起或执行的任何交易，均视为已获得您的授权。\n• Mesh 及其服务提供商 不提供经纪服务，也不从事支付处理业务。\n• 对于任何已连接账户，以及该账户提供方的条款、政策、行为或不作为，Mesh、PayPal 及 Mesh 的服务提供商 均不承担任何责任或法律义务。",
+      "paragraph03": "您声明并保证，您拥有通过最终用户服务连接并访问各个已连接账户所需的所有权利及必要授权，包括向Mesh及其服务提供商提供以下信息的权利：已连接账户登录凭证、钱包地址以及/或与各已连接账户相关的任何账户信息或您的个人信息。",
+      "paragraph04": "通过使用该工具，您即授权 Mesh 访问您的已连接账户，并根据您的指示发起或执行相关交易。您在此授权 Mesh 及其服务提供商在最终用户服务与各已连接账户之间传输指令，以及相关信息、数据和其他资料。您同时确认并同意，Mesh 及其服务提供商 对于任何此类指令的执行结果，以及任何相关资料（包括其准确性、及时性或完整性）均不承担任何责任或法律义务。",
+      "paragraph05": "本工具旨在使您能够使用您已连接账户中的合格加密货币资产，在商家处为购买商品或服务提供资金（以下此类购买称为“第三方交易”）。为代表您完成第三方交易：\n\n• 如果您的已连接账户支持 PYUSD：\nMesh 将通过以下方式之一执行交易：\n指示您的已连接账户将 PYUSD 从账户中转出；或者，如果您的 PYUSD 余额不足，则通过以下方式之一获得所需的 PYUSD：\n使用与您的已连接账户关联的、由您选择的已保存支付方式购买 PYUSD；或将您在已连接账户中持有的、由您选择的其他符合条件的加密货币转换为 PYUSD。在获得完成第三方交易，包括任何适用费用所需的 PYUSD 后，Mesh 将该 PYUSD 转移至 PayPal，由 PayPal 代表您与商家完成付款结算；或指示您的已连接账户将您选择的其他符合条件的加密货币从账户中转出，并将足以完成第三方交易，包括任何适用费用的金额转移至 Mesh 的智能合约。该加密货币将在智能合约中转换为 PYUSD，并由该智能合约将 PYUSD 转移至 PayPal，随后 PayPal 将代表您与商家完成付款结算。对于此类交易，从符合条件的加密货币转换为 PYUSD 的过程将通过 去中心化流动性提供协议完成。\n\n• 如果您的已连接账户不支持 PYUSD：Mesh 将指示您的已连接账户将另一种受支持的稳定币 USDC 从账户中转出；或者，如果您的 USDC 余额不足，则：使用与您的已连接账户关联的、由您选择的已保存支付方式购买 USDC；或指示您的已连接账户将您选择的其他加密货币转换为 USDC。随后，Mesh 将指示您的已连接账户将该 USDC 转移至与 Mesh 合作的流动性提供方。该流动性提供方将把 USDC 转换为 PYUSD，并将相应的 PYUSD 转移至 PayPal。随后 PayPal 将代表您与商家完成付款结算。",
+      "paragraph06": "您的已连接账户提供方可能会就转移 PYUSD 或 USDC 收取 网络费用或其他费用。任何此类费用的披露、计算及收取均由您与您的已连接账户提供方之间决定，Mesh 不对此承担任何责任。在合理可行的范围内，我们将向您披露从您的已连接账户获取的费用信息。但该等费用信息 可能为费用估算值，而非实际费用金额。Mesh 无法控制您的已连接账户提供方实际收取的费用金额，该金额可能高于或低于我们向您披露的费用金额。",
       "paragraph07": "如果您需要在连接账户中将另一种合格的加密货币转换为PYUSD，连接账户提供商可能会针对转换收取网络或其他费用。连接账户提供商还可能在从其他加密货币转换为PYUSD的转换率中包含“价差”，即以低于批发价格进行出售并由连接账户完成转换之间的差异。披露、计算和收取此类费用、收费或价差的责任在您与连接账户提供商之间，而不在Mesh的责任范畴内。虽然我们将在合理可能的范围内向您披露我们从智能合约或流动性提供者获得的费用信息，这些信息可能是费用预估而非实际费用金额，我们并不控制与智能合约转换或与Mesh合作的流动性提供者相关的任何去中心化流动性提供者，实际收取的费用可能会高于或低于我们向您披露的费用。",
       "paragraph08": "如果Mesh需要指示您的连接账户将另一种合格的加密货币转换为PYUSD或USDC，Mesh将根据您的第三方交易的规模在您的交易总额中包含一个缓冲，以便于结算转换。缓冲是您选择的合格加密货币中的额外金额，将包括在转换为PYUSD或USDC中。该缓冲旨在允许在处理转换时，在网络费用波动时由区块链进行处理。若缓冲不足以应对网络费用在交易总额显示给您与您批准转换之间的时间内的波动，您将看到一个包含更新交易总额（包括任何缓冲金额）的新交易总额，并被要求批准此新金额。若在满足第三方交易金额后仍有未使用的缓冲，则剩余缓冲将按下列方法处理：\n• 如果Mesh将PYUSD或USDC直接从您的连接账户转移，该缓冲将留在连接账户中作为PYUSD或USDC，如果连接账户不支持PYUSD，\n• 如果Mesh通过智能合约或Mesh的流动性提供者转换为PYUSD，所余合格加密货币部分将退回您的连接账户。",
       "paragraph09": "您可以直接向商家请求您的第三方交易退款。所有退款都将由PayPal、Mesh或与Mesh合作的流动性提供者处理，并以PYUSD形式退还给您，若连接账户不支持PYUSD，则以USDC形式退还。对于连接账户或与Mesh合作的流动性提供者或通过Mesh的智能合约为满足原始第三方交易而收取的任何费用，不能进行退款。",
@@ -1474,12 +1483,12 @@
   },
   "payPalConnectOAuthPage": {
     "close": "关闭",
-    "completeDepositInApp": "您将在您的PayPal应用中完成此存款",
+    "completeDepositInApp": "您将在您的PayPal应用中完成此充值",
     "completeTransferInApp": "请在您的PayPal应用中完成此转账",
     "continue": "继续前往{{selectedIntegrationName}}",
     "enterAmount": "输入转账金额",
     "maxAmountError": "最大金额为 {{maxAmount}}",
-    "minAmountError": "最小转账金额为 {{minAmount}}",
+    "minAmountError": "最小转金额为 {{minAmount}}",
     "notSupported": "{{selectedIntegrationName}} 不支持所请求的代币或网络的转账。",
     "selectAnotherAccount": "选择另一个账户",
     "selectAnotherExchange": "请选择另一个可以进行充值的交易所或钱包。",
@@ -1517,7 +1526,7 @@
     "transferTimeoutBody": "请重试并批准交易请求。"
   },
   "previewTransferPageUI": {
-    "deposit": "存款",
+    "deposit": "充值",
     "depositFromIntegration": "通过{{integrationName}} 充值",
     "depositTo": "存入",
     "fee": "包含 {{amount}} 手续费",
