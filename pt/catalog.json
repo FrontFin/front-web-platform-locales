@@ -410,7 +410,6 @@
     "incorrect2faCode": "Código 2FA incorreto.",
     "incorrectEmail": "Inseriste um email incorreto.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Tens {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Tens {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de utilizador ou palavra-passe incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -565,7 +564,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -1244,6 +1242,7 @@
     "common": {
       "cancel": "Cancelar",
       "change": "Alterar",
+      "changeNetwork": "Mudar Rede",
       "close": "Fechar",
       "continue": "Continuar",
       "goBack": "Voltar",
@@ -1320,17 +1319,27 @@
     "initialSteps": {
       "terms": "O PayPal permite pagamentos com criptomoeda para este comerciante. Ao continuar, autorizas o Mesh para solicitar uma transferência da tua conta para o PayPal para o teu pagamento.<1>Aplica-se os Termos do Mesh.</1>"
     },
+    "insufficientBalanceNetworksPage": {
+      "changeNetwork": "Mudar Rede",
+      "hint": "Escolha uma rede diferente ou adicione {{symbol}} à sua carteira e tente novamente.",
+      "message": "O seu saldo de {{balanceAmount}} na rede {{networkName}} não é suficiente para este pagamento de {{paymentAmount}}.",
+      "title": "Não há {{symbol}} suficiente"
+    },
     "insufficientBalancePage": {
       "chooseDifferent": "Conectar uma conta diferente",
+      "chooseDifferentNetwork": "Escolhe uma rede diferente",
       "message": "O teu saldo de {{balanceAmount}} é insuficiente para fazer este pagamento de {{paymentAmount}}.",
       "messageWithNetwork": "O teu saldo de {{balanceAmount}} na rede {{network}} é insuficiente para fazer este pagamento de {{paymentAmount}}.",
+      "minimumBalanceMessage": "É necessário ter pelo menos {{minimumBalance}} na tua carteira para concluir este pagamento.",
       "network": "Rede",
       "title": "Saldo insuficiente",
+      "toppedUpWalletQuestion": "Já recarregaste a tua carteira?",
       "topUpAccount": "Por favor, recarrega a tua conta e tenta novamente.",
       "topUpWallet": "Por favor, recarrega a tua carteira e tenta novamente.",
       "topUpWalletTryOtherNetwork": "Por favor, reabastece a tua carteira e tenta novamente ou tente com outra rede."
     },
     "insufficientGasBalanceNetworksPage": {
+      "hint": "Escolhe uma rede diferente ou adiciona {{gasSymbol}} à tua carteira e tenta novamente.",
       "message": "Esta transação requer {{transferAmount}} e ~{{gasFiat}} no valor de {{gasSymbol}} para pagar taxas de gás."
     },
     "insufficientGasBalancePage": {
