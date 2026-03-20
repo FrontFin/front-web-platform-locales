@@ -797,15 +797,16 @@
     "item1Body": "Sinua pyydetään allekirjoittamaan viesti {{selectedIntegrationName}}: ssä, joka vahvistaa, että omistat tämän kryptolompakon."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Tarkistetaan omistuksiasi...",
+    "connectingWallet": "Yhdistetään lompakkoasi...",
+    "couldNotConnect": "Yhteyttä lompakkoon ei voitu muodostaa",
+    "couldNotVerify": "Lompakon vahvistaminen epäonnistui",
     "depositFlowSubtitle": "Hyväksy yhteys aloittaaksesi siiron",
     "paymentFlowSubtitle": "Hyväksy yhteys aloittaaksesi maksun",
-    "retry": "",
+    "retry": "Yritä uudelleen",
     "title": "Yhdistä tili",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Yritä uudelleen",
+    "tryAgainSubtitle": "Yritä yhdistää uudelleen.",
     "verifyFlowSubtitle": "Hyväksy yhteys vahvistaaksesi lompakkosi"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1116,7 +1117,7 @@
       "needAnotherWay": "Tarvitsetko toisen tavan?",
       "tryAgain": "Yritä uudelleen",
       "tryWithQr": "Yritä tallettaa QR-koodilla.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Yritä tallettaa sen sijaan lompakon osoitteella."
     },
     "error": {
       "addressNotFound": "Emme voineet ladata talletusosoitetta, yritä toista tokenia tai verkkoa.",
@@ -1249,7 +1250,7 @@
     "common": {
       "cancel": "Peruuta",
       "change": "Vaihda",
-      "changeNetwork": "",
+      "changeNetwork": "Vaihda verkko",
       "close": "Sulje",
       "continue": "Jatka",
       "goBack": "Palaa takaisin",
@@ -1327,26 +1328,26 @@
       "terms": "PayPal mahdollistaa kryptomaksut tälle myyjälle. Jatkamalla annat Meshille luvan pyytää siirtoa tililtäsi PayPalille maksua varten.<1>Meshin käyttöehdot ovat voimassat.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "changeNetwork": "",
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Vaihda verkko",
+      "hint": "Valitse toinen verkko tai lisää {{symbol}} lompakkoosi ja yritä uudelleen.",
+      "message": "Sinun {{balanceAmount}} saldo {{networkName}} verkossa ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
+      "title": "Ei riittävästi {{symbol}}"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Valitse toinen tili",
-      "chooseDifferentNetwork": "",
+      "chooseDifferentNetwork": "Valitse toinen verkko",
       "message": "Sinun {{balanceAmount}} saldo ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
       "messageWithNetwork": "Sinun {{balanceAmount}} saldo {{network}} verkossa ei riitä tämän {{paymentAmount}} maksun suorittamiseen.",
-      "minimumBalanceMessage": "",
+      "minimumBalanceMessage": "Tarvitset vähintään {{minimumBalance}} lompakossasi suorittaaksesi tämän maksun.",
       "network": "Verkko",
       "title": "Riittämätön saldo",
-      "toppedUpWalletQuestion": "",
+      "toppedUpWalletQuestion": "Lisäsitkö saldoasi?",
       "topUpAccount": "Ole hyvä ja lisää saldoa tilillesi ja yritä uudelleen.",
       "topUpWallet": "Lisää varoja lompakkoosi ja yritä uudelleen.",
       "topUpWalletTryOtherNetwork": "Ole hyvä ja lisää varoja lompakkoosi ja yritä uudelleen tai kokeile toista verkkoa."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Valitse eri verkko tai lisää {{gasSymbol}} lompakkoosi ja yritä uudelleen.",
       "message": "Tämä tapahtuma vaatii {{transferAmount}} sekä ~{{gasFiat}} arvosta {{gasSymbol}} kaasumaksuihin."
     },
     "insufficientGasBalancePage": {
