@@ -797,15 +797,16 @@
     "item1Body": "Anda akan diminta untuk menandatangani pesan di {{selectedIntegrationName}} yang mengkonfirmasi bahwa Anda memiliki dompet ini."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Memeriksa aset Anda...",
+    "connectingWallet": "Menyambungkan dompet Anda...",
+    "couldNotConnect": "Tidak dapat menghubungkan ke dompet",
+    "couldNotVerify": "Tidak dapat memverifikasi dompet",
     "depositFlowSubtitle": "Setujui koneksi untuk memulai transfer Anda",
     "paymentFlowSubtitle": "Setujui koneksi untuk memulai pembayaran Anda",
-    "retry": "",
+    "retry": "Coba Lagi",
     "title": "Hubungkan akun",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Coba lagi",
+    "tryAgainSubtitle": "Silakan coba menghubungkan kembali.",
     "verifyFlowSubtitle": "Setujui koneksi untuk memverifikasi dompet Anda"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1116,7 +1117,7 @@
       "needAnotherWay": "Perlu cara lain?",
       "tryAgain": "Coba lagi",
       "tryWithQr": "Coba deposit dengan kode QR sebagai gantinya.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Cobalah menyetor dengan alamat dompet sebagai gantinya."
     },
     "error": {
       "addressNotFound": "Kami tidak dapat memuat alamat deposit, silakan coba token atau jaringan lain.",
@@ -1249,7 +1250,7 @@
     "common": {
       "cancel": "Batal",
       "change": "Ubah",
-      "changeNetwork": "",
+      "changeNetwork": "Ubah Jaringan",
       "close": "Tutup",
       "continue": "Lanjutkan",
       "goBack": "Kembali",
@@ -1327,22 +1328,26 @@
       "terms": "PayPal memungkinkan pembayaran crypto untuk pedagang ini. Dengan melanjutkan, Anda mengizinkan Mesh untuk meminta transfer dari akun Anda ke PayPal untuk pembayaran Anda.<1>Syarat Mesh berlaku.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Ubah Jaringan",
+      "hint": "Pilih jaringan yang berbeda, atau tambahkan {{symbol}} ke dompet Anda dan coba lagi.",
+      "message": "Saldo {{balanceAmount}} Anda di jaringan {{networkName}} tidak cukup untuk pembayaran {{paymentAmount}} ini.",
+      "title": "{{symbol}} Tidak Cukup"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Pilih akun yang berbeda",
+      "chooseDifferentNetwork": "Pilih jaringan yang berbeda",
       "message": "Saldo Anda sebesar {{balanceAmount}} tidak cukup untuk melakukan pembayaran sebesar {{paymentAmount}}.",
       "messageWithNetwork": "Saldo Anda sebesar {{balanceAmount}} pada jaringan {{network}} tidak cukup untuk melakukan pembayaran sebesar {{paymentAmount}}.",
+      "minimumBalanceMessage": "Anda memerlukan saldo minimal {{minimumBalance}} di dompet Anda untuk menyelesaikan pembayaran ini.",
       "network": "Jaringan",
       "title": "Saldo tidak mencukupi",
+      "toppedUpWalletQuestion": "Apakah Anda sudah mengisi ulang dompet Anda?",
       "topUpAccount": "Silakan isi ulang akun Anda dan coba lagi.",
       "topUpWallet": "Silakan isi ulang dompet Anda dan coba lagi.",
       "topUpWalletTryOtherNetwork": "Silakan isi ulang dompet Anda dan coba lagi atau coba dengan jaringan lain."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Pilih jaringan lain atau tambahkan {{gasSymbol}} ke dompet Anda dan coba lagi.",
       "message": "Transaksi ini memerlukan {{transferAmount}} dan ~{{gasFiat}} senilai {{gasSymbol}} untuk membayar biaya gas."
     },
     "insufficientGasBalancePage": {
