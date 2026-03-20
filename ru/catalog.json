@@ -410,8 +410,6 @@
     "incorrect2faCode": "Неверный код 2FA.",
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -566,8 +564,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -801,15 +797,16 @@
     "item1Body": "Вам будет предложено подписать сообщение в {{selectedIntegrationName}}, которое подтверждает владение кошельком."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Проверка ваших активов...",
+    "connectingWallet": "Подключение вашего кошелька...",
+    "couldNotConnect": "Не удалось подключиться к электронному кошельку",
+    "couldNotVerify": "Не удалось подтвердить электронный кошелек",
     "depositFlowSubtitle": "Подтвердите подключение, чтобы начать перевод",
     "paymentFlowSubtitle": "Подтвердите подключение, чтобы начать оплату",
-    "retry": "",
+    "retry": "Повторить",
     "title": "Подключить аккаунт",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Попробовать снова",
+    "tryAgainSubtitle": "Пожалуйста, попробуйте подключиться снова.",
     "verifyFlowSubtitle": "Подтвердите подключение, чтобы проверить ваш электронный кошелек"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1120,7 +1117,7 @@
       "needAnotherWay": "Попробуете другой способ?",
       "tryAgain": "Попробовать снова",
       "tryWithQr": "Попробуйте внести депозит с помощью QR-кода вместо этого.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Попробуйте внести депозит с помощью адреса электронного кошелька вместо этого."
     },
     "error": {
       "addressNotFound": "Не удалось загрузить адрес для вклада, попробуйте другую монету или сеть.",
@@ -1253,7 +1250,7 @@
     "common": {
       "cancel": "Отмена",
       "change": "Изменить",
-      "changeNetwork": "",
+      "changeNetwork": "Изменить сеть",
       "close": "Закрыть",
       "continue": "Продолжить",
       "goBack": "Вернуться",
@@ -1331,26 +1328,26 @@
       "terms": "PayPal позволяет производить платежи в криптовалюте для этого продавца. Продолжая, вы разрешаете Mesh запрашивать перевод с вашего счёта в PayPal для оплаты.<1>Применяются условия Mesh.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "changeNetwork": "",
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Изменить сеть",
+      "hint": "Выберите другую сеть или добавьте {{symbol}} в ваш электронный кошелек и попробуйте снова.",
+      "message": "Ваш баланс {{balanceAmount}} в сети {{networkName}} недостаточен для совершения этого {{paymentAmount}} платежа.",
+      "title": "Недостаточно {{symbol}}"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Подключить другой аккаунт",
-      "chooseDifferentNetwork": "",
+      "chooseDifferentNetwork": "Выберите другую сеть",
       "message": "Ваш {{balanceAmount}} баланс недостаточен для совершения этого {{paymentAmount}} платежа.",
       "messageWithNetwork": "Ваш баланс {{balanceAmount}} в сети {{network}} недостаточен для совершения этого {{paymentAmount}} платежа.",
-      "minimumBalanceMessage": "",
+      "minimumBalanceMessage": "Вам нужно иметь как минимум {{minimumBalance}} на вашем электронном кошельке, чтобы завершить этот платеж.",
       "network": "Сеть",
       "title": "Недостаточный баланс",
-      "toppedUpWalletQuestion": "",
+      "toppedUpWalletQuestion": "Вы пополнили ваш электронный кошелек?",
       "topUpAccount": "Пожалуйста, пополните свой счет и попробуйте еще раз.",
       "topUpWallet": "Пожалуйста, пополните свой электронный кошелек и попробуйте еще раз.",
       "topUpWalletTryOtherNetwork": "Пополните свой электронный кошелек и попробуйте снова, либо используйте другую сеть."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Выберите другую сеть или добавьте {{gasSymbol}} в ваш электронный кошелек и попробуйте снова.",
       "message": "Эта транзакция требует {{transferAmount}} и ~{{gasFiat}} в {{gasSymbol}} для оплаты комиссий за газ."
     },
     "insufficientGasBalancePage": {
