@@ -284,7 +284,7 @@
     }
   },
   "doneTransferPage": {
-    "allSet": "Tout est prêt\u00a0!",
+    "allSet": "Tout est prêt !",
     "checkDetails40": "Voir les détails de la transaction",
     "depositClient": "Vos fonds sont en chemin.",
     "paymentInitiated": "Vous avez initié un paiement de <1></1><2>{{amountCrypto}}</2><3></3> à {{clientName}}",
@@ -410,7 +410,6 @@
     "incorrect2faCode": "Code 2FA incorrect.",
     "incorrectEmail": "Vous avez entré un e-mail incorrect.",
     "incorrectPasswordChancesRemaining_one": "Mot de passe incorrect. Il vous reste {{count}} chance.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Mot de passe incorrect. Il vous reste {{count}} chances.",
     "incorrectUsernameOrPassword": "Nom d'utilisateur ou mot de passe incorrect.",
     "integrationNotAvailable": "L'intégration n'est pas actuellement disponible.",
@@ -565,7 +564,6 @@
     "paymentMethodDepositUsage": "Méthode de paiement liée",
     "stablecoinConversion": "Conversion de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} autre",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} autres"
   },
   "fundingOptionUnavailabilityReason": {
@@ -799,15 +797,16 @@
     "item1Body": "Il vous sera demandé de signer un message dans {{selectedIntegrationName}} confirmant que vous possédez ce portefeuille."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Vérification de vos actifs...",
+    "connectingWallet": "Connexion à votre portefeuille...",
+    "couldNotConnect": "Impossible de se connecter au portefeuille",
+    "couldNotVerify": "Impossible de vérifier le portefeuille",
     "depositFlowSubtitle": "Approuvez la connexion pour commencer votre transfert",
     "paymentFlowSubtitle": "Approuvez la connexion pour commencer votre paiement",
-    "retry": "",
+    "retry": "Réessayer",
     "title": "Connecter le compte",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Réessayez",
+    "tryAgainSubtitle": "Veuillez essayer de vous reconnecter.",
     "verifyFlowSubtitle": "Approuvez la connexion pour vérifier votre portefeuille"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1098,15 +1097,15 @@
       "slippage": "Slippage : {{slippage}}"
     },
     "details": {
-      "bridgeFee": "Frais de pont\u00a0:",
+      "bridgeFee": "Frais de pont :",
       "collapsedBridging": "Slippage maximal 0,5 % ; ~{{processingTime}} temps de transfert",
       "collapsedBtcVanilla": "Aucun frais ; moins de 30 min de temps de transfert.",
       "collapsedVanilla": "Aucun frais ; ~1 min temps de transfert",
-      "networkFee": "Frais de réseau\u00a0:",
+      "networkFee": "Frais de réseau :",
       "processingTimeBtcValue": "30 min",
       "processingTimeDefaultValue": "1 min",
       "processingTimeLabel": "Temps de traitement: <{{processingTime}}",
-      "slippage": "Glissement\u00a0:",
+      "slippage": "Glissement :",
       "title": "Détails"
     },
     "entry": {
@@ -1118,7 +1117,7 @@
       "needAnotherWay": "Besoin d'une autre méthode?",
       "tryAgain": "Réessayez",
       "tryWithQr": "Essayez de déposer à l’aide d’un code QR.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Essayez de déposer avec l'adresse de portefeuille à la place."
     },
     "error": {
       "addressNotFound": "Nous n'avons pas pu charger une adresse de dépôt, veuillez essayer un autre jeton ou réseau.",
@@ -1146,7 +1145,7 @@
     },
     "requirements": {
       "addressOneTimeUse": "Adresse à usage unique",
-      "bridgingLimit": "Limite : 2 $ - 500\u00a0000 $",
+      "bridgingLimit": "Limite : 2 $ - 500 000 $",
       "collapsedBridging": "Envoyez {{token}} sur {{network}} ; adresse à usage unique ; limite de 2 $ à 500 000 $.",
       "collapsedFallback": "Assurez-vous que toutes les exigences sont respectées.",
       "collapsedWithMemo": "Envoyez {{token}} sur {{network}}; adresse à usage unique; inclure le mémo.",
@@ -1203,7 +1202,7 @@
   "payPage": {
     "amountMustBeWithin": "Le montant doit être compris entre {{minFiat}} - {{maxFiat}}",
     "bybit": {
-      "fee": "Frais\u00a0: {{fee}}"
+      "fee": "Frais : {{fee}}"
     },
     "continueInPayApp": "",
     "cryptoCom": {
@@ -1251,7 +1250,7 @@
     "common": {
       "cancel": "Annuler",
       "change": "Changer",
-      "changeNetwork": "",
+      "changeNetwork": "Changer de réseau",
       "close": "Fermer",
       "continue": "Continuer",
       "goBack": "Retourner",
@@ -1329,26 +1328,26 @@
       "terms": "PayPal permet les paiements en cryptomonnaies pour ce commerçant. En continuant, vous autorisez Mesh à demander un transfert depuis votre compte vers PayPal afin d’effectuer votre paiement.\n<1>Les conditions de Mesh s’appliquent.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "changeNetwork": "",
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Changer de réseau",
+      "hint": "Choisissez un réseau différent, ou ajoutez {{symbol}} à votre portefeuille et réessayez.",
+      "message": "Votre solde de {{balanceAmount}} sur le réseau {{networkName}} n'est pas suffisant pour ce paiement de {{paymentAmount}}.",
+      "title": "Pas assez de {{symbol}}"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Choisissez un autre compte",
-      "chooseDifferentNetwork": "",
+      "chooseDifferentNetwork": "Choisissez un autre réseau",
       "message": "Votre solde de {{balanceAmount}} est insuffisant pour effectuer ce paiement de {{paymentAmount}}.",
       "messageWithNetwork": "Votre solde de {{balanceAmount}} sur le réseau {{network}} est insuffisant pour effectuer ce paiement de {{paymentAmount}}.",
-      "minimumBalanceMessage": "",
+      "minimumBalanceMessage": "Vous avez besoin d'au moins {{minimumBalance}} dans votre portefeuille pour effectuer ce paiement.",
       "network": "Réseau",
       "title": "Solde insuffisant",
-      "toppedUpWalletQuestion": "",
+      "toppedUpWalletQuestion": "Avez-vous rechargé votre portefeuille ?",
       "topUpAccount": "Veuillez recharger votre compte et réessayer.",
       "topUpWallet": "Veuillez recharger votre portefeuille et réessayer.",
       "topUpWalletTryOtherNetwork": "Veuillez recharger votre portefeuille et réessayer ou essayez avec un autre réseau."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Choisissez un réseau différent ou ajoutez {{gasSymbol}} à votre portefeuille et réessayez.",
       "message": "Cette transaction nécessite {{transferAmount}} et ~{{gasFiat}} en {{gasSymbol}} pour payer les frais de gaz."
     },
     "insufficientGasBalancePage": {
