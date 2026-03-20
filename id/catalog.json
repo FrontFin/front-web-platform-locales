@@ -797,9 +797,15 @@
     "item1Body": "Anda akan diminta untuk menandatangani pesan di {{selectedIntegrationName}} yang mengkonfirmasi bahwa Anda memiliki dompet ini."
   },
   "inWalletBrowserInitialPage": {
+    "checkingAssets": "",
+    "connectingWallet": "",
+    "couldNotConnect": "",
+    "couldNotVerify": "",
     "depositFlowSubtitle": "Setujui koneksi untuk memulai transfer Anda",
     "paymentFlowSubtitle": "Setujui koneksi untuk memulai pembayaran Anda",
+    "retry": "",
     "title": "Hubungkan akun",
+    "tryAgainSubtitle": "",
     "verifyFlowSubtitle": "Setujui koneksi untuk memverifikasi dompet Anda"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1109,7 +1115,8 @@
       "havingTrouble": "Mengalami masalah?",
       "needAnotherWay": "Perlu cara lain?",
       "tryAgain": "Coba lagi",
-      "tryWithQr": "Coba deposit dengan kode QR sebagai gantinya."
+      "tryWithQr": "Coba deposit dengan kode QR sebagai gantinya.",
+      "tryWithWalletAddress": ""
     },
     "error": {
       "addressNotFound": "Kami tidak dapat memuat alamat deposit, silakan coba token atau jaringan lain.",
@@ -1242,6 +1249,7 @@
     "common": {
       "cancel": "Batal",
       "change": "Ubah",
+      "changeNetwork": "",
       "close": "Tutup",
       "continue": "Lanjutkan",
       "goBack": "Kembali",
@@ -1318,6 +1326,11 @@
     "initialSteps": {
       "terms": "PayPal memungkinkan pembayaran crypto untuk pedagang ini. Dengan melanjutkan, Anda mengizinkan Mesh untuk meminta transfer dari akun Anda ke PayPal untuk pembayaran Anda.<1>Syarat Mesh berlaku.</1>"
     },
+    "insufficientBalanceNetworksPage": {
+      "hint": "",
+      "message": "",
+      "title": ""
+    },
     "insufficientBalancePage": {
       "chooseDifferent": "Pilih akun yang berbeda",
       "message": "Saldo Anda sebesar {{balanceAmount}} tidak cukup untuk melakukan pembayaran sebesar {{paymentAmount}}.",
@@ -1329,6 +1342,7 @@
       "topUpWalletTryOtherNetwork": "Silakan isi ulang dompet Anda dan coba lagi atau coba dengan jaringan lain."
     },
     "insufficientGasBalanceNetworksPage": {
+      "hint": "",
       "message": "Transaksi ini memerlukan {{transferAmount}} dan ~{{gasFiat}} senilai {{gasSymbol}} untuk membayar biaya gas."
     },
     "insufficientGasBalancePage": {
