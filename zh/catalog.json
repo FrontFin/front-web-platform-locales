@@ -797,15 +797,16 @@
     "item1Body": "随后会要求您在{{selectedIntegrationName}}中签署验证消息，以确认钱包所有权。"
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "正在检查您的资产……",
+    "connectingWallet": "连接您的钱包...",
+    "couldNotConnect": "无法连接到钱包",
+    "couldNotVerify": "无法验证钱包",
     "depositFlowSubtitle": "批准转账的连接请求",
     "paymentFlowSubtitle": "批准付款的连接请求",
-    "retry": "",
+    "retry": "重试",
     "title": "关联账户",
-    "tryAgainSubtitle": "",
+    "tryAgain": "再试一次",
+    "tryAgainSubtitle": "请尝试重新连接。",
     "verifyFlowSubtitle": "批准验证您钱包的连接请求"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1116,7 +1117,7 @@
       "needAnotherWay": "使用其他支付方式？",
       "tryAgain": "再试一次",
       "tryWithQr": "尝试使用二维码存款。",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "尝试使用钱包地址存款。"
     },
     "error": {
       "addressNotFound": "无法加载存款地址，请尝试其他代币或网络。",
@@ -1249,7 +1250,7 @@
     "common": {
       "cancel": "取消",
       "change": "更改",
-      "changeNetwork": "",
+      "changeNetwork": "更改网络",
       "close": "关闭",
       "continue": "继续",
       "goBack": "返回",
@@ -1327,26 +1328,26 @@
       "terms": "PayPal 为此商家启用加密货币支付。继续操作即表示您允许 Mesh 请求从您的账户转账至 PayPal 用于您的支付。<1>适用 Mesh 的条款。</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "changeNetwork": "",
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "更改网络",
+      "hint": "选择不同的网络，或者将{{symbol}}添加到您的钱包并重试。",
+      "message": "您在{{networkName}}网络上的{{balanceAmount}}余额不足以支付此次{{paymentAmount}}。",
+      "title": "{{symbol}}不足"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "选择其他账户",
-      "chooseDifferentNetwork": "",
+      "chooseDifferentNetwork": "选择其他网络",
       "message": "您的 {{balanceAmount}} 余额不足以支付此次 {{paymentAmount}}。",
       "messageWithNetwork": "您在 {{network}} 网络上的 {{balanceAmount}} 余额不足以支付此次 {{paymentAmount}}。",
-      "minimumBalanceMessage": "",
+      "minimumBalanceMessage": "您的电子钱包中至少需要有 {{minimumBalance}} 才能完成此次支付。",
       "network": "网络",
       "title": "余额不足",
-      "toppedUpWalletQuestion": "",
+      "toppedUpWalletQuestion": "您的钱包已充值?",
       "topUpAccount": "请充值您的账户后再试一次。",
       "topUpWallet": "请充值您的钱包后再试一次。",
       "topUpWalletTryOtherNetwork": "请充值您的钱包，然后重试或尝试其他网络。"
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "请选择其他网络或在您的电子钱包中添加 {{gasSymbol}} 然后重试。",
       "message": "此交易需要 {{transferAmount}} 余额，并持有约 {{gasFiat}} {{gasSymbol}} 来支付燃气费。"
     },
     "insufficientGasBalancePage": {
