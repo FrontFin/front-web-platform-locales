@@ -410,7 +410,6 @@
     "incorrect2faCode": "Código de 2FA incorrecto.",
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -431,6 +430,7 @@
     "notAuthorizedFromIntegrationToken": "Por favor, inicia sesión nuevamente para continuar.",
     "notAuthorizedToIntegrationToken": "Por favor, inicia sesión nuevamente para continuar.",
     "passKeyNotSupported": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta la transferencia de nuevo.",
+    "passKeyNotSupportedAuthenticatorOrSms": "Unfortunately, Passkey 2FA is not currently supported. Please add an Authenticator app or SMS as an additional 2FA and retry the deposit.",
     "passKeyNotSupportedDeposit": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta el depósito de nuevo.",
     "passKeyNotSupportedDescription": "Por favor, active la verificación por SMS o aplicación de autenticación en la configuración de seguridad de su {{selectedIntegrationName}}, luego intente de nuevo.",
     "passKeyNotSupportedOnramp": "Desafortunadamente, Passkey 2FA no se admite actualmente. Por favor agrega Google Authenticator como 2FA adicional e intenta la compra de nuevo.",
@@ -565,7 +565,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -799,15 +798,16 @@
     "item1Body": "Se te pedirá que firmes un mensaje en {{selectedIntegrationName}} que confirma que eres propietario de esta wallet."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Verificando tus activos...",
+    "connectingWallet": "Conectando tu wallet...",
+    "couldNotConnect": "No se pudo conectar al wallet",
+    "couldNotVerify": "No se pudo verificar el wallet",
     "depositFlowSubtitle": "Aprueba la conexión para iniciar tu transferencia",
     "paymentFlowSubtitle": "Aprueba la conexión para iniciar tu pago",
-    "retry": "",
+    "retry": "Reintentar",
     "title": "Conectar cuenta",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Inténtalo de nuevo",
+    "tryAgainSubtitle": "Por favor, intenta conectarte de nuevo.",
     "verifyFlowSubtitle": "Aprueba la conexión para verificar tu wallet"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1118,7 +1118,7 @@
       "needAnotherWay": "¿Necesitas otra forma?",
       "tryAgain": "Inténtalo de nuevo",
       "tryWithQr": "Intenta depositar con un código QR en su lugar.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Intenta depositar con la dirección del wallet en su lugar."
     },
     "error": {
       "addressNotFound": "No pudimos cargar una dirección de depósito, intente con otro token o red.",
@@ -1251,7 +1251,7 @@
     "common": {
       "cancel": "Cancelar",
       "change": "Cambiar",
-      "changeNetwork": "",
+      "changeNetwork": "Cambiar red",
       "close": "Cerrar",
       "continue": "Continuar",
       "goBack": "Volver",
@@ -1329,26 +1329,26 @@
       "terms": "PayPal habilita pagos con criptomonedas para este comerciante. Al continuar, permites que Mesh solicite una transferencia de tu cuenta a PayPal para tu pago.<1> Se aplican los Términos de Mesh.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "changeNetwork": "",
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Cambiar red",
+      "hint": "Elige una red diferente o añade {{symbol}} a tu billetera y vuelve a intentarlo.",
+      "message": "Tu saldo de {{balanceAmount}} en la red {{networkName}} no es suficiente para este pago de {{paymentAmount}}.",
+      "title": "No hay suficiente {{symbol}}"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Elige una cuenta diferente",
-      "chooseDifferentNetwork": "",
+      "chooseDifferentNetwork": "Elige una red diferente",
       "message": "Tu saldo de {{balanceAmount}} es insuficiente para realizar este pago de {{paymentAmount}}.",
       "messageWithNetwork": "Tu saldo de {{balanceAmount}} en la red {{network}} es insuficiente para realizar este pago de {{paymentAmount}}.",
-      "minimumBalanceMessage": "",
+      "minimumBalanceMessage": "Necesitas al menos {{minimumBalance}} en tu wallet para completar este pago.",
       "network": "Red",
       "title": "Saldo insuficiente",
-      "toppedUpWalletQuestion": "",
+      "toppedUpWalletQuestion": "¿Has recargado tu wallet?",
       "topUpAccount": "Por favor, recarga tu cuenta y vuelve a intentarlo.",
       "topUpWallet": "Por favor, recarga tu wallet e intenta de nuevo.",
       "topUpWalletTryOtherNetwork": "Por favor, recarga tu wallet y vuelve a intentarlo o intenta con otra red."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Elige una red diferente o añade {{gasSymbol}} a tu wallet e inténtalo de nuevo.",
       "message": "Esta transacción requiere {{transferAmount}} y aproximadamente ~{{gasFiat}} en {{gasSymbol}} para pagar las comisiones de la red."
     },
     "insufficientGasBalancePage": {
