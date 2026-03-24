@@ -430,6 +430,7 @@
     "notAuthorizedFromIntegrationToken": "Davom etish uchun qayta kirish qiling.",
     "notAuthorizedToIntegrationToken": "Davom etish uchun qayta kirish qiling.",
     "passKeyNotSupported": "Afsuski, Passkey 2FA ayni paytda qo'llab-quvvatlanmaydi. Iltimos, Google Authenticator ni qo'shimcha 2FA sifatida qo'shing va o'tkazmani qayta urinib qo'ying.",
+    "passKeyNotSupportedAuthenticatorOrSms": "Afsuski, Passkey 2FA hozirda qoʻllab-quvvatlanmaydi. Iltimos, Authenticator dasturi yoki SMS qoʻshing va depozitni qayta urinib koʻring.",
     "passKeyNotSupportedDeposit": "Afsuski, Passkey 2FA ayni paytda qo'llab-quvvatlanmaydi. Iltimos, Google Authenticator ni qo'shimcha 2FA sifatida qo'shing va depozitni qayta urinib qo'ying.",
     "passKeyNotSupportedDescription": "SMS yoki autentifikator ilovasi verifikatsiyasini {{selectedIntegrationName}} xavfsizlik sozlamalarida yoqing, keyin yana bir urinib ko‘ring.",
     "passKeyNotSupportedOnramp": "Afsuski, Passkey 2FA ayni paytda qo'llab-quvvatlanmaydi. Iltimos, Google Authenticator ni qo'shimcha 2FA sifatida qo'shing va xaridni qayta urinib qo'ying.",
@@ -797,15 +798,16 @@
     "item1Body": "{{selectedIntegrationName}}da sizdan bu hamyon sizga tegishli ekanligini tasdiqlovchi xabarga imzo qo'yishingiz so'raladi."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Aktivlaringizni tekshirish...",
+    "connectingWallet": "Hamyoningiz ulanishda...",
+    "couldNotConnect": "Hamyon bilan bogʻlanib boʻlmadi",
+    "couldNotVerify": "Hamyonni tasdiqlab boʻlmadi",
     "depositFlowSubtitle": "Pul oʻtkazmangizni boshlash uchun ulanishni tasdiqlang",
     "paymentFlowSubtitle": "To'lovingizni boshlash uchun ulanishni tasdiqlang",
-    "retry": "",
+    "retry": "Qayta urinib ko'ring",
     "title": "Hisobni ulang",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Яна бир бор уриниб кўринг",
+    "tryAgainSubtitle": "Iltimos, qaytadan bogʻlanishga urinib koʻring.",
     "verifyFlowSubtitle": "Hamyoningizni tasdiqlash uchun ulanishni tasdiqlang"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1116,7 +1118,7 @@
       "needAnotherWay": "Boshqa yo‘l kerakmi?",
       "tryAgain": "Яна бир бор уриниб кўринг",
       "tryWithQr": "Bunun o'rniga QR kod bilan depozit olishga harakat qiling.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Buning o'rniga hamyon manzili bilan depozit qilishga harakat qiling."
     },
     "error": {
       "addressNotFound": "Depozit manzilini yuklash imkoni bo'lmadi, iltimos, boshqa token yoki tarmoqni sinab ko‘ring.",
@@ -1249,7 +1251,7 @@
     "common": {
       "cancel": "Бекор қилиш",
       "change": "O'zgartirish",
-      "changeNetwork": "",
+      "changeNetwork": "Tarmoqni o‘zgartiring",
       "close": "Ёпиш",
       "continue": "Давом этинг",
       "goBack": "Orqaga qaytish",
@@ -1327,22 +1329,26 @@
       "terms": "PayPal ushbu savdogar uchun kripto to‘lovlarini faollashtiradi. Davom etganda, to'lovingiz uchun hisobingizdan PayPal-ga o'tkazma so'rovi yuborishga Mesh'ga ruxsat berasiz.<1>Mesh'ning shartlari qo'llaniladi.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Tarmoqni o‘zgartiring",
+      "hint": "Boshqa tarmoqni tanlang yoki hamyoningizga {{symbol}} qoʻshib, qaytadan urinib koʻring.",
+      "message": "{{networkName}} tarmog‘idagi balansingiz {{balanceAmount}} bu {{paymentAmount}} to‘lash uchun yetarli emas.",
+      "title": "{{symbol}} yetarli emas"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Boshqa hisobraqamni tanlang",
+      "chooseDifferentNetwork": "Turli tarmoqlarni tanlang",
       "message": "Сизнинг {{balanceAmount}} балансингиз ушбу {{paymentAmount}} тўлов учун етарли эмас.",
       "messageWithNetwork": "{{network}} тармоғидаги {{balanceAmount}} балансингиз ушбу {{paymentAmount}} тўлов учун етарли эмас.",
+      "minimumBalanceMessage": "Sizda ushbu to'lovni amalga oshirish uchun hamyoningizda kamida {{minimumBalance}} bo'lishi kerak.",
       "network": "Tarmoq",
       "title": "Yetarli mablag' mavjud emas",
+      "toppedUpWalletQuestion": "Siz hamyoningizni to'ldirdingizmi?",
       "topUpAccount": "Илтимос, ҳисобига пул қўшиб қайтадан уриниш.",
       "topUpWallet": "Кўчирмаингизга пул қўшиб қайтадан уриниш.",
       "topUpWalletTryOtherNetwork": "Hamyoningizni to‘ldirishni amalga oshiring va yana urinib ko‘ring yoki boshqa tarmoq yordamida amalga oshiring."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Boshqa tarmoqni tanlang yoki hamyoningizga {{gasSymbol}} qo'shing va qayta urinib ko'ring.",
       "message": "Ushbu tranzaksiya {{transferAmount}} va gaz tolovlarini to'lash uchun ~{{gasFiat}} qiymatidagi {{gasSymbol}} talab etiladi."
     },
     "insufficientGasBalancePage": {

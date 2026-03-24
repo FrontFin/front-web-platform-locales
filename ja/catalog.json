@@ -430,6 +430,7 @@
     "notAuthorizedFromIntegrationToken": "続行するには再度ログインしてください。",
     "notAuthorizedToIntegrationToken": "続行するには再度ログインしてください。",
     "passKeyNotSupported": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、送金を再度お試しください。",
+    "passKeyNotSupportedAuthenticatorOrSms": "現在、パスキーによる2FAはサポートされていません。追加の2FAとして認証アプリまたはSMSを設定し、入金を再度お試しください。",
     "passKeyNotSupportedDeposit": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、入金を再度お試しください。",
     "passKeyNotSupportedDescription": "SMSまたは認証アプリの確認を{{selectedIntegrationName}}のセキュリティ設定で有効にしてから、もう一度お試しください。",
     "passKeyNotSupportedOnramp": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、購入を再度お試しください。",
@@ -797,15 +798,16 @@
     "item1Body": "{{selectedIntegrationName}}で、このウォレットの所有を証明するメッセージへの署名を求められます。"
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "資産を確認しています。。。",
+    "connectingWallet": "ウォレットを接続中です。。。",
+    "couldNotConnect": "ウォレットに接続できませんでした",
+    "couldNotVerify": "ウォレットを確認できませんでした",
     "depositFlowSubtitle": "送金を開始するには接続を承認してください",
     "paymentFlowSubtitle": "支払いを開始するには接続を承認してください",
-    "retry": "",
+    "retry": "再試行",
     "title": "アカウントを接続",
-    "tryAgainSubtitle": "",
+    "tryAgain": "もう一度お試しください",
+    "tryAgainSubtitle": "もう一度接続してみてください。",
     "verifyFlowSubtitle": "ウォレットを確認するため、接続を承認してください"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1116,7 +1118,7 @@
       "needAnotherWay": "別の方法が必要ですか？",
       "tryAgain": "もう一度お試しください",
       "tryWithQr": "代わりに QR コードで入金してみてください。",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "代わりにウォレットアドレスで入金してみてください。"
     },
     "error": {
       "addressNotFound": "入金先アドレスを読み込めませんでした。別のトークンまたはネットワークを試してください。",
@@ -1249,7 +1251,7 @@
     "common": {
       "cancel": "キャンセル",
       "change": "変更",
-      "changeNetwork": "",
+      "changeNetwork": "ネットワークを変更",
       "close": "閉じる",
       "continue": "続行",
       "goBack": "戻る",
@@ -1327,26 +1329,26 @@
       "terms": "PayPal は本加盟店での暗号資産決済に対応しています。続行すると、支払いのために Mesh が PayPal へお客様のアカウントからの送金をリクエストすることを許可したことになります。<1>Mesh の利用規約が適用されます。</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "changeNetwork": "",
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "ネットワークを変更",
+      "hint": "他のネットワークを選択するか、{{symbol}} をあなたのウォレットに追加して再試行してください。",
+      "message": "{{networkName}} ネットワーク上の {{balanceAmount}} 残高では、この {{paymentAmount}} の支払いはできません。",
+      "title": "{{symbol}}の残高が不足しています"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "別のアカウントを選択",
-      "chooseDifferentNetwork": "",
+      "chooseDifferentNetwork": "別のネットワークを選択してください",
       "message": "{{balanceAmount}} の残高では、この {{paymentAmount}} の支払いはできません。",
       "messageWithNetwork": "{{network}} ネットワーク上の {{balanceAmount}} 残高では、この {{paymentAmount}} の支払いはできません。",
-      "minimumBalanceMessage": "",
+      "minimumBalanceMessage": "この支払いを完了するには、ウォレットに最低 {{minimumBalance}} が必要です。",
       "network": "ネットワーク",
       "title": "残高不足",
-      "toppedUpWalletQuestion": "",
+      "toppedUpWalletQuestion": "ウォレットに入金しましたか？",
       "topUpAccount": "アカウントに入金してから、もう一度お試しください。",
       "topUpWallet": "ウォレットに入金してから、もう一度お試しください。",
       "topUpWalletTryOtherNetwork": "ウォレットに入金するか、別のネットワークでお試しください。"
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "別のネットワークを選択するか、ウォレットに{{gasSymbol}}を追加してもう一度お試しください。",
       "message": "本取引には {{transferAmount}} に加え、ガス代として {{gasSymbol}} 約 {{gasFiat}} 相当が必要です。"
     },
     "insufficientGasBalancePage": {

@@ -410,8 +410,6 @@
     "incorrect2faCode": "Невірний код 2FA.",
     "incorrectEmail": "Ви ввели неправильний електронний адрес.",
     "incorrectPasswordChancesRemaining_one": "Неправильний пароль. У вас {{count}} спроба залишилась.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неправильний пароль. У вас залишилось {{count}} спроб.",
     "incorrectUsernameOrPassword": "Неправильне ім'я користувача або пароль.",
     "integrationNotAvailable": "Інтеграція наразі недоступна.",
@@ -432,6 +430,7 @@
     "notAuthorizedFromIntegrationToken": "Будь ласка, увійдіть знову, щоб продовжити.",
     "notAuthorizedToIntegrationToken": "Будь ласка, увійдіть знову, щоб продовжити.",
     "passKeyNotSupported": "На жаль, Passkey 2FA наразі не підтримується. Будь ласка, додайте Google Authenticator як додатковий 2FA і спробуйте знову зробити переказ.",
+    "passKeyNotSupportedAuthenticatorOrSms": "На жаль, Passkey 2FA наразі не підтримується. Будь ласка, додайте додаток автентифікації або SMS як додатковий 2FA та повторіть спробу депозиту.",
     "passKeyNotSupportedDeposit": "На жаль, Passkey 2FA наразі не підтримується. Будь ласка, додайте Google Authenticator як додатковий 2FA і спробуйте знову внести депозит.",
     "passKeyNotSupportedDescription": "Будь ласка, ввімкніть підтвердження через SMS або додаток-аутентифікатор в налаштуваннях безпеки вашої {{selectedIntegrationName}}, потім спробуйте знову.",
     "passKeyNotSupportedOnramp": "На жаль, Passkey 2FA наразі не підтримується. Будь ласка, додайте Google Authenticator як додатковий 2FA і спробуйте знову здійснити покупку.",
@@ -566,8 +565,6 @@
     "paymentMethodDepositUsage": "Пов'язаний платіжний метод",
     "stablecoinConversion": "Конверсія стейблкоїнів",
     "withAdditional_one": "{{mainOption}} + {{count}} інший",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} інші"
   },
   "fundingOptionUnavailabilityReason": {
@@ -801,15 +798,16 @@
     "item1Body": "Вам буде запропоновано підписати повідомлення в {{selectedIntegrationName}}, яке підтверджує, що ви володієте цим гаманцем."
   },
   "inWalletBrowserInitialPage": {
-    "checkingAssets": "",
-    "connectingWallet": "",
-    "couldNotConnect": "",
-    "couldNotVerify": "",
+    "checkingAssets": "Перевірка ваших активів...",
+    "connectingWallet": "Підключення вашого гаманця...",
+    "couldNotConnect": "Не вдалося підключитися до гаманця",
+    "couldNotVerify": "Не вдалося перевірити гаманець",
     "depositFlowSubtitle": "Затвердьте підключення для початку вашого переведення",
     "paymentFlowSubtitle": "Затвердьте підключення для початку вашого платежу",
-    "retry": "",
+    "retry": "Повторити",
     "title": "Підключити обліковий запис",
-    "tryAgainSubtitle": "",
+    "tryAgain": "Спробуйте ще раз",
+    "tryAgainSubtitle": "Будь ласка, спробуйте підключитися знову.",
     "verifyFlowSubtitle": "Затвердьте підключення для підтвердження вашого гаманця"
   },
   "inWalletBrowserVerifyDonePage": {
@@ -1120,7 +1118,7 @@
       "needAnotherWay": "Потрібен інший спосіб?",
       "tryAgain": "Спробуйте ще раз",
       "tryWithQr": "Спробуйте внести депозит за допомогою QR-коду.",
-      "tryWithWalletAddress": ""
+      "tryWithWalletAddress": "Спробуйте внести депозит за адресою гаманця."
     },
     "error": {
       "addressNotFound": "Ми не змогли завантажити адресу внеску, спробуйте обрати інший токен або мережу.",
@@ -1253,7 +1251,7 @@
     "common": {
       "cancel": "Скасувати",
       "change": "Змінити",
-      "changeNetwork": "",
+      "changeNetwork": "Змінити мережу",
       "close": "Закрити",
       "continue": "Продовжити",
       "goBack": "Повернутися",
@@ -1331,22 +1329,26 @@
       "terms": "PayPal дозволяє крипто платежі для цього продавця. Продовжуючи, ви дозволяєте Mesh запросити переказ з вашого рахунку до PayPal для вашого платежу.<1>Застосовуються умови Mesh.</1>"
     },
     "insufficientBalanceNetworksPage": {
-      "hint": "",
-      "message": "",
-      "title": ""
+      "changeNetwork": "Змінити мережу",
+      "hint": "Виберіть іншу мережу або додайте {{symbol}} в свій гаманець і спробуйте ще раз.",
+      "message": "Ваш баланс {{balanceAmount}} в мережі {{networkName}} недостатній для цього платежу на {{paymentAmount}}.",
+      "title": "Недостатньо {{symbol}}"
     },
     "insufficientBalancePage": {
       "chooseDifferent": "Обрати інший аккаунт",
+      "chooseDifferentNetwork": "Виберіть іншу мережу",
       "message": "Ваш баланс {{balanceAmount}} недостатній для оплати {{paymentAmount}}.",
       "messageWithNetwork": "Ваш баланс {{balanceAmount}} у мережі {{network}} недостатній для оплати {{paymentAmount}}.",
+      "minimumBalanceMessage": "Вам потрібно щонайменше {{minimumBalance}} у вашому гаманці, щоб завершити цю оплату.",
       "network": "Мережа",
       "title": "Недостатньо коштів",
+      "toppedUpWalletQuestion": "Ви поповнили свій гаманець?",
       "topUpAccount": "Поповніть рахунок і спробуйте знову.",
       "topUpWallet": "Поповніть гаманець і спробуйте знову.",
       "topUpWalletTryOtherNetwork": "Будь ласка, поповніть гаманець і спробуйте ще раз або спробуйте з іншої мережі."
     },
     "insufficientGasBalanceNetworksPage": {
-      "hint": "",
+      "hint": "Оберіть іншу мережу або додайте {{gasSymbol}} до свого гаманця та спробуйте ще раз.",
       "message": "Ця транзакція вимагає {{transferAmount}} і приблизно {{gasFiat}} вартості {{gasSymbol}} для оплати комісій за газ."
     },
     "insufficientGasBalancePage": {
