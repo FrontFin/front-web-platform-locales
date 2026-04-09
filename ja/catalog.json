@@ -111,7 +111,6 @@
     "emptyCatalogBody": "お住まいの地域、コンプライアンス要件、またはデバイスの互換性が原因の可能性があります。",
     "emptyCatalogTitle": "利用可能なウォレット／取引所がありません",
     "noResults": "申し訳ありませんが、結果を見つけることができませんでした",
-    "noResultsForSearch": "「{{searchTerm}}」の検索結果はありません。",
     "noResultsWithDeposit": "「{{searchTerm}}」の結果がありません。手動で預金できます。",
     "search": "検索",
     "title40": "アカウントを選択してください",
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "この送金は、{{selectedIntegrationName}}で承認されるまで開始されません。",
     "defaultTitle": "取引完了しました",
-    "deliveredTo": "{{clientName}}に配達しました。",
-    "depositReceived": "{{networkName}}で{{amount}}の入金を受け取りました。",
     "depositTitle": "入金完了しました",
     "onrampTitle": "購入完了しました",
     "paymentTitle": "支払い完了しました",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "{{selectedIntegrationName}}から{{clientName}}への<1>{{transferPreviewAmount}}</1>の送金。",
       "transferSmartToClient": "中継コントラクト{{shortSmartContractsAddress}}を経由して、{{selectedIntegrationName}}から{{clientName}}（{{shortToAddress}}）への<1>{{transferPreviewAmount}}</1>の送金。",
       "transferToClient": "{{selectedIntegrationName}}から{{clientName}}（{{shortToAddress}}）への<1>{{transferPreviewAmount}}</1>の送金。"
-    },
-    "transactionHash": "トランザクション: {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "準備完了です！",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、購入を再度お試しください。",
     "passKeyNotSupportedPayment": "現在、パスキーによる 2FA はサポートされていません。追加の 2FA として Google Authenticator を設定し、支払いを再度お試しください。",
     "passKeyNotSupportedRedirect": "別の Coinbase 出金方法に切り替えています…",
-    "permissionDenied": "この接続には転送の権限がありません。転送権限を含む接続で再接続してください。",
     "pleaseLogin": "ログインしてください。",
     "pleaseTryAgain": "もう一度お試しください。",
     "pleaseTryAgainIn1Hour": "1 時間後にもう一度お試しください。",
@@ -614,12 +609,12 @@
   },
   "fundingSelectionDrawer": {
     "balances": "残高",
-    "disclaimerClientDepositFirstLine": "{{clientName}} は {{symbol}} での入金に対応しています。",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} は {{symbol}} での支払いに対応しています。",
-    "disclaimerClientTransferFirstLine": "{{clientName}} は {{symbol}} での送金に対応しています。",
-    "disclaimerSecondLineAutomatedSwapDeposit": "{{symbol}} が不足しているため、この入金を完了できません。別のトークンを自動的に変換して差額をカバーします。",
-    "disclaimerSecondLineAutomatedSwapPayment": "{{symbol}} が不足しているため、この支払いを完了できません。別のトークンを自動的に変換して差額をカバーします。",
-    "disclaimerSecondLineAutomatedSwapTransfer": "{{symbol}} が不足しているため、この送金を完了できません。別のトークンを自動的に変換して差額をカバーします。",
+    "disclaimerClientDepositFirstLine": "{{clientName}} は {{symbol}} トークンでの入金に対応しています。",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} は {{symbol}} トークンでの支払いに対応しています。",
+    "disclaimerClientTransferFirstLine": "{{clientName}} は {{symbol}} トークンでの送金に対応しています。",
+    "disclaimerSecondLineAutomatedSwapDeposit": "この入金を行うため、{{symbol}} の残高を補充します。アカウント内の別トークンを {{symbol}} に自動スワップします。",
+    "disclaimerSecondLineAutomatedSwapPayment": "この支払いを行うため、{{symbol}} の残高を補充します。アカウント内の別トークンを {{symbol}} に自動スワップします。",
+    "disclaimerSecondLineAutomatedSwapTransfer": "この送金を行うため、{{symbol}} の残高を補充します。アカウント内の別トークンを {{symbol}} に自動スワップします。",
     "disclaimerSecondLineOtherBalancesDeposit": "{{symbol}} の残高が不足しています。アカウント内の他の残高を使用して補充し、入金を完了します。",
     "disclaimerSecondLineOtherBalancesPayment": "{{symbol}} の残高が不足しています。アカウント内の他の残高を使用して補充し、支払いを完了します。",
     "disclaimerSecondLineOtherBalancesTransfer": "{{symbol}} の残高が不足しています。アカウント内の他の残高を使用して補充し、送金を完了します。",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "住所を表示",
     "tokenSelection": {
+      "noResults": "「{{query}}」の結果はありません。",
+      "noResultsHint": "別の検索語を試してください",
+      "otherTokens": "その他",
+      "popularTokens": "人気",
+      "searchPlaceholder": "検索",
       "title": "トークンを選択"
     },
     "warnings": {
