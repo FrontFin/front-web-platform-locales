@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Bu, konumunuz, uyumluluk gereklilikleri veya cihaz uyumluluğundan kaynaklanabilir.",
     "emptyCatalogTitle": "Kullanılabilir cüzdan ve borsa yok",
     "noResults": "Üzgünüz, sonuç bulunamadı",
-    "noResultsForSearch": "‘{{searchTerm}}’ için sonuç yok.",
     "noResultsWithDeposit": " '{{searchTerm}}' için sonuç bulunamadı. Manuel olarak yatırabilirsiniz.",
     "search": "arama",
     "title40": "Hesabınızı seçin",
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Bu transfer, {{selectedIntegrationName}}'de onaylanana kadar başlatılmayacaktır.",
     "defaultTitle": "İşlem tamamlandı",
-    "deliveredTo": "{{clientName}}'e teslim edildi.",
-    "depositReceived": "{{amount}} tutarında depozito {{networkName}} üzerinde alındı.",
     "depositTitle": "Para yatırma tamamlandı",
     "onrampTitle": "Satın alma tamamlandı",
     "paymentTitle": "Ödeme tamamlandı",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "{{selectedIntegrationName}}'den {{clientName}}'e <1>{{transferPreviewAmount}}</1> transfer etme.",
       "transferSmartToClient": "{{selectedIntegrationName}}'dan {{clientName}} {{shortToAddress}}'a, {{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla <1>{{transferPreviewAmount}}</1> tutarında transfer etme.",
       "transferToClient": "{{selectedIntegrationName}}'den {{clientName}} {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> transfer etme."
-    },
-    "transactionHash": "İşlem: {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "Her şey hazır!",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "Maalesef, Passkey 2FA şu anda desteklenmemektedir. Lütfen Google Authenticator'ı ek bir 2FA olarak ekleyin ve yeniden satın alma deneyin.",
     "passKeyNotSupportedPayment": "Maalesef, Geçiş Anahtarı 2FA şu anda desteklenmiyor. Lütfen ek bir 2FA olarak Google Authenticator ekleyin ve ödeme işlemini tekrar deneyin.",
     "passKeyNotSupportedRedirect": "Alternatif bir Coinbase para çekme yöntemine yönlendiriliyorsunuz...",
-    "permissionDenied": "Bu bağlantının aktarım için izni yok. Lütfen aktarım izni ile tekrar bağlanın.",
     "pleaseLogin": "Lütfen giriş yapın.",
     "pleaseTryAgain": "Lütfen tekrar deneyin.",
     "pleaseTryAgainIn1Hour": "Lütfen 1 saat içinde tekrar deneyin.",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "Adresi göster",
     "tokenSelection": {
+      "noResults": "'{{query}}' için sonuç yok.",
+      "noResultsHint": "Farklı bir arama terimi deneyin",
+      "otherTokens": "Diğerleri",
+      "popularTokens": "\"Popüler\"",
+      "searchPlaceholder": "Arama",
       "title": "Bir token seçin"
     },
     "warnings": {
