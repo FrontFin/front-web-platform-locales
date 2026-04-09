@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Cela peut être dû à votre localisation, aux exigences de conformité ou à la compatibilité de l'appareil.",
     "emptyCatalogTitle": "Pas de portefeuilles et d'échanges disponibles",
     "noResults": "Désolé, nous n'avons trouvé aucun résultat",
-    "noResultsForSearch": "Aucun résultat pour « {{searchTerm}} ».",
     "noResultsWithDeposit": "Aucun résultat pour '{{searchTerm}}'. Vous pouvez déposer manuellement.",
     "search": "recherche",
     "title40": "Choisissez une plateforme d’échange ou un portefeuille à connecter",
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Ce transfert ne sera pas initié tant qu'il n'aura pas été approuvé dans {{selectedIntegrationName}}.",
     "defaultTitle": "Transaction terminée",
-    "deliveredTo": "Livré à {{clientName}}.",
-    "depositReceived": "Dépôt de {{amount}} reçu sur {{networkName}}.",
     "depositTitle": "Dépôt effectué",
     "onrampTitle": "Achat terminé",
     "paymentTitle": "Paiement effectué",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}}.",
       "transferSmartToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} {{shortToAddress}} via le contrat relais {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfert de <1>{{transferPreviewAmount}}</1> depuis {{selectedIntegrationName}} vers {{clientName}} {{shortToAddress}}."
-    },
-    "transactionHash": "Transaction : {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "Tout est prêt !",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "Malheureusement, l’authentification Passkey n’est pas encore prise en charge. Veuillez ajouter Google Authenticator comme méthode 2FA supplémentaire, puis réessayez votre achat.",
     "passKeyNotSupportedPayment": "Malheureusement, le 2FA Passkey n'est pas encore pris en charge. Veuillez ajouter Google Authenticator comme 2FA supplémentaire et réessayer le paiement.",
     "passKeyNotSupportedRedirect": "Redirection vers une méthode alternative de retrait Coinbase...",
-    "permissionDenied": "Cette connexion n'a pas l'autorisation de transférer. Veuillez vous reconnecter avec les permissions de transfert.",
     "pleaseLogin": "Veuillez vous connecter.",
     "pleaseTryAgain": "Veuillez réessayer.",
     "pleaseTryAgainIn1Hour": "Veuillez réessayer dans une heure.",
@@ -617,9 +612,9 @@
     "disclaimerClientDepositFirstLine": "{{clientName}} accepte les dépôts en jeton {{symbol}}.",
     "disclaimerClientPaymentFirstLine": "{{clientName}} accepte le paiement en jeton {{symbol}}.",
     "disclaimerClientTransferFirstLine": "{{clientName}} accepte les transferts en jeton {{symbol}}.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "Vous n'avez pas assez de {{symbol}} pour compléter ce dépôt, nous convertirons donc automatiquement un autre jeton pour couvrir la différence.",
-    "disclaimerSecondLineAutomatedSwapPayment": "Vous n'avez pas assez de {{symbol}} pour effectuer ce paiement, nous convertirons donc automatiquement un autre jeton pour couvrir la différence.",
-    "disclaimerSecondLineAutomatedSwapTransfer": "Vous n'avez pas assez de {{symbol}} pour compléter ce transfert, nous convertirons donc automatiquement un autre jeton pour couvrir la différence.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "Nous devrons recharger votre solde de {{symbol}}, nous effectuerons donc un échange automatisé d'un autre jeton de votre compte en {{symbol}} pour effectuer ce dépôt.",
+    "disclaimerSecondLineAutomatedSwapPayment": "Nous devrons compléter votre solde {{symbol}}, donc nous effectuerons un échange automatisé d'un autre jeton dans votre compte en {{symbol}} pour effectuer ce paiement.",
+    "disclaimerSecondLineAutomatedSwapTransfer": "Nous devrons recharger votre solde de {{symbol}}, nous effectuerons donc un échange automatisé d'un autre jeton de votre compte en {{symbol}} pour effectuer ce transfert.",
     "disclaimerSecondLineOtherBalancesDeposit": "Vous n'avez pas assez de {{symbol}}, nous compléterons donc votre solde en utilisant d'autres soldes de votre compte pour finaliser le dépôt.",
     "disclaimerSecondLineOtherBalancesPayment": "Vous n'avez pas assez de {{symbol}}, nous compléterons donc votre solde en utilisant d'autres soldes de votre compte pour finaliser le paiement.",
     "disclaimerSecondLineOtherBalancesTransfer": "Vous n'avez pas assez de {{symbol}}, nous compléterons donc votre solde en utilisant d'autres soldes de votre compte pour finaliser le transfert.",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "Afficher l'adresse",
     "tokenSelection": {
+      "noResults": "Aucun résultat pour '{{query}}'.",
+      "noResultsHint": "Essayez un autre terme de recherche",
+      "otherTokens": "Autres",
+      "popularTokens": "Populaire",
+      "searchPlaceholder": "Rechercher",
       "title": "Choisissez un jeton"
     },
     "warnings": {
