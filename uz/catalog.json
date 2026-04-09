@@ -111,8 +111,7 @@
     "emptyCatalogBody": "Bu sizning manzilingiz, moslik talablari yoki sifatli moslik bilan bog'liq bo'lishi mumkin.",
     "emptyCatalogTitle": "Mavjud joyda hamyonlar va almashuvlar yo'q",
     "noResults": "Афсуски, ҳеч қандай натижа топилмади",
-    "noResultsForSearch": "‘{{searchTerm}}’ uchun natijalar yoʻq.",
-    "noResultsWithDeposit": "\"{{searchTerm}}\" boyicha hech narsa topilmadi. Siz qo'lda qo'shishingiz mumkin.",
+    "noResultsWithDeposit": "\"{{searchTerm}}\" bo‘yicha hech narsa topilmadi. Siz qo‘lda qo‘shishingiz mumkin.",
     "search": "қидириш",
     "title40": "Hisobingizni tanlang.",
     "titleOnramp": "Сизнинг онрампингизни танланг"
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Bu transfer {{selectedIntegrationName}} dagi tasdiqlashqa qadar boshlanmaydi.",
     "defaultTitle": "Transaksiya tugallandi",
-    "deliveredTo": "{{clientName}} ga yetkazildi.",
-    "depositReceived": "{{networkName}} tarmog'ida {{amount}} miqdorida depozit qabul qilindi.",
     "depositTitle": "Depozit tugallandi",
     "onrampTitle": "Xarid tugallandi",
     "paymentTitle": "To'lov tugallandi",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "<1>{{transferPreviewAmount}}</1> ni {{selectedIntegrationName}} dan {{clientName}} ga oʻtkazish.",
       "transferSmartToClient": "{{shortSmartContractsAddress}} relay shartnomasi orqali <1>{{transferPreviewAmount}}</1> ni {{selectedIntegrationName}} dan {{clientName}} {{shortToAddress}} ga oʻtkazish.",
       "transferToClient": "<1>{{transferPreviewAmount}}</1> ni {{selectedIntegrationName}} dan {{clientName}} {{shortToAddress}} ga oʻtkazish."
-    },
-    "transactionHash": "Transaksiya: {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "Hammasi tayyor!",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "Afsuski, Passkey 2FA ayni paytda qo'llab-quvvatlanmaydi. Iltimos, Google Authenticator ni qo'shimcha 2FA sifatida qo'shing va xaridni qayta urinib qo'ying.",
     "passKeyNotSupportedPayment": "Afsuski, Passkey 2FA ayni paytda qo'llab-quvvatlanmaydi. Iltimos, Google Authenticator ni qo'shimcha 2FA sifatida qo'shing va to'lovni qayta urinib qo'ying.",
     "passKeyNotSupportedRedirect": "Muqobil Coinbase naqd pul olish usuliga o'tkazish...",
-    "permissionDenied": "Ushbu ulanishga ko‘chirish uchun ruxsat berilmagan. Ko‘chirish ruxsati bilan qayta ulaning.",
     "pleaseLogin": "Iltimos, tizimga kiring.",
     "pleaseTryAgain": "Iltimos, yana urinib ko'ring.",
     "pleaseTryAgainIn1Hour": "Iltimos, 1 soatdan keyin qayta urinib ko'ring.",
@@ -614,12 +609,12 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Balanslar",
-    "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} da hisob-funded qabul qiladi.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} da to'lovlar qabul qiladi.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} da mablag'larni o'tkazadi qabul qiladi.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "Sizda bu depozitni bajarish uchun yetarli {{symbol}} mavjud emas, shuning uchun farqni qoplash uchun avtomatik ravishda boshqa tokenni konvertatsiya qilamiz.",
-    "disclaimerSecondLineAutomatedSwapPayment": "Sizda bu to'lovni bajarish uchun yetarli {{symbol}} mavjud emas, shuning uchun farqni qoplash uchun avtomatik ravishda boshqa tokenni konvertatsiya qilamiz.",
-    "disclaimerSecondLineAutomatedSwapTransfer": "Sizda bu o'tkazmani bajarish uchun yetarli {{symbol}} mavjud emas, shuning uchun farqni qoplash uchun avtomatik ravishda boshqa tokenni konvertatsiya qilamiz.",
+    "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} tokenida depozitlarni qabul qiladi.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} tokenida to‘lovni qabul qiladi.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} tokenida o‘tkazmalarni qabul qiladi.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "Barcha xavfsizlik talablariga rioya qilinmaydi, ammo eng muhim qismi {{symbol}} qoldig‘ingizni to‘ldirish, shuning uchun akunio‘ingizdagi boshqa tokenni {{symbol}} ga avtomatik tarzda almashtiramiz.",
+    "disclaimerSecondLineAutomatedSwapPayment": "{{symbol}} qoldigini to‘ldirishimiz kerak bo‘ladi, shuning uchun bu to‘lovni amalga oshirish uchun hisobingizdagi boshqa tokenni {{symbol}} ga avtomatik almashtiramiz.",
+    "disclaimerSecondLineAutomatedSwapTransfer": "Biz sizning {{symbol}} balansingizni to'ldirishimiz kerak, shuning uchun bu o‘tkazmani amalga oshirish uchun hisobingizdagi boshqa tokenni {{symbol}} ga avtomatik ravishda almashtiramiz.",
     "disclaimerSecondLineOtherBalancesDeposit": "Sizda yetarlicha {{symbol}} yo'q, shuning uchun biz depozitni yakunlash uchun hisobingizdagi boshqa balanslardan foydalanamiz.",
     "disclaimerSecondLineOtherBalancesPayment": "Sizda yetarlicha {{symbol}} yo'q, shuning uchun biz to'lovni yakunlash uchun hisobingizdagi boshqa balanslardan foydalanamiz.",
     "disclaimerSecondLineOtherBalancesTransfer": "Sizda yetarlicha {{symbol}} yo'q, shuning uchun biz o'tkazmani yakunlash uchun hisobingizdagi boshqa balanslardan foydalanamiz.",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "Manzilni ko'rsatish",
     "tokenSelection": {
+      "noResults": "'{{query}}' uchun natija mavjud emas.",
+      "noResultsHint": "Boshqa qidiruv so'zini kiriting",
+      "otherTokens": "Boshqalar",
+      "popularTokens": "Mashhur",
+      "searchPlaceholder": "Қидириш",
       "title": "Tokenni tanlang"
     },
     "warnings": {
