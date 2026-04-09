@@ -111,7 +111,6 @@
     "emptyCatalogBody": "यह आपके स्थान, अनुपालन आवश्यकताओं, या डिवाइस संगतता के कारण हो सकता है।",
     "emptyCatalogTitle": "कोई उपलब्ध वालेट और एक्सचेंज नहीं है",
     "noResults": "माफ़ कीजिए, हमें कोई परिणाम नहीं मिला",
-    "noResultsForSearch": "‘{{searchTerm}}’ के लिए कोई परिणाम नहीं मिला।",
     "noResultsWithDeposit": "'{{searchTerm}}' के लिए कोई परिणाम नहीं। आप मैन्युअली जमा कर सकते हैं।",
     "search": "खोज",
     "title40": "अपना खाता चुनें",
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "यह स्थानांतरण तब तक शुरू नहीं होगा जब तक इसे {{selectedIntegrationName}} में स्वीकृत नहीं किया जाता।",
     "defaultTitle": "लेन-देन पूरा हुआ",
-    "deliveredTo": "{{clientName}} को हस्तांतरित किया गया।",
-    "depositReceived": "{{networkName}} पर {{amount}} की जमा राशि प्राप्त हुई।",
     "depositTitle": "जमा पूरा हुआ",
     "onrampTitle": "खरीद पूरी हुई",
     "paymentTitle": "भुगतान पूरा हुआ",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "{{selectedIntegrationName}} से {{clientName}} को <1>{{transferPreviewAmount}}</1> का स्थानांतरण।",
       "transferSmartToClient": "{{selectedIntegrationName}} से {{clientName}} {{shortToAddress}} को रिले अनुबंध {{shortSmartContractsAddress}} के माध्यम से <1>{{transferPreviewAmount}}</1> का स्थानांतरण।",
       "transferToClient": "{{selectedIntegrationName}} से {{clientName}} {{shortToAddress}} को <1>{{transferPreviewAmount}}</1> का स्थानांतरण।"
-    },
-    "transactionHash": "लेन-देन: {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "आप पूरी तरह तैयार हैं!",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "दुर्भाग्य से, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया एक अतिरिक्त 2FA के रूप में गूगल ऑथेंटिकेटर जोड़ें और खरीद को पुनः प्रयास करें।",
     "passKeyNotSupportedPayment": "दुर्भाग्य से, पासकी 2FA वर्तमान में समर्थित नहीं है। कृपया एक अतिरिक्त 2FA के रूप में गूगल ऑथेंटिकेटर जोड़ें और भुगतान को पुनः प्रयास करें।",
     "passKeyNotSupportedRedirect": "वैकल्पिक Coinbase निकासी विधि पर पुनः निर्देशित कर रहे हैं...",
-    "permissionDenied": "इस कनेक्शन को स्थानांतरण की अनुमति नहीं है। कृपया स्थानांतरण अनुमतियों के साथ पुनः कनेक्ट करें।",
     "pleaseLogin": "कृपया लॉगिन करें।",
     "pleaseTryAgain": "कृपया पुनः प्रयास करें।",
     "pleaseTryAgainIn1Hour": "कृपया 1 घंटे बाद फिर से प्रयास करें।",
@@ -614,12 +609,12 @@
   },
   "fundingSelectionDrawer": {
     "balances": "शेष राशि",
-    "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} जमा स्वीकार करता है।",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} में भुगतान स्वीकार करता है।",
-    "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} में स्थानांतरण स्वीकार करता है।",
-    "disclaimerSecondLineAutomatedSwapDeposit": "आपके पास इस जमा को पूरा करने के लिए पर्याप्त {{symbol}} नहीं है, इसलिए हम अंतर को कवर करने के लिए स्वचालित रूप से दूसरे टोकन का आदान-प्रदान करेंगे।",
-    "disclaimerSecondLineAutomatedSwapPayment": "आपके पास इस भुगतान को पूरा करने के लिए पर्याप्त {{symbol}} नहीं है, इसलिए हम अंतर को कवर करने के लिए स्वचालित रूप से दूसरे टोकन का आदान-प्रदान करेंगे।",
-    "disclaimerSecondLineAutomatedSwapTransfer": "आपके पास इस स्थानांतरण को पूरा करने के लिए पर्याप्त {{symbol}} नहीं है, इसलिए हम अंतर को कवर करने के लिए स्वचालित रूप से दूसरे टोकन का अदला-बदली करेंगे।",
+    "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} टोकन में जमा स्वीकार करता है।",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} टोकन में भुगतान स्वीकार करता है।",
+    "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} टोकन में स्थानांतरण स्वीकार करता है।",
+    "disclaimerSecondLineAutomatedSwapDeposit": "हमें आपकी {{symbol}} शेष राशि बढ़ानी होगी, इसलिए इस जमा को पूरा करने के लिए आपके खाते में मौजूद किसी अन्य टोकन को स्वचालित रूप से {{symbol}} में स्वैप किया जाएगा।",
+    "disclaimerSecondLineAutomatedSwapPayment": "हमें आपकी {{symbol}} शेष राशि बढ़ानी होगी, इसलिए इस भुगतान को पूरा करने के लिए आपके खाते में मौजूद किसी अन्य टोकन को स्वचालित रूप से {{symbol}} में स्वैप किया जाएगा।",
+    "disclaimerSecondLineAutomatedSwapTransfer": "हमें आपकी {{symbol}} शेष राशि बढ़ानी होगी, इसलिए इस स्थानांतरण को पूरा करने के लिए आपके खाते में मौजूद किसी अन्य टोकन को स्वचालित रूप से {{symbol}} में स्वैप किया जाएगा।",
     "disclaimerSecondLineOtherBalancesDeposit": "आपके पास पर्याप्त {{symbol}} नहीं है, इसलिए हम आपकी जमा राशि को पूरा करने के लिए आपके खाते की अन्य शेष राशियों का उपयोग करेंगे।",
     "disclaimerSecondLineOtherBalancesPayment": "आपके पास पर्याप्त {{symbol}} नहीं है, इसलिए हम आपके भुगतान को पूरा करने के लिए आपके खाते की अन्य शेष राशियों का उपयोग करेंगे।",
     "disclaimerSecondLineOtherBalancesTransfer": "आपके पास पर्याप्त {{symbol}} नहीं है, इसलिए हम आपके स्थानांतरण को पूरा करने के लिए आपके खाते की अन्य शेष राशियों का उपयोग करेंगे।",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "पता दिखाएँ",
     "tokenSelection": {
+      "noResults": "'{{query}}' के लिए कोई परिणाम नहीं।",
+      "noResultsHint": "कृपया कोई अन्य खोज शब्द आज़माएँ।",
+      "otherTokens": "अन्य",
+      "popularTokens": "लोकप्रिय",
+      "searchPlaceholder": "खोजें",
       "title": "टोकन चुनें"
     },
     "warnings": {
