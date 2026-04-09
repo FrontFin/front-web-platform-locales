@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Ini mungkin disebabkan oleh lokasi Anda, persyaratan kepatuhan, atau kompatibilitas perangkat.",
     "emptyCatalogTitle": "Tidak ada dompet dan pertukaran yang tersedia",
     "noResults": "Maaf, kami tidak menemukan hasil apapun",
-    "noResultsForSearch": "Tidak ada hasil untuk '{{searchTerm}}'.",
     "noResultsWithDeposit": "Tidak ada hasil untuk '{{searchTerm}}'. Anda dapat menyetor secara manual.",
     "search": "cari",
     "title40": "Pilih akun Anda",
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Transfer ini tidak akan dimulai sampai disetujui di {{selectedIntegrationName}}.",
     "defaultTitle": "Transaksi selesai.",
-    "deliveredTo": "Dikirim ke {{clientName}}.",
-    "depositReceived": "Deposit sebesar {{amount}} diterima di {{networkName}}.",
     "depositTitle": "Deposit selesai.",
     "onrampTitle": "Pembelian selesai.",
     "paymentTitle": "Pembayaran selesai.",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}}.",
       "transferSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}} {{shortToAddress}} via kontrak relay {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}} {{shortToAddress}}."
-    },
-    "transactionHash": "Transaksi: {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "Semua telah siap!",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "Sayangnya, Passkey 2FA saat ini tidak didukung. Harap tambahkan Google Authenticator sebagai 2FA tambahan dan coba lagi pembelian.",
     "passKeyNotSupportedPayment": "Sayangnya, Passkey 2FA saat ini tidak didukung. Harap tambahkan Google Authenticator sebagai 2FA tambahan dan coba lagi pembayaran.",
     "passKeyNotSupportedRedirect": "Mengalihkan ke metode penarikan Coinbase alternatif...",
-    "permissionDenied": "Koneksi ini tidak memiliki izin untuk mentransfer. Harap sambungkan ulang dengan izin transfer.",
     "pleaseLogin": "Silakan login.",
     "pleaseTryAgain": "Silakan coba lagi.",
     "pleaseTryAgainIn1Hour": "Silakan coba lagi dalam 1 jam.",
@@ -614,12 +609,12 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Saldo",
-    "disclaimerClientDepositFirstLine": "{{clientName}} menerima deposito dalam {{symbol}}.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} menerima pembayaran dalam {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} menerima transfer dalam {{symbol}}.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "Anda tidak memiliki cukup {{symbol}} untuk menyelesaikan deposit ini, jadi kami akan secara otomatis mengonversi token lain untuk menutupi selisihnya.",
-    "disclaimerSecondLineAutomatedSwapPayment": "Anda tidak memiliki cukup {{symbol}} untuk menyelesaikan pembayaran ini, jadi kami akan secara otomatis mengonversi token lain untuk menutupi selisihnya.",
-    "disclaimerSecondLineAutomatedSwapTransfer": "Anda tidak memiliki cukup {{symbol}} untuk menyelesaikan transfer ini, jadi kami akan secara otomatis mengonversi token lain untuk menutupi selisihnya.",
+    "disclaimerClientDepositFirstLine": "{{clientName}} menerima deposit dengan token {{symbol}}.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} menerima pembayaran dengan token {{symbol}}.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} menerima transfer dengan token {{symbol}}.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "Kami harus menambah saldo {{symbol}} Anda, jadi kami akan melakukan pertukaran otomatis dari token lain di akun Anda ke dalam {{symbol}} agar deposit ini dapat dilakukan.",
+    "disclaimerSecondLineAutomatedSwapPayment": "Kami harus menambah saldo {{symbol}} Anda, jadi kami akan melakukan pertukaran otomatis dari token lain di akun Anda ke dalam {{symbol}} agar pembayaran ini dapat dilakukan.",
+    "disclaimerSecondLineAutomatedSwapTransfer": "Kami harus menambah saldo {{symbol}} Anda, jadi kami akan melakukan pertukaran otomatis dari token lain di akun Anda ke dalam {{symbol}} agar transfer ini dapat dilakukan.",
     "disclaimerSecondLineOtherBalancesDeposit": "Anda tidak memiliki cukup {{symbol}}, jadi kami akan menambahkannya menggunakan saldo lain di akun Anda untuk menyelesaikan deposit.",
     "disclaimerSecondLineOtherBalancesPayment": "Anda tidak memiliki cukup {{symbol}}, jadi kami akan menambahkannya menggunakan saldo lain di akun Anda untuk menyelesaikan pembayaran.",
     "disclaimerSecondLineOtherBalancesTransfer": "Anda tidak memiliki cukup {{symbol}}, jadi kami akan menambahkannya menggunakan saldo lain di akun Anda untuk menyelesaikan transfer.",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "Tampilkan alamat",
     "tokenSelection": {
+      "noResults": "Tidak ada hasil untuk '{{query}}'.",
+      "noResultsHint": "Coba istilah pencarian lain",
+      "otherTokens": "Lainnya",
+      "popularTokens": "Populer",
+      "searchPlaceholder": "Cari",
       "title": "Pilih token"
     },
     "warnings": {
