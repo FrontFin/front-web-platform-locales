@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Może to wynikać z Twojej lokalizacji, wymogów regulacyjnych lub kompatybilności urządzenia.",
     "emptyCatalogTitle": "Brak dostępnych portfeli i giełd",
     "noResults": "Przykro nam, nie znaleźliśmy żadnych wyników",
-    "noResultsForSearch": "Brak wyników dla „{{searchTerm}}”.",
     "noResultsWithDeposit": "Brak wyników dla '{{searchTerm}}'. Możesz wpłacić ręcznie.",
     "search": "szukaj",
     "title40": "Wybierz swoje konto",
@@ -263,8 +262,6 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Ten transfer nie zostanie rozpoczęty, dopóki nie zostanie zatwierdzony w {{selectedIntegrationName}}.",
     "defaultTitle": "Transakcja zakończona",
-    "deliveredTo": "Dostarczono do {{clientName}}.",
-    "depositReceived": "Wpłata {{amount}} odebrana na {{networkName}}.",
     "depositTitle": "Wpłata zakończona",
     "onrampTitle": "Zakup zakończony",
     "paymentTitle": "Płatność zakończona",
@@ -284,8 +281,7 @@
       "transferPaymentToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}}.",
       "transferSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}}."
-    },
-    "transactionHash": "Transakcja: {{hash}}"
+    }
   },
   "doneTransferPage": {
     "allSet": "Wszystko gotowe!",
@@ -440,7 +436,6 @@
     "passKeyNotSupportedOnramp": "Niestety uwierzytelnianie Passkey 2FA nie jest obecnie obsługiwane. Dodaj Google Authenticator jako dodatkowe 2FA i spróbuj ponownie dokonać zakupu.",
     "passKeyNotSupportedPayment": "Niestety uwierzytelnianie Passkey 2FA nie jest obecnie obsługiwane. Dodaj Google Authenticator jako dodatkowe 2FA i spróbuj ponownie dokonać płatności.",
     "passKeyNotSupportedRedirect": "Przekierowywanie do alternatywnej metody wypłaty Coinbase...",
-    "permissionDenied": "To połączenie nie ma uprawnień do transferu. Proszę połączyć się ponownie z uprawnieniami do transferu.",
     "pleaseLogin": "Proszę się zalogować.",
     "pleaseTryAgain": "Proszę spróbować ponownie.",
     "pleaseTryAgainIn1Hour": "Proszę spróbować ponownie za 1 godzinę.",
@@ -1189,6 +1184,11 @@
     },
     "showAddress": "Pokaż adres",
     "tokenSelection": {
+      "noResults": "Brak wyników dla „{{query}}”.",
+      "noResultsHint": "Spróbuj innego terminu wyszukiwania",
+      "otherTokens": "Inne",
+      "popularTokens": "Popularne",
+      "searchPlaceholder": "Szukaj",
       "title": "Wybierz token"
     },
     "warnings": {
