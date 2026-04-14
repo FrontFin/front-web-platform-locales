@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "การโอนนี้จะไม่เริ่มต้นจนกว่าจะได้รับอนุมัติใน {{selectedIntegrationName}}",
     "defaultTitle": "รายการเสร็จสิ้น",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "ส่งไปยัง {{clientName}}",
+    "depositReceived": "ได้รับ {{amount}} บนเครือข่าย {{networkName}}",
     "depositTitle": "การฝากเงินเสร็จสิ้น",
     "onrampTitle": "การซื้อเสร็จสมบูรณ์",
     "paymentTitle": "การชำระเงินเสร็จสิ้น",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "การโอน <1>{{transferPreviewAmount}}</1> จาก {{selectedIntegrationName}} ไปยัง {{clientName}} {{shortToAddress}} ผ่านสัญญารีเลย์ {{shortSmartContractsAddress}}.",
       "transferToClient": "การโอน <1>{{transferPreviewAmount}}</1> จาก {{selectedIntegrationName}} ไปยัง {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "แฮชธุรกรรม {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "คุณพร้อมแล้ว!",
@@ -596,7 +596,7 @@
     "changeAmount": "หรือเปลี่ยนจำนวนเงินที่จะโอนไปยัง {{availableAmount}}.",
     "changePreferredPaymentMethod": "เปลี่ยนวิธีการชำระเงินที่ต้องการ",
     "changePreferredToken": "เปลี่ยน token ที่ต้องการ",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "เลือกโทเค็นอื่น",
     "cryptoConversion": "การแปลงคริปโต",
     "instantCashAvailable": "(เงินสดทันทีที่ใช้ได้: {{amountInFiat}})",
     "insufficientFunds": "ยอดเงินไม่เพียงพอ",
@@ -1187,11 +1187,11 @@
     },
     "showAddress": "แสดงที่อยู่",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "ไม่มีผลลัพธ์สำหรับ '{{query}}'",
+      "noResultsHint": "ลองใช้คำค้นหาอื่น",
+      "otherTokens": "อื่น ๆ",
+      "popularTokens": "ยอดนิยม",
+      "searchPlaceholder": "ค้นหา",
       "title": "เลือกโทเค็น"
     },
     "warnings": {

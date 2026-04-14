@@ -41,7 +41,7 @@
     "descriptionPay": "<0>Поверніться сюди, щоб оплатити</0> після підключення з вашим мобільним додатком Binance.",
     "loginWithEmailButton": "Увійти за допомогою електронної адреси/телефону",
     "or": "або",
-    "scanText": "Скануйте за допомогою камери телефону або додатка Binance, щоб увійти.",
+    "scanText": "Скануйте телефоном або за допомогою додатка Binance для входу.",
     "title": "Увійти"
   },
   "binanceDirectPasswordPage": {
@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Це може бути обумовлено вашим розташуванням, вимогами до відповідності або сумісністю пристрою.",
     "emptyCatalogTitle": "Немає доступних гаманців та бірж",
     "noResults": "На жаль, ми не змогли знайти жодних результатів",
-    "noResultsWithDeposit": "Немає результатів для '{{searchTerm}}'. Ви можете додати вручну.",
+    "noResultsWithDeposit": "Немає результатів для '{{searchTerm}}'. Ви можете внести депозит вручну.",
     "search": "пошук",
     "title40": "Виберіть свій обліковий запис.",
     "titleOnramp": "Виберіть свій вхідний маршрут"
@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Цей переказ не буде здійснений, поки він не буде схвалений у {{selectedIntegrationName}}.",
     "defaultTitle": "Транзакція завершена",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Доставлено до {{clientName}}",
+    "depositReceived": "Отримано {{amount}} в мережі {{networkName}}",
     "depositTitle": "Депозит завершено",
     "onrampTitle": "Покупка завершена",
     "paymentTitle": "Оплата завершена",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "Переказ <1>{{transferPreviewAmount}}</1> з {{selectedIntegrationName}} до {{clientName}} {{shortToAddress}} через релейний контракт {{shortSmartContractsAddress}}.",
       "transferToClient": "Переказ <1>{{transferPreviewAmount}}</1> з {{selectedIntegrationName}} до {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Хеш транзакції {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Все готово!",
@@ -413,8 +413,6 @@
     "incorrect2faCode": "Невірний код 2FA.",
     "incorrectEmail": "Ви ввели неправильний електронний адрес.",
     "incorrectPasswordChancesRemaining_one": "Неправильний пароль. У вас {{count}} спроба залишилась.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неправильний пароль. У вас залишилось {{count}} спроб.",
     "incorrectUsernameOrPassword": "Неправильне ім'я користувача або пароль.",
     "integrationNotAvailable": "Інтеграція наразі недоступна.",
@@ -570,8 +568,6 @@
     "paymentMethodDepositUsage": "Пов'язаний платіжний метод",
     "stablecoinConversion": "Конверсія стейблкоїнів",
     "withAdditional_one": "{{mainOption}} + {{count}} інший",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} інші"
   },
   "fundingOptionUnavailabilityReason": {
@@ -600,7 +596,7 @@
     "changeAmount": "Або змініть суму для переказу на {{availableAmount}}.",
     "changePreferredPaymentMethod": "Змінити пріоритетний метод оплати",
     "changePreferredToken": "Змінити пріоритетний токен",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Виберіть інший токен",
     "cryptoConversion": "Конверсія криптовалюти",
     "instantCashAvailable": "(Доступні кошти: {{amountInFiat}})",
     "insufficientFunds": "Недостатньо коштів.",
@@ -619,8 +615,8 @@
     "disclaimerClientDepositFirstLine": "{{clientName}} приймає депозити в токені {{symbol}}.",
     "disclaimerClientPaymentFirstLine": "{{clientName}} приймає платежі в токені {{symbol}}.",
     "disclaimerClientTransferFirstLine": "{{clientName}} приймає перекази в токені {{symbol}}.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "Ми змушені поповнити ваш баланс {{symbol}}, тому ми проведемо автоматичний обмін іншого токена у вашому акаунті на {{symbol}}, щоб здійснити цей внесок.",
-    "disclaimerSecondLineAutomatedSwapPayment": "Ми змушені поповнити ваш баланс {{symbol}}, тому ми проведемо автоматичний обмін іншого токена у вашому акаунті на {{symbol}}, щоб здійснити цю оплату.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "Ми будемо змушені поповнити ваш баланс {{symbol}}, тому автоматично обміняємо інший токен у вашому акаунті на {{symbol}}, щоб здійснити цей депозит.",
+    "disclaimerSecondLineAutomatedSwapPayment": "Ми будемо змушені поповнити ваш баланс {{symbol}}, тому автоматично обміняємо інший токен у вашому акаунті на {{symbol}}, щоб здійснити цей платіж.",
     "disclaimerSecondLineAutomatedSwapTransfer": "Ми змушені поповнити ваш баланс {{symbol}}, тому ми проведемо автоматичний обмін іншого токена у вашому акаунті на {{symbol}}, щоб здійснити цей переказ.",
     "disclaimerSecondLineOtherBalancesDeposit": "Ви не маєте достатнього {{symbol}}, тому ми поповнимо ваш баланс, використовуючи інші залишки на вашому рахунку, щоб завершити внесок.",
     "disclaimerSecondLineOtherBalancesPayment": "Ви не маєте достатнього {{symbol}}, тому ми поповнимо ваш баланс, використовуючи інші залишки на вашому рахунку, щоб завершити оплату.",
@@ -1191,11 +1187,11 @@
     },
     "showAddress": "Показати адресу",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "За запитом '{{query}}' немає результатів.",
+      "noResultsHint": "Спробуйте інший пошуковий термін",
+      "otherTokens": "Інші",
+      "popularTokens": "Популярні",
+      "searchPlaceholder": "Пошук",
       "title": "Виберіть токен"
     },
     "warnings": {

@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Esta transferencia no se iniciará hasta que sea aprobada en {{selectedIntegrationName}}.",
     "defaultTitle": "Transacción completada",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Entregado a {{clientName}}",
+    "depositReceived": "Recibido {{amount}} en la red {{networkName}}",
     "depositTitle": "Depósito completado",
     "onrampTitle": "Compra completada",
     "paymentTitle": "Pago completado",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "Transferencia de <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{shortToAddress}} a través del contrato de retransmisión {{shortSmartContractsAddress}}.",
       "transferToClient": "Transferencia de <1>{{transferPreviewAmount}}</1> de {{selectedIntegrationName}} a {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Hash de la transacción {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "¡Todo listo!",
@@ -413,7 +413,6 @@
     "incorrect2faCode": "Código de 2FA incorrecto.",
     "incorrectEmail": "Has ingresado un correo electrónico incorrecto.",
     "incorrectPasswordChancesRemaining_one": "Contraseña incorrecta. Tienes {{count}} intento restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Contraseña incorrecta. Te quedan {{count}} intentos.",
     "incorrectUsernameOrPassword": "Nombre de usuario o contraseña incorrectos.",
     "integrationNotAvailable": "La integración no está disponible.",
@@ -569,7 +568,6 @@
     "paymentMethodDepositUsage": "Forma de pago vinculada",
     "stablecoinConversion": "Conversión de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} otro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} otros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -598,7 +596,7 @@
     "changeAmount": "O cambia el monto a transferir a {{availableAmount}}.",
     "changePreferredPaymentMethod": "Cambiar la forma de pago predeterminada",
     "changePreferredToken": "Cambiar el token preferido",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Elegir otro token",
     "cryptoConversion": "Conversión de criptomonedas",
     "instantCashAvailable": "(Dinero inmediato disponible: {{amountInFiat}})",
     "insufficientFunds": "Saldo insuficiente",
@@ -1189,11 +1187,11 @@
     },
     "showAddress": "Mostrar dirección",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "No hay resultados para '{{query}}'.",
+      "noResultsHint": "Prueba un término de búsqueda diferente",
+      "otherTokens": "Otros",
+      "popularTokens": "Popular",
+      "searchPlaceholder": "Buscar",
       "title": "Elige un token"
     },
     "warnings": {

@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Ten transfer nie zostanie rozpoczęty, dopóki nie zostanie zatwierdzony w {{selectedIntegrationName}}.",
     "defaultTitle": "Transakcja zakończona",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Dostarczono do {{clientName}}",
+    "depositReceived": "Otrzymano {{amount}} w sieci {{networkName}}",
     "depositTitle": "Wpłata zakończona",
     "onrampTitle": "Zakup zakończony",
     "paymentTitle": "Płatność zakończona",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}} za pośrednictwem relay contract {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfer <1>{{transferPreviewAmount}}</1> z {{selectedIntegrationName}} do {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Skrót transakcji {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Wszystko gotowe!",
@@ -413,8 +413,6 @@
     "incorrect2faCode": "Nieprawidłowy kod 2FA.",
     "incorrectEmail": "Wprowadzono niepoprawny email.",
     "incorrectPasswordChancesRemaining_one": "Niepoprawne hasło. Pozostała {{count}} próba.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Niepoprawne hasło. Pozostało {{count}} prób.",
     "incorrectUsernameOrPassword": "Niepoprawna nazwa użytkownika lub hasło.",
     "integrationNotAvailable": "Obecnie integracja nie jest dostępna.",
@@ -570,8 +568,6 @@
     "paymentMethodDepositUsage": "Powiązana metoda płatności",
     "stablecoinConversion": "Przeliczenie stablecoin‘a",
     "withAdditional_one": "{{mainOption}} + {{count}} innych",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} inne/innych"
   },
   "fundingOptionUnavailabilityReason": {
@@ -600,7 +596,7 @@
     "changeAmount": "Lub zmień kwotę transferu na {{availableAmount}}.",
     "changePreferredPaymentMethod": "Zmień preferowaną metodę płatności",
     "changePreferredToken": "Zmień preferowany token",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Wybierz inny token",
     "cryptoConversion": "Przeliczanie kryptowalut",
     "instantCashAvailable": "(Dostępna natychmiastowa gotówka: {{amountInFiat}})",
     "insufficientFunds": "Niewystarczające środki",
@@ -1191,11 +1187,11 @@
     },
     "showAddress": "Pokaż adres",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "Brak wyników dla „{{query}}”.",
+      "noResultsHint": "Spróbuj innego terminu wyszukiwania",
+      "otherTokens": "Inne",
+      "popularTokens": "Popularne",
+      "searchPlaceholder": "Szukaj",
       "title": "Wybierz token"
     },
     "warnings": {

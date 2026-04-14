@@ -111,7 +111,7 @@
     "emptyCatalogBody": "Bu sizning manzilingiz, moslik talablari yoki sifatli moslik bilan bog'liq bo'lishi mumkin.",
     "emptyCatalogTitle": "Mavjud joyda hamyonlar va almashuvlar yo'q",
     "noResults": "Афсуски, ҳеч қандай натижа топилмади",
-    "noResultsWithDeposit": "\"{{searchTerm}}\" boyicha hech narsa topilmadi. Siz qo'lda qo'shishingiz mumkin.",
+    "noResultsWithDeposit": "\"{{searchTerm}}\" bo‘yicha hech narsa topilmadi. Siz qo‘lda qo‘shishingiz mumkin.",
     "search": "қидириш",
     "title40": "Hisobingizni tanlang.",
     "titleOnramp": "Сизнинг онрампингизни танланг"
@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Bu transfer {{selectedIntegrationName}} dagi tasdiqlashqa qadar boshlanmaydi.",
     "defaultTitle": "Transaksiya tugallandi",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "{{clientName}} ga yetkazildi",
+    "depositReceived": "{{amount}} {{networkName}} tarmog'ida qabul qilingan",
     "depositTitle": "Depozit tugallandi",
     "onrampTitle": "Xarid tugallandi",
     "paymentTitle": "To'lov tugallandi",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "{{shortSmartContractsAddress}} relay shartnomasi orqali <1>{{transferPreviewAmount}}</1> ni {{selectedIntegrationName}} dan {{clientName}} {{shortToAddress}} ga oʻtkazish.",
       "transferToClient": "<1>{{transferPreviewAmount}}</1> ni {{selectedIntegrationName}} dan {{clientName}} {{shortToAddress}} ga oʻtkazish."
     },
-    "transactionHash": ""
+    "transactionHash": "Tranzaksiya xesh kodi {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Hammasi tayyor!",
@@ -596,7 +596,7 @@
     "changeAmount": "{{availableAmount}}(a) oʻtkazish uchun mablagʻ miqdorini oʻzgartiring.",
     "changePreferredPaymentMethod": "Tanlangan toʻlov usulini oʻzgartirish",
     "changePreferredToken": "Tanlangan tokenni oʻzgartirish",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Boshqa tokenni tanlang",
     "cryptoConversion": "Kripto valyuta konversiyasi",
     "instantCashAvailable": "(Mavjud tezkor naqd pul: {{amountInFiat}})",
     "insufficientFunds": "Yetarli Mablagʻlar Mavjud emas",
@@ -615,8 +615,8 @@
     "disclaimerClientDepositFirstLine": "{{clientName}} {{symbol}} tokenida depozitlarni qabul qiladi.",
     "disclaimerClientPaymentFirstLine": "{{clientName}} {{symbol}} tokenida to‘lovni qabul qiladi.",
     "disclaimerClientTransferFirstLine": "{{clientName}} {{symbol}} tokenida o‘tkazmalarni qabul qiladi.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "Biz sizning {{symbol}} balansingizni to'ldirishimiz kerak, shuning uchun bu depozitni amalga oshirish uchun hisobingizdagi boshqa tokenni {{symbol}} ga avtomatik ravishda almashtiramiz.",
-    "disclaimerSecondLineAutomatedSwapPayment": "Biz sizning {{symbol}} balansingizni to'ldirishimiz kerak, shuning uchun bu to'lovni amalga oshirish uchun hisobingizdagi boshqa tokenni {{symbol}} ga avtomatik ravishda almashtiramiz.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "Barcha xavfsizlik talablariga rioya qilinmaydi, ammo eng muhim qismi {{symbol}} qoldig‘ingizni to‘ldirish, shuning uchun akunio‘ingizdagi boshqa tokenni {{symbol}} ga avtomatik tarzda almashtiramiz.",
+    "disclaimerSecondLineAutomatedSwapPayment": "{{symbol}} qoldigini to‘ldirishimiz kerak bo‘ladi, shuning uchun bu to‘lovni amalga oshirish uchun hisobingizdagi boshqa tokenni {{symbol}} ga avtomatik almashtiramiz.",
     "disclaimerSecondLineAutomatedSwapTransfer": "Biz sizning {{symbol}} balansingizni to'ldirishimiz kerak, shuning uchun bu o‘tkazmani amalga oshirish uchun hisobingizdagi boshqa tokenni {{symbol}} ga avtomatik ravishda almashtiramiz.",
     "disclaimerSecondLineOtherBalancesDeposit": "Sizda yetarlicha {{symbol}} yo'q, shuning uchun biz depozitni yakunlash uchun hisobingizdagi boshqa balanslardan foydalanamiz.",
     "disclaimerSecondLineOtherBalancesPayment": "Sizda yetarlicha {{symbol}} yo'q, shuning uchun biz to'lovni yakunlash uchun hisobingizdagi boshqa balanslardan foydalanamiz.",
@@ -1187,11 +1187,11 @@
     },
     "showAddress": "Manzilni ko'rsatish",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "'{{query}}' uchun natija mavjud emas.",
+      "noResultsHint": "Boshqa qidiruv so'zini kiriting",
+      "otherTokens": "Boshqalar",
+      "popularTokens": "Mashhur",
+      "searchPlaceholder": "Қидириш",
       "title": "Tokenni tanlang"
     },
     "warnings": {
