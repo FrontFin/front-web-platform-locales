@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Transfer ini tidak akan dimulai sampai disetujui di {{selectedIntegrationName}}.",
     "defaultTitle": "Transaksi selesai.",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Dikirim ke {{clientName}}",
+    "depositReceived": "Diterima {{amount}} di jaringan {{networkName}}",
     "depositTitle": "Deposit selesai.",
     "onrampTitle": "Pembelian selesai.",
     "paymentTitle": "Pembayaran selesai.",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}} {{shortToAddress}} via kontrak relay {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Hash transaksi {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Semua telah siap!",
@@ -596,7 +596,7 @@
     "changeAmount": "Atau ubah jumlah untuk ditransfer menjadi {{availableAmount}}.",
     "changePreferredPaymentMethod": "Ubah metode pembayaran yang diinginkan.",
     "changePreferredToken": "Ubah token yang diinginkan.",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Pilih token lain",
     "cryptoConversion": "Konversi mata uang kripto.",
     "instantCashAvailable": "(Uang tunai instan tersedia: {{amountInFiat}})",
     "insufficientFunds": "Dana tidak cukup",
@@ -1187,11 +1187,11 @@
     },
     "showAddress": "Tampilkan alamat",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "Tidak ada hasil untuk '{{query}}'.",
+      "noResultsHint": "Coba istilah pencarian lain",
+      "otherTokens": "Lainnya",
+      "popularTokens": "Populer",
+      "searchPlaceholder": "Cari",
       "title": "Pilih token"
     },
     "warnings": {
