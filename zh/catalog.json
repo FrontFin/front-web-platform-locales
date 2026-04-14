@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "此转账不会启动，直至在{{selectedIntegrationName}}中被批准。",
     "defaultTitle": "交易完成",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "已交付至 {{clientName}}",
+    "depositReceived": "接收到 {{amount}} 于 {{networkName}} 网络",
     "depositTitle": "存款完成",
     "onrampTitle": "购买完成",
     "paymentTitle": "付款完成",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "通过中继合同{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转账至{{clientName}} {{shortToAddress}}。",
       "transferToClient": "将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转账至{{clientName}} {{shortToAddress}}。"
     },
-    "transactionHash": ""
+    "transactionHash": "交易哈希 {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "一切就绪！",
@@ -596,7 +596,7 @@
     "changeAmount": "或将转账金额更改为{{availableAmount}}。",
     "changePreferredPaymentMethod": "更改首选支付方式",
     "changePreferredToken": "更改首选代币",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "选择另一个代币",
     "cryptoConversion": "加密货币转兑换",
     "instantCashAvailable": "(可用即时现金: {{amountInFiat}})",
     "insufficientFunds": "余额不足",
@@ -1187,11 +1187,11 @@
     },
     "showAddress": "显示地址",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "没有找到“{{query}}”。",
+      "noResultsHint": "尝试不同的搜索词",
+      "otherTokens": "其他",
+      "popularTokens": "热门",
+      "searchPlaceholder": "搜索",
       "title": "选择一个代币"
     },
     "warnings": {
