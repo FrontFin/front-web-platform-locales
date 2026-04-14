@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Ini mungkin disebabkan oleh lokasi Anda, persyaratan kepatuhan, atau kompatibilitas perangkat.",
     "emptyCatalogTitle": "Tidak ada dompet dan pertukaran yang tersedia",
     "noResults": "Maaf, kami tidak menemukan hasil apapun",
-    "noResultsForSearch": "",
     "noResultsWithDeposit": "Tidak ada hasil untuk '{{searchTerm}}'. Anda dapat menyetor secara manual.",
     "search": "cari",
     "title40": "Pilih akun Anda",
@@ -263,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Transfer ini tidak akan dimulai sampai disetujui di {{selectedIntegrationName}}.",
     "defaultTitle": "Transaksi selesai.",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Dikirim ke {{clientName}}",
+    "depositReceived": "Diterima {{amount}} di jaringan {{networkName}}",
     "depositTitle": "Deposit selesai.",
     "onrampTitle": "Pembelian selesai.",
     "paymentTitle": "Pembayaran selesai.",
@@ -285,7 +284,7 @@
       "transferSmartToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}} {{shortToAddress}} via kontrak relay {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfer <1>{{transferPreviewAmount}}</1> dari {{selectedIntegrationName}} ke {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Hash transaksi {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Semua telah siap!",
@@ -440,7 +439,6 @@
     "passKeyNotSupportedOnramp": "Sayangnya, Passkey 2FA saat ini tidak didukung. Harap tambahkan Google Authenticator sebagai 2FA tambahan dan coba lagi pembelian.",
     "passKeyNotSupportedPayment": "Sayangnya, Passkey 2FA saat ini tidak didukung. Harap tambahkan Google Authenticator sebagai 2FA tambahan dan coba lagi pembayaran.",
     "passKeyNotSupportedRedirect": "Mengalihkan ke metode penarikan Coinbase alternatif...",
-    "permissionDenied": "",
     "pleaseLogin": "Silakan login.",
     "pleaseTryAgain": "Silakan coba lagi.",
     "pleaseTryAgainIn1Hour": "Silakan coba lagi dalam 1 jam.",
@@ -598,7 +596,7 @@
     "changeAmount": "Atau ubah jumlah untuk ditransfer menjadi {{availableAmount}}.",
     "changePreferredPaymentMethod": "Ubah metode pembayaran yang diinginkan.",
     "changePreferredToken": "Ubah token yang diinginkan.",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Pilih token lain",
     "cryptoConversion": "Konversi mata uang kripto.",
     "instantCashAvailable": "(Uang tunai instan tersedia: {{amountInFiat}})",
     "insufficientFunds": "Dana tidak cukup",
@@ -1190,6 +1188,11 @@
     },
     "showAddress": "Tampilkan alamat",
     "tokenSelection": {
+      "noResults": "Tidak ada hasil untuk '{{query}}'.",
+      "noResultsHint": "Coba istilah pencarian lain",
+      "otherTokens": "Lainnya",
+      "popularTokens": "Populer",
+      "searchPlaceholder": "Cari",
       "title": "Pilih token"
     },
     "warnings": {

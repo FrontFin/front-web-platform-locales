@@ -41,7 +41,7 @@
     "descriptionPay": "<0>Return here to pay</0> after connecting with your Binance mobile app.",
     "loginWithEmailButton": "Login with Email/Phone",
     "or": "or",
-    "scanText": "Scan with the Binance app to log in.",
+    "scanText": "Scan with your phone camera or the Binance app to log in.",
     "title": "Log in"
   },
   "binanceDirectPasswordPage": {
@@ -111,8 +111,7 @@
     "emptyCatalogBody": "This might be due to your location, compliance requirements, or device compatibility.",
     "emptyCatalogTitle": "No available wallets and exchanges",
     "noResults": "Sorry, we couldn’t find any results",
-    "noResultsForSearch": "No results for ‘{{searchTerm}}’.",
-    "noResultsWithDeposit": "No results for ‘{{searchTerm}}’. You can deposit manually.",
+    "noResultsWithDeposit": "No results for '{{searchTerm}}'. You can deposit manually.",
     "search": "search",
     "title40": "Choose your account",
     "titleOnramp": "Choose your on-ramp"
@@ -263,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "This transfer will not be initiated until it is approved in {{selectedIntegrationName}}.",
     "defaultTitle": "Transaction complete",
-    "deliveredTo": "Delivered to {{clientName}}.",
-    "depositReceived": "Deposit of {{amount}} received on {{networkName}}.",
+    "deliveredTo": "Delivered to {{clientName}}",
+    "depositReceived": "Received {{amount}} on {{networkName}} network",
     "depositTitle": "Deposit complete",
     "onrampTitle": "Purchase complete",
     "paymentTitle": "Payment complete",
@@ -285,7 +284,7 @@
       "transferSmartToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}} via the relay contract {{shortSmartContractsAddress}}.",
       "transferToClient": "Transfer of <1>{{transferPreviewAmount}}</1> from {{selectedIntegrationName}} to {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": "Transaction: {{hash}}"
+    "transactionHash": "Transaction hash {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "You're all set!",
@@ -440,7 +439,6 @@
     "passKeyNotSupportedOnramp": "Unfortunately, Passkey 2FA is not currently supported. Please add Google Authenticator as an additional 2FA and retry the purchase.",
     "passKeyNotSupportedPayment": "Unfortunately, Passkey 2FA is not currently supported. Please add Google Authenticator as an additional 2FA and retry the payment.",
     "passKeyNotSupportedRedirect": "Redirecting to an alternate Coinbase withdrawal method...",
-    "permissionDenied": "This connection doesn't have permission to transfer. Please reconnect with transfer permissions.",
     "pleaseLogin": "Please login.",
     "pleaseTryAgain": "Please try again.",
     "pleaseTryAgainIn1Hour": "Please try again in 1 hour.",
@@ -614,12 +612,12 @@
   },
   "fundingSelectionDrawer": {
     "balances": "Balances",
-    "disclaimerClientDepositFirstLine": "{{clientName}} accepts deposits in {{symbol}}.",
-    "disclaimerClientPaymentFirstLine": "{{clientName}} accepts payment in {{symbol}}.",
-    "disclaimerClientTransferFirstLine": "{{clientName}} accepts transfers in {{symbol}}.",
-    "disclaimerSecondLineAutomatedSwapDeposit": "You don't have enough {{symbol}} to complete this deposit, so we'll automatically convert another token to cover the difference.",
-    "disclaimerSecondLineAutomatedSwapPayment": "You don't have enough {{symbol}} to complete this payment, so we'll automatically convert another token to cover the difference.",
-    "disclaimerSecondLineAutomatedSwapTransfer": "You don't have enough {{symbol}} to complete this transfer, so we'll automatically convert another token to cover the difference.",
+    "disclaimerClientDepositFirstLine": "{{clientName}} accepts deposits in the {{symbol}} token.",
+    "disclaimerClientPaymentFirstLine": "{{clientName}} accepts payment in the {{symbol}} token.",
+    "disclaimerClientTransferFirstLine": "{{clientName}} accepts transfers in the {{symbol}} token.",
+    "disclaimerSecondLineAutomatedSwapDeposit": "We'll have to top up your {{symbol}} balance, so we'll do an automated swap of another token in your account into {{symbol}} to make this deposit.",
+    "disclaimerSecondLineAutomatedSwapPayment": "We'll have to top up your {{symbol}} balance, so we'll do an automated swap of another token in your account into {{symbol}} to make this payment.",
+    "disclaimerSecondLineAutomatedSwapTransfer": "We'll have to top up your {{symbol}} balance, so we'll do an automated swap of another token in your account into {{symbol}} to make this transfer.",
     "disclaimerSecondLineOtherBalancesDeposit": "You don't have enough {{symbol}}, so we'll top you up using other balances in your account to complete the deposit.",
     "disclaimerSecondLineOtherBalancesPayment": "You don't have enough {{symbol}}, so we'll top you up using other balances in your account to complete the payment.",
     "disclaimerSecondLineOtherBalancesTransfer": "You don't have enough {{symbol}}, so we'll top you up using other balances in your account to complete the transfer.",
@@ -1190,6 +1188,11 @@
     },
     "showAddress": "Show address",
     "tokenSelection": {
+      "noResults": "No results for '{{query}}'.",
+      "noResultsHint": "Try a different search term",
+      "otherTokens": "Others",
+      "popularTokens": "Popular",
+      "searchPlaceholder": "Search",
       "title": "Choose a token"
     },
     "warnings": {

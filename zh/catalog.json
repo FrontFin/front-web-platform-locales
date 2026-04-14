@@ -111,7 +111,6 @@
     "emptyCatalogBody": "这可能是由于您的所在区域、合规要求或设备兼容性的问题。",
     "emptyCatalogTitle": "暂无可用钱包和交易所",
     "noResults": "抱歉，未找到相关结果",
-    "noResultsForSearch": "",
     "noResultsWithDeposit": "{{searchTerm}} 没有结果。您可以手动存款。",
     "search": "搜索",
     "title40": "选择你的账户",
@@ -263,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "此转账不会启动，直至在{{selectedIntegrationName}}中被批准。",
     "defaultTitle": "交易完成",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "已交付至 {{clientName}}",
+    "depositReceived": "接收到 {{amount}} 于 {{networkName}} 网络",
     "depositTitle": "存款完成",
     "onrampTitle": "购买完成",
     "paymentTitle": "付款完成",
@@ -285,7 +284,7 @@
       "transferSmartToClient": "通过中继合同{{shortSmartContractsAddress}}将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转账至{{clientName}} {{shortToAddress}}。",
       "transferToClient": "将<1>{{transferPreviewAmount}}</1>从{{selectedIntegrationName}}转账至{{clientName}} {{shortToAddress}}。"
     },
-    "transactionHash": ""
+    "transactionHash": "交易哈希 {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "一切就绪！",
@@ -440,7 +439,6 @@
     "passKeyNotSupportedOnramp": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试购买。",
     "passKeyNotSupportedPayment": " 抱歉，当前不支持使用Passkey作为双重验证（2FA）。请添加Google身份验证器作为额外的双重验证2FA，并重新尝试支付。",
     "passKeyNotSupportedRedirect": "系统正在切换至其他 Coinbase 提现方法……",
-    "permissionDenied": "",
     "pleaseLogin": "请登录。",
     "pleaseTryAgain": "请重试。",
     "pleaseTryAgainIn1Hour": "请在1小时后重试。",
@@ -598,7 +596,7 @@
     "changeAmount": "或将转账金额更改为{{availableAmount}}。",
     "changePreferredPaymentMethod": "更改首选支付方式",
     "changePreferredToken": "更改首选代币",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "选择另一个代币",
     "cryptoConversion": "加密货币转兑换",
     "instantCashAvailable": "(可用即时现金: {{amountInFiat}})",
     "insufficientFunds": "余额不足",
@@ -1190,6 +1188,11 @@
     },
     "showAddress": "显示地址",
     "tokenSelection": {
+      "noResults": "没有找到“{{query}}”。",
+      "noResultsHint": "尝试不同的搜索词",
+      "otherTokens": "其他",
+      "popularTokens": "热门",
+      "searchPlaceholder": "搜索",
       "title": "选择一个代币"
     },
     "warnings": {

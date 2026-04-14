@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Dies könnte aufgrund deines Standorts, Compliance-Anforderungen oder Gerätekompatibilität sein.",
     "emptyCatalogTitle": "Keine verfügbaren Wallets und Börsen",
     "noResults": "Leider konnten wir keine Ergebnisse finden",
-    "noResultsForSearch": "",
     "noResultsWithDeposit": "Keine Ergebnisse für '{{searchTerm}}'. Sie können manuell einzahlen.",
     "search": "Suche",
     "title40": "Wähle dein Konto",
@@ -263,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Diese Überweisung wird nicht getätigt, bis sie in {{selectedIntegrationName}} genehmigt wird.",
     "defaultTitle": "Überweisung abgeschlossen",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Geliefert an {{clientName}}",
+    "depositReceived": "Empfangen {{amount}} im {{networkName}} Netzwerk",
     "depositTitle": "Einzahlung abgeschlossen",
     "onrampTitle": "Kauf abgeschlossen",
     "paymentTitle": "Zahlung abgeschlossen",
@@ -285,7 +284,7 @@
       "transferSmartToClient": "Überweisung von <1>{{transferPreviewAmount}}</1> von {{selectedIntegrationName}} zu {{clientName}} {{shortToAddress}} über den Relay-Vertrag {{shortSmartContractsAddress}}.",
       "transferToClient": "Überweisung von <1>{{transferPreviewAmount}}</1> von {{selectedIntegrationName}} zu {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Transaktions-Hash {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Alles erledigt!",
@@ -440,7 +439,6 @@
     "passKeyNotSupportedOnramp": "Leider wird Passkey-2FA derzeit nicht unterstützt. Bitte füge Google Authenticator als zusätzliche 2FA hinzu und versuche den Kauf erneut.",
     "passKeyNotSupportedPayment": "Leider wird Passkey-2FA momentan nicht unterstützt. Bitte füge Google Authenticator als zusätzliche 2FA hinzu und versuche die Zahlung erneut.",
     "passKeyNotSupportedRedirect": "Weiterleitung zu einer alternativen Coinbase-Auszahlungsoption ...",
-    "permissionDenied": "",
     "pleaseLogin": "Bitte melde dich an.",
     "pleaseTryAgain": "Bitte versuche es erneut.",
     "pleaseTryAgainIn1Hour": "Bitte versuche es in 1 Stunde erneut.",
@@ -598,7 +596,7 @@
     "changeAmount": "Oder ändere den Betrag für die Überweisung auf {{availableAmount}}.",
     "changePreferredPaymentMethod": "Ändere die bevorzugte Zahlungsmethode",
     "changePreferredToken": "Ändere das bevorzugte Token",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Wähle ein anderes Token",
     "cryptoConversion": "Kryptowährungsumrechnung",
     "instantCashAvailable": "(Sofort verfügbares Geld: {{amountInFiat}})",
     "insufficientFunds": "Unzureichende Mittel",
@@ -1190,6 +1188,11 @@
     },
     "showAddress": "Adresse anzeigen",
     "tokenSelection": {
+      "noResults": "Keine Ergebnisse für '{{query}}'.",
+      "noResultsHint": "Versuchen Sie es mit einem anderen Suchbegriff",
+      "otherTokens": "Andere",
+      "popularTokens": "Beliebt",
+      "searchPlaceholder": "Suche",
       "title": "Wähle ein Token"
     },
     "warnings": {

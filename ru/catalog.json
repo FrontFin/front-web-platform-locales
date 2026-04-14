@@ -111,7 +111,6 @@
     "emptyCatalogBody": "Это может быть связано с вашим местоположением, требованиями соответствия или совместимостью устройства.",
     "emptyCatalogTitle": "Нет доступных электронных кошельков и бирж",
     "noResults": "К сожалению, мы не смогли ничего найти",
-    "noResultsForSearch": "",
     "noResultsWithDeposit": "Нет результатов для '{{searchTerm}}'. Вы можете внести депозит вручную.",
     "search": "поиск",
     "title40": "Выберите вашу учетную запись",
@@ -263,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Этот перевод не будет инициирован до тех пор, пока он не будет одобрен в {{selectedIntegrationName}}.",
     "defaultTitle": "Транзакция завершена",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Доставлено {{clientName}}",
+    "depositReceived": "Получено {{amount}} в сети {{networkName}}",
     "depositTitle": "Перевод завершен",
     "onrampTitle": "Покупка завершена",
     "paymentTitle": "Оплата завершена",
@@ -285,7 +284,7 @@
       "transferSmartToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}} через релейный контракт {{shortSmartContractsAddress}}.",
       "transferToClient": "Перевод <1>{{transferPreviewAmount}}</1> с {{selectedIntegrationName}} на {{clientName}} {{shortToAddress}}."
     },
-    "transactionHash": ""
+    "transactionHash": "Хеш транзакции {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Всё готово!",
@@ -414,8 +413,6 @@
     "incorrect2faCode": "Неверный код 2FA.",
     "incorrectEmail": "Вы ввели неверный адрес электронной почты.",
     "incorrectPasswordChancesRemaining_one": "Неверный пароль. У вас осталась {{count}} попытка.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неверный пароль. У вас осталось {{count}} попыток.",
     "incorrectUsernameOrPassword": "Неверное имя пользователя или пароль.",
     "integrationNotAvailable": "Интеграция в настоящее время недоступна.",
@@ -442,7 +439,6 @@
     "passKeyNotSupportedOnramp": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку покупки.",
     "passKeyNotSupportedPayment": "К сожалению, Passkey 2FA в настоящее время не поддерживается. Пожалуйста, добавьте Google Authenticator в качестве дополнительной 2FA и повторите попытку оплаты.",
     "passKeyNotSupportedRedirect": "Перенаправление на альтернативный метод вывода Coinbase...",
-    "permissionDenied": "",
     "pleaseLogin": "Пожалуйста, войдите.",
     "pleaseTryAgain": "Пожалуйста, повторите попытку.",
     "pleaseTryAgainIn1Hour": "Пожалуйста, повторите попытку через 1 час.",
@@ -572,8 +568,6 @@
     "paymentMethodDepositUsage": "Связанный метод оплаты",
     "stablecoinConversion": "Конверсия Стаблека",
     "withAdditional_one": "{{mainOption}} + {{count}} другой",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} других"
   },
   "fundingOptionUnavailabilityReason": {
@@ -602,7 +596,7 @@
     "changeAmount": "Или измените сумму перевода на {{availableAmount}}.",
     "changePreferredPaymentMethod": "Изменить предпочтительный способ оплаты",
     "changePreferredToken": "Изменить предпочтительный токен",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Выберите другой токен",
     "cryptoConversion": "Конвертация криптовалют",
     "instantCashAvailable": "(Доступные денежные средства: {{amountInFiat}})",
     "insufficientFunds": "Недостаточно средств",
@@ -1194,6 +1188,11 @@
     },
     "showAddress": "Показать адрес",
     "tokenSelection": {
+      "noResults": "Нет результатов для '{{query}}'.",
+      "noResultsHint": "Попробуйте другой поисковый запрос",
+      "otherTokens": "Другие",
+      "popularTokens": "Популярные",
+      "searchPlaceholder": "Поиск",
       "title": "Выберите токен"
     },
     "warnings": {
@@ -1383,8 +1382,8 @@
       "choose": "Выберите сеть"
     },
     "noBalancePage": {
-      "message": "***У вас нет баланса {{symbol}} для перевода***",
-      "title": "***Баланс отсутствует***"
+      "message": "У вас нет средств для перевода.",
+      "title": "Нет средств"
     },
     "oauthTimeoutPage": {
       "reopen": "Снова открыть {{integrationName}}",
