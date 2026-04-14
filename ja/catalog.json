@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "この送金は、{{selectedIntegrationName}}で承認されるまで開始されません。",
     "defaultTitle": "取引完了しました",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "{{clientName}}への配達",
+    "depositReceived": "{{networkName}}ネットワークで{{amount}}を受信しました",
     "depositTitle": "入金完了しました",
     "onrampTitle": "購入完了しました",
     "paymentTitle": "支払い完了しました",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "中継コントラクト{{shortSmartContractsAddress}}を経由して、{{selectedIntegrationName}}から{{clientName}}（{{shortToAddress}}）への<1>{{transferPreviewAmount}}</1>の送金。",
       "transferToClient": "{{selectedIntegrationName}}から{{clientName}}（{{shortToAddress}}）への<1>{{transferPreviewAmount}}</1>の送金。"
     },
-    "transactionHash": ""
+    "transactionHash": "トランザクションハッシュ {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "準備完了です！",
@@ -596,7 +596,7 @@
     "changeAmount": "もしくは、送金額を{{availableAmount}}に変更してください。",
     "changePreferredPaymentMethod": "希望の支払い方法を変更する",
     "changePreferredToken": "ご希望のトークンを変更してください",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "別のトークンを選択する",
     "cryptoConversion": "暗号資産の換算",
     "instantCashAvailable": "（利用可能な即時現金：{{amountInFiat}}）",
     "insufficientFunds": "残高が不足しています。",
@@ -1187,11 +1187,11 @@
     },
     "showAddress": "住所を表示",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "「{{query}}」の結果はありません。",
+      "noResultsHint": "別の検索語を試してください",
+      "otherTokens": "その他",
+      "popularTokens": "人気",
+      "searchPlaceholder": "検索",
       "title": "トークンを選択"
     },
     "warnings": {
