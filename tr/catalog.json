@@ -262,8 +262,8 @@
   "doneTransferDetails": {
     "awaitinApprovalLabel": "Bu transfer, {{selectedIntegrationName}}'de onaylanana kadar başlatılmayacaktır.",
     "defaultTitle": "İşlem tamamlandı",
-    "deliveredTo": "",
-    "depositReceived": "",
+    "deliveredTo": "Teslim edildi: {{clientName}}",
+    "depositReceived": "{{networkName}} ağında {{amount}} alındı",
     "depositTitle": "Para yatırma tamamlandı",
     "onrampTitle": "Satın alma tamamlandı",
     "paymentTitle": "Ödeme tamamlandı",
@@ -284,7 +284,7 @@
       "transferSmartToClient": "{{selectedIntegrationName}}'dan {{clientName}} {{shortToAddress}}'a, {{shortSmartContractsAddress}} aktarım sözleşmesi aracılığıyla <1>{{transferPreviewAmount}}</1> tutarında transfer etme.",
       "transferToClient": "{{selectedIntegrationName}}'den {{clientName}} {{shortToAddress}}'e <1>{{transferPreviewAmount}}</1> transfer etme."
     },
-    "transactionHash": ""
+    "transactionHash": "İşlem karması {{hash}}"
   },
   "doneTransferPage": {
     "allSet": "Her şey hazır!",
@@ -596,7 +596,7 @@
     "changeAmount": "Veya transfer edilecek miktarı {{availableAmount}} olarak değiştirin.",
     "changePreferredPaymentMethod": "Tercih edilen ödeme yöntemini değiştirin.",
     "changePreferredToken": "Tercih edilen token'i değiştir",
-    "chooseAnotherToken": "",
+    "chooseAnotherToken": "Başka bir token seçin",
     "cryptoConversion": "Kripto para dönüşümü",
     "instantCashAvailable": "(Anında kullanılabilir nakit: {{amountInFiat}})",
     "insufficientFunds": "Yetersiz bakiye",
@@ -1187,11 +1187,11 @@
     },
     "showAddress": "Adresi göster",
     "tokenSelection": {
-      "noResults": "",
-      "noResultsHint": "",
-      "otherTokens": "",
-      "popularTokens": "",
-      "searchPlaceholder": "",
+      "noResults": "'{{query}}' için sonuç yok.",
+      "noResultsHint": "Farklı bir arama terimi deneyin",
+      "otherTokens": "Diğerleri",
+      "popularTokens": "\"Popüler\"",
+      "searchPlaceholder": "Arama",
       "title": "Bir token seçin"
     },
     "warnings": {
