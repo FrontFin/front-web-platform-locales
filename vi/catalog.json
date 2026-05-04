@@ -667,11 +667,16 @@
     "buy": "Mua",
     "buyCrypto": "Mua tiền mã hóa",
     "buyDescription": "Mua bằng thẻ của bạn hoặc ngân hàng.",
+    "buySubtitle": "Mua ngay lập tức bằng thẻ của bạn.",
     "chooseHow": "Chọn cách thêm tiền",
+    "chooseHowDeposit": "Chọn cách gửi tiền",
+    "connectSubtitle": "Gửi tiền đến địa chỉ chính xác một cách an toàn.",
     "connectToWallet": "Kết nối ví<1></1>hoặc sàn giao dịch",
     "connectToWalletLabel": "Kết nối ví hoặc sàn giao dịch",
+    "depositAgain": "Gửi tiền lần nữa chỉ với một lần chạm.",
     "guaranteed": "Đảm bảo",
     "manualDeposit": "Nạp tiền thủ công",
+    "manualSubtitle": "Sao chép địa chỉ hoặc quét mã QR.",
     "max500": "Tối đa $500,000 • Nhanh chóng",
     "maxVaries": "Tối đa thay đổi • 3 phút",
     "minMax": "${{min}} phút - ${{max}} phút • Ngay lập tức",
@@ -732,10 +737,15 @@
       "selectToken": "Chọn token nạp"
     },
     "cryptoCom": {
+      "continueWithApp": "Tiếp tục với ứng dụng Crypto.com",
       "deposit": {
+        "mobileSubtitle": "<strong>Quay lại đây</strong> sau khi hoàn tất nạp tiền trong ứng dụng di động Crypto.com của bạn.",
+        "mobileTitle": "Nạp tiền từ ứng dụng của bạn",
         "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Crypto.com để hoàn tất việc nạp tiền của bạn."
       },
       "pay": {
+        "mobileSubtitle": "<strong>Quay lại đây</strong> sau khi hoàn tất thanh toán trong ứng dụng di động Crypto.com của bạn.",
+        "mobileTitle": "Thanh toán từ ứng dụng của bạn",
         "qrPageTitle": "Quét bằng máy ảnh điện thoại của bạn hoặc ứng dụng Crypto.com để hoàn tất thanh toán của bạn."
       }
     },
@@ -1159,7 +1169,7 @@
       "collapsedWithoutTagNew": "Gửi {{token}} trên {{network}}.",
       "collapsedWithTag": "Chỉ gửi {{token}} trên {{network}}; Địa chỉ sử dụng một lần; Bao gồm {{tagLabel}} chuyển khoản",
       "collapsedWithTagNew": "Gửi {{token}} trên {{network}}; bao gồm tag.",
-      "depositMinimum": "",
+      "depositMinimum": "Tiền gửi tối thiểu: ${{min}}",
       "includeInTransaction": "Bao gồm {{tagLabel}} chuyển khoản cùng với tiền gửi",
       "includeInTransactionWithMemo": "Bao gồm memo chuyển khoản với tiền gửi",
       "includeInTransactionWithTag": "Bao gồm thẻ chuyển khoản với tiền gửi",
@@ -1567,7 +1577,7 @@
       "loginTitle": "Đăng nhập vào Bybit Global",
       "scanInstruction": "Quét bằng ứng dụng Bybit Global để đăng nhập."
     },
-    "error": "",
+    "error": "Đã xảy ra lỗi khi tạo mã QR. Nhấn nút làm mới để thử lại.",
     "expired": "Mã QR đã hết hạn",
     "generateNew": "Tạo mã QR mới",
     "loading": "Đang tải mã QR",
@@ -1590,6 +1600,27 @@
     "enterAmount": "Nhập số tiền giao dịch",
     "selectAsset": "Chọn tài sản để giao dịch",
     "selectNetwork": "Chọn mạng chuyển tiền"
+  },
+  "satisfactionSurvey": {
+    "questionDeposit": "Gửi tiền dễ dàng như thế nào?",
+    "questionPayment": "Thanh toán dễ dàng như thế nào?",
+    "ratingGroupLabel": "Đánh giá trải nghiệm của bạn",
+    "ratingVeryBad": "Rất tệ",
+    "ratingBad": "Tệ",
+    "ratingNeutral": "Trung lập",
+    "ratingGood": "Tốt",
+    "ratingGreat": "Tuyệt vời",
+    "scaleVeryDifficult": "Rất khó",
+    "scaleVeryEasy": "Rất dễ",
+    "followUpLabelLow": "Điều gì khiến bạn cảm thấy khó khăn?",
+    "followUpLabelNeutral": "Có điều gì có thể cải thiện?",
+    "followUpLabelGood": "Bạn thích điều gì?",
+    "followUpLabelGreat": "Điều gì đã làm cho nó tuyệt vời?",
+    "followUpPlaceholderLow": "Cho chúng tôi biết điều gì đã xảy ra sai...",
+    "followUpPlaceholderNeutral": "Cho chúng tôi biết điều gì có thể được cải thiện...",
+    "followUpPlaceholderGood": "Cho chúng tôi biết điều gì bạn thích...",
+    "followUpPlaceholderGreat": "Cho chúng tôi biết điều gì bạn yêu thích...",
+    "submit": "Gửi"
   },
   "selectCryptoFundingPage": {
     "title": "Chọn tài sản"
@@ -1758,6 +1789,8 @@
     "connectAnotherAccount": "Vui lòng kết nối tài khoản khác.",
     "insufficientBalanceError": "Số dư không đủ để thực hiện giao dịch này.",
     "insufficientFunds": "Không đủ ngân sách",
+    "insufficientGasBalance": "Số dư không đủ để trả phí gas",
+    "insufficientGasBalanceError": "Giao dịch này yêu cầu có sẵn số dư để chuyển cộng thêm đủ tài sản gốc của mạng để trả phí gas.",
     "unknownError": "Lỗi không xác định. Nhấn vào bên dưới để tạo một giao dịch chuyển tiền mới."
   },
   "transferWithdrawalAddressConfirmation": {
