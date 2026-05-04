@@ -667,11 +667,16 @@
     "buy": "Acheter",
     "buyCrypto": "Acheter des cryptos",
     "buyDescription": "Achetez des crypto-monnaies instantanément avec votre carte ou banque.",
+    "buySubtitle": "Achetez instantanément avec votre carte.",
     "chooseHow": "Choisissez comment ajouter de l'argent",
+    "chooseHowDeposit": "Choisissez comment déposer.",
+    "connectSubtitle": "Envoyez des fonds en toute sécurité à la bonne adresse.",
     "connectToWallet": "Connectez-vous à<1></1>portefeuille ou échange",
     "connectToWalletLabel": "Connectez-vous à portefeuille ou échange",
+    "depositAgain": "Déposez à nouveau en un seul clic.",
     "guaranteed": "Garanti",
     "manualDeposit": "Dépôt manuel",
+    "manualSubtitle": "Copier une adresse ou scanner un code QR.",
     "max500": "500 000 $ max • Instantané",
     "maxVaries": "Maximum variable • 3 mins",
     "minMax": "${{min}} min - ${{max}} max • Instantané",
@@ -732,10 +737,15 @@
       "selectToken": "Sélectionner un jeton de dépôt"
     },
     "cryptoCom": {
+      "continueWithApp": "Continuer avec l'application Crypto.com",
       "deposit": {
+        "mobileSubtitle": "<strong>Revenez ici</strong> après avoir terminé le dépôt dans votre application mobile Crypto.com.",
+        "mobileTitle": "Dépôt depuis votre application",
         "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre dépôt."
       },
       "pay": {
+        "mobileSubtitle": "<strong>Revenez ici</strong> après avoir terminé le paiement dans votre application mobile Crypto.com.",
+        "mobileTitle": "Payer depuis votre application",
         "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre paiement."
       }
     },
@@ -1159,7 +1169,7 @@
       "collapsedWithoutTagNew": "Envoyez {{token}} sur {{network}}.",
       "collapsedWithTag": "Envoyez uniquement {{token}} sur {{network}}; Adresse à usage unique; Inclure le transfert {{tagLabel}}",
       "collapsedWithTagNew": "Envoyez {{token}} sur {{network}}; inclure un tag.",
-      "depositMinimum": "",
+      "depositMinimum": "Dépôt minimum : {{min}}",
       "includeInTransaction": "Inclure le transfert {{tagLabel}} avec le dépôt",
       "includeInTransactionWithMemo": "Inclure le mémo de transfert avec le dépôt",
       "includeInTransactionWithTag": "Inclure l'étiquette de transfert avec le dépôt",
@@ -1567,7 +1577,7 @@
       "loginTitle": "Connectez-vous à Bybit Global",
       "scanInstruction": "Scannez avec votre application Bybit Global pour vous connecter."
     },
-    "error": "",
+    "error": "Une erreur s'est produite lors de la génération du code QR. Appuyez sur le bouton de rafraîchissement pour réessayer.",
     "expired": "QR code expiré",
     "generateNew": "Générer un nouveau QR code",
     "loading": "Chargement du code QR",
@@ -1590,6 +1600,27 @@
     "enterAmount": "Entrer le montant du transfert",
     "selectAsset": "Sélectionner l'actif à transférer",
     "selectNetwork": "Sélectionner le réseau de transfert"
+  },
+  "satisfactionSurvey": {
+    "questionDeposit": "Quelle a été la facilité de dépôt ?",
+    "questionPayment": "Quelle a été la facilité de paiement ?",
+    "ratingGroupLabel": "Évaluez votre expérience",
+    "ratingVeryBad": "Très mauvais",
+    "ratingBad": "Mauvais",
+    "ratingNeutral": "Neutre",
+    "ratingGood": "Bon",
+    "ratingGreat": "Super",
+    "scaleVeryDifficult": "Très difficile",
+    "scaleVeryEasy": "Très facile",
+    "followUpLabelLow": "Qu'est-ce qui vous a rendu la tâche difficile ?",
+    "followUpLabelNeutral": "Qu'est-ce qui pourrait être amélioré ?",
+    "followUpLabelGood": "Qu'avez-vous aimé ?",
+    "followUpLabelGreat": "Qu'est-ce qui l'a rendu super ?",
+    "followUpPlaceholderLow": "Dites-nous ce qui n'a pas fonctionné...",
+    "followUpPlaceholderNeutral": "Dites-nous ce qui pourrait être amélioré...",
+    "followUpPlaceholderGood": "Dites-nous ce que vous avez aimé...",
+    "followUpPlaceholderGreat": "Dites-nous ce que vous avez adoré...",
+    "submit": "Soumettre"
   },
   "selectCryptoFundingPage": {
     "title": "Sélectionner un actif"
@@ -1758,6 +1789,8 @@
     "connectAnotherAccount": "Veuillez connecter un autre compte.",
     "insufficientBalanceError": "Solde insuffisant pour financer cette transaction.",
     "insufficientFunds": "Fonds insuffisants",
+    "insufficientGasBalance": "Solde de gaz insuffisant",
+    "insufficientGasBalanceError": "Cette transaction nécessite un solde disponible pour transférer plus suffisamment de l’actif natif du réseau pour payer les frais de gaz.",
     "unknownError": "Une erreur inconnue s'est produite. Veuillez cliquer ci-dessous pour commencer une nouvelle session de transfert."
   },
   "transferWithdrawalAddressConfirmation": {

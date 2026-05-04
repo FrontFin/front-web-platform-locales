@@ -667,11 +667,16 @@
     "buy": "購入",
     "buyCrypto": "暗号通貨を購入する",
     "buyDescription": "カードまたは銀行口座で購入。",
+    "buySubtitle": "カードですぐに購入できます。",
     "chooseHow": "入金方法を選択",
+    "chooseHowDeposit": "入金方法を選択",
+    "connectSubtitle": "正しいアドレスに安全に送金してください。",
     "connectToWallet": "<1></1>ウォレットまたは取引所に接続",
     "connectToWalletLabel": "ウォレットまたは取引所に接続",
+    "depositAgain": "ワンタップで再度入金。",
     "guaranteed": "保証付き",
     "manualDeposit": "手動入金",
+    "manualSubtitle": "アドレスをコピーするか、QRコードをスキャンしてください。",
     "max500": "最大 $500,000 • 即時",
     "maxVaries": "最大数は異なる • 3 分",
     "minMax": "${{min}} 分 - ${{max}} 分 • 即時",
@@ -732,10 +737,15 @@
       "selectToken": "入金用のトークンを選択"
     },
     "cryptoCom": {
+      "continueWithApp": "Crypto.comアプリで続行",
       "deposit": {
+        "mobileSubtitle": "<strong>入金完了後、</strong>このページに戻ってください。",
+        "mobileTitle": "アプリから入金",
         "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして入金を完了してください。"
       },
       "pay": {
+        "mobileSubtitle": "<strong>支払い完了後、</strong>このページに戻ってください。",
+        "mobileTitle": "アプリで支払う",
         "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。"
       }
     },
@@ -1159,7 +1169,7 @@
       "collapsedWithoutTagNew": "{{network}}で{{token}}を送信。",
       "collapsedWithTag": "{{network}}で{{token}}のみを送信; アドレスは使い捨て; 転送{{tagLabel}}を含める",
       "collapsedWithTagNew": "{{network}}で{{token}}を送信; タグを含める。",
-      "depositMinimum": "",
+      "depositMinimum": "入金最低額: ${{min}}",
       "includeInTransaction": "入金に転送{{tagLabel}}を含める",
       "includeInTransactionWithMemo": "入金にメモを含める",
       "includeInTransactionWithTag": "入金にタグを含める",
@@ -1567,7 +1577,7 @@
       "loginTitle": "Bybit Globalにログイン",
       "scanInstruction": "Bybit Globalアプリでスキャンしてログインしてください。"
     },
-    "error": "",
+    "error": "QRコードの生成中にエラーが発生しました。再試行するには、更新ボタンを押してください。",
     "expired": "QRコードの有効期限が切れました",
     "generateNew": "新しいQRコードを生成する",
     "loading": "QRコードを読み込み中",
@@ -1590,6 +1600,27 @@
     "enterAmount": "送金金額を入力",
     "selectAsset": "送金する資産を選択",
     "selectNetwork": "送金ネットワークを選択"
+  },
+  "satisfactionSurvey": {
+    "questionDeposit": "入金はどのくらい簡単でしたか？",
+    "questionPayment": "支払いはどのくらい簡単でしたか？",
+    "ratingGroupLabel": "体験を評価してください",
+    "ratingVeryBad": "非常に悪い",
+    "ratingBad": "悪い",
+    "ratingNeutral": "中立",
+    "ratingGood": "良い",
+    "ratingGreat": "非常に良い",
+    "scaleVeryDifficult": "非常に難しい",
+    "scaleVeryEasy": "非常に簡単",
+    "followUpLabelLow": "何が難しかったですか？",
+    "followUpLabelNeutral": "どの点を改善できますか？",
+    "followUpLabelGood": "どの点が良かったですか？",
+    "followUpLabelGreat": "どの点が素晴らしかったですか？",
+    "followUpPlaceholderLow": "何が問題だったか教えてください...",
+    "followUpPlaceholderNeutral": "改善できる点を教えてください...",
+    "followUpPlaceholderGood": "良かった点を教えてください...",
+    "followUpPlaceholderGreat": "気に入った点を教えてください...",
+    "submit": "送信"
   },
   "selectCryptoFundingPage": {
     "title": "資産を選択"
@@ -1758,6 +1789,8 @@
     "connectAnotherAccount": "別のアカウントを接続してください。",
     "insufficientBalanceError": "この取引を実行するには残高が不足しています。",
     "insufficientFunds": "残高不足",
+    "insufficientGasBalance": "ガス代残高が不足しています",
+    "insufficientGasBalanceError": "この取引では、転送のために利用可能な残高と、ガス料金を支払うためのネットワークのネイティブ資産が必要です。",
     "unknownError": "不明なエラーが発生しました。新しい送金セッションを開始するには、以下のボタンをクリックしてください。"
   },
   "transferWithdrawalAddressConfirmation": {
