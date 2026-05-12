@@ -667,11 +667,16 @@
     "buy": "Купити",
     "buyCrypto": "Купити криптовалюту",
     "buyDescription": "Купуйте за допомогою вашої карти або банку.",
+    "buySubtitle": "Придбайте миттєво за допомогою вашої картки.",
     "chooseHow": "Виберіть, як додати гроші",
+    "chooseHowDeposit": "Виберіть, як поповнити рахунок",
+    "connectSubtitle": "Відправляйте кошти безпечно на правильну адресу.",
     "connectToWallet": "Підключитися до<1></1>гаманця або обмінника",
     "connectToWalletLabel": "Приєднайтеся до гаманця або обмінника",
+    "depositAgain": "Поповніть рахунок знову одним дотиком.",
     "guaranteed": "Гарантія",
     "manualDeposit": "Ручний депозит",
+    "manualSubtitle": "Скопіюйте адресу або скануйте QR-код.",
     "max500": "$500,000 максимум • Миттєво",
     "maxVaries": "Максимум варіюється • 3 хв.",
     "minMax": "${{min}} хвилин - ${{max}} максимум • Миттєво",
@@ -732,10 +737,15 @@
       "selectToken": "Оберіть токен для депозита"
     },
     "cryptoCom": {
+      "continueWithApp": "Продовжити з Crypto.com додатком",
       "deposit": {
+        "mobileSubtitle": "<strong>Поверніться сюди</strong> після завершення депозиту у вашій мобільній програмі Crypto.com.",
+        "mobileTitle": "Депозит з вашого додатку",
         "qrPageTitle": "Скануйте з камерою телефону або програмою Crypto.com, щоб завершити депозит."
       },
       "pay": {
+        "mobileSubtitle": "<strong>Поверніться сюди</strong> після завершення оплати у вашій мобільній програмі Crypto.com.",
+        "mobileTitle": "Оплатіть зі свого додатку",
         "qrPageTitle": "Скануйте з камерою телефону або програмою Crypto.com, щоб завершити оплату."
       }
     },
@@ -1159,7 +1169,7 @@
       "collapsedWithoutTagNew": "Відправте {{token}} через {{network}}.",
       "collapsedWithTag": "Відправте {{token}} на {{network}}; одноразова адреса; включити тег.",
       "collapsedWithTagNew": "Відправте {{token}} через {{network}}; додайте тег.",
-      "depositMinimum": "",
+      "depositMinimum": "Мінімальний депозит: ${{min}}",
       "includeInTransaction": "Включіть переказ {{tagLabel}} з депозитом",
       "includeInTransactionWithMemo": "Включіть примітку при здійсненні депозита",
       "includeInTransactionWithTag": "Включіть тег при здійсненні депозита",
@@ -1567,7 +1577,7 @@
       "loginTitle": "Увійти в Bybit Global",
       "scanInstruction": "Відскануйте за допомогою додатку Bybit Global, щоб увійти."
     },
-    "error": "",
+    "error": "Сталася помилка під час генерації QR-коду. Натисніть кнопку оновлення, щоб спробувати ще раз.",
     "expired": "Термін дії QR-коду сплив",
     "generateNew": "Створити новий QR-код",
     "loading": "Завантаження QR-коду",
@@ -1590,6 +1600,27 @@
     "enterAmount": "Введіть суму переказу",
     "selectAsset": "Виберіть актив для переказу",
     "selectNetwork": "Виберіть мережу переказу"
+  },
+  "satisfactionSurvey": {
+    "questionDeposit": "Наскільки легко було поповнити рахунок?",
+    "questionPayment": "Наскільки легко було оплатити?",
+    "ratingGroupLabel": "Оцініть свій досвід",
+    "ratingVeryBad": "Дуже погано",
+    "ratingBad": "Погано",
+    "ratingNeutral": "Нейтрально",
+    "ratingGood": "Добре",
+    "ratingGreat": "Відмінно",
+    "scaleVeryDifficult": "Дуже важко",
+    "scaleVeryEasy": "Дуже легко",
+    "followUpLabelLow": "Що зробило це важким для вас?",
+    "followUpLabelNeutral": "Що можна покращити?",
+    "followUpLabelGood": "Що вам сподобалося?",
+    "followUpLabelGreat": "Що зробило це чудовим?",
+    "followUpPlaceholderLow": "Розкажіть нам, що пішло не так...",
+    "followUpPlaceholderNeutral": "Розкажіть нам, що можна покращити...",
+    "followUpPlaceholderGood": "Розкажіть нам, що вам сподобалося...",
+    "followUpPlaceholderGreat": "Розкажіть нам, що ви любили...",
+    "submit": "Подати"
   },
   "selectCryptoFundingPage": {
     "title": "Виберіть актив"
@@ -1758,6 +1789,8 @@
     "connectAnotherAccount": "Будь ласка, підключіть інший обліковий запис.",
     "insufficientBalanceError": "Недостатній залишок для фінансування цієї транзакції.",
     "insufficientFunds": "Недостатньо коштів",
+    "insufficientGasBalance": "Недостатньо газового балансу",
+    "insufficientGasBalanceError": "Ця транзакція вимагає наявного балансу для переказу плюс достатньо мережевої нативної одиниці для сплати комісій.",
     "unknownError": "Сталася невідома помилка. Натисніть нижче, щоб почати нову сесію передачі."
   },
   "transferWithdrawalAddressConfirmation": {
