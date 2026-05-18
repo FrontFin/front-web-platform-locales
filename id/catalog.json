@@ -40,7 +40,12 @@
     "descriptionOnRamp": "<0>Kembali ke sini untuk melanjutkan</0> setelah terhubung dengan aplikasi seluler Binance Anda.",
     "descriptionPay": "<0>Kembali ke sini untuk membayar</0> setelah terhubung dengan aplikasi seluler Binance Anda.",
     "loginWithEmailButton": "Login dengan Email/Telepon",
+    "openBinanceScannerButton": "Buka aplikasi Binance",
     "or": "atau",
+    "qrSaveStepTitle": "Simpan kode QR ke ponsel Anda",
+    "qrScanStepTitle": "Pindai kode QR di aplikasi Binance",
+    "saveQrCodeButton": "Simpan kode QR",
+    "saveQrCodeSavedButton": "Disimpan ✓",
     "scanText": "Pindai dengan kamera ponsel atau aplikasi Binance untuk masuk.",
     "title": "Masuk"
   },
@@ -709,12 +714,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Kembali ke sini</bold> setelah menyelesaikan deposit di aplikasi seluler Bybit Anda.",
         "mobileTitle": "Deposit dari aplikasi Anda",
-        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Bybit untuk menyelesaikan deposit Anda."
+        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Bybit untuk menyelesaikan deposit Anda.",
+        "transferProcessing": "Selesaikan setoran di aplikasi Bybit Anda..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Kembali ke sini</bold> setelah menyelesaikan pembayaran di aplikasi seluler Bybit Anda.",
         "mobileTitle": "Bayar dari aplikasi Anda",
-        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Bybit untuk menyelesaikan pembayaran Anda."
+        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Bybit untuk menyelesaikan pembayaran Anda.",
+        "transferProcessing": "Selesaikan pembayaran di aplikasi Bybit Anda..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Lanjutkan dengan aplikasi Cash",
+      "deposit": {
+        "mobileSubtitle": "<strong>Kembali ke sini</strong> setelah menyelesaikan setoran di aplikasi Cash Anda.",
+        "mobileTitle": "Deposit dari aplikasi Anda",
+        "qrPageTitle": "Pindai dengan kamera ponsel atau Aplikasi Cash untuk menyelesaikan setoran Anda.",
+        "transferProcessing": "Selesaikan setoran di aplikasi Cash Anda..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Kembali ke sini</strong> setelah menyelesaikan pembayaran di Aplikasi Cash Anda.",
+        "mobileTitle": "Bayar dari aplikasi Anda",
+        "qrPageTitle": "Pindai dengan kamera ponsel atau Aplikasi Cash untuk menyelesaikan pembayaran Anda.",
+        "transferProcessing": "Selesaikan pembayaran di aplikasi Cash Anda..."
       }
     },
     "common": {
@@ -741,12 +763,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Kembali ke sini</strong> setelah menyelesaikan setoran di aplikasi Crypto.com Anda.",
         "mobileTitle": "Deposit dari aplikasi Anda",
-        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Crypto.com untuk menyelesaikan deposit Anda."
+        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Crypto.com untuk menyelesaikan deposit Anda.",
+        "transferProcessing": "Selesaikan setoran di aplikasi Crypto.com Anda..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Kembali ke sini</strong> setelah menyelesaikan pembayaran di aplikasi Crypto.com Anda.",
         "mobileTitle": "Bayar dari aplikasi Anda",
-        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Crypto.com untuk menyelesaikan pembayaran Anda."
+        "qrPageTitle": "Scan dengan kamera ponsel Anda atau aplikasi Crypto.com untuk menyelesaikan pembayaran Anda.",
+        "transferProcessing": "Selesaikan pembayaran di aplikasi Crypto.com Anda..."
       }
     },
     "externalAppInitiation": {
@@ -1211,7 +1235,8 @@
       "onlySendTokenOnNetworkBridging": "Hanya kirim <1>{{token}}</1> di <3>{{network}}</3> ke alamat ini. Alamat ini hanya untuk penggunaan satu kali. Kombinasi aset atau jaringan lainnya, penggunaan ulang alamat ini, atau <5>mengirim aset ke alamat berbeda</5>, akan mengakibatkan kehilangan dana dan tidak dapat dipulihkan. <7>Deposit minimum adalah $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Hanya kirim <1>{{token}}</1> di jaringan <3>{{network}}</3> ke alamat ini. Kombinasi aset atau jaringan lainnya tidak dapat dipulihkan.",
       "requiredForDeposit": "Diperlukan untuk deposit ini",
-      "sendAboveMinimum": "Kirim di atas jumlah minimum: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Kirim di atas jumlah minimum: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Kirim di bawah jumlah maksimum: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1338,6 +1363,11 @@
       "errorMessage": "Terjadi kesalahan. Silakan coba lagi",
       "purchase": "Pembelian sebesar {{amount}} {{symbol}}",
       "transfer": "Transfer {{symbol}} untuk pembelian Anda"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Bayar di aplikasi seluler Anda"
+      }
     },
     "infoScreen": {
       "rule1": "Info Anda tidak pernah disimpan. Akses akan berakhir setelah pembayaran ini.",

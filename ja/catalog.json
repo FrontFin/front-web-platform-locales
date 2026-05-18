@@ -40,7 +40,12 @@
     "descriptionOnRamp": "Binance モバイルアプリと接続後、<0>こちらに戻って続行してください</0>。",
     "descriptionPay": "Binance モバイルアプリと接続後、<0>こちらに戻って支払いを完了してください</0>。",
     "loginWithEmailButton": "メールアドレス／電話番号でログイン",
+    "openBinanceScannerButton": "Binanceアプリを開く",
     "or": "または",
+    "qrSaveStepTitle": "QRコードを携帯に保存する",
+    "qrScanStepTitle": "BinanceアプリでQRコードをスキャンする",
+    "saveQrCodeButton": "QRコードを保存する",
+    "saveQrCodeSavedButton": "保存済み ✓",
     "scanText": "ログインするには、スマートフォンのカメラまたは Binance アプリでスキャンしてください。",
     "title": "ログイン"
   },
@@ -709,12 +714,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>預金を完了後、こちらに戻ってください</bold>。",
         "mobileTitle": "アプリから入金",
-        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして入金を完了してください。"
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして入金を完了してください。",
+        "transferProcessing": "Bybit アプリで入金を完了してください..."
       },
       "pay": {
         "mobileSubtitle": "<bold>支払いを完了後、こちらに戻ってください</bold>。",
         "mobileTitle": "アプリで支払う",
-        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして支払いを完了してください。"
+        "qrPageTitle": "スマートフォンのカメラ、またはBybitアプリでスキャンして支払いを完了してください。",
+        "transferProcessing": "Bybit アプリで支払いを完了してください..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "キャッシュアプリで続行",
+      "deposit": {
+        "mobileSubtitle": "<strong>キャッシュアプリでの入金を完了した後、こちらに戻ってください。</strong>",
+        "mobileTitle": "アプリから入金",
+        "qrPageTitle": "スマートフォンのカメラ、または Cash アプリでスキャンして入金を完了してください。",
+        "transferProcessing": "Cash アプリで入金を完了してください..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>こちらに戻ってください</strong>、Cash アプリでの支払いが完了した後。",
+        "mobileTitle": "アプリで支払う",
+        "qrPageTitle": "スマートフォンのカメラ、または Cash アプリでスキャンして支払いを完了してください。",
+        "transferProcessing": "Cash アプリで支払いを完了してください..."
       }
     },
     "common": {
@@ -741,12 +763,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>入金完了後、</strong>このページに戻ってください。",
         "mobileTitle": "アプリから入金",
-        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして入金を完了してください。"
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして入金を完了してください。",
+        "transferProcessing": "Crypto.com アプリで入金を完了してください..."
       },
       "pay": {
         "mobileSubtitle": "<strong>支払い完了後、</strong>このページに戻ってください。",
         "mobileTitle": "アプリで支払う",
-        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。"
+        "qrPageTitle": "スマートフォンのカメラ、またはCrypto.comアプリでスキャンして支払いを完了してください。",
+        "transferProcessing": "Crypto.com アプリで支払いを完了してください..."
       }
     },
     "externalAppInitiation": {
@@ -1211,7 +1235,8 @@
       "onlySendTokenOnNetworkBridging": "このアドレスには<1>{{token}}</1>を<3>{{network}}</3>でのみ送信してください。このアドレスは一回限りの使用です。他の資産またはネットワークの組み合わせ、このアドレスの再使用、や異なるアドレスへの<5>送信</5>は、資金の損失を招き、回復不能です。<7>最低入金額は2ドルUSDです。</7>",
       "onlySendTokenOnNetworkExtended": "このアドレスには、<3>{{network}}</3> のネットワークでのみ <1>{{token}}</1> を送信してください。他の資産やネットワークの組み合わせは回復できません。",
       "requiredForDeposit": "この入金には必須です",
-      "sendAboveMinimum": "最小金額 <1>{{amount}}</1> 以上を送金してください"
+      "sendAboveMinimum": "最小金額 <1>{{amount}}</1> 以上を送金してください",
+      "sendBelowMaximum": "最大金額以下を送信してください: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1338,6 +1363,11 @@
       "errorMessage": "エラーが発生しました。もう一度お試しください",
       "purchase": "{{amount}} {{symbol}}の購入",
       "transfer": "購入のため {{symbol}} を送金"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "モバイルアプリで支払う"
+      }
     },
     "infoScreen": {
       "rule1": "お客様の情報は保存されません。この支払い完了後、アクセスは終了します。",

@@ -40,7 +40,12 @@
     "descriptionOnRamp": "अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद <0>जारी रखने के लिए यहाँ वापस आएँ</0>।",
     "descriptionPay": "अपने Binance मोबाइल ऐप से कनेक्ट करने के बाद भुगतान करने के लिए <0>यहाँ वापस आएँ</0>।",
     "loginWithEmailButton": "ईमेल/फ़ोन से लॉगिन करें",
+    "openBinanceScannerButton": "Binance ऐप खोलें",
     "or": "या",
+    "qrSaveStepTitle": "अपने फोन पर QR कोड सहेजें",
+    "qrScanStepTitle": "Binance ऐप में QR कोड स्कैन करें",
+    "saveQrCodeButton": "QR कोड सहेजें",
+    "saveQrCodeSavedButton": "सहेजा गया ✓",
     "scanText": "लॉग इन के लिए अपने फोन कैमरे या Binance ऐप से स्कैन करें।",
     "title": "लॉग इन करें"
   },
@@ -709,12 +714,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>यहाँ वापस आएं</bold> जब आपने अपने Bybit मोबाइल ऐप में जमा पूरा कर लिया हो।",
         "mobileTitle": "अपने ऐप से जमा करें",
-        "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।"
+        "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।",
+        "transferProcessing": "अपने Bybit ऐप में जमा प्रक्रिया पूरी करें…"
       },
       "pay": {
         "mobileSubtitle": "<bold>यहाँ वापस आएं</bold> जब आपने अपने Bybit मोबाइल ऐप में भुगतान पूरा कर लिया हो।",
         "mobileTitle": "अपने ऐप से भुगतान करें",
-        "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।"
+        "qrPageTitle": "अपने फोन के कैमरा या Bybit ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।",
+        "transferProcessing": "अपने Bybit ऐप में भुगतान प्रक्रिया पूरी करें…"
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Cash App के साथ जारी रखें",
+      "deposit": {
+        "mobileSubtitle": "<strong>यहाँ लौटें</strong> जब आपने अपने Cash App में जमा पूरा कर लिया हो।",
+        "mobileTitle": "अपने ऐप से जमा करें",
+        "qrPageTitle": "अपने फ़ोन के कैमरा या Cash App से स्कैन करें और अपनी जमा राशि पूरी करें।",
+        "transferProcessing": "अपने Cash ऐप में जमा प्रक्रिया पूरी करें…"
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>यहाँ वापस आएँ</strong> भुगतान पूरा करने के बाद अपने Cash App में।",
+        "mobileTitle": "अपने ऐप से भुगतान करें",
+        "qrPageTitle": "अपने फ़ोन के कैमरा या Cash App से स्कैन करें और अपना भुगतान पूरा करें।",
+        "transferProcessing": "अपने Cash ऐप में भुगतान प्रक्रिया पूरी करें…"
       }
     },
     "common": {
@@ -741,12 +763,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>यहाँ लौटें</strong> जब आप अपने Crypto.com मोबाइल ऐप में जमा प्रक्रिया पूरी कर लें।",
         "mobileTitle": "अपने ऐप से जमा करें",
-        "qrPageTitle": "अपने फोन के कैमरा या Crypto.com ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।"
+        "qrPageTitle": "अपने फोन के कैमरा या Crypto.com ऐप से स्कैन करें और अपनी जमा प्रक्रिया को पूरा करें।",
+        "transferProcessing": "अपने Crypto.com ऐप में जमा प्रक्रिया पूरी करें…"
       },
       "pay": {
         "mobileSubtitle": "<strong>यहाँ लौटें</strong> जब आप अपने Crypto.com मोबाइल ऐप में भुगतान प्रक्रिया पूरी कर लें।",
         "mobileTitle": "अपने ऐप से भुगतान करें",
-        "qrPageTitle": "अपने फोन के कैमरा या Crypto.com ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।"
+        "qrPageTitle": "अपने फोन के कैमरा या Crypto.com ऐप से स्कैन करें और अपनी भुगतान प्रक्रिया को पूरा करें।",
+        "transferProcessing": "अपने Crypto.com ऐप में भुगतान प्रक्रिया पूरी करें…"
       }
     },
     "externalAppInitiation": {
@@ -1211,7 +1235,8 @@
       "onlySendTokenOnNetworkBridging": "केवल इस पते पर <1>{{token}}</1> को <3>{{network}}</3> पर भेजें। यह पता केवल एक बार के उपयोग के लिए है। किसी अन्य संपत्ति या नेटवर्क संयोजन, इस पते के पुन: उपयोग, या <5>विभिन्न पते पर संपत्ति भेजने</5> से धन का नुकसान होगा और इसे पुनः प्राप्त नहीं किया जा सकेगा। <7>न्यूनतम जमा $2 USD है।</7>",
       "onlySendTokenOnNetworkExtended": "केवल <1>{{token}}</1> को <3>{{network}}</3> नेटवर्क पर इस पते पर भेजें। किसी अन्य संपत्ति या नेटवर्क संयोजन को पुनः प्राप्त नहीं किया जा सकेगा।",
       "requiredForDeposit": "इस जमा के लिए आवश्यक है",
-      "sendAboveMinimum": "न्यूनतम राशि से अधिक भेजें: <1>{{amount}}</1>"
+      "sendAboveMinimum": "न्यूनतम राशि से अधिक भेजें: <1>{{amount}}</1>",
+      "sendBelowMaximum": "निम्नलिखित राशि से कम भेजें: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1338,6 +1363,11 @@
       "errorMessage": "एक त्रुटि हुई है। कृपया पुनः प्रयास करें",
       "purchase": "{{amount}} {{symbol}} की खरीदारी",
       "transfer": "अपनी खरीद के लिए {{symbol}} स्थानांतरण करें"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "अपने मोबाइल ऐप में भुगतान करें"
+      }
     },
     "infoScreen": {
       "rule1": "आपकी जानकारी कभी संग्रहीत नहीं की जाती। इस भुगतान के बाद पहुँच समाप्त हो जाएगी।",

@@ -40,7 +40,12 @@
     "descriptionOnRamp": "连接您的Binance后<0>返回此处继续</0>。",
     "descriptionPay": "连接您的Binance后<0>返回此处支付</0>。",
     "loginWithEmailButton": "使用邮箱/手机登录",
+    "openBinanceScannerButton": "打开币安应用程序",
     "or": "或",
+    "qrSaveStepTitle": "将二维码保存到手机",
+    "qrScanStepTitle": "在币安应用程序中扫描二维码",
+    "saveQrCodeButton": "保存二维码",
+    "saveQrCodeSavedButton": "已保存 ✓",
     "scanText": "用手机摄像头或Binance应用程序扫描以登录。",
     "title": "登录"
   },
@@ -709,12 +714,29 @@
       "deposit": {
         "mobileSubtitle": "在您的Bybit手机应用中完成充值后<bold>返回此处</bold>。",
         "mobileTitle": "从您的应用程序充值",
-        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的充值。"
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的充值。",
+        "transferProcessing": "请在您的Bybit应用中完成充值......"
       },
       "pay": {
         "mobileSubtitle": "在您的Bybit中完成支付后<bold>返回此处</bold>。",
         "mobileTitle": "用你的app支付",
-        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的支付。"
+        "qrPageTitle": "用手机相机或Bybit程序扫描以完成您的支付。",
+        "transferProcessing": "请在您的Bybit应用中完成支付……"
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "用现金应用继续操作",
+      "deposit": {
+        "mobileSubtitle": "<strong>完成现金应用中的存款后返回此处</strong>。",
+        "mobileTitle": "从应用程序充值",
+        "qrPageTitle": "用手机相机或Cash App扫描以完成您的存款。",
+        "transferProcessing": "请在您的Cash App中完成充值......"
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>在Cash App中完成付款后返回此处</strong>。",
+        "mobileTitle": "用你的app支付",
+        "qrPageTitle": "用手机相机或Cash App扫描以完成您的支付。",
+        "transferProcessing": "请在您的Cash App中完成支付……"
       }
     },
     "common": {
@@ -741,12 +763,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>在Crypto.com手机应用中完成充值后返回此处</strong>。",
         "mobileTitle": "从应用程序充值",
-        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的充值。"
+        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的充值。",
+        "transferProcessing": "请在您的Crypto.com应用中完成充值......"
       },
       "pay": {
         "mobileSubtitle": "<strong>在Crypto.com手机应用中完成支付后返回此处</strong>。",
         "mobileTitle": "用你的app支付",
-        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的支付。"
+        "qrPageTitle": "用手机相机或Crypto.com程序扫描以完成您的支付。",
+        "transferProcessing": "请在您的Crypto.com应用中完成支付……"
       }
     },
     "externalAppInitiation": {
@@ -1211,7 +1235,8 @@
       "onlySendTokenOnNetworkBridging": "仅通过<3>{{network}}</3>网络向该地址发送<1>{{token}}</1>。此地址为一次性使用地址。若向该地址发送其他资产或使用其他网络组合、或重复使用该地址<5>资产发送到不同的地址</5>, 均将导致资金丢失且无法恢复。<7>最低存款为2美元。</7>",
       "onlySendTokenOnNetworkExtended": "仅在 <3>{{network}}</3> 网络上发送 <1>{{token}}</1> 到此地址。其他资产或网络组合将无法恢复。",
       "requiredForDeposit": "此存款所需",
-      "sendAboveMinimum": "发送超过最低金额：<1>{{amount}}</1>"
+      "sendAboveMinimum": "发送超过最低金额：<1>{{amount}}</1>",
+      "sendBelowMaximum": "发送低于最大金额：<1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1338,6 +1363,11 @@
       "errorMessage": "发生错误。请再试一次",
       "purchase": "购买{{amount}} {{symbol}}",
       "transfer": "请转入{{symbol}}以完成购买"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "在您的移动应用中支付"
+      }
     },
     "infoScreen": {
       "rule1": "您的信息不会被存储。支付完成后将终止访问。",

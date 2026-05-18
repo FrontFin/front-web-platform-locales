@@ -40,7 +40,12 @@
     "descriptionOnRamp": "<0>Revenez ici pour continuer</0> après avoir connecté avec votre application mobile Binance.",
     "descriptionPay": "<0>Revenez ici pour payer</0> après avoir connecté avec votre application mobile Binance.",
     "loginWithEmailButton": "Se connecter avec Email/Téléphone",
+    "openBinanceScannerButton": "Ouvrir l'application Binance",
     "or": "ou",
+    "qrSaveStepTitle": "Enregistrer le code QR sur votre téléphone",
+    "qrScanStepTitle": "Scanner le code QR dans l'application Binance",
+    "saveQrCodeButton": "Enregistrer le code QR",
+    "saveQrCodeSavedButton": "Sauvegardé ✓",
     "scanText": "Scannez avec la caméra de votre téléphone ou l'application Binance pour vous connecter.",
     "title": "Se connecter"
   },
@@ -711,12 +716,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Retournez ici</bold> après avoir complété le dépôt dans votre application mobile Bybit.",
         "mobileTitle": "Dépôt depuis votre application",
-        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre dépôt."
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre dépôt.",
+        "transferProcessing": "Complétez le dépôt dans votre application Bybit..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Retournez ici</bold> après avoir complété le paiement dans votre application mobile Bybit.",
         "mobileTitle": "Payer depuis votre application",
-        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre paiement."
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Bybit pour terminer votre paiement.",
+        "transferProcessing": "Complétez le paiement dans votre application Bybit..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Continuer avec l'application Cash",
+      "deposit": {
+        "mobileSubtitle": "<strong>Retournez ici</strong> après avoir complété le dépôt dans votre application Cash.",
+        "mobileTitle": "Dépôt depuis votre application",
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Cash App pour terminer votre dépôt.",
+        "transferProcessing": "Complétez le dépôt dans votre Cash App..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Retournez ici</strong> après avoir complété le paiement dans votre Cash App.",
+        "mobileTitle": "Payer depuis votre application",
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Cash App pour terminer votre paiement.",
+        "transferProcessing": "Complétez le paiement dans votre Cash App..."
       }
     },
     "common": {
@@ -743,12 +765,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Revenez ici</strong> après avoir terminé le dépôt dans votre application mobile Crypto.com.",
         "mobileTitle": "Dépôt depuis votre application",
-        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre dépôt."
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre dépôt.",
+        "transferProcessing": "Complétez le dépôt dans votre application Crypto.com..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Revenez ici</strong> après avoir terminé le paiement dans votre application mobile Crypto.com.",
         "mobileTitle": "Payer depuis votre application",
-        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre paiement."
+        "qrPageTitle": "Scannez avec l'appareil photo de votre téléphone ou l'application Crypto.com pour terminer votre paiement.",
+        "transferProcessing": "Complétez le paiement dans votre application Crypto.com..."
       }
     },
     "externalAppInitiation": {
@@ -1213,7 +1237,8 @@
       "onlySendTokenOnNetworkBridging": "Envoyez uniquement <1>{{token}}</1> sur <3>{{network}}</3> à cette adresse. Cette adresse est à usage unique. Toute autre combinaison d'actifs ou de réseaux, la réutilisation de cette adresse, ou <5>l'envoi d'actifs à une adresse différente</5>, entraînera une perte de fonds et sera irrécupérable. <7>Le dépôt minimum est de 2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "N'envoyez que <1>{{token}}</1> sur le réseau <3>{{network}}</3> à cette adresse. Toute autre combinaison d'actifs ou de réseau sera irrécupérable.",
       "requiredForDeposit": "Requis pour ce dépôt",
-      "sendAboveMinimum": "Envoyez au-dessus du montant minimum : <1>{{amount}}</1>"
+      "sendAboveMinimum": "Envoyez au-dessus du montant minimum : <1>{{amount}}</1>",
+      "sendBelowMaximum": "Envoyez en dessous du montant maximum : <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1340,6 +1365,11 @@
       "errorMessage": "Une erreur s'est produite. Veuillez réessayer",
       "purchase": "Achat de {{amount}} {{symbol}}",
       "transfer": "Transférez {{symbol}} pour votre achat"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Payez dans votre application mobile"
+      }
     },
     "infoScreen": {
       "rule1": "Vos informations ne sont jamais stockées. L'accès se terminera après ce paiement.",
