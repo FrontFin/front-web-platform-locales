@@ -40,12 +40,12 @@
     "descriptionOnRamp": "<0>Palaa tänne jatkamaan</0> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
     "descriptionPay": "<0>Palaa tänne maksamaan</0> yhteyden muodostamisen jälkeen Binance-mobiilisovelluksellasi.",
     "loginWithEmailButton": "Kirjaudu sisään sähköpostilla/puhelimella",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "Avaa Binance -sovellus",
     "or": "tai",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "Tallenna QR-koodi puhelimeesi",
+    "qrScanStepTitle": "Skannaa QR-koodi Binance-sovelluksessa",
+    "saveQrCodeButton": "Tallenna QR-koodi",
+    "saveQrCodeSavedButton": "Tallennettu ✓",
     "scanText": "Skannaa puhelimesi kameralla tai Binance-sovelluksella kirjautuaksesi sisään.",
     "title": "Sisäänkirjautuminen"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "Tämä tili on poistettu käytöstä.",
     "accountLocked": "Tämä tili on lukittu.",
     "accountNotFound": "Tiläsi/tilejäsi ei voida hakea.",
-    "accountRestricted": "",
+    "accountRestricted": "Tämä tili on rajoitettu.",
     "addressAllowlistPending": "Tämä vastaanottajan osoite on lisätty sallittujen listalle ja odottaa käsittelyä.",
     "addressNotAllowlisted": "Nostoa Coinbasesta ei voida aloittaa. Sinun tulee lisätä tämä vastaanottajan osoite sallittujen listalle täällä: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Pyydetty summa on alle verkon minimisiirtosumman.",
@@ -715,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi talletuksen Bybit mobiilisovelluksessa.",
         "mobileTitle": "Talleta sovelluksestasi",
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi talletuksesi."
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi talletuksesi.",
+        "transferProcessing": "Viimeistele talletus Bybit-sovelluksessasi..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Palaa tänne</bold> suoritettuasi maksun Bybit mobiilisovelluksessa.",
         "mobileTitle": "Maksa sovelluksestasi",
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi maksusi."
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Bybit-sovelluksella viimeistelläksesi maksusi.",
+        "transferProcessing": "Viimeistele maksu Bybit-sovelluksessasi..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Jatka Cash-sovelluksessa",
+      "deposit": {
+        "mobileSubtitle": "<strong>Palaa tänne</strong> suoritettuasi talletuksen Cash-sovelluksessasi.",
+        "mobileTitle": "Talleta sovelluksestasi",
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Cash App -sovelluksella viimeistelläksesi talletuksen.",
+        "transferProcessing": "Viimeistele talletus Cash App -sovelluksessasi..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Palaa tänne</strong> suoritettuasi maksun Cash App -sovelluksessa.",
+        "mobileTitle": "Maksa sovelluksestasi",
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Cash App -sovelluksella viimeistelläksesi maksun.",
+        "transferProcessing": "Viimeistele maksu Cash App -sovelluksessasi..."
       }
     },
     "common": {
@@ -747,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Palaa tänne</strong> suoritettuasi talletuksen Crypto.com-mobiilisovelluksessasi.",
         "mobileTitle": "Talleta sovelluksestasi",
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi talletuksesi."
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi talletuksesi.",
+        "transferProcessing": "Viimeistele talletus Crypto.com-sovelluksessasi..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Palaa tänne</strong> maksettuasi Crypto.com-mobiilisovelluksessasi.",
         "mobileTitle": "Maksa sovelluksestasi",
-        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi maksusi."
+        "qrPageTitle": "Skannaa puhelimesi kameralla tai Crypto.com-sovelluksella viimeistelläksesi maksusi.",
+        "transferProcessing": "Viimeistele maksu Crypto.com-sovelluksessasi..."
       }
     },
     "externalAppInitiation": {
@@ -1179,6 +1198,8 @@
       "includeInTransaction": "Sisällytä siirtoon {{tagLabel}} talletuksen yhteydessä",
       "includeInTransactionWithMemo": "Sisällytä siirtomuistio talletukseen",
       "includeInTransactionWithTag": "Sisällytä siirtotunniste talletukseen",
+      "maximumDeposit": "Suurin talletus: {{amount}} (mikä tahansa suurempi voi johtaa varojen menettämiseen)",
+      "minimumDeposit": "Pienin talletus: {{amount}} (mikä tahansa pienempi voi johtaa varojen menettämiseen)",
       "sendOnlyTokenOnNetwork": "Lähetä vain {{token}} verkossa {{network}}",
       "title": "Vaatimukset",
       "warningText": "Varmista, että kaikki vaatimukset täyttyvät tai varasi voivat kadota pysyvästi."
@@ -1217,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkossa tähän osoitteeseen. Tämä osoite on kertakäyttöinen. Mikä tahansa muu varojen tai verkon yhdistelmä, tämän osoitteen jälleenkäyttö tai <5>varojen lähettäminen toiseen osoitteeseen</5> johtaa varojen menetykseen, jota ei voida palauttaa. <7>Vähimmäistalletus on 2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Lähetä vain <1>{{token}}</1> <3>{{network}}</3>-verkkoon tähän osoitteeseen. Muut omaisuus tai verkkoyhdistelmät ovat palautumattomia.",
       "requiredForDeposit": "Tarvitaan tätä talletusta varten",
-      "sendAboveMinimum": "Lähetä yli minimimäärän: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Lähetä yli minimimäärän: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Lähetä alle maksimimäärän: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1344,6 +1366,14 @@
       "errorMessage": "Tapahtui virhe. Yritä uudestaan",
       "purchase": "{{amount}} {{symbol}} osto",
       "transfer": "Siirrä {{symbol}} ostostasi varten"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Maksa mobiilisovelluksellasi"
+      },
+      "qrCodePage": {
+        "title": "Skannaa puhelimesi kamera-appilla jatkaaksesi"
+      }
     },
     "infoScreen": {
       "rule1": "Tietojasi ei koskaan tallenneta. Käyttöoikeus päättyy tämän maksun jälkeen.",
