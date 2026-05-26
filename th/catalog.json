@@ -40,12 +40,12 @@
     "descriptionOnRamp": "<0>กลับมาที่นี่เพื่อดำเนินการต่อ</0> หลังจากเชื่อมต่อกับแอปมือถือ Binance ของคุณ",
     "descriptionPay": "<0>กลับมาที่นี่เพื่อชำระเงิน<0> หลังจากเชื่อมต่อกับแอปมือถือ Binance ของคุณ",
     "loginWithEmailButton": "เข้าสู่ระบบด้วยอีเมล/โทรศัพท์",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "เปิดแอป Binance",
     "or": "หรือ",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "บันทึกรหัส QR ลงในโทรศัพท์ของคุณ",
+    "qrScanStepTitle": "สแกนรหัส QR ในแอป Binance",
+    "saveQrCodeButton": "บันทึกรหัส QR",
+    "saveQrCodeSavedButton": "บันทึก ✓",
     "scanText": "สแกนด้วยกล้องโทรศัพท์หรือแอป Binance เพื่อเข้าสู่ระบบ",
     "title": "เข้าสู่ระบบ"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "บัญชีนี้ถูกปิดใช้งาน",
     "accountLocked": "บัญชีนี้ถูกล็อกแล้ว",
     "accountNotFound": "ไม่สามารถดึงบัญชีของคุณได้",
-    "accountRestricted": "",
+    "accountRestricted": "บัญชีนี้ถูกจำกัดการใช้งาน.",
     "addressAllowlistPending": "เพิ่มที่อยู่นี้ในบัญชีอนุญาตแล้วและกำลังรอการถือครอง.",
     "addressNotAllowlisted": "ไม่สามารถเริ่มการถอนจาก Coinbase. คุณต้องเพิ่มที่อยู่ผู้รับนี้ลงบัญชีอนุญาต: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "จำนวนเงินที่ร้องขอต่ำกว่าจำนวนเงินโอนขั้นต่ำที่อนุญาตในเครือข่ายนี้",
@@ -715,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>กลับมาที่นี่</bold> หลังจากทำการฝากเงินใน Bybit แอพมือถือของคุณเสร็จสมบูรณ์",
         "mobileTitle": "ฝากจากแอปของคุณ",
-        "qrPageTitle": "ใช้กล้องโทรศัพท์หรือแอป Bybit เพื่อสแกนเพื่อสิ้นสุดการฝากเงิน"
+        "qrPageTitle": "ใช้กล้องโทรศัพท์หรือแอป Bybit เพื่อสแกนเพื่อสิ้นสุดการฝากเงิน",
+        "transferProcessing": "เสร็จสิ้นการฝากเงินในแอป Bybit ของคุณ..."
       },
       "pay": {
         "mobileSubtitle": "<bold>กลับมาที่นี่</bold> หลังจากดำเนินการชำระเงินใน Bybit แอพมือถือของคุณเสร็จสมบูรณ์",
         "mobileTitle": "ชำระเงินจากแอปของคุณ",
-        "qrPageTitle": "ใช้กล้องโทรศัพท์หรือแอป Bybit เพื่อสแกนเพื่อสิ้นสุดการชำระเงิน"
+        "qrPageTitle": "ใช้กล้องโทรศัพท์หรือแอป Bybit เพื่อสแกนเพื่อสิ้นสุดการชำระเงิน",
+        "transferProcessing": "เสร็จสิ้นการชำระเงินในแอป Bybit ของคุณ..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "ดำเนินการต่อด้วยแอป Cash",
+      "deposit": {
+        "mobileSubtitle": "<strong>กลับมาที่นี่</strong> หลังจากเสร็จสิ้นการฝากเงินในแอป Cash ของคุณ",
+        "mobileTitle": "ฝากเงินจากแอปของคุณ",
+        "qrPageTitle": "สแกนด้วยกล้องโทรศัพท์หรือแอป Cash เพื่อเสร็จสิ้นการฝากเงินของคุณ",
+        "transferProcessing": "เสร็จสิ้นการฝากเงินในแอป Cash ของคุณ..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>กลับมาที่นี่</strong> หลังจากทำการชำระเงินในแอป Cash ประสบความสำเร็จ",
+        "mobileTitle": "จ่ายจากแอปของคุณ",
+        "qrPageTitle": "สแกนด้วยกล้องโทรศัพท์หรือแอป Cash เพื่อเสร็จสิ้นการชำระเงินของคุณ",
+        "transferProcessing": "เสร็จสิ้นการชำระเงินในแอป Cash ของคุณ..."
       }
     },
     "common": {
@@ -747,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>กลับมาที่นี่</strong> หลังจากที่ทำรายการฝากในแอปบนมือถือของคุณใน Crypto.com เสร็จแล้ว",
         "mobileTitle": "ฝากเงินจากแอปของคุณ",
-        "qrPageTitle": "สแกนด้วยกล้องโทรศัพท์มือถือของคุณหรือแอป Crypto.com เพื่อดำเนินการฝากเงินของคุณให้เสร็จสมบูรณ์."
+        "qrPageTitle": "สแกนด้วยกล้องโทรศัพท์มือถือของคุณหรือแอป Crypto.com เพื่อดำเนินการฝากเงินของคุณให้เสร็จสมบูรณ์.",
+        "transferProcessing": "เสร็จสิ้นการฝากเงินในแอป Crypto.com ของคุณ..."
       },
       "pay": {
         "mobileSubtitle": "<strong>กลับมาที่นี่</strong> หลังจากที่ทำการชำระเงินในแอปบนมือถือของคุณใน Crypto.com เสร็จแล้ว",
         "mobileTitle": "จ่ายจากแอปของคุณ",
-        "qrPageTitle": "สแกนด้วยกล้องโทรศัพท์มือถือของคุณหรือแอป Crypto.com เพื่อดำเนินการชำระเงินของคุณให้เสร็จสมบูรณ์."
+        "qrPageTitle": "สแกนด้วยกล้องโทรศัพท์มือถือของคุณหรือแอป Crypto.com เพื่อดำเนินการชำระเงินของคุณให้เสร็จสมบูรณ์.",
+        "transferProcessing": "เสร็จสิ้นการชำระเงินในแอป Crypto.com ของคุณ..."
       }
     },
     "externalAppInitiation": {
@@ -1179,6 +1198,8 @@
       "includeInTransaction": "รวมป้ายกำกับการโอน {{tagLabel}} กับการฝากเงิน",
       "includeInTransactionWithMemo": "รวมบันทึกการโอนกับการฝาก",
       "includeInTransactionWithTag": "รวมป้ายกำกับการโอนกับการฝาก",
+      "maximumDeposit": "เงินฝากสูงสุด: {{amount}} (เงินฝากเกินอาจสูญหาย)",
+      "minimumDeposit": "เงินฝากขั้นต่ำ: {{amount}} (เงินฝากน้อยอาจสูญหาย)",
       "sendOnlyTokenOnNetwork": "ส่งเฉพาะ {{token}} บน {{network}}",
       "title": "ข้อกำหนด",
       "warningText": "ตรวจสอบให้แน่ใจว่าข้อกำหนดทั้งหมดได้รับการปฏิบัติ มิฉะนั้นเงินทุนของคุณอาจสูญหายถาวร"
@@ -1217,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "ส่งเฉพาะ <1>{{token}}</1> ในเครือข่าย <3>{{network}}</3> มายังที่อยู่นี้ ที่อยู่นี้ใช้ครั้งเดียว การรวมสินทรัพย์หรือเครือข่ายอื่น , การใช้ซ้ำของที่อยู่นี้ หรือ <5>การส่งทรัพย์สินไปยังที่อยู่อื่น</5>, จะส่งผลให้สูญเสียเงินและไม่สามารถกู้คืนได้ <7>การฝากขั้นต่ำคือ $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "ส่งเฉพาะ <1>{{token}}</1> ในเครือข่าย <3>{{network}}</3> มายังที่อยู่นี้ การรวมสินทรัพย์หรือเครือข่ายอื่นจะไม่สามารถกู้คืนได้",
       "requiredForDeposit": "จำเป็นสำหรับการฝากนี้",
-      "sendAboveMinimum": "ส่งมากกว่าจำนวนขั้นต่ำ: <1>{{amount}}</1>"
+      "sendAboveMinimum": "ส่งมากกว่าจำนวนขั้นต่ำ: <1>{{amount}}</1>",
+      "sendBelowMaximum": "ส่งต่ำกว่าจำนวนเงินสูงสุด: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1344,6 +1366,14 @@
       "errorMessage": "เกิดข้อผิดพลาด โปรดลองอีกครั้ง",
       "purchase": "การซื้อ{{amount}} {{symbol}}",
       "transfer": "โอน{{symbol}}สำหรับการซื้อของคุณ"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "ชำระเงินในแอปพลิเคชันมือถือของคุณ"
+      },
+      "qrCodePage": {
+        "title": "สแกนด้วยกล้องโทรศัพท์ของคุณเพื่อดำเนินการต่อ"
+      }
     },
     "infoScreen": {
       "rule1": "ข้อมูลของคุณจะไม่ถูกบันทึก การเข้าถึงจะสิ้นสุดหลังจากการชำระเงินนี้เสร็จสิ้น",
