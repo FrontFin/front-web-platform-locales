@@ -40,12 +40,12 @@
     "descriptionOnRamp": "<0>Kehre hierher zurück, um fortzufahren</0>, nachdem du dich mit deiner Binance-App verbunden hast.",
     "descriptionPay": "<0>Kehre hierher zurück, um zu bezahlen</0>, nachdem du dich mit deiner Binance-App verbunden hast.",
     "loginWithEmailButton": "Anmeldung mit E-Mail/Telefon",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "Binance-App öffnen",
     "or": "oder",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "QR-Code auf Ihrem Telefon speichern",
+    "qrScanStepTitle": "QR-Code in der Binance-App scannen",
+    "saveQrCodeButton": "QR-Code speichern",
+    "saveQrCodeSavedButton": "Gespeichert ✓",
     "scanText": "Scanne mit der Telefonkamera oder der Binance-App, um dich anzumelden.",
     "title": "Anmelden"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "Dieses Konto wurde deaktiviert.",
     "accountLocked": "Dieses Konto wurde gesperrt.",
     "accountNotFound": "Deine Konten können nicht abgerufen werden.",
-    "accountRestricted": "",
+    "accountRestricted": "Dieses Konto wurde eingeschränkt.",
     "addressAllowlistPending": "Diese Empfängeradresse wurde zu deiner Whitelist hinzugefügt und wartet auf eine Genehmigung.",
     "addressNotAllowlisted": "Abhebung von Coinbase konnte nicht eingeleitet werden. Du musst diese Empfängeradresse hier zu deiner Whitelist hinzufügen: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Angeforderter Betrag liegt unter dem minimal zulässigen Überweisungsbetrag in diesem Netzwerk.",
@@ -715,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Einzahlung in deiner Bybit-App abgeschlossen hast.",
         "mobileTitle": "Von deiner App einzahlen",
-        "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Einzahlung abzuschließen."
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Einzahlung abzuschließen.",
+        "transferProcessing": "Schließe die Einzahlung in deiner Bybit-App ab ..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Kehre hierher zurück</bold>, nachdem du die Zahlung in deiner Bybit-App abgeschlossen hast.",
         "mobileTitle": "Zahle über deine App",
-        "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Zahlung abzuschließen."
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Bybit-App, um deine Zahlung abzuschließen.",
+        "transferProcessing": "Schließe die Zahlung in deiner Bybit-App ab ..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Weiter mit der Cash-App",
+      "deposit": {
+        "mobileSubtitle": "<strong>Kehre hierher zurück</strong>, nachdem du die Einzahlung in deiner Cash-App abgeschlossen hast.",
+        "mobileTitle": "Von deiner App einzahlen",
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Cash App, um deine Einzahlung abzuschließen.",
+        "transferProcessing": "Schließe die Einzahlung in deiner Cash-App ab ..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Kehre hierher zurück</strong>, nachdem du die Zahlung in deiner Cash App abgeschlossen hast.",
+        "mobileTitle": "Zahle über deine App",
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Cash App, um deine Zahlung abzuschließen.",
+        "transferProcessing": "Schließe die Zahlung in deiner Cash-App ab ..."
       }
     },
     "common": {
@@ -747,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Kehren Sie hierher zurück</strong>, nachdem Sie die Einzahlung in Ihrer Crypto.com-Mobile-App abgeschlossen haben.",
         "mobileTitle": "Von deiner App einzahlen",
-        "qrPageTitle": "Scanne mit deiner Handykamera oder der Crypto.com-App, um deine Einzahlung abzuschließen."
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Crypto.com-App, um deine Einzahlung abzuschließen.",
+        "transferProcessing": "Schließe die Einzahlung in deiner Crypto.com-App ab ..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Kehren Sie hierher zurück</strong>, nachdem Sie die Zahlung in Ihrer Crypto.com-Mobile-App abgeschlossen haben.",
         "mobileTitle": "Zahle über deine App",
-        "qrPageTitle": "Scanne mit deiner Handykamera oder der Crypto.com-App, um deine Zahlung abzuschließen."
+        "qrPageTitle": "Scanne mit deiner Handykamera oder der Crypto.com-App, um deine Zahlung abzuschließen.",
+        "transferProcessing": "Schließe die Zahlung in deiner Crypto.com-App ab ..."
       }
     },
     "externalAppInitiation": {
@@ -1179,6 +1198,8 @@
       "includeInTransaction": "Transfer {{tagLabel}} bei Einzahlung einfügen",
       "includeInTransactionWithMemo": "Überweisungsnotiz mit Einzahlung einfügen",
       "includeInTransactionWithTag": "Überweisungstag mit Einzahlung einfügen",
+      "maximumDeposit": "Maximale Einzahlung: {{amount}} (alles darüber kann zu Verlusten führen)",
+      "minimumDeposit": "Minimale Einzahlung: {{amount}} (alles darunter kann zu Verlusten führen)",
       "sendOnlyTokenOnNetwork": "Senden Sie nur {{token}} auf {{network}}",
       "title": "Anforderungen",
       "warningText": "Stellen Sie sicher, dass alle Anforderungen erfüllt sind oder Ihre Gelder dauerhaft verloren gehen können."
@@ -1217,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "Senden Sie nur <1>{{token}}</1> im <3>{{network}}</3> Netzwerk an diese Adresse. Diese Adresse ist zur einmaligen Verwendung. Jegliche andere Kombination aus Asset oder Netzwerk, die Wiederverwendung dieser Adresse oder <5>das Senden von Assets an eine andere Adresse</5> wird zum Verlust von Mitteln führen und ist nicht wiederherstellbar. <7>Die Mindesteinzahlung beträgt 2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Senden Sie nur <1>{{token}}</1> im Netzwerk <3>{{network}}</3> zu dieser Adresse. Jede andere Kombination aus Asset oder Netzwerk ist nicht wiederherstellbar.",
       "requiredForDeposit": "Für diese Einzahlung erforderlich",
-      "sendAboveMinimum": "Sende über den Mindestbetrag: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Sende über den Mindestbetrag: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Sende unter dem Höchstbetrag: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1344,6 +1366,14 @@
       "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuche es erneut",
       "purchase": "Kauf von {{amount}} {{symbol}}",
       "transfer": "Überweise {{symbol}} für Deinen Kauf"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "In deiner mobilen App bezahlen"
+      },
+      "qrCodePage": {
+        "title": "Scanne mit der Kamera-App deines Telefons, um fortzufahren"
+      }
     },
     "infoScreen": {
       "rule1": "Deine Daten werden nie gespeichert. Der Zugriff endet nach dieser Zahlung.",
