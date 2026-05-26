@@ -40,12 +40,12 @@
     "descriptionOnRamp": "Binance mobil uygulamanızla bağlantı kurduktan sonra <0> devam etmek için buraya geri dönün</0>.",
     "descriptionPay": "Binance mobil uygulamanızla bağlantı kurduktan sonra <0> ödeme yapmak için buraya geri dönün</0>.",
     "loginWithEmailButton": "E-posta/Telefon ile giriş yap",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "Binance uygulamasını aç",
     "or": "ya da",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "QR kodu telefonunuza kaydedin",
+    "qrScanStepTitle": "Binance uygulamasında QR kodunu tarayın",
+    "saveQrCodeButton": "QR kodunu kaydedin",
+    "saveQrCodeSavedButton": "Kaydedildi ✓",
     "scanText": "Giriş yapmak için telefonunuzun kamerasıyla veya Binance uygulamanızla tarayın.",
     "title": "Giriş yap"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "Bu hesap devre dışı bırakıldı.",
     "accountLocked": "Bu hesap kilitlendi.",
     "accountNotFound": "Hesabınızı alamadık.",
-    "accountRestricted": "",
+    "accountRestricted": "Bu hesap kısıtlandı.",
     "addressAllowlistPending": "Bu alıcı adresiniz İzin Listenize eklendi ve işlem bekliyor.",
     "addressNotAllowlisted": "Coinbase üzerinden çekim yapılamıyor. Bu alıcı adresini buraya İzin Listesine eklemelisiniz: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Talep edilen miktar, bu ağdaki minimum transfer limitinin altında.",
@@ -715,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Depozitonuzu tamamladıktan sonra</bold> Bybit mobil uygulamanızda buraya geri dönün.",
         "mobileTitle": "Uygulamanızdan para yatırın",
-        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın.",
+        "transferProcessing": "Bybit uygulamanızda yatırma işlemini tamamlayın..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Ödemenizi tamamladıktan sonra</bold> Bybit mobil uygulamanızda buraya geri dönün.",
         "mobileTitle": "Uygulamanızdan ödeme yapın",
-        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın."
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Bybit uygulamasıyla tarayın.",
+        "transferProcessing": "Bybit uygulamanızda ödeme işlemini tamamlayın..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Cash App ile devam et",
+      "deposit": {
+        "mobileSubtitle": "<strong>Transferi tamamladıktan sonra buraya geri dönün</strong>.",
+        "mobileTitle": "Uygulamanızdan para yatırın",
+        "qrPageTitle": "Para yatırma işleminizi tamamlamak için telefonunuzun kamerası veya Cash App ile tarayın.",
+        "transferProcessing": "Cash App'te yatırma işlemini tamamlayın..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Ödemeyi tamamladıktan sonra</strong> buraya geri dönün.",
+        "mobileTitle": "Uygulamanızdan ödeme yapın",
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerası veya Cash App ile tarayın.",
+        "transferProcessing": "Cash App'te ödeme işlemini tamamlayın..."
       }
     },
     "common": {
@@ -747,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Buraya geri dön</strong> Crypto.com mobil uygulamanızda para yatırma işlemini tamamladıktan sonra.",
         "mobileTitle": "Uygulamanızdan para yatırın",
-        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
+        "qrPageTitle": "Yatırma işleminizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın.",
+        "transferProcessing": "Crypto.com uygulamanızda yatırma işlemini tamamlayın..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Buraya geri dön</strong> Crypto.com mobil uygulamanızda ödemenizi tamamladıktan sonra.",
         "mobileTitle": "Uygulamanızdan ödeme yapın",
-        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın."
+        "qrPageTitle": "Ödemenizi tamamlamak için telefonunuzun kamerasıyla veya Crypto.com uygulamasıyla tarayın.",
+        "transferProcessing": "Crypto.com uygulamanızda ödeme işlemini tamamlayın..."
       }
     },
     "externalAppInitiation": {
@@ -1179,6 +1198,8 @@
       "includeInTransaction": "Transfer ile birlikte {{tagLabel}}'i dahil edin",
       "includeInTransactionWithMemo": "Transfer notunu para yatırma ile ekleyin.",
       "includeInTransactionWithTag": "Transfer etiketini para yatırma ile ekleyin.",
+      "maximumDeposit": "Maksimum para yatırma: {{amount}} (daha fazlası fişin kaybolmasına neden olabilir)",
+      "minimumDeposit": "Minimum para yatırma: {{amount}} (daha azı fişin kaybolmasına neden olabilir)",
       "sendOnlyTokenOnNetwork": "Sadece {{token}} {{network}} üzerinde gönderin",
       "title": "Gereksinimler",
       "warningText": "Tüm gereksinimlerin karşılandığından emin olun, aksi takdirde fonlarınız kalıcı olarak kaybolabilir."
@@ -1217,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "Yalnızca <1>{{token}}</1>'i <3>{{network}}</3> ağı üzerinden bu adrese gönderebilirsiniz. Bu adres tek kullanımlıktır. Herhangi bir başka varlık veya ağ kombinasyonu, bu adresin yeniden kullanımı veya <5>varlıkların farklı bir adrese gönderilmesi</5>, fonların kaybına ve geri alınamaz duruma gelmesine neden olacaktır. <7>Minimum depozito 2 ABD dolaridir.</7>",
       "onlySendTokenOnNetworkExtended": "<1>{{token}}</1> yalnızca <3>{{network}}</3> ağı üzerinde bu adrese gönderin. Herhangi bir başka varlık veya ağ kombinasyonu kurtarılamaz.",
       "requiredForDeposit": "Bu para yatırmak için gerekli",
-      "sendAboveMinimum": "Minimum tutarın üzerinde gönder: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Minimum tutarın üzerinde gönder: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Maksimum tutarın altında gönder: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1344,6 +1366,14 @@
       "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin",
       "purchase": "{{amount}} {{symbol}} satın alımı",
       "transfer": "Satın alımınız için {{symbol}} transferini yapın"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Mobil uygulamanızdan ödeme yapın"
+      },
+      "qrCodePage": {
+        "title": "Devam etmek için telefonunuzun kamera uygulaması ile tarayın"
+      }
     },
     "infoScreen": {
       "rule1": "Bilgileriniz asla saklanmaz. Bu işlemden sonra erişim sona erecektir.",
