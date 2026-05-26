@@ -40,12 +40,12 @@
     "descriptionOnRamp": "<0>Поверніться сюди, щоб продовжити</0> після підключення з вашим мобільним додатком Binance.",
     "descriptionPay": "<0>Поверніться сюди, щоб оплатити</0> після підключення з вашим мобільним додатком Binance.",
     "loginWithEmailButton": "Увійти за допомогою електронної адреси/телефону",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "Відкрити Binance додаток",
     "or": "або",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "Зберегти QR-код на телефон",
+    "qrScanStepTitle": "Сканувати QR-код у додатку Binance",
+    "saveQrCodeButton": "Зберегти QR-код",
+    "saveQrCodeSavedButton": "Збережено ✓",
     "scanText": "Скануйте телефоном або за допомогою додатка Binance для входу.",
     "title": "Увійти"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "Цей акаунт був вимкнений.",
     "accountLocked": "Цей акаунт було заблоковано.",
     "accountNotFound": "Неможливо отримати ваш аккаунт(и).",
-    "accountRestricted": "",
+    "accountRestricted": "Цей обліковий запис було обмежено.",
     "addressAllowlistPending": "Ця адреса отримувача була додана до вашого білого списку і очікує затримку.",
     "addressNotAllowlisted": "Не вдалося розпочати зняття з Coinbase. Ви повинні додати цю адресу отримувача до свого білого списку тут: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Запитана сума менша мінімально допустимої суми переказу в цій мережі.",
@@ -419,8 +419,6 @@
     "incorrect2faCode": "Невірний код 2FA.",
     "incorrectEmail": "Ви ввели неправильний електронний адрес.",
     "incorrectPasswordChancesRemaining_one": "Неправильний пароль. У вас {{count}} спроба залишилась.",
-    "incorrectPasswordChancesRemaining_few": "",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Неправильний пароль. У вас залишилось {{count}} спроб.",
     "incorrectUsernameOrPassword": "Неправильне ім'я користувача або пароль.",
     "integrationNotAvailable": "Інтеграція наразі недоступна.",
@@ -576,8 +574,6 @@
     "paymentMethodDepositUsage": "Пов'язаний платіжний метод",
     "stablecoinConversion": "Конверсія стейблкоїнів",
     "withAdditional_one": "{{mainOption}} + {{count}} інший",
-    "withAdditional_few": "",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} інші"
   },
   "fundingOptionUnavailabilityReason": {
@@ -719,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Поверніться сюди</bold> після завершення депозиту в мобільному додатку Bybit.",
         "mobileTitle": "Депозит з вашого додатку",
-        "qrPageTitle": "Скануйте з камерою телефону або програмою Bybit, щоб завершити депозит."
+        "qrPageTitle": "Скануйте з камерою телефону або програмою Bybit, щоб завершити депозит.",
+        "transferProcessing": "Завершіть внесок у\nвашому додатку Bybit..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Поверніться сюди</bold> після завершення оплати в мобільному додатку Bybit.",
         "mobileTitle": "Оплатити з вашого додатку",
-        "qrPageTitle": "Скануйте з камерою телефону або програмою Bybit, щоб завершити оплату."
+        "qrPageTitle": "Скануйте з камерою телефону або програмою Bybit, щоб завершити оплату.",
+        "transferProcessing": "Завершіть оплату у\nвашому додатку Bybit..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Продовжити з Cash App",
+      "deposit": {
+        "mobileSubtitle": "<strong>Поверніться сюди</strong> після завершення внесення коштів у вашій Cash App.",
+        "mobileTitle": "Депозит з вашого додатку",
+        "qrPageTitle": "Скануйте за допомогою камери телефону або Cash App, щоб завершити ваш депозит.",
+        "transferProcessing": "Завершіть внесок у\nвашому додатку Cash App..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Поверніться сюди</strong> після завершення платежу в Cash App.",
+        "mobileTitle": "Оплатіть зі свого додатку",
+        "qrPageTitle": "Скануйте за допомогою камери телефону або Cash App, щоб завершити ваш платіж.",
+        "transferProcessing": "Завершіть оплату у\nвашому додатку Cash App..."
       }
     },
     "common": {
@@ -751,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Поверніться сюди</strong> після завершення депозиту у вашій мобільній програмі Crypto.com.",
         "mobileTitle": "Депозит з вашого додатку",
-        "qrPageTitle": "Скануйте з камерою телефону або програмою Crypto.com, щоб завершити депозит."
+        "qrPageTitle": "Скануйте з камерою телефону або програмою Crypto.com, щоб завершити депозит.",
+        "transferProcessing": "Завершіть внесок у\nвашому додатку Crypto.com..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Поверніться сюди</strong> після завершення оплати у вашій мобільній програмі Crypto.com.",
         "mobileTitle": "Оплатіть зі свого додатку",
-        "qrPageTitle": "Скануйте з камерою телефону або програмою Crypto.com, щоб завершити оплату."
+        "qrPageTitle": "Скануйте з камерою телефону або програмою Crypto.com, щоб завершити оплату.",
+        "transferProcessing": "Завершіть оплату у\nвашому додатку Crypto.com..."
       }
     },
     "externalAppInitiation": {
@@ -1183,6 +1198,8 @@
       "includeInTransaction": "Включіть переказ {{tagLabel}} з депозитом",
       "includeInTransactionWithMemo": "Включіть примітку при здійсненні депозита",
       "includeInTransactionWithTag": "Включіть тег при здійсненні депозита",
+      "maximumDeposit": "Максимальний депозит: {{amount}} (будь-яка сума більше може призвести до втрати коштів)",
+      "minimumDeposit": "Мінімальний депозит: {{amount}} (будь-яка сума менше може призвести до втрати коштів)",
       "sendOnlyTokenOnNetwork": "Відправляйте тільки {{token}} в {{network}}",
       "title": "Вимоги",
       "warningText": "Переконайтесь, що всі вимоги виконані, інакше ваші кошти можуть бути безповоротно втрачені."
@@ -1221,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "Надсилайте лише <1>{{token}}</1> на <3>{{network}}</3> на цю адресу. Ця адреса є одноразового використання. Будь-яка інша комбінація активів або мережі, повторне використання цієї адреси або <5>відправка активів на іншу адресу</5> призведе до втрати коштів і буде невідновлюваною. <7>Мінімальний депозит становить 2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Надсилайте лише <1>{{token}}</1> у мережі <3>{{network}}</3> на цю адресу. Інша комбінація активів або мережі буде невідновлювана.",
       "requiredForDeposit": "Потрібно для цього депозиту",
-      "sendAboveMinimum": "Відправити понад мінімальну суму: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Відправити понад мінімальну суму: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Надіслати нижче максимального суми: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1348,6 +1366,14 @@
       "errorMessage": "Сталася помилка. Будь ласка, спробуйте ще раз.",
       "purchase": "Придбання {{amount}} {{symbol}}",
       "transfer": "Переказуйте {{symbol}} для вашої покупки"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Оплатіть в мобільному додатку"
+      },
+      "qrCodePage": {
+        "title": "Скануйте за допомогою програми камери вашого телефону, щоб продовжити"
+      }
     },
     "infoScreen": {
       "rule1": "Ваші дані ніколи не зберігаються. Доступ завершиться після цього платежу.",
