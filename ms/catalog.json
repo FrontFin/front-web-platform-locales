@@ -40,12 +40,12 @@
     "descriptionOnRamp": "<0>Kembali ke sini untuk teruskan</0> selepas menyambung dengan aplikasi mudah alih Binance anda.",
     "descriptionPay": "<0>Kembali ke sini untuk membayar</0> selepas menyambung dengan aplikasi mudah alih Binance anda.",
     "loginWithEmailButton": "Log masuk dengan E-mel/Tel",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "Buka aplikasi Binance",
     "or": "atau",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "Simpan kod QR ke telefon anda",
+    "qrScanStepTitle": "Imbas kod QR dalam aplikasi Binance",
+    "saveQrCodeButton": "Simpan kod QR",
+    "saveQrCodeSavedButton": "Disimpan ✓",
     "scanText": "Imbas dengan kamera telefon anda atau aplikasi Binance untuk log masuk.",
     "title": "Log masuk"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "Akaun ini telah dinyahdayakan.",
     "accountLocked": "Akaun ini telah dikunci.",
     "accountNotFound": "Tidak dapat mengambil akaun anda.",
-    "accountRestricted": "",
+    "accountRestricted": "Akaun ini telah disekat.",
     "addressAllowlistPending": "Alamat penerima ini telah ditambah ke Senarai Dibenarkan anda dan sedang menunggu pegangan.",
     "addressNotAllowlisted": "Tidak dapat memulakan pengeluaran dari Coinbase. Anda mesti menambah alamat penerima ini ke Senarai Dibenarkan anda di sini: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "Jumlah yang diminta di bawah jumlah pemindahan minimum yang dibenarkan pada rangkaian ini.",
@@ -715,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Kembali ke sini</bold> selepas melengkapkan deposit dalam aplikasi mudah alih Bybit anda.",
         "mobileTitle": "Deposit dari aplikasi anda",
-        "qrPageTitle": "Imbas dengan kamera telefon atau apl Bybit anda untuk menyelesaikan deposit anda."
+        "qrPageTitle": "Imbas dengan kamera telefon atau apl Bybit anda untuk menyelesaikan deposit anda.",
+        "transferProcessing": "Lengkapkan deposit dalam\naplikasi Bybit anda..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Kembali ke sini</bold> selepas melengkapkan pembayaran dalam aplikasi mudah alih Bybit anda.",
         "mobileTitle": "Bayar dari aplikasi anda",
-        "qrPageTitle": "Imbas dengan kamera telefon atau apl Bybit anda untuk menyelesaikan pembayaran anda."
+        "qrPageTitle": "Imbas dengan kamera telefon atau apl Bybit anda untuk menyelesaikan pembayaran anda.",
+        "transferProcessing": "Lengkapkan pembayaran dalam\naplikasi Bybit anda..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Teruskan dengan aplikasi Cash",
+      "deposit": {
+        "mobileSubtitle": "<strong>Kembali ke sini</strong> selepas melengkapkan deposit dalam aplikasi Cash anda.",
+        "mobileTitle": "Deposit dari aplikasi anda",
+        "qrPageTitle": "Imbas dengan kamera telefon anda atau Aplikasi Cash untuk menyelesaikan deposit anda.",
+        "transferProcessing": "Lengkapkan deposit dalam\naplikasi Cash anda..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Kembali ke sini</strong> selepas melengkapkan pembayaran di Aplikasi Cash.",
+        "mobileTitle": "Bayar dari aplikasi anda",
+        "qrPageTitle": "Imbas dengan kamera telefon anda atau Aplikasi Cash untuk menyelesaikan pembayaran anda.",
+        "transferProcessing": "Lengkapkan pembayaran dalam\naplikasi Cash anda..."
       }
     },
     "common": {
@@ -747,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Kembali ke sini</strong> setelah menyelesaikan deposit di aplikasi mudah alih Crypto.com anda.",
         "mobileTitle": "Deposit dari aplikasi anda",
-        "qrPageTitle": "Imbas dengan kamera telefon anda atau aplikasi Crypto.com untuk menyelesaikan deposit anda."
+        "qrPageTitle": "Imbas dengan kamera telefon anda atau aplikasi Crypto.com untuk menyelesaikan deposit anda.",
+        "transferProcessing": "Lengkapkan deposit dalam\naplikasi Crypto.com anda..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Kembali ke sini</strong> setelah menyelesaikan pembayaran di aplikasi mudah alih Crypto.com anda.",
         "mobileTitle": "Bayar dari aplikasi anda",
-        "qrPageTitle": "Imbas dengan kamera telefon anda atau aplikasi Crypto.com untuk menyelesaikan pembayaran anda."
+        "qrPageTitle": "Imbas dengan kamera telefon anda atau aplikasi Crypto.com untuk menyelesaikan pembayaran anda.",
+        "transferProcessing": "Lengkapkan pembayaran dalam\naplikasi Crypto.com anda..."
       }
     },
     "externalAppInitiation": {
@@ -1179,6 +1198,8 @@
       "includeInTransaction": "Sertakan pemindahan {{tagLabel}} dengan deposit",
       "includeInTransactionWithMemo": "Sertakan memo pemindahan dengan deposit",
       "includeInTransactionWithTag": "Sertakan tag pemindahan dengan deposit",
+      "maximumDeposit": "Deposit maksimum: {{amount}} (apa-apa lebih mungkin mengakibatkan dana hilang)",
+      "minimumDeposit": "Deposit minimum: {{amount}} (apa-apa kurang mungkin mengakibatkan dana hilang)",
       "sendOnlyTokenOnNetwork": "Hantar hanya {{token}} pada {{network}}",
       "title": "Keperluan",
       "warningText": "Pastikan semua keperluan telah diselesaikan atau dana anda mungkin akan hilang secara kekal."
@@ -1217,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "Hanya hantar <1>{{token}}</1> pada <3>{{network}}</3> ke alamat ini. Alamat ini adalah untuk sekali penggunaan. Sebarang aset lain atau gabungan rangkaian, penggunaan semula alamat ini, atau <5>menghantar aset ke alamat lain</5>, akan mengakibatkan kehilangan dana dan tidak dapat dipulihkan. <7>Deposit minimum adalah $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Hanya hantar <1>{{token}}</1> pada rangkaian <3>{{network}}</3> ke alamat ini. Sebarang aset lain atau gabungan rangkaian akan tidak dapat dipulihkan.",
       "requiredForDeposit": "Diperlukan untuk deposit ini",
-      "sendAboveMinimum": "Hantar di atas jumlah minimum: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Hantar di atas jumlah minimum: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Hantar di bawah jumlah maksimum: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1344,6 +1366,14 @@
       "errorMessage": "Terdapat ralat. Sila cuba lagi",
       "purchase": "Pembelian {{amount}} {{symbol}}",
       "transfer": "Pindahkan {{symbol}} untuk pembelian anda"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Bayar dalam aplikasi mudah alih anda"
+      },
+      "qrCodePage": {
+        "title": "Imbas dengan aplikasi kamera telefon anda untuk meneruskan"
+      }
     },
     "infoScreen": {
       "rule1": "Maklumat anda tidak akan disimpan. Akses akan berakhir selepas pembayaran ini.",

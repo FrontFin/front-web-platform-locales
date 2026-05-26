@@ -40,12 +40,12 @@
     "descriptionOnRamp": "<0>Volta aqui para depositar</0> depois de conectar com a tua aplicação da Binance.",
     "descriptionPay": "<0>Volte aqui para pagar</0> após conectar-se com o seu aplicativo móvel do Binance.",
     "loginWithEmailButton": "Login com Email/Telefone",
-    "openBinanceScannerButton": "",
+    "openBinanceScannerButton": "Abrir o aplicativo Binance",
     "or": "ou",
-    "qrSaveStepTitle": "",
-    "qrScanStepTitle": "",
-    "saveQrCodeButton": "",
-    "saveQrCodeSavedButton": "",
+    "qrSaveStepTitle": "Salvar código QR no seu telefone",
+    "qrScanStepTitle": "Digitalizar código QR no aplicativo Binance",
+    "saveQrCodeButton": "Salvar código QR",
+    "saveQrCodeSavedButton": "Guardado ✓",
     "scanText": "Digitaliza com a câmera do teu telemóvel ou com a aplicação Binance para fazer login.",
     "title": "Entrar"
   },
@@ -393,7 +393,7 @@
     "accountDisabled": "Esta conta foi desativada.",
     "accountLocked": "Esta conta foi bloqueada.",
     "accountNotFound": "Não foi possível recuperar a(s) tua(s) conta(s).",
-    "accountRestricted": "",
+    "accountRestricted": "Esta conta foi restrita.",
     "addressAllowlistPending": "Este endereço de destino foi adicionado à tua Lista de Endereços Autorizados e está a aguardar confirmação.",
     "addressNotAllowlisted": "Não foi possível iniciar o levantamento na Coinbase. Deves adicionar este endereço de destino à tua Lista de Edereços Autorizados aqui: https://www.coinbase.com/settings/allowlist",
     "amountBelowMinimum": "A quantidade solicitada está abaixo da quantidade mínima permitida para transferência nesta rede.",
@@ -419,7 +419,6 @@
     "incorrect2faCode": "Código 2FA incorreto.",
     "incorrectEmail": "Inseriste um email incorreto.",
     "incorrectPasswordChancesRemaining_one": "Senha incorreta. Tens {{count}} tentativa restante.",
-    "incorrectPasswordChancesRemaining_many": "",
     "incorrectPasswordChancesRemaining_other": "Senha incorreta. Tens {{count}} tentativas restantes.",
     "incorrectUsernameOrPassword": "Nome de utilizador ou palavra-passe incorreta.",
     "integrationNotAvailable": "A integração não está disponível no momento.",
@@ -575,7 +574,6 @@
     "paymentMethodDepositUsage": "Método de Pagamento Confirmado",
     "stablecoinConversion": "Conversão de stablecoin",
     "withAdditional_one": "{{mainOption}} + {{count}} outro",
-    "withAdditional_many": "",
     "withAdditional_other": "{{mainOption}} + {{count}} outros"
   },
   "fundingOptionUnavailabilityReason": {
@@ -717,12 +715,29 @@
       "deposit": {
         "mobileSubtitle": "<bold>Voltar aqui</bold> após completares o depósito na tua aplicação móvel Bybit.",
         "mobileTitle": "Depositar do seu aplicativo",
-        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Bybit para finalizar o seu depósito."
+        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Bybit para finalizar o seu depósito.",
+        "transferProcessing": "Conclui o depósito na tua aplicação da Bybit..."
       },
       "pay": {
         "mobileSubtitle": "<bold>Voltar aqui</bold> após completares o pagamento na tua aplicação móvel Bybit.",
         "mobileTitle": "Pague com seu aplicativo",
-        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Bybit para finalizar o seu pagamento."
+        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Bybit para finalizar o seu pagamento.",
+        "transferProcessing": "Conclui o pagamento na tua aplicação da Bybit..."
+      }
+    },
+    "cashApp": {
+      "continueWithApp": "Continue com a aplicação Cash.",
+      "deposit": {
+        "mobileSubtitle": "<strong>Voltar aqui</strong> após completar o depósito na tua aplicação Cash.",
+        "mobileTitle": "Depositar do seu aplicativo",
+        "qrPageTitle": "Escaneie com a câmara do seu telefone ou o aplicativo Cash para concluir seu depósito.",
+        "transferProcessing": "Conclui o depósito na tua Cash App..."
+      },
+      "pay": {
+        "mobileSubtitle": "<strong>Retorne aqui</strong> após concluir o pagamento no seu aplicativo Cash.",
+        "mobileTitle": "Pague com seu aplicativo",
+        "qrPageTitle": "Escaneie com a câmara do seu telefone ou o aplicativo Cash para concluir seu pagamento.",
+        "transferProcessing": "Conclui o pagamento na tua Cash App..."
       }
     },
     "common": {
@@ -749,12 +764,14 @@
       "deposit": {
         "mobileSubtitle": "<strong>Volte aqui</strong> após completar o depósito na sua aplicação móvel Crypto.com.",
         "mobileTitle": "Depositar do seu aplicativo",
-        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Crypto.com para finalizar o seu depósito."
+        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Crypto.com para finalizar o seu depósito.",
+        "transferProcessing": "Conclui o depósito na tua aplicação da Crypto.com..."
       },
       "pay": {
         "mobileSubtitle": "<strong>Volte aqui</strong> após completar o pagamento na sua aplicação móvel Crypto.com.",
         "mobileTitle": "Pague com seu aplicativo",
-        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Crypto.com para finalizar o seu pagamento."
+        "qrPageTitle": "Escaneie com a câmera do seu telefone ou o aplicativo Crypto.com para finalizar o seu pagamento.",
+        "transferProcessing": "Conclui o pagamento na tua aplicação da Crypto.com..."
       }
     },
     "externalAppInitiation": {
@@ -1181,6 +1198,8 @@
       "includeInTransaction": "Inclua o {{tagLabel}} de transferência com o depósito",
       "includeInTransactionWithMemo": "Incluir memorando de transferência com depósito",
       "includeInTransactionWithTag": "Incluir tag de transferência com depósito",
+      "maximumDeposit": "Depósito máximo: {{amount}} (qualquer valor acima poderá resultar em perda de fundos)",
+      "minimumDeposit": "Depósito mínimo: {{amount}} (qualquer valor abaixo poderá resultar em perda de fundos)",
       "sendOnlyTokenOnNetwork": "Envie somente {{token}} em {{network}}",
       "title": "Requisitos",
       "warningText": "Certifique-se de que todos os requisitos sejam atendidos ou seus fundos podem ser perdidos permanentemente."
@@ -1219,7 +1238,8 @@
       "onlySendTokenOnNetworkBridging": "Somente envie <1>{{token}}</1> na <3>{{network}}</3> para este endereço. Este endereço é de uso único. Qualquer outra combinação de ativos ou redes, reutilização deste endereço, ou <5>envio de ativos para um endereço diferente</5>, resultará em perda de fundos e não serão recuperáveis. <7>O depósito mínimo é de $2 USD.</7>",
       "onlySendTokenOnNetworkExtended": "Envie apenas <1>{{token}}</1> na rede <3>{{network}}</3> para este endereço. Qualquer outra combinação de ativo ou rede será irrecuperável.",
       "requiredForDeposit": "Necessário para este depósito",
-      "sendAboveMinimum": "Envia acima do valor mínimo: <1>{{amount}}</1>"
+      "sendAboveMinimum": "Envia acima do valor mínimo: <1>{{amount}}</1>",
+      "sendBelowMaximum": "Envie abaixo da quantidade máxima: <1>{{amount}}</1>"
     }
   },
   "paymentMethods": {
@@ -1346,6 +1366,14 @@
       "errorMessage": "Ocorreu um erro. Tenta novamente",
       "purchase": "Compra de {{amount}} {{symbol}}",
       "transfer": "Transferir {{symbol}} para tua compra"
+    },
+    "hostedFlow": {
+      "initialPage": {
+        "title": "Paga na tua aplicação móvel"
+      },
+      "qrCodePage": {
+        "title": "Digitalize com o aplicativo de câmera do seu telefone para continuar"
+      }
     },
     "infoScreen": {
       "rule1": "As tuas informações nunca são guardadas. O acesso terminará após este pagamento.",
