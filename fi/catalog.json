@@ -15,8 +15,12 @@
     "code": "6-numeroinen koodi"
   },
   "binanceConnectAmountInput": {
+    "fiatFallback": "{{requestedFiat}} ei ole saatavilla tälle varalle. Näytetään hinnat valuutassa {{selectedFiat}}.",
     "minimumAmount": "Pienin sallittu summa on {{minAmount}}",
-    "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta"
+    "rateUnavailable": "Käypä kurssi ei saatavissa — lopullinen hinta vahvistetaan kassalla.",
+    "serverFailure": "Ei voitu ladata määrärajoja. Yritä uudelleen.",
+    "switchFiatCrypto": "Vaihda valuutta/kryptovaluutta",
+    "unsupportedPair": "Tätä kryptovaluutta ja fiat-paria ei tueta."
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Määrän on oltava välillä {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}}",
@@ -152,6 +156,7 @@
     "notFound": "Ei löydetty",
     "processingCap": "Käsittely",
     "reconnectYourAccount": "Yhdistä tilisi uudelleen",
+    "retry": "Yritä uudelleen",
     "searchCap": "Haku",
     "securedBy": "Suojattu",
     "somethingWentWrong": "Jotain meni pieleen...",
