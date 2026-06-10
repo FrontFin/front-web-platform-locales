@@ -15,8 +15,12 @@
     "code": "6-stelliger Code"
   },
   "binanceConnectAmountInput": {
+    "fiatFallback": "{{requestedFiat}} isn't available for this asset. Showing prices in {{selectedFiat}}.",
     "minimumAmount": "Der Mindestbetrag beträgt {{minAmount}}",
-    "switchFiatCrypto": "Fiat/Krypto wechseln"
+    "rateUnavailable": "Live rate unavailable — final rate confirmed at checkout",
+    "serverFailure": "Couldn't load amount limits. Please try again.",
+    "switchFiatCrypto": "Fiat/Krypto wechseln",
+    "unsupportedPair": "This crypto and fiat pair isn't supported."
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "Der Betrag muss zwischen {{minFiat}} {{selectedFiat}} - {{maxFiat}} {{selectedFiat}} liegen",
@@ -152,6 +156,7 @@
     "notFound": "Nicht gefunden",
     "processingCap": "Verarbeitung",
     "reconnectYourAccount": "Erneut mit Deinem Konto verbinden",
+    "retry": "Erneut versuchen",
     "searchCap": "Suche",
     "securedBy": "Abgesichert von",
     "somethingWentWrong": "Etwas ist schiefgelaufen ...",
