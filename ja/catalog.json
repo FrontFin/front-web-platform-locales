@@ -15,8 +15,12 @@
     "code": "6桁のコード"
   },
   "binanceConnectAmountInput": {
+    "fiatFallback": "{{requestedFiat}} isn't available for this asset. Showing prices in {{selectedFiat}}.",
     "minimumAmount": "最小金額は {{minAmount}} です",
-    "switchFiatCrypto": "法定通貨／暗号通貨を切り替える"
+    "rateUnavailable": "Live rate unavailable — final rate confirmed at checkout",
+    "serverFailure": "Couldn't load amount limits. Please try again.",
+    "switchFiatCrypto": "法定通貨／暗号通貨を切り替える",
+    "unsupportedPair": "This crypto and fiat pair isn't supported."
   },
   "binanceConnectOAuthPage": {
     "amountMustBeWithin": "金額は{{minFiat}} {{selectedFiat}} から {{maxFiat}} {{selectedFiat}} の範囲内である必要があります",
@@ -152,6 +156,7 @@
     "notFound": "見つかりません",
     "processingCap": "処理中",
     "reconnectYourAccount": "アカウントを再接続",
+    "retry": "もう一度お試しください",
     "searchCap": "検索",
     "securedBy": "保護されています",
     "somethingWentWrong": "何かがうまくいきませんでした。。。",
